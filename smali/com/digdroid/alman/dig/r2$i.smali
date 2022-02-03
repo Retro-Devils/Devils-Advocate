@@ -137,6 +137,13 @@
     const/4 p2, 0x1
 
     if-ne p3, p2, :cond_1
+    ##
+    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 p4, 0x1e
+
+    if-ge p2, p4, :cond_4
+    ##
 
     new-instance p2, Lcom/digdroid/alman/dig/i;
 
@@ -151,7 +158,24 @@
     invoke-virtual {p2}, Lcom/digdroid/alman/dig/i;->d()V
 
     goto :goto_0
+    ### launches file browser, but doesn't save back to theme_storage_dir yet
+    :cond_4
+    new-instance p2, Landroid/content/Intent;
 
+    const-string p4, "android.intent.action.OPEN_DOCUMENT_TREE"
+
+    invoke-direct {p2, p4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const p4, 0x100c3
+
+    invoke-virtual {p2, p4}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    const/16 p4, 0x67
+
+    invoke-virtual {p1, p2, p4}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+
+    goto :goto_0
+    ###
     :cond_1
     if-eqz p3, :cond_2
 
