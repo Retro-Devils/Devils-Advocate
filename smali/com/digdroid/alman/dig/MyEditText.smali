@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static e:Z = false
+.field static e:Z
 
 
 # direct methods

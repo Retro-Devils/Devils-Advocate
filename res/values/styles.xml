@@ -1746,9 +1746,9 @@
         <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
         <item name="android:textColorPrimaryInverseDisableOnly">@color/abc_primary_text_disable_only_material_dark</item>
         <item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_light</item>
-        <item name="android:textSelectHandleLeft">@drawable/APKTOOL_DUMMY_52</item>
-        <item name="android:textSelectHandleRight">@drawable/APKTOOL_DUMMY_56</item>
-        <item name="android:textSelectHandle">@drawable/APKTOOL_DUMMY_54</item>
+        <item name="android:textSelectHandleLeft">@null</item>
+        <item name="android:textSelectHandleRight">@null</item>
+        <item name="android:textSelectHandle">@null</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:textColorAlertDialogListItem">@color/abc_primary_text_material_light</item>
         <item name="android:actionModeCutDrawable">?actionModeCutDrawable</item>
@@ -2276,7 +2276,7 @@
         <item name="browseTitleViewStyle">@style/Widget.Leanback.TitleView</item>
         <item name="defaultSearchBrightColor">?defaultSearchColor</item>
         <item name="defaultSearchColor">@color/lb_default_search_color</item>
-        <item name="defaultSearchIcon">@drawable/APKTOOL_DUMMY_16f</item>
+        <item name="defaultSearchIcon">@null</item>
         <item name="defaultSearchIconColor">@color/lb_default_search_icon_color</item>
         <item name="defaultSectionHeaderColor">?defaultSearchColor</item>
         <item name="detailsActionButtonStyle">@style/Widget.Leanback.DetailsActionButtonStyle</item>
@@ -3053,7 +3053,7 @@
         <item name="cardType">infoUnder</item>
         <item name="infoAreaBackground">@null</item>
         <item name="infoVisibility">activated</item>
-        <item name="lbImageCardViewType">Title|Content|IconOnRight</item>
+        <item name="lbImageCardViewType">Content|IconOnRight|Title</item>
     </style>
     <style name="Widget.Leanback.OnboardingDescriptionStyle" parent="@style/Widget.Leanback">
         <item name="android:textSize">14.0sp</item>

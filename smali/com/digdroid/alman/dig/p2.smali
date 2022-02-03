@@ -9,11 +9,11 @@
 
 
 # static fields
-.field static A0:Z = false
+.field static A0:Z
 
-.field static B0:Z = false
+.field static B0:Z
 
-.field static C0:Z = false
+.field static C0:Z
 
 .field static z0:Landroidx/drawerlayout/widget/DrawerLayout;
 

@@ -12,11 +12,11 @@
 
 
 # static fields
-.field private static a:Z = false
+.field private static a:Z
 
-.field private static b:Ljava/lang/reflect/Method; = null
+.field private static b:Ljava/lang/reflect/Method;
 
-.field private static c:Z = false
+.field private static c:Z
 
 .field private static d:Ljava/lang/reflect/Field;
 

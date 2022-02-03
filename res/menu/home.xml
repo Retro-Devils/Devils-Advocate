@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:icon="@drawable/APKTOOL_DUMMY_95" android:id="@id/menu_search" android:title="@string/menu_search" app:actionViewClass="androidx.appcompat.widget.SearchView" app:showAsAction="always" />
+    <item android:icon="@null" android:id="@id/menu_search" android:title="@string/menu_search" app:actionViewClass="androidx.appcompat.widget.SearchView" app:showAsAction="always" />
     <item android:icon="@drawable/ic_announcements" android:id="@id/announcements" android:title="announcements" app:showAsAction="always" />
-    <item android:icon="@drawable/APKTOOL_DUMMY_97" android:id="@id/service_working" android:title="working" app:showAsAction="always" />
-    <item android:icon="@drawable/APKTOOL_DUMMY_a4" android:id="@id/media_pause" android:title="pause" app:showAsAction="always" />
-    <item android:icon="@drawable/APKTOOL_DUMMY_a5" android:id="@id/media_play" android:title="play" app:showAsAction="always" />
-    <item android:icon="@drawable/APKTOOL_DUMMY_a3" android:id="@id/media_next" android:title="next" app:showAsAction="always" />
+    <item android:icon="@null" android:id="@id/service_working" android:title="working" app:showAsAction="always" />
+    <item android:icon="@null" android:id="@id/media_pause" android:title="pause" app:showAsAction="always" />
+    <item android:icon="@null" android:id="@id/media_play" android:title="play" app:showAsAction="always" />
+    <item android:icon="@null" android:id="@id/media_next" android:title="next" app:showAsAction="always" />
 </menu>
