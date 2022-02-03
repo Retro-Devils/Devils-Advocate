@@ -461,6 +461,7 @@ nSélectionnez avec ou sans étiquette de texte:"</string>
     <string name="system_forum">Forum système</string>
     <string name="system_types">Types de système et générations</string>
     <string name="systems">Systèmes</string>
+    <string name="temp_cache">Taille du cache des jeux extraits (Mo)</string>
     <string name="text1">Texte principal</string>
     <string name="text2">Texte 2</string>
     <string name="text3">Texte 3</string>

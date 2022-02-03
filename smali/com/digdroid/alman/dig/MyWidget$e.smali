@@ -109,7 +109,7 @@
     :cond_0
     iget-object v0, p1, Lcom/digdroid/alman/dig/MyWidget$d;->d:Ljava/lang/String;
 
-    const v1, 0x7f090449
+    const v1, 0x7f09044b
 
     if-eqz v0, :cond_1
 
@@ -136,7 +136,7 @@
 
     iget-object v0, p1, Lcom/digdroid/alman/dig/MyWidget$d;->e:Landroid/graphics/Bitmap;
 
-    const v1, 0x7f090448
+    const v1, 0x7f09044a
 
     if-eqz v0, :cond_3
 

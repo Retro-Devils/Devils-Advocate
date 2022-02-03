@@ -458,6 +458,7 @@ Wählen Sie mit oder ohne Beschriftung:"</string>
     <string name="system_forum">Systemforum</string>
     <string name="system_types">Systemtypen und Generationen</string>
     <string name="systems">Systeme</string>
+    <string name="temp_cache">Extrahierte Spiele-Cache-Größe (MB)</string>
     <string name="text1">Haupt Text</string>
     <string name="theme_author">Ihr Name oder Handle:</string>
     <string name="theme_install_fail">Theme konnte nicht installiert werden</string>

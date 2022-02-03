@@ -59,7 +59,7 @@
 
     invoke-direct {p2, p0}, Lcom/digdroid/alman/dig/s$f$a$a;-><init>(Lcom/digdroid/alman/dig/s$f$a;)V
 
-    invoke-static {p1, p2}, Lcom/digdroid/alman/dig/p3;->j(Lcom/digdroid/alman/dig/a4;Lcom/digdroid/alman/dig/p3$e;)V
+    invoke-static {p1, p2}, Lcom/digdroid/alman/dig/p3;->j(Lcom/digdroid/alman/dig/b4;Lcom/digdroid/alman/dig/p3$e;)V
 
     return-void
 .end method

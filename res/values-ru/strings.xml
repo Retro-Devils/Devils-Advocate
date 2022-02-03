@@ -458,6 +458,7 @@
     <string name="system_forum">Системный форум</string>
     <string name="system_types">"Систем типы и поколения "</string>
     <string name="systems">Системы</string>
+    <string name="temp_cache">Размер кэша извлеченных игр (МБ)</string>
     <string name="text1">Основной текст</string>
     <string name="text2">Текст 2</string>
     <string name="text3">Текст 3</string>

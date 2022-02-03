@@ -360,7 +360,7 @@
 
     invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/p0$c;-><init>(Lcom/digdroid/alman/dig/p0;)V
 
-    const v1, 0x7f0901a8
+    const v1, 0x7f0901a9
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -382,7 +382,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setBackgroundColor(I)V
 
-    const v1, 0x7f0901ab
+    const v1, 0x7f0901ac
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -398,7 +398,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v1, 0x7f0901a9
+    const v1, 0x7f0901aa
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -414,7 +414,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v1, 0x7f0901ad
+    const v1, 0x7f0901ae
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -424,7 +424,7 @@
 
     iput-object v1, v0, Lcom/digdroid/alman/dig/p0$c;->d:Landroidx/appcompat/widget/AppCompatRatingBar;
 
-    const v1, 0x7f090328
+    const v1, 0x7f090329
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -444,7 +444,7 @@
 
     iget-boolean v2, v1, Lcom/digdroid/alman/dig/q0;->o:Z
 
-    const v3, 0x7f090327
+    const v3, 0x7f090328
 
     const/16 v4, 0x8
 
@@ -608,7 +608,7 @@
 
     invoke-direct {p2, p0}, Lcom/digdroid/alman/dig/p0$a;-><init>(Lcom/digdroid/alman/dig/p0;)V
 
-    const p3, 0x7f0901a8
+    const p3, 0x7f0901a9
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -630,7 +630,7 @@
 
     invoke-virtual {p3, v1}, Landroid/widget/ImageView;->setBackgroundColor(I)V
 
-    const p3, 0x7f0901ab
+    const p3, 0x7f0901ac
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -646,7 +646,7 @@
 
     invoke-virtual {p3, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const p3, 0x7f0903d2
+    const p3, 0x7f0903d3
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -662,7 +662,7 @@
 
     invoke-virtual {p3, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const p3, 0x7f090317
+    const p3, 0x7f090318
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -678,7 +678,7 @@
 
     invoke-virtual {p3, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const p3, 0x7f0901ad
+    const p3, 0x7f0901ae
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -688,7 +688,7 @@
 
     iput-object p3, p2, Lcom/digdroid/alman/dig/p0$a;->e:Landroidx/appcompat/widget/AppCompatRatingBar;
 
-    const p3, 0x7f090328
+    const p3, 0x7f090329
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -826,7 +826,7 @@
 
     invoke-virtual {v1, p3, v0, v0, v0}, Landroid/widget/TextView;->setPadding(IIII)V
 
-    const v1, 0x7f0903d8
+    const v1, 0x7f0903d9
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -844,7 +844,7 @@
 
     move-result p3
 
-    const v2, 0x7f090327
+    const v2, 0x7f090328
 
     const/16 v3, 0x8
 
@@ -966,7 +966,7 @@
 
     invoke-direct {p2, p0}, Lcom/digdroid/alman/dig/p0$b;-><init>(Lcom/digdroid/alman/dig/p0;)V
 
-    const p3, 0x7f0901ab
+    const p3, 0x7f0901ac
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

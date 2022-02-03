@@ -121,7 +121,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/y3;->g(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->g(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -141,7 +141,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/y3;->g(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->g(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2294,7 +2294,7 @@
 
     move-result-object v12
 
-    invoke-static {v12}, Lcom/digdroid/alman/dig/y3;->s(Ljava/lang/String;)J
+    invoke-static {v12}, Lcom/digdroid/alman/dig/z3;->s(Ljava/lang/String;)J
 
     move-result-wide v12
 

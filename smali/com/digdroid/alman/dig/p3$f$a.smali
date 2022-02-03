@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/p3$f;->a([Lcom/digdroid/alman/dig/a4;)Ljava/util/ArrayList;
+    value = Lcom/digdroid/alman/dig/p3$f;->a([Lcom/digdroid/alman/dig/b4;)Ljava/util/ArrayList;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

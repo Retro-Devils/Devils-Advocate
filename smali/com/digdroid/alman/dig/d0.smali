@@ -132,8 +132,8 @@
 
     :array_1
     .array-data 4
-        0x7f11028e
-        0x7f110296
+        0x7f11028f
+        0x7f110297
         0x7f11022a
         0x7f110189
         0x7f1100ce
@@ -366,7 +366,7 @@
 
     move-result-object v2
 
-    const v4, 0x7f090288
+    const v4, 0x7f090289
 
     invoke-virtual {v2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -382,7 +382,7 @@
 
     invoke-virtual {v4, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v1, 0x7f0902d7
+    const v1, 0x7f0902d8
 
     invoke-virtual {v2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1298,7 +1298,7 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v1, 0x7f11027d
+    const v1, 0x7f11027e
 
     invoke-virtual {p1, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1347,7 +1347,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090288
+    const v3, 0x7f090289
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1363,7 +1363,7 @@
 
     invoke-virtual {v3, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v1, 0x7f0902d7
+    const v1, 0x7f0902d8
 
     invoke-virtual {v2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1401,7 +1401,7 @@
 
     move-result-object p2
 
-    const v1, 0x7f11027c
+    const v1, 0x7f11027d
 
     new-instance v2, Lcom/digdroid/alman/dig/d0$k;
 
@@ -1415,7 +1415,7 @@
 
     if-nez v1, :cond_6
 
-    const v1, 0x7f11027e
+    const v1, 0x7f11027f
 
     new-instance v2, Lcom/digdroid/alman/dig/d0$l;
 

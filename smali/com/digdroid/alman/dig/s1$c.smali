@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/s1;->F3(ILjava/lang/String;JI)V
+    value = Lcom/digdroid/alman/dig/s1;->H3(ILjava/lang/String;JI)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

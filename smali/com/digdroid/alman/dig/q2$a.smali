@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/q2;->t3()V
+    value = Lcom/digdroid/alman/dig/q2;->v3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -59,7 +59,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/q2$a;->d:Landroid/app/Activity;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/y3;->g(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/z3;->g(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -128,7 +128,7 @@
 
     check-cast p2, Ljava/lang/Integer;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/y3;->g(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->g(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p2
 

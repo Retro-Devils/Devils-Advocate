@@ -29,7 +29,7 @@
 
     const-string p1, "retroarch"
 
-    invoke-static {p0, p1}, Lcom/digdroid/alman/dig/y3;->C(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lcom/digdroid/alman/dig/z3;->D(Landroid/content/Context;Ljava/lang/String;)V
 
     goto/16 :goto_1
 
@@ -275,7 +275,7 @@
 
     invoke-virtual {v1, v0, v2}, Landroid/os/AsyncTask;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/x3;->a1()V
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/y3;->a1()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

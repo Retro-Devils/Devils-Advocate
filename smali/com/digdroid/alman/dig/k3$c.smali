@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/k3;->y3(Ljava/lang/String;I)V
+    value = Lcom/digdroid/alman/dig/k3;->A3(Ljava/lang/String;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -49,7 +49,7 @@
 
     iget-object v1, v0, Lcom/digdroid/alman/dig/p1;->m0:Lcom/digdroid/alman/dig/p1$a;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/r1;->m3()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/r1;->o3()Ljava/lang/String;
 
     move-result-object v0
 

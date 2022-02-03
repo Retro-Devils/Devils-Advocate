@@ -51,7 +51,7 @@
 
     iget-object p2, p2, Lcom/digdroid/alman/dig/t0$j;->a:Lcom/digdroid/alman/dig/t0;
 
-    invoke-virtual {p2}, Lcom/digdroid/alman/dig/t0;->i3()Landroid/database/Cursor;
+    invoke-virtual {p2}, Lcom/digdroid/alman/dig/t0;->k3()Landroid/database/Cursor;
 
     move-result-object p2
 

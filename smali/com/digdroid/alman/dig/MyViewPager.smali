@@ -127,7 +127,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-interface {v0}, Lcom/digdroid/alman/dig/MyViewPager$a;->O()Z
+    invoke-interface {v0}, Lcom/digdroid/alman/dig/MyViewPager$a;->N()Z
 
     move-result v0
 
@@ -199,7 +199,7 @@
 
     if-eqz v1, :cond_1
 
-    invoke-interface {v1}, Lcom/digdroid/alman/dig/MyViewPager$a;->O()Z
+    invoke-interface {v1}, Lcom/digdroid/alman/dig/MyViewPager$a;->N()Z
 
     move-result v1
 
@@ -264,7 +264,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-interface {v0}, Lcom/digdroid/alman/dig/MyViewPager$a;->O()Z
+    invoke-interface {v0}, Lcom/digdroid/alman/dig/MyViewPager$a;->N()Z
 
     move-result v0
 

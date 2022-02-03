@@ -49,7 +49,7 @@
 
     iget-object v0, v0, Lcom/digdroid/alman/dig/q2$l;->b:Lcom/digdroid/alman/dig/q2;
 
-    invoke-static {v0, p1}, Lcom/digdroid/alman/dig/q2;->n3(Lcom/digdroid/alman/dig/q2;Ljava/util/ArrayList;)V
+    invoke-static {v0, p1}, Lcom/digdroid/alman/dig/q2;->p3(Lcom/digdroid/alman/dig/q2;Ljava/util/ArrayList;)V
 
     return-void
 .end method

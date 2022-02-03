@@ -577,6 +577,7 @@ Select with or without a text label:"</string>
     <string name="system_types">System types and generations</string>
     <string name="systems">Systems</string>
     <string name="takes_zip">Accepts .zip files</string>
+    <string name="temp_cache">Extracted games cache size (MB)</string>
     <string name="text1">Main text</string>
     <string name="text2">Text 2</string>
     <string name="text3">Text 3</string>
@@ -664,10 +665,10 @@ Select with or without a text label:"</string>
     <item type="string" name="APKTOOL_DUMMY_234" />
     <item type="string" name="APKTOOL_DUMMY_260" />
     <item type="string" name="APKTOOL_DUMMY_261" />
-    <item type="string" name="APKTOOL_DUMMY_265" />
-    <item type="string" name="APKTOOL_DUMMY_273" />
-    <item type="string" name="APKTOOL_DUMMY_27b" />
-    <item type="string" name="APKTOOL_DUMMY_287" />
-    <item type="string" name="APKTOOL_DUMMY_28c" />
+    <item type="string" name="APKTOOL_DUMMY_266" />
+    <item type="string" name="APKTOOL_DUMMY_274" />
+    <item type="string" name="APKTOOL_DUMMY_27c" />
+    <item type="string" name="APKTOOL_DUMMY_288" />
     <item type="string" name="APKTOOL_DUMMY_28d" />
+    <item type="string" name="APKTOOL_DUMMY_28e" />
 </resources>

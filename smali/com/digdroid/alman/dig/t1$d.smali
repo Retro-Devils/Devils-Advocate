@@ -63,7 +63,7 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/t1$d;->b:Landroid/view/View;
 
-    const p2, 0x7f0902d7
+    const p2, 0x7f0902d8
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

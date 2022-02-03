@@ -87,7 +87,7 @@
 
     check-cast v0, Landroidx/core/app/m$a;
 
-    invoke-interface {v0}, Landroidx/core/app/m$a;->K()Landroid/content/Intent;
+    invoke-interface {v0}, Landroidx/core/app/m$a;->k()Landroid/content/Intent;
 
     move-result-object v0
 

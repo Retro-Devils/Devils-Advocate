@@ -39,7 +39,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/q2$w;->b:Lcom/digdroid/alman/dig/q2;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/q2;->m3(Lcom/digdroid/alman/dig/q2;)V
+    invoke-static {v0}, Lcom/digdroid/alman/dig/q2;->o3(Lcom/digdroid/alman/dig/q2;)V
 
     return-void
 .end method

@@ -219,7 +219,7 @@
 
     int-to-float p2, p2
 
-    invoke-static {v3, p2}, Lcom/digdroid/alman/dig/y3;->d(Landroid/content/Context;F)I
+    invoke-static {v3, p2}, Lcom/digdroid/alman/dig/z3;->d(Landroid/content/Context;F)I
 
     move-result p2
 
@@ -296,7 +296,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/k0;->a:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/y3;->g(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/z3;->g(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 

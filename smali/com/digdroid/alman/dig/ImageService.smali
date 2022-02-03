@@ -167,7 +167,7 @@
 .method protected onHandleIntent(Landroid/content/Intent;)V
     .locals 4
 
-    invoke-static {p0}, Lcom/digdroid/alman/dig/y3;->w(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/digdroid/alman/dig/z3;->w(Landroid/content/Context;)Z
 
     move-result v0
 

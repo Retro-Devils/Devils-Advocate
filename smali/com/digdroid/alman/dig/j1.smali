@@ -14,12 +14,20 @@
 
 
 # virtual methods
-.method B3()Landroid/database/Cursor;
+.method B3(Landroid/content/Intent;)Z
+    .locals 0
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method D3()Landroid/database/Cursor;
     .locals 3
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->c0:Lcom/digdroid/alman/dig/o0;
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/t0;->C3()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/t0;->E3()Ljava/lang/String;
 
     move-result-object v1
 
@@ -62,18 +70,10 @@
     return-void
 .end method
 
-.method x3()Ljava/lang/String;
+.method z3()Ljava/lang/String;
     .locals 1
 
     const-string v0, "system"
 
     return-object v0
-.end method
-
-.method z3(Landroid/content/Intent;)Z
-    .locals 0
-
-    const/4 p1, 0x0
-
-    return p1
 .end method

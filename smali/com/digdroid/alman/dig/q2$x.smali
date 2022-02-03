@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/q2;->F3()V
+    value = Lcom/digdroid/alman/dig/q2;->H3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -110,13 +110,13 @@
     invoke-virtual {p1, v0}, Landroidx/appcompat/widget/SwitchCompat;->setChecked(Z)V
 
     :goto_1
-    new-instance p1, Lcom/digdroid/alman/dig/q2$w0;
+    new-instance p1, Lcom/digdroid/alman/dig/q2$x0;
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/q2$x;->c:Lcom/digdroid/alman/dig/q2;
 
     const/4 v2, 0x0
 
-    invoke-direct {p1, v1, v2}, Lcom/digdroid/alman/dig/q2$w0;-><init>(Lcom/digdroid/alman/dig/q2;Lcom/digdroid/alman/dig/q2$k;)V
+    invoke-direct {p1, v1, v2}, Lcom/digdroid/alman/dig/q2$x0;-><init>(Lcom/digdroid/alman/dig/q2;Lcom/digdroid/alman/dig/q2$k;)V
 
     new-array v0, v0, [Ljava/lang/String;
 

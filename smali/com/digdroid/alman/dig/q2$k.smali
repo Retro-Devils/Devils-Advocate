@@ -47,19 +47,11 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/q2$k;->b:Lcom/digdroid/alman/dig/q2;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/q2;->e3(Lcom/digdroid/alman/dig/q2;)V
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/q2$k;->b:Lcom/digdroid/alman/dig/q2;
-
-    invoke-static {v0}, Lcom/digdroid/alman/dig/q2;->f3(Lcom/digdroid/alman/dig/q2;)V
+    invoke-static {v0}, Lcom/digdroid/alman/dig/q2;->g3(Lcom/digdroid/alman/dig/q2;)V
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/q2$k;->b:Lcom/digdroid/alman/dig/q2;
 
     invoke-static {v0}, Lcom/digdroid/alman/dig/q2;->h3(Lcom/digdroid/alman/dig/q2;)V
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/q2$k;->b:Lcom/digdroid/alman/dig/q2;
-
-    invoke-static {v0}, Lcom/digdroid/alman/dig/q2;->i3(Lcom/digdroid/alman/dig/q2;)V
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/q2$k;->b:Lcom/digdroid/alman/dig/q2;
 
@@ -72,6 +64,14 @@
     iget-object v0, p0, Lcom/digdroid/alman/dig/q2$k;->b:Lcom/digdroid/alman/dig/q2;
 
     invoke-static {v0}, Lcom/digdroid/alman/dig/q2;->l3(Lcom/digdroid/alman/dig/q2;)V
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/q2$k;->b:Lcom/digdroid/alman/dig/q2;
+
+    invoke-static {v0}, Lcom/digdroid/alman/dig/q2;->m3(Lcom/digdroid/alman/dig/q2;)V
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/q2$k;->b:Lcom/digdroid/alman/dig/q2;
+
+    invoke-static {v0}, Lcom/digdroid/alman/dig/q2;->n3(Lcom/digdroid/alman/dig/q2;)V
 
     :cond_0
     return-void

@@ -130,7 +130,7 @@
 
     if-nez v2, :cond_4
 
-    invoke-static {v0, v1}, Lcom/digdroid/alman/dig/y3;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/digdroid/alman/dig/z3;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_4
     add-int/lit8 p3, p3, 0x1
@@ -141,7 +141,7 @@
     return-void
 .end method
 
-.method static b(Lcom/digdroid/alman/dig/x3;Lcom/digdroid/alman/dig/g3;Landroid/database/Cursor;ZLcom/digdroid/alman/dig/t2$b;)V
+.method static b(Lcom/digdroid/alman/dig/y3;Lcom/digdroid/alman/dig/g3;Landroid/database/Cursor;ZLcom/digdroid/alman/dig/t2$b;)V
     .locals 7
 
     if-nez p3, :cond_0
@@ -208,7 +208,7 @@
 
     move-object v5, p4
 
-    invoke-direct/range {v0 .. v5}, Lcom/digdroid/alman/dig/t2$c;-><init>(Lcom/digdroid/alman/dig/x3;Lcom/digdroid/alman/dig/g3;Landroid/database/Cursor;ZLcom/digdroid/alman/dig/t2$b;)V
+    invoke-direct/range {v0 .. v5}, Lcom/digdroid/alman/dig/t2$c;-><init>(Lcom/digdroid/alman/dig/y3;Lcom/digdroid/alman/dig/g3;Landroid/database/Cursor;ZLcom/digdroid/alman/dig/t2$b;)V
 
     sget-object p0, Landroid/os/AsyncTask;->THREAD_POOL_EXECUTOR:Ljava/util/concurrent/Executor;
 

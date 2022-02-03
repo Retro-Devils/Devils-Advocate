@@ -868,7 +868,7 @@
 .method public h(Landroid/view/View;F)Lcom/digdroid/alman/dig/x0;
     .locals 2
 
-    const v0, 0x7f0901a8
+    const v0, 0x7f0901a9
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

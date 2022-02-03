@@ -124,7 +124,7 @@
 
     move-result p2
 
-    const v0, 0x7f0901bf
+    const v0, 0x7f0901c0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -154,7 +154,7 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    const v0, 0x7f0901bd
+    const v0, 0x7f0901be
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

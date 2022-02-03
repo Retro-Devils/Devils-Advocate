@@ -72,7 +72,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/digdroid/alman/dig/y3;->g(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/digdroid/alman/dig/z3;->g(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -216,7 +216,7 @@
 
     iget-object p1, p1, Lcom/digdroid/alman/dig/f3$o;->b:Lcom/digdroid/alman/dig/f3;
 
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/t0;->N2()V
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/t0;->O2()V
 
     return-void
 .end method

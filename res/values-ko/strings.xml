@@ -447,6 +447,7 @@
     <string name="system_forum">시스템 포럼</string>
     <string name="system_types">시스템 유형 및 세대</string>
     <string name="systems">게임 시스템</string>
+    <string name="temp_cache">추출 된 게임 캐시 크기 (MB)</string>
     <string name="text1">주요 텍스트</string>
     <string name="text2">텍스트 2</string>
     <string name="text3">텍스트 3</string>

@@ -274,7 +274,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090297
+    const v1, 0x7f090298
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -282,7 +282,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f090176
+    const v2, 0x7f090177
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -974,7 +974,7 @@
 
     invoke-virtual {p2, v0, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
 
-    const p2, 0x7f0902d1
+    const p2, 0x7f0902d2
 
     invoke-interface {p1, p2}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -1061,7 +1061,7 @@
 
     iput-object p2, p0, Lcom/digdroid/alman/dig/y;->j:Landroid/widget/ImageButton;
 
-    const p2, 0x7f09041e
+    const p2, 0x7f090420
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1071,7 +1071,7 @@
 
     iput-object p2, p0, Lcom/digdroid/alman/dig/y;->k:Landroid/widget/TextView;
 
-    const p2, 0x7f090161
+    const p2, 0x7f090162
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1081,7 +1081,7 @@
 
     iput-object p2, p0, Lcom/digdroid/alman/dig/y;->l:Landroid/widget/ListView;
 
-    const p2, 0x7f09041f
+    const p2, 0x7f090421
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1202,7 +1202,7 @@
 
     move-result v0
 
-    const v1, 0x7f0902d1
+    const v1, 0x7f0902d2
 
     if-ne v0, v1, :cond_0
 

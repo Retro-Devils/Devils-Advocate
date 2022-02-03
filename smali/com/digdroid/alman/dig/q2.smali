@@ -6,11 +6,11 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/digdroid/alman/dig/q2$s0;,
         Lcom/digdroid/alman/dig/q2$t0;,
-        Lcom/digdroid/alman/dig/q2$v0;,
+        Lcom/digdroid/alman/dig/q2$u0;,
         Lcom/digdroid/alman/dig/q2$w0;,
-        Lcom/digdroid/alman/dig/q2$u0;
+        Lcom/digdroid/alman/dig/q2$x0;,
+        Lcom/digdroid/alman/dig/q2$v0;
     }
 .end annotation
 
@@ -118,7 +118,51 @@
     return-void
 .end method
 
-.method private A3()V
+.method private B3()V
+    .locals 8
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->F0()Landroid/view/View;
+
+    move-result-object v0
+
+    const v1, 0x7f09021d
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iget-object v1, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
+
+    iget v1, v1, Lcom/digdroid/alman/dig/s3;->f:I
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
+
+    invoke-static {v0}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
+
+    new-instance v1, Lcom/digdroid/alman/dig/q2$v0;
+
+    const v4, 0x7f09021d
+
+    const v5, 0x7f090221
+
+    const v6, 0x7f110129
+
+    const v7, 0x7f090226
+
+    move-object v2, v1
+
+    move-object v3, p0
+
+    invoke-direct/range {v2 .. v7}, Lcom/digdroid/alman/dig/q2$v0;-><init>(Lcom/digdroid/alman/dig/q2;IIII)V
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    return-void
+.end method
+
+.method private C3()V
     .locals 6
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
@@ -145,7 +189,7 @@
     return-void
 
     :cond_1
-    const v1, 0x7f090320
+    const v1, 0x7f090321
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -161,9 +205,9 @@
 
     invoke-static {v1}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
 
-    new-instance v2, Lcom/digdroid/alman/dig/q2$b0;
+    new-instance v2, Lcom/digdroid/alman/dig/q2$c0;
 
-    invoke-direct {v2, p0}, Lcom/digdroid/alman/dig/q2$b0;-><init>(Lcom/digdroid/alman/dig/q2;)V
+    invoke-direct {v2, p0}, Lcom/digdroid/alman/dig/q2$c0;-><init>(Lcom/digdroid/alman/dig/q2;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -244,7 +288,7 @@
 
     :cond_4
     :goto_1
-    const v1, 0x7f090191
+    const v1, 0x7f090192
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -260,13 +304,13 @@
 
     invoke-static {v1}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
 
-    new-instance v3, Lcom/digdroid/alman/dig/q2$c0;
+    new-instance v3, Lcom/digdroid/alman/dig/q2$d0;
 
-    invoke-direct {v3, p0, v2}, Lcom/digdroid/alman/dig/q2$c0;-><init>(Lcom/digdroid/alman/dig/q2;Ljava/lang/String;)V
+    invoke-direct {v3, p0, v2}, Lcom/digdroid/alman/dig/q2$d0;-><init>(Lcom/digdroid/alman/dig/q2;Ljava/lang/String;)V
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v1, 0x7f090128
+    const v1, 0x7f090129
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -282,9 +326,9 @@
 
     invoke-static {v0}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
 
-    new-instance v1, Lcom/digdroid/alman/dig/q2$d0;
+    new-instance v1, Lcom/digdroid/alman/dig/q2$e0;
 
-    invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/q2$d0;-><init>(Lcom/digdroid/alman/dig/q2;)V
+    invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/q2$e0;-><init>(Lcom/digdroid/alman/dig/q2;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -293,14 +337,14 @@
     return-void
 .end method
 
-.method private B3()V
+.method private D3()V
     .locals 8
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->F0()Landroid/view/View;
 
     move-result-object v0
 
-    const v1, 0x7f090229
+    const v1, 0x7f09022a
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -316,28 +360,28 @@
 
     invoke-static {v0}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
 
-    new-instance v1, Lcom/digdroid/alman/dig/q2$u0;
+    new-instance v1, Lcom/digdroid/alman/dig/q2$v0;
 
-    const v4, 0x7f090229
+    const v4, 0x7f09022a
 
-    const v5, 0x7f090228
+    const v5, 0x7f090229
 
     const v6, 0x7f110137
 
-    const v7, 0x7f09022a
+    const v7, 0x7f09022b
 
     move-object v2, v1
 
     move-object v3, p0
 
-    invoke-direct/range {v2 .. v7}, Lcom/digdroid/alman/dig/q2$u0;-><init>(Lcom/digdroid/alman/dig/q2;IIII)V
+    invoke-direct/range {v2 .. v7}, Lcom/digdroid/alman/dig/q2$v0;-><init>(Lcom/digdroid/alman/dig/q2;IIII)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-void
 .end method
 
-.method private C3()V
+.method private E3()V
     .locals 6
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
@@ -364,7 +408,7 @@
     return-void
 
     :cond_1
-    const v1, 0x7f090105
+    const v1, 0x7f090106
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -374,7 +418,7 @@
 
     invoke-static {v1}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
 
-    const v2, 0x7f090106
+    const v2, 0x7f090107
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -446,7 +490,7 @@
 
     invoke-virtual {v1, v3}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v1, 0x7f0901b1
+    const v1, 0x7f0901b2
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -473,7 +517,7 @@
     return-void
 .end method
 
-.method private D3(Ljava/util/ArrayList;)V
+.method private F3(Ljava/util/ArrayList;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -497,23 +541,23 @@
     :cond_0
     const-string v0, ""
 
-    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/q2;->V2(Ljava/lang/String;)V
-
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->F3()V
-
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->t3()V
+    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/q2;->X2(Ljava/lang/String;)V
 
     invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->H3()V
 
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->p3()V
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->v3()V
+
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->J3()V
+
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->r3()V
+
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->E3()V
+
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->x3()V
 
     invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->C3()V
 
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->v3()V
-
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->A3()V
-
-    const v0, 0x7f09034e
+    const v0, 0x7f09034f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -524,14 +568,14 @@
     return-void
 .end method
 
-.method private E3()V
+.method private G3()V
     .locals 8
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->F0()Landroid/view/View;
 
     move-result-object v0
 
-    const v1, 0x7f09034e
+    const v1, 0x7f09034f
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -549,21 +593,21 @@
 
     invoke-virtual {v0}, Landroid/widget/TextView;->requestFocus()Z
 
-    new-instance v1, Lcom/digdroid/alman/dig/q2$u0;
+    new-instance v1, Lcom/digdroid/alman/dig/q2$v0;
 
-    const v4, 0x7f09034e
+    const v4, 0x7f09034f
 
-    const v5, 0x7f09034f
+    const v5, 0x7f090350
 
     const v6, 0x7f1100c6
 
-    const v7, 0x7f090350
+    const v7, 0x7f090351
 
     move-object v2, v1
 
     move-object v3, p0
 
-    invoke-direct/range {v2 .. v7}, Lcom/digdroid/alman/dig/q2$u0;-><init>(Lcom/digdroid/alman/dig/q2;IIII)V
+    invoke-direct/range {v2 .. v7}, Lcom/digdroid/alman/dig/q2$v0;-><init>(Lcom/digdroid/alman/dig/q2;IIII)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -576,7 +620,7 @@
     return-void
 .end method
 
-.method private F3()V
+.method private H3()V
     .locals 6
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
@@ -603,7 +647,7 @@
     return-void
 
     :cond_1
-    const v2, 0x7f090286
+    const v2, 0x7f090287
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -631,7 +675,7 @@
 
     invoke-virtual {v2, v3}, Landroidx/appcompat/widget/SwitchCompat;->setChecked(Z)V
 
-    const v3, 0x7f090287
+    const v3, 0x7f090288
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -681,13 +725,13 @@
 
     invoke-static {v3}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
 
-    new-instance v4, Lcom/digdroid/alman/dig/q2$m0;
+    new-instance v4, Lcom/digdroid/alman/dig/q2$n0;
 
-    invoke-direct {v4, p0, v2}, Lcom/digdroid/alman/dig/q2$m0;-><init>(Lcom/digdroid/alman/dig/q2;Landroidx/appcompat/widget/SwitchCompat;)V
+    invoke-direct {v4, p0, v2}, Lcom/digdroid/alman/dig/q2$n0;-><init>(Lcom/digdroid/alman/dig/q2;Landroidx/appcompat/widget/SwitchCompat;)V
 
     invoke-virtual {v3, v4}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v2, 0x7f090215
+    const v2, 0x7f090216
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -703,13 +747,13 @@
 
     invoke-static {v2}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
 
-    new-instance v3, Lcom/digdroid/alman/dig/q2$n0;
+    new-instance v3, Lcom/digdroid/alman/dig/q2$o0;
 
-    invoke-direct {v3, p0, v0}, Lcom/digdroid/alman/dig/q2$n0;-><init>(Lcom/digdroid/alman/dig/q2;Landroid/app/Activity;)V
+    invoke-direct {v3, p0, v0}, Lcom/digdroid/alman/dig/q2$o0;-><init>(Lcom/digdroid/alman/dig/q2;Landroid/app/Activity;)V
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v2, 0x7f0903bc
+    const v2, 0x7f0903bd
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -725,9 +769,9 @@
 
     invoke-static {v1}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
 
-    new-instance v2, Lcom/digdroid/alman/dig/q2$o0;
+    new-instance v2, Lcom/digdroid/alman/dig/q2$p0;
 
-    invoke-direct {v2, p0, v0}, Lcom/digdroid/alman/dig/q2$o0;-><init>(Lcom/digdroid/alman/dig/q2;Landroid/app/Activity;)V
+    invoke-direct {v2, p0, v0}, Lcom/digdroid/alman/dig/q2$p0;-><init>(Lcom/digdroid/alman/dig/q2;Landroid/app/Activity;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -736,7 +780,7 @@
     return-void
 .end method
 
-.method private G3()V
+.method private I3()V
     .locals 10
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->F0()Landroid/view/View;
@@ -759,17 +803,17 @@
 
     invoke-static {v0}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
 
-    new-instance v1, Lcom/digdroid/alman/dig/q2$u0;
+    new-instance v1, Lcom/digdroid/alman/dig/q2$v0;
 
     const v4, 0x7f09006c
 
     const v5, 0x7f09006d
 
-    const v6, 0x7f110270
+    const v6, 0x7f110271
 
     const v7, 0x7f09006e
 
-    const v8, 0x7f0900e0
+    const v8, 0x7f0900e1
 
     const v9, 0x7f09006a
 
@@ -777,14 +821,14 @@
 
     move-object v3, p0
 
-    invoke-direct/range {v2 .. v9}, Lcom/digdroid/alman/dig/q2$u0;-><init>(Lcom/digdroid/alman/dig/q2;IIIIII)V
+    invoke-direct/range {v2 .. v9}, Lcom/digdroid/alman/dig/q2$v0;-><init>(Lcom/digdroid/alman/dig/q2;IIIIII)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-void
 .end method
 
-.method private H3()V
+.method private J3()V
     .locals 14
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
@@ -813,7 +857,7 @@
     return-void
 
     :cond_1
-    const v2, 0x7f0900df
+    const v2, 0x7f0900e0
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -911,7 +955,7 @@
 
     invoke-virtual {v4, v3}, Landroid/widget/ArrayAdapter;->setDropDownViewResource(I)V
 
-    const v8, 0x7f0900e0
+    const v8, 0x7f0900e1
 
     invoke-virtual {v1, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -957,7 +1001,7 @@
 
     aput-object v4, v2, v5
 
-    const v6, 0x7f11026a
+    const v6, 0x7f11026b
 
     invoke-virtual {v0, v6}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1079,7 +1123,7 @@
 
     invoke-virtual {v2, v12}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v2, 0x7f09017f
+    const v2, 0x7f090180
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1105,7 +1149,7 @@
 
     invoke-virtual {v2, v6}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v2, 0x7f090227
+    const v2, 0x7f090228
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1149,7 +1193,7 @@
 
     invoke-virtual {v2, v6}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v2, 0x7f0903f8
+    const v2, 0x7f0903fa
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1163,7 +1207,7 @@
 
     invoke-virtual {v2, v6}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v2, 0x7f0903f9
+    const v2, 0x7f0903fb
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1244,7 +1288,7 @@
 
     invoke-virtual {v4, v3}, Landroid/widget/ArrayAdapter;->setDropDownViewResource(I)V
 
-    const v3, 0x7f0903fa
+    const v3, 0x7f0903fc
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1273,31 +1317,7 @@
     return-void
 .end method
 
-.method static synthetic e3(Lcom/digdroid/alman/dig/q2;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->E3()V
-
-    return-void
-.end method
-
-.method static synthetic f3(Lcom/digdroid/alman/dig/q2;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->s3()V
-
-    return-void
-.end method
-
 .method static synthetic g3(Lcom/digdroid/alman/dig/q2;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->r3()V
-
-    return-void
-.end method
-
-.method static synthetic h3(Lcom/digdroid/alman/dig/q2;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->G3()V
@@ -1305,23 +1325,7 @@
     return-void
 .end method
 
-.method static synthetic i3(Lcom/digdroid/alman/dig/q2;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->o3()V
-
-    return-void
-.end method
-
-.method static synthetic j3(Lcom/digdroid/alman/dig/q2;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->B3()V
-
-    return-void
-.end method
-
-.method static synthetic k3(Lcom/digdroid/alman/dig/q2;)V
+.method static synthetic h3(Lcom/digdroid/alman/dig/q2;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->u3()V
@@ -1329,10 +1333,34 @@
     return-void
 .end method
 
+.method static synthetic i3(Lcom/digdroid/alman/dig/q2;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->t3()V
+
+    return-void
+.end method
+
+.method static synthetic j3(Lcom/digdroid/alman/dig/q2;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->I3()V
+
+    return-void
+.end method
+
+.method static synthetic k3(Lcom/digdroid/alman/dig/q2;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->q3()V
+
+    return-void
+.end method
+
 .method static synthetic l3(Lcom/digdroid/alman/dig/q2;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->z3()V
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->D3()V
 
     return-void
 .end method
@@ -1345,15 +1373,31 @@
     return-void
 .end method
 
-.method static synthetic n3(Lcom/digdroid/alman/dig/q2;Ljava/util/ArrayList;)V
+.method static synthetic n3(Lcom/digdroid/alman/dig/q2;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/digdroid/alman/dig/q2;->D3(Ljava/util/ArrayList;)V
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->B3()V
 
     return-void
 .end method
 
-.method private o3()V
+.method static synthetic o3(Lcom/digdroid/alman/dig/q2;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->y3()V
+
+    return-void
+.end method
+
+.method static synthetic p3(Lcom/digdroid/alman/dig/q2;Ljava/util/ArrayList;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/digdroid/alman/dig/q2;->F3(Ljava/util/ArrayList;)V
+
+    return-void
+.end method
+
+.method private q3()V
     .locals 10
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->F0()Landroid/view/View;
@@ -1376,7 +1420,7 @@
 
     invoke-static {v0}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
 
-    new-instance v1, Lcom/digdroid/alman/dig/q2$u0;
+    new-instance v1, Lcom/digdroid/alman/dig/q2$v0;
 
     const v4, 0x7f09006a
 
@@ -1386,22 +1430,22 @@
 
     const v7, 0x7f09006b
 
-    const v8, 0x7f090238
+    const v8, 0x7f090239
 
-    const v9, 0x7f090229
+    const v9, 0x7f09022a
 
     move-object v2, v1
 
     move-object v3, p0
 
-    invoke-direct/range {v2 .. v9}, Lcom/digdroid/alman/dig/q2$u0;-><init>(Lcom/digdroid/alman/dig/q2;IIIIII)V
+    invoke-direct/range {v2 .. v9}, Lcom/digdroid/alman/dig/q2$v0;-><init>(Lcom/digdroid/alman/dig/q2;IIIIII)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-void
 .end method
 
-.method private p3()V
+.method private r3()V
     .locals 10
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
@@ -1428,7 +1472,7 @@
     return-void
 
     :cond_1
-    const v2, 0x7f090237
+    const v2, 0x7f090238
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1606,7 +1650,7 @@
     const/4 v7, 0x0
 
     :goto_1
-    const v2, 0x7f090238
+    const v2, 0x7f090239
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1684,7 +1728,7 @@
 
     invoke-virtual {v2, v5}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v2, 0x7f09018b
+    const v2, 0x7f09018c
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1694,7 +1738,7 @@
 
     invoke-static {v2}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
 
-    const v3, 0x7f09018c
+    const v3, 0x7f09018d
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1746,7 +1790,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f090333
+    const v0, 0x7f090334
 
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1776,7 +1820,7 @@
 
     move-result v2
 
-    const v3, 0x7f090429
+    const v3, 0x7f09042b
 
     if-nez v2, :cond_6
 
@@ -1793,7 +1837,7 @@
 
     invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
 
-    const v2, 0x7f090428
+    const v2, 0x7f09042a
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1830,7 +1874,7 @@
     return-void
 .end method
 
-.method private r3()V
+.method private t3()V
     .locals 4
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
@@ -1880,9 +1924,9 @@
 
     invoke-static {v2}, Lcom/digdroid/alman/dig/p3;->s(Landroid/widget/TextView;)V
 
-    new-instance v3, Lcom/digdroid/alman/dig/q2$e0;
+    new-instance v3, Lcom/digdroid/alman/dig/q2$f0;
 
-    invoke-direct {v3, p0}, Lcom/digdroid/alman/dig/q2$e0;-><init>(Lcom/digdroid/alman/dig/q2;)V
+    invoke-direct {v3, p0}, Lcom/digdroid/alman/dig/q2$f0;-><init>(Lcom/digdroid/alman/dig/q2;)V
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1896,13 +1940,13 @@
 
     invoke-static {v2}, Lcom/digdroid/alman/dig/p3;->s(Landroid/widget/TextView;)V
 
-    new-instance v3, Lcom/digdroid/alman/dig/q2$f0;
+    new-instance v3, Lcom/digdroid/alman/dig/q2$g0;
 
-    invoke-direct {v3, p0}, Lcom/digdroid/alman/dig/q2$f0;-><init>(Lcom/digdroid/alman/dig/q2;)V
+    invoke-direct {v3, p0}, Lcom/digdroid/alman/dig/q2$g0;-><init>(Lcom/digdroid/alman/dig/q2;)V
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v2, 0x7f090339
+    const v2, 0x7f09033a
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1912,9 +1956,9 @@
 
     invoke-static {v2}, Lcom/digdroid/alman/dig/p3;->s(Landroid/widget/TextView;)V
 
-    new-instance v3, Lcom/digdroid/alman/dig/q2$g0;
+    new-instance v3, Lcom/digdroid/alman/dig/q2$h0;
 
-    invoke-direct {v3, p0, v0}, Lcom/digdroid/alman/dig/q2$g0;-><init>(Lcom/digdroid/alman/dig/q2;Landroid/app/Activity;)V
+    invoke-direct {v3, p0, v0}, Lcom/digdroid/alman/dig/q2$h0;-><init>(Lcom/digdroid/alman/dig/q2;Landroid/app/Activity;)V
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1943,14 +1987,14 @@
     return-void
 .end method
 
-.method private s3()V
+.method private u3()V
     .locals 10
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->F0()Landroid/view/View;
 
     move-result-object v0
 
-    const v1, 0x7f0901a3
+    const v1, 0x7f0901a4
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1966,17 +2010,17 @@
 
     invoke-static {v0}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
 
-    new-instance v1, Lcom/digdroid/alman/dig/q2$u0;
+    new-instance v1, Lcom/digdroid/alman/dig/q2$v0;
 
-    const v4, 0x7f0901a3
+    const v4, 0x7f0901a4
 
-    const v5, 0x7f0901a4
+    const v5, 0x7f0901a5
 
     const v6, 0x7f1100f6
 
-    const v7, 0x7f09011f
+    const v7, 0x7f090120
 
-    const v8, 0x7f090219
+    const v8, 0x7f09021a
 
     const v9, 0x7f09006c
 
@@ -1984,14 +2028,14 @@
 
     move-object v3, p0
 
-    invoke-direct/range {v2 .. v9}, Lcom/digdroid/alman/dig/q2$u0;-><init>(Lcom/digdroid/alman/dig/q2;IIIIII)V
+    invoke-direct/range {v2 .. v9}, Lcom/digdroid/alman/dig/q2$v0;-><init>(Lcom/digdroid/alman/dig/q2;IIIIII)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-void
 .end method
 
-.method private t3()V
+.method private v3()V
     .locals 13
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
@@ -2050,9 +2094,9 @@
 
     invoke-static {v3}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
 
-    new-instance v4, Lcom/digdroid/alman/dig/q2$p0;
+    new-instance v4, Lcom/digdroid/alman/dig/q2$q0;
 
-    invoke-direct {v4, p0, v2}, Lcom/digdroid/alman/dig/q2$p0;-><init>(Lcom/digdroid/alman/dig/q2;Landroid/widget/Switch;)V
+    invoke-direct {v4, p0, v2}, Lcom/digdroid/alman/dig/q2$q0;-><init>(Lcom/digdroid/alman/dig/q2;Landroid/widget/Switch;)V
 
     invoke-virtual {v3, v4}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -2087,7 +2131,7 @@
     :cond_2
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
-    const v2, 0x7f09044b
+    const v2, 0x7f09044d
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2113,7 +2157,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/Switch;->setChecked(Z)V
 
-    const v3, 0x7f09044a
+    const v3, 0x7f09044c
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2123,13 +2167,13 @@
 
     invoke-static {v3}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
 
-    new-instance v4, Lcom/digdroid/alman/dig/q2$q0;
+    new-instance v4, Lcom/digdroid/alman/dig/q2$r0;
 
-    invoke-direct {v4, p0, v2, v0}, Lcom/digdroid/alman/dig/q2$q0;-><init>(Lcom/digdroid/alman/dig/q2;Landroid/widget/Switch;Landroid/app/Activity;)V
+    invoke-direct {v4, p0, v2, v0}, Lcom/digdroid/alman/dig/q2$r0;-><init>(Lcom/digdroid/alman/dig/q2;Landroid/widget/Switch;Landroid/app/Activity;)V
 
     invoke-virtual {v3, v4}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v2, 0x7f0901ff
+    const v2, 0x7f090200
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2268,7 +2312,7 @@
     const/4 v9, 0x0
 
     :goto_1
-    const v10, 0x7f090219
+    const v10, 0x7f09021a
 
     invoke-virtual {v1, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2280,13 +2324,13 @@
 
     invoke-virtual {v10, v9}, Landroid/widget/Spinner;->setSelection(I)V
 
-    new-instance v4, Lcom/digdroid/alman/dig/q2$r0;
+    new-instance v4, Lcom/digdroid/alman/dig/q2$s0;
 
-    invoke-direct {v4, p0}, Lcom/digdroid/alman/dig/q2$r0;-><init>(Lcom/digdroid/alman/dig/q2;)V
+    invoke-direct {v4, p0}, Lcom/digdroid/alman/dig/q2$s0;-><init>(Lcom/digdroid/alman/dig/q2;)V
 
     invoke-virtual {v10, v4}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
-    const v4, 0x7f09011d
+    const v4, 0x7f09011e
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2300,7 +2344,7 @@
 
     invoke-virtual {v4, v9}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v4, 0x7f0903c1
+    const v4, 0x7f0903c2
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2308,7 +2352,7 @@
 
     check-cast v4, Landroid/widget/TextView;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/y3;->g(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/z3;->g(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v9
 
@@ -2385,7 +2429,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ArrayAdapter;->setDropDownViewResource(I)V
 
-    const v3, 0x7f0903c2
+    const v3, 0x7f0903c3
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2409,7 +2453,7 @@
 
     invoke-virtual {v3, v2}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
-    const v2, 0x7f09032d
+    const v2, 0x7f09032e
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2452,14 +2496,14 @@
     .end packed-switch
 .end method
 
-.method private u3()V
+.method private w3()V
     .locals 10
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->F0()Landroid/view/View;
 
     move-result-object v0
 
-    const v1, 0x7f090159
+    const v1, 0x7f09015a
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2475,7 +2519,7 @@
 
     invoke-static {v0}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
 
-    new-instance v1, Lcom/digdroid/alman/dig/q2$u0;
+    new-instance v1, Lcom/digdroid/alman/dig/q2$v0;
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
 
@@ -2485,40 +2529,40 @@
 
     if-eqz v2, :cond_0
 
-    const v2, 0x7f0902f1
+    const v2, 0x7f0902f2
 
-    const v8, 0x7f0902f1
+    const v8, 0x7f0902f2
 
     goto :goto_0
 
     :cond_0
-    const v2, 0x7f0902eb
+    const v2, 0x7f0902ec
 
-    const v8, 0x7f0902eb
+    const v8, 0x7f0902ec
 
     :goto_0
-    const v9, 0x7f09021c
+    const v9, 0x7f09021d
 
-    const v4, 0x7f090159
+    const v4, 0x7f09015a
 
-    const v5, 0x7f09015a
+    const v5, 0x7f09015b
 
     const v6, 0x7f1100c5
 
-    const v7, 0x7f09015b
+    const v7, 0x7f09015c
 
     move-object v2, v1
 
     move-object v3, p0
 
-    invoke-direct/range {v2 .. v9}, Lcom/digdroid/alman/dig/q2$u0;-><init>(Lcom/digdroid/alman/dig/q2;IIIIII)V
+    invoke-direct/range {v2 .. v9}, Lcom/digdroid/alman/dig/q2$v0;-><init>(Lcom/digdroid/alman/dig/q2;IIIIII)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-void
 .end method
 
-.method private v3()V
+.method private x3()V
     .locals 14
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
@@ -2545,7 +2589,7 @@
     return-void
 
     :cond_1
-    const v2, 0x7f09017e
+    const v2, 0x7f09017f
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2567,18 +2611,18 @@
 
     move-result v3
 
-    const v4, 0x7f0902f1
+    const v4, 0x7f0902f2
 
-    const v5, 0x7f0902eb
+    const v5, 0x7f0902ec
 
     if-eqz v3, :cond_2
 
-    const v3, 0x7f0902f1
+    const v3, 0x7f0902f2
 
     goto :goto_0
 
     :cond_2
-    const v3, 0x7f0902eb
+    const v3, 0x7f0902ec
 
     :goto_0
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setNextFocusUpId(I)V
@@ -2611,7 +2655,7 @@
 
     if-eqz v2, :cond_3
 
-    const v2, 0x7f0902ea
+    const v2, 0x7f0902eb
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2622,7 +2666,7 @@
     goto :goto_1
 
     :cond_3
-    const v2, 0x7f0902e9
+    const v2, 0x7f0902ea
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2727,7 +2771,7 @@
 
     if-nez v2, :cond_4
 
-    const v2, 0x7f0902f0
+    const v2, 0x7f0902f1
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2738,7 +2782,7 @@
     goto :goto_2
 
     :cond_4
-    const v2, 0x7f0902ef
+    const v2, 0x7f0902f0
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2817,7 +2861,7 @@
 
     move-result v2
 
-    const v3, 0x7f0902cc
+    const v3, 0x7f0902cd
 
     if-eqz v2, :cond_5
 
@@ -2838,7 +2882,7 @@
 
     invoke-static {v2}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
 
-    const v3, 0x7f0901fb
+    const v3, 0x7f0901fc
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2869,7 +2913,7 @@
     invoke-virtual {v2, v4}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :goto_3
-    const v0, 0x7f090379
+    const v0, 0x7f09037a
 
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2877,26 +2921,78 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
+    iget-object v2, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
 
-    iget v1, v1, Lcom/digdroid/alman/dig/s3;->e:I
+    iget v2, v2, Lcom/digdroid/alman/dig/s3;->e:I
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
     invoke-static {v0}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
 
-    new-instance v1, Lcom/digdroid/alman/dig/q2$a0;
+    new-instance v2, Lcom/digdroid/alman/dig/q2$a0;
 
-    invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/q2$a0;-><init>(Lcom/digdroid/alman/dig/q2;)V
+    invoke-direct {v2, p0}, Lcom/digdroid/alman/dig/q2$a0;-><init>(Lcom/digdroid/alman/dig/q2;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    const v0, 0x7f0903e6
+
+    invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iget-object v2, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
+
+    iget v2, v2, Lcom/digdroid/alman/dig/s3;->e:I
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
+
+    const v0, 0x7f0900d7
+
+    invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/EditText;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, ""
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
+
+    const-string v3, "game_cache_size"
+
+    invoke-virtual {v2, v3, v11}, Lcom/digdroid/alman/dig/b3;->l(Ljava/lang/String;I)I
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
+
+    new-instance v1, Lcom/digdroid/alman/dig/q2$b0;
+
+    invoke-direct {v1, p0, v0}, Lcom/digdroid/alman/dig/q2$b0;-><init>(Lcom/digdroid/alman/dig/q2;Landroid/widget/EditText;)V
+
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     :cond_6
     :goto_4
     return-void
 .end method
 
-.method private w3()V
+.method private y3()V
     .locals 2
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
@@ -2944,727 +3040,9 @@
     return-void
 .end method
 
-.method private z3()V
-    .locals 8
-
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->F0()Landroid/view/View;
-
-    move-result-object v0
-
-    const v1, 0x7f09021c
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/TextView;
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
-
-    iget v1, v1, Lcom/digdroid/alman/dig/s3;->f:I
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
-
-    invoke-static {v0}, Lcom/digdroid/alman/dig/p3;->q(Landroid/view/View;)V
-
-    new-instance v1, Lcom/digdroid/alman/dig/q2$u0;
-
-    const v4, 0x7f09021c
-
-    const v5, 0x7f090220
-
-    const v6, 0x7f110129
-
-    const v7, 0x7f090225
-
-    move-object v2, v1
-
-    move-object v3, p0
-
-    invoke-direct/range {v2 .. v7}, Lcom/digdroid/alman/dig/q2$u0;-><init>(Lcom/digdroid/alman/dig/q2;IIII)V
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    return-void
-.end method
-
 
 # virtual methods
-.method public bridge synthetic B2()Z
-    .locals 1
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->B2()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public bridge synthetic C2()Z
-    .locals 1
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->C2()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public bridge synthetic E2(Z)V
-    .locals 0
-
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->E2(Z)V
-
-    return-void
-.end method
-
-.method public bridge synthetic F2()V
-    .locals 0
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->F2()V
-
-    return-void
-.end method
-
-.method public bridge synthetic G2(Z)V
-    .locals 0
-
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->G2(Z)V
-
-    return-void
-.end method
-
-.method public bridge synthetic I2(Ljava/lang/String;)V
-    .locals 0
-
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->I2(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public bridge synthetic J2(Ljava/lang/String;)V
-    .locals 0
-
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->J2(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public bridge synthetic M2()Z
-    .locals 1
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->M2()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method N2()V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->w3()V
-
-    return-void
-.end method
-
-.method public bridge synthetic O2()V
-    .locals 0
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->O2()V
-
-    return-void
-.end method
-
-.method public bridge synthetic P2()V
-    .locals 0
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->P2()V
-
-    return-void
-.end method
-
-.method public Q2()V
-    .locals 2
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->m0:Lcom/digdroid/alman/dig/p1$a;
-
-    if-eqz v0, :cond_0
-
-    const/4 v1, 0x0
-
-    invoke-interface {v0, v1}, Lcom/digdroid/alman/dig/p1$a;->w(Z)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public bridge synthetic R2()V
-    .locals 0
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->R2()V
-
-    return-void
-.end method
-
-.method public bridge synthetic S2(Lcom/digdroid/alman/dig/h0;)V
-    .locals 0
-
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->S2(Lcom/digdroid/alman/dig/h0;)V
-
-    return-void
-.end method
-
-.method public bridge synthetic T0(Landroid/content/Context;)V
-    .locals 0
-
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->T0(Landroid/content/Context;)V
-
-    return-void
-.end method
-
-.method public bridge synthetic T2()V
-    .locals 0
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->T2()V
-
-    return-void
-.end method
-
-.method public bridge synthetic U2()V
-    .locals 0
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->U2()V
-
-    return-void
-.end method
-
-.method public bridge synthetic V2(Ljava/lang/String;)V
-    .locals 0
-
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->V2(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public bridge synthetic W0(Landroid/os/Bundle;)V
-    .locals 0
-
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->W0(Landroid/os/Bundle;)V
-
-    return-void
-.end method
-
-.method public bridge synthetic W2(Ljava/lang/String;)V
-    .locals 0
-
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->W2(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public bridge synthetic Y2(Z)V
-    .locals 0
-
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->Y2(Z)V
-
-    return-void
-.end method
-
-.method public bridge synthetic Z0(Landroid/view/Menu;Landroid/view/MenuInflater;)V
-    .locals 0
-
-    invoke-super {p0, p1, p2}, Lcom/digdroid/alman/dig/p1;->Z0(Landroid/view/Menu;Landroid/view/MenuInflater;)V
-
-    return-void
-.end method
-
-.method public a1(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 1
-
-    const p3, 0x7f0c0059
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object p1
-
-    const p2, 0x7f0903cd
-
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p2
-
-    check-cast p2, Landroid/view/ViewStub;
-
-    invoke-virtual {p2}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
-
-    const p2, 0x7f0903c5
-
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p2
-
-    check-cast p2, Landroid/view/ViewStub;
-
-    invoke-virtual {p2}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
-
-    const p2, 0x7f0903ce
-
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p2
-
-    check-cast p2, Landroid/view/ViewStub;
-
-    invoke-virtual {p2}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
-
-    const p2, 0x7f0903c4
-
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p2
-
-    check-cast p2, Landroid/view/ViewStub;
-
-    invoke-virtual {p2}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
-
-    const p2, 0x7f0903c9
-
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p2
-
-    check-cast p2, Landroid/view/ViewStub;
-
-    invoke-virtual {p2}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
-
-    const p2, 0x7f0903c6
-
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p2
-
-    check-cast p2, Landroid/view/ViewStub;
-
-    invoke-virtual {p2}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
-
-    const p2, 0x7f0903c8
-
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p2
-
-    check-cast p2, Landroid/view/ViewStub;
-
-    invoke-virtual {p2}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
-
-    return-object p1
-.end method
-
-.method public bridge synthetic a3()V
-    .locals 0
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->a3()V
-
-    return-void
-.end method
-
-.method public bridge synthetic b3()Z
-    .locals 1
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->b3()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public bridge synthetic c3()V
-    .locals 0
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->c3()V
-
-    return-void
-.end method
-
-.method public bridge synthetic k1(Landroid/view/MenuItem;)Z
-    .locals 0
-
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->k1(Landroid/view/MenuItem;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public m1()V
-    .locals 3
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->m1()V
-
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->F0()Landroid/view/View;
-
-    move-result-object v0
-
-    const v1, 0x7f09008c
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    const v1, 0x7f0903bc
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    const v1, 0x7f09008b
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    const v1, 0x7f0900e0
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/Spinner;
-
-    invoke-virtual {v1, v2}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
-
-    const v1, 0x7f090219
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/Spinner;
-
-    invoke-virtual {v1, v2}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
-
-    const v1, 0x7f090320
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    const v1, 0x7f090191
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    return-void
-.end method
-
-.method public bridge synthetic q2()V
-    .locals 0
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->q2()V
-
-    return-void
-.end method
-
-.method q3()Z
-    .locals 5
-
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_3
-
-    invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    goto :goto_1
-
-    :cond_0
-    invoke-static {v0}, Lcom/digdroid/alman/dig/y3;->p(Landroid/content/Context;)V
-
-    iget-object v2, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
-
-    invoke-virtual {v2}, Lcom/digdroid/alman/dig/b3;->o()Z
-
-    move-result v2
-
-    if-nez v2, :cond_2
-
-    iget-object v2, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
-
-    invoke-virtual {v2}, Lcom/digdroid/alman/dig/b3;->i()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_2
-    :goto_0
-    new-instance v2, Landroidx/appcompat/app/b$a;
-
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
-
-    move-result v3
-
-    invoke-direct {v2, v0, v3}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
-
-    const v3, 0x7f11028f
-
-    invoke-virtual {v2, v3}, Landroidx/appcompat/app/b$a;->h(I)Landroidx/appcompat/app/b$a;
-
-    move-result-object v2
-
-    const v3, 0x7f1101d8
-
-    const/4 v4, 0x0
-
-    invoke-virtual {v2, v3, v4}, Landroidx/appcompat/app/b$a;->o(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroidx/appcompat/app/b$a;->a()Landroidx/appcompat/app/b;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/app/Dialog;->show()V
-
-    invoke-static {v0}, Lcom/digdroid/alman/dig/y3;->E(Landroid/content/Context;)V
-
-    :cond_3
-    :goto_1
-    return v1
-.end method
-
-.method public r1()V
-    .locals 4
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->r1()V
-
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->F0()Landroid/view/View;
-
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    :cond_0
-    move-object v1, v0
-
-    check-cast v1, Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    invoke-static {v1}, Lb/p/o;->a(Landroid/view/ViewGroup;)V
-
-    const v1, 0x7f090359
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    invoke-virtual {p0, v1}, Lcom/digdroid/alman/dig/p1;->K2(Landroid/view/View;)V
-
-    new-instance v1, Lcom/digdroid/alman/dig/q2$k;
-
-    invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/q2$k;-><init>(Lcom/digdroid/alman/dig/q2;)V
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
-
-    new-instance v0, Landroid/os/Handler;
-
-    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
-
-    new-instance v1, Lcom/digdroid/alman/dig/q2$w;
-
-    invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/q2$w;-><init>(Lcom/digdroid/alman/dig/q2;)V
-
-    const-wide/16 v2, 0xa
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/digdroid/alman/dig/p1;->i0:Z
-
-    return-void
-.end method
-
-.method public bridge synthetic s2()Ljava/lang/String;
-    .locals 1
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->s2()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public bridge synthetic t1()V
-    .locals 0
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->t1()V
-
-    return-void
-.end method
-
-.method public t2()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "options"
-
-    return-object v0
-.end method
-
-.method public bridge synthetic u2()J
-    .locals 2
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->u2()J
-
-    move-result-wide v0
-
-    return-wide v0
-.end method
-
-.method public bridge synthetic v2()Lcom/digdroid/alman/dig/s3;
-    .locals 1
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->v2()Lcom/digdroid/alman/dig/s3;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public bridge synthetic x2()Z
-    .locals 1
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->x2()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method x3(Landroid/app/Activity;)V
-    .locals 7
-
-    iget-object p1, p0, Lcom/digdroid/alman/dig/p1;->a0:Lcom/digdroid/alman/dig/u;
-
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/u;->c()Landroid/database/sqlite/SQLiteDatabase;
-
-    move-result-object p1
-
-    const-string v0, "UPDATE rompaths SET selected=0 WHERE system=\'ignore\'"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "SELECT _id,path,selected FROM rompaths WHERE system=\'ignore\' ORDER BY path"
-
-    const/4 v1, 0x0
-
-    invoke-virtual {p1, v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
-
-    move-result-object v0
-
-    new-instance v2, Ljava/util/ArrayList;
-
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
-
-    new-instance v3, Landroidx/appcompat/app/b$a;
-
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
-
-    move-result-object v4
-
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
-
-    move-result v5
-
-    invoke-direct {v3, v4, v5}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
-
-    const v4, 0x7f110123
-
-    invoke-virtual {v3, v4}, Landroidx/appcompat/app/b$a;->r(I)Landroidx/appcompat/app/b$a;
-
-    new-instance v4, Lcom/digdroid/alman/dig/q2$k0;
-
-    invoke-direct {v4, p0, v2, v0, p1}, Lcom/digdroid/alman/dig/q2$k0;-><init>(Lcom/digdroid/alman/dig/q2;Ljava/util/ArrayList;Landroid/database/Cursor;Landroid/database/sqlite/SQLiteDatabase;)V
-
-    const-string v5, "selected"
-
-    const-string v6, "path"
-
-    invoke-virtual {v3, v0, v5, v6, v4}, Landroidx/appcompat/app/b$a;->j(Landroid/database/Cursor;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnMultiChoiceClickListener;)Landroidx/appcompat/app/b$a;
-
-    const v4, 0x7f1100bb
-
-    invoke-virtual {v3, v4, v1}, Landroidx/appcompat/app/b$a;->o(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
-
-    const v4, 0x7f11001c
-
-    invoke-virtual {v3, v4, v1}, Landroidx/appcompat/app/b$a;->l(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
-
-    const v4, 0x7f1100c9
-
-    invoke-virtual {v3, v4, v1}, Landroidx/appcompat/app/b$a;->m(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
-
-    invoke-virtual {v3}, Landroidx/appcompat/app/b$a;->a()Landroidx/appcompat/app/b;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lcom/digdroid/alman/dig/q2;->r0:Landroidx/appcompat/app/b;
-
-    new-instance v3, Lcom/digdroid/alman/dig/q2$l0;
-
-    invoke-direct {v3, p0, v2, v0, p1}, Lcom/digdroid/alman/dig/q2$l0;-><init>(Lcom/digdroid/alman/dig/q2;Ljava/util/ArrayList;Landroid/database/Cursor;Landroid/database/sqlite/SQLiteDatabase;)V
-
-    invoke-virtual {v1, v3}, Landroid/app/Dialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
-
-    iget-object p1, p0, Lcom/digdroid/alman/dig/q2;->r0:Landroidx/appcompat/app/b;
-
-    invoke-virtual {p1}, Landroid/app/Dialog;->show()V
-
-    return-void
-.end method
-
-.method public bridge synthetic y2(II)Z
-    .locals 0
-
-    invoke-super {p0, p1, p2}, Lcom/digdroid/alman/dig/p1;->y2(II)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method y3()V
+.method A3()V
     .locals 7
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
@@ -3729,25 +3107,25 @@
 
     invoke-virtual {v2, v4}, Landroidx/appcompat/app/b$a;->r(I)Landroidx/appcompat/app/b$a;
 
-    new-instance v4, Lcom/digdroid/alman/dig/q2$h0;
+    new-instance v4, Lcom/digdroid/alman/dig/q2$i0;
 
-    invoke-direct {v4, p0, v3}, Lcom/digdroid/alman/dig/q2$h0;-><init>(Lcom/digdroid/alman/dig/q2;[Z)V
+    invoke-direct {v4, p0, v3}, Lcom/digdroid/alman/dig/q2$i0;-><init>(Lcom/digdroid/alman/dig/q2;[Z)V
 
     invoke-virtual {v2, v1, v3, v4}, Landroidx/appcompat/app/b$a;->k([Ljava/lang/CharSequence;[ZLandroid/content/DialogInterface$OnMultiChoiceClickListener;)Landroidx/appcompat/app/b$a;
 
     const v4, 0x7f11001c
 
-    new-instance v5, Lcom/digdroid/alman/dig/q2$i0;
+    new-instance v5, Lcom/digdroid/alman/dig/q2$j0;
 
-    invoke-direct {v5, p0, v0}, Lcom/digdroid/alman/dig/q2$i0;-><init>(Lcom/digdroid/alman/dig/q2;I)V
+    invoke-direct {v5, p0, v0}, Lcom/digdroid/alman/dig/q2$j0;-><init>(Lcom/digdroid/alman/dig/q2;I)V
 
     invoke-virtual {v2, v4, v5}, Landroidx/appcompat/app/b$a;->l(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
 
     const v4, 0x7f1100bb
 
-    new-instance v5, Lcom/digdroid/alman/dig/q2$j0;
+    new-instance v5, Lcom/digdroid/alman/dig/q2$k0;
 
-    invoke-direct {v5, p0, v0, v3, v1}, Lcom/digdroid/alman/dig/q2$j0;-><init>(Lcom/digdroid/alman/dig/q2;I[Z[Ljava/lang/String;)V
+    invoke-direct {v5, p0, v0, v3, v1}, Lcom/digdroid/alman/dig/q2$k0;-><init>(Lcom/digdroid/alman/dig/q2;I[Z[Ljava/lang/String;)V
 
     invoke-virtual {v2, v4, v5}, Landroidx/appcompat/app/b$a;->o(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
 
@@ -3766,8 +3144,690 @@
     return-void
 .end method
 
+.method public bridge synthetic B2()Z
+    .locals 1
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->B2()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public bridge synthetic C2()Z
+    .locals 1
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->C2()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public bridge synthetic E2(Z)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->E2(Z)V
+
+    return-void
+.end method
+
+.method public bridge synthetic F2()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->F2()V
+
+    return-void
+.end method
+
+.method public bridge synthetic G2(Z)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->G2(Z)V
+
+    return-void
+.end method
+
+.method public bridge synthetic I2(Ljava/lang/String;)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->I2(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic J2(Ljava/lang/String;)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->J2(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic K2()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->K2()V
+
+    return-void
+.end method
+
+.method public bridge synthetic N2()Z
+    .locals 1
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->N2()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method O2()V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/q2;->y3()V
+
+    return-void
+.end method
+
+.method public bridge synthetic P2()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->P2()V
+
+    return-void
+.end method
+
+.method public bridge synthetic Q2()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->Q2()V
+
+    return-void
+.end method
+
+.method public R2()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->m0:Lcom/digdroid/alman/dig/p1$a;
+
+    if-eqz v0, :cond_0
+
+    const/4 v1, 0x0
+
+    invoke-interface {v0, v1}, Lcom/digdroid/alman/dig/p1$a;->w(Z)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public bridge synthetic S2()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->S2()V
+
+    return-void
+.end method
+
+.method public bridge synthetic T0(Landroid/content/Context;)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->T0(Landroid/content/Context;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic T2(Lcom/digdroid/alman/dig/h0;)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->T2(Lcom/digdroid/alman/dig/h0;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic U2()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->U2()V
+
+    return-void
+.end method
+
+.method public bridge synthetic W0(Landroid/os/Bundle;)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->W0(Landroid/os/Bundle;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic W2()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->W2()V
+
+    return-void
+.end method
+
+.method public bridge synthetic X2(Ljava/lang/String;)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->X2(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic Y2(Ljava/lang/String;)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->Y2(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic Z0(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    .locals 0
+
+    invoke-super {p0, p1, p2}, Lcom/digdroid/alman/dig/p1;->Z0(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+
+    return-void
+.end method
+
+.method public a1(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 1
+
+    const p3, 0x7f0c0059
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p1
+
+    const p2, 0x7f0903ce
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/view/ViewStub;
+
+    invoke-virtual {p2}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
+
+    const p2, 0x7f0903c6
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/view/ViewStub;
+
+    invoke-virtual {p2}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
+
+    const p2, 0x7f0903cf
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/view/ViewStub;
+
+    invoke-virtual {p2}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
+
+    const p2, 0x7f0903c5
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/view/ViewStub;
+
+    invoke-virtual {p2}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
+
+    const p2, 0x7f0903ca
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/view/ViewStub;
+
+    invoke-virtual {p2}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
+
+    const p2, 0x7f0903c7
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/view/ViewStub;
+
+    invoke-virtual {p2}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
+
+    const p2, 0x7f0903c9
+
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/view/ViewStub;
+
+    invoke-virtual {p2}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
+
+    return-object p1
+.end method
+
+.method public bridge synthetic a3(Z)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->a3(Z)V
+
+    return-void
+.end method
+
+.method public bridge synthetic c3()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->c3()V
+
+    return-void
+.end method
+
+.method public bridge synthetic d3()Z
+    .locals 1
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->d3()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public bridge synthetic e3()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->e3()V
+
+    return-void
+.end method
+
+.method public bridge synthetic k1(Landroid/view/MenuItem;)Z
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->k1(Landroid/view/MenuItem;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public m1()V
+    .locals 3
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->m1()V
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->F0()Landroid/view/View;
+
+    move-result-object v0
+
+    const v1, 0x7f09008c
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    const v1, 0x7f0903bd
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    const v1, 0x7f09008b
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    const v1, 0x7f0900e1
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/widget/Spinner;
+
+    invoke-virtual {v1, v2}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
+
+    const v1, 0x7f09021a
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/widget/Spinner;
+
+    invoke-virtual {v1, v2}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
+
+    const v1, 0x7f090321
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    const v1, 0x7f090192
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic q2()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->q2()V
+
+    return-void
+.end method
+
+.method public r1()V
+    .locals 4
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->r1()V
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->F0()Landroid/view/View;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    move-object v1, v0
+
+    check-cast v1, Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    invoke-static {v1}, Lb/p/o;->a(Landroid/view/ViewGroup;)V
+
+    const v1, 0x7f09035a
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    invoke-virtual {p0, v1}, Lcom/digdroid/alman/dig/p1;->L2(Landroid/view/View;)V
+
+    new-instance v1, Lcom/digdroid/alman/dig/q2$k;
+
+    invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/q2$k;-><init>(Lcom/digdroid/alman/dig/q2;)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
+    new-instance v0, Landroid/os/Handler;
+
+    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
+
+    new-instance v1, Lcom/digdroid/alman/dig/q2$w;
+
+    invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/q2$w;-><init>(Lcom/digdroid/alman/dig/q2;)V
+
+    const-wide/16 v2, 0xa
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/digdroid/alman/dig/p1;->i0:Z
+
+    return-void
+.end method
+
+.method public bridge synthetic s2()Ljava/lang/String;
+    .locals 1
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->s2()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method s3()Z
+    .locals 5
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    invoke-static {v0}, Lcom/digdroid/alman/dig/z3;->p(Landroid/content/Context;)V
+
+    iget-object v2, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
+
+    invoke-virtual {v2}, Lcom/digdroid/alman/dig/b3;->o()Z
+
+    move-result v2
+
+    if-nez v2, :cond_2
+
+    iget-object v2, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
+
+    invoke-virtual {v2}, Lcom/digdroid/alman/dig/b3;->i()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_2
+    :goto_0
+    new-instance v2, Landroidx/appcompat/app/b$a;
+
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+
+    move-result v3
+
+    invoke-direct {v2, v0, v3}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
+
+    const v3, 0x7f110290
+
+    invoke-virtual {v2, v3}, Landroidx/appcompat/app/b$a;->h(I)Landroidx/appcompat/app/b$a;
+
+    move-result-object v2
+
+    const v3, 0x7f1101d8
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v2, v3, v4}, Landroidx/appcompat/app/b$a;->o(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroidx/appcompat/app/b$a;->a()Landroidx/appcompat/app/b;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/app/Dialog;->show()V
+
+    invoke-static {v0}, Lcom/digdroid/alman/dig/z3;->F(Landroid/content/Context;)V
+
+    :cond_3
+    :goto_1
+    return v1
+.end method
+
+.method public bridge synthetic t1()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->t1()V
+
+    return-void
+.end method
+
+.method public t2()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "options"
+
+    return-object v0
+.end method
+
+.method public bridge synthetic u2()J
+    .locals 2
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->u2()J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public bridge synthetic v2()Lcom/digdroid/alman/dig/s3;
+    .locals 1
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->v2()Lcom/digdroid/alman/dig/s3;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic x2()Z
+    .locals 1
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->x2()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public bridge synthetic y2(II)Z
+    .locals 0
+
+    invoke-super {p0, p1, p2}, Lcom/digdroid/alman/dig/p1;->y2(II)Z
+
+    move-result p1
+
+    return p1
+.end method
+
 .method z2(Landroid/content/Intent;)V
     .locals 0
+
+    return-void
+.end method
+
+.method z3(Landroid/app/Activity;)V
+    .locals 7
+
+    iget-object p1, p0, Lcom/digdroid/alman/dig/p1;->a0:Lcom/digdroid/alman/dig/u;
+
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/u;->c()Landroid/database/sqlite/SQLiteDatabase;
+
+    move-result-object p1
+
+    const-string v0, "UPDATE rompaths SET selected=0 WHERE system=\'ignore\'"
+
+    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+
+    const-string v0, "SELECT _id,path,selected FROM rompaths WHERE system=\'ignore\' ORDER BY path"
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object v0
+
+    new-instance v2, Ljava/util/ArrayList;
+
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+
+    new-instance v3, Landroidx/appcompat/app/b$a;
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
+
+    move-result-object v4
+
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+
+    move-result v5
+
+    invoke-direct {v3, v4, v5}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
+
+    const v4, 0x7f110123
+
+    invoke-virtual {v3, v4}, Landroidx/appcompat/app/b$a;->r(I)Landroidx/appcompat/app/b$a;
+
+    new-instance v4, Lcom/digdroid/alman/dig/q2$l0;
+
+    invoke-direct {v4, p0, v2, v0, p1}, Lcom/digdroid/alman/dig/q2$l0;-><init>(Lcom/digdroid/alman/dig/q2;Ljava/util/ArrayList;Landroid/database/Cursor;Landroid/database/sqlite/SQLiteDatabase;)V
+
+    const-string v5, "selected"
+
+    const-string v6, "path"
+
+    invoke-virtual {v3, v0, v5, v6, v4}, Landroidx/appcompat/app/b$a;->j(Landroid/database/Cursor;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnMultiChoiceClickListener;)Landroidx/appcompat/app/b$a;
+
+    const v4, 0x7f1100bb
+
+    invoke-virtual {v3, v4, v1}, Landroidx/appcompat/app/b$a;->o(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
+
+    const v4, 0x7f11001c
+
+    invoke-virtual {v3, v4, v1}, Landroidx/appcompat/app/b$a;->l(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
+
+    const v4, 0x7f1100c9
+
+    invoke-virtual {v3, v4, v1}, Landroidx/appcompat/app/b$a;->m(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
+
+    invoke-virtual {v3}, Landroidx/appcompat/app/b$a;->a()Landroidx/appcompat/app/b;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/digdroid/alman/dig/q2;->r0:Landroidx/appcompat/app/b;
+
+    new-instance v3, Lcom/digdroid/alman/dig/q2$m0;
+
+    invoke-direct {v3, p0, v2, v0, p1}, Lcom/digdroid/alman/dig/q2$m0;-><init>(Lcom/digdroid/alman/dig/q2;Ljava/util/ArrayList;Landroid/database/Cursor;Landroid/database/sqlite/SQLiteDatabase;)V
+
+    invoke-virtual {v1, v3}, Landroid/app/Dialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
+
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2;->r0:Landroidx/appcompat/app/b;
+
+    invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
     return-void
 .end method

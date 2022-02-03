@@ -448,6 +448,7 @@ Selecione com ou sem identificação de texto:"</string>
     <string name="system_forum">Fórum do sistema</string>
     <string name="system_types">Tipos de sistema e gerações</string>
     <string name="systems">Sistemas</string>
+    <string name="temp_cache">Tamanho do cache de jogos extraído (MB)</string>
     <string name="text1">Texto principal</string>
     <string name="text2">Texto 2</string>
     <string name="text3">Texto 3</string>

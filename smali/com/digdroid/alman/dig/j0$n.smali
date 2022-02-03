@@ -64,12 +64,12 @@
 
     if-nez v2, :cond_1
 
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/j0;->r3()V
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/j0;->t3()V
 
     goto :goto_0
 
     :cond_1
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/j0;->t3()V
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/j0;->v3()V
 
     :goto_0
     invoke-virtual {v0}, Landroid/app/Activity;->invalidateOptionsMenu()V

@@ -157,7 +157,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    const/16 v3, 0x1c8
+    const/16 v3, 0x1c9
 
     if-ge v0, v3, :cond_2
 

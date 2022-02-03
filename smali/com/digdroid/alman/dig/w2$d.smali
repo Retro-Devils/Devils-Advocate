@@ -55,7 +55,7 @@
 
     iget-boolean v6, v1, Lcom/digdroid/alman/dig/t;->E:Z
 
-    invoke-virtual/range {v0 .. v6}, Lcom/digdroid/alman/dig/b0;->v(Landroid/app/Activity;JJZ)V
+    invoke-virtual/range {v0 .. v6}, Lcom/digdroid/alman/dig/b0;->w(Landroid/app/Activity;JJZ)V
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/w2$d;->c:Lcom/digdroid/alman/dig/w2;
 

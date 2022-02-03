@@ -78,7 +78,7 @@
 
     if-eqz v2, :cond_1
 
-    const v3, 0x7f0901bf
+    const v3, 0x7f0901c0
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -99,7 +99,7 @@
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setTextColor(I)V
 
     :cond_0
-    const v3, 0x7f0901bd
+    const v3, 0x7f0901be
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

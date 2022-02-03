@@ -45,16 +45,16 @@
 .method public abstract J()V
 .end method
 
-.method public abstract L(I)V
+.method public abstract K(I)V
 .end method
 
-.method public abstract M()V
+.method public abstract L()V
 .end method
 
-.method public abstract N(JLjava/lang/String;)V
+.method public abstract M(JLjava/lang/String;)V
 .end method
 
-.method public abstract Q()Z
+.method public abstract P()Z
 .end method
 
 .method public abstract R()V

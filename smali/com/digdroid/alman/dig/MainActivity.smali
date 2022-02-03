@@ -92,7 +92,7 @@
 
     move-result v0
 
-    const/16 v3, 0x1c8
+    const/16 v3, 0x1c9
 
     const-string v4, "do_repair"
 
@@ -305,7 +305,7 @@
 
     invoke-direct {v0, p0, v1}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
 
-    const v1, 0x7f110291
+    const v1, 0x7f110292
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -475,7 +475,7 @@
 
     invoke-super {p0, p1}, Lcom/digdroid/alman/dig/q3;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-static {p0}, Lcom/digdroid/alman/dig/y3;->u(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/digdroid/alman/dig/z3;->u(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -508,9 +508,9 @@
     return-void
 
     :cond_0
-    invoke-static {p0}, Lcom/digdroid/alman/dig/y3;->E(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/digdroid/alman/dig/z3;->F(Landroid/content/Context;)V
 
-    invoke-static {p0}, Lcom/digdroid/alman/dig/y3;->D(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/digdroid/alman/dig/z3;->E(Landroid/content/Context;)V
 
     :cond_1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -618,7 +618,7 @@
 
     check-cast v0, Landroid/app/SearchManager;
 
-    const v1, 0x7f090285
+    const v1, 0x7f090286
 
     invoke-interface {p1, v1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -672,15 +672,15 @@
 
     move-result v0
 
-    const v2, 0x7f090283
+    const v2, 0x7f090284
 
-    const v3, 0x7f090282
+    const v3, 0x7f090283
 
-    const v4, 0x7f090280
+    const v4, 0x7f090281
 
     const v5, 0x7f090067
 
-    const v6, 0x7f090377
+    const v6, 0x7f090378
 
     const/4 v7, 0x1
 
@@ -1056,7 +1056,7 @@
 
     iput-boolean p1, p0, Lcom/digdroid/alman/dig/e0;->V:Z
 
-    const p1, 0x7f090170
+    const p1, 0x7f090171
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -1074,10 +1074,10 @@
     .sparse-switch
         0x102002c -> :sswitch_5
         0x7f090067 -> :sswitch_4
-        0x7f090280 -> :sswitch_3
-        0x7f090282 -> :sswitch_2
-        0x7f090283 -> :sswitch_1
-        0x7f090377 -> :sswitch_0
+        0x7f090281 -> :sswitch_3
+        0x7f090283 -> :sswitch_2
+        0x7f090284 -> :sswitch_1
+        0x7f090378 -> :sswitch_0
     .end sparse-switch
 .end method
 
@@ -1118,7 +1118,7 @@
 
     if-lez v5, :cond_0
 
-    invoke-static {p0, v4}, Lcom/digdroid/alman/dig/y3;->C(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p0, v4}, Lcom/digdroid/alman/dig/z3;->D(Landroid/content/Context;Ljava/lang/String;)V
 
     :cond_0
     iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
@@ -1131,7 +1131,7 @@
 
     move-result-object v0
 
-    invoke-static {p0, v4}, Lcom/digdroid/alman/dig/y3;->l(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {p0, v4}, Lcom/digdroid/alman/dig/z3;->l(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 

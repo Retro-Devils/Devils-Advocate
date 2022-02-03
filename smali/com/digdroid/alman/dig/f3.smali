@@ -63,15 +63,15 @@
     return-void
 .end method
 
-.method static synthetic I3(Lcom/digdroid/alman/dig/f3;Ljava/lang/String;I)V
+.method static synthetic K3(Lcom/digdroid/alman/dig/f3;Ljava/lang/String;I)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lcom/digdroid/alman/dig/f3;->J3(Ljava/lang/String;I)V
+    invoke-direct {p0, p1, p2}, Lcom/digdroid/alman/dig/f3;->L3(Ljava/lang/String;I)V
 
     return-void
 .end method
 
-.method private J3(Ljava/lang/String;I)V
+.method private L3(Ljava/lang/String;I)V
     .locals 12
 
     const/16 v0, 0x14
@@ -252,7 +252,7 @@
 
     invoke-virtual {v0, v4}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/t0;->N2()V
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/t0;->O2()V
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -294,7 +294,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v4, v8}, Lcom/digdroid/alman/dig/g3;->D(Ljava/lang/String;)V
+    invoke-virtual {v4, v8}, Lcom/digdroid/alman/dig/g3;->D(Ljava/lang/String;)Z
 
     iget-object v4, p0, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/g3;
 
@@ -302,7 +302,7 @@
 
     iget-object v8, v8, Lcom/digdroid/alman/dig/h0;->h:Ljava/lang/String;
 
-    invoke-virtual {v4, v8}, Lcom/digdroid/alman/dig/g3;->D(Ljava/lang/String;)V
+    invoke-virtual {v4, v8}, Lcom/digdroid/alman/dig/g3;->D(Ljava/lang/String;)Z
 
     goto/16 :goto_0
 
@@ -345,7 +345,7 @@
 
     move-result-object v9
 
-    invoke-virtual {v8, v9}, Lcom/digdroid/alman/dig/g3;->D(Ljava/lang/String;)V
+    invoke-virtual {v8, v9}, Lcom/digdroid/alman/dig/g3;->D(Ljava/lang/String;)Z
 
     :goto_1
     invoke-interface {v2}, Landroid/database/Cursor;->moveToNext()Z
@@ -478,7 +478,7 @@
 
     add-int/lit8 v2, p2, 0x1
 
-    invoke-direct {p0, v1, v2}, Lcom/digdroid/alman/dig/f3;->J3(Ljava/lang/String;I)V
+    invoke-direct {p0, v1, v2}, Lcom/digdroid/alman/dig/f3;->L3(Ljava/lang/String;I)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -492,7 +492,7 @@
     return-void
 .end method
 
-.method private L3()V
+.method private N3()V
     .locals 10
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
@@ -789,7 +789,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0902e4
+    const v4, 0x7f0902e5
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -799,7 +799,7 @@
 
     invoke-static {v4}, Lcom/digdroid/alman/dig/p3;->s(Landroid/widget/TextView;)V
 
-    const v4, 0x7f0902e5
+    const v4, 0x7f0902e6
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -829,7 +829,7 @@
 
     invoke-virtual {v4, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v6, 0x7f0902e3
+    const v6, 0x7f0902e4
 
     invoke-virtual {v3, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -857,7 +857,7 @@
 
     invoke-virtual {v6, v7}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
-    const v4, 0x7f0902ee
+    const v4, 0x7f0902ef
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -922,12 +922,32 @@
 
 
 # virtual methods
-.method B3()Landroid/database/Cursor;
+.method B3(Landroid/content/Intent;)Z
+    .locals 1
+
+    const-string v0, "system"
+
+    invoke-virtual {p1, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/t0;->s0:Lcom/digdroid/alman/dig/h0;
+
+    iget-object v0, v0, Lcom/digdroid/alman/dig/h0;->h:Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method D3()Landroid/database/Cursor;
     .locals 3
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->c0:Lcom/digdroid/alman/dig/o0;
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/t0;->C3()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/t0;->E3()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1019,7 +1039,7 @@
 
     invoke-virtual {p0, v3}, Lcom/digdroid/alman/dig/r1;->G2(Z)V
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/t0;->N2()V
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/t0;->O2()V
 
     monitor-exit v0
 
@@ -1047,17 +1067,17 @@
     goto/16 :goto_4
 
     :sswitch_0
-    invoke-virtual {p0, v4}, Lcom/digdroid/alman/dig/f3;->N3(I)V
+    invoke-virtual {p0, v4}, Lcom/digdroid/alman/dig/f3;->P3(I)V
 
     return v4
 
     :sswitch_1
-    invoke-virtual {p0, v1}, Lcom/digdroid/alman/dig/f3;->N3(I)V
+    invoke-virtual {p0, v1}, Lcom/digdroid/alman/dig/f3;->P3(I)V
 
     return v4
 
     :sswitch_2
-    invoke-virtual {p0, v3}, Lcom/digdroid/alman/dig/f3;->N3(I)V
+    invoke-virtual {p0, v3}, Lcom/digdroid/alman/dig/f3;->P3(I)V
 
     return v4
 
@@ -1303,7 +1323,7 @@
     return v4
 
     :sswitch_7
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f3;->M3()V
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f3;->O3()V
 
     return v4
 
@@ -1347,7 +1367,7 @@
     return v4
 
     :sswitch_9
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/f3;->L3()V
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/f3;->N3()V
 
     return v4
 
@@ -1368,7 +1388,7 @@
 
     iget-object v0, v0, Lcom/digdroid/alman/dig/h0;->h:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/p1;->Z2(Ljava/lang/String;)Z
+    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/p1;->b3(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1488,7 +1508,7 @@
 
     invoke-virtual {p0, v3}, Lcom/digdroid/alman/dig/r1;->G2(Z)V
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/t0;->N2()V
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/t0;->O2()V
 
     return v4
 
@@ -1514,7 +1534,7 @@
     :sswitch_e
     iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/g3;
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f3;->K3()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f3;->M3()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1583,25 +1603,25 @@
     :sswitch_data_0
     .sparse-switch
         0x7f090056 -> :sswitch_f
-        0x7f090177 -> :sswitch_e
-        0x7f090216 -> :sswitch_d
-        0x7f09021b -> :sswitch_c
-        0x7f09032c -> :sswitch_b
-        0x7f090332 -> :sswitch_a
-        0x7f09033a -> :sswitch_9
-        0x7f09034d -> :sswitch_8
-        0x7f090372 -> :sswitch_7
-        0x7f090408 -> :sswitch_6
-        0x7f090409 -> :sswitch_5
-        0x7f090423 -> :sswitch_4
-        0x7f090424 -> :sswitch_3
-        0x7f09042c -> :sswitch_2
-        0x7f09042d -> :sswitch_1
-        0x7f09042e -> :sswitch_0
+        0x7f090178 -> :sswitch_e
+        0x7f090217 -> :sswitch_d
+        0x7f09021c -> :sswitch_c
+        0x7f09032d -> :sswitch_b
+        0x7f090333 -> :sswitch_a
+        0x7f09033b -> :sswitch_9
+        0x7f09034e -> :sswitch_8
+        0x7f090373 -> :sswitch_7
+        0x7f09040a -> :sswitch_6
+        0x7f09040b -> :sswitch_5
+        0x7f090425 -> :sswitch_4
+        0x7f090426 -> :sswitch_3
+        0x7f09042e -> :sswitch_2
+        0x7f09042f -> :sswitch_1
+        0x7f090430 -> :sswitch_0
     .end sparse-switch
 .end method
 
-.method public K3()Ljava/lang/String;
+.method public M3()Ljava/lang/String;
     .locals 1
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/t0;->s0:Lcom/digdroid/alman/dig/h0;
@@ -1611,7 +1631,7 @@
     return-object v0
 .end method
 
-.method M3()V
+.method O3()V
     .locals 8
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->a0:Lcom/digdroid/alman/dig/u;
@@ -1731,7 +1751,7 @@
     return-void
 .end method
 
-.method N3(I)V
+.method P3(I)V
     .locals 6
 
     iput p1, p0, Lcom/digdroid/alman/dig/f3;->E0:I
@@ -1814,7 +1834,7 @@
     return-void
 .end method
 
-.method public P2()V
+.method public Q2()V
     .locals 4
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->m0:Lcom/digdroid/alman/dig/p1$a;
@@ -1853,10 +1873,10 @@
     return-void
 .end method
 
-.method public R2()V
+.method public S2()V
     .locals 3
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/t0;->R2()V
+    invoke-super {p0}, Lcom/digdroid/alman/dig/t0;->S2()V
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->m0:Lcom/digdroid/alman/dig/p1$a;
 
@@ -1866,7 +1886,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0903d4
+    const v1, 0x7f0903d5
 
     invoke-interface {v0, v1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -1878,7 +1898,7 @@
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/g3;
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f3;->K3()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f3;->M3()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1924,12 +1944,12 @@
     return-object p1
 .end method
 
-.method public k3()F
+.method public m3()F
     .locals 2
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/g3;
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f3;->K3()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f3;->M3()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1963,7 +1983,7 @@
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    const v0, 0x7f090270
+    const v0, 0x7f090271
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -1981,11 +2001,11 @@
 
     iget-object v1, v1, Lcom/digdroid/alman/dig/h0;->h:Ljava/lang/String;
 
-    invoke-virtual {p0, v1}, Lcom/digdroid/alman/dig/p1;->Z2(Ljava/lang/String;)Z
+    invoke-virtual {p0, v1}, Lcom/digdroid/alman/dig/p1;->b3(Ljava/lang/String;)Z
 
     move-result v1
 
-    const v3, 0x7f09026f
+    const v3, 0x7f090270
 
     invoke-interface {v0, v3}, Landroid/view/SubMenu;->findItem(I)Landroid/view/MenuItem;
 
@@ -2013,7 +2033,7 @@
 
     invoke-interface {v0}, Landroid/view/SubMenu;->clearHeader()V
 
-    const v0, 0x7f090438
+    const v0, 0x7f09043a
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -2027,7 +2047,7 @@
 
     invoke-interface {v0}, Landroid/view/SubMenu;->clearHeader()V
 
-    const v5, 0x7f090409
+    const v5, 0x7f09040b
 
     invoke-interface {v0, v5}, Landroid/view/SubMenu;->findItem(I)Landroid/view/MenuItem;
 
@@ -2040,7 +2060,7 @@
     :cond_1
     invoke-interface {v5, v3}, Landroid/view/MenuItem;->setTitle(I)Landroid/view/MenuItem;
 
-    const v1, 0x7f090408
+    const v1, 0x7f09040a
 
     invoke-interface {v0, v1}, Landroid/view/SubMenu;->findItem(I)Landroid/view/MenuItem;
 
@@ -2068,7 +2088,7 @@
     :goto_1
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setTitle(I)Landroid/view/MenuItem;
 
-    const v0, 0x7f090216
+    const v0, 0x7f090217
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -2080,7 +2100,7 @@
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    const v0, 0x7f090424
+    const v0, 0x7f090426
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -2090,7 +2110,7 @@
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    const v0, 0x7f090370
+    const v0, 0x7f090371
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -2098,7 +2118,7 @@
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/f3;->C0:Ljava/lang/String;
 
-    const v3, 0x7f09042f
+    const v3, 0x7f090431
 
     const/4 v4, 0x0
 
@@ -2161,7 +2181,7 @@
 
     const-string v1, "com.retroarch.ra32"
 
-    invoke-static {v0, v1}, Lcom/digdroid/alman/dig/y3;->r(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lcom/digdroid/alman/dig/z3;->r(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -2171,7 +2191,7 @@
 
     const-string v5, "com.retroarch.aarch64"
 
-    invoke-static {v1, v5}, Lcom/digdroid/alman/dig/y3;->r(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {v1, v5}, Lcom/digdroid/alman/dig/z3;->r(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -2226,7 +2246,7 @@
 
     invoke-interface {p1}, Landroid/view/SubMenu;->clearHeader()V
 
-    const v3, 0x7f09042c
+    const v3, 0x7f09042e
 
     invoke-interface {p1, v3}, Landroid/view/SubMenu;->findItem(I)Landroid/view/MenuItem;
 
@@ -2242,7 +2262,7 @@
 
     invoke-interface {v3, v4}, Landroid/view/MenuItem;->setTitle(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
 
-    const v3, 0x7f09042d
+    const v3, 0x7f09042f
 
     invoke-interface {p1, v3}, Landroid/view/SubMenu;->findItem(I)Landroid/view/MenuItem;
 
@@ -2262,7 +2282,7 @@
 
     invoke-interface {v3, v0}, Landroid/view/MenuItem;->setTitle(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
 
-    const v0, 0x7f09042e
+    const v0, 0x7f090430
 
     invoke-interface {p1, v0}, Landroid/view/SubMenu;->findItem(I)Landroid/view/MenuItem;
 
@@ -2301,7 +2321,7 @@
 
     invoke-interface {v0, v4}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    const v0, 0x7f090372
+    const v0, 0x7f090373
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -2309,7 +2329,7 @@
 
     invoke-interface {v0, v4}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    const v0, 0x7f09034d
+    const v0, 0x7f09034e
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -2317,7 +2337,7 @@
 
     invoke-interface {v0, v4}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    const v0, 0x7f09033a
+    const v0, 0x7f09033b
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -2337,20 +2357,6 @@
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/digdroid/alman/dig/p1;->i0:Z
-
-    return-void
-.end method
-
-.method public s3(F)V
-    .locals 2
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/g3;
-
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f3;->K3()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1, p1}, Lcom/digdroid/alman/dig/g3;->F(Ljava/lang/String;F)V
 
     return-void
 .end method
@@ -2398,30 +2404,24 @@
     throw v1
 .end method
 
-.method x3()Ljava/lang/String;
+.method public u3(F)V
+    .locals 2
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/g3;
+
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f3;->M3()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1, p1}, Lcom/digdroid/alman/dig/g3;->F(Ljava/lang/String;F)V
+
+    return-void
+.end method
+
+.method z3()Ljava/lang/String;
     .locals 1
 
     const-string v0, "date"
 
     return-object v0
-.end method
-
-.method z3(Landroid/content/Intent;)Z
-    .locals 1
-
-    const-string v0, "system"
-
-    invoke-virtual {p1, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/t0;->s0:Lcom/digdroid/alman/dig/h0;
-
-    iget-object v0, v0, Lcom/digdroid/alman/dig/h0;->h:Ljava/lang/String;
-
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    return p1
 .end method

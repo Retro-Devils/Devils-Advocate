@@ -63,7 +63,7 @@
 
     if-eqz v3, :cond_8
 
-    invoke-static {v3}, Lcom/digdroid/alman/dig/y3;->w(Landroid/content/Context;)Z
+    invoke-static {v3}, Lcom/digdroid/alman/dig/z3;->w(Landroid/content/Context;)Z
 
     move-result v3
 
@@ -71,7 +71,7 @@
 
     iget-object v3, v0, Lcom/digdroid/alman/dig/SDCardBroadcastReceiver$a;->a:Landroid/content/Context;
 
-    invoke-static {v3}, Lcom/digdroid/alman/dig/y3;->u(Landroid/content/Context;)Z
+    invoke-static {v3}, Lcom/digdroid/alman/dig/z3;->u(Landroid/content/Context;)Z
 
     move-result v3
 

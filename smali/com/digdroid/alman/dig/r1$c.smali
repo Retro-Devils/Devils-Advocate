@@ -48,9 +48,9 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/r1$c;->a:Lcom/digdroid/alman/dig/r1;
 
-    const/4 v1, 0x1
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/r1;->V2()V
 
-    iput-boolean v1, v0, Lcom/digdroid/alman/dig/p1;->i0:Z
+    iget-object v0, p0, Lcom/digdroid/alman/dig/r1$c;->a:Lcom/digdroid/alman/dig/r1;
 
     iget-object v1, v0, Lcom/digdroid/alman/dig/r1;->p0:Lcom/digdroid/alman/dig/e2;
 

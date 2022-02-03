@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/q2;->p3()V
+    value = Lcom/digdroid/alman/dig/q2;->r3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -58,7 +58,7 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f110283
+    const v0, 0x7f110284
 
     invoke-virtual {p1, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -96,7 +96,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f110282
+    const v1, 0x7f110283
 
     new-instance v2, Lcom/digdroid/alman/dig/q2$q$a;
 

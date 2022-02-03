@@ -69,7 +69,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lcom/digdroid/alman/dig/y3;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lcom/digdroid/alman/dig/z3;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/t1$a$a;->a:Lcom/digdroid/alman/dig/t1$a;
 

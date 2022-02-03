@@ -226,7 +226,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/v0;->c:Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/y3;->g(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/z3;->g(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -248,7 +248,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/v0;->c:Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/y3;->g(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/z3;->g(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -266,7 +266,7 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/v0;->d:Landroid/view/View;
 
-    const v0, 0x7f0903ca
+    const v0, 0x7f0903cb
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -281,7 +281,7 @@
     :cond_2
     iget-object p1, p0, Lcom/digdroid/alman/dig/v0;->d:Landroid/view/View;
 
-    const v0, 0x7f0901b0
+    const v0, 0x7f0901b1
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -293,7 +293,7 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/v0;->d:Landroid/view/View;
 
-    const v0, 0x7f090352
+    const v0, 0x7f090353
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -347,7 +347,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090181
+    const v1, 0x7f090182
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -371,7 +371,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    const v1, 0x7f090389
+    const v1, 0x7f09038a
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -385,7 +385,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v1, 0x7f09031f
+    const v1, 0x7f090320
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -413,7 +413,7 @@
 
     invoke-virtual {v1, v3}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
-    const v1, 0x7f0902f7
+    const v1, 0x7f0902f8
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -427,7 +427,7 @@
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v1, 0x7f09031d
+    const v1, 0x7f09031e
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -451,7 +451,7 @@
 
     invoke-virtual {v1, v3}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
-    const v1, 0x7f090403
+    const v1, 0x7f090405
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -493,7 +493,7 @@
 
     iget-object v3, p0, Lcom/digdroid/alman/dig/v0;->c:Lcom/digdroid/alman/dig/MainActivity;
 
-    const v5, 0x7f110277
+    const v5, 0x7f110278
 
     invoke-virtual {v3, v5}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -527,7 +527,7 @@
 
     invoke-virtual {v3, v1}, Landroid/widget/ArrayAdapter;->setDropDownViewResource(I)V
 
-    const v1, 0x7f090387
+    const v1, 0x7f090388
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -559,7 +559,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
-    const v1, 0x7f090311
+    const v1, 0x7f090312
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -583,7 +583,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    const v1, 0x7f090312
+    const v1, 0x7f090313
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -699,11 +699,11 @@
 
     iput-object v0, p1, Lcom/digdroid/alman/dig/n2$f;->a:Lcom/digdroid/alman/dig/n2$g;
 
-    const v0, 0x7f090455
+    const v0, 0x7f090457
 
     iput v0, p1, Lcom/digdroid/alman/dig/n2$f;->b:I
 
-    const v0, 0x7f090321
+    const v0, 0x7f090322
 
     iput v0, p1, Lcom/digdroid/alman/dig/n2$f;->c:I
 
@@ -774,7 +774,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/v0;->d:Landroid/view/View;
 
-    const v1, 0x7f09031e
+    const v1, 0x7f09031f
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -805,7 +805,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {v3, v4}, Lcom/digdroid/alman/dig/a4;->g(Z)Landroid/graphics/Point;
+    invoke-virtual {v3, v4}, Lcom/digdroid/alman/dig/b4;->g(Z)Landroid/graphics/Point;
 
     move-result-object v3
 
@@ -1339,7 +1339,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/v0;->d:Landroid/view/View;
 
-    const v1, 0x7f09031e
+    const v1, 0x7f09031f
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

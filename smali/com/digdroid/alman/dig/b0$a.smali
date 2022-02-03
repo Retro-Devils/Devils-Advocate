@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/b0;->u(Lcom/digdroid/alman/dig/x3;Landroid/database/Cursor;Landroid/database/Cursor;Z)V
+    value = Lcom/digdroid/alman/dig/b0;->v(Lcom/digdroid/alman/dig/y3;Landroid/database/Cursor;Landroid/database/Cursor;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic b:Lcom/digdroid/alman/dig/x3;
+.field final synthetic b:Lcom/digdroid/alman/dig/y3;
 
 .field final synthetic c:Ljava/lang/String;
 
@@ -30,12 +30,12 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/b0;Lcom/digdroid/alman/dig/x3;Ljava/lang/String;Landroid/database/Cursor;Landroid/database/Cursor;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/b0;Lcom/digdroid/alman/dig/y3;Ljava/lang/String;Landroid/database/Cursor;Landroid/database/Cursor;)V
     .locals 0
 
     iput-object p1, p0, Lcom/digdroid/alman/dig/b0$a;->f:Lcom/digdroid/alman/dig/b0;
 
-    iput-object p2, p0, Lcom/digdroid/alman/dig/b0$a;->b:Lcom/digdroid/alman/dig/x3;
+    iput-object p2, p0, Lcom/digdroid/alman/dig/b0$a;->b:Lcom/digdroid/alman/dig/y3;
 
     iput-object p3, p0, Lcom/digdroid/alman/dig/b0$a;->c:Ljava/lang/String;
 
@@ -56,7 +56,7 @@
     const-string p1, "android.intent.action.VIEW"
 
     :try_start_0
-    iget-object p2, p0, Lcom/digdroid/alman/dig/b0$a;->b:Lcom/digdroid/alman/dig/x3;
+    iget-object p2, p0, Lcom/digdroid/alman/dig/b0$a;->b:Lcom/digdroid/alman/dig/y3;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -90,7 +90,7 @@
 
     :catch_0
     :try_start_1
-    iget-object p2, p0, Lcom/digdroid/alman/dig/b0$a;->b:Lcom/digdroid/alman/dig/x3;
+    iget-object p2, p0, Lcom/digdroid/alman/dig/b0$a;->b:Lcom/digdroid/alman/dig/y3;
 
     new-instance v0, Landroid/content/Intent;
 

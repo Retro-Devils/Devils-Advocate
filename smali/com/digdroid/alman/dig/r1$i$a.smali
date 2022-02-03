@@ -50,7 +50,7 @@
 
     iget-boolean v0, v0, Lcom/digdroid/alman/dig/r1$i;->a:Z
 
-    invoke-virtual {v1, v2, v0}, Lcom/digdroid/alman/dig/r1;->r3(Landroid/database/Cursor;Z)V
+    invoke-virtual {v1, v2, v0}, Lcom/digdroid/alman/dig/r1;->t3(Landroid/database/Cursor;Z)V
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/r1$i$a;->c:Lcom/digdroid/alman/dig/r1$i;
 

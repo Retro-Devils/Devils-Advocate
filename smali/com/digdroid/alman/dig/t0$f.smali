@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/t0;->f3(Landroid/view/View;Ljava/lang/Object;)V
+    value = Lcom/digdroid/alman/dig/t0;->h3(Landroid/view/View;Ljava/lang/Object;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -90,7 +90,7 @@
 
     move-result v1
 
-    const v3, 0x7f090352
+    const v3, 0x7f090353
 
     if-ne v1, v3, :cond_1
 

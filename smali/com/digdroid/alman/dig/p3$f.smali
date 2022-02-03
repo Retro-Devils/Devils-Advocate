@@ -16,7 +16,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Landroid/os/AsyncTask<",
-        "Lcom/digdroid/alman/dig/a4;",
+        "Lcom/digdroid/alman/dig/b4;",
         "Ljava/lang/Void;",
         "Ljava/util/ArrayList<",
         "Lcom/digdroid/alman/dig/r3;",
@@ -42,12 +42,12 @@
 
 
 # virtual methods
-.method protected varargs a([Lcom/digdroid/alman/dig/a4;)Ljava/util/ArrayList;
+.method protected varargs a([Lcom/digdroid/alman/dig/b4;)Ljava/util/ArrayList;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
-            "Lcom/digdroid/alman/dig/a4;",
+            "Lcom/digdroid/alman/dig/b4;",
             ")",
             "Ljava/util/ArrayList<",
             "Lcom/digdroid/alman/dig/r3;",
@@ -65,7 +65,7 @@
 
     new-instance v2, Lcom/digdroid/alman/dig/r3;
 
-    invoke-direct {v2, p1}, Lcom/digdroid/alman/dig/r3;-><init>(Lcom/digdroid/alman/dig/a4;)V
+    invoke-direct {v2, p1}, Lcom/digdroid/alman/dig/r3;-><init>(Lcom/digdroid/alman/dig/b4;)V
 
     invoke-virtual {v2}, Lcom/digdroid/alman/dig/r3;->C()Ljava/lang/String;
 
@@ -114,7 +114,7 @@
 
     new-instance v3, Lcom/digdroid/alman/dig/r3;
 
-    invoke-direct {v3, p1}, Lcom/digdroid/alman/dig/r3;-><init>(Lcom/digdroid/alman/dig/a4;)V
+    invoke-direct {v3, p1}, Lcom/digdroid/alman/dig/r3;-><init>(Lcom/digdroid/alman/dig/b4;)V
 
     aget-object v4, v2, v0
 
@@ -164,9 +164,9 @@
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    check-cast p1, [Lcom/digdroid/alman/dig/a4;
+    check-cast p1, [Lcom/digdroid/alman/dig/b4;
 
-    invoke-virtual {p0, p1}, Lcom/digdroid/alman/dig/p3$f;->a([Lcom/digdroid/alman/dig/a4;)Ljava/util/ArrayList;
+    invoke-virtual {p0, p1}, Lcom/digdroid/alman/dig/p3$f;->a([Lcom/digdroid/alman/dig/b4;)Ljava/util/ArrayList;
 
     move-result-object p1
 

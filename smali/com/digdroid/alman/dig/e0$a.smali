@@ -121,7 +121,7 @@
 
     invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/e0;->E(Lcom/digdroid/alman/dig/s3;)V
 
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/p1;->P2()V
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/p1;->Q2()V
 
     :cond_0
     return-void

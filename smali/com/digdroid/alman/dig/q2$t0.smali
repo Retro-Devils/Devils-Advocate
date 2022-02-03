@@ -35,7 +35,7 @@
 
 # virtual methods
 .method public a(Z)V
-    .locals 4
+    .locals 3
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/q2$t0;->a:Lcom/digdroid/alman/dig/q2;
 
@@ -59,30 +59,69 @@
 
     if-eqz v2, :cond_0
 
-    goto :goto_1
+    goto :goto_0
 
     :cond_0
-    invoke-static {v0}, Lcom/digdroid/alman/dig/y3;->E(Landroid/content/Context;)V
-
-    new-instance v2, Landroidx/appcompat/app/b$a;
-
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
-
-    move-result v3
-
-    invoke-direct {v2, v0, v3}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
+    invoke-static {v0}, Lcom/digdroid/alman/dig/z3;->F(Landroid/content/Context;)V
 
     if-eqz p1, :cond_1
 
-    const p1, 0x7f11004d
+    sget-object p1, Landroid/os/Environment;->DIRECTORY_DOWNLOADS:Ljava/lang/String;
+
+    invoke-static {p1}, Landroid/os/Environment;->getExternalStoragePublicDirectory(Ljava/lang/String;)Ljava/io/File;
+
+    move-result-object p1
+
+    new-instance v0, Ljava/io/File;
+
+    const-string v1, "dig_backup.bak"
+
+    invoke-direct {v0, p1, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    new-instance p1, Landroid/content/Intent;
+
+    invoke-direct {p1}, Landroid/content/Intent;-><init>()V
+
+    const-string v1, "android.intent.action.SEND"
+
+    invoke-virtual {p1, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    invoke-static {v0}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    const-string v1, "android.intent.extra.STREAM"
+
+    invoke-virtual {p1, v1, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    const-string v0, "*/*"
+
+    invoke-virtual {p1, v0}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/q2$t0;->a:Lcom/digdroid/alman/dig/q2;
+
+    const-string v1, "Send to"
+
+    invoke-static {p1, v1}, Landroid/content/Intent;->createChooser(Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Landroidx/fragment/app/Fragment;->m2(Landroid/content/Intent;)V
 
     goto :goto_0
 
     :cond_1
-    const p1, 0x7f110049
+    new-instance p1, Landroidx/appcompat/app/b$a;
 
-    :goto_0
-    invoke-virtual {v2, p1}, Landroidx/appcompat/app/b$a;->h(I)Landroidx/appcompat/app/b$a;
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+
+    move-result v2
+
+    invoke-direct {p1, v0, v2}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
+
+    const v0, 0x7f110049
+
+    invoke-virtual {p1, v0}, Landroidx/appcompat/app/b$a;->h(I)Landroidx/appcompat/app/b$a;
 
     move-result-object p1
 
@@ -105,6 +144,6 @@
     invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
     :cond_2
-    :goto_1
+    :goto_0
     return-void
 .end method

@@ -140,7 +140,7 @@
 
     const-string v3, "vertical"
 
-    const v4, 0x7f0901aa
+    const v4, 0x7f0901ab
 
     if-eqz v2, :cond_2
 
@@ -207,7 +207,7 @@
 
     if-eqz v2, :cond_4
 
-    const p3, 0x7f090268
+    const p3, 0x7f090269
 
     invoke-virtual {p2, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -299,7 +299,7 @@
 
     const/high16 v7, 0x40000000    # 2.0f
 
-    const v8, 0x7f0902ae
+    const v8, 0x7f0902af
 
     if-eqz v2, :cond_5
 
@@ -524,7 +524,7 @@
 
     iput-object p2, p0, Lcom/digdroid/alman/dig/e2;->j:Lcom/digdroid/alman/dig/MyRecyclerView;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/y3;->j(Landroid/app/Activity;)Landroid/graphics/Point;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->j(Landroid/app/Activity;)Landroid/graphics/Point;
 
     move-result-object p3
 
@@ -2953,7 +2953,7 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/e2;->e:Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/y3;->A(Lcom/digdroid/alman/dig/MainActivity;)I
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->B(Lcom/digdroid/alman/dig/MainActivity;)I
 
     move-result p1
 
@@ -2964,7 +2964,7 @@
     :cond_0
     iget-object p1, p0, Lcom/digdroid/alman/dig/e2;->e:Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/y3;->A(Lcom/digdroid/alman/dig/MainActivity;)I
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->B(Lcom/digdroid/alman/dig/MainActivity;)I
 
     move-result p1
 

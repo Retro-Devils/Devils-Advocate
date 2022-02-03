@@ -20,17 +20,68 @@
 
 
 # virtual methods
-.method public A3(Landroid/view/MenuItem;JLjava/lang/String;Ljava/lang/String;)Z
+.method A3()Ljava/io/File;
+    .locals 3
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return-object v1
+
+    :cond_0
+    new-instance v1, Ljava/io/File;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "/Icons/Collections"
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    return-object v1
+.end method
+
+.method B3()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/k;->B0:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public C3(Landroid/view/MenuItem;JLjava/lang/String;Ljava/lang/String;)Z
     .locals 0
 
-    invoke-super/range {p0 .. p5}, Lcom/digdroid/alman/dig/f0;->A3(Landroid/view/MenuItem;JLjava/lang/String;Ljava/lang/String;)Z
+    invoke-super/range {p0 .. p5}, Lcom/digdroid/alman/dig/f0;->C3(Landroid/view/MenuItem;JLjava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method B3(Ljava/lang/String;)V
+.method D3(Ljava/lang/String;)V
     .locals 3
 
     new-instance v0, Landroidx/appcompat/app/b$a;
@@ -94,7 +145,7 @@
     return-void
 .end method
 
-.method C3(J)V
+.method E3(J)V
     .locals 4
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/f0;->x0:Landroid/database/sqlite/SQLiteDatabase;
@@ -162,7 +213,7 @@
     return-void
 .end method
 
-.method D3()I
+.method F3()I
     .locals 1
 
     const v0, 0x7f1100db
@@ -170,7 +221,7 @@
     return v0
 .end method
 
-.method E3()I
+.method G3()I
     .locals 1
 
     const v0, 0x7f11012f
@@ -178,7 +229,7 @@
     return v0
 .end method
 
-.method F3()Z
+.method H3()Z
     .locals 1
 
     const/4 v0, 0x1
@@ -186,7 +237,7 @@
     return v0
 .end method
 
-.method G3(JLjava/lang/String;)V
+.method I3(JLjava/lang/String;)V
     .locals 7
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/f0;->x0:Landroid/database/sqlite/SQLiteDatabase;
@@ -395,7 +446,7 @@
     return-void
 .end method
 
-.method H3(Landroid/database/Cursor;)V
+.method J3(Landroid/database/Cursor;)V
     .locals 5
 
     const/4 v0, 0x3
@@ -435,13 +486,13 @@
 
     move-result-object p1
 
-    invoke-interface {v0, v3, v4, p1}, Lcom/digdroid/alman/dig/p1$a;->N(JLjava/lang/String;)V
+    invoke-interface {v0, v3, v4, p1}, Lcom/digdroid/alman/dig/p1$a;->M(JLjava/lang/String;)V
 
     :goto_0
     return-void
 .end method
 
-.method I3(Ljava/lang/String;Z)V
+.method K3(Ljava/lang/String;Z)V
     .locals 5
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/f0;->x0:Landroid/database/sqlite/SQLiteDatabase;
@@ -524,7 +575,7 @@
 
     move-result p2
 
-    invoke-interface {p1, p2}, Lcom/digdroid/alman/dig/p1$a;->L(I)V
+    invoke-interface {p1, p2}, Lcom/digdroid/alman/dig/p1$a;->K(I)V
 
     :cond_0
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
@@ -630,7 +681,7 @@
     return-object p1
 .end method
 
-.method i3()Landroid/database/Cursor;
+.method k3()Landroid/database/Cursor;
     .locals 4
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
@@ -703,12 +754,12 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/f1;->x3(Landroid/database/Cursor;)V
+    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/f1;->z3(Landroid/database/Cursor;)V
 
     return-object v0
 .end method
 
-.method public j3()Ljava/lang/String;
+.method public l3()Ljava/lang/String;
     .locals 1
 
     const-string v0, "title"
@@ -732,61 +783,10 @@
     return-object v0
 .end method
 
-.method w3()I
+.method y3()I
     .locals 1
 
     const v0, 0x7f0d0003
 
     return v0
-.end method
-
-.method y3()Ljava/io/File;
-    .locals 3
-
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
-
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    return-object v1
-
-    :cond_0
-    new-instance v1, Ljava/io/File;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, "/Icons/Collections"
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    return-object v1
-.end method
-
-.method z3()Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/k;->B0:Ljava/lang/String;
-
-    return-object v0
 .end method

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/o0;->i(Lcom/digdroid/alman/dig/x3;JLcom/digdroid/alman/dig/h0;)V
+    value = Lcom/digdroid/alman/dig/o0;->i(Lcom/digdroid/alman/dig/y3;JLcom/digdroid/alman/dig/h0;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,13 +22,13 @@
 
 .field final synthetic c:Landroid/database/Cursor;
 
-.field final synthetic d:Lcom/digdroid/alman/dig/x3;
+.field final synthetic d:Lcom/digdroid/alman/dig/y3;
 
 .field final synthetic e:Lcom/digdroid/alman/dig/o0;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/o0;Ljava/util/ArrayList;Landroid/database/Cursor;Lcom/digdroid/alman/dig/x3;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/o0;Ljava/util/ArrayList;Landroid/database/Cursor;Lcom/digdroid/alman/dig/y3;)V
     .locals 0
 
     iput-object p1, p0, Lcom/digdroid/alman/dig/o0$a;->e:Lcom/digdroid/alman/dig/o0;
@@ -37,7 +37,7 @@
 
     iput-object p3, p0, Lcom/digdroid/alman/dig/o0$a;->c:Landroid/database/Cursor;
 
-    iput-object p4, p0, Lcom/digdroid/alman/dig/o0$a;->d:Lcom/digdroid/alman/dig/x3;
+    iput-object p4, p0, Lcom/digdroid/alman/dig/o0$a;->d:Lcom/digdroid/alman/dig/y3;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -91,11 +91,11 @@
 
     iget-object p2, p0, Lcom/digdroid/alman/dig/o0$a;->e:Lcom/digdroid/alman/dig/o0;
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/o0$a;->d:Lcom/digdroid/alman/dig/x3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/o0$a;->d:Lcom/digdroid/alman/dig/y3;
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/o0$a;->c:Landroid/database/Cursor;
 
-    invoke-virtual {p2, v0, v1, p1}, Lcom/digdroid/alman/dig/o0;->j(Lcom/digdroid/alman/dig/x3;Landroid/database/Cursor;Z)V
+    invoke-virtual {p2, v0, v1, p1}, Lcom/digdroid/alman/dig/o0;->j(Lcom/digdroid/alman/dig/y3;Landroid/database/Cursor;Z)V
 
     return-void
 .end method

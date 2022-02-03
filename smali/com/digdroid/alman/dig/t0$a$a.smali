@@ -57,7 +57,7 @@
 
     iget v1, p0, Lcom/digdroid/alman/dig/t0$a$a;->b:I
 
-    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/t0;->y3(I)V
+    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/t0;->A3(I)V
 
     iget v0, p0, Lcom/digdroid/alman/dig/t0$a$a;->b:I
 
@@ -73,7 +73,7 @@
 
     if-eqz v2, :cond_0
 
-    invoke-static {v1, v0}, Lcom/digdroid/alman/dig/t0;->w3(Lcom/digdroid/alman/dig/t0;I)Z
+    invoke-static {v1, v0}, Lcom/digdroid/alman/dig/t0;->y3(Lcom/digdroid/alman/dig/t0;I)Z
 
     :cond_0
     iget-object v0, p0, Lcom/digdroid/alman/dig/t0$a$a;->c:Lcom/digdroid/alman/dig/t0$a;

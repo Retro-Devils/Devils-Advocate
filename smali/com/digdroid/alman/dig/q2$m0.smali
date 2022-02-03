@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Landroid/content/DialogInterface$OnShowListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/q2;->F3()V
+    value = Lcom/digdroid/alman/dig/q2;->z3(Landroid/app/Activity;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,26 @@
 
 
 # instance fields
-.field final synthetic b:Landroidx/appcompat/widget/SwitchCompat;
+.field final synthetic a:Ljava/util/ArrayList;
 
-.field final synthetic c:Lcom/digdroid/alman/dig/q2;
+.field final synthetic b:Landroid/database/Cursor;
+
+.field final synthetic c:Landroid/database/sqlite/SQLiteDatabase;
+
+.field final synthetic d:Lcom/digdroid/alman/dig/q2;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/q2;Landroidx/appcompat/widget/SwitchCompat;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/q2;Ljava/util/ArrayList;Landroid/database/Cursor;Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/q2$m0;->c:Lcom/digdroid/alman/dig/q2;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/q2$m0;->d:Lcom/digdroid/alman/dig/q2;
 
-    iput-object p2, p0, Lcom/digdroid/alman/dig/q2$m0;->b:Landroidx/appcompat/widget/SwitchCompat;
+    iput-object p2, p0, Lcom/digdroid/alman/dig/q2$m0;->a:Ljava/util/ArrayList;
+
+    iput-object p3, p0, Lcom/digdroid/alman/dig/q2$m0;->b:Landroid/database/Cursor;
+
+    iput-object p4, p0, Lcom/digdroid/alman/dig/q2$m0;->c:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,32 +46,56 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 2
+.method public onShow(Landroid/content/DialogInterface;)V
+    .locals 1
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$m0;->b:Landroidx/appcompat/widget/SwitchCompat;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$m0;->d:Lcom/digdroid/alman/dig/q2;
 
-    invoke-virtual {p1}, Landroid/widget/CompoundButton;->isChecked()Z
+    iget-object p1, p1, Lcom/digdroid/alman/dig/q2;->r0:Landroidx/appcompat/app/b;
 
-    move-result v0
+    const/4 v0, -0x1
 
-    xor-int/lit8 v0, v0, 0x1
+    invoke-virtual {p1, v0}, Landroidx/appcompat/app/b;->e(I)Landroid/widget/Button;
 
-    invoke-virtual {p1, v0}, Landroidx/appcompat/widget/SwitchCompat;->setChecked(Z)V
+    move-result-object p1
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$m0;->b:Landroidx/appcompat/widget/SwitchCompat;
+    new-instance v0, Lcom/digdroid/alman/dig/q2$m0$a;
 
-    invoke-virtual {p1}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/q2$m0$a;-><init>(Lcom/digdroid/alman/dig/q2$m0;)V
 
-    move-result p1
+    invoke-virtual {p1, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/q2$m0;->c:Lcom/digdroid/alman/dig/q2;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$m0;->d:Lcom/digdroid/alman/dig/q2;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/q2;->r0:Landroidx/appcompat/app/b;
 
-    const-string v1, "auto_scan"
+    const/4 v0, -0x2
 
-    invoke-virtual {v0, v1, p1}, Lcom/digdroid/alman/dig/b3;->A(Ljava/lang/String;Z)V
+    invoke-virtual {p1, v0}, Landroidx/appcompat/app/b;->e(I)Landroid/widget/Button;
+
+    move-result-object p1
+
+    new-instance v0, Lcom/digdroid/alman/dig/q2$m0$b;
+
+    invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/q2$m0$b;-><init>(Lcom/digdroid/alman/dig/q2$m0;)V
+
+    invoke-virtual {p1, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$m0;->d:Lcom/digdroid/alman/dig/q2;
+
+    iget-object p1, p1, Lcom/digdroid/alman/dig/q2;->r0:Landroidx/appcompat/app/b;
+
+    const/4 v0, -0x3
+
+    invoke-virtual {p1, v0}, Landroidx/appcompat/app/b;->e(I)Landroid/widget/Button;
+
+    move-result-object p1
+
+    new-instance v0, Lcom/digdroid/alman/dig/q2$m0$c;
+
+    invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/q2$m0$c;-><init>(Lcom/digdroid/alman/dig/q2$m0;)V
+
+    invoke-virtual {p1, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-void
 .end method

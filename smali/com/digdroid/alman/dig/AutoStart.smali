@@ -31,7 +31,7 @@
 
     invoke-virtual {p2, v0, v1}, Lcom/digdroid/alman/dig/b3;->A(Ljava/lang/String;Z)V
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/y3;->u(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->u(Landroid/content/Context;)Z
 
     move-result v0
 

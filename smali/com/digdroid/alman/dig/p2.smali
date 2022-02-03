@@ -82,26 +82,26 @@
     return-void
 .end method
 
-.method public bridge synthetic M2()Z
+.method public bridge synthetic K2()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->K2()V
+
+    return-void
+.end method
+
+.method public bridge synthetic N2()Z
     .locals 1
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->M2()Z
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->N2()Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public N2()V
+.method public O2()V
     .locals 0
-
-    return-void
-.end method
-
-.method public bridge synthetic O2()V
-    .locals 0
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->O2()V
 
     return-void
 .end method
@@ -130,10 +130,10 @@
     return-void
 .end method
 
-.method public bridge synthetic S2(Lcom/digdroid/alman/dig/h0;)V
+.method public bridge synthetic S2()V
     .locals 0
 
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->S2(Lcom/digdroid/alman/dig/h0;)V
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->S2()V
 
     return-void
 .end method
@@ -146,10 +146,10 @@
     return-void
 .end method
 
-.method public bridge synthetic T2()V
+.method public bridge synthetic T2(Lcom/digdroid/alman/dig/h0;)V
     .locals 0
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->T2()V
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->T2(Lcom/digdroid/alman/dig/h0;)V
 
     return-void
 .end method
@@ -158,14 +158,6 @@
     .locals 0
 
     invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->U2()V
-
-    return-void
-.end method
-
-.method public bridge synthetic V2(Ljava/lang/String;)V
-    .locals 0
-
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->V2(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -198,18 +190,26 @@
     return-void
 .end method
 
-.method public bridge synthetic W2(Ljava/lang/String;)V
+.method public bridge synthetic W2()V
     .locals 0
 
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->W2(Ljava/lang/String;)V
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->W2()V
 
     return-void
 .end method
 
-.method public bridge synthetic Y2(Z)V
+.method public bridge synthetic X2(Ljava/lang/String;)V
     .locals 0
 
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->Y2(Z)V
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->X2(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic Y2(Ljava/lang/String;)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->Y2(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -221,7 +221,7 @@
 
     invoke-virtual {p2, v0, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
 
-    const p2, 0x7f09017b
+    const p2, 0x7f09017c
 
     invoke-interface {p1, p2}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -258,22 +258,12 @@
     return-object p1
 .end method
 
-.method public bridge synthetic a3()V
+.method public bridge synthetic a3(Z)V
     .locals 0
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->a3()V
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->a3(Z)V
 
     return-void
-.end method
-
-.method public bridge synthetic b3()Z
-    .locals 1
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->b3()Z
-
-    move-result v0
-
-    return v0
 .end method
 
 .method public bridge synthetic c3()V
@@ -284,7 +274,25 @@
     return-void
 .end method
 
-.method e3()V
+.method public bridge synthetic d3()Z
+    .locals 1
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->d3()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public bridge synthetic e3()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->e3()V
+
+    return-void
+.end method
+
+.method g3()V
     .locals 5
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/p2;->o0:Landroid/widget/EditText;
@@ -347,7 +355,7 @@
 
     move-result v0
 
-    const v1, 0x7f09017b
+    const v1, 0x7f09017c
 
     if-eq v0, v1, :cond_0
 
@@ -420,7 +428,7 @@
 
     invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->m1()V
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/p2;->e3()V
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/p2;->g3()V
 
     return-void
 .end method
@@ -490,7 +498,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0, v2}, Lcom/digdroid/alman/dig/p2;->V2(Ljava/lang/String;)V
+    invoke-virtual {p0, v2}, Lcom/digdroid/alman/dig/p2;->X2(Ljava/lang/String;)V
 
     const/4 v2, 0x1
 
@@ -507,7 +515,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0902d8
+    const v4, 0x7f0902d9
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

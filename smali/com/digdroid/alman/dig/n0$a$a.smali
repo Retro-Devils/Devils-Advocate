@@ -53,7 +53,7 @@
 
     iget-object p2, p2, Lcom/digdroid/alman/dig/n0$a;->b:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, p2, p1}, Lcom/digdroid/alman/dig/n0;->f3(Landroid/widget/TextView;Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, p2, p1}, Lcom/digdroid/alman/dig/n0;->h3(Landroid/widget/TextView;Ljava/lang/String;I)V
 
     iget-object p2, p0, Lcom/digdroid/alman/dig/n0$a$a;->c:Lcom/digdroid/alman/dig/n0$a;
 

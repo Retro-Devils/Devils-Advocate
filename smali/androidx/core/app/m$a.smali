@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract K()Landroid/content/Intent;
+.method public abstract k()Landroid/content/Intent;
 .end method

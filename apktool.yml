@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: com.digdroid.alman.dig_13941_apktada.com.apk
+apkFileName: Dig Emulator Front End_v1.39.6_apkpure.com.apk
 compressionType: false
 doNotCompress:
 - resources.arsc
@@ -25,5 +25,5 @@ usesFramework:
   tag: null
 version: 2.6.0
 versionInfo:
-  versionCode: '163'
-  versionName: 1.39.4.1
+  versionCode: '165'
+  versionName: 1.39.6

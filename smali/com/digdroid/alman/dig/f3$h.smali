@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/f3;->L3()V
+    value = Lcom/digdroid/alman/dig/f3;->N3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

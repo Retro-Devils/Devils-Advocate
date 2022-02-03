@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Landroid/widget/AdapterView$OnItemSelectedListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/q2;->t3()V
+    value = Lcom/digdroid/alman/dig/q2;->v3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,22 @@
 
 
 # instance fields
-.field final synthetic b:Lcom/digdroid/alman/dig/q2;
+.field final synthetic b:Landroid/widget/Switch;
+
+.field final synthetic c:Landroid/app/Activity;
+
+.field final synthetic d:Lcom/digdroid/alman/dig/q2;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/q2;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/q2;Landroid/widget/Switch;Landroid/app/Activity;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/q2$r0;->b:Lcom/digdroid/alman/dig/q2;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/q2$r0;->d:Lcom/digdroid/alman/dig/q2;
+
+    iput-object p2, p0, Lcom/digdroid/alman/dig/q2$r0;->b:Landroid/widget/Switch;
+
+    iput-object p3, p0, Lcom/digdroid/alman/dig/q2$r0;->c:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,66 +42,88 @@
 
 
 # virtual methods
-.method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/widget/AdapterView<",
-            "*>;",
-            "Landroid/view/View;",
-            "IJ)V"
-        }
-    .end annotation
+.method public onClick(Landroid/view/View;)V
+    .locals 2
 
-    if-eqz p3, :cond_2
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$r0;->b:Landroid/widget/Switch;
 
-    const/4 p1, 0x1
+    invoke-virtual {p1}, Landroid/widget/Switch;->isChecked()Z
 
-    if-eq p3, p1, :cond_1
+    move-result v0
 
-    const/4 p1, 0x2
+    const/4 v1, 0x1
 
-    if-eq p3, p1, :cond_0
+    xor-int/2addr v0, v1
 
-    const-string p1, ""
+    invoke-virtual {p1, v0}, Landroid/widget/Switch;->setChecked(Z)V
+
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$r0;->b:Landroid/widget/Switch;
+
+    invoke-virtual {p1}, Landroid/widget/Switch;->isChecked()Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    new-instance p1, Landroidx/appcompat/app/b$a;
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/q2$r0;->c:Landroid/app/Activity;
+
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+
+    move-result v1
+
+    invoke-direct {p1, v0, v1}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
+
+    const v0, 0x7f1101ce
+
+    invoke-virtual {p1, v0}, Landroidx/appcompat/app/b$a;->h(I)Landroidx/appcompat/app/b$a;
+
+    move-result-object p1
+
+    const v0, 0x7f11005a
+
+    new-instance v1, Lcom/digdroid/alman/dig/q2$r0$b;
+
+    invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/q2$r0$b;-><init>(Lcom/digdroid/alman/dig/q2$r0;)V
+
+    invoke-virtual {p1, v0, v1}, Landroidx/appcompat/app/b$a;->l(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
+
+    move-result-object p1
+
+    const v0, 0x7f1101d8
+
+    new-instance v1, Lcom/digdroid/alman/dig/q2$r0$a;
+
+    invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/q2$r0$a;-><init>(Lcom/digdroid/alman/dig/q2$r0;)V
+
+    invoke-virtual {p1, v0, v1}, Landroidx/appcompat/app/b$a;->o(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/appcompat/app/b$a;->a()Landroidx/appcompat/app/b;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
     goto :goto_0
 
     :cond_0
-    const-string p1, "high"
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$r0;->d:Lcom/digdroid/alman/dig/q2;
 
-    goto :goto_0
+    iget-object p1, p1, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
 
-    :cond_1
-    const-string p1, "medium"
+    const-string v0, "wifi_only"
 
-    goto :goto_0
+    invoke-virtual {p1, v0, v1}, Lcom/digdroid/alman/dig/b3;->B(Ljava/lang/String;Z)V
 
-    :cond_2
-    const-string p1, "low"
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$r0;->d:Lcom/digdroid/alman/dig/q2;
+
+    iget-object p1, p1, Lcom/digdroid/alman/dig/p1;->l0:Landroid/content/Context;
+
+    invoke-static {p1}, Lcom/digdroid/alman/dig/ImageService;->a(Landroid/content/Context;)V
 
     :goto_0
-    iget-object p2, p0, Lcom/digdroid/alman/dig/q2$r0;->b:Lcom/digdroid/alman/dig/q2;
-
-    iget-object p2, p2, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
-
-    const-string p3, "image_quality"
-
-    invoke-virtual {p2, p3, p1}, Lcom/digdroid/alman/dig/b3;->z(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public onNothingSelected(Landroid/widget/AdapterView;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/widget/AdapterView<",
-            "*>;)V"
-        }
-    .end annotation
-
     return-void
 .end method

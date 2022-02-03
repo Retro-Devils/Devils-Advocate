@@ -26,7 +26,7 @@
 
 
 # virtual methods
-.method A3(Landroid/view/MenuItem;JLjava/lang/String;Ljava/lang/String;)Z
+.method C3(Landroid/view/MenuItem;JLjava/lang/String;Ljava/lang/String;)Z
     .locals 6
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
@@ -41,7 +41,7 @@
 
     const/4 v4, 0x0
 
-    const v5, 0x7f090141
+    const v5, 0x7f090142
 
     if-ne v0, v5, :cond_0
 
@@ -119,7 +119,7 @@
 
     move-result v0
 
-    const v5, 0x7f090331
+    const v5, 0x7f090332
 
     if-ne v0, v5, :cond_1
 
@@ -133,7 +133,7 @@
 
     move-result-object p1
 
-    const p4, 0x7f0901be
+    const p4, 0x7f0901bf
 
     invoke-virtual {p1, p4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -165,7 +165,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f0;->E3()I
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f0;->G3()I
 
     move-result p5
 
@@ -192,29 +192,23 @@
     goto :goto_0
 
     :cond_1
-    invoke-super/range {p0 .. p5}, Lcom/digdroid/alman/dig/f1;->A3(Landroid/view/MenuItem;JLjava/lang/String;Ljava/lang/String;)Z
+    invoke-super/range {p0 .. p5}, Lcom/digdroid/alman/dig/f1;->C3(Landroid/view/MenuItem;JLjava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method abstract B3(Ljava/lang/String;)V
+.method abstract D3(Ljava/lang/String;)V
 .end method
 
-.method abstract C3(J)V
+.method abstract E3(J)V
 .end method
 
-.method abstract D3()I
+.method abstract F3()I
 .end method
 
-.method abstract E3()I
-.end method
-
-.method abstract F3()Z
-.end method
-
-.method abstract G3(JLjava/lang/String;)V
+.method abstract G3()I
 .end method
 
 .method public H2(Landroid/view/MenuItem;)Z
@@ -226,7 +220,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f0901fa
+    const v2, 0x7f0901fb
 
     if-ne v0, v2, :cond_0
 
@@ -252,7 +246,7 @@
 
     iput-wide v0, p0, Lcom/digdroid/alman/dig/f0;->z0:J
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f0;->N2()V
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f0;->O2()V
 
     goto :goto_0
 
@@ -277,7 +271,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0901be
+    const v0, 0x7f0901bf
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -307,7 +301,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f0;->D3()I
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f0;->F3()I
 
     move-result v3
 
@@ -352,10 +346,16 @@
     return p1
 .end method
 
-.method abstract H3(Landroid/database/Cursor;)V
+.method abstract H3()Z
 .end method
 
-.method declared-synchronized N2()V
+.method abstract I3(JLjava/lang/String;)V
+.end method
+
+.method abstract J3(Landroid/database/Cursor;)V
+.end method
+
+.method declared-synchronized O2()V
     .locals 7
 
     monitor-enter p0
@@ -375,7 +375,7 @@
 
     if-ltz v6, :cond_0
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/r1;->N2()V
+    invoke-super {p0}, Lcom/digdroid/alman/dig/r1;->O2()V
 
     iput-wide v0, p0, Lcom/digdroid/alman/dig/f0;->z0:J
     :try_end_0
@@ -426,24 +426,24 @@
     return-object p1
 .end method
 
-.method l3(Landroid/view/View;Ljava/lang/Object;)V
+.method public bridge synthetic m1()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/f1;->m1()V
+
+    return-void
+.end method
+
+.method n3(Landroid/view/View;Ljava/lang/Object;)V
     .locals 0
 
     if-eqz p2, :cond_0
 
     check-cast p2, Landroid/database/Cursor;
 
-    invoke-virtual {p0, p2}, Lcom/digdroid/alman/dig/f0;->H3(Landroid/database/Cursor;)V
+    invoke-virtual {p0, p2}, Lcom/digdroid/alman/dig/f0;->J3(Landroid/database/Cursor;)V
 
     :cond_0
-    return-void
-.end method
-
-.method public bridge synthetic m1()V
-    .locals 0
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/f1;->m1()V
-
     return-void
 .end method
 
@@ -468,7 +468,7 @@
 
     iput-object v0, p0, Lcom/digdroid/alman/dig/f0;->x0:Landroid/database/sqlite/SQLiteDatabase;
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f0;->F3()Z
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/f0;->H3()Z
 
     move-result v0
 

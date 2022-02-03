@@ -63,7 +63,7 @@
 
     move-result-object p2
 
-    invoke-virtual {v0, p1, p2}, Lcom/digdroid/alman/dig/r1;->l3(Landroid/view/View;Ljava/lang/Object;)V
+    invoke-virtual {v0, p1, p2}, Lcom/digdroid/alman/dig/r1;->n3(Landroid/view/View;Ljava/lang/Object;)V
 
     :cond_0
     return-void

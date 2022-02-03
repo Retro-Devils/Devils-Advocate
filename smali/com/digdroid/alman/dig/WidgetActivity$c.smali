@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/b0$k;
+.implements Lcom/digdroid/alman/dig/b0$l;
 
 
 # annotations
@@ -39,7 +39,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/WidgetActivity$c;->a:Lcom/digdroid/alman/dig/WidgetActivity;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/x3;->a1()V
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/y3;->a1()V
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/WidgetActivity$c;->a:Lcom/digdroid/alman/dig/WidgetActivity;
 
@@ -55,7 +55,7 @@
 
     const-string v2, "retroarch"
 
-    invoke-static {v1, v2}, Lcom/digdroid/alman/dig/y3;->C(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/digdroid/alman/dig/z3;->D(Landroid/content/Context;Ljava/lang/String;)V
 
     :cond_0
     invoke-virtual {v0}, Lcom/digdroid/alman/dig/b3;->u()Z

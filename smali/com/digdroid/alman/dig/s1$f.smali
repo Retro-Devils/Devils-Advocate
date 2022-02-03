@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/s1;->D3(Landroid/database/Cursor;I)V
+    value = Lcom/digdroid/alman/dig/s1;->F3(Landroid/database/Cursor;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

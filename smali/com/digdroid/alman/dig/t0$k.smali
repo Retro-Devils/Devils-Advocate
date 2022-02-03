@@ -195,7 +195,7 @@
 
     move-result p1
 
-    invoke-virtual {v0, p1}, Lcom/digdroid/alman/dig/t0;->y3(I)V
+    invoke-virtual {v0, p1}, Lcom/digdroid/alman/dig/t0;->A3(I)V
 
     :cond_0
     return-void

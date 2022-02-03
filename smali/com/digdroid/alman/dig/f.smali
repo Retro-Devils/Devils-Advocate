@@ -116,7 +116,7 @@
 .method private e(Ljava/lang/String;)V
     .locals 2
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/y3;->k(Ljava/lang/String;)[B
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->k(Ljava/lang/String;)[B
 
     move-result-object p1
 

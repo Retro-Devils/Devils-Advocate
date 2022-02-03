@@ -127,7 +127,7 @@
 
     iget-object v0, v0, Lcom/digdroid/alman/dig/j0$q;->a:Lcom/digdroid/alman/dig/j0;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->t3()V
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->v3()V
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/j0$q$a$a;->a:Lcom/digdroid/alman/dig/j0$q$a;
 
@@ -153,7 +153,7 @@
 
     iget-object v0, v0, Lcom/digdroid/alman/dig/j0$q;->a:Lcom/digdroid/alman/dig/j0;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->N2()V
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->O2()V
 
     invoke-static {p1}, Lcom/digdroid/alman/dig/ImageService;->a(Landroid/content/Context;)V
 

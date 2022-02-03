@@ -60,7 +60,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/c$b;->a:Lcom/digdroid/alman/dig/c;
 
-    invoke-virtual {v0, p1}, Lcom/digdroid/alman/dig/c;->e3(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lcom/digdroid/alman/dig/c;->g3(Ljava/lang/String;)V
 
     :cond_0
     return-void

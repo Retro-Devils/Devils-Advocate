@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/b4$b;
+.implements Landroid/view/View$OnSystemUiVisibilityChangeListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/b4;->r1()V
+    value = Lcom/digdroid/alman/dig/b4;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic a:Landroid/view/View;
 
 .field final synthetic b:Lcom/digdroid/alman/dig/b4;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/b4;Ljava/lang/String;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/b4;Landroid/view/View;)V
     .locals 0
 
     iput-object p1, p0, Lcom/digdroid/alman/dig/b4$a;->b:Lcom/digdroid/alman/dig/b4;
 
-    iput-object p2, p0, Lcom/digdroid/alman/dig/b4$a;->a:Ljava/lang/String;
+    iput-object p2, p0, Lcom/digdroid/alman/dig/b4$a;->a:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,88 +38,33 @@
 
 
 # virtual methods
-.method public a()V
-    .locals 4
+.method public onSystemUiVisibilityChange(I)V
+    .locals 2
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b4$a;->b:Lcom/digdroid/alman/dig/b4;
+    and-int/lit8 p1, p1, 0x4
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/b4;->e3()Z
+    if-nez p1, :cond_0
 
-    move-result v0
+    iget-object p1, p0, Lcom/digdroid/alman/dig/b4$a;->b:Lcom/digdroid/alman/dig/b4;
 
-    if-eqz v0, :cond_0
+    iget-object p1, p1, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
-    new-instance v0, Landroid/content/Intent;
+    const/4 v0, 0x0
 
-    const-string v1, "android.intent.action.VIEW"
+    const-string v1, "hide_navbar"
 
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-virtual {p1, v1, v0}, Lcom/digdroid/alman/dig/b3;->c(Ljava/lang/String;Z)Z
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/b4$a;->a:Ljava/lang/String;
+    move-result p1
 
-    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    if-eqz p1, :cond_0
 
-    move-result-object v1
+    iget-object p1, p0, Lcom/digdroid/alman/dig/b4$a;->a:Landroid/view/View;
 
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+    const/16 v0, 0xf06
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/b4$a;->b:Lcom/digdroid/alman/dig/b4;
-
-    invoke-virtual {v1, v0}, Landroidx/fragment/app/Fragment;->m2(Landroid/content/Intent;)V
-
-    new-instance v0, Landroid/os/Handler;
-
-    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
-
-    new-instance v1, Lcom/digdroid/alman/dig/b4$a$a;
-
-    invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/b4$a$a;-><init>(Lcom/digdroid/alman/dig/b4$a;)V
-
-    const-wide/16 v2, 0x1f4
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    goto :goto_0
+    invoke-virtual {p1, v0}, Landroid/view/View;->setSystemUiVisibility(I)V
 
     :cond_0
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b4$a;->b:Lcom/digdroid/alman/dig/b4;
-
-    iget-object v0, v0, Lcom/digdroid/alman/dig/b4;->n0:Landroid/webkit/WebView;
-
-    new-instance v1, Lcom/digdroid/alman/dig/b4$a$b;
-
-    invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/b4$a$b;-><init>(Lcom/digdroid/alman/dig/b4$a;)V
-
-    invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b4$a;->b:Lcom/digdroid/alman/dig/b4;
-
-    iget-object v0, v0, Lcom/digdroid/alman/dig/b4;->n0:Landroid/webkit/WebView;
-
-    invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
-
-    move-result-object v0
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAppCacheEnabled(Z)V
-
-    const/4 v1, 0x2
-
-    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setCacheMode(I)V
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b4$a;->b:Lcom/digdroid/alman/dig/b4;
-
-    iget-object v0, v0, Lcom/digdroid/alman/dig/b4;->n0:Landroid/webkit/WebView;
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/b4$a;->a:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
-
-    :goto_0
     return-void
 .end method

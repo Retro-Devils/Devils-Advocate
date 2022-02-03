@@ -478,7 +478,7 @@
 
     iget-object p2, p0, Lcom/digdroid/alman/dig/n2;->f:Lcom/digdroid/alman/dig/MainActivity;
 
-    const v0, 0x7f090456
+    const v0, 0x7f090458
 
     invoke-virtual {p2, v0}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -994,7 +994,7 @@
     :cond_2
     iget-object v0, p0, Lcom/digdroid/alman/dig/n2;->f:Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/a4;->g1()Landroid/graphics/Point;
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/b4;->g1()Landroid/graphics/Point;
 
     move-result-object v0
 

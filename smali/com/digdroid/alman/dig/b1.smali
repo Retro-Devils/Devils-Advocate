@@ -77,7 +77,7 @@
 
     invoke-direct {p2, v0, v1}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    const v0, 0x7f0901a8
+    const v0, 0x7f0901a9
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -89,7 +89,7 @@
 
     invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/SquaredImageView;->c(F)V
 
-    const v0, 0x7f09025e
+    const v0, 0x7f09025f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

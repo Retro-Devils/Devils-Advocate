@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/q2;->p3()V
+    value = Lcom/digdroid/alman/dig/q2;->r3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -100,7 +100,7 @@
 
     if-nez p2, :cond_1
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/y3;->t(Landroid/app/Activity;)V
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->t(Landroid/app/Activity;)V
 
     :cond_1
     return-void

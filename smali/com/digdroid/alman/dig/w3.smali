@@ -25,6 +25,8 @@
 
 .field e0:Ljava/lang/String;
 
+.field f0:Z
+
 
 # direct methods
 .method public constructor <init>()V
@@ -72,31 +74,49 @@
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->h0()Landroid/os/Bundle;
 
-    move-result-object p1
+    move-result-object v0
 
-    const-string v0, "zipfile"
+    const-string v1, "zipfile"
 
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/digdroid/alman/dig/w3;->b0:Ljava/lang/String;
+
+    const-string v1, "location"
+
+    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/digdroid/alman/dig/w3;->c0:Ljava/lang/String;
+
+    const-string v1, "name"
+
+    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/digdroid/alman/dig/w3;->d0:Ljava/lang/String;
+
+    const-string v1, "launch"
+
+    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/digdroid/alman/dig/w3;->b0:Ljava/lang/String;
+    const/4 v1, 0x0
 
-    const-string v0, "location"
+    if-nez v0, :cond_0
 
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    goto :goto_0
 
-    move-result-object v0
+    :cond_0
+    const/4 p1, 0x0
 
-    iput-object v0, p0, Lcom/digdroid/alman/dig/w3;->c0:Ljava/lang/String;
-
-    const-string v0, "name"
-
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lcom/digdroid/alman/dig/w3;->d0:Ljava/lang/String;
+    :goto_0
+    iput-boolean p1, p0, Lcom/digdroid/alman/dig/w3;->f0:Z
 
     new-instance p1, Lcom/digdroid/alman/dig/w3$c;
 
@@ -107,8 +127,6 @@
     iput-object p1, p0, Lcom/digdroid/alman/dig/w3;->a0:Lcom/digdroid/alman/dig/w3$c;
 
     sget-object v0, Landroid/os/AsyncTask;->THREAD_POOL_EXECUTOR:Ljava/util/concurrent/Executor;
-
-    const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Void;
 

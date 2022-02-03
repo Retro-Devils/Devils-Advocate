@@ -271,7 +271,7 @@
 
     if-lt v1, v2, :cond_1
 
-    invoke-interface {p0, p3}, Lb/g/k/e$a;->k(Landroid/view/KeyEvent;)Z
+    invoke-interface {p0, p3}, Lb/g/k/e$a;->h(Landroid/view/KeyEvent;)Z
 
     move-result p0
 
@@ -313,7 +313,7 @@
     if-nez p1, :cond_5
 
     :cond_4
-    invoke-interface {p0, p3}, Lb/g/k/e$a;->k(Landroid/view/KeyEvent;)Z
+    invoke-interface {p0, p3}, Lb/g/k/e$a;->h(Landroid/view/KeyEvent;)Z
 
     move-result p0
 

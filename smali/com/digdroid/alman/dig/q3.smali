@@ -235,7 +235,7 @@
 .method private L2()V
     .locals 3
 
-    const v0, 0x7f090445
+    const v0, 0x7f090447
 
     invoke-virtual {p0, v0}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -487,7 +487,7 @@
 .method private U2(Ljava/lang/String;I)V
     .locals 2
 
-    const v0, 0x7f090437
+    const v0, 0x7f090439
 
     invoke-virtual {p0, v0}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -499,7 +499,7 @@
 
     iput p2, p0, Lcom/digdroid/alman/dig/q3;->Y0:I
 
-    const p2, 0x7f090445
+    const p2, 0x7f090447
 
     invoke-virtual {p0, p2}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -645,7 +645,7 @@
 
     if-nez v0, :cond_0
 
-    const v0, 0x7f090437
+    const v0, 0x7f090439
 
     invoke-virtual {p0, v0}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -994,7 +994,7 @@
 
     const/high16 v6, 0x3f800000    # 1.0f
 
-    const v7, 0x7f09019f
+    const v7, 0x7f0901a0
 
     if-nez v4, :cond_2
 
@@ -1076,7 +1076,7 @@
     invoke-virtual {v1, v2}, Landroid/os/AsyncTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     :cond_3
-    const v0, 0x7f09026d
+    const v0, 0x7f09026e
 
     invoke-virtual {p0, v0}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -1142,7 +1142,7 @@
 
     if-eq v1, p2, :cond_6
 
-    const p2, 0x7f090445
+    const p2, 0x7f090447
 
     invoke-virtual {p0, p2}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -1156,7 +1156,7 @@
 
     invoke-virtual {p2, v0}, Landroid/widget/ImageView;->setAlpha(F)V
 
-    const p2, 0x7f090437
+    const p2, 0x7f090439
 
     invoke-virtual {p0, p2}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -1260,7 +1260,7 @@
 
     if-nez v1, :cond_0
 
-    const p1, 0x7f090445
+    const p1, 0x7f090447
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -1272,7 +1272,7 @@
 
     invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    const p1, 0x7f090437
+    const p1, 0x7f090439
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -1372,7 +1372,7 @@
 
     if-nez v0, :cond_1
 
-    const v0, 0x7f090437
+    const v0, 0x7f090439
 
     invoke-virtual {p0, v0}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -1489,7 +1489,7 @@
 
     if-nez p3, :cond_4
 
-    const p2, 0x7f090445
+    const p2, 0x7f090447
 
     invoke-virtual {p0, p2}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -1500,7 +1500,7 @@
     invoke-virtual {p2, p1}, Landroid/widget/ImageView;->setVisibility(I)V
 
     :cond_4
-    const p2, 0x7f090437
+    const p2, 0x7f090439
 
     invoke-virtual {p0, p2}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -1730,7 +1730,7 @@
 
     if-nez v0, :cond_1
 
-    const v0, 0x7f090437
+    const v0, 0x7f090439
 
     invoke-virtual {p0, v0}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -1748,10 +1748,10 @@
     return-void
 .end method
 
-.method public d()V
+.method public c()V
     .locals 1
 
-    const v0, 0x7f090437
+    const v0, 0x7f090439
 
     invoke-virtual {p0, v0}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -1769,7 +1769,7 @@
 
     check-cast v0, Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/p3;->f(Lcom/digdroid/alman/dig/a4;)V
+    invoke-static {v0}, Lcom/digdroid/alman/dig/p3;->f(Lcom/digdroid/alman/dig/b4;)V
 
     invoke-static {}, Lcom/digdroid/alman/dig/p3;->v()I
 
@@ -1846,7 +1846,7 @@
     :cond_1
     invoke-super {p0, p1}, Lcom/digdroid/alman/dig/o2;->onCreate(Landroid/os/Bundle;)V
 
-    const v0, 0x7f09026d
+    const v0, 0x7f09026e
 
     invoke-virtual {p0, v0}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -2181,7 +2181,7 @@
 .method public r0()V
     .locals 4
 
-    const v0, 0x7f090437
+    const v0, 0x7f090439
 
     invoke-virtual {p0, v0}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 

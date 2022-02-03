@@ -1,5 +1,5 @@
 .class public Lcom/digdroid/alman/dig/e3;
-.super Lcom/digdroid/alman/dig/b4;
+.super Lcom/digdroid/alman/dig/c4;
 .source ""
 
 
@@ -11,14 +11,14 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/b4;-><init>()V
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/c4;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method e3()Z
+.method g3()Z
     .locals 3
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
@@ -34,7 +34,7 @@
     return v0
 .end method
 
-.method f3()Ljava/lang/String;
+.method h3()Ljava/lang/String;
     .locals 2
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -56,7 +56,7 @@
     return-object v0
 .end method
 
-.method h3(Lcom/digdroid/alman/dig/b4$b;)V
+.method j3(Lcom/digdroid/alman/dig/c4$b;)V
     .locals 4
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->a0:Lcom/digdroid/alman/dig/u;
@@ -119,7 +119,7 @@
 
     if-eqz v1, :cond_2
 
-    invoke-interface {p1}, Lcom/digdroid/alman/dig/b4$b;->a()V
+    invoke-interface {p1}, Lcom/digdroid/alman/dig/c4$b;->a()V
 
     return-void
 
@@ -175,7 +175,7 @@
 
     new-instance v3, Lcom/digdroid/alman/dig/e3$a;
 
-    invoke-direct {v3, p0, p1}, Lcom/digdroid/alman/dig/e3$a;-><init>(Lcom/digdroid/alman/dig/e3;Lcom/digdroid/alman/dig/b4$b;)V
+    invoke-direct {v3, p0, p1}, Lcom/digdroid/alman/dig/e3$a;-><init>(Lcom/digdroid/alman/dig/e3;Lcom/digdroid/alman/dig/c4$b;)V
 
     new-instance p1, Lcom/digdroid/alman/dig/e3$b;
 
@@ -203,7 +203,7 @@
 .method public t1()V
     .locals 3
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/b4;->t1()V
+    invoke-super {p0}, Lcom/digdroid/alman/dig/c4;->t1()V
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/g3;
 

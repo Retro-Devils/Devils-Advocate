@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/e3;->h3(Lcom/digdroid/alman/dig/b4$b;)V
+    value = Lcom/digdroid/alman/dig/e3;->j3(Lcom/digdroid/alman/dig/c4$b;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/digdroid/alman/dig/b4$b;
+.field final synthetic a:Lcom/digdroid/alman/dig/c4$b;
 
 .field final synthetic b:Lcom/digdroid/alman/dig/e3;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/e3;Lcom/digdroid/alman/dig/b4$b;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/e3;Lcom/digdroid/alman/dig/c4$b;)V
     .locals 0
 
     iput-object p1, p0, Lcom/digdroid/alman/dig/e3$a;->b:Lcom/digdroid/alman/dig/e3;
 
-    iput-object p2, p0, Lcom/digdroid/alman/dig/e3$a;->a:Lcom/digdroid/alman/dig/b4$b;
+    iput-object p2, p0, Lcom/digdroid/alman/dig/e3$a;->a:Lcom/digdroid/alman/dig/c4$b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -115,9 +115,9 @@
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/e3$a;->a:Lcom/digdroid/alman/dig/b4$b;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/e3$a;->a:Lcom/digdroid/alman/dig/c4$b;
 
-    invoke-interface {p1}, Lcom/digdroid/alman/dig/b4$b;->a()V
+    invoke-interface {p1}, Lcom/digdroid/alman/dig/c4$b;->a()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

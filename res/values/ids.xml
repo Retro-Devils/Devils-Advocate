@@ -172,6 +172,7 @@
     <item type="id" name="button_x_y" />
     <item type="id" name="button_y" />
     <item type="id" name="button_y_y" />
+    <item type="id" name="cache_edit" />
     <item type="id" name="cancel_action" />
     <item type="id" name="cancel_button" />
     <item type="id" name="change_icon" />
@@ -805,6 +806,7 @@
     <item type="id" name="tag_unhandled_key_event_manager" />
     <item type="id" name="tag_unhandled_key_listeners" />
     <item type="id" name="takes_zip" />
+    <item type="id" name="temp_cache" />
     <item type="id" name="test_checkbox_android_button_tint" />
     <item type="id" name="test_checkbox_app_button_tint" />
     <item type="id" name="test_radiobutton_android_button_tint" />

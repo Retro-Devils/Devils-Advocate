@@ -45,7 +45,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/a4;->g(Z)Landroid/graphics/Point;
+    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/b4;->g(Z)Landroid/graphics/Point;
 
     move-result-object v0
 

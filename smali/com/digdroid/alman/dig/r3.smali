@@ -8,7 +8,7 @@
 
 .field g:Lcom/digdroid/alman/dig/b3;
 
-.field h:Lcom/digdroid/alman/dig/a4;
+.field h:Lcom/digdroid/alman/dig/b4;
 
 .field i:F
 
@@ -22,7 +22,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/digdroid/alman/dig/a4;)V
+.method public constructor <init>(Lcom/digdroid/alman/dig/b4;)V
     .locals 1
 
     invoke-direct {p0, p1}, Lcom/digdroid/alman/dig/n;-><init>(Landroid/content/Context;)V
@@ -39,7 +39,7 @@
 
     iput v0, p0, Lcom/digdroid/alman/dig/r3;->l:I
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/r3;->h:Lcom/digdroid/alman/dig/a4;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/r3;->h:Lcom/digdroid/alman/dig/b4;
 
     const/4 v0, 0x0
 
@@ -54,7 +54,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/digdroid/alman/dig/a4;Ljava/lang/String;)V
+.method public constructor <init>(Lcom/digdroid/alman/dig/b4;Ljava/lang/String;)V
     .locals 1
 
     invoke-direct {p0, p1}, Lcom/digdroid/alman/dig/n;-><init>(Landroid/content/Context;)V
@@ -71,7 +71,7 @@
 
     iput v0, p0, Lcom/digdroid/alman/dig/r3;->l:I
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/r3;->h:Lcom/digdroid/alman/dig/a4;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/r3;->h:Lcom/digdroid/alman/dig/b4;
 
     iput-object p2, p0, Lcom/digdroid/alman/dig/r3;->f:Ljava/lang/String;
 
@@ -101,9 +101,9 @@
 
     iput v0, p0, Lcom/digdroid/alman/dig/r3;->l:I
 
-    iget-object v0, p1, Lcom/digdroid/alman/dig/r3;->h:Lcom/digdroid/alman/dig/a4;
+    iget-object v0, p1, Lcom/digdroid/alman/dig/r3;->h:Lcom/digdroid/alman/dig/b4;
 
-    iput-object v0, p0, Lcom/digdroid/alman/dig/r3;->h:Lcom/digdroid/alman/dig/a4;
+    iput-object v0, p0, Lcom/digdroid/alman/dig/r3;->h:Lcom/digdroid/alman/dig/b4;
 
     iget-object v0, p1, Lcom/digdroid/alman/dig/r3;->f:Ljava/lang/String;
 
@@ -1259,11 +1259,11 @@
 
     iput v0, p0, Lcom/digdroid/alman/dig/r3;->l:I
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/r3;->h:Lcom/digdroid/alman/dig/a4;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/r3;->h:Lcom/digdroid/alman/dig/b4;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2}, Lcom/digdroid/alman/dig/a4;->g(Z)Landroid/graphics/Point;
+    invoke-virtual {v0, v2}, Lcom/digdroid/alman/dig/b4;->g(Z)Landroid/graphics/Point;
 
     move-result-object v0
 

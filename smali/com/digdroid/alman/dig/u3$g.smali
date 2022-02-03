@@ -57,7 +57,7 @@
 
     const-string v0, "none"
 
-    invoke-virtual {p1, v0}, Lcom/digdroid/alman/dig/p1;->X2(Ljava/lang/String;)V
+    invoke-virtual {p1, v0}, Lcom/digdroid/alman/dig/p1;->Z2(Ljava/lang/String;)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/u3$g;->f:Lcom/digdroid/alman/dig/u3;
 

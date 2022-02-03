@@ -34,7 +34,7 @@
 
 
 # virtual methods
-.method public k(Landroid/view/KeyEvent;)Z
+.method public h(Landroid/view/KeyEvent;)Z
     .locals 1
 
     iget-object v0, p0, Landroidx/appcompat/app/g$a;->b:Landroidx/appcompat/app/g;

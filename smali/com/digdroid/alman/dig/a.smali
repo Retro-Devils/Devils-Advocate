@@ -1,5 +1,5 @@
 .class Lcom/digdroid/alman/dig/a;
-.super Lcom/digdroid/alman/dig/e4;
+.super Lcom/digdroid/alman/dig/f4;
 .source ""
 
 
@@ -8,7 +8,7 @@
 
 .field k:Ljava/lang/String;
 
-.field l:Lcom/digdroid/alman/dig/e4$a;
+.field l:Lcom/digdroid/alman/dig/f4$a;
 
 .field m:Ljava/io/FileInputStream;
 
@@ -19,7 +19,7 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    invoke-direct {p0, p1}, Lcom/digdroid/alman/dig/e4;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/digdroid/alman/dig/f4;-><init>(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -27,13 +27,13 @@
 
     iput-object v0, p0, Lcom/digdroid/alman/dig/a;->n:Ljava/io/BufferedInputStream;
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e4;->e:Ljava/util/zip/ZipFile;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/f4;->e:Ljava/util/zip/ZipFile;
 
     const/4 v1, 0x0
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e4;->d:Le/a/a/a/b/b/l;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/f4;->d:Le/a/a/a/b/b/l;
 
     if-eqz v0, :cond_0
 
@@ -55,7 +55,7 @@
 
     if-eqz v0, :cond_2
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/e4;->a()V
+    invoke-super {p0}, Lcom/digdroid/alman/dig/f4;->a()V
 
     iput-boolean v1, p0, Lcom/digdroid/alman/dig/a;->j:Z
 
@@ -70,25 +70,25 @@
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    new-instance p1, Lcom/digdroid/alman/dig/e4$a;
+    new-instance p1, Lcom/digdroid/alman/dig/f4$a;
 
-    invoke-direct {p1, p0}, Lcom/digdroid/alman/dig/e4$a;-><init>(Lcom/digdroid/alman/dig/e4;)V
+    invoke-direct {p1, p0}, Lcom/digdroid/alman/dig/f4$a;-><init>(Lcom/digdroid/alman/dig/f4;)V
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/a;->l:Lcom/digdroid/alman/dig/e4$a;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/a;->l:Lcom/digdroid/alman/dig/f4$a;
 
-    iput-object p2, p1, Lcom/digdroid/alman/dig/e4$a;->a:Ljava/lang/String;
+    iput-object p2, p1, Lcom/digdroid/alman/dig/f4$a;->a:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/io/File;->length()J
 
     move-result-wide v0
 
-    iput-wide v0, p1, Lcom/digdroid/alman/dig/e4$a;->b:J
+    iput-wide v0, p1, Lcom/digdroid/alman/dig/f4$a;->b:J
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/a;->l:Lcom/digdroid/alman/dig/e4$a;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/a;->l:Lcom/digdroid/alman/dig/f4$a;
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p1, Lcom/digdroid/alman/dig/e4$a;->c:J
+    iput-wide v0, p1, Lcom/digdroid/alman/dig/f4$a;->c:J
 
     :cond_3
     return-void
@@ -103,7 +103,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/e4;->a()V
+    invoke-super {p0}, Lcom/digdroid/alman/dig/f4;->a()V
 
     goto :goto_1
 
@@ -139,25 +139,25 @@
     return-void
 .end method
 
-.method public d()Lcom/digdroid/alman/dig/e4$a;
+.method public d()Lcom/digdroid/alman/dig/f4$a;
     .locals 2
 
     iget-boolean v0, p0, Lcom/digdroid/alman/dig/a;->j:Z
 
     if-eqz v0, :cond_0
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/e4;->d()Lcom/digdroid/alman/dig/e4$a;
+    invoke-super {p0}, Lcom/digdroid/alman/dig/f4;->d()Lcom/digdroid/alman/dig/f4$a;
 
     move-result-object v0
 
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/digdroid/alman/dig/a;->l:Lcom/digdroid/alman/dig/e4$a;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/a;->l:Lcom/digdroid/alman/dig/f4$a;
 
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/digdroid/alman/dig/a;->l:Lcom/digdroid/alman/dig/e4$a;
+    iput-object v1, p0, Lcom/digdroid/alman/dig/a;->l:Lcom/digdroid/alman/dig/f4$a;
 
     return-object v0
 .end method
@@ -169,7 +169,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/e4;->f()V
+    invoke-super {p0}, Lcom/digdroid/alman/dig/f4;->f()V
 
     goto :goto_1
 
@@ -246,7 +246,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/e4;->g([B)I
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/f4;->g([B)I
 
     move-result p1
 

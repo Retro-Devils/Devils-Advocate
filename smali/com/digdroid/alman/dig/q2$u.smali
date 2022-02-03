@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/q2;->v3()V
+    value = Lcom/digdroid/alman/dig/q2;->x3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -39,7 +39,7 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/q2$u;->b:Lcom/digdroid/alman/dig/q2;
 
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/q2;->y3()V
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/q2;->A3()V
 
     return-void
 .end method

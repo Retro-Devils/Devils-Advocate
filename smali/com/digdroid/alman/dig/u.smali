@@ -509,7 +509,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/digdroid/alman/dig/y3;->s(Ljava/lang/String;)J
+    invoke-static {v2}, Lcom/digdroid/alman/dig/z3;->s(Ljava/lang/String;)J
 
     move-result-wide v2
 
@@ -1170,7 +1170,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 v1, 0x1c8
+    const/16 v1, 0x1c9
 
     if-lt v0, v1, :cond_0
 
@@ -1829,7 +1829,7 @@
     :try_start_26
     iget-object v0, p0, Lcom/digdroid/alman/dig/u;->d:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/y3;->u(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/digdroid/alman/dig/z3;->u(Landroid/content/Context;)Z
 
     move-result v0
     :try_end_26

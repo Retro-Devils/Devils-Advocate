@@ -43,7 +43,7 @@
 
     if-eqz p1, :cond_0
 
-    invoke-interface {p1, p2}, Lcom/google/android/material/navigation/NavigationView$c;->h(Landroid/view/MenuItem;)Z
+    invoke-interface {p1, p2}, Lcom/google/android/material/navigation/NavigationView$c;->f(Landroid/view/MenuItem;)Z
 
     move-result p1
 

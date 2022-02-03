@@ -96,37 +96,45 @@
     return-void
 .end method
 
-.method public bridge synthetic M2()Z
+.method public bridge synthetic K2()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->K2()V
+
+    return-void
+.end method
+
+.method public bridge synthetic N2()Z
     .locals 1
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->M2()Z
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->N2()Z
 
     move-result v0
 
     return v0
 .end method
 
-.method N2()V
+.method O2()V
     .locals 0
 
     return-void
 .end method
 
-.method public bridge synthetic O2()V
+.method public bridge synthetic P2()V
     .locals 0
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->O2()V
-
-    return-void
-.end method
-
-.method public P2()V
-    .locals 0
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->P2()V
 
     return-void
 .end method
 
 .method public Q2()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public R2()V
     .locals 2
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->m0:Lcom/digdroid/alman/dig/p1$a;
@@ -141,18 +149,10 @@
     return-void
 .end method
 
-.method public bridge synthetic R2()V
+.method public bridge synthetic S2()V
     .locals 0
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->R2()V
-
-    return-void
-.end method
-
-.method public bridge synthetic S2(Lcom/digdroid/alman/dig/h0;)V
-    .locals 0
-
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->S2(Lcom/digdroid/alman/dig/h0;)V
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->S2()V
 
     return-void
 .end method
@@ -165,10 +165,10 @@
     return-void
 .end method
 
-.method public bridge synthetic T2()V
+.method public bridge synthetic T2(Lcom/digdroid/alman/dig/h0;)V
     .locals 0
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->T2()V
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->T2(Lcom/digdroid/alman/dig/h0;)V
 
     return-void
 .end method
@@ -189,18 +189,18 @@
     return-void
 .end method
 
-.method public bridge synthetic W2(Ljava/lang/String;)V
+.method public bridge synthetic W2()V
     .locals 0
 
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->W2(Ljava/lang/String;)V
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->W2()V
 
     return-void
 .end method
 
-.method public bridge synthetic Y2(Z)V
+.method public bridge synthetic Y2(Ljava/lang/String;)V
     .locals 0
 
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->Y2(Z)V
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->Y2(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -227,22 +227,12 @@
     return-object p1
 .end method
 
-.method public bridge synthetic a3()V
+.method public bridge synthetic a3(Z)V
     .locals 0
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->a3()V
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->a3(Z)V
 
     return-void
-.end method
-
-.method public bridge synthetic b3()Z
-    .locals 1
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->b3()Z
-
-    move-result v0
-
-    return v0
 .end method
 
 .method public bridge synthetic c3()V
@@ -253,7 +243,25 @@
     return-void
 .end method
 
-.method public declared-synchronized e3(Landroid/content/Intent;)V
+.method public bridge synthetic d3()Z
+    .locals 1
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->d3()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public bridge synthetic e3()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/p1;->e3()V
+
+    return-void
+.end method
+
+.method public declared-synchronized g3(Landroid/content/Intent;)V
     .locals 3
 
     monitor-enter p0
@@ -297,7 +305,7 @@
     return-void
 
     :cond_1
-    const v1, 0x7f0903b6
+    const v1, 0x7f0903b7
 
     :try_start_1
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -397,7 +405,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0903b6
+    const v1, 0x7f0903b7
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

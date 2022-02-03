@@ -191,7 +191,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0901a8
+    const p2, 0x7f0901a9
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -203,7 +203,7 @@
 
     invoke-virtual {p2, v0}, Lcom/digdroid/alman/dig/SquaredImageView;->c(F)V
 
-    const p2, 0x7f09025e
+    const p2, 0x7f09025f
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

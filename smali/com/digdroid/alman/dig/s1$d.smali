@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/s1;->C3()V
+    value = Lcom/digdroid/alman/dig/s1;->E3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -63,7 +63,7 @@
     const/4 v2, 0x0
 
     :goto_0
-    invoke-static {v0, v1, v2}, Lcom/digdroid/alman/dig/s1;->B3(Lcom/digdroid/alman/dig/s1;Landroid/database/Cursor;I)V
+    invoke-static {v0, v1, v2}, Lcom/digdroid/alman/dig/s1;->D3(Lcom/digdroid/alman/dig/s1;Landroid/database/Cursor;I)V
 
     return-void
 .end method
@@ -93,7 +93,7 @@
     const/4 v2, 0x0
 
     :goto_0
-    invoke-static {v0, v1, v2}, Lcom/digdroid/alman/dig/s1;->B3(Lcom/digdroid/alman/dig/s1;Landroid/database/Cursor;I)V
+    invoke-static {v0, v1, v2}, Lcom/digdroid/alman/dig/s1;->D3(Lcom/digdroid/alman/dig/s1;Landroid/database/Cursor;I)V
 
     return-void
 .end method

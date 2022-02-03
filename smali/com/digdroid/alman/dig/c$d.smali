@@ -326,7 +326,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/y3;->s(Ljava/lang/String;)J
+    invoke-static {v0}, Lcom/digdroid/alman/dig/z3;->s(Ljava/lang/String;)J
 
     move-result-wide v2
 
@@ -342,7 +342,7 @@
 
     invoke-direct {v0, v4}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
 
-    const v4, 0x7f09013a
+    const v4, 0x7f09013b
 
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -372,7 +372,7 @@
 
     invoke-virtual {v4, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v0, 0x7f0903fe
+    const v0, 0x7f090400
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

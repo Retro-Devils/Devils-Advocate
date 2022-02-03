@@ -61,7 +61,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/digdroid/alman/dig/y3;->g(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/digdroid/alman/dig/z3;->g(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -89,7 +89,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/digdroid/alman/dig/y3;->g(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/digdroid/alman/dig/z3;->g(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -107,7 +107,7 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/j0$b0;->b:Lcom/digdroid/alman/dig/j0;
 
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/j0;->h3()Z
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/j0;->j3()Z
 
     move-result p1
 
@@ -137,7 +137,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/digdroid/alman/dig/j0$b0;->b:Lcom/digdroid/alman/dig/j0;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->u3()V
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->w3()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

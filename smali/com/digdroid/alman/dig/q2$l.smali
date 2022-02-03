@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/q2;->w3()V
+    value = Lcom/digdroid/alman/dig/q2;->y3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -80,7 +80,7 @@
 
     invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/q2$l$a;-><init>(Lcom/digdroid/alman/dig/q2$l;)V
 
-    invoke-static {p1, v0}, Lcom/digdroid/alman/dig/p3;->j(Lcom/digdroid/alman/dig/a4;Lcom/digdroid/alman/dig/p3$e;)V
+    invoke-static {p1, v0}, Lcom/digdroid/alman/dig/p3;->j(Lcom/digdroid/alman/dig/b4;Lcom/digdroid/alman/dig/p3$e;)V
 
     return-void
 .end method

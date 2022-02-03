@@ -1705,7 +1705,7 @@
     iput-boolean v2, v5, Lcom/digdroid/alman/dig/h0;->o:Z
 
     :cond_d
-    invoke-interface {v1, v5}, Lcom/digdroid/alman/dig/x$d;->f(Lcom/digdroid/alman/dig/h0;)V
+    invoke-interface {v1, v5}, Lcom/digdroid/alman/dig/x$d;->d(Lcom/digdroid/alman/dig/h0;)V
 
     return-void
 
@@ -1983,7 +1983,7 @@
     iput-boolean v2, v5, Lcom/digdroid/alman/dig/h0;->o:Z
 
     :cond_17
-    invoke-interface {v1, v5}, Lcom/digdroid/alman/dig/x$d;->f(Lcom/digdroid/alman/dig/h0;)V
+    invoke-interface {v1, v5}, Lcom/digdroid/alman/dig/x$d;->d(Lcom/digdroid/alman/dig/h0;)V
 
     return-void
 
@@ -2259,7 +2259,7 @@
     iput-boolean v2, v5, Lcom/digdroid/alman/dig/h0;->o:Z
 
     :cond_21
-    invoke-interface {v1, v5}, Lcom/digdroid/alman/dig/x$d;->f(Lcom/digdroid/alman/dig/h0;)V
+    invoke-interface {v1, v5}, Lcom/digdroid/alman/dig/x$d;->d(Lcom/digdroid/alman/dig/h0;)V
 
     :cond_22
     return-void

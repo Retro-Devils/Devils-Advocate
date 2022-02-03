@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/s;->h3(Ljava/util/ArrayList;)V
+    value = Lcom/digdroid/alman/dig/s;->j3(Ljava/util/ArrayList;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -80,7 +80,7 @@
 
     invoke-virtual {p1, p3}, Landroid/widget/ListView;->setDescendantFocusability(I)V
 
-    const p1, 0x7f09012f
+    const p1, 0x7f090130
 
     :goto_0
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -139,7 +139,7 @@
 
     invoke-virtual {p1, p3}, Landroid/widget/ListView;->setDescendantFocusability(I)V
 
-    const p1, 0x7f090135
+    const p1, 0x7f090136
 
     goto :goto_0
 
@@ -160,7 +160,7 @@
 
     invoke-virtual {p1, p3}, Landroid/widget/ListView;->setDescendantFocusability(I)V
 
-    const p1, 0x7f090133
+    const p1, 0x7f090134
 
     goto :goto_0
 
@@ -181,7 +181,7 @@
 
     invoke-virtual {p1, p3}, Landroid/widget/ListView;->setDescendantFocusability(I)V
 
-    const p1, 0x7f090131
+    const p1, 0x7f090132
 
     goto :goto_0
 
@@ -222,7 +222,7 @@
 
     invoke-virtual {p1, p3}, Landroid/widget/ListView;->setDescendantFocusability(I)V
 
-    const p1, 0x7f09012d
+    const p1, 0x7f09012e
 
     goto/16 :goto_0
 

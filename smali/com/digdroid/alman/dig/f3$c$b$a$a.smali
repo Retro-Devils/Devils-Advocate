@@ -66,7 +66,7 @@
 
     aget-object v3, p1, v1
 
-    invoke-static {v2, v3, v0}, Lcom/digdroid/alman/dig/f3;->I3(Lcom/digdroid/alman/dig/f3;Ljava/lang/String;I)V
+    invoke-static {v2, v3, v0}, Lcom/digdroid/alman/dig/f3;->K3(Lcom/digdroid/alman/dig/f3;Ljava/lang/String;I)V
 
     add-int/lit8 v1, v1, 0x1
 
@@ -113,7 +113,7 @@
 
     iget-object p1, p1, Lcom/digdroid/alman/dig/f3$c;->d:Lcom/digdroid/alman/dig/f3;
 
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/t0;->N2()V
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/t0;->O2()V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/f3$c$b$a$a;->a:Lcom/digdroid/alman/dig/f3$c$b$a;
 

@@ -53,7 +53,7 @@
 
     iput-boolean v1, v0, Lcom/digdroid/alman/dig/j0;->D1:Z
 
-    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/j0;->i3(Z)Ljava/io/File;
+    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/j0;->k3(Z)Ljava/io/File;
 
     move-result-object v0
 
@@ -77,7 +77,7 @@
 
     const/4 v0, 0x0
 
-    invoke-virtual {v1, v0}, Lcom/digdroid/alman/dig/j0;->w3(Z)V
+    invoke-virtual {v1, v0}, Lcom/digdroid/alman/dig/j0;->y3(Z)V
 
     :cond_0
     iget-object v0, p0, Lcom/digdroid/alman/dig/j0$a;->b:Lcom/digdroid/alman/dig/j0;

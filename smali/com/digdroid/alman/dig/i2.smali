@@ -693,7 +693,7 @@
     const/4 p2, 0x0
 
     :goto_5
-    invoke-virtual {v2, p2}, Lcom/digdroid/alman/dig/p1;->Y2(Z)V
+    invoke-virtual {v2, p2}, Lcom/digdroid/alman/dig/p1;->a3(Z)V
 
     goto :goto_4
 

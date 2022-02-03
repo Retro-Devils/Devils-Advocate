@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/q2;->t3()V
+    value = Lcom/digdroid/alman/dig/q2;->H3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic b:Landroid/widget/Switch;
+.field final synthetic b:Landroid/app/Activity;
 
 .field final synthetic c:Lcom/digdroid/alman/dig/q2;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/q2;Landroid/widget/Switch;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/q2;Landroid/app/Activity;)V
     .locals 0
 
     iput-object p1, p0, Lcom/digdroid/alman/dig/q2$p0;->c:Lcom/digdroid/alman/dig/q2;
 
-    iput-object p2, p0, Lcom/digdroid/alman/dig/q2$p0;->b:Landroid/widget/Switch;
+    iput-object p2, p0, Lcom/digdroid/alman/dig/q2$p0;->b:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,33 +41,17 @@
 .method public onClick(Landroid/view/View;)V
     .locals 1
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$p0;->b:Landroid/widget/Switch;
+    new-instance p1, Lcom/digdroid/alman/dig/z2;
 
-    invoke-virtual {p1}, Landroid/widget/Switch;->isChecked()Z
+    iget-object v0, p0, Lcom/digdroid/alman/dig/q2$p0;->b:Landroid/app/Activity;
 
-    move-result v0
+    invoke-direct {p1, v0}, Lcom/digdroid/alman/dig/z2;-><init>(Landroid/app/Activity;)V
 
-    xor-int/lit8 v0, v0, 0x1
+    new-instance v0, Lcom/digdroid/alman/dig/q2$p0$a;
 
-    invoke-virtual {p1, v0}, Landroid/widget/Switch;->setChecked(Z)V
+    invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/q2$p0$a;-><init>(Lcom/digdroid/alman/dig/q2$p0;)V
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$p0;->c:Lcom/digdroid/alman/dig/q2;
-
-    iget-object p1, p1, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/q2$p0;->b:Landroid/widget/Switch;
-
-    invoke-virtual {v0}, Landroid/widget/Switch;->isChecked()Z
-
-    move-result v0
-
-    invoke-virtual {p1, v0}, Lcom/digdroid/alman/dig/b3;->K(Z)V
-
-    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$p0;->c:Lcom/digdroid/alman/dig/q2;
-
-    iget-object p1, p1, Lcom/digdroid/alman/dig/p1;->l0:Landroid/content/Context;
-
-    invoke-static {p1}, Lcom/digdroid/alman/dig/ImageService;->a(Landroid/content/Context;)V
+    invoke-virtual {p1, v0}, Lcom/digdroid/alman/dig/z2;->a(Lcom/digdroid/alman/dig/z2$b;)V
 
     return-void
 .end method

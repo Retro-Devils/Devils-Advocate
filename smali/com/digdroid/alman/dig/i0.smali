@@ -1,5 +1,5 @@
 .class public Lcom/digdroid/alman/dig/i0;
-.super Lcom/digdroid/alman/dig/b4;
+.super Lcom/digdroid/alman/dig/c4;
 .source ""
 
 
@@ -17,7 +17,7 @@
 .method public constructor <init>()V
     .locals 2
 
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/b4;-><init>()V
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/c4;-><init>()V
 
     const-wide/16 v0, -0x1
 
@@ -32,7 +32,7 @@
 
 
 # virtual methods
-.method e3()Z
+.method g3()Z
     .locals 3
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
@@ -48,7 +48,7 @@
     return v0
 .end method
 
-.method f3()Ljava/lang/String;
+.method h3()Ljava/lang/String;
     .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -70,7 +70,7 @@
     return-object v0
 .end method
 
-.method h3(Lcom/digdroid/alman/dig/b4$b;)V
+.method j3(Lcom/digdroid/alman/dig/c4$b;)V
     .locals 5
 
     iget-wide v0, p0, Lcom/digdroid/alman/dig/i0;->q0:J
@@ -88,7 +88,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-interface {p1}, Lcom/digdroid/alman/dig/b4$b;->a()V
+    invoke-interface {p1}, Lcom/digdroid/alman/dig/c4$b;->a()V
 
     return-void
 
@@ -181,7 +181,7 @@
 
     new-instance v3, Lcom/digdroid/alman/dig/i0$a;
 
-    invoke-direct {v3, p0, p1}, Lcom/digdroid/alman/dig/i0$a;-><init>(Lcom/digdroid/alman/dig/i0;Lcom/digdroid/alman/dig/b4$b;)V
+    invoke-direct {v3, p0, p1}, Lcom/digdroid/alman/dig/i0$a;-><init>(Lcom/digdroid/alman/dig/i0;Lcom/digdroid/alman/dig/c4$b;)V
 
     new-instance p1, Lcom/digdroid/alman/dig/i0$b;
 
@@ -209,7 +209,7 @@
 .method public t1()V
     .locals 4
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/b4;->t1()V
+    invoke-super {p0}, Lcom/digdroid/alman/dig/c4;->t1()V
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->h0()Landroid/os/Bundle;
 

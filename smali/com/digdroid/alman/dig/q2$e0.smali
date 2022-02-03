@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/q2;->r3()V
+    value = Lcom/digdroid/alman/dig/q2;->C3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,50 +35,15 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 2
-
-    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$e0;->b:Lcom/digdroid/alman/dig/q2;
-
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/q2;->q3()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
+    .locals 1
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/q2$e0;->b:Lcom/digdroid/alman/dig/q2;
 
     iget-object p1, p1, Lcom/digdroid/alman/dig/p1;->m0:Lcom/digdroid/alman/dig/p1$a;
 
-    const/4 v0, 0x1
+    const-string v0, "https://digdroid.com/credits.html"
 
-    invoke-interface {p1, v0}, Lcom/digdroid/alman/dig/p1$a;->k0(Z)V
-
-    new-instance p1, Lcom/digdroid/alman/dig/g;
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/q2$e0;->b:Lcom/digdroid/alman/dig/q2;
-
-    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
-
-    move-result-object v0
-
-    invoke-direct {p1, v0}, Lcom/digdroid/alman/dig/g;-><init>(Landroid/content/Context;)V
-
-    new-instance v0, Lcom/digdroid/alman/dig/q2$t0;
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/q2$e0;->b:Lcom/digdroid/alman/dig/q2;
-
-    invoke-direct {v0, v1}, Lcom/digdroid/alman/dig/q2$t0;-><init>(Lcom/digdroid/alman/dig/q2;)V
-
-    invoke-virtual {p1, v0}, Lcom/digdroid/alman/dig/g;->g(Lcom/digdroid/alman/dig/g$a;)V
-
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/g;->c()V
-
-    :cond_0
-    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$e0;->b:Lcom/digdroid/alman/dig/q2;
-
-    iget-object p1, p1, Lcom/digdroid/alman/dig/q2;->r0:Landroidx/appcompat/app/b;
-
-    invoke-virtual {p1}, Landroidx/appcompat/app/g;->dismiss()V
+    invoke-interface {p1, v0}, Lcom/digdroid/alman/dig/p1$a;->z(Ljava/lang/String;)V
 
     return-void
 .end method

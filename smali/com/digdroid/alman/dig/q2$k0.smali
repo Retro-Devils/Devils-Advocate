@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnMultiChoiceClickListener;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/q2;->x3(Landroid/app/Activity;)V
+    value = Lcom/digdroid/alman/dig/q2;->A3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,26 +18,26 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/util/ArrayList;
+.field final synthetic b:I
 
-.field final synthetic b:Landroid/database/Cursor;
+.field final synthetic c:[Z
 
-.field final synthetic c:Landroid/database/sqlite/SQLiteDatabase;
+.field final synthetic d:[Ljava/lang/String;
 
-.field final synthetic d:Lcom/digdroid/alman/dig/q2;
+.field final synthetic e:Lcom/digdroid/alman/dig/q2;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/q2;Ljava/util/ArrayList;Landroid/database/Cursor;Landroid/database/sqlite/SQLiteDatabase;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/q2;I[Z[Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/q2$k0;->d:Lcom/digdroid/alman/dig/q2;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/q2$k0;->e:Lcom/digdroid/alman/dig/q2;
 
-    iput-object p2, p0, Lcom/digdroid/alman/dig/q2$k0;->a:Ljava/util/ArrayList;
+    iput p2, p0, Lcom/digdroid/alman/dig/q2$k0;->b:I
 
-    iput-object p3, p0, Lcom/digdroid/alman/dig/q2$k0;->b:Landroid/database/Cursor;
+    iput-object p3, p0, Lcom/digdroid/alman/dig/q2$k0;->c:[Z
 
-    iput-object p4, p0, Lcom/digdroid/alman/dig/q2$k0;->c:Landroid/database/sqlite/SQLiteDatabase;
+    iput-object p4, p0, Lcom/digdroid/alman/dig/q2$k0;->d:[Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,77 +46,44 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;IZ)V
-    .locals 2
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 1
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$k0;->a:Ljava/util/ArrayList;
+    new-instance p1, Landroidx/appcompat/app/b$a;
 
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iget-object p2, p0, Lcom/digdroid/alman/dig/q2$k0;->e:Lcom/digdroid/alman/dig/q2;
 
-    move-result-object v0
-
-    if-eqz p3, :cond_0
-
-    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$k0;->a:Ljava/util/ArrayList;
-
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
-
-    :cond_1
-    :goto_0
-    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$k0;->b:Landroid/database/Cursor;
-
-    invoke-interface {p1, p2}, Landroid/database/Cursor;->moveToPosition(I)Z
-
-    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$k0;->c:Landroid/database/sqlite/SQLiteDatabase;
-
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "UPDATE rompaths SET selected="
-
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p3, " WHERE _id="
-
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object p3, p0, Lcom/digdroid/alman/dig/q2$k0;->b:Landroid/database/Cursor;
-
-    const/4 v0, 0x0
-
-    invoke-interface {p3, v0}, Landroid/database/Cursor;->getLong(I)J
-
-    move-result-wide v0
-
-    invoke-virtual {p2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
 
     move-result-object p2
 
-    invoke-virtual {p1, p2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$k0;->b:Landroid/database/Cursor;
+    move-result v0
 
-    invoke-interface {p1}, Landroid/database/Cursor;->requery()Z
+    invoke-direct {p1, p2, v0}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
+
+    const p2, 0x7f11008b
+
+    invoke-virtual {p1, p2}, Landroidx/appcompat/app/b$a;->h(I)Landroidx/appcompat/app/b$a;
+
+    move-result-object p1
+
+    new-instance p2, Lcom/digdroid/alman/dig/q2$k0$a;
+
+    invoke-direct {p2, p0}, Lcom/digdroid/alman/dig/q2$k0$a;-><init>(Lcom/digdroid/alman/dig/q2$k0;)V
+
+    const v0, 0x7f1101d8
+
+    invoke-virtual {p1, v0, p2}, Landroidx/appcompat/app/b$a;->o(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/appcompat/app/b$a;->a()Landroidx/appcompat/app/b;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
     return-void
 .end method

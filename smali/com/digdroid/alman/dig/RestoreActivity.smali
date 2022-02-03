@@ -58,7 +58,7 @@
 
     invoke-super {p0}, Landroidx/fragment/app/d;->onResume()V
 
-    invoke-static {p0}, Lcom/digdroid/alman/dig/y3;->p(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/digdroid/alman/dig/z3;->p(Landroid/content/Context;)V
 
     new-instance v0, Lcom/digdroid/alman/dig/g;
 

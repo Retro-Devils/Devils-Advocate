@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/b0;->v(Landroid/app/Activity;JJZ)V
+    value = Lcom/digdroid/alman/dig/b0;->w(Landroid/app/Activity;JJZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -147,11 +147,11 @@
     :cond_0
     iget-object p1, p0, Lcom/digdroid/alman/dig/b0$b;->d:Lcom/digdroid/alman/dig/b0;
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/b0;->j:Lcom/digdroid/alman/dig/b0$k;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/b0;->j:Lcom/digdroid/alman/dig/b0$l;
 
     if-eqz p1, :cond_1
 
-    invoke-interface {p1}, Lcom/digdroid/alman/dig/b0$k;->a()V
+    invoke-interface {p1}, Lcom/digdroid/alman/dig/b0$l;->a()V
 
     :cond_1
     :goto_0

@@ -43,7 +43,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0901b2
+    const v1, 0x7f0901b3
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -73,7 +73,7 @@
 
     move v4, v0
 
-    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->e3(IFLjava/lang/String;ILjava/lang/String;)V
+    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->g3(IFLjava/lang/String;ILjava/lang/String;)V
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/n0$b;->b:Lcom/digdroid/alman/dig/n0;
 
@@ -85,7 +85,7 @@
 
     const-string v7, "button_b_bind"
 
-    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->e3(IFLjava/lang/String;ILjava/lang/String;)V
+    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->g3(IFLjava/lang/String;ILjava/lang/String;)V
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/n0$b;->b:Lcom/digdroid/alman/dig/n0;
 
@@ -97,7 +97,7 @@
 
     const-string v7, "button_x_bind"
 
-    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->e3(IFLjava/lang/String;ILjava/lang/String;)V
+    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->g3(IFLjava/lang/String;ILjava/lang/String;)V
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/n0$b;->b:Lcom/digdroid/alman/dig/n0;
 
@@ -109,7 +109,7 @@
 
     const-string v7, "button_y_bind"
 
-    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->e3(IFLjava/lang/String;ILjava/lang/String;)V
+    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->g3(IFLjava/lang/String;ILjava/lang/String;)V
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/n0$b;->b:Lcom/digdroid/alman/dig/n0;
 
@@ -121,7 +121,7 @@
 
     const-string v7, "button_r1_bind"
 
-    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->e3(IFLjava/lang/String;ILjava/lang/String;)V
+    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->g3(IFLjava/lang/String;ILjava/lang/String;)V
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/n0$b;->b:Lcom/digdroid/alman/dig/n0;
 
@@ -133,7 +133,7 @@
 
     const-string v7, "button_r2_bind"
 
-    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->e3(IFLjava/lang/String;ILjava/lang/String;)V
+    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->g3(IFLjava/lang/String;ILjava/lang/String;)V
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/n0$b;->b:Lcom/digdroid/alman/dig/n0;
 
@@ -145,7 +145,7 @@
 
     const-string v7, "button_rt_bind"
 
-    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->e3(IFLjava/lang/String;ILjava/lang/String;)V
+    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->g3(IFLjava/lang/String;ILjava/lang/String;)V
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/n0$b;->b:Lcom/digdroid/alman/dig/n0;
 
@@ -157,7 +157,7 @@
 
     const-string v7, "button_start_bind"
 
-    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->e3(IFLjava/lang/String;ILjava/lang/String;)V
+    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->g3(IFLjava/lang/String;ILjava/lang/String;)V
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/n0$b;->b:Lcom/digdroid/alman/dig/n0;
 
@@ -169,7 +169,7 @@
 
     const-string v7, "button_select_bind"
 
-    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->e3(IFLjava/lang/String;ILjava/lang/String;)V
+    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->g3(IFLjava/lang/String;ILjava/lang/String;)V
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/n0$b;->b:Lcom/digdroid/alman/dig/n0;
 
@@ -181,7 +181,7 @@
 
     const-string v7, "button_l1_bind"
 
-    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->e3(IFLjava/lang/String;ILjava/lang/String;)V
+    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->g3(IFLjava/lang/String;ILjava/lang/String;)V
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/n0$b;->b:Lcom/digdroid/alman/dig/n0;
 
@@ -193,7 +193,7 @@
 
     const-string v7, "button_l2_bind"
 
-    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->e3(IFLjava/lang/String;ILjava/lang/String;)V
+    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->g3(IFLjava/lang/String;ILjava/lang/String;)V
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/n0$b;->b:Lcom/digdroid/alman/dig/n0;
 
@@ -205,7 +205,7 @@
 
     const-string v7, "button_lt_bind"
 
-    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->e3(IFLjava/lang/String;ILjava/lang/String;)V
+    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->g3(IFLjava/lang/String;ILjava/lang/String;)V
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/n0$b;->b:Lcom/digdroid/alman/dig/n0;
 
@@ -217,7 +217,7 @@
 
     const-string v7, "button_lthumb_bind"
 
-    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->e3(IFLjava/lang/String;ILjava/lang/String;)V
+    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->g3(IFLjava/lang/String;ILjava/lang/String;)V
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/n0$b;->b:Lcom/digdroid/alman/dig/n0;
 
@@ -229,7 +229,7 @@
 
     const-string v7, "button_rthumb_bind"
 
-    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->e3(IFLjava/lang/String;ILjava/lang/String;)V
+    invoke-virtual/range {v2 .. v7}, Lcom/digdroid/alman/dig/n0;->g3(IFLjava/lang/String;ILjava/lang/String;)V
 
     return-void
 .end method

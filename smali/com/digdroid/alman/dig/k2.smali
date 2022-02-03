@@ -238,9 +238,9 @@
     goto/16 :goto_0
 
     :pswitch_1
-    new-instance v1, Lcom/digdroid/alman/dig/d4;
+    new-instance v1, Lcom/digdroid/alman/dig/e4;
 
-    invoke-direct {v1}, Lcom/digdroid/alman/dig/d4;-><init>()V
+    invoke-direct {v1}, Lcom/digdroid/alman/dig/e4;-><init>()V
 
     goto/16 :goto_0
 
@@ -287,9 +287,9 @@
     goto/16 :goto_0
 
     :pswitch_8
-    new-instance v1, Lcom/digdroid/alman/dig/c4;
+    new-instance v1, Lcom/digdroid/alman/dig/d4;
 
-    invoke-direct {v1}, Lcom/digdroid/alman/dig/c4;-><init>()V
+    invoke-direct {v1}, Lcom/digdroid/alman/dig/d4;-><init>()V
 
     goto :goto_0
 
@@ -301,9 +301,9 @@
     goto :goto_0
 
     :pswitch_a
-    new-instance v1, Lcom/digdroid/alman/dig/b4;
+    new-instance v1, Lcom/digdroid/alman/dig/c4;
 
-    invoke-direct {v1}, Lcom/digdroid/alman/dig/b4;-><init>()V
+    invoke-direct {v1}, Lcom/digdroid/alman/dig/c4;-><init>()V
 
     goto :goto_0
 

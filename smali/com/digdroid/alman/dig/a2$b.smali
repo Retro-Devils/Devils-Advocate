@@ -239,7 +239,7 @@
 
     check-cast v1, Lcom/digdroid/alman/dig/d3;
 
-    invoke-virtual {v1, p2}, Lcom/digdroid/alman/dig/d3;->e3(Landroid/content/Intent;)V
+    invoke-virtual {v1, p2}, Lcom/digdroid/alman/dig/d3;->g3(Landroid/content/Intent;)V
 
     goto/16 :goto_1
 
@@ -398,7 +398,7 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/a2$b;->a:Lcom/digdroid/alman/dig/a2;
 
-    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/x3;->d1(Landroid/content/Intent;)V
+    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/y3;->d1(Landroid/content/Intent;)V
 
     :cond_9
     :goto_1

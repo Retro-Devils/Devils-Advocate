@@ -94,7 +94,7 @@
 
     iget-object p1, p1, Lcom/digdroid/alman/dig/s$c;->c:Lcom/digdroid/alman/dig/s;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/s;->e3(Lcom/digdroid/alman/dig/s;)V
+    invoke-static {p1}, Lcom/digdroid/alman/dig/s;->g3(Lcom/digdroid/alman/dig/s;)V
 
     monitor-exit p2
     :try_end_0
@@ -108,7 +108,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f090373
+    const p2, 0x7f090374
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

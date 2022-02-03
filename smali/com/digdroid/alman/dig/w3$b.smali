@@ -15,13 +15,13 @@
 
 
 # virtual methods
-.method public abstract P(Z)V
+.method public abstract O(Z)V
 .end method
 
-.method public abstract b(ILjava/lang/String;I)V
+.method public abstract Q(ILjava/lang/String;II)V
 .end method
 
-.method public abstract c(Ljava/lang/String;)V
+.method public abstract b(Ljava/lang/String;)V
 .end method
 
 .method public abstract j0()V

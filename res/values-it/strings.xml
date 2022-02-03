@@ -452,6 +452,7 @@ Seleziona con o senza etichetta:"</string>
     <string name="system_forum">Forum di sistema</string>
     <string name="system_types">"Tipi e generazioni di sistema "</string>
     <string name="systems">Piattaforme</string>
+    <string name="temp_cache">Dimensione della cache dei giochi estratta (MB)</string>
     <string name="text1">Testo principale</string>
     <string name="text2">Testo 2</string>
     <string name="text3">Testo 3</string>

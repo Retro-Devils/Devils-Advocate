@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method private B3(J)Ljava/lang/String;
+.method private D3(J)Ljava/lang/String;
     .locals 6
 
     long-to-double v0, p1
@@ -114,6 +114,18 @@
 
 
 # virtual methods
+.method B3()Ljava/lang/String;
+    .locals 1
+
+    const v0, 0x7f110271
+
+    invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->D0(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method public H2(Landroid/view/MenuItem;)Z
     .locals 3
 
@@ -121,13 +133,13 @@
 
     move-result v0
 
-    const v1, 0x7f09039a
+    const v1, 0x7f09039b
 
     const/4 v2, 0x1
 
     if-eq v0, v1, :cond_1
 
-    const v1, 0x7f09039e
+    const v1, 0x7f09039f
 
     if-eq v0, v1, :cond_0
 
@@ -147,7 +159,7 @@
 
     invoke-virtual {p1}, Landroid/app/Activity;->invalidateOptionsMenu()V
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/r1;->o3()V
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/r1;->q3()V
 
     return v2
 
@@ -248,7 +260,7 @@
     return-object p1
 
     :cond_0
-    invoke-direct {p0, v0, v1}, Lcom/digdroid/alman/dig/t3;->B3(J)Ljava/lang/String;
+    invoke-direct {p0, v0, v1}, Lcom/digdroid/alman/dig/t3;->D3(J)Ljava/lang/String;
 
     move-result-object p1
 
@@ -266,7 +278,7 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v2, v3}, Lcom/digdroid/alman/dig/t3;->B3(J)Ljava/lang/String;
+    invoke-direct {p0, v2, v3}, Lcom/digdroid/alman/dig/t3;->D3(J)Ljava/lang/String;
 
     move-result-object p1
 
@@ -296,13 +308,13 @@
     return-object p1
 .end method
 
-.method f3(Landroid/view/View;Ljava/lang/Object;)V
+.method h3(Landroid/view/View;Ljava/lang/Object;)V
     .locals 0
 
     return-void
 .end method
 
-.method i3()Landroid/database/Cursor;
+.method k3()Landroid/database/Cursor;
     .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -343,12 +355,12 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/t3;->x3(Landroid/database/Cursor;)V
+    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/t3;->z3(Landroid/database/Cursor;)V
 
     return-object v0
 .end method
 
-.method public j3()Ljava/lang/String;
+.method public l3()Ljava/lang/String;
     .locals 1
 
     const-string v0, "coverflow"
@@ -356,7 +368,15 @@
     return-object v0
 .end method
 
-.method l3(Landroid/view/View;Ljava/lang/Object;)V
+.method public bridge synthetic m1()V
+    .locals 0
+
+    invoke-super {p0}, Lcom/digdroid/alman/dig/f1;->m1()V
+
+    return-void
+.end method
+
+.method n3(Landroid/view/View;Ljava/lang/Object;)V
     .locals 2
 
     if-nez p2, :cond_0
@@ -401,20 +421,12 @@
     return-void
 .end method
 
-.method public bridge synthetic m1()V
-    .locals 0
-
-    invoke-super {p0}, Lcom/digdroid/alman/dig/f1;->m1()V
-
-    return-void
-.end method
-
 .method public p2(Landroid/view/Menu;)V
     .locals 2
 
     invoke-super {p0, p1}, Lcom/digdroid/alman/dig/r1;->p2(Landroid/view/Menu;)V
 
-    const v0, 0x7f09039e
+    const v0, 0x7f09039f
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -426,7 +438,7 @@
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    const v0, 0x7f09039a
+    const v0, 0x7f09039b
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -536,7 +548,7 @@
     return-object v0
 .end method
 
-.method x3(Landroid/database/Cursor;)V
+.method z3(Landroid/database/Cursor;)V
     .locals 5
 
     invoke-interface {p1}, Landroid/database/Cursor;->moveToFirst()Z
@@ -611,16 +623,4 @@
     :cond_2
     :goto_1
     return-void
-.end method
-
-.method z3()Ljava/lang/String;
-    .locals 1
-
-    const v0, 0x7f110270
-
-    invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->D0(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
 .end method

@@ -132,11 +132,11 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/RestoreActivity$a;->b:Lcom/digdroid/alman/dig/RestoreActivity;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/y3;->D(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->E(Landroid/content/Context;)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/RestoreActivity$a;->b:Lcom/digdroid/alman/dig/RestoreActivity;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/y3;->E(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->F(Landroid/content/Context;)V
 
     new-instance p1, Landroid/content/Intent;
 

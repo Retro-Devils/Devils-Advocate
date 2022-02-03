@@ -106,7 +106,7 @@
     return p1
 .end method
 
-.method public k(Landroid/view/KeyEvent;)Z
+.method public h(Landroid/view/KeyEvent;)Z
     .locals 0
 
     invoke-super {p0, p1}, Landroid/app/Activity;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z

@@ -82,7 +82,7 @@
 
     move-result-object p1
 
-    invoke-interface {p1}, Lcom/digdroid/alman/dig/TextureVideoView$f;->d()V
+    invoke-interface {p1}, Lcom/digdroid/alman/dig/TextureVideoView$f;->c()V
 
     :cond_1
     return-void

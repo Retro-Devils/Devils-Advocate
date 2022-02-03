@@ -134,7 +134,7 @@
 
     move-result-object v4
 
-    invoke-static {v4}, Lcom/digdroid/alman/dig/y3;->v(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/digdroid/alman/dig/z3;->v(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 

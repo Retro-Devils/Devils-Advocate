@@ -65,7 +65,7 @@
 
     if-eqz v2, :cond_0
 
-    invoke-static {v1, v0}, Lcom/digdroid/alman/dig/k3;->w3(Lcom/digdroid/alman/dig/k3;I)Z
+    invoke-static {v1, v0}, Lcom/digdroid/alman/dig/k3;->y3(Lcom/digdroid/alman/dig/k3;I)Z
 
     :cond_0
     iget-object v0, p0, Lcom/digdroid/alman/dig/k3$a$a;->c:Lcom/digdroid/alman/dig/k3$a;

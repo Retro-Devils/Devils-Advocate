@@ -80,13 +80,13 @@
 
     invoke-direct {v0, p0, v1}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
 
-    const v1, 0x7f110295
+    const v1, 0x7f110296
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/app/b$a;->h(I)Landroidx/appcompat/app/b$a;
 
     move-result-object v0
 
-    const v1, 0x7f110294
+    const v1, 0x7f110295
 
     new-instance v2, Lcom/digdroid/alman/dig/MyWidget$c;
 
@@ -1685,7 +1685,7 @@
 .method public onUpdate(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V
     .locals 1
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/y3;->u(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->u(Landroid/content/Context;)Z
 
     move-result v0
 

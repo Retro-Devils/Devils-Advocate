@@ -45,7 +45,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/p1;->T2()V
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/p1;->U2()V
 
     :cond_0
     return-void

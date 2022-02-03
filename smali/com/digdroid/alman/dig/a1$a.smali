@@ -34,7 +34,7 @@
 
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$d0;-><init>(Landroid/view/View;)V
 
-    const v0, 0x7f0901a8
+    const v0, 0x7f0901a9
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -44,7 +44,7 @@
 
     iput-object v0, p0, Lcom/digdroid/alman/dig/a1$a;->t:Lcom/digdroid/alman/dig/SquaredImageView;
 
-    const v0, 0x7f09025e
+    const v0, 0x7f09025f
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -76,7 +76,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
-    const v0, 0x7f0901ab
+    const v0, 0x7f0901ac
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -92,7 +92,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v0, 0x7f0901a9
+    const v0, 0x7f0901aa
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

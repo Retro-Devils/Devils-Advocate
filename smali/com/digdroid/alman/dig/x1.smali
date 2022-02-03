@@ -1416,7 +1416,7 @@
 
     invoke-direct {v8, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v5}, Lcom/digdroid/alman/dig/e4;->c(Ljava/lang/String;)Z
+    invoke-static {v5}, Lcom/digdroid/alman/dig/f4;->c(Ljava/lang/String;)Z
 
     move-result v9
 
@@ -1431,12 +1431,12 @@
     goto/16 :goto_1
 
     :cond_2
-    new-instance v8, Lcom/digdroid/alman/dig/e4;
+    new-instance v8, Lcom/digdroid/alman/dig/f4;
 
-    invoke-direct {v8, v5}, Lcom/digdroid/alman/dig/e4;-><init>(Ljava/lang/String;)V
+    invoke-direct {v8, v5}, Lcom/digdroid/alman/dig/f4;-><init>(Ljava/lang/String;)V
 
     :goto_0
-    invoke-virtual {v8}, Lcom/digdroid/alman/dig/e4;->d()Lcom/digdroid/alman/dig/e4$a;
+    invoke-virtual {v8}, Lcom/digdroid/alman/dig/f4;->d()Lcom/digdroid/alman/dig/f4$a;
 
     move-result-object v9
 
@@ -1452,7 +1452,7 @@
 
     invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v11, v9, Lcom/digdroid/alman/dig/e4$a;->c:J
+    iget-wide v11, v9, Lcom/digdroid/alman/dig/f4$a;->c:J
 
     invoke-virtual {v10, v11, v12}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -1535,7 +1535,7 @@
 
     if-nez v11, :cond_4
 
-    invoke-static {v5, v10}, Lcom/digdroid/alman/dig/y3;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v5, v10}, Lcom/digdroid/alman/dig/z3;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v3, 0x1
 
@@ -1584,7 +1584,7 @@
 
     move-result-object v0
 
-    invoke-static {p2}, Lcom/digdroid/alman/dig/y3;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2}, Lcom/digdroid/alman/dig/z3;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1941,7 +1941,7 @@
 
     move-result-object v0
 
-    invoke-static {p2}, Lcom/digdroid/alman/dig/e4;->c(Ljava/lang/String;)Z
+    invoke-static {p2}, Lcom/digdroid/alman/dig/f4;->c(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -1950,9 +1950,9 @@
     if-eqz v1, :cond_2
 
     :try_start_0
-    new-instance v1, Lcom/digdroid/alman/dig/e4;
+    new-instance v1, Lcom/digdroid/alman/dig/f4;
 
-    invoke-direct {v1, p2}, Lcom/digdroid/alman/dig/e4;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, p2}, Lcom/digdroid/alman/dig/f4;-><init>(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
@@ -1960,7 +1960,7 @@
 
     :goto_0
     :try_start_1
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/e4;->d()Lcom/digdroid/alman/dig/e4$a;
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/f4;->d()Lcom/digdroid/alman/dig/f4$a;
 
     move-result-object v4
 
@@ -1968,7 +1968,7 @@
 
     if-nez v3, :cond_1
 
-    iget-wide v4, v4, Lcom/digdroid/alman/dig/e4$a;->c:J
+    iget-wide v4, v4, Lcom/digdroid/alman/dig/f4$a;->c:J
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -2006,7 +2006,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/e4;->a()V
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/f4;->a()V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -2035,7 +2035,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/e4;->b()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/f4;->b()Ljava/lang/String;
 
     move-result-object v1
 

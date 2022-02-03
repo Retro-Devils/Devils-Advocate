@@ -196,7 +196,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f09012c
+    const v0, 0x7f09012d
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -212,7 +212,7 @@
 
     invoke-virtual {v0, p3}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const p3, 0x7f090281
+    const p3, 0x7f090282
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -302,7 +302,7 @@
 
     invoke-virtual {v0, p3}, Landroid/widget/ArrayAdapter;->setDropDownViewResource(I)V
 
-    const p3, 0x7f09012d
+    const p3, 0x7f09012e
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -398,7 +398,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f09012e
+    const v3, 0x7f09012f
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -412,7 +412,7 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v3, 0x7f09012f
+    const v3, 0x7f090130
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -470,7 +470,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f09012c
+    const v4, 0x7f09012d
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -484,7 +484,7 @@
 
     invoke-virtual {v4, v13}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v4, 0x7f090281
+    const v4, 0x7f090282
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -594,7 +594,7 @@
 
     invoke-virtual {v5, v4}, Landroid/widget/ArrayAdapter;->setDropDownViewResource(I)V
 
-    const v4, 0x7f09012d
+    const v4, 0x7f09012e
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -718,7 +718,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f090134
+    const v4, 0x7f090135
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -766,7 +766,7 @@
 
     invoke-virtual {v5, v4}, Landroid/widget/ArrayAdapter;->setDropDownViewResource(I)V
 
-    const v4, 0x7f090135
+    const v4, 0x7f090136
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -840,7 +840,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f090132
+    const v3, 0x7f090133
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -854,7 +854,7 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v3, 0x7f090133
+    const v3, 0x7f090134
 
     invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -911,7 +911,7 @@
 
     move-result-object v1
 
-    const v11, 0x7f090130
+    const v11, 0x7f090131
 
     invoke-virtual {v1, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -925,7 +925,7 @@
 
     invoke-virtual {v11, v13}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v11, 0x7f0903a7
+    const v11, 0x7f0903a8
 
     invoke-virtual {v1, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1015,7 +1015,7 @@
 
     invoke-virtual {v5, v4}, Landroid/widget/ArrayAdapter;->setDropDownViewResource(I)V
 
-    const v4, 0x7f090131
+    const v4, 0x7f090132
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1128,7 +1128,7 @@
 
     aget-object v4, v4, v2
 
-    const v5, 0x7f110274
+    const v5, 0x7f110275
 
     :goto_c
     invoke-virtual {v0, v1, v4, v5, v3}, Lcom/digdroid/alman/dig/r;->e(Landroid/view/ViewGroup;Ljava/lang/String;IZ)Landroid/view/View;
@@ -1255,7 +1255,7 @@
     goto :goto_d
 
     :cond_16
-    const v5, 0x7f0900fa
+    const v5, 0x7f0900fb
 
     if-lt v2, v8, :cond_18
 
@@ -1289,7 +1289,7 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const v4, 0x7f0900f9
+    const v4, 0x7f0900fa
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1489,12 +1489,12 @@
 
     :array_0
     .array-data 4
-        0x7f0900ee
         0x7f0900ef
         0x7f0900f0
         0x7f0900f1
         0x7f0900f2
         0x7f0900f3
+        0x7f0900f4
     .end array-data
 .end method
 

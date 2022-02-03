@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/content/DialogInterface$OnMultiChoiceClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/q2;->y3()V
+    value = Lcom/digdroid/alman/dig/q2;->A3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic b:I
+.field final synthetic a:[Z
 
-.field final synthetic c:Lcom/digdroid/alman/dig/q2;
+.field final synthetic b:Lcom/digdroid/alman/dig/q2;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/q2;I)V
+.method constructor <init>(Lcom/digdroid/alman/dig/q2;[Z)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/q2$i0;->c:Lcom/digdroid/alman/dig/q2;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/q2$i0;->b:Lcom/digdroid/alman/dig/q2;
 
-    iput p2, p0, Lcom/digdroid/alman/dig/q2$i0;->b:I
+    iput-object p2, p0, Lcom/digdroid/alman/dig/q2$i0;->a:[Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,26 +38,12 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
+.method public onClick(Landroid/content/DialogInterface;IZ)V
     .locals 0
 
-    new-instance p1, Lcom/digdroid/alman/dig/i;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$i0;->a:[Z
 
-    iget-object p2, p0, Lcom/digdroid/alman/dig/q2$i0;->c:Lcom/digdroid/alman/dig/q2;
-
-    invoke-virtual {p2}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
-
-    move-result-object p2
-
-    invoke-direct {p1, p2}, Lcom/digdroid/alman/dig/i;-><init>(Landroid/app/Activity;)V
-
-    new-instance p2, Lcom/digdroid/alman/dig/q2$i0$a;
-
-    invoke-direct {p2, p0}, Lcom/digdroid/alman/dig/q2$i0$a;-><init>(Lcom/digdroid/alman/dig/q2$i0;)V
-
-    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/i;->g(Lcom/digdroid/alman/dig/i$b;)V
-
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/i;->d()V
+    aput-boolean p3, p1, p2
 
     return-void
 .end method

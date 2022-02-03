@@ -205,7 +205,7 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/t3$a;->a:Lcom/digdroid/alman/dig/t3;
 
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/r1;->o3()V
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/r1;->q3()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

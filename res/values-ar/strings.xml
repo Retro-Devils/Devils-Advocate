@@ -443,6 +443,7 @@
     <string name="system_forum">منتدى النظام</string>
     <string name="system_types">أنواع النظام والأجيال</string>
     <string name="systems">أنظمة</string>
+    <string name="temp_cache">حجم ذاكرة التخزين المؤقت للألعاب المستخرجة (ميغابايت)</string>
     <string name="text1">النص الرئيسي</string>
     <string name="text2">النص 2</string>
     <string name="text3">النص 3</string>

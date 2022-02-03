@@ -48,7 +48,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/digdroid/alman/dig/s$b;->a:Lcom/digdroid/alman/dig/s;
 
-    invoke-virtual {v0, p1}, Lcom/digdroid/alman/dig/s;->h3(Ljava/util/ArrayList;)V
+    invoke-virtual {v0, p1}, Lcom/digdroid/alman/dig/s;->j3(Ljava/util/ArrayList;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

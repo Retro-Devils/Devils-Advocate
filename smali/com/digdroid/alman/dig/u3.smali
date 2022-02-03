@@ -200,7 +200,7 @@
         0x7f110045
         0x7f110118
         0x7f110174
-        0x7f11028e
+        0x7f11028f
         0x7f110129
         0x7f110263
         0x7f110105
@@ -559,7 +559,7 @@
 
     if-nez p2, :cond_d
 
-    const p2, 0x7f090211
+    const p2, 0x7f090212
 
     invoke-virtual {p0, p2}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -583,7 +583,7 @@
 
     if-nez p2, :cond_e
 
-    const p2, 0x7f0902dc
+    const p2, 0x7f0902dd
 
     invoke-virtual {p0, p2}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -602,7 +602,7 @@
 
     check-cast p2, Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-static {p2}, Lcom/digdroid/alman/dig/y3;->A(Lcom/digdroid/alman/dig/MainActivity;)I
+    invoke-static {p2}, Lcom/digdroid/alman/dig/z3;->B(Lcom/digdroid/alman/dig/MainActivity;)I
 
     move-result p2
 
@@ -636,7 +636,7 @@
 .method G1(I)V
     .locals 6
 
-    const v0, 0x7f09026b
+    const v0, 0x7f09026c
 
     invoke-virtual {p0, v0}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -677,7 +677,7 @@
 
     move-result v1
 
-    const v2, 0x7f0902fc
+    const v2, 0x7f0902fd
 
     if-eq v1, v2, :cond_2
 
@@ -696,7 +696,7 @@
 
     move-result v2
 
-    const v3, 0x7f090211
+    const v3, 0x7f090212
 
     if-eq v2, v3, :cond_2
 
@@ -1186,7 +1186,7 @@
 
     invoke-super {p0, p1}, Lcom/digdroid/alman/dig/e0;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f09040a
+    const p1, 0x7f09040c
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -1447,7 +1447,7 @@
 
     move-result-object v8
 
-    const v0, 0x7f090101
+    const v0, 0x7f090102
 
     invoke-virtual {v8, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1457,7 +1457,7 @@
 
     invoke-static {v0}, Lcom/digdroid/alman/dig/p3;->s(Landroid/widget/TextView;)V
 
-    const v0, 0x7f090336
+    const v0, 0x7f090337
 
     invoke-virtual {v8, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1467,7 +1467,7 @@
 
     invoke-static {v0}, Lcom/digdroid/alman/dig/p3;->s(Landroid/widget/TextView;)V
 
-    const v0, 0x7f090206
+    const v0, 0x7f090207
 
     invoke-virtual {v8, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1483,7 +1483,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f090205
+    const v0, 0x7f090206
 
     invoke-virtual {v8, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1499,7 +1499,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0903aa
+    const v0, 0x7f0903ab
 
     invoke-virtual {v8, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1509,7 +1509,7 @@
 
     invoke-static {v0}, Lcom/digdroid/alman/dig/p3;->s(Landroid/widget/TextView;)V
 
-    const v0, 0x7f0903ac
+    const v0, 0x7f0903ad
 
     invoke-virtual {v8, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1525,7 +1525,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0903ab
+    const v0, 0x7f0903ac
 
     invoke-virtual {v8, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1541,7 +1541,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0902f5
+    const v0, 0x7f0902f6
 
     invoke-virtual {v8, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1551,7 +1551,7 @@
 
     invoke-static {v0}, Lcom/digdroid/alman/dig/p3;->s(Landroid/widget/TextView;)V
 
-    const v0, 0x7f0902f8
+    const v0, 0x7f0902f9
 
     invoke-virtual {v8, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1567,7 +1567,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0902f6
+    const v0, 0x7f0902f7
 
     invoke-virtual {v8, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1583,7 +1583,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f09020f
+    const v0, 0x7f090210
 
     invoke-virtual {v8, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1593,13 +1593,13 @@
 
     check-cast v9, Landroid/widget/LinearLayout;
 
-    const v0, 0x7f090167
+    const v0, 0x7f090168
 
     invoke-virtual {v8, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v10
 
-    const v0, 0x7f0902f9
+    const v0, 0x7f0902fa
 
     invoke-virtual {v8, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1611,7 +1611,7 @@
 
     invoke-virtual {p0, v7, v10, v9, v11}, Lcom/digdroid/alman/dig/u3;->D1(Ljava/lang/String;Landroid/view/View;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;)V
 
-    const v0, 0x7f0902d5
+    const v0, 0x7f0902d6
 
     invoke-virtual {v8, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1649,7 +1649,7 @@
 
     invoke-virtual {v12, v13}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f090140
+    const v0, 0x7f090141
 
     invoke-virtual {v8, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1677,7 +1677,7 @@
 
     invoke-virtual {v12, v13}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f090211
+    const v0, 0x7f090212
 
     invoke-virtual {v8, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1705,7 +1705,7 @@
 
     invoke-virtual {v12, v13}, Landroid/widget/RadioButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f09020e
+    const v0, 0x7f09020f
 
     invoke-virtual {v8, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

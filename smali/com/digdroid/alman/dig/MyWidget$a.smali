@@ -75,7 +75,7 @@
 
     invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/MyWidget$a$b;-><init>(Lcom/digdroid/alman/dig/MyWidget$a;)V
 
-    const v2, 0x7f110298
+    const v2, 0x7f110299
 
     invoke-virtual {v0, v2, v1}, Landroidx/appcompat/app/b$a;->l(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
 
@@ -85,7 +85,7 @@
 
     invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/MyWidget$a$a;-><init>(Lcom/digdroid/alman/dig/MyWidget$a;)V
 
-    const v2, 0x7f110299
+    const v2, 0x7f11029a
 
     invoke-virtual {v0, v2, v1}, Landroidx/appcompat/app/b$a;->o(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
 

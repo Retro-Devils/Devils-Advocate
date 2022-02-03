@@ -45,7 +45,7 @@
 
     const/4 v0, 0x1
 
-    invoke-virtual {p1, v0}, Lcom/digdroid/alman/dig/j0;->v3(Z)V
+    invoke-virtual {p1, v0}, Lcom/digdroid/alman/dig/j0;->x3(Z)V
 
     :cond_0
     return-void

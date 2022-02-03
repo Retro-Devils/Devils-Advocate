@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/q2;->H3()V
+    value = Lcom/digdroid/alman/dig/q2;->J3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -118,7 +118,7 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/q2$d;->b:Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/y3;->t(Landroid/app/Activity;)V
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->t(Landroid/app/Activity;)V
 
     :cond_5
     return-void

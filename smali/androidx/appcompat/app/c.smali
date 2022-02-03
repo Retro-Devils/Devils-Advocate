@@ -109,16 +109,6 @@
     return-void
 .end method
 
-.method public K()Landroid/content/Intent;
-    .locals 1
-
-    invoke-static {p0}, Landroidx/core/app/f;->a(Landroid/app/Activity;)Landroid/content/Intent;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
 .method public K0()Landroidx/appcompat/app/e;
     .locals 1
 
@@ -183,7 +173,7 @@
 .method public Q0()Z
     .locals 2
 
-    invoke-virtual {p0}, Landroidx/appcompat/app/c;->K()Landroid/content/Intent;
+    invoke-virtual {p0}, Landroidx/appcompat/app/c;->k()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -445,6 +435,16 @@
     invoke-virtual {v0}, Landroidx/appcompat/app/e;->o()V
 
     return-void
+.end method
+
+.method public k()Landroid/content/Intent;
+    .locals 1
+
+    invoke-static {p0}, Landroidx/core/app/f;->a(Landroid/app/Activity;)Landroid/content/Intent;
+
+    move-result-object v0
+
+    return-object v0
 .end method
 
 .method public l0(Lb/a/o/b;)V

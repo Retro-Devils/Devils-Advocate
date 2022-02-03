@@ -167,7 +167,7 @@
 
     iget-object v4, p0, Lcom/digdroid/alman/dig/q3$r;->a:Lcom/digdroid/alman/dig/q3;
 
-    invoke-static {v4}, Lcom/digdroid/alman/dig/y3;->g(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/digdroid/alman/dig/z3;->g(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v4
 

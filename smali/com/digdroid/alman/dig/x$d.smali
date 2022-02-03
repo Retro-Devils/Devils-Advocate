@@ -18,7 +18,7 @@
 .method public abstract c0(Ljava/lang/String;)V
 .end method
 
-.method public abstract f(Lcom/digdroid/alman/dig/h0;)V
+.method public abstract d(Lcom/digdroid/alman/dig/h0;)V
 .end method
 
 .method public abstract f0(Ljava/lang/String;)V

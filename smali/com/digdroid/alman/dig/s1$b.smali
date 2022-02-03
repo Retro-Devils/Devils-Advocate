@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/s1;->i3()Landroid/database/Cursor;
+    value = Lcom/digdroid/alman/dig/s1;->k3()Landroid/database/Cursor;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -63,7 +63,7 @@
 
     iget v5, p0, Lcom/digdroid/alman/dig/s1$b;->e:I
 
-    invoke-virtual/range {v0 .. v5}, Lcom/digdroid/alman/dig/s1;->F3(ILjava/lang/String;JI)V
+    invoke-virtual/range {v0 .. v5}, Lcom/digdroid/alman/dig/s1;->H3(ILjava/lang/String;JI)V
 
     return-void
 .end method

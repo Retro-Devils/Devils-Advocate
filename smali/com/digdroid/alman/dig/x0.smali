@@ -53,7 +53,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/u1;->t:Landroid/view/View;
 
-    const v1, 0x7f0901a8
+    const v1, 0x7f0901a9
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -69,7 +69,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/u1;->t:Landroid/view/View;
 
-    const v1, 0x7f0901ab
+    const v1, 0x7f0901ac
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -85,7 +85,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/u1;->t:Landroid/view/View;
 
-    const v1, 0x7f0901a9
+    const v1, 0x7f0901aa
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -101,7 +101,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/u1;->t:Landroid/view/View;
 
-    const v1, 0x7f0901ad
+    const v1, 0x7f0901ae
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -113,7 +113,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/u1;->t:Landroid/view/View;
 
-    const v1, 0x7f090328
+    const v1, 0x7f090329
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -127,7 +127,7 @@
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const p1, 0x7f090327
+    const p1, 0x7f090328
 
     const/16 v0, 0x8
 

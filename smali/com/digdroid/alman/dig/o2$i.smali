@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/o2;->h(Landroid/view/MenuItem;)Z
+    value = Lcom/digdroid/alman/dig/o2;->f(Landroid/view/MenuItem;)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -58,7 +58,7 @@
 
     move-result v1
 
-    const v2, 0x7f090384
+    const v2, 0x7f090385
 
     if-eq v1, v2, :cond_2
 
@@ -90,7 +90,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->m3()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->o3()Ljava/lang/String;
 
     move-result-object v3
 
@@ -104,7 +104,7 @@
 
     iget-object v3, v3, Lcom/digdroid/alman/dig/t;->y:Lcom/digdroid/alman/dig/g3;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->l3()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->n3()Ljava/lang/String;
 
     move-result-object v0
 
@@ -161,7 +161,7 @@
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/o2$i;->c:Lcom/digdroid/alman/dig/o2;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->k3()J
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->m3()J
 
     move-result-wide v2
 
@@ -196,7 +196,7 @@
 
     check-cast v0, Lcom/digdroid/alman/dig/f3;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/f3;->K3()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/f3;->M3()Ljava/lang/String;
 
     move-result-object v0
 
@@ -213,7 +213,7 @@
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/o2$i;->c:Lcom/digdroid/alman/dig/o2;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->l3()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->n3()Ljava/lang/String;
 
     move-result-object v0
 
@@ -228,7 +228,7 @@
 
     check-cast v0, Lcom/digdroid/alman/dig/t0;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/t0;->a3()V
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/t0;->c3()V
 
     goto/16 :goto_2
 
@@ -239,7 +239,7 @@
 
     check-cast v0, Lcom/digdroid/alman/dig/t0;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/t0;->E3()V
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/t0;->G3()V
 
     goto/16 :goto_2
 
@@ -282,7 +282,7 @@
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/o2$i;->c:Lcom/digdroid/alman/dig/o2;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->j3()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->l3()Ljava/lang/String;
 
     move-result-object v0
 
@@ -357,7 +357,7 @@
     :goto_0
     iget-object v0, p0, Lcom/digdroid/alman/dig/o2$i;->c:Lcom/digdroid/alman/dig/o2;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/y3;->t(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/digdroid/alman/dig/z3;->t(Landroid/app/Activity;)V
 
     goto/16 :goto_2
 
@@ -394,7 +394,7 @@
 
     check-cast v0, Lcom/digdroid/alman/dig/j0;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->g3()J
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->i3()J
 
     move-result-wide v2
 
@@ -445,7 +445,7 @@
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/o2$i;->c:Lcom/digdroid/alman/dig/o2;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->f3()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j0;->h3()Ljava/lang/String;
 
     move-result-object v0
 
@@ -475,7 +475,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/o2$i;->c:Lcom/digdroid/alman/dig/o2;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/e0;->M()V
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/e0;->L()V
 
     goto :goto_2
 
@@ -506,7 +506,7 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0x7f0902b2
+    .packed-switch 0x7f0902b3
         :pswitch_18
         :pswitch_17
         :pswitch_16
@@ -533,7 +533,7 @@
     .end packed-switch
 
     :pswitch_data_1
-    .packed-switch 0x7f0902ca
+    .packed-switch 0x7f0902cb
         :pswitch_1
         :pswitch_0
     .end packed-switch

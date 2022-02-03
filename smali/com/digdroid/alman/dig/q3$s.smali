@@ -163,7 +163,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/q3$s;->d:Lcom/digdroid/alman/dig/q3;
 
-    const v1, 0x7f090437
+    const v1, 0x7f090439
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 
@@ -191,7 +191,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/q3$s;->d:Lcom/digdroid/alman/dig/q3;
 
-    const v1, 0x7f090445
+    const v1, 0x7f090447
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/app/c;->findViewById(I)Landroid/view/View;
 

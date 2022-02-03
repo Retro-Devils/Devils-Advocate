@@ -52,63 +52,69 @@
 .method protected varargs a([Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$w0;->a:Lcom/digdroid/alman/dig/q2;
+
+    iget-object p1, p1, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, v0}, Lcom/digdroid/alman/dig/b3;->L(Z)V
+
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$w0;->a:Lcom/digdroid/alman/dig/q2;
+
+    iget-object p1, p1, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
+
+    const-wide/16 v0, 0x0
+
+    invoke-virtual {p1, v0, v1}, Lcom/digdroid/alman/dig/b3;->C(J)V
+
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$w0;->a:Lcom/digdroid/alman/dig/q2;
+
+    iget-object p1, p1, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
+
+    const-string v2, "sd_dirs_last_scanned"
+
+    invoke-virtual {p1, v2, v0, v1}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
+
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$w0;->a:Lcom/digdroid/alman/dig/q2;
+
+    iget-object p1, p1, Lcom/digdroid/alman/dig/p1;->a0:Lcom/digdroid/alman/dig/u;
+
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/u;->c()Landroid/database/sqlite/SQLiteDatabase;
+
+    move-result-object p1
+
+    const-string v0, "UPDATE roms SET merged_with=-1"
+
+    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$w0;->a:Lcom/digdroid/alman/dig/q2;
+
+    iget-object p1, p1, Lcom/digdroid/alman/dig/p1;->a0:Lcom/digdroid/alman/dig/u;
+
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/u;->c()Landroid/database/sqlite/SQLiteDatabase;
+
+    move-result-object p1
+
+    const-string v0, "UPDATE rompaths SET last_checked=0"
+
+    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$w0;->a:Lcom/digdroid/alman/dig/q2;
+
+    iget-object p1, p1, Lcom/digdroid/alman/dig/p1;->m0:Lcom/digdroid/alman/dig/p1$a;
+
+    const/4 v0, 0x1
+
+    invoke-interface {p1, v0, v0, v0}, Lcom/digdroid/alman/dig/p1$a;->t0(ZZZ)V
+
     const/4 p1, 0x0
 
-    :try_start_0
-    iget-object v0, p0, Lcom/digdroid/alman/dig/q2$w0;->a:Lcom/digdroid/alman/dig/q2;
-
-    iget-object v0, v0, Lcom/digdroid/alman/dig/p1;->a0:Lcom/digdroid/alman/dig/u;
-
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/u;->c()Landroid/database/sqlite/SQLiteDatabase;
-
-    move-result-object v0
-
-    const-string v1, "SELECT slug FROM systems"
-
-    invoke-virtual {v0, v1, p1}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Landroid/database/Cursor;->moveToFirst()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    :cond_0
-    iget-object v1, p0, Lcom/digdroid/alman/dig/q2$w0;->a:Lcom/digdroid/alman/dig/q2;
-
-    iget-object v1, v1, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/g3;
-
-    const/4 v2, 0x0
-
-    invoke-interface {v0, v2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Lcom/digdroid/alman/dig/g3;->D(Ljava/lang/String;)V
-
-    invoke-interface {v0}, Landroid/database/Cursor;->moveToNext()Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    :cond_1
-    invoke-interface {v0}, Landroid/database/Cursor;->close()V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
     return-object p1
 .end method
 
 .method protected b(Ljava/lang/String;)V
     .locals 0
-
-    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$w0;->a:Lcom/digdroid/alman/dig/q2;
-
-    invoke-static {p1}, Lcom/digdroid/alman/dig/q2;->m3(Lcom/digdroid/alman/dig/q2;)V
 
     return-void
 .end method

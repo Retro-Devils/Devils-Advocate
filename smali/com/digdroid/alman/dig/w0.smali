@@ -1,5 +1,5 @@
 .class Lcom/digdroid/alman/dig/w0;
-.super Lcom/digdroid/alman/dig/z3;
+.super Lcom/digdroid/alman/dig/a4;
 .source ""
 
 
@@ -13,7 +13,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {p0 .. p5}, Lcom/digdroid/alman/dig/z3;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FF)V
+    invoke-direct/range {p0 .. p5}, Lcom/digdroid/alman/dig/a4;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FF)V
 
     new-instance v11, Lcom/digdroid/alman/dig/q0;
 
@@ -51,7 +51,7 @@
 .method public j(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
     .locals 7
 
-    invoke-super {p0, p1, p2}, Lcom/digdroid/alman/dig/z3;->j(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
+    invoke-super {p0, p1, p2}, Lcom/digdroid/alman/dig/a4;->j(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
 
     if-eqz p1, :cond_0
 

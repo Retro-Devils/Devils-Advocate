@@ -80,7 +80,7 @@
 
     iget-object v0, p1, Lcom/digdroid/alman/dig/p1;->m0:Lcom/digdroid/alman/dig/p1$a;
 
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/r1;->m3()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/r1;->o3()Ljava/lang/String;
 
     move-result-object p1
 

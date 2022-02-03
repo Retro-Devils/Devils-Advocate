@@ -208,7 +208,7 @@
     :goto_1
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
-    invoke-virtual {v4, v5}, Lcom/digdroid/alman/dig/g3;->D(Ljava/lang/String;)V
+    invoke-virtual {v4, v5}, Lcom/digdroid/alman/dig/g3;->D(Ljava/lang/String;)Z
 
     const-string v0, "merge_games"
 

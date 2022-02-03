@@ -49,7 +49,7 @@
 
     iget-object v0, p1, Lcom/digdroid/alman/dig/b0$c;->d:Lcom/digdroid/alman/dig/b0;
 
-    iget-object v1, p1, Lcom/digdroid/alman/dig/b0$c;->c:Lcom/digdroid/alman/dig/x3;
+    iget-object v1, p1, Lcom/digdroid/alman/dig/b0$c;->c:Lcom/digdroid/alman/dig/y3;
 
     iget-object v2, p1, Lcom/digdroid/alman/dig/b0$c;->a:Landroid/database/Cursor;
 
@@ -73,7 +73,7 @@
     move-result-object p2
 
     :goto_0
-    invoke-virtual {v0, v1, v2, p1, p2}, Lcom/digdroid/alman/dig/b0;->s(Lcom/digdroid/alman/dig/x3;Landroid/database/Cursor;Landroid/database/Cursor;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2, p1, p2}, Lcom/digdroid/alman/dig/b0;->t(Lcom/digdroid/alman/dig/y3;Landroid/database/Cursor;Landroid/database/Cursor;Ljava/lang/String;)V
 
     return-void
 .end method

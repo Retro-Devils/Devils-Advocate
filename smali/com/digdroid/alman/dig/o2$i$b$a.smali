@@ -55,7 +55,7 @@
 
     iget-object p1, p1, Lcom/digdroid/alman/dig/o2$i;->c:Lcom/digdroid/alman/dig/o2;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/y3;->t(Landroid/app/Activity;)V
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->t(Landroid/app/Activity;)V
 
     return-void
 .end method

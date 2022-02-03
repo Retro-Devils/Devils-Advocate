@@ -49,7 +49,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/y3;->v(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/z3;->v(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -73,7 +73,7 @@
     const/4 v2, 0x1
 
     :cond_1
-    invoke-static {v0}, Lcom/digdroid/alman/dig/y3;->v(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/z3;->v(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -171,7 +171,7 @@
 
     check-cast p2, Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-virtual {p2, v3}, Lcom/digdroid/alman/dig/a4;->g(Z)Landroid/graphics/Point;
+    invoke-virtual {p2, v3}, Lcom/digdroid/alman/dig/b4;->g(Z)Landroid/graphics/Point;
 
     move-result-object p2
 
@@ -269,7 +269,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/y3;->t(Landroid/app/Activity;)V
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->t(Landroid/app/Activity;)V
 
     return-void
 .end method

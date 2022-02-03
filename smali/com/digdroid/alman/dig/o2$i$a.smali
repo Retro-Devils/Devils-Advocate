@@ -43,7 +43,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/o2$i$a;->a:Lcom/digdroid/alman/dig/r1;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/r1;->T2()V
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/r1;->U2()V
 
     return-void
 .end method

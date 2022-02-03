@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/q2;->r3()V
+    value = Lcom/digdroid/alman/dig/q2;->t3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,14 @@
 
 
 # instance fields
-.field final synthetic b:Landroid/app/Activity;
-
-.field final synthetic c:Lcom/digdroid/alman/dig/q2;
+.field final synthetic b:Lcom/digdroid/alman/dig/q2;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/q2;Landroid/app/Activity;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/q2;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/q2$g0;->c:Lcom/digdroid/alman/dig/q2;
-
-    iput-object p2, p0, Lcom/digdroid/alman/dig/q2$g0;->b:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/q2$g0;->b:Lcom/digdroid/alman/dig/q2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,35 +37,44 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    new-instance p1, Landroid/content/Intent;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$g0;->b:Lcom/digdroid/alman/dig/q2;
 
-    invoke-direct {p1}, Landroid/content/Intent;-><init>()V
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/q2;->s3()Z
 
-    const-string v0, "*/*"
+    move-result p1
 
-    invoke-virtual {p1, v0}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
+    if-eqz p1, :cond_0
 
-    const-string v0, "android.intent.action.GET_CONTENT"
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$g0;->b:Lcom/digdroid/alman/dig/q2;
 
-    invoke-virtual {p1, v0}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/p1;->m0:Lcom/digdroid/alman/dig/p1$a;
 
-    const-string v0, "android.intent.category.OPENABLE"
+    const/4 v0, 0x1
 
-    invoke-virtual {p1, v0}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-interface {p1, v0}, Lcom/digdroid/alman/dig/p1$a;->k0(Z)V
 
-    const-string v0, "Choose backup file"
+    new-instance p1, Lcom/digdroid/alman/dig/g;
 
-    invoke-static {p1, v0}, Landroid/content/Intent;->createChooser(Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/q2$g0;->b:Lcom/digdroid/alman/dig/q2;
 
-    move-result-object p1
+    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/q2$g0;->b:Landroid/app/Activity;
+    move-result-object v0
 
-    const/16 v1, 0xca
+    invoke-direct {p1, v0}, Lcom/digdroid/alman/dig/g;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v0, p1, v1}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+    new-instance v0, Lcom/digdroid/alman/dig/q2$t0;
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$g0;->c:Lcom/digdroid/alman/dig/q2;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/q2$g0;->b:Lcom/digdroid/alman/dig/q2;
+
+    invoke-direct {v0, v1}, Lcom/digdroid/alman/dig/q2$t0;-><init>(Lcom/digdroid/alman/dig/q2;)V
+
+    invoke-virtual {p1, v0}, Lcom/digdroid/alman/dig/g;->g(Lcom/digdroid/alman/dig/g$a;)V
+
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/g;->c()V
+
+    :cond_0
+    iget-object p1, p0, Lcom/digdroid/alman/dig/q2$g0;->b:Lcom/digdroid/alman/dig/q2;
 
     iget-object p1, p1, Lcom/digdroid/alman/dig/q2;->r0:Landroidx/appcompat/app/b;
 

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/f0;->A3(Landroid/view/MenuItem;JLjava/lang/String;Ljava/lang/String;)Z
+    value = Lcom/digdroid/alman/dig/f0;->C3(Landroid/view/MenuItem;JLjava/lang/String;Ljava/lang/String;)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -45,7 +45,7 @@
 
     iget-wide v0, p0, Lcom/digdroid/alman/dig/f0$a;->b:J
 
-    invoke-virtual {p1, v0, v1}, Lcom/digdroid/alman/dig/f0;->C3(J)V
+    invoke-virtual {p1, v0, v1}, Lcom/digdroid/alman/dig/f0;->E3(J)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/f0$a;->c:Lcom/digdroid/alman/dig/f0;
 
@@ -73,7 +73,7 @@
 
     move-result p1
 
-    invoke-interface {p2, p1}, Lcom/digdroid/alman/dig/p1$a;->L(I)V
+    invoke-interface {p2, p1}, Lcom/digdroid/alman/dig/p1$a;->K(I)V
 
     return-void
 .end method

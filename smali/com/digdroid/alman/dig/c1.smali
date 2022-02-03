@@ -196,7 +196,7 @@
 
     invoke-direct {p2, p0}, Lcom/digdroid/alman/dig/c1$b;-><init>(Lcom/digdroid/alman/dig/c1;)V
 
-    const p3, 0x7f0901a8
+    const p3, 0x7f0901a9
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -210,7 +210,7 @@
 
     invoke-virtual {p3, v1}, Lcom/digdroid/alman/dig/SquaredImageView;->c(F)V
 
-    const p3, 0x7f09025e
+    const p3, 0x7f09025f
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -246,7 +246,7 @@
 
     invoke-virtual {v0, p3}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
-    const p3, 0x7f0901ab
+    const p3, 0x7f0901ac
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -262,7 +262,7 @@
 
     invoke-virtual {p3, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const p3, 0x7f0901a9
+    const p3, 0x7f0901aa
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

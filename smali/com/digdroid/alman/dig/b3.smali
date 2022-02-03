@@ -291,7 +291,7 @@
 .method public J(Ljava/lang/String;)V
     .locals 4
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/y3;->s(Ljava/lang/String;)J
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->s(Ljava/lang/String;)J
 
     move-result-wide v0
 

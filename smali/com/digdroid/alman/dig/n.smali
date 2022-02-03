@@ -655,34 +655,43 @@
 .end method
 
 .method public k(Ljava/io/File;)V
-    .locals 3
+    .locals 4
 
+    const-string v0, ""
+
+    if-nez p1, :cond_0
+
+    iput-object v0, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    return-void
+
+    :cond_0
     invoke-virtual {p1}, Ljava/io/File;->length()J
 
-    move-result-wide v0
+    move-result-wide v1
 
     :try_start_0
-    new-instance v2, Ljava/io/FileReader;
+    new-instance v3, Ljava/io/FileReader;
 
-    invoke-direct {v2, p1}, Ljava/io/FileReader;-><init>(Ljava/io/File;)V
+    invoke-direct {v3, p1}, Ljava/io/FileReader;-><init>(Ljava/io/File;)V
 
-    long-to-int p1, v0
+    long-to-int p1, v1
 
     new-array p1, p1, [C
 
-    invoke-virtual {v2, p1}, Ljava/io/FileReader;->read([C)I
+    invoke-virtual {v3, p1}, Ljava/io/FileReader;->read([C)I
 
-    move-result v0
+    move-result v1
 
-    invoke-virtual {v2}, Ljava/io/FileReader;->close()V
+    invoke-virtual {v3}, Ljava/io/FileReader;->close()V
 
-    new-instance v1, Ljava/lang/String;
+    new-instance v2, Ljava/lang/String;
 
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
-    invoke-direct {v1, p1, v2, v0}, Ljava/lang/String;-><init>([CII)V
+    invoke-direct {v2, p1, v3, v1}, Ljava/lang/String;-><init>([CII)V
 
-    iput-object v1, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+    iput-object v2, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/digdroid/alman/dig/n;->b()V
     :try_end_0
@@ -691,9 +700,7 @@
     goto :goto_0
 
     :catch_0
-    const-string p1, ""
-
-    iput-object p1, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+    iput-object v0, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
 
     :goto_0
     return-void

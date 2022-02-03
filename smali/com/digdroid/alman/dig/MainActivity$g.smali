@@ -49,7 +49,7 @@
 
     const-string v1, "data_version"
 
-    const/16 v2, 0x1c7
+    const/16 v2, 0x1c8
 
     invoke-virtual {p1, v1, v2}, Lcom/digdroid/alman/dig/b3;->E(Ljava/lang/String;I)V
 

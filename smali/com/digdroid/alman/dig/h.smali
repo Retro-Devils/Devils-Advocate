@@ -84,7 +84,7 @@
     iput v0, p0, Lcom/digdroid/alman/dig/h;->e:I
 
     :goto_0
-    invoke-virtual {p1, v0}, Lcom/digdroid/alman/dig/a4;->g(Z)Landroid/graphics/Point;
+    invoke-virtual {p1, v0}, Lcom/digdroid/alman/dig/b4;->g(Z)Landroid/graphics/Point;
 
     move-result-object p1
 

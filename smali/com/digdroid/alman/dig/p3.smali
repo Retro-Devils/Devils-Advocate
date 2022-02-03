@@ -38,7 +38,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0902b0
+    const v1, 0x7f0902b1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -58,7 +58,7 @@
 
     invoke-virtual {v5, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    const v1, 0x7f090109
+    const v1, 0x7f09010a
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -76,7 +76,7 @@
 
     invoke-virtual {v6, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    const v1, 0x7f0900fe
+    const v1, 0x7f0900ff
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -94,7 +94,7 @@
 
     invoke-virtual {v7, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    const v1, 0x7f090353
+    const v1, 0x7f090354
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -149,7 +149,7 @@
 
     invoke-direct {v1, p0}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;)V
 
-    const v3, 0x7f11026d
+    const v3, 0x7f11026e
 
     invoke-virtual {v1, v3}, Landroidx/appcompat/app/b$a;->r(I)Landroidx/appcompat/app/b$a;
 
@@ -242,7 +242,7 @@
     return p0
 .end method
 
-.method public static f(Lcom/digdroid/alman/dig/a4;)V
+.method public static f(Lcom/digdroid/alman/dig/b4;)V
     .locals 5
 
     invoke-static {p0}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
@@ -259,7 +259,7 @@
 
     const-string v2, "black.cfg"
 
-    invoke-direct {v1, p0, v2}, Lcom/digdroid/alman/dig/r3;-><init>(Lcom/digdroid/alman/dig/a4;Ljava/lang/String;)V
+    invoke-direct {v1, p0, v2}, Lcom/digdroid/alman/dig/r3;-><init>(Lcom/digdroid/alman/dig/b4;Ljava/lang/String;)V
 
     invoke-virtual {v1}, Lcom/digdroid/alman/dig/r3;->z()Z
 
@@ -288,7 +288,7 @@
 
     const-string v3, "white.cfg"
 
-    invoke-direct {v1, p0, v3}, Lcom/digdroid/alman/dig/r3;-><init>(Lcom/digdroid/alman/dig/a4;Ljava/lang/String;)V
+    invoke-direct {v1, p0, v3}, Lcom/digdroid/alman/dig/r3;-><init>(Lcom/digdroid/alman/dig/b4;Ljava/lang/String;)V
 
     invoke-virtual {v1}, Lcom/digdroid/alman/dig/r3;->z()Z
 
@@ -300,7 +300,7 @@
 
     invoke-virtual {v1, v3}, Lcom/digdroid/alman/dig/r3;->j(Ljava/lang/String;)V
 
-    const v3, 0x7f110292
+    const v3, 0x7f110293
 
     invoke-virtual {p0, v3}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -315,7 +315,7 @@
 
     const-string v3, "grey.cfg"
 
-    invoke-direct {v1, p0, v3}, Lcom/digdroid/alman/dig/r3;-><init>(Lcom/digdroid/alman/dig/a4;Ljava/lang/String;)V
+    invoke-direct {v1, p0, v3}, Lcom/digdroid/alman/dig/r3;-><init>(Lcom/digdroid/alman/dig/b4;Ljava/lang/String;)V
 
     invoke-virtual {v1}, Lcom/digdroid/alman/dig/r3;->z()Z
 
@@ -342,7 +342,7 @@
 
     const-string v3, "darkblue.cfg"
 
-    invoke-direct {v1, p0, v3}, Lcom/digdroid/alman/dig/r3;-><init>(Lcom/digdroid/alman/dig/a4;Ljava/lang/String;)V
+    invoke-direct {v1, p0, v3}, Lcom/digdroid/alman/dig/r3;-><init>(Lcom/digdroid/alman/dig/b4;Ljava/lang/String;)V
 
     invoke-virtual {v1}, Lcom/digdroid/alman/dig/r3;->z()Z
 
@@ -375,7 +375,7 @@
 
     new-instance v1, Lcom/digdroid/alman/dig/s3;
 
-    invoke-direct {v1, p0, v0}, Lcom/digdroid/alman/dig/s3;-><init>(Lcom/digdroid/alman/dig/a4;Ljava/lang/String;)V
+    invoke-direct {v1, p0, v0}, Lcom/digdroid/alman/dig/s3;-><init>(Lcom/digdroid/alman/dig/b4;Ljava/lang/String;)V
 
     sput-object v1, Lcom/digdroid/alman/dig/p3;->a:Lcom/digdroid/alman/dig/s3;
 
@@ -508,7 +508,7 @@
     return p0
 .end method
 
-.method static j(Lcom/digdroid/alman/dig/a4;Lcom/digdroid/alman/dig/p3$e;)V
+.method static j(Lcom/digdroid/alman/dig/b4;Lcom/digdroid/alman/dig/p3$e;)V
     .locals 2
 
     new-instance v0, Lcom/digdroid/alman/dig/p3$f;
@@ -517,7 +517,7 @@
 
     const/4 p1, 0x1
 
-    new-array p1, p1, [Lcom/digdroid/alman/dig/a4;
+    new-array p1, p1, [Lcom/digdroid/alman/dig/b4;
 
     const/4 v1, 0x0
 
