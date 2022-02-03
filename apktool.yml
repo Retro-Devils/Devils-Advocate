@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: DIGGING1.apk
+apkFileName: DIGGING.apk
 compressionType: false
 doNotCompress:
 - resources.arsc
@@ -29,5 +29,5 @@ usesFramework:
   tag: null
 version: 2.6.0
 versionInfo:
-  versionCode: '166'
-  versionName: 1.39.7
+  versionCode: '167'
+  versionName: 1.39.7.1
