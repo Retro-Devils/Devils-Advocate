@@ -128,6 +128,12 @@
     aput-object v4, v0, v1
 
     const/16 v1, 0xe
+    
+    const-string v4, "players"
+
+    aput-object v4, v0, v1
+
+    const/16 v1, 0xe
 
     const-string v4, "item_count"
 

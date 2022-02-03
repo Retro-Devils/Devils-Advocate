@@ -861,7 +861,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "https://api.thegamesdb.net/Games/ByPlatformID?id=23&fields=publishers,genres,overview&apikey=98d4ee59533bec49fd68e12987bd7e0649667f63cf560232a04b62228dd89578&page="
+    const-string v1, "https://api.thegamesdb.net/v1/Games/ByPlatformID?id=23&fields=players,publishers,genres,overview&apikey=98d4ee59533bec49fd68e12987bd7e0649667f63cf560232a04b62228dd89578&page="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

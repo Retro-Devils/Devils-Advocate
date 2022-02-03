@@ -1148,7 +1148,7 @@
     invoke-direct {v6, p0}, Lcom/digdroid/alman/dig/r2$f;-><init>(Lcom/digdroid/alman/dig/r2;)V
 
     invoke-virtual {v2, v6}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
+#install theme
     const v2, 0x7f090228
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1170,7 +1170,7 @@
     invoke-direct {v6, p0}, Lcom/digdroid/alman/dig/r2$g;-><init>(Lcom/digdroid/alman/dig/r2;)V
 
     invoke-virtual {v2, v6}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
+# browse themes
     const v2, 0x7f0900af
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1192,7 +1192,7 @@
     invoke-direct {v6, p0}, Lcom/digdroid/alman/dig/r2$h;-><init>(Lcom/digdroid/alman/dig/r2;)V
 
     invoke-virtual {v2, v6}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
+# theme storage
     const v2, 0x7f0903fa
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2321,7 +2321,7 @@
     invoke-direct {v4, p0}, Lcom/digdroid/alman/dig/r2$s0;-><init>(Lcom/digdroid/alman/dig/r2;)V
 
     invoke-virtual {v10, v4}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
-
+# cover storage
     const v4, 0x7f09011e
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
