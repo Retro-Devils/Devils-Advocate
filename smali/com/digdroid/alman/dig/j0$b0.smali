@@ -61,7 +61,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/digdroid/alman/dig/z3;->g(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/digdroid/alman/dig/a4;->h(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -89,7 +89,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/digdroid/alman/dig/z3;->g(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/digdroid/alman/dig/a4;->h(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 

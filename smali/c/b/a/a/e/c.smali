@@ -8,7 +8,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/android/gms/common/api/a$g<",
-            "Lc/b/a/a/d/c/m;",
+            "Lc/b/a/a/d/d/m;",
             ">;"
         }
     .end annotation
@@ -18,7 +18,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/android/gms/common/api/a$a<",
-            "Lc/b/a/a/d/c/m;",
+            "Lc/b/a/a/d/d/m;",
             "*>;"
         }
     .end annotation
@@ -68,15 +68,15 @@
 
     sput-object v2, Lc/b/a/a/e/c;->c:Lcom/google/android/gms/common/api/a;
 
-    new-instance v0, Lc/b/a/a/d/c/j;
+    new-instance v0, Lc/b/a/a/d/d/j;
 
-    invoke-direct {v0}, Lc/b/a/a/d/c/j;-><init>()V
+    invoke-direct {v0}, Lc/b/a/a/d/d/j;-><init>()V
 
     sput-object v0, Lc/b/a/a/e/c;->d:Lc/b/a/a/e/d;
 
-    new-instance v0, Lc/b/a/a/d/c/n;
+    new-instance v0, Lc/b/a/a/d/d/n;
 
-    invoke-direct {v0}, Lc/b/a/a/d/c/n;-><init>()V
+    invoke-direct {v0}, Lc/b/a/a/d/d/n;-><init>()V
 
     sput-object v0, Lc/b/a/a/e/c;->e:Lc/b/a/a/e/q;
 

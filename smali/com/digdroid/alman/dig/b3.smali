@@ -1,965 +1,434 @@
-.class public Lcom/digdroid/alman/dig/b3;
-.super Ljava/lang/Object;
+.class Lcom/digdroid/alman/dig/b3;
+.super Lcom/digdroid/alman/dig/n;
 .source ""
 
 
-# static fields
-.field private static a:Lcom/digdroid/alman/dig/b3;
-
-
 # instance fields
-.field private b:Landroid/content/SharedPreferences;
+.field f:Landroid/database/sqlite/SQLiteDatabase;
 
-.field private c:Z
-
-.field private d:Z
-
-.field private e:Z
-
-.field private f:Z
-
-.field public g:Z
-
-.field private h:Z
-
-.field private i:Z
-
-.field public j:Ljava/lang/String;
-
-.field private k:Landroid/content/Context;
+.field g:Landroid/database/sqlite/SQLiteDatabase;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 0
+.method constructor <init>(Landroid/content/Context;)V
+    .locals 1
 
-    return-void
-.end method
+    invoke-direct {p0, p1}, Lcom/digdroid/alman/dig/n;-><init>(Landroid/content/Context;)V
 
-.method private constructor <init>(Landroid/content/Context;)V
-    .locals 5
+    invoke-static {p1}, Lcom/digdroid/alman/dig/u;->e(Landroid/content/Context;)Lcom/digdroid/alman/dig/u;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-result-object v0
 
-    const/4 v0, 0x0
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/u;->c()Landroid/database/sqlite/SQLiteDatabase;
 
-    iput-boolean v0, p0, Lcom/digdroid/alman/dig/b3;->c:Z
+    move-result-object v0
 
-    iput-boolean v0, p0, Lcom/digdroid/alman/dig/b3;->d:Z
+    iput-object v0, p0, Lcom/digdroid/alman/dig/b3;->g:Landroid/database/sqlite/SQLiteDatabase;
 
-    iput-boolean v0, p0, Lcom/digdroid/alman/dig/b3;->e:Z
-
-    iput-boolean v0, p0, Lcom/digdroid/alman/dig/b3;->f:Z
-
-    iput-boolean v0, p0, Lcom/digdroid/alman/dig/b3;->g:Z
-
-    const-string v1, "default"
-
-    iput-object v1, p0, Lcom/digdroid/alman/dig/b3;->j:Ljava/lang/String;
-
-    iput-object p1, p0, Lcom/digdroid/alman/dig/b3;->k:Landroid/content/Context;
-
-    invoke-static {p1}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z1;->b(Landroid/content/Context;)Lcom/digdroid/alman/dig/z1;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/z1;->c()Z
 
-    const-string p1, "read_announcement"
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/z1;->a()Landroid/database/sqlite/SQLiteDatabase;
 
-    const-wide/16 v1, 0x0
+    move-result-object p1
 
-    invoke-virtual {p0, p1, v1, v2}, Lcom/digdroid/alman/dig/b3;->n(Ljava/lang/String;J)J
+    iput-object p1, p0, Lcom/digdroid/alman/dig/b3;->f:Landroid/database/sqlite/SQLiteDatabase;
 
-    move-result-wide v3
-
-    const-string p1, "last_announcement"
-
-    invoke-virtual {p0, p1, v1, v2}, Lcom/digdroid/alman/dig/b3;->n(Ljava/lang/String;J)J
-
-    move-result-wide v1
-
-    cmp-long p1, v3, v1
-
-    if-gez p1, :cond_0
-
-    const/4 p1, 0x1
-
-    goto :goto_0
-
-    :cond_0
     const/4 p1, 0x0
 
-    :goto_0
-    iput-boolean p1, p0, Lcom/digdroid/alman/dig/b3;->h:Z
-
-    const-string p1, "kiosk_mode"
-
-    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/b3;->c(Ljava/lang/String;Z)Z
-
-    move-result p1
-
-    iput-boolean p1, p0, Lcom/digdroid/alman/dig/b3;->i:Z
+    invoke-virtual {p0, p1}, Lcom/digdroid/alman/dig/n;->t(Z)V
 
     return-void
-.end method
-
-.method public static declared-synchronized k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
-    .locals 2
-
-    const-class v0, Lcom/digdroid/alman/dig/b3;
-
-    monitor-enter v0
-
-    :try_start_0
-    sget-object v1, Lcom/digdroid/alman/dig/b3;->a:Lcom/digdroid/alman/dig/b3;
-
-    if-nez v1, :cond_0
-
-    new-instance v1, Lcom/digdroid/alman/dig/b3;
-
-    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object p0
-
-    invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/b3;-><init>(Landroid/content/Context;)V
-
-    sput-object v1, Lcom/digdroid/alman/dig/b3;->a:Lcom/digdroid/alman/dig/b3;
-
-    :cond_0
-    sget-object p0, Lcom/digdroid/alman/dig/b3;->a:Lcom/digdroid/alman/dig/b3;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit v0
-
-    return-object p0
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit v0
-
-    throw p0
 .end method
 
 
 # virtual methods
-.method public A(Ljava/lang/String;Z)V
-    .locals 0
+.method public A(Ljava/lang/String;J)V
+    .locals 5
 
-    invoke-virtual {p0, p1, p2}, Lcom/digdroid/alman/dig/b3;->B(Ljava/lang/String;Z)V
+    iget-object v0, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
 
-    return-void
-.end method
+    const/16 v1, 0x5b
 
-.method public B(Ljava/lang/String;Z)V
-    .locals 1
+    const/16 v2, 0xa
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1, p2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
-
-    return-void
-.end method
-
-.method public C(J)V
-    .locals 1
-
-    const-string v0, "dirs_last_scanned"
-
-    invoke-virtual {p0, v0, p1, p2}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
-
-    return-void
-.end method
-
-.method public D(Ljava/lang/String;F)V
-    .locals 1
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1, p2}, Landroid/content/SharedPreferences$Editor;->putFloat(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor;
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
-
-    return-void
-.end method
-
-.method public E(Ljava/lang/String;I)V
-    .locals 1
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1, p2}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
-
-    return-void
-.end method
-
-.method public F(Ljava/lang/String;J)V
-    .locals 1
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1, p2, p3}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
-
-    return-void
-.end method
-
-.method public G(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1, p2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
-
-    return-void
-.end method
-
-.method public H(Ljava/lang/String;Ljava/util/Set;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/util/Set<",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1, p2}, Landroid/content/SharedPreferences$Editor;->putStringSet(Ljava/lang/String;Ljava/util/Set;)Landroid/content/SharedPreferences$Editor;
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
-
-    return-void
-.end method
-
-.method public I(Ljava/lang/String;)V
-    .locals 1
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    move-result-object v0
-
-    :try_start_0
-    invoke-interface {v0, p1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
-
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    return-void
-.end method
-
-.method public J(Ljava/lang/String;)V
-    .locals 4
-
-    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->s(Ljava/lang/String;)J
-
-    move-result-wide v0
-
-    const-string p1, "last_announcement"
-
-    invoke-virtual {p0, p1, v0, v1}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
-
-    const-string p1, "read_announcement"
-
-    const-wide/16 v2, 0x0
-
-    invoke-virtual {p0, p1, v2, v3}, Lcom/digdroid/alman/dig/b3;->n(Ljava/lang/String;J)J
-
-    move-result-wide v2
-
-    cmp-long p1, v2, v0
-
-    if-gez p1, :cond_0
-
-    const/4 p1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    :goto_0
-    iput-boolean p1, p0, Lcom/digdroid/alman/dig/b3;->h:Z
-
-    return-void
-.end method
-
-.method public K(Z)V
-    .locals 1
-
-    const-string v0, "download_covers"
-
-    invoke-virtual {p0, v0, p1}, Lcom/digdroid/alman/dig/b3;->B(Ljava/lang/String;Z)V
-
-    return-void
-.end method
-
-.method public declared-synchronized L(Z)V
-    .locals 0
-
-    monitor-enter p0
-
-    :try_start_0
-    iput-boolean p1, p0, Lcom/digdroid/alman/dig/b3;->e:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
-.end method
-
-.method public M(Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "game_list_type"
-
-    invoke-virtual {p0, v0, p1}, Lcom/digdroid/alman/dig/b3;->G(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public N(J)V
-    .locals 1
-
-    const-string v0, "game_start_t"
-
-    invoke-virtual {p0, v0, p1, p2}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
-
-    return-void
-.end method
-
-.method public O(D)V
-    .locals 0
-
-    double-to-float p1, p1
-
-    const-string p2, "game_block_size"
-
-    invoke-virtual {p0, p2, p1}, Lcom/digdroid/alman/dig/b3;->D(Ljava/lang/String;F)V
-
-    return-void
-.end method
-
-.method public P(Z)V
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/digdroid/alman/dig/b3;->f:Z
-
-    return-void
-.end method
-
-.method public declared-synchronized Q(Z)V
-    .locals 0
-
-    monitor-enter p0
-
-    :try_start_0
-    iput-boolean p1, p0, Lcom/digdroid/alman/dig/b3;->d:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
-.end method
-
-.method public declared-synchronized R(Z)V
-    .locals 1
-
-    monitor-enter p0
-
-    :try_start_0
-    const-string v0, "images_renamed"
-
-    invoke-virtual {p0, v0, p1}, Lcom/digdroid/alman/dig/b3;->B(Ljava/lang/String;Z)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
-.end method
-
-.method public S(Z)V
-    .locals 1
-
-    const-string v0, "inform_scan"
-
-    invoke-virtual {p0, v0, p1}, Lcom/digdroid/alman/dig/b3;->B(Ljava/lang/String;Z)V
-
-    return-void
-.end method
-
-.method public T(Z)V
-    .locals 1
-
-    iput-boolean p1, p0, Lcom/digdroid/alman/dig/b3;->i:Z
-
-    const-string v0, "kiosk_mode"
-
-    invoke-virtual {p0, v0, p1}, Lcom/digdroid/alman/dig/b3;->B(Ljava/lang/String;Z)V
-
-    return-void
-.end method
-
-.method public U(Z)V
-    .locals 1
-
-    const-string v0, "launch_immediately"
-
-    invoke-virtual {p0, v0, p1}, Lcom/digdroid/alman/dig/b3;->B(Ljava/lang/String;Z)V
-
-    return-void
-.end method
-
-.method public declared-synchronized V(Z)V
-    .locals 0
-
-    monitor-enter p0
-
-    :try_start_0
-    iput-boolean p1, p0, Lcom/digdroid/alman/dig/b3;->c:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
-.end method
-
-.method public W(Z)V
-    .locals 1
-
-    const-string v0, "show_all_systems"
-
-    invoke-virtual {p0, v0, p1}, Lcom/digdroid/alman/dig/b3;->B(Ljava/lang/String;Z)V
-
-    return-void
-.end method
-
-.method public X(D)V
-    .locals 0
-
-    double-to-float p1, p1
-
-    const-string p2, "systems_block_size"
-
-    invoke-virtual {p0, p2, p1}, Lcom/digdroid/alman/dig/b3;->D(Ljava/lang/String;F)V
-
-    return-void
-.end method
-
-.method public Y()V
-    .locals 3
-
-    const-string v0, "last_announcement"
-
-    const-wide/16 v1, 0x0
-
-    invoke-virtual {p0, v0, v1, v2}, Lcom/digdroid/alman/dig/b3;->n(Ljava/lang/String;J)J
-
-    move-result-wide v0
-
-    const-string v2, "read_announcement"
-
-    invoke-virtual {p0, v2, v0, v1}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
-
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lcom/digdroid/alman/dig/b3;->h:Z
-
-    return-void
-.end method
-
-.method public Z()Z
-    .locals 4
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->k:Landroid/content/Context;
-
-    invoke-static {v0}, Lcom/digdroid/alman/dig/h2;->b(Landroid/content/Context;)[Ljava/io/File;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    const/4 v2, 0x1
-
-    if-eqz v0, :cond_0
-
-    array-length v3, v0
-
-    if-le v3, v2, :cond_0
-
-    aget-object v0, v0, v2
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v2, 0x0
-
-    :goto_0
-    const-string v0, "use_sd_card"
-
-    invoke-interface {v1, v0, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->indexOf(II)I
 
     move-result v0
 
-    return v0
+    const/4 v1, 0x0
+
+    if-lez v0, :cond_0
+
+    iget-object v2, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    invoke-virtual {v2, v1, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    :cond_0
+    invoke-virtual {p0, p2, p3}, Lcom/digdroid/alman/dig/b3;->x(J)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    return-void
+
+    :cond_1
+    const-string v2, "lastselectedgame"
+
+    invoke-virtual {p0, v2, v0}, Lcom/digdroid/alman/dig/n;->s(Ljava/lang/String;Ljava/lang/String;)V
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v3, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v3, "["
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v3, "]\n"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v3, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v3, "\ngameid="
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "\n"
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    iget-object v2, p0, Lcom/digdroid/alman/dig/b3;->f:Landroid/database/sqlite/SQLiteDatabase;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "SELECT title FROM titles WHERE rowid="
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p2, p3}, Lcom/digdroid/alman/dig/b3;->w(J)J
+
+    move-result-wide p2
+
+    invoke-virtual {v3, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    const/4 p3, 0x0
+
+    invoke-virtual {v2, p2, p3}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object p2
+
+    invoke-interface {p2}, Landroid/database/Cursor;->moveToFirst()Z
+
+    new-instance p3, Ljava/lang/StringBuilder;
+
+    invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v2, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    invoke-virtual {p3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "description="
+
+    invoke-virtual {p3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-interface {p2, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p3
+
+    iput-object p3, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    invoke-interface {p2}, Landroid/database/Cursor;->close()V
+
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object p3, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p3, "path="
+
+    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    return-void
 .end method
 
-.method public a()Z
-    .locals 3
+.method public u()Ljava/lang/String;
+    .locals 4
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/n;->a:Landroid/content/Context;
 
-    const-string v1, "download_covers"
+    invoke-static {v0}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
 
-    const/4 v2, 0x1
+    move-result-object v1
 
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+    const-string v2, "dig_dir"
 
-    move-result v0
+    const-string v3, ""
 
-    return v0
-.end method
+    invoke-virtual {v1, v2, v3}, Lcom/digdroid/alman/dig/c3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-.method public b()Ljava/lang/String;
-    .locals 3
+    move-result-object v1
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
+    invoke-static {v0, v1}, Lcom/digdroid/alman/dig/i2;->d(Landroid/content/Context;Ljava/lang/String;)Lcom/digdroid/alman/dig/i2;
 
-    const-string v1, "game_list_type"
+    move-result-object v0
 
-    const-string v2, "grid"
+    new-instance v1, Lcom/digdroid/alman/dig/i2;
 
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string v2, "Emu config/ScummVM"
+
+    invoke-direct {v1, v0, v2}, Lcom/digdroid/alman/dig/i2;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/i2;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public c(Ljava/lang/String;Z)Z
-    .locals 1
+.method public v()Ljava/lang/String;
+    .locals 3
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/n;->a:Landroid/content/Context;
 
-    invoke-interface {v0, p1, p2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/b3;->u()Ljava/lang/String;
 
-    move-result p1
+    move-result-object v1
 
-    return p1
+    invoke-static {v0, v1}, Lcom/digdroid/alman/dig/i2;->d(Landroid/content/Context;Ljava/lang/String;)Lcom/digdroid/alman/dig/i2;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/digdroid/alman/dig/i2;
+
+    const-string v2, ".config/scummvm/scummvm.ini"
+
+    invoke-direct {v1, v0, v2}, Lcom/digdroid/alman/dig/i2;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/i2;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method
 
-.method public d()J
-    .locals 4
+.method w(J)J
+    .locals 3
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->g:Landroid/database/sqlite/SQLiteDatabase;
 
-    const-string v1, "dirs_last_scanned"
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    const-wide/16 v2, 0x0
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-interface {v0, v1, v2, v3}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
+    const-string v2, "SELECT mdbid FROM roms WHERE _id="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    const/4 p2, 0x0
+
+    invoke-virtual {v0, p1, p2}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Landroid/database/Cursor;->moveToFirst()Z
+
+    move-result p2
+
+    if-eqz p2, :cond_0
+
+    const/4 p2, 0x0
+
+    invoke-interface {p1, p2}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/16 v0, -0x1
+
+    :goto_0
+    invoke-interface {p1}, Landroid/database/Cursor;->close()V
 
     return-wide v0
 .end method
 
-.method public declared-synchronized e()Z
-    .locals 1
-
-    monitor-enter p0
-
-    :try_start_0
-    iget-boolean v0, p0, Lcom/digdroid/alman/dig/b3;->e:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public f(Ljava/lang/String;F)F
-    .locals 1
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    invoke-interface {v0, p1, p2}, Landroid/content/SharedPreferences;->getFloat(Ljava/lang/String;F)F
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public g()Ljava/lang/Long;
+.method x(J)Ljava/lang/String;
     .locals 4
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    const-string v1, "game_start_t"
-
-    const-wide/16 v2, 0x0
-
-    invoke-interface {v0, v1, v2, v3}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
-
-    move-result-wide v0
-
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public h()Z
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/digdroid/alman/dig/b3;->f:Z
-
-    return v0
-.end method
-
-.method public declared-synchronized i()Z
-    .locals 1
-
-    monitor-enter p0
-
-    :try_start_0
-    iget-boolean v0, p0, Lcom/digdroid/alman/dig/b3;->d:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public j()Z
-    .locals 3
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    const-string v1, "inform_scan"
-
-    const/4 v2, 0x1
-
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public l(Ljava/lang/String;I)I
-    .locals 1
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    invoke-interface {v0, p1, p2}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public m()Z
-    .locals 3
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    const-string v1, "launch_immediately"
-
-    const/4 v2, 0x0
-
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public n(Ljava/lang/String;J)J
-    .locals 1
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    invoke-interface {v0, p1, p2, p3}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
+    invoke-virtual {p0, p1, p2}, Lcom/digdroid/alman/dig/b3;->w(J)J
 
     move-result-wide p1
 
-    return-wide p1
-.end method
+    const/4 v0, 0x0
 
-.method public declared-synchronized o()Z
-    .locals 1
+    const-wide/16 v1, 0x0
 
-    monitor-enter p0
+    cmp-long v3, p1, v1
 
-    :try_start_0
-    iget-boolean v0, p0, Lcom/digdroid/alman/dig/b3;->c:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    if-ltz v3, :cond_1
 
-    monitor-exit p0
+    iget-object v1, p0, Lcom/digdroid/alman/dig/b3;->f:Landroid/database/sqlite/SQLiteDatabase;
 
-    return v0
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    :catchall_0
-    move-exception v0
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    monitor-exit p0
+    const-string v3, "SELECT slug FROM slugs WHERE gameid="
 
-    throw v0
-.end method
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-.method public p()Z
-    .locals 3
+    invoke-virtual {v2, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    const-string v1, "show_all_systems"
-
-    const/4 v2, 0x0
-
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    invoke-interface {v0, p1, p2}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    return-object p1
-.end method
-
-.method public r(Ljava/lang/String;)Ljava/util/Set;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            ")",
-            "Ljava/util/Set<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    new-instance v1, Ljava/util/HashSet;
-
-    invoke-direct {v1}, Ljava/util/HashSet;-><init>()V
-
-    invoke-interface {v0, p1, v1}, Landroid/content/SharedPreferences;->getStringSet(Ljava/lang/String;Ljava/util/Set;)Ljava/util/Set;
+    invoke-virtual {v1, p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object p1
 
-    return-object p1
+    invoke-interface {p1}, Landroid/database/Cursor;->moveToFirst()Z
+
+    move-result p2
+
+    if-eqz p2, :cond_0
+
+    const/4 p2, 0x0
+
+    invoke-interface {p1, p2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object p2
+
+    move-object v0, p2
+
+    :cond_0
+    invoke-interface {p1}, Landroid/database/Cursor;->close()V
+
+    :cond_1
+    return-object v0
 .end method
 
-.method public declared-synchronized s()Z
-    .locals 3
-
-    monitor-enter p0
-
-    :try_start_0
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->b:Landroid/content/SharedPreferences;
-
-    const-string v1, "images_renamed"
-
-    const/4 v2, 0x0
-
-    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public t()Z
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/digdroid/alman/dig/b3;->i:Z
-
-    return v0
-.end method
-
-.method public u()Z
+.method public y()V
     .locals 2
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b3;->k:Landroid/content/Context;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/n;->a:Landroid/content/Context;
 
-    const-string v1, "uimode"
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/b3;->v()Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/digdroid/alman/dig/i2;->d(Landroid/content/Context;Ljava/lang/String;)Lcom/digdroid/alman/dig/i2;
 
     move-result-object v0
 
-    check-cast v0, Landroid/app/UiModeManager;
+    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/n;->k(Lcom/digdroid/alman/dig/i2;)V
 
-    invoke-virtual {v0}, Landroid/app/UiModeManager;->getCurrentModeType()I
+    return-void
+.end method
+
+.method public z()Z
+    .locals 2
+
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/b3;->u()Ljava/lang/String;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/digdroid/alman/dig/n;->a:Landroid/content/Context;
+
+    invoke-static {v1, v0}, Lcom/digdroid/alman/dig/i2;->d(Landroid/content/Context;Ljava/lang/String;)Lcom/digdroid/alman/dig/i2;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    :try_start_0
+    invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :cond_0
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/b3;->v()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/n;->r(Ljava/lang/String;)Z
 
     move-result v0
 
-    const/4 v1, 0x4
-
-    if-ne v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
     return v0
-.end method
-
-.method public v()Z
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/digdroid/alman/dig/b3;->h:Z
-
-    return v0
-.end method
-
-.method public w(Ljava/lang/String;F)V
-    .locals 0
-
-    invoke-virtual {p0, p1, p2}, Lcom/digdroid/alman/dig/b3;->D(Ljava/lang/String;F)V
-
-    return-void
-.end method
-
-.method public x(Ljava/lang/String;I)V
-    .locals 0
-
-    invoke-virtual {p0, p1, p2}, Lcom/digdroid/alman/dig/b3;->E(Ljava/lang/String;I)V
-
-    return-void
-.end method
-
-.method public y(Ljava/lang/String;J)V
-    .locals 0
-
-    invoke-virtual {p0, p1, p2, p3}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
-
-    return-void
-.end method
-
-.method public z(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
-
-    invoke-virtual {p0, p1, p2}, Lcom/digdroid/alman/dig/b3;->G(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
 .end method

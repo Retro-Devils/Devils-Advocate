@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lc/a/c/p$a;
+.implements Lc/a/a/p$a;
 
 
 # annotations
@@ -54,7 +54,7 @@
 
 
 # virtual methods
-.method public a(Lc/a/c/u;)V
+.method public a(Lc/a/a/u;)V
     .locals 11
 
     :try_start_0
@@ -76,7 +76,7 @@
 
     move-object v2, p1
 
-    invoke-direct/range {v0 .. v9}, Lcom/digdroid/alman/dig/o$b;-><init>(Lcom/digdroid/alman/dig/o;Lc/a/c/u;JIIJLjava/lang/String;)V
+    invoke-direct/range {v0 .. v9}, Lcom/digdroid/alman/dig/o$b;-><init>(Lcom/digdroid/alman/dig/o;Lc/a/a/u;JIIJLjava/lang/String;)V
 
     const/4 p1, 0x0
 

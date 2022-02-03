@@ -47,7 +47,7 @@
 
     aget p1, p1, p2
 
-    const v0, 0x7f1101f0
+    const v0, 0x7f1101f2
 
     if-ne p1, v0, :cond_0
 
@@ -59,7 +59,7 @@
 
     move-result-object p3
 
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
 
     move-result v0
 
@@ -77,7 +77,7 @@
 
     move-result-object p1
 
-    const p3, 0x7f1101d8
+    const p3, 0x7f1101da
 
     new-instance v0, Lcom/digdroid/alman/dig/j0$i$b;
 

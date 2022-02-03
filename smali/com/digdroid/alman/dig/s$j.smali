@@ -77,9 +77,9 @@
 
     move-result-object p2
 
-    check-cast p2, Lcom/digdroid/alman/dig/r3;
+    check-cast p2, Lcom/digdroid/alman/dig/s3;
 
-    iput-object p2, p1, Lcom/digdroid/alman/dig/s;->v0:Lcom/digdroid/alman/dig/r3;
+    iput-object p2, p1, Lcom/digdroid/alman/dig/s;->v0:Lcom/digdroid/alman/dig/s3;
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/s$j;->e:Lcom/digdroid/alman/dig/s;
 
@@ -121,9 +121,9 @@
 
     iget-object p4, p0, Lcom/digdroid/alman/dig/s$j;->e:Lcom/digdroid/alman/dig/s;
 
-    iget-object v2, p4, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
+    iget-object v2, p4, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/t3;
 
-    iget-object v3, p4, Lcom/digdroid/alman/dig/s;->v0:Lcom/digdroid/alman/dig/r3;
+    iget-object v3, p4, Lcom/digdroid/alman/dig/s;->v0:Lcom/digdroid/alman/dig/s3;
 
     sget-object p5, Lcom/digdroid/alman/dig/s;->q0:[Ljava/lang/String;
 
@@ -137,7 +137,7 @@
 
     move-object v0, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/digdroid/alman/dig/r;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/s3;Lcom/digdroid/alman/dig/r3;Ljava/lang/String;[I)V
+    invoke-direct/range {v0 .. v5}, Lcom/digdroid/alman/dig/r;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/t3;Lcom/digdroid/alman/dig/s3;Ljava/lang/String;[I)V
 
     iput-object p2, p1, Lcom/digdroid/alman/dig/s;->t0:Lcom/digdroid/alman/dig/r;
 

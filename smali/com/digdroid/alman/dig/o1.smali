@@ -14,7 +14,7 @@
 
 
 # virtual methods
-.method protected A(Lcom/bumptech/glide/r/f;)V
+.method protected B(Lcom/bumptech/glide/r/f;)V
     .locals 1
 
     instance-of v0, p1, Lcom/digdroid/alman/dig/m1;
@@ -33,12 +33,12 @@
     move-result-object p1
 
     :goto_0
-    invoke-super {p0, p1}, Lcom/bumptech/glide/k;->A(Lcom/bumptech/glide/r/f;)V
+    invoke-super {p0, p1}, Lcom/bumptech/glide/k;->B(Lcom/bumptech/glide/r/f;)V
 
     return-void
 .end method
 
-.method public E(Ljava/lang/Class;)Lcom/digdroid/alman/dig/n1;
+.method public F(Ljava/lang/Class;)Lcom/digdroid/alman/dig/n1;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -63,7 +63,7 @@
     return-object v0
 .end method
 
-.method public F()Lcom/digdroid/alman/dig/n1;
+.method public G()Lcom/digdroid/alman/dig/n1;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -83,7 +83,7 @@
     return-object v0
 .end method
 
-.method public G()Lcom/digdroid/alman/dig/n1;
+.method public H()Lcom/digdroid/alman/dig/n1;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -103,7 +103,7 @@
     return-object v0
 .end method
 
-.method public H(Landroid/graphics/drawable/Drawable;)Lcom/digdroid/alman/dig/n1;
+.method public I(Landroid/graphics/drawable/Drawable;)Lcom/digdroid/alman/dig/n1;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -125,7 +125,29 @@
     return-object p1
 .end method
 
-.method public I(Ljava/io/File;)Lcom/digdroid/alman/dig/n1;
+.method public J(Landroid/net/Uri;)Lcom/digdroid/alman/dig/n1;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/net/Uri;",
+            ")",
+            "Lcom/digdroid/alman/dig/n1<",
+            "Landroid/graphics/drawable/Drawable;",
+            ">;"
+        }
+    .end annotation
+
+    invoke-super {p0, p1}, Lcom/bumptech/glide/k;->t(Landroid/net/Uri;)Lcom/bumptech/glide/j;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/digdroid/alman/dig/n1;
+
+    return-object p1
+.end method
+
+.method public K(Ljava/io/File;)Lcom/digdroid/alman/dig/n1;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -138,7 +160,7 @@
         }
     .end annotation
 
-    invoke-super {p0, p1}, Lcom/bumptech/glide/k;->t(Ljava/io/File;)Lcom/bumptech/glide/j;
+    invoke-super {p0, p1}, Lcom/bumptech/glide/k;->u(Ljava/io/File;)Lcom/bumptech/glide/j;
 
     move-result-object p1
 
@@ -147,7 +169,7 @@
     return-object p1
 .end method
 
-.method public J(Ljava/lang/Integer;)Lcom/digdroid/alman/dig/n1;
+.method public L(Ljava/lang/Integer;)Lcom/digdroid/alman/dig/n1;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -160,7 +182,7 @@
         }
     .end annotation
 
-    invoke-super {p0, p1}, Lcom/bumptech/glide/k;->u(Ljava/lang/Integer;)Lcom/bumptech/glide/j;
+    invoke-super {p0, p1}, Lcom/bumptech/glide/k;->v(Ljava/lang/Integer;)Lcom/bumptech/glide/j;
 
     move-result-object p1
 
@@ -169,7 +191,7 @@
     return-object p1
 .end method
 
-.method public K(Ljava/lang/String;)Lcom/digdroid/alman/dig/n1;
+.method public M(Ljava/lang/String;)Lcom/digdroid/alman/dig/n1;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -182,7 +204,7 @@
         }
     .end annotation
 
-    invoke-super {p0, p1}, Lcom/bumptech/glide/k;->v(Ljava/lang/String;)Lcom/bumptech/glide/j;
+    invoke-super {p0, p1}, Lcom/bumptech/glide/k;->w(Ljava/lang/String;)Lcom/bumptech/glide/j;
 
     move-result-object p1
 
@@ -194,7 +216,7 @@
 .method public bridge synthetic l(Ljava/lang/Class;)Lcom/bumptech/glide/j;
     .locals 0
 
-    invoke-virtual {p0, p1}, Lcom/digdroid/alman/dig/o1;->E(Ljava/lang/Class;)Lcom/digdroid/alman/dig/n1;
+    invoke-virtual {p0, p1}, Lcom/digdroid/alman/dig/o1;->F(Ljava/lang/Class;)Lcom/digdroid/alman/dig/n1;
 
     move-result-object p1
 
@@ -204,7 +226,7 @@
 .method public bridge synthetic m()Lcom/bumptech/glide/j;
     .locals 1
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/o1;->F()Lcom/digdroid/alman/dig/n1;
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/o1;->G()Lcom/digdroid/alman/dig/n1;
 
     move-result-object v0
 
@@ -214,7 +236,7 @@
 .method public bridge synthetic n()Lcom/bumptech/glide/j;
     .locals 1
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/o1;->G()Lcom/digdroid/alman/dig/n1;
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/o1;->H()Lcom/digdroid/alman/dig/n1;
 
     move-result-object v0
 

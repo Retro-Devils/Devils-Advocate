@@ -7,8 +7,8 @@
 
 
 # virtual methods
-.method public abstract K()Lc/b/a/a/c/a;
+.method public abstract M()Lc/b/a/a/c/a;
 .end method
 
-.method public abstract k0()I
+.method public abstract n0()I
 .end method

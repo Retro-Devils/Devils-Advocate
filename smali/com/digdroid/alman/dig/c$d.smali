@@ -326,7 +326,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/z3;->s(Ljava/lang/String;)J
+    invoke-static {v0}, Lcom/digdroid/alman/dig/a4;->t(Ljava/lang/String;)J
 
     move-result-wide v2
 
@@ -362,9 +362,9 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/c$d;->e:Lcom/digdroid/alman/dig/c;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
+    iget-object v0, v0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/t3;
 
-    iget v0, v0, Lcom/digdroid/alman/dig/s3;->e:I
+    iget v0, v0, Lcom/digdroid/alman/dig/t3;->e:I
 
     const v2, -0x33000001    # -1.3421772E8f
 
@@ -390,9 +390,9 @@
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/c$d;->e:Lcom/digdroid/alman/dig/c;
 
-    iget-object v2, v2, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
+    iget-object v2, v2, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/t3;
 
-    iget v2, v2, Lcom/digdroid/alman/dig/s3;->f:I
+    iget v2, v2, Lcom/digdroid/alman/dig/t3;->f:I
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -418,9 +418,9 @@
 
     iget-object p3, p0, Lcom/digdroid/alman/dig/c$d;->e:Lcom/digdroid/alman/dig/c;
 
-    iget-object p3, p3, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
+    iget-object p3, p3, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/t3;
 
-    iget p3, p3, Lcom/digdroid/alman/dig/s3;->e:I
+    iget p3, p3, Lcom/digdroid/alman/dig/t3;->e:I
 
     invoke-virtual {v0, p3}, Landroid/widget/TextView;->setTextColor(I)V
 

@@ -56,7 +56,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->b()I
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->b()I
 
     move-result p2
 
@@ -67,11 +67,11 @@
 
     iput p3, p1, Lcom/digdroid/alman/dig/v0;->n:I
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/v0;->f:Lcom/digdroid/alman/dig/b3;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/v0;->f:Lcom/digdroid/alman/dig/c3;
 
     const-string p2, "games_preview_lines"
 
-    invoke-virtual {p1, p2, p3}, Lcom/digdroid/alman/dig/b3;->x(Ljava/lang/String;I)V
+    invoke-virtual {p1, p2, p3}, Lcom/digdroid/alman/dig/c3;->x(Ljava/lang/String;I)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/v0$g;->b:Lcom/digdroid/alman/dig/v0;
 

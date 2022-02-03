@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/d0$q;
+.implements Lcom/digdroid/alman/dig/d0$r;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/MainActivity;->a3()V
+    value = Lcom/digdroid/alman/dig/MainActivity;->c3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -39,7 +39,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/MainActivity$f;->a:Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/MainActivity;->Y2(Lcom/digdroid/alman/dig/MainActivity;)V
+    invoke-static {v0}, Lcom/digdroid/alman/dig/MainActivity;->a3(Lcom/digdroid/alman/dig/MainActivity;)V
 
     return-void
 .end method

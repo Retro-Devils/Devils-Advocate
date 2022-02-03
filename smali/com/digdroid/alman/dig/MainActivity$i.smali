@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/MainActivity;->Z2()V
+    value = Lcom/digdroid/alman/dig/MainActivity;->b3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -39,25 +39,25 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/MainActivity$i;->b:Lcom/digdroid/alman/dig/MainActivity;
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
 
     const-string p2, "auto_scan"
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, p2, v0}, Lcom/digdroid/alman/dig/b3;->B(Ljava/lang/String;Z)V
+    invoke-virtual {p1, p2, v0}, Lcom/digdroid/alman/dig/c3;->B(Ljava/lang/String;Z)V
 
-    new-instance p1, Lcom/digdroid/alman/dig/z2;
+    new-instance p1, Lcom/digdroid/alman/dig/a3;
 
     iget-object p2, p0, Lcom/digdroid/alman/dig/MainActivity$i;->b:Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-direct {p1, p2}, Lcom/digdroid/alman/dig/z2;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p1, p2}, Lcom/digdroid/alman/dig/a3;-><init>(Landroid/app/Activity;)V
 
     new-instance p2, Lcom/digdroid/alman/dig/MainActivity$i$a;
 
     invoke-direct {p2, p0}, Lcom/digdroid/alman/dig/MainActivity$i$a;-><init>(Lcom/digdroid/alman/dig/MainActivity$i;)V
 
-    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/z2;->a(Lcom/digdroid/alman/dig/z2$b;)V
+    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/a3;->a(Lcom/digdroid/alman/dig/a3$b;)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/MainActivity$i;->b:Lcom/digdroid/alman/dig/MainActivity;
 

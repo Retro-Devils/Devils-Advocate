@@ -814,11 +814,11 @@
 
     if-eqz v1, :cond_1
 
-    invoke-static {p0}, Lb/m/a/a;->b(Landroidx/lifecycle/g;)Lb/m/a/a;
+    invoke-static {p0}, Lb/n/a/a;->b(Landroidx/lifecycle/g;)Lb/n/a/a;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lb/m/a/a;->c()V
+    invoke-virtual {v1}, Lb/n/a/a;->c()V
 
     iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->r:Z
 
@@ -2276,11 +2276,11 @@
 
     if-eqz v0, :cond_c
 
-    invoke-static {p0}, Lb/m/a/a;->b(Landroidx/lifecycle/g;)Lb/m/a/a;
+    invoke-static {p0}, Lb/n/a/a;->b(Landroidx/lifecycle/g;)Lb/n/a/a;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2, p3, p4}, Lb/m/a/a;->a(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+    invoke-virtual {v0, p1, p2, p3, p4}, Lb/n/a/a;->a(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
     :cond_c
     invoke-virtual {p3, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V

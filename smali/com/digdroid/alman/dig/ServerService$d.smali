@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lc/a/c/p$b;
+.implements Lc/a/a/p$b;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lc/a/c/p$b<",
+        "Lc/a/a/p$b<",
         "[B>;"
     }
 .end annotation
@@ -89,13 +89,13 @@
     :catch_0
     iget-object p1, p0, Lcom/digdroid/alman/dig/ServerService$d;->d:Lcom/digdroid/alman/dig/ServerService;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/l2;->a(Landroid/content/Context;)Lc/a/c/o;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/m2;->a(Landroid/content/Context;)Lc/a/a/o;
 
     move-result-object p1
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/ServerService$d;->c:Lcom/digdroid/alman/dig/ServerService$s;
 
-    invoke-virtual {p1, v0}, Lc/a/c/o;->a(Lc/a/c/n;)Lc/a/c/n;
+    invoke-virtual {p1, v0}, Lc/a/a/o;->a(Lc/a/a/n;)Lc/a/a/n;
 
     :cond_0
     return-void

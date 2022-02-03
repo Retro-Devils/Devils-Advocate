@@ -26,10 +26,10 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FFLjava/lang/String;[ZLcom/digdroid/alman/dig/c1$a;)V
+.method public constructor <init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FFLjava/lang/String;[ZLcom/digdroid/alman/dig/c1$a;)V
     .locals 0
 
-    invoke-direct/range {p0 .. p5}, Lcom/digdroid/alman/dig/h;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FF)V
+    invoke-direct/range {p0 .. p5}, Lcom/digdroid/alman/dig/h;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FF)V
 
     iput-object p6, p0, Lcom/digdroid/alman/dig/a1;->l:Ljava/lang/String;
 

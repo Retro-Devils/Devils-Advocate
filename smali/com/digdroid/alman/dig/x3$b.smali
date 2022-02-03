@@ -1,49 +1,28 @@
-.class Lcom/digdroid/alman/dig/x3$b;
+.class interface abstract Lcom/digdroid/alman/dig/x3$b;
 .super Ljava/lang/Object;
 .source ""
 
-# interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
-
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/x3;->d1(Landroid/content/Intent;)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/digdroid/alman/dig/x3;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
+    accessFlags = 0x608
+    name = "b"
 .end annotation
 
 
-# instance fields
-.field final synthetic b:Lcom/digdroid/alman/dig/x3;
-
-
-# direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/x3;)V
-    .locals 0
-
-    iput-object p1, p0, Lcom/digdroid/alman/dig/x3$b;->b:Lcom/digdroid/alman/dig/x3;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
+# virtual methods
+.method public abstract O(Z)V
 .end method
 
+.method public abstract Q(ILjava/lang/String;II)V
+.end method
 
-# virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 0
+.method public abstract b(Ljava/lang/String;)V
+.end method
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/x3$b;->b:Lcom/digdroid/alman/dig/x3;
-
-    iget-object p1, p1, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
-
-    const/4 p2, 0x1
-
-    iput-boolean p2, p1, Lcom/digdroid/alman/dig/b3;->g:Z
-
-    return-void
+.method public abstract j0()V
 .end method

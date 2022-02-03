@@ -1,95 +1,40 @@
-.class public Lc/b/a/a/d/c/d;
-.super Lc/b/a/a/d/c/g;
+.class public abstract Lc/b/a/a/d/c/d;
+.super Lc/b/a/a/d/c/e;
 .source ""
+
+# interfaces
+.implements Lc/b/a/a/d/c/a;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static i(Landroid/os/IBinder;)Lc/b/a/a/d/c/a;
+    .locals 2
 
-    invoke-direct {p0}, Lc/b/a/a/d/c/g;-><init>()V
+    if-nez p0, :cond_0
 
-    return-void
-.end method
+    const/4 p0, 0x0
 
+    return-object p0
 
-# virtual methods
-.method public F(Lcom/google/android/gms/common/api/Status;Lc/b/a/a/e/b;)V
-    .locals 0
+    :cond_0
+    const-string v0, "com.android.vending.billing.IInAppBillingService"
 
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    invoke-interface {p0, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
 
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    move-result-object v0
 
-    throw p1
-.end method
+    instance-of v1, v0, Lc/b/a/a/d/c/a;
 
-.method public R(Lcom/google/android/gms/common/api/Status;Z)V
-    .locals 0
+    if-eqz v1, :cond_1
 
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    check-cast v0, Lc/b/a/a/d/c/a;
 
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    return-object v0
 
-    throw p1
-.end method
+    :cond_1
+    new-instance v0, Lc/b/a/a/d/c/c;
 
-.method public V(Lcom/google/android/gms/common/api/Status;)V
-    .locals 0
+    invoke-direct {v0, p0}, Lc/b/a/a/d/c/c;-><init>(Landroid/os/IBinder;)V
 
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public n(Lcom/google/android/gms/common/api/Status;Lc/b/a/a/e/k;)V
-    .locals 0
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public final q(Lcom/google/android/gms/common/api/Status;Z)V
-    .locals 0
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public q0(Lcom/google/android/gms/common/api/Status;Lc/b/a/a/e/i;)V
-    .locals 0
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public final s(Lcom/google/android/gms/common/api/Status;Lc/b/a/a/e/m;)V
-    .locals 0
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public final t(Ljava/lang/String;)V
-    .locals 0
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
+    return-object v0
 .end method

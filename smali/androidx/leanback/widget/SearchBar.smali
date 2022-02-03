@@ -136,7 +136,7 @@
 
     move-result-object v0
 
-    sget v1, Lb/l/h;->f:I
+    sget v1, Lb/m/h;->f:I
 
     const/4 v2, 0x1
 
@@ -146,7 +146,7 @@
 
     move-result-object v0
 
-    sget v1, Lb/l/c;->o:I
+    sget v1, Lb/m/c;->o:I
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -186,7 +186,7 @@
 
     iput-object p2, p0, Landroidx/leanback/widget/SearchBar;->l:Landroid/view/inputmethod/InputMethodManager;
 
-    sget p2, Lb/l/b;->i:I
+    sget p2, Lb/m/b;->i:I
 
     invoke-virtual {p3, p2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -194,7 +194,7 @@
 
     iput p2, p0, Landroidx/leanback/widget/SearchBar;->p:I
 
-    sget p2, Lb/l/b;->h:I
+    sget p2, Lb/m/b;->h:I
 
     invoke-virtual {p3, p2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -202,7 +202,7 @@
 
     iput p2, p0, Landroidx/leanback/widget/SearchBar;->o:I
 
-    sget p2, Lb/l/g;->a:I
+    sget p2, Lb/m/g;->a:I
 
     invoke-virtual {p3, p2}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -210,7 +210,7 @@
 
     iput p2, p0, Landroidx/leanback/widget/SearchBar;->t:I
 
-    sget p2, Lb/l/g;->b:I
+    sget p2, Lb/m/g;->b:I
 
     invoke-virtual {p3, p2}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -218,7 +218,7 @@
 
     iput p2, p0, Landroidx/leanback/widget/SearchBar;->s:I
 
-    sget p2, Lb/l/b;->g:I
+    sget p2, Lb/m/b;->g:I
 
     invoke-virtual {p3, p2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -226,7 +226,7 @@
 
     iput p2, p0, Landroidx/leanback/widget/SearchBar;->r:I
 
-    sget p2, Lb/l/b;->f:I
+    sget p2, Lb/m/b;->f:I
 
     invoke-virtual {p3, p2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -266,25 +266,25 @@
 
     new-array v1, v0, [I
 
-    sget v2, Lb/l/i;->a:I
+    sget v2, Lb/m/i;->a:I
 
     const/4 v3, 0x0
 
     aput v2, v1, v3
 
-    sget v2, Lb/l/i;->c:I
+    sget v2, Lb/m/i;->c:I
 
     const/4 v4, 0x1
 
     aput v2, v1, v4
 
-    sget v2, Lb/l/i;->b:I
+    sget v2, Lb/m/i;->b:I
 
     const/4 v5, 0x2
 
     aput v2, v1, v5
 
-    sget v2, Lb/l/i;->d:I
+    sget v2, Lb/m/i;->d:I
 
     const/4 v5, 0x3
 
@@ -334,7 +334,7 @@
 
     move-result-object v0
 
-    sget v1, Lb/l/j;->a:I
+    sget v1, Lb/m/j;->a:I
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -362,7 +362,7 @@
 
     move-result-object v0
 
-    sget v3, Lb/l/j;->d:I
+    sget v3, Lb/m/j;->d:I
 
     new-array v2, v2, [Ljava/lang/Object;
 
@@ -381,7 +381,7 @@
 
     move-result-object v0
 
-    sget v3, Lb/l/j;->c:I
+    sget v3, Lb/m/j;->c:I
 
     new-array v2, v2, [Ljava/lang/Object;
 
@@ -406,7 +406,7 @@
 
     move-result-object v0
 
-    sget v1, Lb/l/j;->b:I
+    sget v1, Lb/m/j;->b:I
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -449,7 +449,7 @@
 .method e()V
     .locals 1
 
-    sget v0, Lb/l/i;->a:I
+    sget v0, Lb/m/i;->a:I
 
     invoke-direct {p0, v0}, Landroidx/leanback/widget/SearchBar;->d(I)V
 
@@ -459,7 +459,7 @@
 .method f()V
     .locals 1
 
-    sget v0, Lb/l/i;->c:I
+    sget v0, Lb/m/i;->c:I
 
     invoke-direct {p0, v0}, Landroidx/leanback/widget/SearchBar;->d(I)V
 
@@ -469,7 +469,7 @@
 .method g()V
     .locals 1
 
-    sget v0, Lb/l/i;->d:I
+    sget v0, Lb/m/i;->d:I
 
     invoke-direct {p0, v0}, Landroidx/leanback/widget/SearchBar;->d(I)V
 
@@ -849,7 +849,7 @@
 
     invoke-super {p0}, Landroid/widget/RelativeLayout;->onFinishInflate()V
 
-    sget v0, Lb/l/f;->l:I
+    sget v0, Lb/m/f;->l:I
 
     invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -863,7 +863,7 @@
 
     iput-object v0, p0, Landroidx/leanback/widget/SearchBar;->n:Landroid/graphics/drawable/Drawable;
 
-    sget v0, Lb/l/f;->n:I
+    sget v0, Lb/m/f;->n:I
 
     invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -873,7 +873,7 @@
 
     iput-object v0, p0, Landroidx/leanback/widget/SearchBar;->d:Landroidx/leanback/widget/SearchEditText;
 
-    sget v0, Lb/l/f;->k:I
+    sget v0, Lb/m/f;->k:I
 
     invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -932,7 +932,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setPrivateImeOptions(Ljava/lang/String;)V
 
-    sget v0, Lb/l/f;->m:I
+    sget v0, Lb/m/f;->m:I
 
     invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 

@@ -30,10 +30,10 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FLcom/digdroid/alman/dig/g1$a;)V
+.method public constructor <init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FLcom/digdroid/alman/dig/g1$a;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/digdroid/alman/dig/q1;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;F)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/digdroid/alman/dig/q1;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;F)V
 
     invoke-interface {p5}, Lcom/digdroid/alman/dig/g1$a;->b()Lcom/digdroid/alman/dig/m;
 

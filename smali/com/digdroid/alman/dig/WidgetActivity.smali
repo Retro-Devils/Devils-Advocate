@@ -1,5 +1,5 @@
 .class public Lcom/digdroid/alman/dig/WidgetActivity;
-.super Lcom/digdroid/alman/dig/b4;
+.super Lcom/digdroid/alman/dig/c4;
 .source ""
 
 
@@ -11,14 +11,14 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/b4;-><init>()V
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/c4;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method h1()V
+.method j1()V
     .locals 11
 
     iget-wide v0, p0, Lcom/digdroid/alman/dig/t;->C:J
@@ -31,7 +31,7 @@
 
     if-gez v6, :cond_0
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/y3;->b1()Z
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/z3;->d1()Z
 
     move-result v0
 
@@ -53,7 +53,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v2, p0, v0, v1, v3}, Lcom/digdroid/alman/dig/o0;->i(Lcom/digdroid/alman/dig/y3;JLcom/digdroid/alman/dig/h0;)V
+    invoke-virtual {v2, p0, v0, v1, v3}, Lcom/digdroid/alman/dig/o0;->i(Lcom/digdroid/alman/dig/z3;JLcom/digdroid/alman/dig/h0;)V
 
     goto :goto_0
 
@@ -64,7 +64,7 @@
 
     invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/WidgetActivity$c;-><init>(Lcom/digdroid/alman/dig/WidgetActivity;)V
 
-    iput-object v1, v0, Lcom/digdroid/alman/dig/b0;->j:Lcom/digdroid/alman/dig/b0$l;
+    iput-object v1, v0, Lcom/digdroid/alman/dig/b0;->j:Lcom/digdroid/alman/dig/b0$m;
 
     iget-wide v0, p0, Lcom/digdroid/alman/dig/t;->C:J
 
@@ -88,7 +88,7 @@
 
     move-object v5, p0
 
-    invoke-virtual/range {v4 .. v10}, Lcom/digdroid/alman/dig/b0;->w(Landroid/app/Activity;JJZ)V
+    invoke-virtual/range {v4 .. v10}, Lcom/digdroid/alman/dig/b0;->x(Landroid/app/Activity;JJZ)V
 
     :cond_1
     :goto_0
@@ -98,9 +98,9 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
 
-    invoke-static {p0}, Lcom/digdroid/alman/dig/p3;->f(Lcom/digdroid/alman/dig/b4;)V
+    invoke-static {p0}, Lcom/digdroid/alman/dig/q3;->f(Lcom/digdroid/alman/dig/c4;)V
 
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/b4;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/c4;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c0029
 
@@ -118,13 +118,13 @@
 
     invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/WidgetActivity$a;-><init>(Lcom/digdroid/alman/dig/WidgetActivity;)V
 
-    invoke-static {p0}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
+    invoke-static {p0}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
+    iput-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/b3;->u()Z
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/c3;->u()Z
 
     move-result v1
 
@@ -153,7 +153,7 @@
 
     invoke-direct {v2, p0, v0}, Lcom/digdroid/alman/dig/WidgetActivity$b;-><init>(Lcom/digdroid/alman/dig/WidgetActivity;Ljava/util/concurrent/Callable;)V
 
-    invoke-virtual {v1, p0, v2}, Lcom/digdroid/alman/dig/d0;->k(Landroid/app/Activity;Lcom/digdroid/alman/dig/d0$q;)V
+    invoke-virtual {v1, p0, v2}, Lcom/digdroid/alman/dig/d0;->l(Landroid/app/Activity;Lcom/digdroid/alman/dig/d0$r;)V
 
     :goto_0
     return-void

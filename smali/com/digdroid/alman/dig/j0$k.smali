@@ -39,7 +39,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/j0$k;->a:Lcom/digdroid/alman/dig/j0;
 
-    iget-object v1, v0, Lcom/digdroid/alman/dig/j0;->G1:Lcom/digdroid/alman/dig/n2;
+    iget-object v1, v0, Lcom/digdroid/alman/dig/j0;->G1:Lcom/digdroid/alman/dig/o2;
 
     if-eqz v1, :cond_0
 
@@ -49,7 +49,7 @@
 
     move-result v2
 
-    invoke-virtual {v1, v0, v2}, Lcom/digdroid/alman/dig/n2;->z(Lcom/digdroid/alman/dig/p1;I)V
+    invoke-virtual {v1, v0, v2}, Lcom/digdroid/alman/dig/o2;->z(Lcom/digdroid/alman/dig/p1;I)V
 
     :cond_0
     return-void

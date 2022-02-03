@@ -654,7 +654,7 @@
     return-void
 .end method
 
-.method public k(Ljava/io/File;)V
+.method public k(Lcom/digdroid/alman/dig/i2;)V
     .locals 4
 
     const-string v0, ""
@@ -666,24 +666,28 @@
     return-void
 
     :cond_0
-    invoke-virtual {p1}, Ljava/io/File;->length()J
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/i2;->length()J
 
     move-result-wide v1
 
     :try_start_0
-    new-instance v3, Ljava/io/FileReader;
+    new-instance v3, Ljava/io/InputStreamReader;
 
-    invoke-direct {v3, p1}, Ljava/io/FileReader;-><init>(Ljava/io/File;)V
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/i2;->i()Ljava/io/InputStream;
+
+    move-result-object p1
+
+    invoke-direct {v3, p1}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V
 
     long-to-int p1, v1
 
     new-array p1, p1, [C
 
-    invoke-virtual {v3, p1}, Ljava/io/FileReader;->read([C)I
+    invoke-virtual {v3, p1}, Ljava/io/InputStreamReader;->read([C)I
 
     move-result v1
 
-    invoke-virtual {v3}, Ljava/io/FileReader;->close()V
+    invoke-virtual {v3}, Ljava/io/InputStreamReader;->close()V
 
     new-instance v2, Ljava/lang/String;
 
@@ -877,30 +881,32 @@
 .end method
 
 .method public r(Ljava/lang/String;)Z
-    .locals 2
+    .locals 1
 
     invoke-virtual {p0}, Lcom/digdroid/alman/dig/n;->d()Ljava/lang/String;
 
-    new-instance v0, Ljava/io/File;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/n;->a:Landroid/content/Context;
 
-    invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lcom/digdroid/alman/dig/i2;->d(Landroid/content/Context;Ljava/lang/String;)Lcom/digdroid/alman/dig/i2;
+
+    move-result-object p1
 
     :try_start_0
-    new-instance p1, Ljava/io/OutputStreamWriter;
+    new-instance v0, Ljava/io/OutputStreamWriter;
 
-    new-instance v1, Ljava/io/FileOutputStream;
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/i2;->j()Ljava/io/OutputStream;
 
-    invoke-direct {v1, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+    move-result-object p1
 
-    invoke-direct {p1, v1}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V
+    invoke-direct {v0, p1}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
 
-    invoke-virtual {p1, v0}, Ljava/io/OutputStreamWriter;->write(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Ljava/io/OutputStreamWriter;->write(Ljava/lang/String;)V
 
-    invoke-virtual {p1}, Ljava/io/OutputStreamWriter;->flush()V
+    invoke-virtual {v0}, Ljava/io/OutputStreamWriter;->flush()V
 
-    invoke-virtual {p1}, Ljava/io/OutputStreamWriter;->close()V
+    invoke-virtual {v0}, Ljava/io/OutputStreamWriter;->close()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

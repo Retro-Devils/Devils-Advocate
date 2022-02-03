@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Ljava/io/FileFilter;
+.implements Lcom/digdroid/alman/dig/x1$c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/b0;->x(Lcom/digdroid/alman/dig/y3;JLjava/lang/String;)V
+    value = Lcom/digdroid/alman/dig/b0;->u(Lcom/digdroid/alman/dig/z3;Landroid/database/Cursor;Landroid/database/Cursor;Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,30 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/util/regex/Pattern;
+.field final synthetic a:Lcom/digdroid/alman/dig/z3;
 
-.field final synthetic b:Lcom/digdroid/alman/dig/b0;
+.field final synthetic b:Landroid/database/Cursor;
+
+.field final synthetic c:Landroid/database/Cursor;
+
+.field final synthetic d:Ljava/lang/String;
+
+.field final synthetic e:Lcom/digdroid/alman/dig/b0;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/b0;Ljava/util/regex/Pattern;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/b0;Lcom/digdroid/alman/dig/z3;Landroid/database/Cursor;Landroid/database/Cursor;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/b0$e;->b:Lcom/digdroid/alman/dig/b0;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/b0$e;->e:Lcom/digdroid/alman/dig/b0;
 
-    iput-object p2, p0, Lcom/digdroid/alman/dig/b0$e;->a:Ljava/util/regex/Pattern;
+    iput-object p2, p0, Lcom/digdroid/alman/dig/b0$e;->a:Lcom/digdroid/alman/dig/z3;
+
+    iput-object p3, p0, Lcom/digdroid/alman/dig/b0$e;->b:Landroid/database/Cursor;
+
+    iput-object p4, p0, Lcom/digdroid/alman/dig/b0$e;->c:Landroid/database/Cursor;
+
+    iput-object p5, p0, Lcom/digdroid/alman/dig/b0$e;->d:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,30 +50,120 @@
 
 
 # virtual methods
-.method public accept(Ljava/io/File;)Z
-    .locals 1
+.method public a(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 9
 
-    :try_start_0
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b0$e;->a:Ljava/util/regex/Pattern;
+    new-instance v0, Ljava/io/File;
 
-    invoke-virtual {p1}, Ljava/io/File;->getName()Ljava/lang/String;
+    invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    move-result-object p1
+    iget-object v1, p0, Lcom/digdroid/alman/dig/b0$e;->a:Lcom/digdroid/alman/dig/z3;
 
-    invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+    iget-object v2, p0, Lcom/digdroid/alman/dig/b0$e;->d:Ljava/lang/String;
 
-    move-result-object p1
+    invoke-virtual {v0}, Ljava/io/File;->getParent()Ljava/lang/String;
 
-    invoke-virtual {p1}, Ljava/util/regex/Matcher;->find()Z
+    move-result-object v3
 
-    move-result p1
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {v0}, Ljava/io/File;->getName()Ljava/lang/String;
 
-    return p1
+    move-result-object v4
 
-    :catch_0
-    const/4 p1, 0x0
+    iget-object p1, p0, Lcom/digdroid/alman/dig/b0$e;->c:Landroid/database/Cursor;
 
-    return p1
+    const/4 v0, 0x0
+
+    invoke-interface {p1, v0}, Landroid/database/Cursor;->getLong(I)J
+
+    move-result-wide v5
+
+    iget-object p1, p0, Lcom/digdroid/alman/dig/b0$e;->c:Landroid/database/Cursor;
+
+    const/4 v0, 0x1
+
+    invoke-interface {p1, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v7
+
+    move-object v8, p2
+
+    invoke-virtual/range {v1 .. v8}, Lcom/digdroid/alman/dig/z3;->g1(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public b()V
+    .locals 5
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/b0$e;->e:Lcom/digdroid/alman/dig/b0;
+
+    iget-object v1, p0, Lcom/digdroid/alman/dig/b0$e;->a:Lcom/digdroid/alman/dig/z3;
+
+    iget-object v2, p0, Lcom/digdroid/alman/dig/b0$e;->b:Landroid/database/Cursor;
+
+    iget-object v3, p0, Lcom/digdroid/alman/dig/b0$e;->c:Landroid/database/Cursor;
+
+    iget-object v4, p0, Lcom/digdroid/alman/dig/b0$e;->d:Ljava/lang/String;
+
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/digdroid/alman/dig/b0;->v(Lcom/digdroid/alman/dig/z3;Landroid/database/Cursor;Landroid/database/Cursor;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public c()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public d()V
+    .locals 3
+
+    new-instance v0, Landroidx/appcompat/app/b$a;
+
+    iget-object v1, p0, Lcom/digdroid/alman/dig/b0$e;->a:Lcom/digdroid/alman/dig/z3;
+
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+
+    move-result v2
+
+    invoke-direct {v0, v1, v2}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
+
+    const v1, 0x7f1101d5
+
+    invoke-virtual {v0, v1}, Landroidx/appcompat/app/b$a;->h(I)Landroidx/appcompat/app/b$a;
+
+    move-result-object v0
+
+    const v1, 0x7f1101da
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroidx/appcompat/app/b$a;->o(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/appcompat/app/b$a;->a()Landroidx/appcompat/app/b;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+
+    return-void
+.end method
+
+.method public e(Ljava/lang/String;)V
+    .locals 4
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/b0$e;->e:Lcom/digdroid/alman/dig/b0;
+
+    iget-object v1, p0, Lcom/digdroid/alman/dig/b0$e;->a:Lcom/digdroid/alman/dig/z3;
+
+    iget-object v2, p0, Lcom/digdroid/alman/dig/b0$e;->b:Landroid/database/Cursor;
+
+    iget-object v3, p0, Lcom/digdroid/alman/dig/b0$e;->c:Landroid/database/Cursor;
+
+    invoke-virtual {v0, v1, v2, v3, p1}, Lcom/digdroid/alman/dig/b0;->v(Lcom/digdroid/alman/dig/z3;Landroid/database/Cursor;Landroid/database/Cursor;Ljava/lang/String;)V
+
+    return-void
 .end method

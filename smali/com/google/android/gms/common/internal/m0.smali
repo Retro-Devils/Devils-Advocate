@@ -35,7 +35,7 @@
     return p1
 
     :cond_0
-    invoke-interface {p0}, Lcom/google/android/gms/common/internal/l0;->k0()I
+    invoke-interface {p0}, Lcom/google/android/gms/common/internal/l0;->n0()I
 
     move-result p1
 
@@ -46,7 +46,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-interface {p0}, Lcom/google/android/gms/common/internal/l0;->K()Lc/b/a/a/c/a;
+    invoke-interface {p0}, Lcom/google/android/gms/common/internal/l0;->M()Lc/b/a/a/c/a;
 
     move-result-object p1
 

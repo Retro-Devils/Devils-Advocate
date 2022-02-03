@@ -56,9 +56,9 @@
     :cond_0
     iget-object v0, p0, Lcom/digdroid/alman/dig/s$d;->b:Lcom/digdroid/alman/dig/s;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/s;->v0:Lcom/digdroid/alman/dig/r3;
+    iget-object v0, v0, Lcom/digdroid/alman/dig/s;->v0:Lcom/digdroid/alman/dig/s3;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/r3;->f:Ljava/lang/String;
+    iget-object v0, v0, Lcom/digdroid/alman/dig/s3;->f:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
@@ -67,7 +67,7 @@
     :cond_1
     new-instance v0, Landroidx/appcompat/app/b$a;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
 
     move-result v1
 
@@ -79,7 +79,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1101d8
+    const v1, 0x7f1101da
 
     new-instance v2, Lcom/digdroid/alman/dig/s$d$a;
 

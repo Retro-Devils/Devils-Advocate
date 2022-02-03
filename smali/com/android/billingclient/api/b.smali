@@ -4,5 +4,5 @@
 
 
 # virtual methods
-.method public abstract a(Lcom/android/billingclient/api/h;)V
+.method public abstract a(Lcom/android/billingclient/api/g;)V
 .end method

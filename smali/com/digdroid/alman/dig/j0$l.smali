@@ -116,11 +116,11 @@
     :cond_1
     iget-object p1, p0, Lcom/digdroid/alman/dig/j0$l;->a:Lcom/digdroid/alman/dig/j0;
 
-    iget-object v1, p1, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/g3;
+    iget-object v1, p1, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/h3;
 
     iget-object p1, p1, Lcom/digdroid/alman/dig/j0;->s0:Ljava/lang/String;
 
-    invoke-virtual {v1, p1}, Lcom/digdroid/alman/dig/g3;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, p1}, Lcom/digdroid/alman/dig/h3;->t(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -133,37 +133,49 @@
     :cond_2
     iget-object v1, p0, Lcom/digdroid/alman/dig/j0$l;->a:Lcom/digdroid/alman/dig/j0;
 
-    new-instance v2, Ljava/io/File;
+    invoke-virtual {v1}, Landroidx/fragment/app/Fragment;->j0()Landroid/content/Context;
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    iget-object v3, p0, Lcom/digdroid/alman/dig/j0$l;->a:Lcom/digdroid/alman/dig/j0;
 
-    iget-object v4, p0, Lcom/digdroid/alman/dig/j0$l;->a:Lcom/digdroid/alman/dig/j0;
+    iget-object v3, v3, Lcom/digdroid/alman/dig/j0;->Y0:Ljava/lang/String;
 
-    iget-object v4, v4, Lcom/digdroid/alman/dig/j0;->Y0:Ljava/lang/String;
+    invoke-static {v2, v3}, Lcom/digdroid/alman/dig/i2;->d(Landroid/content/Context;Ljava/lang/String;)Lcom/digdroid/alman/dig/i2;
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    const-string v4, "/"
+    iput-object v2, v1, Lcom/digdroid/alman/dig/j0;->U0:Ljava/io/File;
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/j0$l;->a:Lcom/digdroid/alman/dig/j0;
 
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v2, Lcom/digdroid/alman/dig/i2;
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v3, p0, Lcom/digdroid/alman/dig/j0$l;->a:Lcom/digdroid/alman/dig/j0;
 
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v3, v3, Lcom/digdroid/alman/dig/j0;->U0:Ljava/io/File;
 
-    const-string v5, ".png"
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    const-string v5, "/"
 
-    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v6, ".png"
+
+    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-direct {v2, v3, v4}, Lcom/digdroid/alman/dig/i2;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
     iput-object v2, v1, Lcom/digdroid/alman/dig/j0;->U0:Ljava/io/File;
 
@@ -204,33 +216,45 @@
     :cond_3
     iget-object v1, p0, Lcom/digdroid/alman/dig/j0$l;->a:Lcom/digdroid/alman/dig/j0;
 
-    new-instance v2, Ljava/io/File;
+    invoke-virtual {v1}, Landroidx/fragment/app/Fragment;->j0()Landroid/content/Context;
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    iget-object v3, p0, Lcom/digdroid/alman/dig/j0$l;->a:Lcom/digdroid/alman/dig/j0;
 
-    iget-object v6, p0, Lcom/digdroid/alman/dig/j0$l;->a:Lcom/digdroid/alman/dig/j0;
+    iget-object v3, v3, Lcom/digdroid/alman/dig/j0;->X0:Ljava/lang/String;
 
-    iget-object v6, v6, Lcom/digdroid/alman/dig/j0;->X0:Ljava/lang/String;
+    invoke-static {v2, v3}, Lcom/digdroid/alman/dig/i2;->d(Landroid/content/Context;Ljava/lang/String;)Lcom/digdroid/alman/dig/i2;
 
-    invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iput-object v2, v1, Lcom/digdroid/alman/dig/j0;->T0:Ljava/io/File;
 
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/j0$l;->a:Lcom/digdroid/alman/dig/j0;
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v2, Lcom/digdroid/alman/dig/i2;
 
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v3, p0, Lcom/digdroid/alman/dig/j0$l;->a:Lcom/digdroid/alman/dig/j0;
 
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v3, v3, Lcom/digdroid/alman/dig/j0;->T0:Ljava/io/File;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-direct {v2, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3, p1}, Lcom/digdroid/alman/dig/i2;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
     iput-object v2, v1, Lcom/digdroid/alman/dig/j0;->T0:Ljava/io/File;
 

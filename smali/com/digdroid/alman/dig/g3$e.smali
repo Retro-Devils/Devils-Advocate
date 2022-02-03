@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/g3$m;
+.implements Landroid/widget/AdapterView$OnItemSelectedListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/g3;->h()V
+    value = Lcom/digdroid/alman/dig/g3;->L3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,36 +18,84 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/digdroid/alman/dig/g3;
+.field b:Landroid/view/View;
+
+.field final synthetic c:Lcom/digdroid/alman/dig/g3;
 
 
 # direct methods
 .method constructor <init>(Lcom/digdroid/alman/dig/g3;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/g3$e;->a:Lcom/digdroid/alman/dig/g3;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/g3$e;->c:Lcom/digdroid/alman/dig/g3;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 p1, 0x0
+
+    iput-object p1, p0, Lcom/digdroid/alman/dig/g3$e;->b:Landroid/view/View;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Ljava/lang/String;Ljava/lang/String;)V
+.method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/widget/AdapterView<",
+            "*>;",
+            "Landroid/view/View;",
+            "IJ)V"
+        }
+    .end annotation
+
+    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$e;->b:Landroid/view/View;
+
+    if-eqz p1, :cond_0
+
+    const/4 p3, 0x0
+
+    invoke-virtual {p1, p3}, Landroid/view/View;->setBackgroundColor(I)V
+
+    :cond_0
+    sget-object p1, Lcom/digdroid/alman/dig/q3;->a:Lcom/digdroid/alman/dig/t3;
+
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/t3;->c()I
+
+    move-result p1
+
+    invoke-virtual {p2, p1}, Landroid/view/View;->setBackgroundColor(I)V
+
+    iput-object p2, p0, Lcom/digdroid/alman/dig/g3$e;->b:Landroid/view/View;
+
+    return-void
+.end method
+
+.method public onNothingSelected(Landroid/widget/AdapterView;)V
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/widget/AdapterView<",
+            "*>;)V"
+        }
+    .end annotation
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/g3$e;->a:Lcom/digdroid/alman/dig/g3;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$e;->b:Landroid/view/View;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/g3;->f:Ljava/util/HashMap;
+    if-eqz p1, :cond_0
 
-    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v0, 0x0
 
-    move-result-object p1
+    invoke-virtual {p1, v0}, Landroid/view/View;->setBackgroundColor(I)V
 
-    check-cast p1, Lcom/digdroid/alman/dig/g3$k;
+    :cond_0
+    const/4 p1, 0x0
 
-    iput-object p2, p1, Lcom/digdroid/alman/dig/g3$k;->j:Ljava/lang/String;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/g3$e;->b:Landroid/view/View;
 
     return-void
 .end method

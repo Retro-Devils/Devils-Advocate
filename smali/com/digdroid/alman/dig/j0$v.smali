@@ -59,7 +59,7 @@
 
     move-result-object p1
 
-    check-cast p1, Lcom/digdroid/alman/dig/y3;
+    check-cast p1, Lcom/digdroid/alman/dig/z3;
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/j0$v;->b:Lcom/digdroid/alman/dig/j0;
 
@@ -67,7 +67,7 @@
 
     iget-object v1, v1, Lcom/digdroid/alman/dig/j0;->f1:Lcom/digdroid/alman/dig/h0;
 
-    invoke-virtual {v0, p1, v2, v3, v1}, Lcom/digdroid/alman/dig/o0;->i(Lcom/digdroid/alman/dig/y3;JLcom/digdroid/alman/dig/h0;)V
+    invoke-virtual {v0, p1, v2, v3, v1}, Lcom/digdroid/alman/dig/o0;->i(Lcom/digdroid/alman/dig/z3;JLcom/digdroid/alman/dig/h0;)V
 
     :cond_0
     return-void

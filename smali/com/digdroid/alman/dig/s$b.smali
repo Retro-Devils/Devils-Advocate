@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/p3$e;
+.implements Lcom/digdroid/alman/dig/q3$e;
 
 
 # annotations
@@ -40,7 +40,7 @@
         value = {
             "(",
             "Ljava/util/ArrayList<",
-            "Lcom/digdroid/alman/dig/r3;",
+            "Lcom/digdroid/alman/dig/s3;",
             ">;)V"
         }
     .end annotation

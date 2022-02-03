@@ -115,7 +115,7 @@
 
     iput-object p3, p0, Landroidx/leanback/widget/picker/a;->q:Ljava/util/List;
 
-    sget p3, Lb/l/h;->c:I
+    sget p3, Lb/m/h;->c:I
 
     iput p3, p0, Landroidx/leanback/widget/picker/a;->r:I
 
@@ -173,7 +173,7 @@
 
     move-result-object p1
 
-    sget p3, Lb/l/h;->a:I
+    sget p3, Lb/m/h;->a:I
 
     invoke-virtual {p1, p3, p0, p2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -183,7 +183,7 @@
 
     iput-object p1, p0, Landroidx/leanback/widget/picker/a;->b:Landroid/view/ViewGroup;
 
-    sget p2, Lb/l/f;->p:I
+    sget p2, Lb/m/f;->p:I
 
     invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -720,7 +720,7 @@
 
     move-result-object v0
 
-    sget v1, Lb/l/c;->r:I
+    sget v1, Lb/m/c;->r:I
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1209,7 +1209,7 @@
 
     if-nez v1, :cond_3
 
-    sget v1, Lb/l/h;->d:I
+    sget v1, Lb/m/h;->d:I
 
     iget-object v3, p0, Landroidx/leanback/widget/picker/a;->c:Landroid/view/ViewGroup;
 
@@ -1239,7 +1239,7 @@
     :goto_2
     if-ge v9, v0, :cond_5
 
-    sget v1, Lb/l/h;->b:I
+    sget v1, Lb/m/h;->b:I
 
     iget-object v3, p0, Landroidx/leanback/widget/picker/a;->c:Landroid/view/ViewGroup;
 
@@ -1287,7 +1287,7 @@
 
     if-nez v3, :cond_4
 
-    sget v3, Lb/l/h;->d:I
+    sget v3, Lb/m/h;->d:I
 
     iget-object v4, p0, Landroidx/leanback/widget/picker/a;->c:Landroid/view/ViewGroup;
 

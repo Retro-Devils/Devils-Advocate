@@ -73,7 +73,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f110279
+    const v2, 0x7f11027d
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -131,7 +131,7 @@
 
     move-result-object v2
 
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
 
     move-result v3
 

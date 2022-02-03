@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Lcom/digdroid/alman/dig/a0$g;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/g3;->J(Landroid/app/Activity;Ljava/lang/String;)V
+    value = Lcom/digdroid/alman/dig/g3;->H2(Landroid/view/MenuItem;)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic b:Ljava/lang/String;
+.field final synthetic a:Ljava/lang/String;
 
-.field final synthetic c:Lcom/digdroid/alman/dig/g3;
+.field final synthetic b:Lcom/digdroid/alman/dig/g3;
 
 
 # direct methods
 .method constructor <init>(Lcom/digdroid/alman/dig/g3;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/g3$j;->c:Lcom/digdroid/alman/dig/g3;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/g3$j;->b:Lcom/digdroid/alman/dig/g3;
 
-    iput-object p2, p0, Lcom/digdroid/alman/dig/g3$j;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/digdroid/alman/dig/g3$j;->a:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,126 +38,101 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 2
+.method public a()V
+    .locals 10
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$j;->c:Lcom/digdroid/alman/dig/g3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/g3$j;->b:Lcom/digdroid/alman/dig/g3;
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/g3;->d:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, v0, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/h3;
 
-    new-instance p2, Ljava/lang/StringBuilder;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/g3$j;->a:Ljava/lang/String;
 
-    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/h3;->l(Ljava/lang/String;)Landroid/database/Cursor;
 
-    const-string v0, "UPDATE systems SET ignored=0 WHERE slug=\'"
+    move-result-object v0
 
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/g3$j;->b:Lcom/digdroid/alman/dig/g3;
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/g3$j;->b:Ljava/lang/String;
+    iget-object v1, v1, Lcom/digdroid/alman/dig/g3;->A0:Ljava/lang/Object;
 
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    monitor-enter v1
 
-    const-string v0, "\'"
+    :try_start_0
+    iget-object v2, p0, Lcom/digdroid/alman/dig/g3$j;->b:Lcom/digdroid/alman/dig/g3;
 
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v2, v2, Lcom/digdroid/alman/dig/g3;->z0:Ljava/util/ArrayList;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/util/ArrayList;->clear()V
 
-    move-result-object p2
+    invoke-interface {v0}, Landroid/database/Cursor;->moveToFirst()Z
 
-    invoke-virtual {p1, p2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+    move-result v2
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$j;->c:Lcom/digdroid/alman/dig/g3;
-
-    iget-object p1, p1, Lcom/digdroid/alman/dig/g3;->d:Landroid/database/sqlite/SQLiteDatabase;
-
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "UPDATE roms SET ignored=0 WHERE system=\'"
-
-    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/g3$j;->b:Ljava/lang/String;
-
-    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-virtual {p1, p2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$j;->c:Lcom/digdroid/alman/dig/g3;
-
-    iget-object p1, p1, Lcom/digdroid/alman/dig/g3;->d:Landroid/database/sqlite/SQLiteDatabase;
-
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "UPDATE rompaths SET last_checked=0 WHERE system=\'"
-
-    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/g3$j;->b:Ljava/lang/String;
-
-    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-virtual {p1, p2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$j;->c:Lcom/digdroid/alman/dig/g3;
-
-    iget-object p2, p0, Lcom/digdroid/alman/dig/g3$j;->b:Ljava/lang/String;
-
-    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/g3;->D(Ljava/lang/String;)Z
-
-    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$j;->b:Ljava/lang/String;
-
-    const-string p2, "android"
-
-    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$j;->c:Lcom/digdroid/alman/dig/g3;
-
-    iget-object p1, p1, Lcom/digdroid/alman/dig/g3;->b:Landroid/content/Context;
-
-    const-string p2, "scandroid"
-
-    invoke-static {p1, p2}, Lcom/digdroid/alman/dig/DatabaseService;->t(Landroid/content/Context;Ljava/lang/String;)V
-
-    goto :goto_0
+    if-eqz v2, :cond_1
 
     :cond_0
-    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$j;->c:Lcom/digdroid/alman/dig/g3;
+    iget-object v4, p0, Lcom/digdroid/alman/dig/g3$j;->b:Lcom/digdroid/alman/dig/g3;
 
-    iget-object p2, p0, Lcom/digdroid/alman/dig/g3$j;->b:Ljava/lang/String;
+    iget-object v2, v4, Lcom/digdroid/alman/dig/g3;->z0:Ljava/util/ArrayList;
 
-    const/4 v0, 0x1
+    new-instance v9, Lcom/digdroid/alman/dig/g3$r;
 
-    invoke-virtual {p1, p2, v0}, Lcom/digdroid/alman/dig/g3;->c(Ljava/lang/String;Z)V
+    const/4 v3, 0x0
 
-    :goto_0
-    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$j;->c:Lcom/digdroid/alman/dig/g3;
+    invoke-interface {v0, v3}, Landroid/database/Cursor;->getLong(I)J
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/g3;->b:Landroid/content/Context;
+    move-result-wide v5
 
-    const-string p2, "merge_games"
+    const/4 v3, 0x1
 
-    invoke-static {p1, p2}, Lcom/digdroid/alman/dig/DatabaseService;->t(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-interface {v0, v3}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v7
+
+    const/4 v3, 0x7
+
+    invoke-interface {v0, v3}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v8
+
+    move-object v3, v9
+
+    invoke-direct/range {v3 .. v8}, Lcom/digdroid/alman/dig/g3$r;-><init>(Lcom/digdroid/alman/dig/g3;JLjava/lang/String;I)V
+
+    invoke-virtual {v2, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    invoke-interface {v0}, Landroid/database/Cursor;->moveToNext()Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    :cond_1
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    invoke-interface {v0}, Landroid/database/Cursor;->close()V
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/g3$j;->b:Lcom/digdroid/alman/dig/g3;
+
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/t0;->O2()V
 
     return-void
+
+    :catchall_0
+    move-exception v0
+
+    :try_start_1
+    monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_1
+
+    :goto_0
+    throw v0
+
+    :goto_1
+    goto :goto_0
 .end method

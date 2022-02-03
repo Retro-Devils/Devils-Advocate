@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic b:Lcom/digdroid/alman/dig/r3;
+.field final synthetic b:Lcom/digdroid/alman/dig/s3;
 
 .field final synthetic c:Lcom/digdroid/alman/dig/s$f;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/s$f;Lcom/digdroid/alman/dig/r3;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/s$f;Lcom/digdroid/alman/dig/s3;)V
     .locals 0
 
     iput-object p1, p0, Lcom/digdroid/alman/dig/s$f$a;->c:Lcom/digdroid/alman/dig/s$f;
 
-    iput-object p2, p0, Lcom/digdroid/alman/dig/s$f$a;->b:Lcom/digdroid/alman/dig/r3;
+    iput-object p2, p0, Lcom/digdroid/alman/dig/s$f$a;->b:Lcom/digdroid/alman/dig/s3;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,9 +41,9 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/s$f$a;->b:Lcom/digdroid/alman/dig/r3;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/s$f$a;->b:Lcom/digdroid/alman/dig/s3;
 
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/r3;->u()V
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/s3;->u()V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/s$f$a;->c:Lcom/digdroid/alman/dig/s$f;
 
@@ -59,7 +59,7 @@
 
     invoke-direct {p2, p0}, Lcom/digdroid/alman/dig/s$f$a$a;-><init>(Lcom/digdroid/alman/dig/s$f$a;)V
 
-    invoke-static {p1, p2}, Lcom/digdroid/alman/dig/p3;->j(Lcom/digdroid/alman/dig/b4;Lcom/digdroid/alman/dig/p3$e;)V
+    invoke-static {p1, p2}, Lcom/digdroid/alman/dig/q3;->j(Lcom/digdroid/alman/dig/c4;Lcom/digdroid/alman/dig/q3$e;)V
 
     return-void
 .end method

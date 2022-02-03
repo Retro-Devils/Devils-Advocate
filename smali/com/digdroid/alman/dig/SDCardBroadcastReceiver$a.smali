@@ -63,7 +63,7 @@
 
     if-eqz v3, :cond_8
 
-    invoke-static {v3}, Lcom/digdroid/alman/dig/z3;->w(Landroid/content/Context;)Z
+    invoke-static {v3}, Lcom/digdroid/alman/dig/a4;->x(Landroid/content/Context;)Z
 
     move-result v3
 
@@ -71,7 +71,7 @@
 
     iget-object v3, v0, Lcom/digdroid/alman/dig/SDCardBroadcastReceiver$a;->a:Landroid/content/Context;
 
-    invoke-static {v3}, Lcom/digdroid/alman/dig/z3;->u(Landroid/content/Context;)Z
+    invoke-static {v3}, Lcom/digdroid/alman/dig/a4;->v(Landroid/content/Context;)Z
 
     move-result v3
 
@@ -154,7 +154,7 @@
 
     move-result-object v8
 
-    invoke-static {v8}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
+    invoke-static {v8}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
 
     move-result-object v8
 
@@ -164,11 +164,11 @@
 
     move-result-object v9
 
-    invoke-static {v9, v6}, Lcom/digdroid/alman/dig/g3;->q(Landroid/content/Context;Lcom/digdroid/alman/dig/u;)Lcom/digdroid/alman/dig/g3;
+    invoke-static {v9, v6}, Lcom/digdroid/alman/dig/h3;->r(Landroid/content/Context;Lcom/digdroid/alman/dig/u;)Lcom/digdroid/alman/dig/h3;
 
     move-result-object v6
 
-    invoke-virtual {v6}, Lcom/digdroid/alman/dig/g3;->B()V
+    invoke-virtual {v6}, Lcom/digdroid/alman/dig/h3;->C()V
 
     iget-object v9, v0, Lcom/digdroid/alman/dig/SDCardBroadcastReceiver$a;->a:Landroid/content/Context;
 
@@ -269,7 +269,7 @@
     invoke-virtual {v7, v2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     :cond_3
-    invoke-virtual {v6, v12, v13, v15}, Lcom/digdroid/alman/dig/g3;->a(JZ)V
+    invoke-virtual {v6, v12, v13, v15}, Lcom/digdroid/alman/dig/h3;->b(JZ)V
 
     :cond_4
     invoke-interface {v10}, Landroid/database/Cursor;->moveToNext()Z
@@ -307,19 +307,19 @@
 
     const/4 v2, 0x1
 
-    invoke-virtual {v8, v1, v2}, Lcom/digdroid/alman/dig/b3;->c(Ljava/lang/String;Z)Z
+    invoke-virtual {v8, v1, v2}, Lcom/digdroid/alman/dig/c3;->c(Ljava/lang/String;Z)Z
 
     move-result v1
 
     if-eqz v1, :cond_7
 
-    invoke-virtual {v8, v15}, Lcom/digdroid/alman/dig/b3;->L(Z)V
+    invoke-virtual {v8, v15}, Lcom/digdroid/alman/dig/c3;->L(Z)V
 
     const-string v1, "sd_dirs_last_scanned"
 
     const-wide/16 v2, 0x0
 
-    invoke-virtual {v8, v1, v2, v3}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
+    invoke-virtual {v8, v1, v2, v3}, Lcom/digdroid/alman/dig/c3;->F(Ljava/lang/String;J)V
 
     iget-object v1, v0, Lcom/digdroid/alman/dig/SDCardBroadcastReceiver$a;->a:Landroid/content/Context;
 
@@ -329,7 +329,7 @@
 
     const-string v2, "find_dirs"
 
-    invoke-static {v1, v2}, Lcom/digdroid/alman/dig/DatabaseService;->t(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/digdroid/alman/dig/DatabaseService;->v(Landroid/content/Context;Ljava/lang/String;)V
 
     iget-object v1, v0, Lcom/digdroid/alman/dig/SDCardBroadcastReceiver$a;->a:Landroid/content/Context;
 
@@ -339,7 +339,7 @@
 
     const-string v2, "scan_dirs"
 
-    invoke-static {v1, v2}, Lcom/digdroid/alman/dig/DatabaseService;->t(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/digdroid/alman/dig/DatabaseService;->v(Landroid/content/Context;Ljava/lang/String;)V
 
     iget-object v1, v0, Lcom/digdroid/alman/dig/SDCardBroadcastReceiver$a;->a:Landroid/content/Context;
 
@@ -349,7 +349,7 @@
 
     const-string v2, "merge_games"
 
-    invoke-static {v1, v2}, Lcom/digdroid/alman/dig/DatabaseService;->t(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/digdroid/alman/dig/DatabaseService;->v(Landroid/content/Context;Ljava/lang/String;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 

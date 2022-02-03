@@ -21,7 +21,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    sget v0, Lb/l/a;->a:I
+    sget v0, Lb/m/a;->a:I
 
     invoke-direct {p0, p1, p2, v0}, Landroidx/leanback/widget/TitleView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -51,13 +51,13 @@
 
     move-result-object p1
 
-    sget p3, Lb/l/h;->i:I
+    sget p3, Lb/m/h;->i:I
 
     invoke-virtual {p1, p3, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p1
 
-    sget p3, Lb/l/f;->s:I
+    sget p3, Lb/m/f;->s:I
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -67,7 +67,7 @@
 
     iput-object p3, p0, Landroidx/leanback/widget/TitleView;->b:Landroid/widget/ImageView;
 
-    sget p3, Lb/l/f;->u:I
+    sget p3, Lb/m/f;->u:I
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -77,7 +77,7 @@
 
     iput-object p3, p0, Landroidx/leanback/widget/TitleView;->c:Landroid/widget/TextView;
 
-    sget p3, Lb/l/f;->t:I
+    sget p3, Lb/m/f;->t:I
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

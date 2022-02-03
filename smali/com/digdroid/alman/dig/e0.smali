@@ -14,11 +14,11 @@
 
 .field V:Z
 
-.field W:Lcom/digdroid/alman/dig/k2;
+.field W:Lcom/digdroid/alman/dig/l2;
 
 .field X:Lcom/digdroid/alman/dig/MyViewPager;
 
-.field Y:Lcom/digdroid/alman/dig/n2;
+.field Y:Lcom/digdroid/alman/dig/o2;
 
 .field Z:Landroid/view/ViewStub;
 
@@ -41,7 +41,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/digdroid/alman/dig/e0;->Y:Lcom/digdroid/alman/dig/n2;
+    iput-object v0, p0, Lcom/digdroid/alman/dig/e0;->Y:Lcom/digdroid/alman/dig/o2;
 
     iput-object v0, p0, Lcom/digdroid/alman/dig/e0;->Z:Landroid/view/ViewStub;
 
@@ -65,7 +65,7 @@
 
     const/16 p1, 0x16
 
-    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
@@ -97,7 +97,7 @@
 
     const/16 v1, 0x17
 
-    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
@@ -121,15 +121,15 @@
 
     const/4 p1, 0x7
 
-    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
 
-.method public E(Lcom/digdroid/alman/dig/s3;)V
+.method public E(Lcom/digdroid/alman/dig/t3;)V
     .locals 0
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/p3;->p(Lcom/digdroid/alman/dig/s3;)V
+    invoke-static {p1}, Lcom/digdroid/alman/dig/q3;->p(Lcom/digdroid/alman/dig/t3;)V
 
     return-void
 .end method
@@ -143,7 +143,7 @@
 
     const/16 v1, 0xc
 
-    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
@@ -219,11 +219,11 @@
 .method public K(I)V
     .locals 2
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
 
-    invoke-virtual {v0, v1, p1}, Lcom/digdroid/alman/dig/k2;->x(Lb/s/a/b;I)V
+    invoke-virtual {v0, v1, p1}, Lcom/digdroid/alman/dig/l2;->x(Lb/t/a/b;I)V
 
     return-void
 .end method
@@ -235,9 +235,9 @@
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/b3;->b()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/c3;->b()Ljava/lang/String;
 
     move-result-object v1
 
@@ -261,7 +261,7 @@
 
     const/4 v1, 0x2
 
-    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
@@ -273,9 +273,9 @@
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/b3;->b()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/c3;->b()Ljava/lang/String;
 
     move-result-object v1
 
@@ -297,7 +297,7 @@
 
     const/16 p1, 0x12
 
-    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
@@ -305,7 +305,7 @@
 .method public N()Z
     .locals 1
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->i1()Lcom/digdroid/alman/dig/p1;
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->k1()Lcom/digdroid/alman/dig/p1;
 
     move-result-object v0
 
@@ -334,9 +334,9 @@
 .method public R()V
     .locals 1
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/i2;->q()V
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/j2;->q()V
 
     return-void
 .end method
@@ -348,9 +348,9 @@
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/b3;->b()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/c3;->b()Ljava/lang/String;
 
     move-result-object v1
 
@@ -376,7 +376,7 @@
 
     const/4 p1, 0x2
 
-    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
@@ -388,9 +388,9 @@
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/b3;->b()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/c3;->b()Ljava/lang/String;
 
     move-result-object v1
 
@@ -412,7 +412,7 @@
 
     const/4 p1, 0x6
 
-    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
@@ -427,9 +427,9 @@
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    iget-object v2, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
+    iget-object v2, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {v2}, Lcom/digdroid/alman/dig/b3;->b()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/digdroid/alman/dig/c3;->b()Ljava/lang/String;
 
     move-result-object v2
 
@@ -445,9 +445,9 @@
 
     const-string v0, "title"
 
-    iget-object v2, p0, Lcom/digdroid/alman/dig/t;->y:Lcom/digdroid/alman/dig/g3;
+    iget-object v2, p0, Lcom/digdroid/alman/dig/t;->y:Lcom/digdroid/alman/dig/h3;
 
-    invoke-virtual {v2, p1}, Lcom/digdroid/alman/dig/g3;->r(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, p1}, Lcom/digdroid/alman/dig/h3;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -455,7 +455,7 @@
 
     const/4 p1, 0x4
 
-    invoke-virtual {p0, p1, v1}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, p1, v1}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -472,7 +472,7 @@
 
     const/16 v1, 0x10
 
-    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
@@ -490,7 +490,7 @@
 
     const/16 p1, 0x9
 
-    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
@@ -502,9 +502,9 @@
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/b3;->b()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/c3;->b()Ljava/lang/String;
 
     move-result-object v1
 
@@ -516,7 +516,7 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    const v1, 0x7f1101f3
+    const v1, 0x7f1101f5
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -528,7 +528,7 @@
 
     const/16 v1, 0x8
 
-    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
@@ -566,7 +566,7 @@
 
     const/16 p1, 0x11
 
-    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
@@ -588,19 +588,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
-
-    return-void
-.end method
-
-.method h1(ILandroid/os/Bundle;)V
-    .locals 2
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
-
-    invoke-virtual {v0, v1, p1, p2}, Lcom/digdroid/alman/dig/k2;->t(Lb/s/a/b;ILandroid/os/Bundle;)V
+    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
@@ -610,7 +598,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
 
-    invoke-virtual {v0}, Lb/s/a/b;->getCurrentItem()I
+    invoke-virtual {v0}, Lb/t/a/b;->getCurrentItem()I
 
     move-result v0
 
@@ -618,9 +606,9 @@
 
     add-int/2addr v0, v1
 
-    iget-object v2, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
+    iget-object v2, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
 
-    invoke-virtual {v2}, Lcom/digdroid/alman/dig/k2;->c()I
+    invoke-virtual {v2}, Lcom/digdroid/alman/dig/l2;->c()I
 
     move-result v2
 
@@ -628,7 +616,7 @@
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
 
-    invoke-virtual {v2, v0, v1}, Lb/s/a/b;->K(IZ)V
+    invoke-virtual {v2, v0, v1}, Lb/t/a/b;->K(IZ)V
 
     :cond_0
     return-void
@@ -637,7 +625,7 @@
 .method public i0(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 6
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
 
@@ -649,36 +637,9 @@
 
     move v5, p4
 
-    invoke-virtual/range {v0 .. v5}, Lcom/digdroid/alman/dig/k2;->y(Lb/s/a/b;Lcom/digdroid/alman/dig/h0;Ljava/lang/String;II)V
+    invoke-virtual/range {v0 .. v5}, Lcom/digdroid/alman/dig/l2;->y(Lb/t/a/b;Lcom/digdroid/alman/dig/h0;Ljava/lang/String;II)V
 
     return-void
-.end method
-
-.method i1()Lcom/digdroid/alman/dig/p1;
-    .locals 2
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
-
-    invoke-virtual {v0}, Lb/s/a/b;->getCurrentItem()I
-
-    move-result v0
-
-    if-ltz v0, :cond_0
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
-
-    invoke-virtual {v1, v0}, Lcom/digdroid/alman/dig/i2;->o(I)Landroidx/fragment/app/Fragment;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/digdroid/alman/dig/p1;
-
-    return-object v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    return-object v0
 .end method
 
 .method public j()V
@@ -686,7 +647,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
 
-    invoke-virtual {v0}, Lb/s/a/b;->getCurrentItem()I
+    invoke-virtual {v0}, Lb/t/a/b;->getCurrentItem()I
 
     move-result v0
 
@@ -698,13 +659,22 @@
 
     sub-int/2addr v0, v2
 
-    invoke-virtual {v1, v0, v2}, Lb/s/a/b;->K(IZ)V
+    invoke-virtual {v1, v0, v2}, Lb/t/a/b;->K(IZ)V
 
     :cond_0
     return-void
 .end method
 
-.method public abstract j1()Landroidx/appcompat/widget/Toolbar;
+.method j1(ILandroid/os/Bundle;)V
+    .locals 2
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
+
+    iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
+
+    invoke-virtual {v0, v1, p1, p2}, Lcom/digdroid/alman/dig/l2;->t(Lb/t/a/b;ILandroid/os/Bundle;)V
+
+    return-void
 .end method
 
 .method public k0(Z)V
@@ -762,42 +732,34 @@
     return-void
 .end method
 
-.method public k1()Z
-    .locals 1
+.method k1()Lcom/digdroid/alman/dig/p1;
+    .locals 2
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
 
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/k2;->v()Z
+    invoke-virtual {v0}, Lb/t/a/b;->getCurrentItem()I
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-ltz v0, :cond_0
 
-    const/4 v0, 0x1
+    iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
 
-    goto :goto_0
+    invoke-virtual {v1, v0}, Lcom/digdroid/alman/dig/j2;->o(I)Landroidx/fragment/app/Fragment;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/digdroid/alman/dig/p1;
+
+    return-object v0
 
     :cond_0
     const/4 v0, 0x0
 
-    :goto_0
-    return v0
+    return-object v0
 .end method
 
-.method public l1()V
-    .locals 2
-
-    new-instance v0, Landroid/os/Bundle;
-
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
-
-    const/16 v1, 0x15
-
-    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
-
-    return-void
+.method public abstract l1()Landroidx/appcompat/widget/Toolbar;
 .end method
 
 .method public m()Z
@@ -825,7 +787,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
 
-    invoke-virtual {v0}, Lb/s/a/b;->getCurrentItem()I
+    invoke-virtual {v0}, Lb/t/a/b;->getCurrentItem()I
 
     move-result v0
 
@@ -833,11 +795,11 @@
 
     if-lt v0, v1, :cond_0
 
-    iget-object v2, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
+    iget-object v2, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
 
     sub-int/2addr v0, v1
 
-    invoke-virtual {v2, v0}, Lcom/digdroid/alman/dig/i2;->o(I)Landroidx/fragment/app/Fragment;
+    invoke-virtual {v2, v0}, Lcom/digdroid/alman/dig/j2;->o(I)Landroidx/fragment/app/Fragment;
 
     move-result-object v0
 
@@ -857,52 +819,40 @@
     return-wide v0
 .end method
 
-.method m1()V
+.method public m1()Z
+    .locals 1
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/l2;->v()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public n1()V
     .locals 2
 
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    const/4 v1, 0x1
+    const/16 v1, 0x15
 
-    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
-
-    return-void
-.end method
-
-.method public n1(Ljava/lang/String;)V
-    .locals 3
-
-    new-instance v0, Landroid/os/Bundle;
-
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
-
-    const-string v1, "publisher"
-
-    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
-
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/b3;->b()Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "grid"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
-    const-string v1, "title"
-
-    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    const/16 p1, 0xe
-
-    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
@@ -920,7 +870,7 @@
 
     const/16 p1, 0x14
 
-    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
@@ -932,9 +882,9 @@
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    const/16 v1, 0xa
+    const/4 v1, 0x1
 
-    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
@@ -948,11 +898,11 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
+    iput-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
 
     invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->B()Landroid/view/Menu;
 
@@ -964,29 +914,29 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/b3;->t()Z
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/c3;->t()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f1100df
+    const v1, 0x7f1100e1
 
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f110140
+    const v1, 0x7f110142
 
     :goto_0
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setTitle(I)Landroid/view/MenuItem;
 
-    new-instance v0, Lcom/digdroid/alman/dig/k2;
+    new-instance v0, Lcom/digdroid/alman/dig/l2;
 
-    invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/k2;-><init>(Lcom/digdroid/alman/dig/e0;)V
+    invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/l2;-><init>(Lcom/digdroid/alman/dig/e0;)V
 
-    iput-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
+    iput-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
 
     if-eqz p1, :cond_1
 
@@ -1001,18 +951,18 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, p1, v1}, Lcom/digdroid/alman/dig/k2;->i(Landroid/os/Parcelable;Ljava/lang/ClassLoader;)V
+    invoke-virtual {v0, p1, v1}, Lcom/digdroid/alman/dig/l2;->i(Landroid/os/Parcelable;Ljava/lang/ClassLoader;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_1
 
     :catch_0
-    new-instance p1, Lcom/digdroid/alman/dig/k2;
+    new-instance p1, Lcom/digdroid/alman/dig/l2;
 
-    invoke-direct {p1, p0}, Lcom/digdroid/alman/dig/k2;-><init>(Lcom/digdroid/alman/dig/e0;)V
+    invoke-direct {p1, p0}, Lcom/digdroid/alman/dig/l2;-><init>(Lcom/digdroid/alman/dig/e0;)V
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
 
     :cond_1
     :goto_1
@@ -1026,15 +976,15 @@
 
     iput-object p1, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
 
-    invoke-virtual {p1, v0}, Lb/s/a/b;->setAdapter(Lb/s/a/a;)V
+    invoke-virtual {p1, v0}, Lb/t/a/b;->setAdapter(Lb/t/a/a;)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
 
     const/4 v0, 0x1
 
-    invoke-virtual {p1, v0}, Lb/s/a/b;->setOffscreenPageLimit(I)V
+    invoke-virtual {p1, v0}, Lb/t/a/b;->setOffscreenPageLimit(I)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
 
@@ -1046,7 +996,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
 
-    invoke-virtual {v0, p1}, Lb/s/a/b;->b(Lb/s/a/b$j;)V
+    invoke-virtual {v0, p1}, Lb/t/a/b;->b(Lb/t/a/b$j;)V
 
     return-void
 .end method
@@ -1056,11 +1006,11 @@
 
     invoke-super {p0}, Landroidx/fragment/app/d;->onPause()V
 
-    invoke-static {}, Lcom/digdroid/alman/dig/n2;->m()V
+    invoke-static {}, Lcom/digdroid/alman/dig/o2;->m()V
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/digdroid/alman/dig/e0;->Y:Lcom/digdroid/alman/dig/n2;
+    iput-object v0, p0, Lcom/digdroid/alman/dig/e0;->Y:Lcom/digdroid/alman/dig/o2;
 
     return-void
 .end method
@@ -1068,25 +1018,25 @@
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
 
-    invoke-virtual {v1}, Lb/s/a/b;->getCurrentItem()I
+    invoke-virtual {v1}, Lb/t/a/b;->getCurrentItem()I
 
     move-result v1
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
 
-    invoke-virtual {v2}, Lb/s/a/b;->getOffscreenPageLimit()I
+    invoke-virtual {v2}, Lb/t/a/b;->getOffscreenPageLimit()I
 
     move-result v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/i2;->s(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/j2;->s(II)V
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/k2;->j()Landroid/os/Parcelable;
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/l2;->j()Landroid/os/Parcelable;
 
     move-result-object v0
 
@@ -1094,7 +1044,7 @@
 
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/y3;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/z3;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     return-void
 .end method
@@ -1106,13 +1056,13 @@
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
 
     const-string v2, "systems_list_type"
 
     const-string v3, "grid"
 
-    invoke-virtual {v1, v2, v3}, Lcom/digdroid/alman/dig/b3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3}, Lcom/digdroid/alman/dig/c3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1124,15 +1074,115 @@
 
     const/4 v1, 0x3
 
-    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
 
-.method public p1(Landroid/content/Intent;)V
+.method public p1(Ljava/lang/String;)V
+    .locals 3
+
+    new-instance v0, Landroid/os/Bundle;
+
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+
+    const-string v1, "publisher"
+
+    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/c3;->b()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "grid"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+
+    const-string v1, "title"
+
+    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    const/16 p1, 0xe
+
+    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
+
+    return-void
+.end method
+
+.method public q(Ljava/lang/String;Lcom/digdroid/alman/dig/h0;I)V
+    .locals 6
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
+
+    iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
+
+    const/4 v3, 0x0
+
+    const/4 v4, -0x1
+
+    move-object v2, p2
+
+    move v5, p3
+
+    invoke-virtual/range {v0 .. v5}, Lcom/digdroid/alman/dig/l2;->y(Lb/t/a/b;Lcom/digdroid/alman/dig/h0;Ljava/lang/String;II)V
+
+    return-void
+.end method
+
+.method public q0()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
+
+    iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
+
+    invoke-virtual {v1}, Lb/t/a/b;->getCurrentItem()I
+
+    move-result v1
+
+    add-int/lit8 v1, v1, 0x1
+
+    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/l2;->r(I)V
+
+    return-void
+.end method
+
+.method q1()V
+    .locals 2
+
+    new-instance v0, Landroid/os/Bundle;
+
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+
+    const/16 v1, 0xa
+
+    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
+
+    return-void
+.end method
+
+.method public r()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
+
+    iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
+
+    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/l2;->w(Lb/t/a/b;)V
+
+    return-void
+.end method
+
+.method public r1(Landroid/content/Intent;)V
     .locals 4
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->j1()Landroidx/appcompat/widget/Toolbar;
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->l1()Landroidx/appcompat/widget/Toolbar;
 
     move-result-object v0
 
@@ -1164,9 +1214,9 @@
 
     invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/b3;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/c3;->b()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1180,50 +1230,12 @@
 
     const/4 p1, 0x4
 
-    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
 
-.method public q(Ljava/lang/String;Lcom/digdroid/alman/dig/h0;I)V
-    .locals 6
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
-
-    const/4 v3, 0x0
-
-    const/4 v4, -0x1
-
-    move-object v2, p2
-
-    move v5, p3
-
-    invoke-virtual/range {v0 .. v5}, Lcom/digdroid/alman/dig/k2;->y(Lb/s/a/b;Lcom/digdroid/alman/dig/h0;Ljava/lang/String;II)V
-
-    return-void
-.end method
-
-.method public q0()V
-    .locals 2
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
-
-    invoke-virtual {v1}, Lb/s/a/b;->getCurrentItem()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, 0x1
-
-    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/k2;->r(I)V
-
-    return-void
-.end method
-
-.method public q1(J)V
+.method public s1(J)V
     .locals 3
 
     new-instance v0, Landroid/os/Bundle;
@@ -1234,9 +1246,9 @@
 
     invoke-virtual {v0, v1, p1, p2}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/b3;->b()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/c3;->b()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1280,24 +1292,12 @@
 
     const/16 p1, 0xf
 
-    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
 
-.method public r()V
-    .locals 2
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
-
-    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/k2;->w(Lb/s/a/b;)V
-
-    return-void
-.end method
-
-.method public r1(Ljava/lang/String;)V
+.method public t1(Ljava/lang/String;)V
     .locals 2
 
     new-instance v0, Landroid/os/Bundle;
@@ -1310,28 +1310,114 @@
 
     const/16 p1, 0x13
 
-    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
 
-.method s1()V
+.method public u()V
+    .locals 3
+
+    new-instance v0, Landroid/os/Bundle;
+
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+
+    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/c3;->b()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "grid"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+
+    const v1, 0x7f1100ea
+
+    invoke-virtual {p0, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "title"
+
+    invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    const/4 v1, 0x5
+
+    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
+
+    return-void
+.end method
+
+.method public u0()V
+    .locals 3
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
+
+    invoke-virtual {v0}, Lb/t/a/b;->getCurrentItem()I
+
+    move-result v0
+
+    iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
+
+    invoke-virtual {v1, v0}, Lcom/digdroid/alman/dig/l2;->r(I)V
+
+    iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
+
+    invoke-virtual {v1, v0}, Lcom/digdroid/alman/dig/l2;->u(I)V
+
+    iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
+
+    add-int/lit8 v0, v0, -0x1
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v0, v2}, Lb/t/a/b;->K(IZ)V
+
+    return-void
+.end method
+
+.method u1()V
     .locals 2
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/k2;->r(I)V
+    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/l2;->r(I)V
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/l2;
 
-    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/k2;->u(I)V
+    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/l2;->u(I)V
 
     return-void
 .end method
 
-.method protected t1()V
+.method public v0()Lcom/digdroid/alman/dig/o2;
+    .locals 4
+
+    const v0, 0x7f0903d0
+
+    const v1, 0x7f09026d
+
+    const v2, 0x7f090458
+
+    const v3, 0x7f09045d
+
+    invoke-static {p0, v0, v1, v2, v3}, Lcom/digdroid/alman/dig/o2;->o(Landroid/app/Activity;IIII)Lcom/digdroid/alman/dig/o2;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/digdroid/alman/dig/e0;->Y:Lcom/digdroid/alman/dig/o2;
+
+    return-object v0
+.end method
+
+.method protected v1()V
     .locals 2
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
@@ -1345,92 +1431,6 @@
     return-void
 .end method
 
-.method public u()V
-    .locals 3
-
-    new-instance v0, Landroid/os/Bundle;
-
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
-
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/b3;->b()Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "grid"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
-    const v1, 0x7f1100e8
-
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "title"
-
-    invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    const/4 v1, 0x5
-
-    invoke-virtual {p0, v1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
-
-    return-void
-.end method
-
-.method public u0()V
-    .locals 3
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
-
-    invoke-virtual {v0}, Lb/s/a/b;->getCurrentItem()I
-
-    move-result v0
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
-
-    invoke-virtual {v1, v0}, Lcom/digdroid/alman/dig/k2;->r(I)V
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->W:Lcom/digdroid/alman/dig/k2;
-
-    invoke-virtual {v1, v0}, Lcom/digdroid/alman/dig/k2;->u(I)V
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/e0;->X:Lcom/digdroid/alman/dig/MyViewPager;
-
-    add-int/lit8 v0, v0, -0x1
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v1, v0, v2}, Lb/s/a/b;->K(IZ)V
-
-    return-void
-.end method
-
-.method public v0()Lcom/digdroid/alman/dig/n2;
-    .locals 4
-
-    const v0, 0x7f0903d0
-
-    const v1, 0x7f09026d
-
-    const v2, 0x7f090458
-
-    const v3, 0x7f09045d
-
-    invoke-static {p0, v0, v1, v2, v3}, Lcom/digdroid/alman/dig/n2;->o(Landroid/app/Activity;IIII)Lcom/digdroid/alman/dig/n2;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/digdroid/alman/dig/e0;->Y:Lcom/digdroid/alman/dig/n2;
-
-    return-object v0
-.end method
-
 .method public w(Z)V
     .locals 1
 
@@ -1440,9 +1440,9 @@
 
     if-eqz p1, :cond_0
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/b3;->t()Z
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/c3;->t()Z
 
     move-result p1
 
@@ -1474,7 +1474,7 @@
 
     const/16 p1, 0xb
 
-    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method
@@ -1492,7 +1492,7 @@
 
     const/16 p1, 0xd
 
-    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->h1(ILandroid/os/Bundle;)V
+    invoke-virtual {p0, p1, v0}, Lcom/digdroid/alman/dig/e0;->j1(ILandroid/os/Bundle;)V
 
     return-void
 .end method

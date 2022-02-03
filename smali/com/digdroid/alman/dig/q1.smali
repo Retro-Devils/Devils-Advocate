@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field b:Lcom/digdroid/alman/dig/s3;
+.field b:Lcom/digdroid/alman/dig/t3;
 
 .field c:Landroid/database/Cursor;
 
@@ -14,14 +14,14 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;F)V
+.method public constructor <init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;F)V
     .locals 1
 
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, p3, v0}, Landroid/widget/CursorAdapter;-><init>(Landroid/content/Context;Landroid/database/Cursor;Z)V
 
-    iput-object p2, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/s3;
+    iput-object p2, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/t3;
 
     iput-object p3, p0, Lcom/digdroid/alman/dig/q1;->c:Landroid/database/Cursor;
 

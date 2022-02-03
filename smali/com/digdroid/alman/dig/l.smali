@@ -1,5 +1,5 @@
 .class public Lcom/digdroid/alman/dig/l;
-.super Lcom/digdroid/alman/dig/y3;
+.super Lcom/digdroid/alman/dig/z3;
 .source ""
 
 # interfaces
@@ -14,7 +14,7 @@
 .method public constructor <init>()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/y3;-><init>()V
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/z3;-><init>()V
 
     const/4 v0, 0x0
 

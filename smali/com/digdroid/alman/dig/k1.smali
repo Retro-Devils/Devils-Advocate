@@ -60,7 +60,7 @@
 .method B3()Ljava/lang/String;
     .locals 1
 
-    const v0, 0x7f110105
+    const v0, 0x7f110107
 
     invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->D0(I)Ljava/lang/String;
 
@@ -179,7 +179,7 @@
 .method F3()I
     .locals 1
 
-    const v0, 0x7f1100dc
+    const v0, 0x7f1100de
 
     return v0
 .end method
@@ -187,7 +187,7 @@
 .method G3()I
     .locals 1
 
-    const v0, 0x7f11012e
+    const v0, 0x7f110130
 
     return v0
 .end method
@@ -195,13 +195,13 @@
 .method H3()Z
     .locals 3
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/c3;
 
     const-string v1, "show_all_genres"
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/b3;->c(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/c3;->c(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -402,7 +402,7 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const p1, 0x7f1100fd
+    const p1, 0x7f1100ff
 
     invoke-virtual {p0, p1}, Landroidx/fragment/app/Fragment;->D0(I)Ljava/lang/String;
 
@@ -424,13 +424,13 @@
 .method k3()Landroid/database/Cursor;
     .locals 3
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/c3;
 
     const-string v1, "merged_games"
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/b3;->c(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/c3;->c(Ljava/lang/String;Z)Z
 
     move-result v0
 

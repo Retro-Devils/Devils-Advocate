@@ -1,4 +1,4 @@
-.class public interface abstract Lc/b/a/a/d/c/f;
+.class public Lc/b/a/a/d/c/f;
 .super Ljava/lang/Object;
 .source ""
 
@@ -6,30 +6,89 @@
 .implements Landroid/os/IInterface;
 
 
+# instance fields
+.field private final a:Landroid/os/IBinder;
+
+.field private final b:Ljava/lang/String;
+
+
+# direct methods
+.method protected constructor <init>(Landroid/os/IBinder;Ljava/lang/String;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lc/b/a/a/d/c/f;->a:Landroid/os/IBinder;
+
+    iput-object p2, p0, Lc/b/a/a/d/c/f;->b:Ljava/lang/String;
+
+    return-void
+.end method
+
+
 # virtual methods
-.method public abstract F(Lcom/google/android/gms/common/api/Status;Lc/b/a/a/e/b;)V
+.method public asBinder()Landroid/os/IBinder;
+    .locals 1
+
+    iget-object v0, p0, Lc/b/a/a/d/c/f;->a:Landroid/os/IBinder;
+
+    return-object v0
 .end method
 
-.method public abstract J(Lcom/google/android/gms/common/api/Status;Lc/b/a/a/e/f;)V
+.method protected final i()Landroid/os/Parcel;
+    .locals 2
+
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lc/b/a/a/d/c/f;->b:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+
+    return-object v0
 .end method
 
-.method public abstract R(Lcom/google/android/gms/common/api/Status;Z)V
-.end method
+.method protected final j(ILandroid/os/Parcel;)Landroid/os/Parcel;
+    .locals 3
 
-.method public abstract V(Lcom/google/android/gms/common/api/Status;)V
-.end method
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
-.method public abstract n(Lcom/google/android/gms/common/api/Status;Lc/b/a/a/e/k;)V
-.end method
+    move-result-object v0
 
-.method public abstract q(Lcom/google/android/gms/common/api/Status;Z)V
-.end method
+    :try_start_0
+    iget-object v1, p0, Lc/b/a/a/d/c/f;->a:Landroid/os/IBinder;
 
-.method public abstract q0(Lcom/google/android/gms/common/api/Status;Lc/b/a/a/e/i;)V
-.end method
+    const/4 v2, 0x0
 
-.method public abstract s(Lcom/google/android/gms/common/api/Status;Lc/b/a/a/e/m;)V
-.end method
+    invoke-interface {v1, p1, p2, v0, v2}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-.method public abstract t(Ljava/lang/String;)V
+    invoke-virtual {v0}, Landroid/os/Parcel;->readException()V
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    invoke-virtual {p2}, Landroid/os/Parcel;->recycle()V
+
+    return-object v0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p1
+
+    :try_start_1
+    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+
+    throw p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :goto_0
+    invoke-virtual {p2}, Landroid/os/Parcel;->recycle()V
+
+    throw p1
 .end method

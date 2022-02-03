@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Ljava/util/concurrent/Callable;
+.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/w2;->onResume()V
+    value = Lcom/digdroid/alman/dig/w2;->g()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:J
+.field final synthetic a:Lcom/digdroid/alman/dig/w2$b;
 
 .field final synthetic b:Lcom/digdroid/alman/dig/w2;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/w2;J)V
+.method constructor <init>(Lcom/digdroid/alman/dig/w2;Lcom/digdroid/alman/dig/w2$b;)V
     .locals 0
 
     iput-object p1, p0, Lcom/digdroid/alman/dig/w2$f;->b:Lcom/digdroid/alman/dig/w2;
 
-    iput-wide p2, p0, Lcom/digdroid/alman/dig/w2$f;->a:J
+    iput-object p2, p0, Lcom/digdroid/alman/dig/w2$f;->a:Lcom/digdroid/alman/dig/w2$b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,46 +38,12 @@
 
 
 # virtual methods
-.method public call()Ljava/lang/Object;
-    .locals 10
+.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
+    .locals 0
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/w2$f;->b:Lcom/digdroid/alman/dig/w2;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/w2$f;->a:Lcom/digdroid/alman/dig/w2$b;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
+    iput-boolean p2, p1, Lcom/digdroid/alman/dig/w2$b;->d:Z
 
-    const-string v1, "get_game_image_dir"
-
-    const-string v2, "Covers"
-
-    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/b3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v5
-
-    sget-object v0, Landroid/os/Environment;->DIRECTORY_DOWNLOADS:Ljava/lang/String;
-
-    invoke-static {v0}, Landroid/os/Environment;->getExternalStoragePublicDirectory(Ljava/lang/String;)Ljava/io/File;
-
-    move-result-object v4
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/w2$f;->b:Lcom/digdroid/alman/dig/w2;
-
-    iget-object v3, v0, Lcom/digdroid/alman/dig/t;->A:Lcom/digdroid/alman/dig/t1;
-
-    iget-wide v6, p0, Lcom/digdroid/alman/dig/w2$f;->a:J
-
-    iget-object v0, v0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
-
-    const-string v1, "get_game_image_t"
-
-    const-wide/16 v8, 0x0
-
-    invoke-virtual {v0, v1, v8, v9}, Lcom/digdroid/alman/dig/b3;->n(Ljava/lang/String;J)J
-
-    move-result-wide v8
-
-    invoke-virtual/range {v3 .. v9}, Lcom/digdroid/alman/dig/t1;->v(Ljava/io/File;Ljava/lang/String;JJ)V
-
-    const/4 v0, 0x0
-
-    return-object v0
+    return-void
 .end method

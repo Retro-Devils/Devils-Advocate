@@ -135,13 +135,13 @@
 
     iput-object v0, p0, Landroidx/leanback/transition/FadeAndShortSlide;->k:Landroidx/leanback/transition/FadeAndShortSlide$g;
 
-    sget-object v0, Lb/l/l;->a0:[I
+    sget-object v0, Lb/m/l;->a0:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    sget p2, Lb/l/l;->e0:I
+    sget p2, Lb/m/l;->e0:I
 
     const v0, 0x800003
 

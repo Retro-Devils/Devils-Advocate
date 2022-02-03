@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/d0$r;
+.implements Lcom/digdroid/alman/dig/d0$s;
 
 
 # annotations
@@ -70,11 +70,11 @@
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/j0$q;->a:Lcom/digdroid/alman/dig/j0;
 
-    iget-object v3, v2, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/g3;
+    iget-object v3, v2, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/h3;
 
     iget-object v2, v2, Lcom/digdroid/alman/dig/j0;->s0:Ljava/lang/String;
 
-    invoke-virtual {v3, v2}, Lcom/digdroid/alman/dig/g3;->s(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3, v2}, Lcom/digdroid/alman/dig/h3;->t(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -100,7 +100,7 @@
 
     move-result-object v2
 
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
 
     move-result v3
 

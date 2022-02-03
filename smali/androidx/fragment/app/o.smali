@@ -2458,7 +2458,7 @@
     .locals 3
 
     :try_start_0
-    const-string v0, "b.p.e"
+    const-string v0, "b.q.e"
 
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 

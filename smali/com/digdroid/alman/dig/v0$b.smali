@@ -39,11 +39,11 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/v0$b;->b:Lcom/digdroid/alman/dig/v0;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/v0;->b(Lcom/digdroid/alman/dig/v0;)Lcom/digdroid/alman/dig/n2;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/v0;->b(Lcom/digdroid/alman/dig/v0;)Lcom/digdroid/alman/dig/o2;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/n2;->w()V
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/o2;->w()V
 
     return-void
 .end method

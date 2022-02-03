@@ -58,7 +58,7 @@
 
     iget-object p2, p0, Lcom/digdroid/alman/dig/MyEditText$a;->a:Lcom/digdroid/alman/dig/MyEditText;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->m()I
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->m()I
 
     move-result v0
 

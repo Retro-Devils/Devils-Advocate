@@ -51,7 +51,7 @@
 
     iget-object v0, v0, Lcom/digdroid/alman/dig/a0;->a:Landroid/app/Activity;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
 
     move-result v1
 
@@ -75,7 +75,7 @@
 
     invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/a0$d$a;-><init>(Lcom/digdroid/alman/dig/a0$d;)V
 
-    const v1, 0x7f1101d8
+    const v1, 0x7f1101da
 
     invoke-virtual {p1, v1, v0}, Landroidx/appcompat/app/b$a;->o(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
 

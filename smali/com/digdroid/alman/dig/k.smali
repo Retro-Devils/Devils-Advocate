@@ -90,7 +90,7 @@
 
     move-result-object v1
 
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
 
     move-result v2
 
@@ -116,7 +116,7 @@
 
     invoke-direct {v1, p0, p1}, Lcom/digdroid/alman/dig/k$a;-><init>(Lcom/digdroid/alman/dig/k;Ljava/lang/String;)V
 
-    const p1, 0x7f1100fd
+    const p1, 0x7f1100ff
 
     invoke-virtual {v0, p1, v1}, Landroidx/appcompat/app/b$a;->l(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
 
@@ -216,7 +216,7 @@
 .method F3()I
     .locals 1
 
-    const v0, 0x7f1100db
+    const v0, 0x7f1100dd
 
     return v0
 .end method
@@ -224,7 +224,7 @@
 .method G3()I
     .locals 1
 
-    const v0, 0x7f11012f
+    const v0, 0x7f110131
 
     return v0
 .end method
@@ -661,7 +661,7 @@
     goto :goto_0
 
     :cond_0
-    const p1, 0x7f1100fd
+    const p1, 0x7f1100ff
 
     :goto_0
     invoke-virtual {p0, p1}, Landroidx/fragment/app/Fragment;->D0(I)Ljava/lang/String;
@@ -684,13 +684,13 @@
 .method k3()Landroid/database/Cursor;
     .locals 4
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/c3;
 
     const-string v1, "merged_games"
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/b3;->c(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/c3;->c(Ljava/lang/String;Z)Z
 
     move-result v0
 

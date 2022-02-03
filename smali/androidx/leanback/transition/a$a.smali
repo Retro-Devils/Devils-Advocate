@@ -75,7 +75,7 @@
 
     iput p6, p0, Landroidx/leanback/transition/a$a;->i:F
 
-    sget p1, Lb/l/f;->v:I
+    sget p1, Lb/m/f;->v:I
 
     invoke-virtual {p2, p1}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -157,7 +157,7 @@
 
     iget-object p1, p0, Landroidx/leanback/transition/a$a;->a:Landroid/view/View;
 
-    sget v0, Lb/l/f;->v:I
+    sget v0, Lb/m/f;->v:I
 
     iget-object v1, p0, Landroidx/leanback/transition/a$a;->e:[I
 

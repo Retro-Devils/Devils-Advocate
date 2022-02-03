@@ -1,9 +1,6 @@
-.class Lb/r/a/a/c$a;
+.class public final Lb/r/a/a/c$a;
 .super Ljava/lang/Object;
 .source ""
-
-# interfaces
-.implements Landroid/graphics/drawable/Drawable$Callback;
 
 
 # annotations
@@ -12,54 +9,106 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
+    accessFlags = 0x19
+    name = "a"
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Lb/r/a/a/c;
+.field a:Landroid/content/ContentValues;
 
 
 # direct methods
-.method constructor <init>(Lb/r/a/a/c;)V
-    .locals 0
-
-    iput-object p1, p0, Lb/r/a/a/c$a;->b:Lb/r/a/a/c;
+.method public constructor <init>()V
+    .locals 1
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    new-instance v0, Landroid/content/ContentValues;
+
+    invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
+
+    iput-object v0, p0, Lb/r/a/a/c$a;->a:Landroid/content/ContentValues;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
-    .locals 0
+.method public a()Lb/r/a/a/c;
+    .locals 1
 
-    iget-object p1, p0, Lb/r/a/a/c$a;->b:Lb/r/a/a/c;
+    new-instance v0, Lb/r/a/a/c;
 
-    invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
+    invoke-direct {v0, p0}, Lb/r/a/a/c;-><init>(Lb/r/a/a/c$a;)V
 
-    return-void
+    return-object v0
 .end method
 
-.method public scheduleDrawable(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V
-    .locals 0
+.method public b(Landroid/content/Intent;)Lb/r/a/a/c$a;
+    .locals 1
 
-    iget-object p1, p0, Lb/r/a/a/c$a;->b:Lb/r/a/a/c;
+    const/4 v0, 0x1
 
-    invoke-virtual {p1, p2, p3, p4}, Landroid/graphics/drawable/Drawable;->scheduleSelf(Ljava/lang/Runnable;J)V
+    invoke-virtual {p1, v0}, Landroid/content/Intent;->toUri(I)Ljava/lang/String;
 
-    return-void
+    move-result-object p1
+
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lb/r/a/a/c$a;->c(Landroid/net/Uri;)Lb/r/a/a/c$a;
+
+    move-result-object p1
+
+    return-object p1
 .end method
 
-.method public unscheduleDrawable(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V
-    .locals 0
+.method public c(Landroid/net/Uri;)Lb/r/a/a/c$a;
+    .locals 2
 
-    iget-object p1, p0, Lb/r/a/a/c$a;->b:Lb/r/a/a/c;
+    iget-object v0, p0, Lb/r/a/a/c$a;->a:Landroid/content/ContentValues;
 
-    invoke-virtual {p1, p2}, Landroid/graphics/drawable/Drawable;->unscheduleSelf(Ljava/lang/Runnable;)V
+    if-nez p1, :cond_0
 
-    return-void
+    const/4 p1, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p1}, Landroid/net/Uri;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    :goto_0
+    const-string v1, "app_link_intent_uri"
+
+    invoke-virtual {v0, v1, p1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-object p0
+.end method
+
+.method public d(Ljava/lang/String;)Lb/r/a/a/c$a;
+    .locals 2
+
+    iget-object v0, p0, Lb/r/a/a/c$a;->a:Landroid/content/ContentValues;
+
+    const-string v1, "display_name"
+
+    invoke-virtual {v0, v1, p1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-object p0
+.end method
+
+.method public e(Ljava/lang/String;)Lb/r/a/a/c$a;
+    .locals 2
+
+    iget-object v0, p0, Lb/r/a/a/c$a;->a:Landroid/content/ContentValues;
+
+    const-string v1, "type"
+
+    invoke-virtual {v0, v1, p1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-object p0
 .end method

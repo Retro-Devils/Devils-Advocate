@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Ljava/util/concurrent/Callable;
+.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/w2;->onResume()V
+    value = Lcom/digdroid/alman/dig/w2;->g()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:J
+.field final synthetic a:Lcom/digdroid/alman/dig/w2$b;
 
 .field final synthetic b:Lcom/digdroid/alman/dig/w2;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/w2;J)V
+.method constructor <init>(Lcom/digdroid/alman/dig/w2;Lcom/digdroid/alman/dig/w2$b;)V
     .locals 0
 
     iput-object p1, p0, Lcom/digdroid/alman/dig/w2$e;->b:Lcom/digdroid/alman/dig/w2;
 
-    iput-wide p2, p0, Lcom/digdroid/alman/dig/w2$e;->a:J
+    iput-object p2, p0, Lcom/digdroid/alman/dig/w2$e;->a:Lcom/digdroid/alman/dig/w2$b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,36 +38,12 @@
 
 
 # virtual methods
-.method public call()Ljava/lang/Object;
-    .locals 3
+.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
+    .locals 0
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/w2$e;->b:Lcom/digdroid/alman/dig/w2;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/w2$e;->a:Lcom/digdroid/alman/dig/w2$b;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
+    iput-boolean p2, p1, Lcom/digdroid/alman/dig/w2$b;->c:Z
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/b3;->u()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/w2$e;->b:Lcom/digdroid/alman/dig/w2;
-
-    iget-wide v1, p0, Lcom/digdroid/alman/dig/w2$e;->a:J
-
-    invoke-static {v0, v1, v2}, Lcom/digdroid/alman/dig/MyWidget;->b(Landroid/content/Context;J)V
-
-    goto :goto_0
-
-    :cond_0
-    iget-object v0, p0, Lcom/digdroid/alman/dig/w2$e;->b:Lcom/digdroid/alman/dig/w2;
-
-    iget-wide v1, p0, Lcom/digdroid/alman/dig/w2$e;->a:J
-
-    invoke-static {v0, v1, v2}, Lcom/digdroid/alman/dig/MyWidget;->c(Landroid/content/Context;J)V
-
-    :goto_0
-    const/4 v0, 0x0
-
-    return-object v0
+    return-void
 .end method

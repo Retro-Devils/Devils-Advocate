@@ -20,7 +20,7 @@
 # instance fields
 .field c:Landroid/content/Context;
 
-.field d:Lc/a/c/o;
+.field d:Lc/a/a/o;
 
 .field e:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -32,7 +32,7 @@
     .end annotation
 .end field
 
-.field f:Lcom/digdroid/alman/dig/b3;
+.field f:Lcom/digdroid/alman/dig/c3;
 
 .field g:Z
 
@@ -71,19 +71,19 @@
 
     iput-object v0, p0, Lcom/digdroid/alman/dig/f;->c:Landroid/content/Context;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/l2;->a(Landroid/content/Context;)Lc/a/c/o;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/m2;->a(Landroid/content/Context;)Lc/a/a/o;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/f;->d:Lc/a/c/o;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/f;->d:Lc/a/a/o;
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/f;->c:Landroid/content/Context;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/b3;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/c3;
 
     :cond_0
     return-void
@@ -116,7 +116,7 @@
 .method private e(Ljava/lang/String;)V
     .locals 2
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->k(Ljava/lang/String;)[B
+    invoke-static {p1}, Lcom/digdroid/alman/dig/a4;->l(Ljava/lang/String;)[B
 
     move-result-object p1
 
@@ -276,13 +276,13 @@
 .method private h(Ljava/lang/String;)V
     .locals 5
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/b3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/c3;
 
     const-string v1, "userid"
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/b3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/c3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -323,7 +323,7 @@
     invoke-virtual {v3, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_1
-    new-instance p1, Lc/a/c/w/k;
+    new-instance p1, Lc/a/a/w/k;
 
     new-instance v1, Lorg/json/JSONObject;
 
@@ -337,16 +337,16 @@
 
     invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/f$f;-><init>(Lcom/digdroid/alman/dig/f;)V
 
-    invoke-direct {p1, v2, v1, v3, v0}, Lc/a/c/w/k;-><init>(Ljava/lang/String;Lorg/json/JSONObject;Lc/a/c/p$b;Lc/a/c/p$a;)V
+    invoke-direct {p1, v2, v1, v3, v0}, Lc/a/a/w/k;-><init>(Ljava/lang/String;Lorg/json/JSONObject;Lc/a/a/p$b;Lc/a/a/p$a;)V
 
     const/4 v0, 0x0
 
     :try_start_0
-    invoke-virtual {p1, v0}, Lc/a/c/n;->L(Z)Lc/a/c/n;
+    invoke-virtual {p1, v0}, Lc/a/a/n;->L(Z)Lc/a/a/n;
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/f;->d:Lc/a/c/o;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/f;->d:Lc/a/a/o;
 
-    invoke-virtual {v0, p1}, Lc/a/c/o;->a(Lc/a/c/n;)Lc/a/c/n;
+    invoke-virtual {v0, p1}, Lc/a/a/o;->a(Lc/a/a/n;)Lc/a/a/n;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -384,13 +384,13 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     :try_start_2
-    iget-object v0, p0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/b3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/c3;
 
     const-string v1, "token"
 
     const-string v2, ""
 
-    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/b3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/c3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -404,11 +404,11 @@
 
     if-ne v0, v1, :cond_2
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/b3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/c3;
 
     const-string v1, "token_expires"
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/digdroid/alman/dig/b3;->n(Ljava/lang/String;J)J
+    invoke-virtual {v0, v1, v2, v3}, Lcom/digdroid/alman/dig/c3;->n(Ljava/lang/String;J)J
 
     move-result-wide v0
 
@@ -481,11 +481,11 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     :try_start_5
-    iget-object v0, p0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/b3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/c3;
 
     const-string v1, "attest_retry_next"
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/digdroid/alman/dig/b3;->n(Ljava/lang/String;J)J
+    invoke-virtual {v0, v1, v2, v3}, Lcom/digdroid/alman/dig/c3;->n(Ljava/lang/String;J)J
 
     move-result-wide v0
 
@@ -507,17 +507,17 @@
 
     :cond_4
     :try_start_6
-    iget-object v0, p0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/b3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/c3;
 
     const-string v1, "attest_retry_in"
 
     const-wide/32 v2, 0x1b7740
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/digdroid/alman/dig/b3;->n(Ljava/lang/String;J)J
+    invoke-virtual {v0, v1, v2, v3}, Lcom/digdroid/alman/dig/c3;->n(Ljava/lang/String;J)J
 
     move-result-wide v0
 
-    iget-object v2, p0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/b3;
+    iget-object v2, p0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/c3;
 
     const-string v3, "attest_retry_next"
 
@@ -527,9 +527,9 @@
 
     add-long/2addr v4, v0
 
-    invoke-virtual {v2, v3, v4, v5}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
+    invoke-virtual {v2, v3, v4, v5}, Lcom/digdroid/alman/dig/c3;->F(Ljava/lang/String;J)V
 
-    iget-object v2, p0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/b3;
+    iget-object v2, p0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/c3;
 
     const-string v3, "attest_retry_in"
 
@@ -543,7 +543,7 @@
 
     move-result-wide v0
 
-    invoke-virtual {v2, v3, v0, v1}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
+    invoke-virtual {v2, v3, v0, v1}, Lcom/digdroid/alman/dig/c3;->F(Ljava/lang/String;J)V
 
     invoke-static {}, Lc/b/a/a/b/d;->k()Lc/b/a/a/b/d;
 
@@ -583,7 +583,7 @@
 
     move-result-object v0
 
-    new-instance v1, Lc/a/c/w/n;
+    new-instance v1, Lc/a/a/w/n;
 
     const/4 v2, 0x0
 
@@ -595,14 +595,14 @@
 
     invoke-direct {v4, p0}, Lcom/digdroid/alman/dig/f$b;-><init>(Lcom/digdroid/alman/dig/f;)V
 
-    invoke-direct {v1, v2, v0, v3, v4}, Lc/a/c/w/n;-><init>(ILjava/lang/String;Lc/a/c/p$b;Lc/a/c/p$a;)V
+    invoke-direct {v1, v2, v0, v3, v4}, Lc/a/a/w/n;-><init>(ILjava/lang/String;Lc/a/a/p$b;Lc/a/a/p$a;)V
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_1
 
     :try_start_8
-    iget-object v0, p0, Lcom/digdroid/alman/dig/f;->d:Lc/a/c/o;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/f;->d:Lc/a/a/o;
 
-    invoke-virtual {v0, v1}, Lc/a/c/o;->a(Lc/a/c/n;)Lc/a/c/n;
+    invoke-virtual {v0, v1}, Lc/a/a/o;->a(Lc/a/a/n;)Lc/a/a/n;
     :try_end_8
     .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_0
     .catchall {:try_start_8 .. :try_end_8} :catchall_1

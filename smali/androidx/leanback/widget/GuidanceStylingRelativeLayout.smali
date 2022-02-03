@@ -39,13 +39,13 @@
 
     move-result-object p0
 
-    sget-object v0, Lb/l/l;->h:[I
+    sget-object v0, Lb/m/l;->h:[I
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes([I)Landroid/content/res/TypedArray;
 
     move-result-object p0
 
-    sget v0, Lb/l/l;->i:I
+    sget v0, Lb/m/l;->i:I
 
     const/high16 v1, 0x42200000    # 40.0f
 
@@ -69,7 +69,7 @@
 
     move-result-object p1
 
-    sget p2, Lb/l/f;->g:I
+    sget p2, Lb/m/f;->g:I
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -79,7 +79,7 @@
 
     move-result-object p2
 
-    sget p3, Lb/l/f;->d:I
+    sget p3, Lb/m/f;->d:I
 
     invoke-virtual {p2, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -89,7 +89,7 @@
 
     move-result-object p3
 
-    sget p4, Lb/l/f;->e:I
+    sget p4, Lb/m/f;->e:I
 
     invoke-virtual {p3, p4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -99,7 +99,7 @@
 
     move-result-object p4
 
-    sget p5, Lb/l/f;->f:I
+    sget p5, Lb/m/f;->f:I
 
     invoke-virtual {p4, p5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

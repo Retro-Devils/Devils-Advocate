@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lc/a/c/p$a;
+.implements Lc/a/a/p$a;
 
 
 # annotations
@@ -34,7 +34,7 @@
 
 
 # virtual methods
-.method public a(Lc/a/c/u;)V
+.method public a(Lc/a/a/u;)V
     .locals 0
 
     return-void

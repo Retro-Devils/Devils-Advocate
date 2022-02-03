@@ -66,7 +66,7 @@
 
     check-cast p2, Lcom/google/android/gms/common/internal/e0;
 
-    invoke-interface {p0, p1, v0, p2}, Lcom/google/android/gms/common/internal/m;->P(ILandroid/os/IBinder;Lcom/google/android/gms/common/internal/e0;)V
+    invoke-interface {p0, p1, v0, p2}, Lcom/google/android/gms/common/internal/m;->R(ILandroid/os/IBinder;Lcom/google/android/gms/common/internal/e0;)V
 
     goto :goto_0
 
@@ -83,7 +83,7 @@
 
     check-cast p2, Landroid/os/Bundle;
 
-    invoke-interface {p0, p1, p2}, Lcom/google/android/gms/common/internal/m;->Z(ILandroid/os/Bundle;)V
+    invoke-interface {p0, p1, p2}, Lcom/google/android/gms/common/internal/m;->b0(ILandroid/os/Bundle;)V
 
     goto :goto_0
 
@@ -104,7 +104,7 @@
 
     check-cast p2, Landroid/os/Bundle;
 
-    invoke-interface {p0, p1, v0, p2}, Lcom/google/android/gms/common/internal/m;->u0(ILandroid/os/IBinder;Landroid/os/Bundle;)V
+    invoke-interface {p0, p1, v0, p2}, Lcom/google/android/gms/common/internal/m;->t0(ILandroid/os/IBinder;Landroid/os/Bundle;)V
 
     :goto_0
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V

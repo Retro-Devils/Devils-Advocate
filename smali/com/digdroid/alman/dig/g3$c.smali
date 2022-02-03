@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/g3$m;
+.implements Landroid/content/DialogInterface$OnShowListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/g3;->h()V
+    value = Lcom/digdroid/alman/dig/g3;->M3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,26 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/digdroid/alman/dig/g3;
+.field final synthetic a:Ljava/util/ArrayList;
+
+.field final synthetic b:Landroid/database/Cursor;
+
+.field final synthetic c:Landroid/database/sqlite/SQLiteDatabase;
+
+.field final synthetic d:Lcom/digdroid/alman/dig/g3;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/g3;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/g3;Ljava/util/ArrayList;Landroid/database/Cursor;Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/g3$c;->a:Lcom/digdroid/alman/dig/g3;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/g3$c;->d:Lcom/digdroid/alman/dig/g3;
+
+    iput-object p2, p0, Lcom/digdroid/alman/dig/g3$c;->a:Ljava/util/ArrayList;
+
+    iput-object p3, p0, Lcom/digdroid/alman/dig/g3$c;->b:Landroid/database/Cursor;
+
+    iput-object p4, p0, Lcom/digdroid/alman/dig/g3$c;->c:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,20 +46,56 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/String;Ljava/lang/String;)V
+.method public onShow(Landroid/content/DialogInterface;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/g3$c;->a:Lcom/digdroid/alman/dig/g3;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$c;->d:Lcom/digdroid/alman/dig/g3;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/g3;->f:Ljava/util/HashMap;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/g3;->F0:Landroidx/appcompat/app/b;
 
-    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v0, -0x1
+
+    invoke-virtual {p1, v0}, Landroidx/appcompat/app/b;->e(I)Landroid/widget/Button;
 
     move-result-object p1
 
-    check-cast p1, Lcom/digdroid/alman/dig/g3$k;
+    new-instance v0, Lcom/digdroid/alman/dig/g3$c$a;
 
-    iput-object p2, p1, Lcom/digdroid/alman/dig/g3$k;->h:Ljava/lang/String;
+    invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/g3$c$a;-><init>(Lcom/digdroid/alman/dig/g3$c;)V
+
+    invoke-virtual {p1, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$c;->d:Lcom/digdroid/alman/dig/g3;
+
+    iget-object p1, p1, Lcom/digdroid/alman/dig/g3;->F0:Landroidx/appcompat/app/b;
+
+    const/4 v0, -0x2
+
+    invoke-virtual {p1, v0}, Landroidx/appcompat/app/b;->e(I)Landroid/widget/Button;
+
+    move-result-object p1
+
+    new-instance v0, Lcom/digdroid/alman/dig/g3$c$b;
+
+    invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/g3$c$b;-><init>(Lcom/digdroid/alman/dig/g3$c;)V
+
+    invoke-virtual {p1, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$c;->d:Lcom/digdroid/alman/dig/g3;
+
+    iget-object p1, p1, Lcom/digdroid/alman/dig/g3;->F0:Landroidx/appcompat/app/b;
+
+    const/4 v0, -0x3
+
+    invoke-virtual {p1, v0}, Landroidx/appcompat/app/b;->e(I)Landroid/widget/Button;
+
+    move-result-object p1
+
+    new-instance v0, Lcom/digdroid/alman/dig/g3$c$c;
+
+    invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/g3$c$c;-><init>(Lcom/digdroid/alman/dig/g3$c;)V
+
+    invoke-virtual {p1, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-void
 .end method

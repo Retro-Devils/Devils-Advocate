@@ -79,13 +79,13 @@
 
     invoke-direct {p2, v0}, Lcom/digdroid/alman/dig/i;-><init>(Landroid/app/Activity;)V
 
-    invoke-virtual {p2, p1}, Lcom/digdroid/alman/dig/i;->f(Z)V
+    invoke-virtual {p2, p1}, Lcom/digdroid/alman/dig/i;->g(Z)V
 
     new-instance p1, Lcom/digdroid/alman/dig/t1$b$a;
 
     invoke-direct {p1, p0}, Lcom/digdroid/alman/dig/t1$b$a;-><init>(Lcom/digdroid/alman/dig/t1$b;)V
 
-    invoke-virtual {p2, p1}, Lcom/digdroid/alman/dig/i;->g(Lcom/digdroid/alman/dig/i$b;)V
+    invoke-virtual {p2, p1}, Lcom/digdroid/alman/dig/i;->h(Lcom/digdroid/alman/dig/i$b;)V
 
     invoke-virtual {p2}, Lcom/digdroid/alman/dig/i;->d()V
 
@@ -282,7 +282,7 @@
     :cond_4
     const/4 p1, 0x4
 
-    const v0, 0x7f1101d8
+    const v0, 0x7f1101da
 
     const v2, 0x7f11005a
 
@@ -294,7 +294,7 @@
 
     iget-object p2, p0, Lcom/digdroid/alman/dig/t1$b;->b:Landroid/app/Activity;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
 
     move-result v4
 
@@ -334,7 +334,7 @@
 
     iget-object p2, p0, Lcom/digdroid/alman/dig/t1$b;->b:Landroid/app/Activity;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
 
     move-result v4
 

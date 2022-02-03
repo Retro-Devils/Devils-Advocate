@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/DatabaseService;->g(Ljava/lang/String;Ljava/io/File;Ljava/util/regex/Pattern;Z)Z
+    value = Lcom/digdroid/alman/dig/DatabaseService;->h(Ljava/lang/String;Ljava/io/File;Ljava/util/regex/Pattern;Z)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

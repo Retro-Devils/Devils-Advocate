@@ -51,7 +51,7 @@
 
     iget-object v1, v1, Lcom/digdroid/alman/dig/v0;->c:Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
 
     move-result v2
 
@@ -63,7 +63,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1101d8
+    const v1, 0x7f1101da
 
     new-instance v2, Lcom/digdroid/alman/dig/v0$i$b;
 
@@ -100,16 +100,16 @@
 
     iput-boolean p1, v0, Lcom/digdroid/alman/dig/v0;->i:Z
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/v0;->f:Lcom/digdroid/alman/dig/b3;
+    iget-object v0, v0, Lcom/digdroid/alman/dig/v0;->f:Lcom/digdroid/alman/dig/c3;
 
     const-string v1, "games_preview_play_mobile"
 
-    invoke-virtual {v0, v1, p1}, Lcom/digdroid/alman/dig/b3;->B(Ljava/lang/String;Z)V
+    invoke-virtual {v0, v1, p1}, Lcom/digdroid/alman/dig/c3;->B(Ljava/lang/String;Z)V
 
     :goto_0
     iget-object p1, p0, Lcom/digdroid/alman/dig/v0$i;->b:Lcom/digdroid/alman/dig/v0;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/v0;->b(Lcom/digdroid/alman/dig/v0;)Lcom/digdroid/alman/dig/n2;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/v0;->b(Lcom/digdroid/alman/dig/v0;)Lcom/digdroid/alman/dig/o2;
 
     move-result-object p1
 
@@ -117,11 +117,11 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/v0$i;->b:Lcom/digdroid/alman/dig/v0;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/v0;->b(Lcom/digdroid/alman/dig/v0;)Lcom/digdroid/alman/dig/n2;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/v0;->b(Lcom/digdroid/alman/dig/v0;)Lcom/digdroid/alman/dig/o2;
 
     move-result-object p1
 
-    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/n2;->y(Z)V
+    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/o2;->y(Z)V
 
     :cond_1
     return-void

@@ -65,11 +65,11 @@
     :cond_1
     iget-object v0, p0, Lcom/digdroid/alman/dig/e2$l;->b:Lcom/digdroid/alman/dig/e2;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/b3;
+    iget-object v0, v0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/c3;
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/b3;->t()Z
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/c3;->t()Z
 
     move-result v0
 

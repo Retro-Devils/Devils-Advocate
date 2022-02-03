@@ -294,7 +294,7 @@
 
     const v3, -0x7f333334
 
-    invoke-static {v2, v3}, Lcom/digdroid/alman/dig/p3;->r(Landroid/view/View;I)V
+    invoke-static {v2, v3}, Lcom/digdroid/alman/dig/q3;->r(Landroid/view/View;I)V
 
     new-instance v4, Lcom/digdroid/alman/dig/a0$b;
 
@@ -310,7 +310,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    invoke-static {v2, v3}, Lcom/digdroid/alman/dig/p3;->r(Landroid/view/View;I)V
+    invoke-static {v2, v3}, Lcom/digdroid/alman/dig/q3;->r(Landroid/view/View;I)V
 
     new-instance v4, Lcom/digdroid/alman/dig/a0$c;
 
@@ -326,7 +326,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    invoke-static {v2, v3}, Lcom/digdroid/alman/dig/p3;->r(Landroid/view/View;I)V
+    invoke-static {v2, v3}, Lcom/digdroid/alman/dig/q3;->r(Landroid/view/View;I)V
 
     new-instance v4, Lcom/digdroid/alman/dig/a0$d;
 
@@ -342,7 +342,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    invoke-static {p1, v3}, Lcom/digdroid/alman/dig/p3;->r(Landroid/view/View;I)V
+    invoke-static {p1, v3}, Lcom/digdroid/alman/dig/q3;->r(Landroid/view/View;I)V
 
     new-instance v1, Lcom/digdroid/alman/dig/a0$e;
 

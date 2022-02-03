@@ -39,7 +39,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/MainActivity$k;->a:Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/e0;->i1()Lcom/digdroid/alman/dig/p1;
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/e0;->k1()Lcom/digdroid/alman/dig/p1;
 
     move-result-object v0
 
@@ -58,7 +58,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/MainActivity$k;->a:Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/e0;->i1()Lcom/digdroid/alman/dig/p1;
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/e0;->k1()Lcom/digdroid/alman/dig/p1;
 
     move-result-object v0
 

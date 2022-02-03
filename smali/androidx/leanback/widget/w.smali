@@ -380,7 +380,7 @@
 
     invoke-super {p0}, Landroid/widget/EditText;->onFinishInflate()V
 
-    sget v0, Lb/l/d;->e:I
+    sget v0, Lb/m/d;->e:I
 
     const v1, 0x3fa66666
 
@@ -390,7 +390,7 @@
 
     iput-object v0, p0, Landroidx/leanback/widget/w;->e:Landroid/graphics/Bitmap;
 
-    sget v0, Lb/l/d;->f:I
+    sget v0, Lb/m/d;->f:I
 
     invoke-direct {p0, v0, v1}, Landroidx/leanback/widget/w;->c(IF)Landroid/graphics/Bitmap;
 

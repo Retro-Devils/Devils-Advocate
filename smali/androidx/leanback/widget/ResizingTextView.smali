@@ -59,14 +59,14 @@
 
     iput-boolean v0, p0, Landroidx/leanback/widget/ResizingTextView;->h:Z
 
-    sget-object v1, Lb/l/l;->P:[I
+    sget-object v1, Lb/m/l;->P:[I
 
     invoke-virtual {p1, p2, v1, p3, p4}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
     :try_start_0
-    sget p2, Lb/l/l;->R:I
+    sget p2, Lb/m/l;->R:I
 
     const/4 p3, 0x1
 
@@ -76,7 +76,7 @@
 
     iput p2, p0, Landroidx/leanback/widget/ResizingTextView;->b:I
 
-    sget p2, Lb/l/l;->U:I
+    sget p2, Lb/m/l;->U:I
 
     const/4 p3, -0x1
 
@@ -86,7 +86,7 @@
 
     iput p2, p0, Landroidx/leanback/widget/ResizingTextView;->c:I
 
-    sget p2, Lb/l/l;->Q:I
+    sget p2, Lb/m/l;->Q:I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
@@ -94,7 +94,7 @@
 
     iput-boolean p2, p0, Landroidx/leanback/widget/ResizingTextView;->d:Z
 
-    sget p2, Lb/l/l;->T:I
+    sget p2, Lb/m/l;->T:I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getDimensionPixelOffset(II)I
 
@@ -102,7 +102,7 @@
 
     iput p2, p0, Landroidx/leanback/widget/ResizingTextView;->e:I
 
-    sget p2, Lb/l/l;->S:I
+    sget p2, Lb/m/l;->S:I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getDimensionPixelOffset(II)I
 

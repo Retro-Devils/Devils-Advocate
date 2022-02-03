@@ -1,234 +1,350 @@
-.class Lb/r/a/a/a;
-.super Ljava/lang/Object;
+.class public abstract Lb/r/a/a/a;
+.super Lb/r/a/a/b;
 .source ""
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lb/r/a/a/a$a;
+    }
+.end annotation
+
+
 # static fields
-.field static final a:[I
-
-.field static final b:[I
-
-.field static final c:[I
-
-.field static final d:[I
-
-.field static final e:[I
-
-.field static final f:[I
-
-.field public static final g:[I
-
-.field public static final h:[I
-
-.field public static final i:[I
-
-.field public static final j:[I
-
-.field public static final k:[I
-
-.field public static final l:[I
+.field public static final c:[Ljava/lang/String;
 
 
 # direct methods
 .method static constructor <clinit>()V
+    .locals 1
+
+    invoke-static {}, Lb/r/a/a/a;->a()[Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lb/r/a/a/a;->c:[Ljava/lang/String;
+
+    return-void
+.end method
+
+.method constructor <init>(Lb/r/a/a/a$a;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lb/r/a/a/b;-><init>(Lb/r/a/a/b$a;)V
+
+    return-void
+.end method
+
+.method private static a()[Ljava/lang/String;
     .locals 5
 
-    const/16 v0, 0x9
+    const/16 v0, 0x1b
 
-    new-array v0, v0, [I
+    new-array v0, v0, [Ljava/lang/String;
 
-    fill-array-data v0, :array_0
+    const-string v1, "internal_provider_id"
 
-    sput-object v0, Lb/r/a/a/a;->a:[I
+    const/4 v2, 0x0
 
-    const/16 v0, 0x8
+    aput-object v1, v0, v2
 
-    new-array v1, v0, [I
+    const-string v1, "preview_video_uri"
 
-    fill-array-data v1, :array_1
+    const/4 v3, 0x1
 
-    sput-object v1, Lb/r/a/a/a;->b:[I
+    aput-object v1, v0, v3
 
-    const/16 v1, 0xe
+    const/4 v1, 0x2
 
-    new-array v1, v1, [I
+    const-string v4, "last_playback_position_millis"
 
-    fill-array-data v1, :array_2
-
-    sput-object v1, Lb/r/a/a/a;->c:[I
+    aput-object v4, v0, v1
 
     const/4 v1, 0x3
 
-    new-array v1, v1, [I
+    const-string v4, "duration_millis"
 
-    fill-array-data v1, :array_3
+    aput-object v4, v0, v1
 
-    sput-object v1, Lb/r/a/a/a;->d:[I
+    const/4 v1, 0x4
 
-    const/4 v1, 0x1
+    const-string v4, "intent_uri"
 
-    new-array v2, v1, [I
+    aput-object v4, v0, v1
 
-    const v3, 0x1010199
+    const/4 v1, 0x5
 
-    const/4 v4, 0x0
+    const-string v4, "transient"
 
-    aput v3, v2, v4
+    aput-object v4, v0, v1
 
-    sput-object v2, Lb/r/a/a/a;->e:[I
+    const/4 v1, 0x6
 
-    const/4 v2, 0x2
+    const-string v4, "type"
 
-    new-array v2, v2, [I
+    aput-object v4, v0, v1
 
-    fill-array-data v2, :array_4
+    const/4 v1, 0x7
 
-    sput-object v2, Lb/r/a/a/a;->f:[I
+    const-string v4, "poster_art_aspect_ratio"
 
-    new-array v0, v0, [I
+    aput-object v4, v0, v1
 
-    fill-array-data v0, :array_5
+    const/16 v1, 0x8
 
-    sput-object v0, Lb/r/a/a/a;->g:[I
+    const-string v4, "poster_thumbnail_aspect_ratio"
 
-    new-array v0, v1, [I
+    aput-object v4, v0, v1
 
-    const v1, 0x10102e2
+    const/16 v1, 0x9
 
-    aput v1, v0, v4
+    const-string v4, "logo_uri"
 
-    sput-object v0, Lb/r/a/a/a;->h:[I
+    aput-object v4, v0, v1
 
-    const/4 v0, 0x4
+    const/16 v1, 0xa
 
-    new-array v1, v0, [I
+    const-string v4, "availability"
 
-    fill-array-data v1, :array_6
+    aput-object v4, v0, v1
 
-    sput-object v1, Lb/r/a/a/a;->i:[I
+    const/16 v1, 0xb
 
-    new-array v1, v0, [I
+    const-string v4, "starting_price"
 
-    fill-array-data v1, :array_7
+    aput-object v4, v0, v1
 
-    sput-object v1, Lb/r/a/a/a;->j:[I
+    const/16 v1, 0xc
 
-    new-array v0, v0, [I
+    const-string v4, "offer_price"
 
-    fill-array-data v0, :array_8
+    aput-object v4, v0, v1
 
-    sput-object v0, Lb/r/a/a/a;->k:[I
+    const/16 v1, 0xd
 
-    const/4 v0, 0x5
+    const-string v4, "release_date"
 
-    new-array v0, v0, [I
+    aput-object v4, v0, v1
 
-    fill-array-data v0, :array_9
+    const/16 v1, 0xe
 
-    sput-object v0, Lb/r/a/a/a;->l:[I
+    const-string v4, "item_count"
 
-    return-void
+    aput-object v4, v0, v1
 
-    nop
+    const/16 v1, 0xf
 
-    :array_0
-    .array-data 4
-        0x1010003
-        0x1010121
-        0x1010155
-        0x1010159
-        0x101031f
-        0x10103ea
-        0x10103fb
-        0x1010402
-        0x1010403
-    .end array-data
+    const-string v4, "live"
 
-    :array_1
-    .array-data 4
-        0x1010003
-        0x10101b5
-        0x10101b6
-        0x1010324
-        0x1010325
-        0x1010326
-        0x101045a
-        0x101045b
-    .end array-data
+    aput-object v4, v0, v1
 
-    :array_2
-    .array-data 4
-        0x1010003
-        0x1010404
-        0x1010405
-        0x1010406
-        0x1010407
-        0x1010408
-        0x1010409
-        0x101040a
-        0x101040b
-        0x101040c
-        0x101040d
-        0x10104cb
-        0x10104cc
-        0x101051e
-    .end array-data
+    const/16 v1, 0x10
 
-    :array_3
-    .array-data 4
-        0x1010003
-        0x1010405
-        0x101051e
-    .end array-data
+    const-string v4, "interaction_type"
 
-    :array_4
-    .array-data 4
-        0x1010003
-        0x10101cd
-    .end array-data
+    aput-object v4, v0, v1
 
-    :array_5
-    .array-data 4
-        0x1010141
-        0x1010198
-        0x10101be
-        0x10101bf
-        0x10101c0
-        0x10102de
-        0x10102df
-        0x10102e0
-    .end array-data
+    const/16 v1, 0x11
 
-    :array_6
-    .array-data 4
-        0x10102de
-        0x10102df
-        0x10102e0
-        0x10102e1
-    .end array-data
+    const-string v4, "interaction_count"
 
-    :array_7
-    .array-data 4
-        0x1010024
-        0x1010141
-        0x10102e0
-        0x10104d8
-    .end array-data
+    aput-object v4, v0, v1
 
-    :array_8
-    .array-data 4
-        0x10102e1
-        0x1010405
-        0x1010474
-        0x1010475
-    .end array-data
+    const/16 v1, 0x12
 
-    :array_9
-    .array-data 4
-        0x10103fc
-        0x10103fd
-        0x10103fe
-        0x10103ff
-        0x1010405
-    .end array-data
+    const-string v4, "author"
+
+    aput-object v4, v0, v1
+
+    const/16 v1, 0x13
+
+    const-string v4, "browsable"
+
+    aput-object v4, v0, v1
+
+    const/16 v1, 0x14
+
+    const-string v4, "content_id"
+
+    aput-object v4, v0, v1
+
+    const/16 v1, 0x15
+
+    const-string v4, "logo_content_description"
+
+    aput-object v4, v0, v1
+
+    const/16 v1, 0x16
+
+    const-string v4, "genre"
+
+    aput-object v4, v0, v1
+
+    const/16 v1, 0x17
+
+    const-string v4, "start_time_utc_millis"
+
+    aput-object v4, v0, v1
+
+    const/16 v1, 0x18
+
+    const-string v4, "end_time_utc_millis"
+
+    aput-object v4, v0, v1
+
+    const/16 v1, 0x19
+
+    const-string v4, "preview_audio_uri"
+
+    aput-object v4, v0, v1
+
+    const/16 v1, 0x1a
+
+    const-string v4, "tv_series_item_type"
+
+    aput-object v4, v0, v1
+
+    sget-object v1, Lb/r/a/a/b;->a:[Ljava/lang/String;
+
+    new-array v3, v3, [[Ljava/lang/String;
+
+    aput-object v0, v3, v2
+
+    invoke-static {v1, v3}, Lb/r/a/a/e;->a([Ljava/lang/Object;[[Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Ljava/lang/String;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public c(Z)Landroid/content/ContentValues;
+    .locals 4
+
+    invoke-super {p0}, Lb/r/a/a/b;->b()Landroid/content/ContentValues;
+
+    move-result-object v0
+
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x1a
+
+    if-ge v1, v2, :cond_0
+
+    const-string v3, "internal_provider_id"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "preview_video_uri"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "last_playback_position_millis"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "duration_millis"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "intent_uri"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "transient"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "type"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "poster_art_aspect_ratio"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "poster_thumbnail_aspect_ratio"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "logo_uri"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "availability"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "starting_price"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "offer_price"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "release_date"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "item_count"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "live"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "interaction_count"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "author"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "content_id"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "logo_content_description"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "genre"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "start_time_utc_millis"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "end_time_utc_millis"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "preview_audio_uri"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    const-string v3, "tv_series_item_type"
+
+    invoke-virtual {v0, v3}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    :cond_0
+    if-lt v1, v2, :cond_1
+
+    if-nez p1, :cond_2
+
+    :cond_1
+    const-string p1, "browsable"
+
+    invoke-virtual {v0, p1}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+
+    :cond_2
+    return-object v0
 .end method

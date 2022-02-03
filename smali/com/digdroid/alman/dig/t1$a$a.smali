@@ -35,49 +35,53 @@
 
 # virtual methods
 .method public a([Ljava/lang/String;)V
-    .locals 2
+    .locals 3
 
-    const/4 v0, 0x0
+    iget-object v0, p0, Lcom/digdroid/alman/dig/t1$a$a;->a:Lcom/digdroid/alman/dig/t1$a;
 
-    aget-object p1, p1, v0
+    iget-object v0, v0, Lcom/digdroid/alman/dig/t1$a;->c:Landroid/app/Activity;
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v1, 0x0
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    aget-object p1, p1, v1
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/t1$a$a;->a:Lcom/digdroid/alman/dig/t1$a;
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget-object v1, v1, Lcom/digdroid/alman/dig/t1$a;->d:Ljava/lang/String;
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v2, p0, Lcom/digdroid/alman/dig/t1$a$a;->a:Lcom/digdroid/alman/dig/t1$a;
 
-    const-string v1, "/"
+    iget-object v2, v2, Lcom/digdroid/alman/dig/t1$a;->d:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/t1$a$a;->a:Lcom/digdroid/alman/dig/t1$a;
+    const-string v2, "/"
 
-    iget-object v1, v1, Lcom/digdroid/alman/dig/t1$a;->b:Ljava/lang/String;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v2, p0, Lcom/digdroid/alman/dig/t1$a$a;->a:Lcom/digdroid/alman/dig/t1$a;
 
-    const-string v1, ".png"
+    iget-object v2, v2, Lcom/digdroid/alman/dig/t1$a;->b:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string v2, ".png"
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {p1, v0}, Lcom/digdroid/alman/dig/z3;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, p1, v1}, Lcom/digdroid/alman/dig/a4;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/t1$a$a;->a:Lcom/digdroid/alman/dig/t1$a;
 
     iget-object p1, p1, Lcom/digdroid/alman/dig/t1$a;->h:Lcom/digdroid/alman/dig/t1;
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/t1;->d:Lcom/digdroid/alman/dig/g3;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/t1;->d:Lcom/digdroid/alman/dig/h3;
 
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/g3;->e()V
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/h3;->f()V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/t1$a$a;->a:Lcom/digdroid/alman/dig/t1$a;
 

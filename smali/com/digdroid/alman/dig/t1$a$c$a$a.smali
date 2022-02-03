@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/g3$l;
+.implements Lcom/digdroid/alman/dig/h3$m;
 
 
 # annotations
@@ -45,11 +45,11 @@
 
     iget-object v0, v0, Lcom/digdroid/alman/dig/t1$a;->h:Lcom/digdroid/alman/dig/t1;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/t1;->c:Lcom/digdroid/alman/dig/b3;
+    iget-object v0, v0, Lcom/digdroid/alman/dig/t1;->c:Lcom/digdroid/alman/dig/c3;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/b3;->W(Z)V
+    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/c3;->W(Z)V
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/t1$a$c$a$a;->a:Lcom/digdroid/alman/dig/t1$a$c$a;
 

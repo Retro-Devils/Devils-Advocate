@@ -27,13 +27,13 @@
 .method public abstract D(JLjava/lang/String;Lcom/digdroid/alman/dig/h0;)V
 .end method
 
-.method public abstract E(Lcom/digdroid/alman/dig/s3;)V
+.method public abstract E(Lcom/digdroid/alman/dig/t3;)V
 .end method
 
 .method public abstract F()V
 .end method
 
-.method public abstract G(Lcom/digdroid/alman/dig/s3;Ljava/lang/String;Ljava/lang/String;)V
+.method public abstract G(Lcom/digdroid/alman/dig/t3;Ljava/lang/String;Ljava/lang/String;)V
 .end method
 
 .method public abstract H(Z)V
@@ -159,7 +159,7 @@
 .method public abstract v(Ljava/lang/String;)V
 .end method
 
-.method public abstract v0()Lcom/digdroid/alman/dig/n2;
+.method public abstract v0()Lcom/digdroid/alman/dig/o2;
 .end method
 
 .method public abstract w(Z)V

@@ -35,13 +35,13 @@
 
     move-result-object p1
 
-    sget v0, Lb/l/h;->e:I
+    sget v0, Lb/m/h;->e:I
 
     const/4 v1, 0x1
 
     invoke-virtual {p1, v0, p0, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
-    sget p1, Lb/l/f;->a:I
+    sget p1, Lb/m/f;->a:I
 
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -51,7 +51,7 @@
 
     iput-object p1, p0, Landroidx/leanback/widget/MediaNowPlayingView;->b:Landroid/widget/ImageView;
 
-    sget v0, Lb/l/f;->b:I
+    sget v0, Lb/m/f;->b:I
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -61,7 +61,7 @@
 
     iput-object v0, p0, Landroidx/leanback/widget/MediaNowPlayingView;->c:Landroid/widget/ImageView;
 
-    sget v1, Lb/l/f;->c:I
+    sget v1, Lb/m/f;->c:I
 
     invoke-virtual {p0, v1}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 

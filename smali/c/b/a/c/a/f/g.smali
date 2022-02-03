@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public abstract D(Ljava/lang/String;)V
+.method public abstract G(Ljava/lang/String;)V
 .end method
 
 .method public abstract a()V
@@ -27,7 +27,7 @@
 .method public abstract f()V
 .end method
 
-.method public abstract g0(Ljava/lang/String;)V
+.method public abstract j0(Ljava/lang/String;)V
 .end method
 
 .method public abstract k()V

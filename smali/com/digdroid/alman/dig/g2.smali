@@ -49,11 +49,11 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/g2;->a:Lcom/digdroid/alman/dig/l;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/b3;->u()Z
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/c3;->u()Z
 
     move-result v0
 

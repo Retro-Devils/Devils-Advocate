@@ -157,6 +157,7 @@ Select with or without a text label:"</string>
     <string name="cover_save_error">"Couldn't save cover image file - your device may be full"</string>
     <string name="cover_storage">Storage location</string>
     <string name="covers">Covers</string>
+    <string name="covers_dir_msg">Please select the game image folder next</string>
     <string name="covers_to_check">images to check</string>
     <string name="cpv_custom">Custom</string>
     <string name="cpv_default_title">Select a Color</string>
@@ -192,6 +193,7 @@ Select with or without a text label:"</string>
     <string name="developer_hint">Enter developer</string>
     <string name="device_options">Device</string>
     <string name="device_scanning">ROM scanning</string>
+    <string name="dig_dir_msg">In the next screen please create and select a folder called \"Dig\"</string>
     <string name="digger_hint">What can I find for you?</string>
     <string name="directory_selected_label">Selected</string>
     <string name="done">Done</string>
@@ -510,6 +512,7 @@ Select with or without a text label:"</string>
     <string name="restore_success">Restore succeeded, now looking for your games...</string>
     <string name="retrarch_crashed">RetroArch may not have closed properly. Do you want to force close it (recommended)?</string>
     <string name="retroarch_core">The core for</string>
+    <string name="retroarch_dir_msg">"Next, please select the RetroArch folder "</string>
     <string name="retroarch_overlay">RetroArch overlay</string>
     <string name="right_triangle">▶</string>
     <string name="rom_paths">ROM paths...</string>
@@ -535,6 +538,7 @@ Select with or without a text label:"</string>
     <string name="select_random">Select random</string>
     <string name="select_root">Select starting folder</string>
     <string name="select_start">Select folder to scan</string>
+    <string name="select_start_saf">Select folder using the storage access framework</string>
     <string name="select_theme">Select theme</string>
     <string name="select_version">Select file to launch</string>
     <string name="selected">Selected:</string>
@@ -633,42 +637,42 @@ Select with or without a text label:"</string>
     <item type="string" name="APKTOOL_DUMMY_61" />
     <item type="string" name="APKTOOL_DUMMY_6b" />
     <item type="string" name="APKTOOL_DUMMY_96" />
-    <item type="string" name="APKTOOL_DUMMY_a7" />
-    <item type="string" name="APKTOOL_DUMMY_af" />
-    <item type="string" name="APKTOOL_DUMMY_b3" />
-    <item type="string" name="APKTOOL_DUMMY_d7" />
-    <item type="string" name="APKTOOL_DUMMY_f2" />
+    <item type="string" name="APKTOOL_DUMMY_a8" />
+    <item type="string" name="APKTOOL_DUMMY_b0" />
+    <item type="string" name="APKTOOL_DUMMY_b4" />
+    <item type="string" name="APKTOOL_DUMMY_d9" />
     <item type="string" name="APKTOOL_DUMMY_f4" />
-    <item type="string" name="APKTOOL_DUMMY_fa" />
-    <item type="string" name="APKTOOL_DUMMY_106" />
-    <item type="string" name="APKTOOL_DUMMY_107" />
-    <item type="string" name="APKTOOL_DUMMY_111" />
-    <item type="string" name="APKTOOL_DUMMY_117" />
+    <item type="string" name="APKTOOL_DUMMY_f6" />
+    <item type="string" name="APKTOOL_DUMMY_fc" />
+    <item type="string" name="APKTOOL_DUMMY_108" />
+    <item type="string" name="APKTOOL_DUMMY_109" />
+    <item type="string" name="APKTOOL_DUMMY_113" />
     <item type="string" name="APKTOOL_DUMMY_119" />
-    <item type="string" name="APKTOOL_DUMMY_12c" />
-    <item type="string" name="APKTOOL_DUMMY_130" />
-    <item type="string" name="APKTOOL_DUMMY_144" />
-    <item type="string" name="APKTOOL_DUMMY_175" />
-    <item type="string" name="APKTOOL_DUMMY_176" />
-    <item type="string" name="APKTOOL_DUMMY_18e" />
-    <item type="string" name="APKTOOL_DUMMY_191" />
-    <item type="string" name="APKTOOL_DUMMY_192" />
-    <item type="string" name="APKTOOL_DUMMY_1bc" />
-    <item type="string" name="APKTOOL_DUMMY_1c3" />
-    <item type="string" name="APKTOOL_DUMMY_1c4" />
-    <item type="string" name="APKTOOL_DUMMY_1d4" />
-    <item type="string" name="APKTOOL_DUMMY_1f9" />
-    <item type="string" name="APKTOOL_DUMMY_20b" />
-    <item type="string" name="APKTOOL_DUMMY_221" />
-    <item type="string" name="APKTOOL_DUMMY_227" />
-    <item type="string" name="APKTOOL_DUMMY_22e" />
-    <item type="string" name="APKTOOL_DUMMY_234" />
-    <item type="string" name="APKTOOL_DUMMY_260" />
-    <item type="string" name="APKTOOL_DUMMY_261" />
-    <item type="string" name="APKTOOL_DUMMY_266" />
-    <item type="string" name="APKTOOL_DUMMY_274" />
-    <item type="string" name="APKTOOL_DUMMY_27c" />
-    <item type="string" name="APKTOOL_DUMMY_288" />
-    <item type="string" name="APKTOOL_DUMMY_28d" />
-    <item type="string" name="APKTOOL_DUMMY_28e" />
+    <item type="string" name="APKTOOL_DUMMY_11b" />
+    <item type="string" name="APKTOOL_DUMMY_12e" />
+    <item type="string" name="APKTOOL_DUMMY_132" />
+    <item type="string" name="APKTOOL_DUMMY_146" />
+    <item type="string" name="APKTOOL_DUMMY_177" />
+    <item type="string" name="APKTOOL_DUMMY_178" />
+    <item type="string" name="APKTOOL_DUMMY_190" />
+    <item type="string" name="APKTOOL_DUMMY_193" />
+    <item type="string" name="APKTOOL_DUMMY_194" />
+    <item type="string" name="APKTOOL_DUMMY_1be" />
+    <item type="string" name="APKTOOL_DUMMY_1c5" />
+    <item type="string" name="APKTOOL_DUMMY_1c6" />
+    <item type="string" name="APKTOOL_DUMMY_1d6" />
+    <item type="string" name="APKTOOL_DUMMY_1fb" />
+    <item type="string" name="APKTOOL_DUMMY_20d" />
+    <item type="string" name="APKTOOL_DUMMY_224" />
+    <item type="string" name="APKTOOL_DUMMY_22a" />
+    <item type="string" name="APKTOOL_DUMMY_231" />
+    <item type="string" name="APKTOOL_DUMMY_237" />
+    <item type="string" name="APKTOOL_DUMMY_264" />
+    <item type="string" name="APKTOOL_DUMMY_265" />
+    <item type="string" name="APKTOOL_DUMMY_26a" />
+    <item type="string" name="APKTOOL_DUMMY_278" />
+    <item type="string" name="APKTOOL_DUMMY_280" />
+    <item type="string" name="APKTOOL_DUMMY_28c" />
+    <item type="string" name="APKTOOL_DUMMY_291" />
+    <item type="string" name="APKTOOL_DUMMY_292" />
 </resources>

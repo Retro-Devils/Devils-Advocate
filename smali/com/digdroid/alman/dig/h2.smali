@@ -241,13 +241,13 @@
 
     if-nez v2, :cond_5
 
-    invoke-static {p0}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
+    invoke-static {p0}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
 
     move-result-object v2
 
     const-string v5, "num_storage_dirs"
 
-    invoke-virtual {v2, v5, v4}, Lcom/digdroid/alman/dig/b3;->l(Ljava/lang/String;I)I
+    invoke-virtual {v2, v5, v4}, Lcom/digdroid/alman/dig/c3;->l(Ljava/lang/String;I)I
 
     move-result v5
 
@@ -272,7 +272,7 @@
 
     const-string v8, ""
 
-    invoke-virtual {v2, v7, v8}, Lcom/digdroid/alman/dig/b3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v7, v8}, Lcom/digdroid/alman/dig/c3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -539,13 +539,13 @@
     goto :goto_1
 
     :cond_4
-    invoke-static {p0}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
+    invoke-static {p0}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
 
     move-result-object p0
 
     const-string v1, "num_storage_dirs"
 
-    invoke-virtual {p0, v1, v5}, Lcom/digdroid/alman/dig/b3;->l(Ljava/lang/String;I)I
+    invoke-virtual {p0, v1, v5}, Lcom/digdroid/alman/dig/c3;->l(Ljava/lang/String;I)I
 
     move-result v1
 
@@ -570,7 +570,7 @@
 
     const-string v6, ""
 
-    invoke-virtual {p0, v4, v6}, Lcom/digdroid/alman/dig/b3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v4, v6}, Lcom/digdroid/alman/dig/c3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 

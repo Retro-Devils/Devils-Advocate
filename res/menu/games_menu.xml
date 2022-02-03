@@ -10,7 +10,7 @@
     <item android:id="@id/sort_crating" android:title="@string/rating" app:showAsAction="ifRoom" />
     <item android:id="@id/sort_cmost_played" android:title="@string/most_played" app:showAsAction="ifRoom" />
     <item android:id="@id/sort_ctime_played" android:title="@string/time_played" app:showAsAction="ifRoom" />
-    <item android:icon="@drawable/ic_action_sort" android:id="@id/sort_by" android:title="@string/sort_by" app:showAsAction="always">
+    <item android:icon="@drawable/APKTOOL_DUMMY_96" android:id="@id/sort_by" android:title="@string/sort_by" app:showAsAction="always">
         <menu>
             <item android:id="@id/sort_title2" android:title="@string/sort_by_title" />
             <item android:id="@id/sort_played2" android:title="@string/sort_by_played" />
@@ -24,7 +24,7 @@
             <item android:id="@id/min_ratings" android:title="@string/min_ratings" />
         </menu>
     </item>
-    <item android:icon="@drawable/ic_action_search" android:id="@id/search" android:title="@string/menu_search" app:showAsAction="always">
+    <item android:icon="@drawable/APKTOOL_DUMMY_95" android:id="@id/search" android:title="@string/menu_search" app:showAsAction="always">
         <menu>
             <item android:id="@id/search_contains" android:title="@string/search_contains" />
             <item android:id="@id/search_start" android:title="@string/search_start" />

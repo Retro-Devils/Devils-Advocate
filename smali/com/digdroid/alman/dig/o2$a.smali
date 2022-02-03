@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/o2;->onResults(Landroid/os/Bundle;)V
+    value = Lcom/digdroid/alman/dig/o2;->t(Ljava/lang/String;)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,14 @@
 
 
 # instance fields
-.field final synthetic b:Ljava/util/ArrayList;
-
-.field final synthetic c:Lcom/digdroid/alman/dig/o2;
+.field final synthetic b:Lcom/digdroid/alman/dig/o2;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/o2;Ljava/util/ArrayList;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/o2;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/o2$a;->c:Lcom/digdroid/alman/dig/o2;
-
-    iput-object p2, p0, Lcom/digdroid/alman/dig/o2$a;->b:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/o2$a;->b:Lcom/digdroid/alman/dig/o2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,31 +35,16 @@
 
 # virtual methods
 .method public run()V
-    .locals 4
+    .locals 2
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/o2$a;->c:Lcom/digdroid/alman/dig/o2;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/o2$a;->b:Lcom/digdroid/alman/dig/o2;
 
-    const/4 v1, 0x0
+    iget-boolean v1, v0, Lcom/digdroid/alman/dig/o2;->h:Z
 
-    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/o2;->V1(Z)V
+    if-eqz v1, :cond_0
 
-    invoke-static {}, Lcom/digdroid/alman/dig/x;->i()Lcom/digdroid/alman/dig/x;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/o2;->c(Lcom/digdroid/alman/dig/o2;)V
 
-    move-result-object v0
-
-    iget-object v2, p0, Lcom/digdroid/alman/dig/o2$a;->c:Lcom/digdroid/alman/dig/o2;
-
-    iget-object v3, p0, Lcom/digdroid/alman/dig/o2$a;->b:Ljava/util/ArrayList;
-
-    invoke-virtual {v3, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/String;
-
-    iget-object v3, p0, Lcom/digdroid/alman/dig/o2$a;->c:Lcom/digdroid/alman/dig/o2;
-
-    invoke-virtual {v0, v2, v1, v3}, Lcom/digdroid/alman/dig/x;->b(Landroid/app/Activity;Ljava/lang/String;Lcom/digdroid/alman/dig/x$d;)V
-
+    :cond_0
     return-void
 .end method

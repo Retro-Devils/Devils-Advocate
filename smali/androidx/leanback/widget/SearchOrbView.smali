@@ -56,7 +56,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    sget v0, Lb/l/a;->c:I
+    sget v0, Lb/m/a;->c:I
 
     invoke-direct {p0, p1, p2, v0}, Landroidx/leanback/widget/SearchOrbView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -110,7 +110,7 @@
 
     iput-object v1, p0, Landroidx/leanback/widget/SearchOrbView;->c:Landroid/view/View;
 
-    sget v2, Lb/l/f;->r:I
+    sget v2, Lb/m/f;->r:I
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -120,7 +120,7 @@
 
     iget-object v1, p0, Landroidx/leanback/widget/SearchOrbView;->c:Landroid/view/View;
 
-    sget v2, Lb/l/f;->i:I
+    sget v2, Lb/m/f;->i:I
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -134,7 +134,7 @@
 
     move-result-object v1
 
-    sget v2, Lb/l/e;->b:I
+    sget v2, Lb/m/e;->b:I
 
     invoke-virtual {v1, v2, v3, v3}, Landroid/content/res/Resources;->getFraction(III)F
 
@@ -146,7 +146,7 @@
 
     move-result-object v1
 
-    sget v2, Lb/l/g;->c:I
+    sget v2, Lb/m/g;->c:I
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -158,7 +158,7 @@
 
     move-result-object v1
 
-    sget v2, Lb/l/g;->d:I
+    sget v2, Lb/m/g;->d:I
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -170,7 +170,7 @@
 
     move-result-object v1
 
-    sget v2, Lb/l/c;->p:I
+    sget v2, Lb/m/c;->p:I
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -184,7 +184,7 @@
 
     move-result-object v2
 
-    sget v4, Lb/l/c;->q:I
+    sget v4, Lb/m/c;->q:I
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -194,7 +194,7 @@
 
     iput v2, p0, Landroidx/leanback/widget/SearchOrbView;->k:F
 
-    sget-object v2, Lb/l/l;->V:[I
+    sget-object v2, Lb/m/l;->V:[I
 
     const/4 v4, 0x0
 
@@ -202,7 +202,7 @@
 
     move-result-object p1
 
-    sget p2, Lb/l/l;->Y:I
+    sget p2, Lb/m/l;->Y:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -210,7 +210,7 @@
 
     if-nez p2, :cond_0
 
-    sget p2, Lb/l/d;->a:I
+    sget p2, Lb/m/d;->a:I
 
     invoke-virtual {v0, p2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -219,25 +219,25 @@
     :cond_0
     invoke-virtual {p0, p2}, Landroidx/leanback/widget/SearchOrbView;->setOrbIcon(Landroid/graphics/drawable/Drawable;)V
 
-    sget p2, Lb/l/b;->a:I
+    sget p2, Lb/m/b;->a:I
 
     invoke-virtual {v0, p2}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result p2
 
-    sget p3, Lb/l/l;->X:I
+    sget p3, Lb/m/l;->X:I
 
     invoke-virtual {p1, p3, p2}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result p2
 
-    sget p3, Lb/l/l;->W:I
+    sget p3, Lb/m/l;->W:I
 
     invoke-virtual {p1, p3, p2}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result p3
 
-    sget v0, Lb/l/l;->Z:I
+    sget v0, Lb/m/l;->Z:I
 
     invoke-virtual {p1, v0, v4}, Landroid/content/res/TypedArray;->getColor(II)I
 
@@ -506,7 +506,7 @@
 .method getLayoutResourceId()I
     .locals 1
 
-    sget v0, Lb/l/h;->g:I
+    sget v0, Lb/m/h;->g:I
 
     return v0
 .end method

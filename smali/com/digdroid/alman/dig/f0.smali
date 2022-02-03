@@ -51,7 +51,7 @@
 
     move-result-object p4
 
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
 
     move-result v0
 
@@ -61,7 +61,7 @@
 
     invoke-direct {p4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v0, 0x7f1100bb
+    const v0, 0x7f1100bc
 
     invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->D0(I)Ljava/lang/String;
 
@@ -141,7 +141,7 @@
 
     check-cast p4, Landroid/widget/EditText;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->b()I
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->b()I
 
     move-result v0
 
@@ -155,7 +155,7 @@
 
     move-result-object v0
 
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
 
     move-result v5
 
@@ -230,11 +230,11 @@
 
     iput-boolean v0, p0, Lcom/digdroid/alman/dig/f0;->y0:Z
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/c3;
 
     const-string v2, "show_all_genres"
 
-    invoke-virtual {v1, v2, v0}, Lcom/digdroid/alman/dig/b3;->A(Ljava/lang/String;Z)V
+    invoke-virtual {v1, v2, v0}, Lcom/digdroid/alman/dig/c3;->A(Ljava/lang/String;Z)V
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
 
@@ -279,7 +279,7 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->b()I
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->b()I
 
     move-result v3
 
@@ -291,7 +291,7 @@
 
     move-result-object v4
 
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
 
     move-result v5
 

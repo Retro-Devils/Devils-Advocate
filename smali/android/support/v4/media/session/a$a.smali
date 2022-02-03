@@ -64,7 +64,7 @@
     :pswitch_0
     invoke-virtual {p2, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    invoke-interface {p0}, Landroid/support/v4/media/session/a;->f0()V
+    invoke-interface {p0}, Landroid/support/v4/media/session/a;->h0()V
 
     return v2
 
@@ -75,7 +75,7 @@
 
     move-result p1
 
-    invoke-interface {p0, p1}, Landroid/support/v4/media/session/a;->d0(I)V
+    invoke-interface {p0, p1}, Landroid/support/v4/media/session/a;->f0(I)V
 
     return v2
 
@@ -91,7 +91,7 @@
     const/4 v0, 0x1
 
     :cond_0
-    invoke-interface {p0, v0}, Landroid/support/v4/media/session/a;->T(Z)V
+    invoke-interface {p0, v0}, Landroid/support/v4/media/session/a;->U(Z)V
 
     return v2
 
@@ -118,7 +118,7 @@
 
     move-result p1
 
-    invoke-interface {p0, p1}, Landroid/support/v4/media/session/a;->L(I)V
+    invoke-interface {p0, p1}, Landroid/support/v4/media/session/a;->N(I)V
 
     return v2
 
@@ -142,7 +142,7 @@
     check-cast v3, Landroid/support/v4/media/session/ParcelableVolumeInfo;
 
     :cond_2
-    invoke-interface {p0, v3}, Landroid/support/v4/media/session/a;->v0(Landroid/support/v4/media/session/ParcelableVolumeInfo;)V
+    invoke-interface {p0, v3}, Landroid/support/v4/media/session/a;->u0(Landroid/support/v4/media/session/ParcelableVolumeInfo;)V
 
     return v2
 
@@ -227,7 +227,7 @@
     check-cast v3, Landroid/support/v4/media/MediaMetadataCompat;
 
     :cond_5
-    invoke-interface {p0, v3}, Landroid/support/v4/media/session/a;->A(Landroid/support/v4/media/MediaMetadataCompat;)V
+    invoke-interface {p0, v3}, Landroid/support/v4/media/session/a;->B(Landroid/support/v4/media/MediaMetadataCompat;)V
 
     return v2
 
@@ -251,7 +251,7 @@
     check-cast v3, Landroid/support/v4/media/session/PlaybackStateCompat;
 
     :cond_6
-    invoke-interface {p0, v3}, Landroid/support/v4/media/session/a;->h0(Landroid/support/v4/media/session/PlaybackStateCompat;)V
+    invoke-interface {p0, v3}, Landroid/support/v4/media/session/a;->k0(Landroid/support/v4/media/session/PlaybackStateCompat;)V
 
     return v2
 
@@ -286,7 +286,7 @@
     check-cast v3, Landroid/os/Bundle;
 
     :cond_7
-    invoke-interface {p0, p1, v3}, Landroid/support/v4/media/session/a;->i0(Ljava/lang/String;Landroid/os/Bundle;)V
+    invoke-interface {p0, p1, v3}, Landroid/support/v4/media/session/a;->l0(Ljava/lang/String;Landroid/os/Bundle;)V
 
     return v2
 

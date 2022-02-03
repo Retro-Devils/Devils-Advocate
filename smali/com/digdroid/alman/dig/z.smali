@@ -15,25 +15,33 @@
 
 # virtual methods
 .method public u()Ljava/lang/String;
-    .locals 3
+    .locals 4
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/n;->a:Landroid/content/Context;
 
-    const/4 v1, 0x0
+    invoke-static {v0}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
+    move-result-object v1
+
+    const-string v2, "dig_dir"
+
+    const-string v3, ""
+
+    invoke-virtual {v1, v2, v3}, Lcom/digdroid/alman/dig/c3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/digdroid/alman/dig/i2;->d(Landroid/content/Context;Ljava/lang/String;)Lcom/digdroid/alman/dig/i2;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    new-instance v1, Lcom/digdroid/alman/dig/i2;
 
-    move-result-object v0
+    const-string v2, "Emu config/Dosbox"
 
-    const-string v1, "Android.*"
+    invoke-direct {v1, v0, v2}, Lcom/digdroid/alman/dig/i2;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    const-string v2, "Dig/Emu config/Dosbox"
-
-    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/i2;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v0
 
@@ -41,23 +49,25 @@
 .end method
 
 .method public v()Ljava/lang/String;
-    .locals 2
+    .locals 3
 
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    iget-object v0, p0, Lcom/digdroid/alman/dig/n;->a:Landroid/content/Context;
 
     invoke-virtual {p0}, Lcom/digdroid/alman/dig/z;->u()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v1}, Lcom/digdroid/alman/dig/i2;->d(Landroid/content/Context;Ljava/lang/String;)Lcom/digdroid/alman/dig/i2;
 
-    const-string v1, "/dosbox.conf"
+    move-result-object v0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v1, Lcom/digdroid/alman/dig/i2;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string v2, "dosbox.conf"
+
+    invoke-direct {v1, v0, v2}, Lcom/digdroid/alman/dig/i2;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/i2;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v0
 
@@ -67,15 +77,17 @@
 .method public w()V
     .locals 2
 
-    new-instance v0, Ljava/io/File;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/n;->a:Landroid/content/Context;
 
     invoke-virtual {p0}, Lcom/digdroid/alman/dig/z;->v()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/digdroid/alman/dig/i2;->d(Landroid/content/Context;Ljava/lang/String;)Lcom/digdroid/alman/dig/i2;
 
-    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/n;->k(Ljava/io/File;)V
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/n;->k(Lcom/digdroid/alman/dig/i2;)V
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
 

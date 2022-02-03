@@ -48,13 +48,13 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/t0$h;->b:Lcom/digdroid/alman/dig/t0;
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/c3;
 
     add-int/lit8 p3, p3, 0x1
 
     const-string p2, "min_ratings"
 
-    invoke-virtual {p1, p2, p3}, Lcom/digdroid/alman/dig/b3;->E(Ljava/lang/String;I)V
+    invoke-virtual {p1, p2, p3}, Lcom/digdroid/alman/dig/c3;->E(Ljava/lang/String;I)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/t0$h;->b:Lcom/digdroid/alman/dig/t0;
 

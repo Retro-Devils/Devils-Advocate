@@ -79,7 +79,7 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/r$f;->e:Lcom/digdroid/alman/dig/r;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/r;->a(Lcom/digdroid/alman/dig/r;)Lcom/digdroid/alman/dig/r3;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/r;->a(Lcom/digdroid/alman/dig/r;)Lcom/digdroid/alman/dig/s3;
 
     move-result-object p1
 
@@ -108,13 +108,13 @@
 
     iget-boolean p2, p0, Lcom/digdroid/alman/dig/r$f;->d:Z
 
-    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/i;->f(Z)V
+    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/i;->g(Z)V
 
     new-instance p2, Lcom/digdroid/alman/dig/r$f$a;
 
     invoke-direct {p2, p0}, Lcom/digdroid/alman/dig/r$f$a;-><init>(Lcom/digdroid/alman/dig/r$f;)V
 
-    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/i;->g(Lcom/digdroid/alman/dig/i$b;)V
+    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/i;->h(Lcom/digdroid/alman/dig/i$b;)V
 
     invoke-virtual {p1}, Lcom/digdroid/alman/dig/i;->d()V
 

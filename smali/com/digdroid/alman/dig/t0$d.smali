@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/d0$r;
+.implements Lcom/digdroid/alman/dig/d0$s;
 
 
 # annotations
@@ -39,13 +39,13 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/t0$d;->a:Lcom/digdroid/alman/dig/t0;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
+    iget-object v0, v0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/c3;
 
     const-string v1, "games_preview_enabled"
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/b3;->c(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/c3;->c(Ljava/lang/String;Z)Z
 
     move-result v0
 

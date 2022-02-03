@@ -117,7 +117,7 @@
 
     move-result-object p2
 
-    sget v0, Lb/l/c;->k:I
+    sget v0, Lb/m/c;->k:I
 
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -129,7 +129,7 @@
 
     move-result-object p2
 
-    sget v0, Lb/l/c;->i:I
+    sget v0, Lb/m/c;->i:I
 
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -141,7 +141,7 @@
 
     move-result-object p1
 
-    sget p2, Lb/l/c;->j:I
+    sget p2, Lb/m/c;->j:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

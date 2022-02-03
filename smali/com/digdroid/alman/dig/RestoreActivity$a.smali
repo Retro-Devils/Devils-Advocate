@@ -61,13 +61,13 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
 
     move-result-object v0
 
     const-string v1, "data_version"
 
-    invoke-virtual {v0, v1, p1}, Lcom/digdroid/alman/dig/b3;->E(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, p1}, Lcom/digdroid/alman/dig/c3;->E(Ljava/lang/String;I)V
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/RestoreActivity$a;->b:Lcom/digdroid/alman/dig/RestoreActivity;
 
@@ -89,17 +89,17 @@
 
     const-string v3, "black.cfg"
 
-    invoke-virtual {v0, v2, v3}, Lcom/digdroid/alman/dig/b3;->z(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v2, v3}, Lcom/digdroid/alman/dig/c3;->z(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v0, p1}, Lcom/digdroid/alman/dig/b3;->L(Z)V
+    invoke-virtual {v0, p1}, Lcom/digdroid/alman/dig/c3;->L(Z)V
 
     const-wide/16 v2, 0x0
 
-    invoke-virtual {v0, v2, v3}, Lcom/digdroid/alman/dig/b3;->C(J)V
+    invoke-virtual {v0, v2, v3}, Lcom/digdroid/alman/dig/c3;->C(J)V
 
     const-string v4, "sd_dirs_last_scanned"
 
-    invoke-virtual {v0, v4, v2, v3}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
+    invoke-virtual {v0, v4, v2, v3}, Lcom/digdroid/alman/dig/c3;->F(Ljava/lang/String;J)V
 
     const-string v0, "UPDATE rompaths SET last_checked=0,present=0,matches=0,restoring=1"
 
@@ -132,21 +132,21 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/RestoreActivity$a;->b:Lcom/digdroid/alman/dig/RestoreActivity;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->E(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/digdroid/alman/dig/a4;->G(Landroid/content/Context;)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/RestoreActivity$a;->b:Lcom/digdroid/alman/dig/RestoreActivity;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->F(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/digdroid/alman/dig/a4;->H(Landroid/content/Context;)V
 
     new-instance p1, Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/RestoreActivity$a;->b:Lcom/digdroid/alman/dig/RestoreActivity;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/b3;->u()Z
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/c3;->u()Z
 
     move-result v1
 

@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/d0;->t(Landroid/app/Activity;ILcom/digdroid/alman/dig/d0$r;)V
+    value = Lcom/digdroid/alman/dig/d0;->C(Landroid/app/Activity;IZILjava/lang/String;Lcom/digdroid/alman/dig/d0$s;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
 # instance fields
 .field final synthetic b:I
 
-.field final synthetic c:Landroid/widget/CheckBox;
+.field final synthetic c:Lcom/digdroid/alman/dig/d0$s;
 
 .field final synthetic d:Landroid/app/Activity;
 
@@ -28,14 +28,14 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/d0;ILandroid/widget/CheckBox;Landroid/app/Activity;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/d0;ILcom/digdroid/alman/dig/d0$s;Landroid/app/Activity;)V
     .locals 0
 
     iput-object p1, p0, Lcom/digdroid/alman/dig/d0$j;->e:Lcom/digdroid/alman/dig/d0;
 
     iput p2, p0, Lcom/digdroid/alman/dig/d0$j;->b:I
 
-    iput-object p3, p0, Lcom/digdroid/alman/dig/d0$j;->c:Landroid/widget/CheckBox;
+    iput-object p3, p0, Lcom/digdroid/alman/dig/d0$j;->c:Lcom/digdroid/alman/dig/d0$s;
 
     iput-object p4, p0, Lcom/digdroid/alman/dig/d0$j;->d:Landroid/app/Activity;
 
@@ -46,54 +46,64 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 2
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 1
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/d0$j;->e:Lcom/digdroid/alman/dig/d0;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/d0;->b(Lcom/digdroid/alman/dig/d0;)Lcom/digdroid/alman/dig/n;
+    iget p2, p0, Lcom/digdroid/alman/dig/d0$j;->b:I
 
-    move-result-object p1
+    invoke-static {p1, p2}, Lcom/digdroid/alman/dig/d0;->d(Lcom/digdroid/alman/dig/d0;I)Z
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    move-result p1
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    if-eqz p1, :cond_0
 
-    const-string v1, "not_again"
+    iget-object p1, p0, Lcom/digdroid/alman/dig/d0$j;->c:Lcom/digdroid/alman/dig/d0$s;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lcom/digdroid/alman/dig/d0$j;->b:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/d0$j;->c:Landroid/widget/CheckBox;
-
-    invoke-virtual {v1}, Landroid/widget/CheckBox;->isChecked()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    const-string v1, "1"
+    invoke-interface {p1}, Lcom/digdroid/alman/dig/d0$s;->b()V
 
     goto :goto_0
 
     :cond_0
-    const-string v1, "0"
+    new-instance p1, Landroidx/appcompat/app/b$a;
+
+    iget-object p2, p0, Lcom/digdroid/alman/dig/d0$j;->d:Landroid/app/Activity;
+
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+
+    move-result v0
+
+    invoke-direct {p1, p2, v0}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
+
+    const p2, 0x7f11027b
+
+    invoke-virtual {p1, p2}, Landroidx/appcompat/app/b$a;->h(I)Landroidx/appcompat/app/b$a;
+
+    move-result-object p1
+
+    const p2, 0x7f1101da
+
+    new-instance v0, Lcom/digdroid/alman/dig/d0$j$a;
+
+    invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/d0$j$a;-><init>(Lcom/digdroid/alman/dig/d0$j;)V
+
+    invoke-virtual {p1, p2, v0}, Landroidx/appcompat/app/b$a;->o(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
+
+    move-result-object p1
+
+    const/4 p2, 0x0
+
+    invoke-virtual {p1, p2}, Landroidx/appcompat/app/b$a;->d(Z)Landroidx/appcompat/app/b$a;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/appcompat/app/b$a;->a()Landroidx/appcompat/app/b;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
     :goto_0
-    invoke-virtual {p1, v0, v1}, Lcom/digdroid/alman/dig/n;->s(Ljava/lang/String;Ljava/lang/String;)V
-
-    iget-object p1, p0, Lcom/digdroid/alman/dig/d0$j;->e:Lcom/digdroid/alman/dig/d0;
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/d0$j;->d:Landroid/app/Activity;
-
-    invoke-static {p1, v0}, Lcom/digdroid/alman/dig/d0;->c(Lcom/digdroid/alman/dig/d0;Landroid/content/Context;)V
-
     return-void
 .end method

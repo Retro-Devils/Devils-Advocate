@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/n2$g;
+.implements Lcom/digdroid/alman/dig/o2$g;
 
 
 # annotations
@@ -65,7 +65,7 @@
 
     iget-object v0, v0, Lcom/digdroid/alman/dig/p1;->l0:Landroid/content/Context;
 
-    const/16 v3, 0x1c9
+    const/16 v3, 0x1cf
 
     invoke-static {v0, v1, v2, v3}, Lcom/digdroid/alman/dig/ServerService;->j(Landroid/content/Context;JI)V
 

@@ -4,10 +4,10 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FFLcom/digdroid/alman/dig/u;Ljava/lang/String;Ljava/lang/String;Z)V
+.method public constructor <init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FFLcom/digdroid/alman/dig/u;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 0
 
-    invoke-direct/range {p0 .. p9}, Lcom/digdroid/alman/dig/r0;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FFLcom/digdroid/alman/dig/u;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-direct/range {p0 .. p9}, Lcom/digdroid/alman/dig/r0;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FFLcom/digdroid/alman/dig/u;Ljava/lang/String;Ljava/lang/String;Z)V
 
     iget p1, p0, Lcom/digdroid/alman/dig/h;->f:I
 
@@ -61,7 +61,7 @@
 
     int-to-float v0, v0
 
-    invoke-virtual {p2, p1, v0}, Lcom/digdroid/alman/dig/q0;->h(Landroid/view/View;F)Lcom/digdroid/alman/dig/x0;
+    invoke-virtual {p2, p1, v0}, Lcom/digdroid/alman/dig/q0;->i(Landroid/view/View;F)Lcom/digdroid/alman/dig/x0;
 
     move-result-object p1
 

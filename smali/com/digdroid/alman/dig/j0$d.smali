@@ -86,9 +86,9 @@
     goto :goto_0
 
     :cond_2
-    new-instance p1, Lcom/digdroid/alman/dig/o3;
+    new-instance p1, Lcom/digdroid/alman/dig/p3;
 
-    invoke-direct {p1}, Lcom/digdroid/alman/dig/o3;-><init>()V
+    invoke-direct {p1}, Lcom/digdroid/alman/dig/p3;-><init>()V
 
     :goto_0
     iget-object v0, p0, Lcom/digdroid/alman/dig/j0$d;->b:Lcom/digdroid/alman/dig/j0;

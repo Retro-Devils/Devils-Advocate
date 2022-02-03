@@ -40,7 +40,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lb/r/a/a/b;",
+            "Lb/s/a/a/b;",
             ">;"
         }
     .end annotation
@@ -202,9 +202,9 @@
 
     move-result-object v2
 
-    check-cast v2, Lb/r/a/a/b;
+    check-cast v2, Lb/s/a/a/b;
 
-    invoke-virtual {v2, p0}, Lb/r/a/a/b;->a(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v2, p0}, Lb/s/a/a/b;->a(Landroid/graphics/drawable/Drawable;)V
 
     add-int/lit8 v1, v1, 0x1
 

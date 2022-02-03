@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/b0;->h(Lcom/digdroid/alman/dig/y3;Landroid/content/Intent;Landroid/database/Cursor;Landroid/database/Cursor;Ljava/lang/String;Ljava/lang/String;)Z
+    value = Lcom/digdroid/alman/dig/b0;->y(Lcom/digdroid/alman/dig/z3;JLjava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,38 +18,30 @@
 
 
 # instance fields
-.field final synthetic b:Landroid/view/View;
+.field final synthetic b:Lcom/digdroid/alman/dig/z3;
 
-.field final synthetic c:Ljava/lang/String;
+.field final synthetic c:Landroid/database/Cursor;
 
-.field final synthetic d:Lcom/digdroid/alman/dig/y3;
+.field final synthetic d:Landroid/database/Cursor;
 
-.field final synthetic e:Landroid/content/Intent;
+.field final synthetic e:Ljava/util/ArrayList;
 
-.field final synthetic f:Landroid/database/Cursor;
-
-.field final synthetic g:Landroid/database/Cursor;
-
-.field final synthetic h:Lcom/digdroid/alman/dig/b0;
+.field final synthetic f:Lcom/digdroid/alman/dig/b0;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/b0;Landroid/view/View;Ljava/lang/String;Lcom/digdroid/alman/dig/y3;Landroid/content/Intent;Landroid/database/Cursor;Landroid/database/Cursor;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/b0;Lcom/digdroid/alman/dig/z3;Landroid/database/Cursor;Landroid/database/Cursor;Ljava/util/ArrayList;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/b0$h;->h:Lcom/digdroid/alman/dig/b0;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/b0$h;->f:Lcom/digdroid/alman/dig/b0;
 
-    iput-object p2, p0, Lcom/digdroid/alman/dig/b0$h;->b:Landroid/view/View;
+    iput-object p2, p0, Lcom/digdroid/alman/dig/b0$h;->b:Lcom/digdroid/alman/dig/z3;
 
-    iput-object p3, p0, Lcom/digdroid/alman/dig/b0$h;->c:Ljava/lang/String;
+    iput-object p3, p0, Lcom/digdroid/alman/dig/b0$h;->c:Landroid/database/Cursor;
 
-    iput-object p4, p0, Lcom/digdroid/alman/dig/b0$h;->d:Lcom/digdroid/alman/dig/y3;
+    iput-object p4, p0, Lcom/digdroid/alman/dig/b0$h;->d:Landroid/database/Cursor;
 
-    iput-object p5, p0, Lcom/digdroid/alman/dig/b0$h;->e:Landroid/content/Intent;
-
-    iput-object p6, p0, Lcom/digdroid/alman/dig/b0$h;->f:Landroid/database/Cursor;
-
-    iput-object p7, p0, Lcom/digdroid/alman/dig/b0$h;->g:Landroid/database/Cursor;
+    iput-object p5, p0, Lcom/digdroid/alman/dig/b0$h;->e:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -59,45 +51,29 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 7
+    .locals 4
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/b0$h;->b:Landroid/view/View;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/b0$h;->f:Lcom/digdroid/alman/dig/b0;
 
-    const p2, 0x7f0902d8
+    iget-object v0, p0, Lcom/digdroid/alman/dig/b0$h;->b:Lcom/digdroid/alman/dig/z3;
 
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/b0$h;->c:Landroid/database/Cursor;
 
-    move-result-object p1
+    iget-object v2, p0, Lcom/digdroid/alman/dig/b0$h;->d:Landroid/database/Cursor;
 
-    check-cast p1, Landroid/widget/CheckBox;
+    iget-object v3, p0, Lcom/digdroid/alman/dig/b0$h;->e:Ljava/util/ArrayList;
 
-    iget-object p2, p0, Lcom/digdroid/alman/dig/b0$h;->h:Lcom/digdroid/alman/dig/b0;
-
-    invoke-static {p2}, Lcom/digdroid/alman/dig/b0;->b(Lcom/digdroid/alman/dig/b0;)Lcom/digdroid/alman/dig/b3;
+    invoke-virtual {v3, p2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object p2
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b0$h;->c:Ljava/lang/String;
+    check-cast p2, Ljava/io/File;
 
-    invoke-virtual {p1}, Landroid/widget/CheckBox;->isChecked()Z
+    invoke-virtual {p2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    move-result p1
+    move-result-object p2
 
-    invoke-virtual {p2, v0, p1}, Lcom/digdroid/alman/dig/b3;->A(Ljava/lang/String;Z)V
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/b0$h;->h:Lcom/digdroid/alman/dig/b0;
-
-    iget-object v2, p0, Lcom/digdroid/alman/dig/b0$h;->d:Lcom/digdroid/alman/dig/y3;
-
-    iget-object v3, p0, Lcom/digdroid/alman/dig/b0$h;->e:Landroid/content/Intent;
-
-    iget-object v4, p0, Lcom/digdroid/alman/dig/b0$h;->f:Landroid/database/Cursor;
-
-    iget-object v5, p0, Lcom/digdroid/alman/dig/b0$h;->g:Landroid/database/Cursor;
-
-    const/4 v6, 0x0
-
-    invoke-virtual/range {v1 .. v6}, Lcom/digdroid/alman/dig/b0;->q(Lcom/digdroid/alman/dig/y3;Landroid/content/Intent;Landroid/database/Cursor;Landroid/database/Cursor;Z)V
+    invoke-virtual {p1, v0, v1, v2, p2}, Lcom/digdroid/alman/dig/b0;->v(Lcom/digdroid/alman/dig/z3;Landroid/database/Cursor;Landroid/database/Cursor;Ljava/lang/String;)V
 
     return-void
 .end method

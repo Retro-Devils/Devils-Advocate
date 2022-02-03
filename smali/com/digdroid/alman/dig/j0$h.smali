@@ -52,7 +52,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/j0$h;->c:Lcom/digdroid/alman/dig/j0;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
+    iget-object v0, v0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/c3;
 
     aget-object p2, p2, p1
 
@@ -60,7 +60,7 @@
 
     aget-boolean v1, v1, p1
 
-    invoke-virtual {v0, p2, v1}, Lcom/digdroid/alman/dig/b3;->A(Ljava/lang/String;Z)V
+    invoke-virtual {v0, p2, v1}, Lcom/digdroid/alman/dig/c3;->A(Ljava/lang/String;Z)V
 
     add-int/lit8 p1, p1, 0x1
 

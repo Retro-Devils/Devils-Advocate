@@ -140,7 +140,7 @@
 
     :cond_0
     :try_start_0
-    invoke-static {v5, v6}, Lcom/digdroid/alman/dig/z3;->q(J)Ljava/lang/String;
+    invoke-static {v5, v6}, Lcom/digdroid/alman/dig/a4;->r(J)Ljava/lang/String;
 
     move-result-object v3
 

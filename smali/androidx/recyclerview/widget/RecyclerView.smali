@@ -401,7 +401,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    sget v0, Lb/o/a;->a:I
+    sget v0, Lb/p/a;->a:I
 
     invoke-direct {p0, p1, p2, v0}, Landroidx/recyclerview/widget/RecyclerView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -686,7 +686,7 @@
 
     invoke-virtual {v7, v0}, Landroidx/recyclerview/widget/RecyclerView;->setAccessibilityDelegateCompat(Landroidx/recyclerview/widget/k;)V
 
-    sget-object v2, Lb/o/c;->f:[I
+    sget-object v2, Lb/p/c;->f:[I
 
     invoke-virtual {v8, v9, v2, v10, v11}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -715,13 +715,13 @@
     invoke-virtual/range {v0 .. v6}, Landroid/view/ViewGroup;->saveAttributeDataForStyleable(Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
 
     :cond_3
-    sget v0, Lb/o/c;->o:I
+    sget v0, Lb/p/c;->o:I
 
     invoke-virtual {v14, v0}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    sget v0, Lb/o/c;->i:I
+    sget v0, Lb/p/c;->i:I
 
     invoke-virtual {v14, v0, v12}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -734,7 +734,7 @@
     invoke-virtual {v7, v0}, Landroid/view/ViewGroup;->setDescendantFocusability(I)V
 
     :cond_4
-    sget v0, Lb/o/c;->h:I
+    sget v0, Lb/p/c;->h:I
 
     invoke-virtual {v14, v0, v13}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
@@ -742,7 +742,7 @@
 
     iput-boolean v0, v7, Landroidx/recyclerview/widget/RecyclerView;->q:Z
 
-    sget v0, Lb/o/c;->j:I
+    sget v0, Lb/p/c;->j:I
 
     invoke-virtual {v14, v0, v11}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
@@ -752,7 +752,7 @@
 
     if-eqz v0, :cond_5
 
-    sget v0, Lb/o/c;->m:I
+    sget v0, Lb/p/c;->m:I
 
     invoke-virtual {v14, v0}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -760,13 +760,13 @@
 
     check-cast v0, Landroid/graphics/drawable/StateListDrawable;
 
-    sget v1, Lb/o/c;->n:I
+    sget v1, Lb/p/c;->n:I
 
     invoke-virtual {v14, v1}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    sget v3, Lb/o/c;->k:I
+    sget v3, Lb/p/c;->k:I
 
     invoke-virtual {v14, v3}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -774,7 +774,7 @@
 
     check-cast v3, Landroid/graphics/drawable/StateListDrawable;
 
-    sget v4, Lb/o/c;->l:I
+    sget v4, Lb/p/c;->l:I
 
     invoke-virtual {v14, v4}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -11420,19 +11420,19 @@
 
     new-instance v1, Landroidx/recyclerview/widget/d;
 
-    sget v2, Lb/o/b;->a:I
+    sget v2, Lb/p/b;->a:I
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v7
 
-    sget v2, Lb/o/b;->c:I
+    sget v2, Lb/p/b;->c:I
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v8
 
-    sget v2, Lb/o/b;->b:I
+    sget v2, Lb/p/b;->b:I
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 

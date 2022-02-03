@@ -21,7 +21,7 @@
 
     move-result-object p2
 
-    invoke-static {p2}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
+    invoke-static {p2}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
 
     move-result-object p2
 
@@ -29,9 +29,9 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {p2, v0, v1}, Lcom/digdroid/alman/dig/b3;->A(Ljava/lang/String;Z)V
+    invoke-virtual {p2, v0, v1}, Lcom/digdroid/alman/dig/c3;->A(Ljava/lang/String;Z)V
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->u(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/digdroid/alman/dig/a4;->v(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -39,7 +39,7 @@
 
     const-string v0, "autostart"
 
-    invoke-virtual {p2, v0, v1}, Lcom/digdroid/alman/dig/b3;->c(Ljava/lang/String;Z)Z
+    invoke-virtual {p2, v0, v1}, Lcom/digdroid/alman/dig/c3;->c(Ljava/lang/String;Z)Z
 
     move-result p2
 

@@ -376,7 +376,7 @@
     return-void
 .end method
 
-.method public c(Landroid/content/Context;Lcom/digdroid/alman/dig/g3;)Ljava/lang/String;
+.method public c(Landroid/content/Context;Lcom/digdroid/alman/dig/h3;)Ljava/lang/String;
     .locals 10
 
     const-string v0, ""
@@ -443,7 +443,7 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v1, 0x7f1100e8
+    const v1, 0x7f1100ea
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -491,7 +491,7 @@
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/h0;->h:Ljava/lang/String;
 
-    invoke-virtual {p2, v1}, Lcom/digdroid/alman/dig/g3;->r(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p2, v1}, Lcom/digdroid/alman/dig/h3;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -636,7 +636,7 @@
 
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v1, 0x7f11010f
+    const v1, 0x7f110111
 
     goto :goto_2
 
@@ -711,7 +711,7 @@
 
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v1, 0x7f110104
+    const v1, 0x7f110106
 
     goto :goto_4
 
@@ -722,7 +722,7 @@
 
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v1, 0x7f110103
+    const v1, 0x7f110105
 
     goto :goto_4
 
@@ -733,7 +733,7 @@
 
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v1, 0x7f110102
+    const v1, 0x7f110104
 
     goto :goto_4
 
@@ -744,7 +744,7 @@
 
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v1, 0x7f110101
+    const v1, 0x7f110103
 
     goto :goto_4
 
@@ -755,7 +755,7 @@
 
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v1, 0x7f110100
+    const v1, 0x7f110102
 
     goto :goto_4
 
@@ -766,7 +766,7 @@
 
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v1, 0x7f1100ff
+    const v1, 0x7f110101
 
     goto :goto_4
 
@@ -777,7 +777,7 @@
 
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v1, 0x7f1100fe
+    const v1, 0x7f110100
 
     :goto_4
     invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;

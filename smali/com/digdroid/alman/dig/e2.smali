@@ -47,11 +47,11 @@
 
 .field m:Landroidx/recyclerview/widget/h;
 
-.field n:Lcom/digdroid/alman/dig/j2;
+.field n:Lcom/digdroid/alman/dig/k2;
 
 .field o:Landroid/view/View;
 
-.field p:Lcom/digdroid/alman/dig/b3;
+.field p:Lcom/digdroid/alman/dig/c3;
 
 .field q:Z
 
@@ -126,11 +126,11 @@
 
     iput-object p4, p0, Lcom/digdroid/alman/dig/e2;->a:Lcom/digdroid/alman/dig/e2$s;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/b3;
+    iput-object v2, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/c3;
 
     const-string v2, "list"
 
@@ -169,9 +169,9 @@
 
     iput-object p2, p0, Lcom/digdroid/alman/dig/e2;->h:Landroid/widget/AbsListView;
 
-    iget-object p2, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/b3;
+    iget-object p2, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {p2}, Lcom/digdroid/alman/dig/b3;->t()Z
+    invoke-virtual {p2}, Lcom/digdroid/alman/dig/c3;->t()Z
 
     move-result p2
 
@@ -219,9 +219,9 @@
 
     iput-object p2, p0, Lcom/digdroid/alman/dig/e2;->h:Landroid/widget/AbsListView;
 
-    iget-object p2, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/b3;
+    iget-object p2, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {p2}, Lcom/digdroid/alman/dig/b3;->t()Z
+    invoke-virtual {p2}, Lcom/digdroid/alman/dig/c3;->t()Z
 
     move-result p2
 
@@ -244,7 +244,7 @@
 
     double-to-float p2, p2
 
-    invoke-static {p2}, Lcom/digdroid/alman/dig/p3;->d(F)F
+    invoke-static {p2}, Lcom/digdroid/alman/dig/q3;->d(F)F
 
     move-result p2
 
@@ -256,17 +256,17 @@
 
     invoke-virtual {p3, p2}, Landroid/widget/GridView;->setColumnWidth(I)V
 
-    iget-object p2, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/b3;
+    iget-object p2, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/c3;
 
     const/high16 p3, 0x42100000    # 36.0f
 
     const-string v0, "vertical_spacing"
 
-    invoke-virtual {p2, v0, p3}, Lcom/digdroid/alman/dig/b3;->f(Ljava/lang/String;F)F
+    invoke-virtual {p2, v0, p3}, Lcom/digdroid/alman/dig/c3;->f(Ljava/lang/String;F)F
 
     move-result p2
 
-    invoke-static {p2}, Lcom/digdroid/alman/dig/p3;->e(F)F
+    invoke-static {p2}, Lcom/digdroid/alman/dig/q3;->e(F)F
 
     move-result p2
 
@@ -524,7 +524,7 @@
 
     iput-object p2, p0, Lcom/digdroid/alman/dig/e2;->j:Lcom/digdroid/alman/dig/MyRecyclerView;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->j(Landroid/app/Activity;)Landroid/graphics/Point;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/a4;->k(Landroid/app/Activity;)Landroid/graphics/Point;
 
     move-result-object p3
 
@@ -566,7 +566,7 @@
     goto :goto_1
 
     :cond_9
-    new-instance p1, Lcom/digdroid/alman/dig/j2;
+    new-instance p1, Lcom/digdroid/alman/dig/k2;
 
     invoke-interface {p4}, Lcom/digdroid/alman/dig/e2$s;->S()F
 
@@ -580,9 +580,9 @@
 
     move-result-object p4
 
-    invoke-direct {p1, p2, p3, p4}, Lcom/digdroid/alman/dig/j2;-><init>(FF[I)V
+    invoke-direct {p1, p2, p3, p4}, Lcom/digdroid/alman/dig/k2;-><init>(FF[I)V
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/e2;->n:Lcom/digdroid/alman/dig/j2;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/e2;->n:Lcom/digdroid/alman/dig/k2;
 
     iget-object p2, p0, Lcom/digdroid/alman/dig/e2;->j:Lcom/digdroid/alman/dig/MyRecyclerView;
 
@@ -1675,9 +1675,9 @@
 
     if-nez p1, :cond_1c
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/b3;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {p1, v4, v1}, Lcom/digdroid/alman/dig/b3;->c(Ljava/lang/String;Z)Z
+    invoke-virtual {p1, v4, v1}, Lcom/digdroid/alman/dig/c3;->c(Ljava/lang/String;Z)Z
 
     move-result p1
 
@@ -1699,9 +1699,9 @@
 
     if-nez p1, :cond_1d
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/b3;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {p1, v4, v1}, Lcom/digdroid/alman/dig/b3;->c(Ljava/lang/String;Z)Z
+    invoke-virtual {p1, v4, v1}, Lcom/digdroid/alman/dig/c3;->c(Ljava/lang/String;Z)Z
 
     move-result p1
 
@@ -2320,7 +2320,7 @@
 
     double-to-float p1, v4
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/p3;->d(F)F
+    invoke-static {p1}, Lcom/digdroid/alman/dig/q3;->d(F)F
 
     move-result p1
 
@@ -2397,7 +2397,7 @@
 
     if-eqz p1, :cond_9
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/e2;->n:Lcom/digdroid/alman/dig/j2;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/e2;->n:Lcom/digdroid/alman/dig/k2;
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/e2;->a:Lcom/digdroid/alman/dig/e2$s;
 
@@ -2411,7 +2411,7 @@
 
     move-result v1
 
-    invoke-virtual {p1, v0, v1}, Lcom/digdroid/alman/dig/j2;->k(FF)V
+    invoke-virtual {p1, v0, v1}, Lcom/digdroid/alman/dig/k2;->k(FF)V
 
     :cond_9
     iget-object p1, p0, Lcom/digdroid/alman/dig/e2;->a:Lcom/digdroid/alman/dig/e2$s;
@@ -2671,13 +2671,13 @@
 
     invoke-virtual {v1}, Landroidx/appcompat/app/c;->getResources()Landroid/content/res/Resources;
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/b3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/c3;
 
     const/high16 v4, 0x42100000    # 36.0f
 
     const-string v5, "vertical_spacing"
 
-    invoke-virtual {v1, v5, v4}, Lcom/digdroid/alman/dig/b3;->f(Ljava/lang/String;F)F
+    invoke-virtual {v1, v5, v4}, Lcom/digdroid/alman/dig/c3;->f(Ljava/lang/String;F)F
 
     move-result v1
 
@@ -2695,11 +2695,11 @@
 
     move-result p1
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/b3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {v1, v5, p1}, Lcom/digdroid/alman/dig/b3;->w(Ljava/lang/String;F)V
+    invoke-virtual {v1, v5, p1}, Lcom/digdroid/alman/dig/c3;->w(Ljava/lang/String;F)V
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/p3;->e(F)F
+    invoke-static {p1}, Lcom/digdroid/alman/dig/q3;->e(F)F
 
     move-result p1
 
@@ -2787,7 +2787,7 @@
 
     if-eqz p1, :cond_9
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/e2;->n:Lcom/digdroid/alman/dig/j2;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/e2;->n:Lcom/digdroid/alman/dig/k2;
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/e2;->a:Lcom/digdroid/alman/dig/e2$s;
 
@@ -2801,7 +2801,7 @@
 
     move-result v1
 
-    invoke-virtual {p1, v0, v1}, Lcom/digdroid/alman/dig/j2;->k(FF)V
+    invoke-virtual {p1, v0, v1}, Lcom/digdroid/alman/dig/k2;->k(FF)V
 
     :cond_9
     iget-object p1, p0, Lcom/digdroid/alman/dig/e2;->a:Lcom/digdroid/alman/dig/e2$s;
@@ -2888,9 +2888,9 @@
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/b3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/b3;->t()Z
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/c3;->t()Z
 
     move-result v0
 
@@ -2953,7 +2953,7 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/e2;->e:Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->B(Lcom/digdroid/alman/dig/MainActivity;)I
+    invoke-static {p1}, Lcom/digdroid/alman/dig/a4;->D(Lcom/digdroid/alman/dig/MainActivity;)I
 
     move-result p1
 
@@ -2964,7 +2964,7 @@
     :cond_0
     iget-object p1, p0, Lcom/digdroid/alman/dig/e2;->e:Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->B(Lcom/digdroid/alman/dig/MainActivity;)I
+    invoke-static {p1}, Lcom/digdroid/alman/dig/a4;->D(Lcom/digdroid/alman/dig/MainActivity;)I
 
     move-result p1
 
@@ -3121,9 +3121,9 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/b3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/b3;->t()Z
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/c3;->t()Z
 
     move-result v1
 

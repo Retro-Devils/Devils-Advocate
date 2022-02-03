@@ -1,4 +1,4 @@
-.class public Lc/b/a/a/d/c/a;
+.class public interface abstract Lc/b/a/a/d/c/a;
 .super Ljava/lang/Object;
 .source ""
 
@@ -6,79 +6,44 @@
 .implements Landroid/os/IInterface;
 
 
-# instance fields
-.field private final a:Landroid/os/IBinder;
-
-.field private final b:Ljava/lang/String;
-
-
-# direct methods
-.method protected constructor <init>(Landroid/os/IBinder;Ljava/lang/String;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lc/b/a/a/d/c/a;->a:Landroid/os/IBinder;
-
-    iput-object p2, p0, Lc/b/a/a/d/c/a;->b:Ljava/lang/String;
-
-    return-void
-.end method
-
-
 # virtual methods
-.method public asBinder()Landroid/os/IBinder;
-    .locals 1
-
-    iget-object v0, p0, Lc/b/a/a/d/c/a;->a:Landroid/os/IBinder;
-
-    return-object v0
+.method public abstract E(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
 .end method
 
-.method protected final i()Landroid/os/Parcel;
-    .locals 2
-
-    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lc/b/a/a/d/c/a;->b:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
-
-    return-object v0
+.method public abstract F(ILjava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
 .end method
 
-.method protected final j(ILandroid/os/Parcel;)V
-    .locals 3
+.method public abstract H(ILjava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Ljava/lang/String;",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ")",
+            "Landroid/os/Bundle;"
+        }
+    .end annotation
+.end method
 
-    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+.method public abstract J(ILjava/lang/String;Ljava/lang/String;)I
+.end method
 
-    move-result-object v0
+.method public abstract O(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
+.end method
 
-    :try_start_0
-    iget-object v1, p0, Lc/b/a/a/d/c/a;->a:Landroid/os/IBinder;
+.method public abstract X(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
+.end method
 
-    const/4 v2, 0x0
+.method public abstract i0(ILjava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
+.end method
 
-    invoke-interface {v1, p1, p2, v0, v2}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public abstract v0(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
+.end method
 
-    invoke-virtual {v0}, Landroid/os/Parcel;->readException()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    invoke-virtual {p2}, Landroid/os/Parcel;->recycle()V
-
-    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    invoke-virtual {p2}, Landroid/os/Parcel;->recycle()V
-
-    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
-
-    throw p1
+.method public abstract z(ILjava/lang/String;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;)Landroid/os/Bundle;
 .end method

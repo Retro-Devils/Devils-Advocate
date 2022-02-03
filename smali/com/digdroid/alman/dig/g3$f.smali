@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/g3$m;
+.implements Landroid/widget/AdapterView$OnItemClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/g3;->h()V
+    value = Lcom/digdroid/alman/dig/g3;->L3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/digdroid/alman/dig/g3;
+.field final synthetic b:Lcom/digdroid/alman/dig/g3$s;
+
+.field final synthetic c:Lcom/digdroid/alman/dig/g3;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/g3;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/g3;Lcom/digdroid/alman/dig/g3$s;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/g3$f;->a:Lcom/digdroid/alman/dig/g3;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/g3$f;->c:Lcom/digdroid/alman/dig/g3;
+
+    iput-object p2, p0, Lcom/digdroid/alman/dig/g3$f;->b:Lcom/digdroid/alman/dig/g3$s;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,20 +38,23 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
+.method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/widget/AdapterView<",
+            "*>;",
+            "Landroid/view/View;",
+            "IJ)V"
+        }
+    .end annotation
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/g3$f;->a:Lcom/digdroid/alman/dig/g3;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$f;->b:Lcom/digdroid/alman/dig/g3$s;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/g3;->f:Ljava/util/HashMap;
+    iput p3, p1, Lcom/digdroid/alman/dig/g3$s;->e:I
 
-    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/digdroid/alman/dig/g3$k;
-
-    iput-object p2, p1, Lcom/digdroid/alman/dig/g3$k;->k:Ljava/lang/String;
+    invoke-virtual {p1}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
     return-void
 .end method

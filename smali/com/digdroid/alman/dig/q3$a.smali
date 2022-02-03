@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Landroid/media/MediaPlayer$OnSeekCompleteListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/q3;->O2(Ljava/lang/String;I)V
+    value = Lcom/digdroid/alman/dig/q3;->a(Landroid/app/Activity;Lcom/digdroid/alman/dig/s3;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/digdroid/alman/dig/q3;
+.field final synthetic b:Landroid/app/Activity;
+
+.field final synthetic c:Landroid/widget/TextView;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/q3;)V
+.method constructor <init>(Landroid/app/Activity;Landroid/widget/TextView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/q3$a;->a:Lcom/digdroid/alman/dig/q3;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/q3$a;->b:Landroid/app/Activity;
+
+    iput-object p2, p0, Lcom/digdroid/alman/dig/q3$a;->c:Landroid/widget/TextView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,25 +38,22 @@
 
 
 # virtual methods
-.method public onSeekComplete(Landroid/media/MediaPlayer;)V
-    .locals 0
+.method public onClick(Landroid/view/View;)V
+    .locals 1
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/q3$a;->a:Lcom/digdroid/alman/dig/q3;
+    new-instance p1, Lcom/digdroid/alman/dig/i;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/q3;->F2(Lcom/digdroid/alman/dig/q3;)Z
+    iget-object v0, p0, Lcom/digdroid/alman/dig/q3$a;->b:Landroid/app/Activity;
 
-    move-result p1
+    invoke-direct {p1, v0}, Lcom/digdroid/alman/dig/i;-><init>(Landroid/app/Activity;)V
 
-    if-nez p1, :cond_0
+    new-instance v0, Lcom/digdroid/alman/dig/q3$a$a;
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/q3$a;->a:Lcom/digdroid/alman/dig/q3;
+    invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/q3$a$a;-><init>(Lcom/digdroid/alman/dig/q3$a;)V
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/q3;->t2(Lcom/digdroid/alman/dig/q3;)Landroid/media/MediaPlayer;
+    invoke-virtual {p1, v0}, Lcom/digdroid/alman/dig/i;->h(Lcom/digdroid/alman/dig/i$b;)V
 
-    move-result-object p1
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/i;->d()V
 
-    invoke-virtual {p1}, Landroid/media/MediaPlayer;->start()V
-
-    :cond_0
     return-void
 .end method

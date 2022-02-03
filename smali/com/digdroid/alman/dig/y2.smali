@@ -1,16 +1,10 @@
 .class Lcom/digdroid/alman/dig/y2;
-.super Landroid/database/sqlite/SQLiteOpenHelper;
+.super Lcom/digdroid/alman/dig/n;
 .source ""
 
 
 # static fields
-.field private static b:Lcom/digdroid/alman/dig/u;
-
-.field private static c:Lcom/digdroid/alman/dig/y2;
-
-
-# instance fields
-.field public d:Z
+.field private static f:I
 
 
 # direct methods
@@ -20,427 +14,370 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
-    .locals 2
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x1
-
-    invoke-direct {p0, p1, p2, v0, v1}, Landroid/database/sqlite/SQLiteOpenHelper;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
-
-    const/4 p1, 0x0
-
-    iput-boolean p1, p0, Lcom/digdroid/alman/dig/y2;->d:Z
-
-    return-void
-.end method
-
-.method public static declared-synchronized a(Landroid/content/Context;Ljava/lang/String;Lcom/digdroid/alman/dig/u;)Lcom/digdroid/alman/dig/y2;
-    .locals 1
-
-    const-class v0, Lcom/digdroid/alman/dig/y2;
-
-    monitor-enter v0
-
-    :try_start_0
-    sput-object p2, Lcom/digdroid/alman/dig/y2;->b:Lcom/digdroid/alman/dig/u;
-
-    sget-object p2, Lcom/digdroid/alman/dig/y2;->c:Lcom/digdroid/alman/dig/y2;
-
-    if-nez p2, :cond_0
-
-    new-instance p2, Lcom/digdroid/alman/dig/y2;
-
-    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object p0
-
-    invoke-direct {p2, p0, p1}, Lcom/digdroid/alman/dig/y2;-><init>(Landroid/content/Context;Ljava/lang/String;)V
-
-    sput-object p2, Lcom/digdroid/alman/dig/y2;->c:Lcom/digdroid/alman/dig/y2;
-
-    :cond_0
-    sget-object p0, Lcom/digdroid/alman/dig/y2;->c:Lcom/digdroid/alman/dig/y2;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit v0
-
-    return-object p0
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit v0
-
-    throw p0
-.end method
-
-
-# virtual methods
-.method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 4
 
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/digdroid/alman/dig/y2;->d:Z
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "CREATE TABLE roms(_id integer primary key autoincrement, mdbid integer, gdbid integer, crc integer, gfcover text,"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, "title text, sortname text, system text, pathid integer, filename text, foldername text, merged_with integer default -1, emulator integer,"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, "last_played integer, times_played integer, time_played integer, favorite int, released integer, publisher text, developer text, info text, notes text,"
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, "merged_last_played integer, merged_times_played integer, merged_time_played integer, rating real,"
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, "comments INTEGER NOT NULL default 0,lastcomment INTEGER NOT NULL DEFAULT 0,c_rating real NOT NULL default 0, c_rating_count integer NOT NULL default 0,"
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, "c_played_total integer NOT NULL default 0, c_played_count integer NOT NULL default 0,fuzzy_match integer,forumcreated INTEGER NOT NULL DEFAULT 0,"
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, "present integer, ignored integer, cover_status integer, cover_requested integer, has_images integer, age_rating integer, youtube text )"
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX mdbididx ON roms (mdbid)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX sortidx ON roms (sortname)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX sysidx ON roms (system)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX pathididx ON roms (pathid)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX fileidx ON roms (filename)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX mergeidx ON roms (merged_with)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX relidx ON roms (released)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX lpidx ON roms (last_played)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX favidx ON roms (favorite)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX covidx ON roms (cover_status)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX covreqidx ON roms (cover_requested)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX mergedidx ON roms (merged_with)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX cratingidx ON roms (c_rating)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX cratingcountidx ON roms (c_rating_count)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX cplayedtotalidx ON roms (c_played_total)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX cplayedcountidx ON roms (c_played_count)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX fuzzyidx ON roms (fuzzy_match)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX has_images_idx ON roms (has_images)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "CREATE TABLE systems(_id integer primary key autoincrement, slug text, parent text, name text, type text,"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, "introduced integer, generation integer, extensions text, folder_exts text, numgames integer, emulator integer,"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, "overlay text, overlay_opacity real NOT NULL default 0.7, user_set_overlay integer not null default 0,"
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, "forumcreated INTEGER NOT NULL DEFAULT 0,has_theme_icon INTEGER,icon_aspect_ratio REAL NOT NULL DEFAULT 1.0,"
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, "ignored integer NOT NULL default 0, show_covers INTEGER NOT NULL DEFAULT 1, show_merged INTEGER NOT NULL DEFAULT 1 )"
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX slug_idx ON systems (slug)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX numgames_idx ON systems (numgames)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE TABLE emulators(_id integer primary key autoincrement, name text, system text, package text, class text, core text, config_dir text, rom_key text, action_type text, data_type text, takes_zip integer, use_retroarch64 integer not null default 0,user_edited integer not null default 0 )"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX sysidx2 ON emulators (system)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE TABLE genres(_id integer primary key autoincrement, name text)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX nameidx ON genres( name ) "
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE TABLE gamegenres( _id integer primary key autoincrement, game integer, genre integer)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX gameidx ON gamegenres( game )"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX genreidx ON gamegenres( genre )"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE TABLE collections(_id integer primary key autoincrement, name text, parent integer, isfolder integer )"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX collectionidx ON collections( parent, name ) "
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE TABLE gamecollection( _id integer primary key autoincrement, game integer, collection integer)"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX colectiongameidx ON gamegenres( game )"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX colectioncolectionidx ON gamegenres( genre )"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE TABLE rompaths( _id integer primary key autoincrement, system text, path text, selected integer, last_checked integer, present integer not null default 1, matches integer not null default 0, restoring integer not null default 0 )"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX pathidx ON rompaths( path )"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    const-string v0, "CREATE TABLE main(_id integer primary key autoincrement, type integer, enabled integer NOT NULL DEFAULT 1, position integer, itemid integer, itemaux integer )"
-
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/digdroid/alman/dig/n;-><init>(Landroid/content/Context;)V
 
     const/4 v0, 0x0
 
-    :goto_0
-    const/4 v1, 0x7
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
 
-    if-ge v0, v1, :cond_1
+    move-result-object v0
 
-    new-instance v1, Landroid/content/ContentValues;
+    if-eqz v0, :cond_6
 
-    invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
+    new-instance v1, Ljava/io/File;
 
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const-string v2, "retroarch.cfg"
+
+    invoke-direct {v1, v0, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    invoke-static {v1}, Lcom/digdroid/alman/dig/i2;->c(Ljava/io/File;)Lcom/digdroid/alman/dig/i2;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/n;->k(Lcom/digdroid/alman/dig/i2;)V
+
+    invoke-static {p1}, Lcom/digdroid/alman/dig/y2;->w(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v2, "assets_directory"
+
+    invoke-virtual {p0, v2}, Lcom/digdroid/alman/dig/n;->i(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    const-string v3, "type"
+    const-string v3, "com.retroarch"
 
-    invoke-virtual {v1, v3, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    const/4 v2, 0x6
+    move-result v3
 
-    if-ge v0, v2, :cond_0
+    if-eqz v3, :cond_0
 
-    move v2, v0
+    const-string v3, "com.retroarch/assets"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    :cond_0
+    const-string v3, "com.retroarch.aarch64"
+
+    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    const-string v3, "com.retroarch.aarch64/assets"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    :cond_1
+    const-string v3, "com.retroarch.ra32"
+
+    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    const-string v0, "com.retroarch.ra32/assets"
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    :cond_2
+    :try_start_0
+    invoke-virtual {v1}, Ljava/io/File;->delete()Z
+
+    const-string v0, ""
+
+    iput-object v0, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    nop
+
+    goto :goto_0
+
+    :cond_3
+    return-void
+
+    :cond_4
+    :goto_0
+    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    new-instance v0, Ljava/io/File;
+
+    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {p1}, Lcom/digdroid/alman/dig/y2;->w(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {v1, v2, p1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     goto :goto_1
 
-    :cond_0
-    const v2, 0x98967f
+    :cond_5
+    move-object v0, v1
 
+    :cond_6
     :goto_1
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    if-eqz v0, :cond_7
+
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_7
+
+    invoke-static {v0}, Lcom/digdroid/alman/dig/i2;->c(Ljava/io/File;)Lcom/digdroid/alman/dig/i2;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lcom/digdroid/alman/dig/n;->k(Lcom/digdroid/alman/dig/i2;)V
+
+    goto :goto_2
+
+    :cond_7
+    const-string p1, "Retroarch/retroarch.cfg"
+
+    invoke-virtual {p0, p1}, Lcom/digdroid/alman/dig/n;->j(Ljava/lang/String;)V
+
+    :goto_2
+    return-void
+.end method
+
+.method static u(Landroid/content/Context;)Ljava/lang/String;
+    .locals 5
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, v1}, Landroid/content/Context;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v2
 
-    const-string v3, "position"
+    invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    invoke-virtual {v1, v3, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+    move-result-object v2
 
-    const/4 v2, 0x0
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
-    const-string v3, "main"
+    move-result-object v3
 
-    invoke-virtual {p1, v3, v2, v1}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
+    invoke-static {p0}, Lcom/digdroid/alman/dig/y2;->w(Landroid/content/Context;)Ljava/lang/String;
 
-    add-int/lit8 v0, v0, 0x1
+    move-result-object v4
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "/retroarch.cfg"
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {p0, v0}, Lcom/digdroid/alman/dig/i2;->d(Landroid/content/Context;Ljava/lang/String;)Lcom/digdroid/alman/dig/i2;
+
+    move-result-object p0
+
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v3, 0x1e
+
+    if-lt v2, v3, :cond_0
+
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    :cond_0
+    move-object v1, v0
+
+    :cond_1
+    return-object v1
+.end method
+
+.method static v(Landroid/content/Context;I)Ljava/lang/String;
+    .locals 0
+
+    if-nez p1, :cond_0
+
+    const p1, 0x7f1100b7
+
+    invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x1
+
+    if-ne p1, p0, :cond_1
+
+    const-string p0, "64 bit"
 
     goto :goto_0
 
     :cond_1
-    const-string v0, "CREATE TABLE themes(_id integer primary key autoincrement, name text, forum_id integer, image_url text, modified integer, minsize integer, maxsize integer)"
+    const/4 p0, 0x2
 
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+    if-ne p1, p0, :cond_2
 
-    const-string v0, "CREATE INDEX themenameidx ON themes( name ) "
+    const-string p0, "32 bit"
 
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+    goto :goto_0
 
-    const-string v0, "CREATE INDEX thememodifiedidx ON themes( modified ) "
+    :cond_2
+    const-string p0, ""
 
-    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+    :goto_0
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    return-void
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p0, " RetroArch"
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
-.method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
+.method public static w(Landroid/content/Context;)Ljava/lang/String;
+    .locals 1
+
+    sget p0, Lcom/digdroid/alman/dig/y2;->f:I
+
+    if-nez p0, :cond_0
+
+    const-string p0, "com.retroarch"
+
+    return-object p0
+
+    :cond_0
+    const/4 v0, 0x2
+
+    if-ne p0, v0, :cond_1
+
+    const-string p0, "com.retroarch.ra32"
+
+    return-object p0
+
+    :cond_1
+    const/4 v0, 0x1
+
+    if-ne p0, v0, :cond_2
+
+    const-string p0, "com.retroarch.aarch64"
+
+    return-object p0
+
+    :cond_2
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method static x(Landroid/content/Context;)Ljava/lang/String;
+    .locals 3
+
+    invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "/files"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {p0}, Lcom/digdroid/alman/dig/y2;->w(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v0, v1, p0}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static y(I)V
     .locals 0
+
+    sput p0, Lcom/digdroid/alman/dig/y2;->f:I
 
     return-void
 .end method

@@ -41,7 +41,7 @@
 
     move-result-object p1
 
-    sget p3, Lb/l/e;->a:I
+    sget p3, Lb/m/e;->a:I
 
     const/4 v0, 0x1
 
@@ -53,19 +53,19 @@
 
     new-instance p3, Landroidx/leanback/widget/SearchOrbView$c;
 
-    sget v0, Lb/l/b;->j:I
+    sget v0, Lb/m/b;->j:I
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result v0
 
-    sget v1, Lb/l/b;->l:I
+    sget v1, Lb/m/b;->l:I
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result v1
 
-    sget v2, Lb/l/b;->k:I
+    sget v2, Lb/m/b;->k:I
 
     invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -77,7 +77,7 @@
 
     new-instance p3, Landroidx/leanback/widget/SearchOrbView$c;
 
-    sget v0, Lb/l/b;->m:I
+    sget v0, Lb/m/b;->m:I
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -109,7 +109,7 @@
 
     move-result-object v0
 
-    sget v1, Lb/l/d;->c:I
+    sget v1, Lb/m/d;->c:I
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -147,7 +147,7 @@
 
     move-result-object v0
 
-    sget v1, Lb/l/d;->d:I
+    sget v1, Lb/m/d;->d:I
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -175,7 +175,7 @@
 .method getLayoutResourceId()I
     .locals 1
 
-    sget v0, Lb/l/h;->h:I
+    sget v0, Lb/m/h;->h:I
 
     return v0
 .end method

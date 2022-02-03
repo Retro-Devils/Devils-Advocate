@@ -43,7 +43,7 @@
 
     iget-object p2, p1, Lcom/digdroid/alman/dig/t1$a;->h:Lcom/digdroid/alman/dig/t1;
 
-    iget-object p2, p2, Lcom/digdroid/alman/dig/t1;->d:Lcom/digdroid/alman/dig/g3;
+    iget-object p2, p2, Lcom/digdroid/alman/dig/t1;->d:Lcom/digdroid/alman/dig/h3;
 
     iget-object p1, p1, Lcom/digdroid/alman/dig/t1$a;->b:Ljava/lang/String;
 
@@ -51,7 +51,7 @@
 
     invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/t1$a$c$a$a;-><init>(Lcom/digdroid/alman/dig/t1$a$c$a;)V
 
-    invoke-virtual {p2, p1, v0}, Lcom/digdroid/alman/dig/g3;->f(Ljava/lang/String;Lcom/digdroid/alman/dig/g3$l;)V
+    invoke-virtual {p2, p1, v0}, Lcom/digdroid/alman/dig/h3;->g(Ljava/lang/String;Lcom/digdroid/alman/dig/h3$m;)V
 
     return-void
 .end method

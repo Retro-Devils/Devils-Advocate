@@ -282,7 +282,7 @@
 
     invoke-direct {v1, v2}, Lc/b/a/a/f/b/i;-><init>(Lcom/google/android/gms/common/internal/s;)V
 
-    invoke-interface {v0, v1, p1}, Lc/b/a/a/f/b/g;->U(Lc/b/a/a/f/b/i;Lc/b/a/a/f/b/e;)V
+    invoke-interface {v0, v1, p1}, Lc/b/a/a/f/b/g;->V(Lc/b/a/a/f/b/i;Lc/b/a/a/f/b/e;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -304,7 +304,7 @@
 
     invoke-direct {v2, v3}, Lc/b/a/a/f/b/k;-><init>(I)V
 
-    invoke-interface {p1, v2}, Lc/b/a/a/f/b/e;->O(Lc/b/a/a/f/b/k;)V
+    invoke-interface {p1, v2}, Lc/b/a/a/f/b/e;->Q(Lc/b/a/a/f/b/k;)V
     :try_end_1
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
 

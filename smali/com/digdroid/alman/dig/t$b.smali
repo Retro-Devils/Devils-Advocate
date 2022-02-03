@@ -72,9 +72,9 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/t$b;->d:Lcom/digdroid/alman/dig/t;
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
 
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/b3;->e()Z
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/c3;->e()Z
 
     move-result p1
 
@@ -86,11 +86,11 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/t$b;->d:Lcom/digdroid/alman/dig/t;
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/t;->y:Lcom/digdroid/alman/dig/g3;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/t;->y:Lcom/digdroid/alman/dig/h3;
 
     iget-boolean v1, p0, Lcom/digdroid/alman/dig/t$b;->a:Z
 
-    invoke-virtual {p1, v1}, Lcom/digdroid/alman/dig/g3;->d(Z)V
+    invoke-virtual {p1, v1}, Lcom/digdroid/alman/dig/h3;->e(Z)V
 
     :cond_0
     iget-object p1, p0, Lcom/digdroid/alman/dig/t$b;->d:Lcom/digdroid/alman/dig/t;
@@ -101,7 +101,7 @@
 
     const-string v1, "find_dirs"
 
-    invoke-static {p1, v1}, Lcom/digdroid/alman/dig/DatabaseService;->t(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lcom/digdroid/alman/dig/DatabaseService;->v(Landroid/content/Context;Ljava/lang/String;)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/t$b;->d:Lcom/digdroid/alman/dig/t;
 
@@ -109,7 +109,7 @@
 
     move-result-object p1
 
-    invoke-static {p1, v0}, Lcom/digdroid/alman/dig/DatabaseService;->t(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lcom/digdroid/alman/dig/DatabaseService;->v(Landroid/content/Context;Ljava/lang/String;)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/t$b;->d:Lcom/digdroid/alman/dig/t;
 
@@ -138,7 +138,7 @@
 
     move-result-object p1
 
-    invoke-static {p1, v0}, Lcom/digdroid/alman/dig/DatabaseService;->t(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lcom/digdroid/alman/dig/DatabaseService;->v(Landroid/content/Context;Ljava/lang/String;)V
 
     :goto_0
     iget-object p1, p0, Lcom/digdroid/alman/dig/t$b;->d:Lcom/digdroid/alman/dig/t;
@@ -149,7 +149,7 @@
 
     const-string v0, "kill_orphans"
 
-    invoke-static {p1, v0}, Lcom/digdroid/alman/dig/DatabaseService;->t(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lcom/digdroid/alman/dig/DatabaseService;->v(Landroid/content/Context;Ljava/lang/String;)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/t$b;->d:Lcom/digdroid/alman/dig/t;
 
@@ -159,7 +159,7 @@
 
     const-string v0, "merge_games"
 
-    invoke-static {p1, v0}, Lcom/digdroid/alman/dig/DatabaseService;->t(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lcom/digdroid/alman/dig/DatabaseService;->v(Landroid/content/Context;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

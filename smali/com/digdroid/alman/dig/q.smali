@@ -6,7 +6,7 @@
 # instance fields
 .field a:Landroid/content/Context;
 
-.field b:Lcom/digdroid/alman/dig/b3;
+.field b:Lcom/digdroid/alman/dig/c3;
 
 .field c:Lcom/digdroid/alman/dig/p;
 
@@ -31,15 +31,15 @@
 
     iput-object p1, p0, Lcom/digdroid/alman/dig/q;->a:Landroid/content/Context;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/q;->b:Lcom/digdroid/alman/dig/b3;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/q;->b:Lcom/digdroid/alman/dig/c3;
 
-    new-instance p1, Lcom/digdroid/alman/dig/o3;
+    new-instance p1, Lcom/digdroid/alman/dig/p3;
 
-    invoke-direct {p1}, Lcom/digdroid/alman/dig/o3;-><init>()V
+    invoke-direct {p1}, Lcom/digdroid/alman/dig/p3;-><init>()V
 
     iput-object p1, p0, Lcom/digdroid/alman/dig/q;->c:Lcom/digdroid/alman/dig/p;
 

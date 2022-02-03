@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/MainActivity;->J1()V
+    value = Lcom/digdroid/alman/dig/MainActivity;->L1()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -203,7 +203,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v1, 0x7f11023f
+    const v1, 0x7f110243
 
     invoke-virtual {p1, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -233,7 +233,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v2, 0x7f1100ee
+    const v2, 0x7f1100f0
 
     invoke-virtual {p1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -261,7 +261,7 @@
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v0, 0x7f1100a1
+    const v0, 0x7f1100a2
 
     invoke-virtual {p1, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -277,7 +277,7 @@
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/MainActivity$c;->c:Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
 
     move-result v2
 

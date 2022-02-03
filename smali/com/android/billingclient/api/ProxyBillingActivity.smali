@@ -29,7 +29,7 @@
 
     if-ne p1, v1, :cond_3
 
-    invoke-static {p3, v0}, Lc/a/a/a/a;->j(Landroid/content/Intent;Ljava/lang/String;)I
+    invoke-static {p3, v0}, Lc/b/a/a/d/c/b;->a(Landroid/content/Intent;Ljava/lang/String;)I
 
     move-result p1
 
@@ -40,27 +40,29 @@
     if-eqz p1, :cond_1
 
     :cond_0
-    new-instance v1, Ljava/lang/StringBuilder;
+    const/16 v1, 0x55
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v2, "Activity finished with resultCode "
+    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, "Activity finished with resultCode "
 
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     const-string p2, " and billing\'s responseCode: "
 
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
-    invoke-static {v0, p2}, Lc/a/a/a/a;->l(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p2}, Lc/b/a/a/d/c/b;->k(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_1
     iget-object p2, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->b:Landroid/os/ResultReceiver;
@@ -82,25 +84,27 @@
     goto :goto_1
 
     :cond_3
-    new-instance p2, Ljava/lang/StringBuilder;
+    const/16 p2, 0x45
 
-    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance p3, Ljava/lang/StringBuilder;
 
-    const-string p3, "Got onActivityResult with wrong requestCode: "
+    invoke-direct {p3, p2}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string p2, "Got onActivityResult with wrong requestCode: "
 
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     const-string p1, "; skipping..."
 
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-static {v0, p1}, Lc/a/a/a/a;->l(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lc/b/a/a/d/c/b;->k(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_1
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
@@ -121,7 +125,7 @@
 
     const-string p1, "Launching Play Store billing flow"
 
-    invoke-static {v1, p1}, Lc/a/a/a/a;->k(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, p1}, Lc/b/a/a/d/c/b;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
@@ -204,26 +208,36 @@
     :try_end_0
     .catch Landroid/content/IntentSender$SendIntentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_2
+    return-void
 
     :catch_0
     move-exception p1
 
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Got exception while trying to start a purchase flow: "
-
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-static {v1, p1}, Lc/a/a/a/a;->l(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, 0x35
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3, v0}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v0, "Got exception while trying to start a purchase flow: "
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v1, p1}, Lc/b/a/a/d/c/b;->k(Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object p1, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->b:Landroid/os/ResultReceiver;
 
@@ -233,12 +247,12 @@
 
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
-    goto :goto_2
+    return-void
 
     :cond_2
     const-string v2, "Launching Play Store billing flow from savedInstanceState"
 
-    invoke-static {v1, v2}, Lc/a/a/a/a;->k(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lc/b/a/a/d/c/b;->h(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -248,7 +262,6 @@
 
     iput-object p1, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->b:Landroid/os/ResultReceiver;
 
-    :goto_2
     return-void
 .end method
 
