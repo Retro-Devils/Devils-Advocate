@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:id="@id/ask_played" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ask_played" />
+    <CheckBox android:textSize="18.0sp" android:id="@id/no_rating" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_rating" />
+    <RatingBar android:theme="@style/RatingBar" android:id="@id/rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="5" android:numStars="5" /> /> <LinearLayout android:layout_width="wrap_content" android:layout_height="30.0dip" />
+    <CheckBox android:id="@id/share_ratings" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_ratings" />
+    <CheckBox android:id="@id/share_stats" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_stats" />
+    <CheckBox android:id="@id/dont_ask_share" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/not_again" />
+</LinearLayout>

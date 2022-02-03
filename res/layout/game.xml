@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="vertical" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.digdroid.alman.dig.SquaredImageView android:id="@id/game_icon" android:background="#ff222222" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/game_name" android:paddingLeft="0.0dip" android:paddingTop="8.0dip" android:paddingRight="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Are You My Mother" android:singleLine="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatRatingBar android:theme="@style/RatingBar" android:id="@id/game_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="5" android:numStars="5" style="?android:ratingBarStyleSmall" />
+        <TextView android:textSize="13.0sp" android:id="@id/rating_text" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.7" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/game_info" android:paddingLeft="0.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dr. Seuss" android:singleLine="true" />
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/system_group" android:title="System">
+        <menu>
+            <item android:icon="@drawable/ic_forum" android:id="@id/nav_system_forum" android:title="@string/system_forum" />
+        </menu>
+    </item>
+    <item android:id="@id/game_group" android:title="Game">
+        <menu>
+            <item android:icon="@drawable/ic_system" android:id="@id/nav_system" android:title="System" />
+            <item android:icon="@drawable/ic_publisher" android:id="@id/nav_publisher" android:title="Publisher" />
+            <item android:icon="@drawable/ic_publisher" android:id="@id/nav_developer" android:title="Developer" />
+            <item android:icon="@drawable/ic_year" android:id="@id/nav_year" android:title="Year" />
+            <item android:icon="@drawable/ic_youtube" android:id="@id/nav_youtube" android:title="@string/search_youtube" />
+            <item android:icon="@drawable/ic_forum" android:id="@id/nav_game_forum" android:title="@string/game_forum" />
+        </menu>> </item>
+    <item android:icon="@drawable/ic_home" android:id="@id/nav_home" android:title="@string/home" />
+    <item android:icon="@drawable/ic_search" android:id="@id/nav_search" android:title="@string/menu_search" />
+    <item android:icon="@drawable/ic_assistant_24dp" android:id="@id/nav_digger" android:title="@string/voice_search" />
+    <item android:icon="@drawable/ic_action_sort" android:id="@id/nav_sort" android:title="@string/sort_by" />
+    <item android:icon="@drawable/ic_random" android:id="@id/nav_random" android:title="@string/select_random" />
+    <group android:id="@id/collections_group">
+        <item android:icon="@drawable/ic_system" android:id="@id/nav_systems" android:title="@string/systems" />
+        <item android:icon="@drawable/ic_genres" android:id="@id/nav_genres" android:title="@string/genres" />
+        <item android:icon="@drawable/ic_genres" android:id="@id/nav_collections" android:title="@string/collections" />
+    </group>
+    <group android:id="@id/games_group">
+        <item android:icon="@drawable/ic_games" android:id="@id/nav_faves" android:title="@string/favorites" />
+        <item android:icon="@drawable/ic_games" android:id="@id/nav_played" android:title="@string/played" />
+        <item android:icon="@drawable/ic_games" android:id="@id/nav_all" android:title="@string/all_games" />
+    </group>
+    <group android:id="@id/settings_group">
+        <item android:icon="@drawable/ic_options" android:id="@id/nav_options" android:title="@string/options" />
+        <item android:icon="@drawable/ic_options" android:id="@id/nav_toolbar" android:title="@string/config_toolbar" />
+        <item android:icon="@drawable/ic_options" android:id="@id/show_foreground" android:title="@string/show_foreground" />
+        <item android:icon="@drawable/ic_kiosk" android:id="@id/nav_kiosk" android:title="@string/kiosk" />
+    </group>
+    <group android:id="@id/info_group">
+        <item android:icon="@drawable/ic_announcements" android:id="@id/nav_announcements" android:title="@string/announcements" />
+        <item android:icon="@drawable/ic_forum" android:id="@id/nav_forum" android:title="@string/forum" />
+        <item android:icon="@drawable/ic_faq" android:id="@id/nav_faq" android:title="@string/faq" />
+    </group>
+    <item android:icon="@drawable/ic_quit" android:id="@id/nav_quit" android:title="@string/quit" />
+</menu>

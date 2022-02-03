@@ -1,0 +1,29 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: com.digdroid.alman.dig_13941_apktada.com.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- png
+- ogg
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '14'
+  targetSdkVersion: '29'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  play-services-base.properties: '8'
+  play-services-basement.properties: '8'
+  play-services-safetynet.properties: '8'
+  play-services-tasks.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.6.0
+versionInfo:
+  versionCode: '163'
+  versionName: 1.39.4.1

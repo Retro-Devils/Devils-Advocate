@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_horizontal" android:id="@id/game_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/title_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="0.0dip" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/title_barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="top" app:constraint_referenced_ids="game_title,title_guideline" />
+    <ImageView android:id="@id/screenshot" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="fitCenter" app:layout_constraintBottom_toTopOf="@id/title_barrier" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout android:gravity="center" android:id="@id/youtube_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/title_barrier" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout android:gravity="center" android:id="@id/youtube_tv_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/title_barrier" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <fr.bmartel.youtubetv.YoutubeTvView android:id="@id/youtube_tv_video" android:layout_width="fill_parent" android:layout_height="fill_parent" yt_showNowPlayingCard="false" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/title_barrier" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ProgressBar android:id="@id/pbHeaderProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.DeviceDefault.Light.ProgressBar" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
