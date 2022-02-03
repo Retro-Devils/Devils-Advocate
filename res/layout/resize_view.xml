@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip">
+        <TextView android:textSize="70.0sp" android:id="@id/horizontal_down" android:focusable="true" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/left_triangle" />
+        <TextView android:textSize="70.0sp" android:id="@id/horizontal_up" android:focusable="true" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/right_triangle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingRight="50.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="70.0sp" android:id="@id/vertical_down" android:focusable="true" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/up_triangle" android:includeFontPadding="false" android:lineSpacingExtra="0.0dip" />
+        <TextView android:textSize="70.0sp" android:id="@id/vertical_up" android:focusable="true" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/down_triangle" android:includeFontPadding="false" android:lineSpacingExtra="0.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll_area" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintLeft_toLeftOf="@id/left" app:layout_constraintRight_toRightOf="@id/right">
+        <LinearLayout android:orientation="vertical" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewStub android:id="@id/stub_scanning" android:layout="@layout/options_scanning" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/stub_covers" android:layout="@layout/options_covers" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/stub_themes" android:layout="@layout/options_themes" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/stub_app" android:layout="@layout/options_app" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/stub_interface" android:layout="@layout/options_interface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/stub_device" android:layout="@layout/options_device" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/stub_info" android:layout="@layout/options_info" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </ScrollView>
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/left" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.15" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/right" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.85" />
+</androidx.constraintlayout.widget.ConstraintLayout>

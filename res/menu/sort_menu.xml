@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/sort_title2" android:title="@string/sort_by_title" />
+    <item android:id="@id/sort_played2" android:title="@string/sort_by_played" />
+    <item android:id="@id/sort_most_played2" android:title="@string/my_most_played" />
+    <item android:id="@id/sort_time_played2" android:title="@string/my_time_played" />
+    <item android:id="@id/sort_rating2" android:title="@string/my_rating" />
+    <item android:id="@id/sort_date2" android:title="@string/sort_by_date" />
+    <item android:id="@id/sort_cmost_played2" android:title="@string/most_played" />
+    <item android:id="@id/sort_ctime_played2" android:title="@string/time_played" />
+    <item android:id="@id/sort_crating2" android:title="@string/rating" />
+    <item android:id="@id/min_ratings" android:title="@string/min_ratings" />
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:numberpicker="http://schemas.android.com/apk/res-auto">
+    <com.digdroid.alman.dig.MyListView android:id="@id/overlay_list" android:layout_width="0.0dip" android:layout_height="wrap_content" android:divider="@null" numberpicker:layout_constraintLeft_toLeftOf="parent" numberpicker:layout_constraintRight_toRightOf="parent" numberpicker:layout_constraintTop_toBottomOf="@id/opacity" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:id="@id/opacity" android:paddingBottom="30.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" numberpicker:layout_constraintLeft_toLeftOf="parent" numberpicker:layout_constraintRight_toRightOf="parent" numberpicker:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="18.0sp" android:id="@id/opacity_text" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/overlay_opacity" android:includeFontPadding="false" numberpicker:layout_constraintLeft_toLeftOf="parent" numberpicker:layout_constraintTop_toTopOf="parent" />
+        <SeekBar android:id="@id/opacity_set" android:layout_width="0.0dip" android:layout_height="wrap_content" numberpicker:layout_constraintLeft_toRightOf="@id/opacity_text" numberpicker:layout_constraintRight_toLeftOf="@id/opacity_value" numberpicker:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="18.0sp" android:id="@id/opacity_value" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="70%" android:includeFontPadding="false" numberpicker:layout_constraintRight_toRightOf="parent" numberpicker:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

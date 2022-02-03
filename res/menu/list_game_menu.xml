@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/box_cover" android:title="@string/box_cover" app:showAsAction="never" />
+    <item android:id="@id/screenshot" android:title="@string/screenshot" app:showAsAction="never" />
+    <item android:id="@id/video" android:title="@string/video" app:showAsAction="never">
+        <menu>
+            <item android:id="@id/delete_video" android:title="@string/delete" />
+            <item android:id="@id/reset_video" android:title="@string/reset" />
+            <item android:id="@id/search_video" android:title="@string/search" />
+        </menu>
+    </item>
+    <item android:id="@id/rate" android:title="@string/rategame" app:showAsAction="never" />
+    <item android:id="@id/favorite" android:title="@string/favorite" android:checkable="true" app:showAsAction="never" />
+    <item android:id="@id/edit_genres" android:title="@string/edit_genres" app:showAsAction="never" />
+    <item android:id="@id/add_collection" android:title="@string/add_to_collection" app:showAsAction="never" />
+    <item android:id="@id/remove_collection" android:title="@string/remove_collection" app:showAsAction="never" />
+    <item android:id="@id/add_homescreen" android:title="@string/add_homescreen" app:showAsAction="never" />
+    <item android:id="@id/manage_game" android:title="@string/manage_game" app:showAsAction="never">
+        <menu>
+            <item android:id="@id/ignore" android:title="@string/ignore_rom" />
+            <item android:id="@id/delete" android:title="@string/delete_file" />
+            <item android:id="@id/edit_sort" android:title="@string/edit_sort" />
+            <item android:id="@id/reset_stats" android:title="@string/reset_stats" />
+        </menu>
+    </item>
+</menu>
