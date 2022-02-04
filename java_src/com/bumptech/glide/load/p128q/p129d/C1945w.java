@@ -1,0 +1,277 @@
+package com.bumptech.glide.load.p128q.p129d;
+
+import com.bumptech.glide.load.p122o.p123a0.AbstractC1690b;
+import java.io.FilterInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+/* renamed from: com.bumptech.glide.load.q.d.w */
+public class C1945w extends FilterInputStream {
+
+    /* renamed from: b */
+    private volatile byte[] f7239b;
+
+    /* renamed from: c */
+    private int f7240c;
+
+    /* renamed from: d */
+    private int f7241d;
+
+    /* renamed from: e */
+    private int f7242e;
+
+    /* renamed from: f */
+    private int f7243f;
+
+    /* renamed from: g */
+    private final AbstractC1690b f7244g;
+
+    /* access modifiers changed from: package-private */
+    /* renamed from: com.bumptech.glide.load.q.d.w$a */
+    public static class C1946a extends IOException {
+        C1946a(String str) {
+            super(str);
+        }
+    }
+
+    public C1945w(InputStream inputStream, AbstractC1690b bVar) {
+        this(inputStream, bVar, 65536);
+    }
+
+    C1945w(InputStream inputStream, AbstractC1690b bVar, int i) {
+        super(inputStream);
+        this.f7242e = -1;
+        this.f7244g = bVar;
+        this.f7239b = (byte[]) bVar.mo7162e(i, byte[].class);
+    }
+
+    /* renamed from: a */
+    private int m8810a(InputStream inputStream, byte[] bArr) {
+        int i;
+        int i2 = this.f7242e;
+        if (i2 == -1 || this.f7243f - i2 >= (i = this.f7241d)) {
+            int read = inputStream.read(bArr);
+            if (read > 0) {
+                this.f7242e = -1;
+                this.f7243f = 0;
+                this.f7240c = read;
+            }
+            return read;
+        }
+        if (i2 == 0 && i > bArr.length && this.f7240c == bArr.length) {
+            int length = bArr.length * 2;
+            if (length <= i) {
+                i = length;
+            }
+            byte[] bArr2 = (byte[]) this.f7244g.mo7162e(i, byte[].class);
+            System.arraycopy(bArr, 0, bArr2, 0, bArr.length);
+            this.f7239b = bArr2;
+            this.f7244g.mo7161d(bArr);
+            bArr = bArr2;
+        } else if (i2 > 0) {
+            System.arraycopy(bArr, i2, bArr, 0, bArr.length - i2);
+        }
+        int i3 = this.f7243f - this.f7242e;
+        this.f7243f = i3;
+        this.f7242e = 0;
+        this.f7240c = 0;
+        int read2 = inputStream.read(bArr, i3, bArr.length - i3);
+        int i4 = this.f7243f;
+        if (read2 > 0) {
+            i4 += read2;
+        }
+        this.f7240c = i4;
+        return read2;
+    }
+
+    /* renamed from: d */
+    private static IOException m8811d() {
+        throw new IOException("BufferedInputStream is closed");
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public synchronized int available() {
+        InputStream inputStream;
+        inputStream = ((FilterInputStream) this).in;
+        if (this.f7239b == null || inputStream == null) {
+            throw m8811d();
+        }
+        return (this.f7240c - this.f7243f) + inputStream.available();
+    }
+
+    /* renamed from: b */
+    public synchronized void mo7537b() {
+        this.f7241d = this.f7239b.length;
+    }
+
+    /* renamed from: c */
+    public synchronized void mo7538c() {
+        if (this.f7239b != null) {
+            this.f7244g.mo7161d(this.f7239b);
+            this.f7239b = null;
+        }
+    }
+
+    @Override // java.io.FilterInputStream, java.io.Closeable, java.lang.AutoCloseable, java.io.InputStream
+    public void close() {
+        if (this.f7239b != null) {
+            this.f7244g.mo7161d(this.f7239b);
+            this.f7239b = null;
+        }
+        InputStream inputStream = ((FilterInputStream) this).in;
+        ((FilterInputStream) this).in = null;
+        if (inputStream != null) {
+            inputStream.close();
+        }
+    }
+
+    public synchronized void mark(int i) {
+        this.f7241d = Math.max(this.f7241d, i);
+        this.f7242e = this.f7243f;
+    }
+
+    public boolean markSupported() {
+        return true;
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public synchronized int read() {
+        byte[] bArr = this.f7239b;
+        InputStream inputStream = ((FilterInputStream) this).in;
+        if (bArr == null || inputStream == null) {
+            throw m8811d();
+        } else if (this.f7243f >= this.f7240c && m8810a(inputStream, bArr) == -1) {
+            return -1;
+        } else {
+            if (bArr == this.f7239b || (bArr = this.f7239b) != null) {
+                int i = this.f7240c;
+                int i2 = this.f7243f;
+                if (i - i2 <= 0) {
+                    return -1;
+                }
+                this.f7243f = i2 + 1;
+                return bArr[i2] & 255;
+            }
+            throw m8811d();
+        }
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public synchronized int read(byte[] bArr, int i, int i2) {
+        int i3;
+        int i4;
+        byte[] bArr2 = this.f7239b;
+        if (bArr2 == null) {
+            throw m8811d();
+        } else if (i2 == 0) {
+            return 0;
+        } else {
+            InputStream inputStream = ((FilterInputStream) this).in;
+            if (inputStream != null) {
+                int i5 = this.f7243f;
+                int i6 = this.f7240c;
+                if (i5 < i6) {
+                    int i7 = i6 - i5 >= i2 ? i2 : i6 - i5;
+                    System.arraycopy(bArr2, i5, bArr, i, i7);
+                    this.f7243f += i7;
+                    if (i7 == i2 || inputStream.available() == 0) {
+                        return i7;
+                    }
+                    i += i7;
+                    i3 = i2 - i7;
+                } else {
+                    i3 = i2;
+                }
+                while (true) {
+                    int i8 = -1;
+                    if (this.f7242e == -1 && i3 >= bArr2.length) {
+                        i4 = inputStream.read(bArr, i, i3);
+                        if (i4 == -1) {
+                            if (i3 != i2) {
+                                i8 = i2 - i3;
+                            }
+                            return i8;
+                        }
+                    } else if (m8810a(inputStream, bArr2) == -1) {
+                        if (i3 != i2) {
+                            i8 = i2 - i3;
+                        }
+                        return i8;
+                    } else if (bArr2 == this.f7239b || (bArr2 = this.f7239b) != null) {
+                        int i9 = this.f7240c;
+                        int i10 = this.f7243f;
+                        i4 = i9 - i10 >= i3 ? i3 : i9 - i10;
+                        System.arraycopy(bArr2, i10, bArr, i, i4);
+                        this.f7243f += i4;
+                    } else {
+                        throw m8811d();
+                    }
+                    i3 -= i4;
+                    if (i3 == 0) {
+                        return i2;
+                    }
+                    if (inputStream.available() == 0) {
+                        return i2 - i3;
+                    }
+                    i += i4;
+                }
+            } else {
+                throw m8811d();
+            }
+        }
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public synchronized void reset() {
+        if (this.f7239b != null) {
+            int i = this.f7242e;
+            if (-1 != i) {
+                this.f7243f = i;
+            } else {
+                throw new C1946a("Mark has been invalidated, pos: " + this.f7243f + " markLimit: " + this.f7241d);
+            }
+        } else {
+            throw new IOException("Stream is closed");
+        }
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public synchronized long skip(long j) {
+        if (j < 1) {
+            return 0;
+        }
+        byte[] bArr = this.f7239b;
+        if (bArr != null) {
+            InputStream inputStream = ((FilterInputStream) this).in;
+            if (inputStream != null) {
+                int i = this.f7240c;
+                int i2 = this.f7243f;
+                if (((long) (i - i2)) >= j) {
+                    this.f7243f = (int) (((long) i2) + j);
+                    return j;
+                }
+                long j2 = ((long) i) - ((long) i2);
+                this.f7243f = i;
+                if (this.f7242e == -1 || j > ((long) this.f7241d)) {
+                    return j2 + inputStream.skip(j - j2);
+                } else if (m8810a(inputStream, bArr) == -1) {
+                    return j2;
+                } else {
+                    int i3 = this.f7240c;
+                    int i4 = this.f7243f;
+                    if (((long) (i3 - i4)) >= j - j2) {
+                        this.f7243f = (int) ((((long) i4) + j) - j2);
+                        return j;
+                    }
+                    long j3 = (j2 + ((long) i3)) - ((long) i4);
+                    this.f7243f = i3;
+                    return j3;
+                }
+            } else {
+                throw m8811d();
+            }
+        } else {
+            throw m8811d();
+        }
+    }
+}
