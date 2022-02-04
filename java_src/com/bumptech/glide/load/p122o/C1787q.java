@@ -14,38 +14,38 @@ import java.util.List;
 public final class C1787q extends Exception {
 
     /* renamed from: b */
-    private static final StackTraceElement[] f6981b = new StackTraceElement[0];
+    private static final StackTraceElement[] f6989b = new StackTraceElement[0];
 
     /* renamed from: c */
-    private final List<Throwable> f6982c;
+    private final List<Throwable> f6990c;
 
     /* renamed from: d */
-    private AbstractC1643g f6983d;
+    private AbstractC1643g f6991d;
 
     /* renamed from: e */
-    private EnumC1630a f6984e;
+    private EnumC1630a f6992e;
 
     /* renamed from: f */
-    private Class<?> f6985f;
+    private Class<?> f6993f;
 
     /* renamed from: g */
-    private String f6986g;
+    private String f6994g;
 
     /* renamed from: h */
-    private Exception f6987h;
+    private Exception f6995h;
 
     /* access modifiers changed from: private */
     /* renamed from: com.bumptech.glide.load.o.q$a */
     public static final class C1788a implements Appendable {
 
         /* renamed from: b */
-        private final Appendable f6988b;
+        private final Appendable f6996b;
 
         /* renamed from: c */
-        private boolean f6989c = true;
+        private boolean f6997c = true;
 
         C1788a(Appendable appendable) {
-            this.f6988b = appendable;
+            this.f6996b = appendable;
         }
 
         /* renamed from: a */
@@ -56,15 +56,15 @@ public final class C1787q extends Exception {
         @Override // java.lang.Appendable
         public Appendable append(char c) {
             boolean z = false;
-            if (this.f6989c) {
-                this.f6989c = false;
-                this.f6988b.append("  ");
+            if (this.f6997c) {
+                this.f6997c = false;
+                this.f6996b.append("  ");
             }
             if (c == '\n') {
                 z = true;
             }
-            this.f6989c = z;
-            this.f6988b.append(c);
+            this.f6997c = z;
+            this.f6996b.append(c);
             return this;
         }
 
@@ -78,15 +78,15 @@ public final class C1787q extends Exception {
         public Appendable append(CharSequence charSequence, int i, int i2) {
             CharSequence a = m8356a(charSequence);
             boolean z = false;
-            if (this.f6989c) {
-                this.f6989c = false;
-                this.f6988b.append("  ");
+            if (this.f6997c) {
+                this.f6997c = false;
+                this.f6996b.append("  ");
             }
             if (a.length() > 0 && a.charAt(i2 - 1) == '\n') {
                 z = true;
             }
-            this.f6989c = z;
-            this.f6988b.append(a, i, i2);
+            this.f6997c = z;
+            this.f6996b.append(a, i, i2);
             return this;
         }
     }
@@ -100,9 +100,9 @@ public final class C1787q extends Exception {
     }
 
     public C1787q(String str, List<Throwable> list) {
-        this.f6986g = str;
-        setStackTrace(f6981b);
-        this.f6982c = list;
+        this.f6994g = str;
+        setStackTrace(f6989b);
+        this.f6990c = list;
     }
 
     /* renamed from: a */
@@ -159,7 +159,7 @@ public final class C1787q extends Exception {
 
     /* renamed from: e */
     public List<Throwable> mo7365e() {
-        return this.f6982c;
+        return this.f6990c;
     }
 
     /* renamed from: f */
@@ -194,12 +194,12 @@ public final class C1787q extends Exception {
     public String getMessage() {
         String str;
         StringBuilder sb = new StringBuilder(71);
-        sb.append(this.f6986g);
+        sb.append(this.f6994g);
         String str2 = "";
-        sb.append(this.f6985f != null ? ", " + this.f6985f : str2);
-        sb.append(this.f6984e != null ? ", " + this.f6984e : str2);
-        if (this.f6983d != null) {
-            str2 = ", " + this.f6983d;
+        sb.append(this.f6993f != null ? ", " + this.f6993f : str2);
+        sb.append(this.f6992e != null ? ", " + this.f6992e : str2);
+        if (this.f6991d != null) {
+            str2 = ", " + this.f6991d;
         }
         sb.append(str2);
         List<Throwable> f = mo7366f();
@@ -234,14 +234,14 @@ public final class C1787q extends Exception {
     /* access modifiers changed from: package-private */
     /* renamed from: j */
     public void mo7371j(AbstractC1643g gVar, EnumC1630a aVar, Class<?> cls) {
-        this.f6983d = gVar;
-        this.f6984e = aVar;
-        this.f6985f = cls;
+        this.f6991d = gVar;
+        this.f6992e = aVar;
+        this.f6993f = cls;
     }
 
     /* renamed from: k */
     public void mo7372k(Exception exc) {
-        this.f6987h = exc;
+        this.f6995h = exc;
     }
 
     public void printStackTrace() {

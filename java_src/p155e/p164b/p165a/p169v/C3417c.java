@@ -8,28 +8,28 @@ import p155e.p164b.p165a.C3388e;
 public final class C3417c extends AbstractC3416b {
 
     /* renamed from: c */
-    private final byte[] f11513c;
+    private final byte[] f11522c;
 
     /* renamed from: d */
-    private int f11514d;
+    private int f11523d;
 
     public C3417c(int i, C3386c cVar) {
         byte[] a = cVar.mo11366a(i - 5, false);
-        this.f11513c = a;
-        this.f11514d = a.length;
+        this.f11522c = a;
+        this.f11523d = a.length;
     }
 
     @Override // p155e.p164b.p165a.p169v.AbstractC3416b
     /* renamed from: f */
     public void mo11422f() {
-        int i = this.f11511a;
+        int i = this.f11520a;
         if ((-16777216 & i) == 0) {
             try {
-                byte[] bArr = this.f11513c;
-                int i2 = this.f11514d;
-                this.f11514d = i2 + 1;
-                this.f11512b = (this.f11512b << 8) | (bArr[i2] & 255);
-                this.f11511a = i << 8;
+                byte[] bArr = this.f11522c;
+                int i2 = this.f11523d;
+                this.f11523d = i2 + 1;
+                this.f11521b = (this.f11521b << 8) | (bArr[i2] & 255);
+                this.f11520a = i << 8;
             } catch (ArrayIndexOutOfBoundsException unused) {
                 throw new C3388e();
             }
@@ -38,7 +38,7 @@ public final class C3417c extends AbstractC3416b {
 
     /* renamed from: g */
     public boolean mo11423g() {
-        return this.f11514d == this.f11513c.length && this.f11512b == 0;
+        return this.f11523d == this.f11522c.length && this.f11521b == 0;
     }
 
     /* renamed from: h */
@@ -46,12 +46,12 @@ public final class C3417c extends AbstractC3416b {
         if (i < 5) {
             throw new C3388e();
         } else if (dataInputStream.readUnsignedByte() == 0) {
-            this.f11512b = dataInputStream.readInt();
-            this.f11511a = -1;
+            this.f11521b = dataInputStream.readInt();
+            this.f11520a = -1;
             int i2 = i - 5;
-            byte[] bArr = this.f11513c;
+            byte[] bArr = this.f11522c;
             int length = bArr.length - i2;
-            this.f11514d = length;
+            this.f11523d = length;
             dataInputStream.readFully(bArr, length, i2);
         } else {
             throw new C3388e();
@@ -60,6 +60,6 @@ public final class C3417c extends AbstractC3416b {
 
     /* renamed from: i */
     public void mo11425i(C3386c cVar) {
-        cVar.mo11367c(this.f11513c);
+        cVar.mo11367c(this.f11522c);
     }
 }

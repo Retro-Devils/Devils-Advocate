@@ -11,7 +11,7 @@ class C3365h extends AbstractC3355f {
 
     /* renamed from: d */
     private int m13956d(C3354e eVar) {
-        byte[] bArr = eVar.f11297d;
+        byte[] bArr = eVar.f11306d;
         if (bArr == null || bArr.length == 0) {
             return 1;
         }

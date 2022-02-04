@@ -1892,7 +1892,7 @@ public final class C0562f extends RecyclerView.AbstractC0669o {
         boolean z = (this.f2838E & 262144) != 0;
         if (c > 1 && !mo3435e3(0)) {
             if (Build.VERSION.SDK_INT >= 23) {
-                cVar.mo5471b(this.f2875w == 0 ? z ? C0979c.C0980a.f4691B : C0979c.C0980a.f4726z : C0979c.C0980a.f4725y);
+                cVar.mo5471b(this.f2875w == 0 ? z ? C0979c.C0980a.f4695B : C0979c.C0980a.f4730z : C0979c.C0980a.f4729y);
             } else {
                 cVar.mo5469a(8192);
             }
@@ -1900,7 +1900,7 @@ public final class C0562f extends RecyclerView.AbstractC0669o {
         }
         if (c > 1 && !mo3435e3(c - 1)) {
             if (Build.VERSION.SDK_INT >= 23) {
-                cVar.mo5471b(this.f2875w == 0 ? z ? C0979c.C0980a.f4726z : C0979c.C0980a.f4691B : C0979c.C0980a.f4690A);
+                cVar.mo5471b(this.f2875w == 0 ? z ? C0979c.C0980a.f4730z : C0979c.C0980a.f4695B : C0979c.C0980a.f4694A);
             } else {
                 cVar.mo5469a(4096);
             }
@@ -2549,7 +2549,7 @@ public final class C0562f extends RecyclerView.AbstractC0669o {
         if (r5 != false) goto L_0x0031;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:22:0x004e, code lost:
-        if (r7 == p006b.p030g.p039k.p040b0.C0979c.C0980a.f4690A.mo5515b()) goto L_0x002e;
+        if (r7 == p006b.p030g.p039k.p040b0.C0979c.C0980a.f4694A.mo5515b()) goto L_0x002e;
      */
     @Override // androidx.recyclerview.widget.RecyclerView.AbstractC0669o
     /* renamed from: n1 */

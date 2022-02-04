@@ -9,22 +9,22 @@ import p006b.p022e.p026b.C0855i;
 public class C0843b implements C0846d.AbstractC0847a {
 
     /* renamed from: a */
-    C0855i f4143a = null;
+    C0855i f4147a = null;
 
     /* renamed from: b */
-    float f4144b = 0.0f;
+    float f4148b = 0.0f;
 
     /* renamed from: c */
-    boolean f4145c = false;
+    boolean f4149c = false;
 
     /* renamed from: d */
-    ArrayList<C0855i> f4146d = new ArrayList<>();
+    ArrayList<C0855i> f4150d = new ArrayList<>();
 
     /* renamed from: e */
-    public AbstractC0844a f4147e;
+    public AbstractC0844a f4151e;
 
     /* renamed from: f */
-    boolean f4148f = false;
+    boolean f4152f = false;
 
     /* renamed from: b.e.b.b$a */
     public interface AbstractC0844a {
@@ -68,25 +68,25 @@ public class C0843b implements C0846d.AbstractC0847a {
     }
 
     public C0843b(C0845c cVar) {
-        this.f4147e = new C0842a(this, cVar);
+        this.f4151e = new C0842a(this, cVar);
     }
 
     /* renamed from: v */
     private boolean m4933v(C0855i iVar, C0846d dVar) {
-        return iVar.f4200n <= 1;
+        return iVar.f4204n <= 1;
     }
 
     /* renamed from: x */
     private C0855i m4934x(boolean[] zArr, C0855i iVar) {
         C0855i.EnumC0856a aVar;
-        int k = this.f4147e.mo5051k();
+        int k = this.f4151e.mo5051k();
         C0855i iVar2 = null;
         float f = 0.0f;
         for (int i = 0; i < k; i++) {
-            float a = this.f4147e.mo5040a(i);
+            float a = this.f4151e.mo5040a(i);
             if (a < 0.0f) {
-                C0855i f2 = this.f4147e.mo5046f(i);
-                if ((zArr == null || !zArr[f2.f4190d]) && f2 != iVar && (((aVar = f2.f4197k) == C0855i.EnumC0856a.SLACK || aVar == C0855i.EnumC0856a.ERROR) && a < f)) {
+                C0855i f2 = this.f4151e.mo5046f(i);
+                if ((zArr == null || !zArr[f2.f4194d]) && f2 != iVar && (((aVar = f2.f4201k) == C0855i.EnumC0856a.SLACK || aVar == C0855i.EnumC0856a.ERROR) && a < f)) {
                     f = a;
                     iVar2 = f2;
                 }
@@ -109,9 +109,9 @@ public class C0843b implements C0846d.AbstractC0847a {
 
     /* renamed from: B */
     public void mo5054B(C0846d dVar, C0855i iVar, boolean z) {
-        if (iVar.f4194h) {
-            this.f4144b += iVar.f4193g * this.f4147e.mo5047g(iVar);
-            this.f4147e.mo5044d(iVar, z);
+        if (iVar.f4198h) {
+            this.f4148b += iVar.f4197g * this.f4151e.mo5047g(iVar);
+            this.f4151e.mo5044d(iVar, z);
             if (z) {
                 iVar.mo5118c(this);
             }
@@ -120,35 +120,35 @@ public class C0843b implements C0846d.AbstractC0847a {
 
     /* renamed from: C */
     public void mo5055C(C0843b bVar, boolean z) {
-        this.f4144b += bVar.f4144b * this.f4147e.mo5041b(bVar, z);
+        this.f4148b += bVar.f4148b * this.f4151e.mo5041b(bVar, z);
         if (z) {
-            bVar.f4143a.mo5118c(this);
+            bVar.f4147a.mo5118c(this);
         }
     }
 
     /* renamed from: D */
     public void mo5056D(C0846d dVar) {
-        if (dVar.f4163k.length != 0) {
+        if (dVar.f4167k.length != 0) {
             boolean z = false;
             while (!z) {
-                int k = this.f4147e.mo5051k();
+                int k = this.f4151e.mo5051k();
                 for (int i = 0; i < k; i++) {
-                    C0855i f = this.f4147e.mo5046f(i);
-                    if (f.f4191e != -1 || f.f4194h) {
-                        this.f4146d.add(f);
+                    C0855i f = this.f4151e.mo5046f(i);
+                    if (f.f4195e != -1 || f.f4198h) {
+                        this.f4150d.add(f);
                     }
                 }
-                if (this.f4146d.size() > 0) {
-                    Iterator<C0855i> it = this.f4146d.iterator();
+                if (this.f4150d.size() > 0) {
+                    Iterator<C0855i> it = this.f4150d.iterator();
                     while (it.hasNext()) {
                         C0855i next = it.next();
-                        if (next.f4194h) {
+                        if (next.f4198h) {
                             mo5054B(dVar, next, true);
                         } else {
-                            mo5055C(dVar.f4163k[next.f4191e], true);
+                            mo5055C(dVar.f4167k[next.f4195e], true);
                         }
                     }
-                    this.f4146d.clear();
+                    this.f4150d.clear();
                 } else {
                     z = true;
                 }
@@ -161,10 +161,10 @@ public class C0843b implements C0846d.AbstractC0847a {
     public void mo5057a(C0846d.AbstractC0847a aVar) {
         if (aVar instanceof C0843b) {
             C0843b bVar = (C0843b) aVar;
-            this.f4143a = null;
-            this.f4147e.clear();
-            for (int i = 0; i < bVar.f4147e.mo5051k(); i++) {
-                this.f4147e.mo5045e(bVar.f4147e.mo5046f(i), bVar.f4147e.mo5040a(i), true);
+            this.f4147a = null;
+            this.f4151e.clear();
+            for (int i = 0; i < bVar.f4151e.mo5051k(); i++) {
+                this.f4151e.mo5045e(bVar.f4151e.mo5046f(i), bVar.f4151e.mo5040a(i), true);
             }
         }
     }
@@ -172,7 +172,7 @@ public class C0843b implements C0846d.AbstractC0847a {
     @Override // p006b.p022e.p026b.C0846d.AbstractC0847a
     /* renamed from: b */
     public void mo5058b(C0855i iVar) {
-        int i = iVar.f4192f;
+        int i = iVar.f4196f;
         float f = 1.0f;
         if (i != 1) {
             if (i == 2) {
@@ -185,7 +185,7 @@ public class C0843b implements C0846d.AbstractC0847a {
                 f = 1.0E12f;
             }
         }
-        this.f4147e.mo5042c(iVar, f);
+        this.f4151e.mo5042c(iVar, f);
     }
 
     @Override // p006b.p022e.p026b.C0846d.AbstractC0847a
@@ -196,22 +196,22 @@ public class C0843b implements C0846d.AbstractC0847a {
 
     @Override // p006b.p022e.p026b.C0846d.AbstractC0847a
     public void clear() {
-        this.f4147e.clear();
-        this.f4143a = null;
-        this.f4144b = 0.0f;
+        this.f4151e.clear();
+        this.f4147a = null;
+        this.f4148b = 0.0f;
     }
 
     /* renamed from: d */
     public C0843b mo5061d(C0846d dVar, int i) {
-        this.f4147e.mo5042c(dVar.mo5097o(i, "ep"), 1.0f);
-        this.f4147e.mo5042c(dVar.mo5097o(i, "em"), -1.0f);
+        this.f4151e.mo5042c(dVar.mo5097o(i, "ep"), 1.0f);
+        this.f4151e.mo5042c(dVar.mo5097o(i, "em"), -1.0f);
         return this;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: e */
     public C0843b mo5062e(C0855i iVar, int i) {
-        this.f4147e.mo5042c(iVar, (float) i);
+        this.f4151e.mo5042c(iVar, (float) i);
         return this;
     }
 
@@ -226,8 +226,8 @@ public class C0843b implements C0846d.AbstractC0847a {
             mo5082y(g);
             z = false;
         }
-        if (this.f4147e.mo5051k() == 0) {
-            this.f4148f = true;
+        if (this.f4151e.mo5051k() == 0) {
+            this.f4152f = true;
         }
         return z;
     }
@@ -235,7 +235,7 @@ public class C0843b implements C0846d.AbstractC0847a {
     /* access modifiers changed from: package-private */
     /* renamed from: g */
     public C0855i mo5064g(C0846d dVar) {
-        int k = this.f4147e.mo5051k();
+        int k = this.f4151e.mo5051k();
         C0855i iVar = null;
         C0855i iVar2 = null;
         boolean z = false;
@@ -243,9 +243,9 @@ public class C0843b implements C0846d.AbstractC0847a {
         float f = 0.0f;
         float f2 = 0.0f;
         for (int i = 0; i < k; i++) {
-            float a = this.f4147e.mo5040a(i);
-            C0855i f3 = this.f4147e.mo5046f(i);
-            if (f3.f4197k == C0855i.EnumC0856a.UNRESTRICTED) {
+            float a = this.f4151e.mo5040a(i);
+            C0855i f3 = this.f4151e.mo5046f(i);
+            if (f3.f4201k == C0855i.EnumC0856a.UNRESTRICTED) {
                 if (iVar == null || f > a) {
                     z = m4933v(f3, dVar);
                     f = a;
@@ -272,7 +272,7 @@ public class C0843b implements C0846d.AbstractC0847a {
 
     @Override // p006b.p022e.p026b.C0846d.AbstractC0847a
     public C0855i getKey() {
-        return this.f4143a;
+        return this.f4147a;
     }
 
     /* access modifiers changed from: package-private */
@@ -281,95 +281,95 @@ public class C0843b implements C0846d.AbstractC0847a {
         float f2;
         int i3;
         if (iVar2 == iVar3) {
-            this.f4147e.mo5042c(iVar, 1.0f);
-            this.f4147e.mo5042c(iVar4, 1.0f);
-            this.f4147e.mo5042c(iVar2, -2.0f);
+            this.f4151e.mo5042c(iVar, 1.0f);
+            this.f4151e.mo5042c(iVar4, 1.0f);
+            this.f4151e.mo5042c(iVar2, -2.0f);
             return this;
         }
         if (f == 0.5f) {
-            this.f4147e.mo5042c(iVar, 1.0f);
-            this.f4147e.mo5042c(iVar2, -1.0f);
-            this.f4147e.mo5042c(iVar3, -1.0f);
-            this.f4147e.mo5042c(iVar4, 1.0f);
+            this.f4151e.mo5042c(iVar, 1.0f);
+            this.f4151e.mo5042c(iVar2, -1.0f);
+            this.f4151e.mo5042c(iVar3, -1.0f);
+            this.f4151e.mo5042c(iVar4, 1.0f);
             if (i > 0 || i2 > 0) {
                 i3 = (-i) + i2;
             }
             return this;
         }
         if (f <= 0.0f) {
-            this.f4147e.mo5042c(iVar, -1.0f);
-            this.f4147e.mo5042c(iVar2, 1.0f);
+            this.f4151e.mo5042c(iVar, -1.0f);
+            this.f4151e.mo5042c(iVar2, 1.0f);
             f2 = (float) i;
         } else if (f >= 1.0f) {
-            this.f4147e.mo5042c(iVar4, -1.0f);
-            this.f4147e.mo5042c(iVar3, 1.0f);
+            this.f4151e.mo5042c(iVar4, -1.0f);
+            this.f4151e.mo5042c(iVar3, 1.0f);
             i3 = -i2;
         } else {
             float f3 = 1.0f - f;
-            this.f4147e.mo5042c(iVar, f3 * 1.0f);
-            this.f4147e.mo5042c(iVar2, f3 * -1.0f);
-            this.f4147e.mo5042c(iVar3, -1.0f * f);
-            this.f4147e.mo5042c(iVar4, 1.0f * f);
+            this.f4151e.mo5042c(iVar, f3 * 1.0f);
+            this.f4151e.mo5042c(iVar2, f3 * -1.0f);
+            this.f4151e.mo5042c(iVar3, -1.0f * f);
+            this.f4151e.mo5042c(iVar4, 1.0f * f);
             if (i > 0 || i2 > 0) {
                 f2 = (((float) (-i)) * f3) + (((float) i2) * f);
             }
             return this;
         }
-        this.f4144b = f2;
+        this.f4148b = f2;
         return this;
         f2 = (float) i3;
-        this.f4144b = f2;
+        this.f4148b = f2;
         return this;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: i */
     public C0843b mo5067i(C0855i iVar, int i) {
-        this.f4143a = iVar;
+        this.f4147a = iVar;
         float f = (float) i;
-        iVar.f4193g = f;
-        this.f4144b = f;
-        this.f4148f = true;
+        iVar.f4197g = f;
+        this.f4148b = f;
+        this.f4152f = true;
         return this;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: j */
     public C0843b mo5068j(C0855i iVar, C0855i iVar2, float f) {
-        this.f4147e.mo5042c(iVar, -1.0f);
-        this.f4147e.mo5042c(iVar2, f);
+        this.f4151e.mo5042c(iVar, -1.0f);
+        this.f4151e.mo5042c(iVar2, f);
         return this;
     }
 
     /* renamed from: k */
     public C0843b mo5069k(C0855i iVar, C0855i iVar2, C0855i iVar3, C0855i iVar4, float f) {
-        this.f4147e.mo5042c(iVar, -1.0f);
-        this.f4147e.mo5042c(iVar2, 1.0f);
-        this.f4147e.mo5042c(iVar3, f);
-        this.f4147e.mo5042c(iVar4, -f);
+        this.f4151e.mo5042c(iVar, -1.0f);
+        this.f4151e.mo5042c(iVar2, 1.0f);
+        this.f4151e.mo5042c(iVar3, f);
+        this.f4151e.mo5042c(iVar4, -f);
         return this;
     }
 
     /* renamed from: l */
     public C0843b mo5070l(float f, float f2, float f3, C0855i iVar, C0855i iVar2, C0855i iVar3, C0855i iVar4) {
-        this.f4144b = 0.0f;
+        this.f4148b = 0.0f;
         if (f2 == 0.0f || f == f3) {
-            this.f4147e.mo5042c(iVar, 1.0f);
-            this.f4147e.mo5042c(iVar2, -1.0f);
-            this.f4147e.mo5042c(iVar4, 1.0f);
-            this.f4147e.mo5042c(iVar3, -1.0f);
+            this.f4151e.mo5042c(iVar, 1.0f);
+            this.f4151e.mo5042c(iVar2, -1.0f);
+            this.f4151e.mo5042c(iVar4, 1.0f);
+            this.f4151e.mo5042c(iVar3, -1.0f);
         } else if (f == 0.0f) {
-            this.f4147e.mo5042c(iVar, 1.0f);
-            this.f4147e.mo5042c(iVar2, -1.0f);
+            this.f4151e.mo5042c(iVar, 1.0f);
+            this.f4151e.mo5042c(iVar2, -1.0f);
         } else if (f3 == 0.0f) {
-            this.f4147e.mo5042c(iVar3, 1.0f);
-            this.f4147e.mo5042c(iVar4, -1.0f);
+            this.f4151e.mo5042c(iVar3, 1.0f);
+            this.f4151e.mo5042c(iVar4, -1.0f);
         } else {
             float f4 = (f / f2) / (f3 / f2);
-            this.f4147e.mo5042c(iVar, 1.0f);
-            this.f4147e.mo5042c(iVar2, -1.0f);
-            this.f4147e.mo5042c(iVar4, f4);
-            this.f4147e.mo5042c(iVar3, -f4);
+            this.f4151e.mo5042c(iVar, 1.0f);
+            this.f4151e.mo5042c(iVar2, -1.0f);
+            this.f4151e.mo5042c(iVar4, f4);
+            this.f4151e.mo5042c(iVar3, -f4);
         }
         return this;
     }
@@ -379,12 +379,12 @@ public class C0843b implements C0846d.AbstractC0847a {
         AbstractC0844a aVar;
         float f;
         if (i < 0) {
-            this.f4144b = (float) (i * -1);
-            aVar = this.f4147e;
+            this.f4148b = (float) (i * -1);
+            aVar = this.f4151e;
             f = 1.0f;
         } else {
-            this.f4144b = (float) i;
-            aVar = this.f4147e;
+            this.f4148b = (float) i;
+            aVar = this.f4151e;
             f = -1.0f;
         }
         aVar.mo5042c(iVar, f);
@@ -399,14 +399,14 @@ public class C0843b implements C0846d.AbstractC0847a {
                 i *= -1;
                 z = true;
             }
-            this.f4144b = (float) i;
+            this.f4148b = (float) i;
         }
         if (!z) {
-            this.f4147e.mo5042c(iVar, -1.0f);
-            this.f4147e.mo5042c(iVar2, 1.0f);
+            this.f4151e.mo5042c(iVar, -1.0f);
+            this.f4151e.mo5042c(iVar2, 1.0f);
         } else {
-            this.f4147e.mo5042c(iVar, 1.0f);
-            this.f4147e.mo5042c(iVar2, -1.0f);
+            this.f4151e.mo5042c(iVar, 1.0f);
+            this.f4151e.mo5042c(iVar2, -1.0f);
         }
         return this;
     }
@@ -419,16 +419,16 @@ public class C0843b implements C0846d.AbstractC0847a {
                 i *= -1;
                 z = true;
             }
-            this.f4144b = (float) i;
+            this.f4148b = (float) i;
         }
         if (!z) {
-            this.f4147e.mo5042c(iVar, -1.0f);
-            this.f4147e.mo5042c(iVar2, 1.0f);
-            this.f4147e.mo5042c(iVar3, 1.0f);
+            this.f4151e.mo5042c(iVar, -1.0f);
+            this.f4151e.mo5042c(iVar2, 1.0f);
+            this.f4151e.mo5042c(iVar3, 1.0f);
         } else {
-            this.f4147e.mo5042c(iVar, 1.0f);
-            this.f4147e.mo5042c(iVar2, -1.0f);
-            this.f4147e.mo5042c(iVar3, -1.0f);
+            this.f4151e.mo5042c(iVar, 1.0f);
+            this.f4151e.mo5042c(iVar2, -1.0f);
+            this.f4151e.mo5042c(iVar3, -1.0f);
         }
         return this;
     }
@@ -441,51 +441,51 @@ public class C0843b implements C0846d.AbstractC0847a {
                 i *= -1;
                 z = true;
             }
-            this.f4144b = (float) i;
+            this.f4148b = (float) i;
         }
         if (!z) {
-            this.f4147e.mo5042c(iVar, -1.0f);
-            this.f4147e.mo5042c(iVar2, 1.0f);
-            this.f4147e.mo5042c(iVar3, -1.0f);
+            this.f4151e.mo5042c(iVar, -1.0f);
+            this.f4151e.mo5042c(iVar2, 1.0f);
+            this.f4151e.mo5042c(iVar3, -1.0f);
         } else {
-            this.f4147e.mo5042c(iVar, 1.0f);
-            this.f4147e.mo5042c(iVar2, -1.0f);
-            this.f4147e.mo5042c(iVar3, 1.0f);
+            this.f4151e.mo5042c(iVar, 1.0f);
+            this.f4151e.mo5042c(iVar2, -1.0f);
+            this.f4151e.mo5042c(iVar3, 1.0f);
         }
         return this;
     }
 
     /* renamed from: q */
     public C0843b mo5075q(C0855i iVar, C0855i iVar2, C0855i iVar3, C0855i iVar4, float f) {
-        this.f4147e.mo5042c(iVar3, 0.5f);
-        this.f4147e.mo5042c(iVar4, 0.5f);
-        this.f4147e.mo5042c(iVar, -0.5f);
-        this.f4147e.mo5042c(iVar2, -0.5f);
-        this.f4144b = -f;
+        this.f4151e.mo5042c(iVar3, 0.5f);
+        this.f4151e.mo5042c(iVar4, 0.5f);
+        this.f4151e.mo5042c(iVar, -0.5f);
+        this.f4151e.mo5042c(iVar2, -0.5f);
+        this.f4148b = -f;
         return this;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: r */
     public void mo5076r() {
-        float f = this.f4144b;
+        float f = this.f4148b;
         if (f < 0.0f) {
-            this.f4144b = f * -1.0f;
-            this.f4147e.mo5050j();
+            this.f4148b = f * -1.0f;
+            this.f4151e.mo5050j();
         }
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: s */
     public boolean mo5077s() {
-        C0855i iVar = this.f4143a;
-        return iVar != null && (iVar.f4197k == C0855i.EnumC0856a.UNRESTRICTED || this.f4144b >= 0.0f);
+        C0855i iVar = this.f4147a;
+        return iVar != null && (iVar.f4201k == C0855i.EnumC0856a.UNRESTRICTED || this.f4148b >= 0.0f);
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: t */
     public boolean mo5078t(C0855i iVar) {
-        return this.f4147e.mo5048h(iVar);
+        return this.f4151e.mo5048h(iVar);
     }
 
     public String toString() {
@@ -494,7 +494,7 @@ public class C0843b implements C0846d.AbstractC0847a {
 
     /* renamed from: u */
     public boolean mo5080u() {
-        return this.f4143a == null && this.f4144b == 0.0f && this.f4147e.mo5051k() == 0;
+        return this.f4147a == null && this.f4148b == 0.0f && this.f4151e.mo5051k() == 0;
     }
 
     /* renamed from: w */
@@ -505,24 +505,24 @@ public class C0843b implements C0846d.AbstractC0847a {
     /* access modifiers changed from: package-private */
     /* renamed from: y */
     public void mo5082y(C0855i iVar) {
-        C0855i iVar2 = this.f4143a;
+        C0855i iVar2 = this.f4147a;
         if (iVar2 != null) {
-            this.f4147e.mo5042c(iVar2, -1.0f);
-            this.f4143a = null;
+            this.f4151e.mo5042c(iVar2, -1.0f);
+            this.f4147a = null;
         }
-        float d = this.f4147e.mo5044d(iVar, true) * -1.0f;
-        this.f4143a = iVar;
+        float d = this.f4151e.mo5044d(iVar, true) * -1.0f;
+        this.f4147a = iVar;
         if (d != 1.0f) {
-            this.f4144b /= d;
-            this.f4147e.mo5049i(d);
+            this.f4148b /= d;
+            this.f4151e.mo5049i(d);
         }
     }
 
     /* renamed from: z */
     public void mo5083z() {
-        this.f4143a = null;
-        this.f4147e.clear();
-        this.f4144b = 0.0f;
-        this.f4148f = false;
+        this.f4147a = null;
+        this.f4151e.clear();
+        this.f4148b = 0.0f;
+        this.f4152f = false;
     }
 }

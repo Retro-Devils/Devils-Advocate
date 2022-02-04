@@ -16,8 +16,8 @@ public class C2214c0 extends C2728t0 {
     @Override // com.digdroid.alman.dig.C2728t0
     /* renamed from: D3 */
     public Cursor mo8142D3() {
-        this.f9278s0.f8305e = true;
-        return this.f8796c0.mo8841e(mo9244E3(), this.f9278s0);
+        this.f9286s0.f8313e = true;
+        return this.f8804c0.mo8841e(mo9244E3(), this.f9286s0);
     }
 
     /* access modifiers changed from: package-private */

@@ -13,40 +13,40 @@ import p069c.p070a.p071a.AbstractC1239n;
 public class C1224c extends Thread {
 
     /* renamed from: b */
-    private static final boolean f5407b = C1253v.f5481b;
+    private static final boolean f5414b = C1253v.f5488b;
 
     /* renamed from: c */
-    private final BlockingQueue<AbstractC1239n<?>> f5408c;
+    private final BlockingQueue<AbstractC1239n<?>> f5415c;
 
     /* renamed from: d */
-    private final BlockingQueue<AbstractC1239n<?>> f5409d;
+    private final BlockingQueue<AbstractC1239n<?>> f5416d;
 
     /* renamed from: e */
-    private final AbstractC1222b f5410e;
+    private final AbstractC1222b f5417e;
 
     /* renamed from: f */
-    private final AbstractC1248q f5411f;
+    private final AbstractC1248q f5418f;
 
     /* renamed from: g */
-    private volatile boolean f5412g = false;
+    private volatile boolean f5419g = false;
 
     /* renamed from: h */
-    private final C1226b f5413h;
+    private final C1226b f5420h;
 
     /* access modifiers changed from: package-private */
     /* renamed from: c.a.a.c$a */
     public class RunnableC1225a implements Runnable {
 
         /* renamed from: b */
-        final /* synthetic */ AbstractC1239n f5414b;
+        final /* synthetic */ AbstractC1239n f5421b;
 
         RunnableC1225a(AbstractC1239n nVar) {
-            this.f5414b = nVar;
+            this.f5421b = nVar;
         }
 
         public void run() {
             try {
-                C1224c.this.f5409d.put(this.f5414b);
+                C1224c.this.f5416d.put(this.f5421b);
             } catch (InterruptedException unused) {
                 Thread.currentThread().interrupt();
             }
@@ -58,13 +58,13 @@ public class C1224c extends Thread {
     public static class C1226b implements AbstractC1239n.AbstractC1241b {
 
         /* renamed from: a */
-        private final Map<String, List<AbstractC1239n<?>>> f5416a = new HashMap();
+        private final Map<String, List<AbstractC1239n<?>>> f5423a = new HashMap();
 
         /* renamed from: b */
-        private final C1224c f5417b;
+        private final C1224c f5424b;
 
         C1226b(C1224c cVar) {
-            this.f5417b = cVar;
+            this.f5424b = cVar;
         }
 
         /* access modifiers changed from: private */
@@ -72,22 +72,22 @@ public class C1224c extends Thread {
         /* renamed from: d */
         private synchronized boolean m6585d(AbstractC1239n<?> nVar) {
             String l = nVar.mo6201l();
-            if (this.f5416a.containsKey(l)) {
-                List<AbstractC1239n<?>> list = this.f5416a.get(l);
+            if (this.f5423a.containsKey(l)) {
+                List<AbstractC1239n<?>> list = this.f5423a.get(l);
                 if (list == null) {
                     list = new ArrayList<>();
                 }
                 nVar.mo6192b("waiting-for-response");
                 list.add(nVar);
-                this.f5416a.put(l, list);
-                if (C1253v.f5481b) {
+                this.f5423a.put(l, list);
+                if (C1253v.f5488b) {
                     C1253v.m6666b("Request for cacheKey=%s is in flight, putting on hold.", l);
                 }
                 return true;
             }
-            this.f5416a.put(l, null);
+            this.f5423a.put(l, null);
             nVar.mo6185H(this);
-            if (C1253v.f5481b) {
+            if (C1253v.f5488b) {
                 C1253v.m6666b("new request, sending to network %s", l);
             }
             return false;
@@ -97,20 +97,20 @@ public class C1224c extends Thread {
         /* renamed from: a */
         public synchronized void mo6158a(AbstractC1239n<?> nVar) {
             String l = nVar.mo6201l();
-            List<AbstractC1239n<?>> remove = this.f5416a.remove(l);
+            List<AbstractC1239n<?>> remove = this.f5423a.remove(l);
             if (remove != null && !remove.isEmpty()) {
-                if (C1253v.f5481b) {
+                if (C1253v.f5488b) {
                     C1253v.m6669e("%d waiting requests for cacheKey=%s; resend to network", Integer.valueOf(remove.size()), l);
                 }
                 AbstractC1239n<?> remove2 = remove.remove(0);
-                this.f5416a.put(l, remove);
+                this.f5423a.put(l, remove);
                 remove2.mo6185H(this);
                 try {
-                    this.f5417b.f5409d.put(remove2);
+                    this.f5424b.f5416d.put(remove2);
                 } catch (InterruptedException e) {
                     C1253v.m6667c("Couldn't add request to queue. %s", e.toString());
                     Thread.currentThread().interrupt();
-                    this.f5417b.mo6155e();
+                    this.f5424b.mo6155e();
                 }
             }
         }
@@ -119,37 +119,37 @@ public class C1224c extends Thread {
         /* renamed from: b */
         public void mo6159b(AbstractC1239n<?> nVar, C1245p<?> pVar) {
             List<AbstractC1239n<?>> remove;
-            AbstractC1222b.C1223a aVar = pVar.f5475b;
+            AbstractC1222b.C1223a aVar = pVar.f5482b;
             if (aVar == null || aVar.mo6152a()) {
                 mo6158a(nVar);
                 return;
             }
             String l = nVar.mo6201l();
             synchronized (this) {
-                remove = this.f5416a.remove(l);
+                remove = this.f5423a.remove(l);
             }
             if (remove != null) {
-                if (C1253v.f5481b) {
+                if (C1253v.f5488b) {
                     C1253v.m6669e("Releasing %d waiting requests for cacheKey=%s.", Integer.valueOf(remove.size()), l);
                 }
                 for (AbstractC1239n<?> nVar2 : remove) {
-                    this.f5417b.f5411f.mo6165b(nVar2, pVar);
+                    this.f5424b.f5418f.mo6165b(nVar2, pVar);
                 }
             }
         }
     }
 
     public C1224c(BlockingQueue<AbstractC1239n<?>> blockingQueue, BlockingQueue<AbstractC1239n<?>> blockingQueue2, AbstractC1222b bVar, AbstractC1248q qVar) {
-        this.f5408c = blockingQueue;
-        this.f5409d = blockingQueue2;
-        this.f5410e = bVar;
-        this.f5411f = qVar;
-        this.f5413h = new C1226b(this);
+        this.f5415c = blockingQueue;
+        this.f5416d = blockingQueue2;
+        this.f5417e = bVar;
+        this.f5418f = qVar;
+        this.f5420h = new C1226b(this);
     }
 
     /* renamed from: c */
     private void m6581c() {
-        mo6154d(this.f5408c.take());
+        mo6154d(this.f5415c.take());
     }
 
     /* access modifiers changed from: package-private */
@@ -160,52 +160,52 @@ public class C1224c extends Thread {
             nVar.mo6197h("cache-discard-canceled");
             return;
         }
-        AbstractC1222b.C1223a c = this.f5410e.mo6151c(nVar.mo6201l());
+        AbstractC1222b.C1223a c = this.f5417e.mo6151c(nVar.mo6201l());
         if (c == null) {
             nVar.mo6192b("cache-miss");
-            if (!this.f5413h.m6585d(nVar)) {
-                this.f5409d.put(nVar);
+            if (!this.f5420h.m6585d(nVar)) {
+                this.f5416d.put(nVar);
             }
         } else if (c.mo6152a()) {
             nVar.mo6192b("cache-hit-expired");
             nVar.mo6184G(c);
-            if (!this.f5413h.m6585d(nVar)) {
-                this.f5409d.put(nVar);
+            if (!this.f5420h.m6585d(nVar)) {
+                this.f5416d.put(nVar);
             }
         } else {
             nVar.mo6192b("cache-hit");
-            C1245p<?> F = nVar.mo6183F(new C1236k(c.f5399a, c.f5405g));
+            C1245p<?> F = nVar.mo6183F(new C1236k(c.f5406a, c.f5412g));
             nVar.mo6192b("cache-hit-parsed");
             if (c.mo6153b()) {
                 nVar.mo6192b("cache-hit-refresh-needed");
                 nVar.mo6184G(c);
-                F.f5477d = true;
-                if (!this.f5413h.m6585d(nVar)) {
-                    this.f5411f.mo6166c(nVar, F, new RunnableC1225a(nVar));
+                F.f5484d = true;
+                if (!this.f5420h.m6585d(nVar)) {
+                    this.f5418f.mo6166c(nVar, F, new RunnableC1225a(nVar));
                     return;
                 }
             }
-            this.f5411f.mo6165b(nVar, F);
+            this.f5418f.mo6165b(nVar, F);
         }
     }
 
     /* renamed from: e */
     public void mo6155e() {
-        this.f5412g = true;
+        this.f5419g = true;
         interrupt();
     }
 
     public void run() {
-        if (f5407b) {
+        if (f5414b) {
             C1253v.m6669e("start new dispatcher", new Object[0]);
         }
         Process.setThreadPriority(10);
-        this.f5410e.mo6149a();
+        this.f5417e.mo6149a();
         while (true) {
             try {
                 m6581c();
             } catch (InterruptedException unused) {
-                if (this.f5412g) {
+                if (this.f5419g) {
                     Thread.currentThread().interrupt();
                     return;
                 }

@@ -4,10 +4,10 @@ package p006b.p030g.p039k;
 public final class C0996c {
 
     /* renamed from: a */
-    private final Object f4736a;
+    private final Object f4740a;
 
     private C0996c(Object obj) {
-        this.f4736a = obj;
+        this.f4740a = obj;
     }
 
     /* renamed from: a */
@@ -25,13 +25,13 @@ public final class C0996c {
         if (obj == null || C0996c.class != obj.getClass()) {
             return false;
         }
-        Object obj2 = this.f4736a;
-        Object obj3 = ((C0996c) obj).f4736a;
+        Object obj2 = this.f4740a;
+        Object obj3 = ((C0996c) obj).f4740a;
         return obj2 == null ? obj3 == null : obj2.equals(obj3);
     }
 
     public int hashCode() {
-        Object obj = this.f4736a;
+        Object obj = this.f4740a;
         if (obj == null) {
             return 0;
         }
@@ -39,6 +39,6 @@ public final class C0996c {
     }
 
     public String toString() {
-        return "DisplayCutoutCompat{" + this.f4736a + "}";
+        return "DisplayCutoutCompat{" + this.f4740a + "}";
     }
 }

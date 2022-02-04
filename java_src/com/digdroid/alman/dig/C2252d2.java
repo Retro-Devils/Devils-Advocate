@@ -6,27 +6,27 @@ import android.database.Cursor;
 public class C2252d2 {
 
     /* renamed from: a */
-    AbstractC2551q1 f8040a = null;
+    AbstractC2551q1 f8048a = null;
 
     /* renamed from: b */
-    AbstractC2365h f8041b = null;
+    AbstractC2365h f8049b = null;
 
     public C2252d2(AbstractC2365h hVar) {
-        this.f8041b = hVar;
+        this.f8049b = hVar;
     }
 
     public C2252d2(AbstractC2551q1 q1Var) {
-        this.f8040a = q1Var;
+        this.f8048a = q1Var;
     }
 
     /* renamed from: a */
     public void mo8239a() {
-        AbstractC2551q1 q1Var = this.f8040a;
+        AbstractC2551q1 q1Var = this.f8048a;
         if (q1Var != null) {
             q1Var.mo8970a();
             return;
         }
-        AbstractC2365h hVar = this.f8041b;
+        AbstractC2365h hVar = this.f8049b;
         if (hVar != null) {
             hVar.mo8524v();
         }
@@ -34,11 +34,11 @@ public class C2252d2 {
 
     /* renamed from: b */
     public int mo8240b() {
-        AbstractC2551q1 q1Var = this.f8040a;
+        AbstractC2551q1 q1Var = this.f8048a;
         if (q1Var != null) {
             return q1Var.getCount();
         }
-        AbstractC2365h hVar = this.f8041b;
+        AbstractC2365h hVar = this.f8049b;
         if (hVar != null) {
             return hVar.mo3580c();
         }
@@ -47,11 +47,11 @@ public class C2252d2 {
 
     /* renamed from: c */
     public Cursor mo8241c() {
-        AbstractC2551q1 q1Var = this.f8040a;
+        AbstractC2551q1 q1Var = this.f8048a;
         if (q1Var != null) {
             return q1Var.getCursor();
         }
-        AbstractC2365h hVar = this.f8041b;
+        AbstractC2365h hVar = this.f8049b;
         if (hVar != null) {
             return hVar.mo8525w();
         }

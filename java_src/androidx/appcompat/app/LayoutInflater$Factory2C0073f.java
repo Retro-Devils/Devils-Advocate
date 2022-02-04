@@ -961,9 +961,9 @@ public class LayoutInflater$Factory2C0073f extends AbstractC0072e implements C01
             C0788d dVar = new C0788d(context, 0);
             dVar.getTheme().setTo(newTheme);
             this.f319l = dVar;
-            TypedArray obtainStyledAttributes = dVar.obtainStyledAttributes(C0763j.f3828z0);
-            this.f309b = obtainStyledAttributes.getResourceId(C0763j.f3584C0, 0);
-            this.f313f = obtainStyledAttributes.getResourceId(C0763j.f3579B0, 0);
+            TypedArray obtainStyledAttributes = dVar.obtainStyledAttributes(C0763j.f3832z0);
+            this.f309b = obtainStyledAttributes.getResourceId(C0763j.f3588C0, 0);
+            this.f313f = obtainStyledAttributes.getResourceId(C0763j.f3583B0, 0);
             obtainStyledAttributes.recycle();
         }
     }
@@ -1232,22 +1232,22 @@ public class LayoutInflater$Factory2C0073f extends AbstractC0072e implements C01
         ContentFrameLayout contentFrameLayout = (ContentFrameLayout) this.f240C.findViewById(16908290);
         View decorView = this.f273m.getDecorView();
         contentFrameLayout.mo1029b(decorView.getPaddingLeft(), decorView.getPaddingTop(), decorView.getPaddingRight(), decorView.getPaddingBottom());
-        TypedArray obtainStyledAttributes = this.f272l.obtainStyledAttributes(C0763j.f3828z0);
-        obtainStyledAttributes.getValue(C0763j.f3629L0, contentFrameLayout.getMinWidthMajor());
-        obtainStyledAttributes.getValue(C0763j.f3634M0, contentFrameLayout.getMinWidthMinor());
-        int i = C0763j.f3619J0;
+        TypedArray obtainStyledAttributes = this.f272l.obtainStyledAttributes(C0763j.f3832z0);
+        obtainStyledAttributes.getValue(C0763j.f3633L0, contentFrameLayout.getMinWidthMajor());
+        obtainStyledAttributes.getValue(C0763j.f3638M0, contentFrameLayout.getMinWidthMinor());
+        int i = C0763j.f3623J0;
         if (obtainStyledAttributes.hasValue(i)) {
             obtainStyledAttributes.getValue(i, contentFrameLayout.getFixedWidthMajor());
         }
-        int i2 = C0763j.f3624K0;
+        int i2 = C0763j.f3628K0;
         if (obtainStyledAttributes.hasValue(i2)) {
             obtainStyledAttributes.getValue(i2, contentFrameLayout.getFixedWidthMinor());
         }
-        int i3 = C0763j.f3609H0;
+        int i3 = C0763j.f3613H0;
         if (obtainStyledAttributes.hasValue(i3)) {
             obtainStyledAttributes.getValue(i3, contentFrameLayout.getFixedHeightMajor());
         }
-        int i4 = C0763j.f3614I0;
+        int i4 = C0763j.f3618I0;
         if (obtainStyledAttributes.hasValue(i4)) {
             obtainStyledAttributes.getValue(i4, contentFrameLayout.getFixedHeightMinor());
         }
@@ -1441,21 +1441,21 @@ public class LayoutInflater$Factory2C0073f extends AbstractC0072e implements C01
     /* renamed from: S */
     private ViewGroup m316S() {
         ViewGroup viewGroup;
-        TypedArray obtainStyledAttributes = this.f272l.obtainStyledAttributes(C0763j.f3828z0);
-        int i = C0763j.f3594E0;
+        TypedArray obtainStyledAttributes = this.f272l.obtainStyledAttributes(C0763j.f3832z0);
+        int i = C0763j.f3598E0;
         if (obtainStyledAttributes.hasValue(i)) {
-            if (obtainStyledAttributes.getBoolean(C0763j.f3639N0, false)) {
+            if (obtainStyledAttributes.getBoolean(C0763j.f3643N0, false)) {
                 mo304z(1);
             } else if (obtainStyledAttributes.getBoolean(i, false)) {
                 mo304z(C0333i.f1724Z0);
             }
-            if (obtainStyledAttributes.getBoolean(C0763j.f3599F0, false)) {
+            if (obtainStyledAttributes.getBoolean(C0763j.f3603F0, false)) {
                 mo304z(109);
             }
-            if (obtainStyledAttributes.getBoolean(C0763j.f3604G0, false)) {
+            if (obtainStyledAttributes.getBoolean(C0763j.f3608G0, false)) {
                 mo304z(10);
             }
-            this.f248K = obtainStyledAttributes.getBoolean(C0763j.f3574A0, false);
+            this.f248K = obtainStyledAttributes.getBoolean(C0763j.f3578A0, false);
             obtainStyledAttributes.recycle();
             m318Z();
             this.f273m.getDecorView();
@@ -2217,7 +2217,7 @@ public class LayoutInflater$Factory2C0073f extends AbstractC0072e implements C01
         C0099h hVar;
         boolean z2 = false;
         if (this.f270g0 == null) {
-            String string = this.f272l.obtainStyledAttributes(C0763j.f3828z0).getString(C0763j.f3589D0);
+            String string = this.f272l.obtainStyledAttributes(C0763j.f3832z0).getString(C0763j.f3593D0);
             if (string == null) {
                 hVar = new C0099h();
             } else {

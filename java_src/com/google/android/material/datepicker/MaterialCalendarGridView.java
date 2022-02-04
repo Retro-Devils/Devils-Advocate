@@ -18,7 +18,7 @@ import p069c.p073b.p074a.p090b.C1395f;
 final class MaterialCalendarGridView extends GridView {
 
     /* renamed from: b */
-    private final Calendar f10372b;
+    private final Calendar f10380b;
 
     /* renamed from: com.google.android.material.datepicker.MaterialCalendarGridView$a */
     class C3102a extends C0962a {
@@ -39,7 +39,7 @@ final class MaterialCalendarGridView extends GridView {
 
     public MaterialCalendarGridView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f10372b = C3136p.m13082l();
+        this.f10380b = C3136p.m13082l();
         if (C3124h.m13033u2(getContext())) {
             setNextFocusLeftId(C1395f.cancel_button);
             setNextFocusRightId(C1395f.confirm_button);
@@ -91,33 +91,33 @@ final class MaterialCalendarGridView extends GridView {
         MaterialCalendarGridView materialCalendarGridView = this;
         super.onDraw(canvas);
         C3127j b = getAdapter();
-        AbstractC3108d<?> dVar = b.f10445d;
-        C3107c cVar = b.f10446e;
+        AbstractC3108d<?> dVar = b.f10453d;
+        C3107c cVar = b.f10454e;
         Long c = b.getItem(b.mo10448b());
         Long c2 = b.getItem(b.mo10457h());
         for (C0957e<Long, Long> eVar : dVar.mo10410c()) {
-            F f = eVar.f4654a;
+            F f = eVar.f4658a;
             if (f != null) {
-                if (eVar.f4655b == null) {
+                if (eVar.f4659b == null) {
                     continue;
                 } else {
                     long longValue = f.longValue();
-                    long longValue2 = eVar.f4655b.longValue();
+                    long longValue2 = eVar.f4659b.longValue();
                     if (!m12976d(c, c2, Long.valueOf(longValue), Long.valueOf(longValue2))) {
                         if (longValue < c.longValue()) {
                             i2 = b.mo10448b();
                             i = b.mo10451f(i2) ? 0 : materialCalendarGridView.getChildAt(i2 - 1).getRight();
                         } else {
-                            materialCalendarGridView.f10372b.setTimeInMillis(longValue);
-                            i2 = b.mo10447a(materialCalendarGridView.f10372b.get(5));
+                            materialCalendarGridView.f10380b.setTimeInMillis(longValue);
+                            i2 = b.mo10447a(materialCalendarGridView.f10380b.get(5));
                             i = m12975c(materialCalendarGridView.getChildAt(i2));
                         }
                         if (longValue2 > c2.longValue()) {
                             i4 = Math.min(b.mo10457h(), getChildCount() - 1);
                             i3 = b.mo10452g(i4) ? getWidth() : materialCalendarGridView.getChildAt(i4).getRight();
                         } else {
-                            materialCalendarGridView.f10372b.setTimeInMillis(longValue2);
-                            i4 = b.mo10447a(materialCalendarGridView.f10372b.get(5));
+                            materialCalendarGridView.f10380b.setTimeInMillis(longValue2);
+                            i4 = b.mo10447a(materialCalendarGridView.f10380b.get(5));
                             i3 = m12975c(materialCalendarGridView.getChildAt(i4));
                         }
                         int itemId = (int) b.getItemId(i2);
@@ -126,7 +126,7 @@ final class MaterialCalendarGridView extends GridView {
                             int numColumns = getNumColumns() * itemId;
                             int numColumns2 = (getNumColumns() + numColumns) - 1;
                             View childAt = materialCalendarGridView.getChildAt(numColumns);
-                            canvas.drawRect((float) (numColumns > i2 ? 0 : i), (float) (childAt.getTop() + cVar.f10386a.mo10407c()), (float) (i4 > numColumns2 ? getWidth() : i3), (float) (childAt.getBottom() - cVar.f10386a.mo10406b()), cVar.f10393h);
+                            canvas.drawRect((float) (numColumns > i2 ? 0 : i), (float) (childAt.getTop() + cVar.f10394a.mo10407c()), (float) (i4 > numColumns2 ? getWidth() : i3), (float) (childAt.getBottom() - cVar.f10394a.mo10406b()), cVar.f10401h);
                             itemId++;
                             materialCalendarGridView = this;
                         }

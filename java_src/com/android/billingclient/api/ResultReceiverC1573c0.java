@@ -10,16 +10,16 @@ import p069c.p073b.p074a.p075a.p081d.p084c.C1314b;
 public final class ResultReceiverC1573c0 extends ResultReceiver {
 
     /* renamed from: b */
-    private final /* synthetic */ C1574d f6417b;
+    private final /* synthetic */ C1574d f6425b;
 
     /* JADX INFO: super call moved to the top of the method (can break code semantics) */
     ResultReceiverC1573c0(C1574d dVar, Handler handler) {
         super(handler);
-        this.f6417b = dVar;
+        this.f6425b = dVar;
     }
 
     public final void onReceiveResult(int i, Bundle bundle) {
-        AbstractC1585h c = this.f6417b.f6421d.mo6966c();
+        AbstractC1585h c = this.f6425b.f6429d.mo6966c();
         if (c == null) {
             C1314b.m6854k("BillingClient", "PurchasesUpdatedListener is null - no way to return the response.");
             return;

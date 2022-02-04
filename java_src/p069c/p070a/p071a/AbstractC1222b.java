@@ -11,37 +11,37 @@ public interface AbstractC1222b {
     public static class C1223a {
 
         /* renamed from: a */
-        public byte[] f5399a;
+        public byte[] f5406a;
 
         /* renamed from: b */
-        public String f5400b;
+        public String f5407b;
 
         /* renamed from: c */
-        public long f5401c;
+        public long f5408c;
 
         /* renamed from: d */
-        public long f5402d;
+        public long f5409d;
 
         /* renamed from: e */
-        public long f5403e;
+        public long f5410e;
 
         /* renamed from: f */
-        public long f5404f;
+        public long f5411f;
 
         /* renamed from: g */
-        public Map<String, String> f5405g = Collections.emptyMap();
+        public Map<String, String> f5412g = Collections.emptyMap();
 
         /* renamed from: h */
-        public List<C1232g> f5406h;
+        public List<C1232g> f5413h;
 
         /* renamed from: a */
         public boolean mo6152a() {
-            return this.f5403e < System.currentTimeMillis();
+            return this.f5410e < System.currentTimeMillis();
         }
 
         /* renamed from: b */
         public boolean mo6153b() {
-            return this.f5404f < System.currentTimeMillis();
+            return this.f5411f < System.currentTimeMillis();
         }
     }
 

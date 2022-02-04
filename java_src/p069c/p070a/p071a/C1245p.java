@@ -6,16 +6,16 @@ import p069c.p070a.p071a.AbstractC1222b;
 public class C1245p<T> {
 
     /* renamed from: a */
-    public final T f5474a;
+    public final T f5481a;
 
     /* renamed from: b */
-    public final AbstractC1222b.C1223a f5475b;
+    public final AbstractC1222b.C1223a f5482b;
 
     /* renamed from: c */
-    public final C1252u f5476c;
+    public final C1252u f5483c;
 
     /* renamed from: d */
-    public boolean f5477d;
+    public boolean f5484d;
 
     /* renamed from: c.a.a.p$a */
     public interface AbstractC1246a {
@@ -30,17 +30,17 @@ public class C1245p<T> {
     }
 
     private C1245p(C1252u uVar) {
-        this.f5477d = false;
-        this.f5474a = null;
-        this.f5475b = null;
-        this.f5476c = uVar;
+        this.f5484d = false;
+        this.f5481a = null;
+        this.f5482b = null;
+        this.f5483c = uVar;
     }
 
     private C1245p(T t, AbstractC1222b.C1223a aVar) {
-        this.f5477d = false;
-        this.f5474a = t;
-        this.f5475b = aVar;
-        this.f5476c = null;
+        this.f5484d = false;
+        this.f5481a = t;
+        this.f5482b = aVar;
+        this.f5483c = null;
     }
 
     /* renamed from: a */
@@ -55,6 +55,6 @@ public class C1245p<T> {
 
     /* renamed from: b */
     public boolean mo6224b() {
-        return this.f5476c == null;
+        return this.f5483c == null;
     }
 }

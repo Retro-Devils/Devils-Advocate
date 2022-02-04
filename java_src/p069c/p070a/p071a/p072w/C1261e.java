@@ -27,64 +27,64 @@ import p069c.p070a.p071a.C1253v;
 public class C1261e implements AbstractC1222b {
 
     /* renamed from: a */
-    private final Map<String, C1262a> f5499a;
+    private final Map<String, C1262a> f5506a;
 
     /* renamed from: b */
-    private long f5500b;
+    private long f5507b;
 
     /* renamed from: c */
-    private final File f5501c;
+    private final File f5508c;
 
     /* renamed from: d */
-    private final int f5502d;
+    private final int f5509d;
 
     /* access modifiers changed from: package-private */
     /* renamed from: c.a.a.w.e$a */
     public static class C1262a {
 
         /* renamed from: a */
-        long f5503a;
+        long f5510a;
 
         /* renamed from: b */
-        final String f5504b;
+        final String f5511b;
 
         /* renamed from: c */
-        final String f5505c;
+        final String f5512c;
 
         /* renamed from: d */
-        final long f5506d;
+        final long f5513d;
 
         /* renamed from: e */
-        final long f5507e;
+        final long f5514e;
 
         /* renamed from: f */
-        final long f5508f;
+        final long f5515f;
 
         /* renamed from: g */
-        final long f5509g;
+        final long f5516g;
 
         /* renamed from: h */
-        final List<C1232g> f5510h;
+        final List<C1232g> f5517h;
 
         C1262a(String str, AbstractC1222b.C1223a aVar) {
-            this(str, aVar.f5400b, aVar.f5401c, aVar.f5402d, aVar.f5403e, aVar.f5404f, m6708a(aVar));
-            this.f5503a = (long) aVar.f5399a.length;
+            this(str, aVar.f5407b, aVar.f5408c, aVar.f5409d, aVar.f5410e, aVar.f5411f, m6708a(aVar));
+            this.f5510a = (long) aVar.f5406a.length;
         }
 
         private C1262a(String str, String str2, long j, long j2, long j3, long j4, List<C1232g> list) {
-            this.f5504b = str;
-            this.f5505c = "".equals(str2) ? null : str2;
-            this.f5506d = j;
-            this.f5507e = j2;
-            this.f5508f = j3;
-            this.f5509g = j4;
-            this.f5510h = list;
+            this.f5511b = str;
+            this.f5512c = "".equals(str2) ? null : str2;
+            this.f5513d = j;
+            this.f5514e = j2;
+            this.f5515f = j3;
+            this.f5516g = j4;
+            this.f5517h = list;
         }
 
         /* renamed from: a */
         private static List<C1232g> m6708a(AbstractC1222b.C1223a aVar) {
-            List<C1232g> list = aVar.f5406h;
-            return list != null ? list : C1266g.m6724g(aVar.f5405g);
+            List<C1232g> list = aVar.f5413h;
+            return list != null ? list : C1266g.m6724g(aVar.f5412g);
         }
 
         /* renamed from: b */
@@ -99,14 +99,14 @@ public class C1261e implements AbstractC1222b {
         /* renamed from: c */
         public AbstractC1222b.C1223a mo6241c(byte[] bArr) {
             AbstractC1222b.C1223a aVar = new AbstractC1222b.C1223a();
-            aVar.f5399a = bArr;
-            aVar.f5400b = this.f5505c;
-            aVar.f5401c = this.f5506d;
-            aVar.f5402d = this.f5507e;
-            aVar.f5403e = this.f5508f;
-            aVar.f5404f = this.f5509g;
-            aVar.f5405g = C1266g.m6725h(this.f5510h);
-            aVar.f5406h = Collections.unmodifiableList(this.f5510h);
+            aVar.f5406a = bArr;
+            aVar.f5407b = this.f5512c;
+            aVar.f5408c = this.f5513d;
+            aVar.f5409d = this.f5514e;
+            aVar.f5410e = this.f5515f;
+            aVar.f5411f = this.f5516g;
+            aVar.f5412g = C1266g.m6725h(this.f5517h);
+            aVar.f5413h = Collections.unmodifiableList(this.f5517h);
             return aVar;
         }
 
@@ -115,17 +115,17 @@ public class C1261e implements AbstractC1222b {
         public boolean mo6242d(OutputStream outputStream) {
             try {
                 C1261e.m6698s(outputStream, 538247942);
-                C1261e.m6700u(outputStream, this.f5504b);
-                String str = this.f5505c;
+                C1261e.m6700u(outputStream, this.f5511b);
+                String str = this.f5512c;
                 if (str == null) {
                     str = "";
                 }
                 C1261e.m6700u(outputStream, str);
-                C1261e.m6699t(outputStream, this.f5506d);
-                C1261e.m6699t(outputStream, this.f5507e);
-                C1261e.m6699t(outputStream, this.f5508f);
-                C1261e.m6699t(outputStream, this.f5509g);
-                C1261e.m6697r(this.f5510h, outputStream);
+                C1261e.m6699t(outputStream, this.f5513d);
+                C1261e.m6699t(outputStream, this.f5514e);
+                C1261e.m6699t(outputStream, this.f5515f);
+                C1261e.m6699t(outputStream, this.f5516g);
+                C1261e.m6697r(this.f5517h, outputStream);
                 outputStream.flush();
                 return true;
             } catch (IOException e) {
@@ -140,27 +140,27 @@ public class C1261e implements AbstractC1222b {
     public static class C1263b extends FilterInputStream {
 
         /* renamed from: b */
-        private final long f5511b;
+        private final long f5518b;
 
         /* renamed from: c */
-        private long f5512c;
+        private long f5519c;
 
         C1263b(InputStream inputStream, long j) {
             super(inputStream);
-            this.f5511b = j;
+            this.f5518b = j;
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: a */
         public long mo6243a() {
-            return this.f5511b - this.f5512c;
+            return this.f5518b - this.f5519c;
         }
 
         @Override // java.io.FilterInputStream, java.io.InputStream
         public int read() {
             int read = super.read();
             if (read != -1) {
-                this.f5512c++;
+                this.f5519c++;
             }
             return read;
         }
@@ -169,7 +169,7 @@ public class C1261e implements AbstractC1222b {
         public int read(byte[] bArr, int i, int i2) {
             int read = super.read(bArr, i, i2);
             if (read != -1) {
-                this.f5512c += (long) read;
+                this.f5519c += (long) read;
             }
             return read;
         }
@@ -180,10 +180,10 @@ public class C1261e implements AbstractC1222b {
     }
 
     public C1261e(File file, int i) {
-        this.f5499a = new LinkedHashMap(16, 0.75f, true);
-        this.f5500b = 0;
-        this.f5501c = file;
-        this.f5502d = i;
+        this.f5506a = new LinkedHashMap(16, 0.75f, true);
+        this.f5507b = 0;
+        this.f5508c = file;
+        this.f5509d = i;
     }
 
     /* renamed from: g */
@@ -197,45 +197,45 @@ public class C1261e implements AbstractC1222b {
     private void m6688h(int i) {
         long j;
         long j2 = (long) i;
-        if (this.f5500b + j2 >= ((long) this.f5502d)) {
-            if (C1253v.f5481b) {
+        if (this.f5507b + j2 >= ((long) this.f5509d)) {
+            if (C1253v.f5488b) {
                 C1253v.m6669e("Pruning old cache entries.", new Object[0]);
             }
-            long j3 = this.f5500b;
+            long j3 = this.f5507b;
             long elapsedRealtime = SystemClock.elapsedRealtime();
-            Iterator<Map.Entry<String, C1262a>> it = this.f5499a.entrySet().iterator();
+            Iterator<Map.Entry<String, C1262a>> it = this.f5506a.entrySet().iterator();
             int i2 = 0;
             while (it.hasNext()) {
                 C1262a value = it.next().getValue();
-                if (mo6239f(value.f5504b).delete()) {
+                if (mo6239f(value.f5511b).delete()) {
                     j = j2;
-                    this.f5500b -= value.f5503a;
+                    this.f5507b -= value.f5510a;
                 } else {
                     j = j2;
-                    String str = value.f5504b;
+                    String str = value.f5511b;
                     C1253v.m6666b("Could not delete cache entry for key=%s, filename=%s", str, m6687g(str));
                 }
                 it.remove();
                 i2++;
-                if (((float) (this.f5500b + j)) < ((float) this.f5502d) * 0.9f) {
+                if (((float) (this.f5507b + j)) < ((float) this.f5509d) * 0.9f) {
                     break;
                 }
                 j2 = j;
             }
-            if (C1253v.f5481b) {
-                C1253v.m6669e("pruned %d files, %d bytes, %d ms", Integer.valueOf(i2), Long.valueOf(this.f5500b - j3), Long.valueOf(SystemClock.elapsedRealtime() - elapsedRealtime));
+            if (C1253v.f5488b) {
+                C1253v.m6669e("pruned %d files, %d bytes, %d ms", Integer.valueOf(i2), Long.valueOf(this.f5507b - j3), Long.valueOf(SystemClock.elapsedRealtime() - elapsedRealtime));
             }
         }
     }
 
     /* renamed from: i */
     private void m6689i(String str, C1262a aVar) {
-        if (!this.f5499a.containsKey(str)) {
-            this.f5500b += aVar.f5503a;
+        if (!this.f5506a.containsKey(str)) {
+            this.f5507b += aVar.f5510a;
         } else {
-            this.f5500b += aVar.f5503a - this.f5499a.get(str).f5503a;
+            this.f5507b += aVar.f5510a - this.f5506a.get(str).f5510a;
         }
-        this.f5499a.put(str, aVar);
+        this.f5506a.put(str, aVar);
     }
 
     /* renamed from: j */
@@ -277,9 +277,9 @@ public class C1261e implements AbstractC1222b {
 
     /* renamed from: p */
     private void m6695p(String str) {
-        C1262a remove = this.f5499a.remove(str);
+        C1262a remove = this.f5506a.remove(str);
         if (remove != null) {
-            this.f5500b -= remove.f5503a;
+            this.f5507b -= remove.f5510a;
         }
     }
 
@@ -340,13 +340,13 @@ public class C1261e implements AbstractC1222b {
     @Override // p069c.p070a.p071a.AbstractC1222b
     /* renamed from: a */
     public synchronized void mo6149a() {
-        if (!this.f5501c.exists()) {
-            if (!this.f5501c.mkdirs()) {
-                C1253v.m6667c("Unable to create cache dir %s", this.f5501c.getAbsolutePath());
+        if (!this.f5508c.exists()) {
+            if (!this.f5508c.mkdirs()) {
+                C1253v.m6667c("Unable to create cache dir %s", this.f5508c.getAbsolutePath());
             }
             return;
         }
-        File[] listFiles = this.f5501c.listFiles();
+        File[] listFiles = this.f5508c.listFiles();
         if (listFiles != null) {
             for (File file : listFiles) {
                 try {
@@ -354,8 +354,8 @@ public class C1261e implements AbstractC1222b {
                     C1263b bVar = new C1263b(new BufferedInputStream(mo6237d(file)), length);
                     try {
                         C1262a b = C1262a.m6709b(bVar);
-                        b.f5503a = length;
-                        m6689i(b.f5504b, b);
+                        b.f5510a = length;
+                        m6689i(b.f5511b, b);
                     } finally {
                         bVar.close();
                     }
@@ -369,13 +369,13 @@ public class C1261e implements AbstractC1222b {
     @Override // p069c.p070a.p071a.AbstractC1222b
     /* renamed from: b */
     public synchronized void mo6150b(String str, AbstractC1222b.C1223a aVar) {
-        m6688h(aVar.f5399a.length);
+        m6688h(aVar.f5406a.length);
         File f = mo6239f(str);
         try {
             BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(mo6238e(f));
             C1262a aVar2 = new C1262a(str, aVar);
             if (aVar2.mo6242d(bufferedOutputStream)) {
-                bufferedOutputStream.write(aVar.f5399a);
+                bufferedOutputStream.write(aVar.f5406a);
                 bufferedOutputStream.close();
                 m6689i(str, aVar2);
             } else {
@@ -393,7 +393,7 @@ public class C1261e implements AbstractC1222b {
     @Override // p069c.p070a.p071a.AbstractC1222b
     /* renamed from: c */
     public synchronized AbstractC1222b.C1223a mo6151c(String str) {
-        C1262a aVar = this.f5499a.get(str);
+        C1262a aVar = this.f5506a.get(str);
         if (aVar == null) {
             return null;
         }
@@ -402,8 +402,8 @@ public class C1261e implements AbstractC1222b {
             C1263b bVar = new C1263b(new BufferedInputStream(mo6237d(f)), f.length());
             try {
                 C1262a b = C1262a.m6709b(bVar);
-                if (!TextUtils.equals(str, b.f5504b)) {
-                    C1253v.m6666b("%s: key=%s, found=%s", f.getAbsolutePath(), str, b.f5504b);
+                if (!TextUtils.equals(str, b.f5511b)) {
+                    C1253v.m6666b("%s: key=%s, found=%s", f.getAbsolutePath(), str, b.f5511b);
                     m6695p(str);
                     return null;
                 }
@@ -434,7 +434,7 @@ public class C1261e implements AbstractC1222b {
 
     /* renamed from: f */
     public File mo6239f(String str) {
-        return new File(this.f5501c, m6687g(str));
+        return new File(this.f5508c, m6687g(str));
     }
 
     /* renamed from: o */

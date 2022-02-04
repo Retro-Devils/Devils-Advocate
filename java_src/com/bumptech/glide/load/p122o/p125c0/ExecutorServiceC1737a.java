@@ -19,61 +19,61 @@ import java.util.concurrent.TimeUnit;
 public final class ExecutorServiceC1737a implements ExecutorService {
 
     /* renamed from: a */
-    private static final long f6802a = TimeUnit.SECONDS.toMillis(10);
+    private static final long f6810a = TimeUnit.SECONDS.toMillis(10);
 
     /* renamed from: b */
-    private static volatile int f6803b;
+    private static volatile int f6811b;
 
     /* renamed from: c */
-    private final ExecutorService f6804c;
+    private final ExecutorService f6812c;
 
     /* renamed from: com.bumptech.glide.load.o.c0.a$a */
     public static final class C1738a {
 
         /* renamed from: a */
-        private final boolean f6805a;
+        private final boolean f6813a;
 
         /* renamed from: b */
-        private int f6806b;
+        private int f6814b;
 
         /* renamed from: c */
-        private int f6807c;
+        private int f6815c;
 
         /* renamed from: d */
-        private AbstractC1741c f6808d = AbstractC1741c.f6819d;
+        private AbstractC1741c f6816d = AbstractC1741c.f6827d;
 
         /* renamed from: e */
-        private String f6809e;
+        private String f6817e;
 
         /* renamed from: f */
-        private long f6810f;
+        private long f6818f;
 
         C1738a(boolean z) {
-            this.f6805a = z;
+            this.f6813a = z;
         }
 
         /* renamed from: a */
         public ExecutorServiceC1737a mo7257a() {
-            if (!TextUtils.isEmpty(this.f6809e)) {
-                ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(this.f6806b, this.f6807c, this.f6810f, TimeUnit.MILLISECONDS, new PriorityBlockingQueue(), new ThreadFactoryC1739b(this.f6809e, this.f6808d, this.f6805a));
-                if (this.f6810f != 0) {
+            if (!TextUtils.isEmpty(this.f6817e)) {
+                ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(this.f6814b, this.f6815c, this.f6818f, TimeUnit.MILLISECONDS, new PriorityBlockingQueue(), new ThreadFactoryC1739b(this.f6817e, this.f6816d, this.f6813a));
+                if (this.f6818f != 0) {
                     threadPoolExecutor.allowCoreThreadTimeOut(true);
                 }
                 return new ExecutorServiceC1737a(threadPoolExecutor);
             }
-            throw new IllegalArgumentException("Name must be non-null and non-empty, but given: " + this.f6809e);
+            throw new IllegalArgumentException("Name must be non-null and non-empty, but given: " + this.f6817e);
         }
 
         /* renamed from: b */
         public C1738a mo7258b(String str) {
-            this.f6809e = str;
+            this.f6817e = str;
             return this;
         }
 
         /* renamed from: c */
         public C1738a mo7259c(int i) {
-            this.f6806b = i;
-            this.f6807c = i;
+            this.f6814b = i;
+            this.f6815c = i;
             return this;
         }
     }
@@ -83,16 +83,16 @@ public final class ExecutorServiceC1737a implements ExecutorService {
     public static final class ThreadFactoryC1739b implements ThreadFactory {
 
         /* renamed from: a */
-        private final String f6811a;
+        private final String f6819a;
 
         /* renamed from: b */
-        final AbstractC1741c f6812b;
+        final AbstractC1741c f6820b;
 
         /* renamed from: c */
-        final boolean f6813c;
+        final boolean f6821c;
 
         /* renamed from: d */
-        private int f6814d;
+        private int f6822d;
 
         /* renamed from: com.bumptech.glide.load.o.c0.a$b$a */
         class C1740a extends Thread {
@@ -102,27 +102,27 @@ public final class ExecutorServiceC1737a implements ExecutorService {
 
             public void run() {
                 Process.setThreadPriority(9);
-                if (ThreadFactoryC1739b.this.f6813c) {
+                if (ThreadFactoryC1739b.this.f6821c) {
                     StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().detectNetwork().penaltyDeath().build());
                 }
                 try {
                     super.run();
                 } catch (Throwable th) {
-                    ThreadFactoryC1739b.this.f6812b.mo7262a(th);
+                    ThreadFactoryC1739b.this.f6820b.mo7262a(th);
                 }
             }
         }
 
         ThreadFactoryC1739b(String str, AbstractC1741c cVar, boolean z) {
-            this.f6811a = str;
-            this.f6812b = cVar;
-            this.f6813c = z;
+            this.f6819a = str;
+            this.f6820b = cVar;
+            this.f6821c = z;
         }
 
         public synchronized Thread newThread(Runnable runnable) {
             C1740a aVar;
-            aVar = new C1740a(runnable, "glide-" + this.f6811a + "-thread-" + this.f6814d);
-            this.f6814d = this.f6814d + 1;
+            aVar = new C1740a(runnable, "glide-" + this.f6819a + "-thread-" + this.f6822d);
+            this.f6822d = this.f6822d + 1;
             return aVar;
         }
     }
@@ -131,16 +131,16 @@ public final class ExecutorServiceC1737a implements ExecutorService {
     public interface AbstractC1741c {
 
         /* renamed from: a */
-        public static final AbstractC1741c f6816a = new C1742a();
+        public static final AbstractC1741c f6824a = new C1742a();
 
         /* renamed from: b */
-        public static final AbstractC1741c f6817b;
+        public static final AbstractC1741c f6825b;
 
         /* renamed from: c */
-        public static final AbstractC1741c f6818c = new C1744c();
+        public static final AbstractC1741c f6826c = new C1744c();
 
         /* renamed from: d */
-        public static final AbstractC1741c f6819d;
+        public static final AbstractC1741c f6827d;
 
         /* renamed from: com.bumptech.glide.load.o.c0.a$c$a */
         class C1742a implements AbstractC1741c {
@@ -183,8 +183,8 @@ public final class ExecutorServiceC1737a implements ExecutorService {
 
         static {
             C1743b bVar = new C1743b();
-            f6817b = bVar;
-            f6819d = bVar;
+            f6825b = bVar;
+            f6827d = bVar;
         }
 
         /* renamed from: a */
@@ -192,15 +192,15 @@ public final class ExecutorServiceC1737a implements ExecutorService {
     }
 
     ExecutorServiceC1737a(ExecutorService executorService) {
-        this.f6804c = executorService;
+        this.f6812c = executorService;
     }
 
     /* renamed from: a */
     public static int m8169a() {
-        if (f6803b == 0) {
-            f6803b = Math.min(4, C1745b.m8184a());
+        if (f6811b == 0) {
+            f6811b = Math.min(4, C1745b.m8184a());
         }
-        return f6803b;
+        return f6811b;
     }
 
     /* renamed from: b */
@@ -235,71 +235,71 @@ public final class ExecutorServiceC1737a implements ExecutorService {
 
     /* renamed from: h */
     public static ExecutorServiceC1737a m8176h() {
-        return new ExecutorServiceC1737a(new ThreadPoolExecutor(0, Integer.MAX_VALUE, f6802a, TimeUnit.MILLISECONDS, new SynchronousQueue(), new ThreadFactoryC1739b("source-unlimited", AbstractC1741c.f6819d, false)));
+        return new ExecutorServiceC1737a(new ThreadPoolExecutor(0, Integer.MAX_VALUE, f6810a, TimeUnit.MILLISECONDS, new SynchronousQueue(), new ThreadFactoryC1739b("source-unlimited", AbstractC1741c.f6827d, false)));
     }
 
     @Override // java.util.concurrent.ExecutorService
     public boolean awaitTermination(long j, TimeUnit timeUnit) {
-        return this.f6804c.awaitTermination(j, timeUnit);
+        return this.f6812c.awaitTermination(j, timeUnit);
     }
 
     public void execute(Runnable runnable) {
-        this.f6804c.execute(runnable);
+        this.f6812c.execute(runnable);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public <T> List<Future<T>> invokeAll(Collection<? extends Callable<T>> collection) {
-        return this.f6804c.invokeAll(collection);
+        return this.f6812c.invokeAll(collection);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public <T> List<Future<T>> invokeAll(Collection<? extends Callable<T>> collection, long j, TimeUnit timeUnit) {
-        return this.f6804c.invokeAll(collection, j, timeUnit);
+        return this.f6812c.invokeAll(collection, j, timeUnit);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public <T> T invokeAny(Collection<? extends Callable<T>> collection) {
-        return (T) this.f6804c.invokeAny(collection);
+        return (T) this.f6812c.invokeAny(collection);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public <T> T invokeAny(Collection<? extends Callable<T>> collection, long j, TimeUnit timeUnit) {
-        return (T) this.f6804c.invokeAny(collection, j, timeUnit);
+        return (T) this.f6812c.invokeAny(collection, j, timeUnit);
     }
 
     public boolean isShutdown() {
-        return this.f6804c.isShutdown();
+        return this.f6812c.isShutdown();
     }
 
     public boolean isTerminated() {
-        return this.f6804c.isTerminated();
+        return this.f6812c.isTerminated();
     }
 
     public void shutdown() {
-        this.f6804c.shutdown();
+        this.f6812c.shutdown();
     }
 
     @Override // java.util.concurrent.ExecutorService
     public List<Runnable> shutdownNow() {
-        return this.f6804c.shutdownNow();
+        return this.f6812c.shutdownNow();
     }
 
     @Override // java.util.concurrent.ExecutorService
     public Future<?> submit(Runnable runnable) {
-        return this.f6804c.submit(runnable);
+        return this.f6812c.submit(runnable);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public <T> Future<T> submit(Runnable runnable, T t) {
-        return this.f6804c.submit(runnable, t);
+        return this.f6812c.submit(runnable, t);
     }
 
     @Override // java.util.concurrent.ExecutorService
     public <T> Future<T> submit(Callable<T> callable) {
-        return this.f6804c.submit(callable);
+        return this.f6812c.submit(callable);
     }
 
     public String toString() {
-        return this.f6804c.toString();
+        return this.f6812c.toString();
     }
 }

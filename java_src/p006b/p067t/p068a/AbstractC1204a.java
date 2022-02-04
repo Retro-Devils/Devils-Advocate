@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 public abstract class AbstractC1204a {
 
     /* renamed from: a */
-    private final DataSetObservable f5317a = new DataSetObservable();
+    private final DataSetObservable f5324a = new DataSetObservable();
 
     /* renamed from: b */
-    private DataSetObserver f5318b;
+    private DataSetObserver f5325b;
 
     /* renamed from: a */
     public abstract void mo6056a(ViewGroup viewGroup, int i, Object obj);
@@ -41,12 +41,12 @@ public abstract class AbstractC1204a {
     /* renamed from: h */
     public void mo6063h() {
         synchronized (this) {
-            DataSetObserver dataSetObserver = this.f5318b;
+            DataSetObserver dataSetObserver = this.f5325b;
             if (dataSetObserver != null) {
                 dataSetObserver.onChanged();
             }
         }
-        this.f5317a.notifyChanged();
+        this.f5324a.notifyChanged();
     }
 
     /* renamed from: i */
@@ -62,7 +62,7 @@ public abstract class AbstractC1204a {
     /* renamed from: l */
     public void mo6067l(DataSetObserver dataSetObserver) {
         synchronized (this) {
-            this.f5318b = dataSetObserver;
+            this.f5325b = dataSetObserver;
         }
     }
 

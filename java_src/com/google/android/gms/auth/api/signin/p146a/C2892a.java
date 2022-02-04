@@ -15,37 +15,37 @@ import org.json.JSONException;
 public class C2892a {
 
     /* renamed from: a */
-    private static final Lock f9738a = new ReentrantLock();
+    private static final Lock f9746a = new ReentrantLock();
     @GuardedBy("sLk")
 
     /* renamed from: b */
-    private static C2892a f9739b;
+    private static C2892a f9747b;
 
     /* renamed from: c */
-    private final Lock f9740c = new ReentrantLock();
+    private final Lock f9748c = new ReentrantLock();
     @GuardedBy("mLk")
 
     /* renamed from: d */
-    private final SharedPreferences f9741d;
+    private final SharedPreferences f9749d;
 
     private C2892a(Context context) {
-        this.f9741d = context.getSharedPreferences("com.google.android.gms.signin", 0);
+        this.f9749d = context.getSharedPreferences("com.google.android.gms.signin", 0);
     }
 
     /* renamed from: a */
     public static C2892a m11994a(Context context) {
         C3027r.m12376h(context);
-        Lock lock = f9738a;
+        Lock lock = f9746a;
         lock.lock();
         try {
-            if (f9739b == null) {
-                f9739b = new C2892a(context.getApplicationContext());
+            if (f9747b == null) {
+                f9747b = new C2892a(context.getApplicationContext());
             }
-            C2892a aVar = f9739b;
+            C2892a aVar = f9747b;
             lock.unlock();
             return aVar;
         } catch (Throwable th) {
-            f9738a.unlock();
+            f9746a.unlock();
             throw th;
         }
     }
@@ -75,11 +75,11 @@ public class C2892a {
     @Nullable
     /* renamed from: e */
     private final String m11997e(String str) {
-        this.f9740c.lock();
+        this.f9748c.lock();
         try {
-            return this.f9741d.getString(str, null);
+            return this.f9749d.getString(str, null);
         } finally {
-            this.f9740c.unlock();
+            this.f9748c.unlock();
         }
     }
 

@@ -34,41 +34,41 @@ import p006b.p030g.p039k.C1002h;
 public class C0792g extends MenuInflater {
 
     /* renamed from: a */
-    static final Class<?>[] f3949a;
+    static final Class<?>[] f3953a;
 
     /* renamed from: b */
-    static final Class<?>[] f3950b;
+    static final Class<?>[] f3954b;
 
     /* renamed from: c */
-    final Object[] f3951c;
+    final Object[] f3955c;
 
     /* renamed from: d */
-    final Object[] f3952d;
+    final Object[] f3956d;
 
     /* renamed from: e */
-    Context f3953e;
+    Context f3957e;
 
     /* renamed from: f */
-    private Object f3954f;
+    private Object f3958f;
 
     /* access modifiers changed from: private */
     /* renamed from: b.a.o.g$a */
     public static class MenuItem$OnMenuItemClickListenerC0793a implements MenuItem.OnMenuItemClickListener {
 
         /* renamed from: a */
-        private static final Class<?>[] f3955a = {MenuItem.class};
+        private static final Class<?>[] f3959a = {MenuItem.class};
 
         /* renamed from: b */
-        private Object f3956b;
+        private Object f3960b;
 
         /* renamed from: c */
-        private Method f3957c;
+        private Method f3961c;
 
         public MenuItem$OnMenuItemClickListenerC0793a(Object obj, String str) {
-            this.f3956b = obj;
+            this.f3960b = obj;
             Class<?> cls = obj.getClass();
             try {
-                this.f3957c = cls.getMethod(str, f3955a);
+                this.f3961c = cls.getMethod(str, f3959a);
             } catch (Exception e) {
                 InflateException inflateException = new InflateException("Couldn't resolve menu item onClick handler " + str + " in class " + cls.getName());
                 inflateException.initCause(e);
@@ -78,10 +78,10 @@ public class C0792g extends MenuInflater {
 
         public boolean onMenuItemClick(MenuItem menuItem) {
             try {
-                if (this.f3957c.getReturnType() == Boolean.TYPE) {
-                    return ((Boolean) this.f3957c.invoke(this.f3956b, menuItem)).booleanValue();
+                if (this.f3961c.getReturnType() == Boolean.TYPE) {
+                    return ((Boolean) this.f3961c.invoke(this.f3960b, menuItem)).booleanValue();
                 }
-                this.f3957c.invoke(this.f3956b, menuItem);
+                this.f3961c.invoke(this.f3960b, menuItem);
                 return true;
             } catch (Exception e) {
                 throw new RuntimeException(e);
@@ -94,100 +94,100 @@ public class C0792g extends MenuInflater {
     public class C0794b {
 
         /* renamed from: A */
-        AbstractC0974b f3958A;
+        AbstractC0974b f3962A;
 
         /* renamed from: B */
-        private CharSequence f3959B;
+        private CharSequence f3963B;
 
         /* renamed from: C */
-        private CharSequence f3960C;
+        private CharSequence f3964C;
 
         /* renamed from: D */
-        private ColorStateList f3961D = null;
+        private ColorStateList f3965D = null;
 
         /* renamed from: E */
-        private PorterDuff.Mode f3962E = null;
+        private PorterDuff.Mode f3966E = null;
 
         /* renamed from: a */
-        private Menu f3964a;
+        private Menu f3968a;
 
         /* renamed from: b */
-        private int f3965b;
+        private int f3969b;
 
         /* renamed from: c */
-        private int f3966c;
+        private int f3970c;
 
         /* renamed from: d */
-        private int f3967d;
+        private int f3971d;
 
         /* renamed from: e */
-        private int f3968e;
+        private int f3972e;
 
         /* renamed from: f */
-        private boolean f3969f;
+        private boolean f3973f;
 
         /* renamed from: g */
-        private boolean f3970g;
+        private boolean f3974g;
 
         /* renamed from: h */
-        private boolean f3971h;
+        private boolean f3975h;
 
         /* renamed from: i */
-        private int f3972i;
+        private int f3976i;
 
         /* renamed from: j */
-        private int f3973j;
+        private int f3977j;
 
         /* renamed from: k */
-        private CharSequence f3974k;
+        private CharSequence f3978k;
 
         /* renamed from: l */
-        private CharSequence f3975l;
+        private CharSequence f3979l;
 
         /* renamed from: m */
-        private int f3976m;
+        private int f3980m;
 
         /* renamed from: n */
-        private char f3977n;
+        private char f3981n;
 
         /* renamed from: o */
-        private int f3978o;
+        private int f3982o;
 
         /* renamed from: p */
-        private char f3979p;
+        private char f3983p;
 
         /* renamed from: q */
-        private int f3980q;
+        private int f3984q;
 
         /* renamed from: r */
-        private int f3981r;
+        private int f3985r;
 
         /* renamed from: s */
-        private boolean f3982s;
+        private boolean f3986s;
 
         /* renamed from: t */
-        private boolean f3983t;
+        private boolean f3987t;
 
         /* renamed from: u */
-        private boolean f3984u;
+        private boolean f3988u;
 
         /* renamed from: v */
-        private int f3985v;
+        private int f3989v;
 
         /* renamed from: w */
-        private int f3986w;
+        private int f3990w;
 
         /* renamed from: x */
-        private String f3987x;
+        private String f3991x;
 
         /* renamed from: y */
-        private String f3988y;
+        private String f3992y;
 
         /* renamed from: z */
-        private String f3989z;
+        private String f3993z;
 
         public C0794b(Menu menu) {
-            this.f3964a = menu;
+            this.f3968a = menu;
             mo4723h();
         }
 
@@ -202,7 +202,7 @@ public class C0792g extends MenuInflater {
         /* renamed from: e */
         private <T> T m4664e(String str, Class<?>[] clsArr, Object[] objArr) {
             try {
-                Constructor<?> constructor = Class.forName(str, false, C0792g.this.f3953e.getClassLoader()).getConstructor(clsArr);
+                Constructor<?> constructor = Class.forName(str, false, C0792g.this.f3957e.getClassLoader()).getConstructor(clsArr);
                 constructor.setAccessible(true);
                 return (T) constructor.newInstance(objArr);
             } catch (Exception e) {
@@ -214,31 +214,31 @@ public class C0792g extends MenuInflater {
         /* renamed from: i */
         private void m4665i(MenuItem menuItem) {
             boolean z = false;
-            menuItem.setChecked(this.f3982s).setVisible(this.f3983t).setEnabled(this.f3984u).setCheckable(this.f3981r >= 1).setTitleCondensed(this.f3975l).setIcon(this.f3976m);
-            int i = this.f3985v;
+            menuItem.setChecked(this.f3986s).setVisible(this.f3987t).setEnabled(this.f3988u).setCheckable(this.f3985r >= 1).setTitleCondensed(this.f3979l).setIcon(this.f3980m);
+            int i = this.f3989v;
             if (i >= 0) {
                 menuItem.setShowAsAction(i);
             }
-            if (this.f3989z != null) {
-                if (!C0792g.this.f3953e.isRestricted()) {
-                    menuItem.setOnMenuItemClickListener(new MenuItem$OnMenuItemClickListenerC0793a(C0792g.this.mo4715b(), this.f3989z));
+            if (this.f3993z != null) {
+                if (!C0792g.this.f3957e.isRestricted()) {
+                    menuItem.setOnMenuItemClickListener(new MenuItem$OnMenuItemClickListenerC0793a(C0792g.this.mo4715b(), this.f3993z));
                 } else {
                     throw new IllegalStateException("The android:onClick attribute cannot be used within a restricted context");
                 }
             }
-            if (this.f3981r >= 2) {
+            if (this.f3985r >= 2) {
                 if (menuItem instanceof C0134i) {
                     ((C0134i) menuItem).mo742t(true);
                 } else if (menuItem instanceof MenuItemC0136j) {
                     ((MenuItemC0136j) menuItem).mo772h(true);
                 }
             }
-            String str = this.f3987x;
+            String str = this.f3991x;
             if (str != null) {
-                menuItem.setActionView((View) m4664e(str, C0792g.f3949a, C0792g.this.f3951c));
+                menuItem.setActionView((View) m4664e(str, C0792g.f3953a, C0792g.this.f3955c));
                 z = true;
             }
-            int i2 = this.f3986w;
+            int i2 = this.f3990w;
             if (i2 > 0) {
                 if (!z) {
                     menuItem.setActionView(i2);
@@ -246,19 +246,19 @@ public class C0792g extends MenuInflater {
                     Log.w("SupportMenuInflater", "Ignoring attribute 'itemActionViewLayout'. Action view already specified.");
                 }
             }
-            AbstractC0974b bVar = this.f3958A;
+            AbstractC0974b bVar = this.f3962A;
             if (bVar != null) {
                 C1002h.m5682a(menuItem, bVar);
             }
-            C1002h.m5684c(menuItem, this.f3959B);
-            C1002h.m5688g(menuItem, this.f3960C);
-            C1002h.m5683b(menuItem, this.f3977n, this.f3978o);
-            C1002h.m5687f(menuItem, this.f3979p, this.f3980q);
-            PorterDuff.Mode mode = this.f3962E;
+            C1002h.m5684c(menuItem, this.f3963B);
+            C1002h.m5688g(menuItem, this.f3964C);
+            C1002h.m5683b(menuItem, this.f3981n, this.f3982o);
+            C1002h.m5687f(menuItem, this.f3983p, this.f3984q);
+            PorterDuff.Mode mode = this.f3966E;
             if (mode != null) {
                 C1002h.m5686e(menuItem, mode);
             }
-            ColorStateList colorStateList = this.f3961D;
+            ColorStateList colorStateList = this.f3965D;
             if (colorStateList != null) {
                 C1002h.m5685d(menuItem, colorStateList);
             }
@@ -266,32 +266,32 @@ public class C0792g extends MenuInflater {
 
         /* renamed from: a */
         public void mo4718a() {
-            this.f3971h = true;
-            m4665i(this.f3964a.add(this.f3965b, this.f3972i, this.f3973j, this.f3974k));
+            this.f3975h = true;
+            m4665i(this.f3968a.add(this.f3969b, this.f3976i, this.f3977j, this.f3978k));
         }
 
         /* renamed from: b */
         public SubMenu mo4719b() {
-            this.f3971h = true;
-            SubMenu addSubMenu = this.f3964a.addSubMenu(this.f3965b, this.f3972i, this.f3973j, this.f3974k);
+            this.f3975h = true;
+            SubMenu addSubMenu = this.f3968a.addSubMenu(this.f3969b, this.f3976i, this.f3977j, this.f3978k);
             m4665i(addSubMenu.getItem());
             return addSubMenu;
         }
 
         /* renamed from: d */
         public boolean mo4720d() {
-            return this.f3971h;
+            return this.f3975h;
         }
 
         /* renamed from: f */
         public void mo4721f(AttributeSet attributeSet) {
-            TypedArray obtainStyledAttributes = C0792g.this.f3953e.obtainStyledAttributes(attributeSet, C0763j.f3789r1);
-            this.f3965b = obtainStyledAttributes.getResourceId(C0763j.f3799t1, 0);
-            this.f3966c = obtainStyledAttributes.getInt(C0763j.f3809v1, 0);
-            this.f3967d = obtainStyledAttributes.getInt(C0763j.f3814w1, 0);
-            this.f3968e = obtainStyledAttributes.getInt(C0763j.f3819x1, 0);
-            this.f3969f = obtainStyledAttributes.getBoolean(C0763j.f3804u1, true);
-            this.f3970g = obtainStyledAttributes.getBoolean(C0763j.f3794s1, true);
+            TypedArray obtainStyledAttributes = C0792g.this.f3957e.obtainStyledAttributes(attributeSet, C0763j.f3793r1);
+            this.f3969b = obtainStyledAttributes.getResourceId(C0763j.f3803t1, 0);
+            this.f3970c = obtainStyledAttributes.getInt(C0763j.f3813v1, 0);
+            this.f3971d = obtainStyledAttributes.getInt(C0763j.f3818w1, 0);
+            this.f3972e = obtainStyledAttributes.getInt(C0763j.f3823x1, 0);
+            this.f3973f = obtainStyledAttributes.getBoolean(C0763j.f3808u1, true);
+            this.f3974g = obtainStyledAttributes.getBoolean(C0763j.f3798s1, true);
             obtainStyledAttributes.recycle();
         }
 
@@ -299,77 +299,77 @@ public class C0792g extends MenuInflater {
         /* JADX WARN: Multi-variable type inference failed */
         /* renamed from: g */
         public void mo4722g(AttributeSet attributeSet) {
-            C0296w0 u = C0296w0.m1431u(C0792g.this.f3953e, attributeSet, C0763j.f3824y1);
-            this.f3972i = u.mo1817n(C0763j.f3580B1, 0);
-            this.f3973j = (u.mo1814k(C0763j.f3595E1, this.f3966c) & -65536) | (u.mo1814k(C0763j.f3600F1, this.f3967d) & 65535);
-            this.f3974k = u.mo1819p(C0763j.f3605G1);
-            this.f3975l = u.mo1819p(C0763j.f3610H1);
-            this.f3976m = u.mo1817n(C0763j.f3829z1, 0);
-            this.f3977n = m4663c(u.mo1818o(C0763j.f3615I1));
-            this.f3978o = u.mo1814k(C0763j.f3650P1, 4096);
-            this.f3979p = m4663c(u.mo1818o(C0763j.f3620J1));
-            this.f3980q = u.mo1814k(C0763j.f3670T1, 4096);
-            int i = C0763j.f3625K1;
-            this.f3981r = u.mo1822s(i) ? u.mo1804a(i, false) : this.f3968e ? 1 : 0;
-            this.f3982s = u.mo1804a(C0763j.f3585C1, false);
-            this.f3983t = u.mo1804a(C0763j.f3590D1, this.f3969f);
-            this.f3984u = u.mo1804a(C0763j.f3575A1, this.f3970g);
-            this.f3985v = u.mo1814k(C0763j.f3675U1, -1);
-            this.f3989z = u.mo1818o(C0763j.f3630L1);
-            this.f3986w = u.mo1817n(C0763j.f3635M1, 0);
-            this.f3987x = u.mo1818o(C0763j.f3645O1);
-            String o = u.mo1818o(C0763j.f3640N1);
-            this.f3988y = o;
+            C0296w0 u = C0296w0.m1431u(C0792g.this.f3957e, attributeSet, C0763j.f3828y1);
+            this.f3976i = u.mo1817n(C0763j.f3584B1, 0);
+            this.f3977j = (u.mo1814k(C0763j.f3599E1, this.f3970c) & -65536) | (u.mo1814k(C0763j.f3604F1, this.f3971d) & 65535);
+            this.f3978k = u.mo1819p(C0763j.f3609G1);
+            this.f3979l = u.mo1819p(C0763j.f3614H1);
+            this.f3980m = u.mo1817n(C0763j.f3833z1, 0);
+            this.f3981n = m4663c(u.mo1818o(C0763j.f3619I1));
+            this.f3982o = u.mo1814k(C0763j.f3654P1, 4096);
+            this.f3983p = m4663c(u.mo1818o(C0763j.f3624J1));
+            this.f3984q = u.mo1814k(C0763j.f3674T1, 4096);
+            int i = C0763j.f3629K1;
+            this.f3985r = u.mo1822s(i) ? u.mo1804a(i, false) : this.f3972e ? 1 : 0;
+            this.f3986s = u.mo1804a(C0763j.f3589C1, false);
+            this.f3987t = u.mo1804a(C0763j.f3594D1, this.f3973f);
+            this.f3988u = u.mo1804a(C0763j.f3579A1, this.f3974g);
+            this.f3989v = u.mo1814k(C0763j.f3679U1, -1);
+            this.f3993z = u.mo1818o(C0763j.f3634L1);
+            this.f3990w = u.mo1817n(C0763j.f3639M1, 0);
+            this.f3991x = u.mo1818o(C0763j.f3649O1);
+            String o = u.mo1818o(C0763j.f3644N1);
+            this.f3992y = o;
             boolean z = o != null;
-            if (z && this.f3986w == 0 && this.f3987x == null) {
-                this.f3958A = (AbstractC0974b) m4664e(o, C0792g.f3950b, C0792g.this.f3952d);
+            if (z && this.f3990w == 0 && this.f3991x == null) {
+                this.f3962A = (AbstractC0974b) m4664e(o, C0792g.f3954b, C0792g.this.f3956d);
             } else {
                 if (z) {
                     Log.w("SupportMenuInflater", "Ignoring attribute 'actionProviderClass'. Action view already specified.");
                 }
-                this.f3958A = null;
+                this.f3962A = null;
             }
-            this.f3959B = u.mo1819p(C0763j.f3655Q1);
-            this.f3960C = u.mo1819p(C0763j.f3680V1);
-            int i2 = C0763j.f3665S1;
+            this.f3963B = u.mo1819p(C0763j.f3659Q1);
+            this.f3964C = u.mo1819p(C0763j.f3684V1);
+            int i2 = C0763j.f3669S1;
             if (u.mo1822s(i2)) {
-                this.f3962E = C0216d0.m1138e(u.mo1814k(i2, -1), this.f3962E);
+                this.f3966E = C0216d0.m1138e(u.mo1814k(i2, -1), this.f3966E);
             } else {
-                this.f3962E = null;
+                this.f3966E = null;
             }
-            int i3 = C0763j.f3660R1;
+            int i3 = C0763j.f3664R1;
             if (u.mo1822s(i3)) {
-                this.f3961D = u.mo1806c(i3);
+                this.f3965D = u.mo1806c(i3);
             } else {
-                this.f3961D = null;
+                this.f3965D = null;
             }
             u.mo1823w();
-            this.f3971h = false;
+            this.f3975h = false;
         }
 
         /* renamed from: h */
         public void mo4723h() {
-            this.f3965b = 0;
-            this.f3966c = 0;
-            this.f3967d = 0;
-            this.f3968e = 0;
-            this.f3969f = true;
-            this.f3970g = true;
+            this.f3969b = 0;
+            this.f3970c = 0;
+            this.f3971d = 0;
+            this.f3972e = 0;
+            this.f3973f = true;
+            this.f3974g = true;
         }
     }
 
     static {
         Class<?>[] clsArr = {Context.class};
-        f3949a = clsArr;
-        f3950b = clsArr;
+        f3953a = clsArr;
+        f3954b = clsArr;
     }
 
     public C0792g(Context context) {
         super(context);
-        this.f3953e = context;
+        this.f3957e = context;
         Object[] objArr = {context};
-        this.f3951c = objArr;
-        this.f3952d = objArr;
+        this.f3955c = objArr;
+        this.f3956d = objArr;
     }
 
     /* renamed from: a */
@@ -411,7 +411,7 @@ public class C0792g extends MenuInflater {
                             bVar.mo4723h();
                         } else if (name2.equals("item")) {
                             if (!bVar.mo4720d()) {
-                                AbstractC0974b bVar2 = bVar.f3958A;
+                                AbstractC0974b bVar2 = bVar.f3962A;
                                 if (bVar2 == null || !bVar2.mo806a()) {
                                     bVar.mo4718a();
                                 } else {
@@ -445,10 +445,10 @@ public class C0792g extends MenuInflater {
     /* access modifiers changed from: package-private */
     /* renamed from: b */
     public Object mo4715b() {
-        if (this.f3954f == null) {
-            this.f3954f = m4660a(this.f3953e);
+        if (this.f3958f == null) {
+            this.f3958f = m4660a(this.f3957e);
         }
-        return this.f3954f;
+        return this.f3958f;
     }
 
     public void inflate(int i, Menu menu) {
@@ -458,7 +458,7 @@ public class C0792g extends MenuInflater {
         }
         XmlResourceParser xmlResourceParser = null;
         try {
-            xmlResourceParser = this.f3953e.getResources().getLayout(i);
+            xmlResourceParser = this.f3957e.getResources().getLayout(i);
             m4661c(xmlResourceParser, Xml.asAttributeSet(xmlResourceParser), menu);
             if (xmlResourceParser != null) {
                 xmlResourceParser.close();

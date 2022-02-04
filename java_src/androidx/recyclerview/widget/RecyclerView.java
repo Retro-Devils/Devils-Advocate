@@ -2107,11 +2107,11 @@ public class RecyclerView extends ViewGroup implements AbstractC1004j {
         /* renamed from: m0 */
         public static C0673d m3735m0(Context context, AttributeSet attributeSet, int i, int i2) {
             C0673d dVar = new C0673d();
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1094c.f5013f, i, i2);
-            dVar.f3281a = obtainStyledAttributes.getInt(C1094c.f5014g, 1);
-            dVar.f3282b = obtainStyledAttributes.getInt(C1094c.f5024q, 1);
-            dVar.f3283c = obtainStyledAttributes.getBoolean(C1094c.f5023p, false);
-            dVar.f3284d = obtainStyledAttributes.getBoolean(C1094c.f5025r, false);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1094c.f5020f, i, i2);
+            dVar.f3281a = obtainStyledAttributes.getInt(C1094c.f5021g, 1);
+            dVar.f3282b = obtainStyledAttributes.getInt(C1094c.f5031q, 1);
+            dVar.f3283c = obtainStyledAttributes.getBoolean(C1094c.f5030p, false);
+            dVar.f3284d = obtainStyledAttributes.getBoolean(C1094c.f5032r, false);
             obtainStyledAttributes.recycle();
             return dVar;
         }
@@ -4420,21 +4420,21 @@ public class RecyclerView extends ViewGroup implements AbstractC1004j {
         }
         this.f3146L = (AccessibilityManager) getContext().getSystemService("accessibility");
         setAccessibilityDelegateCompat(new C0732k(this));
-        int[] iArr = C1094c.f5013f;
+        int[] iArr = C1094c.f5020f;
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, iArr, i, 0);
         int i2 = Build.VERSION.SDK_INT;
         if (i2 >= 29) {
             saveAttributeDataForStyleable(context, iArr, attributeSet, obtainStyledAttributes, i, 0);
         }
-        String string = obtainStyledAttributes.getString(C1094c.f5022o);
-        if (obtainStyledAttributes.getInt(C1094c.f5016i, -1) == -1) {
+        String string = obtainStyledAttributes.getString(C1094c.f5029o);
+        if (obtainStyledAttributes.getInt(C1094c.f5023i, -1) == -1) {
             setDescendantFocusability(262144);
         }
-        this.f3180q = obtainStyledAttributes.getBoolean(C1094c.f5015h, true);
-        boolean z2 = obtainStyledAttributes.getBoolean(C1094c.f5017j, false);
+        this.f3180q = obtainStyledAttributes.getBoolean(C1094c.f5022h, true);
+        boolean z2 = obtainStyledAttributes.getBoolean(C1094c.f5024j, false);
         this.f3133D = z2;
         if (z2) {
-            mo3926t0((StateListDrawable) obtainStyledAttributes.getDrawable(C1094c.f5020m), obtainStyledAttributes.getDrawable(C1094c.f5021n), (StateListDrawable) obtainStyledAttributes.getDrawable(C1094c.f5018k), obtainStyledAttributes.getDrawable(C1094c.f5019l));
+            mo3926t0((StateListDrawable) obtainStyledAttributes.getDrawable(C1094c.f5027m), obtainStyledAttributes.getDrawable(C1094c.f5028n), (StateListDrawable) obtainStyledAttributes.getDrawable(C1094c.f5025k), obtainStyledAttributes.getDrawable(C1094c.f5026l));
         }
         obtainStyledAttributes.recycle();
         m3498v(context, string, attributeSet, i, 0);

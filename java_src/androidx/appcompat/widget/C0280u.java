@@ -65,21 +65,21 @@ public class C0280u extends C0274r {
     public void mo1715c(AttributeSet attributeSet, int i) {
         super.mo1715c(attributeSet, i);
         Context context = this.f1198d.getContext();
-        int[] iArr = C0763j.f3678V;
+        int[] iArr = C0763j.f3682V;
         C0296w0 v = C0296w0.m1432v(context, attributeSet, iArr, i, 0);
         SeekBar seekBar = this.f1198d;
         C1013s.m5762g0(seekBar, seekBar.getContext(), iArr, attributeSet, v.mo1821r(), i, 0);
-        Drawable h = v.mo1811h(C0763j.f3683W);
+        Drawable h = v.mo1811h(C0763j.f3687W);
         if (h != null) {
             this.f1198d.setThumb(h);
         }
-        mo1735j(v.mo1810g(C0763j.f3688X));
-        int i2 = C0763j.f3698Z;
+        mo1735j(v.mo1810g(C0763j.f3692X));
+        int i2 = C0763j.f3702Z;
         if (v.mo1822s(i2)) {
             this.f1201g = C0216d0.m1138e(v.mo1814k(i2, -1), this.f1201g);
             this.f1203i = true;
         }
-        int i3 = C0763j.f3693Y;
+        int i3 = C0763j.f3697Y;
         if (v.mo1822s(i3)) {
             this.f1200f = v.mo1806c(i3);
             this.f1202h = true;

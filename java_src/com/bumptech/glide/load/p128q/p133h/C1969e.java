@@ -12,13 +12,13 @@ public class C1969e extends AbstractC1956b<C1966c> implements AbstractC1789r {
     @Override // com.bumptech.glide.load.p128q.p131f.AbstractC1956b, com.bumptech.glide.load.p122o.AbstractC1789r
     /* renamed from: a */
     public void mo7379a() {
-        ((C1966c) this.f7259b).mo7580e().prepareToDraw();
+        ((C1966c) this.f7267b).mo7580e().prepareToDraw();
     }
 
     @Override // com.bumptech.glide.load.p122o.AbstractC1794v
     /* renamed from: b */
     public int mo7357b() {
-        return ((C1966c) this.f7259b).mo7587i();
+        return ((C1966c) this.f7267b).mo7587i();
     }
 
     @Override // com.bumptech.glide.load.p122o.AbstractC1794v
@@ -30,7 +30,7 @@ public class C1969e extends AbstractC1956b<C1966c> implements AbstractC1789r {
     @Override // com.bumptech.glide.load.p122o.AbstractC1794v
     /* renamed from: f */
     public void mo7361f() {
-        ((C1966c) this.f7259b).stop();
-        ((C1966c) this.f7259b).mo7589k();
+        ((C1966c) this.f7267b).stop();
+        ((C1966c) this.f7267b).mo7589k();
     }
 }

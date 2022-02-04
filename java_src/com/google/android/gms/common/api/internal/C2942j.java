@@ -13,20 +13,20 @@ import p069c.p073b.p074a.p075a.p089g.C1377e;
 public final class C2942j {
 
     /* renamed from: a */
-    private final Map<BasePendingResult<?>, Boolean> f9848a = Collections.synchronizedMap(new WeakHashMap());
+    private final Map<BasePendingResult<?>, Boolean> f9856a = Collections.synchronizedMap(new WeakHashMap());
 
     /* renamed from: b */
-    private final Map<C1377e<?>, Boolean> f9849b = Collections.synchronizedMap(new WeakHashMap());
+    private final Map<C1377e<?>, Boolean> f9857b = Collections.synchronizedMap(new WeakHashMap());
 
     /* renamed from: c */
     private final void m12160c(boolean z, Status status) {
         HashMap hashMap;
         HashMap hashMap2;
-        synchronized (this.f9848a) {
-            hashMap = new HashMap(this.f9848a);
+        synchronized (this.f9856a) {
+            hashMap = new HashMap(this.f9856a);
         }
-        synchronized (this.f9849b) {
-            hashMap2 = new HashMap(this.f9849b);
+        synchronized (this.f9857b) {
+            hashMap2 = new HashMap(this.f9857b);
         }
         for (Map.Entry entry : hashMap.entrySet()) {
             if (z || ((Boolean) entry.getValue()).booleanValue()) {
@@ -43,23 +43,23 @@ public final class C2942j {
     /* access modifiers changed from: package-private */
     /* renamed from: b */
     public final void mo9664b(BasePendingResult<? extends AbstractC2964k> basePendingResult, boolean z) {
-        this.f9848a.put(basePendingResult, Boolean.valueOf(z));
+        this.f9856a.put(basePendingResult, Boolean.valueOf(z));
         basePendingResult.mo9595a(new C2944k(this, basePendingResult));
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: d */
     public final boolean mo9665d() {
-        return !this.f9848a.isEmpty() || !this.f9849b.isEmpty();
+        return !this.f9856a.isEmpty() || !this.f9857b.isEmpty();
     }
 
     /* renamed from: e */
     public final void mo9666e() {
-        m12160c(false, C2927d.f9803a);
+        m12160c(false, C2927d.f9811a);
     }
 
     /* renamed from: f */
     public final void mo9667f() {
-        m12160c(true, C2933e0.f9841a);
+        m12160c(true, C2933e0.f9849a);
     }
 }

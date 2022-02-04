@@ -29,10 +29,10 @@ public abstract class AbstractC1560a<T> implements Iterable<T> {
     public static class C1562b<T> extends AbstractC1560a<T> {
 
         /* renamed from: b */
-        private final T f6395b;
+        private final T f6403b;
 
         public C1562b(T t) {
-            this.f6395b = t;
+            this.f6403b = t;
         }
 
         @Override // p069c.p118d.p119a.AbstractC1560a
@@ -49,7 +49,7 @@ public abstract class AbstractC1560a<T> implements Iterable<T> {
 
         /* renamed from: f */
         public T mo6876f() {
-            return this.f6395b;
+            return this.f6403b;
         }
 
         public String toString() {

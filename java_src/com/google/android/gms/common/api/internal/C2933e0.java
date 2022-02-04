@@ -6,8 +6,8 @@ import com.google.android.gms.common.api.Status;
 public final class C2933e0 {
 
     /* renamed from: a */
-    public static final Status f9841a = new Status(8, "The connection to Google Play services was lost");
+    public static final Status f9849a = new Status(8, "The connection to Google Play services was lost");
 
     /* renamed from: b */
-    private static final BasePendingResult<?>[] f9842b = new BasePendingResult[0];
+    private static final BasePendingResult<?>[] f9850b = new BasePendingResult[0];
 }

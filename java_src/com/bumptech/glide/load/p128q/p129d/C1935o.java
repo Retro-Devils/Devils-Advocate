@@ -14,14 +14,14 @@ import java.security.MessageDigest;
 public class C1935o implements AbstractC1651m<Drawable> {
 
     /* renamed from: b */
-    private final AbstractC1651m<Bitmap> f7219b;
+    private final AbstractC1651m<Bitmap> f7227b;
 
     /* renamed from: c */
-    private final boolean f7220c;
+    private final boolean f7228c;
 
     public C1935o(AbstractC1651m<Bitmap> mVar, boolean z) {
-        this.f7219b = mVar;
-        this.f7220c = z;
+        this.f7227b = mVar;
+        this.f7228c = z;
     }
 
     /* renamed from: d */
@@ -32,7 +32,7 @@ public class C1935o implements AbstractC1651m<Drawable> {
     @Override // com.bumptech.glide.load.AbstractC1643g
     /* renamed from: a */
     public void mo7075a(MessageDigest messageDigest) {
-        this.f7219b.mo7075a(messageDigest);
+        this.f7227b.mo7075a(messageDigest);
     }
 
     @Override // com.bumptech.glide.load.AbstractC1651m
@@ -42,13 +42,13 @@ public class C1935o implements AbstractC1651m<Drawable> {
         Drawable c = vVar.mo7358c();
         AbstractC1794v<Bitmap> a = C1933n.m8766a(f, c, i, i2);
         if (a != null) {
-            AbstractC1794v<Bitmap> b = this.f7219b.mo7091b(context, a, i, i2);
+            AbstractC1794v<Bitmap> b = this.f7227b.mo7091b(context, a, i, i2);
             if (!b.equals(a)) {
                 return m8769d(context, b);
             }
             b.mo7361f();
             return vVar;
-        } else if (!this.f7220c) {
+        } else if (!this.f7228c) {
             return vVar;
         } else {
             throw new IllegalArgumentException("Unable to convert " + c + " to a Bitmap");
@@ -63,13 +63,13 @@ public class C1935o implements AbstractC1651m<Drawable> {
     @Override // com.bumptech.glide.load.AbstractC1643g
     public boolean equals(Object obj) {
         if (obj instanceof C1935o) {
-            return this.f7219b.equals(((C1935o) obj).f7219b);
+            return this.f7227b.equals(((C1935o) obj).f7227b);
         }
         return false;
     }
 
     @Override // com.bumptech.glide.load.AbstractC1643g
     public int hashCode() {
-        return this.f7219b.hashCode();
+        return this.f7227b.hashCode();
     }
 }

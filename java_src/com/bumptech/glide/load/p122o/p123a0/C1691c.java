@@ -8,42 +8,42 @@ import com.bumptech.glide.p144t.C2082k;
 public class C1691c implements AbstractC1707l {
 
     /* renamed from: a */
-    private final C1693b f6714a = new C1693b();
+    private final C1693b f6722a = new C1693b();
 
     /* renamed from: b */
-    private final C1698h<C1692a, Bitmap> f6715b = new C1698h<>();
+    private final C1698h<C1692a, Bitmap> f6723b = new C1698h<>();
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.bumptech.glide.load.o.a0.c$a */
     public static class C1692a implements AbstractC1708m {
 
         /* renamed from: a */
-        private final C1693b f6716a;
+        private final C1693b f6724a;
 
         /* renamed from: b */
-        private int f6717b;
+        private int f6725b;
 
         /* renamed from: c */
-        private int f6718c;
+        private int f6726c;
 
         /* renamed from: d */
-        private Bitmap.Config f6719d;
+        private Bitmap.Config f6727d;
 
         public C1692a(C1693b bVar) {
-            this.f6716a = bVar;
+            this.f6724a = bVar;
         }
 
         @Override // com.bumptech.glide.load.p122o.p123a0.AbstractC1708m
         /* renamed from: a */
         public void mo7170a() {
-            this.f6716a.mo7179c(this);
+            this.f6724a.mo7179c(this);
         }
 
         /* renamed from: b */
         public void mo7171b(int i, int i2, Bitmap.Config config) {
-            this.f6717b = i;
-            this.f6718c = i2;
-            this.f6719d = config;
+            this.f6725b = i;
+            this.f6726c = i2;
+            this.f6727d = config;
         }
 
         public boolean equals(Object obj) {
@@ -51,17 +51,17 @@ public class C1691c implements AbstractC1707l {
                 return false;
             }
             C1692a aVar = (C1692a) obj;
-            return this.f6717b == aVar.f6717b && this.f6718c == aVar.f6718c && this.f6719d == aVar.f6719d;
+            return this.f6725b == aVar.f6725b && this.f6726c == aVar.f6726c && this.f6727d == aVar.f6727d;
         }
 
         public int hashCode() {
-            int i = ((this.f6717b * 31) + this.f6718c) * 31;
-            Bitmap.Config config = this.f6719d;
+            int i = ((this.f6725b * 31) + this.f6726c) * 31;
+            Bitmap.Config config = this.f6727d;
             return i + (config != null ? config.hashCode() : 0);
         }
 
         public String toString() {
-            return C1691c.m8007g(this.f6717b, this.f6718c, this.f6719d);
+            return C1691c.m8007g(this.f6725b, this.f6726c, this.f6727d);
         }
     }
 
@@ -107,19 +107,19 @@ public class C1691c implements AbstractC1707l {
     @Override // com.bumptech.glide.load.p122o.p123a0.AbstractC1707l
     /* renamed from: b */
     public Bitmap mo7164b() {
-        return this.f6715b.mo7189f();
+        return this.f6723b.mo7189f();
     }
 
     @Override // com.bumptech.glide.load.p122o.p123a0.AbstractC1707l
     /* renamed from: c */
     public Bitmap mo7165c(int i, int i2, Bitmap.Config config) {
-        return this.f6715b.mo7187a(this.f6714a.mo7177e(i, i2, config));
+        return this.f6723b.mo7187a(this.f6722a.mo7177e(i, i2, config));
     }
 
     @Override // com.bumptech.glide.load.p122o.p123a0.AbstractC1707l
     /* renamed from: d */
     public void mo7166d(Bitmap bitmap) {
-        this.f6715b.mo7188d(this.f6714a.mo7177e(bitmap.getWidth(), bitmap.getHeight(), bitmap.getConfig()), bitmap);
+        this.f6723b.mo7188d(this.f6722a.mo7177e(bitmap.getWidth(), bitmap.getHeight(), bitmap.getConfig()), bitmap);
     }
 
     @Override // com.bumptech.glide.load.p122o.p123a0.AbstractC1707l
@@ -135,6 +135,6 @@ public class C1691c implements AbstractC1707l {
     }
 
     public String toString() {
-        return "AttributeStrategy:\n  " + this.f6715b;
+        return "AttributeStrategy:\n  " + this.f6723b;
     }
 }

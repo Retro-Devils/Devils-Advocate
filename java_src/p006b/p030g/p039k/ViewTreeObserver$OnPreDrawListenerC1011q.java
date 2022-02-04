@@ -7,18 +7,18 @@ import android.view.ViewTreeObserver;
 public final class ViewTreeObserver$OnPreDrawListenerC1011q implements ViewTreeObserver.OnPreDrawListener, View.OnAttachStateChangeListener {
 
     /* renamed from: b */
-    private final View f4750b;
+    private final View f4754b;
 
     /* renamed from: c */
-    private ViewTreeObserver f4751c;
+    private ViewTreeObserver f4755c;
 
     /* renamed from: d */
-    private final Runnable f4752d;
+    private final Runnable f4756d;
 
     private ViewTreeObserver$OnPreDrawListenerC1011q(View view, Runnable runnable) {
-        this.f4750b = view;
-        this.f4751c = view.getViewTreeObserver();
-        this.f4752d = runnable;
+        this.f4754b = view;
+        this.f4755c = view.getViewTreeObserver();
+        this.f4756d = runnable;
     }
 
     /* renamed from: a */
@@ -37,18 +37,18 @@ public final class ViewTreeObserver$OnPreDrawListenerC1011q implements ViewTreeO
 
     /* renamed from: b */
     public void mo5552b() {
-        (this.f4751c.isAlive() ? this.f4751c : this.f4750b.getViewTreeObserver()).removeOnPreDrawListener(this);
-        this.f4750b.removeOnAttachStateChangeListener(this);
+        (this.f4755c.isAlive() ? this.f4755c : this.f4754b.getViewTreeObserver()).removeOnPreDrawListener(this);
+        this.f4754b.removeOnAttachStateChangeListener(this);
     }
 
     public boolean onPreDraw() {
         mo5552b();
-        this.f4752d.run();
+        this.f4756d.run();
         return true;
     }
 
     public void onViewAttachedToWindow(View view) {
-        this.f4751c = view.getViewTreeObserver();
+        this.f4755c = view.getViewTreeObserver();
     }
 
     public void onViewDetachedFromWindow(View view) {

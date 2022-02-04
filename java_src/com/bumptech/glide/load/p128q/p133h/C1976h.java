@@ -12,15 +12,15 @@ import com.bumptech.glide.p136n.AbstractC1996a;
 public final class C1976h implements AbstractC1649k<AbstractC1996a, Bitmap> {
 
     /* renamed from: a */
-    private final AbstractC1695e f7308a;
+    private final AbstractC1695e f7316a;
 
     public C1976h(AbstractC1695e eVar) {
-        this.f7308a = eVar;
+        this.f7316a = eVar;
     }
 
     /* renamed from: c */
     public AbstractC1794v<Bitmap> mo7088a(AbstractC1996a aVar, int i, int i2, C1647i iVar) {
-        return C1910e.m8673g(aVar.mo7653d(), this.f7308a);
+        return C1910e.m8673g(aVar.mo7653d(), this.f7316a);
     }
 
     /* renamed from: d */

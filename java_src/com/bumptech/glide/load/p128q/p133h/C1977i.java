@@ -7,8 +7,8 @@ import com.bumptech.glide.load.EnumC1631b;
 public final class C1977i {
 
     /* renamed from: a */
-    public static final C1644h<EnumC1631b> f7309a = C1644h.m7873f("com.bumptech.glide.load.resource.gif.GifOptions.DecodeFormat", EnumC1631b.f6633d);
+    public static final C1644h<EnumC1631b> f7317a = C1644h.m7873f("com.bumptech.glide.load.resource.gif.GifOptions.DecodeFormat", EnumC1631b.f6641d);
 
     /* renamed from: b */
-    public static final C1644h<Boolean> f7310b = C1644h.m7873f("com.bumptech.glide.load.resource.gif.GifOptions.DisableAnimation", Boolean.FALSE);
+    public static final C1644h<Boolean> f7318b = C1644h.m7873f("com.bumptech.glide.load.resource.gif.GifOptions.DisableAnimation", Boolean.FALSE);
 }

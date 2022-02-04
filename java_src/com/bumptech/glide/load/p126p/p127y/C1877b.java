@@ -16,10 +16,10 @@ import java.util.Set;
 public class C1877b implements AbstractC1843n<Uri, InputStream> {
 
     /* renamed from: a */
-    private static final Set<String> f7127a = Collections.unmodifiableSet(new HashSet(Arrays.asList("http", "https")));
+    private static final Set<String> f7135a = Collections.unmodifiableSet(new HashSet(Arrays.asList("http", "https")));
 
     /* renamed from: b */
-    private final AbstractC1843n<C1829g, InputStream> f7128b;
+    private final AbstractC1843n<C1829g, InputStream> f7136b;
 
     /* renamed from: com.bumptech.glide.load.p.y.b$a */
     public static class C1878a implements AbstractC1845o<Uri, InputStream> {
@@ -31,16 +31,16 @@ public class C1877b implements AbstractC1843n<Uri, InputStream> {
     }
 
     public C1877b(AbstractC1843n<C1829g, InputStream> nVar) {
-        this.f7128b = nVar;
+        this.f7136b = nVar;
     }
 
     /* renamed from: c */
     public AbstractC1843n.C1844a<InputStream> mo7393a(Uri uri, int i, int i2, C1647i iVar) {
-        return this.f7128b.mo7393a(new C1829g(uri.toString()), i, i2, iVar);
+        return this.f7136b.mo7393a(new C1829g(uri.toString()), i, i2, iVar);
     }
 
     /* renamed from: d */
     public boolean mo7394b(Uri uri) {
-        return f7127a.contains(uri.getScheme());
+        return f7135a.contains(uri.getScheme());
     }
 }

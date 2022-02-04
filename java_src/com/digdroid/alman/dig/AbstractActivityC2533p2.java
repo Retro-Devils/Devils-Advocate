@@ -37,72 +37,72 @@ import p006b.p007a.p014o.C0788d;
 public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 implements NavigationView.AbstractC3211c, RecognitionListener, C2841x.AbstractC2845d {
 
     /* renamed from: A0 */
-    static boolean f8807A0;
+    static boolean f8815A0 = false;
 
     /* renamed from: B0 */
-    static boolean f8808B0;
+    static boolean f8816B0 = false;
 
     /* renamed from: C0 */
-    static boolean f8809C0;
+    static boolean f8817C0 = false;
 
     /* renamed from: z0 */
-    static DrawerLayout f8810z0;
+    static DrawerLayout f8818z0;
 
     /* renamed from: D0 */
-    SpeechRecognizer f8811D0 = null;
+    SpeechRecognizer f8819D0 = null;
 
     /* renamed from: E0 */
-    ConstraintLayout f8812E0 = null;
+    ConstraintLayout f8820E0 = null;
 
     /* renamed from: F0 */
-    boolean f8813F0 = false;
+    boolean f8821F0 = false;
 
     /* renamed from: G0 */
-    boolean f8814G0 = true;
+    boolean f8822G0 = true;
 
     /* renamed from: H0 */
-    boolean f8815H0 = true;
+    boolean f8823H0 = true;
 
     /* renamed from: I0 */
-    boolean f8816I0 = false;
+    boolean f8824I0 = false;
 
     /* renamed from: J0 */
-    HashMap<Integer, Integer> f8817J0;
+    HashMap<Integer, Integer> f8825J0;
 
     /* renamed from: K0 */
-    boolean[] f8818K0 = new boolean[33];
+    boolean[] f8826K0 = new boolean[33];
 
     /* renamed from: L0 */
-    Handler f8819L0 = null;
+    Handler f8827L0 = null;
 
     /* renamed from: M0 */
-    int f8820M0 = -1;
+    int f8828M0 = -1;
 
     /* renamed from: N0 */
-    ViewStub f8821N0 = null;
+    ViewStub f8829N0 = null;
 
     /* renamed from: O0 */
-    int f8822O0;
+    int f8830O0;
 
     /* renamed from: P0 */
-    ViewStub f8823P0 = null;
+    ViewStub f8831P0 = null;
 
     /* renamed from: Q0 */
-    float f8824Q0 = 0.0f;
+    float f8832Q0 = 0.0f;
 
     /* renamed from: com.digdroid.alman.dig.p2$a */
     class RunnableC2534a implements Runnable {
 
         /* renamed from: b */
-        final /* synthetic */ ArrayList f8825b;
+        final /* synthetic */ ArrayList f8833b;
 
         RunnableC2534a(ArrayList arrayList) {
-            this.f8825b = arrayList;
+            this.f8833b = arrayList;
         }
 
         public void run() {
             AbstractActivityC2533p2.this.mo8926X1(false);
-            C2841x.m11836i().mo9420b(AbstractActivityC2533p2.this, (String) this.f8825b.get(0), AbstractActivityC2533p2.this);
+            C2841x.m11836i().mo9420b(AbstractActivityC2533p2.this, (String) this.f8833b.get(0), AbstractActivityC2533p2.this);
         }
     }
 
@@ -141,8 +141,8 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
         public void run() {
             AbstractC2531p1 k1 = AbstractActivityC2533p2.this.mo8280k1();
             if (k1 != null) {
-                k1.mo8131y2(AbstractActivityC2533p2.this.f8820M0, 0);
-                AbstractActivityC2533p2.this.f8819L0.postDelayed(this, 100);
+                k1.mo8131y2(AbstractActivityC2533p2.this.f8828M0, 0);
+                AbstractActivityC2533p2.this.f8827L0.postDelayed(this, 100);
             }
         }
     }
@@ -152,15 +152,15 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
     public class C2538e implements C0248l0.AbstractC0252d {
 
         /* renamed from: a */
-        final /* synthetic */ AbstractC2531p1 f8830a;
+        final /* synthetic */ AbstractC2531p1 f8838a;
 
         C2538e(AbstractC2531p1 p1Var) {
-            this.f8830a = p1Var;
+            this.f8838a = p1Var;
         }
 
         @Override // androidx.appcompat.widget.C0248l0.AbstractC0252d
         public boolean onMenuItemClick(MenuItem menuItem) {
-            return this.f8830a.mo8243H2(menuItem);
+            return this.f8838a.mo8243H2(menuItem);
         }
     }
 
@@ -192,12 +192,12 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
         }
 
         public boolean onTouch(View view, MotionEvent motionEvent) {
-            ConstraintLayout constraintLayout = AbstractActivityC2533p2.this.f8812E0;
+            ConstraintLayout constraintLayout = AbstractActivityC2533p2.this.f8820E0;
             if (constraintLayout == null) {
                 return true;
             }
             constraintLayout.setVisibility(8);
-            AbstractActivityC2533p2.this.f8812E0 = null;
+            AbstractActivityC2533p2.this.f8820E0 = null;
             return true;
         }
     }
@@ -242,22 +242,22 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
     class RunnableC2543i implements Runnable {
 
         /* renamed from: b */
-        final /* synthetic */ MenuItem f8836b;
+        final /* synthetic */ MenuItem f8844b;
 
         /* renamed from: com.digdroid.alman.dig.p2$i$a */
         class C2544a implements C2223d0.AbstractC2249s {
 
             /* renamed from: a */
-            final /* synthetic */ AbstractC2577r1 f8838a;
+            final /* synthetic */ AbstractC2577r1 f8846a;
 
             C2544a(AbstractC2577r1 r1Var) {
-                this.f8838a = r1Var;
+                this.f8846a = r1Var;
             }
 
             @Override // com.digdroid.alman.dig.C2223d0.AbstractC2249s
             /* renamed from: a */
             public void mo7941a() {
-                this.f8838a.mo8116U2();
+                this.f8846a.mo8116U2();
             }
 
             @Override // com.digdroid.alman.dig.C2223d0.AbstractC2249s
@@ -275,7 +275,7 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
                 }
 
                 public void onClick(DialogInterface dialogInterface, int i) {
-                    AbstractActivityC2533p2.this.f9267w.mo8171T(true);
+                    AbstractActivityC2533p2.this.f9275w.mo8171T(true);
                     C2185a4.m9691u(AbstractActivityC2533p2.this);
                 }
             }
@@ -288,9 +288,9 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
             public void mo7941a() {
                 DialogInterfaceC0068b.C0069a aVar;
                 DialogInterface$OnClickListenerC2546a aVar2 = null;
-                if (AbstractActivityC2533p2.this.f9267w.mo8197u()) {
+                if (AbstractActivityC2533p2.this.f9275w.mo8197u()) {
                     AbstractActivityC2533p2 p2Var = AbstractActivityC2533p2.this;
-                    if (!p2Var.f8054V) {
+                    if (!p2Var.f8062V) {
                         aVar = new DialogInterfaceC0068b.C0069a(p2Var, C2553q3.m11117c()).mo228h(R.string.kiosk_gamepad);
                         aVar.mo235o(R.string.ok, aVar2).mo221a().show();
                     }
@@ -307,7 +307,7 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
         }
 
         RunnableC2543i(MenuItem menuItem) {
-            this.f8836b = menuItem;
+            this.f8844b = menuItem;
         }
 
         public void run() {
@@ -315,7 +315,7 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
             String str;
             AbstractC2531p1 k1 = AbstractActivityC2533p2.this.mo8280k1();
             if (k1 != null) {
-                int itemId = this.f8836b.getItemId();
+                int itemId = this.f8844b.getItemId();
                 if (itemId != R.id.show_foreground) {
                     switch (itemId) {
                         case R.id.nav_all /*{ENCODED_INT: 2131296947}*/:
@@ -367,20 +367,20 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
                             return;
                         case R.id.nav_home /*{ENCODED_INT: 2131296957}*/:
                             if (!(k1 instanceof C2712s1)) {
-                                AbstractActivityC2533p2.this.f8056X.setCurrentItem(0);
+                                AbstractActivityC2533p2.this.f8064X.setCurrentItem(0);
                                 return;
                             }
                             return;
                         case R.id.nav_kiosk /*{ENCODED_INT: 2131296958}*/:
-                            if (AbstractActivityC2533p2.this.f9267w.mo8196t()) {
-                                AbstractActivityC2533p2.this.f9267w.mo8171T(false);
+                            if (AbstractActivityC2533p2.this.f9275w.mo8196t()) {
+                                AbstractActivityC2533p2.this.f9275w.mo8171T(false);
                                 break;
                             } else {
                                 C2223d0.m9876p().mo8215r(AbstractActivityC2533p2.this, 19, new C2545b());
                                 return;
                             }
                         case R.id.nav_options /*{ENCODED_INT: 2131296959}*/:
-                            if (!(k1 instanceof C2588r2) && !AbstractActivityC2533p2.this.f9267w.mo8196t()) {
+                            if (!(k1 instanceof C2588r2) && !AbstractActivityC2533p2.this.f9275w.mo8196t()) {
                                 AbstractActivityC2533p2.this.mo8258F();
                                 return;
                             }
@@ -455,7 +455,7 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
                                         try {
                                             StringBuilder sb = new StringBuilder();
                                             sb.append("https://www.youtube.com/results?search_query=");
-                                            sb.append(URLEncoder.encode(j0Var.mo8635o3() + " " + AbstractActivityC2533p2.this.f9269y.mo8568s(j0Var.mo8634n3()), "utf-8"));
+                                            sb.append(URLEncoder.encode(j0Var.mo8635o3() + " " + AbstractActivityC2533p2.this.f9277y.mo8568s(j0Var.mo8634n3()), "utf-8"));
                                             String sb2 = sb.toString();
                                             Intent intent = new Intent();
                                             intent.setData(Uri.parse(sb2));
@@ -475,7 +475,7 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
                     p2Var.mo8289p1(str);
                     return;
                 }
-                C2219c3 c3Var = AbstractActivityC2533p2.this.f9267w;
+                C2219c3 c3Var = AbstractActivityC2533p2.this.f9275w;
                 c3Var.mo8153B("show_foreground", true ^ c3Var.mo8180c("show_foreground", true));
                 C2185a4.m9691u(AbstractActivityC2533p2.this);
             }
@@ -490,8 +490,8 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
 
         public void onClick(View view) {
             AbstractActivityC2533p2 p2Var = AbstractActivityC2533p2.this;
-            if (p2Var.f8813F0) {
-                p2Var.f8811D0.cancel();
+            if (p2Var.f8821F0) {
+                p2Var.f8819D0.cancel();
             }
             AbstractActivityC2533p2.this.mo8926X1(false);
         }
@@ -500,27 +500,27 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
     @Override // com.digdroid.alman.dig.AbstractActivityC2802v3
     /* renamed from: E1 */
     public boolean mo8913E1() {
-        return this.f8815H0;
+        return this.f8823H0;
     }
 
     @Override // com.digdroid.alman.dig.AbstractActivityC2802v3
     /* renamed from: G1 */
     public void mo8914G1(boolean z) {
-        this.f8815H0 = z;
+        this.f8823H0 = z;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: M1 */
     public void mo8915M1() {
         for (int i = 0; i < 33; i++) {
-            this.f8818K0[i] = false;
+            this.f8826K0[i] = false;
         }
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: N1 */
     public boolean mo8916N1(int i, int i2) {
-        boolean[] zArr = this.f8818K0;
+        boolean[] zArr = this.f8826K0;
         if (zArr == null || i < 0 || i >= zArr.length) {
             return false;
         }
@@ -540,12 +540,12 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
         if (i != 1) {
             return false;
         }
-        if (this.f8052T) {
+        if (this.f8060T) {
             if (z) {
-                this.f8052T = false;
+                this.f8060T = false;
             }
             return false;
-        } else if (this.f8053U) {
+        } else if (this.f8061U) {
             if (z) {
                 mo8259H(false);
             }
@@ -562,19 +562,19 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
     /* renamed from: O1 */
     public boolean mo8917O1() {
         SpeechRecognizer speechRecognizer;
-        ConstraintLayout constraintLayout = this.f8812E0;
+        ConstraintLayout constraintLayout = this.f8820E0;
         if (constraintLayout != null) {
             constraintLayout.setVisibility(8);
-            this.f8812E0 = null;
+            this.f8820E0 = null;
             return true;
-        } else if (this.f8813F0 && (speechRecognizer = this.f8811D0) != null) {
+        } else if (this.f8821F0 && (speechRecognizer = this.f8819D0) != null) {
             speechRecognizer.cancel();
             mo8926X1(false);
             return true;
-        } else if (f8810z0.mo2402A(8388611)) {
-            f8810z0.mo2427f();
+        } else if (f8818z0.mo2402A(8388611)) {
+            f8818z0.mo2427f();
             return true;
-        } else if (this.f8053U) {
+        } else if (this.f8061U) {
             mo8259H(false);
             return true;
         } else if (mo8918P1()) {
@@ -584,9 +584,9 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
             if (k1 != null && k1.mo8130x2()) {
                 return true;
             }
-            int currentItem = this.f8056X.getCurrentItem();
-            if (currentItem >= (this.f9267w.mo8185h() ? 2 : 1)) {
-                this.f8056X.mo6072K(currentItem - 1, true);
+            int currentItem = this.f8064X.getCurrentItem();
+            if (currentItem >= (this.f9275w.mo8185h() ? 2 : 1)) {
+                this.f8064X.mo6072K(currentItem - 1, true);
                 return true;
             }
             mo8925W1();
@@ -606,8 +606,8 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
         if (!SpeechRecognizer.isRecognitionAvailable(this)) {
             return;
         }
-        if (this.f8813F0) {
-            this.f8811D0.cancel();
+        if (this.f8821F0) {
+            this.f8819D0.cancel();
             mo8926X1(false);
             return;
         }
@@ -621,7 +621,7 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
     /* access modifiers changed from: package-private */
     /* renamed from: S1 */
     public void mo8921S1() {
-        String q = this.f9267w.mo8193q("language", "device");
+        String q = this.f9275w.mo8193q("language", "device");
         if (q.equals("device")) {
             q = Locale.getDefault().getLanguage();
         }
@@ -643,13 +643,13 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
     /* renamed from: T1 */
     public void mo8922T1() {
         if (!isFinishing()) {
-            if (this.f8811D0 == null) {
+            if (this.f8819D0 == null) {
                 SpeechRecognizer createSpeechRecognizer = SpeechRecognizer.createSpeechRecognizer(this);
-                this.f8811D0 = createSpeechRecognizer;
+                this.f8819D0 = createSpeechRecognizer;
                 createSpeechRecognizer.setRecognitionListener(this);
             }
-            if (this.f8813F0) {
-                this.f8811D0.cancel();
+            if (this.f8821F0) {
+                this.f8819D0.cancel();
                 mo8926X1(false);
                 return;
             }
@@ -658,7 +658,7 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
             intent.putExtra("calling_package", getPackageName());
             intent.putExtra("android.speech.extra.PARTIAL_RESULTS", true);
             try {
-                this.f8811D0.startListening(intent);
+                this.f8819D0.startListening(intent);
             } catch (Exception unused) {
                 new DialogInterfaceC0068b.C0069a(this, C2553q3.m11117c()).mo228h(R.string.speech_start_error).mo235o(R.string.ok, null).mo224d(false).mo221a().show();
             }
@@ -676,7 +676,7 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
     /* access modifiers changed from: package-private */
     /* renamed from: W1 */
     public void mo8925W1() {
-        if (!this.f9267w.mo8180c("confirm_quit", true)) {
+        if (!this.f9275w.mo8180c("confirm_quit", true)) {
             finish();
         } else {
             new DialogInterfaceC0068b.C0069a(this, C2553q3.m11117c()).mo228h(R.string.confirm_exit).mo232l(R.string.cancel, null).mo235o(R.string.ok, new DialogInterface$OnClickListenerC2536c()).mo221a().show();
@@ -687,12 +687,12 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
     /* renamed from: X1 */
     public void mo8926X1(boolean z) {
         View view;
-        if (!z || !this.f8813F0) {
-            this.f8813F0 = z;
-            if (z || this.f8823P0 != null) {
-                if (this.f8823P0 == null) {
+        if (!z || !this.f8821F0) {
+            this.f8821F0 = z;
+            if (z || this.f8831P0 != null) {
+                if (this.f8831P0 == null) {
                     ViewStub viewStub = (ViewStub) findViewById(R.id.stub_digger);
-                    this.f8823P0 = viewStub;
+                    this.f8831P0 = viewStub;
                     view = viewStub.inflate();
                 } else {
                     view = findViewById(R.id.voice_capture);
@@ -701,20 +701,20 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
                 if (z) {
                     TextView textView = (TextView) findViewById(R.id.voice_result);
                     textView.setText(R.string.digger_hint);
-                    if (!this.f8816I0) {
+                    if (!this.f8824I0) {
                         textView.setOnClickListener(new View$OnClickListenerC2547j());
-                        this.f8816I0 = true;
+                        this.f8824I0 = true;
                     }
-                    this.f8822O0 = C2185a4.m9675e(this, 400.0f);
+                    this.f8830O0 = C2185a4.m9675e(this, 400.0f);
                     Point point = new Point();
                     getWindowManager().getDefaultDisplay().getSize(point);
                     double d = (double) point.x;
                     Double.isNaN(d);
                     double d2 = d * 0.9d;
-                    if (((double) this.f8822O0) > d2) {
-                        this.f8822O0 = (int) Math.round(d2);
+                    if (((double) this.f8830O0) > d2) {
+                        this.f8830O0 = (int) Math.round(d2);
                     }
-                    textView.setLayoutParams(new LinearLayout.LayoutParams(this.f8822O0, -2));
+                    textView.setLayoutParams(new LinearLayout.LayoutParams(this.f8830O0, -2));
                 }
             }
         }
@@ -723,32 +723,32 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
     /* access modifiers changed from: package-private */
     /* renamed from: Y1 */
     public boolean mo8927Y1(float f, float f2) {
-        this.f8815H0 = false;
-        if (f8807A0 && !this.f8052T && !this.f8053U && !f8810z0.mo2402A(8388611)) {
-            if (this.f8812E0 != null) {
+        this.f8823H0 = false;
+        if (f8815A0 && !this.f8060T && !this.f8061U && !f8818z0.mo2402A(8388611)) {
+            if (this.f8820E0 != null) {
                 return true;
             }
             int i = Float.compare(f, -1.0f) == 0 ? 10 : Float.compare(f, 1.0f) == 0 ? 11 : Float.compare(f2, -1.0f) == 0 ? 8 : Float.compare(f2, 1.0f) == 0 ? 9 : 12;
-            if (i == this.f8820M0) {
+            if (i == this.f8828M0) {
                 return false;
             }
-            this.f8820M0 = i;
-            Handler handler = this.f8819L0;
+            this.f8828M0 = i;
+            Handler handler = this.f8827L0;
             if (handler != null) {
                 handler.removeCallbacksAndMessages(null);
             }
-            if (this.f8820M0 < 0) {
+            if (this.f8828M0 < 0) {
                 return true;
             }
             AbstractC2531p1 k1 = mo8280k1();
-            if (k1 != null && k1.mo8131y2(this.f8820M0, 0)) {
-                if (this.f8820M0 == 12) {
+            if (k1 != null && k1.mo8131y2(this.f8828M0, 0)) {
+                if (this.f8828M0 == 12) {
                     return true;
                 }
-                if (this.f8819L0 == null) {
-                    this.f8819L0 = new Handler();
+                if (this.f8827L0 == null) {
+                    this.f8827L0 = new Handler();
                 }
-                this.f8819L0.postDelayed(new RunnableC2537d(), 500);
+                this.f8827L0.postDelayed(new RunnableC2537d(), 500);
                 return true;
             }
         }
@@ -785,27 +785,27 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
 
     @Override // androidx.core.app.ActivityC0361e, androidx.appcompat.app.ActivityC0070c
     public boolean dispatchKeyEvent(KeyEvent keyEvent) {
-        this.f8815H0 = false;
-        this.f8814G0 = false;
+        this.f8823H0 = false;
+        this.f8822G0 = false;
         int keyCode = keyEvent.getKeyCode();
         boolean z = keyCode == 4 || keyCode == 97;
         if (z && mo8918P1()) {
             return super.dispatchKeyEvent(keyEvent);
         }
-        if (!f8807A0 || this.f8052T || this.f8053U || f8810z0.mo2402A(8388611)) {
-            if (this.f8052T && z && keyEvent.getAction() == 1) {
-                this.f8052T = false;
+        if (!f8815A0 || this.f8060T || this.f8061U || f8818z0.mo2402A(8388611)) {
+            if (this.f8060T && z && keyEvent.getAction() == 1) {
+                this.f8060T = false;
             }
             return super.dispatchKeyEvent(keyEvent);
-        } else if (this.f8812E0 != null) {
+        } else if (this.f8820E0 != null) {
             if (z) {
                 return super.dispatchKeyEvent(keyEvent);
             }
             return true;
-        } else if (!this.f8817J0.containsKey(Integer.valueOf(keyCode))) {
+        } else if (!this.f8825J0.containsKey(Integer.valueOf(keyCode))) {
             return super.dispatchKeyEvent(keyEvent);
         } else {
-            int intValue = this.f8817J0.get(Integer.valueOf(keyCode)).intValue();
+            int intValue = this.f8825J0.get(Integer.valueOf(keyCode)).intValue();
             if (intValue == 8 || intValue == 9 || intValue == 10 || intValue == 11 || intValue == 12 || (keyEvent.getSource() & 1025) == 1025) {
                 AbstractC2531p1 k1 = mo8280k1();
                 if (k1 != null && k1.mo8131y2(intValue, keyEvent.getAction())) {
@@ -817,7 +817,7 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
                         case 9:
                         case 10:
                         case 11:
-                            this.f8815H0 = true;
+                            this.f8823H0 = true;
                             break;
                     }
                 } else {
@@ -829,14 +829,14 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
     }
 
     public boolean dispatchTouchEvent(MotionEvent motionEvent) {
-        this.f8814G0 = true;
+        this.f8822G0 = true;
         return super.dispatchTouchEvent(motionEvent);
     }
 
     @Override // com.google.android.material.navigation.NavigationView.AbstractC3211c
     /* renamed from: f */
     public boolean mo8932f(MenuItem menuItem) {
-        f8810z0.mo2427f();
+        f8818z0.mo2427f();
         new Handler().postDelayed(new RunnableC2543i(menuItem), 500);
         return true;
     }
@@ -938,7 +938,7 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
                 return;
             case 5:
             case 11:
-                if (!this.f9267w.mo8196t()) {
+                if (!this.f9275w.mo8196t()) {
                     mo8258F();
                     return;
                 }
@@ -949,10 +949,10 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
                 mo8921S1();
                 return;
             case '\t':
-                this.f8056X.setCurrentItem(0);
+                this.f8064X.setCurrentItem(0);
                 return;
             case '\n':
-                String str2 = C2553q3.f8891a.f9406j;
+                String str2 = C2553q3.f8899a.f9414j;
                 if (Pattern.compile(".*custom(\\d)+\\.cfg").matcher(str2).find()) {
                     mo8303x(str2);
                     return;
@@ -972,18 +972,18 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
     @Override // com.digdroid.alman.dig.AbstractC2531p1.AbstractC2532a
     /* renamed from: l */
     public boolean mo8908l() {
-        return this.f8814G0;
+        return this.f8822G0;
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2531p1.AbstractC2532a
     /* renamed from: o */
     public HashMap<Integer, Integer> mo8909o() {
-        return this.f8817J0;
+        return this.f8825J0;
     }
 
     @Override // androidx.activity.ComponentActivity
     public void onBackPressed() {
-        if (!f8807A0 || !mo8917O1()) {
+        if (!f8815A0 || !mo8917O1()) {
             super.onBackPressed();
         }
     }
@@ -1000,44 +1000,44 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
         super.onCreate(bundle);
         AbstractC0064a L0 = mo243L0();
         L0.mo204s(false);
-        L0.mo205t(C2553q3.f8891a.mo9322f());
+        L0.mo205t(C2553q3.f8899a.mo9322f());
         DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        f8810z0 = drawerLayout;
+        f8818z0 = drawerLayout;
         drawerLayout.setDrawerListener(new C2535b());
-        this.f9267w = C2219c3.m9805k(this);
+        this.f9275w = C2219c3.m9805k(this);
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         C2553q3.m11134t(this, navigationView);
         mo8915M1();
         HashMap<Integer, Integer> hashMap = new HashMap<>();
-        this.f8817J0 = hashMap;
+        this.f8825J0 = hashMap;
         hashMap.put(19, 8);
-        this.f8817J0.put(20, 9);
-        this.f8817J0.put(21, 10);
-        this.f8817J0.put(22, 11);
-        this.f8817J0.put(23, 12);
-        this.f8817J0.put(96, 0);
-        this.f8817J0.put(97, 1);
-        this.f8817J0.put(99, Integer.valueOf(this.f9267w.mo8188l("button_x_bind", 3)));
-        this.f8817J0.put(100, Integer.valueOf(this.f9267w.mo8188l("button_y_bind", 2)));
-        this.f8817J0.put(Integer.valueOf((int) C0333i.f1694U0), Integer.valueOf(this.f9267w.mo8188l("button_l1_bind", 4)));
-        this.f8817J0.put(Integer.valueOf((int) C0333i.f1700V0), Integer.valueOf(this.f9267w.mo8188l("button_r1_bind", 5)));
-        this.f8817J0.put(Integer.valueOf((int) C0333i.f1706W0), Integer.valueOf(this.f9267w.mo8188l("button_l2_bind", 14)));
-        this.f8817J0.put(105, Integer.valueOf(this.f9267w.mo8188l("button_r2_bind", 13)));
-        this.f8817J0.put(Integer.valueOf((int) C0333i.f1712X0), Integer.valueOf(this.f9267w.mo8188l("button_lthumb_bind", 21)));
-        this.f8817J0.put(Integer.valueOf((int) C0333i.f1718Y0), Integer.valueOf(this.f9267w.mo8188l("button_rthumb_bind", 17)));
-        this.f8817J0.put(57, Integer.valueOf(this.f9267w.mo8188l("button_lt_bind", 6)));
-        this.f8817J0.put(58, Integer.valueOf(this.f9267w.mo8188l("button_rt_bind", 6)));
-        this.f8817J0.put(Integer.valueOf((int) C0333i.f1724Z0), Integer.valueOf(this.f9267w.mo8188l("button_start_bind", 7)));
-        this.f8817J0.put(4, Integer.valueOf(this.f9267w.mo8188l("button_select_bind", 16)));
-        this.f8817J0.put(109, Integer.valueOf(this.f9267w.mo8188l("button_select_bind", 16)));
+        this.f8825J0.put(20, 9);
+        this.f8825J0.put(21, 10);
+        this.f8825J0.put(22, 11);
+        this.f8825J0.put(23, 12);
+        this.f8825J0.put(96, 0);
+        this.f8825J0.put(97, 1);
+        this.f8825J0.put(99, Integer.valueOf(this.f9275w.mo8188l("button_x_bind", 3)));
+        this.f8825J0.put(100, Integer.valueOf(this.f9275w.mo8188l("button_y_bind", 2)));
+        this.f8825J0.put(Integer.valueOf((int) C0333i.f1694U0), Integer.valueOf(this.f9275w.mo8188l("button_l1_bind", 4)));
+        this.f8825J0.put(Integer.valueOf((int) C0333i.f1700V0), Integer.valueOf(this.f9275w.mo8188l("button_r1_bind", 5)));
+        this.f8825J0.put(Integer.valueOf((int) C0333i.f1706W0), Integer.valueOf(this.f9275w.mo8188l("button_l2_bind", 14)));
+        this.f8825J0.put(105, Integer.valueOf(this.f9275w.mo8188l("button_r2_bind", 13)));
+        this.f8825J0.put(Integer.valueOf((int) C0333i.f1712X0), Integer.valueOf(this.f9275w.mo8188l("button_lthumb_bind", 21)));
+        this.f8825J0.put(Integer.valueOf((int) C0333i.f1718Y0), Integer.valueOf(this.f9275w.mo8188l("button_rthumb_bind", 17)));
+        this.f8825J0.put(57, Integer.valueOf(this.f9275w.mo8188l("button_lt_bind", 6)));
+        this.f8825J0.put(58, Integer.valueOf(this.f9275w.mo8188l("button_rt_bind", 6)));
+        this.f8825J0.put(Integer.valueOf((int) C0333i.f1724Z0), Integer.valueOf(this.f9275w.mo8188l("button_start_bind", 7)));
+        this.f8825J0.put(4, Integer.valueOf(this.f9275w.mo8188l("button_select_bind", 16)));
+        this.f8825J0.put(109, Integer.valueOf(this.f9275w.mo8188l("button_select_bind", 16)));
     }
 
     /* access modifiers changed from: protected */
     @Override // androidx.fragment.app.ActivityC0447d, androidx.appcompat.app.ActivityC0070c
     public void onDestroy() {
         super.onDestroy();
-        SpeechRecognizer speechRecognizer = this.f8811D0;
+        SpeechRecognizer speechRecognizer = this.f8819D0;
         if (speechRecognizer != null) {
             try {
                 speechRecognizer.destroy();
@@ -1063,15 +1063,15 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
     @Override // androidx.fragment.app.ActivityC0447d, com.digdroid.alman.dig.AbstractActivityC2802v3, com.digdroid.alman.dig.AbstractActivityC2260e0
     public void onPause() {
         super.onPause();
-        f8807A0 = false;
-        Handler handler = this.f8819L0;
+        f8815A0 = false;
+        Handler handler = this.f8827L0;
         if (handler != null) {
             handler.removeCallbacksAndMessages(null);
         }
     }
 
     public void onReadyForSpeech(Bundle bundle) {
-        this.f8824Q0 = 0.0f;
+        this.f8832Q0 = 0.0f;
         mo8926X1(true);
     }
 
@@ -1089,31 +1089,31 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
     public void onResume() {
         super.onResume();
         Menu B = mo8254B();
-        B.findItem(R.id.nav_kiosk).setTitle(this.f9267w.mo8196t() ? R.string.exit_kiosk : R.string.kiosk);
-        B.findItem(R.id.show_foreground).setTitle(this.f9267w.mo8180c("show_foreground", true) ? R.string.hide_foreground : R.string.show_foreground);
+        B.findItem(R.id.nav_kiosk).setTitle(this.f9275w.mo8196t() ? R.string.exit_kiosk : R.string.kiosk);
+        B.findItem(R.id.show_foreground).setTitle(this.f9275w.mo8180c("show_foreground", true) ? R.string.hide_foreground : R.string.show_foreground);
         mo8915M1();
-        f8807A0 = true;
+        f8815A0 = true;
     }
 
     public void onRmsChanged(float f) {
-        if (f > this.f8824Q0) {
-            this.f8824Q0 = f;
+        if (f > this.f8832Q0) {
+            this.f8832Q0 = f;
         }
-        if (this.f8824Q0 > 0.0f) {
+        if (this.f8832Q0 > 0.0f) {
             mo8926X1(true);
-            ((LinearLayout) findViewById(R.id.rms_meter)).setLayoutParams(new LinearLayout.LayoutParams(Math.round((((float) this.f8822O0) * f) / this.f8824Q0), C2185a4.m9675e(this, 5.0f)));
+            ((LinearLayout) findViewById(R.id.rms_meter)).setLayoutParams(new LinearLayout.LayoutParams(Math.round((((float) this.f8830O0) * f) / this.f8832Q0), C2185a4.m9675e(this, 5.0f)));
         }
     }
 
     public boolean onTouchEvent(MotionEvent motionEvent) {
-        this.f8814G0 = true;
+        this.f8822G0 = true;
         return super.onTouchEvent(motionEvent);
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2531p1.AbstractC2532a
     /* renamed from: y */
     public boolean mo8912y() {
-        return this.f8812E0 == null;
+        return this.f8820E0 == null;
     }
 
     /* access modifiers changed from: package-private */
@@ -1122,24 +1122,24 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
     public boolean mo8945z1(int i) {
         View view;
         if (i == 2) {
-            int currentItem = this.f8056X.getCurrentItem();
-            if (currentItem < this.f8055W.mo6058c()) {
-                this.f8056X.mo6072K(currentItem + 1, true);
+            int currentItem = this.f8064X.getCurrentItem();
+            if (currentItem < this.f8063W.mo6058c()) {
+                this.f8064X.mo6072K(currentItem + 1, true);
             }
             return true;
         } else if (i == 3) {
             mo8919Q1();
             return true;
         } else if (i == 4) {
-            if (f8810z0.mo2402A(8388611)) {
-                f8810z0.mo2427f();
+            if (f8818z0.mo2402A(8388611)) {
+                f8818z0.mo2427f();
             } else {
-                this.f8054V = true;
-                f8810z0.mo2407H(8388611);
+                this.f8062V = true;
+                f8818z0.mo2407H(8388611);
             }
             return true;
         } else if (i == 5) {
-            if (!this.f9267w.f7955j.equals("default")) {
+            if (!this.f9275w.f7963j.equals("default")) {
                 AbstractC2531p1 k1 = mo8280k1();
                 if (k1 != null && k1.mo8248r2() >= 0) {
                     C0248l0 l0Var = new C0248l0(new C0788d(this, (int) R.style.AppThemeLight), mo8904I(), 8388613);
@@ -1149,10 +1149,10 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
                     l0Var.mo1572c(new C2538e(k1));
                     l0Var.mo1573d();
                 }
-            } else if (this.f9504r0.mo1189A()) {
-                this.f9504r0.mo1279w();
+            } else if (this.f9512r0.mo1189A()) {
+                this.f9512r0.mo1279w();
             } else {
-                this.f9504r0.mo1196O();
+                this.f9512r0.mo1196O();
             }
             return true;
         } else if (i != 6) {
@@ -1176,7 +1176,7 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
                     }
                     return true;
                 case 16:
-                    this.f8056X.setCurrentItem(0);
+                    this.f8064X.setCurrentItem(0);
                     return true;
                 case 17:
                     mo8288p();
@@ -1191,7 +1191,7 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
                     mo8261L();
                     return true;
                 case 21:
-                    if (!this.f9267w.mo8196t()) {
+                    if (!this.f9275w.mo8196t()) {
                         mo8258F();
                     }
                     return true;
@@ -1213,21 +1213,21 @@ public abstract class AbstractActivityC2533p2 extends AbstractActivityC2802v3 im
                 case 26:
                     AbstractC2531p1 k16 = mo8280k1();
                     if (k16 != null) {
-                        if (this.f8821N0 == null) {
+                        if (this.f8829N0 == null) {
                             ViewStub viewStub = (ViewStub) findViewById(R.id.stub_info);
-                            this.f8821N0 = viewStub;
+                            this.f8829N0 = viewStub;
                             view = viewStub.inflate();
                         } else {
                             view = findViewById(R.id.info_container);
                         }
-                        this.f8812E0 = (ConstraintLayout) view;
-                        this.f8812E0.setOnTouchListener(new View$OnTouchListenerC2540g());
+                        this.f8820E0 = (ConstraintLayout) view;
+                        this.f8820E0.setOnTouchListener(new View$OnTouchListenerC2540g());
                         LinearLayout linearLayout = (LinearLayout) findViewById(R.id.info_box);
                         linearLayout.setBackgroundColor(-668851678);
                         TextView textView = (TextView) linearLayout.findViewById(R.id.into_title);
                         textView.setTextColor(-1);
                         textView.setText(k16.mo8126s2());
-                        this.f8812E0.setVisibility(0);
+                        this.f8820E0.setVisibility(0);
                         break;
                     }
                     break;

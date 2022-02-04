@@ -6,24 +6,24 @@ import java.util.Arrays;
 public class C0871i extends C0864e implements AbstractC0870h {
 
     /* renamed from: w0 */
-    public C0864e[] f4377w0 = new C0864e[4];
+    public C0864e[] f4381w0 = new C0864e[4];
 
     /* renamed from: x0 */
-    public int f4378x0 = 0;
+    public int f4382x0 = 0;
 
     @Override // p006b.p022e.p026b.p027k.AbstractC0870h
     /* renamed from: a */
     public void mo5255a(C0864e eVar) {
         if (eVar != this && eVar != null) {
-            int i = this.f4378x0 + 1;
-            C0864e[] eVarArr = this.f4377w0;
+            int i = this.f4382x0 + 1;
+            C0864e[] eVarArr = this.f4381w0;
             if (i > eVarArr.length) {
-                this.f4377w0 = (C0864e[]) Arrays.copyOf(eVarArr, eVarArr.length * 2);
+                this.f4381w0 = (C0864e[]) Arrays.copyOf(eVarArr, eVarArr.length * 2);
             }
-            C0864e[] eVarArr2 = this.f4377w0;
-            int i2 = this.f4378x0;
+            C0864e[] eVarArr2 = this.f4381w0;
+            int i2 = this.f4382x0;
             eVarArr2[i2] = eVar;
-            this.f4378x0 = i2 + 1;
+            this.f4382x0 = i2 + 1;
         }
     }
 
@@ -35,7 +35,7 @@ public class C0871i extends C0864e implements AbstractC0870h {
     @Override // p006b.p022e.p026b.p027k.AbstractC0870h
     /* renamed from: c */
     public void mo5257c() {
-        this.f4378x0 = 0;
-        Arrays.fill(this.f4377w0, (Object) null);
+        this.f4382x0 = 0;
+        Arrays.fill(this.f4381w0, (Object) null);
     }
 }

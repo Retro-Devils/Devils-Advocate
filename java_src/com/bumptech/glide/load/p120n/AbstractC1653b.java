@@ -11,23 +11,23 @@ import java.io.IOException;
 public abstract class AbstractC1653b<T> implements AbstractC1655d<T> {
 
     /* renamed from: b */
-    private final String f6658b;
+    private final String f6666b;
 
     /* renamed from: c */
-    private final AssetManager f6659c;
+    private final AssetManager f6667c;
 
     /* renamed from: d */
-    private T f6660d;
+    private T f6668d;
 
     public AbstractC1653b(AssetManager assetManager, String str) {
-        this.f6659c = assetManager;
-        this.f6658b = str;
+        this.f6667c = assetManager;
+        this.f6666b = str;
     }
 
     @Override // com.bumptech.glide.load.p120n.AbstractC1655d
     /* renamed from: b */
     public void mo7097b() {
-        T t = this.f6660d;
+        T t = this.f6668d;
         if (t != null) {
             try {
                 mo7100d(t);
@@ -54,8 +54,8 @@ public abstract class AbstractC1653b<T> implements AbstractC1655d<T> {
     /* renamed from: e */
     public void mo7101e(EnumC1616g gVar, AbstractC1655d.AbstractC1656a<? super T> aVar) {
         try {
-            T f = mo7102f(this.f6659c, this.f6658b);
-            this.f6660d = f;
+            T f = mo7102f(this.f6667c, this.f6666b);
+            this.f6668d = f;
             aVar.mo7109f(f);
         } catch (IOException e) {
             if (Log.isLoggable("AssetPathFetcher", 3)) {

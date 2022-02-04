@@ -7,7 +7,7 @@ import android.widget.Filter;
 class C1038b extends Filter {
 
     /* renamed from: a */
-    AbstractC1039a f4797a;
+    AbstractC1039a f4801a;
 
     /* renamed from: b.h.a.b$a */
     interface AbstractC1039a {
@@ -25,16 +25,16 @@ class C1038b extends Filter {
     }
 
     C1038b(AbstractC1039a aVar) {
-        this.f4797a = aVar;
+        this.f4801a = aVar;
     }
 
     public CharSequence convertResultToString(Object obj) {
-        return this.f4797a.mo1701b((Cursor) obj);
+        return this.f4801a.mo1701b((Cursor) obj);
     }
 
     /* access modifiers changed from: protected */
     public Filter.FilterResults performFiltering(CharSequence charSequence) {
-        Cursor d = this.f4797a.mo1702d(charSequence);
+        Cursor d = this.f4801a.mo1702d(charSequence);
         Filter.FilterResults filterResults = new Filter.FilterResults();
         if (d != null) {
             filterResults.count = d.getCount();
@@ -48,10 +48,10 @@ class C1038b extends Filter {
 
     /* access modifiers changed from: protected */
     public void publishResults(CharSequence charSequence, Filter.FilterResults filterResults) {
-        Cursor c = this.f4797a.mo5592c();
+        Cursor c = this.f4801a.mo5592c();
         Object obj = filterResults.values;
         if (obj != null && obj != c) {
-            this.f4797a.mo1700a((Cursor) obj);
+            this.f4801a.mo1700a((Cursor) obj);
         }
     }
 }

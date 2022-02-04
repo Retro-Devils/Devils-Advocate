@@ -9,19 +9,19 @@ import p069c.p073b.p074a.p075a.p077b.C1284e;
 public class C3007j {
 
     /* renamed from: a */
-    private final SparseIntArray f10010a = new SparseIntArray();
+    private final SparseIntArray f10018a = new SparseIntArray();
 
     /* renamed from: b */
-    private C1284e f10011b;
+    private C1284e f10019b;
 
     public C3007j(C1284e eVar) {
         C3027r.m12376h(eVar);
-        this.f10011b = eVar;
+        this.f10019b = eVar;
     }
 
     /* renamed from: a */
     public void mo9794a() {
-        this.f10010a.clear();
+        this.f10018a.clear();
     }
 
     /* renamed from: b */
@@ -33,26 +33,26 @@ public class C3007j {
             return 0;
         }
         int q = fVar.mo6358q();
-        int i2 = this.f10010a.get(q, -1);
+        int i2 = this.f10018a.get(q, -1);
         if (i2 != -1) {
             return i2;
         }
         int i3 = 0;
         while (true) {
-            if (i3 >= this.f10010a.size()) {
+            if (i3 >= this.f10018a.size()) {
                 i = i2;
                 break;
             }
-            int keyAt = this.f10010a.keyAt(i3);
-            if (keyAt > q && this.f10010a.get(keyAt) == 0) {
+            int keyAt = this.f10018a.keyAt(i3);
+            if (keyAt > q && this.f10018a.get(keyAt) == 0) {
                 break;
             }
             i3++;
         }
         if (i == -1) {
-            i = this.f10011b.mo6282f(context, q);
+            i = this.f10019b.mo6282f(context, q);
         }
-        this.f10010a.put(q, i);
+        this.f10018a.put(q, i);
         return i;
     }
 }

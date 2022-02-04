@@ -10,13 +10,13 @@ import android.view.View;
 public abstract class AbstractC0974b {
 
     /* renamed from: a */
-    private final Context f4680a;
+    private final Context f4684a;
 
     /* renamed from: b */
-    private AbstractC0975a f4681b;
+    private AbstractC0975a f4685b;
 
     /* renamed from: c */
-    private AbstractC0976b f4682c;
+    private AbstractC0976b f4686c;
 
     /* renamed from: b.g.k.b$a */
     public interface AbstractC0975a {
@@ -28,7 +28,7 @@ public abstract class AbstractC0974b {
     }
 
     public AbstractC0974b(Context context) {
-        this.f4680a = context;
+        this.f4684a = context;
     }
 
     /* renamed from: a */
@@ -65,20 +65,20 @@ public abstract class AbstractC0974b {
 
     /* renamed from: h */
     public void mo5444h() {
-        this.f4682c = null;
-        this.f4681b = null;
+        this.f4686c = null;
+        this.f4685b = null;
     }
 
     /* renamed from: i */
     public void mo5445i(AbstractC0975a aVar) {
-        this.f4681b = aVar;
+        this.f4685b = aVar;
     }
 
     /* renamed from: j */
     public void mo813j(AbstractC0976b bVar) {
-        if (!(this.f4682c == null || bVar == null)) {
+        if (!(this.f4686c == null || bVar == null)) {
             Log.w("ActionProvider(support)", "setVisibilityListener: Setting a new ActionProvider.VisibilityListener when one is already set. Are you reusing this " + getClass().getSimpleName() + " instance while it is still in use somewhere else?");
         }
-        this.f4682c = bVar;
+        this.f4686c = bVar;
     }
 }

@@ -15,23 +15,23 @@ import android.widget.ImageView;
 public class C1158r {
 
     /* renamed from: a */
-    private static final boolean f5182a;
+    private static final boolean f5189a;
 
     /* renamed from: b */
-    private static final boolean f5183b;
+    private static final boolean f5190b;
 
     /* renamed from: c */
-    private static final boolean f5184c;
+    private static final boolean f5191c;
 
     static {
         int i = Build.VERSION.SDK_INT;
         boolean z = true;
-        f5182a = i >= 19;
-        f5183b = i >= 18;
+        f5189a = i >= 19;
+        f5190b = i >= 18;
         if (i < 28) {
             z = false;
         }
-        f5184c = z;
+        f5191c = z;
     }
 
     /* renamed from: a */

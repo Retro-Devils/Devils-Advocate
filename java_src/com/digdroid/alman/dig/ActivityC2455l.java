@@ -7,7 +7,7 @@ import com.jaredrummler.android.colorpicker.AbstractC3327d;
 public class ActivityC2455l extends ActivityC2888z3 implements AbstractC3327d {
 
     /* renamed from: L */
-    C2326g2.AbstractC2328b f8569L = null;
+    C2326g2.AbstractC2328b f8577L = null;
 
     @Override // com.jaredrummler.android.colorpicker.AbstractC3327d
     /* renamed from: n0 */
@@ -17,7 +17,7 @@ public class ActivityC2455l extends ActivityC2888z3 implements AbstractC3327d {
     @Override // com.jaredrummler.android.colorpicker.AbstractC3327d
     /* renamed from: w0 */
     public void mo8707w0(int i, int i2) {
-        C2326g2.AbstractC2328b bVar = this.f8569L;
+        C2326g2.AbstractC2328b bVar = this.f8577L;
         if (bVar != null) {
             bVar.mo8464a(i2);
         }

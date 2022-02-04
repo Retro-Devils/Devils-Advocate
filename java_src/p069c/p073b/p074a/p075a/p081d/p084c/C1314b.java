@@ -17,7 +17,7 @@ import org.json.JSONException;
 public final class C1314b {
 
     /* renamed from: a */
-    public static int f5577a = Runtime.getRuntime().availableProcessors();
+    public static int f5585a = Runtime.getRuntime().availableProcessors();
 
     /* renamed from: a */
     public static int m6844a(Intent intent, String str) {

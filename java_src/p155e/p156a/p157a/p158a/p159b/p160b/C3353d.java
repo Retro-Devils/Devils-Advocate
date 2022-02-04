@@ -8,14 +8,14 @@ import java.io.RandomAccessFile;
 public class C3353d extends InputStream {
 
     /* renamed from: b */
-    private final RandomAccessFile f11292b;
+    private final RandomAccessFile f11301b;
 
     /* renamed from: c */
-    private long f11293c;
+    private long f11302c;
 
     public C3353d(RandomAccessFile randomAccessFile, long j) {
-        this.f11292b = randomAccessFile;
-        this.f11293c = j;
+        this.f11301b = randomAccessFile;
+        this.f11302c = j;
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable, java.io.InputStream
@@ -24,26 +24,26 @@ public class C3353d extends InputStream {
 
     @Override // java.io.InputStream
     public int read() {
-        long j = this.f11293c;
+        long j = this.f11302c;
         if (j <= 0) {
             return -1;
         }
-        this.f11293c = j - 1;
-        return this.f11292b.read();
+        this.f11302c = j - 1;
+        return this.f11301b.read();
     }
 
     @Override // java.io.InputStream
     public int read(byte[] bArr, int i, int i2) {
-        long j = this.f11293c;
+        long j = this.f11302c;
         if (j == 0) {
             return -1;
         }
         if (((long) i2) > j) {
             i2 = (int) j;
         }
-        int read = this.f11292b.read(bArr, i, i2);
+        int read = this.f11301b.read(bArr, i, i2);
         if (read >= 0) {
-            this.f11293c -= (long) read;
+            this.f11302c -= (long) read;
         }
         return read;
     }

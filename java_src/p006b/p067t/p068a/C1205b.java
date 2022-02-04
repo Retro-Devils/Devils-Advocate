@@ -43,184 +43,184 @@ import p006b.p043i.p044a.AbstractC1041a;
 public class C1205b extends ViewGroup {
 
     /* renamed from: b */
-    static final int[] f5319b = {16842931};
+    static final int[] f5326b = {16842931};
 
     /* renamed from: c */
-    private static final Comparator<C1211f> f5320c = new C1206a();
+    private static final Comparator<C1211f> f5327c = new C1206a();
 
     /* renamed from: d */
-    private static final Interpolator f5321d = new animationInterpolatorC1207b();
+    private static final Interpolator f5328d = new animationInterpolatorC1207b();
 
     /* renamed from: e */
-    private static final C1220n f5322e = new C1220n();
+    private static final C1220n f5329e = new C1220n();
 
     /* renamed from: A */
-    private boolean f5323A;
+    private boolean f5330A;
 
     /* renamed from: B */
-    private boolean f5324B;
+    private boolean f5331B;
 
     /* renamed from: C */
-    private int f5325C = 1;
+    private int f5332C = 1;
 
     /* renamed from: D */
-    private boolean f5326D;
+    private boolean f5333D;
 
     /* renamed from: E */
-    private boolean f5327E;
+    private boolean f5334E;
 
     /* renamed from: F */
-    private int f5328F;
+    private int f5335F;
 
     /* renamed from: G */
-    private int f5329G;
+    private int f5336G;
 
     /* renamed from: H */
-    private int f5330H;
+    private int f5337H;
 
     /* renamed from: I */
-    private float f5331I;
+    private float f5338I;
 
     /* renamed from: J */
-    private float f5332J;
+    private float f5339J;
 
     /* renamed from: K */
-    private float f5333K;
+    private float f5340K;
 
     /* renamed from: L */
-    private float f5334L;
+    private float f5341L;
 
     /* renamed from: M */
-    private int f5335M = -1;
+    private int f5342M = -1;
 
     /* renamed from: N */
-    private VelocityTracker f5336N;
+    private VelocityTracker f5343N;
 
     /* renamed from: O */
-    private int f5337O;
+    private int f5344O;
 
     /* renamed from: P */
-    private int f5338P;
+    private int f5345P;
 
     /* renamed from: Q */
-    private int f5339Q;
+    private int f5346Q;
 
     /* renamed from: R */
-    private int f5340R;
+    private int f5347R;
 
     /* renamed from: S */
-    private boolean f5341S;
+    private boolean f5348S;
 
     /* renamed from: T */
-    private EdgeEffect f5342T;
+    private EdgeEffect f5349T;
 
     /* renamed from: U */
-    private EdgeEffect f5343U;
+    private EdgeEffect f5350U;
 
     /* renamed from: V */
-    private boolean f5344V = true;
+    private boolean f5351V = true;
 
     /* renamed from: W */
-    private boolean f5345W = false;
+    private boolean f5352W = false;
 
     /* renamed from: a0 */
-    private boolean f5346a0;
+    private boolean f5353a0;
 
     /* renamed from: b0 */
-    private int f5347b0;
+    private int f5354b0;
 
     /* renamed from: c0 */
-    private List<AbstractC1215j> f5348c0;
+    private List<AbstractC1215j> f5355c0;
 
     /* renamed from: d0 */
-    private AbstractC1215j f5349d0;
+    private AbstractC1215j f5356d0;
 
     /* renamed from: e0 */
-    private AbstractC1215j f5350e0;
+    private AbstractC1215j f5357e0;
 
     /* renamed from: f */
-    private int f5351f;
+    private int f5358f;
 
     /* renamed from: f0 */
-    private List<AbstractC1214i> f5352f0;
+    private List<AbstractC1214i> f5359f0;
 
     /* renamed from: g */
-    private final ArrayList<C1211f> f5353g = new ArrayList<>();
+    private final ArrayList<C1211f> f5360g = new ArrayList<>();
 
     /* renamed from: g0 */
-    private AbstractC1216k f5354g0;
+    private AbstractC1216k f5361g0;
 
     /* renamed from: h */
-    private final C1211f f5355h = new C1211f();
+    private final C1211f f5362h = new C1211f();
 
     /* renamed from: h0 */
-    private int f5356h0;
+    private int f5363h0;
 
     /* renamed from: i */
-    private final Rect f5357i = new Rect();
+    private final Rect f5364i = new Rect();
 
     /* renamed from: i0 */
-    private int f5358i0;
+    private int f5365i0;
 
     /* renamed from: j */
-    AbstractC1204a f5359j;
+    AbstractC1204a f5366j;
 
     /* renamed from: j0 */
-    private ArrayList<View> f5360j0;
+    private ArrayList<View> f5367j0;
 
     /* renamed from: k */
-    int f5361k;
+    int f5368k;
 
     /* renamed from: k0 */
-    private final Runnable f5362k0 = new RunnableC1208c();
+    private final Runnable f5369k0 = new RunnableC1208c();
 
     /* renamed from: l */
-    private int f5363l = -1;
+    private int f5370l = -1;
 
     /* renamed from: l0 */
-    private int f5364l0 = 0;
+    private int f5371l0 = 0;
 
     /* renamed from: m */
-    private Parcelable f5365m = null;
+    private Parcelable f5372m = null;
 
     /* renamed from: n */
-    private ClassLoader f5366n = null;
+    private ClassLoader f5373n = null;
 
     /* renamed from: o */
-    private Scroller f5367o;
+    private Scroller f5374o;
 
     /* renamed from: p */
-    private boolean f5368p;
+    private boolean f5375p;
 
     /* renamed from: q */
-    private C1217l f5369q;
+    private C1217l f5376q;
 
     /* renamed from: r */
-    private int f5370r;
+    private int f5377r;
 
     /* renamed from: s */
-    private Drawable f5371s;
+    private Drawable f5378s;
 
     /* renamed from: t */
-    private int f5372t;
+    private int f5379t;
 
     /* renamed from: u */
-    private int f5373u;
+    private int f5380u;
 
     /* renamed from: v */
-    private float f5374v = -3.4028235E38f;
+    private float f5381v = -3.4028235E38f;
 
     /* renamed from: w */
-    private float f5375w = Float.MAX_VALUE;
+    private float f5382w = Float.MAX_VALUE;
 
     /* renamed from: x */
-    private int f5376x;
+    private int f5383x;
 
     /* renamed from: y */
-    private int f5377y;
+    private int f5384y;
 
     /* renamed from: z */
-    private boolean f5378z;
+    private boolean f5385z;
 
     /* renamed from: b.t.a.b$a */
     static class C1206a implements Comparator<C1211f> {
@@ -229,7 +229,7 @@ public class C1205b extends ViewGroup {
 
         /* renamed from: a */
         public int compare(C1211f fVar, C1211f fVar2) {
-            return fVar.f5383b - fVar2.f5383b;
+            return fVar.f5390b - fVar2.f5390b;
         }
     }
 
@@ -260,7 +260,7 @@ public class C1205b extends ViewGroup {
     public class C1209d implements AbstractC1010p {
 
         /* renamed from: a */
-        private final Rect f5380a = new Rect();
+        private final Rect f5387a = new Rect();
 
         C1209d() {
         }
@@ -272,7 +272,7 @@ public class C1205b extends ViewGroup {
             if (V.mo5423m()) {
                 return V;
             }
-            Rect rect = this.f5380a;
+            Rect rect = this.f5387a;
             rect.left = V.mo5416f();
             rect.top = V.mo5418h();
             rect.right = V.mo5417g();
@@ -301,19 +301,19 @@ public class C1205b extends ViewGroup {
     public static class C1211f {
 
         /* renamed from: a */
-        Object f5382a;
+        Object f5389a;
 
         /* renamed from: b */
-        int f5383b;
+        int f5390b;
 
         /* renamed from: c */
-        boolean f5384c;
+        boolean f5391c;
 
         /* renamed from: d */
-        float f5385d;
+        float f5392d;
 
         /* renamed from: e */
-        float f5386e;
+        float f5393e;
 
         C1211f() {
         }
@@ -323,22 +323,22 @@ public class C1205b extends ViewGroup {
     public static class C1212g extends ViewGroup.LayoutParams {
 
         /* renamed from: a */
-        public boolean f5387a;
+        public boolean f5394a;
 
         /* renamed from: b */
-        public int f5388b;
+        public int f5395b;
 
         /* renamed from: c */
-        float f5389c = 0.0f;
+        float f5396c = 0.0f;
 
         /* renamed from: d */
-        boolean f5390d;
+        boolean f5397d;
 
         /* renamed from: e */
-        int f5391e;
+        int f5398e;
 
         /* renamed from: f */
-        int f5392f;
+        int f5399f;
 
         public C1212g() {
             super(-1, -1);
@@ -346,8 +346,8 @@ public class C1205b extends ViewGroup {
 
         public C1212g(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1205b.f5319b);
-            this.f5388b = obtainStyledAttributes.getInteger(0, 48);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1205b.f5326b);
+            this.f5395b = obtainStyledAttributes.getInteger(0, 48);
             obtainStyledAttributes.recycle();
         }
     }
@@ -360,7 +360,7 @@ public class C1205b extends ViewGroup {
 
         /* renamed from: n */
         private boolean m6561n() {
-            AbstractC1204a aVar = C1205b.this.f5359j;
+            AbstractC1204a aVar = C1205b.this.f5366j;
             return aVar != null && aVar.mo6058c() > 1;
         }
 
@@ -371,10 +371,10 @@ public class C1205b extends ViewGroup {
             super.mo2361f(view, accessibilityEvent);
             accessibilityEvent.setClassName(C1205b.class.getName());
             accessibilityEvent.setScrollable(m6561n());
-            if (accessibilityEvent.getEventType() == 4096 && (aVar = C1205b.this.f5359j) != null) {
+            if (accessibilityEvent.getEventType() == 4096 && (aVar = C1205b.this.f5366j) != null) {
                 accessibilityEvent.setItemCount(aVar.mo6058c());
-                accessibilityEvent.setFromIndex(C1205b.this.f5361k);
-                accessibilityEvent.setToIndex(C1205b.this.f5361k);
+                accessibilityEvent.setFromIndex(C1205b.this.f5368k);
+                accessibilityEvent.setToIndex(C1205b.this.f5368k);
             }
         }
 
@@ -405,12 +405,12 @@ public class C1205b extends ViewGroup {
                     return false;
                 }
                 bVar = C1205b.this;
-                i2 = bVar.f5361k - 1;
+                i2 = bVar.f5368k - 1;
             } else if (!C1205b.this.canScrollHorizontally(1)) {
                 return false;
             } else {
                 bVar = C1205b.this;
-                i2 = bVar.f5361k + 1;
+                i2 = bVar.f5368k + 1;
             }
             bVar.setCurrentItem(i2);
             return true;
@@ -460,13 +460,13 @@ public class C1205b extends ViewGroup {
         public static final Parcelable.Creator<C1218m> CREATOR = new C1219a();
 
         /* renamed from: d */
-        int f5395d;
+        int f5402d;
 
         /* renamed from: e */
-        Parcelable f5396e;
+        Parcelable f5403e;
 
         /* renamed from: f */
-        ClassLoader f5397f;
+        ClassLoader f5404f;
 
         /* renamed from: b.t.a.b$m$a */
         static class C1219a implements Parcelable.ClassLoaderCreator<C1218m> {
@@ -492,9 +492,9 @@ public class C1205b extends ViewGroup {
         C1218m(Parcel parcel, ClassLoader classLoader) {
             super(parcel, classLoader);
             classLoader = classLoader == null ? C1218m.class.getClassLoader() : classLoader;
-            this.f5395d = parcel.readInt();
-            this.f5396e = parcel.readParcelable(classLoader);
-            this.f5397f = classLoader;
+            this.f5402d = parcel.readInt();
+            this.f5403e = parcel.readParcelable(classLoader);
+            this.f5404f = classLoader;
         }
 
         public C1218m(Parcelable parcelable) {
@@ -502,14 +502,14 @@ public class C1205b extends ViewGroup {
         }
 
         public String toString() {
-            return "FragmentPager.SavedState{" + Integer.toHexString(System.identityHashCode(this)) + " position=" + this.f5395d + "}";
+            return "FragmentPager.SavedState{" + Integer.toHexString(System.identityHashCode(this)) + " position=" + this.f5402d + "}";
         }
 
         @Override // p006b.p043i.p044a.AbstractC1041a
         public void writeToParcel(Parcel parcel, int i) {
             super.writeToParcel(parcel, i);
-            parcel.writeInt(this.f5395d);
-            parcel.writeParcelable(this.f5396e, i);
+            parcel.writeInt(this.f5402d);
+            parcel.writeParcelable(this.f5403e, i);
         }
     }
 
@@ -523,8 +523,8 @@ public class C1205b extends ViewGroup {
         public int compare(View view, View view2) {
             C1212g gVar = (C1212g) view.getLayoutParams();
             C1212g gVar2 = (C1212g) view2.getLayoutParams();
-            boolean z = gVar.f5387a;
-            return z != gVar2.f5387a ? z ? 1 : -1 : gVar.f5391e - gVar2.f5391e;
+            boolean z = gVar.f5394a;
+            return z != gVar2.f5394a ? z ? 1 : -1 : gVar.f5398e - gVar2.f5398e;
         }
     }
 
@@ -535,26 +535,26 @@ public class C1205b extends ViewGroup {
 
     /* renamed from: B */
     private boolean m6518B(int i) {
-        if (this.f5353g.size() != 0) {
+        if (this.f5360g.size() != 0) {
             C1211f s = m6535s();
             int clientWidth = getClientWidth();
-            int i2 = this.f5370r;
+            int i2 = this.f5377r;
             int i3 = clientWidth + i2;
             float f = (float) clientWidth;
-            int i4 = s.f5383b;
-            float f2 = ((((float) i) / f) - s.f5386e) / (s.f5385d + (((float) i2) / f));
-            this.f5346a0 = false;
+            int i4 = s.f5390b;
+            float f2 = ((((float) i) / f) - s.f5393e) / (s.f5392d + (((float) i2) / f));
+            this.f5353a0 = false;
             mo6126x(i4, f2, (int) (((float) i3) * f2));
-            if (this.f5346a0) {
+            if (this.f5353a0) {
                 return true;
             }
             throw new IllegalStateException("onPageScrolled did not call superclass implementation");
-        } else if (this.f5344V) {
+        } else if (this.f5351V) {
             return false;
         } else {
-            this.f5346a0 = false;
+            this.f5353a0 = false;
             mo6126x(0, 0.0f, 0);
-            if (this.f5346a0) {
+            if (this.f5353a0) {
                 return false;
             }
             throw new IllegalStateException("onPageScrolled did not call superclass implementation");
@@ -565,43 +565,43 @@ public class C1205b extends ViewGroup {
     private boolean m6519C(float f) {
         boolean z;
         boolean z2;
-        float f2 = this.f5331I - f;
-        this.f5331I = f;
+        float f2 = this.f5338I - f;
+        this.f5338I = f;
         float scrollX = ((float) getScrollX()) + f2;
         float clientWidth = (float) getClientWidth();
-        float f3 = this.f5374v * clientWidth;
-        float f4 = this.f5375w * clientWidth;
+        float f3 = this.f5381v * clientWidth;
+        float f4 = this.f5382w * clientWidth;
         boolean z3 = false;
-        C1211f fVar = this.f5353g.get(0);
-        ArrayList<C1211f> arrayList = this.f5353g;
+        C1211f fVar = this.f5360g.get(0);
+        ArrayList<C1211f> arrayList = this.f5360g;
         C1211f fVar2 = arrayList.get(arrayList.size() - 1);
-        if (fVar.f5383b != 0) {
-            f3 = fVar.f5386e * clientWidth;
+        if (fVar.f5390b != 0) {
+            f3 = fVar.f5393e * clientWidth;
             z = false;
         } else {
             z = true;
         }
-        if (fVar2.f5383b != this.f5359j.mo6058c() - 1) {
-            f4 = fVar2.f5386e * clientWidth;
+        if (fVar2.f5390b != this.f5366j.mo6058c() - 1) {
+            f4 = fVar2.f5393e * clientWidth;
             z2 = false;
         } else {
             z2 = true;
         }
         if (scrollX < f3) {
             if (z) {
-                this.f5342T.onPull(Math.abs(f3 - scrollX) / clientWidth);
+                this.f5349T.onPull(Math.abs(f3 - scrollX) / clientWidth);
                 z3 = true;
             }
             scrollX = f3;
         } else if (scrollX > f4) {
             if (z2) {
-                this.f5343U.onPull(Math.abs(scrollX - f4) / clientWidth);
+                this.f5350U.onPull(Math.abs(scrollX - f4) / clientWidth);
                 z3 = true;
             }
             scrollX = f4;
         }
         int i = (int) scrollX;
-        this.f5331I += scrollX - ((float) i);
+        this.f5338I += scrollX - ((float) i);
         scrollTo(i, getScrollY());
         m6518B(i);
         return z3;
@@ -610,16 +610,16 @@ public class C1205b extends ViewGroup {
     /* renamed from: F */
     private void m6520F(int i, int i2, int i3, int i4) {
         int min;
-        if (i2 <= 0 || this.f5353g.isEmpty()) {
-            C1211f t = mo6123t(this.f5361k);
-            min = (int) ((t != null ? Math.min(t.f5386e, this.f5375w) : 0.0f) * ((float) ((i - getPaddingLeft()) - getPaddingRight())));
+        if (i2 <= 0 || this.f5360g.isEmpty()) {
+            C1211f t = mo6123t(this.f5368k);
+            min = (int) ((t != null ? Math.min(t.f5393e, this.f5382w) : 0.0f) * ((float) ((i - getPaddingLeft()) - getPaddingRight())));
             if (min != getScrollX()) {
                 m6527f(false);
             } else {
                 return;
             }
-        } else if (!this.f5367o.isFinished()) {
-            this.f5367o.setFinalX(getCurrentItem() * getClientWidth());
+        } else if (!this.f5374o.isFinished()) {
+            this.f5374o.setFinalX(getCurrentItem() * getClientWidth());
             return;
         } else {
             min = (int) ((((float) getScrollX()) / ((float) (((i2 - getPaddingLeft()) - getPaddingRight()) + i4))) * ((float) (((i - getPaddingLeft()) - getPaddingRight()) + i3)));
@@ -631,7 +631,7 @@ public class C1205b extends ViewGroup {
     private void m6521G() {
         int i = 0;
         while (i < getChildCount()) {
-            if (!((C1212g) getChildAt(i).getLayoutParams()).f5387a) {
+            if (!((C1212g) getChildAt(i).getLayoutParams()).f5394a) {
                 removeViewAt(i);
                 i--;
             }
@@ -649,17 +649,17 @@ public class C1205b extends ViewGroup {
 
     /* renamed from: I */
     private boolean m6523I() {
-        this.f5335M = -1;
+        this.f5342M = -1;
         m6533n();
-        this.f5342T.onRelease();
-        this.f5343U.onRelease();
-        return this.f5342T.isFinished() || this.f5343U.isFinished();
+        this.f5349T.onRelease();
+        this.f5350U.onRelease();
+        return this.f5349T.isFinished() || this.f5350U.isFinished();
     }
 
     /* renamed from: J */
     private void m6524J(int i, boolean z, int i2, boolean z2) {
         C1211f t = mo6123t(i);
-        int clientWidth = t != null ? (int) (((float) getClientWidth()) * Math.max(this.f5374v, Math.min(t.f5386e, this.f5375w))) : 0;
+        int clientWidth = t != null ? (int) (((float) getClientWidth()) * Math.max(this.f5381v, Math.min(t.f5393e, this.f5382w))) : 0;
         if (z) {
             mo6075N(clientWidth, 0, i2);
             if (z2) {
@@ -678,18 +678,18 @@ public class C1205b extends ViewGroup {
 
     /* renamed from: O */
     private void m6525O() {
-        if (this.f5358i0 != 0) {
-            ArrayList<View> arrayList = this.f5360j0;
+        if (this.f5365i0 != 0) {
+            ArrayList<View> arrayList = this.f5367j0;
             if (arrayList == null) {
-                this.f5360j0 = new ArrayList<>();
+                this.f5367j0 = new ArrayList<>();
             } else {
                 arrayList.clear();
             }
             int childCount = getChildCount();
             for (int i = 0; i < childCount; i++) {
-                this.f5360j0.add(getChildAt(i));
+                this.f5367j0.add(getChildAt(i));
             }
-            Collections.sort(this.f5360j0, f5322e);
+            Collections.sort(this.f5367j0, f5329e);
         }
     }
 
@@ -699,115 +699,115 @@ public class C1205b extends ViewGroup {
         int i3;
         C1211f fVar3;
         C1211f fVar4;
-        int c = this.f5359j.mo6058c();
+        int c = this.f5366j.mo6058c();
         int clientWidth = getClientWidth();
-        float f = clientWidth > 0 ? ((float) this.f5370r) / ((float) clientWidth) : 0.0f;
+        float f = clientWidth > 0 ? ((float) this.f5377r) / ((float) clientWidth) : 0.0f;
         if (fVar2 != null) {
-            int i4 = fVar2.f5383b;
-            int i5 = fVar.f5383b;
+            int i4 = fVar2.f5390b;
+            int i5 = fVar.f5390b;
             if (i4 < i5) {
-                float f2 = fVar2.f5386e + fVar2.f5385d + f;
+                float f2 = fVar2.f5393e + fVar2.f5392d + f;
                 int i6 = i4 + 1;
                 int i7 = 0;
-                while (i6 <= fVar.f5383b && i7 < this.f5353g.size()) {
+                while (i6 <= fVar.f5390b && i7 < this.f5360g.size()) {
                     while (true) {
-                        fVar4 = this.f5353g.get(i7);
-                        if (i6 > fVar4.f5383b && i7 < this.f5353g.size() - 1) {
+                        fVar4 = this.f5360g.get(i7);
+                        if (i6 > fVar4.f5390b && i7 < this.f5360g.size() - 1) {
                             i7++;
                         }
                     }
-                    while (i6 < fVar4.f5383b) {
-                        f2 += this.f5359j.mo6060e(i6) + f;
+                    while (i6 < fVar4.f5390b) {
+                        f2 += this.f5366j.mo6060e(i6) + f;
                         i6++;
                     }
-                    fVar4.f5386e = f2;
-                    f2 += fVar4.f5385d + f;
+                    fVar4.f5393e = f2;
+                    f2 += fVar4.f5392d + f;
                     i6++;
                 }
             } else if (i4 > i5) {
-                int size = this.f5353g.size() - 1;
-                float f3 = fVar2.f5386e;
+                int size = this.f5360g.size() - 1;
+                float f3 = fVar2.f5393e;
                 while (true) {
                     i4--;
-                    if (i4 < fVar.f5383b || size < 0) {
+                    if (i4 < fVar.f5390b || size < 0) {
                         break;
                     }
                     while (true) {
-                        fVar3 = this.f5353g.get(size);
-                        if (i4 < fVar3.f5383b && size > 0) {
+                        fVar3 = this.f5360g.get(size);
+                        if (i4 < fVar3.f5390b && size > 0) {
                             size--;
                         }
                     }
-                    while (i4 > fVar3.f5383b) {
-                        f3 -= this.f5359j.mo6060e(i4) + f;
+                    while (i4 > fVar3.f5390b) {
+                        f3 -= this.f5366j.mo6060e(i4) + f;
                         i4--;
                     }
-                    f3 -= fVar3.f5385d + f;
-                    fVar3.f5386e = f3;
+                    f3 -= fVar3.f5392d + f;
+                    fVar3.f5393e = f3;
                 }
             }
         }
-        int size2 = this.f5353g.size();
-        float f4 = fVar.f5386e;
-        int i8 = fVar.f5383b;
+        int size2 = this.f5360g.size();
+        float f4 = fVar.f5393e;
+        int i8 = fVar.f5390b;
         int i9 = i8 - 1;
-        this.f5374v = i8 == 0 ? f4 : -3.4028235E38f;
+        this.f5381v = i8 == 0 ? f4 : -3.4028235E38f;
         int i10 = c - 1;
-        this.f5375w = i8 == i10 ? (fVar.f5385d + f4) - 1.0f : Float.MAX_VALUE;
+        this.f5382w = i8 == i10 ? (fVar.f5392d + f4) - 1.0f : Float.MAX_VALUE;
         int i11 = i - 1;
         while (i11 >= 0) {
-            C1211f fVar5 = this.f5353g.get(i11);
+            C1211f fVar5 = this.f5360g.get(i11);
             while (true) {
-                i3 = fVar5.f5383b;
+                i3 = fVar5.f5390b;
                 if (i9 <= i3) {
                     break;
                 }
-                f4 -= this.f5359j.mo6060e(i9) + f;
+                f4 -= this.f5366j.mo6060e(i9) + f;
                 i9--;
             }
-            f4 -= fVar5.f5385d + f;
-            fVar5.f5386e = f4;
+            f4 -= fVar5.f5392d + f;
+            fVar5.f5393e = f4;
             if (i3 == 0) {
-                this.f5374v = f4;
+                this.f5381v = f4;
             }
             i11--;
             i9--;
         }
-        float f5 = fVar.f5386e + fVar.f5385d + f;
-        int i12 = fVar.f5383b + 1;
+        float f5 = fVar.f5393e + fVar.f5392d + f;
+        int i12 = fVar.f5390b + 1;
         int i13 = i + 1;
         while (i13 < size2) {
-            C1211f fVar6 = this.f5353g.get(i13);
+            C1211f fVar6 = this.f5360g.get(i13);
             while (true) {
-                i2 = fVar6.f5383b;
+                i2 = fVar6.f5390b;
                 if (i12 >= i2) {
                     break;
                 }
-                f5 += this.f5359j.mo6060e(i12) + f;
+                f5 += this.f5366j.mo6060e(i12) + f;
                 i12++;
             }
             if (i2 == i10) {
-                this.f5375w = (fVar6.f5385d + f5) - 1.0f;
+                this.f5382w = (fVar6.f5392d + f5) - 1.0f;
             }
-            fVar6.f5386e = f5;
-            f5 += fVar6.f5385d + f;
+            fVar6.f5393e = f5;
+            f5 += fVar6.f5392d + f;
             i13++;
             i12++;
         }
-        this.f5345W = false;
+        this.f5352W = false;
     }
 
     /* renamed from: f */
     private void m6527f(boolean z) {
-        boolean z2 = this.f5364l0 == 2;
+        boolean z2 = this.f5371l0 == 2;
         if (z2) {
             setScrollingCacheEnabled(false);
-            if (!this.f5367o.isFinished()) {
-                this.f5367o.abortAnimation();
+            if (!this.f5374o.isFinished()) {
+                this.f5374o.abortAnimation();
                 int scrollX = getScrollX();
                 int scrollY = getScrollY();
-                int currX = this.f5367o.getCurrX();
-                int currY = this.f5367o.getCurrY();
+                int currX = this.f5374o.getCurrX();
+                int currY = this.f5374o.getCurrY();
                 if (!(scrollX == currX && scrollY == currY)) {
                     scrollTo(currX, currY);
                     if (currX != scrollX) {
@@ -816,11 +816,11 @@ public class C1205b extends ViewGroup {
                 }
             }
         }
-        this.f5324B = false;
-        for (int i = 0; i < this.f5353g.size(); i++) {
-            C1211f fVar = this.f5353g.get(i);
-            if (fVar.f5384c) {
-                fVar.f5384c = false;
+        this.f5331B = false;
+        for (int i = 0; i < this.f5360g.size(); i++) {
+            C1211f fVar = this.f5360g.get(i);
+            if (fVar.f5391c) {
+                fVar.f5391c = false;
                 z2 = true;
             }
         }
@@ -828,9 +828,9 @@ public class C1205b extends ViewGroup {
             return;
         }
         if (z) {
-            C1013s.m5750a0(this, this.f5362k0);
+            C1013s.m5750a0(this, this.f5369k0);
         } else {
-            this.f5362k0.run();
+            this.f5369k0.run();
         }
     }
 
@@ -840,35 +840,35 @@ public class C1205b extends ViewGroup {
 
     /* renamed from: h */
     private int m6528h(int i, float f, int i2, int i3) {
-        if (Math.abs(i3) <= this.f5339Q || Math.abs(i2) <= this.f5337O) {
-            i += (int) (f + (i >= this.f5361k ? 0.4f : 0.6f));
+        if (Math.abs(i3) <= this.f5346Q || Math.abs(i2) <= this.f5344O) {
+            i += (int) (f + (i >= this.f5368k ? 0.4f : 0.6f));
         } else if (i2 <= 0) {
             i++;
         }
-        if (this.f5353g.size() <= 0) {
+        if (this.f5360g.size() <= 0) {
             return i;
         }
-        ArrayList<C1211f> arrayList = this.f5353g;
-        return Math.max(this.f5353g.get(0).f5383b, Math.min(i, arrayList.get(arrayList.size() - 1).f5383b));
+        ArrayList<C1211f> arrayList = this.f5360g;
+        return Math.max(this.f5360g.get(0).f5390b, Math.min(i, arrayList.get(arrayList.size() - 1).f5390b));
     }
 
     /* renamed from: i */
     private void m6529i(int i, float f, int i2) {
-        AbstractC1215j jVar = this.f5349d0;
+        AbstractC1215j jVar = this.f5356d0;
         if (jVar != null) {
             jVar.mo6133a(i, f, i2);
         }
-        List<AbstractC1215j> list = this.f5348c0;
+        List<AbstractC1215j> list = this.f5355c0;
         if (list != null) {
             int size = list.size();
             for (int i3 = 0; i3 < size; i3++) {
-                AbstractC1215j jVar2 = this.f5348c0.get(i3);
+                AbstractC1215j jVar2 = this.f5355c0.get(i3);
                 if (jVar2 != null) {
                     jVar2.mo6133a(i, f, i2);
                 }
             }
         }
-        AbstractC1215j jVar3 = this.f5350e0;
+        AbstractC1215j jVar3 = this.f5357e0;
         if (jVar3 != null) {
             jVar3.mo6133a(i, f, i2);
         }
@@ -876,21 +876,21 @@ public class C1205b extends ViewGroup {
 
     /* renamed from: j */
     private void m6530j(int i) {
-        AbstractC1215j jVar = this.f5349d0;
+        AbstractC1215j jVar = this.f5356d0;
         if (jVar != null) {
             jVar.mo6135c(i);
         }
-        List<AbstractC1215j> list = this.f5348c0;
+        List<AbstractC1215j> list = this.f5355c0;
         if (list != null) {
             int size = list.size();
             for (int i2 = 0; i2 < size; i2++) {
-                AbstractC1215j jVar2 = this.f5348c0.get(i2);
+                AbstractC1215j jVar2 = this.f5355c0.get(i2);
                 if (jVar2 != null) {
                     jVar2.mo6135c(i);
                 }
             }
         }
-        AbstractC1215j jVar3 = this.f5350e0;
+        AbstractC1215j jVar3 = this.f5357e0;
         if (jVar3 != null) {
             jVar3.mo6135c(i);
         }
@@ -898,21 +898,21 @@ public class C1205b extends ViewGroup {
 
     /* renamed from: k */
     private void m6531k(int i) {
-        AbstractC1215j jVar = this.f5349d0;
+        AbstractC1215j jVar = this.f5356d0;
         if (jVar != null) {
             jVar.mo6134b(i);
         }
-        List<AbstractC1215j> list = this.f5348c0;
+        List<AbstractC1215j> list = this.f5355c0;
         if (list != null) {
             int size = list.size();
             for (int i2 = 0; i2 < size; i2++) {
-                AbstractC1215j jVar2 = this.f5348c0.get(i2);
+                AbstractC1215j jVar2 = this.f5355c0.get(i2);
                 if (jVar2 != null) {
                     jVar2.mo6134b(i);
                 }
             }
         }
-        AbstractC1215j jVar3 = this.f5350e0;
+        AbstractC1215j jVar3 = this.f5357e0;
         if (jVar3 != null) {
             jVar3.mo6134b(i);
         }
@@ -922,18 +922,18 @@ public class C1205b extends ViewGroup {
     private void m6532m(boolean z) {
         int childCount = getChildCount();
         for (int i = 0; i < childCount; i++) {
-            getChildAt(i).setLayerType(z ? this.f5356h0 : 0, null);
+            getChildAt(i).setLayerType(z ? this.f5363h0 : 0, null);
         }
     }
 
     /* renamed from: n */
     private void m6533n() {
-        this.f5326D = false;
-        this.f5327E = false;
-        VelocityTracker velocityTracker = this.f5336N;
+        this.f5333D = false;
+        this.f5334E = false;
+        VelocityTracker velocityTracker = this.f5343N;
         if (velocityTracker != null) {
             velocityTracker.recycle();
-            this.f5336N = null;
+            this.f5343N = null;
         }
     }
 
@@ -968,31 +968,31 @@ public class C1205b extends ViewGroup {
         int clientWidth = getClientWidth();
         float f = 0.0f;
         float scrollX = clientWidth > 0 ? ((float) getScrollX()) / ((float) clientWidth) : 0.0f;
-        float f2 = clientWidth > 0 ? ((float) this.f5370r) / ((float) clientWidth) : 0.0f;
+        float f2 = clientWidth > 0 ? ((float) this.f5377r) / ((float) clientWidth) : 0.0f;
         C1211f fVar = null;
         float f3 = 0.0f;
         int i2 = -1;
         int i3 = 0;
         boolean z = true;
-        while (i3 < this.f5353g.size()) {
-            C1211f fVar2 = this.f5353g.get(i3);
-            if (!z && fVar2.f5383b != (i = i2 + 1)) {
-                fVar2 = this.f5355h;
-                fVar2.f5386e = f + f3 + f2;
-                fVar2.f5383b = i;
-                fVar2.f5385d = this.f5359j.mo6060e(i);
+        while (i3 < this.f5360g.size()) {
+            C1211f fVar2 = this.f5360g.get(i3);
+            if (!z && fVar2.f5390b != (i = i2 + 1)) {
+                fVar2 = this.f5362h;
+                fVar2.f5393e = f + f3 + f2;
+                fVar2.f5390b = i;
+                fVar2.f5392d = this.f5366j.mo6060e(i);
                 i3--;
             }
-            f = fVar2.f5386e;
-            float f4 = fVar2.f5385d + f + f2;
+            f = fVar2.f5393e;
+            float f4 = fVar2.f5392d + f + f2;
             if (!z && scrollX < f) {
                 return fVar;
             }
-            if (scrollX < f4 || i3 == this.f5353g.size() - 1) {
+            if (scrollX < f4 || i3 == this.f5360g.size() - 1) {
                 return fVar2;
             }
-            i2 = fVar2.f5383b;
-            f3 = fVar2.f5385d;
+            i2 = fVar2.f5390b;
+            f3 = fVar2.f5392d;
             i3++;
             fVar = fVar2;
             z = false;
@@ -1001,8 +1001,8 @@ public class C1205b extends ViewGroup {
     }
 
     private void setScrollingCacheEnabled(boolean z) {
-        if (this.f5323A != z) {
-            this.f5323A = z;
+        if (this.f5330A != z) {
+            this.f5330A = z;
         }
     }
 
@@ -1013,17 +1013,17 @@ public class C1205b extends ViewGroup {
 
     /* renamed from: w */
     private boolean m6537w(float f, float f2) {
-        return (f < ((float) this.f5329G) && f2 > 0.0f) || (f > ((float) (getWidth() - this.f5329G)) && f2 < 0.0f);
+        return (f < ((float) this.f5336G) && f2 > 0.0f) || (f > ((float) (getWidth() - this.f5336G)) && f2 < 0.0f);
     }
 
     /* renamed from: y */
     private void m6538y(MotionEvent motionEvent) {
         int actionIndex = motionEvent.getActionIndex();
-        if (motionEvent.getPointerId(actionIndex) == this.f5335M) {
+        if (motionEvent.getPointerId(actionIndex) == this.f5342M) {
             int i = actionIndex == 0 ? 1 : 0;
-            this.f5331I = motionEvent.getX(i);
-            this.f5335M = motionEvent.getPointerId(i);
-            VelocityTracker velocityTracker = this.f5336N;
+            this.f5338I = motionEvent.getX(i);
+            this.f5342M = motionEvent.getPointerId(i);
+            VelocityTracker velocityTracker = this.f5343N;
             if (velocityTracker != null) {
                 velocityTracker.clear();
             }
@@ -1033,18 +1033,18 @@ public class C1205b extends ViewGroup {
     /* access modifiers changed from: package-private */
     /* renamed from: A */
     public boolean mo6069A() {
-        AbstractC1204a aVar = this.f5359j;
-        if (aVar == null || this.f5361k >= aVar.mo6058c() - 1) {
+        AbstractC1204a aVar = this.f5366j;
+        if (aVar == null || this.f5368k >= aVar.mo6058c() - 1) {
             return false;
         }
-        mo6072K(this.f5361k + 1, true);
+        mo6072K(this.f5368k + 1, true);
         return true;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: D */
     public void mo6070D() {
-        mo6071E(this.f5361k);
+        mo6071E(this.f5368k);
     }
 
     /* access modifiers changed from: package-private */
@@ -1067,16 +1067,16 @@ public class C1205b extends ViewGroup {
         r5 = null;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:82:0x013c, code lost:
-        if (r4 < r17.f5353g.size()) goto L_0x013e;
+        if (r4 < r17.f5360g.size()) goto L_0x013e;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:84:0x0147, code lost:
         r5 = null;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:89:0x015a, code lost:
-        if (r4 < r17.f5353g.size()) goto L_0x013e;
+        if (r4 < r17.f5360g.size()) goto L_0x013e;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:91:0x016c, code lost:
-        if (r4 < r17.f5353g.size()) goto L_0x013e;
+        if (r4 < r17.f5360g.size()) goto L_0x013e;
      */
     /* renamed from: E */
     /* Code decompiled incorrectly, please refer to instructions dump. */
@@ -1089,7 +1089,7 @@ public class C1205b extends ViewGroup {
 
     /* renamed from: K */
     public void mo6072K(int i, boolean z) {
-        this.f5324B = false;
+        this.f5331B = false;
         mo6073L(i, z, false);
     }
 
@@ -1102,28 +1102,28 @@ public class C1205b extends ViewGroup {
     /* access modifiers changed from: package-private */
     /* renamed from: M */
     public void mo6074M(int i, boolean z, boolean z2, int i2) {
-        AbstractC1204a aVar = this.f5359j;
+        AbstractC1204a aVar = this.f5366j;
         boolean z3 = false;
         if (aVar == null || aVar.mo6058c() <= 0) {
             setScrollingCacheEnabled(false);
-        } else if (z2 || this.f5361k != i || this.f5353g.size() == 0) {
+        } else if (z2 || this.f5368k != i || this.f5360g.size() == 0) {
             if (i < 0) {
                 i = 0;
-            } else if (i >= this.f5359j.mo6058c()) {
-                i = this.f5359j.mo6058c() - 1;
+            } else if (i >= this.f5366j.mo6058c()) {
+                i = this.f5366j.mo6058c() - 1;
             }
-            int i3 = this.f5325C;
-            int i4 = this.f5361k;
+            int i3 = this.f5332C;
+            int i4 = this.f5368k;
             if (i > i4 + i3 || i < i4 - i3) {
-                for (int i5 = 0; i5 < this.f5353g.size(); i5++) {
-                    this.f5353g.get(i5).f5384c = true;
+                for (int i5 = 0; i5 < this.f5360g.size(); i5++) {
+                    this.f5360g.get(i5).f5391c = true;
                 }
             }
-            if (this.f5361k != i) {
+            if (this.f5368k != i) {
                 z3 = true;
             }
-            if (this.f5344V) {
-                this.f5361k = i;
+            if (this.f5351V) {
+                this.f5368k = i;
                 if (z3) {
                     m6530j(i);
                 }
@@ -1145,10 +1145,10 @@ public class C1205b extends ViewGroup {
             setScrollingCacheEnabled(false);
             return;
         }
-        Scroller scroller = this.f5367o;
+        Scroller scroller = this.f5374o;
         if (scroller != null && !scroller.isFinished()) {
-            i4 = this.f5368p ? this.f5367o.getCurrX() : this.f5367o.getStartX();
-            this.f5367o.abortAnimation();
+            i4 = this.f5375p ? this.f5374o.getCurrX() : this.f5374o.getStartX();
+            this.f5374o.abortAnimation();
             setScrollingCacheEnabled(false);
         } else {
             i4 = getScrollX();
@@ -1170,9 +1170,9 @@ public class C1205b extends ViewGroup {
         float f2 = (float) i7;
         float l = f2 + (mo6099l(Math.min(1.0f, (((float) Math.abs(i5)) * 1.0f) / f)) * f2);
         int abs = Math.abs(i3);
-        int min = Math.min(abs > 0 ? Math.round(Math.abs(l / ((float) abs)) * 1000.0f) * 4 : (int) (((((float) Math.abs(i5)) / ((f * this.f5359j.mo6060e(this.f5361k)) + ((float) this.f5370r))) + 1.0f) * 100.0f), 600);
-        this.f5368p = false;
-        this.f5367o.startScroll(i4, scrollY, i5, i6, min);
+        int min = Math.min(abs > 0 ? Math.round(Math.abs(l / ((float) abs)) * 1000.0f) * 4 : (int) (((((float) Math.abs(i5)) / ((f * this.f5366j.mo6060e(this.f5368k)) + ((float) this.f5377r))) + 1.0f) * 100.0f), 600);
+        this.f5375p = false;
+        this.f5374o.startScroll(i4, scrollY, i5, i6, min);
         C1013s.m5748Z(this);
     }
 
@@ -1180,13 +1180,13 @@ public class C1205b extends ViewGroup {
     /* renamed from: a */
     public C1211f mo6076a(int i, int i2) {
         C1211f fVar = new C1211f();
-        fVar.f5383b = i;
-        fVar.f5382a = this.f5359j.mo6061f(this, i);
-        fVar.f5385d = this.f5359j.mo6060e(i);
-        if (i2 < 0 || i2 >= this.f5353g.size()) {
-            this.f5353g.add(fVar);
+        fVar.f5390b = i;
+        fVar.f5389a = this.f5366j.mo6061f(this, i);
+        fVar.f5392d = this.f5366j.mo6060e(i);
+        if (i2 < 0 || i2 >= this.f5360g.size()) {
+            this.f5360g.add(fVar);
         } else {
-            this.f5353g.add(i2, fVar);
+            this.f5360g.add(i2, fVar);
         }
         return fVar;
     }
@@ -1199,7 +1199,7 @@ public class C1205b extends ViewGroup {
         if (descendantFocusability != 393216) {
             for (int i3 = 0; i3 < getChildCount(); i3++) {
                 View childAt = getChildAt(i3);
-                if (childAt.getVisibility() == 0 && (r = mo6113r(childAt)) != null && r.f5383b == this.f5361k) {
+                if (childAt.getVisibility() == 0 && (r = mo6113r(childAt)) != null && r.f5390b == this.f5368k) {
                     childAt.addFocusables(arrayList, i, i2);
                 }
             }
@@ -1217,7 +1217,7 @@ public class C1205b extends ViewGroup {
         C1211f r;
         for (int i = 0; i < getChildCount(); i++) {
             View childAt = getChildAt(i);
-            if (childAt.getVisibility() == 0 && (r = mo6113r(childAt)) != null && r.f5383b == this.f5361k) {
+            if (childAt.getVisibility() == 0 && (r = mo6113r(childAt)) != null && r.f5390b == this.f5368k) {
                 childAt.addTouchables(arrayList);
             }
         }
@@ -1229,12 +1229,12 @@ public class C1205b extends ViewGroup {
             layoutParams = generateLayoutParams(layoutParams);
         }
         C1212g gVar = (C1212g) layoutParams;
-        boolean v = gVar.f5387a | m6536v(view);
-        gVar.f5387a = v;
-        if (!this.f5378z) {
+        boolean v = gVar.f5394a | m6536v(view);
+        gVar.f5394a = v;
+        if (!this.f5385z) {
             super.addView(view, i, layoutParams);
         } else if (!v) {
-            gVar.f5390d = true;
+            gVar.f5397d = true;
             addViewInLayout(view, i, layoutParams);
         } else {
             throw new IllegalStateException("Cannot add pager decor view during layout");
@@ -1243,10 +1243,10 @@ public class C1205b extends ViewGroup {
 
     /* renamed from: b */
     public void mo6080b(AbstractC1215j jVar) {
-        if (this.f5348c0 == null) {
-            this.f5348c0 = new ArrayList();
+        if (this.f5355c0 == null) {
+            this.f5355c0 = new ArrayList();
         }
-        this.f5348c0.add(jVar);
+        this.f5355c0.add(jVar);
     }
 
     /* JADX WARNING: Removed duplicated region for block: B:40:0x00ca  */
@@ -1260,12 +1260,12 @@ public class C1205b extends ViewGroup {
     }
 
     public boolean canScrollHorizontally(int i) {
-        if (this.f5359j == null) {
+        if (this.f5366j == null) {
             return false;
         }
         int clientWidth = getClientWidth();
         int scrollX = getScrollX();
-        return i < 0 ? scrollX > ((int) (((float) clientWidth) * this.f5374v)) : i > 0 && scrollX < ((int) (((float) clientWidth) * this.f5375w));
+        return i < 0 ? scrollX > ((int) (((float) clientWidth) * this.f5381v)) : i > 0 && scrollX < ((int) (((float) clientWidth) * this.f5382w));
     }
 
     /* access modifiers changed from: protected */
@@ -1274,19 +1274,19 @@ public class C1205b extends ViewGroup {
     }
 
     public void computeScroll() {
-        this.f5368p = true;
-        if (this.f5367o.isFinished() || !this.f5367o.computeScrollOffset()) {
+        this.f5375p = true;
+        if (this.f5374o.isFinished() || !this.f5374o.computeScrollOffset()) {
             m6527f(true);
             return;
         }
         int scrollX = getScrollX();
         int scrollY = getScrollY();
-        int currX = this.f5367o.getCurrX();
-        int currY = this.f5367o.getCurrY();
+        int currX = this.f5374o.getCurrX();
+        int currY = this.f5374o.getCurrY();
         if (!(scrollX == currX && scrollY == currY)) {
             scrollTo(currX, currY);
             if (!m6518B(currX)) {
-                this.f5367o.abortAnimation();
+                this.f5374o.abortAnimation();
                 scrollTo(0, currY);
             }
         }
@@ -1305,7 +1305,7 @@ public class C1205b extends ViewGroup {
         int childCount = getChildCount();
         for (int i = 0; i < childCount; i++) {
             View childAt = getChildAt(i);
-            if (childAt.getVisibility() == 0 && (r = mo6113r(childAt)) != null && r.f5383b == this.f5361k && childAt.dispatchPopulateAccessibilityEvent(accessibilityEvent)) {
+            if (childAt.getVisibility() == 0 && (r = mo6113r(childAt)) != null && r.f5390b == this.f5368k && childAt.dispatchPopulateAccessibilityEvent(accessibilityEvent)) {
                 return true;
             }
         }
@@ -1317,30 +1317,30 @@ public class C1205b extends ViewGroup {
         super.draw(canvas);
         int overScrollMode = getOverScrollMode();
         boolean z = false;
-        if (overScrollMode == 0 || (overScrollMode == 1 && (aVar = this.f5359j) != null && aVar.mo6058c() > 1)) {
-            if (!this.f5342T.isFinished()) {
+        if (overScrollMode == 0 || (overScrollMode == 1 && (aVar = this.f5366j) != null && aVar.mo6058c() > 1)) {
+            if (!this.f5349T.isFinished()) {
                 int save = canvas.save();
                 int height = (getHeight() - getPaddingTop()) - getPaddingBottom();
                 int width = getWidth();
                 canvas.rotate(270.0f);
-                canvas.translate((float) ((-height) + getPaddingTop()), this.f5374v * ((float) width));
-                this.f5342T.setSize(height, width);
-                z = false | this.f5342T.draw(canvas);
+                canvas.translate((float) ((-height) + getPaddingTop()), this.f5381v * ((float) width));
+                this.f5349T.setSize(height, width);
+                z = false | this.f5349T.draw(canvas);
                 canvas.restoreToCount(save);
             }
-            if (!this.f5343U.isFinished()) {
+            if (!this.f5350U.isFinished()) {
                 int save2 = canvas.save();
                 int width2 = getWidth();
                 int height2 = (getHeight() - getPaddingTop()) - getPaddingBottom();
                 canvas.rotate(90.0f);
-                canvas.translate((float) (-getPaddingTop()), (-(this.f5375w + 1.0f)) * ((float) width2));
-                this.f5343U.setSize(height2, width2);
-                z |= this.f5343U.draw(canvas);
+                canvas.translate((float) (-getPaddingTop()), (-(this.f5382w + 1.0f)) * ((float) width2));
+                this.f5350U.setSize(height2, width2);
+                z |= this.f5350U.draw(canvas);
                 canvas.restoreToCount(save2);
             }
         } else {
-            this.f5342T.finish();
-            this.f5343U.finish();
+            this.f5349T.finish();
+            this.f5350U.finish();
         }
         if (z) {
             C1013s.m5748Z(this);
@@ -1350,7 +1350,7 @@ public class C1205b extends ViewGroup {
     /* access modifiers changed from: protected */
     public void drawableStateChanged() {
         super.drawableStateChanged();
-        Drawable drawable = this.f5371s;
+        Drawable drawable = this.f5378s;
         if (drawable != null && drawable.isStateful()) {
             drawable.setState(getDrawableState());
         }
@@ -1378,35 +1378,35 @@ public class C1205b extends ViewGroup {
     /* access modifiers changed from: package-private */
     /* renamed from: g */
     public void mo6090g() {
-        int c = this.f5359j.mo6058c();
-        this.f5351f = c;
-        boolean z = this.f5353g.size() < (this.f5325C * 2) + 1 && this.f5353g.size() < c;
-        int i = this.f5361k;
+        int c = this.f5366j.mo6058c();
+        this.f5358f = c;
+        boolean z = this.f5360g.size() < (this.f5332C * 2) + 1 && this.f5360g.size() < c;
+        int i = this.f5368k;
         int i2 = 0;
         boolean z2 = false;
-        while (i2 < this.f5353g.size()) {
-            C1211f fVar = this.f5353g.get(i2);
-            int d = this.f5359j.mo6059d(fVar.f5382a);
+        while (i2 < this.f5360g.size()) {
+            C1211f fVar = this.f5360g.get(i2);
+            int d = this.f5366j.mo6059d(fVar.f5389a);
             if (d != -1) {
                 if (d == -2) {
-                    this.f5353g.remove(i2);
+                    this.f5360g.remove(i2);
                     i2--;
                     if (!z2) {
-                        this.f5359j.mo6068m(this);
+                        this.f5366j.mo6068m(this);
                         z2 = true;
                     }
-                    this.f5359j.mo6056a(this, fVar.f5383b, fVar.f5382a);
-                    int i3 = this.f5361k;
-                    if (i3 == fVar.f5383b) {
+                    this.f5366j.mo6056a(this, fVar.f5390b, fVar.f5389a);
+                    int i3 = this.f5368k;
+                    if (i3 == fVar.f5390b) {
                         i = Math.max(0, Math.min(i3, c - 1));
                     }
                 } else {
-                    int i4 = fVar.f5383b;
+                    int i4 = fVar.f5390b;
                     if (i4 != d) {
-                        if (i4 == this.f5361k) {
+                        if (i4 == this.f5368k) {
                             i = d;
                         }
-                        fVar.f5383b = d;
+                        fVar.f5390b = d;
                     }
                 }
                 z = true;
@@ -1414,15 +1414,15 @@ public class C1205b extends ViewGroup {
             i2++;
         }
         if (z2) {
-            this.f5359j.mo6057b(this);
+            this.f5366j.mo6057b(this);
         }
-        Collections.sort(this.f5353g, f5320c);
+        Collections.sort(this.f5360g, f5327c);
         if (z) {
             int childCount = getChildCount();
             for (int i5 = 0; i5 < childCount; i5++) {
                 C1212g gVar = (C1212g) getChildAt(i5).getLayoutParams();
-                if (!gVar.f5387a) {
-                    gVar.f5389c = 0.0f;
+                if (!gVar.f5394a) {
+                    gVar.f5396c = 0.0f;
                 }
             }
             mo6073L(i, false, true);
@@ -1447,27 +1447,27 @@ public class C1205b extends ViewGroup {
     }
 
     public AbstractC1204a getAdapter() {
-        return this.f5359j;
+        return this.f5366j;
     }
 
     /* access modifiers changed from: protected */
     public int getChildDrawingOrder(int i, int i2) {
-        if (this.f5358i0 == 2) {
+        if (this.f5365i0 == 2) {
             i2 = (i - 1) - i2;
         }
-        return ((C1212g) this.f5360j0.get(i2).getLayoutParams()).f5392f;
+        return ((C1212g) this.f5367j0.get(i2).getLayoutParams()).f5399f;
     }
 
     public int getCurrentItem() {
-        return this.f5361k;
+        return this.f5368k;
     }
 
     public int getOffscreenPageLimit() {
-        return this.f5325C;
+        return this.f5332C;
     }
 
     public int getPageMargin() {
-        return this.f5370r;
+        return this.f5377r;
     }
 
     /* access modifiers changed from: package-private */
@@ -1509,15 +1509,15 @@ public class C1205b extends ViewGroup {
     /* access modifiers changed from: protected */
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        this.f5344V = true;
+        this.f5351V = true;
     }
 
     /* access modifiers changed from: protected */
     public void onDetachedFromWindow() {
-        removeCallbacks(this.f5362k0);
-        Scroller scroller = this.f5367o;
+        removeCallbacks(this.f5369k0);
+        Scroller scroller = this.f5374o;
         if (scroller != null && !scroller.isFinished()) {
-            this.f5367o.abortAnimation();
+            this.f5374o.abortAnimation();
         }
         super.onDetachedFromWindow();
     }
@@ -1540,74 +1540,74 @@ public class C1205b extends ViewGroup {
             return false;
         }
         if (action != 0) {
-            if (this.f5326D) {
+            if (this.f5333D) {
                 return true;
             }
-            if (this.f5327E) {
+            if (this.f5334E) {
                 return false;
             }
         }
         if (action == 0) {
             float x = motionEvent.getX();
-            this.f5333K = x;
-            this.f5331I = x;
+            this.f5340K = x;
+            this.f5338I = x;
             float y = motionEvent.getY();
-            this.f5334L = y;
-            this.f5332J = y;
-            this.f5335M = motionEvent.getPointerId(0);
-            this.f5327E = false;
-            this.f5368p = true;
-            this.f5367o.computeScrollOffset();
-            if (this.f5364l0 != 2 || Math.abs(this.f5367o.getFinalX() - this.f5367o.getCurrX()) <= this.f5340R) {
+            this.f5341L = y;
+            this.f5339J = y;
+            this.f5342M = motionEvent.getPointerId(0);
+            this.f5334E = false;
+            this.f5375p = true;
+            this.f5374o.computeScrollOffset();
+            if (this.f5371l0 != 2 || Math.abs(this.f5374o.getFinalX() - this.f5374o.getCurrX()) <= this.f5347R) {
                 m6527f(false);
-                this.f5326D = false;
+                this.f5333D = false;
             } else {
-                this.f5367o.abortAnimation();
-                this.f5324B = false;
+                this.f5374o.abortAnimation();
+                this.f5331B = false;
                 mo6070D();
-                this.f5326D = true;
+                this.f5333D = true;
                 m6522H(true);
                 setScrollState(1);
             }
         } else if (action == 2) {
-            int i = this.f5335M;
+            int i = this.f5342M;
             if (i != -1) {
                 int findPointerIndex = motionEvent.findPointerIndex(i);
                 float x2 = motionEvent.getX(findPointerIndex);
-                float f = x2 - this.f5331I;
+                float f = x2 - this.f5338I;
                 float abs = Math.abs(f);
                 float y2 = motionEvent.getY(findPointerIndex);
-                float abs2 = Math.abs(y2 - this.f5334L);
-                if (f == 0.0f || m6537w(this.f5331I, f) || !mo6089e(this, false, (int) f, (int) x2, (int) y2)) {
-                    int i2 = this.f5330H;
+                float abs2 = Math.abs(y2 - this.f5341L);
+                if (f == 0.0f || m6537w(this.f5338I, f) || !mo6089e(this, false, (int) f, (int) x2, (int) y2)) {
+                    int i2 = this.f5337H;
                     if (abs > ((float) i2) && abs * 0.5f > abs2) {
-                        this.f5326D = true;
+                        this.f5333D = true;
                         m6522H(true);
                         setScrollState(1);
-                        this.f5331I = f > 0.0f ? this.f5333K + ((float) this.f5330H) : this.f5333K - ((float) this.f5330H);
-                        this.f5332J = y2;
+                        this.f5338I = f > 0.0f ? this.f5340K + ((float) this.f5337H) : this.f5340K - ((float) this.f5337H);
+                        this.f5339J = y2;
                         setScrollingCacheEnabled(true);
                     } else if (abs2 > ((float) i2)) {
-                        this.f5327E = true;
+                        this.f5334E = true;
                     }
-                    if (this.f5326D && m6519C(x2)) {
+                    if (this.f5333D && m6519C(x2)) {
                         C1013s.m5748Z(this);
                     }
                 } else {
-                    this.f5331I = x2;
-                    this.f5332J = y2;
-                    this.f5327E = true;
+                    this.f5338I = x2;
+                    this.f5339J = y2;
+                    this.f5334E = true;
                     return false;
                 }
             }
         } else if (action == 6) {
             m6538y(motionEvent);
         }
-        if (this.f5336N == null) {
-            this.f5336N = VelocityTracker.obtain();
+        if (this.f5343N == null) {
+            this.f5343N = VelocityTracker.obtain();
         }
-        this.f5336N.addMovement(motionEvent);
-        return this.f5326D;
+        this.f5343N.addMovement(motionEvent);
+        return this.f5333D;
     }
 
     /* access modifiers changed from: protected */
@@ -1653,7 +1653,7 @@ public class C1205b extends ViewGroup {
         }
         while (i3 != i4) {
             View childAt = getChildAt(i3);
-            if (childAt.getVisibility() == 0 && (r = mo6113r(childAt)) != null && r.f5383b == this.f5361k && childAt.requestFocus(i, rect)) {
+            if (childAt.getVisibility() == 0 && (r = mo6113r(childAt)) != null && r.f5390b == this.f5368k && childAt.requestFocus(i, rect)) {
                 return true;
             }
             i3 += i2;
@@ -1668,23 +1668,23 @@ public class C1205b extends ViewGroup {
         }
         C1218m mVar = (C1218m) parcelable;
         super.onRestoreInstanceState(mVar.mo5608b());
-        AbstractC1204a aVar = this.f5359j;
+        AbstractC1204a aVar = this.f5366j;
         if (aVar != null) {
-            aVar.mo6064i(mVar.f5396e, mVar.f5397f);
-            mo6073L(mVar.f5395d, false, true);
+            aVar.mo6064i(mVar.f5403e, mVar.f5404f);
+            mo6073L(mVar.f5402d, false, true);
             return;
         }
-        this.f5363l = mVar.f5395d;
-        this.f5365m = mVar.f5396e;
-        this.f5366n = mVar.f5397f;
+        this.f5370l = mVar.f5402d;
+        this.f5372m = mVar.f5403e;
+        this.f5373n = mVar.f5404f;
     }
 
     public Parcelable onSaveInstanceState() {
         C1218m mVar = new C1218m(super.onSaveInstanceState());
-        mVar.f5395d = this.f5361k;
-        AbstractC1204a aVar = this.f5359j;
+        mVar.f5402d = this.f5368k;
+        AbstractC1204a aVar = this.f5366j;
         if (aVar != null) {
-            mVar.f5396e = aVar.mo6065j();
+            mVar.f5403e = aVar.mo6065j();
         }
         return mVar;
     }
@@ -1693,7 +1693,7 @@ public class C1205b extends ViewGroup {
     public void onSizeChanged(int i, int i2, int i3, int i4) {
         super.onSizeChanged(i, i2, i3, i4);
         if (i != i3) {
-            int i5 = this.f5370r;
+            int i5 = this.f5377r;
             m6520F(i, i3, i5, i5);
         }
     }
@@ -1725,9 +1725,9 @@ public class C1205b extends ViewGroup {
     /* access modifiers changed from: package-private */
     /* renamed from: r */
     public C1211f mo6113r(View view) {
-        for (int i = 0; i < this.f5353g.size(); i++) {
-            C1211f fVar = this.f5353g.get(i);
-            if (this.f5359j.mo6062g(view, fVar.f5382a)) {
+        for (int i = 0; i < this.f5360g.size(); i++) {
+            C1211f fVar = this.f5360g.get(i);
+            if (this.f5366j.mo6062g(view, fVar.f5389a)) {
                 return fVar;
             }
         }
@@ -1735,7 +1735,7 @@ public class C1205b extends ViewGroup {
     }
 
     public void removeView(View view) {
-        if (this.f5378z) {
+        if (this.f5385z) {
             removeViewInLayout(view);
         } else {
             super.removeView(view);
@@ -1743,56 +1743,56 @@ public class C1205b extends ViewGroup {
     }
 
     public void setAdapter(AbstractC1204a aVar) {
-        AbstractC1204a aVar2 = this.f5359j;
+        AbstractC1204a aVar2 = this.f5366j;
         if (aVar2 != null) {
             aVar2.mo6067l(null);
-            this.f5359j.mo6068m(this);
-            for (int i = 0; i < this.f5353g.size(); i++) {
-                C1211f fVar = this.f5353g.get(i);
-                this.f5359j.mo6056a(this, fVar.f5383b, fVar.f5382a);
+            this.f5366j.mo6068m(this);
+            for (int i = 0; i < this.f5360g.size(); i++) {
+                C1211f fVar = this.f5360g.get(i);
+                this.f5366j.mo6056a(this, fVar.f5390b, fVar.f5389a);
             }
-            this.f5359j.mo6057b(this);
-            this.f5353g.clear();
+            this.f5366j.mo6057b(this);
+            this.f5360g.clear();
             m6521G();
-            this.f5361k = 0;
+            this.f5368k = 0;
             scrollTo(0, 0);
         }
-        AbstractC1204a aVar3 = this.f5359j;
-        this.f5359j = aVar;
-        this.f5351f = 0;
+        AbstractC1204a aVar3 = this.f5366j;
+        this.f5366j = aVar;
+        this.f5358f = 0;
         if (aVar != null) {
-            if (this.f5369q == null) {
-                this.f5369q = new C1217l();
+            if (this.f5376q == null) {
+                this.f5376q = new C1217l();
             }
-            this.f5359j.mo6067l(this.f5369q);
-            this.f5324B = false;
-            boolean z = this.f5344V;
-            this.f5344V = true;
-            this.f5351f = this.f5359j.mo6058c();
-            if (this.f5363l >= 0) {
-                this.f5359j.mo6064i(this.f5365m, this.f5366n);
-                mo6073L(this.f5363l, false, true);
-                this.f5363l = -1;
-                this.f5365m = null;
-                this.f5366n = null;
+            this.f5366j.mo6067l(this.f5376q);
+            this.f5331B = false;
+            boolean z = this.f5351V;
+            this.f5351V = true;
+            this.f5358f = this.f5366j.mo6058c();
+            if (this.f5370l >= 0) {
+                this.f5366j.mo6064i(this.f5372m, this.f5373n);
+                mo6073L(this.f5370l, false, true);
+                this.f5370l = -1;
+                this.f5372m = null;
+                this.f5373n = null;
             } else if (!z) {
                 mo6070D();
             } else {
                 requestLayout();
             }
         }
-        List<AbstractC1214i> list = this.f5352f0;
+        List<AbstractC1214i> list = this.f5359f0;
         if (!(list == null || list.isEmpty())) {
-            int size = this.f5352f0.size();
+            int size = this.f5359f0.size();
             for (int i2 = 0; i2 < size; i2++) {
-                this.f5352f0.get(i2).mo6132a(this, aVar3, aVar);
+                this.f5359f0.get(i2).mo6132a(this, aVar3, aVar);
             }
         }
     }
 
     public void setCurrentItem(int i) {
-        this.f5324B = false;
-        mo6073L(i, !this.f5344V, false);
+        this.f5331B = false;
+        mo6073L(i, !this.f5351V, false);
     }
 
     public void setOffscreenPageLimit(int i) {
@@ -1800,20 +1800,20 @@ public class C1205b extends ViewGroup {
             Log.w("ViewPager", "Requested offscreen page limit " + i + " too small; defaulting to " + 1);
             i = 1;
         }
-        if (i != this.f5325C) {
-            this.f5325C = i;
+        if (i != this.f5332C) {
+            this.f5332C = i;
             mo6070D();
         }
     }
 
     @Deprecated
     public void setOnPageChangeListener(AbstractC1215j jVar) {
-        this.f5349d0 = jVar;
+        this.f5356d0 = jVar;
     }
 
     public void setPageMargin(int i) {
-        int i2 = this.f5370r;
-        this.f5370r = i;
+        int i2 = this.f5377r;
+        this.f5377r = i;
         int width = getWidth();
         m6520F(width, width, i, i2);
         requestLayout();
@@ -1824,7 +1824,7 @@ public class C1205b extends ViewGroup {
     }
 
     public void setPageMarginDrawable(Drawable drawable) {
-        this.f5371s = drawable;
+        this.f5378s = drawable;
         if (drawable != null) {
             refreshDrawableState();
         }
@@ -1834,9 +1834,9 @@ public class C1205b extends ViewGroup {
 
     /* access modifiers changed from: package-private */
     public void setScrollState(int i) {
-        if (this.f5364l0 != i) {
-            this.f5364l0 = i;
-            if (this.f5354g0 != null) {
+        if (this.f5371l0 != i) {
+            this.f5371l0 = i;
+            if (this.f5361g0 != null) {
                 m6532m(i != 0);
             }
             m6531k(i);
@@ -1846,9 +1846,9 @@ public class C1205b extends ViewGroup {
     /* access modifiers changed from: package-private */
     /* renamed from: t */
     public C1211f mo6123t(int i) {
-        for (int i2 = 0; i2 < this.f5353g.size(); i2++) {
-            C1211f fVar = this.f5353g.get(i2);
-            if (fVar.f5383b == i) {
+        for (int i2 = 0; i2 < this.f5360g.size(); i2++) {
+            C1211f fVar = this.f5360g.get(i2);
+            if (fVar.f5390b == i) {
                 return fVar;
             }
         }
@@ -1862,17 +1862,17 @@ public class C1205b extends ViewGroup {
         setDescendantFocusability(262144);
         setFocusable(true);
         Context context = getContext();
-        this.f5367o = new Scroller(context, f5321d);
+        this.f5374o = new Scroller(context, f5328d);
         ViewConfiguration viewConfiguration = ViewConfiguration.get(context);
         float f = context.getResources().getDisplayMetrics().density;
-        this.f5330H = viewConfiguration.getScaledPagingTouchSlop();
-        this.f5337O = (int) (400.0f * f);
-        this.f5338P = viewConfiguration.getScaledMaximumFlingVelocity();
-        this.f5342T = new EdgeEffect(context);
-        this.f5343U = new EdgeEffect(context);
-        this.f5339Q = (int) (25.0f * f);
-        this.f5340R = (int) (2.0f * f);
-        this.f5328F = (int) (f * 16.0f);
+        this.f5337H = viewConfiguration.getScaledPagingTouchSlop();
+        this.f5344O = (int) (400.0f * f);
+        this.f5345P = viewConfiguration.getScaledMaximumFlingVelocity();
+        this.f5349T = new EdgeEffect(context);
+        this.f5350U = new EdgeEffect(context);
+        this.f5346Q = (int) (25.0f * f);
+        this.f5347R = (int) (2.0f * f);
+        this.f5335F = (int) (f * 16.0f);
         C1013s.m5766i0(this, new C1213h());
         if (C1013s.m5793w(this) == 0) {
             C1013s.m5786s0(this, 1);
@@ -1882,7 +1882,7 @@ public class C1205b extends ViewGroup {
 
     /* access modifiers changed from: protected */
     public boolean verifyDrawable(Drawable drawable) {
-        return super.verifyDrawable(drawable) || drawable == this.f5371s;
+        return super.verifyDrawable(drawable) || drawable == this.f5378s;
     }
 
     /* access modifiers changed from: protected */
@@ -1899,7 +1899,7 @@ public class C1205b extends ViewGroup {
     /* access modifiers changed from: package-private */
     /* renamed from: z */
     public boolean mo6127z() {
-        int i = this.f5361k;
+        int i = this.f5368k;
         if (i <= 0) {
             return false;
         }

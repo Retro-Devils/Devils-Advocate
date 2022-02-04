@@ -97,43 +97,43 @@ import java.util.Set;
 public class ComponentCallbacks2C1610c implements ComponentCallbacks2 {
 
     /* renamed from: b */
-    private static volatile ComponentCallbacks2C1610c f6525b;
+    private static volatile ComponentCallbacks2C1610c f6533b;
 
     /* renamed from: c */
-    private static volatile boolean f6526c;
+    private static volatile boolean f6534c;
 
     /* renamed from: d */
-    private final C1769k f6527d;
+    private final C1769k f6535d;
 
     /* renamed from: e */
-    private final AbstractC1695e f6528e;
+    private final AbstractC1695e f6536e;
 
     /* renamed from: f */
-    private final AbstractC1727h f6529f;
+    private final AbstractC1727h f6537f;
 
     /* renamed from: g */
-    private final C1614e f6530g;
+    private final C1614e f6538g;
 
     /* renamed from: h */
-    private final C1618i f6531h;
+    private final C1618i f6539h;
 
     /* renamed from: i */
-    private final AbstractC1690b f6532i;
+    private final AbstractC1690b f6540i;
 
     /* renamed from: j */
-    private final C2016l f6533j;
+    private final C2016l f6541j;
 
     /* renamed from: k */
-    private final AbstractC2006d f6534k;
+    private final AbstractC2006d f6542k;
 
     /* renamed from: l */
-    private final List<ComponentCallbacks2C1626k> f6535l = new ArrayList();
+    private final List<ComponentCallbacks2C1626k> f6543l = new ArrayList();
 
     /* renamed from: m */
-    private final AbstractC1611a f6536m;
+    private final AbstractC1611a f6544m;
 
     /* renamed from: n */
-    private EnumC1615f f6537n = EnumC1615f.NORMAL;
+    private EnumC1615f f6545n = EnumC1615f.NORMAL;
 
     /* renamed from: com.bumptech.glide.c$a */
     public interface AbstractC1611a {
@@ -144,16 +144,16 @@ public class ComponentCallbacks2C1610c implements ComponentCallbacks2 {
     ComponentCallbacks2C1610c(Context context, C1769k kVar, AbstractC1727h hVar, AbstractC1695e eVar, AbstractC1690b bVar, C2016l lVar, AbstractC2006d dVar, int i, AbstractC1611a aVar, Map<Class<?>, AbstractC1629l<?, ?>> map, List<AbstractC2042e<Object>> list, boolean z, boolean z2) {
         AbstractC1649k kVar2;
         AbstractC1649k kVar3;
-        this.f6527d = kVar;
-        this.f6528e = eVar;
-        this.f6532i = bVar;
-        this.f6529f = hVar;
-        this.f6533j = lVar;
-        this.f6534k = dVar;
-        this.f6536m = aVar;
+        this.f6535d = kVar;
+        this.f6536e = eVar;
+        this.f6540i = bVar;
+        this.f6537f = hVar;
+        this.f6541j = lVar;
+        this.f6542k = dVar;
+        this.f6544m = aVar;
         Resources resources = context.getResources();
         C1618i iVar = new C1618i();
-        this.f6531h = iVar;
+        this.f6539h = iVar;
         iVar.mo7018o(new C1916k());
         int i2 = Build.VERSION.SDK_INT;
         if (i2 >= 27) {
@@ -199,15 +199,15 @@ public class ComponentCallbacks2C1610c implements ComponentCallbacks2 {
             iVar.mo7007c(ByteBuffer.class, Bitmap.class, d);
             iVar.mo7007c(ByteBuffer.class, BitmapDrawable.class, new C1895a(resources, d));
         }
-        this.f6530g = new C1614e(context, bVar, iVar, new C2053f(), aVar, map, list, kVar, z, i);
+        this.f6538g = new C1614e(context, bVar, iVar, new C2053f(), aVar, map, list, kVar, z, i);
     }
 
     /* renamed from: a */
     private static void m7748a(Context context, GeneratedAppGlideModule generatedAppGlideModule) {
-        if (!f6526c) {
-            f6526c = true;
+        if (!f6534c) {
+            f6534c = true;
             m7752m(context, generatedAppGlideModule);
-            f6526c = false;
+            f6534c = false;
             return;
         }
         throw new IllegalStateException("You cannot call Glide.get() in registerComponents(), use the provided Glide instance instead");
@@ -215,15 +215,15 @@ public class ComponentCallbacks2C1610c implements ComponentCallbacks2 {
 
     /* renamed from: c */
     public static ComponentCallbacks2C1610c m7749c(Context context) {
-        if (f6525b == null) {
+        if (f6533b == null) {
             GeneratedAppGlideModule d = m7750d(context.getApplicationContext());
             synchronized (ComponentCallbacks2C1610c.class) {
-                if (f6525b == null) {
+                if (f6533b == null) {
                     m7748a(context, d);
                 }
             }
         }
-        return f6525b;
+        return f6533b;
     }
 
     /* renamed from: d */
@@ -287,16 +287,16 @@ public class ComponentCallbacks2C1610c implements ComponentCallbacks2 {
         ComponentCallbacks2C1610c a = dVar.mo6994a(applicationContext);
         for (AbstractC2025b bVar2 : emptyList) {
             try {
-                bVar2.mo7715a(applicationContext, a, a.f6531h);
+                bVar2.mo7715a(applicationContext, a, a.f6539h);
             } catch (AbstractMethodError e) {
                 throw new IllegalStateException("Attempting to register a Glide v3 module. If you see this, you or one of your dependencies may be including Glide v3 even though you're using Glide v4. You'll need to find and remove (or update) the offending dependency. The v3 module name is: " + bVar2.getClass().getName(), e);
             }
         }
         if (generatedAppGlideModule != null) {
-            generatedAppGlideModule.mo6973a(applicationContext, a, a.f6531h);
+            generatedAppGlideModule.mo6973a(applicationContext, a, a.f6539h);
         }
         applicationContext.registerComponentCallbacks(a);
-        f6525b = a;
+        f6533b = a;
     }
 
     /* renamed from: q */
@@ -322,54 +322,54 @@ public class ComponentCallbacks2C1610c implements ComponentCallbacks2 {
     /* renamed from: b */
     public void mo6978b() {
         C2082k.m9434a();
-        this.f6529f.mo7229b();
-        this.f6528e.mo7181b();
-        this.f6532i.mo7159b();
+        this.f6537f.mo7229b();
+        this.f6536e.mo7181b();
+        this.f6540i.mo7159b();
     }
 
     /* renamed from: e */
     public AbstractC1690b mo6979e() {
-        return this.f6532i;
+        return this.f6540i;
     }
 
     /* renamed from: f */
     public AbstractC1695e mo6980f() {
-        return this.f6528e;
+        return this.f6536e;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: g */
     public AbstractC2006d mo6981g() {
-        return this.f6534k;
+        return this.f6542k;
     }
 
     /* renamed from: h */
     public Context mo6982h() {
-        return this.f6530g.getBaseContext();
+        return this.f6538g.getBaseContext();
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: i */
     public C1614e mo6983i() {
-        return this.f6530g;
+        return this.f6538g;
     }
 
     /* renamed from: j */
     public C1618i mo6984j() {
-        return this.f6531h;
+        return this.f6539h;
     }
 
     /* renamed from: k */
     public C2016l mo6985k() {
-        return this.f6533j;
+        return this.f6541j;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: o */
     public void mo6986o(ComponentCallbacks2C1626k kVar) {
-        synchronized (this.f6535l) {
-            if (!this.f6535l.contains(kVar)) {
-                this.f6535l.add(kVar);
+        synchronized (this.f6543l) {
+            if (!this.f6543l.contains(kVar)) {
+                this.f6543l.add(kVar);
             } else {
                 throw new IllegalStateException("Cannot register already registered manager");
             }
@@ -390,8 +390,8 @@ public class ComponentCallbacks2C1610c implements ComponentCallbacks2 {
     /* access modifiers changed from: package-private */
     /* renamed from: p */
     public boolean mo6990p(AbstractC2055h<?> hVar) {
-        synchronized (this.f6535l) {
-            for (ComponentCallbacks2C1626k kVar : this.f6535l) {
+        synchronized (this.f6543l) {
+            for (ComponentCallbacks2C1626k kVar : this.f6543l) {
                 if (kVar.mo7040D(hVar)) {
                     return true;
                 }
@@ -403,20 +403,20 @@ public class ComponentCallbacks2C1610c implements ComponentCallbacks2 {
     /* renamed from: r */
     public void mo6991r(int i) {
         C2082k.m9434a();
-        for (ComponentCallbacks2C1626k kVar : this.f6535l) {
+        for (ComponentCallbacks2C1626k kVar : this.f6543l) {
             kVar.onTrimMemory(i);
         }
-        this.f6529f.mo7221a(i);
-        this.f6528e.mo7180a(i);
-        this.f6532i.mo7158a(i);
+        this.f6537f.mo7221a(i);
+        this.f6536e.mo7180a(i);
+        this.f6540i.mo7158a(i);
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: s */
     public void mo6992s(ComponentCallbacks2C1626k kVar) {
-        synchronized (this.f6535l) {
-            if (this.f6535l.contains(kVar)) {
-                this.f6535l.remove(kVar);
+        synchronized (this.f6543l) {
+            if (this.f6543l.contains(kVar)) {
+                this.f6543l.remove(kVar);
             } else {
                 throw new IllegalStateException("Cannot unregister not yet registered manager");
             }

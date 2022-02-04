@@ -11,10 +11,10 @@ import com.google.android.gms.common.internal.C3027r;
 public class C1289j extends DialogInterface$OnCancelListenerC0445c {
 
     /* renamed from: k0 */
-    private Dialog f5552k0 = null;
+    private Dialog f5560k0 = null;
 
     /* renamed from: l0 */
-    private DialogInterface.OnCancelListener f5553l0 = null;
+    private DialogInterface.OnCancelListener f5561l0 = null;
 
     /* renamed from: u2 */
     public static C1289j m6801u2(Dialog dialog, DialogInterface.OnCancelListener onCancelListener) {
@@ -22,15 +22,15 @@ public class C1289j extends DialogInterface$OnCancelListenerC0445c {
         Dialog dialog2 = (Dialog) C3027r.m12377i(dialog, "Cannot display null dialog");
         dialog2.setOnCancelListener(null);
         dialog2.setOnDismissListener(null);
-        jVar.f5552k0 = dialog2;
+        jVar.f5560k0 = dialog2;
         if (onCancelListener != null) {
-            jVar.f5553l0 = onCancelListener;
+            jVar.f5561l0 = onCancelListener;
         }
         return jVar;
     }
 
     public void onCancel(DialogInterface dialogInterface) {
-        DialogInterface.OnCancelListener onCancelListener = this.f5553l0;
+        DialogInterface.OnCancelListener onCancelListener = this.f5561l0;
         if (onCancelListener != null) {
             onCancelListener.onCancel(dialogInterface);
         }
@@ -39,10 +39,10 @@ public class C1289j extends DialogInterface$OnCancelListenerC0445c {
     @Override // androidx.fragment.app.DialogInterface$OnCancelListenerC0445c
     /* renamed from: q2 */
     public Dialog mo2662q2(Bundle bundle) {
-        if (this.f5552k0 == null) {
+        if (this.f5560k0 == null) {
             mo2663r2(false);
         }
-        return this.f5552k0;
+        return this.f5560k0;
     }
 
     @Override // androidx.fragment.app.DialogInterface$OnCancelListenerC0445c

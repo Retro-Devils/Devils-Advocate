@@ -10,29 +10,29 @@ import java.util.concurrent.atomic.AtomicReference;
 public final class C2068a {
 
     /* renamed from: a */
-    private static final AtomicReference<byte[]> f7575a = new AtomicReference<>();
+    private static final AtomicReference<byte[]> f7583a = new AtomicReference<>();
 
     /* access modifiers changed from: private */
     /* renamed from: com.bumptech.glide.t.a$a */
     public static class C2069a extends InputStream {
 
         /* renamed from: b */
-        private final ByteBuffer f7576b;
+        private final ByteBuffer f7584b;
 
         /* renamed from: c */
-        private int f7577c = -1;
+        private int f7585c = -1;
 
         C2069a(ByteBuffer byteBuffer) {
-            this.f7576b = byteBuffer;
+            this.f7584b = byteBuffer;
         }
 
         @Override // java.io.InputStream
         public int available() {
-            return this.f7576b.remaining();
+            return this.f7584b.remaining();
         }
 
         public synchronized void mark(int i) {
-            this.f7577c = this.f7576b.position();
+            this.f7585c = this.f7584b.position();
         }
 
         public boolean markSupported() {
@@ -41,27 +41,27 @@ public final class C2068a {
 
         @Override // java.io.InputStream
         public int read() {
-            if (!this.f7576b.hasRemaining()) {
+            if (!this.f7584b.hasRemaining()) {
                 return -1;
             }
-            return this.f7576b.get() & 255;
+            return this.f7584b.get() & 255;
         }
 
         @Override // java.io.InputStream
         public int read(byte[] bArr, int i, int i2) {
-            if (!this.f7576b.hasRemaining()) {
+            if (!this.f7584b.hasRemaining()) {
                 return -1;
             }
             int min = Math.min(i2, available());
-            this.f7576b.get(bArr, i, min);
+            this.f7584b.get(bArr, i, min);
             return min;
         }
 
         @Override // java.io.InputStream
         public synchronized void reset() {
-            int i = this.f7577c;
+            int i = this.f7585c;
             if (i != -1) {
-                this.f7576b.position(i);
+                this.f7584b.position(i);
             } else {
                 throw new IOException("Cannot reset to unset mark position");
             }
@@ -69,11 +69,11 @@ public final class C2068a {
 
         @Override // java.io.InputStream
         public long skip(long j) {
-            if (!this.f7576b.hasRemaining()) {
+            if (!this.f7584b.hasRemaining()) {
                 return -1;
             }
             long min = Math.min(j, (long) available());
-            ByteBuffer byteBuffer = this.f7576b;
+            ByteBuffer byteBuffer = this.f7584b;
             byteBuffer.position((int) (((long) byteBuffer.position()) + min));
             return min;
         }
@@ -84,18 +84,18 @@ public final class C2068a {
     public static final class C2070b {
 
         /* renamed from: a */
-        final int f7578a;
+        final int f7586a;
 
         /* renamed from: b */
-        final int f7579b;
+        final int f7587b;
 
         /* renamed from: c */
-        final byte[] f7580c;
+        final byte[] f7588c;
 
         C2070b(byte[] bArr, int i, int i2) {
-            this.f7580c = bArr;
-            this.f7578a = i;
-            this.f7579b = i2;
+            this.f7588c = bArr;
+            this.f7586a = i;
+            this.f7587b = i2;
         }
     }
 
@@ -163,7 +163,7 @@ public final class C2068a {
     /* renamed from: b */
     public static ByteBuffer m9399b(InputStream inputStream) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(16384);
-        byte[] andSet = f7575a.getAndSet(null);
+        byte[] andSet = f7583a.getAndSet(null);
         if (andSet == null) {
             andSet = new byte[16384];
         }
@@ -172,7 +172,7 @@ public final class C2068a {
             if (read >= 0) {
                 byteArrayOutputStream.write(andSet, 0, read);
             } else {
-                f7575a.set(andSet);
+                f7583a.set(andSet);
                 byte[] byteArray = byteArrayOutputStream.toByteArray();
                 return (ByteBuffer) ByteBuffer.allocateDirect(byteArray.length).put(byteArray).position(0);
             }
@@ -190,7 +190,7 @@ public final class C2068a {
     /* renamed from: d */
     public static byte[] m9401d(ByteBuffer byteBuffer) {
         C2070b c = m9400c(byteBuffer);
-        if (c != null && c.f7578a == 0 && c.f7579b == c.f7580c.length) {
+        if (c != null && c.f7586a == 0 && c.f7587b == c.f7588c.length) {
             return byteBuffer.array();
         }
         ByteBuffer asReadOnlyBuffer = byteBuffer.asReadOnlyBuffer();

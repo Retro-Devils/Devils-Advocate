@@ -12,6 +12,6 @@ public class C2049b extends AbstractC2052e<Bitmap> {
     /* access modifiers changed from: protected */
     /* renamed from: t */
     public void mo7811r(Bitmap bitmap) {
-        ((ImageView) this.f7557d).setImageBitmap(bitmap);
+        ((ImageView) this.f7565d).setImageBitmap(bitmap);
     }
 }

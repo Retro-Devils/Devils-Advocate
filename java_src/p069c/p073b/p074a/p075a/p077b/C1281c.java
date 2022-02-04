@@ -11,19 +11,19 @@ public class C1281c extends AbstractC3031a {
     public static final Parcelable.Creator<C1281c> CREATOR = new C1294n();
 
     /* renamed from: b */
-    private final String f5535b;
+    private final String f5543b;
     @Deprecated
 
     /* renamed from: c */
-    private final int f5536c;
+    private final int f5544c;
 
     /* renamed from: d */
-    private final long f5537d;
+    private final long f5545d;
 
     public C1281c(String str, int i, long j) {
-        this.f5535b = str;
-        this.f5536c = i;
-        this.f5537d = j;
+        this.f5543b = str;
+        this.f5544c = i;
+        this.f5545d = j;
     }
 
     public boolean equals(Object obj) {
@@ -35,7 +35,7 @@ public class C1281c extends AbstractC3031a {
 
     /* renamed from: h */
     public String mo6273h() {
-        return this.f5535b;
+        return this.f5543b;
     }
 
     public int hashCode() {
@@ -44,8 +44,8 @@ public class C1281c extends AbstractC3031a {
 
     /* renamed from: i */
     public long mo6275i() {
-        long j = this.f5537d;
-        return j == -1 ? (long) this.f5536c : j;
+        long j = this.f5545d;
+        return j == -1 ? (long) this.f5544c : j;
     }
 
     public String toString() {
@@ -55,7 +55,7 @@ public class C1281c extends AbstractC3031a {
     public void writeToParcel(Parcel parcel, int i) {
         int a = C3034c.m12411a(parcel);
         C3034c.m12420j(parcel, 1, mo6273h(), false);
-        C3034c.m12417g(parcel, 2, this.f5536c);
+        C3034c.m12417g(parcel, 2, this.f5544c);
         C3034c.m12418h(parcel, 3, mo6275i());
         C3034c.m12412b(parcel, a);
     }

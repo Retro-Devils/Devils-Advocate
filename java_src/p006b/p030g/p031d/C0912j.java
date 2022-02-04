@@ -18,7 +18,7 @@ import p006b.p030g.p036h.C0923b;
 public class C0912j {
 
     /* renamed from: a */
-    private ConcurrentHashMap<Long, C0382c.C0384b> f4551a = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<Long, C0382c.C0384b> f4555a = new ConcurrentHashMap<>();
 
     /* access modifiers changed from: package-private */
     /* renamed from: b.g.d.j$a */
@@ -71,7 +71,7 @@ public class C0912j {
     private void m5363a(Typeface typeface, C0382c.C0384b bVar) {
         long j = m5366j(typeface);
         if (j != 0) {
-            this.f4551a.put(Long.valueOf(j), bVar);
+            this.f4555a.put(Long.valueOf(j), bVar);
         }
     }
 
@@ -213,6 +213,6 @@ public class C0912j {
         if (j == 0) {
             return null;
         }
-        return this.f4551a.get(Long.valueOf(j));
+        return this.f4555a.get(Long.valueOf(j));
     }
 }

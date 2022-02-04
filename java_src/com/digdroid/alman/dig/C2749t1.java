@@ -33,43 +33,43 @@ import java.util.regex.Pattern;
 public class C2749t1 {
 
     /* renamed from: a */
-    static C2749t1 f9320a;
+    static C2749t1 f9328a;
 
     /* renamed from: b */
-    Context f9321b;
+    Context f9329b;
 
     /* renamed from: c */
-    C2219c3 f9322c;
+    C2219c3 f9330c;
 
     /* renamed from: d */
-    C2375h3 f9323d;
+    C2375h3 f9331d;
 
     /* renamed from: e */
-    C2775u f9324e;
+    C2775u f9332e;
 
     /* renamed from: f */
-    HashMap<String, Boolean> f9325f = new HashMap<>();
+    HashMap<String, Boolean> f9333f = new HashMap<>();
 
     /* renamed from: com.digdroid.alman.dig.t1$a */
     class DialogInterface$OnClickListenerC2750a implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ String f9326b;
+        final /* synthetic */ String f9334b;
 
         /* renamed from: c */
-        final /* synthetic */ Activity f9327c;
+        final /* synthetic */ Activity f9335c;
 
         /* renamed from: d */
-        final /* synthetic */ String f9328d;
+        final /* synthetic */ String f9336d;
 
         /* renamed from: e */
-        final /* synthetic */ AbstractC2772l f9329e;
+        final /* synthetic */ AbstractC2772l f9337e;
 
         /* renamed from: f */
-        final /* synthetic */ String f9330f;
+        final /* synthetic */ String f9338f;
 
         /* renamed from: g */
-        final /* synthetic */ boolean f9331g;
+        final /* synthetic */ boolean f9339g;
 
         /* renamed from: com.digdroid.alman.dig.t1$a$a */
         class C2751a implements C2391i.AbstractC2394b {
@@ -79,11 +79,11 @@ public class C2749t1 {
             @Override // com.digdroid.alman.dig.C2391i.AbstractC2394b
             /* renamed from: a */
             public void mo8043a(String[] strArr) {
-                Activity activity = DialogInterface$OnClickListenerC2750a.this.f9327c;
+                Activity activity = DialogInterface$OnClickListenerC2750a.this.f9335c;
                 String str = strArr[0];
-                C2185a4.m9672b(activity, str, DialogInterface$OnClickListenerC2750a.this.f9328d + "/" + DialogInterface$OnClickListenerC2750a.this.f9326b + ".png");
-                C2749t1.this.f9323d.mo8557f();
-                DialogInterface$OnClickListenerC2750a.this.f9329e.mo8684a();
+                C2185a4.m9672b(activity, str, DialogInterface$OnClickListenerC2750a.this.f9336d + "/" + DialogInterface$OnClickListenerC2750a.this.f9334b + ".png");
+                C2749t1.this.f9331d.mo8557f();
+                DialogInterface$OnClickListenerC2750a.this.f9337e.mo8684a();
             }
         }
 
@@ -95,7 +95,7 @@ public class C2749t1 {
             @Override // com.digdroid.alman.dig.C2375h3.AbstractC2390o
             /* renamed from: a */
             public void mo8502a() {
-                DialogInterface$OnClickListenerC2750a.this.f9327c.recreate();
+                DialogInterface$OnClickListenerC2750a.this.f9335c.recreate();
             }
         }
 
@@ -113,10 +113,10 @@ public class C2749t1 {
                     @Override // com.digdroid.alman.dig.C2375h3.AbstractC2388m
                     /* renamed from: a */
                     public void mo8585a(String str) {
-                        C2749t1.this.f9322c.mo8174W(true);
+                        C2749t1.this.f9330c.mo8174W(true);
                         DialogInterface$OnClickListenerC2750a aVar = DialogInterface$OnClickListenerC2750a.this;
-                        C2749t1.this.mo9290z(str, aVar.f9326b);
-                        DialogInterface$OnClickListenerC2750a.this.f9327c.recreate();
+                        C2749t1.this.mo9290z(str, aVar.f9334b);
+                        DialogInterface$OnClickListenerC2750a.this.f9335c.recreate();
                     }
                 }
 
@@ -125,7 +125,7 @@ public class C2749t1 {
 
                 public void onClick(DialogInterface dialogInterface, int i) {
                     DialogInterface$OnClickListenerC2750a aVar = DialogInterface$OnClickListenerC2750a.this;
-                    C2749t1.this.f9323d.mo8558g(aVar.f9326b, new C2755a());
+                    C2749t1.this.f9331d.mo8558g(aVar.f9334b, new C2755a());
                 }
             }
 
@@ -135,7 +135,7 @@ public class C2749t1 {
             @Override // com.digdroid.alman.dig.C2223d0.AbstractC2249s
             /* renamed from: a */
             public void mo7941a() {
-                new DialogInterfaceC0068b.C0069a(DialogInterface$OnClickListenerC2750a.this.f9327c, C2553q3.m11117c()).mo228h(R.string.confirm).mo232l(R.string.cancel, null).mo235o(R.string.ok, new DialogInterface$OnClickListenerC2754a()).mo221a().show();
+                new DialogInterfaceC0068b.C0069a(DialogInterface$OnClickListenerC2750a.this.f9335c, C2553q3.m11117c()).mo228h(R.string.confirm).mo232l(R.string.cancel, null).mo235o(R.string.ok, new DialogInterface$OnClickListenerC2754a()).mo221a().show();
             }
 
             @Override // com.digdroid.alman.dig.C2223d0.AbstractC2249s
@@ -150,62 +150,62 @@ public class C2749t1 {
             }
 
             public void onClick(DialogInterface dialogInterface, int i) {
-                SQLiteDatabase c = C2749t1.this.f9324e.mo9325c();
-                c.execSQL("UPDATE rompaths SET system='" + DialogInterface$OnClickListenerC2750a.this.f9330f + "' WHERE system='" + DialogInterface$OnClickListenerC2750a.this.f9326b + "'");
-                SQLiteDatabase c2 = C2749t1.this.f9324e.mo9325c();
-                c2.execSQL("UPDATE roms SET system='" + DialogInterface$OnClickListenerC2750a.this.f9330f + "' WHERE system='" + DialogInterface$OnClickListenerC2750a.this.f9326b + "'");
-                SQLiteDatabase c3 = C2749t1.this.f9324e.mo9325c();
-                c3.execSQL("UPDATE roms SET merged_with=-1 WHERE system='" + DialogInterface$OnClickListenerC2750a.this.f9326b + "' OR system='" + DialogInterface$OnClickListenerC2750a.this.f9330f + "'");
-                DatabaseService.m9478v(C2749t1.this.f9321b, "merge_games");
+                SQLiteDatabase c = C2749t1.this.f9332e.mo9325c();
+                c.execSQL("UPDATE rompaths SET system='" + DialogInterface$OnClickListenerC2750a.this.f9338f + "' WHERE system='" + DialogInterface$OnClickListenerC2750a.this.f9334b + "'");
+                SQLiteDatabase c2 = C2749t1.this.f9332e.mo9325c();
+                c2.execSQL("UPDATE roms SET system='" + DialogInterface$OnClickListenerC2750a.this.f9338f + "' WHERE system='" + DialogInterface$OnClickListenerC2750a.this.f9334b + "'");
+                SQLiteDatabase c3 = C2749t1.this.f9332e.mo9325c();
+                c3.execSQL("UPDATE roms SET merged_with=-1 WHERE system='" + DialogInterface$OnClickListenerC2750a.this.f9334b + "' OR system='" + DialogInterface$OnClickListenerC2750a.this.f9338f + "'");
+                DatabaseService.m9478v(C2749t1.this.f9329b, "merge_games");
                 DialogInterface$OnClickListenerC2750a aVar = DialogInterface$OnClickListenerC2750a.this;
-                C2749t1.this.f9323d.mo8545E(aVar.f9330f);
-                SQLiteDatabase c4 = C2749t1.this.f9324e.mo9325c();
-                c4.execSQL("DELETE FROM systems WHERE slug='" + DialogInterface$OnClickListenerC2750a.this.f9326b + "'");
+                C2749t1.this.f9331d.mo8545E(aVar.f9338f);
+                SQLiteDatabase c4 = C2749t1.this.f9332e.mo9325c();
+                c4.execSQL("DELETE FROM systems WHERE slug='" + DialogInterface$OnClickListenerC2750a.this.f9334b + "'");
                 DialogInterface$OnClickListenerC2750a aVar2 = DialogInterface$OnClickListenerC2750a.this;
-                C2749t1.this.f9323d.mo8559h(aVar2.f9326b);
-                DialogInterface$OnClickListenerC2750a.this.f9327c.recreate();
+                C2749t1.this.f9331d.mo8559h(aVar2.f9334b);
+                DialogInterface$OnClickListenerC2750a.this.f9335c.recreate();
             }
         }
 
         DialogInterface$OnClickListenerC2750a(String str, Activity activity, String str2, AbstractC2772l lVar, String str3, boolean z) {
-            this.f9326b = str;
-            this.f9327c = activity;
-            this.f9328d = str2;
-            this.f9329e = lVar;
-            this.f9330f = str3;
-            this.f9331g = z;
+            this.f9334b = str;
+            this.f9335c = activity;
+            this.f9336d = str2;
+            this.f9337e = lVar;
+            this.f9338f = str3;
+            this.f9339g = z;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
             if (i == 0) {
-                SQLiteDatabase c = C2749t1.this.f9324e.mo9325c();
-                Cursor rawQuery = c.rawQuery("SELECT _id FROM systems WHERE slug='" + this.f9326b + "'", null);
+                SQLiteDatabase c = C2749t1.this.f9332e.mo9325c();
+                Cursor rawQuery = c.rawQuery("SELECT _id FROM systems WHERE slug='" + this.f9334b + "'", null);
                 if (rawQuery.moveToFirst()) {
-                    C2391i iVar = new C2391i(this.f9327c);
+                    C2391i iVar = new C2391i(this.f9335c);
                     iVar.mo8591g(true);
                     iVar.mo8592h(new C2751a());
                     iVar.mo8588d();
                 }
                 rawQuery.close();
             } else if (i == 1) {
-                if (C2553q3.f8891a.f9416t.equals("")) {
-                    C2749t1.this.mo9290z(this.f9326b, this.f9330f);
-                    C2749t1.this.f9323d.mo8557f();
-                    this.f9327c.recreate();
+                if (C2553q3.f8899a.f9424t.equals("")) {
+                    C2749t1.this.mo9290z(this.f9334b, this.f9338f);
+                    C2749t1.this.f9331d.mo8557f();
+                    this.f9335c.recreate();
                 }
             } else if (i == 2) {
-                C2749t1.this.f9323d.mo8544D(this.f9327c, this.f9326b);
+                C2749t1.this.f9331d.mo8544D(this.f9335c, this.f9334b);
             } else if (i == 3) {
-                if (this.f9331g) {
-                    C2749t1.this.f9323d.mo8551K(this.f9327c, this.f9326b);
+                if (this.f9339g) {
+                    C2749t1.this.f9331d.mo8551K(this.f9335c, this.f9334b);
                 } else {
-                    C2749t1.this.f9323d.mo8542B(this.f9327c, this.f9326b, new C2752b());
+                    C2749t1.this.f9331d.mo8542B(this.f9335c, this.f9334b, new C2752b());
                 }
-            } else if (i == 4 && !this.f9330f.equals("android")) {
-                if (this.f9326b.equals(this.f9330f)) {
-                    C2223d0.m9876p().mo8215r(this.f9327c, 8, new C2753c());
+            } else if (i == 4 && !this.f9338f.equals("android")) {
+                if (this.f9334b.equals(this.f9338f)) {
+                    C2223d0.m9876p().mo8215r(this.f9335c, 8, new C2753c());
                 } else {
-                    new DialogInterfaceC0068b.C0069a(this.f9327c, C2553q3.m11117c()).mo228h(R.string.confirm).mo232l(R.string.cancel, null).mo235o(R.string.ok, new DialogInterface$OnClickListenerC2756d()).mo221a().show();
+                    new DialogInterfaceC0068b.C0069a(this.f9335c, C2553q3.m11117c()).mo228h(R.string.confirm).mo232l(R.string.cancel, null).mo235o(R.string.ok, new DialogInterface$OnClickListenerC2756d()).mo221a().show();
                 }
             }
         }
@@ -215,28 +215,28 @@ public class C2749t1 {
     class DialogInterface$OnClickListenerC2757b implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ Activity f9339b;
+        final /* synthetic */ Activity f9347b;
 
         /* renamed from: c */
-        final /* synthetic */ String f9340c;
+        final /* synthetic */ String f9348c;
 
         /* renamed from: d */
-        final /* synthetic */ long f9341d;
+        final /* synthetic */ long f9349d;
 
         /* renamed from: e */
-        final /* synthetic */ SQLiteDatabase f9342e;
+        final /* synthetic */ SQLiteDatabase f9350e;
 
         /* renamed from: f */
-        final /* synthetic */ AbstractC2772l f9343f;
+        final /* synthetic */ AbstractC2772l f9351f;
 
         /* renamed from: g */
-        final /* synthetic */ String f9344g;
+        final /* synthetic */ String f9352g;
 
         /* renamed from: h */
-        final /* synthetic */ AbstractC2531p1 f9345h;
+        final /* synthetic */ AbstractC2531p1 f9353h;
 
         /* renamed from: i */
-        final /* synthetic */ boolean f9346i;
+        final /* synthetic */ boolean f9354i;
 
         /* renamed from: com.digdroid.alman.dig.t1$b$a */
         class C2758a implements C2391i.AbstractC2394b {
@@ -247,11 +247,11 @@ public class C2749t1 {
             /* renamed from: a */
             public void mo8043a(String[] strArr) {
                 DialogInterface$OnClickListenerC2757b bVar = DialogInterface$OnClickListenerC2757b.this;
-                C2185a4.m9672b(bVar.f9339b, strArr[0], C2749t1.this.mo9273h(bVar.f9340c, bVar.f9341d, true).getAbsolutePath());
-                SQLiteDatabase sQLiteDatabase = DialogInterface$OnClickListenerC2757b.this.f9342e;
-                sQLiteDatabase.execSQL("UPDATE roms SET has_images=NULL WHERE _id=" + DialogInterface$OnClickListenerC2757b.this.f9341d);
-                ImageService.m9511a(DialogInterface$OnClickListenerC2757b.this.f9339b.getApplicationContext());
-                DialogInterface$OnClickListenerC2757b.this.f9343f.mo8684a();
+                C2185a4.m9672b(bVar.f9347b, strArr[0], C2749t1.this.mo9273h(bVar.f9348c, bVar.f9349d, true).getAbsolutePath());
+                SQLiteDatabase sQLiteDatabase = DialogInterface$OnClickListenerC2757b.this.f9350e;
+                sQLiteDatabase.execSQL("UPDATE roms SET has_images=NULL WHERE _id=" + DialogInterface$OnClickListenerC2757b.this.f9349d);
+                ImageService.m9511a(DialogInterface$OnClickListenerC2757b.this.f9347b.getApplicationContext());
+                DialogInterface$OnClickListenerC2757b.this.f9351f.mo8684a();
             }
         }
 
@@ -265,7 +265,7 @@ public class C2749t1 {
                 StringBuilder sb;
                 try {
                     DialogInterface$OnClickListenerC2757b bVar = DialogInterface$OnClickListenerC2757b.this;
-                    File h = C2749t1.this.mo9273h(bVar.f9340c, bVar.f9341d, false);
+                    File h = C2749t1.this.mo9273h(bVar.f9348c, bVar.f9349d, false);
                     if (h.exists()) {
                         try {
                             h.delete();
@@ -273,20 +273,20 @@ public class C2749t1 {
                         }
                     }
                     DialogInterface$OnClickListenerC2757b bVar2 = DialogInterface$OnClickListenerC2757b.this;
-                    if (!bVar2.f9346i) {
-                        sQLiteDatabase = bVar2.f9342e;
+                    if (!bVar2.f9354i) {
+                        sQLiteDatabase = bVar2.f9350e;
                         sb = new StringBuilder();
                         sb.append("UPDATE roms SET has_images=NULL,cover_status=cover_status|21255 WHERE _id=");
-                        sb.append(DialogInterface$OnClickListenerC2757b.this.f9341d);
+                        sb.append(DialogInterface$OnClickListenerC2757b.this.f9349d);
                     } else {
-                        sQLiteDatabase = bVar2.f9342e;
+                        sQLiteDatabase = bVar2.f9350e;
                         sb = new StringBuilder();
                         sb.append("UPDATE roms SET has_images=NULL,cover_status=(cover_status&-8193)|20480 WHERE _id=");
-                        sb.append(DialogInterface$OnClickListenerC2757b.this.f9341d);
+                        sb.append(DialogInterface$OnClickListenerC2757b.this.f9349d);
                     }
                     sQLiteDatabase.execSQL(sb.toString());
-                    ImageService.m9511a(C2749t1.this.f9321b.getApplicationContext());
-                    DialogInterface$OnClickListenerC2757b.this.f9339b.recreate();
+                    ImageService.m9511a(C2749t1.this.f9329b.getApplicationContext());
+                    DialogInterface$OnClickListenerC2757b.this.f9347b.recreate();
                 } catch (Exception unused2) {
                 }
             }
@@ -299,29 +299,29 @@ public class C2749t1 {
 
             public void onClick(DialogInterface dialogInterface, int i) {
                 DialogInterface$OnClickListenerC2757b bVar = DialogInterface$OnClickListenerC2757b.this;
-                File h = C2749t1.this.mo9273h(bVar.f9340c, bVar.f9341d, false);
+                File h = C2749t1.this.mo9273h(bVar.f9348c, bVar.f9349d, false);
                 if (h.exists()) {
                     try {
                         h.delete();
                     } catch (Exception unused) {
                     }
                 }
-                SQLiteDatabase sQLiteDatabase = DialogInterface$OnClickListenerC2757b.this.f9342e;
-                sQLiteDatabase.execSQL("UPDATE roms SET has_images=NULL WHERE _id=" + DialogInterface$OnClickListenerC2757b.this.f9341d);
-                ImageService.m9511a(DialogInterface$OnClickListenerC2757b.this.f9339b.getApplicationContext());
-                DialogInterface$OnClickListenerC2757b.this.f9339b.recreate();
+                SQLiteDatabase sQLiteDatabase = DialogInterface$OnClickListenerC2757b.this.f9350e;
+                sQLiteDatabase.execSQL("UPDATE roms SET has_images=NULL WHERE _id=" + DialogInterface$OnClickListenerC2757b.this.f9349d);
+                ImageService.m9511a(DialogInterface$OnClickListenerC2757b.this.f9347b.getApplicationContext());
+                DialogInterface$OnClickListenerC2757b.this.f9347b.recreate();
             }
         }
 
         DialogInterface$OnClickListenerC2757b(Activity activity, String str, long j, SQLiteDatabase sQLiteDatabase, AbstractC2772l lVar, String str2, AbstractC2531p1 p1Var, boolean z) {
-            this.f9339b = activity;
-            this.f9340c = str;
-            this.f9341d = j;
-            this.f9342e = sQLiteDatabase;
-            this.f9343f = lVar;
-            this.f9344g = str2;
-            this.f9345h = p1Var;
-            this.f9346i = z;
+            this.f9347b = activity;
+            this.f9348c = str;
+            this.f9349d = j;
+            this.f9350e = sQLiteDatabase;
+            this.f9351f = lVar;
+            this.f9352g = str2;
+            this.f9353h = p1Var;
+            this.f9354i = z;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
@@ -333,42 +333,42 @@ public class C2749t1 {
             AbstractC2531p1 p1Var;
             long j;
             if (i == 0) {
-                C2391i iVar = new C2391i(this.f9339b);
+                C2391i iVar = new C2391i(this.f9347b);
                 iVar.mo8591g(true);
                 iVar.mo8592h(new C2758a());
                 iVar.mo8588d();
             } else if (i == 1) {
                 try {
-                    C2749t1.this.mo9278m(this.f9339b, this.f9345h, this.f9341d, this.f9340c, "http://www.mobygames.com/search/quick?q=" + URLEncoder.encode(this.f9344g, "utf-8"));
+                    C2749t1.this.mo9278m(this.f9347b, this.f9353h, this.f9349d, this.f9348c, "http://www.mobygames.com/search/quick?q=" + URLEncoder.encode(this.f9352g, "utf-8"));
                 } catch (Exception unused) {
                 }
             } else {
                 if (i == 2) {
-                    str = "http://thegamesdb.net/search.php/?name=" + URLEncoder.encode(this.f9344g, "utf-8") + "&function=Search";
+                    str = "http://thegamesdb.net/search.php/?name=" + URLEncoder.encode(this.f9352g, "utf-8") + "&function=Search";
                     t1Var = C2749t1.this;
-                    activity = this.f9339b;
-                    p1Var = this.f9345h;
-                    j = this.f9341d;
+                    activity = this.f9347b;
+                    p1Var = this.f9353h;
+                    j = this.f9349d;
                 } else if (i == 3) {
-                    Cursor rawQuery = this.f9342e.rawQuery("SELECT s.name FROM systems as s,roms as r WHERE r._id=" + this.f9341d + " AND s.slug=r.system", null);
+                    Cursor rawQuery = this.f9350e.rawQuery("SELECT s.name FROM systems as s,roms as r WHERE r._id=" + this.f9349d + " AND s.slug=r.system", null);
                     if (rawQuery.moveToFirst()) {
-                        String encode = URLEncoder.encode(this.f9344g + " " + rawQuery.getString(0), "utf-8");
+                        String encode = URLEncoder.encode(this.f9352g + " " + rawQuery.getString(0), "utf-8");
                         rawQuery.close();
                         str = "https://www.google.com/search?q=" + encode + "&tbm=isch";
                         t1Var = C2749t1.this;
-                        activity = this.f9339b;
-                        p1Var = this.f9345h;
-                        j = this.f9341d;
+                        activity = this.f9347b;
+                        p1Var = this.f9353h;
+                        j = this.f9349d;
                     } else {
                         rawQuery.close();
                         return;
                     }
                 } else {
                     if (i == 4) {
-                        l = new DialogInterfaceC0068b.C0069a(this.f9339b, C2553q3.m11117c()).mo228h(R.string.confirm).mo232l(R.string.cancel, null);
+                        l = new DialogInterfaceC0068b.C0069a(this.f9347b, C2553q3.m11117c()).mo228h(R.string.confirm).mo232l(R.string.cancel, null);
                         cVar = new DialogInterface$OnClickListenerC2759b();
                     } else if (i == 5) {
-                        l = new DialogInterfaceC0068b.C0069a(this.f9339b, C2553q3.m11117c()).mo228h(R.string.confirm).mo232l(R.string.cancel, null);
+                        l = new DialogInterfaceC0068b.C0069a(this.f9347b, C2553q3.m11117c()).mo228h(R.string.confirm).mo232l(R.string.cancel, null);
                         cVar = new DialogInterface$OnClickListenerC2760c();
                     } else {
                         return;
@@ -376,7 +376,7 @@ public class C2749t1 {
                     l.mo235o(R.string.ok, cVar).mo221a().show();
                     return;
                 }
-                t1Var.mo9278m(activity, p1Var, j, this.f9340c, str);
+                t1Var.mo9278m(activity, p1Var, j, this.f9348c, str);
             }
         }
     }
@@ -386,32 +386,32 @@ public class C2749t1 {
     public class C2761c implements C2223d0.AbstractC2249s {
 
         /* renamed from: a */
-        final /* synthetic */ Activity f9351a;
+        final /* synthetic */ Activity f9359a;
 
         /* renamed from: b */
-        final /* synthetic */ AbstractC2531p1 f9352b;
+        final /* synthetic */ AbstractC2531p1 f9360b;
 
         /* renamed from: c */
-        final /* synthetic */ long f9353c;
+        final /* synthetic */ long f9361c;
 
         /* renamed from: d */
-        final /* synthetic */ String f9354d;
+        final /* synthetic */ String f9362d;
 
         /* renamed from: e */
-        final /* synthetic */ String f9355e;
+        final /* synthetic */ String f9363e;
 
         C2761c(Activity activity, AbstractC2531p1 p1Var, long j, String str, String str2) {
-            this.f9351a = activity;
-            this.f9352b = p1Var;
-            this.f9353c = j;
-            this.f9354d = str;
-            this.f9355e = str2;
+            this.f9359a = activity;
+            this.f9360b = p1Var;
+            this.f9361c = j;
+            this.f9362d = str;
+            this.f9363e = str2;
         }
 
         @Override // com.digdroid.alman.dig.C2223d0.AbstractC2249s
         /* renamed from: a */
         public void mo7941a() {
-            C2749t1.this.mo9279n(this.f9351a, this.f9352b, this.f9353c, this.f9354d, this.f9355e);
+            C2749t1.this.mo9279n(this.f9359a, this.f9360b, this.f9361c, this.f9362d, this.f9363e);
         }
 
         @Override // com.digdroid.alman.dig.C2223d0.AbstractC2249s
@@ -425,35 +425,35 @@ public class C2749t1 {
     public class DialogInterface$OnClickListenerC2762d implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ View f9357b;
+        final /* synthetic */ View f9365b;
 
         /* renamed from: c */
-        final /* synthetic */ Activity f9358c;
+        final /* synthetic */ Activity f9366c;
 
         /* renamed from: d */
-        final /* synthetic */ AbstractC2531p1 f9359d;
+        final /* synthetic */ AbstractC2531p1 f9367d;
 
         /* renamed from: e */
-        final /* synthetic */ long f9360e;
+        final /* synthetic */ long f9368e;
 
         /* renamed from: f */
-        final /* synthetic */ String f9361f;
+        final /* synthetic */ String f9369f;
 
         /* renamed from: g */
-        final /* synthetic */ String f9362g;
+        final /* synthetic */ String f9370g;
 
         DialogInterface$OnClickListenerC2762d(View view, Activity activity, AbstractC2531p1 p1Var, long j, String str, String str2) {
-            this.f9357b = view;
-            this.f9358c = activity;
-            this.f9359d = p1Var;
-            this.f9360e = j;
-            this.f9361f = str;
-            this.f9362g = str2;
+            this.f9365b = view;
+            this.f9366c = activity;
+            this.f9367d = p1Var;
+            this.f9368e = j;
+            this.f9369f = str;
+            this.f9370g = str2;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
-            C2749t1.this.f9322c.mo8152A("inform_image_download", ((CheckBox) this.f9357b.findViewById(R.id.not_again)).isChecked());
-            C2749t1.this.mo9280o(this.f9358c, this.f9359d, this.f9360e, this.f9361f, this.f9362g);
+            C2749t1.this.f9330c.mo8152A("inform_image_download", ((CheckBox) this.f9365b.findViewById(R.id.not_again)).isChecked());
+            C2749t1.this.mo9280o(this.f9366c, this.f9367d, this.f9368e, this.f9369f, this.f9370g);
         }
     }
 
@@ -461,24 +461,24 @@ public class C2749t1 {
     class C2763e implements C2391i.AbstractC2394b {
 
         /* renamed from: a */
-        final /* synthetic */ Activity f9364a;
+        final /* synthetic */ Activity f9372a;
 
         /* renamed from: b */
-        final /* synthetic */ String f9365b;
+        final /* synthetic */ String f9373b;
 
         /* renamed from: c */
-        final /* synthetic */ boolean f9366c;
+        final /* synthetic */ boolean f9374c;
 
         C2763e(Activity activity, String str, boolean z) {
-            this.f9364a = activity;
-            this.f9365b = str;
-            this.f9366c = z;
+            this.f9372a = activity;
+            this.f9373b = str;
+            this.f9374c = z;
         }
 
         @Override // com.digdroid.alman.dig.C2391i.AbstractC2394b
         /* renamed from: a */
         public void mo8043a(String[] strArr) {
-            C2749t1.this.mo9285u(this.f9364a, this.f9365b, this.f9366c, strArr[0]);
+            C2749t1.this.mo9285u(this.f9372a, this.f9373b, this.f9374c, strArr[0]);
         }
     }
 
@@ -487,18 +487,18 @@ public class C2749t1 {
     public class C2764f implements AbstractC2767i {
 
         /* renamed from: a */
-        final /* synthetic */ String f9368a;
+        final /* synthetic */ String f9376a;
 
         /* renamed from: b */
-        final /* synthetic */ Activity f9369b;
+        final /* synthetic */ Activity f9377b;
 
         /* renamed from: c */
-        final /* synthetic */ String f9370c;
+        final /* synthetic */ String f9378c;
 
         C2764f(String str, Activity activity, String str2) {
-            this.f9368a = str;
-            this.f9369b = activity;
-            this.f9370c = str2;
+            this.f9376a = str;
+            this.f9377b = activity;
+            this.f9378c = str2;
         }
 
         @Override // com.digdroid.alman.dig.C2749t1.AbstractC2767i
@@ -511,15 +511,15 @@ public class C2749t1 {
         @Override // com.digdroid.alman.dig.C2749t1.AbstractC2767i
         /* renamed from: b */
         public String mo9299b() {
-            String str = this.f9368a;
-            C2399i2 i2Var = new C2399i2(C2399i2.m10374d(this.f9369b, str), "Covers");
+            String str = this.f9376a;
+            C2399i2 i2Var = new C2399i2(C2399i2.m10374d(this.f9377b, str), "Covers");
             return !i2Var.exists() ? i2Var.getParentFile().getAbsolutePath() : str;
         }
 
         @Override // com.digdroid.alman.dig.C2749t1.AbstractC2767i
         /* renamed from: c */
         public String mo9300c() {
-            return this.f9370c;
+            return this.f9378c;
         }
     }
 
@@ -527,36 +527,36 @@ public class C2749t1 {
     class C2765g implements AbstractC2767i {
 
         /* renamed from: a */
-        final /* synthetic */ String f9372a;
+        final /* synthetic */ String f9380a;
 
         /* renamed from: b */
-        final /* synthetic */ String f9373b;
+        final /* synthetic */ String f9381b;
 
         /* renamed from: c */
-        final /* synthetic */ String f9374c;
+        final /* synthetic */ String f9382c;
 
         C2765g(String str, String str2, String str3) {
-            this.f9372a = str;
-            this.f9373b = str2;
-            this.f9374c = str3;
+            this.f9380a = str;
+            this.f9381b = str2;
+            this.f9382c = str3;
         }
 
         @Override // com.digdroid.alman.dig.C2749t1.AbstractC2767i
         /* renamed from: a */
         public boolean mo9298a(File file) {
-            return new File(this.f9374c + "/" + file.getName() + ".cfg").exists();
+            return new File(this.f9382c + "/" + file.getName() + ".cfg").exists();
         }
 
         @Override // com.digdroid.alman.dig.C2749t1.AbstractC2767i
         /* renamed from: b */
         public String mo9299b() {
-            return this.f9372a;
+            return this.f9380a;
         }
 
         @Override // com.digdroid.alman.dig.C2749t1.AbstractC2767i
         /* renamed from: c */
         public String mo9300c() {
-            return this.f9373b;
+            return this.f9381b;
         }
     }
 
@@ -565,18 +565,18 @@ public class C2749t1 {
     public class DialogInterface$OnClickListenerC2766h implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ Activity f9376b;
+        final /* synthetic */ Activity f9384b;
 
         /* renamed from: c */
-        final /* synthetic */ AbstractC2767i f9377c;
+        final /* synthetic */ AbstractC2767i f9385c;
 
         DialogInterface$OnClickListenerC2766h(Activity activity, AbstractC2767i iVar) {
-            this.f9376b = activity;
-            this.f9377c = iVar;
+            this.f9384b = activity;
+            this.f9385c = iVar;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
-            new AsyncTaskC2768j(this.f9376b, this.f9377c).execute(new String[0]);
+            new AsyncTaskC2768j(this.f9384b, this.f9385c).execute(new String[0]);
         }
     }
 
@@ -597,28 +597,28 @@ public class C2749t1 {
     class AsyncTaskC2768j extends AsyncTask<String, Object, String> {
 
         /* renamed from: a */
-        WeakReference<Activity> f9379a;
+        WeakReference<Activity> f9387a;
 
         /* renamed from: b */
-        AbstractC2767i f9380b;
+        AbstractC2767i f9388b;
 
         /* renamed from: c */
-        ProgressDialog f9381c;
+        ProgressDialog f9389c;
 
         /* renamed from: d */
-        C2399i2 f9382d;
+        C2399i2 f9390d;
 
         /* renamed from: e */
-        C2399i2 f9383e;
+        C2399i2 f9391e;
 
         /* renamed from: f */
-        String f9384f;
+        String f9392f;
 
         /* renamed from: g */
-        int f9385g = 0;
+        int f9393g = 0;
 
         /* renamed from: h */
-        int f9386h = 0;
+        int f9394h = 0;
 
         /* renamed from: com.digdroid.alman.dig.t1$j$a */
         class DialogInterface$OnClickListenerC2769a implements DialogInterface.OnClickListener {
@@ -631,11 +631,11 @@ public class C2749t1 {
         }
 
         public AsyncTaskC2768j(Activity activity, AbstractC2767i iVar) {
-            this.f9379a = new WeakReference<>(activity);
-            this.f9382d = C2399i2.m10374d(activity, iVar.mo9299b());
-            this.f9383e = C2399i2.m10374d(activity, iVar.mo9300c());
-            this.f9380b = iVar;
-            this.f9384f = this.f9382d.getPath();
+            this.f9387a = new WeakReference<>(activity);
+            this.f9390d = C2399i2.m10374d(activity, iVar.mo9299b());
+            this.f9391e = C2399i2.m10374d(activity, iVar.mo9300c());
+            this.f9388b = iVar;
+            this.f9392f = this.f9390d.getPath();
         }
 
         /* renamed from: a */
@@ -643,8 +643,8 @@ public class C2749t1 {
             File[] listFiles;
             int i;
             int i2 = 1;
-            this.f9385g++;
-            if (this.f9379a.get() != null) {
+            this.f9393g++;
+            if (this.f9387a.get() != null) {
                 if (!file2.exists()) {
                     try {
                         file2.mkdirs();
@@ -653,7 +653,7 @@ public class C2749t1 {
                     }
                 }
                 if (file.exists() && (listFiles = file.listFiles()) != null) {
-                    this.f9386h += listFiles.length;
+                    this.f9394h += listFiles.length;
                     byte[] bArr = new byte[1024];
                     int i3 = 0;
                     while (i3 < listFiles.length) {
@@ -719,7 +719,7 @@ public class C2749t1 {
                         i2 = 1;
                     }
                     try {
-                        if (!file.getPath().equals(this.f9384f)) {
+                        if (!file.getPath().equals(this.f9392f)) {
                             file.delete();
                         }
                     } catch (Exception unused6) {
@@ -732,13 +732,13 @@ public class C2749t1 {
         /* renamed from: b */
         public String doInBackground(String... strArr) {
             File[] listFiles;
-            C2399i2 i2Var = this.f9382d;
+            C2399i2 i2Var = this.f9390d;
             if (i2Var == null || !i2Var.isDirectory() || (listFiles = i2Var.listFiles()) == null) {
                 return null;
             }
             for (File file : listFiles) {
-                if (file.isDirectory() && this.f9380b.mo9298a(file)) {
-                    m11709a(file, new C2399i2(this.f9383e, file.getName()));
+                if (file.isDirectory() && this.f9388b.mo9298a(file)) {
+                    m11709a(file, new C2399i2(this.f9391e, file.getName()));
                 }
             }
             return null;
@@ -748,9 +748,9 @@ public class C2749t1 {
         /* renamed from: c */
         public void onPostExecute(String str) {
             try {
-                Activity activity = this.f9379a.get();
+                Activity activity = this.f9387a.get();
                 if (activity != null && !activity.isFinishing()) {
-                    this.f9381c.dismiss();
+                    this.f9389c.dismiss();
                 }
             } catch (Exception unused) {
             }
@@ -758,24 +758,24 @@ public class C2749t1 {
 
         /* access modifiers changed from: protected */
         public void onPreExecute() {
-            ProgressDialog progressDialog = new ProgressDialog(this.f9379a.get());
-            this.f9381c = progressDialog;
+            ProgressDialog progressDialog = new ProgressDialog(this.f9387a.get());
+            this.f9389c = progressDialog;
             progressDialog.setCancelable(false);
-            this.f9381c.setProgressStyle(1);
-            this.f9381c.setIndeterminate(false);
-            this.f9381c.setTitle("Moving ");
-            this.f9381c.setButton(-2, "Cancel", new DialogInterface$OnClickListenerC2769a());
-            this.f9381c.show();
+            this.f9389c.setProgressStyle(1);
+            this.f9389c.setIndeterminate(false);
+            this.f9389c.setTitle("Moving ");
+            this.f9389c.setButton(-2, "Cancel", new DialogInterface$OnClickListenerC2769a());
+            this.f9389c.show();
         }
 
         /* access modifiers changed from: protected */
         @Override // android.os.AsyncTask
         public void onProgressUpdate(Object... objArr) {
-            Activity activity = this.f9379a.get();
+            Activity activity = this.f9387a.get();
             if (activity != null && !activity.isFinishing()) {
-                this.f9381c.setTitle((String) objArr[0]);
-                this.f9381c.setMax(((Integer) objArr[1]).intValue());
-                this.f9381c.setProgress(((Integer) objArr[2]).intValue());
+                this.f9389c.setTitle((String) objArr[0]);
+                this.f9389c.setMax(((Integer) objArr[1]).intValue());
+                this.f9389c.setProgress(((Integer) objArr[2]).intValue());
             }
         }
     }
@@ -785,22 +785,22 @@ public class C2749t1 {
     public class AsyncTaskC2770k extends AsyncTask<String, Integer, String> {
 
         /* renamed from: a */
-        WeakReference<Activity> f9389a;
+        WeakReference<Activity> f9397a;
 
         /* renamed from: b */
-        ProgressDialog f9390b;
+        ProgressDialog f9398b;
 
         /* renamed from: c */
-        File[] f9391c;
+        File[] f9399c;
 
         /* renamed from: d */
-        String f9392d;
+        String f9400d;
 
         /* renamed from: e */
-        String f9393e;
+        String f9401e;
 
         /* renamed from: f */
-        C2456l0 f9394f = new C2456l0(C2886z1.m11967b(null).mo9515a());
+        C2456l0 f9402f = new C2456l0(C2886z1.m11967b(null).mo9515a());
 
         /* renamed from: com.digdroid.alman.dig.t1$k$a */
         class DialogInterface$OnClickListenerC2771a implements DialogInterface.OnClickListener {
@@ -813,21 +813,21 @@ public class C2749t1 {
         }
 
         public AsyncTaskC2770k(Activity activity, File[] fileArr, String str, String str2) {
-            this.f9389a = new WeakReference<>(activity);
-            this.f9391c = fileArr;
-            this.f9392d = str;
-            this.f9393e = str2;
+            this.f9397a = new WeakReference<>(activity);
+            this.f9399c = fileArr;
+            this.f9400d = str;
+            this.f9401e = str2;
         }
 
         /* access modifiers changed from: protected */
         /* renamed from: a */
         public String doInBackground(String... strArr) {
             Pattern compile = Pattern.compile("^(.+)\\.(?:jpg|png|gif|bmp|jpeg)$", 2);
-            for (int i = 0; i < this.f9391c.length && !isCancelled(); i++) {
+            for (int i = 0; i < this.f9399c.length && !isCancelled(); i++) {
                 try {
-                    Matcher matcher = compile.matcher(this.f9391c[i].getName());
+                    Matcher matcher = compile.matcher(this.f9399c[i].getName());
                     if (matcher.find()) {
-                        C2749t1.this.mo9283s(this.f9394f, this.f9392d, this.f9393e, this.f9391c[i], matcher.group(1));
+                        C2749t1.this.mo9283s(this.f9402f, this.f9400d, this.f9401e, this.f9399c[i], matcher.group(1));
                     }
                     publishProgress(Integer.valueOf(i + 1));
                 } catch (Exception unused) {
@@ -840,9 +840,9 @@ public class C2749t1 {
         /* renamed from: b */
         public void onPostExecute(String str) {
             try {
-                Activity activity = this.f9389a.get();
+                Activity activity = this.f9397a.get();
                 if (activity != null && !activity.isFinishing()) {
-                    this.f9390b.dismiss();
+                    this.f9398b.dismiss();
                 }
             } catch (Exception unused) {
             }
@@ -851,22 +851,22 @@ public class C2749t1 {
         /* access modifiers changed from: protected */
         /* renamed from: c */
         public void onProgressUpdate(Integer... numArr) {
-            Activity activity = this.f9389a.get();
+            Activity activity = this.f9397a.get();
             if (activity != null && !activity.isFinishing()) {
-                this.f9390b.setProgress(numArr[0].intValue());
+                this.f9398b.setProgress(numArr[0].intValue());
             }
         }
 
         /* access modifiers changed from: protected */
         public void onPreExecute() {
-            ProgressDialog progressDialog = new ProgressDialog(this.f9389a.get());
-            this.f9390b = progressDialog;
+            ProgressDialog progressDialog = new ProgressDialog(this.f9397a.get());
+            this.f9398b = progressDialog;
             progressDialog.setCancelable(false);
-            this.f9390b.setProgressStyle(1);
-            this.f9390b.setIndeterminate(false);
-            this.f9390b.setMax(this.f9391c.length);
-            this.f9390b.setButton(-2, "Cancel", new DialogInterface$OnClickListenerC2771a());
-            this.f9390b.show();
+            this.f9398b.setProgressStyle(1);
+            this.f9398b.setIndeterminate(false);
+            this.f9398b.setMax(this.f9399c.length);
+            this.f9398b.setButton(-2, "Cancel", new DialogInterface$OnClickListenerC2771a());
+            this.f9398b.show();
         }
     }
 
@@ -877,12 +877,12 @@ public class C2749t1 {
     }
 
     private C2749t1(Context context) {
-        this.f9321b = context;
-        this.f9322c = C2219c3.m9805k(context);
+        this.f9329b = context;
+        this.f9330c = C2219c3.m9805k(context);
         C2775u e = C2775u.m11726e(context);
-        this.f9324e = e;
+        this.f9332e = e;
         C2375h3 r = C2375h3.m10306r(context, e);
-        this.f9323d = r;
+        this.f9331d = r;
         r.mo8543C();
     }
 
@@ -890,10 +890,10 @@ public class C2749t1 {
     public static synchronized C2749t1 m11663p(Context context) {
         C2749t1 t1Var;
         synchronized (C2749t1.class) {
-            if (f9320a == null) {
-                f9320a = new C2749t1(context.getApplicationContext());
+            if (f9328a == null) {
+                f9328a = new C2749t1(context.getApplicationContext());
             }
-            t1Var = f9320a;
+            t1Var = f9328a;
         }
         return t1Var;
     }
@@ -901,7 +901,7 @@ public class C2749t1 {
     /* renamed from: A */
     public void mo9264A() {
         if (mo9269d(mo9282r())) {
-            Cursor rawQuery = this.f9324e.mo9325c().rawQuery("SELECT slug,parent FROM systems", null);
+            Cursor rawQuery = this.f9332e.mo9325c().rawQuery("SELECT slug,parent FROM systems", null);
             if (rawQuery.moveToFirst()) {
                 do {
                     if (!new File(mo9282r() + "/" + rawQuery.getString(0) + ".png").exists()) {
@@ -931,7 +931,7 @@ public class C2749t1 {
             monitor-enter(r3)
             r0 = 0
             r1 = 0
-            android.content.Context r2 = r3.f9321b     // Catch:{ Exception -> 0x0041, all -> 0x0032 }
+            android.content.Context r2 = r3.f9329b     // Catch:{ Exception -> 0x0041, all -> 0x0032 }
             android.content.ContentResolver r2 = r2.getContentResolver()     // Catch:{ Exception -> 0x0041, all -> 0x0032 }
             java.io.InputStream r4 = r2.openInputStream(r4)     // Catch:{ Exception -> 0x0041, all -> 0x0032 }
             java.io.FileOutputStream r2 = new java.io.FileOutputStream     // Catch:{ Exception -> 0x0042, all -> 0x0030 }
@@ -1031,18 +1031,18 @@ public class C2749t1 {
         if (str == null) {
             return false;
         }
-        if (!z && this.f9325f.containsKey(str)) {
+        if (!z && this.f9333f.containsKey(str)) {
             return true;
         }
-        C2399i2 d = C2399i2.m10374d(this.f9321b, str);
+        C2399i2 d = C2399i2.m10374d(this.f9329b, str);
         if (d.exists()) {
-            this.f9325f.put(str, Boolean.TRUE);
+            this.f9333f.put(str, Boolean.TRUE);
             return true;
         }
         synchronized (this) {
             try {
                 d.mkdirs();
-                this.f9325f.put(str, Boolean.TRUE);
+                this.f9333f.put(str, Boolean.TRUE);
             } catch (Exception unused) {
                 return false;
             } catch (Throwable th) {
@@ -1060,20 +1060,20 @@ public class C2749t1 {
         if (!z && (lastIndexOf = string.lastIndexOf(".")) > 0) {
             string = string.substring(0, lastIndexOf);
         }
-        C2399i2 d = C2399i2.m10374d(this.f9321b, str);
+        C2399i2 d = C2399i2.m10374d(this.f9329b, str);
         C2399i2 i2Var = new C2399i2(d, string + ".png");
         if (!i2Var.exists()) {
             mo9265B(Uri.fromFile(file), i2Var);
-            SQLiteDatabase c = this.f9324e.mo9325c();
+            SQLiteDatabase c = this.f9332e.mo9325c();
             c.execSQL("UPDATE roms SET has_images=NULL WHERE _id=" + cursor.getLong(1));
-            ImageService.m9511a(this.f9321b.getApplicationContext());
+            ImageService.m9511a(this.f9329b.getApplicationContext());
         }
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: g */
     public File mo9272g(long j, boolean z) {
-        SQLiteDatabase c = this.f9324e.mo9325c();
+        SQLiteDatabase c = this.f9332e.mo9325c();
         Cursor rawQuery = c.rawQuery("SELECT pathid,filename,foldername,system FROM roms WHERE _id=" + j, null);
         if (!rawQuery.moveToFirst()) {
             rawQuery.close();
@@ -1085,13 +1085,13 @@ public class C2749t1 {
         }
         String string2 = rawQuery.getString(3);
         rawQuery.close();
-        return mo9274i(mo9277l(!this.f9323d.mo8572w(string2)), string, string2, z);
+        return mo9274i(mo9277l(!this.f9331d.mo8572w(string2)), string, string2, z);
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: h */
     public File mo9273h(String str, long j, boolean z) {
-        SQLiteDatabase c = this.f9324e.mo9325c();
+        SQLiteDatabase c = this.f9332e.mo9325c();
         Cursor rawQuery = c.rawQuery("SELECT pathid,filename,foldername,system FROM roms WHERE _id=" + j, null);
         if (!rawQuery.moveToFirst()) {
             rawQuery.close();
@@ -1110,11 +1110,11 @@ public class C2749t1 {
     /* renamed from: i */
     public File mo9274i(String str, String str2, String str3, boolean z) {
         int lastIndexOf;
-        String t = this.f9323d.mo8569t(str3);
+        String t = this.f9331d.mo8569t(str3);
         if (!t.equals("pc") && !t.equals("scumm") && !t.equals("android") && (lastIndexOf = str2.lastIndexOf(46)) > 0) {
             str2 = str2.substring(0, lastIndexOf);
         }
-        Context context = this.f9321b;
+        Context context = this.f9329b;
         C2399i2 d = C2399i2.m10374d(context, C2185a4.m9678h(context));
         C2399i2 i2Var = new C2399i2(d, str + "/" + t);
         mo9270e(i2Var.getAbsolutePath(), z);
@@ -1132,7 +1132,7 @@ public class C2749t1 {
     public void mo9276k(Activity activity, AbstractC2531p1 p1Var, long j, boolean z, AbstractC2772l lVar) {
         if (activity != null && !activity.isFinishing()) {
             String l = mo9277l(z);
-            SQLiteDatabase c = this.f9324e.mo9325c();
+            SQLiteDatabase c = this.f9332e.mo9325c();
             Cursor rawQuery = c.rawQuery("SELECT title,system FROM roms WHERE _id=" + j, null);
             if (!rawQuery.moveToFirst()) {
                 rawQuery.close();
@@ -1154,7 +1154,7 @@ public class C2749t1 {
     /* access modifiers changed from: package-private */
     /* renamed from: m */
     public void mo9278m(Activity activity, AbstractC2531p1 p1Var, long j, String str, String str2) {
-        if (this.f9322c.mo8197u()) {
+        if (this.f9330c.mo8197u()) {
             mo9279n(activity, p1Var, j, str, str2);
         } else {
             C2223d0.m9876p().mo8215r(activity, 4, new C2761c(activity, p1Var, j, str, str2));
@@ -1164,7 +1164,7 @@ public class C2749t1 {
     /* access modifiers changed from: package-private */
     /* renamed from: n */
     public void mo9279n(Activity activity, AbstractC2531p1 p1Var, long j, String str, String str2) {
-        if (this.f9322c.mo8180c("inform_image_download", false)) {
+        if (this.f9330c.mo8180c("inform_image_download", false)) {
             mo9280o(activity, p1Var, j, str, str2);
             return;
         }
@@ -1181,9 +1181,9 @@ public class C2749t1 {
     /* renamed from: o */
     public void mo9280o(Activity activity, AbstractC2531p1 p1Var, long j, String str, String str2) {
         if (activity != null && !activity.isFinishing()) {
-            this.f9322c.mo8201y("get_game_image", j);
-            this.f9322c.mo8201y("get_game_image_t", System.currentTimeMillis());
-            this.f9322c.mo8202z("get_game_image_dir", str);
+            this.f9330c.mo8201y("get_game_image", j);
+            this.f9330c.mo8201y("get_game_image_t", System.currentTimeMillis());
+            this.f9330c.mo8202z("get_game_image_dir", str);
             Intent intent = new Intent();
             intent.setData(Uri.parse(str2));
             intent.setAction("android.intent.action.VIEW");
@@ -1199,13 +1199,13 @@ public class C2749t1 {
     public void mo9281q(Activity activity, String str, String str2, AbstractC2772l lVar) {
         File[] b;
         if (activity != null && !activity.isFinishing()) {
-            String str3 = C2553q3.f8891a.f9416t;
-            if (str3.equals("") && (b = C2372h2.m10298b(this.f9321b)) != null && b.length > 0) {
+            String str3 = C2553q3.f8899a.f9424t;
+            if (str3.equals("") && (b = C2372h2.m10298b(this.f9329b)) != null && b.length > 0) {
                 str3 = b[0].getAbsolutePath() + "/Systems/icons";
             }
             if (!str3.equals("")) {
                 CharSequence[] charSequenceArr = new CharSequence[5];
-                Cursor rawQuery = this.f9324e.mo9325c().rawQuery("SELECT ignored,parent FROM systems WHERE slug='" + str + "'", null);
+                Cursor rawQuery = this.f9332e.mo9325c().rawQuery("SELECT ignored,parent FROM systems WHERE slug='" + str + "'", null);
                 rawQuery.moveToFirst();
                 boolean z = rawQuery.getInt(0) != 0;
                 rawQuery.close();
@@ -1222,7 +1222,7 @@ public class C2749t1 {
     /* access modifiers changed from: package-private */
     /* renamed from: r */
     public String mo9282r() {
-        File externalFilesDir = this.f9321b.getExternalFilesDir(null);
+        File externalFilesDir = this.f9329b.getExternalFilesDir(null);
         if (externalFilesDir == null) {
             return null;
         }
@@ -1233,7 +1233,7 @@ public class C2749t1 {
     /* renamed from: s */
     public void mo9283s(C2456l0 l0Var, String str, String str2, File file, String str3) {
         boolean z = str.equals("pc") || str.equals("scumm") || str.equals("android");
-        SQLiteDatabase c = this.f9324e.mo9325c();
+        SQLiteDatabase c = this.f9332e.mo9325c();
         StringBuilder sb = new StringBuilder();
         sb.append("SELECT filename,_id FROM roms WHERE system='");
         sb.append(str);
@@ -1248,7 +1248,7 @@ public class C2749t1 {
         rawQuery.close();
         long e = l0Var.mo8712e(str, file.getName(), false, 80, false);
         if (e >= 0) {
-            SQLiteDatabase c2 = this.f9324e.mo9325c();
+            SQLiteDatabase c2 = this.f9332e.mo9325c();
             Cursor rawQuery2 = c2.rawQuery("SELECT filename,_id FROM roms WHERE mdbid=" + e, null);
             if (rawQuery2.moveToFirst()) {
                 do {
@@ -1263,7 +1263,7 @@ public class C2749t1 {
     /* renamed from: t */
     public void mo9284t(Activity activity, String str, boolean z) {
         C2391i iVar = new C2391i(activity);
-        iVar.mo8593i(this.f9321b.getString(R.string.import_folder));
+        iVar.mo8593i(this.f9329b.getString(R.string.import_folder));
         iVar.mo8592h(new C2763e(activity, str, z));
         iVar.mo8588d();
     }
@@ -1273,7 +1273,7 @@ public class C2749t1 {
     public void mo9285u(Activity activity, String str, boolean z, String str2) {
         File[] listFiles;
         C2399i2 d = C2399i2.m10374d(activity, C2185a4.m9678h(activity));
-        String absolutePath = new C2399i2(d, mo9277l(!z) + "/" + this.f9323d.mo8569t(str)).getAbsolutePath();
+        String absolutePath = new C2399i2(d, mo9277l(!z) + "/" + this.f9331d.mo8569t(str)).getAbsolutePath();
         if (mo9270e(absolutePath, true)) {
             File file = new File(str2);
             if (file.exists() && (listFiles = file.listFiles()) != null && listFiles.length > 0) {
@@ -1322,7 +1322,7 @@ public class C2749t1 {
             monitor-enter(r3)
             r0 = 0
             r1 = 0
-            android.content.Context r2 = r3.f9321b     // Catch:{ Exception -> 0x002d, all -> 0x002b }
+            android.content.Context r2 = r3.f9329b     // Catch:{ Exception -> 0x002d, all -> 0x002b }
             com.digdroid.alman.dig.i2 r5 = com.digdroid.alman.dig.C2399i2.m10374d(r2, r5)     // Catch:{ Exception -> 0x002d, all -> 0x002b }
             if (r5 != 0) goto L_0x000d
             monitor-exit(r3)
@@ -1372,19 +1372,19 @@ public class C2749t1 {
     /* access modifiers changed from: package-private */
     /* renamed from: x */
     public void mo9288x(Uri uri) {
-        long n = this.f9322c.mo8190n("game_id", -1);
+        long n = this.f9330c.mo8190n("game_id", -1);
         if (n >= 0) {
             mo9265B(uri, mo9272g(n, true));
-            SQLiteDatabase c = this.f9324e.mo9325c();
+            SQLiteDatabase c = this.f9332e.mo9325c();
             c.execSQL("UPDATE roms SET has_images=NULL WHERE _id=" + n);
-            ImageService.m9511a(this.f9321b.getApplicationContext());
+            ImageService.m9511a(this.f9329b.getApplicationContext());
         }
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: y */
     public void mo9289y(int i, Uri uri) {
-        SQLiteDatabase c = this.f9324e.mo9325c();
+        SQLiteDatabase c = this.f9332e.mo9325c();
         Cursor rawQuery = c.rawQuery("SELECT slug FROM systems WHERE _id=" + i, null);
         if (rawQuery.moveToFirst()) {
             if (mo9269d(mo9282r())) {

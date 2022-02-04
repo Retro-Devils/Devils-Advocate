@@ -8,19 +8,19 @@ import java.util.HashSet;
 public class C2883y3 extends C2492n {
 
     /* renamed from: f */
-    private static C2883y3 f9700f;
+    private static C2883y3 f9708f;
 
     /* renamed from: g */
-    private int f9701g;
+    private int f9709g;
 
     /* renamed from: h */
-    private int f9702h;
+    private int f9710h;
 
     /* renamed from: i */
-    HashSet<String> f9703i;
+    HashSet<String> f9711i;
 
     /* renamed from: j */
-    long f9704j;
+    long f9712j;
 
     private C2883y3(Context context) {
         super(context);
@@ -35,7 +35,7 @@ public class C2883y3 extends C2492n {
                 if (file2.isDirectory()) {
                     m11937A(file2);
                 } else {
-                    this.f9704j += file2.length();
+                    this.f9712j += file2.length();
                 }
             }
         }
@@ -44,12 +44,12 @@ public class C2883y3 extends C2492n {
     /* renamed from: B */
     private void m11938B() {
         File[] listFiles;
-        this.f9704j = 0;
+        this.f9712j = 0;
         File w = m11941w();
         if (!(w == null || (listFiles = w.listFiles()) == null)) {
             for (File file : listFiles) {
                 if (file.isDirectory()) {
-                    if (this.f9703i.contains(file.getAbsolutePath())) {
+                    if (this.f9711i.contains(file.getAbsolutePath())) {
                         m11937A(file);
                     } else {
                         mo9503v(file, false);
@@ -63,32 +63,32 @@ public class C2883y3 extends C2492n {
     private void m11939C() {
         mo8774k(C2399i2.m10373c(m11942x()));
         mo8775l();
-        this.f9703i = new HashSet<>();
-        this.f9701g = mo8770g("first_game", 1);
-        this.f9702h = mo8770g("last_game", 0);
-        for (int i = this.f9701g; i <= this.f9702h; i++) {
+        this.f9711i = new HashSet<>();
+        this.f9709g = mo8770g("first_game", 1);
+        this.f9710h = mo8770g("last_game", 0);
+        for (int i = this.f9709g; i <= this.f9710h; i++) {
             String i2 = mo8772i("" + i);
             if (!i2.equals("")) {
-                this.f9703i.add(i2);
+                this.f9711i.add(i2);
             }
         }
     }
 
     /* renamed from: E */
     private void m11940E() {
-        mo8779p("first_game", this.f9701g);
-        mo8779p("last_game", this.f9702h);
+        mo8779p("first_game", this.f9709g);
+        mo8779p("last_game", this.f9710h);
         mo8781r(m11942x().getAbsolutePath());
     }
 
     /* renamed from: w */
     private File m11941w() {
-        return C2185a4.m9663A(this.f8639a);
+        return C2185a4.m9663A(this.f8647a);
     }
 
     /* renamed from: x */
     private File m11942x() {
-        File filesDir = this.f8639a.getFilesDir();
+        File filesDir = this.f8647a.getFilesDir();
         if (filesDir != null) {
             return new File(filesDir, "unzippedgames.txt");
         }
@@ -99,10 +99,10 @@ public class C2883y3 extends C2492n {
     public static synchronized C2883y3 m11943y(Context context) {
         C2883y3 y3Var;
         synchronized (C2883y3.class) {
-            if (f9700f == null) {
-                f9700f = new C2883y3(context);
+            if (f9708f == null) {
+                f9708f = new C2883y3(context);
             }
-            y3Var = f9700f;
+            y3Var = f9708f;
         }
         return y3Var;
     }
@@ -111,14 +111,14 @@ public class C2883y3 extends C2492n {
     public synchronized void mo9501D(long j) {
         C2399i2 d;
         boolean z = false;
-        long l = ((long) (C2219c3.m9805k(this.f8639a).mo8188l("game_cache_size", 0) * 1024)) * 1024;
-        while (this.f9704j + j > l && this.f9701g <= this.f9702h) {
-            String i = mo8772i("" + this.f9701g);
-            if (!i.equals("") && (d = C2399i2.m10374d(this.f8639a, i)) != null && m11941w().exists()) {
+        long l = ((long) (C2219c3.m9805k(this.f8647a).mo8188l("game_cache_size", 0) * 1024)) * 1024;
+        while (this.f9712j + j > l && this.f9709g <= this.f9710h) {
+            String i = mo8772i("" + this.f9709g);
+            if (!i.equals("") && (d = C2399i2.m10374d(this.f8647a, i)) != null && m11941w().exists()) {
                 mo9503v(d, true);
             }
-            mo8765a("" + this.f9701g);
-            this.f9701g = this.f9701g + 1;
+            mo8765a("" + this.f9709g);
+            this.f9709g = this.f9709g + 1;
             z = true;
         }
         if (z) {
@@ -182,21 +182,21 @@ public class C2883y3 extends C2492n {
 
     /* renamed from: u */
     public synchronized void mo9502u(String str, long j) {
-        if (this.f9703i.contains(str)) {
-            for (int i = this.f9701g; i <= this.f9702h; i++) {
+        if (this.f9711i.contains(str)) {
+            for (int i = this.f9709g; i <= this.f9710h; i++) {
                 if (mo8772i("" + i).equals(str)) {
-                    this.f9702h++;
-                    mo8782s("" + this.f9702h, str);
+                    this.f9710h++;
+                    mo8782s("" + this.f9710h, str);
                     mo8765a("" + i);
                     m11940E();
                     return;
                 }
             }
         }
-        this.f9702h++;
-        mo8782s("" + this.f9702h, str);
-        this.f9704j = this.f9704j + j;
-        this.f9703i.add(str);
+        this.f9710h++;
+        mo8782s("" + this.f9710h, str);
+        this.f9712j = this.f9712j + j;
+        this.f9711i.add(str);
         m11940E();
     }
 
@@ -212,7 +212,7 @@ public class C2883y3 extends C2492n {
                         long length = file2.length();
                         file2.delete();
                         if (z) {
-                            this.f9704j -= length;
+                            this.f9712j -= length;
                         }
                     } catch (Exception unused) {
                     }

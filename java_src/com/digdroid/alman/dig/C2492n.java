@@ -15,57 +15,57 @@ import java.util.regex.Pattern;
 public class C2492n {
 
     /* renamed from: a */
-    Context f8639a;
+    Context f8647a;
 
     /* renamed from: b */
-    String f8640b;
+    String f8648b;
 
     /* renamed from: c */
-    boolean f8641c;
+    boolean f8649c;
 
     /* renamed from: d */
-    HashMap<String, String> f8642d = null;
+    HashMap<String, String> f8650d = null;
 
     /* renamed from: e */
-    private AbstractC2493a f8643e = null;
+    private AbstractC2493a f8651e = null;
 
     /* renamed from: com.digdroid.alman.dig.n$a */
     public interface AbstractC2493a {
     }
 
     public C2492n(Context context) {
-        this.f8639a = context.getApplicationContext();
-        this.f8640b = "";
-        this.f8641c = true;
+        this.f8647a = context.getApplicationContext();
+        this.f8648b = "";
+        this.f8649c = true;
     }
 
     public C2492n(C2492n nVar) {
-        this.f8639a = nVar.f8639a;
-        this.f8641c = nVar.f8641c;
-        this.f8640b = nVar.f8640b;
-        if (nVar.f8642d != null) {
-            this.f8642d = new HashMap<>();
-            for (Map.Entry<String, String> entry : nVar.f8642d.entrySet()) {
-                this.f8642d.put(entry.getKey(), entry.getValue());
+        this.f8647a = nVar.f8647a;
+        this.f8649c = nVar.f8649c;
+        this.f8648b = nVar.f8648b;
+        if (nVar.f8650d != null) {
+            this.f8650d = new HashMap<>();
+            for (Map.Entry<String, String> entry : nVar.f8650d.entrySet()) {
+                this.f8650d.put(entry.getKey(), entry.getValue());
             }
         }
     }
 
     /* renamed from: b */
     private void m10683b() {
-        if (!this.f8640b.equals("")) {
-            String str = this.f8640b;
+        if (!this.f8648b.equals("")) {
+            String str = this.f8648b;
             if (!str.substring(str.length() - 1).equals("\n")) {
-                this.f8640b += "\n";
+                this.f8648b += "\n";
             }
         }
     }
 
     /* renamed from: a */
     public void mo8765a(String str) {
-        HashMap<String, String> hashMap = this.f8642d;
+        HashMap<String, String> hashMap = this.f8650d;
         if (hashMap != null && hashMap.containsKey(str)) {
-            this.f8642d.remove(str);
+            this.f8650d.remove(str);
         }
     }
 
@@ -79,32 +79,32 @@ public class C2492n {
     public String mo8767d() {
         StringBuilder sb;
         String str;
-        HashMap<String, String> hashMap = this.f8642d;
+        HashMap<String, String> hashMap = this.f8650d;
         if (hashMap != null) {
-            this.f8640b = "";
+            this.f8648b = "";
             for (Map.Entry<String, String> entry : hashMap.entrySet()) {
                 String key = entry.getKey();
                 String value = entry.getValue();
-                if (this.f8641c) {
+                if (this.f8649c) {
                     sb = new StringBuilder();
-                    sb.append(this.f8640b);
+                    sb.append(this.f8648b);
                     sb.append(key);
                     sb.append(" = \"");
                     sb.append(value);
                     str = "\"\n";
                 } else {
                     sb = new StringBuilder();
-                    sb.append(this.f8640b);
+                    sb.append(this.f8648b);
                     sb.append(key);
                     sb.append("=");
                     sb.append(value);
                     str = "\n";
                 }
                 sb.append(str);
-                this.f8640b = sb.toString();
+                this.f8648b = sb.toString();
             }
         }
-        return this.f8640b;
+        return this.f8648b;
     }
 
     /* renamed from: e */
@@ -158,11 +158,11 @@ public class C2492n {
     /* access modifiers changed from: package-private */
     /* renamed from: i */
     public String mo8772i(String str) {
-        HashMap<String, String> hashMap = this.f8642d;
+        HashMap<String, String> hashMap = this.f8650d;
         if (hashMap != null) {
-            return hashMap.containsKey(str) ? this.f8642d.get(str) : "";
+            return hashMap.containsKey(str) ? this.f8650d.get(str) : "";
         }
-        Matcher matcher = Pattern.compile(str + "\\s*\\=\\s*\\\"([^\\\"]+)\\\"").matcher(this.f8640b);
+        Matcher matcher = Pattern.compile(str + "\\s*\\=\\s*\\\"([^\\\"]+)\\\"").matcher(this.f8648b);
         return matcher.find() ? matcher.group(1) : "";
     }
 
@@ -177,7 +177,7 @@ public class C2492n {
             r0 = 0
             java.lang.StringBuilder r1 = new java.lang.StringBuilder     // Catch:{ IOException -> 0x0047, all -> 0x0040 }
             r1.<init>()     // Catch:{ IOException -> 0x0047, all -> 0x0040 }
-            android.content.Context r2 = r4.f8639a     // Catch:{ IOException -> 0x0047, all -> 0x0040 }
+            android.content.Context r2 = r4.f8647a     // Catch:{ IOException -> 0x0047, all -> 0x0040 }
             android.content.res.AssetManager r2 = r2.getAssets()     // Catch:{ IOException -> 0x0047, all -> 0x0040 }
             java.io.InputStream r5 = r2.open(r5)     // Catch:{ IOException -> 0x0047, all -> 0x0040 }
             java.io.BufferedReader r2 = new java.io.BufferedReader     // Catch:{ IOException -> 0x0047, all -> 0x0040 }
@@ -199,7 +199,7 @@ public class C2492n {
             goto L_0x001b
         L_0x002e:
             java.lang.String r5 = r1.toString()     // Catch:{ IOException -> 0x003e, all -> 0x003b }
-            r4.f8640b = r5     // Catch:{ IOException -> 0x003e, all -> 0x003b }
+            r4.f8648b = r5     // Catch:{ IOException -> 0x003e, all -> 0x003b }
             r4.m10683b()     // Catch:{ IOException -> 0x003e, all -> 0x003b }
             r2.close()     // Catch:{ IOException -> 0x004d }
             goto L_0x004d
@@ -230,7 +230,7 @@ public class C2492n {
     /* renamed from: k */
     public void mo8774k(C2399i2 i2Var) {
         if (i2Var == null) {
-            this.f8640b = "";
+            this.f8648b = "";
             return;
         }
         long length = i2Var.length();
@@ -239,25 +239,25 @@ public class C2492n {
             char[] cArr = new char[((int) length)];
             int read = inputStreamReader.read(cArr);
             inputStreamReader.close();
-            this.f8640b = new String(cArr, 0, read);
+            this.f8648b = new String(cArr, 0, read);
             m10683b();
         } catch (Exception unused) {
-            this.f8640b = "";
+            this.f8648b = "";
         }
     }
 
     /* renamed from: l */
     public void mo8775l() {
-        this.f8642d = new HashMap<>();
-        String[] split = this.f8640b.split("\\n");
+        this.f8650d = new HashMap<>();
+        String[] split = this.f8648b.split("\\n");
         Pattern compile = Pattern.compile("^(\\w+)\\s*\\=\\s*\\\"([^\\\"]+)\\\"");
         for (String str : split) {
             Matcher matcher = compile.matcher(str);
             if (matcher.find()) {
-                this.f8642d.put(matcher.group(1), matcher.group(2));
+                this.f8650d.put(matcher.group(1), matcher.group(2));
             }
         }
-        this.f8640b = null;
+        this.f8648b = null;
     }
 
     /* renamed from: m */
@@ -293,8 +293,8 @@ public class C2492n {
     public boolean mo8781r(String str) {
         mo8767d();
         try {
-            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(C2399i2.m10374d(this.f8639a, str).mo8608j());
-            outputStreamWriter.write(this.f8640b);
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(C2399i2.m10374d(this.f8647a, str).mo8608j());
+            outputStreamWriter.write(this.f8648b);
             outputStreamWriter.flush();
             outputStreamWriter.close();
             return true;
@@ -307,11 +307,11 @@ public class C2492n {
     public void mo8782s(String str, String str2) {
         String str3;
         StringBuilder sb;
-        HashMap<String, String> hashMap = this.f8642d;
+        HashMap<String, String> hashMap = this.f8650d;
         if (hashMap != null) {
             hashMap.put(str, str2);
         } else if (!mo8772i(str).equals(str2)) {
-            if (this.f8641c) {
+            if (this.f8649c) {
                 sb = new StringBuilder();
                 sb.append(" = \"");
                 sb.append(str2);
@@ -324,16 +324,16 @@ public class C2492n {
             }
             sb.append(str3);
             String sb2 = sb.toString();
-            String replaceAll = this.f8640b.replaceAll(str + "\\s*\\=[^\\n]*\\n", str + sb2);
-            if (replaceAll.equals(this.f8640b)) {
+            String replaceAll = this.f8648b.replaceAll(str + "\\s*\\=[^\\n]*\\n", str + sb2);
+            if (replaceAll.equals(this.f8648b)) {
                 replaceAll = replaceAll + str + sb2;
             }
-            this.f8640b = replaceAll;
+            this.f8648b = replaceAll;
         }
     }
 
     /* renamed from: t */
     public void mo8783t(boolean z) {
-        this.f8641c = z;
+        this.f8649c = z;
     }
 }

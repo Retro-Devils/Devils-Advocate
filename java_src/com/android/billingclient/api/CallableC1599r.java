@@ -7,15 +7,15 @@ import java.util.concurrent.Callable;
 final class CallableC1599r implements Callable<Void> {
 
     /* renamed from: a */
-    private final /* synthetic */ C1574d.ServiceConnectionC1575a f6497a;
+    private final /* synthetic */ C1574d.ServiceConnectionC1575a f6505a;
 
     CallableC1599r(C1574d.ServiceConnectionC1575a aVar) {
-        this.f6497a = aVar;
+        this.f6505a = aVar;
     }
 
     /* access modifiers changed from: private */
     /* JADX WARNING: Code restructure failed: missing block: B:10:?, code lost:
-        r3 = r10.f6497a.f6441d.f6423f.getPackageName();
+        r3 = com.android.billingclient.api.C1574d.this.f6431f.getPackageName();
      */
     /* JADX WARNING: Code restructure failed: missing block: B:11:0x0021, code lost:
         r5 = 13;
@@ -25,7 +25,7 @@ final class CallableC1599r implements Callable<Void> {
         if (r5 < 3) goto L_0x003c;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:14:?, code lost:
-        r6 = com.android.billingclient.api.C1574d.this.f6424g.mo6325J(r5, r3, "subs");
+        r6 = com.android.billingclient.api.C1574d.this.f6432g.mo6325J(r5, r3, "subs");
      */
     /* JADX WARNING: Code restructure failed: missing block: B:15:0x0036, code lost:
         if (r6 != 0) goto L_0x0039;
@@ -50,7 +50,7 @@ final class CallableC1599r implements Callable<Void> {
         r8 = false;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:23:0x0048, code lost:
-        r7.f6427j = r8;
+        r7.f6435j = r8;
         r7 = com.android.billingclient.api.C1574d.this;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:24:0x004f, code lost:
@@ -63,7 +63,7 @@ final class CallableC1599r implements Callable<Void> {
         r8 = false;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:27:0x0054, code lost:
-        r7.f6426i = r8;
+        r7.f6434i = r8;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:28:0x0057, code lost:
         if (r5 >= 3) goto L_0x0060;
@@ -78,7 +78,7 @@ final class CallableC1599r implements Callable<Void> {
         if (r5 < 3) goto L_0x0078;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:32:0x0064, code lost:
-        r6 = com.android.billingclient.api.C1574d.this.f6424g.mo6325J(r5, r3, "inapp");
+        r6 = com.android.billingclient.api.C1574d.this.f6432g.mo6325J(r5, r3, "inapp");
      */
     /* JADX WARNING: Code restructure failed: missing block: B:33:0x0072, code lost:
         if (r6 != 0) goto L_0x0075;
@@ -102,7 +102,7 @@ final class CallableC1599r implements Callable<Void> {
         r4 = false;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:41:0x0082, code lost:
-        r3.f6433p = r4;
+        r3.f6441p = r4;
         r3 = com.android.billingclient.api.C1574d.this;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:42:0x008b, code lost:
@@ -115,7 +115,7 @@ final class CallableC1599r implements Callable<Void> {
         r4 = false;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:45:0x0090, code lost:
-        r3.f6432o = r4;
+        r3.f6440o = r4;
         r3 = com.android.billingclient.api.C1574d.this;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:46:0x0099, code lost:
@@ -128,7 +128,7 @@ final class CallableC1599r implements Callable<Void> {
         r4 = false;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:49:0x009e, code lost:
-        r3.f6431n = r4;
+        r3.f6439n = r4;
         r3 = com.android.billingclient.api.C1574d.this;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:50:0x00a7, code lost:
@@ -141,7 +141,7 @@ final class CallableC1599r implements Callable<Void> {
         r4 = false;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:53:0x00ac, code lost:
-        r3.f6430m = r4;
+        r3.f6438m = r4;
         r3 = com.android.billingclient.api.C1574d.this;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:54:0x00b5, code lost:
@@ -154,7 +154,7 @@ final class CallableC1599r implements Callable<Void> {
         r4 = false;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:57:0x00ba, code lost:
-        r3.f6429l = r4;
+        r3.f6437l = r4;
         r3 = com.android.billingclient.api.C1574d.this;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:58:0x00c2, code lost:
@@ -164,7 +164,7 @@ final class CallableC1599r implements Callable<Void> {
         r9 = false;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:61:0x00c6, code lost:
-        r3.f6428k = r9;
+        r3.f6436k = r9;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:62:0x00c9, code lost:
         if (r5 >= 3) goto L_0x00d2;
@@ -176,32 +176,32 @@ final class CallableC1599r implements Callable<Void> {
         if (r6 != 0) goto L_0x00dd;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:65:0x00d4, code lost:
-        com.android.billingclient.api.C1574d.this.f6418a = 2;
+        com.android.billingclient.api.C1574d.this.f6426a = 2;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:66:0x00dd, code lost:
-        com.android.billingclient.api.C1574d.this.f6418a = 0;
-        com.android.billingclient.api.C1574d.this.f6424g = null;
+        com.android.billingclient.api.C1574d.this.f6426a = 0;
+        com.android.billingclient.api.C1574d.this.f6432g = null;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:67:0x00ec, code lost:
         r0 = r6;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:69:0x00ed, code lost:
         p069c.p073b.p074a.p075a.p081d.p084c.C1314b.m6854k("BillingClient", "Exception while checking if billing is supported; try to reconnect");
-        com.android.billingclient.api.C1574d.this.f6418a = 0;
-        com.android.billingclient.api.C1574d.this.f6424g = null;
+        com.android.billingclient.api.C1574d.this.f6426a = 0;
+        com.android.billingclient.api.C1574d.this.f6432g = null;
         r6 = r0;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:71:0x0103, code lost:
-        r0 = r10.f6497a;
+        r0 = r10.f6505a;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:72:0x0105, code lost:
         if (r6 != 0) goto L_0x010a;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:73:0x0107, code lost:
-        r1 = com.android.billingclient.api.C1602u.f6513p;
+        r1 = com.android.billingclient.api.C1602u.f6521p;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:74:0x010a, code lost:
-        r1 = com.android.billingclient.api.C1602u.f6498a;
+        r1 = com.android.billingclient.api.C1602u.f6506a;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:75:0x010c, code lost:
         r0.m7684d(r1);

@@ -15,7 +15,7 @@ public abstract class AbstractC2911f {
     @GuardedBy("sAllClients")
 
     /* renamed from: a */
-    private static final Set<AbstractC2911f> f9775a = Collections.newSetFromMap(new WeakHashMap());
+    private static final Set<AbstractC2911f> f9783a = Collections.newSetFromMap(new WeakHashMap());
 
     /* renamed from: com.google.android.gms.common.api.f$a */
     public interface AbstractC2912a {

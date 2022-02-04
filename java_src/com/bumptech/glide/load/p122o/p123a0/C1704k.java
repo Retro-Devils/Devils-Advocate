@@ -14,37 +14,37 @@ import java.util.Set;
 public class C1704k implements AbstractC1695e {
 
     /* renamed from: a */
-    private static final Bitmap.Config f6736a = Bitmap.Config.ARGB_8888;
+    private static final Bitmap.Config f6744a = Bitmap.Config.ARGB_8888;
 
     /* renamed from: b */
-    private final AbstractC1707l f6737b;
+    private final AbstractC1707l f6745b;
 
     /* renamed from: c */
-    private final Set<Bitmap.Config> f6738c;
+    private final Set<Bitmap.Config> f6746c;
 
     /* renamed from: d */
-    private final long f6739d;
+    private final long f6747d;
 
     /* renamed from: e */
-    private final AbstractC1705a f6740e;
+    private final AbstractC1705a f6748e;
 
     /* renamed from: f */
-    private long f6741f;
+    private long f6749f;
 
     /* renamed from: g */
-    private long f6742g;
+    private long f6750g;
 
     /* renamed from: h */
-    private int f6743h;
+    private int f6751h;
 
     /* renamed from: i */
-    private int f6744i;
+    private int f6752i;
 
     /* renamed from: j */
-    private int f6745j;
+    private int f6753j;
 
     /* renamed from: k */
-    private int f6746k;
+    private int f6754k;
 
     /* access modifiers changed from: private */
     /* renamed from: com.bumptech.glide.load.o.a0.k$a */
@@ -77,11 +77,11 @@ public class C1704k implements AbstractC1695e {
     }
 
     C1704k(long j, AbstractC1707l lVar, Set<Bitmap.Config> set) {
-        this.f6739d = j;
-        this.f6741f = j;
-        this.f6737b = lVar;
-        this.f6738c = set;
-        this.f6740e = new C1706b();
+        this.f6747d = j;
+        this.f6749f = j;
+        this.f6745b = lVar;
+        this.f6746c = set;
+        this.f6748e = new C1706b();
     }
 
     @TargetApi(26)
@@ -95,7 +95,7 @@ public class C1704k implements AbstractC1695e {
     /* renamed from: g */
     private static Bitmap m8075g(int i, int i2, Bitmap.Config config) {
         if (config == null) {
-            config = f6736a;
+            config = f6744a;
         }
         return Bitmap.createBitmap(i, i2, config);
     }
@@ -109,12 +109,12 @@ public class C1704k implements AbstractC1695e {
 
     /* renamed from: i */
     private void m8077i() {
-        Log.v("LruBitmapPool", "Hits=" + this.f6743h + ", misses=" + this.f6744i + ", puts=" + this.f6745j + ", evictions=" + this.f6746k + ", currentSize=" + this.f6742g + ", maxSize=" + this.f6741f + "\nStrategy=" + this.f6737b);
+        Log.v("LruBitmapPool", "Hits=" + this.f6751h + ", misses=" + this.f6752i + ", puts=" + this.f6753j + ", evictions=" + this.f6754k + ", currentSize=" + this.f6750g + ", maxSize=" + this.f6749f + "\nStrategy=" + this.f6745b);
     }
 
     /* renamed from: j */
     private void m8078j() {
-        m8084q(this.f6741f);
+        m8084q(this.f6749f);
     }
 
     @TargetApi(26)
@@ -140,20 +140,20 @@ public class C1704k implements AbstractC1695e {
     private synchronized Bitmap m8081m(int i, int i2, Bitmap.Config config) {
         Bitmap c;
         m8074f(config);
-        c = this.f6737b.mo7165c(i, i2, config != null ? config : f6736a);
+        c = this.f6745b.mo7165c(i, i2, config != null ? config : f6744a);
         if (c == null) {
             if (Log.isLoggable("LruBitmapPool", 3)) {
-                Log.d("LruBitmapPool", "Missing bitmap=" + this.f6737b.mo7167e(i, i2, config));
+                Log.d("LruBitmapPool", "Missing bitmap=" + this.f6745b.mo7167e(i, i2, config));
             }
-            this.f6744i++;
+            this.f6752i++;
         } else {
-            this.f6743h++;
-            this.f6742g -= (long) this.f6737b.mo7163a(c);
-            this.f6740e.mo7203a(c);
+            this.f6751h++;
+            this.f6750g -= (long) this.f6745b.mo7163a(c);
+            this.f6748e.mo7203a(c);
             m8083p(c);
         }
         if (Log.isLoggable("LruBitmapPool", 2)) {
-            Log.v("LruBitmapPool", "Get bitmap=" + this.f6737b.mo7167e(i, i2, config));
+            Log.v("LruBitmapPool", "Get bitmap=" + this.f6745b.mo7167e(i, i2, config));
         }
         m8076h();
         return c;
@@ -175,21 +175,21 @@ public class C1704k implements AbstractC1695e {
 
     /* renamed from: q */
     private synchronized void m8084q(long j) {
-        while (this.f6742g > j) {
-            Bitmap b = this.f6737b.mo7164b();
+        while (this.f6750g > j) {
+            Bitmap b = this.f6745b.mo7164b();
             if (b == null) {
                 if (Log.isLoggable("LruBitmapPool", 5)) {
                     Log.w("LruBitmapPool", "Size mismatch, resetting");
                     m8077i();
                 }
-                this.f6742g = 0;
+                this.f6750g = 0;
                 return;
             }
-            this.f6740e.mo7203a(b);
-            this.f6742g -= (long) this.f6737b.mo7163a(b);
-            this.f6746k++;
+            this.f6748e.mo7203a(b);
+            this.f6750g -= (long) this.f6745b.mo7163a(b);
+            this.f6754k++;
             if (Log.isLoggable("LruBitmapPool", 3)) {
-                Log.d("LruBitmapPool", "Evicting bitmap=" + this.f6737b.mo7168f(b));
+                Log.d("LruBitmapPool", "Evicting bitmap=" + this.f6745b.mo7168f(b));
             }
             m8076h();
             b.recycle();
@@ -236,15 +236,15 @@ public class C1704k implements AbstractC1695e {
         if (bitmap == null) {
             throw new NullPointerException("Bitmap must not be null");
         } else if (!bitmap.isRecycled()) {
-            if (bitmap.isMutable() && ((long) this.f6737b.mo7163a(bitmap)) <= this.f6741f) {
-                if (this.f6738c.contains(bitmap.getConfig())) {
-                    int a = this.f6737b.mo7163a(bitmap);
-                    this.f6737b.mo7166d(bitmap);
-                    this.f6740e.mo7204b(bitmap);
-                    this.f6745j++;
-                    this.f6742g += (long) a;
+            if (bitmap.isMutable() && ((long) this.f6745b.mo7163a(bitmap)) <= this.f6749f) {
+                if (this.f6746c.contains(bitmap.getConfig())) {
+                    int a = this.f6745b.mo7163a(bitmap);
+                    this.f6745b.mo7166d(bitmap);
+                    this.f6748e.mo7204b(bitmap);
+                    this.f6753j++;
+                    this.f6750g += (long) a;
                     if (Log.isLoggable("LruBitmapPool", 2)) {
-                        Log.v("LruBitmapPool", "Put bitmap in pool=" + this.f6737b.mo7168f(bitmap));
+                        Log.v("LruBitmapPool", "Put bitmap in pool=" + this.f6745b.mo7168f(bitmap));
                     }
                     m8076h();
                     m8078j();
@@ -252,7 +252,7 @@ public class C1704k implements AbstractC1695e {
                 }
             }
             if (Log.isLoggable("LruBitmapPool", 2)) {
-                Log.v("LruBitmapPool", "Reject bitmap from pool, bitmap: " + this.f6737b.mo7168f(bitmap) + ", is mutable: " + bitmap.isMutable() + ", is allowed config: " + this.f6738c.contains(bitmap.getConfig()));
+                Log.v("LruBitmapPool", "Reject bitmap from pool, bitmap: " + this.f6745b.mo7168f(bitmap) + ", is mutable: " + bitmap.isMutable() + ", is allowed config: " + this.f6746c.contains(bitmap.getConfig()));
             }
             bitmap.recycle();
         } else {
@@ -269,6 +269,6 @@ public class C1704k implements AbstractC1695e {
 
     /* renamed from: n */
     public long mo7202n() {
-        return this.f6741f;
+        return this.f6749f;
     }
 }

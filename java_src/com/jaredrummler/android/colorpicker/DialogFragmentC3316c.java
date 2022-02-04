@@ -36,64 +36,64 @@ import p006b.p030g.p031d.C0901a;
 public class DialogFragmentC3316c extends DialogFragment implements View.OnTouchListener, ColorPickerView.AbstractC3309c, TextWatcher {
 
     /* renamed from: b */
-    public static final int[] f11128b = {-769226, -1499549, -54125, -6543440, -10011977, -12627531, -14575885, -16537100, -16728876, -16738680, -11751600, -7617718, -3285959, -5317, -16121, -26624, -8825528, -10453621, -6381922};
+    public static final int[] f11136b = {-769226, -1499549, -54125, -6543440, -10011977, -12627531, -14575885, -16537100, -16728876, -16738680, -11751600, -7617718, -3285959, -5317, -16121, -26624, -8825528, -10453621, -6381922};
 
     /* renamed from: c */
-    AbstractC3327d f11129c;
+    AbstractC3327d f11137c;
 
     /* renamed from: d */
-    FrameLayout f11130d;
+    FrameLayout f11138d;
 
     /* renamed from: e */
-    int[] f11131e;
+    int[] f11139e;
 
     /* renamed from: f */
-    int f11132f;
+    int f11140f;
 
     /* renamed from: g */
-    int f11133g;
+    int f11141g;
 
     /* renamed from: h */
-    int f11134h;
+    int f11142h;
 
     /* renamed from: i */
-    boolean f11135i;
+    boolean f11143i;
 
     /* renamed from: j */
-    int f11136j;
+    int f11144j;
 
     /* renamed from: k */
-    C3311b f11137k;
+    C3311b f11145k;
 
     /* renamed from: l */
-    LinearLayout f11138l;
+    LinearLayout f11146l;
 
     /* renamed from: m */
-    SeekBar f11139m;
+    SeekBar f11147m;
 
     /* renamed from: n */
-    TextView f11140n;
+    TextView f11148n;
 
     /* renamed from: o */
-    private int f11141o;
+    private int f11149o;
 
     /* renamed from: p */
-    ColorPickerView f11142p;
+    ColorPickerView f11150p;
 
     /* renamed from: q */
-    ColorPanelView f11143q;
+    ColorPanelView f11151q;
 
     /* renamed from: r */
-    EditText f11144r;
+    EditText f11152r;
 
     /* renamed from: s */
-    boolean f11145s;
+    boolean f11153s;
 
     /* renamed from: t */
-    private boolean f11146t;
+    private boolean f11154t;
 
     /* renamed from: u */
-    private int f11147u;
+    private int f11155u;
 
     /* renamed from: com.jaredrummler.android.colorpicker.c$a */
     class DialogInterface$OnClickListenerC3317a implements DialogInterface.OnClickListener {
@@ -102,7 +102,7 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
 
         public void onClick(DialogInterface dialogInterface, int i) {
             DialogFragmentC3316c cVar = DialogFragmentC3316c.this;
-            cVar.f11129c.mo8707w0(cVar.f11134h, cVar.f11132f);
+            cVar.f11137c.mo8707w0(cVar.f11142h, cVar.f11140f);
         }
     }
 
@@ -114,20 +114,20 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
         public void onClick(View view) {
             View view2;
             FrameLayout frameLayout;
-            DialogFragmentC3316c.this.f11130d.removeAllViews();
+            DialogFragmentC3316c.this.f11138d.removeAllViews();
             DialogFragmentC3316c cVar = DialogFragmentC3316c.this;
-            int i = cVar.f11133g;
+            int i = cVar.f11141g;
             if (i == 0) {
-                cVar.f11133g = 1;
-                ((Button) view).setText(cVar.f11147u != 0 ? DialogFragmentC3316c.this.f11147u : C3333j.cpv_custom);
+                cVar.f11141g = 1;
+                ((Button) view).setText(cVar.f11155u != 0 ? DialogFragmentC3316c.this.f11155u : C3333j.cpv_custom);
                 DialogFragmentC3316c cVar2 = DialogFragmentC3316c.this;
-                frameLayout = cVar2.f11130d;
+                frameLayout = cVar2.f11138d;
                 view2 = cVar2.mo11256f();
             } else if (i == 1) {
-                cVar.f11133g = 0;
-                ((Button) view).setText(cVar.f11141o != 0 ? DialogFragmentC3316c.this.f11141o : C3333j.cpv_presets);
+                cVar.f11141g = 0;
+                ((Button) view).setText(cVar.f11149o != 0 ? DialogFragmentC3316c.this.f11149o : C3333j.cpv_presets);
                 DialogFragmentC3316c cVar3 = DialogFragmentC3316c.this;
-                frameLayout = cVar3.f11130d;
+                frameLayout = cVar3.f11138d;
                 view2 = cVar3.mo11255e();
             } else {
                 return;
@@ -143,11 +143,11 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
         }
 
         public void onClick(View view) {
-            int color = DialogFragmentC3316c.this.f11143q.getColor();
+            int color = DialogFragmentC3316c.this.f11151q.getColor();
             DialogFragmentC3316c cVar = DialogFragmentC3316c.this;
-            int i = cVar.f11132f;
+            int i = cVar.f11140f;
             if (color == i) {
-                cVar.f11129c.mo8707w0(cVar.f11134h, i);
+                cVar.f11137c.mo8707w0(cVar.f11142h, i);
                 DialogFragmentC3316c.this.dismiss();
             }
         }
@@ -161,7 +161,7 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
 
         public void onFocusChange(View view, boolean z) {
             if (z) {
-                ((InputMethodManager) DialogFragmentC3316c.this.getActivity().getSystemService("input_method")).showSoftInput(DialogFragmentC3316c.this.f11144r, 1);
+                ((InputMethodManager) DialogFragmentC3316c.this.getActivity().getSystemService("input_method")).showSoftInput(DialogFragmentC3316c.this.f11152r, 1);
             }
         }
     }
@@ -176,14 +176,14 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
         /* renamed from: a */
         public void mo11248a(int i) {
             DialogFragmentC3316c cVar = DialogFragmentC3316c.this;
-            int i2 = cVar.f11132f;
+            int i2 = cVar.f11140f;
             if (i2 == i) {
-                cVar.f11129c.mo8707w0(cVar.f11134h, i2);
+                cVar.f11137c.mo8707w0(cVar.f11142h, i2);
                 DialogFragmentC3316c.this.dismiss();
                 return;
             }
-            cVar.f11132f = i;
-            if (cVar.f11135i) {
+            cVar.f11140f = i;
+            if (cVar.f11143i) {
                 cVar.mo11254d(i);
             }
         }
@@ -194,18 +194,18 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
     public class RunnableC3322f implements Runnable {
 
         /* renamed from: b */
-        final /* synthetic */ ColorPanelView f11153b;
+        final /* synthetic */ ColorPanelView f11161b;
 
         /* renamed from: c */
-        final /* synthetic */ int f11154c;
+        final /* synthetic */ int f11162c;
 
         RunnableC3322f(ColorPanelView colorPanelView, int i) {
-            this.f11153b = colorPanelView;
-            this.f11154c = i;
+            this.f11161b = colorPanelView;
+            this.f11162c = i;
         }
 
         public void run() {
-            this.f11153b.setColor(this.f11154c);
+            this.f11161b.setColor(this.f11162c);
         }
     }
 
@@ -214,18 +214,18 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
     public class View$OnClickListenerC3323g implements View.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ ColorPanelView f11156b;
+        final /* synthetic */ ColorPanelView f11164b;
 
         View$OnClickListenerC3323g(ColorPanelView colorPanelView) {
-            this.f11156b = colorPanelView;
+            this.f11164b = colorPanelView;
         }
 
         public void onClick(View view) {
             if (!(view.getTag() instanceof Boolean) || !((Boolean) view.getTag()).booleanValue()) {
-                DialogFragmentC3316c.this.f11132f = this.f11156b.getColor();
-                DialogFragmentC3316c.this.f11137k.mo11243a();
-                for (int i = 0; i < DialogFragmentC3316c.this.f11138l.getChildCount(); i++) {
-                    FrameLayout frameLayout = (FrameLayout) DialogFragmentC3316c.this.f11138l.getChildAt(i);
+                DialogFragmentC3316c.this.f11140f = this.f11164b.getColor();
+                DialogFragmentC3316c.this.f11145k.mo11243a();
+                for (int i = 0; i < DialogFragmentC3316c.this.f11146l.getChildCount(); i++) {
+                    FrameLayout frameLayout = (FrameLayout) DialogFragmentC3316c.this.f11146l.getChildAt(i);
                     ColorPanelView colorPanelView = (ColorPanelView) frameLayout.findViewById(C3331h.cpv_color_panel_view);
                     ImageView imageView = (ImageView) frameLayout.findViewById(C3331h.cpv_color_image_view);
                     imageView.setImageResource(colorPanelView == view ? C3330g.cpv_preset_checked : 0);
@@ -239,7 +239,7 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
                 return;
             }
             DialogFragmentC3316c cVar = DialogFragmentC3316c.this;
-            cVar.f11129c.mo8707w0(cVar.f11134h, cVar.f11132f);
+            cVar.f11137c.mo8707w0(cVar.f11142h, cVar.f11140f);
             DialogFragmentC3316c.this.dismiss();
         }
     }
@@ -249,14 +249,14 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
     public class View$OnLongClickListenerC3324h implements View.OnLongClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ ColorPanelView f11158b;
+        final /* synthetic */ ColorPanelView f11166b;
 
         View$OnLongClickListenerC3324h(ColorPanelView colorPanelView) {
-            this.f11158b = colorPanelView;
+            this.f11166b = colorPanelView;
         }
 
         public boolean onLongClick(View view) {
-            this.f11158b.mo11201d();
+            this.f11166b.mo11201d();
             return true;
         }
     }
@@ -271,22 +271,22 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
             C3311b bVar;
             double d = (double) i;
             Double.isNaN(d);
-            DialogFragmentC3316c.this.f11140n.setText(String.format(Locale.ENGLISH, "%d%%", Integer.valueOf((int) ((d * 100.0d) / 255.0d))));
+            DialogFragmentC3316c.this.f11148n.setText(String.format(Locale.ENGLISH, "%d%%", Integer.valueOf((int) ((d * 100.0d) / 255.0d))));
             int i2 = 255 - i;
             int i3 = 0;
             while (true) {
-                bVar = DialogFragmentC3316c.this.f11137k;
-                int[] iArr = bVar.f11117c;
+                bVar = DialogFragmentC3316c.this.f11145k;
+                int[] iArr = bVar.f11125c;
                 if (i3 >= iArr.length) {
                     break;
                 }
                 int i4 = iArr[i3];
-                DialogFragmentC3316c.this.f11137k.f11117c[i3] = Color.argb(i2, Color.red(i4), Color.green(i4), Color.blue(i4));
+                DialogFragmentC3316c.this.f11145k.f11125c[i3] = Color.argb(i2, Color.red(i4), Color.green(i4), Color.blue(i4));
                 i3++;
             }
             bVar.notifyDataSetChanged();
-            for (int i5 = 0; i5 < DialogFragmentC3316c.this.f11138l.getChildCount(); i5++) {
-                FrameLayout frameLayout = (FrameLayout) DialogFragmentC3316c.this.f11138l.getChildAt(i5);
+            for (int i5 = 0; i5 < DialogFragmentC3316c.this.f11146l.getChildCount(); i5++) {
+                FrameLayout frameLayout = (FrameLayout) DialogFragmentC3316c.this.f11146l.getChildAt(i5);
                 ColorPanelView colorPanelView = (ColorPanelView) frameLayout.findViewById(C3331h.cpv_color_panel_view);
                 ImageView imageView = (ImageView) frameLayout.findViewById(C3331h.cpv_color_image_view);
                 if (frameLayout.getTag() == null) {
@@ -304,7 +304,7 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
                 }
                 colorPanelView.setColor(argb);
             }
-            DialogFragmentC3316c.this.f11132f = Color.argb(i2, Color.red(DialogFragmentC3316c.this.f11132f), Color.green(DialogFragmentC3316c.this.f11132f), Color.blue(DialogFragmentC3316c.this.f11132f));
+            DialogFragmentC3316c.this.f11140f = Color.argb(i2, Color.red(DialogFragmentC3316c.this.f11140f), Color.green(DialogFragmentC3316c.this.f11140f), Color.blue(DialogFragmentC3316c.this.f11140f));
         }
 
         public void onStartTrackingTouch(SeekBar seekBar) {
@@ -318,43 +318,43 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
     public static final class C3326j {
 
         /* renamed from: a */
-        int f11161a = C3333j.cpv_default_title;
+        int f11169a = C3333j.cpv_default_title;
 
         /* renamed from: b */
-        int f11162b = C3333j.cpv_presets;
+        int f11170b = C3333j.cpv_presets;
 
         /* renamed from: c */
-        int f11163c = C3333j.cpv_custom;
+        int f11171c = C3333j.cpv_custom;
 
         /* renamed from: d */
-        int f11164d = C3333j.cpv_select;
+        int f11172d = C3333j.cpv_select;
 
         /* renamed from: e */
-        int f11165e = 1;
+        int f11173e = 1;
 
         /* renamed from: f */
-        int[] f11166f = DialogFragmentC3316c.f11128b;
+        int[] f11174f = DialogFragmentC3316c.f11136b;
 
         /* renamed from: g */
-        int f11167g = -16777216;
+        int f11175g = -16777216;
 
         /* renamed from: h */
-        int f11168h = 0;
+        int f11176h = 0;
 
         /* renamed from: i */
-        boolean f11169i = false;
+        boolean f11177i = false;
 
         /* renamed from: j */
-        boolean f11170j = true;
+        boolean f11178j = true;
 
         /* renamed from: k */
-        boolean f11171k = true;
+        boolean f11179k = true;
 
         /* renamed from: l */
-        boolean f11172l = true;
+        boolean f11180l = true;
 
         /* renamed from: m */
-        int f11173m = 1;
+        int f11181m = 1;
 
         C3326j() {
         }
@@ -363,50 +363,50 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
         public DialogFragmentC3316c mo11274a() {
             DialogFragmentC3316c cVar = new DialogFragmentC3316c();
             Bundle bundle = new Bundle();
-            bundle.putInt("id", this.f11168h);
-            bundle.putInt("dialogType", this.f11165e);
-            bundle.putInt("color", this.f11167g);
-            bundle.putIntArray("presets", this.f11166f);
-            bundle.putBoolean("alpha", this.f11169i);
-            bundle.putBoolean("allowCustom", this.f11171k);
-            bundle.putBoolean("allowPresets", this.f11170j);
-            bundle.putInt("dialogTitle", this.f11161a);
-            bundle.putBoolean("showColorShades", this.f11172l);
-            bundle.putInt("colorShape", this.f11173m);
-            bundle.putInt("presetsButtonText", this.f11162b);
-            bundle.putInt("customButtonText", this.f11163c);
-            bundle.putInt("selectedButtonText", this.f11164d);
+            bundle.putInt("id", this.f11176h);
+            bundle.putInt("dialogType", this.f11173e);
+            bundle.putInt("color", this.f11175g);
+            bundle.putIntArray("presets", this.f11174f);
+            bundle.putBoolean("alpha", this.f11177i);
+            bundle.putBoolean("allowCustom", this.f11179k);
+            bundle.putBoolean("allowPresets", this.f11178j);
+            bundle.putInt("dialogTitle", this.f11169a);
+            bundle.putBoolean("showColorShades", this.f11180l);
+            bundle.putInt("colorShape", this.f11181m);
+            bundle.putInt("presetsButtonText", this.f11170b);
+            bundle.putInt("customButtonText", this.f11171c);
+            bundle.putInt("selectedButtonText", this.f11172d);
             cVar.setArguments(bundle);
             return cVar;
         }
 
         /* renamed from: b */
         public C3326j mo11275b(boolean z) {
-            this.f11170j = z;
+            this.f11178j = z;
             return this;
         }
 
         /* renamed from: c */
         public C3326j mo11276c(int i) {
-            this.f11167g = i;
+            this.f11175g = i;
             return this;
         }
 
         /* renamed from: d */
         public C3326j mo11277d(int i) {
-            this.f11161a = i;
+            this.f11169a = i;
             return this;
         }
 
         /* renamed from: e */
         public C3326j mo11278e(int i) {
-            this.f11165e = i;
+            this.f11173e = i;
             return this;
         }
 
         /* renamed from: f */
         public C3326j mo11279f(boolean z) {
-            this.f11169i = z;
+            this.f11177i = z;
             return this;
         }
 
@@ -425,11 +425,11 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
     private int m13897h() {
         int i = 0;
         while (true) {
-            int[] iArr = this.f11131e;
+            int[] iArr = this.f11139e;
             if (i >= iArr.length) {
                 return -1;
             }
-            if (iArr[i] == this.f11132f) {
+            if (iArr[i] == this.f11140f) {
                 return i;
             }
             i++;
@@ -438,31 +438,31 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
 
     /* renamed from: i */
     private void m13898i() {
-        int alpha = Color.alpha(this.f11132f);
+        int alpha = Color.alpha(this.f11140f);
         int[] intArray = getArguments().getIntArray("presets");
-        this.f11131e = intArray;
+        this.f11139e = intArray;
         if (intArray == null) {
-            this.f11131e = f11128b;
+            this.f11139e = f11136b;
         }
-        int[] iArr = this.f11131e;
-        boolean z = iArr == f11128b;
-        this.f11131e = Arrays.copyOf(iArr, iArr.length);
+        int[] iArr = this.f11139e;
+        boolean z = iArr == f11136b;
+        this.f11139e = Arrays.copyOf(iArr, iArr.length);
         if (alpha != 255) {
             int i = 0;
             while (true) {
-                int[] iArr2 = this.f11131e;
+                int[] iArr2 = this.f11139e;
                 if (i >= iArr2.length) {
                     break;
                 }
                 int i2 = iArr2[i];
-                this.f11131e[i] = Color.argb(alpha, Color.red(i2), Color.green(i2), Color.blue(i2));
+                this.f11139e[i] = Color.argb(alpha, Color.red(i2), Color.green(i2), Color.blue(i2));
                 i++;
             }
         }
-        int[] p = m13905p(this.f11131e, this.f11132f);
-        this.f11131e = p;
+        int[] p = m13905p(this.f11139e, this.f11140f);
+        this.f11139e = p;
         if (z && p.length == 19) {
-            this.f11131e = m13901l(p, Color.argb(alpha, 0, 0, 0));
+            this.f11139e = m13901l(p, Color.argb(alpha, 0, 0, 0));
         }
     }
 
@@ -568,11 +568,11 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
     private void m13902m(int i) {
         String str;
         EditText editText;
-        if (this.f11145s) {
-            editText = this.f11144r;
+        if (this.f11153s) {
+            editText = this.f11152r;
             str = String.format("%08X", Integer.valueOf(i));
         } else {
-            editText = this.f11144r;
+            editText = this.f11152r;
             str = String.format("%06X", Integer.valueOf(i & 16777215));
         }
         editText.setText(str);
@@ -580,13 +580,13 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
 
     /* renamed from: n */
     private void m13903n() {
-        int alpha = 255 - Color.alpha(this.f11132f);
-        this.f11139m.setMax(255);
-        this.f11139m.setProgress(alpha);
+        int alpha = 255 - Color.alpha(this.f11140f);
+        this.f11147m.setMax(255);
+        this.f11147m.setProgress(alpha);
         double d = (double) alpha;
         Double.isNaN(d);
-        this.f11140n.setText(String.format(Locale.ENGLISH, "%d%%", Integer.valueOf((int) ((d * 100.0d) / 255.0d))));
-        this.f11139m.setOnSeekBarChangeListener(new C3325i());
+        this.f11148n.setText(String.format(Locale.ENGLISH, "%d%%", Integer.valueOf((int) ((d * 100.0d) / 255.0d))));
+        this.f11147m.setOnSeekBarChangeListener(new C3325i());
     }
 
     /* renamed from: o */
@@ -639,23 +639,23 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
     @Override // com.jaredrummler.android.colorpicker.ColorPickerView.AbstractC3309c
     /* renamed from: a */
     public void mo11236a(int i) {
-        this.f11132f = i;
-        this.f11143q.setColor(i);
-        if (!this.f11146t) {
+        this.f11140f = i;
+        this.f11151q.setColor(i);
+        if (!this.f11154t) {
             m13902m(i);
-            if (this.f11144r.hasFocus()) {
-                ((InputMethodManager) getActivity().getSystemService("input_method")).hideSoftInputFromWindow(this.f11144r.getWindowToken(), 0);
-                this.f11144r.clearFocus();
+            if (this.f11152r.hasFocus()) {
+                ((InputMethodManager) getActivity().getSystemService("input_method")).hideSoftInputFromWindow(this.f11152r.getWindowToken(), 0);
+                this.f11152r.clearFocus();
             }
         }
-        this.f11146t = false;
+        this.f11154t = false;
     }
 
     public void afterTextChanged(Editable editable) {
         int k;
-        if (this.f11144r.isFocused() && (k = m13900k(editable.toString())) != this.f11142p.getColor()) {
-            this.f11146t = true;
-            this.f11142p.mo11222n(k, true);
+        if (this.f11152r.isFocused() && (k = m13900k(editable.toString())) != this.f11150p.getColor()) {
+            this.f11154t = true;
+            this.f11150p.mo11222n(k, true);
         }
     }
 
@@ -667,9 +667,9 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
     public void mo11254d(int i) {
         int[] g = m13896g(i);
         int i2 = 0;
-        if (this.f11138l.getChildCount() != 0) {
-            while (i2 < this.f11138l.getChildCount()) {
-                FrameLayout frameLayout = (FrameLayout) this.f11138l.getChildAt(i2);
+        if (this.f11146l.getChildCount() != 0) {
+            while (i2 < this.f11146l.getChildCount()) {
+                FrameLayout frameLayout = (FrameLayout) this.f11146l.getChildAt(i2);
                 ColorPanelView colorPanelView = (ColorPanelView) frameLayout.findViewById(C3331h.cpv_color_panel_view);
                 colorPanelView.setColor(g[i2]);
                 colorPanelView.setTag(Boolean.FALSE);
@@ -682,14 +682,14 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
         int length = g.length;
         while (i2 < length) {
             int i3 = g[i2];
-            View inflate = View.inflate(getActivity(), this.f11136j == 0 ? C3332i.cpv_color_item_square : C3332i.cpv_color_item_circle, null);
+            View inflate = View.inflate(getActivity(), this.f11144j == 0 ? C3332i.cpv_color_item_square : C3332i.cpv_color_item_circle, null);
             ColorPanelView colorPanelView2 = (ColorPanelView) inflate.findViewById(C3331h.cpv_color_panel_view);
             ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) colorPanelView2.getLayoutParams();
             marginLayoutParams.rightMargin = dimensionPixelSize;
             marginLayoutParams.leftMargin = dimensionPixelSize;
             colorPanelView2.setLayoutParams(marginLayoutParams);
             colorPanelView2.setColor(i3);
-            this.f11138l.addView(inflate);
+            this.f11146l.addView(inflate);
             colorPanelView2.post(new RunnableC3322f(colorPanelView2, i3));
             colorPanelView2.setOnClickListener(new View$OnClickListenerC3323g(colorPanelView2));
             colorPanelView2.setOnLongClickListener(new View$OnLongClickListenerC3324h(colorPanelView2));
@@ -701,11 +701,11 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
     /* renamed from: e */
     public View mo11255e() {
         View inflate = View.inflate(getActivity(), C3332i.cpv_dialog_color_picker, null);
-        this.f11142p = (ColorPickerView) inflate.findViewById(C3331h.cpv_color_picker_view);
+        this.f11150p = (ColorPickerView) inflate.findViewById(C3331h.cpv_color_picker_view);
         ColorPanelView colorPanelView = (ColorPanelView) inflate.findViewById(C3331h.cpv_color_panel_old);
-        this.f11143q = (ColorPanelView) inflate.findViewById(C3331h.cpv_color_panel_new);
+        this.f11151q = (ColorPanelView) inflate.findViewById(C3331h.cpv_color_panel_new);
         ImageView imageView = (ImageView) inflate.findViewById(C3331h.cpv_arrow_right);
-        this.f11144r = (EditText) inflate.findViewById(C3331h.cpv_hex);
+        this.f11152r = (EditText) inflate.findViewById(C3331h.cpv_hex);
         try {
             TypedValue typedValue = new TypedValue();
             TypedArray obtainStyledAttributes = getActivity().obtainStyledAttributes(typedValue.data, new int[]{16842806});
@@ -714,19 +714,19 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
             imageView.setColorFilter(color);
         } catch (Exception unused) {
         }
-        this.f11142p.setAlphaSliderVisible(this.f11145s);
+        this.f11150p.setAlphaSliderVisible(this.f11153s);
         colorPanelView.setColor(getArguments().getInt("color"));
-        this.f11142p.mo11222n(this.f11132f, true);
-        this.f11143q.setColor(this.f11132f);
-        m13902m(this.f11132f);
-        if (!this.f11145s) {
-            this.f11144r.setFilters(new InputFilter[]{new InputFilter.LengthFilter(6)});
+        this.f11150p.mo11222n(this.f11140f, true);
+        this.f11151q.setColor(this.f11140f);
+        m13902m(this.f11140f);
+        if (!this.f11153s) {
+            this.f11152r.setFilters(new InputFilter[]{new InputFilter.LengthFilter(6)});
         }
-        this.f11143q.setOnClickListener(new View$OnClickListenerC3319c());
+        this.f11151q.setOnClickListener(new View$OnClickListenerC3319c());
         inflate.setOnTouchListener(this);
-        this.f11142p.setOnColorChangedListener(this);
-        this.f11144r.addTextChangedListener(this);
-        this.f11144r.setOnFocusChangeListener(new View$OnFocusChangeListenerC3320d());
+        this.f11150p.setOnColorChangedListener(this);
+        this.f11152r.addTextChangedListener(this);
+        this.f11152r.setOnFocusChangeListener(new View$OnFocusChangeListenerC3320d());
         return inflate;
     }
 
@@ -734,21 +734,21 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
     /* renamed from: f */
     public View mo11256f() {
         View inflate = View.inflate(getActivity(), C3332i.cpv_dialog_presets, null);
-        this.f11138l = (LinearLayout) inflate.findViewById(C3331h.shades_layout);
-        this.f11139m = (SeekBar) inflate.findViewById(C3331h.transparency_seekbar);
-        this.f11140n = (TextView) inflate.findViewById(C3331h.transparency_text);
+        this.f11146l = (LinearLayout) inflate.findViewById(C3331h.shades_layout);
+        this.f11147m = (SeekBar) inflate.findViewById(C3331h.transparency_seekbar);
+        this.f11148n = (TextView) inflate.findViewById(C3331h.transparency_text);
         GridView gridView = (GridView) inflate.findViewById(C3331h.gridView);
         m13898i();
-        if (this.f11135i) {
-            mo11254d(this.f11132f);
+        if (this.f11143i) {
+            mo11254d(this.f11140f);
         } else {
-            this.f11138l.setVisibility(8);
+            this.f11146l.setVisibility(8);
             inflate.findViewById(C3331h.shades_divider).setVisibility(8);
         }
-        C3311b bVar = new C3311b(new C3321e(), this.f11131e, m13897h(), this.f11136j);
-        this.f11137k = bVar;
+        C3311b bVar = new C3311b(new C3321e(), this.f11139e, m13897h(), this.f11144j);
+        this.f11145k = bVar;
         gridView.setAdapter((ListAdapter) bVar);
-        if (this.f11145s) {
+        if (this.f11153s) {
             m13903n();
         } else {
             inflate.findViewById(C3331h.transparency_layout).setVisibility(8);
@@ -760,8 +760,8 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
     @Override // android.app.Fragment
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-        if (this.f11129c == null && (activity instanceof AbstractC3327d)) {
-            this.f11129c = (AbstractC3327d) activity;
+        if (this.f11137c == null && (activity instanceof AbstractC3327d)) {
+            this.f11137c = (AbstractC3327d) activity;
         }
     }
 
@@ -778,12 +778,12 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
 
     public void onDismiss(DialogInterface dialogInterface) {
         super.onDismiss(dialogInterface);
-        this.f11129c.mo8706n0(this.f11134h);
+        this.f11137c.mo8706n0(this.f11142h);
     }
 
     public void onSaveInstanceState(Bundle bundle) {
-        bundle.putInt("color", this.f11132f);
-        bundle.putInt("dialogType", this.f11133g);
+        bundle.putInt("color", this.f11140f);
+        bundle.putInt("dialogType", this.f11141g);
         super.onSaveInstanceState(bundle);
     }
 
@@ -802,13 +802,13 @@ public class DialogFragmentC3316c extends DialogFragment implements View.OnTouch
     }
 
     public boolean onTouch(View view, MotionEvent motionEvent) {
-        EditText editText = this.f11144r;
+        EditText editText = this.f11152r;
         if (view == editText || !editText.hasFocus()) {
             return false;
         }
-        this.f11144r.clearFocus();
-        ((InputMethodManager) getActivity().getSystemService("input_method")).hideSoftInputFromWindow(this.f11144r.getWindowToken(), 0);
-        this.f11144r.clearFocus();
+        this.f11152r.clearFocus();
+        ((InputMethodManager) getActivity().getSystemService("input_method")).hideSoftInputFromWindow(this.f11152r.getWindowToken(), 0);
+        this.f11152r.clearFocus();
         return true;
     }
 }

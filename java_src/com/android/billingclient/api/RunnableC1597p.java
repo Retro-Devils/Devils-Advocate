@@ -7,20 +7,20 @@ import com.android.billingclient.api.C1574d;
 public final class RunnableC1597p implements Runnable {
 
     /* renamed from: b */
-    private final /* synthetic */ C1582g f6494b;
+    private final /* synthetic */ C1582g f6502b;
 
     /* renamed from: c */
-    private final /* synthetic */ C1574d.ServiceConnectionC1575a f6495c;
+    private final /* synthetic */ C1574d.ServiceConnectionC1575a f6503c;
 
     RunnableC1597p(C1574d.ServiceConnectionC1575a aVar, C1582g gVar) {
-        this.f6495c = aVar;
-        this.f6494b = gVar;
+        this.f6503c = aVar;
+        this.f6502b = gVar;
     }
 
     public final void run() {
-        synchronized (this.f6495c.f6438a) {
-            if (this.f6495c.f6440c != null) {
-                this.f6495c.f6440c.mo6928b(this.f6494b);
+        synchronized (this.f6503c.f6446a) {
+            if (this.f6503c.f6448c != null) {
+                this.f6503c.f6448c.mo6928b(this.f6502b);
             }
         }
     }

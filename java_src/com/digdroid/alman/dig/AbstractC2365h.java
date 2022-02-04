@@ -10,46 +10,46 @@ import com.digdroid.alman.dig.C2267e2;
 abstract class AbstractC2365h extends RecyclerView.AbstractC0658g<RecyclerView.AbstractC0655d0> {
 
     /* renamed from: c */
-    C2774t3 f8288c;
+    C2774t3 f8296c;
 
     /* renamed from: d */
-    Cursor f8289d;
+    Cursor f8297d;
 
     /* renamed from: e */
-    int f8290e = 0;
+    int f8298e = 0;
 
     /* renamed from: f */
-    int f8291f;
+    int f8299f;
 
     /* renamed from: g */
-    float f8292g;
+    float f8300g;
 
     /* renamed from: h */
-    float f8293h;
+    float f8301h;
 
     /* renamed from: i */
-    C2267e2.AbstractC2289v f8294i = null;
+    C2267e2.AbstractC2289v f8302i = null;
 
     /* renamed from: j */
-    C2267e2.AbstractC2290w f8295j = null;
+    C2267e2.AbstractC2290w f8303j = null;
 
     /* renamed from: k */
-    AbstractC2368c f8296k = null;
+    AbstractC2368c f8304k = null;
 
     /* renamed from: com.digdroid.alman.dig.h$a */
     class View$OnClickListenerC2366a implements View.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ int f8297b;
+        final /* synthetic */ int f8305b;
 
         View$OnClickListenerC2366a(int i) {
-            this.f8297b = i;
+            this.f8305b = i;
         }
 
         public void onClick(View view) {
-            C2267e2.AbstractC2289v vVar = AbstractC2365h.this.f8294i;
+            C2267e2.AbstractC2289v vVar = AbstractC2365h.this.f8302i;
             if (vVar != null) {
-                vVar.mo8404a(view, this.f8297b);
+                vVar.mo8404a(view, this.f8305b);
             }
         }
     }
@@ -58,16 +58,16 @@ abstract class AbstractC2365h extends RecyclerView.AbstractC0658g<RecyclerView.A
     class View$OnLongClickListenerC2367b implements View.OnLongClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ int f8299b;
+        final /* synthetic */ int f8307b;
 
         View$OnLongClickListenerC2367b(int i) {
-            this.f8299b = i;
+            this.f8307b = i;
         }
 
         public boolean onLongClick(View view) {
-            C2267e2.AbstractC2290w wVar = AbstractC2365h.this.f8295j;
+            C2267e2.AbstractC2290w wVar = AbstractC2365h.this.f8303j;
             if (wVar != null) {
-                return wVar.mo8405a(view, this.f8299b);
+                return wVar.mo8405a(view, this.f8307b);
             }
             return true;
         }
@@ -82,12 +82,12 @@ abstract class AbstractC2365h extends RecyclerView.AbstractC0658g<RecyclerView.A
     public AbstractC2365h(MainActivity mainActivity, C2774t3 t3Var, Cursor cursor, float f, float f2) {
         long round;
         synchronized (C2827w1.class) {
-            this.f8288c = t3Var;
-            this.f8289d = cursor;
+            this.f8296c = t3Var;
+            this.f8297d = cursor;
             if (cursor.moveToFirst()) {
-                this.f8290e = cursor.getCount();
+                this.f8298e = cursor.getCount();
             } else {
-                this.f8290e = 0;
+                this.f8298e = 0;
             }
             Point g = mainActivity.mo8203g(false);
             int i = g.x;
@@ -101,10 +101,10 @@ abstract class AbstractC2365h extends RecyclerView.AbstractC0658g<RecyclerView.A
                 Double.isNaN(d2);
                 round = Math.round(d2 / 3.5d);
             }
-            this.f8291f = (int) round;
+            this.f8299f = (int) round;
         }
-        this.f8292g = f;
-        this.f8293h = f2;
+        this.f8300g = f;
+        this.f8301h = f2;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.AbstractC0658g
@@ -112,7 +112,7 @@ abstract class AbstractC2365h extends RecyclerView.AbstractC0658g<RecyclerView.A
     public int mo3580c() {
         int i;
         synchronized (C2827w1.class) {
-            i = this.f8290e;
+            i = this.f8298e;
         }
         return i;
     }
@@ -120,19 +120,19 @@ abstract class AbstractC2365h extends RecyclerView.AbstractC0658g<RecyclerView.A
     /* renamed from: u */
     public void mo8523u(Cursor cursor) {
         synchronized (C2827w1.class) {
-            Cursor cursor2 = this.f8289d;
+            Cursor cursor2 = this.f8297d;
             if (cursor2 != null && !cursor2.isClosed()) {
-                this.f8289d.close();
+                this.f8297d.close();
             }
-            this.f8289d = cursor;
+            this.f8297d = cursor;
             if (cursor.moveToFirst()) {
-                this.f8290e = cursor.getCount();
+                this.f8298e = cursor.getCount();
             } else {
-                this.f8290e = 0;
+                this.f8298e = 0;
             }
-            AbstractC2368c cVar = this.f8296k;
+            AbstractC2368c cVar = this.f8304k;
             if (cVar != null) {
-                cVar.mo8531a(this.f8289d);
+                cVar.mo8531a(this.f8297d);
             }
             mo4029h();
         }
@@ -141,23 +141,23 @@ abstract class AbstractC2365h extends RecyclerView.AbstractC0658g<RecyclerView.A
     /* renamed from: v */
     public void mo8524v() {
         synchronized (C2827w1.class) {
-            Cursor cursor = this.f8289d;
+            Cursor cursor = this.f8297d;
             if (cursor != null && !cursor.isClosed()) {
-                this.f8289d.close();
+                this.f8297d.close();
             }
-            this.f8289d = null;
-            this.f8290e = 0;
+            this.f8297d = null;
+            this.f8298e = 0;
         }
     }
 
     /* renamed from: w */
     public Cursor mo8525w() {
-        return this.f8289d;
+        return this.f8297d;
     }
 
     /* renamed from: x */
     public void mo8526x(C2267e2.AbstractC2289v vVar) {
-        this.f8294i = vVar;
+        this.f8302i = vVar;
     }
 
     /* access modifiers changed from: protected */
@@ -169,6 +169,6 @@ abstract class AbstractC2365h extends RecyclerView.AbstractC0658g<RecyclerView.A
 
     /* renamed from: z */
     public void mo8528z(C2267e2.AbstractC2290w wVar) {
-        this.f8295j = wVar;
+        this.f8303j = wVar;
     }
 }

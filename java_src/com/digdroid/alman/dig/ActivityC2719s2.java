@@ -16,31 +16,31 @@ import java.io.File;
 public class ActivityC2719s2 extends ActivityC2725t {
 
     /* renamed from: F */
-    AbstractC2723d f9245F;
+    AbstractC2723d f9253F;
 
     /* renamed from: G */
-    AbstractC2723d f9246G;
+    AbstractC2723d f9254G;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.digdroid.alman.dig.s2$a */
     public class DialogInterface$OnClickListenerC2720a implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ File f9247b;
+        final /* synthetic */ File f9255b;
 
         /* renamed from: c */
-        final /* synthetic */ int f9248c;
+        final /* synthetic */ int f9256c;
 
         DialogInterface$OnClickListenerC2720a(File file, int i) {
-            this.f9247b = file;
-            this.f9248c = i;
+            this.f9255b = file;
+            this.f9256c = i;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
             Intent intent = new Intent("android.intent.action.OPEN_DOCUMENT_TREE");
             intent.addFlags(65731);
-            intent.putExtra("android.provider.extra.INITIAL_URI", Uri.fromFile(this.f9247b));
-            ActivityC2719s2.this.startActivityForResult(intent, this.f9248c);
+            intent.putExtra("android.provider.extra.INITIAL_URI", Uri.fromFile(this.f9255b));
+            ActivityC2719s2.this.startActivityForResult(intent, this.f9256c);
         }
     }
 
@@ -83,9 +83,9 @@ public class ActivityC2719s2 extends ActivityC2725t {
     /* access modifiers changed from: package-private */
     /* renamed from: Y0 */
     public void mo9194Y0(AbstractC2723d dVar) {
-        this.f9246G = dVar;
+        this.f9254G = dVar;
         if (C0378a.m1871a(getApplicationContext(), "android.permission.RECORD_AUDIO") == 0) {
-            this.f9246G.mo7921a();
+            this.f9254G.mo7921a();
         } else if (C0348a.m1780l(this, "android.permission.RECORD_AUDIO")) {
             Snackbar.m13524X(findViewById(R.id.mainscreen), R.string.audio_rationale, -2).mo10896Z(R.string.ok, new View$OnClickListenerC2722c()).mo10849N();
         } else {
@@ -96,11 +96,11 @@ public class ActivityC2719s2 extends ActivityC2725t {
     /* access modifiers changed from: package-private */
     /* renamed from: Z0 */
     public void mo9195Z0(AbstractC2723d dVar) {
-        this.f9245F = dVar;
+        this.f9253F = dVar;
         if (C0378a.m1871a(getApplicationContext(), "android.permission.READ_EXTERNAL_STORAGE") != 0) {
             new AlertDialog.Builder(this).setMessage(R.string.read_files_inform).setCancelable(false).setPositiveButton(R.string.next, new DialogInterface$OnClickListenerC2721b()).create().show();
         } else {
-            this.f9245F.mo7921a();
+            this.f9253F.mo7921a();
         }
     }
 
@@ -147,7 +147,7 @@ public class ActivityC2719s2 extends ActivityC2725t {
     @Override // androidx.fragment.app.ActivityC0447d, androidx.core.app.C0348a.AbstractC0350b
     public void onRequestPermissionsResult(int i, String[] strArr, int[] iArr) {
         if (iArr != null) {
-            AbstractC2723d dVar = i != 100 ? i != 101 ? null : this.f9246G : this.f9245F;
+            AbstractC2723d dVar = i != 100 ? i != 101 ? null : this.f9254G : this.f9253F;
             if (dVar != null) {
                 if (iArr.length <= 0 || iArr[0] != 0) {
                     dVar.mo7922b();

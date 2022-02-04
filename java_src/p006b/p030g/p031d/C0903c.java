@@ -14,10 +14,10 @@ public class C0903c {
     public static class C0904a {
 
         /* renamed from: a */
-        int f4529a;
+        int f4533a;
 
         /* renamed from: b */
-        boolean f4530b;
+        boolean f4534b;
 
         C0904a() {
         }
@@ -27,20 +27,20 @@ public class C0903c {
     public static class C0905b {
 
         /* renamed from: a */
-        public char f4531a;
+        public char f4535a;
 
         /* renamed from: b */
-        public float[] f4532b;
+        public float[] f4536b;
 
         C0905b(char c, float[] fArr) {
-            this.f4531a = c;
-            this.f4532b = fArr;
+            this.f4535a = c;
+            this.f4536b = fArr;
         }
 
         C0905b(C0905b bVar) {
-            this.f4531a = bVar.f4531a;
-            float[] fArr = bVar.f4532b;
-            this.f4532b = C0903c.m5306c(fArr, 0, fArr.length);
+            this.f4535a = bVar.f4535a;
+            float[] fArr = bVar.f4536b;
+            this.f4536b = C0903c.m5306c(fArr, 0, fArr.length);
         }
 
         /* JADX INFO: Can't fix incorrect switch cases order, some code will duplicate */
@@ -75,7 +75,7 @@ public class C0903c {
                 case 'H':
                 case 'V':
                 case C0333i.f1706W0:
-                case C0763j.f3609H0:
+                case C0763j.f3613H0:
                     i = 1;
                     break;
                 case 'L':
@@ -83,18 +83,18 @@ public class C0903c {
                 case 'T':
                 case C0333i.f1724Z0:
                 case 'm':
-                case C0763j.f3599F0:
+                case C0763j.f3603F0:
                 default:
                     i = 2;
                     break;
                 case 'Q':
                 case 'S':
                 case 'q':
-                case C0763j.f3594E0:
+                case C0763j.f3598E0:
                     i = 4;
                     break;
                 case C0333i.f1622I0:
-                case C0763j.f3629L0:
+                case C0763j.f3633L0:
                     path.close();
                     path.moveTo(f13, f14);
                     f9 = f13;
@@ -454,19 +454,19 @@ public class C0903c {
             float[] fArr = new float[6];
             char c = 'm';
             for (int i = 0; i < bVarArr.length; i++) {
-                m5314a(path, fArr, c, bVarArr[i].f4531a, bVarArr[i].f4532b);
-                c = bVarArr[i].f4531a;
+                m5314a(path, fArr, c, bVarArr[i].f4535a, bVarArr[i].f4536b);
+                c = bVarArr[i].f4535a;
             }
         }
 
         /* renamed from: d */
         public void mo5304d(C0905b bVar, C0905b bVar2, float f) {
-            this.f4531a = bVar.f4531a;
+            this.f4535a = bVar.f4535a;
             int i = 0;
             while (true) {
-                float[] fArr = bVar.f4532b;
+                float[] fArr = bVar.f4536b;
                 if (i < fArr.length) {
-                    this.f4532b[i] = (fArr[i] * (1.0f - f)) + (bVar2.f4532b[i] * f);
+                    this.f4536b[i] = (fArr[i] * (1.0f - f)) + (bVar2.f4536b[i] * f);
                     i++;
                 } else {
                     return;
@@ -486,7 +486,7 @@ public class C0903c {
             return false;
         }
         for (int i = 0; i < bVarArr.length; i++) {
-            if (!(bVarArr[i].f4531a == bVarArr2[i].f4531a && bVarArr[i].f4532b.length == bVarArr2[i].f4532b.length)) {
+            if (!(bVarArr[i].f4535a == bVarArr2[i].f4535a && bVarArr[i].f4536b.length == bVarArr2[i].f4536b.length)) {
                 return false;
             }
         }
@@ -570,7 +570,7 @@ public class C0903c {
     private static void m5310g(java.lang.String r8, int r9, p006b.p030g.p031d.C0903c.C0904a r10) {
         /*
             r0 = 0
-            r10.f4530b = r0
+            r10.f4534b = r0
             r1 = r9
             r2 = 0
             r3 = 0
@@ -600,7 +600,7 @@ public class C0903c {
             r3 = 1
             goto L_0x0035
         L_0x0027:
-            r10.f4530b = r7
+            r10.f4534b = r7
             goto L_0x0033
         L_0x002a:
             if (r1 == r9) goto L_0x002f
@@ -622,7 +622,7 @@ public class C0903c {
             int r1 = r1 + 1
             goto L_0x0007
         L_0x003b:
-            r10.f4529a = r1
+            r10.f4533a = r1
             return
             switch-data {44->0x0033, 45->0x002a, 46->0x0022, }
         */
@@ -642,12 +642,12 @@ public class C0903c {
             int i2 = 0;
             while (i < length) {
                 m5310g(str, i, aVar);
-                int i3 = aVar.f4529a;
+                int i3 = aVar.f4533a;
                 if (i < i3) {
                     fArr[i2] = Float.parseFloat(str.substring(i, i3));
                     i2++;
                 }
-                i = aVar.f4530b ? i3 : i3 + 1;
+                i = aVar.f4534b ? i3 : i3 + 1;
             }
             return m5306c(fArr, 0, i2);
         } catch (NumberFormatException e) {
@@ -670,9 +670,9 @@ public class C0903c {
     /* renamed from: j */
     public static void m5313j(C0905b[] bVarArr, C0905b[] bVarArr2) {
         for (int i = 0; i < bVarArr2.length; i++) {
-            bVarArr[i].f4531a = bVarArr2[i].f4531a;
-            for (int i2 = 0; i2 < bVarArr2[i].f4532b.length; i2++) {
-                bVarArr[i].f4532b[i2] = bVarArr2[i].f4532b[i2];
+            bVarArr[i].f4535a = bVarArr2[i].f4535a;
+            for (int i2 = 0; i2 < bVarArr2[i].f4536b.length; i2++) {
+                bVarArr[i].f4536b[i2] = bVarArr2[i].f4536b[i2];
             }
         }
     }

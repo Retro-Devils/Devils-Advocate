@@ -9,53 +9,53 @@ import p006b.p022e.p026b.p027k.C0867f;
 public class C0879c extends AbstractC0892m {
 
     /* renamed from: k */
-    ArrayList<AbstractC0892m> f4407k = new ArrayList<>();
+    ArrayList<AbstractC0892m> f4411k = new ArrayList<>();
 
     /* renamed from: l */
-    private int f4408l;
+    private int f4412l;
 
     public C0879c(C0864e eVar, int i) {
         super(eVar);
-        this.f4458f = i;
+        this.f4462f = i;
         m5219q();
     }
 
     /* renamed from: q */
     private void m5219q() {
-        C0864e eVar = this.f4454b;
+        C0864e eVar = this.f4458b;
         do {
-            eVar = eVar.mo5160F(this.f4458f);
+            eVar = eVar.mo5160F(this.f4462f);
         } while (eVar != null);
-        this.f4454b = eVar;
-        this.f4407k.add(eVar.mo5164H(this.f4458f));
-        C0864e D = eVar.mo5156D(this.f4458f);
+        this.f4458b = eVar;
+        this.f4411k.add(eVar.mo5164H(this.f4462f));
+        C0864e D = eVar.mo5156D(this.f4462f);
         while (D != null) {
-            this.f4407k.add(D.mo5164H(this.f4458f));
-            D = D.mo5156D(this.f4458f);
+            this.f4411k.add(D.mo5164H(this.f4462f));
+            D = D.mo5156D(this.f4462f);
         }
-        Iterator<AbstractC0892m> it = this.f4407k.iterator();
+        Iterator<AbstractC0892m> it = this.f4411k.iterator();
         while (it.hasNext()) {
             AbstractC0892m next = it.next();
-            int i = this.f4458f;
+            int i = this.f4462f;
             if (i == 0) {
-                next.f4454b.f4297d = this;
+                next.f4458b.f4301d = this;
             } else if (i == 1) {
-                next.f4454b.f4299e = this;
+                next.f4458b.f4303e = this;
             }
         }
-        if ((this.f4458f == 0 && ((C0867f) this.f4454b.mo5158E()).mo5238W0()) && this.f4407k.size() > 1) {
-            ArrayList<AbstractC0892m> arrayList = this.f4407k;
-            this.f4454b = arrayList.get(arrayList.size() - 1).f4454b;
+        if ((this.f4462f == 0 && ((C0867f) this.f4458b.mo5158E()).mo5238W0()) && this.f4411k.size() > 1) {
+            ArrayList<AbstractC0892m> arrayList = this.f4411k;
+            this.f4458b = arrayList.get(arrayList.size() - 1).f4458b;
         }
-        this.f4408l = this.f4458f == 0 ? this.f4454b.mo5217v() : this.f4454b.mo5166J();
+        this.f4412l = this.f4462f == 0 ? this.f4458b.mo5217v() : this.f4458b.mo5166J();
     }
 
     /* renamed from: r */
     private C0864e m5220r() {
-        for (int i = 0; i < this.f4407k.size(); i++) {
-            AbstractC0892m mVar = this.f4407k.get(i);
-            if (mVar.f4454b.mo5169M() != 8) {
-                return mVar.f4454b;
+        for (int i = 0; i < this.f4411k.size(); i++) {
+            AbstractC0892m mVar = this.f4411k.get(i);
+            if (mVar.f4458b.mo5169M() != 8) {
+                return mVar.f4458b;
             }
         }
         return null;
@@ -63,10 +63,10 @@ public class C0879c extends AbstractC0892m {
 
     /* renamed from: s */
     private C0864e m5221s() {
-        for (int size = this.f4407k.size() - 1; size >= 0; size--) {
-            AbstractC0892m mVar = this.f4407k.get(size);
-            if (mVar.f4454b.mo5169M() != 8) {
-                return mVar.f4454b;
+        for (int size = this.f4411k.size() - 1; size >= 0; size--) {
+            AbstractC0892m mVar = this.f4411k.get(size);
+            if (mVar.f4458b.mo5169M() != 8) {
+                return mVar.f4458b;
             }
         }
         return null;
@@ -110,8 +110,8 @@ public class C0879c extends AbstractC0892m {
     @Override // p006b.p022e.p026b.p027k.p028m.AbstractC0892m
     /* renamed from: e */
     public void mo5267e() {
-        for (int i = 0; i < this.f4407k.size(); i++) {
-            this.f4407k.get(i).mo5267e();
+        for (int i = 0; i < this.f4411k.size(); i++) {
+            this.f4411k.get(i).mo5267e();
         }
     }
 
@@ -119,8 +119,8 @@ public class C0879c extends AbstractC0892m {
     @Override // p006b.p022e.p026b.p027k.p028m.AbstractC0892m
     /* renamed from: f */
     public void mo5268f() {
-        this.f4455c = null;
-        Iterator<AbstractC0892m> it = this.f4407k.iterator();
+        this.f4459c = null;
+        Iterator<AbstractC0892m> it = this.f4411k.iterator();
         while (it.hasNext()) {
             it.next().mo5268f();
         }
@@ -129,11 +129,11 @@ public class C0879c extends AbstractC0892m {
     @Override // p006b.p022e.p026b.p027k.p028m.AbstractC0892m
     /* renamed from: j */
     public long mo5269j() {
-        int size = this.f4407k.size();
+        int size = this.f4411k.size();
         long j = 0;
         for (int i = 0; i < size; i++) {
-            AbstractC0892m mVar = this.f4407k.get(i);
-            j = j + ((long) mVar.f4460h.f4423f) + mVar.mo5269j() + ((long) mVar.f4461i.f4423f);
+            AbstractC0892m mVar = this.f4411k.get(i);
+            j = j + ((long) mVar.f4464h.f4427f) + mVar.mo5269j() + ((long) mVar.f4465i.f4427f);
         }
         return j;
     }
@@ -142,9 +142,9 @@ public class C0879c extends AbstractC0892m {
     @Override // p006b.p022e.p026b.p027k.p028m.AbstractC0892m
     /* renamed from: m */
     public boolean mo5270m() {
-        int size = this.f4407k.size();
+        int size = this.f4411k.size();
         for (int i = 0; i < size; i++) {
-            if (!this.f4407k.get(i).mo5270m()) {
+            if (!this.f4411k.get(i).mo5270m()) {
                 return false;
             }
         }
@@ -154,9 +154,9 @@ public class C0879c extends AbstractC0892m {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("ChainRun ");
-        sb.append(this.f4458f == 0 ? "horizontal : " : "vertical : ");
+        sb.append(this.f4462f == 0 ? "horizontal : " : "vertical : ");
         String sb2 = sb.toString();
-        Iterator<AbstractC0892m> it = this.f4407k.iterator();
+        Iterator<AbstractC0892m> it = this.f4411k.iterator();
         while (it.hasNext()) {
             sb2 = ((sb2 + "<") + it.next()) + "> ";
         }

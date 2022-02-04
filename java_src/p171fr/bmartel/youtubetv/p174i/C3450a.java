@@ -18,29 +18,29 @@ import p171fr.bmartel.youtubetv.p173h.EnumC3448f;
 public class C3450a {
 
     /* renamed from: a */
-    private static final String f11717a = "a";
+    private static final String f11726a = "a";
 
     /* access modifiers changed from: package-private */
     /* renamed from: fr.bmartel.youtubetv.i.a$a */
     public static class RunnableC3451a implements Runnable {
 
         /* renamed from: b */
-        final /* synthetic */ WebView f11718b;
+        final /* synthetic */ WebView f11727b;
 
         /* renamed from: c */
-        final /* synthetic */ String f11719c;
+        final /* synthetic */ String f11728c;
 
         /* renamed from: d */
-        final /* synthetic */ Object[] f11720d;
+        final /* synthetic */ Object[] f11729d;
 
         RunnableC3451a(WebView webView, String str, Object[] objArr) {
-            this.f11718b = webView;
-            this.f11719c = str;
-            this.f11720d = objArr;
+            this.f11727b = webView;
+            this.f11728c = str;
+            this.f11729d = objArr;
         }
 
         public void run() {
-            C3450a.m14194a(this.f11718b, this.f11719c, this.f11720d);
+            C3450a.m14194a(this.f11727b, this.f11728c, this.f11729d);
         }
     }
 
@@ -81,7 +81,7 @@ public class C3450a {
         int i = 0;
         boolean z = false;
         while (true) {
-            List<String> list = C3439f.f11665f;
+            List<String> list = C3439f.f11674f;
             if (i >= list.size()) {
                 return "";
             }
@@ -120,7 +120,7 @@ public class C3450a {
                     arrayList.add(Integer.valueOf(jSONArray.getInt(i)));
                 }
             } catch (JSONException e) {
-                Log.e(f11717a, "parse playback rates", e);
+                Log.e(f11726a, "parse playback rates", e);
             }
         }
         return arrayList;
@@ -136,7 +136,7 @@ public class C3450a {
                     arrayList.add(jSONArray.getString(i));
                 }
             } catch (JSONException e) {
-                Log.e(f11717a, "parse playlist", e);
+                Log.e(f11726a, "parse playlist", e);
             }
         }
         return arrayList;
@@ -152,7 +152,7 @@ public class C3450a {
                     arrayList.add(EnumC3448f.m14189d(jSONArray.getString(i)));
                 }
             } catch (JSONException e) {
-                Log.e(f11717a, "parse quality levels", e);
+                Log.e(f11726a, "parse quality levels", e);
             }
         }
         return arrayList;

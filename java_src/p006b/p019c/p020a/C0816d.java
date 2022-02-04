@@ -12,7 +12,7 @@ import p006b.p019c.p020a.C0821h;
 public class C0816d implements AbstractC0819f {
 
     /* renamed from: a */
-    final RectF f4033a = new RectF();
+    final RectF f4037a = new RectF();
 
     /* renamed from: b.c.a.d$a */
     class C0817a implements C0821h.AbstractC0822a {
@@ -28,19 +28,19 @@ public class C0816d implements AbstractC0819f {
             if (f >= 1.0f) {
                 float f3 = f + 0.5f;
                 float f4 = -f3;
-                C0816d.this.f4033a.set(f4, f4, f3, f3);
+                C0816d.this.f4037a.set(f4, f4, f3, f3);
                 int save = canvas.save();
                 canvas.translate(rectF.left + f3, rectF.top + f3);
-                canvas.drawArc(C0816d.this.f4033a, 180.0f, 90.0f, true, paint);
+                canvas.drawArc(C0816d.this.f4037a, 180.0f, 90.0f, true, paint);
                 canvas.translate(width, 0.0f);
                 canvas.rotate(90.0f);
-                canvas.drawArc(C0816d.this.f4033a, 180.0f, 90.0f, true, paint);
+                canvas.drawArc(C0816d.this.f4037a, 180.0f, 90.0f, true, paint);
                 canvas.translate(height, 0.0f);
                 canvas.rotate(90.0f);
-                canvas.drawArc(C0816d.this.f4033a, 180.0f, 90.0f, true, paint);
+                canvas.drawArc(C0816d.this.f4037a, 180.0f, 90.0f, true, paint);
                 canvas.translate(width, 0.0f);
                 canvas.rotate(90.0f);
-                canvas.drawArc(C0816d.this.f4033a, 180.0f, 90.0f, true, paint);
+                canvas.drawArc(C0816d.this.f4037a, 180.0f, 90.0f, true, paint);
                 canvas.restoreToCount(save);
                 float f5 = rectF.top;
                 canvas.drawRect((rectF.left + f3) - 1.0f, f5, (rectF.right - f3) + 1.0f, f5 + f3, paint);
@@ -136,7 +136,7 @@ public class C0816d implements AbstractC0819f {
     @Override // p006b.p019c.p020a.AbstractC0819f
     /* renamed from: m */
     public void mo4806m() {
-        C0821h.f4047b = new C0817a();
+        C0821h.f4051b = new C0817a();
     }
 
     /* renamed from: o */

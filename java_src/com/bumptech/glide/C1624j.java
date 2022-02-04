@@ -29,59 +29,59 @@ import java.util.concurrent.Executor;
 public class C1624j<TranscodeType> extends AbstractC2037a<C1624j<TranscodeType>> implements Cloneable {
 
     /* renamed from: B */
-    protected static final C2043f f6588B = ((C2043f) ((C2043f) ((C2043f) new C2043f().mo7762e(AbstractC1763j.f6904c)).mo7750R(EnumC1616g.LOW)).mo7754Y(true));
+    protected static final C2043f f6596B = ((C2043f) ((C2043f) ((C2043f) new C2043f().mo7762e(AbstractC1763j.f6912c)).mo7750R(EnumC1616g.LOW)).mo7754Y(true));
 
     /* renamed from: C */
-    private final Context f6589C;
+    private final Context f6597C;
 
     /* renamed from: D */
-    private final ComponentCallbacks2C1626k f6590D;
+    private final ComponentCallbacks2C1626k f6598D;
 
     /* renamed from: E */
-    private final Class<TranscodeType> f6591E;
+    private final Class<TranscodeType> f6599E;
 
     /* renamed from: F */
-    private final ComponentCallbacks2C1610c f6592F;
+    private final ComponentCallbacks2C1610c f6600F;
 
     /* renamed from: G */
-    private final C1614e f6593G;
+    private final C1614e f6601G;
 
     /* renamed from: H */
-    private AbstractC1629l<?, ? super TranscodeType> f6594H;
+    private AbstractC1629l<?, ? super TranscodeType> f6602H;
 
     /* renamed from: I */
-    private Object f6595I;
+    private Object f6603I;
 
     /* renamed from: J */
-    private List<AbstractC2042e<TranscodeType>> f6596J;
+    private List<AbstractC2042e<TranscodeType>> f6604J;
 
     /* renamed from: K */
-    private C1624j<TranscodeType> f6597K;
+    private C1624j<TranscodeType> f6605K;
 
     /* renamed from: L */
-    private C1624j<TranscodeType> f6598L;
+    private C1624j<TranscodeType> f6606L;
 
     /* renamed from: M */
-    private Float f6599M;
+    private Float f6607M;
 
     /* renamed from: N */
-    private boolean f6600N = true;
+    private boolean f6608N = true;
 
     /* renamed from: O */
-    private boolean f6601O;
+    private boolean f6609O;
 
     /* renamed from: P */
-    private boolean f6602P;
+    private boolean f6610P;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.bumptech.glide.j$a */
     public static /* synthetic */ class C1625a {
 
         /* renamed from: a */
-        static final /* synthetic */ int[] f6603a;
+        static final /* synthetic */ int[] f6611a;
 
         /* renamed from: b */
-        static final /* synthetic */ int[] f6604b;
+        static final /* synthetic */ int[] f6612b;
 
         /* JADX WARNING: Can't wrap try/catch for region: R(27:0|(2:1|2)|3|(2:5|6)|7|9|10|11|(2:13|14)|15|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|34) */
         /* JADX WARNING: Can't wrap try/catch for region: R(29:0|1|2|3|(2:5|6)|7|9|10|11|13|14|15|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|34) */
@@ -107,26 +107,26 @@ public class C1624j<TranscodeType> extends AbstractC2037a<C1624j<TranscodeType>>
 
     @SuppressLint({"CheckResult"})
     protected C1624j(ComponentCallbacks2C1610c cVar, ComponentCallbacks2C1626k kVar, Class<TranscodeType> cls, Context context) {
-        this.f6592F = cVar;
-        this.f6590D = kVar;
-        this.f6591E = cls;
-        this.f6589C = context;
-        this.f6594H = kVar.mo7053r(cls);
-        this.f6593G = cVar.mo6983i();
+        this.f6600F = cVar;
+        this.f6598D = kVar;
+        this.f6599E = cls;
+        this.f6597C = context;
+        this.f6602H = kVar.mo7053r(cls);
+        this.f6601G = cVar.mo6983i();
         m7805l0(kVar.mo7051p());
         mo7022a(kVar.mo7052q());
     }
 
     /* renamed from: g0 */
     private AbstractC2039c m7801g0(AbstractC2055h<TranscodeType> hVar, AbstractC2042e<TranscodeType> eVar, AbstractC2037a<?> aVar, Executor executor) {
-        return m7802h0(new Object(), hVar, eVar, null, this.f6594H, aVar.mo7779t(), aVar.mo7776q(), aVar.mo7775p(), aVar, executor);
+        return m7802h0(new Object(), hVar, eVar, null, this.f6602H, aVar.mo7779t(), aVar.mo7776q(), aVar.mo7775p(), aVar, executor);
     }
 
     /* renamed from: h0 */
     private AbstractC2039c m7802h0(Object obj, AbstractC2055h<TranscodeType> hVar, AbstractC2042e<TranscodeType> eVar, AbstractC2040d dVar, AbstractC1629l<?, ? super TranscodeType> lVar, EnumC1616g gVar, int i, int i2, AbstractC2037a<?> aVar, Executor executor) {
         C2038b bVar;
         C2038b bVar2;
-        if (this.f6598L != null) {
+        if (this.f6606L != null) {
             bVar2 = new C2038b(obj, dVar);
             bVar = bVar2;
         } else {
@@ -137,52 +137,52 @@ public class C1624j<TranscodeType> extends AbstractC2037a<C1624j<TranscodeType>>
         if (bVar == null) {
             return i0;
         }
-        int q = this.f6598L.mo7776q();
-        int p = this.f6598L.mo7775p();
-        if (C2082k.m9451r(i, i2) && !this.f6598L.mo7743J()) {
+        int q = this.f6606L.mo7776q();
+        int p = this.f6606L.mo7775p();
+        if (C2082k.m9451r(i, i2) && !this.f6606L.mo7743J()) {
             q = aVar.mo7776q();
             p = aVar.mo7775p();
         }
-        C1624j<TranscodeType> jVar = this.f6598L;
-        bVar.mo7800q(i0, jVar.m7802h0(obj, hVar, eVar, bVar, jVar.f6594H, jVar.mo7779t(), q, p, this.f6598L, executor));
+        C1624j<TranscodeType> jVar = this.f6606L;
+        bVar.mo7800q(i0, jVar.m7802h0(obj, hVar, eVar, bVar, jVar.f6602H, jVar.mo7779t(), q, p, this.f6606L, executor));
         return bVar;
     }
 
     /* renamed from: i0 */
     private AbstractC2039c m7803i0(Object obj, AbstractC2055h<TranscodeType> hVar, AbstractC2042e<TranscodeType> eVar, AbstractC2040d dVar, AbstractC1629l<?, ? super TranscodeType> lVar, EnumC1616g gVar, int i, int i2, AbstractC2037a<?> aVar, Executor executor) {
-        C1624j<TranscodeType> jVar = this.f6597K;
+        C1624j<TranscodeType> jVar = this.f6605K;
         if (jVar != null) {
-            if (!this.f6602P) {
-                AbstractC1629l<?, ? super TranscodeType> lVar2 = jVar.f6600N ? lVar : jVar.f6594H;
-                EnumC1616g t = jVar.mo7738C() ? this.f6597K.mo7779t() : m7804k0(gVar);
-                int q = this.f6597K.mo7776q();
-                int p = this.f6597K.mo7775p();
-                if (C2082k.m9451r(i, i2) && !this.f6597K.mo7743J()) {
+            if (!this.f6610P) {
+                AbstractC1629l<?, ? super TranscodeType> lVar2 = jVar.f6608N ? lVar : jVar.f6602H;
+                EnumC1616g t = jVar.mo7738C() ? this.f6605K.mo7779t() : m7804k0(gVar);
+                int q = this.f6605K.mo7776q();
+                int p = this.f6605K.mo7775p();
+                if (C2082k.m9451r(i, i2) && !this.f6605K.mo7743J()) {
                     q = aVar.mo7776q();
                     p = aVar.mo7775p();
                 }
                 C2047i iVar = new C2047i(obj, dVar);
                 AbstractC2039c y0 = m7809y0(obj, hVar, eVar, aVar, iVar, lVar, gVar, i, i2, executor);
-                this.f6602P = true;
-                C1624j<TranscodeType> jVar2 = this.f6597K;
+                this.f6610P = true;
+                C1624j<TranscodeType> jVar2 = this.f6605K;
                 AbstractC2039c h0 = jVar2.m7802h0(obj, hVar, eVar, iVar, lVar2, t, q, p, jVar2, executor);
-                this.f6602P = false;
+                this.f6610P = false;
                 iVar.mo7808p(y0, h0);
                 return iVar;
             }
             throw new IllegalStateException("You cannot use a request as both the main request and a thumbnail, consider using clone() on the request(s) passed to thumbnail()");
-        } else if (this.f6599M == null) {
+        } else if (this.f6607M == null) {
             return m7809y0(obj, hVar, eVar, aVar, dVar, lVar, gVar, i, i2, executor);
         } else {
             C2047i iVar2 = new C2047i(obj, dVar);
-            iVar2.mo7808p(m7809y0(obj, hVar, eVar, aVar, iVar2, lVar, gVar, i, i2, executor), m7809y0(obj, hVar, eVar, aVar.clone().mo7753X(this.f6599M.floatValue()), iVar2, lVar, m7804k0(gVar), i, i2, executor));
+            iVar2.mo7808p(m7809y0(obj, hVar, eVar, aVar, iVar2, lVar, gVar, i, i2, executor), m7809y0(obj, hVar, eVar, aVar.clone().mo7753X(this.f6607M.floatValue()), iVar2, lVar, m7804k0(gVar), i, i2, executor));
             return iVar2;
         }
     }
 
     /* renamed from: k0 */
     private EnumC1616g m7804k0(EnumC1616g gVar) {
-        int i = C1625a.f6604b[gVar.ordinal()];
+        int i = C1625a.f6612b[gVar.ordinal()];
         if (i == 1) {
             return EnumC1616g.NORMAL;
         }
@@ -206,13 +206,13 @@ public class C1624j<TranscodeType> extends AbstractC2037a<C1624j<TranscodeType>>
     /* renamed from: n0 */
     private <Y extends AbstractC2055h<TranscodeType>> Y m7806n0(Y y, AbstractC2042e<TranscodeType> eVar, AbstractC2037a<?> aVar, Executor executor) {
         C2081j.m9432d(y);
-        if (this.f6601O) {
+        if (this.f6609O) {
             AbstractC2039c g0 = m7801g0(y, eVar, aVar, executor);
             AbstractC2039c g = y.mo7814g();
             if (!g0.mo7794h(g) || m7807q0(aVar, g)) {
-                this.f6590D.mo7047o(y);
+                this.f6598D.mo7047o(y);
                 y.mo7816j(g0);
-                this.f6590D.mo7039C(y, g0);
+                this.f6598D.mo7039C(y, g0);
                 return y;
             }
             if (!((AbstractC2039c) C2081j.m9432d(g)).isRunning()) {
@@ -230,25 +230,25 @@ public class C1624j<TranscodeType> extends AbstractC2037a<C1624j<TranscodeType>>
 
     /* renamed from: x0 */
     private C1624j<TranscodeType> m7808x0(Object obj) {
-        this.f6595I = obj;
-        this.f6601O = true;
+        this.f6603I = obj;
+        this.f6609O = true;
         return this;
     }
 
     /* renamed from: y0 */
     private AbstractC2039c m7809y0(Object obj, AbstractC2055h<TranscodeType> hVar, AbstractC2042e<TranscodeType> eVar, AbstractC2037a<?> aVar, AbstractC2040d dVar, AbstractC1629l<?, ? super TranscodeType> lVar, EnumC1616g gVar, int i, int i2, Executor executor) {
-        Context context = this.f6589C;
-        C1614e eVar2 = this.f6593G;
-        return C2045h.m9296y(context, eVar2, obj, this.f6595I, this.f6591E, aVar, i, i2, gVar, hVar, eVar, this.f6596J, dVar, eVar2.mo7001f(), lVar.mo7066b(), executor);
+        Context context = this.f6597C;
+        C1614e eVar2 = this.f6601G;
+        return C2045h.m9296y(context, eVar2, obj, this.f6603I, this.f6599E, aVar, i, i2, gVar, hVar, eVar, this.f6604J, dVar, eVar2.mo7001f(), lVar.mo7066b(), executor);
     }
 
     /* renamed from: e0 */
     public C1624j<TranscodeType> mo7025e0(AbstractC2042e<TranscodeType> eVar) {
         if (eVar != null) {
-            if (this.f6596J == null) {
-                this.f6596J = new ArrayList();
+            if (this.f6604J == null) {
+                this.f6604J = new ArrayList();
             }
-            this.f6596J.add(eVar);
+            this.f6604J.add(eVar);
         }
         return this;
     }
@@ -262,7 +262,7 @@ public class C1624j<TranscodeType> extends AbstractC2037a<C1624j<TranscodeType>>
     /* renamed from: j0 */
     public C1624j<TranscodeType> clone() {
         C1624j<TranscodeType> jVar = (C1624j) super.clone();
-        jVar.f6594H = jVar.f6594H.clone();
+        jVar.f6602H = jVar.f6602H.clone();
         return jVar;
     }
 
@@ -283,7 +283,7 @@ public class C1624j<TranscodeType> extends AbstractC2037a<C1624j<TranscodeType>>
         C2082k.m9434a();
         C2081j.m9432d(imageView);
         if (!mo7742I() && mo7740G() && imageView.getScaleType() != null) {
-            switch (C1625a.f6603a[imageView.getScaleType().ordinal()]) {
+            switch (C1625a.f6611a[imageView.getScaleType().ordinal()]) {
                 case 1:
                     aVar = clone().mo7745L();
                     break;
@@ -297,15 +297,15 @@ public class C1624j<TranscodeType> extends AbstractC2037a<C1624j<TranscodeType>>
                     aVar = clone().mo7747N();
                     break;
             }
-            return (AbstractC2056i) m7806n0(this.f6593G.mo6996a(imageView, this.f6591E), null, aVar, C2074e.m9414b());
+            return (AbstractC2056i) m7806n0(this.f6601G.mo6996a(imageView, this.f6599E), null, aVar, C2074e.m9414b());
         }
         aVar = this;
-        return (AbstractC2056i) m7806n0(this.f6593G.mo6996a(imageView, this.f6591E), null, aVar, C2074e.m9414b());
+        return (AbstractC2056i) m7806n0(this.f6601G.mo6996a(imageView, this.f6599E), null, aVar, C2074e.m9414b());
     }
 
     /* renamed from: r0 */
     public C1624j<TranscodeType> mo7031r0(Drawable drawable) {
-        return m7808x0(drawable).mo7022a(C2043f.m9275f0(AbstractC1763j.f6903b));
+        return m7808x0(drawable).mo7022a(C2043f.m9275f0(AbstractC1763j.f6911b));
     }
 
     /* renamed from: s0 */
@@ -320,7 +320,7 @@ public class C1624j<TranscodeType> extends AbstractC2037a<C1624j<TranscodeType>>
 
     /* renamed from: u0 */
     public C1624j<TranscodeType> mo7034u0(Integer num) {
-        return m7808x0(num).mo7022a(C2043f.m9276g0(C2064a.m9389c(this.f6589C)));
+        return m7808x0(num).mo7022a(C2043f.m9276g0(C2064a.m9389c(this.f6597C)));
     }
 
     /* renamed from: v0 */

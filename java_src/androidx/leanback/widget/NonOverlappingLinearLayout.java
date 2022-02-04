@@ -56,6 +56,7 @@ public class NonOverlappingLinearLayout extends LinearLayout {
 
     /*  JADX ERROR: StackOverflowError in pass: MarkFinallyVisitor
         java.lang.StackOverflowError
+        	at jadx.core.dex.nodes.InsnNode.isSame(InsnNode.java:303)
         	at jadx.core.dex.instructions.IndexInsnNode.isSame(IndexInsnNode.java:36)
         	at jadx.core.dex.visitors.MarkFinallyVisitor.sameInsns(MarkFinallyVisitor.java:451)
         	at jadx.core.dex.visitors.MarkFinallyVisitor.compareBlocks(MarkFinallyVisitor.java:436)

@@ -10,15 +10,15 @@ public final class C1348k extends AbstractC3031a {
     public static final Parcelable.Creator<C1348k> CREATOR = new C1349l();
 
     /* renamed from: b */
-    private final String f5612b;
+    private final String f5620b;
 
     public C1348k(String str) {
-        this.f5612b = str;
+        this.f5620b = str;
     }
 
     public final void writeToParcel(Parcel parcel, int i) {
         int a = C3034c.m12411a(parcel);
-        C3034c.m12420j(parcel, 2, this.f5612b, false);
+        C3034c.m12420j(parcel, 2, this.f5620b, false);
         C3034c.m12412b(parcel, a);
     }
 }

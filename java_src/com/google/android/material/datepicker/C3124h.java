@@ -10,13 +10,13 @@ import p069c.p073b.p074a.p090b.p104w.C1436b;
 public final class C3124h<S> extends DialogInterface$OnCancelListenerC0445c {
 
     /* renamed from: k0 */
-    static final Object f10433k0 = "CONFIRM_BUTTON_TAG";
+    static final Object f10441k0 = "CONFIRM_BUTTON_TAG";
 
     /* renamed from: l0 */
-    static final Object f10434l0 = "CANCEL_BUTTON_TAG";
+    static final Object f10442l0 = "CANCEL_BUTTON_TAG";
 
     /* renamed from: m0 */
-    static final Object f10435m0 = "TOGGLE_BUTTON_TAG";
+    static final Object f10443m0 = "TOGGLE_BUTTON_TAG";
 
     /* renamed from: u2 */
     static boolean m13033u2(Context context) {

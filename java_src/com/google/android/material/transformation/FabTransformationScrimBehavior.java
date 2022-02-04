@@ -19,34 +19,34 @@ import p069c.p073b.p074a.p090b.p092l.C1409i;
 public class FabTransformationScrimBehavior extends ExpandableTransformationBehavior {
 
     /* renamed from: c */
-    private final C1409i f11016c = new C1409i(75, 150);
+    private final C1409i f11024c = new C1409i(75, 150);
 
     /* renamed from: d */
-    private final C1409i f11017d = new C1409i(0, 150);
+    private final C1409i f11025d = new C1409i(0, 150);
 
     /* renamed from: com.google.android.material.transformation.FabTransformationScrimBehavior$a */
     class C3296a extends AnimatorListenerAdapter {
 
         /* renamed from: a */
-        final /* synthetic */ boolean f11018a;
+        final /* synthetic */ boolean f11026a;
 
         /* renamed from: b */
-        final /* synthetic */ View f11019b;
+        final /* synthetic */ View f11027b;
 
         C3296a(boolean z, View view) {
-            this.f11018a = z;
-            this.f11019b = view;
+            this.f11026a = z;
+            this.f11027b = view;
         }
 
         public void onAnimationEnd(Animator animator) {
-            if (!this.f11018a) {
-                this.f11019b.setVisibility(4);
+            if (!this.f11026a) {
+                this.f11027b.setVisibility(4);
             }
         }
 
         public void onAnimationStart(Animator animator) {
-            if (this.f11018a) {
-                this.f11019b.setVisibility(0);
+            if (this.f11026a) {
+                this.f11027b.setVisibility(0);
             }
         }
     }
@@ -61,7 +61,7 @@ public class FabTransformationScrimBehavior extends ExpandableTransformationBeha
     /* renamed from: K */
     private void m13802K(View view, boolean z, boolean z2, List<Animator> list, List<Animator.AnimatorListener> list2) {
         ObjectAnimator objectAnimator;
-        C1409i iVar = z ? this.f11016c : this.f11017d;
+        C1409i iVar = z ? this.f11024c : this.f11025d;
         if (z) {
             if (!z2) {
                 view.setAlpha(0.0f);

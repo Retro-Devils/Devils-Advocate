@@ -20,7 +20,7 @@ public class C2840w3 extends C2492n {
     /* renamed from: r */
     public boolean mo8781r(String str) {
         mo9414u();
-        C2399i2 d = C2399i2.m10374d(this.f8639a, mo9415v());
+        C2399i2 d = C2399i2.m10374d(this.f8647a, mo9415v());
         super.mo8781r(new C2399i2(d, str).getAbsolutePath());
         mo8782s("use_gui", "no");
         return super.mo8781r(new C2399i2(d, "uaeconfig.uae").getAbsolutePath());
@@ -36,7 +36,7 @@ public class C2840w3 extends C2492n {
     public void mo9414u() {
         /*
             r3 = this;
-            android.content.Context r0 = r3.f8639a
+            android.content.Context r0 = r3.f8647a
             java.lang.String r1 = r3.mo9415v()
             com.digdroid.alman.dig.i2 r0 = com.digdroid.alman.dig.C2399i2.m10374d(r0, r1)
             boolean r1 = r0.exists()
@@ -64,7 +64,7 @@ public class C2840w3 extends C2492n {
 
     /* renamed from: v */
     public String mo9415v() {
-        Context context = this.f8639a;
+        Context context = this.f8647a;
         return new C2399i2(C2399i2.m10374d(context, C2219c3.m9805k(context).mo8193q("dig_dir", "")), "Emu config/UAE").getAbsolutePath();
     }
 
@@ -89,7 +89,7 @@ public class C2840w3 extends C2492n {
         String str2;
         String str3;
         StringBuilder sb;
-        this.f8640b += "\n";
+        this.f8648b += "\n";
         if (!new File(str).isDirectory()) {
             StringBuilder sb2 = new StringBuilder();
             sb2.append("rw,DH0:");

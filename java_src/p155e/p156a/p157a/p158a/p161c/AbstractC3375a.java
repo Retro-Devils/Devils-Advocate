@@ -6,7 +6,7 @@ import java.io.InputStream;
 public abstract class AbstractC3375a extends InputStream {
 
     /* renamed from: b */
-    private long f11367b = 0;
+    private long f11376b = 0;
 
     /* access modifiers changed from: protected */
     /* renamed from: a */
@@ -18,7 +18,7 @@ public abstract class AbstractC3375a extends InputStream {
     /* renamed from: b */
     public void mo11348b(long j) {
         if (j != -1) {
-            this.f11367b += j;
+            this.f11376b += j;
         }
     }
 }

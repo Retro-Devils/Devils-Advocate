@@ -143,56 +143,56 @@ public class C0299x0 implements AbstractC0213c0 {
         this.f1269j = toolbar.getSubtitle();
         this.f1267h = this.f1268i != null;
         this.f1266g = toolbar.getNavigationIcon();
-        C0296w0 v = C0296w0.m1432v(toolbar.getContext(), null, C0763j.f3702a, C0754a.actionBarStyle, 0);
-        this.f1276q = v.mo1810g(C0763j.f3757l);
+        C0296w0 v = C0296w0.m1432v(toolbar.getContext(), null, C0763j.f3706a, C0754a.actionBarStyle, 0);
+        this.f1276q = v.mo1810g(C0763j.f3761l);
         if (z) {
-            CharSequence p = v.mo1819p(C0763j.f3787r);
+            CharSequence p = v.mo1819p(C0763j.f3791r);
             if (!TextUtils.isEmpty(p)) {
                 mo1855H(p);
             }
-            CharSequence p2 = v.mo1819p(C0763j.f3777p);
+            CharSequence p2 = v.mo1819p(C0763j.f3781p);
             if (!TextUtils.isEmpty(p2)) {
                 mo1854G(p2);
             }
-            Drawable g = v.mo1810g(C0763j.f3767n);
+            Drawable g = v.mo1810g(C0763j.f3771n);
             if (g != null) {
                 mo1850C(g);
             }
-            Drawable g2 = v.mo1810g(C0763j.f3762m);
+            Drawable g2 = v.mo1810g(C0763j.f3766m);
             if (g2 != null) {
                 setIcon(g2);
             }
             if (this.f1266g == null && (drawable = this.f1276q) != null) {
                 mo1853F(drawable);
             }
-            mo1370x(v.mo1814k(C0763j.f3737h, 0));
-            int n = v.mo1817n(C0763j.f3732g, 0);
+            mo1370x(v.mo1814k(C0763j.f3741h, 0));
+            int n = v.mo1817n(C0763j.f3736g, 0);
             if (n != 0) {
                 mo1848A(LayoutInflater.from(this.f1260a.getContext()).inflate(n, (ViewGroup) this.f1260a, false));
                 mo1370x(this.f1261b | 16);
             }
-            int m = v.mo1816m(C0763j.f3747j, 0);
+            int m = v.mo1816m(C0763j.f3751j, 0);
             if (m > 0) {
                 ViewGroup.LayoutParams layoutParams = this.f1260a.getLayoutParams();
                 layoutParams.height = m;
                 this.f1260a.setLayoutParams(layoutParams);
             }
-            int e = v.mo1808e(C0763j.f3727f, -1);
-            int e2 = v.mo1808e(C0763j.f3722e, -1);
+            int e = v.mo1808e(C0763j.f3731f, -1);
+            int e2 = v.mo1808e(C0763j.f3726e, -1);
             if (e >= 0 || e2 >= 0) {
                 this.f1260a.mo1191H(Math.max(e, 0), Math.max(e2, 0));
             }
-            int n2 = v.mo1817n(C0763j.f3792s, 0);
+            int n2 = v.mo1817n(C0763j.f3796s, 0);
             if (n2 != 0) {
                 Toolbar toolbar2 = this.f1260a;
                 toolbar2.mo1195L(toolbar2.getContext(), n2);
             }
-            int n3 = v.mo1817n(C0763j.f3782q, 0);
+            int n3 = v.mo1817n(C0763j.f3786q, 0);
             if (n3 != 0) {
                 Toolbar toolbar3 = this.f1260a;
                 toolbar3.mo1194K(toolbar3.getContext(), n3);
             }
-            int n4 = v.mo1817n(C0763j.f3772o, 0);
+            int n4 = v.mo1817n(C0763j.f3776o, 0);
             if (n4 != 0) {
                 this.f1260a.setPopupTheme(n4);
             }

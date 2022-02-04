@@ -8,19 +8,19 @@ import java.util.concurrent.Executor;
 public final class C1378f {
 
     /* renamed from: a */
-    public static final Executor f5645a = new ExecutorC1379a();
+    public static final Executor f5653a = new ExecutorC1379a();
 
     /* renamed from: b */
-    static final Executor f5646b = new ExecutorC1386m();
+    static final Executor f5654b = new ExecutorC1386m();
 
     /* renamed from: c.b.a.a.g.f$a */
     private static final class ExecutorC1379a implements Executor {
 
         /* renamed from: a */
-        private final Handler f5647a = new Handler(Looper.getMainLooper());
+        private final Handler f5655a = new Handler(Looper.getMainLooper());
 
         public final void execute(Runnable runnable) {
-            this.f5647a.post(runnable);
+            this.f5655a.post(runnable);
         }
     }
 }

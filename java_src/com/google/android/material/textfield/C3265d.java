@@ -36,47 +36,47 @@ import p069c.p073b.p074a.p090b.p107z.C1462k;
 class C3265d extends AbstractC3277e {
 
     /* renamed from: d */
-    private static final boolean f10920d = (Build.VERSION.SDK_INT >= 21);
+    private static final boolean f10928d = (Build.VERSION.SDK_INT >= 21);
 
     /* renamed from: e */
-    private final TextWatcher f10921e = new C3266a();
+    private final TextWatcher f10929e = new C3266a();
 
     /* renamed from: f */
-    private final View.OnFocusChangeListener f10922f = new View$OnFocusChangeListenerC3269c();
+    private final View.OnFocusChangeListener f10930f = new View$OnFocusChangeListenerC3269c();
 
     /* renamed from: g */
-    private final TextInputLayout.C3248e f10923g = new C3270d(this.f10947a);
+    private final TextInputLayout.C3248e f10931g = new C3270d(this.f10955a);
 
     /* renamed from: h */
-    private final TextInputLayout.AbstractC3249f f10924h = new C3271e();
+    private final TextInputLayout.AbstractC3249f f10932h = new C3271e();
     @SuppressLint({"ClickableViewAccessibility"})
 
     /* renamed from: i */
-    private final TextInputLayout.AbstractC3250g f10925i = new C3272f();
+    private final TextInputLayout.AbstractC3250g f10933i = new C3272f();
 
     /* renamed from: j */
-    private boolean f10926j = false;
+    private boolean f10934j = false;
 
     /* renamed from: k */
-    private boolean f10927k = false;
+    private boolean f10935k = false;
 
     /* renamed from: l */
-    private long f10928l = Long.MAX_VALUE;
+    private long f10936l = Long.MAX_VALUE;
 
     /* renamed from: m */
-    private StateListDrawable f10929m;
+    private StateListDrawable f10937m;
 
     /* renamed from: n */
-    private C1455g f10930n;
+    private C1455g f10938n;
 
     /* renamed from: o */
-    private AccessibilityManager f10931o;
+    private AccessibilityManager f10939o;
 
     /* renamed from: p */
-    private ValueAnimator f10932p;
+    private ValueAnimator f10940p;
 
     /* renamed from: q */
-    private ValueAnimator f10933q;
+    private ValueAnimator f10941q;
 
     /* renamed from: com.google.android.material.textfield.d$a */
     class C3266a implements TextWatcher {
@@ -85,16 +85,16 @@ class C3265d extends AbstractC3277e {
         class RunnableC3267a implements Runnable {
 
             /* renamed from: b */
-            final /* synthetic */ AutoCompleteTextView f10935b;
+            final /* synthetic */ AutoCompleteTextView f10943b;
 
             RunnableC3267a(AutoCompleteTextView autoCompleteTextView) {
-                this.f10935b = autoCompleteTextView;
+                this.f10943b = autoCompleteTextView;
             }
 
             public void run() {
-                boolean isPopupShowing = this.f10935b.isPopupShowing();
+                boolean isPopupShowing = this.f10943b.isPopupShowing();
                 C3265d.this.m13665C(isPopupShowing);
-                C3265d.this.f10926j = isPopupShowing;
+                C3265d.this.f10934j = isPopupShowing;
             }
         }
 
@@ -103,7 +103,7 @@ class C3265d extends AbstractC3277e {
 
         public void afterTextChanged(Editable editable) {
             C3265d dVar = C3265d.this;
-            AutoCompleteTextView x = dVar.m13688x(dVar.f10947a.getEditText());
+            AutoCompleteTextView x = dVar.m13688x(dVar.f10955a.getEditText());
             x.post(new RunnableC3267a(x));
         }
 
@@ -121,7 +121,7 @@ class C3265d extends AbstractC3277e {
         }
 
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
-            C3265d.this.f10949c.setAlpha(((Float) valueAnimator.getAnimatedValue()).floatValue());
+            C3265d.this.f10957c.setAlpha(((Float) valueAnimator.getAnimatedValue()).floatValue());
         }
     }
 
@@ -131,10 +131,10 @@ class C3265d extends AbstractC3277e {
         }
 
         public void onFocusChange(View view, boolean z) {
-            C3265d.this.f10947a.setEndIconActivated(z);
+            C3265d.this.f10955a.setEndIconActivated(z);
             if (!z) {
                 C3265d.this.m13665C(false);
-                C3265d.this.f10926j = false;
+                C3265d.this.f10934j = false;
             }
         }
     }
@@ -149,7 +149,7 @@ class C3265d extends AbstractC3277e {
         /* renamed from: g */
         public void mo2362g(View view, C0979c cVar) {
             super.mo2362g(view, cVar);
-            if (C3265d.this.f10947a.getEditText().getKeyListener() == null) {
+            if (C3265d.this.f10955a.getEditText().getKeyListener() == null) {
                 cVar.mo5470a0(Spinner.class.getName());
             }
             if (cVar.mo5459L()) {
@@ -162,8 +162,8 @@ class C3265d extends AbstractC3277e {
         public void mo4455h(View view, AccessibilityEvent accessibilityEvent) {
             super.mo4455h(view, accessibilityEvent);
             C3265d dVar = C3265d.this;
-            AutoCompleteTextView x = dVar.m13688x(dVar.f10947a.getEditText());
-            if (accessibilityEvent.getEventType() == 1 && C3265d.this.f10931o.isTouchExplorationEnabled()) {
+            AutoCompleteTextView x = dVar.m13688x(dVar.f10955a.getEditText());
+            if (accessibilityEvent.getEventType() == 1 && C3265d.this.f10939o.isTouchExplorationEnabled()) {
                 C3265d.this.m13668F(x);
             }
         }
@@ -182,11 +182,11 @@ class C3265d extends AbstractC3277e {
             C3265d.this.m13685u(x);
             C3265d.this.m13667E(x);
             x.setThreshold(0);
-            x.removeTextChangedListener(C3265d.this.f10921e);
-            x.addTextChangedListener(C3265d.this.f10921e);
+            x.removeTextChangedListener(C3265d.this.f10929e);
+            x.addTextChangedListener(C3265d.this.f10929e);
             textInputLayout.setEndIconCheckable(true);
             textInputLayout.setErrorIconDrawable((Drawable) null);
-            textInputLayout.setTextInputAccessibilityDelegate(C3265d.this.f10923g);
+            textInputLayout.setTextInputAccessibilityDelegate(C3265d.this.f10931g);
             textInputLayout.setEndIconVisible(true);
         }
     }
@@ -201,12 +201,12 @@ class C3265d extends AbstractC3277e {
         public void mo11081a(TextInputLayout textInputLayout, int i) {
             AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) textInputLayout.getEditText();
             if (autoCompleteTextView != null && i == 3) {
-                autoCompleteTextView.removeTextChangedListener(C3265d.this.f10921e);
-                if (autoCompleteTextView.getOnFocusChangeListener() == C3265d.this.f10922f) {
+                autoCompleteTextView.removeTextChangedListener(C3265d.this.f10929e);
+                if (autoCompleteTextView.getOnFocusChangeListener() == C3265d.this.f10930f) {
                     autoCompleteTextView.setOnFocusChangeListener(null);
                 }
                 autoCompleteTextView.setOnTouchListener(null);
-                if (C3265d.f10920d) {
+                if (C3265d.f10928d) {
                     autoCompleteTextView.setOnDismissListener(null);
                 }
             }
@@ -219,7 +219,7 @@ class C3265d extends AbstractC3277e {
         }
 
         public void onClick(View view) {
-            C3265d.this.m13668F((AutoCompleteTextView) C3265d.this.f10947a.getEditText());
+            C3265d.this.m13668F((AutoCompleteTextView) C3265d.this.f10955a.getEditText());
         }
     }
 
@@ -228,18 +228,18 @@ class C3265d extends AbstractC3277e {
     public class View$OnTouchListenerC3274h implements View.OnTouchListener {
 
         /* renamed from: b */
-        final /* synthetic */ AutoCompleteTextView f10943b;
+        final /* synthetic */ AutoCompleteTextView f10951b;
 
         View$OnTouchListenerC3274h(AutoCompleteTextView autoCompleteTextView) {
-            this.f10943b = autoCompleteTextView;
+            this.f10951b = autoCompleteTextView;
         }
 
         public boolean onTouch(View view, MotionEvent motionEvent) {
             if (motionEvent.getAction() == 1) {
                 if (C3265d.this.m13664B()) {
-                    C3265d.this.f10926j = false;
+                    C3265d.this.f10934j = false;
                 }
-                C3265d.this.m13668F(this.f10943b);
+                C3265d.this.m13668F(this.f10951b);
             }
             return false;
         }
@@ -252,8 +252,8 @@ class C3265d extends AbstractC3277e {
         }
 
         public void onDismiss() {
-            C3265d.this.f10926j = true;
-            C3265d.this.f10928l = System.currentTimeMillis();
+            C3265d.this.f10934j = true;
+            C3265d.this.f10936l = System.currentTimeMillis();
             C3265d.this.m13665C(false);
         }
     }
@@ -266,8 +266,8 @@ class C3265d extends AbstractC3277e {
 
         public void onAnimationEnd(Animator animator) {
             C3265d dVar = C3265d.this;
-            dVar.f10949c.setChecked(dVar.f10927k);
-            C3265d.this.f10933q.start();
+            dVar.f10957c.setChecked(dVar.f10935k);
+            C3265d.this.f10941q.start();
         }
     }
 
@@ -277,9 +277,9 @@ class C3265d extends AbstractC3277e {
 
     /* renamed from: A */
     private void m13663A() {
-        this.f10933q = m13689y(67, 0.0f, 1.0f);
+        this.f10941q = m13689y(67, 0.0f, 1.0f);
         ValueAnimator y = m13689y(50, 1.0f, 0.0f);
-        this.f10932p = y;
+        this.f10940p = y;
         y.addListener(new C3276j());
     }
 
@@ -287,7 +287,7 @@ class C3265d extends AbstractC3277e {
     /* access modifiers changed from: public */
     /* renamed from: B */
     private boolean m13664B() {
-        long currentTimeMillis = System.currentTimeMillis() - this.f10928l;
+        long currentTimeMillis = System.currentTimeMillis() - this.f10936l;
         return currentTimeMillis < 0 || currentTimeMillis > 300;
     }
 
@@ -295,10 +295,10 @@ class C3265d extends AbstractC3277e {
     /* access modifiers changed from: public */
     /* renamed from: C */
     private void m13665C(boolean z) {
-        if (this.f10927k != z) {
-            this.f10927k = z;
-            this.f10933q.cancel();
-            this.f10932p.start();
+        if (this.f10935k != z) {
+            this.f10935k = z;
+            this.f10941q.cancel();
+            this.f10940p.start();
         }
     }
 
@@ -307,12 +307,12 @@ class C3265d extends AbstractC3277e {
     /* renamed from: D */
     private void m13666D(AutoCompleteTextView autoCompleteTextView) {
         Drawable drawable;
-        if (f10920d) {
-            int boxBackgroundMode = this.f10947a.getBoxBackgroundMode();
+        if (f10928d) {
+            int boxBackgroundMode = this.f10955a.getBoxBackgroundMode();
             if (boxBackgroundMode == 2) {
-                drawable = this.f10930n;
+                drawable = this.f10938n;
             } else if (boxBackgroundMode == 1) {
-                drawable = this.f10929m;
+                drawable = this.f10937m;
             } else {
                 return;
             }
@@ -326,8 +326,8 @@ class C3265d extends AbstractC3277e {
     /* renamed from: E */
     private void m13667E(AutoCompleteTextView autoCompleteTextView) {
         autoCompleteTextView.setOnTouchListener(new View$OnTouchListenerC3274h(autoCompleteTextView));
-        autoCompleteTextView.setOnFocusChangeListener(this.f10922f);
-        if (f10920d) {
+        autoCompleteTextView.setOnFocusChangeListener(this.f10930f);
+        if (f10928d) {
             autoCompleteTextView.setOnDismissListener(new C3275i());
         }
     }
@@ -338,16 +338,16 @@ class C3265d extends AbstractC3277e {
     private void m13668F(AutoCompleteTextView autoCompleteTextView) {
         if (autoCompleteTextView != null) {
             if (m13664B()) {
-                this.f10926j = false;
+                this.f10934j = false;
             }
-            if (!this.f10926j) {
-                if (f10920d) {
-                    m13665C(!this.f10927k);
+            if (!this.f10934j) {
+                if (f10928d) {
+                    m13665C(!this.f10935k);
                 } else {
-                    this.f10927k = !this.f10927k;
-                    this.f10949c.toggle();
+                    this.f10935k = !this.f10935k;
+                    this.f10957c.toggle();
                 }
-                if (this.f10927k) {
+                if (this.f10935k) {
                     autoCompleteTextView.requestFocus();
                     autoCompleteTextView.showDropDown();
                     return;
@@ -355,7 +355,7 @@ class C3265d extends AbstractC3277e {
                 autoCompleteTextView.dismissDropDown();
                 return;
             }
-            this.f10926j = false;
+            this.f10934j = false;
         }
     }
 
@@ -364,9 +364,9 @@ class C3265d extends AbstractC3277e {
     /* renamed from: u */
     private void m13685u(AutoCompleteTextView autoCompleteTextView) {
         if (autoCompleteTextView.getKeyListener() == null) {
-            int boxBackgroundMode = this.f10947a.getBoxBackgroundMode();
-            C1455g boxBackground = this.f10947a.getBoxBackground();
-            int c = C1428a.m7052c(autoCompleteTextView, C1391b.f5672g);
+            int boxBackgroundMode = this.f10955a.getBoxBackgroundMode();
+            C1455g boxBackground = this.f10955a.getBoxBackground();
+            int c = C1428a.m7052c(autoCompleteTextView, C1391b.f5680g);
             int[][] iArr = {new int[]{16842919}, new int[0]};
             if (boxBackgroundMode == 2) {
                 m13687w(autoCompleteTextView, c, iArr, boxBackground);
@@ -378,9 +378,9 @@ class C3265d extends AbstractC3277e {
 
     /* renamed from: v */
     private void m13686v(AutoCompleteTextView autoCompleteTextView, int i, int[][] iArr, C1455g gVar) {
-        int boxBackgroundColor = this.f10947a.getBoxBackgroundColor();
+        int boxBackgroundColor = this.f10955a.getBoxBackgroundColor();
         int[] iArr2 = {C1428a.m7055f(i, boxBackgroundColor, 0.1f), boxBackgroundColor};
-        if (f10920d) {
+        if (f10928d) {
             C1013s.m5772l0(autoCompleteTextView, new RippleDrawable(new ColorStateList(iArr, iArr2), gVar, gVar));
             return;
         }
@@ -402,7 +402,7 @@ class C3265d extends AbstractC3277e {
         C1455g gVar2 = new C1455g(gVar.mo6597C());
         int f = C1428a.m7055f(i, c, 0.1f);
         gVar2.mo6608V(new ColorStateList(iArr, new int[]{f, 0}));
-        if (f10920d) {
+        if (f10928d) {
             gVar2.setTint(c);
             ColorStateList colorStateList = new ColorStateList(iArr, new int[]{f, c});
             C1455g gVar3 = new C1455g(gVar.mo6597C());
@@ -427,7 +427,7 @@ class C3265d extends AbstractC3277e {
     /* renamed from: y */
     private ValueAnimator m13689y(int i, float... fArr) {
         ValueAnimator ofFloat = ValueAnimator.ofFloat(fArr);
-        ofFloat.setInterpolator(C1401a.f6006a);
+        ofFloat.setInterpolator(C1401a.f6014a);
         ofFloat.setDuration((long) i);
         ofFloat.addUpdateListener(new C3268b());
         return ofFloat;
@@ -436,7 +436,7 @@ class C3265d extends AbstractC3277e {
     /* renamed from: z */
     private C1455g m13690z(float f, float f2, float f3, int i) {
         C1462k m = C1462k.m7189a().mo6679z(f).mo6665D(f).mo6671r(f2).mo6675v(f2).mo6667m();
-        C1455g m2 = C1455g.m7141m(this.f10948b, f3);
+        C1455g m2 = C1455g.m7141m(this.f10956b, f3);
         m2.setShapeAppearanceModel(m);
         m2.mo6610X(0, i, 0, i);
         return m2;
@@ -446,25 +446,25 @@ class C3265d extends AbstractC3277e {
     @Override // com.google.android.material.textfield.AbstractC3277e
     /* renamed from: a */
     public void mo11089a() {
-        float dimensionPixelOffset = (float) this.f10948b.getResources().getDimensionPixelOffset(C1393d.mtrl_shape_corner_size_small_component);
-        float dimensionPixelOffset2 = (float) this.f10948b.getResources().getDimensionPixelOffset(C1393d.mtrl_exposed_dropdown_menu_popup_elevation);
-        int dimensionPixelOffset3 = this.f10948b.getResources().getDimensionPixelOffset(C1393d.mtrl_exposed_dropdown_menu_popup_vertical_padding);
+        float dimensionPixelOffset = (float) this.f10956b.getResources().getDimensionPixelOffset(C1393d.mtrl_shape_corner_size_small_component);
+        float dimensionPixelOffset2 = (float) this.f10956b.getResources().getDimensionPixelOffset(C1393d.mtrl_exposed_dropdown_menu_popup_elevation);
+        int dimensionPixelOffset3 = this.f10956b.getResources().getDimensionPixelOffset(C1393d.mtrl_exposed_dropdown_menu_popup_vertical_padding);
         C1455g z = m13690z(dimensionPixelOffset, dimensionPixelOffset, dimensionPixelOffset2, dimensionPixelOffset3);
         C1455g z2 = m13690z(0.0f, dimensionPixelOffset, dimensionPixelOffset2, dimensionPixelOffset3);
-        this.f10930n = z;
+        this.f10938n = z;
         StateListDrawable stateListDrawable = new StateListDrawable();
-        this.f10929m = stateListDrawable;
+        this.f10937m = stateListDrawable;
         stateListDrawable.addState(new int[]{16842922}, z);
-        this.f10929m.addState(new int[0], z2);
-        this.f10947a.setEndIconDrawable(C0764a.m4517d(this.f10948b, f10920d ? C1394e.mtrl_dropdown_arrow : C1394e.mtrl_ic_arrow_drop_down));
-        TextInputLayout textInputLayout = this.f10947a;
+        this.f10937m.addState(new int[0], z2);
+        this.f10955a.setEndIconDrawable(C0764a.m4517d(this.f10956b, f10928d ? C1394e.mtrl_dropdown_arrow : C1394e.mtrl_ic_arrow_drop_down));
+        TextInputLayout textInputLayout = this.f10955a;
         textInputLayout.setEndIconContentDescription(textInputLayout.getResources().getText(C1398i.exposed_dropdown_menu_content_description));
-        this.f10947a.setEndIconOnClickListener(new View$OnClickListenerC3273g());
-        this.f10947a.mo10937e(this.f10924h);
-        this.f10947a.mo10938f(this.f10925i);
+        this.f10955a.setEndIconOnClickListener(new View$OnClickListenerC3273g());
+        this.f10955a.mo10937e(this.f10932h);
+        this.f10955a.mo10938f(this.f10933i);
         m13663A();
-        C1013s.m5786s0(this.f10949c, 2);
-        this.f10931o = (AccessibilityManager) this.f10948b.getSystemService("accessibility");
+        C1013s.m5786s0(this.f10957c, 2);
+        this.f10939o = (AccessibilityManager) this.f10956b.getSystemService("accessibility");
     }
 
     /* access modifiers changed from: package-private */

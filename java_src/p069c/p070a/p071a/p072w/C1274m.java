@@ -6,10 +6,10 @@ import java.io.ByteArrayOutputStream;
 public class C1274m extends ByteArrayOutputStream {
 
     /* renamed from: b */
-    private final C1259d f5525b;
+    private final C1259d f5532b;
 
     public C1274m(C1259d dVar, int i) {
-        this.f5525b = dVar;
+        this.f5532b = dVar;
         ((ByteArrayOutputStream) this).buf = dVar.mo6233a(Math.max(i, 256));
     }
 
@@ -17,23 +17,23 @@ public class C1274m extends ByteArrayOutputStream {
     private void m6748a(int i) {
         int i2 = ((ByteArrayOutputStream) this).count;
         if (i2 + i > ((ByteArrayOutputStream) this).buf.length) {
-            byte[] a = this.f5525b.mo6233a((i2 + i) * 2);
+            byte[] a = this.f5532b.mo6233a((i2 + i) * 2);
             System.arraycopy(((ByteArrayOutputStream) this).buf, 0, a, 0, ((ByteArrayOutputStream) this).count);
-            this.f5525b.mo6234b(((ByteArrayOutputStream) this).buf);
+            this.f5532b.mo6234b(((ByteArrayOutputStream) this).buf);
             ((ByteArrayOutputStream) this).buf = a;
         }
     }
 
     @Override // java.io.OutputStream, java.io.ByteArrayOutputStream, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f5525b.mo6234b(((ByteArrayOutputStream) this).buf);
+        this.f5532b.mo6234b(((ByteArrayOutputStream) this).buf);
         ((ByteArrayOutputStream) this).buf = null;
         super.close();
     }
 
     @Override // java.lang.Object
     public void finalize() {
-        this.f5525b.mo6234b(((ByteArrayOutputStream) this).buf);
+        this.f5532b.mo6234b(((ByteArrayOutputStream) this).buf);
     }
 
     @Override // java.io.OutputStream, java.io.ByteArrayOutputStream

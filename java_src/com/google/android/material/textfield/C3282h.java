@@ -12,8 +12,8 @@ class C3282h extends AbstractC3277e {
     @Override // com.google.android.material.textfield.AbstractC3277e
     /* renamed from: a */
     public void mo11089a() {
-        this.f10947a.setEndIconOnClickListener(null);
-        this.f10947a.setEndIconDrawable((Drawable) null);
-        this.f10947a.setEndIconContentDescription((CharSequence) null);
+        this.f10955a.setEndIconOnClickListener(null);
+        this.f10955a.setEndIconDrawable((Drawable) null);
+        this.f10955a.setEndIconContentDescription((CharSequence) null);
     }
 }

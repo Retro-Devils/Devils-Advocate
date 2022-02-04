@@ -9,7 +9,7 @@ final class C1603v {
     /* renamed from: a */
     static C1582g m7731a(Bundle bundle, String str, String str2) {
         String format;
-        C1582g gVar = C1602u.f6509l;
+        C1582g gVar = C1602u.f6517l;
         if (bundle == null) {
             format = String.format("%s got null owned items list", str2);
         } else {
@@ -29,7 +29,7 @@ final class C1603v {
                 } else if (stringArrayList2 == null) {
                     format = String.format("Bundle returned from %s contains null purchases list.", str2);
                 } else if (stringArrayList3 != null) {
-                    return C1602u.f6513p;
+                    return C1602u.f6521p;
                 } else {
                     format = String.format("Bundle returned from %s contains null signatures list.", str2);
                 }

@@ -18,7 +18,7 @@ import p069c.p070a.p071a.p072w.C1272k;
 public class C2782u3 extends AbstractC2307f1 {
 
     /* renamed from: x0 */
-    private boolean f9434x0 = true;
+    private boolean f9442x0 = true;
 
     /* renamed from: com.digdroid.alman.dig.u3$a */
     class C2783a implements C1245p.AbstractC1247b<JSONObject> {
@@ -31,7 +31,7 @@ public class C2782u3 extends AbstractC2307f1 {
                 try {
                     if (jSONObject.has("themes")) {
                         JSONArray jSONArray = jSONObject.getJSONArray("themes");
-                        C2782u3.this.f8794a0.mo9325c().execSQL("DELETE FROM themes");
+                        C2782u3.this.f8802a0.mo9325c().execSQL("DELETE FROM themes");
                         for (int i = 0; i < jSONArray.length(); i++) {
                             JSONObject jSONObject2 = jSONArray.getJSONObject(i);
                             ContentValues contentValues = new ContentValues();
@@ -41,9 +41,9 @@ public class C2782u3 extends AbstractC2307f1 {
                             contentValues.put("modified", Long.valueOf(jSONObject2.getLong("updated")));
                             contentValues.put("minsize", Long.valueOf(jSONObject2.getLong("minsize")));
                             contentValues.put("maxsize", Long.valueOf(jSONObject2.getLong("maxsize")));
-                            C2782u3.this.f8794a0.mo9325c().insert("themes", null, contentValues);
+                            C2782u3.this.f8802a0.mo9325c().insert("themes", null, contentValues);
                         }
-                        C2219c3 c3Var = C2782u3.this.f8793Z;
+                        C2219c3 c3Var = C2782u3.this.f8801Z;
                         c3Var.mo8157F("themes_updated", c3Var.mo8190n("new_themes_updated", 0));
                         C2782u3.this.mo9021q3();
                     }
@@ -104,11 +104,11 @@ public class C2782u3 extends AbstractC2307f1 {
     public boolean mo8243H2(MenuItem menuItem) {
         int itemId = menuItem.getItemId();
         if (itemId == R.id.sort_date) {
-            this.f9434x0 = false;
+            this.f9442x0 = false;
         } else if (itemId != R.id.sort_name) {
             return super.mo8243H2(menuItem);
         } else {
-            this.f9434x0 = true;
+            this.f9442x0 = true;
         }
         mo2552c0().invalidateOptionsMenu();
         mo9021q3();
@@ -126,7 +126,7 @@ public class C2782u3 extends AbstractC2307f1 {
     public void mo2537W0(Bundle bundle) {
         super.mo2537W0(bundle);
         if (bundle != null) {
-            this.f9434x0 = bundle.getBoolean("themes_sort_name");
+            this.f9442x0 = bundle.getBoolean("themes_sort_name");
         }
     }
 
@@ -175,8 +175,8 @@ public class C2782u3 extends AbstractC2307f1 {
     public Cursor mo8694k3() {
         StringBuilder sb = new StringBuilder();
         sb.append("SELECT _id,name,forum_id,image_url,modified,minsize,maxsize FROM themes ORDER BY ");
-        sb.append(this.f9434x0 ? "name ASC" : "modified DESC");
-        Cursor rawQuery = this.f8794a0.mo9325c().rawQuery(sb.toString(), null);
+        sb.append(this.f9442x0 ? "name ASC" : "modified DESC");
+        Cursor rawQuery = this.f8802a0.mo9325c().rawQuery(sb.toString(), null);
         mo8434z3(rawQuery);
         return rawQuery;
     }
@@ -200,7 +200,7 @@ public class C2782u3 extends AbstractC2307f1 {
         if (obj != null) {
             try {
                 Cursor cursor = (Cursor) obj;
-                AbstractC2531p1.AbstractC2532a aVar = this.f8806m0;
+                AbstractC2531p1.AbstractC2532a aVar = this.f8814m0;
                 aVar.mo8304z("https://digdroid.com/forums/discussion/" + cursor.getInt(cursor.getColumnIndex("forum_id")));
             } catch (Exception unused) {
             }
@@ -211,15 +211,15 @@ public class C2782u3 extends AbstractC2307f1 {
     /* renamed from: p2 */
     public void mo8439p2(Menu menu) {
         super.mo8439p2(menu);
-        menu.findItem(R.id.sort_name).setVisible(!this.f9434x0);
-        menu.findItem(R.id.sort_date).setVisible(this.f9434x0);
+        menu.findItem(R.id.sort_name).setVisible(!this.f9442x0);
+        menu.findItem(R.id.sort_date).setVisible(this.f9442x0);
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2577r1, com.digdroid.alman.dig.AbstractC2531p1, com.digdroid.alman.dig.AbstractC2307f1, androidx.fragment.app.Fragment
     /* renamed from: r1 */
     public void mo2601r1() {
         super.mo2601r1();
-        if (this.f8793Z.mo8190n("new_themes_updated", 0) > this.f8793Z.mo8190n("themes_updated", 0)) {
+        if (this.f8801Z.mo8190n("new_themes_updated", 0) > this.f8801Z.mo8190n("themes_updated", 0)) {
             C1272k kVar = new C1272k("https://digdroid.com/php/themes.txt", null, new C2783a(), new C2784b());
             try {
                 kVar.mo6189L(false);
@@ -239,7 +239,7 @@ public class C2782u3 extends AbstractC2307f1 {
     @Override // com.digdroid.alman.dig.AbstractC2577r1, androidx.fragment.app.Fragment
     /* renamed from: s1 */
     public void mo2603s1(Bundle bundle) {
-        bundle.putBoolean("themes_sort_name", this.f9434x0);
+        bundle.putBoolean("themes_sort_name", this.f9442x0);
         super.mo2603s1(bundle);
     }
 
@@ -255,11 +255,11 @@ public class C2782u3 extends AbstractC2307f1 {
     public void mo8434z3(Cursor cursor) {
         ActivityC0447d c0;
         if (cursor.moveToFirst() && (c0 = mo2552c0()) != null && !c0.isFinishing()) {
-            this.f8170v0 = new boolean[cursor.getCount()];
+            this.f8178v0 = new boolean[cursor.getCount()];
             int i = 0;
             while (true) {
                 int i2 = i + 1;
-                this.f8170v0[i] = !cursor.getString(cursor.getColumnIndex("image_url")).equals("");
+                this.f8178v0[i] = !cursor.getString(cursor.getColumnIndex("image_url")).equals("");
                 if (cursor.moveToNext()) {
                     i = i2;
                 } else {

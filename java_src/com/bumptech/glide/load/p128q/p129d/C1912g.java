@@ -11,19 +11,19 @@ import java.nio.ByteBuffer;
 public class C1912g implements AbstractC1649k<ByteBuffer, Bitmap> {
 
     /* renamed from: a */
-    private final C1930m f7183a;
+    private final C1930m f7191a;
 
     public C1912g(C1930m mVar) {
-        this.f7183a = mVar;
+        this.f7191a = mVar;
     }
 
     /* renamed from: c */
     public AbstractC1794v<Bitmap> mo7088a(ByteBuffer byteBuffer, int i, int i2, C1647i iVar) {
-        return this.f7183a.mo7517f(C2068a.m9403f(byteBuffer), i, i2, iVar);
+        return this.f7191a.mo7517f(C2068a.m9403f(byteBuffer), i, i2, iVar);
     }
 
     /* renamed from: d */
     public boolean mo7089b(ByteBuffer byteBuffer, C1647i iVar) {
-        return this.f7183a.mo7521q(byteBuffer);
+        return this.f7191a.mo7521q(byteBuffer);
     }
 }

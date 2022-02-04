@@ -8,21 +8,21 @@ import com.google.android.gms.common.internal.C3022p;
 public final class C2943j0<O extends C2894a.AbstractC2898d> {
 
     /* renamed from: a */
-    private final boolean f9850a = false;
+    private final boolean f9858a = false;
 
     /* renamed from: b */
-    private final int f9851b;
+    private final int f9859b;
 
     /* renamed from: c */
-    private final C2894a<O> f9852c;
+    private final C2894a<O> f9860c;
 
     /* renamed from: d */
-    private final O f9853d;
+    private final O f9861d;
 
     private C2943j0(C2894a<O> aVar, O o) {
-        this.f9852c = aVar;
-        this.f9853d = o;
-        this.f9851b = C3022p.m12362b(aVar, o);
+        this.f9860c = aVar;
+        this.f9861d = o;
+        this.f9859b = C3022p.m12362b(aVar, o);
     }
 
     /* renamed from: a */
@@ -32,7 +32,7 @@ public final class C2943j0<O extends C2894a.AbstractC2898d> {
 
     /* renamed from: b */
     public final String mo9668b() {
-        return this.f9852c.mo9562b();
+        return this.f9860c.mo9562b();
     }
 
     public final boolean equals(Object obj) {
@@ -43,10 +43,10 @@ public final class C2943j0<O extends C2894a.AbstractC2898d> {
             return false;
         }
         C2943j0 j0Var = (C2943j0) obj;
-        return !this.f9850a && !j0Var.f9850a && C3022p.m12361a(this.f9852c, j0Var.f9852c) && C3022p.m12361a(this.f9853d, j0Var.f9853d);
+        return !this.f9858a && !j0Var.f9858a && C3022p.m12361a(this.f9860c, j0Var.f9860c) && C3022p.m12361a(this.f9861d, j0Var.f9861d);
     }
 
     public final int hashCode() {
-        return this.f9851b;
+        return this.f9859b;
     }
 }

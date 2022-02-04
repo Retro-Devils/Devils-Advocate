@@ -5,13 +5,13 @@ package p006b.p021d;
 public class C0829e {
 
     /* renamed from: a */
-    static final int[] f4085a = new int[0];
+    static final int[] f4089a = new int[0];
 
     /* renamed from: b */
-    static final long[] f4086b = new long[0];
+    static final long[] f4090b = new long[0];
 
     /* renamed from: c */
-    static final Object[] f4087c = new Object[0];
+    static final Object[] f4091c = new Object[0];
 
     /* renamed from: a */
     static int m4844a(int[] iArr, int i, int i2) {

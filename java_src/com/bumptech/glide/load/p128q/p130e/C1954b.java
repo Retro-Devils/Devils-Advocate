@@ -7,21 +7,21 @@ import com.bumptech.glide.p144t.C2081j;
 public class C1954b implements AbstractC1794v<byte[]> {
 
     /* renamed from: b */
-    private final byte[] f7257b;
+    private final byte[] f7265b;
 
     public C1954b(byte[] bArr) {
-        this.f7257b = (byte[]) C2081j.m9432d(bArr);
+        this.f7265b = (byte[]) C2081j.m9432d(bArr);
     }
 
     /* renamed from: a */
     public byte[] mo7358c() {
-        return this.f7257b;
+        return this.f7265b;
     }
 
     @Override // com.bumptech.glide.load.p122o.AbstractC1794v
     /* renamed from: b */
     public int mo7357b() {
-        return this.f7257b.length;
+        return this.f7265b.length;
     }
 
     @Override // com.bumptech.glide.load.p122o.AbstractC1794v

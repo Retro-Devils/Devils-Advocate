@@ -10,37 +10,37 @@ import java.util.Map;
 public final class C1833j implements AbstractC1830h {
 
     /* renamed from: c */
-    private final Map<String, List<AbstractC1832i>> f7062c;
+    private final Map<String, List<AbstractC1832i>> f7070c;
 
     /* renamed from: d */
-    private volatile Map<String, String> f7063d;
+    private volatile Map<String, String> f7071d;
 
     /* renamed from: com.bumptech.glide.load.p.j$a */
     public static final class C1834a {
 
         /* renamed from: a */
-        private static final String f7064a;
+        private static final String f7072a;
 
         /* renamed from: b */
-        private static final Map<String, List<AbstractC1832i>> f7065b;
+        private static final Map<String, List<AbstractC1832i>> f7073b;
 
         /* renamed from: c */
-        private boolean f7066c = true;
+        private boolean f7074c = true;
 
         /* renamed from: d */
-        private Map<String, List<AbstractC1832i>> f7067d = f7065b;
+        private Map<String, List<AbstractC1832i>> f7075d = f7073b;
 
         /* renamed from: e */
-        private boolean f7068e = true;
+        private boolean f7076e = true;
 
         static {
             String b = m8486b();
-            f7064a = b;
+            f7072a = b;
             HashMap hashMap = new HashMap(2);
             if (!TextUtils.isEmpty(b)) {
                 hashMap.put("User-Agent", Collections.singletonList(new C1835b(b)));
             }
-            f7065b = Collections.unmodifiableMap(hashMap);
+            f7073b = Collections.unmodifiableMap(hashMap);
         }
 
         /* renamed from: b */
@@ -63,8 +63,8 @@ public final class C1833j implements AbstractC1830h {
 
         /* renamed from: a */
         public C1833j mo7431a() {
-            this.f7066c = true;
-            return new C1833j(this.f7067d);
+            this.f7074c = true;
+            return new C1833j(this.f7075d);
         }
     }
 
@@ -72,36 +72,36 @@ public final class C1833j implements AbstractC1830h {
     static final class C1835b implements AbstractC1832i {
 
         /* renamed from: a */
-        private final String f7069a;
+        private final String f7077a;
 
         C1835b(String str) {
-            this.f7069a = str;
+            this.f7077a = str;
         }
 
         @Override // com.bumptech.glide.load.p126p.AbstractC1832i
         /* renamed from: a */
         public String mo7427a() {
-            return this.f7069a;
+            return this.f7077a;
         }
 
         public boolean equals(Object obj) {
             if (obj instanceof C1835b) {
-                return this.f7069a.equals(((C1835b) obj).f7069a);
+                return this.f7077a.equals(((C1835b) obj).f7077a);
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f7069a.hashCode();
+            return this.f7077a.hashCode();
         }
 
         public String toString() {
-            return "StringHeaderFactory{value='" + this.f7069a + '\'' + '}';
+            return "StringHeaderFactory{value='" + this.f7077a + '\'' + '}';
         }
     }
 
     C1833j(Map<String, List<AbstractC1832i>> map) {
-        this.f7062c = Collections.unmodifiableMap(map);
+        this.f7070c = Collections.unmodifiableMap(map);
     }
 
     /* renamed from: b */
@@ -123,7 +123,7 @@ public final class C1833j implements AbstractC1830h {
     /* renamed from: c */
     private Map<String, String> m8484c() {
         HashMap hashMap = new HashMap();
-        for (Map.Entry<String, List<AbstractC1832i>> entry : this.f7062c.entrySet()) {
+        for (Map.Entry<String, List<AbstractC1832i>> entry : this.f7070c.entrySet()) {
             String b = m8483b(entry.getValue());
             if (!TextUtils.isEmpty(b)) {
                 hashMap.put(entry.getKey(), b);
@@ -135,28 +135,28 @@ public final class C1833j implements AbstractC1830h {
     @Override // com.bumptech.glide.load.p126p.AbstractC1830h
     /* renamed from: a */
     public Map<String, String> mo7426a() {
-        if (this.f7063d == null) {
+        if (this.f7071d == null) {
             synchronized (this) {
-                if (this.f7063d == null) {
-                    this.f7063d = Collections.unmodifiableMap(m8484c());
+                if (this.f7071d == null) {
+                    this.f7071d = Collections.unmodifiableMap(m8484c());
                 }
             }
         }
-        return this.f7063d;
+        return this.f7071d;
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof C1833j) {
-            return this.f7062c.equals(((C1833j) obj).f7062c);
+            return this.f7070c.equals(((C1833j) obj).f7070c);
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f7062c.hashCode();
+        return this.f7070c.hashCode();
     }
 
     public String toString() {
-        return "LazyHeaders{headers=" + this.f7062c + '}';
+        return "LazyHeaders{headers=" + this.f7070c + '}';
     }
 }

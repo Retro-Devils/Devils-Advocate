@@ -17,15 +17,15 @@ public class ActivityC2800v1 extends ActivityC2220c4 {
         mo8204h1();
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         DrawerLayout.C0427e eVar = (DrawerLayout.C0427e) navigationView.getLayoutParams();
-        eVar.setMargins(this.f7960P, this.f7961Q, this.f7963S, this.f7962R);
+        eVar.setMargins(this.f7968P, this.f7969Q, this.f7971S, this.f7970R);
         navigationView.setLayoutParams(eVar);
         ConstraintLayout constraintLayout = (ConstraintLayout) findViewById(R.id.viewport_container);
         C0322d dVar = new C0322d();
         dVar.mo1997f(constraintLayout);
-        dVar.mo2001o(R.id.viewport_top, this.f7961Q);
-        dVar.mo2002p(R.id.viewport_bottom, this.f7962R);
-        dVar.mo2001o(R.id.viewport_left, this.f7960P);
-        dVar.mo2002p(R.id.viewport_right, this.f7963S);
+        dVar.mo2001o(R.id.viewport_top, this.f7969Q);
+        dVar.mo2002p(R.id.viewport_bottom, this.f7970R);
+        dVar.mo2001o(R.id.viewport_left, this.f7968P);
+        dVar.mo2002p(R.id.viewport_right, this.f7971S);
         C1151o.m6329a(constraintLayout);
         dVar.mo1994c(constraintLayout);
     }

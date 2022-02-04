@@ -14,19 +14,19 @@ import java.nio.charset.Charset;
 public final class C1916k implements ImageHeaderParser {
 
     /* renamed from: a */
-    static final byte[] f7187a = "Exif\u0000\u0000".getBytes(Charset.forName("UTF-8"));
+    static final byte[] f7195a = "Exif\u0000\u0000".getBytes(Charset.forName("UTF-8"));
 
     /* renamed from: b */
-    private static final int[] f7188b = {0, 1, 1, 2, 4, 8, 1, 1, 2, 4, 8, 4, 8};
+    private static final int[] f7196b = {0, 1, 1, 2, 4, 8, 1, 1, 2, 4, 8, 4, 8};
 
     /* renamed from: com.bumptech.glide.load.q.d.k$a */
     private static final class C1917a implements AbstractC1919c {
 
         /* renamed from: a */
-        private final ByteBuffer f7189a;
+        private final ByteBuffer f7197a;
 
         C1917a(ByteBuffer byteBuffer) {
-            this.f7189a = byteBuffer;
+            this.f7197a = byteBuffer;
             byteBuffer.order(ByteOrder.BIG_ENDIAN);
         }
 
@@ -39,8 +39,8 @@ public final class C1916k implements ImageHeaderParser {
         @Override // com.bumptech.glide.load.p128q.p129d.C1916k.AbstractC1919c
         /* renamed from: b */
         public long mo7507b(long j) {
-            int min = (int) Math.min((long) this.f7189a.remaining(), j);
-            ByteBuffer byteBuffer = this.f7189a;
+            int min = (int) Math.min((long) this.f7197a.remaining(), j);
+            ByteBuffer byteBuffer = this.f7197a;
             byteBuffer.position(byteBuffer.position() + min);
             return (long) min;
         }
@@ -48,19 +48,19 @@ public final class C1916k implements ImageHeaderParser {
         @Override // com.bumptech.glide.load.p128q.p129d.C1916k.AbstractC1919c
         /* renamed from: c */
         public int mo7508c(byte[] bArr, int i) {
-            int min = Math.min(i, this.f7189a.remaining());
+            int min = Math.min(i, this.f7197a.remaining());
             if (min == 0) {
                 return -1;
             }
-            this.f7189a.get(bArr, 0, min);
+            this.f7197a.get(bArr, 0, min);
             return min;
         }
 
         @Override // com.bumptech.glide.load.p128q.p129d.C1916k.AbstractC1919c
         /* renamed from: d */
         public short mo7509d() {
-            if (this.f7189a.remaining() >= 1) {
-                return (short) (this.f7189a.get() & 255);
+            if (this.f7197a.remaining() >= 1) {
+                return (short) (this.f7197a.get() & 255);
             }
             throw new AbstractC1919c.C1920a();
         }
@@ -71,22 +71,22 @@ public final class C1916k implements ImageHeaderParser {
     public static final class C1918b {
 
         /* renamed from: a */
-        private final ByteBuffer f7190a;
+        private final ByteBuffer f7198a;
 
         C1918b(byte[] bArr, int i) {
-            this.f7190a = (ByteBuffer) ByteBuffer.wrap(bArr).order(ByteOrder.BIG_ENDIAN).limit(i);
+            this.f7198a = (ByteBuffer) ByteBuffer.wrap(bArr).order(ByteOrder.BIG_ENDIAN).limit(i);
         }
 
         /* renamed from: c */
         private boolean m8709c(int i, int i2) {
-            return this.f7190a.remaining() - i >= i2;
+            return this.f7198a.remaining() - i >= i2;
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: a */
         public short mo7510a(int i) {
             if (m8709c(i, 2)) {
-                return this.f7190a.getShort(i);
+                return this.f7198a.getShort(i);
             }
             return -1;
         }
@@ -95,7 +95,7 @@ public final class C1916k implements ImageHeaderParser {
         /* renamed from: b */
         public int mo7511b(int i) {
             if (m8709c(i, 4)) {
-                return this.f7190a.getInt(i);
+                return this.f7198a.getInt(i);
             }
             return -1;
         }
@@ -103,13 +103,13 @@ public final class C1916k implements ImageHeaderParser {
         /* access modifiers changed from: package-private */
         /* renamed from: d */
         public int mo7512d() {
-            return this.f7190a.remaining();
+            return this.f7198a.remaining();
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: e */
         public void mo7513e(ByteOrder byteOrder) {
-            this.f7190a.order(byteOrder);
+            this.f7198a.order(byteOrder);
         }
     }
 
@@ -141,10 +141,10 @@ public final class C1916k implements ImageHeaderParser {
     private static final class C1921d implements AbstractC1919c {
 
         /* renamed from: a */
-        private final InputStream f7191a;
+        private final InputStream f7199a;
 
         C1921d(InputStream inputStream) {
-            this.f7191a = inputStream;
+            this.f7199a = inputStream;
         }
 
         @Override // com.bumptech.glide.load.p128q.p129d.C1916k.AbstractC1919c
@@ -161,9 +161,9 @@ public final class C1916k implements ImageHeaderParser {
             }
             long j2 = j;
             while (j2 > 0) {
-                long skip = this.f7191a.skip(j2);
+                long skip = this.f7199a.skip(j2);
                 if (skip <= 0) {
-                    if (this.f7191a.read() == -1) {
+                    if (this.f7199a.read() == -1) {
                         break;
                     }
                     skip = 1;
@@ -178,7 +178,7 @@ public final class C1916k implements ImageHeaderParser {
         public int mo7508c(byte[] bArr, int i) {
             int i2 = 0;
             int i3 = 0;
-            while (i2 < i && (i3 = this.f7191a.read(bArr, i2, i - i2)) != -1) {
+            while (i2 < i && (i3 = this.f7199a.read(bArr, i2, i - i2)) != -1) {
                 i2 += i3;
             }
             if (i2 != 0 || i3 != -1) {
@@ -190,7 +190,7 @@ public final class C1916k implements ImageHeaderParser {
         @Override // com.bumptech.glide.load.p128q.p129d.C1916k.AbstractC1919c
         /* renamed from: d */
         public short mo7509d() {
-            int read = this.f7191a.read();
+            int read = this.f7199a.read();
             if (read != -1) {
                 return (short) read;
             }
@@ -284,11 +284,11 @@ public final class C1916k implements ImageHeaderParser {
 
     /* renamed from: h */
     private boolean m8698h(byte[] bArr, int i) {
-        boolean z = bArr != null && i > f7187a.length;
+        boolean z = bArr != null && i > f7195a.length;
         if (z) {
             int i2 = 0;
             while (true) {
-                byte[] bArr2 = f7187a;
+                byte[] bArr2 = f7195a;
                 if (i2 >= bArr2.length) {
                     break;
                 } else if (bArr[i2] != bArr2[i2]) {
@@ -367,7 +367,7 @@ public final class C1916k implements ImageHeaderParser {
                         if (Log.isLoggable("DfltImageHeaderParser", 3)) {
                             Log.d("DfltImageHeaderParser", "Got tagIndex=" + i + " tagType=" + ((int) a3) + " formatCode=" + ((int) a4) + " componentCount=" + b2);
                         }
-                        int i2 = b2 + f7188b[a4];
+                        int i2 = b2 + f7196b[a4];
                         if (i2 <= 4) {
                             int i3 = d + 8;
                             if (i3 < 0 || i3 > bVar.mo7512d()) {

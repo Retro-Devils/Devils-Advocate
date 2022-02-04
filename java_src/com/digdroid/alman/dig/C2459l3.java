@@ -18,41 +18,41 @@ import com.digdroid.alman.dig.C2749t1;
 public class C2459l3 extends AbstractC2577r1 implements C2324g1.AbstractC2325a {
 
     /* renamed from: s0 */
-    int f8580s0;
+    int f8588s0;
 
     /* renamed from: t0 */
-    String f8581t0;
+    String f8589t0;
 
     /* renamed from: com.digdroid.alman.dig.l3$a */
     class C2460a implements C2267e2.AbstractC2291x {
 
         /* renamed from: a */
-        int f8582a = -1;
+        int f8590a = -1;
 
         /* renamed from: b */
-        Handler f8583b = new Handler();
+        Handler f8591b = new Handler();
 
         /* renamed from: com.digdroid.alman.dig.l3$a$a */
         class RunnableC2461a implements Runnable {
 
             /* renamed from: b */
-            final /* synthetic */ int f8585b;
+            final /* synthetic */ int f8593b;
 
             RunnableC2461a(int i) {
-                this.f8585b = i;
+                this.f8593b = i;
             }
 
             public void run() {
                 if (C2459l3.this.mo8102B2()) {
-                    int i = this.f8585b;
+                    int i = this.f8593b;
                     C2460a aVar = C2460a.this;
-                    if (i != aVar.f8582a) {
+                    if (i != aVar.f8590a) {
                         C2459l3 l3Var = C2459l3.this;
-                        if (l3Var.f8803j0) {
+                        if (l3Var.f8811j0) {
                             l3Var.m10591z3(i);
                         }
                     }
-                    C2460a.this.f8582a = this.f8585b;
+                    C2460a.this.f8590a = this.f8593b;
                 }
             }
         }
@@ -63,8 +63,8 @@ public class C2459l3 extends AbstractC2577r1 implements C2324g1.AbstractC2325a {
         @Override // com.digdroid.alman.dig.C2267e2.AbstractC2291x
         /* renamed from: a */
         public void mo8406a(View view, int i) {
-            this.f8583b.removeCallbacksAndMessages(null);
-            this.f8583b.postDelayed(new RunnableC2461a(i), 100);
+            this.f8591b.removeCallbacksAndMessages(null);
+            this.f8591b.postDelayed(new RunnableC2461a(i), 100);
         }
     }
 
@@ -85,21 +85,21 @@ public class C2459l3 extends AbstractC2577r1 implements C2324g1.AbstractC2325a {
     public class C2463c implements C2223d0.AbstractC2249s {
 
         /* renamed from: a */
-        final /* synthetic */ String f8588a;
+        final /* synthetic */ String f8596a;
 
         /* renamed from: b */
-        final /* synthetic */ int f8589b;
+        final /* synthetic */ int f8597b;
 
         C2463c(String str, int i) {
-            this.f8588a = str;
-            this.f8589b = i;
+            this.f8596a = str;
+            this.f8597b = i;
         }
 
         @Override // com.digdroid.alman.dig.C2223d0.AbstractC2249s
         /* renamed from: a */
         public void mo7941a() {
             C2459l3 l3Var = C2459l3.this;
-            l3Var.f8806m0.mo8276i0(l3Var.mo9019o3(), this.f8588a, this.f8589b, 0);
+            l3Var.f8814m0.mo8276i0(l3Var.mo9019o3(), this.f8596a, this.f8597b, 0);
         }
 
         @Override // com.digdroid.alman.dig.C2223d0.AbstractC2249s
@@ -116,11 +116,11 @@ public class C2459l3 extends AbstractC2577r1 implements C2324g1.AbstractC2325a {
         if (!mo8102B2()) {
             return true;
         }
-        if (i < 0 || this.f8806m0 == null || (c = this.f8959q0.mo8241c()) == null || c.isClosed() || !c.moveToPosition(i)) {
+        if (i < 0 || this.f8814m0 == null || (c = this.f8967q0.mo8241c()) == null || c.isClosed() || !c.moveToPosition(i)) {
             return false;
         }
         String string = c.getString(3);
-        this.f8806m0.mo8903G(this.f8800g0, this.f8795b0.mo8575z(string), this.f8795b0.mo8574y(string));
+        this.f8814m0.mo8903G(this.f8808g0, this.f8803b0.mo8575z(string), this.f8803b0.mo8574y(string));
         return true;
     }
 
@@ -142,66 +142,66 @@ public class C2459l3 extends AbstractC2577r1 implements C2324g1.AbstractC2325a {
         int itemId = menuItem.getItemId();
         switch (itemId) {
             case R.id.all_types /*{ENCODED_INT: 2131296350}*/:
-                mo8722A3("all", this.f8580s0);
+                mo8722A3("all", this.f8588s0);
                 return true;
             case R.id.arcade /*{ENCODED_INT: 2131296369}*/:
-                mo8722A3("arcade", this.f8580s0);
+                mo8722A3("arcade", this.f8588s0);
                 return true;
             case R.id.computers /*{ENCODED_INT: 2131296513}*/:
-                mo8722A3("computer", this.f8580s0);
+                mo8722A3("computer", this.f8588s0);
                 return true;
             case R.id.consoles /*{ENCODED_INT: 2131296520}*/:
-                mo8722A3("console", this.f8580s0);
+                mo8722A3("console", this.f8588s0);
                 return true;
             case R.id.hide_systems /*{ENCODED_INT: 2131296765}*/:
-                C2219c3 c3Var = this.f8793Z;
+                C2219c3 c3Var = this.f8801Z;
                 c3Var.mo8174W(!c3Var.mo8192p());
                 mo8407O2();
                 mo2552c0().invalidateOptionsMenu();
-                this.f8806m0.mo8264R();
+                this.f8814m0.mo8264R();
                 mo8106G2(false);
                 return true;
             case R.id.sort_date /*{ENCODED_INT: 2131297179}*/:
-                this.f8793Z.mo8158G("systems_sort", "date");
-                this.f8806m0.mo8276i0(mo9019o3(), this.f8581t0, this.f8580s0, 0);
+                this.f8801Z.mo8158G("systems_sort", "date");
+                this.f8814m0.mo8276i0(mo9019o3(), this.f8589t0, this.f8588s0, 0);
                 return true;
             case R.id.sort_name /*{ENCODED_INT: 2131297183}*/:
-                this.f8793Z.mo8158G("systems_sort", "name");
-                this.f8806m0.mo8276i0(mo9019o3(), this.f8581t0, this.f8580s0, 0);
+                this.f8801Z.mo8158G("systems_sort", "name");
+                this.f8814m0.mo8276i0(mo9019o3(), this.f8589t0, this.f8588s0, 0);
                 return true;
             default:
                 switch (itemId) {
                     case R.id.generation0 /*{ENCODED_INT: 2131296694}*/:
-                        mo8722A3(this.f8581t0, 0);
+                        mo8722A3(this.f8589t0, 0);
                         return true;
                     case R.id.generation2 /*{ENCODED_INT: 2131296695}*/:
-                        mo8722A3(this.f8581t0, 2);
+                        mo8722A3(this.f8589t0, 2);
                         return true;
                     case R.id.generation3 /*{ENCODED_INT: 2131296696}*/:
-                        mo8722A3(this.f8581t0, 3);
+                        mo8722A3(this.f8589t0, 3);
                         return true;
                     case R.id.generation4 /*{ENCODED_INT: 2131296697}*/:
-                        mo8722A3(this.f8581t0, 4);
+                        mo8722A3(this.f8589t0, 4);
                         return true;
                     case R.id.generation5 /*{ENCODED_INT: 2131296698}*/:
-                        mo8722A3(this.f8581t0, 5);
+                        mo8722A3(this.f8589t0, 5);
                         return true;
                     case R.id.generation6 /*{ENCODED_INT: 2131296699}*/:
-                        mo8722A3(this.f8581t0, 6);
+                        mo8722A3(this.f8589t0, 6);
                         return true;
                     case R.id.generation7 /*{ENCODED_INT: 2131296700}*/:
-                        mo8722A3(this.f8581t0, 7);
+                        mo8722A3(this.f8589t0, 7);
                         return true;
                     case R.id.generation8 /*{ENCODED_INT: 2131296701}*/:
-                        mo8722A3(this.f8581t0, 8);
+                        mo8722A3(this.f8589t0, 8);
                         return true;
                     default:
                         switch (itemId) {
                             case R.id.handhelds /*{ENCODED_INT: 2131296756}*/:
-                                mo8722A3("handheld", this.f8580s0);
+                                mo8722A3("handheld", this.f8588s0);
                                 return true;
                             case R.id.has_theme_icon /*{ENCODED_INT: 2131296757}*/:
-                                C2219c3 c3Var2 = this.f8793Z;
+                                C2219c3 c3Var2 = this.f8801Z;
                                 c3Var2.mo8153B("has_theme_icon", !c3Var2.mo8180c("has_theme_icon", false));
                                 mo8407O2();
                                 mo2552c0().invalidateOptionsMenu();
@@ -222,13 +222,13 @@ public class C2459l3 extends AbstractC2577r1 implements C2324g1.AbstractC2325a {
     @Override // com.digdroid.alman.dig.AbstractC2577r1, com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: Q */
     public String mo8375Q() {
-        return this.f8793Z.mo8193q("systems_list_type", "grid");
+        return this.f8801Z.mo8193q("systems_list_type", "grid");
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2577r1, com.digdroid.alman.dig.AbstractC2531p1
     /* renamed from: Q2 */
     public void mo8112Q2() {
-        C2267e2 e2Var = this.f8958p0;
+        C2267e2 e2Var = this.f8966p0;
         if (e2Var == null || !m10591z3(e2Var.mo8321f())) {
             super.mo8112Q2();
         }
@@ -247,16 +247,16 @@ public class C2459l3 extends AbstractC2577r1 implements C2324g1.AbstractC2325a {
         super.mo2537W0(bundle);
         if (bundle == null) {
             bundle = mo2568h0();
-            this.f8581t0 = bundle.containsKey("type") ? bundle.getString("type") : "all";
+            this.f8589t0 = bundle.containsKey("type") ? bundle.getString("type") : "all";
             if (!bundle.containsKey("generation")) {
                 i = 0;
-                this.f8580s0 = i;
+                this.f8588s0 = i;
             }
         } else {
-            this.f8581t0 = bundle.getString("type");
+            this.f8589t0 = bundle.getString("type");
         }
         i = bundle.getInt("generation");
-        this.f8580s0 = i;
+        this.f8588s0 = i;
     }
 
     @Override // com.digdroid.alman.dig.C2324g1.AbstractC2325a
@@ -269,8 +269,8 @@ public class C2459l3 extends AbstractC2577r1 implements C2324g1.AbstractC2325a {
     /* renamed from: a1 */
     public View mo2547a1(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         View a1 = super.mo2547a1(layoutInflater, viewGroup, bundle);
-        if (!this.f8800g0.f9417u.equals("")) {
-            this.f8958p0.mo8337v(new C2460a());
+        if (!this.f8808g0.f9425u.equals("")) {
+            this.f8966p0.mo8337v(new C2460a());
         }
         return a1;
     }
@@ -278,8 +278,8 @@ public class C2459l3 extends AbstractC2577r1 implements C2324g1.AbstractC2325a {
     @Override // com.digdroid.alman.dig.C2324g1.AbstractC2325a
     /* renamed from: b */
     public C2464m mo8310b() {
-        C2774t3 t3Var = this.f8800g0;
-        return new C2464m(true, t3Var.f9404h, t3Var.f9405i, 6);
+        C2774t3 t3Var = this.f8808g0;
+        return new C2464m(true, t3Var.f9412h, t3Var.f9413i, 6);
     }
 
     /* access modifiers changed from: package-private */
@@ -287,7 +287,7 @@ public class C2459l3 extends AbstractC2577r1 implements C2324g1.AbstractC2325a {
     /* renamed from: h3 */
     public void mo8431h3(View view, Object obj) {
         Cursor cursor = (Cursor) obj;
-        C2749t1.m11663p(this.f8805l0).mo9281q(mo2552c0(), cursor.getString(3), cursor.getString(5), new C2462b());
+        C2749t1.m11663p(this.f8813l0).mo9281q(mo2552c0(), cursor.getString(3), cursor.getString(5), new C2462b());
     }
 
     /* access modifiers changed from: package-private */
@@ -299,7 +299,7 @@ public class C2459l3 extends AbstractC2577r1 implements C2324g1.AbstractC2325a {
         if (mainActivity == null || mainActivity.isFinishing()) {
             return null;
         }
-        String q = this.f8793Z.mo8193q("systems_sort", "name");
+        String q = this.f8801Z.mo8193q("systems_sort", "name");
         String Q = mo8375Q();
         Q.hashCode();
         char c = 65535;
@@ -343,25 +343,25 @@ public class C2459l3 extends AbstractC2577r1 implements C2324g1.AbstractC2325a {
         }
         switch (c) {
             case 0:
-                d2Var = new C2252d2(new C2500n3(mainActivity, this.f8800g0, cursor, mo8363E(), mo8468m3(), q, mo9026w()));
+                d2Var = new C2252d2(new C2500n3(mainActivity, this.f8808g0, cursor, mo8363E(), mo8468m3(), q, mo9026w()));
                 return d2Var;
             case 1:
-                new C2491m3(mainActivity, this.f8800g0, cursor, mo8379V(), mo8468m3(), q, mo9026w());
+                new C2491m3(mainActivity, this.f8808g0, cursor, mo8379V(), mo8468m3(), q, mo9026w());
                 return d2Var;
             case 2:
-                new C2446j3(mainActivity, this.f8800g0, cursor, mo8397z(), mo8468m3(), q, mo9026w());
+                new C2446j3(mainActivity, this.f8808g0, cursor, mo8397z(), mo8468m3(), q, mo9026w());
                 return d2Var;
             case 3:
-                new C2324g1(mainActivity, this.f8800g0, cursor, mo8468m3(), this);
+                new C2324g1(mainActivity, this.f8808g0, cursor, mo8468m3(), this);
                 return d2Var;
             case 4:
-                new C2525o3(mainActivity, this.f8800g0, cursor, mo8395x(), mo8468m3(), q, mo9026w());
+                new C2525o3(mainActivity, this.f8808g0, cursor, mo8395x(), mo8468m3(), q, mo9026w());
                 return d2Var;
             case 5:
-                new C2454k3(mainActivity, this.f8800g0, cursor, mo8380W(), mo8468m3(), q, mo9026w());
+                new C2454k3(mainActivity, this.f8808g0, cursor, mo8380W(), mo8468m3(), q, mo9026w());
                 return d2Var;
             default:
-                new C2400i3(mainActivity, this.f8800g0, cursor, mo8468m3(), q, mo9026w());
+                new C2400i3(mainActivity, this.f8808g0, cursor, mo8468m3(), q, mo9026w());
                 return d2Var;
         }
     }
@@ -370,7 +370,7 @@ public class C2459l3 extends AbstractC2577r1 implements C2324g1.AbstractC2325a {
     @Override // com.digdroid.alman.dig.AbstractC2577r1
     /* renamed from: k3 */
     public Cursor mo8694k3() {
-        return this.f8795b0.mo8550J(this.f8793Z.mo8192p(), this.f8581t0, this.f8580s0, this.f8793Z.mo8193q("systems_sort", "name"));
+        return this.f8803b0.mo8550J(this.f8801Z.mo8192p(), this.f8589t0, this.f8588s0, this.f8801Z.mo8193q("systems_sort", "name"));
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2577r1
@@ -383,8 +383,8 @@ public class C2459l3 extends AbstractC2577r1 implements C2324g1.AbstractC2325a {
     @Override // com.digdroid.alman.dig.AbstractC2577r1
     /* renamed from: n3 */
     public void mo8425n3(View view, Object obj) {
-        if (obj != null && this.f8806m0 != null) {
-            this.f8806m0.mo8267V(((Cursor) obj).getString(3));
+        if (obj != null && this.f8814m0 != null) {
+            this.f8814m0.mo8267V(((Cursor) obj).getString(3));
         }
     }
 
@@ -425,8 +425,8 @@ public class C2459l3 extends AbstractC2577r1 implements C2324g1.AbstractC2325a {
     @Override // com.digdroid.alman.dig.AbstractC2577r1, androidx.fragment.app.Fragment
     /* renamed from: s1 */
     public void mo2603s1(Bundle bundle) {
-        bundle.putString("type", this.f8581t0);
-        bundle.putInt("generation", this.f8580s0);
+        bundle.putString("type", this.f8589t0);
+        bundle.putInt("generation", this.f8588s0);
         super.mo2603s1(bundle);
     }
 
@@ -439,10 +439,10 @@ public class C2459l3 extends AbstractC2577r1 implements C2324g1.AbstractC2325a {
     @Override // com.digdroid.alman.dig.AbstractC2577r1
     /* renamed from: w3 */
     public void mo8723w3(String str, int i) {
-        this.f8793Z.mo8202z("systems_list_type", str);
-        AbstractC2531p1.AbstractC2532a aVar = this.f8806m0;
+        this.f8801Z.mo8202z("systems_list_type", str);
+        AbstractC2531p1.AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
-            aVar.mo8276i0(str, this.f8581t0, this.f8580s0, i);
+            aVar.mo8276i0(str, this.f8589t0, this.f8588s0, i);
         }
     }
 

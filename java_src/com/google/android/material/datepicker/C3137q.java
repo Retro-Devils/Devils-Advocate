@@ -16,22 +16,22 @@ import p069c.p073b.p074a.p090b.C1398i;
 public class C3137q extends RecyclerView.AbstractC0658g<C3139b> {
 
     /* renamed from: c */
-    private final C3111g<?> f10462c;
+    private final C3111g<?> f10470c;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.google.android.material.datepicker.q$a */
     public class View$OnClickListenerC3138a implements View.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ int f10463b;
+        final /* synthetic */ int f10471b;
 
         View$OnClickListenerC3138a(int i) {
-            this.f10463b = i;
+            this.f10471b = i;
         }
 
         public void onClick(View view) {
-            C3137q.this.f10462c.mo10421F2(C3137q.this.f10462c.mo10424y2().mo10390b(C3125i.m13034g(this.f10463b, C3137q.this.f10462c.mo10418A2().f10438d)));
-            C3137q.this.f10462c.mo10422G2(C3111g.EnumC3122k.DAY);
+            C3137q.this.f10470c.mo10421F2(C3137q.this.f10470c.mo10424y2().mo10390b(C3125i.m13034g(this.f10471b, C3137q.this.f10470c.mo10418A2().f10446d)));
+            C3137q.this.f10470c.mo10422G2(C3111g.EnumC3122k.DAY);
         }
     }
 
@@ -39,16 +39,16 @@ public class C3137q extends RecyclerView.AbstractC0658g<C3139b> {
     public static class C3139b extends RecyclerView.AbstractC0655d0 {
 
         /* renamed from: t */
-        final TextView f10465t;
+        final TextView f10473t;
 
         C3139b(TextView textView) {
             super(textView);
-            this.f10465t = textView;
+            this.f10473t = textView;
         }
     }
 
     C3137q(C3111g<?> gVar) {
-        this.f10462c = gVar;
+        this.f10470c = gVar;
     }
 
     /* renamed from: v */
@@ -59,38 +59,38 @@ public class C3137q extends RecyclerView.AbstractC0658g<C3139b> {
     @Override // androidx.recyclerview.widget.RecyclerView.AbstractC0658g
     /* renamed from: c */
     public int mo3580c() {
-        return this.f10462c.mo10424y2().mo10399l();
+        return this.f10470c.mo10424y2().mo10399l();
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: w */
     public int mo10470w(int i) {
-        return i - this.f10462c.mo10424y2().mo10398k().f10439e;
+        return i - this.f10470c.mo10424y2().mo10398k().f10447e;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: x */
     public int mo10471x(int i) {
-        return this.f10462c.mo10424y2().mo10398k().f10439e + i;
+        return this.f10470c.mo10424y2().mo10398k().f10447e + i;
     }
 
     /* renamed from: y */
     public void mo3581j(C3139b bVar, int i) {
         int x = mo10471x(i);
-        String string = bVar.f10465t.getContext().getString(C1398i.mtrl_picker_navigate_to_year_description);
-        bVar.f10465t.setText(String.format(Locale.getDefault(), "%d", Integer.valueOf(x)));
-        bVar.f10465t.setContentDescription(String.format(string, Integer.valueOf(x)));
-        C3107c z2 = this.f10462c.mo10425z2();
+        String string = bVar.f10473t.getContext().getString(C1398i.mtrl_picker_navigate_to_year_description);
+        bVar.f10473t.setText(String.format(Locale.getDefault(), "%d", Integer.valueOf(x)));
+        bVar.f10473t.setContentDescription(String.format(string, Integer.valueOf(x)));
+        C3107c z2 = this.f10470c.mo10425z2();
         Calendar j = C3136p.m13080j();
-        C3106b bVar2 = j.get(1) == x ? z2.f10391f : z2.f10389d;
-        for (Long l : this.f10462c.mo10419B2().mo10412f()) {
+        C3106b bVar2 = j.get(1) == x ? z2.f10399f : z2.f10397d;
+        for (Long l : this.f10470c.mo10419B2().mo10412f()) {
             j.setTimeInMillis(l.longValue());
             if (j.get(1) == x) {
-                bVar2 = z2.f10390e;
+                bVar2 = z2.f10398e;
             }
         }
-        bVar2.mo10408d(bVar.f10465t);
-        bVar.f10465t.setOnClickListener(m13088v(x));
+        bVar2.mo10408d(bVar.f10473t);
+        bVar.f10473t.setOnClickListener(m13088v(x));
     }
 
     /* renamed from: z */

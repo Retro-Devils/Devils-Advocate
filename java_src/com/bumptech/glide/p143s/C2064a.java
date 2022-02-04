@@ -10,14 +10,14 @@ import java.security.MessageDigest;
 public final class C2064a implements AbstractC1643g {
 
     /* renamed from: b */
-    private final int f7570b;
+    private final int f7578b;
 
     /* renamed from: c */
-    private final AbstractC1643g f7571c;
+    private final AbstractC1643g f7579c;
 
     private C2064a(int i, AbstractC1643g gVar) {
-        this.f7570b = i;
-        this.f7571c = gVar;
+        this.f7578b = i;
+        this.f7579c = gVar;
     }
 
     /* renamed from: c */
@@ -28,8 +28,8 @@ public final class C2064a implements AbstractC1643g {
     @Override // com.bumptech.glide.load.AbstractC1643g
     /* renamed from: a */
     public void mo7075a(MessageDigest messageDigest) {
-        this.f7571c.mo7075a(messageDigest);
-        messageDigest.update(ByteBuffer.allocate(4).putInt(this.f7570b).array());
+        this.f7579c.mo7075a(messageDigest);
+        messageDigest.update(ByteBuffer.allocate(4).putInt(this.f7578b).array());
     }
 
     @Override // com.bumptech.glide.load.AbstractC1643g
@@ -38,11 +38,11 @@ public final class C2064a implements AbstractC1643g {
             return false;
         }
         C2064a aVar = (C2064a) obj;
-        return this.f7570b == aVar.f7570b && this.f7571c.equals(aVar.f7571c);
+        return this.f7578b == aVar.f7578b && this.f7579c.equals(aVar.f7579c);
     }
 
     @Override // com.bumptech.glide.load.AbstractC1643g
     public int hashCode() {
-        return C2082k.m9446m(this.f7571c, this.f7570b);
+        return C2082k.m9446m(this.f7579c, this.f7578b);
     }
 }

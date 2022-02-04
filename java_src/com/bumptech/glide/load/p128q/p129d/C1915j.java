@@ -9,12 +9,12 @@ import java.security.MessageDigest;
 public class C1915j extends AbstractC1911f {
 
     /* renamed from: b */
-    private static final byte[] f7186b = "com.bumptech.glide.load.resource.bitmap.CenterInside".getBytes(AbstractC1643g.f6648a);
+    private static final byte[] f7194b = "com.bumptech.glide.load.resource.bitmap.CenterInside".getBytes(AbstractC1643g.f6656a);
 
     @Override // com.bumptech.glide.load.AbstractC1643g
     /* renamed from: a */
     public void mo7075a(MessageDigest messageDigest) {
-        messageDigest.update(f7186b);
+        messageDigest.update(f7194b);
     }
 
     /* access modifiers changed from: protected */

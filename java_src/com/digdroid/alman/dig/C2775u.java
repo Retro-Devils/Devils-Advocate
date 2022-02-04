@@ -17,33 +17,33 @@ import p006b.p057o.p058a.C1088a;
 public class C2775u {
 
     /* renamed from: a */
-    private static SQLiteDatabase f9421a;
+    private static SQLiteDatabase f9429a;
 
     /* renamed from: b */
-    private static C2887z2 f9422b;
+    private static C2887z2 f9430b;
 
     /* renamed from: c */
-    private static C2775u f9423c;
+    private static C2775u f9431c;
 
     /* renamed from: d */
-    private Context f9424d;
+    private Context f9432d;
 
     /* renamed from: e */
-    private C2219c3 f9425e;
+    private C2219c3 f9433e;
 
     private C2775u(Context context) {
-        this.f9424d = context.getApplicationContext();
-        this.f9425e = C2219c3.m9805k(context);
+        this.f9432d = context.getApplicationContext();
+        this.f9433e = C2219c3.m9805k(context);
     }
 
     /* renamed from: e */
     public static synchronized C2775u m11726e(Context context) {
         C2775u uVar;
         synchronized (C2775u.class) {
-            if (f9423c == null) {
-                f9423c = new C2775u(context);
+            if (f9431c == null) {
+                f9431c = new C2775u(context);
             }
-            uVar = f9423c;
+            uVar = f9431c;
         }
         return uVar;
     }
@@ -53,7 +53,7 @@ public class C2775u {
         String str3;
         long j;
         String str4;
-        C2492n nVar = new C2492n(this.f9424d);
+        C2492n nVar = new C2492n(this.f9432d);
         nVar.mo8773j("systems/" + str2);
         ContentValues contentValues = new ContentValues();
         String i = nVar.mo8772i("name");
@@ -98,7 +98,7 @@ public class C2775u {
 
     /* renamed from: j */
     private void m11728j(String str, String str2, SQLiteDatabase sQLiteDatabase) {
-        C2492n nVar = new C2492n(this.f9424d);
+        C2492n nVar = new C2492n(this.f9432d);
         nVar.mo8773j("systems/" + str2);
         ContentValues contentValues = new ContentValues();
         contentValues.put("slug", str);
@@ -154,7 +154,7 @@ public class C2775u {
 
     /* renamed from: c */
     public SQLiteDatabase mo9325c() {
-        return f9422b.getWritableDatabase();
+        return f9430b.getWritableDatabase();
     }
 
     /* renamed from: d */
@@ -162,7 +162,7 @@ public class C2775u {
         Pattern compile = Pattern.compile("^emu_([^_]+)_");
         boolean z = false;
         try {
-            String[] list = this.f9424d.getAssets().list("systems");
+            String[] list = this.f9432d.getAssets().list("systems");
             float length = (float) ((long) list.length);
             long round = (long) Math.round(length / 30.0f);
             long j = 0;
@@ -181,9 +181,9 @@ public class C2775u {
                 j++;
                 if (j >= round) {
                     long j3 = j2 + j;
-                    Intent intent = new Intent(this.f9424d.getPackageName() + "." + "INSTALL_PROGRESS");
+                    Intent intent = new Intent(this.f9432d.getPackageName() + "." + "INSTALL_PROGRESS");
                     intent.putExtra("progress", Math.round((((float) j3) * 30.0f) / length) + 10);
-                    C1088a.m6129b(this.f9424d).mo5723d(intent);
+                    C1088a.m6129b(this.f9432d).mo5723d(intent);
                     j2 = j3;
                     j = 0;
                 }
@@ -196,7 +196,7 @@ public class C2775u {
 
     /* renamed from: f */
     public boolean mo9327f(SQLiteDatabase sQLiteDatabase) {
-        AssetManager assets = this.f9424d.getAssets();
+        AssetManager assets = this.f9432d.getAssets();
         Pattern compile = Pattern.compile("^sys_(\\w+).cfg$");
         try {
             String[] list = assets.list("systems");
@@ -214,7 +214,7 @@ public class C2775u {
 
     /* renamed from: g */
     public boolean mo9328g(String str) {
-        for (ApplicationInfo applicationInfo : this.f9424d.getPackageManager().getInstalledApplications(0)) {
+        for (ApplicationInfo applicationInfo : this.f9432d.getPackageManager().getInstalledApplications(0)) {
             if (applicationInfo.packageName.equals(str)) {
                 return true;
             }

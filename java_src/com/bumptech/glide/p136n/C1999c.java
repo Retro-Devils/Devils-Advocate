@@ -7,61 +7,61 @@ import java.util.List;
 public class C1999c {
 
     /* renamed from: a */
-    int[] f7376a = null;
+    int[] f7384a = null;
 
     /* renamed from: b */
-    int f7377b = 0;
+    int f7385b = 0;
 
     /* renamed from: c */
-    int f7378c = 0;
+    int f7386c = 0;
 
     /* renamed from: d */
-    C1998b f7379d;
+    C1998b f7387d;
 
     /* renamed from: e */
-    final List<C1998b> f7380e = new ArrayList();
+    final List<C1998b> f7388e = new ArrayList();
 
     /* renamed from: f */
-    int f7381f;
+    int f7389f;
 
     /* renamed from: g */
-    int f7382g;
+    int f7390g;
 
     /* renamed from: h */
-    boolean f7383h;
+    boolean f7391h;
 
     /* renamed from: i */
-    int f7384i;
+    int f7392i;
 
     /* renamed from: j */
-    int f7385j;
+    int f7393j;
 
     /* renamed from: k */
-    int f7386k;
+    int f7394k;
 
     /* renamed from: l */
-    int f7387l;
+    int f7395l;
 
     /* renamed from: m */
-    int f7388m = -1;
+    int f7396m = -1;
 
     /* renamed from: a */
     public int mo7659a() {
-        return this.f7382g;
+        return this.f7390g;
     }
 
     /* renamed from: b */
     public int mo7660b() {
-        return this.f7378c;
+        return this.f7386c;
     }
 
     /* renamed from: c */
     public int mo7661c() {
-        return this.f7377b;
+        return this.f7385b;
     }
 
     /* renamed from: d */
     public int mo7662d() {
-        return this.f7381f;
+        return this.f7389f;
     }
 }

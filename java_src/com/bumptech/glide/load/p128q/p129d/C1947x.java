@@ -13,23 +13,23 @@ import com.bumptech.glide.load.p128q.p131f.C1958d;
 public class C1947x implements AbstractC1649k<Uri, Bitmap> {
 
     /* renamed from: a */
-    private final C1958d f7245a;
+    private final C1958d f7253a;
 
     /* renamed from: b */
-    private final AbstractC1695e f7246b;
+    private final AbstractC1695e f7254b;
 
     public C1947x(C1958d dVar, AbstractC1695e eVar) {
-        this.f7245a = dVar;
-        this.f7246b = eVar;
+        this.f7253a = dVar;
+        this.f7254b = eVar;
     }
 
     /* renamed from: c */
     public AbstractC1794v<Bitmap> mo7088a(Uri uri, int i, int i2, C1647i iVar) {
-        AbstractC1794v<Drawable> c = this.f7245a.mo7088a(uri, i, i2, iVar);
+        AbstractC1794v<Drawable> c = this.f7253a.mo7088a(uri, i, i2, iVar);
         if (c == null) {
             return null;
         }
-        return C1933n.m8766a(this.f7246b, c.mo7358c(), i, i2);
+        return C1933n.m8766a(this.f7254b, c.mo7358c(), i, i2);
     }
 
     /* renamed from: d */

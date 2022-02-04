@@ -16,28 +16,28 @@ import p006b.p041h.p042a.C1038b;
 public abstract class AbstractC1035a extends BaseAdapter implements Filterable, C1038b.AbstractC1039a {
 
     /* renamed from: b */
-    protected boolean f4787b;
+    protected boolean f4791b;
 
     /* renamed from: c */
-    protected boolean f4788c;
+    protected boolean f4792c;
 
     /* renamed from: d */
-    protected Cursor f4789d;
+    protected Cursor f4793d;
 
     /* renamed from: e */
-    protected Context f4790e;
+    protected Context f4794e;
 
     /* renamed from: f */
-    protected int f4791f;
+    protected int f4795f;
 
     /* renamed from: g */
-    protected C1036a f4792g;
+    protected C1036a f4796g;
 
     /* renamed from: h */
-    protected DataSetObserver f4793h;
+    protected DataSetObserver f4797h;
 
     /* renamed from: i */
-    protected C1038b f4794i;
+    protected C1038b f4798i;
 
     /* access modifiers changed from: private */
     /* renamed from: b.h.a.a$a */
@@ -63,13 +63,13 @@ public abstract class AbstractC1035a extends BaseAdapter implements Filterable, 
 
         public void onChanged() {
             AbstractC1035a aVar = AbstractC1035a.this;
-            aVar.f4787b = true;
+            aVar.f4791b = true;
             aVar.notifyDataSetChanged();
         }
 
         public void onInvalidated() {
             AbstractC1035a aVar = AbstractC1035a.this;
-            aVar.f4787b = false;
+            aVar.f4791b = false;
             aVar.notifyDataSetInvalidated();
         }
     }
@@ -94,7 +94,7 @@ public abstract class AbstractC1035a extends BaseAdapter implements Filterable, 
     @Override // p006b.p041h.p042a.C1038b.AbstractC1039a
     /* renamed from: c */
     public Cursor mo5592c() {
-        return this.f4789d;
+        return this.f4793d;
     }
 
     /* renamed from: e */
@@ -107,31 +107,31 @@ public abstract class AbstractC1035a extends BaseAdapter implements Filterable, 
         boolean z = false;
         if ((i & 1) == 1) {
             i |= 2;
-            this.f4788c = true;
+            this.f4792c = true;
         } else {
-            this.f4788c = false;
+            this.f4792c = false;
         }
         if (cursor != null) {
             z = true;
         }
-        this.f4789d = cursor;
-        this.f4787b = z;
-        this.f4790e = context;
-        this.f4791f = z ? cursor.getColumnIndexOrThrow("_id") : -1;
+        this.f4793d = cursor;
+        this.f4791b = z;
+        this.f4794e = context;
+        this.f4795f = z ? cursor.getColumnIndexOrThrow("_id") : -1;
         if ((i & 2) == 2) {
-            this.f4792g = new C1036a();
+            this.f4796g = new C1036a();
             bVar = new C1037b();
         } else {
             bVar = null;
-            this.f4792g = null;
+            this.f4796g = null;
         }
-        this.f4793h = bVar;
+        this.f4797h = bVar;
         if (z) {
-            C1036a aVar = this.f4792g;
+            C1036a aVar = this.f4796g;
             if (aVar != null) {
                 cursor.registerContentObserver(aVar);
             }
-            DataSetObserver dataSetObserver = this.f4793h;
+            DataSetObserver dataSetObserver = this.f4797h;
             if (dataSetObserver != null) {
                 cursor.registerDataSetObserver(dataSetObserver);
             }
@@ -143,56 +143,56 @@ public abstract class AbstractC1035a extends BaseAdapter implements Filterable, 
 
     public int getCount() {
         Cursor cursor;
-        if (!this.f4787b || (cursor = this.f4789d) == null) {
+        if (!this.f4791b || (cursor = this.f4793d) == null) {
             return 0;
         }
         return cursor.getCount();
     }
 
     public View getDropDownView(int i, View view, ViewGroup viewGroup) {
-        if (!this.f4787b) {
+        if (!this.f4791b) {
             return null;
         }
-        this.f4789d.moveToPosition(i);
+        this.f4793d.moveToPosition(i);
         if (view == null) {
-            view = mo5594g(this.f4790e, this.f4789d, viewGroup);
+            view = mo5594g(this.f4794e, this.f4793d, viewGroup);
         }
-        mo1703e(view, this.f4790e, this.f4789d);
+        mo1703e(view, this.f4794e, this.f4793d);
         return view;
     }
 
     public Filter getFilter() {
-        if (this.f4794i == null) {
-            this.f4794i = new C1038b(this);
+        if (this.f4798i == null) {
+            this.f4798i = new C1038b(this);
         }
-        return this.f4794i;
+        return this.f4798i;
     }
 
     public Object getItem(int i) {
         Cursor cursor;
-        if (!this.f4787b || (cursor = this.f4789d) == null) {
+        if (!this.f4791b || (cursor = this.f4793d) == null) {
             return null;
         }
         cursor.moveToPosition(i);
-        return this.f4789d;
+        return this.f4793d;
     }
 
     public long getItemId(int i) {
         Cursor cursor;
-        if (!this.f4787b || (cursor = this.f4789d) == null || !cursor.moveToPosition(i)) {
+        if (!this.f4791b || (cursor = this.f4793d) == null || !cursor.moveToPosition(i)) {
             return 0;
         }
-        return this.f4789d.getLong(this.f4791f);
+        return this.f4793d.getLong(this.f4795f);
     }
 
     public View getView(int i, View view, ViewGroup viewGroup) {
-        if (!this.f4787b) {
+        if (!this.f4791b) {
             throw new IllegalStateException("this should only be called when the cursor is valid");
-        } else if (this.f4789d.moveToPosition(i)) {
+        } else if (this.f4793d.moveToPosition(i)) {
             if (view == null) {
-                view = mo1706h(this.f4790e, this.f4789d, viewGroup);
+                view = mo1706h(this.f4794e, this.f4793d, viewGroup);
             }
-            mo1703e(view, this.f4790e, this.f4789d);
+            mo1703e(view, this.f4794e, this.f4793d);
             return view;
         } else {
             throw new IllegalStateException("couldn't move cursor to position " + i);
@@ -206,43 +206,43 @@ public abstract class AbstractC1035a extends BaseAdapter implements Filterable, 
     /* renamed from: i */
     public void mo5599i() {
         Cursor cursor;
-        if (this.f4788c && (cursor = this.f4789d) != null && !cursor.isClosed()) {
-            this.f4787b = this.f4789d.requery();
+        if (this.f4792c && (cursor = this.f4793d) != null && !cursor.isClosed()) {
+            this.f4791b = this.f4793d.requery();
         }
     }
 
     /* renamed from: j */
     public Cursor mo5600j(Cursor cursor) {
-        Cursor cursor2 = this.f4789d;
+        Cursor cursor2 = this.f4793d;
         if (cursor == cursor2) {
             return null;
         }
         if (cursor2 != null) {
-            C1036a aVar = this.f4792g;
+            C1036a aVar = this.f4796g;
             if (aVar != null) {
                 cursor2.unregisterContentObserver(aVar);
             }
-            DataSetObserver dataSetObserver = this.f4793h;
+            DataSetObserver dataSetObserver = this.f4797h;
             if (dataSetObserver != null) {
                 cursor2.unregisterDataSetObserver(dataSetObserver);
             }
         }
-        this.f4789d = cursor;
+        this.f4793d = cursor;
         if (cursor != null) {
-            C1036a aVar2 = this.f4792g;
+            C1036a aVar2 = this.f4796g;
             if (aVar2 != null) {
                 cursor.registerContentObserver(aVar2);
             }
-            DataSetObserver dataSetObserver2 = this.f4793h;
+            DataSetObserver dataSetObserver2 = this.f4797h;
             if (dataSetObserver2 != null) {
                 cursor.registerDataSetObserver(dataSetObserver2);
             }
-            this.f4791f = cursor.getColumnIndexOrThrow("_id");
-            this.f4787b = true;
+            this.f4795f = cursor.getColumnIndexOrThrow("_id");
+            this.f4791b = true;
             notifyDataSetChanged();
         } else {
-            this.f4791f = -1;
-            this.f4787b = false;
+            this.f4795f = -1;
+            this.f4791b = false;
             notifyDataSetInvalidated();
         }
         return cursor2;

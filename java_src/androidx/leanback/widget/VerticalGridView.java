@@ -20,9 +20,9 @@ public class VerticalGridView extends AbstractC0548a {
     /* renamed from: C1 */
     public void mo3202C1(Context context, AttributeSet attributeSet) {
         mo3207A1(context, attributeSet);
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4960g0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4967g0);
         setColumnWidth(obtainStyledAttributes);
-        setNumColumns(obtainStyledAttributes.getInt(C1080l.f4964i0, 1));
+        setNumColumns(obtainStyledAttributes.getInt(C1080l.f4971i0, 1));
         obtainStyledAttributes.recycle();
     }
 
@@ -33,7 +33,7 @@ public class VerticalGridView extends AbstractC0548a {
 
     /* access modifiers changed from: package-private */
     public void setColumnWidth(TypedArray typedArray) {
-        int i = C1080l.f4962h0;
+        int i = C1080l.f4969h0;
         if (typedArray.peekValue(i) != null) {
             setColumnWidth(typedArray.getLayoutDimension(i, 0));
         }

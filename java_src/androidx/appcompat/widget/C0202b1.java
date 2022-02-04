@@ -10,7 +10,7 @@ import java.lang.ref.WeakReference;
 public class C0202b1 extends Resources {
 
     /* renamed from: a */
-    private static boolean f935a;
+    private static boolean f935a = false;
 
     /* renamed from: b */
     private final WeakReference<Context> f936b;

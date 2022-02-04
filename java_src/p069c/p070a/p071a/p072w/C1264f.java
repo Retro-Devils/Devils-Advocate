@@ -23,7 +23,7 @@ import p069c.p070a.p071a.AbstractC1239n;
 public class C1264f implements AbstractC1268i {
 
     /* renamed from: a */
-    protected final HttpClient f5513a;
+    protected final HttpClient f5520a;
 
     /* renamed from: c.a.a.w.f$a */
     public static final class C1265a extends HttpEntityEnclosingRequestBase {
@@ -37,7 +37,7 @@ public class C1264f implements AbstractC1268i {
     }
 
     public C1264f(HttpClient httpClient) {
-        this.f5513a = httpClient;
+        this.f5520a = httpClient;
     }
 
     /* renamed from: b */
@@ -108,7 +108,7 @@ public class C1264f implements AbstractC1268i {
         int w = nVar.mo6213w();
         HttpConnectionParams.setConnectionTimeout(params, 5000);
         HttpConnectionParams.setSoTimeout(params, w);
-        return this.f5513a.execute(b);
+        return this.f5520a.execute(b);
     }
 
     /* access modifiers changed from: protected */

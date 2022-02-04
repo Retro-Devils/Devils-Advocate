@@ -17,15 +17,15 @@ public class C2444j1 extends C2728t0 {
     @Override // com.digdroid.alman.dig.C2728t0
     /* renamed from: D3 */
     public Cursor mo8142D3() {
-        return this.f8796c0.mo8841e(mo9244E3(), this.f9278s0);
+        return this.f8804c0.mo8841e(mo9244E3(), this.f9286s0);
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2577r1, com.digdroid.alman.dig.AbstractC2531p1, androidx.fragment.app.Fragment, com.digdroid.alman.dig.C2728t0
     /* renamed from: W0 */
     public void mo2537W0(Bundle bundle) {
         super.mo2537W0(bundle);
-        this.f9278s0.f8303c = (int) mo2568h0().getLong("genre");
-        this.f9278s0.f8312l = this.f8801h0;
+        this.f9286s0.f8311c = (int) mo2568h0().getLong("genre");
+        this.f9286s0.f8320l = this.f8809h0;
     }
 
     /* access modifiers changed from: package-private */

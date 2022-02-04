@@ -7,7 +7,7 @@ import java.nio.ByteBuffer;
 public class C1952a implements AbstractC1657e<ByteBuffer> {
 
     /* renamed from: a */
-    private final ByteBuffer f7256a;
+    private final ByteBuffer f7264a;
 
     /* renamed from: com.bumptech.glide.load.q.e.a$a */
     public static class C1953a implements AbstractC1657e.AbstractC1658a<ByteBuffer> {
@@ -24,7 +24,7 @@ public class C1952a implements AbstractC1657e<ByteBuffer> {
     }
 
     public C1952a(ByteBuffer byteBuffer) {
-        this.f7256a = byteBuffer;
+        this.f7264a = byteBuffer;
     }
 
     @Override // com.bumptech.glide.load.p120n.AbstractC1657e
@@ -34,7 +34,7 @@ public class C1952a implements AbstractC1657e<ByteBuffer> {
 
     /* renamed from: c */
     public ByteBuffer mo7110a() {
-        this.f7256a.position(0);
-        return this.f7256a;
+        this.f7264a.position(0);
+        return this.f7264a;
     }
 }

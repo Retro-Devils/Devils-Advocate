@@ -4,13 +4,13 @@ package com.bumptech.glide.p144t;
 public class C2080i {
 
     /* renamed from: a */
-    private Class<?> f7596a;
+    private Class<?> f7604a;
 
     /* renamed from: b */
-    private Class<?> f7597b;
+    private Class<?> f7605b;
 
     /* renamed from: c */
-    private Class<?> f7598c;
+    private Class<?> f7606c;
 
     public C2080i() {
     }
@@ -21,9 +21,9 @@ public class C2080i {
 
     /* renamed from: a */
     public void mo7867a(Class<?> cls, Class<?> cls2, Class<?> cls3) {
-        this.f7596a = cls;
-        this.f7597b = cls2;
-        this.f7598c = cls3;
+        this.f7604a = cls;
+        this.f7605b = cls2;
+        this.f7606c = cls3;
     }
 
     public boolean equals(Object obj) {
@@ -34,16 +34,16 @@ public class C2080i {
             return false;
         }
         C2080i iVar = (C2080i) obj;
-        return this.f7596a.equals(iVar.f7596a) && this.f7597b.equals(iVar.f7597b) && C2082k.m9436c(this.f7598c, iVar.f7598c);
+        return this.f7604a.equals(iVar.f7604a) && this.f7605b.equals(iVar.f7605b) && C2082k.m9436c(this.f7606c, iVar.f7606c);
     }
 
     public int hashCode() {
-        int hashCode = ((this.f7596a.hashCode() * 31) + this.f7597b.hashCode()) * 31;
-        Class<?> cls = this.f7598c;
+        int hashCode = ((this.f7604a.hashCode() * 31) + this.f7605b.hashCode()) * 31;
+        Class<?> cls = this.f7606c;
         return hashCode + (cls != null ? cls.hashCode() : 0);
     }
 
     public String toString() {
-        return "MultiClassKey{first=" + this.f7596a + ", second=" + this.f7597b + '}';
+        return "MultiClassKey{first=" + this.f7604a + ", second=" + this.f7605b + '}';
     }
 }

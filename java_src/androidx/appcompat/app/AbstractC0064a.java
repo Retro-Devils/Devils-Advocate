@@ -29,8 +29,8 @@ public abstract class AbstractC0064a {
         public C0065a(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
             this.f223a = 0;
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C0763j.f3797t);
-            this.f223a = obtainStyledAttributes.getInt(C0763j.f3802u, 0);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C0763j.f3801t);
+            this.f223a = obtainStyledAttributes.getInt(C0763j.f3806u, 0);
             obtainStyledAttributes.recycle();
         }
 

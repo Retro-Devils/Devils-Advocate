@@ -12,15 +12,15 @@ public interface AbstractC1421d {
     public static class C1423b implements TypeEvaluator<C1426e> {
 
         /* renamed from: a */
-        public static final TypeEvaluator<C1426e> f6045a = new C1423b();
+        public static final TypeEvaluator<C1426e> f6053a = new C1423b();
 
         /* renamed from: b */
-        private final C1426e f6046b = new C1426e();
+        private final C1426e f6054b = new C1426e();
 
         /* renamed from: a */
         public C1426e evaluate(float f, C1426e eVar, C1426e eVar2) {
-            this.f6046b.mo6544a(C1432a.m7066c(eVar.f6049a, eVar2.f6049a, f), C1432a.m7066c(eVar.f6050b, eVar2.f6050b, f), C1432a.m7066c(eVar.f6051c, eVar2.f6051c, f));
-            return this.f6046b;
+            this.f6054b.mo6544a(C1432a.m7066c(eVar.f6057a, eVar2.f6057a, f), C1432a.m7066c(eVar.f6058b, eVar2.f6058b, f), C1432a.m7066c(eVar.f6059c, eVar2.f6059c, f));
+            return this.f6054b;
         }
     }
 
@@ -28,7 +28,7 @@ public interface AbstractC1421d {
     public static class C1424c extends Property<AbstractC1421d, C1426e> {
 
         /* renamed from: a */
-        public static final Property<AbstractC1421d, C1426e> f6047a = new C1424c("circularReveal");
+        public static final Property<AbstractC1421d, C1426e> f6055a = new C1424c("circularReveal");
 
         private C1424c(String str) {
             super(C1426e.class, str);
@@ -49,7 +49,7 @@ public interface AbstractC1421d {
     public static class C1425d extends Property<AbstractC1421d, Integer> {
 
         /* renamed from: a */
-        public static final Property<AbstractC1421d, Integer> f6048a = new C1425d("circularRevealScrimColor");
+        public static final Property<AbstractC1421d, Integer> f6056a = new C1425d("circularRevealScrimColor");
 
         private C1425d(String str) {
             super(Integer.class, str);
@@ -70,28 +70,28 @@ public interface AbstractC1421d {
     public static class C1426e {
 
         /* renamed from: a */
-        public float f6049a;
+        public float f6057a;
 
         /* renamed from: b */
-        public float f6050b;
+        public float f6058b;
 
         /* renamed from: c */
-        public float f6051c;
+        public float f6059c;
 
         private C1426e() {
         }
 
         public C1426e(float f, float f2, float f3) {
-            this.f6049a = f;
-            this.f6050b = f2;
-            this.f6051c = f3;
+            this.f6057a = f;
+            this.f6058b = f2;
+            this.f6059c = f3;
         }
 
         /* renamed from: a */
         public void mo6544a(float f, float f2, float f3) {
-            this.f6049a = f;
-            this.f6050b = f2;
-            this.f6051c = f3;
+            this.f6057a = f;
+            this.f6058b = f2;
+            this.f6059c = f3;
         }
     }
 

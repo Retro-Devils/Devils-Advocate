@@ -7,17 +7,17 @@ import android.view.WindowId;
 class C1141l0 implements AbstractC1149m0 {
 
     /* renamed from: a */
-    private final WindowId f5122a;
+    private final WindowId f5129a;
 
     C1141l0(View view) {
-        this.f5122a = view.getWindowId();
+        this.f5129a = view.getWindowId();
     }
 
     public boolean equals(Object obj) {
-        return (obj instanceof C1141l0) && ((C1141l0) obj).f5122a.equals(this.f5122a);
+        return (obj instanceof C1141l0) && ((C1141l0) obj).f5129a.equals(this.f5129a);
     }
 
     public int hashCode() {
-        return this.f5122a.hashCode();
+        return this.f5129a.hashCode();
     }
 }

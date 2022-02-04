@@ -194,32 +194,32 @@ public class SwitchCompat extends CompoundButton {
         TextPaint textPaint = new TextPaint(1);
         this.f829I = textPaint;
         textPaint.density = getResources().getDisplayMetrics().density;
-        int[] iArr = C0763j.f3616I2;
+        int[] iArr = C0763j.f3620I2;
         C0296w0 v = C0296w0.m1432v(context, attributeSet, iArr, i, 0);
         C1013s.m5762g0(this, context, iArr, attributeSet, v.mo1821r(), i, 0);
-        Drawable g = v.mo1810g(C0763j.f3631L2);
+        Drawable g = v.mo1810g(C0763j.f3635L2);
         this.f837d = g;
         if (g != null) {
             g.setCallback(this);
         }
-        Drawable g2 = v.mo1810g(C0763j.f3676U2);
+        Drawable g2 = v.mo1810g(C0763j.f3680U2);
         this.f842i = g2;
         if (g2 != null) {
             g2.setCallback(this);
         }
-        this.f851r = v.mo1819p(C0763j.f3621J2);
-        this.f852s = v.mo1819p(C0763j.f3626K2);
-        this.f853t = v.mo1804a(C0763j.f3636M2, true);
-        this.f847n = v.mo1809f(C0763j.f3661R2, 0);
-        this.f848o = v.mo1809f(C0763j.f3646O2, 0);
-        this.f849p = v.mo1809f(C0763j.f3651P2, 0);
-        this.f850q = v.mo1804a(C0763j.f3641N2, false);
-        ColorStateList c = v.mo1806c(C0763j.f3666S2);
+        this.f851r = v.mo1819p(C0763j.f3625J2);
+        this.f852s = v.mo1819p(C0763j.f3630K2);
+        this.f853t = v.mo1804a(C0763j.f3640M2, true);
+        this.f847n = v.mo1809f(C0763j.f3665R2, 0);
+        this.f848o = v.mo1809f(C0763j.f3650O2, 0);
+        this.f849p = v.mo1809f(C0763j.f3655P2, 0);
+        this.f850q = v.mo1804a(C0763j.f3645N2, false);
+        ColorStateList c = v.mo1806c(C0763j.f3670S2);
         if (c != null) {
             this.f838e = c;
             this.f840g = true;
         }
-        PorterDuff.Mode e = C0216d0.m1138e(v.mo1814k(C0763j.f3671T2, -1), null);
+        PorterDuff.Mode e = C0216d0.m1138e(v.mo1814k(C0763j.f3675T2, -1), null);
         if (this.f839f != e) {
             this.f839f = e;
             this.f841h = true;
@@ -227,12 +227,12 @@ public class SwitchCompat extends CompoundButton {
         if (this.f840g || this.f841h) {
             m964b();
         }
-        ColorStateList c2 = v.mo1806c(C0763j.f3681V2);
+        ColorStateList c2 = v.mo1806c(C0763j.f3685V2);
         if (c2 != null) {
             this.f843j = c2;
             this.f845l = true;
         }
-        PorterDuff.Mode e2 = C0216d0.m1138e(v.mo1814k(C0763j.f3686W2, -1), null);
+        PorterDuff.Mode e2 = C0216d0.m1138e(v.mo1814k(C0763j.f3690W2, -1), null);
         if (this.f844k != e2) {
             this.f844k = e2;
             this.f846m = true;
@@ -240,7 +240,7 @@ public class SwitchCompat extends CompoundButton {
         if (this.f845l || this.f846m) {
             m965c();
         }
-        int n = v.mo1817n(C0763j.f3656Q2, 0);
+        int n = v.mo1817n(C0763j.f3660Q2, 0);
         if (n != 0) {
             mo1153i(context, n);
         }
@@ -560,13 +560,13 @@ public class SwitchCompat extends CompoundButton {
 
     /* renamed from: i */
     public void mo1153i(Context context, int i) {
-        C0296w0 t = C0296w0.m1430t(context, i, C0763j.f3691X2);
-        ColorStateList c = t.mo1806c(C0763j.f3711b3);
+        C0296w0 t = C0296w0.m1430t(context, i, C0763j.f3695X2);
+        ColorStateList c = t.mo1806c(C0763j.f3715b3);
         if (c == null) {
             c = getTextColors();
         }
         this.f830J = c;
-        int f = t.mo1809f(C0763j.f3696Y2, 0);
+        int f = t.mo1809f(C0763j.f3700Y2, 0);
         if (f != 0) {
             float f2 = (float) f;
             if (f2 != this.f829I.getTextSize()) {
@@ -574,8 +574,8 @@ public class SwitchCompat extends CompoundButton {
                 requestLayout();
             }
         }
-        m971k(t.mo1814k(C0763j.f3701Z2, -1), t.mo1814k(C0763j.f3706a3, -1));
-        this.f833M = t.mo1804a(C0763j.f3746i3, false) ? new C0783a(getContext()) : null;
+        m971k(t.mo1814k(C0763j.f3705Z2, -1), t.mo1814k(C0763j.f3710a3, -1));
+        this.f833M = t.mo1804a(C0763j.f3750i3, false) ? new C0783a(getContext()) : null;
         t.mo1823w();
     }
 

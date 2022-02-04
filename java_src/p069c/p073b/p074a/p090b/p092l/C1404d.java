@@ -8,7 +8,7 @@ import p069c.p073b.p074a.p090b.C1395f;
 public class C1404d extends Property<ViewGroup, Float> {
 
     /* renamed from: a */
-    public static final Property<ViewGroup, Float> f6012a = new C1404d("childrenAlpha");
+    public static final Property<ViewGroup, Float> f6020a = new C1404d("childrenAlpha");
 
     private C1404d(String str) {
         super(Float.class, str);

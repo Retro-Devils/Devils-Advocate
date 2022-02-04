@@ -9,13 +9,13 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 class C3059c<V extends View> extends CoordinatorLayout.AbstractC0337c<V> {
 
     /* renamed from: a */
-    private C3060d f10104a;
+    private C3060d f10112a;
 
     /* renamed from: b */
-    private int f10105b = 0;
+    private int f10113b = 0;
 
     /* renamed from: c */
-    private int f10106c = 0;
+    private int f10114c = 0;
 
     public C3059c() {
     }
@@ -26,7 +26,7 @@ class C3059c<V extends View> extends CoordinatorLayout.AbstractC0337c<V> {
 
     /* renamed from: E */
     public int mo9887E() {
-        C3060d dVar = this.f10104a;
+        C3060d dVar = this.f10112a;
         if (dVar != null) {
             return dVar.mo9911b();
         }
@@ -41,11 +41,11 @@ class C3059c<V extends View> extends CoordinatorLayout.AbstractC0337c<V> {
 
     /* renamed from: G */
     public boolean mo9888G(int i) {
-        C3060d dVar = this.f10104a;
+        C3060d dVar = this.f10112a;
         if (dVar != null) {
             return dVar.mo9914e(i);
         }
-        this.f10105b = i;
+        this.f10113b = i;
         return false;
     }
 
@@ -53,22 +53,22 @@ class C3059c<V extends View> extends CoordinatorLayout.AbstractC0337c<V> {
     /* renamed from: l */
     public boolean mo2098l(CoordinatorLayout coordinatorLayout, V v, int i) {
         mo9904F(coordinatorLayout, v, i);
-        if (this.f10104a == null) {
-            this.f10104a = new C3060d(v);
+        if (this.f10112a == null) {
+            this.f10112a = new C3060d(v);
         }
-        this.f10104a.mo9912c();
-        this.f10104a.mo9910a();
-        int i2 = this.f10105b;
+        this.f10112a.mo9912c();
+        this.f10112a.mo9910a();
+        int i2 = this.f10113b;
         if (i2 != 0) {
-            this.f10104a.mo9914e(i2);
-            this.f10105b = 0;
+            this.f10112a.mo9914e(i2);
+            this.f10113b = 0;
         }
-        int i3 = this.f10106c;
+        int i3 = this.f10114c;
         if (i3 == 0) {
             return true;
         }
-        this.f10104a.mo9913d(i3);
-        this.f10106c = 0;
+        this.f10112a.mo9913d(i3);
+        this.f10114c = 0;
         return true;
     }
 }

@@ -12,27 +12,27 @@ import p006b.p030g.p038j.AbstractC0958f;
 public class C1846p {
 
     /* renamed from: a */
-    private final C1851r f7084a;
+    private final C1851r f7092a;
 
     /* renamed from: b */
-    private final C1847a f7085b;
+    private final C1847a f7093b;
 
     /* access modifiers changed from: private */
     /* renamed from: com.bumptech.glide.load.p.p$a */
     public static class C1847a {
 
         /* renamed from: a */
-        private final Map<Class<?>, C1848a<?>> f7086a = new HashMap();
+        private final Map<Class<?>, C1848a<?>> f7094a = new HashMap();
 
         /* access modifiers changed from: private */
         /* renamed from: com.bumptech.glide.load.p.p$a$a */
         public static class C1848a<Model> {
 
             /* renamed from: a */
-            final List<AbstractC1843n<Model, ?>> f7087a;
+            final List<AbstractC1843n<Model, ?>> f7095a;
 
             public C1848a(List<AbstractC1843n<Model, ?>> list) {
-                this.f7087a = list;
+                this.f7095a = list;
             }
         }
 
@@ -41,21 +41,21 @@ public class C1846p {
 
         /* renamed from: a */
         public void mo7447a() {
-            this.f7086a.clear();
+            this.f7094a.clear();
         }
 
         /* renamed from: b */
         public <Model> List<AbstractC1843n<Model, ?>> mo7448b(Class<Model> cls) {
-            C1848a<?> aVar = this.f7086a.get(cls);
+            C1848a<?> aVar = this.f7094a.get(cls);
             if (aVar == null) {
                 return null;
             }
-            return aVar.f7087a;
+            return aVar.f7095a;
         }
 
         /* renamed from: c */
         public <Model> void mo7449c(Class<Model> cls, List<AbstractC1843n<Model, ?>> list) {
-            if (this.f7086a.put(cls, new C1848a<>(list)) != null) {
+            if (this.f7094a.put(cls, new C1848a<>(list)) != null) {
                 throw new IllegalStateException("Already cached loaders for model: " + cls);
             }
         }
@@ -66,8 +66,8 @@ public class C1846p {
     }
 
     private C1846p(C1851r rVar) {
-        this.f7085b = new C1847a();
-        this.f7084a = rVar;
+        this.f7093b = new C1847a();
+        this.f7092a = rVar;
     }
 
     /* renamed from: b */
@@ -78,23 +78,23 @@ public class C1846p {
     /* renamed from: e */
     private synchronized <A> List<AbstractC1843n<A, ?>> m8510e(Class<A> cls) {
         List<AbstractC1843n<A, ?>> b;
-        b = this.f7085b.mo7448b(cls);
+        b = this.f7093b.mo7448b(cls);
         if (b == null) {
-            b = Collections.unmodifiableList(this.f7084a.mo7453e(cls));
-            this.f7085b.mo7449c(cls, b);
+            b = Collections.unmodifiableList(this.f7092a.mo7453e(cls));
+            this.f7093b.mo7449c(cls, b);
         }
         return b;
     }
 
     /* renamed from: a */
     public synchronized <Model, Data> void mo7444a(Class<Model> cls, Class<Data> cls2, AbstractC1845o<? extends Model, ? extends Data> oVar) {
-        this.f7084a.mo7451b(cls, cls2, oVar);
-        this.f7085b.mo7447a();
+        this.f7092a.mo7451b(cls, cls2, oVar);
+        this.f7093b.mo7447a();
     }
 
     /* renamed from: c */
     public synchronized List<Class<?>> mo7445c(Class<?> cls) {
-        return this.f7084a.mo7454g(cls);
+        return this.f7092a.mo7454g(cls);
     }
 
     /* renamed from: d */

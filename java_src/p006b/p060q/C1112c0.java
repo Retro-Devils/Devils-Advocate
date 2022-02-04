@@ -12,13 +12,13 @@ import p006b.p030g.p039k.C1013s;
 public class C1112c0 {
 
     /* renamed from: a */
-    private static final C1132i0 f5064a;
+    private static final C1132i0 f5071a;
 
     /* renamed from: b */
-    static final Property<View, Float> f5065b = new C1113a(Float.class, "translationAlpha");
+    static final Property<View, Float> f5072b = new C1113a(Float.class, "translationAlpha");
 
     /* renamed from: c */
-    static final Property<View, Rect> f5066c = new C1114b(Rect.class, "clipBounds");
+    static final Property<View, Rect> f5073c = new C1114b(Rect.class, "clipBounds");
 
     /* renamed from: b.q.c0$a */
     static class C1113a extends Property<View, Float> {
@@ -56,12 +56,12 @@ public class C1112c0 {
 
     static {
         int i = Build.VERSION.SDK_INT;
-        f5064a = i >= 29 ? new C1130h0() : i >= 23 ? new C1128g0() : i >= 22 ? new C1126f0() : i >= 21 ? new C1124e0() : i >= 19 ? new C1118d0() : new C1132i0();
+        f5071a = i >= 29 ? new C1130h0() : i >= 23 ? new C1128g0() : i >= 22 ? new C1126f0() : i >= 21 ? new C1124e0() : i >= 19 ? new C1118d0() : new C1132i0();
     }
 
     /* renamed from: a */
     static void m6167a(View view) {
-        f5064a.mo5780a(view);
+        f5071a.mo5780a(view);
     }
 
     /* renamed from: b */
@@ -71,7 +71,7 @@ public class C1112c0 {
 
     /* renamed from: c */
     static float m6169c(View view) {
-        return f5064a.mo5781c(view);
+        return f5071a.mo5781c(view);
     }
 
     /* renamed from: d */
@@ -81,31 +81,31 @@ public class C1112c0 {
 
     /* renamed from: e */
     static void m6171e(View view) {
-        f5064a.mo5782d(view);
+        f5071a.mo5782d(view);
     }
 
     /* renamed from: f */
     static void m6172f(View view, int i, int i2, int i3, int i4) {
-        f5064a.mo5787e(view, i, i2, i3, i4);
+        f5071a.mo5787e(view, i, i2, i3, i4);
     }
 
     /* renamed from: g */
     static void m6173g(View view, float f) {
-        f5064a.mo5783f(view, f);
+        f5071a.mo5783f(view, f);
     }
 
     /* renamed from: h */
     static void m6174h(View view, int i) {
-        f5064a.mo5789g(view, i);
+        f5071a.mo5789g(view, i);
     }
 
     /* renamed from: i */
     static void m6175i(View view, Matrix matrix) {
-        f5064a.mo5785h(view, matrix);
+        f5071a.mo5785h(view, matrix);
     }
 
     /* renamed from: j */
     static void m6176j(View view, Matrix matrix) {
-        f5064a.mo5786i(view, matrix);
+        f5071a.mo5786i(view, matrix);
     }
 }

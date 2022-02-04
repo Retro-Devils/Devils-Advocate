@@ -16,17 +16,17 @@ import p006b.p030g.p031d.C0903c;
 public class animationInterpolatorC1192g implements Interpolator {
 
     /* renamed from: a */
-    private float[] f5245a;
+    private float[] f5252a;
 
     /* renamed from: b */
-    private float[] f5246b;
+    private float[] f5253b;
 
     public animationInterpolatorC1192g(Context context, AttributeSet attributeSet, XmlPullParser xmlPullParser) {
         this(context.getResources(), context.getTheme(), attributeSet, xmlPullParser);
     }
 
     public animationInterpolatorC1192g(Resources resources, Resources.Theme theme, AttributeSet attributeSet, XmlPullParser xmlPullParser) {
-        TypedArray k = C0397g.m1946k(resources, theme, attributeSet, C1182a.f5229l);
+        TypedArray k = C0397g.m1946k(resources, theme, attributeSet, C1182a.f5236l);
         m6459d(k, xmlPullParser);
         k.recycle();
     }
@@ -46,21 +46,21 @@ public class animationInterpolatorC1192g implements Interpolator {
         float length = pathMeasure.getLength();
         int min = Math.min(3000, ((int) (length / 0.002f)) + 1);
         if (min > 0) {
-            this.f5245a = new float[min];
-            this.f5246b = new float[min];
+            this.f5252a = new float[min];
+            this.f5253b = new float[min];
             float[] fArr = new float[2];
             for (int i2 = 0; i2 < min; i2++) {
                 pathMeasure.getPosTan((((float) i2) * length) / ((float) (min - 1)), fArr, null);
-                this.f5245a[i2] = fArr[0];
-                this.f5246b[i2] = fArr[1];
+                this.f5252a[i2] = fArr[0];
+                this.f5253b[i2] = fArr[1];
             }
-            if (((double) Math.abs(this.f5245a[0])) <= 1.0E-5d && ((double) Math.abs(this.f5246b[0])) <= 1.0E-5d) {
+            if (((double) Math.abs(this.f5252a[0])) <= 1.0E-5d && ((double) Math.abs(this.f5253b[0])) <= 1.0E-5d) {
                 int i3 = min - 1;
-                if (((double) Math.abs(this.f5245a[i3] - 1.0f)) <= 1.0E-5d && ((double) Math.abs(this.f5246b[i3] - 1.0f)) <= 1.0E-5d) {
+                if (((double) Math.abs(this.f5252a[i3] - 1.0f)) <= 1.0E-5d && ((double) Math.abs(this.f5253b[i3] - 1.0f)) <= 1.0E-5d) {
                     float f = 0.0f;
                     int i4 = 0;
                     while (i < min) {
-                        float[] fArr2 = this.f5245a;
+                        float[] fArr2 = this.f5252a;
                         int i5 = i4 + 1;
                         float f2 = fArr2[i4];
                         if (f2 >= f) {
@@ -80,14 +80,14 @@ public class animationInterpolatorC1192g implements Interpolator {
             }
             StringBuilder sb = new StringBuilder();
             sb.append("The Path must start at (0,0) and end at (1,1) start: ");
-            sb.append(this.f5245a[0]);
+            sb.append(this.f5252a[0]);
             sb.append(",");
-            sb.append(this.f5246b[0]);
+            sb.append(this.f5253b[0]);
             sb.append(" end:");
             int i6 = min - 1;
-            sb.append(this.f5245a[i6]);
+            sb.append(this.f5252a[i6]);
             sb.append(",");
-            sb.append(this.f5246b[i6]);
+            sb.append(this.f5253b[i6]);
             throw new IllegalArgumentException(sb.toString());
         }
         throw new IllegalArgumentException("The Path has a invalid length " + length);
@@ -137,21 +137,21 @@ public class animationInterpolatorC1192g implements Interpolator {
             return 1.0f;
         }
         int i = 0;
-        int length = this.f5245a.length - 1;
+        int length = this.f5252a.length - 1;
         while (length - i > 1) {
             int i2 = (i + length) / 2;
-            if (f < this.f5245a[i2]) {
+            if (f < this.f5252a[i2]) {
                 length = i2;
             } else {
                 i = i2;
             }
         }
-        float[] fArr = this.f5245a;
+        float[] fArr = this.f5252a;
         float f2 = fArr[length] - fArr[i];
         if (f2 == 0.0f) {
-            return this.f5246b[i];
+            return this.f5253b[i];
         }
-        float[] fArr2 = this.f5246b;
+        float[] fArr2 = this.f5253b;
         float f3 = fArr2[i];
         return f3 + (((f - fArr[i]) / f2) * (fArr2[length] - f3));
     }

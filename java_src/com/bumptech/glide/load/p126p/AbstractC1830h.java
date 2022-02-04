@@ -9,10 +9,10 @@ public interface AbstractC1830h {
     @Deprecated
 
     /* renamed from: a */
-    public static final AbstractC1830h f7060a = new C1831a();
+    public static final AbstractC1830h f7068a = new C1831a();
 
     /* renamed from: b */
-    public static final AbstractC1830h f7061b = new C1833j.C1834a().mo7431a();
+    public static final AbstractC1830h f7069b = new C1833j.C1834a().mo7431a();
 
     /* renamed from: com.bumptech.glide.load.p.h$a */
     class C1831a implements AbstractC1830h {

@@ -10,14 +10,14 @@ import p069c.p073b.p074a.p090b.C1391b;
 public class C3288a {
 
     /* renamed from: a */
-    private static final int[] f10988a = {16842752, C1391b.theme};
+    private static final int[] f10996a = {16842752, C1391b.theme};
 
     /* renamed from: b */
-    private static final int[] f10989b = {C1391b.materialThemeOverlay};
+    private static final int[] f10997b = {C1391b.materialThemeOverlay};
 
     /* renamed from: a */
     private static int m13765a(Context context, AttributeSet attributeSet) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f10988a);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f10996a);
         int resourceId = obtainStyledAttributes.getResourceId(0, 0);
         int resourceId2 = obtainStyledAttributes.getResourceId(1, 0);
         obtainStyledAttributes.recycle();
@@ -26,7 +26,7 @@ public class C3288a {
 
     /* renamed from: b */
     private static int m13766b(Context context, AttributeSet attributeSet, int i, int i2) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f10989b, i, i2);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f10997b, i, i2);
         int resourceId = obtainStyledAttributes.getResourceId(0, 0);
         obtainStyledAttributes.recycle();
         return resourceId;

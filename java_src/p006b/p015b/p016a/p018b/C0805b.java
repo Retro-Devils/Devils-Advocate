@@ -8,16 +8,16 @@ import java.util.WeakHashMap;
 public class C0805b<K, V> implements Iterable<Map.Entry<K, V>> {
 
     /* renamed from: b */
-    C0808c<K, V> f4011b;
+    C0808c<K, V> f4015b;
 
     /* renamed from: c */
-    private C0808c<K, V> f4012c;
+    private C0808c<K, V> f4016c;
 
     /* renamed from: d */
-    private WeakHashMap<AbstractC0811f<K, V>, Boolean> f4013d = new WeakHashMap<>();
+    private WeakHashMap<AbstractC0811f<K, V>, Boolean> f4017d = new WeakHashMap<>();
 
     /* renamed from: e */
-    private int f4014e = 0;
+    private int f4018e = 0;
 
     /* access modifiers changed from: package-private */
     /* renamed from: b.b.a.b.b$a */
@@ -30,14 +30,14 @@ public class C0805b<K, V> implements Iterable<Map.Entry<K, V>> {
         @Override // p006b.p015b.p016a.p018b.C0805b.AbstractC0810e
         /* renamed from: b */
         public C0808c<K, V> mo4769b(C0808c<K, V> cVar) {
-            return cVar.f4018e;
+            return cVar.f4022e;
         }
 
         /* access modifiers changed from: package-private */
         @Override // p006b.p015b.p016a.p018b.C0805b.AbstractC0810e
         /* renamed from: c */
         public C0808c<K, V> mo4770c(C0808c<K, V> cVar) {
-            return cVar.f4017d;
+            return cVar.f4021d;
         }
     }
 
@@ -52,14 +52,14 @@ public class C0805b<K, V> implements Iterable<Map.Entry<K, V>> {
         @Override // p006b.p015b.p016a.p018b.C0805b.AbstractC0810e
         /* renamed from: b */
         public C0808c<K, V> mo4769b(C0808c<K, V> cVar) {
-            return cVar.f4017d;
+            return cVar.f4021d;
         }
 
         /* access modifiers changed from: package-private */
         @Override // p006b.p015b.p016a.p018b.C0805b.AbstractC0810e
         /* renamed from: c */
         public C0808c<K, V> mo4770c(C0808c<K, V> cVar) {
-            return cVar.f4018e;
+            return cVar.f4022e;
         }
     }
 
@@ -68,20 +68,20 @@ public class C0805b<K, V> implements Iterable<Map.Entry<K, V>> {
     public static class C0808c<K, V> implements Map.Entry<K, V> {
 
         /* renamed from: b */
-        final K f4015b;
+        final K f4019b;
 
         /* renamed from: c */
-        final V f4016c;
+        final V f4020c;
 
         /* renamed from: d */
-        C0808c<K, V> f4017d;
+        C0808c<K, V> f4021d;
 
         /* renamed from: e */
-        C0808c<K, V> f4018e;
+        C0808c<K, V> f4022e;
 
         C0808c(K k, V v) {
-            this.f4015b = k;
-            this.f4016c = v;
+            this.f4019b = k;
+            this.f4020c = v;
         }
 
         public boolean equals(Object obj) {
@@ -92,21 +92,21 @@ public class C0805b<K, V> implements Iterable<Map.Entry<K, V>> {
                 return false;
             }
             C0808c cVar = (C0808c) obj;
-            return this.f4015b.equals(cVar.f4015b) && this.f4016c.equals(cVar.f4016c);
+            return this.f4019b.equals(cVar.f4019b) && this.f4020c.equals(cVar.f4020c);
         }
 
         @Override // java.util.Map.Entry
         public K getKey() {
-            return this.f4015b;
+            return this.f4019b;
         }
 
         @Override // java.util.Map.Entry
         public V getValue() {
-            return this.f4016c;
+            return this.f4020c;
         }
 
         public int hashCode() {
-            return this.f4015b.hashCode() ^ this.f4016c.hashCode();
+            return this.f4019b.hashCode() ^ this.f4020c.hashCode();
         }
 
         @Override // java.util.Map.Entry
@@ -115,7 +115,7 @@ public class C0805b<K, V> implements Iterable<Map.Entry<K, V>> {
         }
 
         public String toString() {
-            return ((Object) this.f4015b) + "=" + ((Object) this.f4016c);
+            return ((Object) this.f4019b) + "=" + ((Object) this.f4020c);
         }
     }
 
@@ -124,10 +124,10 @@ public class C0805b<K, V> implements Iterable<Map.Entry<K, V>> {
     public class C0809d implements Iterator<Map.Entry<K, V>>, AbstractC0811f<K, V> {
 
         /* renamed from: b */
-        private C0808c<K, V> f4019b;
+        private C0808c<K, V> f4023b;
 
         /* renamed from: c */
-        private boolean f4020c = true;
+        private boolean f4024c = true;
 
         C0809d() {
         }
@@ -135,34 +135,34 @@ public class C0805b<K, V> implements Iterable<Map.Entry<K, V>> {
         @Override // p006b.p015b.p016a.p018b.C0805b.AbstractC0811f
         /* renamed from: a */
         public void mo4777a(C0808c<K, V> cVar) {
-            C0808c<K, V> cVar2 = this.f4019b;
+            C0808c<K, V> cVar2 = this.f4023b;
             if (cVar == cVar2) {
-                C0808c<K, V> cVar3 = cVar2.f4018e;
-                this.f4019b = cVar3;
-                this.f4020c = cVar3 == null;
+                C0808c<K, V> cVar3 = cVar2.f4022e;
+                this.f4023b = cVar3;
+                this.f4024c = cVar3 == null;
             }
         }
 
         /* renamed from: b */
         public Map.Entry<K, V> next() {
             C0808c<K, V> cVar;
-            if (this.f4020c) {
-                this.f4020c = false;
-                cVar = C0805b.this.f4011b;
+            if (this.f4024c) {
+                this.f4024c = false;
+                cVar = C0805b.this.f4015b;
             } else {
-                C0808c<K, V> cVar2 = this.f4019b;
-                cVar = cVar2 != null ? cVar2.f4017d : null;
+                C0808c<K, V> cVar2 = this.f4023b;
+                cVar = cVar2 != null ? cVar2.f4021d : null;
             }
-            this.f4019b = cVar;
-            return this.f4019b;
+            this.f4023b = cVar;
+            return this.f4023b;
         }
 
         public boolean hasNext() {
-            if (this.f4020c) {
-                return C0805b.this.f4011b != null;
+            if (this.f4024c) {
+                return C0805b.this.f4015b != null;
             }
-            C0808c<K, V> cVar = this.f4019b;
-            return (cVar == null || cVar.f4017d == null) ? false : true;
+            C0808c<K, V> cVar = this.f4023b;
+            return (cVar == null || cVar.f4021d == null) ? false : true;
         }
     }
 
@@ -170,20 +170,20 @@ public class C0805b<K, V> implements Iterable<Map.Entry<K, V>> {
     private static abstract class AbstractC0810e<K, V> implements Iterator<Map.Entry<K, V>>, AbstractC0811f<K, V> {
 
         /* renamed from: b */
-        C0808c<K, V> f4022b;
+        C0808c<K, V> f4026b;
 
         /* renamed from: c */
-        C0808c<K, V> f4023c;
+        C0808c<K, V> f4027c;
 
         AbstractC0810e(C0808c<K, V> cVar, C0808c<K, V> cVar2) {
-            this.f4022b = cVar2;
-            this.f4023c = cVar;
+            this.f4026b = cVar2;
+            this.f4027c = cVar;
         }
 
         /* renamed from: e */
         private C0808c<K, V> m4712e() {
-            C0808c<K, V> cVar = this.f4023c;
-            C0808c<K, V> cVar2 = this.f4022b;
+            C0808c<K, V> cVar = this.f4027c;
+            C0808c<K, V> cVar2 = this.f4026b;
             if (cVar == cVar2 || cVar2 == null) {
                 return null;
             }
@@ -193,16 +193,16 @@ public class C0805b<K, V> implements Iterable<Map.Entry<K, V>> {
         @Override // p006b.p015b.p016a.p018b.C0805b.AbstractC0811f
         /* renamed from: a */
         public void mo4777a(C0808c<K, V> cVar) {
-            if (this.f4022b == cVar && cVar == this.f4023c) {
-                this.f4023c = null;
-                this.f4022b = null;
+            if (this.f4026b == cVar && cVar == this.f4027c) {
+                this.f4027c = null;
+                this.f4026b = null;
             }
-            C0808c<K, V> cVar2 = this.f4022b;
+            C0808c<K, V> cVar2 = this.f4026b;
             if (cVar2 == cVar) {
-                this.f4022b = mo4769b(cVar2);
+                this.f4026b = mo4769b(cVar2);
             }
-            if (this.f4023c == cVar) {
-                this.f4023c = m4712e();
+            if (this.f4027c == cVar) {
+                this.f4027c = m4712e();
             }
         }
 
@@ -216,13 +216,13 @@ public class C0805b<K, V> implements Iterable<Map.Entry<K, V>> {
 
         /* renamed from: d */
         public Map.Entry<K, V> next() {
-            C0808c<K, V> cVar = this.f4023c;
-            this.f4023c = m4712e();
+            C0808c<K, V> cVar = this.f4027c;
+            this.f4027c = m4712e();
             return cVar;
         }
 
         public boolean hasNext() {
-            return this.f4023c != null;
+            return this.f4027c != null;
         }
     }
 
@@ -235,22 +235,22 @@ public class C0805b<K, V> implements Iterable<Map.Entry<K, V>> {
 
     /* renamed from: a */
     public Iterator<Map.Entry<K, V>> mo4759a() {
-        C0807b bVar = new C0807b(this.f4012c, this.f4011b);
-        this.f4013d.put(bVar, Boolean.FALSE);
+        C0807b bVar = new C0807b(this.f4016c, this.f4015b);
+        this.f4017d.put(bVar, Boolean.FALSE);
         return bVar;
     }
 
     /* renamed from: b */
     public Map.Entry<K, V> mo4760b() {
-        return this.f4011b;
+        return this.f4015b;
     }
 
     /* access modifiers changed from: protected */
     /* renamed from: c */
     public C0808c<K, V> mo4754c(K k) {
-        C0808c<K, V> cVar = this.f4011b;
-        while (cVar != null && !cVar.f4015b.equals(k)) {
-            cVar = cVar.f4017d;
+        C0808c<K, V> cVar = this.f4015b;
+        while (cVar != null && !cVar.f4019b.equals(k)) {
+            cVar = cVar.f4021d;
         }
         return cVar;
     }
@@ -258,13 +258,13 @@ public class C0805b<K, V> implements Iterable<Map.Entry<K, V>> {
     /* renamed from: d */
     public C0805b<K, V>.C0809d mo4761d() {
         C0805b<K, V>.C0809d dVar = new C0809d();
-        this.f4013d.put(dVar, Boolean.FALSE);
+        this.f4017d.put(dVar, Boolean.FALSE);
         return dVar;
     }
 
     /* renamed from: e */
     public Map.Entry<K, V> mo4762e() {
-        return this.f4012c;
+        return this.f4016c;
     }
 
     public boolean equals(Object obj) {
@@ -294,15 +294,15 @@ public class C0805b<K, V> implements Iterable<Map.Entry<K, V>> {
     /* renamed from: f */
     public C0808c<K, V> mo4764f(K k, V v) {
         C0808c<K, V> cVar = new C0808c<>(k, v);
-        this.f4014e++;
-        C0808c<K, V> cVar2 = this.f4012c;
+        this.f4018e++;
+        C0808c<K, V> cVar2 = this.f4016c;
         if (cVar2 == null) {
-            this.f4011b = cVar;
+            this.f4015b = cVar;
         } else {
-            cVar2.f4017d = cVar;
-            cVar.f4018e = cVar2;
+            cVar2.f4021d = cVar;
+            cVar.f4022e = cVar2;
         }
-        this.f4012c = cVar;
+        this.f4016c = cVar;
         return cVar;
     }
 
@@ -310,7 +310,7 @@ public class C0805b<K, V> implements Iterable<Map.Entry<K, V>> {
     public V mo4756g(K k, V v) {
         C0808c<K, V> c = mo4754c(k);
         if (c != null) {
-            return c.f4016c;
+            return c.f4020c;
         }
         mo4764f(k, v);
         return null;
@@ -322,28 +322,28 @@ public class C0805b<K, V> implements Iterable<Map.Entry<K, V>> {
         if (c == null) {
             return null;
         }
-        this.f4014e--;
-        if (!this.f4013d.isEmpty()) {
-            for (AbstractC0811f<K, V> fVar : this.f4013d.keySet()) {
+        this.f4018e--;
+        if (!this.f4017d.isEmpty()) {
+            for (AbstractC0811f<K, V> fVar : this.f4017d.keySet()) {
                 fVar.mo4777a(c);
             }
         }
-        C0808c<K, V> cVar = c.f4018e;
-        C0808c<K, V> cVar2 = c.f4017d;
+        C0808c<K, V> cVar = c.f4022e;
+        C0808c<K, V> cVar2 = c.f4021d;
         if (cVar != null) {
-            cVar.f4017d = cVar2;
+            cVar.f4021d = cVar2;
         } else {
-            this.f4011b = cVar2;
+            this.f4015b = cVar2;
         }
-        C0808c<K, V> cVar3 = c.f4017d;
+        C0808c<K, V> cVar3 = c.f4021d;
         if (cVar3 != null) {
-            cVar3.f4018e = cVar;
+            cVar3.f4022e = cVar;
         } else {
-            this.f4012c = cVar;
+            this.f4016c = cVar;
         }
-        c.f4017d = null;
-        c.f4018e = null;
-        return c.f4016c;
+        c.f4021d = null;
+        c.f4022e = null;
+        return c.f4020c;
     }
 
     public int hashCode() {
@@ -357,13 +357,13 @@ public class C0805b<K, V> implements Iterable<Map.Entry<K, V>> {
 
     @Override // java.lang.Iterable
     public Iterator<Map.Entry<K, V>> iterator() {
-        C0806a aVar = new C0806a(this.f4011b, this.f4012c);
-        this.f4013d.put(aVar, Boolean.FALSE);
+        C0806a aVar = new C0806a(this.f4015b, this.f4016c);
+        this.f4017d.put(aVar, Boolean.FALSE);
         return aVar;
     }
 
     public int size() {
-        return this.f4014e;
+        return this.f4018e;
     }
 
     public String toString() {

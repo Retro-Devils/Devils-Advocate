@@ -45,9 +45,9 @@ public class C0275r0 {
 
     /* renamed from: a */
     public static void m1374a(View view, Context context) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(C0763j.f3828z0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(C0763j.f3832z0);
         try {
-            if (!obtainStyledAttributes.hasValue(C0763j.f3594E0)) {
+            if (!obtainStyledAttributes.hasValue(C0763j.f3598E0)) {
                 Log.e("ThemeUtils", "View " + view.getClass() + " is an AppCompat widget that can only be used with a Theme.AppCompat theme (or descendant).");
             }
         } finally {

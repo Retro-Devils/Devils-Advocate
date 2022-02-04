@@ -21,164 +21,164 @@ import p006b.p030g.p039k.p040b0.AbstractC0987f;
 public class C0979c {
 
     /* renamed from: a */
-    private static int f4686a;
+    private static int f4690a;
 
     /* renamed from: b */
-    private final AccessibilityNodeInfo f4687b;
+    private final AccessibilityNodeInfo f4691b;
 
     /* renamed from: c */
-    public int f4688c = -1;
+    public int f4692c = -1;
 
     /* renamed from: d */
-    private int f4689d = -1;
+    private int f4693d = -1;
 
     /* renamed from: b.g.k.b0.c$a */
     public static class C0980a {
 
         /* renamed from: A */
-        public static final C0980a f4690A;
+        public static final C0980a f4694A;
 
         /* renamed from: B */
-        public static final C0980a f4691B;
+        public static final C0980a f4695B;
 
         /* renamed from: C */
-        public static final C0980a f4692C;
+        public static final C0980a f4696C;
 
         /* renamed from: D */
-        public static final C0980a f4693D;
+        public static final C0980a f4697D;
 
         /* renamed from: E */
-        public static final C0980a f4694E;
+        public static final C0980a f4698E;
 
         /* renamed from: F */
-        public static final C0980a f4695F;
+        public static final C0980a f4699F;
 
         /* renamed from: G */
-        public static final C0980a f4696G;
+        public static final C0980a f4700G;
 
         /* renamed from: H */
-        public static final C0980a f4697H;
+        public static final C0980a f4701H;
 
         /* renamed from: I */
-        public static final C0980a f4698I;
+        public static final C0980a f4702I;
 
         /* renamed from: J */
-        public static final C0980a f4699J;
+        public static final C0980a f4703J;
 
         /* renamed from: K */
-        public static final C0980a f4700K;
+        public static final C0980a f4704K;
 
         /* renamed from: a */
-        public static final C0980a f4701a = new C0980a(1, null);
+        public static final C0980a f4705a = new C0980a(1, null);
 
         /* renamed from: b */
-        public static final C0980a f4702b = new C0980a(2, null);
+        public static final C0980a f4706b = new C0980a(2, null);
 
         /* renamed from: c */
-        public static final C0980a f4703c = new C0980a(4, null);
+        public static final C0980a f4707c = new C0980a(4, null);
 
         /* renamed from: d */
-        public static final C0980a f4704d = new C0980a(8, null);
+        public static final C0980a f4708d = new C0980a(8, null);
 
         /* renamed from: e */
-        public static final C0980a f4705e = new C0980a(16, null);
+        public static final C0980a f4709e = new C0980a(16, null);
 
         /* renamed from: f */
-        public static final C0980a f4706f = new C0980a(32, null);
+        public static final C0980a f4710f = new C0980a(32, null);
 
         /* renamed from: g */
-        public static final C0980a f4707g = new C0980a(64, null);
+        public static final C0980a f4711g = new C0980a(64, null);
 
         /* renamed from: h */
-        public static final C0980a f4708h = new C0980a(128, null);
+        public static final C0980a f4712h = new C0980a(128, null);
 
         /* renamed from: i */
-        public static final C0980a f4709i = new C0980a(256, null, AbstractC0987f.C0989b.class);
+        public static final C0980a f4713i = new C0980a(256, null, AbstractC0987f.C0989b.class);
 
         /* renamed from: j */
-        public static final C0980a f4710j = new C0980a(512, null, AbstractC0987f.C0989b.class);
+        public static final C0980a f4714j = new C0980a(512, null, AbstractC0987f.C0989b.class);
 
         /* renamed from: k */
-        public static final C0980a f4711k = new C0980a(1024, null, AbstractC0987f.C0990c.class);
+        public static final C0980a f4715k = new C0980a(1024, null, AbstractC0987f.C0990c.class);
 
         /* renamed from: l */
-        public static final C0980a f4712l = new C0980a(2048, null, AbstractC0987f.C0990c.class);
+        public static final C0980a f4716l = new C0980a(2048, null, AbstractC0987f.C0990c.class);
 
         /* renamed from: m */
-        public static final C0980a f4713m = new C0980a(4096, null);
+        public static final C0980a f4717m = new C0980a(4096, null);
 
         /* renamed from: n */
-        public static final C0980a f4714n = new C0980a(8192, null);
+        public static final C0980a f4718n = new C0980a(8192, null);
 
         /* renamed from: o */
-        public static final C0980a f4715o = new C0980a(16384, null);
+        public static final C0980a f4719o = new C0980a(16384, null);
 
         /* renamed from: p */
-        public static final C0980a f4716p = new C0980a(32768, null);
+        public static final C0980a f4720p = new C0980a(32768, null);
 
         /* renamed from: q */
-        public static final C0980a f4717q = new C0980a(65536, null);
+        public static final C0980a f4721q = new C0980a(65536, null);
 
         /* renamed from: r */
-        public static final C0980a f4718r = new C0980a(131072, null, AbstractC0987f.C0994g.class);
+        public static final C0980a f4722r = new C0980a(131072, null, AbstractC0987f.C0994g.class);
 
         /* renamed from: s */
-        public static final C0980a f4719s = new C0980a(262144, null);
+        public static final C0980a f4723s = new C0980a(262144, null);
 
         /* renamed from: t */
-        public static final C0980a f4720t = new C0980a(524288, null);
+        public static final C0980a f4724t = new C0980a(524288, null);
 
         /* renamed from: u */
-        public static final C0980a f4721u = new C0980a(1048576, null);
+        public static final C0980a f4725u = new C0980a(1048576, null);
 
         /* renamed from: v */
-        public static final C0980a f4722v = new C0980a(2097152, null, AbstractC0987f.C0995h.class);
+        public static final C0980a f4726v = new C0980a(2097152, null, AbstractC0987f.C0995h.class);
 
         /* renamed from: w */
-        public static final C0980a f4723w;
+        public static final C0980a f4727w;
 
         /* renamed from: x */
-        public static final C0980a f4724x;
+        public static final C0980a f4728x;
 
         /* renamed from: y */
-        public static final C0980a f4725y;
+        public static final C0980a f4729y;
 
         /* renamed from: z */
-        public static final C0980a f4726z;
+        public static final C0980a f4730z;
 
         /* renamed from: L */
-        final Object f4727L;
+        final Object f4731L;
 
         /* renamed from: M */
-        private final int f4728M;
+        private final int f4732M;
 
         /* renamed from: N */
-        private final Class<? extends AbstractC0987f.AbstractC0988a> f4729N;
+        private final Class<? extends AbstractC0987f.AbstractC0988a> f4733N;
 
         /* renamed from: O */
-        protected final AbstractC0987f f4730O;
+        protected final AbstractC0987f f4734O;
 
         static {
             AccessibilityNodeInfo.AccessibilityAction accessibilityAction = null;
             int i = Build.VERSION.SDK_INT;
-            f4723w = new C0980a(i >= 23 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_SHOW_ON_SCREEN : null, 16908342, null, null, null);
-            f4724x = new C0980a(i >= 23 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_TO_POSITION : null, 16908343, null, null, AbstractC0987f.C0992e.class);
-            f4725y = new C0980a(i >= 23 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_UP : null, 16908344, null, null, null);
-            f4726z = new C0980a(i >= 23 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_LEFT : null, 16908345, null, null, null);
-            f4690A = new C0980a(i >= 23 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_DOWN : null, 16908346, null, null, null);
-            f4691B = new C0980a(i >= 23 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_RIGHT : null, 16908347, null, null, null);
-            f4692C = new C0980a(i >= 29 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_PAGE_UP : null, 16908358, null, null, null);
-            f4693D = new C0980a(i >= 29 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_PAGE_DOWN : null, 16908359, null, null, null);
-            f4694E = new C0980a(i >= 29 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_PAGE_LEFT : null, 16908360, null, null, null);
-            f4695F = new C0980a(i >= 29 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_PAGE_RIGHT : null, 16908361, null, null, null);
-            f4696G = new C0980a(i >= 23 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_CONTEXT_CLICK : null, 16908348, null, null, null);
-            f4697H = new C0980a(i >= 24 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_SET_PROGRESS : null, 16908349, null, null, AbstractC0987f.C0993f.class);
-            f4698I = new C0980a(i >= 26 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_MOVE_WINDOW : null, 16908354, null, null, AbstractC0987f.C0991d.class);
-            f4699J = new C0980a(i >= 28 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_SHOW_TOOLTIP : null, 16908356, null, null, null);
+            f4727w = new C0980a(i >= 23 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_SHOW_ON_SCREEN : null, 16908342, null, null, null);
+            f4728x = new C0980a(i >= 23 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_TO_POSITION : null, 16908343, null, null, AbstractC0987f.C0992e.class);
+            f4729y = new C0980a(i >= 23 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_UP : null, 16908344, null, null, null);
+            f4730z = new C0980a(i >= 23 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_LEFT : null, 16908345, null, null, null);
+            f4694A = new C0980a(i >= 23 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_DOWN : null, 16908346, null, null, null);
+            f4695B = new C0980a(i >= 23 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_RIGHT : null, 16908347, null, null, null);
+            f4696C = new C0980a(i >= 29 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_PAGE_UP : null, 16908358, null, null, null);
+            f4697D = new C0980a(i >= 29 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_PAGE_DOWN : null, 16908359, null, null, null);
+            f4698E = new C0980a(i >= 29 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_PAGE_LEFT : null, 16908360, null, null, null);
+            f4699F = new C0980a(i >= 29 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_PAGE_RIGHT : null, 16908361, null, null, null);
+            f4700G = new C0980a(i >= 23 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_CONTEXT_CLICK : null, 16908348, null, null, null);
+            f4701H = new C0980a(i >= 24 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_SET_PROGRESS : null, 16908349, null, null, AbstractC0987f.C0993f.class);
+            f4702I = new C0980a(i >= 26 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_MOVE_WINDOW : null, 16908354, null, null, AbstractC0987f.C0991d.class);
+            f4703J = new C0980a(i >= 28 ? AccessibilityNodeInfo.AccessibilityAction.ACTION_SHOW_TOOLTIP : null, 16908356, null, null, null);
             if (i >= 28) {
                 accessibilityAction = AccessibilityNodeInfo.AccessibilityAction.ACTION_HIDE_TOOLTIP;
             }
-            f4700K = new C0980a(accessibilityAction, 16908357, null, null, null);
+            f4704K = new C0980a(accessibilityAction, 16908357, null, null, null);
         }
 
         public C0980a(int i, CharSequence charSequence) {
@@ -194,24 +194,24 @@ public class C0979c {
         }
 
         C0980a(Object obj, int i, CharSequence charSequence, AbstractC0987f fVar, Class<? extends AbstractC0987f.AbstractC0988a> cls) {
-            this.f4728M = i;
-            this.f4730O = fVar;
+            this.f4732M = i;
+            this.f4734O = fVar;
             if (Build.VERSION.SDK_INT >= 21 && obj == null) {
                 obj = new AccessibilityNodeInfo.AccessibilityAction(i, charSequence);
             }
-            this.f4727L = obj;
-            this.f4729N = cls;
+            this.f4731L = obj;
+            this.f4733N = cls;
         }
 
         /* renamed from: a */
         public C0980a mo5514a(CharSequence charSequence, AbstractC0987f fVar) {
-            return new C0980a(null, this.f4728M, charSequence, fVar, this.f4729N);
+            return new C0980a(null, this.f4732M, charSequence, fVar, this.f4733N);
         }
 
         /* renamed from: b */
         public int mo5515b() {
             if (Build.VERSION.SDK_INT >= 21) {
-                return ((AccessibilityNodeInfo.AccessibilityAction) this.f4727L).getId();
+                return ((AccessibilityNodeInfo.AccessibilityAction) this.f4731L).getId();
             }
             return 0;
         }
@@ -219,7 +219,7 @@ public class C0979c {
         /* renamed from: c */
         public CharSequence mo5516c() {
             if (Build.VERSION.SDK_INT >= 21) {
-                return ((AccessibilityNodeInfo.AccessibilityAction) this.f4727L).getLabel();
+                return ((AccessibilityNodeInfo.AccessibilityAction) this.f4731L).getLabel();
             }
             return null;
         }
@@ -231,11 +231,11 @@ public class C0979c {
         public boolean mo5517d(android.view.View r5, android.os.Bundle r6) {
             /*
                 r4 = this;
-                b.g.k.b0.f r0 = r4.f4730O
+                b.g.k.b0.f r0 = r4.f4734O
                 r1 = 0
                 if (r0 == 0) goto L_0x0049
                 r0 = 0
-                java.lang.Class<? extends b.g.k.b0.f$a> r2 = r4.f4729N
+                java.lang.Class<? extends b.g.k.b0.f$a> r2 = r4.f4733N
                 if (r2 == 0) goto L_0x0042
                 java.lang.Class[] r3 = new java.lang.Class[r1]     // Catch:{ Exception -> 0x0020 }
                 java.lang.reflect.Constructor r2 = r2.getDeclaredConstructor(r3)     // Catch:{ Exception -> 0x0020 }
@@ -252,7 +252,7 @@ public class C0979c {
             L_0x0020:
                 r6 = move-exception
             L_0x0021:
-                java.lang.Class<? extends b.g.k.b0.f$a> r1 = r4.f4729N
+                java.lang.Class<? extends b.g.k.b0.f$a> r1 = r4.f4733N
                 if (r1 != 0) goto L_0x0028
                 java.lang.String r1 = "null"
                 goto L_0x002c
@@ -268,7 +268,7 @@ public class C0979c {
                 java.lang.String r2 = "A11yActionCompat"
                 android.util.Log.e(r2, r1, r6)
             L_0x0042:
-                b.g.k.b0.f r6 = r4.f4730O
+                b.g.k.b0.f r6 = r4.f4734O
                 boolean r5 = r6.mo5529a(r5, r0)
                 return r5
             L_0x0049:
@@ -281,13 +281,13 @@ public class C0979c {
             if (obj == null || !(obj instanceof C0980a)) {
                 return false;
             }
-            Object obj2 = this.f4727L;
-            Object obj3 = ((C0980a) obj).f4727L;
+            Object obj2 = this.f4731L;
+            Object obj3 = ((C0980a) obj).f4731L;
             return obj2 == null ? obj3 == null : obj2.equals(obj3);
         }
 
         public int hashCode() {
-            Object obj = this.f4727L;
+            Object obj = this.f4731L;
             if (obj != null) {
                 return obj.hashCode();
             }
@@ -299,10 +299,10 @@ public class C0979c {
     public static class C0981b {
 
         /* renamed from: a */
-        final Object f4731a;
+        final Object f4735a;
 
         C0981b(Object obj) {
-            this.f4731a = obj;
+            this.f4735a = obj;
         }
 
         /* renamed from: a */
@@ -321,10 +321,10 @@ public class C0979c {
     public static class C0982c {
 
         /* renamed from: a */
-        final Object f4732a;
+        final Object f4736a;
 
         C0982c(Object obj) {
-            this.f4732a = obj;
+            this.f4736a = obj;
         }
 
         /* renamed from: a */
@@ -335,7 +335,7 @@ public class C0979c {
     }
 
     private C0979c(AccessibilityNodeInfo accessibilityNodeInfo) {
-        this.f4687b = accessibilityNodeInfo;
+        this.f4691b = accessibilityNodeInfo;
     }
 
     /* renamed from: B0 */
@@ -355,7 +355,7 @@ public class C0979c {
 
     /* renamed from: P */
     public static C0979c m5573P(C0979c cVar) {
-        return m5570B0(AccessibilityNodeInfo.obtain(cVar.f4687b));
+        return m5570B0(AccessibilityNodeInfo.obtain(cVar.f4691b));
     }
 
     /* renamed from: T */
@@ -397,10 +397,10 @@ public class C0979c {
     /* renamed from: g */
     private void m5577g() {
         if (Build.VERSION.SDK_INT >= 19) {
-            this.f4687b.getExtras().remove("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_START_KEY");
-            this.f4687b.getExtras().remove("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_END_KEY");
-            this.f4687b.getExtras().remove("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_FLAGS_KEY");
-            this.f4687b.getExtras().remove("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_ID_KEY");
+            this.f4691b.getExtras().remove("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_START_KEY");
+            this.f4691b.getExtras().remove("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_END_KEY");
+            this.f4691b.getExtras().remove("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_FLAGS_KEY");
+            this.f4691b.getExtras().remove("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_ID_KEY");
         }
     }
 
@@ -409,12 +409,12 @@ public class C0979c {
         if (Build.VERSION.SDK_INT < 19) {
             return new ArrayList();
         }
-        ArrayList<Integer> integerArrayList = this.f4687b.getExtras().getIntegerArrayList(str);
+        ArrayList<Integer> integerArrayList = this.f4691b.getExtras().getIntegerArrayList(str);
         if (integerArrayList != null) {
             return integerArrayList;
         }
         ArrayList<Integer> arrayList = new ArrayList<>();
-        this.f4687b.getExtras().putIntegerArrayList(str, arrayList);
+        this.f4691b.getExtras().putIntegerArrayList(str, arrayList);
         return arrayList;
     }
 
@@ -550,83 +550,83 @@ public class C0979c {
                 }
             }
         }
-        int i2 = f4686a;
-        f4686a = i2 + 1;
+        int i2 = f4690a;
+        f4690a = i2 + 1;
         return i2;
     }
 
     /* renamed from: A */
     public boolean mo5447A() {
         if (Build.VERSION.SDK_INT >= 16) {
-            return this.f4687b.isAccessibilityFocused();
+            return this.f4691b.isAccessibilityFocused();
         }
         return false;
     }
 
     /* renamed from: A0 */
     public AccessibilityNodeInfo mo5448A0() {
-        return this.f4687b;
+        return this.f4691b;
     }
 
     /* renamed from: B */
     public boolean mo5449B() {
-        return this.f4687b.isCheckable();
+        return this.f4691b.isCheckable();
     }
 
     /* renamed from: C */
     public boolean mo5450C() {
-        return this.f4687b.isChecked();
+        return this.f4691b.isChecked();
     }
 
     /* renamed from: D */
     public boolean mo5451D() {
-        return this.f4687b.isClickable();
+        return this.f4691b.isClickable();
     }
 
     /* renamed from: E */
     public boolean mo5452E() {
-        return this.f4687b.isEnabled();
+        return this.f4691b.isEnabled();
     }
 
     /* renamed from: F */
     public boolean mo5453F() {
-        return this.f4687b.isFocusable();
+        return this.f4691b.isFocusable();
     }
 
     /* renamed from: G */
     public boolean mo5454G() {
-        return this.f4687b.isFocused();
+        return this.f4691b.isFocused();
     }
 
     /* renamed from: H */
     public boolean mo5455H() {
-        return this.f4687b.isLongClickable();
+        return this.f4691b.isLongClickable();
     }
 
     /* renamed from: I */
     public boolean mo5456I() {
-        return this.f4687b.isPassword();
+        return this.f4691b.isPassword();
     }
 
     /* renamed from: J */
     public boolean mo5457J() {
-        return this.f4687b.isScrollable();
+        return this.f4691b.isScrollable();
     }
 
     /* renamed from: K */
     public boolean mo5458K() {
-        return this.f4687b.isSelected();
+        return this.f4691b.isSelected();
     }
 
     /* renamed from: L */
     public boolean mo5459L() {
-        return Build.VERSION.SDK_INT >= 26 ? this.f4687b.isShowingHintText() : m5580l(4);
+        return Build.VERSION.SDK_INT >= 26 ? this.f4691b.isShowingHintText() : m5580l(4);
     }
 
     /* renamed from: M */
     public boolean mo5460M() {
         if (Build.VERSION.SDK_INT >= 16) {
-            return this.f4687b.isVisibleToUser();
+            return this.f4691b.isVisibleToUser();
         }
         return false;
     }
@@ -634,20 +634,20 @@ public class C0979c {
     /* renamed from: Q */
     public boolean mo5461Q(int i, Bundle bundle) {
         if (Build.VERSION.SDK_INT >= 16) {
-            return this.f4687b.performAction(i, bundle);
+            return this.f4691b.performAction(i, bundle);
         }
         return false;
     }
 
     /* renamed from: R */
     public void mo5462R() {
-        this.f4687b.recycle();
+        this.f4691b.recycle();
     }
 
     /* renamed from: S */
     public boolean mo5463S(C0980a aVar) {
         if (Build.VERSION.SDK_INT >= 21) {
-            return this.f4687b.removeAction((AccessibilityNodeInfo.AccessibilityAction) aVar.f4727L);
+            return this.f4691b.removeAction((AccessibilityNodeInfo.AccessibilityAction) aVar.f4731L);
         }
         return false;
     }
@@ -655,82 +655,82 @@ public class C0979c {
     /* renamed from: U */
     public void mo5464U(boolean z) {
         if (Build.VERSION.SDK_INT >= 16) {
-            this.f4687b.setAccessibilityFocused(z);
+            this.f4691b.setAccessibilityFocused(z);
         }
     }
 
     @Deprecated
     /* renamed from: W */
     public void mo5465W(Rect rect) {
-        this.f4687b.setBoundsInParent(rect);
+        this.f4691b.setBoundsInParent(rect);
     }
 
     /* renamed from: X */
     public void mo5466X(Rect rect) {
-        this.f4687b.setBoundsInScreen(rect);
+        this.f4691b.setBoundsInScreen(rect);
     }
 
     /* renamed from: Y */
     public void mo5467Y(boolean z) {
-        this.f4687b.setCheckable(z);
+        this.f4691b.setCheckable(z);
     }
 
     /* renamed from: Z */
     public void mo5468Z(boolean z) {
-        this.f4687b.setChecked(z);
+        this.f4691b.setChecked(z);
     }
 
     /* renamed from: a */
     public void mo5469a(int i) {
-        this.f4687b.addAction(i);
+        this.f4691b.addAction(i);
     }
 
     /* renamed from: a0 */
     public void mo5470a0(CharSequence charSequence) {
-        this.f4687b.setClassName(charSequence);
+        this.f4691b.setClassName(charSequence);
     }
 
     /* renamed from: b */
     public void mo5471b(C0980a aVar) {
         if (Build.VERSION.SDK_INT >= 21) {
-            this.f4687b.addAction((AccessibilityNodeInfo.AccessibilityAction) aVar.f4727L);
+            this.f4691b.addAction((AccessibilityNodeInfo.AccessibilityAction) aVar.f4731L);
         }
     }
 
     /* renamed from: b0 */
     public void mo5472b0(boolean z) {
-        this.f4687b.setClickable(z);
+        this.f4691b.setClickable(z);
     }
 
     /* renamed from: c */
     public void mo5473c(View view) {
-        this.f4687b.addChild(view);
+        this.f4691b.addChild(view);
     }
 
     /* renamed from: c0 */
     public void mo5474c0(Object obj) {
         if (Build.VERSION.SDK_INT >= 19) {
-            this.f4687b.setCollectionInfo(obj == null ? null : (AccessibilityNodeInfo.CollectionInfo) ((C0981b) obj).f4731a);
+            this.f4691b.setCollectionInfo(obj == null ? null : (AccessibilityNodeInfo.CollectionInfo) ((C0981b) obj).f4735a);
         }
     }
 
     /* renamed from: d */
     public void mo5475d(View view, int i) {
         if (Build.VERSION.SDK_INT >= 16) {
-            this.f4687b.addChild(view, i);
+            this.f4691b.addChild(view, i);
         }
     }
 
     /* renamed from: d0 */
     public void mo5476d0(Object obj) {
         if (Build.VERSION.SDK_INT >= 19) {
-            this.f4687b.setCollectionItemInfo(obj == null ? null : (AccessibilityNodeInfo.CollectionItemInfo) ((C0982c) obj).f4732a);
+            this.f4691b.setCollectionItemInfo(obj == null ? null : (AccessibilityNodeInfo.CollectionItemInfo) ((C0982c) obj).f4736a);
         }
     }
 
     /* renamed from: e0 */
     public void mo5477e0(CharSequence charSequence) {
-        this.f4687b.setContentDescription(charSequence);
+        this.f4691b.setContentDescription(charSequence);
     }
 
     public boolean equals(Object obj) {
@@ -741,15 +741,15 @@ public class C0979c {
             return false;
         }
         C0979c cVar = (C0979c) obj;
-        AccessibilityNodeInfo accessibilityNodeInfo = this.f4687b;
+        AccessibilityNodeInfo accessibilityNodeInfo = this.f4691b;
         if (accessibilityNodeInfo == null) {
-            if (cVar.f4687b != null) {
+            if (cVar.f4691b != null) {
                 return false;
             }
-        } else if (!accessibilityNodeInfo.equals(cVar.f4687b)) {
+        } else if (!accessibilityNodeInfo.equals(cVar.f4691b)) {
             return false;
         }
-        return this.f4689d == cVar.f4689d && this.f4688c == cVar.f4688c;
+        return this.f4693d == cVar.f4693d && this.f4692c == cVar.f4692c;
     }
 
     /* renamed from: f */
@@ -774,24 +774,24 @@ public class C0979c {
     /* renamed from: f0 */
     public void mo5480f0(boolean z) {
         if (Build.VERSION.SDK_INT >= 19) {
-            this.f4687b.setDismissable(z);
+            this.f4691b.setDismissable(z);
         }
     }
 
     /* renamed from: g0 */
     public void mo5481g0(boolean z) {
-        this.f4687b.setEnabled(z);
+        this.f4691b.setEnabled(z);
     }
 
     /* renamed from: h0 */
     public void mo5482h0(CharSequence charSequence) {
         if (Build.VERSION.SDK_INT >= 21) {
-            this.f4687b.setError(charSequence);
+            this.f4691b.setError(charSequence);
         }
     }
 
     public int hashCode() {
-        AccessibilityNodeInfo accessibilityNodeInfo = this.f4687b;
+        AccessibilityNodeInfo accessibilityNodeInfo = this.f4691b;
         if (accessibilityNodeInfo == null) {
             return 0;
         }
@@ -800,7 +800,7 @@ public class C0979c {
 
     /* renamed from: i */
     public List<C0980a> mo5484i() {
-        List<AccessibilityNodeInfo.AccessibilityAction> actionList = Build.VERSION.SDK_INT >= 21 ? this.f4687b.getActionList() : null;
+        List<AccessibilityNodeInfo.AccessibilityAction> actionList = Build.VERSION.SDK_INT >= 21 ? this.f4691b.getActionList() : null;
         if (actionList == null) {
             return Collections.emptyList();
         }
@@ -814,23 +814,23 @@ public class C0979c {
 
     /* renamed from: i0 */
     public void mo5485i0(boolean z) {
-        this.f4687b.setFocusable(z);
+        this.f4691b.setFocusable(z);
     }
 
     /* renamed from: j0 */
     public void mo5486j0(boolean z) {
-        this.f4687b.setFocused(z);
+        this.f4691b.setFocused(z);
     }
 
     /* renamed from: k */
     public int mo5487k() {
-        return this.f4687b.getActions();
+        return this.f4691b.getActions();
     }
 
     /* renamed from: k0 */
     public void mo5488k0(boolean z) {
         if (Build.VERSION.SDK_INT >= 28) {
-            this.f4687b.setHeading(z);
+            this.f4691b.setHeading(z);
         } else {
             m5575V(2, z);
         }
@@ -840,88 +840,88 @@ public class C0979c {
     public void mo5489l0(CharSequence charSequence) {
         int i = Build.VERSION.SDK_INT;
         if (i >= 26) {
-            this.f4687b.setHintText(charSequence);
+            this.f4691b.setHintText(charSequence);
         } else if (i >= 19) {
-            this.f4687b.getExtras().putCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.HINT_TEXT_KEY", charSequence);
+            this.f4691b.getExtras().putCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.HINT_TEXT_KEY", charSequence);
         }
     }
 
     @Deprecated
     /* renamed from: m */
     public void mo5490m(Rect rect) {
-        this.f4687b.getBoundsInParent(rect);
+        this.f4691b.getBoundsInParent(rect);
     }
 
     /* renamed from: m0 */
     public void mo5491m0(boolean z) {
-        this.f4687b.setLongClickable(z);
+        this.f4691b.setLongClickable(z);
     }
 
     /* renamed from: n */
     public void mo5492n(Rect rect) {
-        this.f4687b.getBoundsInScreen(rect);
+        this.f4691b.getBoundsInScreen(rect);
     }
 
     /* renamed from: n0 */
     public void mo5493n0(int i) {
         if (Build.VERSION.SDK_INT >= 21) {
-            this.f4687b.setMaxTextLength(i);
+            this.f4691b.setMaxTextLength(i);
         }
     }
 
     /* renamed from: o */
     public int mo5494o() {
-        return this.f4687b.getChildCount();
+        return this.f4691b.getChildCount();
     }
 
     /* renamed from: o0 */
     public void mo5495o0(CharSequence charSequence) {
-        this.f4687b.setPackageName(charSequence);
+        this.f4691b.setPackageName(charSequence);
     }
 
     /* renamed from: p */
     public CharSequence mo5496p() {
-        return this.f4687b.getClassName();
+        return this.f4691b.getClassName();
     }
 
     /* renamed from: p0 */
     public void mo5497p0(CharSequence charSequence) {
         int i = Build.VERSION.SDK_INT;
         if (i >= 28) {
-            this.f4687b.setPaneTitle(charSequence);
+            this.f4691b.setPaneTitle(charSequence);
         } else if (i >= 19) {
-            this.f4687b.getExtras().putCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.PANE_TITLE_KEY", charSequence);
+            this.f4691b.getExtras().putCharSequence("androidx.view.accessibility.AccessibilityNodeInfoCompat.PANE_TITLE_KEY", charSequence);
         }
     }
 
     /* renamed from: q0 */
     public void mo5498q0(View view) {
-        this.f4688c = -1;
-        this.f4687b.setParent(view);
+        this.f4692c = -1;
+        this.f4691b.setParent(view);
     }
 
     /* renamed from: r */
     public CharSequence mo5499r() {
-        return this.f4687b.getContentDescription();
+        return this.f4691b.getContentDescription();
     }
 
     /* renamed from: r0 */
     public void mo5500r0(View view, int i) {
-        this.f4688c = i;
+        this.f4692c = i;
         if (Build.VERSION.SDK_INT >= 16) {
-            this.f4687b.setParent(view, i);
+            this.f4691b.setParent(view, i);
         }
     }
 
     /* renamed from: s */
     public Bundle mo5501s() {
-        return Build.VERSION.SDK_INT >= 19 ? this.f4687b.getExtras() : new Bundle();
+        return Build.VERSION.SDK_INT >= 19 ? this.f4691b.getExtras() : new Bundle();
     }
 
     /* renamed from: s0 */
     public void mo5502s0(boolean z) {
         if (Build.VERSION.SDK_INT >= 28) {
-            this.f4687b.setScreenReaderFocusable(z);
+            this.f4691b.setScreenReaderFocusable(z);
         } else {
             m5575V(1, z);
         }
@@ -929,7 +929,7 @@ public class C0979c {
 
     /* renamed from: t0 */
     public void mo5503t0(boolean z) {
-        this.f4687b.setScrollable(z);
+        this.f4691b.setScrollable(z);
     }
 
     public String toString() {
@@ -1000,18 +1000,18 @@ public class C0979c {
 
     /* renamed from: u */
     public CharSequence mo5505u() {
-        return this.f4687b.getPackageName();
+        return this.f4691b.getPackageName();
     }
 
     /* renamed from: u0 */
     public void mo5506u0(boolean z) {
-        this.f4687b.setSelected(z);
+        this.f4691b.setSelected(z);
     }
 
     /* renamed from: v0 */
     public void mo5507v0(boolean z) {
         if (Build.VERSION.SDK_INT >= 26) {
-            this.f4687b.setShowingHintText(z);
+            this.f4691b.setShowingHintText(z);
         } else {
             m5575V(4, z);
         }
@@ -1020,13 +1020,13 @@ public class C0979c {
     /* renamed from: w */
     public CharSequence mo5508w() {
         if (!m5584y()) {
-            return this.f4687b.getText();
+            return this.f4691b.getText();
         }
         List<Integer> h = m5578h("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_START_KEY");
         List<Integer> h2 = m5578h("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_END_KEY");
         List<Integer> h3 = m5578h("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_FLAGS_KEY");
         List<Integer> h4 = m5578h("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_ID_KEY");
-        SpannableString spannableString = new SpannableString(TextUtils.substring(this.f4687b.getText(), 0, this.f4687b.getText().length()));
+        SpannableString spannableString = new SpannableString(TextUtils.substring(this.f4691b.getText(), 0, this.f4691b.getText().length()));
         for (int i = 0; i < h.size(); i++) {
             spannableString.setSpan(new C0977a(h4.get(i).intValue(), this, mo5501s().getInt("androidx.view.accessibility.AccessibilityNodeInfoCompat.SPANS_ACTION_ID_KEY")), h.get(i).intValue(), h2.get(i).intValue(), h3.get(i).intValue());
         }
@@ -1035,35 +1035,35 @@ public class C0979c {
 
     /* renamed from: w0 */
     public void mo5509w0(View view) {
-        this.f4689d = -1;
-        this.f4687b.setSource(view);
+        this.f4693d = -1;
+        this.f4691b.setSource(view);
     }
 
     /* renamed from: x */
     public String mo5510x() {
         if (Build.VERSION.SDK_INT >= 18) {
-            return this.f4687b.getViewIdResourceName();
+            return this.f4691b.getViewIdResourceName();
         }
         return null;
     }
 
     /* renamed from: x0 */
     public void mo5511x0(View view, int i) {
-        this.f4689d = i;
+        this.f4693d = i;
         if (Build.VERSION.SDK_INT >= 16) {
-            this.f4687b.setSource(view, i);
+            this.f4691b.setSource(view, i);
         }
     }
 
     /* renamed from: y0 */
     public void mo5512y0(CharSequence charSequence) {
-        this.f4687b.setText(charSequence);
+        this.f4691b.setText(charSequence);
     }
 
     /* renamed from: z0 */
     public void mo5513z0(boolean z) {
         if (Build.VERSION.SDK_INT >= 16) {
-            this.f4687b.setVisibleToUser(z);
+            this.f4691b.setVisibleToUser(z);
         }
     }
 }

@@ -13,39 +13,39 @@ public class C1337b extends AbstractC3031a {
     public static final Parcelable.Creator<C1337b> CREATOR = new C1352o();
 
     /* renamed from: b */
-    private static final String f5594b = C1337b.class.getSimpleName();
+    private static final String f5602b = C1337b.class.getSimpleName();
 
     /* renamed from: c */
-    private String f5595c;
+    private String f5603c;
 
     /* renamed from: d */
-    private DataHolder f5596d;
+    private DataHolder f5604d;
 
     /* renamed from: e */
-    private ParcelFileDescriptor f5597e;
+    private ParcelFileDescriptor f5605e;
 
     /* renamed from: f */
-    private long f5598f;
+    private long f5606f;
 
     /* renamed from: g */
-    private byte[] f5599g;
+    private byte[] f5607g;
 
     /* renamed from: h */
-    private byte[] f5600h;
+    private byte[] f5608h;
 
     /* renamed from: i */
-    private File f5601i;
+    private File f5609i;
 
     public C1337b() {
         this(null, null, null, 0, null);
     }
 
     public C1337b(String str, DataHolder dataHolder, ParcelFileDescriptor parcelFileDescriptor, long j, byte[] bArr) {
-        this.f5595c = str;
-        this.f5596d = dataHolder;
-        this.f5597e = parcelFileDescriptor;
-        this.f5598f = j;
-        this.f5599g = bArr;
+        this.f5603c = str;
+        this.f5604d = dataHolder;
+        this.f5605e = parcelFileDescriptor;
+        this.f5606f = j;
+        this.f5607g = bArr;
     }
 
     /* JADX WARNING: Removed duplicated region for block: B:16:0x002b  */
@@ -55,7 +55,7 @@ public class C1337b extends AbstractC3031a {
     private final java.io.FileOutputStream m6907m() {
         /*
             r5 = this;
-            java.io.File r0 = r5.f5601i
+            java.io.File r0 = r5.f5609i
             r1 = 0
             if (r0 != 0) goto L_0x0006
             return r1
@@ -67,7 +67,7 @@ public class C1337b extends AbstractC3031a {
             r2.<init>(r0)     // Catch:{ IOException -> 0x0023, all -> 0x0021 }
             r3 = 268435456(0x10000000, float:2.5243549E-29)
             android.os.ParcelFileDescriptor r3 = android.os.ParcelFileDescriptor.open(r0, r3)     // Catch:{ IOException -> 0x0023, all -> 0x0021 }
-            r5.f5597e = r3     // Catch:{ IOException -> 0x0023, all -> 0x0021 }
+            r5.f5605e = r3     // Catch:{ IOException -> 0x0023, all -> 0x0021 }
             if (r0 == 0) goto L_0x0020
             r0.delete()
         L_0x0020:
@@ -108,27 +108,27 @@ public class C1337b extends AbstractC3031a {
 
     /* renamed from: h */
     public DataHolder mo6360h() {
-        return this.f5596d;
+        return this.f5604d;
     }
 
     /* renamed from: i */
     public ParcelFileDescriptor mo6361i() {
-        return this.f5597e;
+        return this.f5605e;
     }
 
     /* renamed from: j */
     public long mo6362j() {
-        return this.f5598f;
+        return this.f5606f;
     }
 
     /* renamed from: k */
     public String mo6363k() {
-        return this.f5595c;
+        return this.f5603c;
     }
 
     /* renamed from: l */
     public byte[] mo6364l() {
-        return this.f5599g;
+        return this.f5607g;
     }
 
     /* JADX WARNING: Removed duplicated region for block: B:17:0x0035  */
@@ -136,10 +136,10 @@ public class C1337b extends AbstractC3031a {
     public void writeToParcel(android.os.Parcel r4, int r5) {
         /*
             r3 = this;
-            android.os.ParcelFileDescriptor r0 = r3.f5597e
+            android.os.ParcelFileDescriptor r0 = r3.f5605e
             r1 = 1
             if (r0 != 0) goto L_0x0031
-            byte[] r0 = r3.f5600h
+            byte[] r0 = r3.f5608h
             if (r0 == 0) goto L_0x0031
             java.io.FileOutputStream r0 = r3.m6907m()
             if (r0 == 0) goto L_0x0031
@@ -147,10 +147,10 @@ public class C1337b extends AbstractC3031a {
             r2.<init>(r0)
             java.io.DataOutputStream r0 = new java.io.DataOutputStream
             r0.<init>(r2)
-            byte[] r2 = r3.f5600h     // Catch:{ IOException -> 0x002e, all -> 0x0029 }
+            byte[] r2 = r3.f5608h     // Catch:{ IOException -> 0x002e, all -> 0x0029 }
             int r2 = r2.length     // Catch:{ IOException -> 0x002e, all -> 0x0029 }
             r0.writeInt(r2)     // Catch:{ IOException -> 0x002e, all -> 0x0029 }
-            byte[] r2 = r3.f5600h     // Catch:{ IOException -> 0x002e, all -> 0x0029 }
+            byte[] r2 = r3.f5608h     // Catch:{ IOException -> 0x002e, all -> 0x0029 }
             r0.write(r2)     // Catch:{ IOException -> 0x002e, all -> 0x0029 }
             m6908n(r0)
             r0 = 1
@@ -171,7 +171,7 @@ public class C1337b extends AbstractC3031a {
         L_0x0036:
             p069c.p073b.p074a.p075a.p086e.C1352o.m6919a(r3, r4, r5)
             r4 = 0
-            r3.f5597e = r4
+            r3.f5605e = r4
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: p069c.p073b.p074a.p075a.p086e.C1337b.writeToParcel(android.os.Parcel, int):void");

@@ -12,12 +12,12 @@ import java.lang.reflect.Method;
 public final class C1025t {
 
     /* renamed from: a */
-    private static Method f4774a;
+    private static Method f4778a;
 
     static {
         if (Build.VERSION.SDK_INT == 25) {
             try {
-                f4774a = ViewConfiguration.class.getDeclaredMethod("getScaledScrollFactor", new Class[0]);
+                f4778a = ViewConfiguration.class.getDeclaredMethod("getScaledScrollFactor", new Class[0]);
             } catch (Exception unused) {
                 Log.i("ViewConfigCompat", "Could not find method getScaledScrollFactor() on ViewConfiguration");
             }
@@ -27,7 +27,7 @@ public final class C1025t {
     /* renamed from: a */
     private static float m5840a(ViewConfiguration viewConfiguration, Context context) {
         Method method;
-        if (Build.VERSION.SDK_INT >= 25 && (method = f4774a) != null) {
+        if (Build.VERSION.SDK_INT >= 25 && (method = f4778a) != null) {
             try {
                 return (float) ((Integer) method.invoke(viewConfiguration, new Object[0])).intValue();
             } catch (Exception unused) {

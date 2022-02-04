@@ -16,30 +16,30 @@ public final class C1417a {
     static class C1418a extends AnimatorListenerAdapter {
 
         /* renamed from: a */
-        final /* synthetic */ AbstractC1421d f6042a;
+        final /* synthetic */ AbstractC1421d f6050a;
 
         C1418a(AbstractC1421d dVar) {
-            this.f6042a = dVar;
+            this.f6050a = dVar;
         }
 
         public void onAnimationEnd(Animator animator) {
-            this.f6042a.mo6525b();
+            this.f6050a.mo6525b();
         }
 
         public void onAnimationStart(Animator animator) {
-            this.f6042a.mo6524a();
+            this.f6050a.mo6524a();
         }
     }
 
     /* renamed from: a */
     public static Animator m7036a(AbstractC1421d dVar, float f, float f2, float f3) {
-        ObjectAnimator ofObject = ObjectAnimator.ofObject(dVar, AbstractC1421d.C1424c.f6047a, AbstractC1421d.C1423b.f6045a, new AbstractC1421d.C1426e(f, f2, f3));
+        ObjectAnimator ofObject = ObjectAnimator.ofObject(dVar, AbstractC1421d.C1424c.f6055a, AbstractC1421d.C1423b.f6053a, new AbstractC1421d.C1426e(f, f2, f3));
         if (Build.VERSION.SDK_INT < 21) {
             return ofObject;
         }
         AbstractC1421d.C1426e revealInfo = dVar.getRevealInfo();
         if (revealInfo != null) {
-            Animator createCircularReveal = ViewAnimationUtils.createCircularReveal((View) dVar, (int) f, (int) f2, revealInfo.f6051c, f3);
+            Animator createCircularReveal = ViewAnimationUtils.createCircularReveal((View) dVar, (int) f, (int) f2, revealInfo.f6059c, f3);
             AnimatorSet animatorSet = new AnimatorSet();
             animatorSet.playTogether(ofObject, createCircularReveal);
             return animatorSet;

@@ -32,49 +32,49 @@ import p069c.p073b.p074a.p090b.p107z.C1462k;
 public class MaterialButton extends C0222f implements Checkable, AbstractC1477n {
 
     /* renamed from: d */
-    private static final int[] f10237d = {16842911};
+    private static final int[] f10245d = {16842911};
 
     /* renamed from: e */
-    private static final int[] f10238e = {16842912};
+    private static final int[] f10246e = {16842912};
 
     /* renamed from: f */
-    private static final int f10239f = C1399j.Widget_MaterialComponents_Button;
+    private static final int f10247f = C1399j.Widget_MaterialComponents_Button;
 
     /* renamed from: g */
-    private final C3091a f10240g;
+    private final C3091a f10248g;
 
     /* renamed from: h */
-    private final LinkedHashSet<AbstractC3087a> f10241h;
+    private final LinkedHashSet<AbstractC3087a> f10249h;
 
     /* renamed from: i */
-    private AbstractC3088b f10242i;
+    private AbstractC3088b f10250i;
 
     /* renamed from: j */
-    private PorterDuff.Mode f10243j;
+    private PorterDuff.Mode f10251j;
 
     /* renamed from: k */
-    private ColorStateList f10244k;
+    private ColorStateList f10252k;
 
     /* renamed from: l */
-    private Drawable f10245l;
+    private Drawable f10253l;
 
     /* renamed from: m */
-    private int f10246m;
+    private int f10254m;
 
     /* renamed from: n */
-    private int f10247n;
+    private int f10255n;
 
     /* renamed from: o */
-    private int f10248o;
+    private int f10256o;
 
     /* renamed from: p */
-    private boolean f10249p;
+    private boolean f10257p;
 
     /* renamed from: q */
-    private boolean f10250q;
+    private boolean f10258q;
 
     /* renamed from: r */
-    private int f10251r;
+    private int f10259r;
 
     /* renamed from: com.google.android.material.button.MaterialButton$a */
     public interface AbstractC3087a {
@@ -94,7 +94,7 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
         public static final Parcelable.Creator<C3089c> CREATOR = new C3090a();
 
         /* renamed from: d */
-        boolean f10252d;
+        boolean f10260d;
 
         /* renamed from: com.google.android.material.button.MaterialButton$c$a */
         static class C3090a implements Parcelable.ClassLoaderCreator<C3089c> {
@@ -135,13 +135,13 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
             if (parcel.readInt() != 1) {
                 z = false;
             }
-            this.f10252d = z;
+            this.f10260d = z;
         }
 
         @Override // p006b.p043i.p044a.AbstractC1041a
         public void writeToParcel(Parcel parcel, int i) {
             super.writeToParcel(parcel, i);
-            parcel.writeInt(this.f10252d ? 1 : 0);
+            parcel.writeInt(this.f10260d ? 1 : 0);
         }
     }
 
@@ -165,44 +165,44 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
 
     /* renamed from: c */
     private boolean m12742c() {
-        C3091a aVar = this.f10240g;
+        C3091a aVar = this.f10248g;
         return aVar != null && !aVar.mo10073m();
     }
 
     /* renamed from: d */
     private void m12743d(boolean z) {
         if (z) {
-            C0418i.m2101i(this, this.f10245l, null, null, null);
+            C0418i.m2101i(this, this.f10253l, null, null, null);
         } else {
-            C0418i.m2101i(this, null, null, this.f10245l, null);
+            C0418i.m2101i(this, null, null, this.f10253l, null);
         }
     }
 
     /* renamed from: e */
     private void m12744e(boolean z) {
-        Drawable drawable = this.f10245l;
+        Drawable drawable = this.f10253l;
         boolean z2 = false;
         if (drawable != null) {
             Drawable mutate = C0398a.m1981r(drawable).mutate();
-            this.f10245l = mutate;
-            C0398a.m1978o(mutate, this.f10244k);
-            PorterDuff.Mode mode = this.f10243j;
+            this.f10253l = mutate;
+            C0398a.m1978o(mutate, this.f10252k);
+            PorterDuff.Mode mode = this.f10251j;
             if (mode != null) {
-                C0398a.m1979p(this.f10245l, mode);
+                C0398a.m1979p(this.f10253l, mode);
             }
-            int i = this.f10246m;
+            int i = this.f10254m;
             if (i == 0) {
-                i = this.f10245l.getIntrinsicWidth();
+                i = this.f10253l.getIntrinsicWidth();
             }
-            int i2 = this.f10246m;
+            int i2 = this.f10254m;
             if (i2 == 0) {
-                i2 = this.f10245l.getIntrinsicHeight();
+                i2 = this.f10253l.getIntrinsicHeight();
             }
-            Drawable drawable2 = this.f10245l;
-            int i3 = this.f10247n;
+            Drawable drawable2 = this.f10253l;
+            int i3 = this.f10255n;
             drawable2.setBounds(i3, 0, i + i3, i2);
         }
-        int i4 = this.f10251r;
+        int i4 = this.f10259r;
         boolean z3 = i4 == 1 || i4 == 2;
         if (z) {
             m12743d(z3);
@@ -211,7 +211,7 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
         Drawable[] a = C0418i.m2093a(this);
         Drawable drawable3 = a[0];
         Drawable drawable4 = a[2];
-        if ((z3 && drawable3 != this.f10245l) || (!z3 && drawable4 != this.f10245l)) {
+        if ((z3 && drawable3 != this.f10253l) || (!z3 && drawable4 != this.f10253l)) {
             z2 = true;
         }
         if (z2) {
@@ -221,11 +221,11 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
 
     /* renamed from: f */
     private void m12745f() {
-        if (this.f10245l != null && getLayout() != null) {
-            int i = this.f10251r;
+        if (this.f10253l != null && getLayout() != null) {
+            int i = this.f10259r;
             boolean z = true;
             if (i == 1 || i == 3) {
-                this.f10247n = 0;
+                this.f10255n = 0;
                 m12744e(false);
                 return;
             }
@@ -235,20 +235,20 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
                 charSequence = getTransformationMethod().getTransformation(charSequence, this).toString();
             }
             int min = Math.min((int) paint.measureText(charSequence), getLayout().getEllipsizedWidth());
-            int i2 = this.f10246m;
+            int i2 = this.f10254m;
             if (i2 == 0) {
-                i2 = this.f10245l.getIntrinsicWidth();
+                i2 = this.f10253l.getIntrinsicWidth();
             }
-            int measuredWidth = (((((getMeasuredWidth() - min) - C1013s.m5725C(this)) - i2) - this.f10248o) - C1013s.m5726D(this)) / 2;
+            int measuredWidth = (((((getMeasuredWidth() - min) - C1013s.m5725C(this)) - i2) - this.f10256o) - C1013s.m5726D(this)) / 2;
             boolean b = m12741b();
-            if (this.f10251r != 4) {
+            if (this.f10259r != 4) {
                 z = false;
             }
             if (b != z) {
                 measuredWidth = -measuredWidth;
             }
-            if (this.f10247n != measuredWidth) {
-                this.f10247n = measuredWidth;
+            if (this.f10255n != measuredWidth) {
+                this.f10255n = measuredWidth;
                 m12744e(false);
             }
         }
@@ -260,7 +260,7 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
 
     /* renamed from: a */
     public boolean mo10006a() {
-        C3091a aVar = this.f10240g;
+        C3091a aVar = this.f10248g;
         return aVar != null && aVar.mo10074n();
     }
 
@@ -274,82 +274,82 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
 
     public int getCornerRadius() {
         if (m12742c()) {
-            return this.f10240g.mo10064b();
+            return this.f10248g.mo10064b();
         }
         return 0;
     }
 
     public Drawable getIcon() {
-        return this.f10245l;
+        return this.f10253l;
     }
 
     public int getIconGravity() {
-        return this.f10251r;
+        return this.f10259r;
     }
 
     public int getIconPadding() {
-        return this.f10248o;
+        return this.f10256o;
     }
 
     public int getIconSize() {
-        return this.f10246m;
+        return this.f10254m;
     }
 
     public ColorStateList getIconTint() {
-        return this.f10244k;
+        return this.f10252k;
     }
 
     public PorterDuff.Mode getIconTintMode() {
-        return this.f10243j;
+        return this.f10251j;
     }
 
     public ColorStateList getRippleColor() {
         if (m12742c()) {
-            return this.f10240g.mo10067f();
+            return this.f10248g.mo10067f();
         }
         return null;
     }
 
     public C1462k getShapeAppearanceModel() {
         if (m12742c()) {
-            return this.f10240g.mo10068g();
+            return this.f10248g.mo10068g();
         }
         throw new IllegalStateException("Attempted to get ShapeAppearanceModel from a MaterialButton which has an overwritten background.");
     }
 
     public ColorStateList getStrokeColor() {
         if (m12742c()) {
-            return this.f10240g.mo10069h();
+            return this.f10248g.mo10069h();
         }
         return null;
     }
 
     public int getStrokeWidth() {
         if (m12742c()) {
-            return this.f10240g.mo10070i();
+            return this.f10248g.mo10070i();
         }
         return 0;
     }
 
     @Override // androidx.appcompat.widget.C0222f, p006b.p030g.p039k.AbstractC1012r
     public ColorStateList getSupportBackgroundTintList() {
-        return m12742c() ? this.f10240g.mo10071j() : super.getSupportBackgroundTintList();
+        return m12742c() ? this.f10248g.mo10071j() : super.getSupportBackgroundTintList();
     }
 
     @Override // androidx.appcompat.widget.C0222f, p006b.p030g.p039k.AbstractC1012r
     public PorterDuff.Mode getSupportBackgroundTintMode() {
-        return m12742c() ? this.f10240g.mo10072k() : super.getSupportBackgroundTintMode();
+        return m12742c() ? this.f10248g.mo10072k() : super.getSupportBackgroundTintMode();
     }
 
     public boolean isChecked() {
-        return this.f10249p;
+        return this.f10257p;
     }
 
     /* access modifiers changed from: protected */
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
         if (m12742c()) {
-            C1459h.m7186f(this, this.f10240g.mo10066d());
+            C1459h.m7186f(this, this.f10248g.mo10066d());
         }
     }
 
@@ -357,10 +357,10 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
     public int[] onCreateDrawableState(int i) {
         int[] onCreateDrawableState = super.onCreateDrawableState(i + 2);
         if (mo10006a()) {
-            Button.mergeDrawableStates(onCreateDrawableState, f10237d);
+            Button.mergeDrawableStates(onCreateDrawableState, f10245d);
         }
         if (isChecked()) {
-            Button.mergeDrawableStates(onCreateDrawableState, f10238e);
+            Button.mergeDrawableStates(onCreateDrawableState, f10246e);
         }
         return onCreateDrawableState;
     }
@@ -386,7 +386,7 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
     public void onLayout(boolean z, int i, int i2, int i3, int i4) {
         C3091a aVar;
         super.onLayout(z, i, i2, i3, i4);
-        if (Build.VERSION.SDK_INT == 21 && (aVar = this.f10240g) != null) {
+        if (Build.VERSION.SDK_INT == 21 && (aVar = this.f10248g) != null) {
             aVar.mo10063B(i4 - i2, i3 - i);
         }
     }
@@ -404,12 +404,12 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
         }
         C3089c cVar = (C3089c) parcelable;
         super.onRestoreInstanceState(cVar.mo5608b());
-        setChecked(cVar.f10252d);
+        setChecked(cVar.f10260d);
     }
 
     public Parcelable onSaveInstanceState() {
         C3089c cVar = new C3089c(super.onSaveInstanceState());
-        cVar.f10252d = this.f10249p;
+        cVar.f10260d = this.f10257p;
         return cVar;
     }
 
@@ -431,7 +431,7 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
 
     public void setBackgroundColor(int i) {
         if (m12742c()) {
-            this.f10240g.mo10076p(i);
+            this.f10248g.mo10076p(i);
         } else {
             super.setBackgroundColor(i);
         }
@@ -442,7 +442,7 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
         if (m12742c()) {
             if (drawable != getBackground()) {
                 Log.w("MaterialButton", "Do not set the background; MaterialButton manages its own background drawable.");
-                this.f10240g.mo10077q();
+                this.f10248g.mo10077q();
             } else {
                 getBackground().setState(drawable.getState());
                 return;
@@ -466,28 +466,28 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
 
     public void setCheckable(boolean z) {
         if (m12742c()) {
-            this.f10240g.mo10078r(z);
+            this.f10248g.mo10078r(z);
         }
     }
 
     public void setChecked(boolean z) {
-        if (mo10006a() && isEnabled() && this.f10249p != z) {
-            this.f10249p = z;
+        if (mo10006a() && isEnabled() && this.f10257p != z) {
+            this.f10257p = z;
             refreshDrawableState();
-            if (!this.f10250q) {
-                this.f10250q = true;
-                Iterator<AbstractC3087a> it = this.f10241h.iterator();
+            if (!this.f10258q) {
+                this.f10258q = true;
+                Iterator<AbstractC3087a> it = this.f10249h.iterator();
                 while (it.hasNext()) {
-                    it.next().mo10055a(this, this.f10249p);
+                    it.next().mo10055a(this, this.f10257p);
                 }
-                this.f10250q = false;
+                this.f10258q = false;
             }
         }
     }
 
     public void setCornerRadius(int i) {
         if (m12742c()) {
-            this.f10240g.mo10079s(i);
+            this.f10248g.mo10079s(i);
         }
     }
 
@@ -500,27 +500,27 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
     public void setElevation(float f) {
         super.setElevation(f);
         if (m12742c()) {
-            this.f10240g.mo10066d().mo6607U(f);
+            this.f10248g.mo10066d().mo6607U(f);
         }
     }
 
     public void setIcon(Drawable drawable) {
-        if (this.f10245l != drawable) {
-            this.f10245l = drawable;
+        if (this.f10253l != drawable) {
+            this.f10253l = drawable;
             m12744e(true);
         }
     }
 
     public void setIconGravity(int i) {
-        if (this.f10251r != i) {
-            this.f10251r = i;
+        if (this.f10259r != i) {
+            this.f10259r = i;
             m12745f();
         }
     }
 
     public void setIconPadding(int i) {
-        if (this.f10248o != i) {
-            this.f10248o = i;
+        if (this.f10256o != i) {
+            this.f10256o = i;
             setCompoundDrawablePadding(i);
         }
     }
@@ -532,22 +532,22 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
     public void setIconSize(int i) {
         if (i < 0) {
             throw new IllegalArgumentException("iconSize cannot be less than 0");
-        } else if (this.f10246m != i) {
-            this.f10246m = i;
+        } else if (this.f10254m != i) {
+            this.f10254m = i;
             m12744e(true);
         }
     }
 
     public void setIconTint(ColorStateList colorStateList) {
-        if (this.f10244k != colorStateList) {
-            this.f10244k = colorStateList;
+        if (this.f10252k != colorStateList) {
+            this.f10252k = colorStateList;
             m12744e(false);
         }
     }
 
     public void setIconTintMode(PorterDuff.Mode mode) {
-        if (this.f10243j != mode) {
-            this.f10243j = mode;
+        if (this.f10251j != mode) {
+            this.f10251j = mode;
             m12744e(false);
         }
     }
@@ -563,11 +563,11 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
 
     /* access modifiers changed from: package-private */
     public void setOnPressedChangeListenerInternal(AbstractC3088b bVar) {
-        this.f10242i = bVar;
+        this.f10250i = bVar;
     }
 
     public void setPressed(boolean z) {
-        AbstractC3088b bVar = this.f10242i;
+        AbstractC3088b bVar = this.f10250i;
         if (bVar != null) {
             bVar.mo10056a(this, z);
         }
@@ -576,7 +576,7 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
 
     public void setRippleColor(ColorStateList colorStateList) {
         if (m12742c()) {
-            this.f10240g.mo10080t(colorStateList);
+            this.f10248g.mo10080t(colorStateList);
         }
     }
 
@@ -589,7 +589,7 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
     @Override // p069c.p073b.p074a.p090b.p107z.AbstractC1477n
     public void setShapeAppearanceModel(C1462k kVar) {
         if (m12742c()) {
-            this.f10240g.mo10081u(kVar);
+            this.f10248g.mo10081u(kVar);
             return;
         }
         throw new IllegalStateException("Attempted to set ShapeAppearanceModel on a MaterialButton which has an overwritten background.");
@@ -598,13 +598,13 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
     /* access modifiers changed from: package-private */
     public void setShouldDrawSurfaceColorStroke(boolean z) {
         if (m12742c()) {
-            this.f10240g.mo10082v(z);
+            this.f10248g.mo10082v(z);
         }
     }
 
     public void setStrokeColor(ColorStateList colorStateList) {
         if (m12742c()) {
-            this.f10240g.mo10083w(colorStateList);
+            this.f10248g.mo10083w(colorStateList);
         }
     }
 
@@ -616,7 +616,7 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
 
     public void setStrokeWidth(int i) {
         if (m12742c()) {
-            this.f10240g.mo10084x(i);
+            this.f10248g.mo10084x(i);
         }
     }
 
@@ -629,7 +629,7 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
     @Override // androidx.appcompat.widget.C0222f, p006b.p030g.p039k.AbstractC1012r
     public void setSupportBackgroundTintList(ColorStateList colorStateList) {
         if (m12742c()) {
-            this.f10240g.mo10085y(colorStateList);
+            this.f10248g.mo10085y(colorStateList);
         } else {
             super.setSupportBackgroundTintList(colorStateList);
         }
@@ -638,13 +638,13 @@ public class MaterialButton extends C0222f implements Checkable, AbstractC1477n 
     @Override // androidx.appcompat.widget.C0222f, p006b.p030g.p039k.AbstractC1012r
     public void setSupportBackgroundTintMode(PorterDuff.Mode mode) {
         if (m12742c()) {
-            this.f10240g.mo10086z(mode);
+            this.f10248g.mo10086z(mode);
         } else {
             super.setSupportBackgroundTintMode(mode);
         }
     }
 
     public void toggle() {
-        setChecked(!this.f10249p);
+        setChecked(!this.f10257p);
     }
 }

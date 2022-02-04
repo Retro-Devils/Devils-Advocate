@@ -6,11 +6,11 @@ import android.animation.TypeEvaluator;
 public class C1191f implements TypeEvaluator {
 
     /* renamed from: a */
-    private static final C1191f f5244a = new C1191f();
+    private static final C1191f f5251a = new C1191f();
 
     /* renamed from: a */
     public static C1191f m6455a() {
-        return f5244a;
+        return f5251a;
     }
 
     @Override // android.animation.TypeEvaluator

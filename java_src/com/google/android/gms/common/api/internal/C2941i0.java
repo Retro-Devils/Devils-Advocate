@@ -9,11 +9,11 @@ import p069c.p073b.p074a.p075a.p089g.C1377e;
 public final class C2941i0 extends AbstractC2937g0<Boolean> {
 
     /* renamed from: c */
-    private final C2936g<?> f9847c;
+    private final C2936g<?> f9855c;
 
     public C2941i0(C2936g<?> gVar, C1377e<Boolean> eVar) {
         super(4, eVar);
-        this.f9847c = gVar;
+        this.f9855c = gVar;
     }
 
     @Override // com.google.android.gms.common.api.internal.AbstractC2937g0, com.google.android.gms.common.api.internal.AbstractC2951o
@@ -36,7 +36,7 @@ public final class C2941i0 extends AbstractC2937g0<Boolean> {
     @Override // com.google.android.gms.common.api.internal.AbstractC2961y
     /* renamed from: g */
     public final C1281c[] mo9662g(C2927d.C2928a<?> aVar) {
-        if (aVar.mo9647x().get(this.f9847c) == null) {
+        if (aVar.mo9647x().get(this.f9855c) == null) {
             return null;
         }
         throw null;
@@ -45,7 +45,7 @@ public final class C2941i0 extends AbstractC2937g0<Boolean> {
     @Override // com.google.android.gms.common.api.internal.AbstractC2961y
     /* renamed from: h */
     public final boolean mo9663h(C2927d.C2928a<?> aVar) {
-        if (aVar.mo9647x().get(this.f9847c) == null) {
+        if (aVar.mo9647x().get(this.f9855c) == null) {
             return false;
         }
         throw null;
@@ -54,8 +54,8 @@ public final class C2941i0 extends AbstractC2937g0<Boolean> {
     @Override // com.google.android.gms.common.api.internal.AbstractC2937g0
     /* renamed from: i */
     public final void mo9660i(C2927d.C2928a<?> aVar) {
-        if (aVar.mo9647x().remove(this.f9847c) == null) {
-            this.f9845b.mo6429e((T) Boolean.FALSE);
+        if (aVar.mo9647x().remove(this.f9855c) == null) {
+            this.f9853b.mo6429e((T) Boolean.FALSE);
         } else {
             aVar.mo9644o();
             throw null;

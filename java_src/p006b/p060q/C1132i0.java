@@ -14,16 +14,16 @@ import java.lang.reflect.Method;
 public class C1132i0 {
 
     /* renamed from: a */
-    private static Method f5096a;
+    private static Method f5103a;
 
     /* renamed from: b */
-    private static boolean f5097b;
+    private static boolean f5104b;
 
     /* renamed from: c */
-    private static Field f5098c;
+    private static Field f5105c;
 
     /* renamed from: d */
-    private static boolean f5099d;
+    private static boolean f5106d;
 
     C1132i0() {
     }
@@ -31,16 +31,16 @@ public class C1132i0 {
     @SuppressLint({"PrivateApi"})
     /* renamed from: b */
     private void m6230b() {
-        if (!f5097b) {
+        if (!f5104b) {
             try {
                 Class cls = Integer.TYPE;
                 Method declaredMethod = View.class.getDeclaredMethod("setFrame", cls, cls, cls, cls);
-                f5096a = declaredMethod;
+                f5103a = declaredMethod;
                 declaredMethod.setAccessible(true);
             } catch (NoSuchMethodException e) {
                 Log.i("ViewUtilsBase", "Failed to retrieve setFrame method", e);
             }
-            f5097b = true;
+            f5104b = true;
         }
     }
 
@@ -69,7 +69,7 @@ public class C1132i0 {
     /* renamed from: e */
     public void mo5787e(View view, int i, int i2, int i3, int i4) {
         m6230b();
-        Method method = f5096a;
+        Method method = f5103a;
         if (method != null) {
             try {
                 method.invoke(view, Integer.valueOf(i), Integer.valueOf(i2), Integer.valueOf(i3), Integer.valueOf(i4));
@@ -92,20 +92,20 @@ public class C1132i0 {
 
     /* renamed from: g */
     public void mo5789g(View view, int i) {
-        if (!f5099d) {
+        if (!f5106d) {
             try {
                 Field declaredField = View.class.getDeclaredField("mViewFlags");
-                f5098c = declaredField;
+                f5105c = declaredField;
                 declaredField.setAccessible(true);
             } catch (NoSuchFieldException unused) {
                 Log.i("ViewUtilsBase", "fetchViewFlagsField: ");
             }
-            f5099d = true;
+            f5106d = true;
         }
-        Field field = f5098c;
+        Field field = f5105c;
         if (field != null) {
             try {
-                f5098c.setInt(view, i | (field.getInt(view) & -13));
+                f5105c.setInt(view, i | (field.getInt(view) & -13));
             } catch (IllegalAccessException unused2) {
             }
         }

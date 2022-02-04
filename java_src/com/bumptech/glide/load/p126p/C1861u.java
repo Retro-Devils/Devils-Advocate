@@ -13,7 +13,7 @@ import java.io.InputStream;
 public class C1861u<Data> implements AbstractC1843n<String, Data> {
 
     /* renamed from: a */
-    private final AbstractC1843n<Uri, Data> f7113a;
+    private final AbstractC1843n<Uri, Data> f7121a;
 
     /* renamed from: com.bumptech.glide.load.p.u$a */
     public static final class C1862a implements AbstractC1845o<String, AssetFileDescriptor> {
@@ -43,7 +43,7 @@ public class C1861u<Data> implements AbstractC1843n<String, Data> {
     }
 
     public C1861u(AbstractC1843n<Uri, Data> nVar) {
-        this.f7113a = nVar;
+        this.f7121a = nVar;
     }
 
     /* renamed from: e */
@@ -68,10 +68,10 @@ public class C1861u<Data> implements AbstractC1843n<String, Data> {
     /* renamed from: c */
     public AbstractC1843n.C1844a<Data> mo7393a(String str, int i, int i2, C1647i iVar) {
         Uri e = m8549e(str);
-        if (e == null || !this.f7113a.mo7394b(e)) {
+        if (e == null || !this.f7121a.mo7394b(e)) {
             return null;
         }
-        return this.f7113a.mo7393a(e, i, i2, iVar);
+        return this.f7121a.mo7393a(e, i, i2, iVar);
     }
 
     /* renamed from: d */

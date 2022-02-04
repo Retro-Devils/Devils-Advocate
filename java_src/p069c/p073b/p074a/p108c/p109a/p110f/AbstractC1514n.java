@@ -22,47 +22,47 @@ import p069c.p073b.p074a.p108c.p109a.p110f.AbstractC1523p;
 public abstract class AbstractC1514n<T extends IInterface> implements AbstractC1523p {
 
     /* renamed from: a */
-    private final Context f6306a;
+    private final Context f6314a;
 
     /* renamed from: b */
-    final Handler f6307b;
+    final Handler f6315b;
 
     /* renamed from: c */
-    private T f6308c;
+    private T f6316c;
 
     /* renamed from: d */
-    private ArrayList<AbstractC1523p.AbstractC1524a> f6309d;
+    private ArrayList<AbstractC1523p.AbstractC1524a> f6317d;
 
     /* renamed from: e */
-    private final ArrayList<AbstractC1523p.AbstractC1524a> f6310e = new ArrayList<>();
+    private final ArrayList<AbstractC1523p.AbstractC1524a> f6318e = new ArrayList<>();
 
     /* renamed from: f */
-    private boolean f6311f = false;
+    private boolean f6319f = false;
 
     /* renamed from: g */
-    private ArrayList<AbstractC1523p.AbstractC1525b> f6312g;
+    private ArrayList<AbstractC1523p.AbstractC1525b> f6320g;
 
     /* renamed from: h */
-    private boolean f6313h = false;
+    private boolean f6321h = false;
 
     /* renamed from: i */
-    private final ArrayList<AbstractC1517c<?>> f6314i = new ArrayList<>();
+    private final ArrayList<AbstractC1517c<?>> f6322i = new ArrayList<>();
 
     /* renamed from: j */
-    private ServiceConnection f6315j;
+    private ServiceConnection f6323j;
 
     /* renamed from: k */
-    private boolean f6316k = false;
+    private boolean f6324k = false;
 
     /* renamed from: c.b.a.c.a.f.n$a */
     static /* synthetic */ class C1515a {
 
         /* renamed from: a */
-        static final /* synthetic */ int[] f6317a;
+        static final /* synthetic */ int[] f6325a;
 
         static {
             int[] iArr = new int[EnumC1479b.values().length];
-            f6317a = iArr;
+            f6325a = iArr;
             try {
                 iArr[EnumC1479b.SUCCESS.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
@@ -80,8 +80,8 @@ public abstract class AbstractC1514n<T extends IInterface> implements AbstractC1
             if (i == 3) {
                 AbstractC1514n.this.mo6795i((EnumC1479b) message.obj);
             } else if (i == 4) {
-                synchronized (AbstractC1514n.this.f6309d) {
-                    if (AbstractC1514n.this.f6316k && AbstractC1514n.this.mo6797t() && AbstractC1514n.this.f6309d.contains(message.obj)) {
+                synchronized (AbstractC1514n.this.f6317d) {
+                    if (AbstractC1514n.this.f6324k && AbstractC1514n.this.mo6797t() && AbstractC1514n.this.f6317d.contains(message.obj)) {
                         ((AbstractC1523p.AbstractC1524a) message.obj).mo6741a();
                     }
                 }
@@ -99,12 +99,12 @@ public abstract class AbstractC1514n<T extends IInterface> implements AbstractC1
     public abstract class AbstractC1517c<TListener> {
 
         /* renamed from: a */
-        private TListener f6319a;
+        private TListener f6327a;
 
         public AbstractC1517c(TListener tlistener) {
-            this.f6319a = tlistener;
-            synchronized (AbstractC1514n.this.f6314i) {
-                AbstractC1514n.this.f6314i.add(this);
+            this.f6327a = tlistener;
+            synchronized (AbstractC1514n.this.f6322i) {
+                AbstractC1514n.this.f6322i.add(this);
             }
         }
 
@@ -112,7 +112,7 @@ public abstract class AbstractC1514n<T extends IInterface> implements AbstractC1
         public final void mo6803a() {
             TListener tlistener;
             synchronized (this) {
-                tlistener = this.f6319a;
+                tlistener = this.f6327a;
             }
             mo6804b(tlistener);
         }
@@ -124,7 +124,7 @@ public abstract class AbstractC1514n<T extends IInterface> implements AbstractC1
         /* renamed from: c */
         public final void mo6805c() {
             synchronized (this) {
-                this.f6319a = null;
+                this.f6327a = null;
             }
         }
     }
@@ -133,15 +133,15 @@ public abstract class AbstractC1514n<T extends IInterface> implements AbstractC1
     protected final class C1518d extends AbstractC1517c<Boolean> {
 
         /* renamed from: c */
-        public final EnumC1479b f6321c;
+        public final EnumC1479b f6329c;
 
         /* renamed from: d */
-        public final IBinder f6322d;
+        public final IBinder f6330d;
 
         public C1518d(String str, IBinder iBinder) {
             super(Boolean.TRUE);
-            this.f6321c = AbstractC1514n.m7450l(str);
-            this.f6322d = iBinder;
+            this.f6329c = AbstractC1514n.m7450l(str);
+            this.f6330d = iBinder;
         }
 
         /* JADX DEBUG: Method arguments types fixed to match base method, original types: [java.lang.Object] */
@@ -152,15 +152,15 @@ public abstract class AbstractC1514n<T extends IInterface> implements AbstractC1
             if (bool == null) {
                 return;
             }
-            if (C1515a.f6317a[this.f6321c.ordinal()] != 1) {
-                AbstractC1514n.this.mo6795i(this.f6321c);
+            if (C1515a.f6325a[this.f6329c.ordinal()] != 1) {
+                AbstractC1514n.this.mo6795i(this.f6329c);
                 return;
             }
             try {
-                if (AbstractC1514n.this.mo6792m().equals(this.f6322d.getInterfaceDescriptor())) {
+                if (AbstractC1514n.this.mo6792m().equals(this.f6330d.getInterfaceDescriptor())) {
                     AbstractC1514n nVar = AbstractC1514n.this;
-                    nVar.f6308c = nVar.mo6789d(this.f6322d);
-                    if (AbstractC1514n.this.f6308c != null) {
+                    nVar.f6316c = nVar.mo6789d(this.f6330d);
+                    if (AbstractC1514n.this.f6316c != null) {
                         AbstractC1514n.this.mo6798u();
                         return;
                     }
@@ -182,7 +182,7 @@ public abstract class AbstractC1514n<T extends IInterface> implements AbstractC1
         /* renamed from: d0 */
         public final void mo6749d0(String str, IBinder iBinder) {
             AbstractC1514n nVar = AbstractC1514n.this;
-            Handler handler = nVar.f6307b;
+            Handler handler = nVar.f6315b;
             handler.sendMessage(handler.obtainMessage(1, new C1518d(str, iBinder)));
         }
     }
@@ -197,7 +197,7 @@ public abstract class AbstractC1514n<T extends IInterface> implements AbstractC1
         }
 
         public final void onServiceDisconnected(ComponentName componentName) {
-            AbstractC1514n.this.f6308c = null;
+            AbstractC1514n.this.f6316c = null;
             AbstractC1514n.this.mo6799v();
         }
     }
@@ -207,14 +207,14 @@ public abstract class AbstractC1514n<T extends IInterface> implements AbstractC1
     /* JADX WARN: Multi-variable type inference failed */
     protected AbstractC1514n(Context context, AbstractC1523p.AbstractC1524a aVar, AbstractC1523p.AbstractC1525b bVar) {
         if (Looper.getMainLooper().getThread() == Thread.currentThread()) {
-            this.f6306a = (Context) C1494b.m7373a(context);
+            this.f6314a = (Context) C1494b.m7373a(context);
             ArrayList<AbstractC1523p.AbstractC1524a> arrayList = new ArrayList<>();
-            this.f6309d = arrayList;
+            this.f6317d = arrayList;
             arrayList.add(C1494b.m7373a(aVar));
             ArrayList<AbstractC1523p.AbstractC1525b> arrayList2 = new ArrayList<>();
-            this.f6312g = arrayList2;
+            this.f6320g = arrayList2;
             arrayList2.add(C1494b.m7373a(bVar));
-            this.f6307b = new HandlerC1516b();
+            this.f6315b = new HandlerC1516b();
             return;
         }
         throw new IllegalStateException("Clients must be created on the UI thread.");
@@ -224,16 +224,16 @@ public abstract class AbstractC1514n<T extends IInterface> implements AbstractC1
     /* access modifiers changed from: public */
     /* renamed from: h */
     private void m7449h() {
-        ServiceConnection serviceConnection = this.f6315j;
+        ServiceConnection serviceConnection = this.f6323j;
         if (serviceConnection != null) {
             try {
-                this.f6306a.unbindService(serviceConnection);
+                this.f6314a.unbindService(serviceConnection);
             } catch (IllegalArgumentException e) {
                 Log.w("YouTubeClient", "Unexpected error from unbindService()", e);
             }
         }
-        this.f6308c = null;
-        this.f6315j = null;
+        this.f6316c = null;
+        this.f6323j = null;
     }
 
     /* access modifiers changed from: private */
@@ -251,22 +251,22 @@ public abstract class AbstractC1514n<T extends IInterface> implements AbstractC1
     @Override // p069c.p073b.p074a.p108c.p109a.p110f.AbstractC1523p
     /* renamed from: c */
     public final void mo6794c() {
-        this.f6316k = true;
-        EnumC1479b b = C1478a.m7315b(this.f6306a);
+        this.f6324k = true;
+        EnumC1479b b = C1478a.m7315b(this.f6314a);
         if (b != EnumC1479b.SUCCESS) {
-            Handler handler = this.f6307b;
+            Handler handler = this.f6315b;
             handler.sendMessage(handler.obtainMessage(3, b));
             return;
         }
-        Intent intent = new Intent(mo6793p()).setPackage(C1534v.m7515a(this.f6306a));
-        if (this.f6315j != null) {
+        Intent intent = new Intent(mo6793p()).setPackage(C1534v.m7515a(this.f6314a));
+        if (this.f6323j != null) {
             Log.e("YouTubeClient", "Calling connect() while still connected, missing disconnect().");
             m7449h();
         }
         ServiceConnectionC1520f fVar = new ServiceConnectionC1520f();
-        this.f6315j = fVar;
-        if (!this.f6306a.bindService(intent, fVar, 129)) {
-            Handler handler2 = this.f6307b;
+        this.f6323j = fVar;
+        if (!this.f6314a.bindService(intent, fVar, 129)) {
+            Handler handler2 = this.f6315b;
             handler2.sendMessage(handler2.obtainMessage(3, EnumC1479b.ERROR_CONNECTING_TO_SERVICE));
         }
     }
@@ -278,21 +278,21 @@ public abstract class AbstractC1514n<T extends IInterface> implements AbstractC1
     /* access modifiers changed from: protected */
     /* renamed from: i */
     public final void mo6795i(EnumC1479b bVar) {
-        this.f6307b.removeMessages(4);
-        synchronized (this.f6312g) {
-            this.f6313h = true;
-            ArrayList<AbstractC1523p.AbstractC1525b> arrayList = this.f6312g;
+        this.f6315b.removeMessages(4);
+        synchronized (this.f6320g) {
+            this.f6321h = true;
+            ArrayList<AbstractC1523p.AbstractC1525b> arrayList = this.f6320g;
             int size = arrayList.size();
             for (int i = 0; i < size; i++) {
-                if (this.f6316k) {
-                    if (this.f6312g.contains(arrayList.get(i))) {
+                if (this.f6324k) {
+                    if (this.f6320g.contains(arrayList.get(i))) {
                         arrayList.get(i).mo6743a(bVar);
                     }
                 } else {
                     return;
                 }
             }
-            this.f6313h = false;
+            this.f6321h = false;
         }
     }
 
@@ -304,13 +304,13 @@ public abstract class AbstractC1514n<T extends IInterface> implements AbstractC1
     /* renamed from: k */
     public void mo6791k() {
         mo6799v();
-        this.f6316k = false;
-        synchronized (this.f6314i) {
-            int size = this.f6314i.size();
+        this.f6324k = false;
+        synchronized (this.f6322i) {
+            int size = this.f6322i.size();
             for (int i = 0; i < size; i++) {
-                this.f6314i.get(i).mo6805c();
+                this.f6322i.get(i).mo6805c();
             }
-            this.f6314i.clear();
+            this.f6322i.clear();
         }
         m7449h();
     }
@@ -335,47 +335,47 @@ public abstract class AbstractC1514n<T extends IInterface> implements AbstractC1
 
     /* renamed from: t */
     public final boolean mo6797t() {
-        return this.f6308c != null;
+        return this.f6316c != null;
     }
 
     /* access modifiers changed from: protected */
     /* renamed from: u */
     public final void mo6798u() {
-        synchronized (this.f6309d) {
+        synchronized (this.f6317d) {
             boolean z = true;
-            C1494b.m7376d(!this.f6311f);
-            this.f6307b.removeMessages(4);
-            this.f6311f = true;
-            if (this.f6310e.size() != 0) {
+            C1494b.m7376d(!this.f6319f);
+            this.f6315b.removeMessages(4);
+            this.f6319f = true;
+            if (this.f6318e.size() != 0) {
                 z = false;
             }
             C1494b.m7376d(z);
-            ArrayList<AbstractC1523p.AbstractC1524a> arrayList = this.f6309d;
+            ArrayList<AbstractC1523p.AbstractC1524a> arrayList = this.f6317d;
             int size = arrayList.size();
-            for (int i = 0; i < size && this.f6316k && mo6797t(); i++) {
-                if (!this.f6310e.contains(arrayList.get(i))) {
+            for (int i = 0; i < size && this.f6324k && mo6797t(); i++) {
+                if (!this.f6318e.contains(arrayList.get(i))) {
                     arrayList.get(i).mo6741a();
                 }
             }
-            this.f6310e.clear();
-            this.f6311f = false;
+            this.f6318e.clear();
+            this.f6319f = false;
         }
     }
 
     /* access modifiers changed from: protected */
     /* renamed from: v */
     public final void mo6799v() {
-        this.f6307b.removeMessages(4);
-        synchronized (this.f6309d) {
-            this.f6311f = true;
-            ArrayList<AbstractC1523p.AbstractC1524a> arrayList = this.f6309d;
+        this.f6315b.removeMessages(4);
+        synchronized (this.f6317d) {
+            this.f6319f = true;
+            ArrayList<AbstractC1523p.AbstractC1524a> arrayList = this.f6317d;
             int size = arrayList.size();
-            for (int i = 0; i < size && this.f6316k; i++) {
-                if (this.f6309d.contains(arrayList.get(i))) {
+            for (int i = 0; i < size && this.f6324k; i++) {
+                if (this.f6317d.contains(arrayList.get(i))) {
                     arrayList.get(i).mo6742c();
                 }
             }
-            this.f6311f = false;
+            this.f6319f = false;
         }
     }
 
@@ -391,6 +391,6 @@ public abstract class AbstractC1514n<T extends IInterface> implements AbstractC1
     /* renamed from: x */
     public final T mo6801x() {
         mo6800w();
-        return this.f6308c;
+        return this.f6316c;
     }
 }

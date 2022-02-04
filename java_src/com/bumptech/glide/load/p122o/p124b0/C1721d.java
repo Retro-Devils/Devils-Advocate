@@ -7,10 +7,10 @@ import java.io.File;
 public class C1721d implements AbstractC1714a.AbstractC1715a {
 
     /* renamed from: a */
-    private final long f6764a;
+    private final long f6772a;
 
     /* renamed from: b */
-    private final AbstractC1722a f6765b;
+    private final AbstractC1722a f6773b;
 
     /* renamed from: com.bumptech.glide.load.o.b0.d$a */
     public interface AbstractC1722a {
@@ -19,19 +19,19 @@ public class C1721d implements AbstractC1714a.AbstractC1715a {
     }
 
     public C1721d(AbstractC1722a aVar, long j) {
-        this.f6764a = j;
-        this.f6765b = aVar;
+        this.f6772a = j;
+        this.f6773b = aVar;
     }
 
     @Override // com.bumptech.glide.load.p122o.p124b0.AbstractC1714a.AbstractC1715a
     /* renamed from: a */
     public AbstractC1714a mo7214a() {
-        File a = this.f6765b.mo7220a();
+        File a = this.f6773b.mo7220a();
         if (a == null) {
             return null;
         }
         if (a.mkdirs() || (a.exists() && a.isDirectory())) {
-            return C1723e.m8130c(a, this.f6764a);
+            return C1723e.m8130c(a, this.f6772a);
         }
         return null;
     }

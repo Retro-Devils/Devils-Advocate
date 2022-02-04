@@ -6,7 +6,7 @@ import android.graphics.Color;
 public final class C0901a {
 
     /* renamed from: a */
-    private static final ThreadLocal<double[]> f4523a = new ThreadLocal<>();
+    private static final ThreadLocal<double[]> f4527a = new ThreadLocal<>();
 
     /* renamed from: a */
     public static void m5293a(int i, int i2, int i3, double[] dArr) {
@@ -66,7 +66,7 @@ public final class C0901a {
 
     /* renamed from: g */
     private static double[] m5299g() {
-        ThreadLocal<double[]> threadLocal = f4523a;
+        ThreadLocal<double[]> threadLocal = f4527a;
         double[] dArr = threadLocal.get();
         if (dArr != null) {
             return dArr;

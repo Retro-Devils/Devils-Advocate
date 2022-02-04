@@ -36,7 +36,7 @@ public final class C0241j {
         private final int[] f1084b = {C0758e.abc_ic_commit_search_api_mtrl_alpha, C0758e.abc_seekbar_tick_mark_material, C0758e.abc_ic_menu_share_mtrl_alpha, C0758e.abc_ic_menu_copy_mtrl_am_alpha, C0758e.abc_ic_menu_cut_mtrl_alpha, C0758e.abc_ic_menu_selectall_mtrl_alpha, C0758e.abc_ic_menu_paste_mtrl_am_alpha};
 
         /* renamed from: c */
-        private final int[] f1085c = {C0758e.abc_textfield_activated_mtrl_alpha, C0758e.abc_textfield_search_activated_mtrl_alpha, C0758e.APKTOOL_DUMMY_18, C0758e.abc_text_cursor_material, C0758e.abc_text_select_handle_left_mtrl_dark, C0758e.abc_text_select_handle_middle_mtrl_dark, C0758e.abc_text_select_handle_right_mtrl_dark, C0758e.APKTOOL_DUMMY_52, C0758e.APKTOOL_DUMMY_54, C0758e.APKTOOL_DUMMY_56};
+        private final int[] f1085c = {C0758e.abc_textfield_activated_mtrl_alpha, C0758e.abc_textfield_search_activated_mtrl_alpha, C0758e.f3576k, C0758e.abc_text_cursor_material, C0758e.abc_text_select_handle_left_mtrl_dark, C0758e.abc_text_select_handle_middle_mtrl_dark, C0758e.abc_text_select_handle_right_mtrl_dark, C0758e.f3573K, C0758e.f3574M, C0758e.f3575O};
 
         /* renamed from: d */
         private final int[] f1086d = {C0758e.abc_popup_background_mtrl_mult, C0758e.abc_cab_background_internal_bg, C0758e.abc_menu_hardkey_panel_mtrl_mult};
@@ -123,7 +123,7 @@ public final class C0241j {
             if (i != C0758e.abc_cab_background_top_material) {
                 return null;
             }
-            return new LayerDrawable(new Drawable[]{m0Var.mo1589j(context, C0758e.abc_cab_background_internal_bg), m0Var.mo1589j(context, C0758e.APKTOOL_DUMMY_18)});
+            return new LayerDrawable(new Drawable[]{m0Var.mo1589j(context, C0758e.abc_cab_background_internal_bg), m0Var.mo1589j(context, C0758e.f3576k)});
         }
 
         /* JADX WARNING: Removed duplicated region for block: B:18:0x0046  */

@@ -12,20 +12,20 @@ import p069c.p073b.p074a.p090b.C1400k;
 public final class C3202o {
 
     /* renamed from: a */
-    private static final int[] f10714a = {C1391b.f5673i};
+    private static final int[] f10722a = {C1391b.f5681i};
 
     /* renamed from: b */
-    private static final int[] f10715b = {C1391b.colorPrimaryVariant};
+    private static final int[] f10723b = {C1391b.colorPrimaryVariant};
 
     /* renamed from: a */
     public static void m13423a(Context context) {
-        m13427e(context, f10714a, "Theme.AppCompat");
+        m13427e(context, f10722a, "Theme.AppCompat");
     }
 
     /* renamed from: b */
     private static void m13424b(Context context, AttributeSet attributeSet, int i, int i2) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1400k.f5894i5, i, i2);
-        boolean z = obtainStyledAttributes.getBoolean(C1400k.f5908k5, false);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1400k.f5902i5, i, i2);
+        boolean z = obtainStyledAttributes.getBoolean(C1400k.f5916k5, false);
         obtainStyledAttributes.recycle();
         if (z) {
             TypedValue typedValue = new TypedValue();
@@ -38,20 +38,20 @@ public final class C3202o {
 
     /* renamed from: c */
     public static void m13425c(Context context) {
-        m13427e(context, f10715b, "Theme.MaterialComponents");
+        m13427e(context, f10723b, "Theme.MaterialComponents");
     }
 
     /* renamed from: d */
     private static void m13426d(Context context, AttributeSet attributeSet, int[] iArr, int i, int i2, int... iArr2) {
         boolean z;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1400k.f5894i5, i, i2);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1400k.f5902i5, i, i2);
         boolean z2 = false;
-        if (!obtainStyledAttributes.getBoolean(C1400k.f5915l5, false)) {
+        if (!obtainStyledAttributes.getBoolean(C1400k.f5923l5, false)) {
             obtainStyledAttributes.recycle();
             return;
         }
         if (iArr2 == null || iArr2.length == 0) {
-            if (obtainStyledAttributes.getResourceId(C1400k.f5901j5, -1) != -1) {
+            if (obtainStyledAttributes.getResourceId(C1400k.f5909j5, -1) != -1) {
                 z2 = true;
             }
             z = z2;

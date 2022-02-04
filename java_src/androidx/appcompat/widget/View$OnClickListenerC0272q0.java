@@ -141,8 +141,8 @@ class View$OnClickListenerC0272q0 extends AbstractC1040c implements View.OnClick
     private CharSequence m1349l(CharSequence charSequence) {
         if (this.f1165t == null) {
             TypedValue typedValue = new TypedValue();
-            this.f4790e.getTheme().resolveAttribute(C0754a.textColorSearchUrl, typedValue, true);
-            this.f1165t = this.f4790e.getResources().getColorStateList(typedValue.resourceId);
+            this.f4794e.getTheme().resolveAttribute(C0754a.textColorSearchUrl, typedValue, true);
+            this.f1165t = this.f4794e.getResources().getColorStateList(typedValue.resourceId);
         }
         SpannableString spannableString = new SpannableString(charSequence);
         spannableString.setSpan(new TextAppearanceSpan(null, 0, 0, this.f1165t, null), 0, charSequence.length(), 33);
@@ -152,7 +152,7 @@ class View$OnClickListenerC0272q0 extends AbstractC1040c implements View.OnClick
     /* renamed from: m */
     private Drawable m1350m(ComponentName componentName) {
         String nameNotFoundException;
-        PackageManager packageManager = this.f4790e.getPackageManager();
+        PackageManager packageManager = this.f4794e.getPackageManager();
         try {
             ActivityInfo activityInfo = packageManager.getActivityInfo(componentName, 128);
             int iconResource = activityInfo.getIconResource();
@@ -198,7 +198,7 @@ class View$OnClickListenerC0272q0 extends AbstractC1040c implements View.OnClick
     /* renamed from: p */
     private Drawable m1353p() {
         Drawable n = m1351n(this.f1159n.getSearchActivity());
-        return n != null ? n : this.f4790e.getPackageManager().getDefaultActivityIcon();
+        return n != null ? n : this.f4794e.getPackageManager().getDefaultActivityIcon();
     }
 
     /* renamed from: q */
@@ -427,7 +427,7 @@ class View$OnClickListenerC0272q0 extends AbstractC1040c implements View.OnClick
             return super.getDropDownView(i, view, viewGroup);
         } catch (RuntimeException e) {
             Log.w("SuggestionsAdapter", "Search suggestions cursor threw exception.", e);
-            View g = mo5594g(this.f4790e, this.f4789d, viewGroup);
+            View g = mo5594g(this.f4794e, this.f4793d, viewGroup);
             if (g != null) {
                 ((C0273a) g.getTag()).f1172a.setText(e.toString());
             }
@@ -441,7 +441,7 @@ class View$OnClickListenerC0272q0 extends AbstractC1040c implements View.OnClick
             return super.getView(i, view, viewGroup);
         } catch (RuntimeException e) {
             Log.w("SuggestionsAdapter", "Search suggestions cursor threw exception.", e);
-            View h = mo1706h(this.f4790e, this.f4789d, viewGroup);
+            View h = mo1706h(this.f4794e, this.f4793d, viewGroup);
             if (h != null) {
                 ((C0273a) h.getTag()).f1172a.setText(e.toString());
             }
@@ -486,7 +486,7 @@ class View$OnClickListenerC0272q0 extends AbstractC1040c implements View.OnClick
         String authority = uri.getAuthority();
         if (!TextUtils.isEmpty(authority)) {
             try {
-                Resources resourcesForApplication = this.f4790e.getPackageManager().getResourcesForApplication(authority);
+                Resources resourcesForApplication = this.f4794e.getPackageManager().getResourcesForApplication(authority);
                 List<String> pathSegments = uri.getPathSegments();
                 if (pathSegments != null) {
                     int size = pathSegments.size();
@@ -538,7 +538,7 @@ class View$OnClickListenerC0272q0 extends AbstractC1040c implements View.OnClick
         if (i > 0) {
             fragment.appendQueryParameter("limit", String.valueOf(i));
         }
-        return this.f4790e.getContentResolver().query(fragment.build(), null, suggestSelection, strArr, null);
+        return this.f4794e.getContentResolver().query(fragment.build(), null, suggestSelection, strArr, null);
     }
 
     /* renamed from: x */

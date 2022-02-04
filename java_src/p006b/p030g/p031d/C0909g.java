@@ -23,25 +23,25 @@ import p006b.p030g.p036h.C0923b;
 public class C0909g extends C0907e {
 
     /* renamed from: g */
-    protected final Class<?> f4544g;
+    protected final Class<?> f4548g;
 
     /* renamed from: h */
-    protected final Constructor<?> f4545h;
+    protected final Constructor<?> f4549h;
 
     /* renamed from: i */
-    protected final Method f4546i;
+    protected final Method f4550i;
 
     /* renamed from: j */
-    protected final Method f4547j;
+    protected final Method f4551j;
 
     /* renamed from: k */
-    protected final Method f4548k;
+    protected final Method f4552k;
 
     /* renamed from: l */
-    protected final Method f4549l;
+    protected final Method f4553l;
 
     /* renamed from: m */
-    protected final Method f4550m;
+    protected final Method f4554m;
 
     public C0909g() {
         Method method;
@@ -69,19 +69,19 @@ public class C0909g extends C0907e {
             method2 = null;
             method = null;
         }
-        this.f4544g = cls;
-        this.f4545h = constructor;
-        this.f4546i = method4;
-        this.f4547j = method3;
-        this.f4548k = method2;
-        this.f4549l = method;
-        this.f4550m = method5;
+        this.f4548g = cls;
+        this.f4549h = constructor;
+        this.f4550i = method4;
+        this.f4551j = method3;
+        this.f4552k = method2;
+        this.f4553l = method;
+        this.f4554m = method5;
     }
 
     /* renamed from: o */
     private Object m5339o() {
         try {
-            return this.f4545h.newInstance(new Object[0]);
+            return this.f4549h.newInstance(new Object[0]);
         } catch (IllegalAccessException | InstantiationException | InvocationTargetException unused) {
             return null;
         }
@@ -90,7 +90,7 @@ public class C0909g extends C0907e {
     /* renamed from: p */
     private void m5340p(Object obj) {
         try {
-            this.f4549l.invoke(obj, new Object[0]);
+            this.f4553l.invoke(obj, new Object[0]);
         } catch (IllegalAccessException | InvocationTargetException unused) {
         }
     }
@@ -98,7 +98,7 @@ public class C0909g extends C0907e {
     /* renamed from: q */
     private boolean m5341q(Context context, Object obj, String str, int i, int i2, int i3, FontVariationAxis[] fontVariationAxisArr) {
         try {
-            return ((Boolean) this.f4546i.invoke(obj, context.getAssets(), str, 0, Boolean.FALSE, Integer.valueOf(i), Integer.valueOf(i2), Integer.valueOf(i3), fontVariationAxisArr)).booleanValue();
+            return ((Boolean) this.f4550i.invoke(obj, context.getAssets(), str, 0, Boolean.FALSE, Integer.valueOf(i), Integer.valueOf(i2), Integer.valueOf(i3), fontVariationAxisArr)).booleanValue();
         } catch (IllegalAccessException | InvocationTargetException unused) {
             return false;
         }
@@ -107,7 +107,7 @@ public class C0909g extends C0907e {
     /* renamed from: r */
     private boolean m5342r(Object obj, ByteBuffer byteBuffer, int i, int i2, int i3) {
         try {
-            return ((Boolean) this.f4547j.invoke(obj, byteBuffer, Integer.valueOf(i), null, Integer.valueOf(i2), Integer.valueOf(i3))).booleanValue();
+            return ((Boolean) this.f4551j.invoke(obj, byteBuffer, Integer.valueOf(i), null, Integer.valueOf(i2), Integer.valueOf(i3))).booleanValue();
         } catch (IllegalAccessException | InvocationTargetException unused) {
             return false;
         }
@@ -116,7 +116,7 @@ public class C0909g extends C0907e {
     /* renamed from: s */
     private boolean m5343s(Object obj) {
         try {
-            return ((Boolean) this.f4548k.invoke(obj, new Object[0])).booleanValue();
+            return ((Boolean) this.f4552k.invoke(obj, new Object[0])).booleanValue();
         } catch (IllegalAccessException | InvocationTargetException unused) {
             return false;
         }
@@ -124,10 +124,10 @@ public class C0909g extends C0907e {
 
     /* renamed from: t */
     private boolean m5344t() {
-        if (this.f4546i == null) {
+        if (this.f4550i == null) {
             Log.w("TypefaceCompatApi26Impl", "Unable to collect necessary private methods. Fallback to legacy implementation.");
         }
-        return this.f4546i != null;
+        return this.f4550i != null;
     }
 
     /* access modifiers changed from: protected */
@@ -238,9 +238,9 @@ public class C0909g extends C0907e {
     /* renamed from: l */
     public Typeface mo5309l(Object obj) {
         try {
-            Object newInstance = Array.newInstance(this.f4544g, 1);
+            Object newInstance = Array.newInstance(this.f4548g, 1);
             Array.set(newInstance, 0, obj);
-            return (Typeface) this.f4550m.invoke(null, newInstance, -1, -1);
+            return (Typeface) this.f4554m.invoke(null, newInstance, -1, -1);
         } catch (IllegalAccessException | InvocationTargetException unused) {
             return null;
         }

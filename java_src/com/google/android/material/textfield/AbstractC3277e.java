@@ -7,18 +7,18 @@ import com.google.android.material.internal.CheckableImageButton;
 abstract class AbstractC3277e {
 
     /* renamed from: a */
-    TextInputLayout f10947a;
+    TextInputLayout f10955a;
 
     /* renamed from: b */
-    Context f10948b;
+    Context f10956b;
 
     /* renamed from: c */
-    CheckableImageButton f10949c;
+    CheckableImageButton f10957c;
 
     AbstractC3277e(TextInputLayout textInputLayout) {
-        this.f10947a = textInputLayout;
-        this.f10948b = textInputLayout.getContext();
-        this.f10949c = textInputLayout.getEndIconView();
+        this.f10955a = textInputLayout;
+        this.f10956b = textInputLayout.getContext();
+        this.f10957c = textInputLayout.getEndIconView();
     }
 
     /* access modifiers changed from: package-private */

@@ -12,7 +12,7 @@ import java.io.IOException;
 public final class C1671m implements AbstractC1657e<ParcelFileDescriptor> {
 
     /* renamed from: a */
-    private final C1673b f6685a;
+    private final C1673b f6693a;
 
     /* renamed from: com.bumptech.glide.load.n.m$a */
     public static final class C1672a implements AbstractC1657e.AbstractC1658a<ParcelFileDescriptor> {
@@ -33,18 +33,18 @@ public final class C1671m implements AbstractC1657e<ParcelFileDescriptor> {
     public static final class C1673b {
 
         /* renamed from: a */
-        private final ParcelFileDescriptor f6686a;
+        private final ParcelFileDescriptor f6694a;
 
         C1673b(ParcelFileDescriptor parcelFileDescriptor) {
-            this.f6686a = parcelFileDescriptor;
+            this.f6694a = parcelFileDescriptor;
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: a */
         public ParcelFileDescriptor mo7132a() {
             try {
-                Os.lseek(this.f6686a.getFileDescriptor(), 0, OsConstants.SEEK_SET);
-                return this.f6686a;
+                Os.lseek(this.f6694a.getFileDescriptor(), 0, OsConstants.SEEK_SET);
+                return this.f6694a;
             } catch (ErrnoException e) {
                 throw new IOException(e);
             }
@@ -52,7 +52,7 @@ public final class C1671m implements AbstractC1657e<ParcelFileDescriptor> {
     }
 
     public C1671m(ParcelFileDescriptor parcelFileDescriptor) {
-        this.f6685a = new C1673b(parcelFileDescriptor);
+        this.f6693a = new C1673b(parcelFileDescriptor);
     }
 
     /* renamed from: c */
@@ -67,6 +67,6 @@ public final class C1671m implements AbstractC1657e<ParcelFileDescriptor> {
 
     /* renamed from: d */
     public ParcelFileDescriptor mo7110a() {
-        return this.f6685a.mo7132a();
+        return this.f6693a.mo7132a();
     }
 }

@@ -11,19 +11,19 @@ public final class C3022p {
     public static final class C3023a {
 
         /* renamed from: a */
-        private final List<String> f10023a;
+        private final List<String> f10031a;
 
         /* renamed from: b */
-        private final Object f10024b;
+        private final Object f10032b;
 
         private C3023a(Object obj) {
-            this.f10024b = C3027r.m12376h(obj);
-            this.f10023a = new ArrayList();
+            this.f10032b = C3027r.m12376h(obj);
+            this.f10031a = new ArrayList();
         }
 
         /* renamed from: a */
         public final C3023a mo9802a(String str, Object obj) {
-            List<String> list = this.f10023a;
+            List<String> list = this.f10031a;
             String str2 = (String) C3027r.m12376h(str);
             String valueOf = String.valueOf(obj);
             StringBuilder sb = new StringBuilder(String.valueOf(str2).length() + 1 + valueOf.length());
@@ -36,11 +36,11 @@ public final class C3022p {
 
         public final String toString() {
             StringBuilder sb = new StringBuilder(100);
-            sb.append(this.f10024b.getClass().getSimpleName());
+            sb.append(this.f10032b.getClass().getSimpleName());
             sb.append('{');
-            int size = this.f10023a.size();
+            int size = this.f10031a.size();
             for (int i = 0; i < size; i++) {
-                sb.append(this.f10023a.get(i));
+                sb.append(this.f10031a.get(i));
                 if (i < size - 1) {
                     sb.append(", ");
                 }

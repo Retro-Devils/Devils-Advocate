@@ -7,7 +7,7 @@ import java.security.MessageDigest;
 public interface AbstractC1643g {
 
     /* renamed from: a */
-    public static final Charset f6648a = Charset.forName("UTF-8");
+    public static final Charset f6656a = Charset.forName("UTF-8");
 
     /* renamed from: a */
     void mo7075a(MessageDigest messageDigest);

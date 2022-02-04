@@ -7,10 +7,10 @@ public enum EnumC1631b {
     
 
     /* renamed from: d */
-    public static final EnumC1631b f6633d;
+    public static final EnumC1631b f6641d;
 
     static {
         EnumC1631b bVar;
-        f6633d = bVar;
+        f6641d = bVar;
     }
 }

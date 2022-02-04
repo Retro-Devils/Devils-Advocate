@@ -11,43 +11,43 @@ import android.view.animation.DecelerateInterpolator;
 public class C1409i {
 
     /* renamed from: a */
-    private long f6021a = 0;
+    private long f6029a = 0;
 
     /* renamed from: b */
-    private long f6022b = 300;
+    private long f6030b = 300;
 
     /* renamed from: c */
-    private TimeInterpolator f6023c = null;
+    private TimeInterpolator f6031c = null;
 
     /* renamed from: d */
-    private int f6024d = 0;
+    private int f6032d = 0;
 
     /* renamed from: e */
-    private int f6025e = 1;
+    private int f6033e = 1;
 
     public C1409i(long j, long j2) {
-        this.f6021a = j;
-        this.f6022b = j2;
+        this.f6029a = j;
+        this.f6030b = j2;
     }
 
     public C1409i(long j, long j2, TimeInterpolator timeInterpolator) {
-        this.f6021a = j;
-        this.f6022b = j2;
-        this.f6023c = timeInterpolator;
+        this.f6029a = j;
+        this.f6030b = j2;
+        this.f6031c = timeInterpolator;
     }
 
     /* renamed from: b */
     static C1409i m7020b(ValueAnimator valueAnimator) {
         C1409i iVar = new C1409i(valueAnimator.getStartDelay(), valueAnimator.getDuration(), m7021f(valueAnimator));
-        iVar.f6024d = valueAnimator.getRepeatCount();
-        iVar.f6025e = valueAnimator.getRepeatMode();
+        iVar.f6032d = valueAnimator.getRepeatCount();
+        iVar.f6033e = valueAnimator.getRepeatMode();
         return iVar;
     }
 
     /* renamed from: f */
     private static TimeInterpolator m7021f(ValueAnimator valueAnimator) {
         TimeInterpolator interpolator = valueAnimator.getInterpolator();
-        return ((interpolator instanceof AccelerateDecelerateInterpolator) || interpolator == null) ? C1401a.f6007b : interpolator instanceof AccelerateInterpolator ? C1401a.f6008c : interpolator instanceof DecelerateInterpolator ? C1401a.f6009d : interpolator;
+        return ((interpolator instanceof AccelerateDecelerateInterpolator) || interpolator == null) ? C1401a.f6015b : interpolator instanceof AccelerateInterpolator ? C1401a.f6016c : interpolator instanceof DecelerateInterpolator ? C1401a.f6017d : interpolator;
     }
 
     /* renamed from: a */
@@ -64,18 +64,18 @@ public class C1409i {
 
     /* renamed from: c */
     public long mo6472c() {
-        return this.f6021a;
+        return this.f6029a;
     }
 
     /* renamed from: d */
     public long mo6473d() {
-        return this.f6022b;
+        return this.f6030b;
     }
 
     /* renamed from: e */
     public TimeInterpolator mo6474e() {
-        TimeInterpolator timeInterpolator = this.f6023c;
-        return timeInterpolator != null ? timeInterpolator : C1401a.f6007b;
+        TimeInterpolator timeInterpolator = this.f6031c;
+        return timeInterpolator != null ? timeInterpolator : C1401a.f6015b;
     }
 
     public boolean equals(Object obj) {
@@ -94,12 +94,12 @@ public class C1409i {
 
     /* renamed from: g */
     public int mo6476g() {
-        return this.f6024d;
+        return this.f6032d;
     }
 
     /* renamed from: h */
     public int mo6477h() {
-        return this.f6025e;
+        return this.f6033e;
     }
 
     public int hashCode() {

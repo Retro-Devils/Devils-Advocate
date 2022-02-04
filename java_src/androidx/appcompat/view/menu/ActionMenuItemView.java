@@ -94,8 +94,8 @@ public class ActionMenuItemView extends C0302y implements AbstractC0147n.Abstrac
         super(context, attributeSet, i);
         Resources resources = context.getResources();
         this.f422l = m545g();
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C0763j.f3807v, i, 0);
-        this.f424n = obtainStyledAttributes.getDimensionPixelSize(C0763j.f3812w, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C0763j.f3811v, i, 0);
+        this.f424n = obtainStyledAttributes.getDimensionPixelSize(C0763j.f3816w, 0);
         obtainStyledAttributes.recycle();
         this.f426p = (int) ((resources.getDisplayMetrics().density * 32.0f) + 0.5f);
         setOnClickListener(this);

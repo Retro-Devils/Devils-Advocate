@@ -102,12 +102,12 @@ public abstract class AbstractC0548a extends RecyclerView {
     /* access modifiers changed from: package-private */
     /* renamed from: A1 */
     public void mo3207A1(Context context, AttributeSet attributeSet) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4978w);
-        this.f2793I0.mo3374J3(obtainStyledAttributes.getBoolean(C1080l.f4922B, false), obtainStyledAttributes.getBoolean(C1080l.f4921A, false));
-        this.f2793I0.mo3377K3(obtainStyledAttributes.getBoolean(C1080l.f4924D, true), obtainStyledAttributes.getBoolean(C1080l.f4923C, true));
-        this.f2793I0.mo3444h4(obtainStyledAttributes.getDimensionPixelSize(C1080l.f4981z, obtainStyledAttributes.getDimensionPixelSize(C1080l.f4926F, 0)));
-        this.f2793I0.mo3382O3(obtainStyledAttributes.getDimensionPixelSize(C1080l.f4980y, obtainStyledAttributes.getDimensionPixelSize(C1080l.f4925E, 0)));
-        int i = C1080l.f4979x;
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4985w);
+        this.f2793I0.mo3374J3(obtainStyledAttributes.getBoolean(C1080l.f4929B, false), obtainStyledAttributes.getBoolean(C1080l.f4928A, false));
+        this.f2793I0.mo3377K3(obtainStyledAttributes.getBoolean(C1080l.f4931D, true), obtainStyledAttributes.getBoolean(C1080l.f4930C, true));
+        this.f2793I0.mo3444h4(obtainStyledAttributes.getDimensionPixelSize(C1080l.f4988z, obtainStyledAttributes.getDimensionPixelSize(C1080l.f4933F, 0)));
+        this.f2793I0.mo3382O3(obtainStyledAttributes.getDimensionPixelSize(C1080l.f4987y, obtainStyledAttributes.getDimensionPixelSize(C1080l.f4932E, 0)));
+        int i = C1080l.f4986x;
         if (obtainStyledAttributes.hasValue(i)) {
             setGravity(obtainStyledAttributes.getInt(i, 0));
         }

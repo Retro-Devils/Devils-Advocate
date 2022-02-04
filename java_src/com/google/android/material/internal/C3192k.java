@@ -18,19 +18,19 @@ import p069c.p073b.p074a.p090b.C1400k;
 public class C3192k extends FrameLayout {
 
     /* renamed from: b */
-    Drawable f10681b;
+    Drawable f10689b;
 
     /* renamed from: c */
-    Rect f10682c;
+    Rect f10690c;
 
     /* renamed from: d */
-    private Rect f10683d;
+    private Rect f10691d;
 
     /* renamed from: e */
-    private boolean f10684e;
+    private boolean f10692e;
 
     /* renamed from: f */
-    private boolean f10685f;
+    private boolean f10693f;
 
     /* renamed from: com.google.android.material.internal.k$a */
     class C3193a implements AbstractC1010p {
@@ -41,12 +41,12 @@ public class C3192k extends FrameLayout {
         /* renamed from: a */
         public C0964a0 mo340a(View view, C0964a0 a0Var) {
             C3192k kVar = C3192k.this;
-            if (kVar.f10682c == null) {
-                kVar.f10682c = new Rect();
+            if (kVar.f10690c == null) {
+                kVar.f10690c = new Rect();
             }
-            C3192k.this.f10682c.set(a0Var.mo5416f(), a0Var.mo5418h(), a0Var.mo5417g(), a0Var.mo5414e());
+            C3192k.this.f10690c.set(a0Var.mo5416f(), a0Var.mo5418h(), a0Var.mo5417g(), a0Var.mo5414e());
             C3192k.this.mo10775a(a0Var);
-            C3192k.this.setWillNotDraw(!a0Var.mo5421j() || C3192k.this.f10681b == null);
+            C3192k.this.setWillNotDraw(!a0Var.mo5421j() || C3192k.this.f10689b == null);
             C1013s.m5748Z(C3192k.this);
             return a0Var.mo5412c();
         }
@@ -58,11 +58,11 @@ public class C3192k extends FrameLayout {
 
     public C3192k(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f10683d = new Rect();
-        this.f10684e = true;
-        this.f10685f = true;
-        TypedArray h = C3202o.m13430h(context, attributeSet, C1400k.f5836a3, i, C1399j.Widget_Design_ScrimInsetsFrameLayout, new int[0]);
-        this.f10681b = h.getDrawable(C1400k.f5843b3);
+        this.f10691d = new Rect();
+        this.f10692e = true;
+        this.f10693f = true;
+        TypedArray h = C3202o.m13430h(context, attributeSet, C1400k.f5844a3, i, C1399j.Widget_Design_ScrimInsetsFrameLayout, new int[0]);
+        this.f10689b = h.getDrawable(C1400k.f5851b3);
         h.recycle();
         setWillNotDraw(true);
         C1013s.m5790u0(this, new C3193a());
@@ -77,29 +77,29 @@ public class C3192k extends FrameLayout {
         super.draw(canvas);
         int width = getWidth();
         int height = getHeight();
-        if (this.f10682c != null && this.f10681b != null) {
+        if (this.f10690c != null && this.f10689b != null) {
             int save = canvas.save();
             canvas.translate((float) getScrollX(), (float) getScrollY());
-            if (this.f10684e) {
-                this.f10683d.set(0, 0, width, this.f10682c.top);
-                this.f10681b.setBounds(this.f10683d);
-                this.f10681b.draw(canvas);
+            if (this.f10692e) {
+                this.f10691d.set(0, 0, width, this.f10690c.top);
+                this.f10689b.setBounds(this.f10691d);
+                this.f10689b.draw(canvas);
             }
-            if (this.f10685f) {
-                this.f10683d.set(0, height - this.f10682c.bottom, width, height);
-                this.f10681b.setBounds(this.f10683d);
-                this.f10681b.draw(canvas);
+            if (this.f10693f) {
+                this.f10691d.set(0, height - this.f10690c.bottom, width, height);
+                this.f10689b.setBounds(this.f10691d);
+                this.f10689b.draw(canvas);
             }
-            Rect rect = this.f10683d;
-            Rect rect2 = this.f10682c;
+            Rect rect = this.f10691d;
+            Rect rect2 = this.f10690c;
             rect.set(0, rect2.top, rect2.left, height - rect2.bottom);
-            this.f10681b.setBounds(this.f10683d);
-            this.f10681b.draw(canvas);
-            Rect rect3 = this.f10683d;
-            Rect rect4 = this.f10682c;
+            this.f10689b.setBounds(this.f10691d);
+            this.f10689b.draw(canvas);
+            Rect rect3 = this.f10691d;
+            Rect rect4 = this.f10690c;
             rect3.set(width - rect4.right, rect4.top, width, height - rect4.bottom);
-            this.f10681b.setBounds(this.f10683d);
-            this.f10681b.draw(canvas);
+            this.f10689b.setBounds(this.f10691d);
+            this.f10689b.draw(canvas);
             canvas.restoreToCount(save);
         }
     }
@@ -107,7 +107,7 @@ public class C3192k extends FrameLayout {
     /* access modifiers changed from: protected */
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        Drawable drawable = this.f10681b;
+        Drawable drawable = this.f10689b;
         if (drawable != null) {
             drawable.setCallback(this);
         }
@@ -116,21 +116,21 @@ public class C3192k extends FrameLayout {
     /* access modifiers changed from: protected */
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        Drawable drawable = this.f10681b;
+        Drawable drawable = this.f10689b;
         if (drawable != null) {
             drawable.setCallback(null);
         }
     }
 
     public void setDrawBottomInsetForeground(boolean z) {
-        this.f10685f = z;
+        this.f10693f = z;
     }
 
     public void setDrawTopInsetForeground(boolean z) {
-        this.f10684e = z;
+        this.f10692e = z;
     }
 
     public void setScrimInsetForeground(Drawable drawable) {
-        this.f10681b = drawable;
+        this.f10689b = drawable;
     }
 }

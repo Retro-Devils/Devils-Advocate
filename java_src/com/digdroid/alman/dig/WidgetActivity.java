@@ -9,7 +9,7 @@ import java.util.concurrent.Callable;
 public class WidgetActivity extends ActivityC2220c4 {
 
     /* renamed from: T */
-    long f7789T;
+    long f7797T;
 
     /* renamed from: com.digdroid.alman.dig.WidgetActivity$a */
     class CallableC2160a implements Callable {
@@ -27,7 +27,7 @@ public class WidgetActivity extends ActivityC2220c4 {
     class C2161b implements C2223d0.AbstractC2248r {
 
         /* renamed from: a */
-        final /* synthetic */ Callable f7791a;
+        final /* synthetic */ Callable f7799a;
 
         /* renamed from: com.digdroid.alman.dig.WidgetActivity$b$a */
         class C2162a implements C2223d0.AbstractC2249s {
@@ -38,7 +38,7 @@ public class WidgetActivity extends ActivityC2220c4 {
             /* renamed from: a */
             public void mo7941a() {
                 C2161b bVar = C2161b.this;
-                new ActivityC2725t.AsyncTaskC2726a(null, bVar.f7791a).execute(new Void[0]);
+                new ActivityC2725t.AsyncTaskC2726a(null, bVar.f7799a).execute(new Void[0]);
             }
 
             @Override // com.digdroid.alman.dig.C2223d0.AbstractC2249s
@@ -49,7 +49,7 @@ public class WidgetActivity extends ActivityC2220c4 {
         }
 
         C2161b(Callable callable) {
-            this.f7791a = callable;
+            this.f7799a = callable;
         }
 
         @Override // com.digdroid.alman.dig.C2223d0.AbstractC2248r
@@ -71,12 +71,12 @@ public class WidgetActivity extends ActivityC2220c4 {
             WidgetActivity.this.mo9519c1();
             C2219c3 k = C2219c3.m9805k(WidgetActivity.this);
             WidgetActivity widgetActivity = WidgetActivity.this;
-            if (widgetActivity.f9264E) {
+            if (widgetActivity.f9272E) {
                 C2185a4.m9668F(widgetActivity, "retroarch");
             }
             if (k.mo8197u()) {
                 WidgetActivity widgetActivity2 = WidgetActivity.this;
-                MyWidget.m9547c(widgetActivity2, widgetActivity2.f7789T);
+                MyWidget.m9547c(widgetActivity2, widgetActivity2.f7797T);
             }
             System.exit(0);
         }
@@ -85,15 +85,15 @@ public class WidgetActivity extends ActivityC2220c4 {
     /* access modifiers changed from: package-private */
     /* renamed from: j1 */
     public void mo8016j1() {
-        if (this.f9262C >= 0) {
-            this.f9270z.f7863j = new C2163c();
-            this.f7789T = this.f9262C;
-            this.f9262C = -1;
-            this.f9270z.mo8062x(this, this.f7789T, System.currentTimeMillis() - this.f9261B, this.f9264E);
+        if (this.f9270C >= 0) {
+            this.f9278z.f7871j = new C2163c();
+            this.f7797T = this.f9270C;
+            this.f9270C = -1;
+            this.f9278z.mo8062x(this, this.f7797T, System.currentTimeMillis() - this.f9269B, this.f9272E);
         } else if (!mo9520d1()) {
             long longExtra = getIntent().getLongExtra("gameid", -1);
-            this.f7789T = longExtra;
-            this.f9268x.mo8844i(this, longExtra, null);
+            this.f7797T = longExtra;
+            this.f9276x.mo8844i(this, longExtra, null);
         }
     }
 
@@ -111,7 +111,7 @@ public class WidgetActivity extends ActivityC2220c4 {
         super.onResume();
         CallableC2160a aVar = new CallableC2160a();
         C2219c3 k = C2219c3.m9805k(this);
-        this.f9267w = k;
+        this.f9275w = k;
         if (k.mo8197u()) {
             new ActivityC2725t.AsyncTaskC2726a(null, aVar).execute(new Void[0]);
         } else {

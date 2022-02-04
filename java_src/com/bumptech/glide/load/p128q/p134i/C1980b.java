@@ -12,15 +12,15 @@ import com.bumptech.glide.p144t.C2081j;
 public class C1980b implements AbstractC1983e<Bitmap, BitmapDrawable> {
 
     /* renamed from: a */
-    private final Resources f7316a;
+    private final Resources f7324a;
 
     public C1980b(Resources resources) {
-        this.f7316a = (Resources) C2081j.m9432d(resources);
+        this.f7324a = (Resources) C2081j.m9432d(resources);
     }
 
     @Override // com.bumptech.glide.load.p128q.p134i.AbstractC1983e
     /* renamed from: a */
     public AbstractC1794v<BitmapDrawable> mo7624a(AbstractC1794v<Bitmap> vVar, C1647i iVar) {
-        return C1943u.m8799g(this.f7316a, vVar);
+        return C1943u.m8799g(this.f7324a, vVar);
     }
 }

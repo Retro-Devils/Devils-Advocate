@@ -18,14 +18,14 @@ public interface ImageHeaderParser {
         
 
         /* renamed from: b */
-        private final boolean f6624b;
+        private final boolean f6632b;
 
         private ImageType(boolean z) {
-            this.f6624b = z;
+            this.f6632b = z;
         }
 
         public boolean hasAlpha() {
-            return this.f6624b;
+            return this.f6632b;
         }
     }
 

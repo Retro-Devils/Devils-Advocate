@@ -10,7 +10,7 @@ import com.bumptech.glide.p144t.C2078g;
 public class C1726g extends C2078g<AbstractC1643g, AbstractC1794v<?>> implements AbstractC1727h {
 
     /* renamed from: e */
-    private AbstractC1727h.AbstractC1728a f6773e;
+    private AbstractC1727h.AbstractC1728a f6781e;
 
     public C1726g(long j) {
         super(j);
@@ -42,7 +42,7 @@ public class C1726g extends C2078g<AbstractC1643g, AbstractC1794v<?>> implements
     @Override // com.bumptech.glide.load.p122o.p124b0.AbstractC1727h
     /* renamed from: e */
     public void mo7224e(AbstractC1727h.AbstractC1728a aVar) {
-        this.f6773e = aVar;
+        this.f6781e = aVar;
     }
 
     /* access modifiers changed from: protected */
@@ -54,7 +54,7 @@ public class C1726g extends C2078g<AbstractC1643g, AbstractC1794v<?>> implements
     /* access modifiers changed from: protected */
     /* renamed from: o */
     public void mo7226j(AbstractC1643g gVar, AbstractC1794v<?> vVar) {
-        AbstractC1727h.AbstractC1728a aVar = this.f6773e;
+        AbstractC1727h.AbstractC1728a aVar = this.f6781e;
         if (aVar != null && vVar != null) {
             aVar.mo7230b(vVar);
         }

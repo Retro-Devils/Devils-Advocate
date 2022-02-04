@@ -10,15 +10,15 @@ import java.util.Locale;
 public class C0783a implements TransformationMethod {
 
     /* renamed from: b */
-    private Locale f3927b;
+    private Locale f3931b;
 
     public C0783a(Context context) {
-        this.f3927b = context.getResources().getConfiguration().locale;
+        this.f3931b = context.getResources().getConfiguration().locale;
     }
 
     public CharSequence getTransformation(CharSequence charSequence, View view) {
         if (charSequence != null) {
-            return charSequence.toString().toUpperCase(this.f3927b);
+            return charSequence.toString().toUpperCase(this.f3931b);
         }
         return null;
     }

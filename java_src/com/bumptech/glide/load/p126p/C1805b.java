@@ -14,7 +14,7 @@ import java.nio.ByteBuffer;
 public class C1805b<Data> implements AbstractC1843n<byte[], Data> {
 
     /* renamed from: a */
-    private final AbstractC1808b<Data> f7036a;
+    private final AbstractC1808b<Data> f7044a;
 
     /* renamed from: com.bumptech.glide.load.p.b$a */
     public static class C1806a implements AbstractC1845o<byte[], ByteBuffer> {
@@ -57,20 +57,20 @@ public class C1805b<Data> implements AbstractC1843n<byte[], Data> {
     public static class C1809c<Data> implements AbstractC1655d<Data> {
 
         /* renamed from: b */
-        private final byte[] f7038b;
+        private final byte[] f7046b;
 
         /* renamed from: c */
-        private final AbstractC1808b<Data> f7039c;
+        private final AbstractC1808b<Data> f7047c;
 
         C1809c(byte[] bArr, AbstractC1808b<Data> bVar) {
-            this.f7038b = bArr;
-            this.f7039c = bVar;
+            this.f7046b = bArr;
+            this.f7047c = bVar;
         }
 
         @Override // com.bumptech.glide.load.p120n.AbstractC1655d
         /* renamed from: a */
         public Class<Data> mo7092a() {
-            return this.f7039c.mo7401a();
+            return this.f7047c.mo7401a();
         }
 
         @Override // com.bumptech.glide.load.p120n.AbstractC1655d
@@ -91,7 +91,7 @@ public class C1805b<Data> implements AbstractC1843n<byte[], Data> {
         @Override // com.bumptech.glide.load.p120n.AbstractC1655d
         /* renamed from: e */
         public void mo7101e(EnumC1616g gVar, AbstractC1655d.AbstractC1656a<? super Data> aVar) {
-            aVar.mo7109f(this.f7039c.mo7402b(this.f7038b));
+            aVar.mo7109f(this.f7047c.mo7402b(this.f7046b));
         }
     }
 
@@ -123,12 +123,12 @@ public class C1805b<Data> implements AbstractC1843n<byte[], Data> {
     }
 
     public C1805b(AbstractC1808b<Data> bVar) {
-        this.f7036a = bVar;
+        this.f7044a = bVar;
     }
 
     /* renamed from: c */
     public AbstractC1843n.C1844a<Data> mo7393a(byte[] bArr, int i, int i2, C1647i iVar) {
-        return new AbstractC1843n.C1844a<>(new C2067d(bArr), new C1809c(bArr, this.f7036a));
+        return new AbstractC1843n.C1844a<>(new C2067d(bArr), new C1809c(bArr, this.f7044a));
     }
 
     /* renamed from: d */

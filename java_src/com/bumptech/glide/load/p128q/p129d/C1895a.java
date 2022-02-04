@@ -12,25 +12,25 @@ import com.bumptech.glide.p144t.C2081j;
 public class C1895a<DataType> implements AbstractC1649k<DataType, BitmapDrawable> {
 
     /* renamed from: a */
-    private final AbstractC1649k<DataType, Bitmap> f7162a;
+    private final AbstractC1649k<DataType, Bitmap> f7170a;
 
     /* renamed from: b */
-    private final Resources f7163b;
+    private final Resources f7171b;
 
     public C1895a(Resources resources, AbstractC1649k<DataType, Bitmap> kVar) {
-        this.f7163b = (Resources) C2081j.m9432d(resources);
-        this.f7162a = (AbstractC1649k) C2081j.m9432d(kVar);
+        this.f7171b = (Resources) C2081j.m9432d(resources);
+        this.f7170a = (AbstractC1649k) C2081j.m9432d(kVar);
     }
 
     @Override // com.bumptech.glide.load.AbstractC1649k
     /* renamed from: a */
     public AbstractC1794v<BitmapDrawable> mo7088a(DataType datatype, int i, int i2, C1647i iVar) {
-        return C1943u.m8799g(this.f7163b, this.f7162a.mo7088a(datatype, i, i2, iVar));
+        return C1943u.m8799g(this.f7171b, this.f7170a.mo7088a(datatype, i, i2, iVar));
     }
 
     @Override // com.bumptech.glide.load.AbstractC1649k
     /* renamed from: b */
     public boolean mo7089b(DataType datatype, C1647i iVar) {
-        return this.f7162a.mo7089b(datatype, iVar);
+        return this.f7170a.mo7089b(datatype, iVar);
     }
 }

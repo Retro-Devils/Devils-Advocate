@@ -19,13 +19,13 @@ import p069c.p073b.p074a.p075a.p077b.C1281c;
 public final class C2894a<O extends AbstractC2898d> {
 
     /* renamed from: a */
-    private final AbstractC2895a<?, O> f9756a;
+    private final AbstractC2895a<?, O> f9764a;
 
     /* renamed from: b */
-    private final C2903g<?> f9757b;
+    private final C2903g<?> f9765b;
 
     /* renamed from: c */
-    private final String f9758c;
+    private final String f9766c;
 
     /* renamed from: com.google.android.gms.common.api.a$a */
     public static abstract class AbstractC2895a<T extends AbstractC2902f, O> extends AbstractC2901e<T, O> {
@@ -122,14 +122,14 @@ public final class C2894a<O extends AbstractC2898d> {
     public <C extends AbstractC2902f> C2894a(String str, AbstractC2895a<C, O> aVar, C2903g<C> gVar) {
         C3027r.m12377i(aVar, "Cannot construct an Api with a null ClientBuilder");
         C3027r.m12377i(gVar, "Cannot construct an Api with a null ClientKey");
-        this.f9758c = str;
-        this.f9756a = aVar;
-        this.f9757b = gVar;
+        this.f9766c = str;
+        this.f9764a = aVar;
+        this.f9765b = gVar;
     }
 
     /* renamed from: a */
     public final C2897c<?> mo9561a() {
-        C2903g<?> gVar = this.f9757b;
+        C2903g<?> gVar = this.f9765b;
         if (gVar != null) {
             return gVar;
         }
@@ -138,12 +138,12 @@ public final class C2894a<O extends AbstractC2898d> {
 
     /* renamed from: b */
     public final String mo9562b() {
-        return this.f9758c;
+        return this.f9766c;
     }
 
     /* renamed from: c */
     public final AbstractC2895a<?, O> mo9563c() {
-        C3027r.m12379k(this.f9756a != null, "This API was constructed with a SimpleClientBuilder. Use getSimpleClientBuilder");
-        return this.f9756a;
+        C3027r.m12379k(this.f9764a != null, "This API was constructed with a SimpleClientBuilder. Use getSimpleClientBuilder");
+        return this.f9764a;
     }
 }

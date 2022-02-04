@@ -4,23 +4,23 @@ package p155e.p164b.p165a.p170w;
 public final class C3425g implements AbstractC3424f {
 
     /* renamed from: a */
-    private static final boolean[] f11527a = {true, true, true, false, true, false, false, false};
+    private static final boolean[] f11536a = {true, true, true, false, true, false, false, false};
 
     /* renamed from: b */
-    private static final int[] f11528b = {0, 1, 2, 2, 3, 3, 3, 3};
+    private static final int[] f11537b = {0, 1, 2, 2, 3, 3, 3, 3};
 
     /* renamed from: c */
-    private final boolean f11529c;
+    private final boolean f11538c;
 
     /* renamed from: d */
-    private int f11530d;
+    private int f11539d;
 
     /* renamed from: e */
-    private int f11531e = 0;
+    private int f11540e = 0;
 
     public C3425g(boolean z, int i) {
-        this.f11529c = z;
-        this.f11530d = i + 5;
+        this.f11538c = z;
+        this.f11539d = i + 5;
     }
 
     /* renamed from: b */
@@ -30,7 +30,7 @@ public final class C3425g implements AbstractC3424f {
     }
 
     /* JADX WARNING: Code restructure failed: missing block: B:13:0x003c, code lost:
-        if (m14124b(r11[(r1 + 4) - p155e.p164b.p165a.p170w.C3425g.f11528b[r0]]) != false) goto L_0x00af;
+        if (m14124b(r11[(r1 + 4) - p155e.p164b.p165a.p170w.C3425g.f11537b[r0]]) != false) goto L_0x00af;
      */
     @Override // p155e.p164b.p165a.p170w.AbstractC3424f
     /* renamed from: a */

@@ -40,54 +40,54 @@ import p006b.p030g.p039k.p040b0.C0979c;
 public class C1013s {
 
     /* renamed from: a */
-    private static final AtomicInteger f4753a = new AtomicInteger(1);
+    private static final AtomicInteger f4757a = new AtomicInteger(1);
 
     /* renamed from: b */
-    private static Field f4754b;
+    private static Field f4758b;
 
     /* renamed from: c */
-    private static boolean f4755c;
+    private static boolean f4759c;
 
     /* renamed from: d */
-    private static Field f4756d;
+    private static Field f4760d;
 
     /* renamed from: e */
-    private static boolean f4757e;
+    private static boolean f4761e;
 
     /* renamed from: f */
-    private static WeakHashMap<View, String> f4758f;
+    private static WeakHashMap<View, String> f4762f;
 
     /* renamed from: g */
-    private static WeakHashMap<View, C1028w> f4759g = null;
+    private static WeakHashMap<View, C1028w> f4763g = null;
 
     /* renamed from: h */
-    private static Field f4760h;
+    private static Field f4764h;
 
     /* renamed from: i */
-    private static boolean f4761i = false;
+    private static boolean f4765i = false;
 
     /* renamed from: j */
-    private static ThreadLocal<Rect> f4762j;
+    private static ThreadLocal<Rect> f4766j;
 
     /* renamed from: k */
-    private static final int[] f4763k = {C0899b.accessibility_custom_action_0, C0899b.accessibility_custom_action_1, C0899b.accessibility_custom_action_2, C0899b.accessibility_custom_action_3, C0899b.accessibility_custom_action_4, C0899b.accessibility_custom_action_5, C0899b.accessibility_custom_action_6, C0899b.accessibility_custom_action_7, C0899b.accessibility_custom_action_8, C0899b.accessibility_custom_action_9, C0899b.accessibility_custom_action_10, C0899b.accessibility_custom_action_11, C0899b.accessibility_custom_action_12, C0899b.accessibility_custom_action_13, C0899b.accessibility_custom_action_14, C0899b.accessibility_custom_action_15, C0899b.accessibility_custom_action_16, C0899b.accessibility_custom_action_17, C0899b.accessibility_custom_action_18, C0899b.accessibility_custom_action_19, C0899b.accessibility_custom_action_20, C0899b.accessibility_custom_action_21, C0899b.accessibility_custom_action_22, C0899b.accessibility_custom_action_23, C0899b.accessibility_custom_action_24, C0899b.accessibility_custom_action_25, C0899b.accessibility_custom_action_26, C0899b.accessibility_custom_action_27, C0899b.accessibility_custom_action_28, C0899b.accessibility_custom_action_29, C0899b.accessibility_custom_action_30, C0899b.accessibility_custom_action_31};
+    private static final int[] f4767k = {C0899b.accessibility_custom_action_0, C0899b.accessibility_custom_action_1, C0899b.accessibility_custom_action_2, C0899b.accessibility_custom_action_3, C0899b.accessibility_custom_action_4, C0899b.accessibility_custom_action_5, C0899b.accessibility_custom_action_6, C0899b.accessibility_custom_action_7, C0899b.accessibility_custom_action_8, C0899b.accessibility_custom_action_9, C0899b.accessibility_custom_action_10, C0899b.accessibility_custom_action_11, C0899b.accessibility_custom_action_12, C0899b.accessibility_custom_action_13, C0899b.accessibility_custom_action_14, C0899b.accessibility_custom_action_15, C0899b.accessibility_custom_action_16, C0899b.accessibility_custom_action_17, C0899b.accessibility_custom_action_18, C0899b.accessibility_custom_action_19, C0899b.accessibility_custom_action_20, C0899b.accessibility_custom_action_21, C0899b.accessibility_custom_action_22, C0899b.accessibility_custom_action_23, C0899b.accessibility_custom_action_24, C0899b.accessibility_custom_action_25, C0899b.accessibility_custom_action_26, C0899b.accessibility_custom_action_27, C0899b.accessibility_custom_action_28, C0899b.accessibility_custom_action_29, C0899b.accessibility_custom_action_30, C0899b.accessibility_custom_action_31};
 
     /* renamed from: l */
-    private static ViewTreeObserver$OnGlobalLayoutListenerC1018e f4764l = new ViewTreeObserver$OnGlobalLayoutListenerC1018e();
+    private static ViewTreeObserver$OnGlobalLayoutListenerC1018e f4768l = new ViewTreeObserver$OnGlobalLayoutListenerC1018e();
 
     /* access modifiers changed from: package-private */
     /* renamed from: b.g.k.s$a */
     public class View$OnApplyWindowInsetsListenerC1014a implements View.OnApplyWindowInsetsListener {
 
         /* renamed from: a */
-        final /* synthetic */ AbstractC1010p f4765a;
+        final /* synthetic */ AbstractC1010p f4769a;
 
         View$OnApplyWindowInsetsListenerC1014a(AbstractC1010p pVar) {
-            this.f4765a = pVar;
+            this.f4769a = pVar;
         }
 
         public WindowInsets onApplyWindowInsets(View view, WindowInsets windowInsets) {
-            return this.f4765a.mo340a(view, C0964a0.m5510p(windowInsets)).mo5425o();
+            return this.f4769a.mo340a(view, C0964a0.m5510p(windowInsets)).mo5425o();
         }
     }
 
@@ -173,7 +173,7 @@ public class C1013s {
     static class ViewTreeObserver$OnGlobalLayoutListenerC1018e implements ViewTreeObserver.OnGlobalLayoutListener, View.OnAttachStateChangeListener {
 
         /* renamed from: b */
-        private WeakHashMap<View, Boolean> f4766b = new WeakHashMap<>();
+        private WeakHashMap<View, Boolean> f4770b = new WeakHashMap<>();
 
         ViewTreeObserver$OnGlobalLayoutListenerC1018e() {
         }
@@ -185,7 +185,7 @@ public class C1013s {
                 if (z2) {
                     C1013s.m5741S(view, 16);
                 }
-                this.f4766b.put(view, Boolean.valueOf(z2));
+                this.f4770b.put(view, Boolean.valueOf(z2));
             }
         }
 
@@ -195,7 +195,7 @@ public class C1013s {
         }
 
         public void onGlobalLayout() {
-            for (Map.Entry<View, Boolean> entry : this.f4766b.entrySet()) {
+            for (Map.Entry<View, Boolean> entry : this.f4770b.entrySet()) {
                 m5819a(entry.getKey(), entry.getValue().booleanValue());
             }
         }
@@ -213,22 +213,22 @@ public class C1013s {
     public static abstract class AbstractC1019f<T> {
 
         /* renamed from: a */
-        private final int f4767a;
+        private final int f4771a;
 
         /* renamed from: b */
-        private final Class<T> f4768b;
+        private final Class<T> f4772b;
 
         /* renamed from: c */
-        private final int f4769c;
+        private final int f4773c;
 
         AbstractC1019f(int i, Class<T> cls, int i2) {
             this(i, cls, 0, i2);
         }
 
         AbstractC1019f(int i, Class<T> cls, int i2, int i3) {
-            this.f4767a = i;
-            this.f4768b = cls;
-            this.f4769c = i3;
+            this.f4771a = i;
+            this.f4772b = cls;
+            this.f4773c = i3;
         }
 
         /* renamed from: b */
@@ -238,7 +238,7 @@ public class C1013s {
 
         /* renamed from: c */
         private boolean m5822c() {
-            return Build.VERSION.SDK_INT >= this.f4769c;
+            return Build.VERSION.SDK_INT >= this.f4773c;
         }
 
         /* access modifiers changed from: package-private */
@@ -264,8 +264,8 @@ public class C1013s {
             if (!m5821b()) {
                 return null;
             }
-            T t = (T) view.getTag(this.f4767a);
-            if (this.f4768b.isInstance(t)) {
+            T t = (T) view.getTag(this.f4771a);
+            if (this.f4772b.isInstance(t)) {
                 return t;
             }
             return null;
@@ -278,7 +278,7 @@ public class C1013s {
                 mo5558e(view, t);
             } else if (m5821b() && mo5559h(mo5573f(view), t)) {
                 C1013s.m5724B(view);
-                view.setTag(this.f4767a, t);
+                view.setTag(this.f4771a, t);
                 C1013s.m5741S(view, 0);
             }
         }
@@ -330,16 +330,16 @@ public class C1013s {
     public static class C1024k {
 
         /* renamed from: a */
-        private static final ArrayList<WeakReference<View>> f4770a = new ArrayList<>();
+        private static final ArrayList<WeakReference<View>> f4774a = new ArrayList<>();
 
         /* renamed from: b */
-        private WeakHashMap<View, Boolean> f4771b = null;
+        private WeakHashMap<View, Boolean> f4775b = null;
 
         /* renamed from: c */
-        private SparseArray<WeakReference<View>> f4772c = null;
+        private SparseArray<WeakReference<View>> f4776c = null;
 
         /* renamed from: d */
-        private WeakReference<KeyEvent> f4773d = null;
+        private WeakReference<KeyEvent> f4777d = null;
 
         C1024k() {
         }
@@ -358,7 +358,7 @@ public class C1013s {
 
         /* renamed from: c */
         private View m5834c(View view, KeyEvent keyEvent) {
-            WeakHashMap<View, Boolean> weakHashMap = this.f4771b;
+            WeakHashMap<View, Boolean> weakHashMap = this.f4775b;
             if (weakHashMap != null && weakHashMap.containsKey(view)) {
                 if (view instanceof ViewGroup) {
                     ViewGroup viewGroup = (ViewGroup) view;
@@ -378,10 +378,10 @@ public class C1013s {
 
         /* renamed from: d */
         private SparseArray<WeakReference<View>> m5835d() {
-            if (this.f4772c == null) {
-                this.f4772c = new SparseArray<>();
+            if (this.f4776c == null) {
+                this.f4776c = new SparseArray<>();
             }
-            return this.f4772c;
+            return this.f4776c;
         }
 
         /* renamed from: e */
@@ -400,25 +400,25 @@ public class C1013s {
 
         /* renamed from: g */
         private void m5837g() {
-            WeakHashMap<View, Boolean> weakHashMap = this.f4771b;
+            WeakHashMap<View, Boolean> weakHashMap = this.f4775b;
             if (weakHashMap != null) {
                 weakHashMap.clear();
             }
-            ArrayList<WeakReference<View>> arrayList = f4770a;
+            ArrayList<WeakReference<View>> arrayList = f4774a;
             if (!arrayList.isEmpty()) {
                 synchronized (arrayList) {
-                    if (this.f4771b == null) {
-                        this.f4771b = new WeakHashMap<>();
+                    if (this.f4775b == null) {
+                        this.f4775b = new WeakHashMap<>();
                     }
                     for (int size = arrayList.size() - 1; size >= 0; size--) {
-                        ArrayList<WeakReference<View>> arrayList2 = f4770a;
+                        ArrayList<WeakReference<View>> arrayList2 = f4774a;
                         View view = arrayList2.get(size).get();
                         if (view == null) {
                             arrayList2.remove(size);
                         } else {
-                            this.f4771b.put(view, Boolean.TRUE);
+                            this.f4775b.put(view, Boolean.TRUE);
                             for (ViewParent parent = view.getParent(); parent instanceof View; parent = parent.getParent()) {
-                                this.f4771b.put((View) parent, Boolean.TRUE);
+                                this.f4775b.put((View) parent, Boolean.TRUE);
                             }
                         }
                     }
@@ -446,11 +446,11 @@ public class C1013s {
         /* renamed from: f */
         public boolean mo5577f(KeyEvent keyEvent) {
             int indexOfKey;
-            WeakReference<KeyEvent> weakReference = this.f4773d;
+            WeakReference<KeyEvent> weakReference = this.f4777d;
             if (weakReference != null && weakReference.get() == keyEvent) {
                 return false;
             }
-            this.f4773d = new WeakReference<>(keyEvent);
+            this.f4777d = new WeakReference<>(keyEvent);
             WeakReference<View> weakReference2 = null;
             SparseArray<WeakReference<View>> d = m5835d();
             if (keyEvent.getAction() == 1 && (indexOfKey = d.indexOfKey(keyEvent.getKeyCode())) >= 0) {
@@ -476,16 +476,16 @@ public class C1013s {
         if (Build.VERSION.SDK_INT >= 16) {
             return view.getMinimumWidth();
         }
-        if (!f4755c) {
+        if (!f4759c) {
             try {
                 Field declaredField = View.class.getDeclaredField("mMinWidth");
-                f4754b = declaredField;
+                f4758b = declaredField;
                 declaredField.setAccessible(true);
             } catch (NoSuchFieldException unused) {
             }
-            f4755c = true;
+            f4759c = true;
         }
-        Field field = f4754b;
+        Field field = f4758b;
         if (field == null) {
             return 0;
         }
@@ -541,7 +541,7 @@ public class C1013s {
         if (Build.VERSION.SDK_INT >= 21) {
             return view.getTransitionName();
         }
-        WeakHashMap<View, String> weakHashMap = f4758f;
+        WeakHashMap<View, String> weakHashMap = f4762f;
         if (weakHashMap == null) {
             return null;
         }
@@ -774,15 +774,15 @@ public class C1013s {
 
     /* renamed from: c */
     public static C1028w m5753c(View view) {
-        if (f4759g == null) {
-            f4759g = new WeakHashMap<>();
+        if (f4763g == null) {
+            f4763g = new WeakHashMap<>();
         }
-        C1028w wVar = f4759g.get(view);
+        C1028w wVar = f4763g.get(view);
         if (wVar != null) {
             return wVar;
         }
         C1028w wVar2 = new C1028w(view);
-        f4759g.put(view, wVar2);
+        f4763g.put(view, wVar2);
         return wVar2;
     }
 
@@ -901,7 +901,7 @@ public class C1013s {
         if (k == null) {
             return null;
         }
-        return k instanceof C0962a.C0963a ? ((C0962a.C0963a) k).f4662a : new C0962a(k);
+        return k instanceof C0962a.C0963a ? ((C0962a.C0963a) k).f4666a : new C0962a(k);
     }
 
     /* renamed from: j0 */
@@ -923,27 +923,27 @@ public class C1013s {
 
     /* renamed from: l */
     private static View.AccessibilityDelegate m5771l(View view) {
-        if (f4761i) {
+        if (f4765i) {
             return null;
         }
-        if (f4760h == null) {
+        if (f4764h == null) {
             try {
                 Field declaredField = View.class.getDeclaredField("mAccessibilityDelegate");
-                f4760h = declaredField;
+                f4764h = declaredField;
                 declaredField.setAccessible(true);
             } catch (Throwable unused) {
-                f4761i = true;
+                f4765i = true;
                 return null;
             }
         }
         try {
-            Object obj = f4760h.get(view);
+            Object obj = f4764h.get(view);
             if (obj instanceof View.AccessibilityDelegate) {
                 return (View.AccessibilityDelegate) obj;
             }
             return null;
         } catch (Throwable unused2) {
-            f4761i = true;
+            f4765i = true;
             return null;
         }
     }
@@ -1121,13 +1121,13 @@ public class C1013s {
 
     /* renamed from: u */
     private static Rect m5789u() {
-        if (f4762j == null) {
-            f4762j = new ThreadLocal<>();
+        if (f4766j == null) {
+            f4766j = new ThreadLocal<>();
         }
-        Rect rect = f4762j.get();
+        Rect rect = f4766j.get();
         if (rect == null) {
             rect = new Rect();
-            f4762j.set(rect);
+            f4766j.set(rect);
         }
         rect.setEmpty();
         return rect;
@@ -1192,10 +1192,10 @@ public class C1013s {
             view.setTransitionName(str);
             return;
         }
-        if (f4758f == null) {
-            f4758f = new WeakHashMap<>();
+        if (f4762f == null) {
+            f4762f = new WeakHashMap<>();
         }
-        f4758f.put(view, str);
+        f4762f.put(view, str);
     }
 
     /* renamed from: y */
@@ -1218,16 +1218,16 @@ public class C1013s {
         if (Build.VERSION.SDK_INT >= 16) {
             return view.getMinimumHeight();
         }
-        if (!f4757e) {
+        if (!f4761e) {
             try {
                 Field declaredField = View.class.getDeclaredField("mMinHeight");
-                f4756d = declaredField;
+                f4760d = declaredField;
                 declaredField.setAccessible(true);
             } catch (NoSuchFieldException unused) {
             }
-            f4757e = true;
+            f4761e = true;
         }
-        Field field = f4756d;
+        Field field = f4760d;
         if (field == null) {
             return 0;
         }

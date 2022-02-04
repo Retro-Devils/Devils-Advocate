@@ -8,7 +8,7 @@ import java.util.Locale;
 public final class C0952f {
 
     /* renamed from: a */
-    private static final Locale f4651a = new Locale("", "");
+    private static final Locale f4655a = new Locale("", "");
 
     /* renamed from: a */
     private static int m5478a(Locale locale) {
@@ -21,7 +21,7 @@ public final class C0952f {
         if (Build.VERSION.SDK_INT >= 17) {
             return TextUtils.getLayoutDirectionFromLocale(locale);
         }
-        if (locale == null || locale.equals(f4651a)) {
+        if (locale == null || locale.equals(f4655a)) {
             return 0;
         }
         String c = C0940b.m5455c(locale);

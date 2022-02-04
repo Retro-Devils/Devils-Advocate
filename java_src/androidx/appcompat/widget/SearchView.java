@@ -751,8 +751,8 @@ public class SearchView extends C0230h0 implements AbstractC0787c {
         C0178j jVar = new C0178j();
         this.f783q0 = jVar;
         this.f785r0 = new C0169a();
-        C0296w0 v = C0296w0.m1432v(context, attributeSet, C0763j.f3745i2, i, 0);
-        LayoutInflater.from(context).inflate(v.mo1817n(C0763j.f3795s2, C0760g.abc_search_view), (ViewGroup) this, true);
+        C0296w0 v = C0296w0.m1432v(context, attributeSet, C0763j.f3749i2, i, 0);
+        LayoutInflater.from(context).inflate(v.mo1817n(C0763j.f3799s2, C0760g.abc_search_view), (ViewGroup) this, true);
         SearchAutoComplete searchAutoComplete = (SearchAutoComplete) findViewById(C0759f.search_src_text);
         this.f784r = searchAutoComplete;
         searchAutoComplete.setSearchView(this);
@@ -771,18 +771,18 @@ public class SearchView extends C0230h0 implements AbstractC0787c {
         this.f792y = imageView4;
         ImageView imageView5 = (ImageView) findViewById(C0759f.search_mag_icon);
         this.f749F = imageView5;
-        C1013s.m5772l0(findViewById, v.mo1810g(C0763j.f3800t2));
-        C1013s.m5772l0(findViewById2, v.mo1810g(C0763j.f3820x2));
-        int i2 = C0763j.f3815w2;
+        C1013s.m5772l0(findViewById, v.mo1810g(C0763j.f3804t2));
+        C1013s.m5772l0(findViewById2, v.mo1810g(C0763j.f3824x2));
+        int i2 = C0763j.f3819w2;
         imageView.setImageDrawable(v.mo1810g(i2));
-        imageView2.setImageDrawable(v.mo1810g(C0763j.f3785q2));
-        imageView3.setImageDrawable(v.mo1810g(C0763j.f3770n2));
-        imageView4.setImageDrawable(v.mo1810g(C0763j.f3830z2));
+        imageView2.setImageDrawable(v.mo1810g(C0763j.f3789q2));
+        imageView3.setImageDrawable(v.mo1810g(C0763j.f3774n2));
+        imageView4.setImageDrawable(v.mo1810g(C0763j.f3834z2));
         imageView5.setImageDrawable(v.mo1810g(i2));
-        this.f750G = v.mo1810g(C0763j.f3810v2);
+        this.f750G = v.mo1810g(C0763j.f3814v2);
         C0303y0.m1525a(imageView, getResources().getString(C0761h.abc_searchview_description_search));
-        this.f751H = v.mo1817n(C0763j.f3825y2, C0760g.abc_search_dropdown_item_icons_2line);
-        this.f752I = v.mo1817n(C0763j.f3775o2, 0);
+        this.f751H = v.mo1817n(C0763j.f3829y2, C0760g.abc_search_dropdown_item_icons_2line);
+        this.f752I = v.mo1817n(C0763j.f3779o2, 0);
         imageView.setOnClickListener(fVar);
         imageView3.setOnClickListener(fVar);
         imageView2.setOnClickListener(fVar);
@@ -794,22 +794,22 @@ public class SearchView extends C0230h0 implements AbstractC0787c {
         searchAutoComplete.setOnItemSelectedListener(jVar);
         searchAutoComplete.setOnKeyListener(this.f780n0);
         searchAutoComplete.setOnFocusChangeListener(new View$OnFocusChangeListenerC0172d());
-        setIconifiedByDefault(v.mo1804a(C0763j.f3790r2, true));
-        int f = v.mo1809f(C0763j.f3755k2, -1);
+        setIconifiedByDefault(v.mo1804a(C0763j.f3794r2, true));
+        int f = v.mo1809f(C0763j.f3759k2, -1);
         if (f != -1) {
             setMaxWidth(f);
         }
-        this.f755L = v.mo1819p(C0763j.f3780p2);
-        this.f765V = v.mo1819p(C0763j.f3805u2);
-        int k = v.mo1814k(C0763j.f3765m2, -1);
+        this.f755L = v.mo1819p(C0763j.f3784p2);
+        this.f765V = v.mo1819p(C0763j.f3809u2);
+        int k = v.mo1814k(C0763j.f3769m2, -1);
         if (k != -1) {
             setImeOptions(k);
         }
-        int k2 = v.mo1814k(C0763j.f3760l2, -1);
+        int k2 = v.mo1814k(C0763j.f3764l2, -1);
         if (k2 != -1) {
             setInputType(k2);
         }
-        setFocusable(v.mo1804a(C0763j.f3750j2, true));
+        setFocusable(v.mo1804a(C0763j.f3754j2, true));
         v.mo1823w();
         Intent intent = new Intent("android.speech.action.WEB_SEARCH");
         this.f753J = intent;

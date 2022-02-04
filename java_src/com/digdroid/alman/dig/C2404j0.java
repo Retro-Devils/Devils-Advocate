@@ -59,226 +59,226 @@ import p006b.p007a.p014o.C0788d;
 public class C2404j0 extends AbstractC2531p1 {
 
     /* renamed from: n0 */
-    static int[] f8401n0 = {R.string.play_videos, R.string.play_videos_mobile, R.string.box_cover, R.string.screenshot, R.string.file_path, R.string.rating, R.string.genres, R.string.game_info, R.string.published_by, R.string.developed_by, R.string.released, R.string.comments, R.string.collections};
+    static int[] f8409n0 = {R.string.play_videos, R.string.play_videos_mobile, R.string.box_cover, R.string.screenshot, R.string.file_path, R.string.rating, R.string.genres, R.string.game_info, R.string.published_by, R.string.developed_by, R.string.released, R.string.comments, R.string.collections};
 
     /* renamed from: o0 */
-    static boolean[] f8402o0 = {false, false, true, true, true, true, true, true, true, true, true, true, true};
+    static boolean[] f8410o0 = {false, false, true, true, true, true, true, true, true, true, true, true, true};
 
     /* renamed from: p0 */
-    static String[] f8403p0 = {"game_play_videos", "game_play_videos_mobile", "show_cover", "show_screenshot", "show_file", "show_rating", "show_genres", "show_info", "show_publisher", "show_developer", "show_released", "show_comments", "show_collections"};
+    static String[] f8411p0 = {"game_play_videos", "game_play_videos_mobile", "show_cover", "show_screenshot", "show_file", "show_rating", "show_genres", "show_info", "show_publisher", "show_developer", "show_released", "show_comments", "show_collections"};
 
     /* renamed from: A0 */
-    String f8404A0;
+    String f8412A0;
 
     /* renamed from: A1 */
-    ScrollView f8405A1;
+    ScrollView f8413A1;
 
     /* renamed from: B0 */
-    String f8406B0;
+    String f8414B0;
 
     /* renamed from: B1 */
-    ViewTreeObserver.OnScrollChangedListener f8407B1 = null;
+    ViewTreeObserver.OnScrollChangedListener f8415B1 = null;
 
     /* renamed from: C0 */
-    String f8408C0;
+    String f8416C0;
 
     /* renamed from: C1 */
-    Handler f8409C1 = null;
+    Handler f8417C1 = null;
 
     /* renamed from: D0 */
-    String f8410D0;
+    String f8418D0;
 
     /* renamed from: D1 */
-    boolean f8411D1 = false;
+    boolean f8419D1 = false;
 
     /* renamed from: E0 */
-    String f8412E0;
+    String f8420E0;
 
     /* renamed from: E1 */
-    File f8413E1 = null;
+    File f8421E1 = null;
 
     /* renamed from: F0 */
-    String f8414F0;
+    String f8422F0;
 
     /* renamed from: F1 */
-    Runnable f8415F1 = new RunnableC2405a();
+    Runnable f8423F1 = new RunnableC2405a();
 
     /* renamed from: G0 */
-    String f8416G0;
+    String f8424G0;
 
     /* renamed from: G1 */
-    C2515o2 f8417G1 = null;
+    C2515o2 f8425G1 = null;
 
     /* renamed from: H0 */
-    String f8418H0;
+    String f8426H0;
 
     /* renamed from: H1 */
-    C2515o2.C2523f f8419H1;
+    C2515o2.C2523f f8427H1;
 
     /* renamed from: I0 */
-    String f8420I0;
+    String f8428I0;
 
     /* renamed from: I1 */
-    DialogInterfaceC0068b f8421I1 = null;
+    DialogInterfaceC0068b f8429I1 = null;
 
     /* renamed from: J0 */
-    String f8422J0;
+    String f8430J0;
 
     /* renamed from: K0 */
-    long f8423K0;
+    long f8431K0;
 
     /* renamed from: L0 */
-    long f8424L0;
+    long f8432L0;
 
     /* renamed from: M0 */
-    long f8425M0;
+    long f8433M0;
 
     /* renamed from: N0 */
-    long f8426N0;
+    long f8434N0;
 
     /* renamed from: O0 */
-    long f8427O0;
+    long f8435O0;
 
     /* renamed from: P0 */
-    float f8428P0;
+    float f8436P0;
 
     /* renamed from: Q0 */
-    int f8429Q0;
+    int f8437Q0;
 
     /* renamed from: R0 */
-    int f8430R0;
+    int f8438R0;
 
     /* renamed from: S0 */
-    int f8431S0;
+    int f8439S0;
 
     /* renamed from: T0 */
-    File f8432T0;
+    File f8440T0;
 
     /* renamed from: U0 */
-    File f8433U0;
+    File f8441U0;
 
     /* renamed from: V0 */
-    boolean f8434V0 = false;
+    boolean f8442V0 = false;
 
     /* renamed from: W0 */
-    boolean f8435W0 = false;
+    boolean f8443W0 = false;
 
     /* renamed from: X0 */
-    String f8436X0;
+    String f8444X0;
 
     /* renamed from: Y0 */
-    String f8437Y0;
+    String f8445Y0;
 
     /* renamed from: Z0 */
-    long f8438Z0 = 0;
+    long f8446Z0 = 0;
 
     /* renamed from: a1 */
-    long f8439a1 = 0;
+    long f8447a1 = 0;
 
     /* renamed from: b1 */
-    long f8440b1 = 0;
+    long f8448b1 = 0;
 
     /* renamed from: c1 */
-    long f8441c1 = 0;
+    long f8449c1 = 0;
 
     /* renamed from: d1 */
-    long f8442d1 = 0;
+    long f8450d1 = 0;
 
     /* renamed from: e1 */
-    long f8443e1 = 0;
+    long f8451e1 = 0;
 
     /* renamed from: f1 */
-    C2369h0 f8444f1;
+    C2369h0 f8452f1;
 
     /* renamed from: g1 */
-    ArrayList<C2443z> f8445g1 = new ArrayList<>();
+    ArrayList<C2443z> f8453g1 = new ArrayList<>();
 
     /* renamed from: h1 */
-    String f8446h1 = null;
+    String f8454h1 = null;
 
     /* renamed from: i1 */
-    int f8447i1;
+    int f8455i1;
 
     /* renamed from: j1 */
-    int f8448j1 = 0;
+    int f8456j1 = 0;
 
     /* renamed from: k1 */
-    TextView f8449k1;
+    TextView f8457k1;
 
     /* renamed from: l1 */
-    TextView f8450l1;
+    TextView f8458l1;
 
     /* renamed from: m1 */
-    TextView f8451m1;
+    TextView f8459m1;
 
     /* renamed from: n1 */
-    TextView f8452n1;
+    TextView f8460n1;
 
     /* renamed from: o1 */
-    TextView f8453o1;
+    TextView f8461o1;
 
     /* renamed from: p1 */
-    EditText f8454p1;
+    EditText f8462p1;
 
     /* renamed from: q0 */
-    long f8455q0;
+    long f8463q0;
 
     /* renamed from: q1 */
-    EditText f8456q1;
+    EditText f8464q1;
 
     /* renamed from: r0 */
-    int f8457r0;
+    int f8465r0;
 
     /* renamed from: r1 */
-    EditText f8458r1;
+    EditText f8466r1;
 
     /* renamed from: s0 */
-    String f8459s0;
+    String f8467s0;
 
     /* renamed from: s1 */
-    EditText f8460s1;
+    EditText f8468s1;
 
     /* renamed from: t0 */
-    SQLiteDatabase f8461t0;
+    SQLiteDatabase f8469t0;
 
     /* renamed from: t1 */
-    EditText f8462t1;
+    EditText f8470t1;
 
     /* renamed from: u0 */
-    boolean f8463u0;
+    boolean f8471u0;
 
     /* renamed from: u1 */
-    ConstraintLayout f8464u1;
+    ConstraintLayout f8472u1;
 
     /* renamed from: v0 */
-    boolean f8465v0;
+    boolean f8473v0;
 
     /* renamed from: v1 */
-    RatingBar f8466v1;
+    RatingBar f8474v1;
 
     /* renamed from: w0 */
-    boolean f8467w0;
+    boolean f8475w0;
 
     /* renamed from: w1 */
-    ImageView f8468w1 = null;
+    ImageView f8476w1 = null;
 
     /* renamed from: x0 */
-    boolean f8469x0;
+    boolean f8477x0;
 
     /* renamed from: x1 */
-    ImageView f8470x1 = null;
+    ImageView f8478x1 = null;
 
     /* renamed from: y0 */
-    String f8471y0;
+    String f8479y0;
 
     /* renamed from: y1 */
-    ImageView f8472y1 = null;
+    ImageView f8480y1 = null;
 
     /* renamed from: z0 */
-    String f8473z0;
+    String f8481z0;
 
     /* renamed from: z1 */
-    Object f8474z1 = new Object();
+    Object f8482z1 = new Object();
 
     /* renamed from: com.digdroid.alman.dig.j0$a */
     class RunnableC2405a implements Runnable {
@@ -287,18 +287,18 @@ public class C2404j0 extends AbstractC2531p1 {
 
         public void run() {
             C2404j0 j0Var = C2404j0.this;
-            if (j0Var.f8803j0 && !j0Var.f8463u0) {
-                boolean z = !j0Var.f8411D1;
-                j0Var.f8411D1 = z;
+            if (j0Var.f8811j0 && !j0Var.f8471u0) {
+                boolean z = !j0Var.f8419D1;
+                j0Var.f8419D1 = z;
                 File k3 = j0Var.mo8631k3(z);
                 C2404j0 j0Var2 = C2404j0.this;
-                if (k3 != j0Var2.f8413E1 && !j0Var2.f8806m0.mo8282m()) {
+                if (k3 != j0Var2.f8421E1 && !j0Var2.f8814m0.mo8282m()) {
                     C2404j0 j0Var3 = C2404j0.this;
-                    j0Var3.f8413E1 = k3;
+                    j0Var3.f8421E1 = k3;
                     j0Var3.mo8645y3(false);
                 }
             }
-            C2404j0.this.f8409C1.postDelayed(this, 3000);
+            C2404j0.this.f8417C1.postDelayed(this, 3000);
         }
     }
 
@@ -322,16 +322,16 @@ public class C2404j0 extends AbstractC2531p1 {
         @Override // com.digdroid.alman.dig.C2515o2.AbstractC2524g
         /* renamed from: b */
         public boolean mo8649b() {
-            return C2404j0.this.f8803j0;
+            return C2404j0.this.f8811j0;
         }
 
         @Override // com.digdroid.alman.dig.C2515o2.AbstractC2524g
         /* renamed from: c */
         public void mo8650c() {
             C2404j0 j0Var = C2404j0.this;
-            long j = j0Var.f8424L0;
+            long j = j0Var.f8432L0;
             if (j >= 0) {
-                ServerService.m9567j(j0Var.f8805l0, j, 463);
+                ServerService.m9567j(j0Var.f8813l0, j, 463);
             }
         }
     }
@@ -341,10 +341,10 @@ public class C2404j0 extends AbstractC2531p1 {
     public class AsyncTaskC2408b0 extends AsyncTask<String, Void, Boolean> {
 
         /* renamed from: a */
-        AbstractC2406a0 f8477a;
+        AbstractC2406a0 f8485a;
 
         public AsyncTaskC2408b0(AbstractC2406a0 a0Var) {
-            this.f8477a = a0Var;
+            this.f8485a = a0Var;
         }
 
         /* access modifiers changed from: protected */
@@ -352,9 +352,9 @@ public class C2404j0 extends AbstractC2531p1 {
         public Boolean doInBackground(String... strArr) {
             try {
                 C2404j0 j0Var = C2404j0.this;
-                j0Var.f8437Y0 = C2185a4.m9678h(C2404j0.this.mo2552c0()) + "/Screenshots";
+                j0Var.f8445Y0 = C2185a4.m9678h(C2404j0.this.mo2552c0()) + "/Screenshots";
                 C2404j0 j0Var2 = C2404j0.this;
-                j0Var2.f8436X0 = C2185a4.m9678h(C2404j0.this.mo2552c0()) + "/Covers";
+                j0Var2.f8444X0 = C2185a4.m9678h(C2404j0.this.mo2552c0()) + "/Covers";
                 return Boolean.valueOf(C2404j0.this.mo8630j3());
             } catch (Exception unused) {
                 return Boolean.FALSE;
@@ -370,7 +370,7 @@ public class C2404j0 extends AbstractC2531p1 {
                 } catch (Exception unused) {
                 }
             }
-            this.f8477a.mo8647a(bool.booleanValue());
+            this.f8485a.mo8647a(bool.booleanValue());
         }
     }
 
@@ -398,10 +398,10 @@ public class C2404j0 extends AbstractC2531p1 {
 
         public void onClick(View view) {
             C2404j0 j0Var = C2404j0.this;
-            int i = j0Var.f8457r0;
-            String b = (i != 0 ? i != 1 ? i != 2 ? null : new C2206b2(j0Var.f8798e0.mo9515a(), C2404j0.this.f8794a0.mo9325c()) : new C2323g0() : new C2548p3()).mo8091b(C2404j0.this.f8455q0);
+            int i = j0Var.f8465r0;
+            String b = (i != 0 ? i != 1 ? i != 2 ? null : new C2206b2(j0Var.f8806e0.mo9515a(), C2404j0.this.f8802a0.mo9325c()) : new C2323g0() : new C2548p3()).mo8091b(C2404j0.this.f8463q0);
             if (b != null) {
-                C2404j0.this.f8806m0.mo8304z(b);
+                C2404j0.this.f8814m0.mo8304z(b);
             }
         }
     }
@@ -414,7 +414,7 @@ public class C2404j0 extends AbstractC2531p1 {
 
         public void onClick(View view) {
             C2404j0 j0Var = C2404j0.this;
-            j0Var.f8806m0.mo8286o0(j0Var.f8455q0);
+            j0Var.f8814m0.mo8286o0(j0Var.f8463q0);
         }
     }
 
@@ -446,18 +446,18 @@ public class C2404j0 extends AbstractC2531p1 {
     public class DialogInterface$OnClickListenerC2414h implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ boolean[] f8484b;
+        final /* synthetic */ boolean[] f8492b;
 
         DialogInterface$OnClickListenerC2414h(boolean[] zArr) {
-            this.f8484b = zArr;
+            this.f8492b = zArr;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
             int i2 = 0;
             while (true) {
-                String[] strArr = C2404j0.f8403p0;
+                String[] strArr = C2404j0.f8411p0;
                 if (i2 < strArr.length) {
-                    C2404j0.this.f8793Z.mo8152A(strArr[i2], this.f8484b[i2]);
+                    C2404j0.this.f8801Z.mo8152A(strArr[i2], this.f8492b[i2]);
                     i2++;
                 } else {
                     C2404j0.this.mo8407O2();
@@ -472,22 +472,22 @@ public class C2404j0 extends AbstractC2531p1 {
     public class DialogInterface$OnMultiChoiceClickListenerC2415i implements DialogInterface.OnMultiChoiceClickListener {
 
         /* renamed from: a */
-        final /* synthetic */ boolean[] f8486a;
+        final /* synthetic */ boolean[] f8494a;
 
         /* renamed from: com.digdroid.alman.dig.j0$i$a */
         class DialogInterface$OnClickListenerC2416a implements DialogInterface.OnClickListener {
 
             /* renamed from: b */
-            final /* synthetic */ int f8488b;
+            final /* synthetic */ int f8496b;
 
             DialogInterface$OnClickListenerC2416a(int i) {
-                this.f8488b = i;
+                this.f8496b = i;
             }
 
             public void onClick(DialogInterface dialogInterface, int i) {
                 DialogInterface$OnMultiChoiceClickListenerC2415i iVar = DialogInterface$OnMultiChoiceClickListenerC2415i.this;
-                iVar.f8486a[this.f8488b] = false;
-                C2404j0.this.f8421I1.mo216f().setItemChecked(this.f8488b, false);
+                iVar.f8494a[this.f8496b] = false;
+                C2404j0.this.f8429I1.mo216f().setItemChecked(this.f8496b, false);
             }
         }
 
@@ -495,24 +495,24 @@ public class C2404j0 extends AbstractC2531p1 {
         class DialogInterface$OnClickListenerC2417b implements DialogInterface.OnClickListener {
 
             /* renamed from: b */
-            final /* synthetic */ int f8490b;
+            final /* synthetic */ int f8498b;
 
             DialogInterface$OnClickListenerC2417b(int i) {
-                this.f8490b = i;
+                this.f8498b = i;
             }
 
             public void onClick(DialogInterface dialogInterface, int i) {
-                DialogInterface$OnMultiChoiceClickListenerC2415i.this.f8486a[this.f8490b] = true;
+                DialogInterface$OnMultiChoiceClickListenerC2415i.this.f8494a[this.f8498b] = true;
             }
         }
 
         DialogInterface$OnMultiChoiceClickListenerC2415i(boolean[] zArr) {
-            this.f8486a = zArr;
+            this.f8494a = zArr;
         }
 
         public void onClick(DialogInterface dialogInterface, int i, boolean z) {
-            if (!z || C2404j0.f8401n0[i] != R.string.play_videos_mobile) {
-                this.f8486a[i] = z;
+            if (!z || C2404j0.f8409n0[i] != R.string.play_videos_mobile) {
+                this.f8494a[i] = z;
             } else {
                 new DialogInterfaceC0068b.C0069a(C2404j0.this.mo2552c0(), C2553q3.m11117c()).mo224d(false).mo228h(R.string.confirm).mo235o(R.string.ok, new DialogInterface$OnClickListenerC2417b(i)).mo232l(R.string.cancel, new DialogInterface$OnClickListenerC2416a(i)).mo221a().show();
             }
@@ -523,38 +523,38 @@ public class C2404j0 extends AbstractC2531p1 {
     class C2418j implements C2465m0.AbstractC2488p {
 
         /* renamed from: a */
-        final /* synthetic */ Activity f8492a;
+        final /* synthetic */ Activity f8500a;
 
         C2418j(Activity activity) {
-            this.f8492a = activity;
+            this.f8500a = activity;
         }
 
         @Override // com.digdroid.alman.dig.C2465m0.AbstractC2488p
         /* renamed from: a */
         public void mo8663a() {
-            C2404j0.this.f8806m0.mo8264R();
+            C2404j0.this.f8814m0.mo8264R();
             C2404j0.this.mo8106G2(false);
-            C2404j0.this.f8806m0.mo8298u0();
+            C2404j0.this.f8814m0.mo8298u0();
         }
 
         @Override // com.digdroid.alman.dig.C2465m0.AbstractC2488p
         /* renamed from: b */
         public void mo8664b() {
-            C2404j0.this.f8806m0.mo8264R();
+            C2404j0.this.f8814m0.mo8264R();
             C2404j0.this.mo8105F2();
         }
 
         @Override // com.digdroid.alman.dig.C2465m0.AbstractC2488p
         /* renamed from: c */
         public void mo8665c(boolean z) {
-            C2404j0.this.f8469x0 = z;
-            this.f8492a.invalidateOptionsMenu();
-            C2404j0.this.f8806m0.mo8264R();
+            C2404j0.this.f8477x0 = z;
+            this.f8500a.invalidateOptionsMenu();
+            C2404j0.this.f8814m0.mo8264R();
         }
 
         @Override // com.digdroid.alman.dig.C2465m0.AbstractC2488p
         public C2369h0 getFilter() {
-            return C2404j0.this.f8444f1;
+            return C2404j0.this.f8452f1;
         }
     }
 
@@ -566,9 +566,9 @@ public class C2404j0 extends AbstractC2531p1 {
 
         public void onScrollChanged() {
             C2404j0 j0Var = C2404j0.this;
-            C2515o2 o2Var = j0Var.f8417G1;
+            C2515o2 o2Var = j0Var.f8425G1;
             if (o2Var != null) {
-                o2Var.mo8873z(j0Var, j0Var.f8405A1.getScrollY());
+                o2Var.mo8873z(j0Var, j0Var.f8413A1.getScrollY());
             }
         }
     }
@@ -584,46 +584,46 @@ public class C2404j0 extends AbstractC2531p1 {
         public Boolean doInBackground(Void... voidArr) {
             int lastIndexOf;
             C2404j0 j0Var = C2404j0.this;
-            String str = j0Var.f8404A0;
+            String str = j0Var.f8412A0;
             if (str == null) {
-                str = j0Var.f8473z0;
-                if (!j0Var.f8471y0.equals("")) {
-                    File file = new File(C2404j0.this.f8471y0 + C2404j0.this.f8473z0);
+                str = j0Var.f8481z0;
+                if (!j0Var.f8479y0.equals("")) {
+                    File file = new File(C2404j0.this.f8479y0 + C2404j0.this.f8481z0);
                     if ((!file.exists() || !file.isDirectory()) && (lastIndexOf = str.lastIndexOf(46)) > 0) {
                         str = str.substring(0, lastIndexOf);
                     }
                 }
             }
             C2404j0 j0Var2 = C2404j0.this;
-            String t = j0Var2.f8795b0.mo8569t(j0Var2.f8459s0);
+            String t = j0Var2.f8803b0.mo8569t(j0Var2.f8467s0);
             if (t == null) {
                 return Boolean.FALSE;
             }
             C2404j0 j0Var3 = C2404j0.this;
-            j0Var3.f8433U0 = C2399i2.m10374d(j0Var3.mo2575j0(), C2404j0.this.f8437Y0);
+            j0Var3.f8441U0 = C2399i2.m10374d(j0Var3.mo2575j0(), C2404j0.this.f8445Y0);
             C2404j0 j0Var4 = C2404j0.this;
-            File file2 = C2404j0.this.f8433U0;
-            j0Var4.f8433U0 = new C2399i2(file2, t + "/" + str + ".png");
+            File file2 = C2404j0.this.f8441U0;
+            j0Var4.f8441U0 = new C2399i2(file2, t + "/" + str + ".png");
             C2404j0 j0Var5 = C2404j0.this;
-            j0Var5.f8435W0 = j0Var5.f8433U0.exists();
+            j0Var5.f8443W0 = j0Var5.f8441U0.exists();
             C2404j0 j0Var6 = C2404j0.this;
-            if (j0Var6.f8435W0) {
-                j0Var6.f8440b1 = j0Var6.f8433U0.length();
+            if (j0Var6.f8443W0) {
+                j0Var6.f8448b1 = j0Var6.f8441U0.length();
                 C2404j0 j0Var7 = C2404j0.this;
-                j0Var7.f8441c1 = j0Var7.f8433U0.lastModified();
+                j0Var7.f8449c1 = j0Var7.f8441U0.lastModified();
             }
             C2404j0 j0Var8 = C2404j0.this;
-            j0Var8.f8432T0 = C2399i2.m10374d(j0Var8.mo2575j0(), C2404j0.this.f8436X0);
+            j0Var8.f8440T0 = C2399i2.m10374d(j0Var8.mo2575j0(), C2404j0.this.f8444X0);
             C2404j0 j0Var9 = C2404j0.this;
-            File file3 = C2404j0.this.f8432T0;
-            j0Var9.f8432T0 = new C2399i2(file3, t + "/" + str + ".png");
+            File file3 = C2404j0.this.f8440T0;
+            j0Var9.f8440T0 = new C2399i2(file3, t + "/" + str + ".png");
             C2404j0 j0Var10 = C2404j0.this;
-            j0Var10.f8434V0 = j0Var10.f8432T0.exists();
+            j0Var10.f8442V0 = j0Var10.f8440T0.exists();
             C2404j0 j0Var11 = C2404j0.this;
-            if (j0Var11.f8434V0) {
-                j0Var11.f8438Z0 = j0Var11.f8432T0.length();
+            if (j0Var11.f8442V0) {
+                j0Var11.f8446Z0 = j0Var11.f8440T0.length();
                 C2404j0 j0Var12 = C2404j0.this;
-                j0Var12.f8439a1 = j0Var12.f8432T0.lastModified();
+                j0Var12.f8447a1 = j0Var12.f8440T0.lastModified();
             }
             return Boolean.TRUE;
         }
@@ -633,12 +633,12 @@ public class C2404j0 extends AbstractC2531p1 {
         public void onPostExecute(Boolean bool) {
             if (bool.booleanValue()) {
                 C2404j0.this.mo8645y3(false);
-                C2404j0.this.f8472y1.requestFocus();
+                C2404j0.this.f8480y1.requestFocus();
                 C2404j0 j0Var = C2404j0.this;
-                if (j0Var.f8409C1 == null) {
-                    j0Var.f8409C1 = new Handler();
+                if (j0Var.f8417C1 == null) {
+                    j0Var.f8417C1 = new Handler();
                     C2404j0 j0Var2 = C2404j0.this;
-                    j0Var2.f8409C1.postDelayed(j0Var2.f8415F1, 3000);
+                    j0Var2.f8417C1.postDelayed(j0Var2.f8423F1, 3000);
                 }
             }
         }
@@ -654,38 +654,38 @@ public class C2404j0 extends AbstractC2531p1 {
         /* renamed from: a */
         public Void doInBackground(Void... voidArr) {
             SQLiteDatabase c;
-            C2775u uVar = C2404j0.this.f8794a0;
+            C2775u uVar = C2404j0.this.f8802a0;
             if (!(uVar == null || (c = uVar.mo9325c()) == null)) {
                 try {
-                    Cursor rawQuery = c.rawQuery("SELECT s.parent FROM roms as r,systems as s WHERE r._id=" + C2404j0.this.f8455q0 + " AND s.slug=r.system", null);
+                    Cursor rawQuery = c.rawQuery("SELECT s.parent FROM roms as r,systems as s WHERE r._id=" + C2404j0.this.f8463q0 + " AND s.slug=r.system", null);
                     if (!rawQuery.moveToFirst()) {
                         rawQuery.close();
                         return null;
                     }
-                    C2404j0.this.f8459s0 = rawQuery.getString(0);
+                    C2404j0.this.f8467s0 = rawQuery.getString(0);
                     rawQuery.close();
                     C2404j0 j0Var = C2404j0.this;
-                    Cursor d = j0Var.f8796c0.mo8840d(j0Var.f8455q0);
+                    Cursor d = j0Var.f8804c0.mo8840d(j0Var.f8463q0);
                     if (d.moveToFirst()) {
-                        C2404j0.this.f8447i1 = d.getInt(0);
-                        C2404j0.this.f8446h1 = d.getString(1);
-                        C2404j0.this.f8448j1 = d.getInt(11);
+                        C2404j0.this.f8455i1 = d.getInt(0);
+                        C2404j0.this.f8454h1 = d.getString(1);
+                        C2404j0.this.f8456j1 = d.getInt(11);
                     }
                     d.close();
                     C2404j0 j0Var2 = C2404j0.this;
-                    Cursor l = j0Var2.f8795b0.mo8562l(j0Var2.f8459s0);
-                    synchronized (C2404j0.this.f8474z1) {
+                    Cursor l = j0Var2.f8803b0.mo8562l(j0Var2.f8467s0);
+                    synchronized (C2404j0.this.f8482z1) {
                         if (l.moveToFirst()) {
                             do {
                                 C2404j0 j0Var3 = C2404j0.this;
-                                j0Var3.f8445g1.add(new C2443z(l.getLong(0), l.getString(1), l.getInt(7)));
+                                j0Var3.f8453g1.add(new C2443z(l.getLong(0), l.getString(1), l.getInt(7)));
                             } while (l.moveToNext());
                         }
                     }
                     l.close();
-                    Cursor rawQuery2 = c.rawQuery("SELECT _id FROM roms WHERE _id=" + C2404j0.this.f8455q0 + " AND cover_status>=" + 16384 + " LIMIT 1", null);
+                    Cursor rawQuery2 = c.rawQuery("SELECT _id FROM roms WHERE _id=" + C2404j0.this.f8463q0 + " AND cover_status>=" + 16384 + " LIMIT 1", null);
                     if (rawQuery2.moveToFirst()) {
-                        c.execSQL("UPDATE roms SET cover_requested=" + System.currentTimeMillis() + " WHERE _id=" + C2404j0.this.f8455q0);
+                        c.execSQL("UPDATE roms SET cover_requested=" + System.currentTimeMillis() + " WHERE _id=" + C2404j0.this.f8463q0);
                     }
                     rawQuery2.close();
                 } catch (Exception unused) {
@@ -715,15 +715,15 @@ public class C2404j0 extends AbstractC2531p1 {
             ActivityC0447d c0 = C2404j0.this.mo2552c0();
             if (c0 != null && !c0.isFinishing()) {
                 C2404j0 j0Var = C2404j0.this;
-                boolean z = !j0Var.f8463u0;
-                j0Var.f8463u0 = z;
+                boolean z = !j0Var.f8471u0;
+                j0Var.f8471u0 = z;
                 if (!z) {
                     j0Var.mo8640t3();
                 } else {
                     j0Var.mo8642v3();
                 }
                 c0.invalidateOptionsMenu();
-                C2404j0.this.f8806m0.mo8264R();
+                C2404j0.this.f8814m0.mo8264R();
             }
         }
 
@@ -744,8 +744,8 @@ public class C2404j0 extends AbstractC2531p1 {
             C2404j0 j0Var;
             AbstractC2531p1.AbstractC2532a aVar;
             ActivityC0447d c0 = C2404j0.this.mo2552c0();
-            if (c0 != null && !c0.isFinishing() && (aVar = (j0Var = C2404j0.this).f8806m0) != null) {
-                aVar.mo8269a0(j0Var.f8455q0);
+            if (c0 != null && !c0.isFinishing() && (aVar = (j0Var = C2404j0.this).f8814m0) != null) {
+                aVar.mo8269a0(j0Var.f8463q0);
             }
         }
 
@@ -776,17 +776,17 @@ public class C2404j0 extends AbstractC2531p1 {
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
-            SQLiteDatabase sQLiteDatabase = C2404j0.this.f8461t0;
-            sQLiteDatabase.execSQL("UPDATE roms SET has_images=NULL,cover_status=cover_status&-8193 WHERE _id=" + C2404j0.this.f8455q0);
-            C2404j0.this.f8806m0.mo8264R();
-            if (C2404j0.this.f8433U0.exists()) {
+            SQLiteDatabase sQLiteDatabase = C2404j0.this.f8469t0;
+            sQLiteDatabase.execSQL("UPDATE roms SET has_images=NULL,cover_status=cover_status&-8193 WHERE _id=" + C2404j0.this.f8463q0);
+            C2404j0.this.f8814m0.mo8264R();
+            if (C2404j0.this.f8441U0.exists()) {
                 try {
-                    C2404j0.this.f8433U0.delete();
+                    C2404j0.this.f8441U0.delete();
                 } catch (Exception unused) {
                 }
             }
             C2404j0 j0Var = C2404j0.this;
-            j0Var.f8435W0 = false;
+            j0Var.f8443W0 = false;
             ActivityC0447d c0 = j0Var.mo2552c0();
             if (c0 != null && !c0.isFinishing()) {
                 c0.invalidateOptionsMenu();
@@ -811,19 +811,19 @@ public class C2404j0 extends AbstractC2531p1 {
                 public void mo8647a(boolean z) {
                     if (z) {
                         try {
-                            if (C2404j0.this.f8432T0.exists()) {
-                                C2404j0.this.f8432T0.delete();
+                            if (C2404j0.this.f8440T0.exists()) {
+                                C2404j0.this.f8440T0.delete();
                             }
                         } catch (Exception unused) {
                         }
                         C2404j0 j0Var = C2404j0.this;
-                        j0Var.f8796c0.mo8839c(j0Var.f8455q0);
+                        j0Var.f8804c0.mo8839c(j0Var.f8463q0);
                         ActivityC0447d c0 = C2404j0.this.mo2552c0();
                         if (c0 != null && !c0.isFinishing()) {
-                            C2404j0.this.f8463u0 = false;
+                            C2404j0.this.f8471u0 = false;
                             c0.invalidateOptionsMenu();
                             C2404j0.this.mo8642v3();
-                            C2404j0.this.f8806m0.mo8264R();
+                            C2404j0.this.f8814m0.mo8264R();
                             C2404j0.this.mo8106G2(false);
                             C2404j0.this.mo8407O2();
                             ImageService.m9511a(c0);
@@ -839,11 +839,11 @@ public class C2404j0 extends AbstractC2531p1 {
             public boolean onMenuItemClick(MenuItem menuItem) {
                 if (menuItem.getItemId() == R.id.unmatch) {
                     C2404j0 j0Var = C2404j0.this;
-                    j0Var.f8796c0.mo8851s(j0Var.f8455q0, j0Var.f8798e0.mo9515a());
+                    j0Var.f8804c0.mo8851s(j0Var.f8463q0, j0Var.f8806e0.mo9515a());
                 } else {
                     C2404j0 j0Var2 = C2404j0.this;
-                    j0Var2.f8796c0.mo8847l(j0Var2.f8455q0, j0Var2.f8798e0.mo9515a(), (long) menuItem.getItemId());
-                    ServerService.m9570m(C2404j0.this.f8805l0, "com.digdroid.alman.dig.action.GAME_STATS", (long) menuItem.getItemId());
+                    j0Var2.f8804c0.mo8847l(j0Var2.f8463q0, j0Var2.f8806e0.mo9515a(), (long) menuItem.getItemId());
+                    ServerService.m9570m(C2404j0.this.f8813l0, "com.digdroid.alman.dig.action.GAME_STATS", (long) menuItem.getItemId());
                 }
                 new AsyncTaskC2408b0(new C2428a()).execute(new String[0]);
                 return true;
@@ -859,11 +859,11 @@ public class C2404j0 extends AbstractC2531p1 {
             ActivityC0447d c0 = C2404j0.this.mo2552c0();
             if (c0 != null && !c0.isFinishing()) {
                 C2404j0 j0Var = C2404j0.this;
-                C2512o0 o0Var = j0Var.f8796c0;
-                String obj = j0Var.f8454p1.getText().toString();
+                C2512o0 o0Var = j0Var.f8804c0;
+                String obj = j0Var.f8462p1.getText().toString();
                 C2404j0 j0Var2 = C2404j0.this;
-                Cursor b = o0Var.mo8838b(obj, j0Var2.f8795b0.mo8569t(j0Var2.f8459s0), C2404j0.this.f8798e0.mo9515a(), 10);
-                C0248l0 l0Var = new C0248l0(new C0788d(C2404j0.this.mo2552c0(), C2553q3.m11117c()), C2404j0.this.f8454p1);
+                Cursor b = o0Var.mo8838b(obj, j0Var2.f8803b0.mo8569t(j0Var2.f8467s0), C2404j0.this.f8806e0.mo9515a(), 10);
+                C0248l0 l0Var = new C0248l0(new C0788d(C2404j0.this.mo2552c0(), C2553q3.m11117c()), C2404j0.this.f8462p1);
                 l0Var.mo1571b().inflate(R.menu.rematch, l0Var.mo1570a());
                 l0Var.mo1572c(new C2427a());
                 Menu a = l0Var.mo1570a();
@@ -901,14 +901,14 @@ public class C2404j0 extends AbstractC2531p1 {
     public class DialogInterface$OnClickListenerC2430s implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ Activity f8505b;
+        final /* synthetic */ Activity f8513b;
 
         DialogInterface$OnClickListenerC2430s(Activity activity) {
-            this.f8505b = activity;
+            this.f8513b = activity;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
-            ((AlarmManager) this.f8505b.getSystemService("alarm")).set(1, System.currentTimeMillis() + 1000, PendingIntent.getActivity(this.f8505b.getBaseContext(), 0, new Intent(this.f8505b.getIntent()), this.f8505b.getIntent().getFlags()));
+            ((AlarmManager) this.f8513b.getSystemService("alarm")).set(1, System.currentTimeMillis() + 1000, PendingIntent.getActivity(this.f8513b.getBaseContext(), 0, new Intent(this.f8513b.getIntent()), this.f8513b.getIntent().getFlags()));
             Process.killProcess(Process.myPid());
         }
     }
@@ -932,7 +932,7 @@ public class C2404j0 extends AbstractC2531p1 {
         }
 
         public void onClick(View view) {
-            new C2828w2(C2404j0.this.mo2552c0(), C2404j0.this.f8461t0, false, new C2432a()).mo9396f(C2404j0.this.f8455q0);
+            new C2828w2(C2404j0.this.mo2552c0(), C2404j0.this.f8469t0, false, new C2432a()).mo9396f(C2404j0.this.f8463q0);
         }
     }
 
@@ -956,7 +956,7 @@ public class C2404j0 extends AbstractC2531p1 {
                 @Override // com.digdroid.alman.dig.C2465m0.AbstractC2488p
                 /* renamed from: b */
                 public void mo8664b() {
-                    C2404j0.this.f8806m0.mo8264R();
+                    C2404j0.this.f8814m0.mo8264R();
                     C2404j0.this.mo8105F2();
                 }
 
@@ -967,7 +967,7 @@ public class C2404j0 extends AbstractC2531p1 {
 
                 @Override // com.digdroid.alman.dig.C2465m0.AbstractC2488p
                 public C2369h0 getFilter() {
-                    return C2404j0.this.f8444f1;
+                    return C2404j0.this.f8452f1;
                 }
             }
 
@@ -979,7 +979,7 @@ public class C2404j0 extends AbstractC2531p1 {
             public void mo7941a() {
                 ActivityC0447d c0 = C2404j0.this.mo2552c0();
                 if (c0 != null && !c0.isFinishing()) {
-                    new C2465m0(c0, C2404j0.this.f8455q0, new C2435a(), C2404j0.this.f8806m0).mo8728a();
+                    new C2465m0(c0, C2404j0.this.f8463q0, new C2435a(), C2404j0.this.f8814m0).mo8728a();
                 }
             }
 
@@ -1008,7 +1008,7 @@ public class C2404j0 extends AbstractC2531p1 {
             if (c0 != null && !c0.isFinishing()) {
                 C2404j0 j0Var = C2404j0.this;
                 C2404j0 j0Var2 = C2404j0.this;
-                j0Var.f8796c0.mo8844i((ActivityC2888z3) j0Var.mo2552c0(), j0Var2.f8455q0, j0Var2.f8444f1);
+                j0Var.f8804c0.mo8844i((ActivityC2888z3) j0Var.mo2552c0(), j0Var2.f8463q0, j0Var2.f8452f1);
             }
         }
     }
@@ -1021,16 +1021,16 @@ public class C2404j0 extends AbstractC2531p1 {
 
         public void onClick(View view) {
             C2404j0 j0Var = C2404j0.this;
-            boolean z = j0Var.f8411D1;
-            j0Var.f8467w0 = z;
+            boolean z = j0Var.f8419D1;
+            j0Var.f8475w0 = z;
             File k3 = j0Var.mo8631k3(z);
             Uri m = k3 instanceof C2399i2 ? ((C2399i2) k3).mo8614m() : Uri.fromFile(k3);
             if (k3 != null) {
                 try {
-                    C2498n1<Drawable> V0 = C2457l1.m10577b(C2404j0.this.mo2552c0().getApplicationContext()).mo8859J(m).mo7762e(AbstractC1763j.f6903b).mo7754Y(true);
-                    V0.mo7752W(new C2067d(k3.length() + "@" + k3.lastModified())).mo7030p0(C2404j0.this.f8470x1);
+                    C2498n1<Drawable> V0 = C2457l1.m10577b(C2404j0.this.mo2552c0().getApplicationContext()).mo8859J(m).mo7762e(AbstractC1763j.f6911b).mo7754Y(true);
+                    V0.mo7752W(new C2067d(k3.length() + "@" + k3.lastModified())).mo7030p0(C2404j0.this.f8478x1);
                     C2404j0 j0Var2 = C2404j0.this;
-                    j0Var2.f8465v0 = true;
+                    j0Var2.f8473v0 = true;
                     j0Var2.mo8625A3();
                     C2404j0.this.mo8642v3();
                 } catch (Exception unused) {
@@ -1047,7 +1047,7 @@ public class C2404j0 extends AbstractC2531p1 {
         class DialogInterface$OnClickListenerC2439a implements DialogInterface.OnClickListener {
 
             /* renamed from: b */
-            final /* synthetic */ boolean f8515b;
+            final /* synthetic */ boolean f8523b;
 
             /* renamed from: com.digdroid.alman.dig.j0$x$a$a */
             class C2440a implements C2749t1.AbstractC2772l {
@@ -1074,23 +1074,23 @@ public class C2404j0 extends AbstractC2531p1 {
             }
 
             DialogInterface$OnClickListenerC2439a(boolean z) {
-                this.f8515b = z;
+                this.f8523b = z;
             }
 
             public void onClick(DialogInterface dialogInterface, int i) {
                 boolean z;
                 C2749t1.AbstractC2772l bVar;
-                boolean z2 = this.f8515b;
+                boolean z2 = this.f8523b;
                 C2404j0 j0Var = C2404j0.this;
-                C2749t1 t1Var = j0Var.f8799f0;
+                C2749t1 t1Var = j0Var.f8807f0;
                 ActivityC0447d c0 = j0Var.mo2552c0();
                 C2404j0 j0Var2 = C2404j0.this;
-                long j = j0Var2.f8455q0;
+                long j = j0Var2.f8463q0;
                 if (i == 0) {
-                    z = this.f8515b;
+                    z = this.f8523b;
                     bVar = new C2440a();
                 } else {
-                    z = !this.f8515b;
+                    z = !this.f8523b;
                     bVar = new C2441b();
                 }
                 t1Var.mo9276k(c0, j0Var2, j, z, bVar);
@@ -1103,7 +1103,7 @@ public class C2404j0 extends AbstractC2531p1 {
         public boolean onLongClick(View view) {
             CharSequence[] charSequenceArr = {C2404j0.this.mo2501D0(R.string.box_cover), C2404j0.this.mo2501D0(R.string.screenshot)};
             C2404j0 j0Var = C2404j0.this;
-            new DialogInterfaceC0068b.C0069a(C2404j0.this.mo2552c0(), C2553q3.m11117c()).mo227g(charSequenceArr, new DialogInterface$OnClickListenerC2439a(j0Var.f8795b0.mo8569t(j0Var.f8459s0).equals("mame"))).mo221a().show();
+            new DialogInterfaceC0068b.C0069a(C2404j0.this.mo2552c0(), C2553q3.m11117c()).mo227g(charSequenceArr, new DialogInterface$OnClickListenerC2439a(j0Var.f8803b0.mo8569t(j0Var.f8467s0).equals("mame"))).mo221a().show();
             return true;
         }
     }
@@ -1116,10 +1116,10 @@ public class C2404j0 extends AbstractC2531p1 {
 
         public void onClick(View view) {
             C2404j0 j0Var = C2404j0.this;
-            j0Var.f8465v0 = false;
+            j0Var.f8473v0 = false;
             j0Var.mo8625A3();
             C2404j0.this.mo8642v3();
-            C2404j0.this.f8468w1.requestFocus();
+            C2404j0.this.f8476w1.requestFocus();
         }
     }
 
@@ -1128,18 +1128,18 @@ public class C2404j0 extends AbstractC2531p1 {
     public class C2443z {
 
         /* renamed from: a */
-        long f8520a;
+        long f8528a;
 
         /* renamed from: b */
-        String f8521b;
+        String f8529b;
 
         /* renamed from: c */
-        int f8522c;
+        int f8530c;
 
         public C2443z(long j, String str, int i) {
-            this.f8520a = j;
-            this.f8521b = str;
-            this.f8522c = i;
+            this.f8528a = j;
+            this.f8529b = str;
+            this.f8530c = i;
         }
     }
 
@@ -1154,7 +1154,7 @@ public class C2404j0 extends AbstractC2531p1 {
 
     /* renamed from: A3 */
     public void mo8625A3() {
-        AbstractC2531p1.AbstractC2532a aVar = this.f8806m0;
+        AbstractC2531p1.AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
             aVar.mo8911v(mo8409w2());
         }
@@ -1169,16 +1169,16 @@ public class C2404j0 extends AbstractC2531p1 {
     /* access modifiers changed from: package-private */
     /* renamed from: B3 */
     public void mo8626B3(int i) {
-        this.f8448j1 = i;
-        Iterator<C2443z> it = this.f8445g1.iterator();
+        this.f8456j1 = i;
+        Iterator<C2443z> it = this.f8453g1.iterator();
         while (it.hasNext()) {
             C2443z next = it.next();
-            if (next.f8520a == ((long) this.f8447i1)) {
-                next.f8522c = this.f8448j1;
+            if (next.f8528a == ((long) this.f8455i1)) {
+                next.f8530c = this.f8456j1;
             }
         }
-        SQLiteDatabase c = this.f8794a0.mo9325c();
-        c.execSQL("UPDATE emulators SET use_retroarch64=" + this.f8448j1 + " WHERE _id=" + this.f8447i1);
+        SQLiteDatabase c = this.f8802a0.mo9325c();
+        c.execSQL("UPDATE emulators SET use_retroarch64=" + this.f8456j1 + " WHERE _id=" + this.f8455i1);
         mo2552c0().invalidateOptionsMenu();
     }
 
@@ -1207,7 +1207,7 @@ public class C2404j0 extends AbstractC2531p1 {
     }
 
     /* JADX WARNING: Code restructure failed: missing block: B:17:0x0085, code lost:
-        if (new com.digdroid.alman.dig.C2465m0(r6, r11.f8455q0, new com.digdroid.alman.dig.C2404j0.C2418j(r11, r6), r11.f8806m0).mo8729c(r12) == false) goto L_0x0088;
+        if (new com.digdroid.alman.dig.C2465m0(r6, r11.f8463q0, new com.digdroid.alman.dig.C2404j0.C2418j(r11, r6), r11.f8814m0).mo8729c(r12) == false) goto L_0x0088;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:18:0x0087, code lost:
         return true;
@@ -1247,20 +1247,20 @@ public class C2404j0 extends AbstractC2531p1 {
     /* JADX WARNING: Code restructure failed: missing block: B:27:0x009f, code lost:
         r12 = new android.content.ContentValues();
         r12.put("emulator", (java.lang.Integer) -1);
-        r0 = r11.f8461t0;
-        r0.update("roms", r12, "_id=" + r11.f8455q0, null);
-        r12 = r11.f8796c0.mo8840d(r11.f8455q0);
+        r0 = r11.f8469t0;
+        r0.update("roms", r12, "_id=" + r11.f8463q0, null);
+        r12 = r11.f8804c0.mo8840d(r11.f8463q0);
      */
     /* JADX WARNING: Code restructure failed: missing block: B:28:0x00d4, code lost:
         if (r12.moveToFirst() == false) goto L_0x00ea;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:29:0x00d6, code lost:
-        r11.f8447i1 = r12.getInt(0);
-        r11.f8446h1 = r12.getString(1);
-        r11.f8448j1 = r12.getInt(7);
+        r11.f8455i1 = r12.getInt(0);
+        r11.f8454h1 = r12.getString(1);
+        r11.f8456j1 = r12.getInt(7);
      */
     /* JADX WARNING: Code restructure failed: missing block: B:30:0x00ea, code lost:
-        r11.f8446h1 = null;
+        r11.f8454h1 = null;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:31:0x00ec, code lost:
         r12.close();
@@ -1334,7 +1334,7 @@ public class C2404j0 extends AbstractC2531p1 {
         if (c0 == null || c0.isFinishing()) {
             return true;
         }
-        this.f8796c0.mo8844i((ActivityC2888z3) mo2552c0(), this.f8455q0, this.f8444f1);
+        this.f8804c0.mo8844i((ActivityC2888z3) mo2552c0(), this.f8463q0, this.f8452f1);
         return true;
     }
 
@@ -1357,9 +1357,9 @@ public class C2404j0 extends AbstractC2531p1 {
     @Override // com.digdroid.alman.dig.AbstractC2531p1
     /* renamed from: Q2 */
     public void mo8112Q2() {
-        AbstractC2531p1.AbstractC2532a aVar = this.f8806m0;
+        AbstractC2531p1.AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
-            aVar.mo8903G(this.f8800g0, this.f8795b0.mo8564n(this.f8459s0), this.f8795b0.mo8563m(this.f8459s0));
+            aVar.mo8903G(this.f8808g0, this.f8803b0.mo8564n(this.f8467s0), this.f8803b0.mo8563m(this.f8467s0));
         }
     }
 
@@ -1373,7 +1373,7 @@ public class C2404j0 extends AbstractC2531p1 {
     /* renamed from: S2 */
     public void mo8114S2() {
         super.mo8114S2();
-        String str = this.f8459s0;
+        String str = this.f8467s0;
         if (str != null && !str.equals("")) {
             mo8643w3();
         }
@@ -1394,11 +1394,11 @@ public class C2404j0 extends AbstractC2531p1 {
     @Override // com.digdroid.alman.dig.AbstractC2531p1
     /* renamed from: U2 */
     public void mo8116U2() {
-        AbstractC2531p1.AbstractC2532a aVar = this.f8806m0;
+        AbstractC2531p1.AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
             long m0 = aVar.mo8283m0();
             if (m0 >= 0) {
-                this.f8455q0 = m0;
+                this.f8463q0 = m0;
                 mo8638r3();
                 mo8636p3();
             }
@@ -1410,21 +1410,21 @@ public class C2404j0 extends AbstractC2531p1 {
     public void mo2537W0(Bundle bundle) {
         super.mo2537W0(bundle);
         if (bundle == null) {
-            this.f8463u0 = false;
-            this.f8465v0 = false;
-            this.f8467w0 = true;
+            this.f8471u0 = false;
+            this.f8473v0 = false;
+            this.f8475w0 = true;
         } else {
-            this.f8463u0 = bundle.getBoolean("editing");
-            this.f8465v0 = bundle.getBoolean("show_cover");
-            this.f8467w0 = bundle.getBoolean("show_big_cover");
+            this.f8471u0 = bundle.getBoolean("editing");
+            this.f8473v0 = bundle.getBoolean("show_cover");
+            this.f8475w0 = bundle.getBoolean("show_big_cover");
         }
-        mo2557d2(!this.f8793Z.mo8196t());
+        mo2557d2(!this.f8801Z.mo8196t());
         Bundle h0 = mo2568h0();
-        this.f8455q0 = h0.getLong("gameid");
-        this.f8457r0 = -1;
-        this.f8459s0 = "";
+        this.f8463q0 = h0.getLong("gameid");
+        this.f8465r0 = -1;
+        this.f8467s0 = "";
         C2369h0 h0Var = new C2369h0();
-        this.f8444f1 = h0Var;
+        this.f8452f1 = h0Var;
         h0Var.mo8533b(h0);
     }
 
@@ -1463,16 +1463,16 @@ public class C2404j0 extends AbstractC2531p1 {
     public void mo8120a3(boolean z) {
         C2515o2 o2Var;
         C2515o2 o2Var2;
-        if (z && !this.f8803j0 && mo8102B2() && mo2505F0() != null && !this.f8463u0) {
+        if (z && !this.f8811j0 && mo8102B2() && mo2505F0() != null && !this.f8471u0) {
             mo8642v3();
         }
-        boolean z2 = this.f8803j0;
+        boolean z2 = this.f8811j0;
         super.mo8120a3(z);
-        if (!z && z2 && (o2Var2 = this.f8417G1) != null) {
+        if (!z && z2 && (o2Var2 = this.f8425G1) != null) {
             o2Var2.mo8869u(this);
         }
-        if (z && !z2 && (o2Var = this.f8417G1) != null) {
-            o2Var.mo8870v(this, this.f8419H1);
+        if (z && !z2 && (o2Var = this.f8425G1) != null) {
+            o2Var.mo8870v(this, this.f8427H1);
             mo8639s3();
         }
     }
@@ -1498,131 +1498,131 @@ public class C2404j0 extends AbstractC2531p1 {
     /* access modifiers changed from: package-private */
     /* renamed from: g3 */
     public void mo8627g3() {
-        boolean[] zArr = new boolean[f8403p0.length];
-        String[] strArr = new String[f8401n0.length];
-        for (int i = 0; i < f8403p0.length; i++) {
-            strArr[i] = mo2552c0().getString(f8401n0[i]);
-            zArr[i] = this.f8793Z.mo8180c(f8403p0[i], f8402o0[i]);
+        boolean[] zArr = new boolean[f8411p0.length];
+        String[] strArr = new String[f8409n0.length];
+        for (int i = 0; i < f8411p0.length; i++) {
+            strArr[i] = mo2552c0().getString(f8409n0[i]);
+            zArr[i] = this.f8801Z.mo8180c(f8411p0[i], f8410o0[i]);
         }
         DialogInterfaceC0068b a = new DialogInterfaceC0068b.C0069a(mo2552c0(), C2553q3.m11117c()).mo231k(strArr, zArr, new DialogInterface$OnMultiChoiceClickListenerC2415i(zArr)).mo235o(R.string.ok, new DialogInterface$OnClickListenerC2414h(zArr)).mo232l(R.string.cancel, null).mo221a();
-        this.f8421I1 = a;
+        this.f8429I1 = a;
         a.show();
     }
 
     /* renamed from: h3 */
     public String mo8628h3() {
-        return this.f8416G0;
+        return this.f8424G0;
     }
 
     /* renamed from: i3 */
     public long mo8629i3() {
-        return this.f8455q0;
+        return this.f8463q0;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: j3 */
     public boolean mo8630j3() {
-        Cursor rawQuery = this.f8461t0.rawQuery("SELECT p.path,r.filename,r.title,r.released,r.developer,r.publisher,r.info,r.favorite,r.system,r.mdbid,r.cover_status,r.crc,r.gdbid,r.gfcover,r.has_images,r.rating,r.c_rating,r.c_rating_count,r.foldername,r.sortname,r.comments,r.youtube FROM roms as r,rompaths as p WHERE r._id=" + this.f8455q0 + " AND p._id=r.pathid", null);
+        Cursor rawQuery = this.f8469t0.rawQuery("SELECT p.path,r.filename,r.title,r.released,r.developer,r.publisher,r.info,r.favorite,r.system,r.mdbid,r.cover_status,r.crc,r.gdbid,r.gfcover,r.has_images,r.rating,r.c_rating,r.c_rating_count,r.foldername,r.sortname,r.comments,r.youtube FROM roms as r,rompaths as p WHERE r._id=" + this.f8463q0 + " AND p._id=r.pathid", null);
         if (!rawQuery.moveToFirst()) {
             rawQuery.close();
-            rawQuery = this.f8461t0.rawQuery("SELECT pathid,filename,title,released,developer,publisher,info,favorite,system,mdbid,cover_status,crc,gdbid,gfcover,has_images,rating,c_rating,c_rating_count,foldername,sortname,comments,youtube FROM roms WHERE _id=" + this.f8455q0, null);
+            rawQuery = this.f8469t0.rawQuery("SELECT pathid,filename,title,released,developer,publisher,info,favorite,system,mdbid,cover_status,crc,gdbid,gfcover,has_images,rating,c_rating,c_rating_count,foldername,sortname,comments,youtube FROM roms WHERE _id=" + this.f8463q0, null);
             if (!rawQuery.moveToFirst()) {
                 rawQuery.close();
                 return false;
             }
-            this.f8471y0 = "";
+            this.f8479y0 = "";
         } else {
-            this.f8471y0 = rawQuery.getString(0) + "/";
+            this.f8479y0 = rawQuery.getString(0) + "/";
         }
-        this.f8473z0 = rawQuery.getString(1);
-        this.f8404A0 = rawQuery.getString(18);
-        this.f8410D0 = C2185a4.m9667E(rawQuery.getString(2));
-        this.f8412E0 = mo8901f3(rawQuery.getString(6));
-        this.f8414F0 = C2185a4.m9667E(mo8901f3(rawQuery.getString(5)));
-        this.f8416G0 = C2185a4.m9667E(mo8901f3(rawQuery.getString(4)));
-        this.f8423K0 = rawQuery.getLong(3);
-        this.f8469x0 = rawQuery.getInt(7) > 0;
-        this.f8459s0 = rawQuery.getString(8);
-        this.f8424L0 = rawQuery.getLong(9);
-        this.f8431S0 = rawQuery.getInt(10);
-        this.f8418H0 = rawQuery.getString(13);
-        this.f8427O0 = rawQuery.getLong(11);
-        this.f8426N0 = rawQuery.getLong(12);
+        this.f8481z0 = rawQuery.getString(1);
+        this.f8412A0 = rawQuery.getString(18);
+        this.f8418D0 = C2185a4.m9667E(rawQuery.getString(2));
+        this.f8420E0 = mo8901f3(rawQuery.getString(6));
+        this.f8422F0 = C2185a4.m9667E(mo8901f3(rawQuery.getString(5)));
+        this.f8424G0 = C2185a4.m9667E(mo8901f3(rawQuery.getString(4)));
+        this.f8431K0 = rawQuery.getLong(3);
+        this.f8477x0 = rawQuery.getInt(7) > 0;
+        this.f8467s0 = rawQuery.getString(8);
+        this.f8432L0 = rawQuery.getLong(9);
+        this.f8439S0 = rawQuery.getInt(10);
+        this.f8426H0 = rawQuery.getString(13);
+        this.f8435O0 = rawQuery.getLong(11);
+        this.f8434N0 = rawQuery.getLong(12);
         int i = rawQuery.getInt(17);
-        this.f8429Q0 = i;
+        this.f8437Q0 = i;
         if (i > 0) {
-            this.f8428P0 = rawQuery.getFloat(16);
+            this.f8436P0 = rawQuery.getFloat(16);
         } else {
-            this.f8428P0 = rawQuery.isNull(15) ? -1.0f : rawQuery.getFloat(15);
-            this.f8429Q0 = 1;
+            this.f8436P0 = rawQuery.isNull(15) ? -1.0f : rawQuery.getFloat(15);
+            this.f8437Q0 = 1;
         }
-        this.f8420I0 = rawQuery.getString(19);
-        this.f8430R0 = rawQuery.getInt(20);
-        this.f8422J0 = rawQuery.getString(21);
+        this.f8428I0 = rawQuery.getString(19);
+        this.f8438R0 = rawQuery.getInt(20);
+        this.f8430J0 = rawQuery.getString(21);
         rawQuery.close();
-        this.f8457r0 = -1;
-        if (mo8893A2(this.f8412E0) && this.f8424L0 >= 0) {
-            Cursor rawQuery2 = this.f8798e0.mo9515a().rawQuery("SELECT info,info_comp,gdbid,gfcover FROM games WHERE _id=" + this.f8424L0, null);
+        this.f8465r0 = -1;
+        if (mo8893A2(this.f8420E0) && this.f8432L0 >= 0) {
+            Cursor rawQuery2 = this.f8806e0.mo9515a().rawQuery("SELECT info,info_comp,gdbid,gfcover FROM games WHERE _id=" + this.f8432L0, null);
             if (rawQuery2.moveToFirst()) {
                 byte[] blob = rawQuery2.getBlob(1);
                 if (blob == null || blob.length <= 0) {
-                    this.f8412E0 = mo8901f3(rawQuery2.getString(0));
+                    this.f8420E0 = mo8901f3(rawQuery2.getString(0));
                 } else {
                     try {
-                        this.f8412E0 = new C2253d3().mo8242a(blob);
+                        this.f8420E0 = new C2253d3().mo8242a(blob);
                     } catch (Exception unused) {
-                        this.f8412E0 = "";
+                        this.f8420E0 = "";
                     }
                 }
-                if (this.f8412E0.length() > 1000) {
-                    this.f8412E0 = this.f8412E0.substring(0, 1000);
+                if (this.f8420E0.length() > 1000) {
+                    this.f8420E0 = this.f8420E0.substring(0, 1000);
                 }
-                if (this.f8412E0.length() >= 1000) {
-                    this.f8412E0 += "...";
+                if (this.f8420E0.length() >= 1000) {
+                    this.f8420E0 += "...";
                 }
-                String replaceAll = this.f8412E0.replaceAll("\\r", "");
-                this.f8412E0 = replaceAll;
+                String replaceAll = this.f8420E0.replaceAll("\\r", "");
+                this.f8420E0 = replaceAll;
                 String replaceAll2 = replaceAll.replaceAll("\\n\\n", "\n");
-                this.f8412E0 = replaceAll2;
+                this.f8420E0 = replaceAll2;
                 String trim = replaceAll2.replaceAll("\\n", "\n\n").trim();
-                this.f8412E0 = trim;
+                this.f8420E0 = trim;
                 if (!mo8893A2(trim)) {
                     if (rawQuery2.getLong(2) >= 0) {
-                        this.f8457r0 = 0;
+                        this.f8465r0 = 0;
                     } else if (!rawQuery2.isNull(3) && !rawQuery2.getString(3).equals("")) {
-                        this.f8457r0 = 1;
-                    } else if (!this.f8459s0.equals("mame") && !this.f8459s0.equals("naomi")) {
-                        this.f8457r0 = 2;
+                        this.f8465r0 = 1;
+                    } else if (!this.f8467s0.equals("mame") && !this.f8467s0.equals("naomi")) {
+                        this.f8465r0 = 2;
                     }
                 }
             }
             rawQuery2.close();
         }
-        if (!mo8893A2(this.f8412E0)) {
-            if (Pattern.compile("\\[src=moby\\]").matcher(this.f8412E0).find()) {
-                this.f8457r0 = 2;
-                this.f8412E0 = this.f8412E0.replaceAll("\\[src=moby\\]", "");
+        if (!mo8893A2(this.f8420E0)) {
+            if (Pattern.compile("\\[src=moby\\]").matcher(this.f8420E0).find()) {
+                this.f8465r0 = 2;
+                this.f8420E0 = this.f8420E0.replaceAll("\\[src=moby\\]", "");
             }
-            this.f8412E0 = C2185a4.m9667E(this.f8412E0);
+            this.f8420E0 = C2185a4.m9667E(this.f8420E0);
         }
-        this.f8406B0 = "";
-        Cursor rawQuery3 = this.f8461t0.rawQuery("SELECT g.name FROM gamegenres as gg, genres as g WHERE gg.game=" + this.f8455q0 + " AND g._id=gg.genre", null);
+        this.f8414B0 = "";
+        Cursor rawQuery3 = this.f8469t0.rawQuery("SELECT g.name FROM gamegenres as gg, genres as g WHERE gg.game=" + this.f8463q0 + " AND g._id=gg.genre", null);
         if (rawQuery3.moveToFirst()) {
             do {
-                if (this.f8406B0.length() > 0) {
-                    this.f8406B0 += ", ";
+                if (this.f8414B0.length() > 0) {
+                    this.f8414B0 += ", ";
                 }
-                this.f8406B0 += rawQuery3.getString(0);
+                this.f8414B0 += rawQuery3.getString(0);
             } while (rawQuery3.moveToNext());
         }
-        this.f8408C0 = "";
-        Cursor rawQuery4 = this.f8461t0.rawQuery("SELECT c.name FROM gamecollection as gc,collections as c WHERE gc.game=" + this.f8455q0 + " AND c._id=gc.collection", null);
+        this.f8416C0 = "";
+        Cursor rawQuery4 = this.f8469t0.rawQuery("SELECT c.name FROM gamecollection as gc,collections as c WHERE gc.game=" + this.f8463q0 + " AND c._id=gc.collection", null);
         if (rawQuery4.moveToFirst()) {
             do {
-                if (this.f8408C0.length() > 0) {
-                    this.f8408C0 += ", ";
+                if (this.f8416C0.length() > 0) {
+                    this.f8416C0 += ", ";
                 }
-                this.f8408C0 += rawQuery4.getString(0);
+                this.f8416C0 += rawQuery4.getString(0);
             } while (rawQuery4.moveToNext());
         }
         return true;
@@ -1637,73 +1637,73 @@ public class C2404j0 extends AbstractC2531p1 {
     /* access modifiers changed from: package-private */
     /* renamed from: k3 */
     public File mo8631k3(boolean z) {
-        boolean c = this.f8793Z.mo8180c("show_cover", true);
-        boolean c2 = this.f8793Z.mo8180c("show_screenshot", true);
-        if (z && this.f8434V0 && c) {
-            this.f8442d1 = this.f8438Z0;
-            this.f8443e1 = this.f8439a1;
-            return this.f8432T0;
-        } else if (z || !this.f8435W0 || !c2) {
-            boolean z2 = this.f8434V0;
+        boolean c = this.f8801Z.mo8180c("show_cover", true);
+        boolean c2 = this.f8801Z.mo8180c("show_screenshot", true);
+        if (z && this.f8442V0 && c) {
+            this.f8450d1 = this.f8446Z0;
+            this.f8451e1 = this.f8447a1;
+            return this.f8440T0;
+        } else if (z || !this.f8443W0 || !c2) {
+            boolean z2 = this.f8442V0;
             if (!z2 || !c) {
-                boolean z3 = this.f8435W0;
+                boolean z3 = this.f8443W0;
                 if (z3 && c2) {
-                    this.f8442d1 = this.f8440b1;
-                    this.f8443e1 = this.f8441c1;
-                    return this.f8433U0;
+                    this.f8450d1 = this.f8448b1;
+                    this.f8451e1 = this.f8449c1;
+                    return this.f8441U0;
                 } else if (z2) {
-                    this.f8442d1 = this.f8438Z0;
-                    this.f8443e1 = this.f8439a1;
-                    return this.f8432T0;
+                    this.f8450d1 = this.f8446Z0;
+                    this.f8451e1 = this.f8447a1;
+                    return this.f8440T0;
                 } else if (!z3) {
                     return null;
                 } else {
-                    this.f8442d1 = this.f8440b1;
-                    this.f8443e1 = this.f8441c1;
-                    return this.f8433U0;
+                    this.f8450d1 = this.f8448b1;
+                    this.f8451e1 = this.f8449c1;
+                    return this.f8441U0;
                 }
             } else {
-                this.f8442d1 = this.f8438Z0;
-                this.f8443e1 = this.f8439a1;
-                return this.f8432T0;
+                this.f8450d1 = this.f8446Z0;
+                this.f8451e1 = this.f8447a1;
+                return this.f8440T0;
             }
         } else {
-            this.f8442d1 = this.f8440b1;
-            this.f8443e1 = this.f8441c1;
-            return this.f8433U0;
+            this.f8450d1 = this.f8448b1;
+            this.f8451e1 = this.f8449c1;
+            return this.f8441U0;
         }
     }
 
     /* renamed from: l3 */
     public String mo8632l3() {
-        return this.f8414F0;
+        return this.f8422F0;
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2531p1, androidx.fragment.app.Fragment
     /* renamed from: m1 */
     public void mo2585m1() {
         super.mo2585m1();
-        Handler handler = this.f8409C1;
+        Handler handler = this.f8417C1;
         if (handler != null) {
             handler.removeCallbacksAndMessages(null);
-            this.f8409C1 = null;
+            this.f8417C1 = null;
         }
-        C2515o2 o2Var = this.f8417G1;
+        C2515o2 o2Var = this.f8425G1;
         if (o2Var != null) {
             o2Var.mo8869u(this);
         }
-        if (this.f8407B1 != null) {
-            this.f8405A1.getViewTreeObserver().removeOnScrollChangedListener(this.f8407B1);
+        if (this.f8415B1 != null) {
+            this.f8413A1.getViewTreeObserver().removeOnScrollChangedListener(this.f8415B1);
         }
-        ImageView imageView = this.f8468w1;
+        ImageView imageView = this.f8476w1;
         if (imageView != null) {
             imageView.setOnClickListener(null);
         }
-        ImageView imageView2 = this.f8470x1;
+        ImageView imageView2 = this.f8478x1;
         if (imageView2 != null) {
             imageView2.setOnClickListener(null);
         }
-        ImageView imageView3 = this.f8472y1;
+        ImageView imageView3 = this.f8480y1;
         if (imageView3 != null) {
             imageView3.setOnClickListener(null);
         }
@@ -1711,50 +1711,50 @@ public class C2404j0 extends AbstractC2531p1 {
 
     /* renamed from: m3 */
     public long mo8633m3() {
-        return this.f8423K0;
+        return this.f8431K0;
     }
 
     /* renamed from: n3 */
     public String mo8634n3() {
-        return this.f8459s0;
+        return this.f8467s0;
     }
 
     /* renamed from: o3 */
     public String mo8635o3() {
-        return this.f8410D0;
+        return this.f8418D0;
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2531p1
     /* renamed from: p2 */
     public void mo8439p2(Menu menu) {
-        menu.findItem(R.id.edit_game_info).setTitle(this.f8463u0 ? R.string.done : R.string.edit);
-        menu.findItem(R.id.favorite).setChecked(this.f8469x0);
-        menu.findItem(R.id.add_homescreen).setVisible(!this.f8793Z.mo8197u());
+        menu.findItem(R.id.edit_game_info).setTitle(this.f8471u0 ? R.string.done : R.string.edit);
+        menu.findItem(R.id.favorite).setChecked(this.f8477x0);
+        menu.findItem(R.id.add_homescreen).setVisible(!this.f8801Z.mo8197u());
         MenuItem findItem = menu.findItem(R.id.remove_collection);
-        String str = this.f8408C0;
+        String str = this.f8416C0;
         findItem.setVisible(str == null || !str.equals(""));
         MenuItem findItem2 = menu.findItem(R.id.manage_game);
         findItem2.setVisible(true);
         SubMenu subMenu = findItem2.getSubMenu();
         subMenu.clearHeader();
-        subMenu.findItem(R.id.delete).setVisible(!this.f8459s0.equals("android"));
+        subMenu.findItem(R.id.delete).setVisible(!this.f8467s0.equals("android"));
         MenuItem findItem3 = menu.findItem(R.id.select_emulator);
-        if (this.f8446h1 != null) {
+        if (this.f8454h1 != null) {
             findItem3.setVisible(true);
-            findItem3.setTitle(this.f8446h1);
+            findItem3.setTitle(this.f8454h1);
             SubMenu subMenu2 = findItem3.getSubMenu();
             subMenu2.clearHeader();
-            synchronized (this.f8474z1) {
-                Iterator<C2443z> it = this.f8445g1.iterator();
+            synchronized (this.f8482z1) {
+                Iterator<C2443z> it = this.f8453g1.iterator();
                 while (it.hasNext()) {
                     C2443z next = it.next();
-                    subMenu2.add(0, (int) next.f8520a, 0, next.f8521b);
+                    subMenu2.add(0, (int) next.f8528a, 0, next.f8529b);
                 }
                 boolean s = C2185a4.m9689s(mo2575j0(), "com.retroarch.ra32");
                 boolean s2 = C2185a4.m9689s(mo2575j0(), "com.retroarch.aarch64");
                 MenuItem findItem4 = menu.findItem(R.id.use_retroarch);
-                findItem4.setVisible(this.f8446h1.toLowerCase().contains("retroarch") && (s || s2));
-                findItem4.setTitle(C2882y2.m11933v(mo2575j0(), this.f8448j1));
+                findItem4.setVisible(this.f8454h1.toLowerCase().contains("retroarch") && (s || s2));
+                findItem4.setTitle(C2882y2.m11933v(mo2575j0(), this.f8456j1));
                 SubMenu subMenu3 = findItem4.getSubMenu();
                 subMenu3.clearHeader();
                 subMenu3.findItem(R.id.use_default_ra).setTitle(C2882y2.m11933v(mo2575j0(), 0));
@@ -1769,7 +1769,7 @@ public class C2404j0 extends AbstractC2531p1 {
             findItem3.setVisible(false);
             menu.findItem(R.id.use_retroarch).setVisible(false);
         }
-        menu.findItem(R.id.delete_screenshot).setVisible(this.f8435W0);
+        menu.findItem(R.id.delete_screenshot).setVisible(this.f8443W0);
     }
 
     /* access modifiers changed from: package-private */
@@ -1778,26 +1778,26 @@ public class C2404j0 extends AbstractC2531p1 {
         mo8118X2(mo2568h0().getString("title"));
         View F0 = mo2505F0();
         ImageView imageView = (ImageView) F0.findViewById(R.id.game_cover);
-        this.f8468w1 = imageView;
+        this.f8476w1 = imageView;
         C2553q3.m11131q(imageView);
-        this.f8405A1 = (ScrollView) F0.findViewById(R.id.scroll_area);
+        this.f8413A1 = (ScrollView) F0.findViewById(R.id.scroll_area);
         Point k = C2185a4.m9681k(mo2552c0());
         if (k.y > k.x) {
-            this.f8407B1 = new ViewTreeObserver$OnScrollChangedListenerC2419k();
-            this.f8405A1.getViewTreeObserver().addOnScrollChangedListener(this.f8407B1);
+            this.f8415B1 = new ViewTreeObserver$OnScrollChangedListenerC2419k();
+            this.f8413A1.getViewTreeObserver().addOnScrollChangedListener(this.f8415B1);
         }
-        mo8895L2(this.f8405A1);
+        mo8895L2(this.f8413A1);
         if (mo2552c0().getResources().getConfiguration().orientation == 2) {
             String w2 = mo8409w2();
             w2.hashCode();
             if (w2.equals("none") || w2.equals("icons_bottom")) {
-                this.f8468w1.setPadding(0, 20, 0, 0);
+                this.f8476w1.setPadding(0, 20, 0, 0);
             }
         }
         ImageView imageView2 = (ImageView) F0.findViewById(R.id.play);
-        this.f8472y1 = imageView2;
+        this.f8480y1 = imageView2;
         C2553q3.m11131q(imageView2);
-        this.f8461t0 = this.f8794a0.mo9325c();
+        this.f8469t0 = this.f8802a0.mo9325c();
         new AsyncTaskC2408b0(new C2429r()).execute(new String[0]);
     }
 
@@ -1813,46 +1813,46 @@ public class C2404j0 extends AbstractC2531p1 {
         ActivityC0447d c0 = mo2552c0();
         if (c0 != null && !c0.isFinishing()) {
             if (!z) {
-                this.f8793Z.mo8153B("do_repair", true);
+                this.f8801Z.mo8153B("do_repair", true);
                 new DialogInterfaceC0068b.C0069a(c0, C2553q3.m11117c()).mo228h(R.string.not_in_db).mo224d(false).mo235o(R.string.ok, new DialogInterface$OnClickListenerC2430s(c0)).mo221a().show();
                 return;
             }
-            this.f8425M0 = this.f8424L0;
+            this.f8433M0 = this.f8432L0;
             View F0 = mo2505F0();
             if (F0 != null) {
                 TextView textView = (TextView) F0.findViewById(R.id.file_name);
-                this.f8449k1 = textView;
-                textView.setText(this.f8471y0 + this.f8473z0);
-                this.f8449k1.setTextColor(this.f8800g0.f9401e);
-                this.f8464u1 = (ConstraintLayout) F0.findViewById(R.id.star_bar);
+                this.f8457k1 = textView;
+                textView.setText(this.f8479y0 + this.f8481z0);
+                this.f8457k1.setTextColor(this.f8808g0.f9409e);
+                this.f8472u1 = (ConstraintLayout) F0.findViewById(R.id.star_bar);
                 RatingBar ratingBar = (RatingBar) F0.findViewById(R.id.game_rating);
-                this.f8466v1 = ratingBar;
+                this.f8474v1 = ratingBar;
                 LayerDrawable layerDrawable = (LayerDrawable) ratingBar.getProgressDrawable();
                 m10401z3(layerDrawable.getDrawable(2), -8448);
                 m10401z3(layerDrawable.getDrawable(1), -2138535800);
                 m10401z3(layerDrawable.getDrawable(0), -2138535800);
                 View$OnClickListenerC2431t tVar = new View$OnClickListenerC2431t();
                 TextView textView2 = (TextView) F0.findViewById(R.id.rating_text);
-                this.f8453o1 = textView2;
+                this.f8461o1 = textView2;
                 textView2.setOnClickListener(tVar);
                 TextView textView3 = (TextView) F0.findViewById(R.id.game_genres);
-                this.f8452n1 = textView3;
+                this.f8460n1 = textView3;
                 textView3.setOnClickListener(new View$OnClickListenerC2433u());
-                this.f8454p1 = (EditText) F0.findViewById(R.id.game_title);
-                this.f8456q1 = (EditText) F0.findViewById(R.id.game_info);
-                this.f8450l1 = (TextView) F0.findViewById(R.id.comments);
-                this.f8451m1 = (TextView) F0.findViewById(R.id.game_source);
-                this.f8458r1 = (EditText) F0.findViewById(R.id.game_publisher);
-                this.f8460s1 = (EditText) F0.findViewById(R.id.game_developer);
-                this.f8462t1 = (EditText) F0.findViewById(R.id.game_released);
-                this.f8470x1 = (ImageView) F0.findViewById(R.id.big_cover);
+                this.f8462p1 = (EditText) F0.findViewById(R.id.game_title);
+                this.f8464q1 = (EditText) F0.findViewById(R.id.game_info);
+                this.f8458l1 = (TextView) F0.findViewById(R.id.comments);
+                this.f8459m1 = (TextView) F0.findViewById(R.id.game_source);
+                this.f8466r1 = (EditText) F0.findViewById(R.id.game_publisher);
+                this.f8468s1 = (EditText) F0.findViewById(R.id.game_developer);
+                this.f8470t1 = (EditText) F0.findViewById(R.id.game_released);
+                this.f8478x1 = (ImageView) F0.findViewById(R.id.big_cover);
                 mo8644x3(false);
-                this.f8472y1.setOnClickListener(new View$OnClickListenerC2436v());
-                this.f8468w1.setOnClickListener(new View$OnClickListenerC2437w());
-                this.f8468w1.setOnLongClickListener(new View$OnLongClickListenerC2438x());
-                this.f8470x1.setOnClickListener(new View$OnClickListenerC2442y());
+                this.f8480y1.setOnClickListener(new View$OnClickListenerC2436v());
+                this.f8476w1.setOnClickListener(new View$OnClickListenerC2437w());
+                this.f8476w1.setOnLongClickListener(new View$OnLongClickListenerC2438x());
+                this.f8478x1.setOnClickListener(new View$OnClickListenerC2442y());
                 mo8642v3();
-                this.f8802i0 = true;
+                this.f8810i0 = true;
             }
         }
     }
@@ -1874,8 +1874,8 @@ public class C2404j0 extends AbstractC2531p1 {
     /* access modifiers changed from: package-private */
     /* renamed from: r3 */
     public void mo8638r3() {
-        synchronized (this.f8474z1) {
-            this.f8445g1 = new ArrayList<>();
+        synchronized (this.f8482z1) {
+            this.f8453g1 = new ArrayList<>();
         }
         new AsyncTaskC2421m().execute(new Void[0]);
     }
@@ -1883,9 +1883,9 @@ public class C2404j0 extends AbstractC2531p1 {
     @Override // androidx.fragment.app.Fragment
     /* renamed from: s1 */
     public void mo2603s1(Bundle bundle) {
-        bundle.putBoolean("editing", this.f8463u0);
-        bundle.putBoolean("show_cover", this.f8465v0);
-        bundle.putBoolean("show_big_cover", this.f8467w0);
+        bundle.putBoolean("editing", this.f8471u0);
+        bundle.putBoolean("show_cover", this.f8473v0);
+        bundle.putBoolean("show_big_cover", this.f8475w0);
         super.mo2603s1(bundle);
     }
 
@@ -1898,35 +1898,35 @@ public class C2404j0 extends AbstractC2531p1 {
     /* access modifiers changed from: package-private */
     /* renamed from: s3 */
     public boolean mo8639s3() {
-        if (this.f8422J0 == null || !this.f8803j0 || !this.f8793Z.mo8180c("game_play_videos", false)) {
-            C2515o2 o2Var = this.f8417G1;
+        if (this.f8430J0 == null || !this.f8811j0 || !this.f8801Z.mo8180c("game_play_videos", false)) {
+            C2515o2 o2Var = this.f8425G1;
             if (o2Var != null) {
                 o2Var.mo8865p();
             }
             return false;
         }
-        this.f8468w1.setVisibility(4);
-        if (this.f8417G1 == null) {
-            C2515o2 v0 = this.f8806m0.mo8300v0();
-            this.f8417G1 = v0;
+        this.f8476w1.setVisibility(4);
+        if (this.f8425G1 == null) {
+            C2515o2 v0 = this.f8814m0.mo8300v0();
+            this.f8425G1 = v0;
             C2515o2.C2523f n = v0.mo8864n();
-            this.f8419H1 = n;
-            n.f8759a = new C2407b();
-            C2515o2.C2523f fVar = this.f8419H1;
-            fVar.f8760b = R.id.youtube_container;
-            fVar.f8761c = R.id.progress;
-            fVar.f8762d = this.f8793Z.mo8180c("game_play_videos_mobile", false);
-            this.f8419H1.f8763e = 500;
+            this.f8427H1 = n;
+            n.f8767a = new C2407b();
+            C2515o2.C2523f fVar = this.f8427H1;
+            fVar.f8768b = R.id.youtube_container;
+            fVar.f8769c = R.id.progress;
+            fVar.f8770d = this.f8801Z.mo8180c("game_play_videos_mobile", false);
+            this.f8427H1.f8771e = 500;
         }
-        this.f8417G1.mo8870v(this, this.f8419H1);
-        return this.f8417G1.mo8868t(this.f8422J0);
+        this.f8425G1.mo8870v(this, this.f8427H1);
+        return this.f8425G1.mo8868t(this.f8430J0);
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2531p1, androidx.fragment.app.Fragment
     /* renamed from: t1 */
     public void mo2605t1() {
         super.mo2605t1();
-        this.f8417G1 = null;
+        this.f8425G1 = null;
         mo8638r3();
     }
 
@@ -1953,24 +1953,24 @@ public class C2404j0 extends AbstractC2531p1 {
     public void mo8641u3() {
         Date parse;
         ContentValues contentValues = new ContentValues();
-        String trim = this.f8454p1.getText().toString().trim();
-        this.f8410D0 = trim;
+        String trim = this.f8462p1.getText().toString().trim();
+        this.f8418D0 = trim;
         contentValues.put("title", trim);
-        contentValues.put("sortname", this.f8796c0.mo8846k(this.f8410D0));
-        this.f8454p1.setText(this.f8410D0);
-        String trim2 = this.f8456q1.getText().toString().trim();
-        this.f8412E0 = trim2;
+        contentValues.put("sortname", this.f8804c0.mo8846k(this.f8418D0));
+        this.f8462p1.setText(this.f8418D0);
+        String trim2 = this.f8464q1.getText().toString().trim();
+        this.f8420E0 = trim2;
         contentValues.put("info", trim2);
-        this.f8456q1.setText(this.f8412E0);
-        this.f8457r0 = -1;
-        String trim3 = this.f8458r1.getText().toString().trim();
-        this.f8414F0 = trim3;
+        this.f8464q1.setText(this.f8420E0);
+        this.f8465r0 = -1;
+        String trim3 = this.f8466r1.getText().toString().trim();
+        this.f8422F0 = trim3;
         contentValues.put("publisher", trim3);
-        String trim4 = this.f8460s1.getText().toString().trim();
-        this.f8416G0 = trim4;
+        String trim4 = this.f8468s1.getText().toString().trim();
+        this.f8424G0 = trim4;
         contentValues.put("developer", trim4);
-        this.f8423K0 = 0;
-        String trim5 = this.f8462t1.getText().toString().trim();
+        this.f8431K0 = 0;
+        String trim5 = this.f8470t1.getText().toString().trim();
         try {
             if (trim5.length() == 4) {
                 parse = new SimpleDateFormat("yyyy").parse(trim5);
@@ -1978,18 +1978,18 @@ public class C2404j0 extends AbstractC2531p1 {
                 if (trim5.length() == 10) {
                     parse = new SimpleDateFormat("MM/dd/yyyy").parse(trim5);
                 }
-                contentValues.put("released", Long.valueOf(this.f8423K0));
-                SQLiteDatabase sQLiteDatabase = this.f8461t0;
-                sQLiteDatabase.update("roms", contentValues, "_id=" + this.f8455q0, null);
-                this.f8796c0.mo8852t(this.f8455q0);
+                contentValues.put("released", Long.valueOf(this.f8431K0));
+                SQLiteDatabase sQLiteDatabase = this.f8469t0;
+                sQLiteDatabase.update("roms", contentValues, "_id=" + this.f8463q0, null);
+                this.f8804c0.mo8852t(this.f8463q0);
             }
-            this.f8423K0 = parse.getTime();
+            this.f8431K0 = parse.getTime();
         } catch (Exception unused) {
         }
-        contentValues.put("released", Long.valueOf(this.f8423K0));
-        SQLiteDatabase sQLiteDatabase2 = this.f8461t0;
-        sQLiteDatabase2.update("roms", contentValues, "_id=" + this.f8455q0, null);
-        this.f8796c0.mo8852t(this.f8455q0);
+        contentValues.put("released", Long.valueOf(this.f8431K0));
+        SQLiteDatabase sQLiteDatabase2 = this.f8469t0;
+        sQLiteDatabase2.update("roms", contentValues, "_id=" + this.f8463q0, null);
+        this.f8804c0.mo8852t(this.f8463q0);
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2531p1
@@ -2014,42 +2014,42 @@ public class C2404j0 extends AbstractC2531p1 {
     @Override // com.digdroid.alman.dig.AbstractC2531p1
     /* renamed from: w2 */
     public String mo8409w2() {
-        return this.f8465v0 ? "none" : super.mo8409w2();
+        return this.f8473v0 ? "none" : super.mo8409w2();
     }
 
     /* renamed from: w3 */
     public void mo8643w3() {
-        AbstractC2531p1.AbstractC2532a aVar = this.f8806m0;
+        AbstractC2531p1.AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
             MenuItem findItem = aVar.mo8254B().findItem(R.id.game_group);
-            findItem.setTitle(this.f8410D0);
+            findItem.setTitle(this.f8418D0);
             boolean z = true;
             findItem.setVisible(true);
             SubMenu subMenu = findItem.getSubMenu();
             MenuItem findItem2 = subMenu.findItem(R.id.nav_system);
-            findItem2.setTitle(this.f8795b0.mo8568s(this.f8459s0));
+            findItem2.setTitle(this.f8803b0.mo8568s(this.f8467s0));
             findItem2.setVisible(true);
             MenuItem findItem3 = subMenu.findItem(R.id.nav_publisher);
-            String str = this.f8414F0;
+            String str = this.f8422F0;
             boolean z2 = str != null && !str.equals("");
             if (z2) {
-                findItem3.setTitle(this.f8414F0);
+                findItem3.setTitle(this.f8422F0);
                 findItem3.setVisible(true);
             } else {
                 findItem3.setVisible(false);
             }
             MenuItem findItem4 = subMenu.findItem(R.id.nav_developer);
-            String str2 = this.f8416G0;
-            if (!(str2 != null && !str2.equals("")) || (z2 && this.f8416G0.equals(this.f8414F0))) {
+            String str2 = this.f8424G0;
+            if (!(str2 != null && !str2.equals("")) || (z2 && this.f8424G0.equals(this.f8422F0))) {
                 findItem4.setVisible(false);
             } else {
-                findItem4.setTitle(this.f8416G0);
+                findItem4.setTitle(this.f8424G0);
                 findItem4.setVisible(true);
             }
             MenuItem findItem5 = subMenu.findItem(R.id.nav_year);
-            if (this.f8423K0 > 0) {
+            if (this.f8431K0 > 0) {
                 Calendar instance = Calendar.getInstance();
-                instance.setTimeInMillis(this.f8423K0);
+                instance.setTimeInMillis(this.f8431K0);
                 int i = instance.get(1);
                 findItem5.setTitle("" + i);
                 findItem5.setVisible(true);
@@ -2057,7 +2057,7 @@ public class C2404j0 extends AbstractC2531p1 {
                 findItem5.setVisible(false);
             }
             MenuItem findItem6 = subMenu.findItem(R.id.nav_game_forum);
-            if (this.f8424L0 < 0) {
+            if (this.f8432L0 < 0) {
                 z = false;
             }
             findItem6.setVisible(z);
@@ -2074,19 +2074,19 @@ public class C2404j0 extends AbstractC2531p1 {
     /* renamed from: x3 */
     public synchronized void mo8644x3(boolean z) {
         C2514o1 b = C2457l1.m10577b(mo2552c0().getApplicationContext());
-        C2498n1<Drawable> M = !this.f8800g0.f9413q.equals("") ? b.mo8862M(this.f8800g0.f9413q) : b.mo8861L(Integer.valueOf((int) R.drawable.play));
-        M.mo7762e(AbstractC1763j.f6903b);
-        M.mo7030p0(this.f8472y1);
+        C2498n1<Drawable> M = !this.f8808g0.f9421q.equals("") ? b.mo8862M(this.f8808g0.f9421q) : b.mo8861L(Integer.valueOf((int) R.drawable.play));
+        M.mo7762e(AbstractC1763j.f6911b);
+        M.mo7030p0(this.f8480y1);
         boolean s3 = mo8639s3();
         mo2505F0().findViewById(R.id.youtube_container).setVisibility(s3 ? 0 : 8);
         if (!s3) {
             mo2505F0().findViewById(R.id.youtube_container).setVisibility(8);
-            this.f8468w1.setVisibility(0);
-            this.f8411D1 = z;
-            Handler handler = this.f8409C1;
+            this.f8476w1.setVisibility(0);
+            this.f8419D1 = z;
+            Handler handler = this.f8417C1;
             if (handler != null) {
                 handler.removeCallbacksAndMessages(null);
-                this.f8409C1 = null;
+                this.f8417C1 = null;
             }
             new AsyncTaskC2420l().execute(new Void[0]);
         }
@@ -2106,13 +2106,13 @@ public class C2404j0 extends AbstractC2531p1 {
         ActivityC0447d c0 = mo2552c0();
         if (c0 != null) {
             if (!c0.isFinishing()) {
-                String t = this.f8795b0.mo8569t(this.f8459s0);
+                String t = this.f8803b0.mo8569t(this.f8467s0);
                 Resources resources = c0.getResources();
                 int i = 0;
                 Uri uri = null;
-                if (this.f8459s0.equals("android")) {
+                if (this.f8467s0.equals("android")) {
                     try {
-                        drawable = c0.getPackageManager().getApplicationIcon(this.f8473z0);
+                        drawable = c0.getPackageManager().getApplicationIcon(this.f8481z0);
                     } catch (Exception unused) {
                         i = resources.getIdentifier("icon_" + t, "drawable", c0.getPackageName());
                     }
@@ -2124,27 +2124,27 @@ public class C2404j0 extends AbstractC2531p1 {
                     drawable = null;
                 }
                 String str = "sig";
-                File k32 = mo8631k3(this.f8411D1);
+                File k32 = mo8631k3(this.f8419D1);
                 if (k32 != null) {
-                    str = this.f8442d1 + "@" + this.f8443e1;
+                    str = this.f8450d1 + "@" + this.f8451e1;
                     uri = k32 instanceof C2399i2 ? ((C2399i2) k32).mo8614m() : Uri.fromFile(k32);
                 }
                 try {
                     C2514o1 b = C2457l1.m10577b(c0.getApplicationContext());
                     C2498n1<Drawable> J = uri != null ? b.mo8859J(uri) : drawable != null ? b.mo8858I(drawable) : b.mo8861L(Integer.valueOf(i));
-                    J.mo7762e(AbstractC1763j.f6903b);
+                    J.mo7762e(AbstractC1763j.f6911b);
                     J.mo7752W(new C2067d(str));
                     if (drawable != null) {
                         J.mo7766h(drawable);
                     } else {
                         J.mo7765g(i);
                     }
-                    J.mo7030p0(this.f8468w1);
+                    J.mo7030p0(this.f8476w1);
                 } catch (Exception unused2) {
                 }
-                if (this.f8465v0 && z && (k3 = mo8631k3(this.f8467w0)) != null) {
+                if (this.f8473v0 && z && (k3 = mo8631k3(this.f8475w0)) != null) {
                     try {
-                        C2457l1.m10577b(c0.getApplicationContext()).mo8859J(k3 instanceof C2399i2 ? ((C2399i2) k3).mo8614m() : Uri.fromFile(k3)).mo7762e(AbstractC1763j.f6903b).mo7754Y(true).mo7752W(new C2067d(str)).mo7765g(i).mo7030p0(this.f8470x1);
+                        C2457l1.m10577b(c0.getApplicationContext()).mo8859J(k3 instanceof C2399i2 ? ((C2399i2) k3).mo8614m() : Uri.fromFile(k3)).mo7762e(AbstractC1763j.f6911b).mo7754Y(true).mo7752W(new C2067d(str)).mo7765g(i).mo7030p0(this.f8478x1);
                     } catch (Exception unused3) {
                     }
                 }
@@ -2156,16 +2156,16 @@ public class C2404j0 extends AbstractC2531p1 {
     @Override // com.digdroid.alman.dig.AbstractC2531p1
     /* renamed from: z2 */
     public void mo8410z2(Intent intent) {
-        if (intent.getLongExtra("gameid", -1) != this.f8455q0) {
+        if (intent.getLongExtra("gameid", -1) != this.f8463q0) {
             return;
         }
         if (intent.getBooleanExtra("is_screenshot", false)) {
-            this.f8435W0 = true;
+            this.f8443W0 = true;
             mo8644x3(false);
             return;
         }
-        this.f8434V0 = true;
+        this.f8442V0 = true;
         mo8644x3(true);
-        this.f8806m0.mo8264R();
+        this.f8814m0.mo8264R();
     }
 }

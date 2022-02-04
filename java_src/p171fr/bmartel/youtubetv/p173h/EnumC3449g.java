@@ -11,10 +11,10 @@ public enum EnumC3449g {
     
 
     /* renamed from: i */
-    private int f11716i;
+    private int f11725i;
 
     private EnumC3449g(int i) {
-        this.f11716i = i;
+        this.f11725i = i;
     }
 
     /* renamed from: b */
@@ -30,6 +30,6 @@ public enum EnumC3449g {
 
     /* renamed from: a */
     public int mo11530a() {
-        return this.f11716i;
+        return this.f11725i;
     }
 }

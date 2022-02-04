@@ -31,49 +31,49 @@ import p006b.p030g.p038j.C0961i;
 public class C0923b {
 
     /* renamed from: a */
-    static final C0831g<String, Typeface> f4565a = new C0831g<>(16);
+    static final C0831g<String, Typeface> f4569a = new C0831g<>(16);
 
     /* renamed from: b */
-    private static final C0931c f4566b = new C0931c("fonts", 10, 10000);
+    private static final C0931c f4570b = new C0931c("fonts", 10, 10000);
 
     /* renamed from: c */
-    static final Object f4567c = new Object();
+    static final Object f4571c = new Object();
 
     /* renamed from: d */
-    static final C0838i<String, ArrayList<C0931c.AbstractC0936d<C0930g>>> f4568d = new C0838i<>();
+    static final C0838i<String, ArrayList<C0931c.AbstractC0936d<C0930g>>> f4572d = new C0838i<>();
 
     /* renamed from: e */
-    private static final Comparator<byte[]> f4569e = new C0927d();
+    private static final Comparator<byte[]> f4573e = new C0927d();
 
     /* access modifiers changed from: package-private */
     /* renamed from: b.g.h.b$a */
     public class CallableC0924a implements Callable<C0930g> {
 
         /* renamed from: a */
-        final /* synthetic */ Context f4570a;
+        final /* synthetic */ Context f4574a;
 
         /* renamed from: b */
-        final /* synthetic */ C0922a f4571b;
+        final /* synthetic */ C0922a f4575b;
 
         /* renamed from: c */
-        final /* synthetic */ int f4572c;
+        final /* synthetic */ int f4576c;
 
         /* renamed from: d */
-        final /* synthetic */ String f4573d;
+        final /* synthetic */ String f4577d;
 
         CallableC0924a(Context context, C0922a aVar, int i, String str) {
-            this.f4570a = context;
-            this.f4571b = aVar;
-            this.f4572c = i;
-            this.f4573d = str;
+            this.f4574a = context;
+            this.f4575b = aVar;
+            this.f4576c = i;
+            this.f4577d = str;
         }
 
         /* renamed from: a */
         public C0930g call() {
-            C0930g f = C0923b.m5407f(this.f4570a, this.f4571b, this.f4572c);
-            Typeface typeface = f.f4584a;
+            C0930g f = C0923b.m5407f(this.f4574a, this.f4575b, this.f4576c);
+            Typeface typeface = f.f4588a;
             if (typeface != null) {
-                C0923b.f4565a.mo4930f(this.f4573d, typeface);
+                C0923b.f4569a.mo4930f(this.f4577d, typeface);
             }
             return f;
         }
@@ -84,14 +84,14 @@ public class C0923b {
     public class C0925b implements C0931c.AbstractC0936d<C0930g> {
 
         /* renamed from: a */
-        final /* synthetic */ C0390f.AbstractC0391a f4574a;
+        final /* synthetic */ C0390f.AbstractC0391a f4578a;
 
         /* renamed from: b */
-        final /* synthetic */ Handler f4575b;
+        final /* synthetic */ Handler f4579b;
 
         C0925b(C0390f.AbstractC0391a aVar, Handler handler) {
-            this.f4574a = aVar;
-            this.f4575b = handler;
+            this.f4578a = aVar;
+            this.f4579b = handler;
         }
 
         /* renamed from: b */
@@ -99,17 +99,17 @@ public class C0923b {
             int i;
             C0390f.AbstractC0391a aVar;
             if (gVar == null) {
-                aVar = this.f4574a;
+                aVar = this.f4578a;
                 i = 1;
             } else {
-                i = gVar.f4585b;
+                i = gVar.f4589b;
                 if (i == 0) {
-                    this.f4574a.mo2240b(gVar.f4584a, this.f4575b);
+                    this.f4578a.mo2240b(gVar.f4588a, this.f4579b);
                     return;
                 }
-                aVar = this.f4574a;
+                aVar = this.f4578a;
             }
-            aVar.mo2239a(i, this.f4575b);
+            aVar.mo2239a(i, this.f4579b);
         }
     }
 
@@ -118,10 +118,10 @@ public class C0923b {
     public class C0926c implements C0931c.AbstractC0936d<C0930g> {
 
         /* renamed from: a */
-        final /* synthetic */ String f4576a;
+        final /* synthetic */ String f4580a;
 
         C0926c(String str) {
-            this.f4576a = str;
+            this.f4580a = str;
         }
 
         /* JADX WARNING: Code restructure failed: missing block: B:11:0x001c, code lost:
@@ -142,17 +142,17 @@ public class C0923b {
         public void mo5334a(p006b.p030g.p036h.C0923b.C0930g r5) {
             /*
                 r4 = this;
-                java.lang.Object r0 = p006b.p030g.p036h.C0923b.f4567c
+                java.lang.Object r0 = p006b.p030g.p036h.C0923b.f4571c
                 monitor-enter(r0)
-                b.d.i<java.lang.String, java.util.ArrayList<b.g.h.c$d<b.g.h.b$g>>> r1 = p006b.p030g.p036h.C0923b.f4568d     // Catch:{ all -> 0x002b }
-                java.lang.String r2 = r4.f4576a     // Catch:{ all -> 0x002b }
+                b.d.i<java.lang.String, java.util.ArrayList<b.g.h.c$d<b.g.h.b$g>>> r1 = p006b.p030g.p036h.C0923b.f4572d     // Catch:{ all -> 0x002b }
+                java.lang.String r2 = r4.f4580a     // Catch:{ all -> 0x002b }
                 java.lang.Object r2 = r1.get(r2)     // Catch:{ all -> 0x002b }
                 java.util.ArrayList r2 = (java.util.ArrayList) r2     // Catch:{ all -> 0x002b }
                 if (r2 != 0) goto L_0x0011
                 monitor-exit(r0)     // Catch:{ all -> 0x002b }
                 return
             L_0x0011:
-                java.lang.String r3 = r4.f4576a     // Catch:{ all -> 0x002b }
+                java.lang.String r3 = r4.f4580a     // Catch:{ all -> 0x002b }
                 r1.remove(r3)     // Catch:{ all -> 0x002b }
                 monitor-exit(r0)     // Catch:{ all -> 0x002b }
                 r0 = 0
@@ -208,24 +208,24 @@ public class C0923b {
     public static class C0928e {
 
         /* renamed from: a */
-        private final int f4577a;
+        private final int f4581a;
 
         /* renamed from: b */
-        private final C0929f[] f4578b;
+        private final C0929f[] f4582b;
 
         public C0928e(int i, C0929f[] fVarArr) {
-            this.f4577a = i;
-            this.f4578b = fVarArr;
+            this.f4581a = i;
+            this.f4582b = fVarArr;
         }
 
         /* renamed from: a */
         public C0929f[] mo5339a() {
-            return this.f4578b;
+            return this.f4582b;
         }
 
         /* renamed from: b */
         public int mo5340b() {
-            return this.f4577a;
+            return this.f4581a;
         }
     }
 
@@ -233,51 +233,51 @@ public class C0923b {
     public static class C0929f {
 
         /* renamed from: a */
-        private final Uri f4579a;
+        private final Uri f4583a;
 
         /* renamed from: b */
-        private final int f4580b;
+        private final int f4584b;
 
         /* renamed from: c */
-        private final int f4581c;
+        private final int f4585c;
 
         /* renamed from: d */
-        private final boolean f4582d;
+        private final boolean f4586d;
 
         /* renamed from: e */
-        private final int f4583e;
+        private final int f4587e;
 
         public C0929f(Uri uri, int i, int i2, boolean z, int i3) {
-            this.f4579a = (Uri) C0961i.m5494c(uri);
-            this.f4580b = i;
-            this.f4581c = i2;
-            this.f4582d = z;
-            this.f4583e = i3;
+            this.f4583a = (Uri) C0961i.m5494c(uri);
+            this.f4584b = i;
+            this.f4585c = i2;
+            this.f4586d = z;
+            this.f4587e = i3;
         }
 
         /* renamed from: a */
         public int mo5341a() {
-            return this.f4583e;
+            return this.f4587e;
         }
 
         /* renamed from: b */
         public int mo5342b() {
-            return this.f4580b;
+            return this.f4584b;
         }
 
         /* renamed from: c */
         public Uri mo5343c() {
-            return this.f4579a;
+            return this.f4583a;
         }
 
         /* renamed from: d */
         public int mo5344d() {
-            return this.f4581c;
+            return this.f4585c;
         }
 
         /* renamed from: e */
         public boolean mo5345e() {
-            return this.f4582d;
+            return this.f4586d;
         }
     }
 
@@ -286,14 +286,14 @@ public class C0923b {
     public static final class C0930g {
 
         /* renamed from: a */
-        final Typeface f4584a;
+        final Typeface f4588a;
 
         /* renamed from: b */
-        final int f4585b;
+        final int f4589b;
 
         C0930g(Typeface typeface, int i) {
-            this.f4584a = typeface;
-            this.f4585b = i;
+            this.f4588a = typeface;
+            this.f4589b = i;
         }
     }
 
@@ -365,7 +365,7 @@ public class C0923b {
     /* renamed from: g */
     public static Typeface m5408g(Context context, C0922a aVar, C0390f.AbstractC0391a aVar2, Handler handler, boolean z, int i, int i2) {
         String str = aVar.mo5327c() + "-" + i2;
-        Typeface d = f4565a.mo4928d(str);
+        Typeface d = f4569a.mo4928d(str);
         if (d != null) {
             if (aVar2 != null) {
                 aVar2.mo1847d(d);
@@ -375,14 +375,14 @@ public class C0923b {
             CallableC0924a aVar3 = new CallableC0924a(context, aVar, i2, str);
             if (z) {
                 try {
-                    return ((C0930g) f4566b.mo5349e(aVar3, i)).f4584a;
+                    return ((C0930g) f4570b.mo5349e(aVar3, i)).f4588a;
                 } catch (InterruptedException unused) {
                     return null;
                 }
             } else {
                 C0925b bVar = aVar2 == null ? null : new C0925b(aVar2, handler);
-                synchronized (f4567c) {
-                    C0838i<String, ArrayList<C0931c.AbstractC0936d<C0930g>>> iVar = f4568d;
+                synchronized (f4571c) {
+                    C0838i<String, ArrayList<C0931c.AbstractC0936d<C0930g>>> iVar = f4572d;
                     ArrayList<C0931c.AbstractC0936d<C0930g>> arrayList = iVar.get(str);
                     if (arrayList != null) {
                         if (bVar != null) {
@@ -395,21 +395,21 @@ public class C0923b {
                         arrayList2.add(bVar);
                         iVar.put(str, arrayList2);
                     }
-                    f4566b.mo5348d(aVar3, new C0926c(str));
+                    f4570b.mo5348d(aVar3, new C0926c(str));
                     return null;
                 }
             }
         } else {
             C0930g f = m5407f(context, aVar, i2);
             if (aVar2 != null) {
-                int i3 = f.f4585b;
+                int i3 = f.f4589b;
                 if (i3 == 0) {
-                    aVar2.mo2240b(f.f4584a, handler);
+                    aVar2.mo2240b(f.f4588a, handler);
                 } else {
                     aVar2.mo2239a(i3, handler);
                 }
             }
-            return f.f4584a;
+            return f.f4588a;
         }
     }
 
@@ -421,11 +421,11 @@ public class C0923b {
             throw new PackageManager.NameNotFoundException("No package found for authority: " + d);
         } else if (resolveContentProvider.packageName.equals(aVar.mo5329e())) {
             List<byte[]> a = m5402a(packageManager.getPackageInfo(resolveContentProvider.packageName, 64).signatures);
-            Collections.sort(a, f4569e);
+            Collections.sort(a, f4573e);
             List<List<byte[]>> d2 = m5405d(aVar, resources);
             for (int i = 0; i < d2.size(); i++) {
                 ArrayList arrayList = new ArrayList(d2.get(i));
-                Collections.sort(arrayList, f4569e);
+                Collections.sort(arrayList, f4573e);
                 if (m5403b(a, arrayList)) {
                     return resolveContentProvider;
                 }

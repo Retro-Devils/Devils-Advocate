@@ -6,16 +6,16 @@ import com.google.android.gms.common.api.AbstractC2964k;
 public class C2963j<T extends AbstractC2964k> {
 
     /* renamed from: a */
-    private T f9885a;
+    private T f9893a;
 
     /* access modifiers changed from: protected */
     /* renamed from: a */
     public T mo9683a() {
-        return this.f9885a;
+        return this.f9893a;
     }
 
     /* renamed from: b */
     public void mo9684b(T t) {
-        this.f9885a = t;
+        this.f9893a = t;
     }
 }

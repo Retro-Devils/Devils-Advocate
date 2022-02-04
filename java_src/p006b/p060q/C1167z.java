@@ -16,50 +16,50 @@ import p006b.p030g.p039k.C1013s;
 class C1167z implements AbstractC1099b0 {
 
     /* renamed from: a */
-    protected C1168a f5199a;
+    protected C1168a f5206a;
 
     /* renamed from: b.q.z$a */
     static class C1168a extends ViewGroup {
 
         /* renamed from: b */
-        static Method f5200b;
+        static Method f5207b;
 
         /* renamed from: c */
-        ViewGroup f5201c;
+        ViewGroup f5208c;
 
         /* renamed from: d */
-        View f5202d;
+        View f5209d;
 
         /* renamed from: e */
-        ArrayList<Drawable> f5203e = null;
+        ArrayList<Drawable> f5210e = null;
 
         /* renamed from: f */
-        C1167z f5204f;
+        C1167z f5211f;
 
         /* renamed from: g */
-        private boolean f5205g;
+        private boolean f5212g;
 
         static {
             try {
                 Class cls = Integer.TYPE;
-                f5200b = ViewGroup.class.getDeclaredMethod("invalidateChildInParentFast", cls, cls, Rect.class);
+                f5207b = ViewGroup.class.getDeclaredMethod("invalidateChildInParentFast", cls, cls, Rect.class);
             } catch (NoSuchMethodException unused) {
             }
         }
 
         C1168a(Context context, ViewGroup viewGroup, View view, C1167z zVar) {
             super(context);
-            this.f5201c = viewGroup;
-            this.f5202d = view;
+            this.f5208c = viewGroup;
+            this.f5209d = view;
             setRight(viewGroup.getWidth());
             setBottom(viewGroup.getHeight());
             viewGroup.addView(this);
-            this.f5204f = zVar;
+            this.f5211f = zVar;
         }
 
         /* renamed from: c */
         private void m6392c() {
-            if (this.f5205g) {
+            if (this.f5212g) {
                 throw new IllegalStateException("This overlay was disposed already. Please use a new one via ViewGroupUtils.getOverlay()");
             }
         }
@@ -67,10 +67,10 @@ class C1167z implements AbstractC1099b0 {
         /* renamed from: d */
         private void m6393d() {
             if (getChildCount() == 0) {
-                ArrayList<Drawable> arrayList = this.f5203e;
+                ArrayList<Drawable> arrayList = this.f5210e;
                 if (arrayList == null || arrayList.size() == 0) {
-                    this.f5205g = true;
-                    this.f5201c.removeView(this);
+                    this.f5212g = true;
+                    this.f5208c.removeView(this);
                 }
             }
         }
@@ -79,8 +79,8 @@ class C1167z implements AbstractC1099b0 {
         private void m6394e(int[] iArr) {
             int[] iArr2 = new int[2];
             int[] iArr3 = new int[2];
-            this.f5201c.getLocationOnScreen(iArr2);
-            this.f5202d.getLocationOnScreen(iArr3);
+            this.f5208c.getLocationOnScreen(iArr2);
+            this.f5209d.getLocationOnScreen(iArr3);
             iArr[0] = iArr3[0] - iArr2[0];
             iArr[1] = iArr3[1] - iArr2[1];
         }
@@ -88,11 +88,11 @@ class C1167z implements AbstractC1099b0 {
         /* renamed from: a */
         public void mo5872a(Drawable drawable) {
             m6392c();
-            if (this.f5203e == null) {
-                this.f5203e = new ArrayList<>();
+            if (this.f5210e == null) {
+                this.f5210e = new ArrayList<>();
             }
-            if (!this.f5203e.contains(drawable)) {
-                this.f5203e.add(drawable);
+            if (!this.f5210e.contains(drawable)) {
+                this.f5210e.add(drawable);
                 invalidate(drawable.getBounds());
                 drawable.setCallback(this);
             }
@@ -103,11 +103,11 @@ class C1167z implements AbstractC1099b0 {
             m6392c();
             if (view.getParent() instanceof ViewGroup) {
                 ViewGroup viewGroup = (ViewGroup) view.getParent();
-                if (!(viewGroup == this.f5201c || viewGroup.getParent() == null || !C1013s.m5736N(viewGroup))) {
+                if (!(viewGroup == this.f5208c || viewGroup.getParent() == null || !C1013s.m5736N(viewGroup))) {
                     int[] iArr = new int[2];
                     int[] iArr2 = new int[2];
                     viewGroup.getLocationOnScreen(iArr);
-                    this.f5201c.getLocationOnScreen(iArr2);
+                    this.f5208c.getLocationOnScreen(iArr2);
                     C1013s.m5742T(view, iArr[0] - iArr2[0]);
                     C1013s.m5743U(view, iArr[1] - iArr2[1]);
                 }
@@ -123,15 +123,15 @@ class C1167z implements AbstractC1099b0 {
         public void dispatchDraw(Canvas canvas) {
             int[] iArr = new int[2];
             int[] iArr2 = new int[2];
-            this.f5201c.getLocationOnScreen(iArr);
-            this.f5202d.getLocationOnScreen(iArr2);
+            this.f5208c.getLocationOnScreen(iArr);
+            this.f5209d.getLocationOnScreen(iArr2);
             canvas.translate((float) (iArr2[0] - iArr[0]), (float) (iArr2[1] - iArr[1]));
-            canvas.clipRect(new Rect(0, 0, this.f5202d.getWidth(), this.f5202d.getHeight()));
+            canvas.clipRect(new Rect(0, 0, this.f5209d.getWidth(), this.f5209d.getHeight()));
             super.dispatchDraw(canvas);
-            ArrayList<Drawable> arrayList = this.f5203e;
+            ArrayList<Drawable> arrayList = this.f5210e;
             int size = arrayList == null ? 0 : arrayList.size();
             for (int i = 0; i < size; i++) {
-                this.f5203e.get(i).draw(canvas);
+                this.f5210e.get(i).draw(canvas);
             }
         }
 
@@ -141,7 +141,7 @@ class C1167z implements AbstractC1099b0 {
 
         /* renamed from: f */
         public void mo5876f(Drawable drawable) {
-            ArrayList<Drawable> arrayList = this.f5203e;
+            ArrayList<Drawable> arrayList = this.f5210e;
             if (arrayList != null) {
                 arrayList.remove(drawable);
                 invalidate(drawable.getBounds());
@@ -157,11 +157,11 @@ class C1167z implements AbstractC1099b0 {
         }
 
         public ViewParent invalidateChildInParent(int[] iArr, Rect rect) {
-            if (this.f5201c == null) {
+            if (this.f5208c == null) {
                 return null;
             }
             rect.offset(iArr[0], iArr[1]);
-            if (this.f5201c instanceof ViewGroup) {
+            if (this.f5208c instanceof ViewGroup) {
                 iArr[0] = 0;
                 iArr[1] = 0;
                 int[] iArr2 = new int[2];
@@ -184,12 +184,12 @@ class C1167z implements AbstractC1099b0 {
         /* access modifiers changed from: protected */
         public boolean verifyDrawable(Drawable drawable) {
             ArrayList<Drawable> arrayList;
-            return super.verifyDrawable(drawable) || ((arrayList = this.f5203e) != null && arrayList.contains(drawable));
+            return super.verifyDrawable(drawable) || ((arrayList = this.f5210e) != null && arrayList.contains(drawable));
         }
     }
 
     C1167z(Context context, ViewGroup viewGroup, View view) {
-        this.f5199a = new C1168a(context, viewGroup, view, this);
+        this.f5206a = new C1168a(context, viewGroup, view, this);
     }
 
     /* renamed from: e */
@@ -202,7 +202,7 @@ class C1167z implements AbstractC1099b0 {
         for (int i = 0; i < childCount; i++) {
             View childAt = f.getChildAt(i);
             if (childAt instanceof C1168a) {
-                return ((C1168a) childAt).f5204f;
+                return ((C1168a) childAt).f5211f;
             }
         }
         return new C1161u(f.getContext(), f, view);
@@ -224,12 +224,12 @@ class C1167z implements AbstractC1099b0 {
     @Override // p006b.p060q.AbstractC1099b0
     /* renamed from: b */
     public void mo5729b(Drawable drawable) {
-        this.f5199a.mo5872a(drawable);
+        this.f5206a.mo5872a(drawable);
     }
 
     @Override // p006b.p060q.AbstractC1099b0
     /* renamed from: d */
     public void mo5730d(Drawable drawable) {
-        this.f5199a.mo5876f(drawable);
+        this.f5206a.mo5876f(drawable);
     }
 }

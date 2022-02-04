@@ -12,26 +12,26 @@ import p171fr.bmartel.youtubetv.p173h.EnumC3448f;
 public class C3439f {
 
     /* renamed from: a */
-    public static final EnumC3448f f11660a = EnumC3448f.HD_1080;
+    public static final EnumC3448f f11669a = EnumC3448f.HD_1080;
 
     /* renamed from: b */
-    public static final EnumC3446d f11661b = EnumC3446d.NONE;
+    public static final EnumC3446d f11670b = EnumC3446d.NONE;
 
     /* renamed from: c */
-    public static final EnumC3445c f11662c = EnumC3445c.DEFAULT;
+    public static final EnumC3445c f11671c = EnumC3445c.DEFAULT;
 
     /* renamed from: d */
-    public static final EnumC3444b f11663d = EnumC3444b.CHROME_IPHONE;
+    public static final EnumC3444b f11672d = EnumC3444b.CHROME_IPHONE;
 
     /* renamed from: e */
-    public static final EnumC3443a f11664e = EnumC3443a.MAXRES_DEFAULT;
+    public static final EnumC3443a f11673e = EnumC3443a.MAXRES_DEFAULT;
 
     /* renamed from: f */
-    public static final List<String> f11665f;
+    public static final List<String> f11674f;
 
     static {
         ArrayList arrayList = new ArrayList();
-        f11665f = arrayList;
+        f11674f = arrayList;
         arrayList.add("maxresdefault");
         arrayList.add("sddefault");
         arrayList.add("hqdefault");

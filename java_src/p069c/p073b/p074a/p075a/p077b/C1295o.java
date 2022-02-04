@@ -10,18 +10,18 @@ import javax.annotation.CheckReturnValue;
 public final class C1295o {
 
     /* renamed from: a */
-    private static final Object f5563a = new Object();
+    private static final Object f5571a = new Object();
 
     /* renamed from: b */
-    private static Context f5564b;
+    private static Context f5572b;
 
     /* renamed from: a */
     static synchronized void m6812a(Context context) {
         synchronized (C1295o.class) {
-            if (f5564b != null) {
+            if (f5572b != null) {
                 Log.w("GoogleCertificates", "GoogleCertificates has been initialized already");
             } else if (context != null) {
-                f5564b = context.getApplicationContext();
+                f5572b = context.getApplicationContext();
             }
         }
     }

@@ -13,19 +13,19 @@ public class C2884z extends C2492n {
 
     /* renamed from: u */
     public String mo9505u() {
-        Context context = this.f8639a;
+        Context context = this.f8647a;
         return new C2399i2(C2399i2.m10374d(context, C2219c3.m9805k(context).mo8193q("dig_dir", "")), "Emu config/Dosbox").getAbsolutePath();
     }
 
     /* renamed from: v */
     public String mo9506v() {
-        return new C2399i2(C2399i2.m10374d(this.f8639a, mo9505u()), "dosbox.conf").getAbsolutePath();
+        return new C2399i2(C2399i2.m10374d(this.f8647a, mo9505u()), "dosbox.conf").getAbsolutePath();
     }
 
     /* renamed from: w */
     public void mo9507w() {
-        mo8774k(C2399i2.m10374d(this.f8639a, mo9506v()));
-        if (this.f8640b.equals("")) {
+        mo8774k(C2399i2.m10374d(this.f8647a, mo9506v()));
+        if (this.f8648b.equals("")) {
             mo8773j("DOSBox/dosbox.conf");
         }
     }
@@ -44,14 +44,14 @@ public class C2884z extends C2492n {
 
     /* renamed from: y */
     public void mo9509y(String str) {
-        this.f8640b = Pattern.compile("mount c.*$", 32).matcher(this.f8640b).replaceAll("");
+        this.f8648b = Pattern.compile("mount c.*$", 32).matcher(this.f8648b).replaceAll("");
         int lastIndexOf = str.lastIndexOf(47);
         String substring = str.substring(lastIndexOf + 1);
-        this.f8640b += "\nmount c: \"" + str.substring(0, lastIndexOf) + "\"\n";
-        this.f8640b += "c:\n";
+        this.f8648b += "\nmount c: \"" + str.substring(0, lastIndexOf) + "\"\n";
+        this.f8648b += "c:\n";
         if (!substring.equals("DOS")) {
-            this.f8640b += substring + "\n";
-            this.f8640b += "exit\n";
+            this.f8648b += substring + "\n";
+            this.f8648b += "exit\n";
         }
     }
 }

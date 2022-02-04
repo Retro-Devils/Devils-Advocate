@@ -14,16 +14,16 @@ import p069c.p073b.p074a.p090b.C1400k;
 public class C3172d extends ViewGroup {
 
     /* renamed from: b */
-    private int f10639b;
+    private int f10647b;
 
     /* renamed from: c */
-    private int f10640c;
+    private int f10648c;
 
     /* renamed from: d */
-    private boolean f10641d;
+    private boolean f10649d;
 
     /* renamed from: e */
-    private int f10642e;
+    private int f10650e;
 
     public C3172d(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0);
@@ -31,7 +31,7 @@ public class C3172d extends ViewGroup {
 
     public C3172d(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f10641d = false;
+        this.f10649d = false;
         m13328d(context, attributeSet);
     }
 
@@ -42,9 +42,9 @@ public class C3172d extends ViewGroup {
 
     /* renamed from: d */
     private void m13328d(Context context, AttributeSet attributeSet) {
-        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, C1400k.f5815X0, 0, 0);
-        this.f10639b = obtainStyledAttributes.getDimensionPixelSize(C1400k.f5827Z0, 0);
-        this.f10640c = obtainStyledAttributes.getDimensionPixelSize(C1400k.f5821Y0, 0);
+        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, C1400k.f5823X0, 0, 0);
+        this.f10647b = obtainStyledAttributes.getDimensionPixelSize(C1400k.f5835Z0, 0);
+        this.f10648c = obtainStyledAttributes.getDimensionPixelSize(C1400k.f5829Y0, 0);
         obtainStyledAttributes.recycle();
     }
 
@@ -59,22 +59,22 @@ public class C3172d extends ViewGroup {
 
     /* renamed from: c */
     public boolean mo10230c() {
-        return this.f10641d;
+        return this.f10649d;
     }
 
     /* access modifiers changed from: protected */
     public int getItemSpacing() {
-        return this.f10640c;
+        return this.f10648c;
     }
 
     /* access modifiers changed from: protected */
     public int getLineSpacing() {
-        return this.f10639b;
+        return this.f10647b;
     }
 
     /* access modifiers changed from: protected */
     public int getRowCount() {
-        return this.f10642e;
+        return this.f10650e;
     }
 
     /* access modifiers changed from: protected */
@@ -82,10 +82,10 @@ public class C3172d extends ViewGroup {
         int i5;
         int i6;
         if (getChildCount() == 0) {
-            this.f10642e = 0;
+            this.f10650e = 0;
             return;
         }
-        this.f10642e = 1;
+        this.f10650e = 1;
         boolean z2 = C1013s.m5797y(this) == 1;
         int paddingRight = z2 ? getPaddingRight() : getPaddingLeft();
         int paddingLeft = z2 ? getPaddingLeft() : getPaddingRight();
@@ -108,12 +108,12 @@ public class C3172d extends ViewGroup {
                     i5 = 0;
                 }
                 int measuredWidth = i8 + i5 + childAt.getMeasuredWidth();
-                if (!this.f10641d && measuredWidth > i7) {
-                    i9 = this.f10639b + paddingTop;
-                    this.f10642e++;
+                if (!this.f10649d && measuredWidth > i7) {
+                    i9 = this.f10647b + paddingTop;
+                    this.f10650e++;
                     i8 = paddingRight;
                 }
-                childAt.setTag(C1395f.row_index_key, Integer.valueOf(this.f10642e - 1));
+                childAt.setTag(C1395f.row_index_key, Integer.valueOf(this.f10650e - 1));
                 int i11 = i8 + i5;
                 int measuredWidth2 = childAt.getMeasuredWidth() + i11;
                 int measuredHeight = childAt.getMeasuredHeight() + i9;
@@ -122,7 +122,7 @@ public class C3172d extends ViewGroup {
                     measuredWidth2 = (i7 - i8) - i5;
                 }
                 childAt.layout(i11, i9, measuredWidth2, measuredHeight);
-                i8 += i5 + i6 + childAt.getMeasuredWidth() + this.f10640c;
+                i8 += i5 + i6 + childAt.getMeasuredWidth() + this.f10648c;
                 paddingTop = measuredHeight;
             }
         }
@@ -160,14 +160,14 @@ public class C3172d extends ViewGroup {
                     i5 = paddingLeft;
                 } else {
                     i5 = getPaddingLeft();
-                    i7 = this.f10639b + paddingTop;
+                    i7 = this.f10647b + paddingTop;
                 }
                 int measuredWidth = i5 + i4 + childAt.getMeasuredWidth();
                 int measuredHeight = i7 + childAt.getMeasuredHeight();
                 if (measuredWidth > i8) {
                     i8 = measuredWidth;
                 }
-                paddingLeft = i5 + i4 + i3 + childAt.getMeasuredWidth() + this.f10640c;
+                paddingLeft = i5 + i4 + i3 + childAt.getMeasuredWidth() + this.f10648c;
                 if (i9 == getChildCount() - 1) {
                     i8 += i3;
                 }
@@ -179,15 +179,15 @@ public class C3172d extends ViewGroup {
 
     /* access modifiers changed from: protected */
     public void setItemSpacing(int i) {
-        this.f10640c = i;
+        this.f10648c = i;
     }
 
     /* access modifiers changed from: protected */
     public void setLineSpacing(int i) {
-        this.f10639b = i;
+        this.f10647b = i;
     }
 
     public void setSingleLine(boolean z) {
-        this.f10641d = z;
+        this.f10649d = z;
     }
 }

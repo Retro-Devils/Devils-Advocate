@@ -18,37 +18,37 @@ class C3349a extends AbstractC3355f {
     class C3350a extends InputStream {
 
         /* renamed from: b */
-        private boolean f11275b = false;
+        private boolean f11284b = false;
 
         /* renamed from: c */
-        private CipherInputStream f11276c = null;
+        private CipherInputStream f11285c = null;
 
         /* renamed from: d */
-        final /* synthetic */ C3354e f11277d;
+        final /* synthetic */ C3354e f11286d;
 
         /* renamed from: e */
-        final /* synthetic */ String f11278e;
+        final /* synthetic */ String f11287e;
 
         /* renamed from: f */
-        final /* synthetic */ byte[] f11279f;
+        final /* synthetic */ byte[] f11288f;
 
         /* renamed from: g */
-        final /* synthetic */ InputStream f11280g;
+        final /* synthetic */ InputStream f11289g;
 
         C3350a(C3354e eVar, String str, byte[] bArr, InputStream inputStream) {
-            this.f11277d = eVar;
-            this.f11278e = str;
-            this.f11279f = bArr;
-            this.f11280g = inputStream;
+            this.f11286d = eVar;
+            this.f11287e = str;
+            this.f11288f = bArr;
+            this.f11289g = inputStream;
         }
 
         /* renamed from: a */
         private CipherInputStream m13943a() {
             byte[] bArr;
-            if (this.f11275b) {
-                return this.f11276c;
+            if (this.f11284b) {
+                return this.f11285c;
             }
-            byte[] bArr2 = this.f11277d.f11297d;
+            byte[] bArr2 = this.f11286d.f11306d;
             int i = bArr2[0] & 255;
             int i2 = i & 63;
             int i3 = bArr2[1] & 255;
@@ -59,12 +59,12 @@ class C3349a extends AbstractC3355f {
                 byte[] bArr3 = new byte[i5];
                 System.arraycopy(bArr2, 2, bArr3, 0, i5);
                 byte[] bArr4 = new byte[16];
-                System.arraycopy(this.f11277d.f11297d, i6, bArr4, 0, i4);
-                if (this.f11279f != null) {
+                System.arraycopy(this.f11286d.f11306d, i6, bArr4, 0, i4);
+                if (this.f11288f != null) {
                     if (i2 == 63) {
                         bArr = new byte[32];
                         System.arraycopy(bArr3, 0, bArr, 0, i5);
-                        byte[] bArr5 = this.f11279f;
+                        byte[] bArr5 = this.f11288f;
                         System.arraycopy(bArr5, 0, bArr, i5, Math.min(bArr5.length, 32 - i5));
                     } else {
                         try {
@@ -72,7 +72,7 @@ class C3349a extends AbstractC3355f {
                             byte[] bArr6 = new byte[8];
                             for (long j = 0; j < (1 << i2); j++) {
                                 instance.update(bArr3);
-                                instance.update(this.f11279f);
+                                instance.update(this.f11288f);
                                 instance.update(bArr6);
                                 for (int i7 = 0; i7 < 8; i7++) {
                                     bArr6[i7] = (byte) (bArr6[i7] + 1);
@@ -90,18 +90,18 @@ class C3349a extends AbstractC3355f {
                     try {
                         Cipher instance2 = Cipher.getInstance("AES/CBC/NoPadding");
                         instance2.init(2, secretKeySpec, new IvParameterSpec(bArr4));
-                        CipherInputStream cipherInputStream = new CipherInputStream(this.f11280g, instance2);
-                        this.f11276c = cipherInputStream;
-                        this.f11275b = true;
+                        CipherInputStream cipherInputStream = new CipherInputStream(this.f11289g, instance2);
+                        this.f11285c = cipherInputStream;
+                        this.f11284b = true;
                         return cipherInputStream;
                     } catch (GeneralSecurityException e2) {
                         throw new IOException("Decryption error (do you have the JCE Unlimited Strength Jurisdiction Policy Files installed?)", e2);
                     }
                 } else {
-                    throw new C3347a(this.f11278e);
+                    throw new C3347a(this.f11287e);
                 }
             } else {
-                throw new IOException("Salt size + IV size too long in " + this.f11278e);
+                throw new IOException("Salt size + IV size too long in " + this.f11287e);
             }
         }
 

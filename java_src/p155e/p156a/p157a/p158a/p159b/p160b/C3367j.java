@@ -13,7 +13,7 @@ class C3367j extends AbstractC3355f {
 
     /* renamed from: d */
     private int m13964d(C3354e eVar) {
-        int i = eVar.f11297d[0] & 255;
+        int i = eVar.f11306d[0] & 255;
         if ((i & -64) != 0) {
             throw new IllegalArgumentException("Unsupported LZMA2 property bits");
         } else if (i > 40) {

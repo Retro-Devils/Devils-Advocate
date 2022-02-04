@@ -9,13 +9,13 @@ import p006b.p067t.p068a.C1205b;
 public class MyViewPager extends C1205b {
 
     /* renamed from: m0 */
-    C2219c3 f7664m0;
+    C2219c3 f7672m0;
 
     /* renamed from: n0 */
-    AbstractC2120a f7665n0 = null;
+    AbstractC2120a f7673n0 = null;
 
     /* renamed from: o0 */
-    float f7666o0;
+    float f7674o0;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.digdroid.alman.dig.MyViewPager$a */
@@ -26,35 +26,35 @@ public class MyViewPager extends C1205b {
 
     public MyViewPager(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f7664m0 = C2219c3.m9805k(context.getApplicationContext());
+        this.f7672m0 = C2219c3.m9805k(context.getApplicationContext());
     }
 
     /* renamed from: Q */
     private boolean m9541Q(MotionEvent motionEvent) {
         int action = motionEvent.getAction();
         if (action != 0) {
-            return (action == 1 || action == 2) && this.f7666o0 - motionEvent.getX() < 0.0f;
+            return (action == 1 || action == 2) && this.f7674o0 - motionEvent.getX() < 0.0f;
         }
-        this.f7666o0 = motionEvent.getX();
+        this.f7674o0 = motionEvent.getX();
         return false;
     }
 
     /* renamed from: P */
     public void mo7949P(AbstractC2120a aVar) {
-        this.f7665n0 = aVar;
+        this.f7673n0 = aVar;
     }
 
     @Override // p006b.p067t.p068a.C1205b
     /* renamed from: c */
     public boolean mo6081c(int i) {
-        if (!this.f7664m0.mo8180c("allow_paging", true)) {
+        if (!this.f7672m0.mo8180c("allow_paging", true)) {
             return false;
         }
-        AbstractC2120a aVar = this.f7665n0;
+        AbstractC2120a aVar = this.f7673n0;
         if (aVar != null && !aVar.mo7950N()) {
             return false;
         }
-        if (i == 17 && this.f7664m0.mo8185h() && getCurrentItem() == 1) {
+        if (i == 17 && this.f7672m0.mo8185h() && getCurrentItem() == 1) {
             return false;
         }
         return super.mo6081c(i);
@@ -64,7 +64,7 @@ public class MyViewPager extends C1205b {
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
         AbstractC2120a aVar;
         try {
-            if ((!m9541Q(motionEvent) || !this.f7664m0.mo8185h() || getCurrentItem() != 1) && (aVar = this.f7665n0) != null && aVar.mo7950N()) {
+            if ((!m9541Q(motionEvent) || !this.f7672m0.mo8185h() || getCurrentItem() != 1) && (aVar = this.f7673n0) != null && aVar.mo7950N()) {
                 return super.onInterceptTouchEvent(motionEvent);
             }
         } catch (Exception unused) {
@@ -84,7 +84,7 @@ public class MyViewPager extends C1205b {
     @Override // p006b.p067t.p068a.C1205b
     public boolean onTouchEvent(MotionEvent motionEvent) {
         AbstractC2120a aVar;
-        if ((!m9541Q(motionEvent) || !this.f7664m0.mo8185h() || getCurrentItem() != 1) && (aVar = this.f7665n0) != null && aVar.mo7950N()) {
+        if ((!m9541Q(motionEvent) || !this.f7672m0.mo8185h() || getCurrentItem() != 1) && (aVar = this.f7673n0) != null && aVar.mo7950N()) {
             return super.onTouchEvent(motionEvent);
         }
         return false;

@@ -252,8 +252,8 @@ public class DrawerLayout extends ViewGroup {
             cVar.mo5470a0(DrawerLayout.class.getName());
             cVar.mo5485i0(false);
             cVar.mo5486j0(false);
-            cVar.mo5463S(C0979c.C0980a.f4701a);
-            cVar.mo5463S(C0979c.C0980a.f4702b);
+            cVar.mo5463S(C0979c.C0980a.f4705a);
+            cVar.mo5463S(C0979c.C0980a.f4706b);
         }
 
         @Override // p006b.p030g.p039k.C0962a

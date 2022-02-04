@@ -4,7 +4,7 @@ package com.google.android.gms.common.api;
 public class C2905b extends Exception {
 
     /* renamed from: b */
-    protected final Status f9759b;
+    protected final Status f9767b;
 
     /* JADX WARNING: Illegal instructions before constructor call */
     /* Code decompiled incorrectly, please refer to instructions dump. */
@@ -30,7 +30,7 @@ public class C2905b extends Exception {
             r3.append(r1)
             java.lang.String r0 = r3.toString()
             r4.<init>(r0)
-            r4.f9759b = r5
+            r4.f9767b = r5
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.gms.common.api.C2905b.<init>(com.google.android.gms.common.api.Status):void");

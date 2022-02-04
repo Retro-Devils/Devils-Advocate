@@ -15,17 +15,17 @@ import java.util.Queue;
 public final class C2082k {
 
     /* renamed from: a */
-    private static final char[] f7599a = "0123456789abcdef".toCharArray();
+    private static final char[] f7607a = "0123456789abcdef".toCharArray();
 
     /* renamed from: b */
-    private static final char[] f7600b = new char[64];
+    private static final char[] f7608b = new char[64];
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.bumptech.glide.t.k$a */
     public static /* synthetic */ class C2083a {
 
         /* renamed from: a */
-        static final /* synthetic */ int[] f7601a;
+        static final /* synthetic */ int[] f7609a;
 
         /* JADX WARNING: Can't wrap try/catch for region: R(12:0|1|2|3|4|5|6|7|8|9|10|12) */
         /* JADX WARNING: Code restructure failed: missing block: B:13:?, code lost:
@@ -41,31 +41,31 @@ public final class C2082k {
                 android.graphics.Bitmap$Config[] r0 = android.graphics.Bitmap.Config.values()
                 int r0 = r0.length
                 int[] r0 = new int[r0]
-                com.bumptech.glide.p144t.C2082k.C2083a.f7601a = r0
+                com.bumptech.glide.p144t.C2082k.C2083a.f7609a = r0
                 android.graphics.Bitmap$Config r1 = android.graphics.Bitmap.Config.ALPHA_8     // Catch:{ NoSuchFieldError -> 0x0012 }
                 int r1 = r1.ordinal()     // Catch:{ NoSuchFieldError -> 0x0012 }
                 r2 = 1
                 r0[r1] = r2     // Catch:{ NoSuchFieldError -> 0x0012 }
             L_0x0012:
-                int[] r0 = com.bumptech.glide.p144t.C2082k.C2083a.f7601a     // Catch:{ NoSuchFieldError -> 0x001d }
+                int[] r0 = com.bumptech.glide.p144t.C2082k.C2083a.f7609a     // Catch:{ NoSuchFieldError -> 0x001d }
                 android.graphics.Bitmap$Config r1 = android.graphics.Bitmap.Config.RGB_565     // Catch:{ NoSuchFieldError -> 0x001d }
                 int r1 = r1.ordinal()     // Catch:{ NoSuchFieldError -> 0x001d }
                 r2 = 2
                 r0[r1] = r2     // Catch:{ NoSuchFieldError -> 0x001d }
             L_0x001d:
-                int[] r0 = com.bumptech.glide.p144t.C2082k.C2083a.f7601a     // Catch:{ NoSuchFieldError -> 0x0028 }
+                int[] r0 = com.bumptech.glide.p144t.C2082k.C2083a.f7609a     // Catch:{ NoSuchFieldError -> 0x0028 }
                 android.graphics.Bitmap$Config r1 = android.graphics.Bitmap.Config.ARGB_4444     // Catch:{ NoSuchFieldError -> 0x0028 }
                 int r1 = r1.ordinal()     // Catch:{ NoSuchFieldError -> 0x0028 }
                 r2 = 3
                 r0[r1] = r2     // Catch:{ NoSuchFieldError -> 0x0028 }
             L_0x0028:
-                int[] r0 = com.bumptech.glide.p144t.C2082k.C2083a.f7601a     // Catch:{ NoSuchFieldError -> 0x0033 }
+                int[] r0 = com.bumptech.glide.p144t.C2082k.C2083a.f7609a     // Catch:{ NoSuchFieldError -> 0x0033 }
                 android.graphics.Bitmap$Config r1 = android.graphics.Bitmap.Config.RGBA_F16     // Catch:{ NoSuchFieldError -> 0x0033 }
                 int r1 = r1.ordinal()     // Catch:{ NoSuchFieldError -> 0x0033 }
                 r2 = 4
                 r0[r1] = r2     // Catch:{ NoSuchFieldError -> 0x0033 }
             L_0x0033:
-                int[] r0 = com.bumptech.glide.p144t.C2082k.C2083a.f7601a     // Catch:{ NoSuchFieldError -> 0x003e }
+                int[] r0 = com.bumptech.glide.p144t.C2082k.C2083a.f7609a     // Catch:{ NoSuchFieldError -> 0x003e }
                 android.graphics.Bitmap$Config r1 = android.graphics.Bitmap.Config.ARGB_8888     // Catch:{ NoSuchFieldError -> 0x003e }
                 int r1 = r1.ordinal()     // Catch:{ NoSuchFieldError -> 0x003e }
                 r2 = 5
@@ -99,7 +99,7 @@ public final class C2082k {
         for (int i = 0; i < bArr.length; i++) {
             int i2 = bArr[i] & 255;
             int i3 = i * 2;
-            char[] cArr2 = f7599a;
+            char[] cArr2 = f7607a;
             cArr[i3] = cArr2[i2 >>> 4];
             cArr[i3 + 1] = cArr2[i2 & 15];
         }
@@ -136,7 +136,7 @@ public final class C2082k {
         if (config == null) {
             config = Bitmap.Config.ARGB_8888;
         }
-        int i = C2083a.f7601a[config.ordinal()];
+        int i = C2083a.f7609a[config.ordinal()];
         if (i == 1) {
             return 1;
         }
@@ -205,7 +205,7 @@ public final class C2082k {
     /* renamed from: s */
     public static String m9452s(byte[] bArr) {
         String d;
-        char[] cArr = f7600b;
+        char[] cArr = f7608b;
         synchronized (cArr) {
             d = m9437d(bArr, cArr);
         }

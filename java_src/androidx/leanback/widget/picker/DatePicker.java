@@ -83,9 +83,9 @@ public class DatePicker extends C0585a {
         super(context, attributeSet, i);
         this.f2922C = new SimpleDateFormat("MM/dd/yyyy");
         m3105q();
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4927G);
-        String string = obtainStyledAttributes.getString(C1080l.f4928H);
-        String string2 = obtainStyledAttributes.getString(C1080l.f4929I);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4934G);
+        String string = obtainStyledAttributes.getString(C1080l.f4935H);
+        String string2 = obtainStyledAttributes.getString(C1080l.f4936I);
         this.f2927H.clear();
         if (TextUtils.isEmpty(string) || !m3103o(string, this.f2927H)) {
             this.f2927H.set(1900, 0, 1);
@@ -96,7 +96,7 @@ public class DatePicker extends C0585a {
             this.f2927H.set(2100, 0, 1);
         }
         this.f2925F.setTimeInMillis(this.f2927H.getTimeInMillis());
-        String string3 = obtainStyledAttributes.getString(C1080l.f4930J);
+        String string3 = obtainStyledAttributes.getString(C1080l.f4937J);
         setDatePickerFormat(TextUtils.isEmpty(string3) ? new String(android.text.format.DateFormat.getDateFormatOrder(context)) : string3);
     }
 

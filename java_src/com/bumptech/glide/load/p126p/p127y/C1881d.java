@@ -16,32 +16,32 @@ import java.io.InputStream;
 public class C1881d implements AbstractC1843n<Uri, InputStream> {
 
     /* renamed from: a */
-    private final Context f7131a;
+    private final Context f7139a;
 
     /* renamed from: com.bumptech.glide.load.p.y.d$a */
     public static class C1882a implements AbstractC1845o<Uri, InputStream> {
 
         /* renamed from: a */
-        private final Context f7132a;
+        private final Context f7140a;
 
         public C1882a(Context context) {
-            this.f7132a = context;
+            this.f7140a = context;
         }
 
         @Override // com.bumptech.glide.load.p126p.AbstractC1845o
         /* renamed from: b */
         public AbstractC1843n<Uri, InputStream> mo7398b(C1851r rVar) {
-            return new C1881d(this.f7132a);
+            return new C1881d(this.f7140a);
         }
     }
 
     public C1881d(Context context) {
-        this.f7131a = context.getApplicationContext();
+        this.f7139a = context.getApplicationContext();
     }
 
     /* renamed from: e */
     private boolean m8598e(C1647i iVar) {
-        Long l = (Long) iVar.mo7084c(C1899b0.f7167a);
+        Long l = (Long) iVar.mo7084c(C1899b0.f7175a);
         return l != null && l.longValue() == -1;
     }
 
@@ -50,7 +50,7 @@ public class C1881d implements AbstractC1843n<Uri, InputStream> {
         if (!C1677b.m7974d(i, i2) || !m8598e(iVar)) {
             return null;
         }
-        return new AbstractC1843n.C1844a<>(new C2067d(uri), C1678c.m7978g(this.f7131a, uri));
+        return new AbstractC1843n.C1844a<>(new C2067d(uri), C1678c.m7978g(this.f7139a, uri));
     }
 
     /* renamed from: d */

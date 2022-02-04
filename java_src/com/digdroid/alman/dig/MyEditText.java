@@ -10,7 +10,7 @@ import androidx.appcompat.widget.C0244k;
 final class MyEditText extends C0244k {
 
     /* renamed from: e */
-    static boolean f7660e;
+    static boolean f7668e = false;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.digdroid.alman.dig.MyEditText$a */
@@ -23,7 +23,7 @@ final class MyEditText extends C0244k {
                 if (!MyEditText.this.isEnabled()) {
                     MyEditText.this.setBackgroundColor(0);
                 } else if (!z) {
-                    MyEditText.f7660e = false;
+                    MyEditText.f7668e = false;
                     MyEditText.this.setBackgroundColor(C2553q3.m11127m());
                 } else {
                     MyEditText.this.setBackgroundColor(-12303292);
@@ -58,7 +58,7 @@ final class MyEditText extends C0244k {
     public static boolean m9538b() {
         boolean z;
         synchronized (MyEditText.class) {
-            z = f7660e;
+            z = f7668e;
         }
         return z;
     }
@@ -69,11 +69,11 @@ final class MyEditText extends C0244k {
                 int keyCode = keyEvent.getKeyCode();
                 if (keyCode != 4) {
                     if (keyCode == 96) {
-                        f7660e = true;
+                        f7668e = true;
                     } else if (keyCode != 97) {
                     }
                 }
-                f7660e = false;
+                f7668e = false;
             }
         }
         return super.dispatchKeyEvent(keyEvent);

@@ -8,7 +8,7 @@ import android.widget.ImageView;
 public class C1406f extends Property<ImageView, Matrix> {
 
     /* renamed from: a */
-    private final Matrix f6015a = new Matrix();
+    private final Matrix f6023a = new Matrix();
 
     public C1406f() {
         super(Matrix.class, "imageMatrixProperty");
@@ -16,8 +16,8 @@ public class C1406f extends Property<ImageView, Matrix> {
 
     /* renamed from: a */
     public Matrix get(ImageView imageView) {
-        this.f6015a.set(imageView.getImageMatrix());
-        return this.f6015a;
+        this.f6023a.set(imageView.getImageMatrix());
+        return this.f6023a;
     }
 
     /* renamed from: b */

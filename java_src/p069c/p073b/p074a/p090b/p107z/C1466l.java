@@ -10,34 +10,34 @@ import android.os.Build;
 public class C1466l {
 
     /* renamed from: a */
-    private final C1469m[] f6192a = new C1469m[4];
+    private final C1469m[] f6200a = new C1469m[4];
 
     /* renamed from: b */
-    private final Matrix[] f6193b = new Matrix[4];
+    private final Matrix[] f6201b = new Matrix[4];
 
     /* renamed from: c */
-    private final Matrix[] f6194c = new Matrix[4];
+    private final Matrix[] f6202c = new Matrix[4];
 
     /* renamed from: d */
-    private final PointF f6195d = new PointF();
+    private final PointF f6203d = new PointF();
 
     /* renamed from: e */
-    private final Path f6196e = new Path();
+    private final Path f6204e = new Path();
 
     /* renamed from: f */
-    private final Path f6197f = new Path();
+    private final Path f6205f = new Path();
 
     /* renamed from: g */
-    private final C1469m f6198g = new C1469m();
+    private final C1469m f6206g = new C1469m();
 
     /* renamed from: h */
-    private final float[] f6199h = new float[2];
+    private final float[] f6207h = new float[2];
 
     /* renamed from: i */
-    private final float[] f6200i = new float[2];
+    private final float[] f6208i = new float[2];
 
     /* renamed from: j */
-    private boolean f6201j = true;
+    private boolean f6209j = true;
 
     /* renamed from: c.b.a.b.z.l$a */
     public interface AbstractC1467a {
@@ -53,34 +53,34 @@ public class C1466l {
     public static final class C1468b {
 
         /* renamed from: a */
-        public final C1462k f6202a;
+        public final C1462k f6210a;
 
         /* renamed from: b */
-        public final Path f6203b;
+        public final Path f6211b;
 
         /* renamed from: c */
-        public final RectF f6204c;
+        public final RectF f6212c;
 
         /* renamed from: d */
-        public final AbstractC1467a f6205d;
+        public final AbstractC1467a f6213d;
 
         /* renamed from: e */
-        public final float f6206e;
+        public final float f6214e;
 
         C1468b(C1462k kVar, float f, RectF rectF, AbstractC1467a aVar, Path path) {
-            this.f6205d = aVar;
-            this.f6202a = kVar;
-            this.f6206e = f;
-            this.f6204c = rectF;
-            this.f6203b = path;
+            this.f6213d = aVar;
+            this.f6210a = kVar;
+            this.f6214e = f;
+            this.f6212c = rectF;
+            this.f6211b = path;
         }
     }
 
     public C1466l() {
         for (int i = 0; i < 4; i++) {
-            this.f6192a[i] = new C1469m();
-            this.f6193b[i] = new Matrix();
-            this.f6194c[i] = new Matrix();
+            this.f6200a[i] = new C1469m();
+            this.f6201b[i] = new Matrix();
+            this.f6202c[i] = new Matrix();
         }
     }
 
@@ -91,20 +91,20 @@ public class C1466l {
 
     /* renamed from: b */
     private void m7246b(C1468b bVar, int i) {
-        this.f6199h[0] = this.f6192a[i].mo6688k();
-        this.f6199h[1] = this.f6192a[i].mo6689l();
-        this.f6193b[i].mapPoints(this.f6199h);
-        Path path = bVar.f6203b;
-        float[] fArr = this.f6199h;
+        this.f6207h[0] = this.f6200a[i].mo6688k();
+        this.f6207h[1] = this.f6200a[i].mo6689l();
+        this.f6201b[i].mapPoints(this.f6207h);
+        Path path = bVar.f6211b;
+        float[] fArr = this.f6207h;
         if (i == 0) {
             path.moveTo(fArr[0], fArr[1]);
         } else {
             path.lineTo(fArr[0], fArr[1]);
         }
-        this.f6192a[i].mo6683d(this.f6193b[i], bVar.f6203b);
-        AbstractC1467a aVar = bVar.f6205d;
+        this.f6200a[i].mo6683d(this.f6201b[i], bVar.f6211b);
+        AbstractC1467a aVar = bVar.f6213d;
         if (aVar != null) {
-            aVar.mo6640b(this.f6192a[i], this.f6193b[i], i);
+            aVar.mo6640b(this.f6200a[i], this.f6201b[i], i);
         }
     }
 
@@ -114,42 +114,42 @@ public class C1466l {
         Matrix matrix;
         C1469m mVar;
         int i2 = (i + 1) % 4;
-        this.f6199h[0] = this.f6192a[i].mo6686i();
-        this.f6199h[1] = this.f6192a[i].mo6687j();
-        this.f6193b[i].mapPoints(this.f6199h);
-        this.f6200i[0] = this.f6192a[i2].mo6688k();
-        this.f6200i[1] = this.f6192a[i2].mo6689l();
-        this.f6193b[i2].mapPoints(this.f6200i);
-        float[] fArr = this.f6199h;
+        this.f6207h[0] = this.f6200a[i].mo6686i();
+        this.f6207h[1] = this.f6200a[i].mo6687j();
+        this.f6201b[i].mapPoints(this.f6207h);
+        this.f6208i[0] = this.f6200a[i2].mo6688k();
+        this.f6208i[1] = this.f6200a[i2].mo6689l();
+        this.f6201b[i2].mapPoints(this.f6208i);
+        float[] fArr = this.f6207h;
         float f = fArr[0];
-        float[] fArr2 = this.f6200i;
+        float[] fArr2 = this.f6208i;
         float max = Math.max(((float) Math.hypot((double) (f - fArr2[0]), (double) (fArr[1] - fArr2[1]))) - 0.001f, 0.0f);
-        float i3 = m7251i(bVar.f6204c, i);
-        this.f6198g.mo6691n(0.0f, 0.0f);
-        C1454f j = m7252j(i, bVar.f6202a);
-        j.mo6594b(max, i3, bVar.f6206e, this.f6198g);
+        float i3 = m7251i(bVar.f6212c, i);
+        this.f6206g.mo6691n(0.0f, 0.0f);
+        C1454f j = m7252j(i, bVar.f6210a);
+        j.mo6594b(max, i3, bVar.f6214e, this.f6206g);
         Path path2 = new Path();
-        this.f6198g.mo6683d(this.f6194c[i], path2);
-        if (!this.f6201j || Build.VERSION.SDK_INT < 19 || (!j.mo6593a() && !m7253k(path2, i) && !m7253k(path2, i2))) {
-            mVar = this.f6198g;
-            matrix = this.f6194c[i];
-            path = bVar.f6203b;
+        this.f6206g.mo6683d(this.f6202c[i], path2);
+        if (!this.f6209j || Build.VERSION.SDK_INT < 19 || (!j.mo6593a() && !m7253k(path2, i) && !m7253k(path2, i2))) {
+            mVar = this.f6206g;
+            matrix = this.f6202c[i];
+            path = bVar.f6211b;
         } else {
-            path2.op(path2, this.f6197f, Path.Op.DIFFERENCE);
-            this.f6199h[0] = this.f6198g.mo6688k();
-            this.f6199h[1] = this.f6198g.mo6689l();
-            this.f6194c[i].mapPoints(this.f6199h);
-            Path path3 = this.f6196e;
-            float[] fArr3 = this.f6199h;
+            path2.op(path2, this.f6205f, Path.Op.DIFFERENCE);
+            this.f6207h[0] = this.f6206g.mo6688k();
+            this.f6207h[1] = this.f6206g.mo6689l();
+            this.f6202c[i].mapPoints(this.f6207h);
+            Path path3 = this.f6204e;
+            float[] fArr3 = this.f6207h;
             path3.moveTo(fArr3[0], fArr3[1]);
-            mVar = this.f6198g;
-            matrix = this.f6194c[i];
-            path = this.f6196e;
+            mVar = this.f6206g;
+            matrix = this.f6202c[i];
+            path = this.f6204e;
         }
         mVar.mo6683d(matrix, path);
-        AbstractC1467a aVar = bVar.f6205d;
+        AbstractC1467a aVar = bVar.f6213d;
         if (aVar != null) {
-            aVar.mo6639a(this.f6198g, this.f6194c[i], i);
+            aVar.mo6639a(this.f6206g, this.f6202c[i], i);
         }
     }
 
@@ -184,17 +184,17 @@ public class C1466l {
     private float m7251i(RectF rectF, int i) {
         float centerX;
         float f;
-        float[] fArr = this.f6199h;
-        C1469m[] mVarArr = this.f6192a;
-        fArr[0] = mVarArr[i].f6209c;
-        fArr[1] = mVarArr[i].f6210d;
-        this.f6193b[i].mapPoints(fArr);
+        float[] fArr = this.f6207h;
+        C1469m[] mVarArr = this.f6200a;
+        fArr[0] = mVarArr[i].f6217c;
+        fArr[1] = mVarArr[i].f6218d;
+        this.f6201b[i].mapPoints(fArr);
         if (i == 1 || i == 3) {
             centerX = rectF.centerX();
-            f = this.f6199h[0];
+            f = this.f6207h[0];
         } else {
             centerX = rectF.centerY();
-            f = this.f6199h[1];
+            f = this.f6207h[1];
         }
         return Math.abs(centerX - f);
     }
@@ -207,7 +207,7 @@ public class C1466l {
     /* renamed from: k */
     private boolean m7253k(Path path, int i) {
         Path path2 = new Path();
-        this.f6192a[i].mo6683d(this.f6193b[i], path2);
+        this.f6200a[i].mo6683d(this.f6201b[i], path2);
         RectF rectF = new RectF();
         path.computeBounds(rectF, true);
         path2.computeBounds(rectF, true);
@@ -221,27 +221,27 @@ public class C1466l {
 
     /* renamed from: l */
     private void m7254l(C1468b bVar, int i) {
-        m7250h(i, bVar.f6202a).mo6592b(this.f6192a[i], 90.0f, bVar.f6206e, bVar.f6204c, m7249g(i, bVar.f6202a));
+        m7250h(i, bVar.f6210a).mo6592b(this.f6200a[i], 90.0f, bVar.f6214e, bVar.f6212c, m7249g(i, bVar.f6210a));
         float a = m7245a(i);
-        this.f6193b[i].reset();
-        m7248f(i, bVar.f6204c, this.f6195d);
-        Matrix matrix = this.f6193b[i];
-        PointF pointF = this.f6195d;
+        this.f6201b[i].reset();
+        m7248f(i, bVar.f6212c, this.f6203d);
+        Matrix matrix = this.f6201b[i];
+        PointF pointF = this.f6203d;
         matrix.setTranslate(pointF.x, pointF.y);
-        this.f6193b[i].preRotate(a);
+        this.f6201b[i].preRotate(a);
     }
 
     /* renamed from: m */
     private void m7255m(int i) {
-        this.f6199h[0] = this.f6192a[i].mo6686i();
-        this.f6199h[1] = this.f6192a[i].mo6687j();
-        this.f6193b[i].mapPoints(this.f6199h);
+        this.f6207h[0] = this.f6200a[i].mo6686i();
+        this.f6207h[1] = this.f6200a[i].mo6687j();
+        this.f6201b[i].mapPoints(this.f6207h);
         float a = m7245a(i);
-        this.f6194c[i].reset();
-        Matrix matrix = this.f6194c[i];
-        float[] fArr = this.f6199h;
+        this.f6202c[i].reset();
+        Matrix matrix = this.f6202c[i];
+        float[] fArr = this.f6207h;
         matrix.setTranslate(fArr[0], fArr[1]);
-        this.f6194c[i].preRotate(a);
+        this.f6202c[i].preRotate(a);
     }
 
     /* renamed from: d */
@@ -252,9 +252,9 @@ public class C1466l {
     /* renamed from: e */
     public void mo6681e(C1462k kVar, float f, RectF rectF, AbstractC1467a aVar, Path path) {
         path.rewind();
-        this.f6196e.rewind();
-        this.f6197f.rewind();
-        this.f6197f.addRect(rectF, Path.Direction.CW);
+        this.f6204e.rewind();
+        this.f6205f.rewind();
+        this.f6205f.addRect(rectF, Path.Direction.CW);
         C1468b bVar = new C1468b(kVar, f, rectF, aVar, path);
         for (int i = 0; i < 4; i++) {
             m7254l(bVar, i);
@@ -265,9 +265,9 @@ public class C1466l {
             m7247c(bVar, i2);
         }
         path.close();
-        this.f6196e.close();
-        if (Build.VERSION.SDK_INT >= 19 && !this.f6196e.isEmpty()) {
-            path.op(this.f6196e, Path.Op.UNION);
+        this.f6204e.close();
+        if (Build.VERSION.SDK_INT >= 19 && !this.f6204e.isEmpty()) {
+            path.op(this.f6204e, Path.Op.UNION);
         }
     }
 }

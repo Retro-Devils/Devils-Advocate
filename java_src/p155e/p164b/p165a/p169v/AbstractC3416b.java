@@ -4,25 +4,25 @@ package p155e.p164b.p165a.p169v;
 public abstract class AbstractC3416b extends AbstractC3415a {
 
     /* renamed from: a */
-    int f11511a = 0;
+    int f11520a = 0;
 
     /* renamed from: b */
-    int f11512b = 0;
+    int f11521b = 0;
 
     /* renamed from: b */
     public int mo11418b(short[] sArr, int i) {
         mo11422f();
         short s = sArr[i];
-        int i2 = this.f11511a;
+        int i2 = this.f11520a;
         int i3 = (i2 >>> 11) * s;
-        int i4 = this.f11512b;
+        int i4 = this.f11521b;
         if ((i4 ^ Integer.MIN_VALUE) < (Integer.MIN_VALUE ^ i3)) {
-            this.f11511a = i3;
+            this.f11520a = i3;
             sArr[i] = (short) (s + ((2048 - s) >>> 5));
             return 0;
         }
-        this.f11511a = i2 - i3;
-        this.f11512b = i4 - i3;
+        this.f11520a = i2 - i3;
+        this.f11521b = i4 - i3;
         sArr[i] = (short) (s - (s >>> 5));
         return 1;
     }
@@ -41,11 +41,11 @@ public abstract class AbstractC3416b extends AbstractC3415a {
         int i2 = 0;
         do {
             mo11422f();
-            int i3 = this.f11511a >>> 1;
-            this.f11511a = i3;
-            int i4 = this.f11512b;
+            int i3 = this.f11520a >>> 1;
+            this.f11520a = i3;
+            int i4 = this.f11521b;
             int i5 = (i4 - i3) >>> 31;
-            this.f11512b = i4 - (i3 & (i5 - 1));
+            this.f11521b = i4 - (i3 & (i5 - 1));
             i2 = (i2 << 1) | (1 - i5);
             i--;
         } while (i != 0);

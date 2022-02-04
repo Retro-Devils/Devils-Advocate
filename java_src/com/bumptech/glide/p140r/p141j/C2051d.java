@@ -12,6 +12,6 @@ public class C2051d extends AbstractC2052e<Drawable> {
     /* access modifiers changed from: protected */
     /* renamed from: t */
     public void mo7811r(Drawable drawable) {
-        ((ImageView) this.f7557d).setImageDrawable(drawable);
+        ((ImageView) this.f7565d).setImageDrawable(drawable);
     }
 }

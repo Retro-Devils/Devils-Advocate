@@ -13,32 +13,32 @@ import p069c.p073b.p074a.p090b.p101t.AbstractC1431a;
 public abstract class ExpandableBehavior extends CoordinatorLayout.AbstractC0337c<View> {
 
     /* renamed from: a */
-    private int f10990a = 0;
+    private int f10998a = 0;
 
     /* renamed from: com.google.android.material.transformation.ExpandableBehavior$a */
     class ViewTreeObserver$OnPreDrawListenerC3289a implements ViewTreeObserver.OnPreDrawListener {
 
         /* renamed from: b */
-        final /* synthetic */ View f10991b;
+        final /* synthetic */ View f10999b;
 
         /* renamed from: c */
-        final /* synthetic */ int f10992c;
+        final /* synthetic */ int f11000c;
 
         /* renamed from: d */
-        final /* synthetic */ AbstractC1431a f10993d;
+        final /* synthetic */ AbstractC1431a f11001d;
 
         ViewTreeObserver$OnPreDrawListenerC3289a(View view, int i, AbstractC1431a aVar) {
-            this.f10991b = view;
-            this.f10992c = i;
-            this.f10993d = aVar;
+            this.f10999b = view;
+            this.f11000c = i;
+            this.f11001d = aVar;
         }
 
         public boolean onPreDraw() {
-            this.f10991b.getViewTreeObserver().removeOnPreDrawListener(this);
-            if (ExpandableBehavior.this.f10990a == this.f10992c) {
+            this.f10999b.getViewTreeObserver().removeOnPreDrawListener(this);
+            if (ExpandableBehavior.this.f10998a == this.f11000c) {
                 ExpandableBehavior expandableBehavior = ExpandableBehavior.this;
-                AbstractC1431a aVar = this.f10993d;
-                expandableBehavior.mo11155H((View) aVar, this.f10991b, aVar.mo6552a(), false);
+                AbstractC1431a aVar = this.f11001d;
+                expandableBehavior.mo11155H((View) aVar, this.f10999b, aVar.mo6552a(), false);
             }
             return false;
         }
@@ -54,9 +54,9 @@ public abstract class ExpandableBehavior extends CoordinatorLayout.AbstractC0337
     /* renamed from: F */
     private boolean m13769F(boolean z) {
         if (!z) {
-            return this.f10990a == 1;
+            return this.f10998a == 1;
         }
-        int i = this.f10990a;
+        int i = this.f10998a;
         return i == 0 || i == 2;
     }
 
@@ -85,7 +85,7 @@ public abstract class ExpandableBehavior extends CoordinatorLayout.AbstractC0337
         if (!m13769F(aVar.mo6552a())) {
             return false;
         }
-        this.f10990a = aVar.mo6552a() ? 1 : 2;
+        this.f10998a = aVar.mo6552a() ? 1 : 2;
         return mo11155H((View) aVar, view, aVar.mo6552a(), true);
     }
 
@@ -97,7 +97,7 @@ public abstract class ExpandableBehavior extends CoordinatorLayout.AbstractC0337
             return false;
         }
         int i2 = G.mo6552a() ? 1 : 2;
-        this.f10990a = i2;
+        this.f10998a = i2;
         view.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver$OnPreDrawListenerC3289a(view, i2, G));
         return false;
     }

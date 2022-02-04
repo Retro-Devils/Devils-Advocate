@@ -42,34 +42,34 @@ import p069c.p073b.p074a.p090b.p107z.C1462k;
 public class NavigationView extends C3192k {
 
     /* renamed from: g */
-    private static final int[] f10723g = {16842912};
+    private static final int[] f10731g = {16842912};
 
     /* renamed from: h */
-    private static final int[] f10724h = {-16842910};
+    private static final int[] f10732h = {-16842910};
 
     /* renamed from: i */
-    private static final int f10725i = C1399j.Widget_Design_NavigationView;
+    private static final int f10733i = C1399j.Widget_Design_NavigationView;
 
     /* renamed from: j */
-    private final C3175g f10726j;
+    private final C3175g f10734j;
 
     /* renamed from: k */
-    private final C3176h f10727k;
+    private final C3176h f10735k;
 
     /* renamed from: l */
-    AbstractC3211c f10728l;
+    AbstractC3211c f10736l;
 
     /* renamed from: m */
-    private final int f10729m;
+    private final int f10737m;
 
     /* renamed from: n */
-    private final int[] f10730n;
+    private final int[] f10738n;
 
     /* renamed from: o */
-    private MenuInflater f10731o;
+    private MenuInflater f10739o;
 
     /* renamed from: p */
-    private ViewTreeObserver.OnGlobalLayoutListener f10732p;
+    private ViewTreeObserver.OnGlobalLayoutListener f10740p;
 
     /* renamed from: com.google.android.material.navigation.NavigationView$a */
     class C3209a implements C0130g.AbstractC0131a {
@@ -79,7 +79,7 @@ public class NavigationView extends C3192k {
         @Override // androidx.appcompat.view.menu.C0130g.AbstractC0131a
         /* renamed from: a */
         public boolean mo320a(C0130g gVar, MenuItem menuItem) {
-            AbstractC3211c cVar = NavigationView.this.f10728l;
+            AbstractC3211c cVar = NavigationView.this.f10736l;
             return cVar != null && cVar.mo8932f(menuItem);
         }
 
@@ -97,10 +97,10 @@ public class NavigationView extends C3192k {
 
         public void onGlobalLayout() {
             NavigationView navigationView = NavigationView.this;
-            navigationView.getLocationOnScreen(navigationView.f10730n);
+            navigationView.getLocationOnScreen(navigationView.f10738n);
             boolean z = true;
-            boolean z2 = NavigationView.this.f10730n[1] == 0;
-            NavigationView.this.f10727k.mo10751y(z2);
+            boolean z2 = NavigationView.this.f10738n[1] == 0;
+            NavigationView.this.f10735k.mo10751y(z2);
             NavigationView.this.setDrawTopInsetForeground(z2);
             Activity a = C3170b.m13323a(NavigationView.this.getContext());
             if (a != null && Build.VERSION.SDK_INT >= 21) {
@@ -126,7 +126,7 @@ public class NavigationView extends C3192k {
         public static final Parcelable.Creator<C3212d> CREATOR = new C3213a();
 
         /* renamed from: d */
-        public Bundle f10735d;
+        public Bundle f10743d;
 
         /* renamed from: com.google.android.material.navigation.NavigationView$d$a */
         static class C3213a implements Parcelable.ClassLoaderCreator<C3212d> {
@@ -151,7 +151,7 @@ public class NavigationView extends C3192k {
 
         public C3212d(Parcel parcel, ClassLoader classLoader) {
             super(parcel, classLoader);
-            this.f10735d = parcel.readBundle(classLoader);
+            this.f10743d = parcel.readBundle(classLoader);
         }
 
         public C3212d(Parcelable parcelable) {
@@ -161,7 +161,7 @@ public class NavigationView extends C3192k {
         @Override // p006b.p043i.p044a.AbstractC1041a
         public void writeToParcel(Parcel parcel, int i) {
             super.writeToParcel(parcel, i);
-            parcel.writeBundle(this.f10735d);
+            parcel.writeBundle(this.f10743d);
         }
     }
 
@@ -190,89 +190,89 @@ public class NavigationView extends C3192k {
         }
         int i2 = typedValue.data;
         int defaultColor = c.getDefaultColor();
-        int[] iArr = f10724h;
-        return new ColorStateList(new int[][]{iArr, f10723g, FrameLayout.EMPTY_STATE_SET}, new int[]{c.getColorForState(iArr, defaultColor), i2, defaultColor});
+        int[] iArr = f10732h;
+        return new ColorStateList(new int[][]{iArr, f10731g, FrameLayout.EMPTY_STATE_SET}, new int[]{c.getColorForState(iArr, defaultColor), i2, defaultColor});
     }
 
     /* renamed from: e */
     private final Drawable m13444e(C0296w0 w0Var) {
-        C1455g gVar = new C1455g(C1462k.m7190b(getContext(), w0Var.mo1817n(C1400k.f5745L2, 0), w0Var.mo1817n(C1400k.f5751M2, 0)).mo6667m());
-        gVar.mo6608V(C1437c.m7078b(getContext(), w0Var, C1400k.f5757N2));
-        return new InsetDrawable((Drawable) gVar, w0Var.mo1809f(C1400k.f5775Q2, 0), w0Var.mo1809f(C1400k.f5781R2, 0), w0Var.mo1809f(C1400k.f5769P2, 0), w0Var.mo1809f(C1400k.f5763O2, 0));
+        C1455g gVar = new C1455g(C1462k.m7190b(getContext(), w0Var.mo1817n(C1400k.f5753L2, 0), w0Var.mo1817n(C1400k.f5759M2, 0)).mo6667m());
+        gVar.mo6608V(C1437c.m7078b(getContext(), w0Var, C1400k.f5765N2));
+        return new InsetDrawable((Drawable) gVar, w0Var.mo1809f(C1400k.f5783Q2, 0), w0Var.mo1809f(C1400k.f5789R2, 0), w0Var.mo1809f(C1400k.f5777P2, 0), w0Var.mo1809f(C1400k.f5771O2, 0));
     }
 
     /* renamed from: f */
     private boolean m13445f(C0296w0 w0Var) {
-        return w0Var.mo1822s(C1400k.f5745L2) || w0Var.mo1822s(C1400k.f5751M2);
+        return w0Var.mo1822s(C1400k.f5753L2) || w0Var.mo1822s(C1400k.f5759M2);
     }
 
     private MenuInflater getMenuInflater() {
-        if (this.f10731o == null) {
-            this.f10731o = new C0792g(getContext());
+        if (this.f10739o == null) {
+            this.f10739o = new C0792g(getContext());
         }
-        return this.f10731o;
+        return this.f10739o;
     }
 
     /* renamed from: i */
     private void m13446i() {
-        this.f10732p = new ViewTreeObserver$OnGlobalLayoutListenerC3210b();
-        getViewTreeObserver().addOnGlobalLayoutListener(this.f10732p);
+        this.f10740p = new ViewTreeObserver$OnGlobalLayoutListenerC3210b();
+        getViewTreeObserver().addOnGlobalLayoutListener(this.f10740p);
     }
 
     /* access modifiers changed from: protected */
     @Override // com.google.android.material.internal.C3192k
     /* renamed from: a */
     public void mo10775a(C0964a0 a0Var) {
-        this.f10727k.mo10740l(a0Var);
+        this.f10735k.mo10740l(a0Var);
     }
 
     /* renamed from: g */
     public View mo10804g(int i) {
-        return this.f10727k.mo10750x(i);
+        return this.f10735k.mo10750x(i);
     }
 
     public MenuItem getCheckedItem() {
-        return this.f10727k.mo10741o();
+        return this.f10735k.mo10741o();
     }
 
     public int getHeaderCount() {
-        return this.f10727k.mo10742p();
+        return this.f10735k.mo10742p();
     }
 
     public Drawable getItemBackground() {
-        return this.f10727k.mo10743q();
+        return this.f10735k.mo10743q();
     }
 
     public int getItemHorizontalPadding() {
-        return this.f10727k.mo10744r();
+        return this.f10735k.mo10744r();
     }
 
     public int getItemIconPadding() {
-        return this.f10727k.mo10745s();
+        return this.f10735k.mo10745s();
     }
 
     public ColorStateList getItemIconTintList() {
-        return this.f10727k.mo10748v();
+        return this.f10735k.mo10748v();
     }
 
     public int getItemMaxLines() {
-        return this.f10727k.mo10746t();
+        return this.f10735k.mo10746t();
     }
 
     public ColorStateList getItemTextColor() {
-        return this.f10727k.mo10747u();
+        return this.f10735k.mo10747u();
     }
 
     public Menu getMenu() {
-        return this.f10726j;
+        return this.f10734j;
     }
 
     /* renamed from: h */
     public void mo10814h(int i) {
-        this.f10727k.mo10738K(true);
-        getMenuInflater().inflate(i, this.f10726j);
-        this.f10727k.mo10738K(false);
-        this.f10727k.mo553n(false);
+        this.f10735k.mo10738K(true);
+        getMenuInflater().inflate(i, this.f10734j);
+        this.f10735k.mo10738K(false);
+        this.f10735k.mo553n(false);
     }
 
     /* access modifiers changed from: protected */
@@ -287,9 +287,9 @@ public class NavigationView extends C3192k {
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
         if (Build.VERSION.SDK_INT < 16) {
-            getViewTreeObserver().removeGlobalOnLayoutListener(this.f10732p);
+            getViewTreeObserver().removeGlobalOnLayoutListener(this.f10740p);
         } else {
-            getViewTreeObserver().removeOnGlobalLayoutListener(this.f10732p);
+            getViewTreeObserver().removeOnGlobalLayoutListener(this.f10740p);
         }
     }
 
@@ -299,11 +299,11 @@ public class NavigationView extends C3192k {
         int mode = View.MeasureSpec.getMode(i);
         if (mode != Integer.MIN_VALUE) {
             if (mode == 0) {
-                i3 = this.f10729m;
+                i3 = this.f10737m;
             }
             super.onMeasure(i, i2);
         }
-        i3 = Math.min(View.MeasureSpec.getSize(i), this.f10729m);
+        i3 = Math.min(View.MeasureSpec.getSize(i), this.f10737m);
         i = View.MeasureSpec.makeMeasureSpec(i3, 1073741824);
         super.onMeasure(i, i2);
     }
@@ -316,29 +316,29 @@ public class NavigationView extends C3192k {
         }
         C3212d dVar = (C3212d) parcelable;
         super.onRestoreInstanceState(dVar.mo5608b());
-        this.f10726j.mo627S(dVar.f10735d);
+        this.f10734j.mo627S(dVar.f10743d);
     }
 
     /* access modifiers changed from: protected */
     public Parcelable onSaveInstanceState() {
         C3212d dVar = new C3212d(super.onSaveInstanceState());
         Bundle bundle = new Bundle();
-        dVar.f10735d = bundle;
-        this.f10726j.mo629U(bundle);
+        dVar.f10743d = bundle;
+        this.f10734j.mo629U(bundle);
         return dVar;
     }
 
     public void setCheckedItem(int i) {
-        MenuItem findItem = this.f10726j.findItem(i);
+        MenuItem findItem = this.f10734j.findItem(i);
         if (findItem != null) {
-            this.f10727k.mo10752z((C0134i) findItem);
+            this.f10735k.mo10752z((C0134i) findItem);
         }
     }
 
     public void setCheckedItem(MenuItem menuItem) {
-        MenuItem findItem = this.f10726j.findItem(menuItem.getItemId());
+        MenuItem findItem = this.f10734j.findItem(menuItem.getItemId());
         if (findItem != null) {
-            this.f10727k.mo10752z((C0134i) findItem);
+            this.f10735k.mo10752z((C0134i) findItem);
             return;
         }
         throw new IllegalArgumentException("Called setCheckedItem(MenuItem) with an item that is not in the current menu.");
@@ -352,7 +352,7 @@ public class NavigationView extends C3192k {
     }
 
     public void setItemBackground(Drawable drawable) {
-        this.f10727k.mo10729B(drawable);
+        this.f10735k.mo10729B(drawable);
     }
 
     public void setItemBackgroundResource(int i) {
@@ -360,48 +360,48 @@ public class NavigationView extends C3192k {
     }
 
     public void setItemHorizontalPadding(int i) {
-        this.f10727k.mo10730C(i);
+        this.f10735k.mo10730C(i);
     }
 
     public void setItemHorizontalPaddingResource(int i) {
-        this.f10727k.mo10730C(getResources().getDimensionPixelSize(i));
+        this.f10735k.mo10730C(getResources().getDimensionPixelSize(i));
     }
 
     public void setItemIconPadding(int i) {
-        this.f10727k.mo10731D(i);
+        this.f10735k.mo10731D(i);
     }
 
     public void setItemIconPaddingResource(int i) {
-        this.f10727k.mo10731D(getResources().getDimensionPixelSize(i));
+        this.f10735k.mo10731D(getResources().getDimensionPixelSize(i));
     }
 
     public void setItemIconSize(int i) {
-        this.f10727k.mo10732E(i);
+        this.f10735k.mo10732E(i);
     }
 
     public void setItemIconTintList(ColorStateList colorStateList) {
-        this.f10727k.mo10733F(colorStateList);
+        this.f10735k.mo10733F(colorStateList);
     }
 
     public void setItemMaxLines(int i) {
-        this.f10727k.mo10734G(i);
+        this.f10735k.mo10734G(i);
     }
 
     public void setItemTextAppearance(int i) {
-        this.f10727k.mo10735H(i);
+        this.f10735k.mo10735H(i);
     }
 
     public void setItemTextColor(ColorStateList colorStateList) {
-        this.f10727k.mo10736I(colorStateList);
+        this.f10735k.mo10736I(colorStateList);
     }
 
     public void setNavigationItemSelectedListener(AbstractC3211c cVar) {
-        this.f10728l = cVar;
+        this.f10736l = cVar;
     }
 
     public void setOverScrollMode(int i) {
         super.setOverScrollMode(i);
-        C3176h hVar = this.f10727k;
+        C3176h hVar = this.f10735k;
         if (hVar != null) {
             hVar.mo10737J(i);
         }

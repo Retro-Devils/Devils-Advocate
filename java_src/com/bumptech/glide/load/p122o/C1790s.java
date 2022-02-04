@@ -9,17 +9,17 @@ import java.util.Map;
 public final class C1790s {
 
     /* renamed from: a */
-    private final Map<AbstractC1643g, C1776l<?>> f6990a = new HashMap();
+    private final Map<AbstractC1643g, C1776l<?>> f6998a = new HashMap();
 
     /* renamed from: b */
-    private final Map<AbstractC1643g, C1776l<?>> f6991b = new HashMap();
+    private final Map<AbstractC1643g, C1776l<?>> f6999b = new HashMap();
 
     C1790s() {
     }
 
     /* renamed from: b */
     private Map<AbstractC1643g, C1776l<?>> m8358b(boolean z) {
-        return z ? this.f6991b : this.f6990a;
+        return z ? this.f6999b : this.f6998a;
     }
 
     /* access modifiers changed from: package-private */

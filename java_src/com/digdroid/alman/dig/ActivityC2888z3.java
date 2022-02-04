@@ -12,16 +12,16 @@ import com.digdroid.alman.dig.C2860x3;
 public class ActivityC2888z3 extends ActivityC2719s2 implements C2860x3.AbstractC2862b {
 
     /* renamed from: H */
-    private C2860x3 f9717H = null;
+    private C2860x3 f9725H = null;
 
     /* renamed from: I */
-    private String f9718I = "unzip_task_fragment";
+    private String f9726I = "unzip_task_fragment";
 
     /* renamed from: J */
-    private ProgressDialog f9719J = null;
+    private ProgressDialog f9727J = null;
 
     /* renamed from: K */
-    private ProgressDialog f9720K = null;
+    private ProgressDialog f9728K = null;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.digdroid.alman.dig.z3$a */
@@ -30,8 +30,8 @@ public class ActivityC2888z3 extends ActivityC2719s2 implements C2860x3.Abstract
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
-            if (ActivityC2888z3.this.f9717H != null) {
-                ActivityC2888z3.this.f9717H.mo9454q2(true);
+            if (ActivityC2888z3.this.f9725H != null) {
+                ActivityC2888z3.this.f9725H.mo9454q2(true);
             }
         }
     }
@@ -43,7 +43,7 @@ public class ActivityC2888z3 extends ActivityC2719s2 implements C2860x3.Abstract
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
-            ActivityC2888z3.this.f9267w.f7952g = true;
+            ActivityC2888z3.this.f9275w.f7960g = true;
         }
     }
 
@@ -68,36 +68,36 @@ public class ActivityC2888z3 extends ActivityC2719s2 implements C2860x3.Abstract
     /* renamed from: e1 */
     private void m11972e1(String str) {
         ProgressDialog progressDialog = new ProgressDialog(this);
-        this.f9719J = progressDialog;
+        this.f9727J = progressDialog;
         progressDialog.setCancelable(false);
-        this.f9719J.setProgressStyle(1);
-        this.f9719J.setIndeterminate(false);
-        this.f9719J.setMax(100);
-        ProgressDialog progressDialog2 = this.f9719J;
+        this.f9727J.setProgressStyle(1);
+        this.f9727J.setIndeterminate(false);
+        this.f9727J.setMax(100);
+        ProgressDialog progressDialog2 = this.f9727J;
         progressDialog2.setTitle(getString(R.string.unzipping) + " " + str);
-        this.f9719J.setButton(-2, "Cancel", new DialogInterface$OnClickListenerC2889a());
-        this.f9719J.show();
+        this.f9727J.setButton(-2, "Cancel", new DialogInterface$OnClickListenerC2889a());
+        this.f9727J.show();
     }
 
     @Override // com.digdroid.alman.dig.C2860x3.AbstractC2862b
     /* renamed from: O */
     public void mo9455O(boolean z) {
-        ProgressDialog progressDialog = this.f9719J;
+        ProgressDialog progressDialog = this.f9727J;
         if (progressDialog != null) {
             progressDialog.dismiss();
-            this.f9719J = null;
+            this.f9727J = null;
         }
-        C2860x3 x3Var = this.f9717H;
+        C2860x3 x3Var = this.f9725H;
         if (x3Var != null) {
             Bundle h0 = x3Var.mo2568h0();
-            mo2668C0().mo2729a().mo2637h(this.f9717H).mo2634e();
-            this.f9717H = null;
+            mo2668C0().mo2729a().mo2637h(this.f9725H).mo2634e();
+            this.f9725H = null;
             if (z) {
                 String string = h0.getString("launch");
                 if (string == null) {
-                    this.f9270z.mo8063y(this, h0.getLong("game"), h0.getString("location"));
+                    this.f9278z.mo8063y(this, h0.getLong("game"), h0.getString("location"));
                 } else {
-                    this.f9270z.mo8057s(this, h0.getLong("game"), string);
+                    this.f9278z.mo8057s(this, h0.getLong("game"), string);
                 }
             }
         }
@@ -110,13 +110,13 @@ public class ActivityC2888z3 extends ActivityC2719s2 implements C2860x3.Abstract
     @Override // com.digdroid.alman.dig.C2860x3.AbstractC2862b
     /* renamed from: Q */
     public void mo9456Q(int i, String str, int i2, int i3) {
-        if (this.f9719J == null) {
+        if (this.f9727J == null) {
             m11972e1(str);
         }
-        ProgressDialog progressDialog = this.f9719J;
+        ProgressDialog progressDialog = this.f9727J;
         progressDialog.setTitle(getString(i) + " " + str);
-        this.f9719J.setMax(i3);
-        this.f9719J.setProgress(i2);
+        this.f9727J.setMax(i3);
+        this.f9727J.setProgress(i2);
     }
 
     @Override // com.digdroid.alman.dig.C2860x3.AbstractC2862b
@@ -133,35 +133,35 @@ public class ActivityC2888z3 extends ActivityC2719s2 implements C2860x3.Abstract
     /* access modifiers changed from: package-private */
     /* renamed from: d1 */
     public boolean mo9520d1() {
-        return this.f9717H != null;
+        return this.f9725H != null;
     }
 
     /* renamed from: f1 */
     public void mo9521f1(Intent intent) {
         String stringExtra = intent.getStringExtra("label");
         if (stringExtra == null) {
-            ProgressDialog progressDialog = this.f9719J;
+            ProgressDialog progressDialog = this.f9727J;
             if (progressDialog != null) {
                 progressDialog.dismiss();
-                this.f9719J = null;
+                this.f9727J = null;
                 return;
             }
             return;
         }
-        if (this.f9719J == null) {
+        if (this.f9727J == null) {
             ProgressDialog progressDialog2 = new ProgressDialog(this);
-            this.f9719J = progressDialog2;
+            this.f9727J = progressDialog2;
             progressDialog2.setCancelable(false);
-            this.f9719J.setProgressStyle(1);
-            this.f9719J.setIndeterminate(false);
-            this.f9719J.setMax(100);
-            this.f9719J.setTitle(stringExtra);
-            this.f9719J.setButton(-2, "Cancel", new DialogInterface$OnClickListenerC2890b());
-            this.f9719J.show();
-            this.f9267w.f7952g = false;
+            this.f9727J.setProgressStyle(1);
+            this.f9727J.setIndeterminate(false);
+            this.f9727J.setMax(100);
+            this.f9727J.setTitle(stringExtra);
+            this.f9727J.setButton(-2, "Cancel", new DialogInterface$OnClickListenerC2890b());
+            this.f9727J.show();
+            this.f9275w.f7960g = false;
         }
-        this.f9719J.setTitle(stringExtra);
-        this.f9719J.setProgress(intent.getIntExtra("progress", 0));
+        this.f9727J.setTitle(stringExtra);
+        this.f9727J.setProgress(intent.getIntExtra("progress", 0));
     }
 
     /* renamed from: g1 */
@@ -174,19 +174,19 @@ public class ActivityC2888z3 extends ActivityC2719s2 implements C2860x3.Abstract
         bundle.putString("title", str4);
         bundle.putString("launch", str5);
         C2860x3 x3Var = new C2860x3();
-        this.f9717H = x3Var;
+        this.f9725H = x3Var;
         x3Var.mo2554c2(bundle);
-        mo2668C0().mo2729a().mo2869c(this.f9717H, this.f9718I).mo2634e();
+        mo2668C0().mo2729a().mo2869c(this.f9725H, this.f9726I).mo2634e();
     }
 
     @Override // com.digdroid.alman.dig.C2860x3.AbstractC2862b
     /* renamed from: j0 */
     public void mo9458j0() {
-        this.f9719J = null;
+        this.f9727J = null;
         C2185a4.m9673c(this);
-        if (this.f9717H != null) {
-            mo2668C0().mo2729a().mo2637h(this.f9717H).mo2634e();
-            this.f9717H = null;
+        if (this.f9725H != null) {
+            mo2668C0().mo2729a().mo2637h(this.f9725H).mo2634e();
+            this.f9725H = null;
         }
     }
 
@@ -195,14 +195,14 @@ public class ActivityC2888z3 extends ActivityC2719s2 implements C2860x3.Abstract
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         if (bundle != null && bundle.getBoolean("unzipping")) {
-            this.f9717H = (C2860x3) mo2668C0().mo2732d(this.f9718I);
+            this.f9725H = (C2860x3) mo2668C0().mo2732d(this.f9726I);
         }
     }
 
     /* access modifiers changed from: protected */
     @Override // androidx.fragment.app.ActivityC0447d, androidx.activity.ComponentActivity, androidx.core.app.ActivityC0361e, com.digdroid.alman.dig.ActivityC2725t, androidx.appcompat.app.ActivityC0070c
     public void onSaveInstanceState(Bundle bundle) {
-        bundle.putBoolean("unzipping", this.f9717H != null);
+        bundle.putBoolean("unzipping", this.f9725H != null);
         super.onSaveInstanceState(bundle);
     }
 }

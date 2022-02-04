@@ -10,30 +10,30 @@ import java.util.TreeMap;
 public class C1236k {
 
     /* renamed from: a */
-    public final int f5435a;
+    public final int f5442a;
 
     /* renamed from: b */
-    public final byte[] f5436b;
+    public final byte[] f5443b;
 
     /* renamed from: c */
-    public final Map<String, String> f5437c;
+    public final Map<String, String> f5444c;
 
     /* renamed from: d */
-    public final List<C1232g> f5438d;
+    public final List<C1232g> f5445d;
 
     /* renamed from: e */
-    public final boolean f5439e;
+    public final boolean f5446e;
 
     /* renamed from: f */
-    public final long f5440f;
+    public final long f5447f;
 
     private C1236k(int i, byte[] bArr, Map<String, String> map, List<C1232g> list, boolean z, long j) {
-        this.f5435a = i;
-        this.f5436b = bArr;
-        this.f5437c = map;
-        this.f5438d = list == null ? null : Collections.unmodifiableList(list);
-        this.f5439e = z;
-        this.f5440f = j;
+        this.f5442a = i;
+        this.f5443b = bArr;
+        this.f5444c = map;
+        this.f5445d = list == null ? null : Collections.unmodifiableList(list);
+        this.f5446e = z;
+        this.f5447f = j;
     }
 
     @Deprecated

@@ -7,64 +7,64 @@ import java.util.ArrayList;
 public class C1579f {
 
     /* renamed from: a */
-    private String f6445a;
+    private String f6453a;
 
     /* renamed from: b */
-    private String f6446b;
+    private String f6454b;
 
     /* renamed from: c */
-    private String f6447c;
+    private String f6455c;
 
     /* renamed from: d */
-    private String f6448d;
+    private String f6456d;
 
     /* renamed from: e */
-    private String f6449e;
+    private String f6457e;
 
     /* renamed from: f */
-    private int f6450f;
+    private int f6458f;
 
     /* renamed from: g */
-    private ArrayList<SkuDetails> f6451g;
+    private ArrayList<SkuDetails> f6459g;
 
     /* renamed from: h */
-    private boolean f6452h;
+    private boolean f6460h;
 
     /* renamed from: com.android.billingclient.api.f$a */
     public static class C1580a {
 
         /* renamed from: a */
-        private String f6453a;
+        private String f6461a;
 
         /* renamed from: b */
-        private String f6454b;
+        private String f6462b;
 
         /* renamed from: c */
-        private String f6455c;
+        private String f6463c;
 
         /* renamed from: d */
-        private String f6456d;
+        private String f6464d;
 
         /* renamed from: e */
-        private int f6457e;
+        private int f6465e;
 
         /* renamed from: f */
-        private ArrayList<SkuDetails> f6458f;
+        private ArrayList<SkuDetails> f6466f;
 
         /* renamed from: g */
-        private boolean f6459g;
+        private boolean f6467g;
 
         private C1580a() {
-            this.f6457e = 0;
+            this.f6465e = 0;
         }
 
         /* renamed from: a */
         public C1579f mo6939a() {
-            ArrayList<SkuDetails> arrayList = this.f6458f;
+            ArrayList<SkuDetails> arrayList = this.f6466f;
             if (arrayList == null || arrayList.isEmpty()) {
                 throw new IllegalArgumentException("SkuDetails must be provided.");
             }
-            ArrayList<SkuDetails> arrayList2 = this.f6458f;
+            ArrayList<SkuDetails> arrayList2 = this.f6466f;
             int size = arrayList2.size();
             int i = 0;
             int i2 = 0;
@@ -75,10 +75,10 @@ public class C1579f {
                     throw new IllegalArgumentException("SKU cannot be null.");
                 }
             }
-            if (this.f6458f.size() > 1) {
-                SkuDetails skuDetails2 = this.f6458f.get(0);
+            if (this.f6466f.size() > 1) {
+                SkuDetails skuDetails2 = this.f6466f.get(0);
                 String c = skuDetails2.mo6897c();
-                ArrayList<SkuDetails> arrayList3 = this.f6458f;
+                ArrayList<SkuDetails> arrayList3 = this.f6466f;
                 int size2 = arrayList3.size();
                 int i3 = 0;
                 while (i3 < size2) {
@@ -90,7 +90,7 @@ public class C1579f {
                 }
                 String d = skuDetails2.mo6898d();
                 if (TextUtils.isEmpty(d)) {
-                    ArrayList<SkuDetails> arrayList4 = this.f6458f;
+                    ArrayList<SkuDetails> arrayList4 = this.f6466f;
                     int size3 = arrayList4.size();
                     while (i < size3) {
                         SkuDetails skuDetails4 = arrayList4.get(i);
@@ -100,7 +100,7 @@ public class C1579f {
                         }
                     }
                 } else {
-                    ArrayList<SkuDetails> arrayList5 = this.f6458f;
+                    ArrayList<SkuDetails> arrayList5 = this.f6466f;
                     int size4 = arrayList5.size();
                     while (i < size4) {
                         SkuDetails skuDetails5 = arrayList5.get(i);
@@ -112,14 +112,14 @@ public class C1579f {
                 }
             }
             C1579f fVar = new C1579f();
-            fVar.f6445a = null;
-            fVar.f6446b = this.f6453a;
-            fVar.f6449e = this.f6456d;
-            fVar.f6447c = this.f6454b;
-            fVar.f6448d = this.f6455c;
-            fVar.f6450f = this.f6457e;
-            fVar.f6451g = this.f6458f;
-            fVar.f6452h = this.f6459g;
+            fVar.f6453a = null;
+            fVar.f6454b = this.f6461a;
+            fVar.f6457e = this.f6464d;
+            fVar.f6455c = this.f6462b;
+            fVar.f6456d = this.f6463c;
+            fVar.f6458f = this.f6465e;
+            fVar.f6459g = this.f6466f;
+            fVar.f6460h = this.f6467g;
             return fVar;
         }
 
@@ -127,13 +127,13 @@ public class C1579f {
         public C1580a mo6940b(SkuDetails skuDetails) {
             ArrayList<SkuDetails> arrayList = new ArrayList<>();
             arrayList.add(skuDetails);
-            this.f6458f = arrayList;
+            this.f6466f = arrayList;
             return this;
         }
     }
 
     private C1579f() {
-        this.f6450f = 0;
+        this.f6458f = 0;
     }
 
     /* renamed from: e */
@@ -143,41 +143,41 @@ public class C1579f {
 
     /* renamed from: a */
     public String mo6930a() {
-        return this.f6447c;
+        return this.f6455c;
     }
 
     /* renamed from: b */
     public String mo6931b() {
-        return this.f6448d;
+        return this.f6456d;
     }
 
     /* renamed from: c */
     public int mo6932c() {
-        return this.f6450f;
+        return this.f6458f;
     }
 
     /* renamed from: d */
     public boolean mo6933d() {
-        return this.f6452h;
+        return this.f6460h;
     }
 
     /* renamed from: h */
     public final ArrayList<SkuDetails> mo6934h() {
         ArrayList<SkuDetails> arrayList = new ArrayList<>();
-        arrayList.addAll(this.f6451g);
+        arrayList.addAll(this.f6459g);
         return arrayList;
     }
 
     /* renamed from: k */
     public final String mo6935k() {
-        return this.f6446b;
+        return this.f6454b;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: n */
     public final boolean mo6936n() {
         boolean z;
-        ArrayList<SkuDetails> arrayList = this.f6451g;
+        ArrayList<SkuDetails> arrayList = this.f6459g;
         int size = arrayList.size();
         int i = 0;
         while (true) {
@@ -192,17 +192,17 @@ public class C1579f {
                 break;
             }
         }
-        return (!this.f6452h && this.f6446b == null && this.f6445a == null && this.f6449e == null && this.f6450f == 0 && !z) ? false : true;
+        return (!this.f6460h && this.f6454b == null && this.f6453a == null && this.f6457e == null && this.f6458f == 0 && !z) ? false : true;
     }
 
     /* renamed from: o */
     public final String mo6937o() {
-        return this.f6449e;
+        return this.f6457e;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: q */
     public final String mo6938q() {
-        return this.f6445a;
+        return this.f6453a;
     }
 }

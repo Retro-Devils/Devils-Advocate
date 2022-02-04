@@ -13,7 +13,7 @@ import java.util.concurrent.ConcurrentMap;
 public final class C2065b {
 
     /* renamed from: a */
-    private static final ConcurrentMap<String, AbstractC1643g> f7572a = new ConcurrentHashMap();
+    private static final ConcurrentMap<String, AbstractC1643g> f7580a = new ConcurrentHashMap();
 
     /* renamed from: a */
     private static PackageInfo m9391a(Context context) {
@@ -33,7 +33,7 @@ public final class C2065b {
     /* renamed from: c */
     public static AbstractC1643g m9393c(Context context) {
         String packageName = context.getPackageName();
-        ConcurrentMap<String, AbstractC1643g> concurrentMap = f7572a;
+        ConcurrentMap<String, AbstractC1643g> concurrentMap = f7580a;
         AbstractC1643g gVar = concurrentMap.get(packageName);
         if (gVar != null) {
             return gVar;

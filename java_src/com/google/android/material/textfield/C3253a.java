@@ -19,22 +19,22 @@ import p069c.p073b.p074a.p090b.p092l.C1401a;
 class C3253a extends AbstractC3277e {
 
     /* renamed from: d */
-    private final TextWatcher f10902d = new C3254a();
+    private final TextWatcher f10910d = new C3254a();
 
     /* renamed from: e */
-    private final View.OnFocusChangeListener f10903e = new View$OnFocusChangeListenerC3255b();
+    private final View.OnFocusChangeListener f10911e = new View$OnFocusChangeListenerC3255b();
 
     /* renamed from: f */
-    private final TextInputLayout.AbstractC3249f f10904f = new C3256c();
+    private final TextInputLayout.AbstractC3249f f10912f = new C3256c();
 
     /* renamed from: g */
-    private final TextInputLayout.AbstractC3250g f10905g = new C3257d();
+    private final TextInputLayout.AbstractC3250g f10913g = new C3257d();
 
     /* renamed from: h */
-    private AnimatorSet f10906h;
+    private AnimatorSet f10914h;
 
     /* renamed from: i */
-    private ValueAnimator f10907i;
+    private ValueAnimator f10915i;
 
     /* renamed from: com.google.android.material.textfield.a$a */
     class C3254a implements TextWatcher {
@@ -42,7 +42,7 @@ class C3253a extends AbstractC3277e {
         }
 
         public void afterTextChanged(Editable editable) {
-            if (C3253a.this.f10947a.getSuffixText() == null) {
+            if (C3253a.this.f10955a.getSuffixText() == null) {
                 C3253a.this.m13644i(C3253a.m13647l(editable));
             }
         }
@@ -81,9 +81,9 @@ class C3253a extends AbstractC3277e {
             EditText editText = textInputLayout.getEditText();
             textInputLayout.setEndIconVisible(editText.hasFocus() && C3253a.m13647l(editText.getText()));
             textInputLayout.setEndIconCheckable(false);
-            editText.setOnFocusChangeListener(C3253a.this.f10903e);
-            editText.removeTextChangedListener(C3253a.this.f10902d);
-            editText.addTextChangedListener(C3253a.this.f10902d);
+            editText.setOnFocusChangeListener(C3253a.this.f10911e);
+            editText.removeTextChangedListener(C3253a.this.f10910d);
+            editText.addTextChangedListener(C3253a.this.f10910d);
         }
     }
 
@@ -97,8 +97,8 @@ class C3253a extends AbstractC3277e {
         public void mo11081a(TextInputLayout textInputLayout, int i) {
             EditText editText = textInputLayout.getEditText();
             if (editText != null && i == 2) {
-                editText.removeTextChangedListener(C3253a.this.f10902d);
-                if (editText.getOnFocusChangeListener() == C3253a.this.f10903e) {
+                editText.removeTextChangedListener(C3253a.this.f10910d);
+                if (editText.getOnFocusChangeListener() == C3253a.this.f10911e) {
                     editText.setOnFocusChangeListener(null);
                 }
             }
@@ -111,7 +111,7 @@ class C3253a extends AbstractC3277e {
         }
 
         public void onClick(View view) {
-            Editable text = C3253a.this.f10947a.getEditText().getText();
+            Editable text = C3253a.this.f10955a.getEditText().getText();
             if (text != null) {
                 text.clear();
             }
@@ -125,7 +125,7 @@ class C3253a extends AbstractC3277e {
         }
 
         public void onAnimationStart(Animator animator) {
-            C3253a.this.f10947a.setEndIconVisible(true);
+            C3253a.this.f10955a.setEndIconVisible(true);
         }
     }
 
@@ -136,7 +136,7 @@ class C3253a extends AbstractC3277e {
         }
 
         public void onAnimationEnd(Animator animator) {
-            C3253a.this.f10947a.setEndIconVisible(false);
+            C3253a.this.f10955a.setEndIconVisible(false);
         }
     }
 
@@ -147,7 +147,7 @@ class C3253a extends AbstractC3277e {
         }
 
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
-            C3253a.this.f10949c.setAlpha(((Float) valueAnimator.getAnimatedValue()).floatValue());
+            C3253a.this.f10957c.setAlpha(((Float) valueAnimator.getAnimatedValue()).floatValue());
         }
     }
 
@@ -159,8 +159,8 @@ class C3253a extends AbstractC3277e {
 
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
             float floatValue = ((Float) valueAnimator.getAnimatedValue()).floatValue();
-            C3253a.this.f10949c.setScaleX(floatValue);
-            C3253a.this.f10949c.setScaleY(floatValue);
+            C3253a.this.f10957c.setScaleX(floatValue);
+            C3253a.this.f10957c.setScaleY(floatValue);
         }
     }
 
@@ -172,27 +172,27 @@ class C3253a extends AbstractC3277e {
     /* access modifiers changed from: public */
     /* renamed from: i */
     private void m13644i(boolean z) {
-        boolean z2 = this.f10947a.mo10926J() == z;
+        boolean z2 = this.f10955a.mo10926J() == z;
         if (z) {
-            this.f10907i.cancel();
-            this.f10906h.start();
+            this.f10915i.cancel();
+            this.f10914h.start();
             if (z2) {
-                this.f10906h.end();
+                this.f10914h.end();
                 return;
             }
             return;
         }
-        this.f10906h.cancel();
-        this.f10907i.start();
+        this.f10914h.cancel();
+        this.f10915i.start();
         if (z2) {
-            this.f10907i.end();
+            this.f10915i.end();
         }
     }
 
     /* renamed from: j */
     private ValueAnimator m13645j(float... fArr) {
         ValueAnimator ofFloat = ValueAnimator.ofFloat(fArr);
-        ofFloat.setInterpolator(C1401a.f6006a);
+        ofFloat.setInterpolator(C1401a.f6014a);
         ofFloat.setDuration(100L);
         ofFloat.addUpdateListener(new C3261h());
         return ofFloat;
@@ -201,7 +201,7 @@ class C3253a extends AbstractC3277e {
     /* renamed from: k */
     private ValueAnimator m13646k() {
         ValueAnimator ofFloat = ValueAnimator.ofFloat(0.8f, 1.0f);
-        ofFloat.setInterpolator(C1401a.f6009d);
+        ofFloat.setInterpolator(C1401a.f6017d);
         ofFloat.setDuration(150L);
         ofFloat.addUpdateListener(new C3262i());
         return ofFloat;
@@ -218,11 +218,11 @@ class C3253a extends AbstractC3277e {
         ValueAnimator k = m13646k();
         ValueAnimator j = m13645j(0.0f, 1.0f);
         AnimatorSet animatorSet = new AnimatorSet();
-        this.f10906h = animatorSet;
+        this.f10914h = animatorSet;
         animatorSet.playTogether(k, j);
-        this.f10906h.addListener(new C3259f());
+        this.f10914h.addListener(new C3259f());
         ValueAnimator j2 = m13645j(1.0f, 0.0f);
-        this.f10907i = j2;
+        this.f10915i = j2;
         j2.addListener(new C3260g());
     }
 
@@ -230,12 +230,12 @@ class C3253a extends AbstractC3277e {
     @Override // com.google.android.material.textfield.AbstractC3277e
     /* renamed from: a */
     public void mo11089a() {
-        this.f10947a.setEndIconDrawable(C0764a.m4517d(this.f10948b, C1394e.mtrl_ic_cancel));
-        TextInputLayout textInputLayout = this.f10947a;
+        this.f10955a.setEndIconDrawable(C0764a.m4517d(this.f10956b, C1394e.mtrl_ic_cancel));
+        TextInputLayout textInputLayout = this.f10955a;
         textInputLayout.setEndIconContentDescription(textInputLayout.getResources().getText(C1398i.clear_text_end_icon_content_description));
-        this.f10947a.setEndIconOnClickListener(new View$OnClickListenerC3258e());
-        this.f10947a.mo10937e(this.f10904f);
-        this.f10947a.mo10938f(this.f10905g);
+        this.f10955a.setEndIconOnClickListener(new View$OnClickListenerC3258e());
+        this.f10955a.mo10937e(this.f10912f);
+        this.f10955a.mo10938f(this.f10913g);
         m13648m();
     }
 
@@ -243,7 +243,7 @@ class C3253a extends AbstractC3277e {
     @Override // com.google.android.material.textfield.AbstractC3277e
     /* renamed from: c */
     public void mo11090c(boolean z) {
-        if (this.f10947a.getSuffixText() != null) {
+        if (this.f10955a.getSuffixText() != null) {
             m13644i(z);
         }
     }

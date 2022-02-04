@@ -11,25 +11,25 @@ import java.util.concurrent.BlockingQueue;
 public class C1234i extends Thread {
 
     /* renamed from: b */
-    private final BlockingQueue<AbstractC1239n<?>> f5430b;
+    private final BlockingQueue<AbstractC1239n<?>> f5437b;
 
     /* renamed from: c */
-    private final AbstractC1233h f5431c;
+    private final AbstractC1233h f5438c;
 
     /* renamed from: d */
-    private final AbstractC1222b f5432d;
+    private final AbstractC1222b f5439d;
 
     /* renamed from: e */
-    private final AbstractC1248q f5433e;
+    private final AbstractC1248q f5440e;
 
     /* renamed from: f */
-    private volatile boolean f5434f = false;
+    private volatile boolean f5441f = false;
 
     public C1234i(BlockingQueue<AbstractC1239n<?>> blockingQueue, AbstractC1233h hVar, AbstractC1222b bVar, AbstractC1248q qVar) {
-        this.f5430b = blockingQueue;
-        this.f5431c = hVar;
-        this.f5432d = bVar;
-        this.f5433e = qVar;
+        this.f5437b = blockingQueue;
+        this.f5438c = hVar;
+        this.f5439d = bVar;
+        this.f5440e = qVar;
     }
 
     @TargetApi(14)
@@ -42,12 +42,12 @@ public class C1234i extends Thread {
 
     /* renamed from: b */
     private void m6599b(AbstractC1239n<?> nVar, C1252u uVar) {
-        this.f5433e.mo6164a(nVar, nVar.mo6182E(uVar));
+        this.f5440e.mo6164a(nVar, nVar.mo6182E(uVar));
     }
 
     /* renamed from: c */
     private void m6600c() {
-        mo6175d(this.f5430b.take());
+        mo6175d(this.f5437b.take());
     }
 
     /* access modifiers changed from: package-private */
@@ -62,17 +62,17 @@ public class C1234i extends Thread {
                 return;
             }
             m6598a(nVar);
-            C1236k a = this.f5431c.mo6174a(nVar);
+            C1236k a = this.f5438c.mo6174a(nVar);
             nVar.mo6192b("network-http-complete");
-            if (!a.f5439e || !nVar.mo6216z()) {
+            if (!a.f5446e || !nVar.mo6216z()) {
                 C1245p<?> F = nVar.mo6183F(a);
                 nVar.mo6192b("network-parse-complete");
-                if (nVar.mo6190M() && F.f5475b != null) {
-                    this.f5432d.mo6150b(nVar.mo6201l(), F.f5475b);
+                if (nVar.mo6190M() && F.f5482b != null) {
+                    this.f5439d.mo6150b(nVar.mo6201l(), F.f5482b);
                     nVar.mo6192b("network-cache-written");
                 }
                 nVar.mo6179B();
-                this.f5433e.mo6165b(nVar, F);
+                this.f5440e.mo6165b(nVar, F);
                 nVar.mo6181D(F);
                 return;
             }
@@ -86,14 +86,14 @@ public class C1234i extends Thread {
             C1253v.m6668d(e2, "Unhandled exception %s", e2.toString());
             C1252u uVar = new C1252u(e2);
             uVar.mo6227a(SystemClock.elapsedRealtime() - elapsedRealtime);
-            this.f5433e.mo6164a(nVar, uVar);
+            this.f5440e.mo6164a(nVar, uVar);
             nVar.mo6180C();
         }
     }
 
     /* renamed from: e */
     public void mo6176e() {
-        this.f5434f = true;
+        this.f5441f = true;
         interrupt();
     }
 
@@ -103,7 +103,7 @@ public class C1234i extends Thread {
             try {
                 m6600c();
             } catch (InterruptedException unused) {
-                if (this.f5434f) {
+                if (this.f5441f) {
                     Thread.currentThread().interrupt();
                     return;
                 }

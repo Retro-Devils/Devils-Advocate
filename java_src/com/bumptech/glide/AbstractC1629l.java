@@ -8,7 +8,7 @@ import com.bumptech.glide.p140r.p142k.C2059a;
 public abstract class AbstractC1629l<CHILD extends AbstractC1629l<CHILD, TranscodeType>, TranscodeType> implements Cloneable {
 
     /* renamed from: b */
-    private AbstractC2063c<? super TranscodeType> f6623b = C2059a.m9384b();
+    private AbstractC2063c<? super TranscodeType> f6631b = C2059a.m9384b();
 
     /* renamed from: a */
     public final CHILD clone() {
@@ -22,6 +22,6 @@ public abstract class AbstractC1629l<CHILD extends AbstractC1629l<CHILD, Transco
     /* access modifiers changed from: package-private */
     /* renamed from: b */
     public final AbstractC2063c<? super TranscodeType> mo7066b() {
-        return this.f6623b;
+        return this.f6631b;
     }
 }

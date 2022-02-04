@@ -9,7 +9,7 @@ import java.io.File;
 public class C2882y2 extends C2492n {
 
     /* renamed from: f */
-    private static int f9699f;
+    private static int f9707f;
 
     public C2882y2(Context context) {
         super(context);
@@ -23,7 +23,7 @@ public class C2882y2 extends C2492n {
                 if ((w.equals("com.retroarch") && !i.contains("com.retroarch/assets")) || ((w.equals("com.retroarch.aarch64") && !i.contains("com.retroarch.aarch64/assets")) || (w.equals("com.retroarch.ra32") && !i.contains("com.retroarch.ra32/assets")))) {
                     try {
                         file.delete();
-                        this.f8640b = "";
+                        this.f8648b = "";
                     } catch (Exception unused) {
                     }
                 } else {
@@ -57,7 +57,7 @@ public class C2882y2 extends C2492n {
 
     /* renamed from: w */
     public static String m11934w(Context context) {
-        int i = f9699f;
+        int i = f9707f;
         if (i == 0) {
             return "com.retroarch";
         }
@@ -78,6 +78,6 @@ public class C2882y2 extends C2492n {
 
     /* renamed from: y */
     public static void m11936y(int i) {
-        f9699f = i;
+        f9707f = i;
     }
 }

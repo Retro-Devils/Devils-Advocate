@@ -8,11 +8,11 @@ import p069c.p073b.p074a.p108c.p109a.p110f.AbstractC1523p;
 public abstract class AbstractC1493a {
 
     /* renamed from: a */
-    private static final AbstractC1493a f6286a = m7370d();
+    private static final AbstractC1493a f6294a = m7370d();
 
     /* renamed from: a */
     public static AbstractC1493a m7369a() {
-        return f6286a;
+        return f6294a;
     }
 
     /* renamed from: d */

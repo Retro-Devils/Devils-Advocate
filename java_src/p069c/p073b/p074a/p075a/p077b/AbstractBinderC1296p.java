@@ -15,11 +15,11 @@ import p069c.p073b.p074a.p075a.p080c.BinderC1304b;
 public abstract class AbstractBinderC1296p extends AbstractBinderC3017m0 {
 
     /* renamed from: a */
-    private int f5565a;
+    private int f5573a;
 
     protected AbstractBinderC1296p(byte[] bArr) {
         C3027r.m12369a(bArr.length == 25);
-        this.f5565a = Arrays.hashCode(bArr);
+        this.f5573a = Arrays.hashCode(bArr);
     }
 
     /* renamed from: m */
@@ -54,7 +54,7 @@ public abstract class AbstractBinderC1296p extends AbstractBinderC3017m0 {
     }
 
     public int hashCode() {
-        return this.f5565a;
+        return this.f5573a;
     }
 
     /* access modifiers changed from: package-private */

@@ -22,96 +22,96 @@ import p006b.p030g.p038j.AbstractC0958f;
 public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.AbstractC2090f {
 
     /* renamed from: b */
-    private static final C1779c f6933b = new C1779c();
+    private static final C1779c f6941b = new C1779c();
 
     /* renamed from: c */
-    final C1781e f6934c;
+    final C1781e f6942c;
 
     /* renamed from: d */
-    private final AbstractC2093c f6935d;
+    private final AbstractC2093c f6943d;
 
     /* renamed from: e */
-    private final C1785p.AbstractC1786a f6936e;
+    private final C1785p.AbstractC1786a f6944e;
 
     /* renamed from: f */
-    private final AbstractC0958f<C1776l<?>> f6937f;
+    private final AbstractC0958f<C1776l<?>> f6945f;
 
     /* renamed from: g */
-    private final C1779c f6938g;
+    private final C1779c f6946g;
 
     /* renamed from: h */
-    private final AbstractC1782m f6939h;
+    private final AbstractC1782m f6947h;
 
     /* renamed from: i */
-    private final ExecutorServiceC1737a f6940i;
+    private final ExecutorServiceC1737a f6948i;
 
     /* renamed from: j */
-    private final ExecutorServiceC1737a f6941j;
+    private final ExecutorServiceC1737a f6949j;
 
     /* renamed from: k */
-    private final ExecutorServiceC1737a f6942k;
+    private final ExecutorServiceC1737a f6950k;
 
     /* renamed from: l */
-    private final ExecutorServiceC1737a f6943l;
+    private final ExecutorServiceC1737a f6951l;
 
     /* renamed from: m */
-    private final AtomicInteger f6944m;
+    private final AtomicInteger f6952m;
 
     /* renamed from: n */
-    private AbstractC1643g f6945n;
+    private AbstractC1643g f6953n;
 
     /* renamed from: o */
-    private boolean f6946o;
+    private boolean f6954o;
 
     /* renamed from: p */
-    private boolean f6947p;
+    private boolean f6955p;
 
     /* renamed from: q */
-    private boolean f6948q;
+    private boolean f6956q;
 
     /* renamed from: r */
-    private boolean f6949r;
+    private boolean f6957r;
 
     /* renamed from: s */
-    private AbstractC1794v<?> f6950s;
+    private AbstractC1794v<?> f6958s;
 
     /* renamed from: t */
-    EnumC1630a f6951t;
+    EnumC1630a f6959t;
 
     /* renamed from: u */
-    private boolean f6952u;
+    private boolean f6960u;
 
     /* renamed from: v */
-    C1787q f6953v;
+    C1787q f6961v;
 
     /* renamed from: w */
-    private boolean f6954w;
+    private boolean f6962w;
 
     /* renamed from: x */
-    C1785p<?> f6955x;
+    C1785p<?> f6963x;
 
     /* renamed from: y */
-    private RunnableC1752h<R> f6956y;
+    private RunnableC1752h<R> f6964y;
 
     /* renamed from: z */
-    private volatile boolean f6957z;
+    private volatile boolean f6965z;
 
     /* access modifiers changed from: private */
     /* renamed from: com.bumptech.glide.load.o.l$a */
     public class RunnableC1777a implements Runnable {
 
         /* renamed from: b */
-        private final AbstractC2044g f6958b;
+        private final AbstractC2044g f6966b;
 
         RunnableC1777a(AbstractC2044g gVar) {
-            this.f6958b = gVar;
+            this.f6966b = gVar;
         }
 
         public void run() {
-            synchronized (this.f6958b.mo7806e()) {
+            synchronized (this.f6966b.mo7806e()) {
                 synchronized (C1776l.this) {
-                    if (C1776l.this.f6934c.mo7347b(this.f6958b)) {
-                        C1776l.this.mo7330c(this.f6958b);
+                    if (C1776l.this.f6942c.mo7347b(this.f6966b)) {
+                        C1776l.this.mo7330c(this.f6966b);
                     }
                     C1776l.this.mo7333i();
                 }
@@ -124,19 +124,19 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
     public class RunnableC1778b implements Runnable {
 
         /* renamed from: b */
-        private final AbstractC2044g f6960b;
+        private final AbstractC2044g f6968b;
 
         RunnableC1778b(AbstractC2044g gVar) {
-            this.f6960b = gVar;
+            this.f6968b = gVar;
         }
 
         public void run() {
-            synchronized (this.f6960b.mo7806e()) {
+            synchronized (this.f6968b.mo7806e()) {
                 synchronized (C1776l.this) {
-                    if (C1776l.this.f6934c.mo7347b(this.f6960b)) {
-                        C1776l.this.f6955x.mo7356a();
-                        C1776l.this.mo7331g(this.f6960b);
-                        C1776l.this.mo7339r(this.f6960b);
+                    if (C1776l.this.f6942c.mo7347b(this.f6968b)) {
+                        C1776l.this.f6963x.mo7356a();
+                        C1776l.this.mo7331g(this.f6968b);
+                        C1776l.this.mo7339r(this.f6968b);
                     }
                     C1776l.this.mo7333i();
                 }
@@ -161,25 +161,25 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
     public static final class C1780d {
 
         /* renamed from: a */
-        final AbstractC2044g f6962a;
+        final AbstractC2044g f6970a;
 
         /* renamed from: b */
-        final Executor f6963b;
+        final Executor f6971b;
 
         C1780d(AbstractC2044g gVar, Executor executor) {
-            this.f6962a = gVar;
-            this.f6963b = executor;
+            this.f6970a = gVar;
+            this.f6971b = executor;
         }
 
         public boolean equals(Object obj) {
             if (obj instanceof C1780d) {
-                return this.f6962a.equals(((C1780d) obj).f6962a);
+                return this.f6970a.equals(((C1780d) obj).f6970a);
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f6962a.hashCode();
+            return this.f6970a.hashCode();
         }
     }
 
@@ -188,14 +188,14 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
     public static final class C1781e implements Iterable<C1780d> {
 
         /* renamed from: b */
-        private final List<C1780d> f6964b;
+        private final List<C1780d> f6972b;
 
         C1781e() {
             this(new ArrayList(2));
         }
 
         C1781e(List<C1780d> list) {
-            this.f6964b = list;
+            this.f6972b = list;
         }
 
         /* renamed from: d */
@@ -206,91 +206,91 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
         /* access modifiers changed from: package-private */
         /* renamed from: a */
         public void mo7346a(AbstractC2044g gVar, Executor executor) {
-            this.f6964b.add(new C1780d(gVar, executor));
+            this.f6972b.add(new C1780d(gVar, executor));
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: b */
         public boolean mo7347b(AbstractC2044g gVar) {
-            return this.f6964b.contains(m8327d(gVar));
+            return this.f6972b.contains(m8327d(gVar));
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: c */
         public C1781e mo7348c() {
-            return new C1781e(new ArrayList(this.f6964b));
+            return new C1781e(new ArrayList(this.f6972b));
         }
 
         /* access modifiers changed from: package-private */
         public void clear() {
-            this.f6964b.clear();
+            this.f6972b.clear();
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: e */
         public void mo7350e(AbstractC2044g gVar) {
-            this.f6964b.remove(m8327d(gVar));
+            this.f6972b.remove(m8327d(gVar));
         }
 
         /* access modifiers changed from: package-private */
         public boolean isEmpty() {
-            return this.f6964b.isEmpty();
+            return this.f6972b.isEmpty();
         }
 
         @Override // java.lang.Iterable
         public Iterator<C1780d> iterator() {
-            return this.f6964b.iterator();
+            return this.f6972b.iterator();
         }
 
         /* access modifiers changed from: package-private */
         public int size() {
-            return this.f6964b.size();
+            return this.f6972b.size();
         }
     }
 
     C1776l(ExecutorServiceC1737a aVar, ExecutorServiceC1737a aVar2, ExecutorServiceC1737a aVar3, ExecutorServiceC1737a aVar4, AbstractC1782m mVar, C1785p.AbstractC1786a aVar5, AbstractC0958f<C1776l<?>> fVar) {
-        this(aVar, aVar2, aVar3, aVar4, mVar, aVar5, fVar, f6933b);
+        this(aVar, aVar2, aVar3, aVar4, mVar, aVar5, fVar, f6941b);
     }
 
     C1776l(ExecutorServiceC1737a aVar, ExecutorServiceC1737a aVar2, ExecutorServiceC1737a aVar3, ExecutorServiceC1737a aVar4, AbstractC1782m mVar, C1785p.AbstractC1786a aVar5, AbstractC0958f<C1776l<?>> fVar, C1779c cVar) {
-        this.f6934c = new C1781e();
-        this.f6935d = AbstractC2093c.m9473a();
-        this.f6944m = new AtomicInteger();
-        this.f6940i = aVar;
-        this.f6941j = aVar2;
-        this.f6942k = aVar3;
-        this.f6943l = aVar4;
-        this.f6939h = mVar;
-        this.f6936e = aVar5;
-        this.f6937f = fVar;
-        this.f6938g = cVar;
+        this.f6942c = new C1781e();
+        this.f6943d = AbstractC2093c.m9473a();
+        this.f6952m = new AtomicInteger();
+        this.f6948i = aVar;
+        this.f6949j = aVar2;
+        this.f6950k = aVar3;
+        this.f6951l = aVar4;
+        this.f6947h = mVar;
+        this.f6944e = aVar5;
+        this.f6945f = fVar;
+        this.f6946g = cVar;
     }
 
     /* renamed from: j */
     private ExecutorServiceC1737a m8307j() {
-        return this.f6947p ? this.f6942k : this.f6948q ? this.f6943l : this.f6941j;
+        return this.f6955p ? this.f6950k : this.f6956q ? this.f6951l : this.f6949j;
     }
 
     /* renamed from: m */
     private boolean m8308m() {
-        return this.f6954w || this.f6952u || this.f6957z;
+        return this.f6962w || this.f6960u || this.f6965z;
     }
 
     /* renamed from: q */
     private synchronized void m8309q() {
-        if (this.f6945n != null) {
-            this.f6934c.clear();
-            this.f6945n = null;
-            this.f6955x = null;
-            this.f6950s = null;
-            this.f6954w = false;
-            this.f6957z = false;
-            this.f6952u = false;
-            this.f6956y.mo7299w(false);
-            this.f6956y = null;
-            this.f6953v = null;
-            this.f6951t = null;
-            this.f6937f.mo5398a(this);
+        if (this.f6953n != null) {
+            this.f6942c.clear();
+            this.f6953n = null;
+            this.f6963x = null;
+            this.f6958s = null;
+            this.f6962w = false;
+            this.f6965z = false;
+            this.f6960u = false;
+            this.f6964y.mo7299w(false);
+            this.f6964y = null;
+            this.f6961v = null;
+            this.f6959t = null;
+            this.f6945f.mo5398a(this);
         } else {
             throw new IllegalArgumentException();
         }
@@ -300,7 +300,7 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
     /* renamed from: a */
     public void mo7300a(C1787q qVar) {
         synchronized (this) {
-            this.f6953v = qVar;
+            this.f6961v = qVar;
         }
         mo7336n();
     }
@@ -309,17 +309,17 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
     /* renamed from: b */
     public synchronized void mo7329b(AbstractC2044g gVar, Executor executor) {
         Runnable aVar;
-        this.f6935d.mo7875c();
-        this.f6934c.mo7346a(gVar, executor);
+        this.f6943d.mo7875c();
+        this.f6942c.mo7346a(gVar, executor);
         boolean z = true;
-        if (this.f6952u) {
+        if (this.f6960u) {
             mo7334k(1);
             aVar = new RunnableC1778b(gVar);
-        } else if (this.f6954w) {
+        } else if (this.f6962w) {
             mo7334k(1);
             aVar = new RunnableC1777a(gVar);
         } else {
-            if (this.f6957z) {
+            if (this.f6965z) {
                 z = false;
             }
             C2081j.m9429a(z, "Cannot add callbacks to a cancelled EngineJob");
@@ -331,7 +331,7 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
     /* renamed from: c */
     public void mo7330c(AbstractC2044g gVar) {
         try {
-            gVar.mo7804a(this.f6953v);
+            gVar.mo7804a(this.f6961v);
         } catch (Throwable th) {
             throw new C1713b(th);
         }
@@ -343,8 +343,8 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
     /* renamed from: d */
     public void mo7301d(AbstractC1794v<R> vVar, EnumC1630a aVar) {
         synchronized (this) {
-            this.f6950s = vVar;
-            this.f6951t = aVar;
+            this.f6958s = vVar;
+            this.f6959t = aVar;
         }
         mo7337o();
     }
@@ -352,7 +352,7 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
     @Override // com.bumptech.glide.p144t.p145l.C2084a.AbstractC2090f
     /* renamed from: e */
     public AbstractC2093c mo7240e() {
-        return this.f6935d;
+        return this.f6943d;
     }
 
     @Override // com.bumptech.glide.load.p122o.RunnableC1752h.AbstractC1754b
@@ -365,7 +365,7 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
     /* renamed from: g */
     public void mo7331g(AbstractC2044g gVar) {
         try {
-            gVar.mo7805d(this.f6955x, this.f6951t);
+            gVar.mo7805d(this.f6963x, this.f6959t);
         } catch (Throwable th) {
             throw new C1713b(th);
         }
@@ -375,9 +375,9 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
     /* renamed from: h */
     public void mo7332h() {
         if (!m8308m()) {
-            this.f6957z = true;
-            this.f6956y.mo7293a();
-            this.f6939h.mo7321d(this, this.f6945n);
+            this.f6965z = true;
+            this.f6964y.mo7293a();
+            this.f6947h.mo7321d(this, this.f6953n);
         }
     }
 
@@ -386,12 +386,12 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
     public void mo7333i() {
         C1785p<?> pVar;
         synchronized (this) {
-            this.f6935d.mo7875c();
+            this.f6943d.mo7875c();
             C2081j.m9429a(m8308m(), "Not yet complete!");
-            int decrementAndGet = this.f6944m.decrementAndGet();
+            int decrementAndGet = this.f6952m.decrementAndGet();
             C2081j.m9429a(decrementAndGet >= 0, "Can't decrement below 0");
             if (decrementAndGet == 0) {
-                pVar = this.f6955x;
+                pVar = this.f6963x;
                 m8309q();
             } else {
                 pVar = null;
@@ -407,7 +407,7 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
     public synchronized void mo7334k(int i) {
         C1785p<?> pVar;
         C2081j.m9429a(m8308m(), "Not yet complete!");
-        if (this.f6944m.getAndAdd(i) == 0 && (pVar = this.f6955x) != null) {
+        if (this.f6952m.getAndAdd(i) == 0 && (pVar = this.f6963x) != null) {
             pVar.mo7356a();
         }
     }
@@ -415,17 +415,17 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
     /* access modifiers changed from: package-private */
     /* renamed from: l */
     public synchronized C1776l<R> mo7335l(AbstractC1643g gVar, boolean z, boolean z2, boolean z3, boolean z4) {
-        this.f6945n = gVar;
-        this.f6946o = z;
-        this.f6947p = z2;
-        this.f6948q = z3;
-        this.f6949r = z4;
+        this.f6953n = gVar;
+        this.f6954o = z;
+        this.f6955p = z2;
+        this.f6956q = z3;
+        this.f6957r = z4;
         return this;
     }
 
     /* access modifiers changed from: package-private */
     /* JADX WARNING: Code restructure failed: missing block: B:13:0x002f, code lost:
-        r4.f6939h.mo7320c(r4, r1, null);
+        r4.f6947h.mo7320c(r4, r1, null);
         r0 = r2.iterator();
      */
     /* JADX WARNING: Code restructure failed: missing block: B:15:0x003d, code lost:
@@ -433,7 +433,7 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
      */
     /* JADX WARNING: Code restructure failed: missing block: B:16:0x003f, code lost:
         r1 = r0.next();
-        r1.f6963b.execute(new com.bumptech.glide.load.p122o.C1776l.RunnableC1777a(r4, r1.f6962a));
+        r1.f6971b.execute(new com.bumptech.glide.load.p122o.C1776l.RunnableC1777a(r4, r1.f6970a));
      */
     /* JADX WARNING: Code restructure failed: missing block: B:17:0x0052, code lost:
         mo7333i();
@@ -452,7 +452,7 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
 
     /* access modifiers changed from: package-private */
     /* JADX WARNING: Code restructure failed: missing block: B:13:0x0046, code lost:
-        r5.f6939h.mo7320c(r5, r0, r2);
+        r5.f6947h.mo7320c(r5, r0, r2);
         r0 = r1.iterator();
      */
     /* JADX WARNING: Code restructure failed: missing block: B:15:0x0053, code lost:
@@ -460,7 +460,7 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
      */
     /* JADX WARNING: Code restructure failed: missing block: B:16:0x0055, code lost:
         r1 = r0.next();
-        r1.f6963b.execute(new com.bumptech.glide.load.p122o.C1776l.RunnableC1778b(r5, r1.f6962a));
+        r1.f6971b.execute(new com.bumptech.glide.load.p122o.C1776l.RunnableC1778b(r5, r1.f6970a));
      */
     /* JADX WARNING: Code restructure failed: missing block: B:17:0x0068, code lost:
         mo7333i();
@@ -480,21 +480,21 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
     /* access modifiers changed from: package-private */
     /* renamed from: p */
     public boolean mo7338p() {
-        return this.f6949r;
+        return this.f6957r;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: r */
     public synchronized void mo7339r(AbstractC2044g gVar) {
         boolean z;
-        this.f6935d.mo7875c();
-        this.f6934c.mo7350e(gVar);
-        if (this.f6934c.isEmpty()) {
+        this.f6943d.mo7875c();
+        this.f6942c.mo7350e(gVar);
+        if (this.f6942c.isEmpty()) {
             mo7332h();
-            if (!this.f6952u) {
-                if (!this.f6954w) {
+            if (!this.f6960u) {
+                if (!this.f6962w) {
                     z = false;
-                    if (z && this.f6944m.get() == 0) {
+                    if (z && this.f6952m.get() == 0) {
                         m8309q();
                     }
                 }
@@ -506,7 +506,7 @@ public class C1776l<R> implements RunnableC1752h.AbstractC1754b<R>, C2084a.Abstr
 
     /* renamed from: s */
     public synchronized void mo7340s(RunnableC1752h<R> hVar) {
-        this.f6956y = hVar;
-        (hVar.mo7292C() ? this.f6940i : m8307j()).execute(hVar);
+        this.f6964y = hVar;
+        (hVar.mo7292C() ? this.f6948i : m8307j()).execute(hVar);
     }
 }

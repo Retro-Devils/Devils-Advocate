@@ -8,39 +8,39 @@ import p069c.p073b.p074a.p075a.p087f.p088b.C1357a;
 public final class C1369c {
 
     /* renamed from: a */
-    private static final C2894a.C2903g<C1357a> f5636a;
+    private static final C2894a.C2903g<C1357a> f5644a;
 
     /* renamed from: b */
-    private static final C2894a.C2903g<C1357a> f5637b;
+    private static final C2894a.C2903g<C1357a> f5645b;
 
     /* renamed from: c */
-    public static final C2894a.AbstractC2895a<C1357a, C1355a> f5638c;
+    public static final C2894a.AbstractC2895a<C1357a, C1355a> f5646c;
 
     /* renamed from: d */
-    private static final C2894a.AbstractC2895a<C1357a, Object> f5639d;
+    private static final C2894a.AbstractC2895a<C1357a, Object> f5647d;
 
     /* renamed from: e */
-    private static final Scope f5640e = new Scope("profile");
+    private static final Scope f5648e = new Scope("profile");
 
     /* renamed from: f */
-    private static final Scope f5641f = new Scope("email");
+    private static final Scope f5649f = new Scope("email");
 
     /* renamed from: g */
-    public static final C2894a<C1355a> f5642g;
+    public static final C2894a<C1355a> f5650g;
 
     /* renamed from: h */
-    private static final C2894a<Object> f5643h;
+    private static final C2894a<Object> f5651h;
 
     static {
         C2894a.C2903g<C1357a> gVar = new C2894a.C2903g<>();
-        f5636a = gVar;
+        f5644a = gVar;
         C2894a.C2903g<C1357a> gVar2 = new C2894a.C2903g<>();
-        f5637b = gVar2;
+        f5645b = gVar2;
         C1370d dVar = new C1370d();
-        f5638c = dVar;
+        f5646c = dVar;
         C1371e eVar = new C1371e();
-        f5639d = eVar;
-        f5642g = new C2894a<>("SignIn.API", dVar, gVar);
-        f5643h = new C2894a<>("SignIn.INTERNAL_API", eVar, gVar2);
+        f5647d = eVar;
+        f5650g = new C2894a<>("SignIn.API", dVar, gVar);
+        f5651h = new C2894a<>("SignIn.INTERNAL_API", eVar, gVar2);
     }
 }

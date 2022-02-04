@@ -9,16 +9,16 @@ import p069c.p070a.p071a.p072w.C1276o;
 public class C2490m2 {
 
     /* renamed from: a */
-    private static C1243o f8638a;
+    private static C1243o f8646a;
 
     /* renamed from: a */
     public static synchronized C1243o m10682a(Context context) {
         C1243o oVar;
         synchronized (C2490m2.class) {
-            if (f8638a == null) {
-                f8638a = C1276o.m6752a(context.getApplicationContext());
+            if (f8646a == null) {
+                f8646a = C1276o.m6752a(context.getApplicationContext());
             }
-            oVar = f8638a;
+            oVar = f8646a;
         }
         return oVar;
     }

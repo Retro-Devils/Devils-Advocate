@@ -7,31 +7,31 @@ import com.bumptech.glide.load.C1644h;
 public abstract class AbstractC1922l {
 
     /* renamed from: a */
-    public static final AbstractC1922l f7192a = new C1923a();
+    public static final AbstractC1922l f7200a = new C1923a();
 
     /* renamed from: b */
-    public static final AbstractC1922l f7193b = new C1924b();
+    public static final AbstractC1922l f7201b = new C1924b();
 
     /* renamed from: c */
-    public static final AbstractC1922l f7194c = new C1927e();
+    public static final AbstractC1922l f7202c = new C1927e();
 
     /* renamed from: d */
-    public static final AbstractC1922l f7195d = new C1925c();
+    public static final AbstractC1922l f7203d = new C1925c();
 
     /* renamed from: e */
-    public static final AbstractC1922l f7196e;
+    public static final AbstractC1922l f7204e;
 
     /* renamed from: f */
-    public static final AbstractC1922l f7197f = new C1928f();
+    public static final AbstractC1922l f7205f = new C1928f();
 
     /* renamed from: g */
-    public static final AbstractC1922l f7198g;
+    public static final AbstractC1922l f7206g;
 
     /* renamed from: h */
-    public static final C1644h<AbstractC1922l> f7199h;
+    public static final C1644h<AbstractC1922l> f7207h;
 
     /* renamed from: i */
-    static final boolean f7200i = (Build.VERSION.SDK_INT >= 19);
+    static final boolean f7208i = (Build.VERSION.SDK_INT >= 19);
 
     /* renamed from: com.bumptech.glide.load.q.d.l$a */
     private static class C1923a extends AbstractC1922l {
@@ -87,13 +87,13 @@ public abstract class AbstractC1922l {
         @Override // com.bumptech.glide.load.p128q.p129d.AbstractC1922l
         /* renamed from: a */
         public EnumC1929g mo7514a(int i, int i2, int i3, int i4) {
-            return mo7515b(i, i2, i3, i4) == 1.0f ? EnumC1929g.QUALITY : AbstractC1922l.f7194c.mo7514a(i, i2, i3, i4);
+            return mo7515b(i, i2, i3, i4) == 1.0f ? EnumC1929g.QUALITY : AbstractC1922l.f7202c.mo7514a(i, i2, i3, i4);
         }
 
         @Override // com.bumptech.glide.load.p128q.p129d.AbstractC1922l
         /* renamed from: b */
         public float mo7515b(int i, int i2, int i3, int i4) {
-            return Math.min(1.0f, AbstractC1922l.f7194c.mo7515b(i, i2, i3, i4));
+            return Math.min(1.0f, AbstractC1922l.f7202c.mo7515b(i, i2, i3, i4));
         }
     }
 
@@ -123,13 +123,13 @@ public abstract class AbstractC1922l {
         @Override // com.bumptech.glide.load.p128q.p129d.AbstractC1922l
         /* renamed from: a */
         public EnumC1929g mo7514a(int i, int i2, int i3, int i4) {
-            return AbstractC1922l.f7200i ? EnumC1929g.QUALITY : EnumC1929g.MEMORY;
+            return AbstractC1922l.f7208i ? EnumC1929g.QUALITY : EnumC1929g.MEMORY;
         }
 
         @Override // com.bumptech.glide.load.p128q.p129d.AbstractC1922l
         /* renamed from: b */
         public float mo7515b(int i, int i2, int i3, int i4) {
-            if (AbstractC1922l.f7200i) {
+            if (AbstractC1922l.f7208i) {
                 return Math.min(((float) i3) / ((float) i), ((float) i4) / ((float) i2));
             }
             int max = Math.max(i2 / i4, i / i3);
@@ -166,9 +166,9 @@ public abstract class AbstractC1922l {
 
     static {
         C1926d dVar = new C1926d();
-        f7196e = dVar;
-        f7198g = dVar;
-        f7199h = C1644h.m7873f("com.bumptech.glide.load.resource.bitmap.Downsampler.DownsampleStrategy", dVar);
+        f7204e = dVar;
+        f7206g = dVar;
+        f7207h = C1644h.m7873f("com.bumptech.glide.load.resource.bitmap.Downsampler.DownsampleStrategy", dVar);
     }
 
     /* renamed from: a */

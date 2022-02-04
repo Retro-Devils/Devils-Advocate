@@ -11,10 +11,10 @@ import android.view.ViewParent;
 public class C3171c {
 
     /* renamed from: a */
-    private static final ThreadLocal<Matrix> f10637a = new ThreadLocal<>();
+    private static final ThreadLocal<Matrix> f10645a = new ThreadLocal<>();
 
     /* renamed from: b */
-    private static final ThreadLocal<RectF> f10638b = new ThreadLocal<>();
+    private static final ThreadLocal<RectF> f10646b = new ThreadLocal<>();
 
     /* renamed from: a */
     public static void m13324a(ViewGroup viewGroup, View view, Rect rect) {
@@ -38,7 +38,7 @@ public class C3171c {
 
     /* renamed from: c */
     public static void m13326c(ViewGroup viewGroup, View view, Rect rect) {
-        ThreadLocal<Matrix> threadLocal = f10637a;
+        ThreadLocal<Matrix> threadLocal = f10645a;
         Matrix matrix = threadLocal.get();
         if (matrix == null) {
             matrix = new Matrix();
@@ -47,7 +47,7 @@ public class C3171c {
             matrix.reset();
         }
         m13325b(viewGroup, view, matrix);
-        ThreadLocal<RectF> threadLocal2 = f10638b;
+        ThreadLocal<RectF> threadLocal2 = f10646b;
         RectF rectF = threadLocal2.get();
         if (rectF == null) {
             rectF = new RectF();

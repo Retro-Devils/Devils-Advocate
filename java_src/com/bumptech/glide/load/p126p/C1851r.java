@@ -14,22 +14,22 @@ import p006b.p030g.p038j.AbstractC0958f;
 public class C1851r {
 
     /* renamed from: a */
-    private static final C1854c f7097a = new C1854c();
+    private static final C1854c f7105a = new C1854c();
 
     /* renamed from: b */
-    private static final AbstractC1843n<Object, Object> f7098b = new C1852a();
+    private static final AbstractC1843n<Object, Object> f7106b = new C1852a();
 
     /* renamed from: c */
-    private final List<C1853b<?, ?>> f7099c;
+    private final List<C1853b<?, ?>> f7107c;
 
     /* renamed from: d */
-    private final C1854c f7100d;
+    private final C1854c f7108d;
 
     /* renamed from: e */
-    private final Set<C1853b<?, ?>> f7101e;
+    private final Set<C1853b<?, ?>> f7109e;
 
     /* renamed from: f */
-    private final AbstractC0958f<List<Throwable>> f7102f;
+    private final AbstractC0958f<List<Throwable>> f7110f;
 
     /* renamed from: com.bumptech.glide.load.p.r$a */
     private static class C1852a implements AbstractC1843n<Object, Object> {
@@ -54,28 +54,28 @@ public class C1851r {
     public static class C1853b<Model, Data> {
 
         /* renamed from: a */
-        private final Class<Model> f7103a;
+        private final Class<Model> f7111a;
 
         /* renamed from: b */
-        final Class<Data> f7104b;
+        final Class<Data> f7112b;
 
         /* renamed from: c */
-        final AbstractC1845o<? extends Model, ? extends Data> f7105c;
+        final AbstractC1845o<? extends Model, ? extends Data> f7113c;
 
         public C1853b(Class<Model> cls, Class<Data> cls2, AbstractC1845o<? extends Model, ? extends Data> oVar) {
-            this.f7103a = cls;
-            this.f7104b = cls2;
-            this.f7105c = oVar;
+            this.f7111a = cls;
+            this.f7112b = cls2;
+            this.f7113c = oVar;
         }
 
         /* renamed from: a */
         public boolean mo7455a(Class<?> cls) {
-            return this.f7103a.isAssignableFrom(cls);
+            return this.f7111a.isAssignableFrom(cls);
         }
 
         /* renamed from: b */
         public boolean mo7456b(Class<?> cls, Class<?> cls2) {
-            return mo7455a(cls) && this.f7104b.isAssignableFrom(cls2);
+            return mo7455a(cls) && this.f7112b.isAssignableFrom(cls2);
         }
     }
 
@@ -92,31 +92,31 @@ public class C1851r {
     }
 
     public C1851r(AbstractC0958f<List<Throwable>> fVar) {
-        this(fVar, f7097a);
+        this(fVar, f7105a);
     }
 
     C1851r(AbstractC0958f<List<Throwable>> fVar, C1854c cVar) {
-        this.f7099c = new ArrayList();
-        this.f7101e = new HashSet();
-        this.f7102f = fVar;
-        this.f7100d = cVar;
+        this.f7107c = new ArrayList();
+        this.f7109e = new HashSet();
+        this.f7110f = fVar;
+        this.f7108d = cVar;
     }
 
     /* renamed from: a */
     private <Model, Data> void m8526a(Class<Model> cls, Class<Data> cls2, AbstractC1845o<? extends Model, ? extends Data> oVar, boolean z) {
         C1853b<?, ?> bVar = new C1853b<>(cls, cls2, oVar);
-        List<C1853b<?, ?>> list = this.f7099c;
+        List<C1853b<?, ?>> list = this.f7107c;
         list.add(z ? list.size() : 0, bVar);
     }
 
     /* renamed from: c */
     private <Model, Data> AbstractC1843n<Model, Data> m8527c(C1853b<?, ?> bVar) {
-        return (AbstractC1843n) C2081j.m9432d(bVar.f7105c.mo7398b(this));
+        return (AbstractC1843n) C2081j.m9432d(bVar.f7113c.mo7398b(this));
     }
 
     /* renamed from: f */
     private static <Model, Data> AbstractC1843n<Model, Data> m8528f() {
-        return (AbstractC1843n<Model, Data>) f7098b;
+        return (AbstractC1843n<Model, Data>) f7106b;
     }
 
     /* access modifiers changed from: package-private */
@@ -130,17 +130,17 @@ public class C1851r {
         try {
             ArrayList arrayList = new ArrayList();
             boolean z = false;
-            for (C1853b<?, ?> bVar : this.f7099c) {
-                if (this.f7101e.contains(bVar)) {
+            for (C1853b<?, ?> bVar : this.f7107c) {
+                if (this.f7109e.contains(bVar)) {
                     z = true;
                 } else if (bVar.mo7456b(cls, cls2)) {
-                    this.f7101e.add(bVar);
+                    this.f7109e.add(bVar);
                     arrayList.add(m8527c(bVar));
-                    this.f7101e.remove(bVar);
+                    this.f7109e.remove(bVar);
                 }
             }
             if (arrayList.size() > 1) {
-                return this.f7100d.mo7457a(arrayList, this.f7102f);
+                return this.f7108d.mo7457a(arrayList, this.f7110f);
             } else if (arrayList.size() == 1) {
                 return (AbstractC1843n) arrayList.get(0);
             } else if (z) {
@@ -149,7 +149,7 @@ public class C1851r {
                 throw new C1618i.C1621c((Class<?>) cls, (Class<?>) cls2);
             }
         } catch (Throwable th) {
-            this.f7101e.clear();
+            this.f7109e.clear();
             throw th;
         }
     }
@@ -160,17 +160,17 @@ public class C1851r {
         ArrayList arrayList;
         try {
             arrayList = new ArrayList();
-            for (C1853b<?, ?> bVar : this.f7099c) {
-                if (!this.f7101e.contains(bVar)) {
+            for (C1853b<?, ?> bVar : this.f7107c) {
+                if (!this.f7109e.contains(bVar)) {
                     if (bVar.mo7455a(cls)) {
-                        this.f7101e.add(bVar);
+                        this.f7109e.add(bVar);
                         arrayList.add(m8527c(bVar));
-                        this.f7101e.remove(bVar);
+                        this.f7109e.remove(bVar);
                     }
                 }
             }
         } catch (Throwable th) {
-            this.f7101e.clear();
+            this.f7109e.clear();
             throw th;
         }
         return arrayList;
@@ -181,9 +181,9 @@ public class C1851r {
     public synchronized List<Class<?>> mo7454g(Class<?> cls) {
         ArrayList arrayList;
         arrayList = new ArrayList();
-        for (C1853b<?, ?> bVar : this.f7099c) {
-            if (!arrayList.contains(bVar.f7104b) && bVar.mo7455a(cls)) {
-                arrayList.add(bVar.f7104b);
+        for (C1853b<?, ?> bVar : this.f7107c) {
+            if (!arrayList.contains(bVar.f7112b) && bVar.mo7455a(cls)) {
+                arrayList.add(bVar.f7112b);
             }
         }
         return arrayList;

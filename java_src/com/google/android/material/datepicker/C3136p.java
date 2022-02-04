@@ -13,7 +13,7 @@ import java.util.concurrent.atomic.AtomicReference;
 public class C3136p {
 
     /* renamed from: a */
-    static AtomicReference<C3135o> f10461a = new AtomicReference<>();
+    static AtomicReference<C3135o> f10469a = new AtomicReference<>();
 
     /* renamed from: a */
     static long m13071a(long j) {
@@ -65,7 +65,7 @@ public class C3136p {
 
     /* renamed from: h */
     static C3135o m13078h() {
-        C3135o oVar = f10461a.get();
+        C3135o oVar = f10469a.get();
         return oVar == null ? C3135o.m13068c() : oVar;
     }
 

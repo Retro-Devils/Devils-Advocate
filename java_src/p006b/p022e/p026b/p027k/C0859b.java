@@ -11,14 +11,14 @@ public class C0859b {
         int i2;
         int i3;
         if (i == 0) {
-            int i4 = fVar.f4353H0;
-            cVarArr = fVar.f4356K0;
+            int i4 = fVar.f4357H0;
+            cVarArr = fVar.f4360K0;
             i2 = i4;
             i3 = 0;
         } else {
             i3 = 2;
-            i2 = fVar.f4354I0;
-            cVarArr = fVar.f4355J0;
+            i2 = fVar.f4358I0;
+            cVarArr = fVar.f4359J0;
         }
         for (int i5 = 0; i5 < i2; i5++) {
             C0860c cVar = cVarArr[i5];

@@ -27,31 +27,31 @@ import p006b.p021d.C0823a;
 public class C2016l implements Handler.Callback {
 
     /* renamed from: a */
-    private static final AbstractC2018b f7430a = new C2017a();
+    private static final AbstractC2018b f7438a = new C2017a();
 
     /* renamed from: b */
-    private volatile ComponentCallbacks2C1626k f7431b;
+    private volatile ComponentCallbacks2C1626k f7439b;
 
     /* renamed from: c */
-    final Map<FragmentManager, FragmentC2014k> f7432c = new HashMap();
+    final Map<FragmentManager, FragmentC2014k> f7440c = new HashMap();
 
     /* renamed from: d */
-    final Map<AbstractC0453i, C2021o> f7433d = new HashMap();
+    final Map<AbstractC0453i, C2021o> f7441d = new HashMap();
 
     /* renamed from: e */
-    private final Handler f7434e;
+    private final Handler f7442e;
 
     /* renamed from: f */
-    private final AbstractC2018b f7435f;
+    private final AbstractC2018b f7443f;
 
     /* renamed from: g */
-    private final C0823a<View, Fragment> f7436g = new C0823a<>();
+    private final C0823a<View, Fragment> f7444g = new C0823a<>();
 
     /* renamed from: h */
-    private final C0823a<View, android.app.Fragment> f7437h = new C0823a<>();
+    private final C0823a<View, android.app.Fragment> f7445h = new C0823a<>();
 
     /* renamed from: i */
-    private final Bundle f7438i = new Bundle();
+    private final Bundle f7446i = new Bundle();
 
     /* renamed from: com.bumptech.glide.o.l$a */
     class C2017a implements AbstractC2018b {
@@ -72,8 +72,8 @@ public class C2016l implements Handler.Callback {
     }
 
     public C2016l(AbstractC2018b bVar) {
-        this.f7435f = bVar == null ? f7430a : bVar;
-        this.f7434e = new Handler(Looper.getMainLooper(), this);
+        this.f7443f = bVar == null ? f7438a : bVar;
+        this.f7442e = new Handler(Looper.getMainLooper(), this);
     }
 
     @TargetApi(17)
@@ -103,35 +103,35 @@ public class C2016l implements Handler.Callback {
         if (e != null) {
             return e;
         }
-        ComponentCallbacks2C1626k a = this.f7435f.mo6977a(ComponentCallbacks2C1610c.m7749c(context), i.mo7678c(), i.mo7680f(), context);
+        ComponentCallbacks2C1626k a = this.f7443f.mo6977a(ComponentCallbacks2C1610c.m7749c(context), i.mo7678c(), i.mo7680f(), context);
         i.mo7682k(a);
         return a;
     }
 
     /* renamed from: g */
     private ComponentCallbacks2C1626k m9111g(Context context) {
-        if (this.f7431b == null) {
+        if (this.f7439b == null) {
             synchronized (this) {
-                if (this.f7431b == null) {
-                    this.f7431b = this.f7435f.mo6977a(ComponentCallbacks2C1610c.m7749c(context.getApplicationContext()), new C2003b(), new C2010g(), context.getApplicationContext());
+                if (this.f7439b == null) {
+                    this.f7439b = this.f7443f.mo6977a(ComponentCallbacks2C1610c.m7749c(context.getApplicationContext()), new C2003b(), new C2010g(), context.getApplicationContext());
                 }
             }
         }
-        return this.f7431b;
+        return this.f7439b;
     }
 
     /* renamed from: i */
     private FragmentC2014k m9112i(FragmentManager fragmentManager, android.app.Fragment fragment, boolean z) {
         FragmentC2014k kVar = (FragmentC2014k) fragmentManager.findFragmentByTag("com.bumptech.glide.manager");
-        if (kVar == null && (kVar = this.f7432c.get(fragmentManager)) == null) {
+        if (kVar == null && (kVar = this.f7440c.get(fragmentManager)) == null) {
             kVar = new FragmentC2014k();
             kVar.mo7681j(fragment);
             if (z) {
                 kVar.mo7678c().mo7671d();
             }
-            this.f7432c.put(fragmentManager, kVar);
+            this.f7440c.put(fragmentManager, kVar);
             fragmentManager.beginTransaction().add(kVar, "com.bumptech.glide.manager").commitAllowingStateLoss();
-            this.f7434e.obtainMessage(1, fragmentManager).sendToTarget();
+            this.f7442e.obtainMessage(1, fragmentManager).sendToTarget();
         }
         return kVar;
     }
@@ -139,15 +139,15 @@ public class C2016l implements Handler.Callback {
     /* renamed from: k */
     private C2021o m9113k(AbstractC0453i iVar, Fragment fragment, boolean z) {
         C2021o oVar = (C2021o) iVar.mo2732d("com.bumptech.glide.manager");
-        if (oVar == null && (oVar = this.f7433d.get(iVar)) == null) {
+        if (oVar == null && (oVar = this.f7441d.get(iVar)) == null) {
             oVar = new C2021o();
             oVar.mo7709z2(fragment);
             if (z) {
                 oVar.mo7706r2().mo7671d();
             }
-            this.f7433d.put(iVar, oVar);
+            this.f7441d.put(iVar, oVar);
             iVar.mo2729a().mo2869c(oVar, "com.bumptech.glide.manager").mo2635f();
-            this.f7434e.obtainMessage(2, iVar).sendToTarget();
+            this.f7442e.obtainMessage(2, iVar).sendToTarget();
         }
         return oVar;
     }
@@ -165,7 +165,7 @@ public class C2016l implements Handler.Callback {
         if (t2 != null) {
             return t2;
         }
-        ComponentCallbacks2C1626k a = this.f7435f.mo6977a(ComponentCallbacks2C1610c.m7749c(context), k.mo7706r2(), k.mo7708u2(), context);
+        ComponentCallbacks2C1626k a = this.f7443f.mo6977a(ComponentCallbacks2C1610c.m7749c(context), k.mo7706r2(), k.mo7708u2(), context);
         k.mo7704A2(a);
         return a;
     }
@@ -226,7 +226,7 @@ public class C2016l implements Handler.Callback {
         boolean z = true;
         if (i == 1) {
             obj2 = (FragmentManager) message.obj;
-            map = this.f7432c;
+            map = this.f7440c;
         } else if (i != 2) {
             z = false;
             obj = null;
@@ -236,7 +236,7 @@ public class C2016l implements Handler.Callback {
             return z;
         } else {
             obj2 = (AbstractC0453i) message.obj;
-            map = this.f7433d;
+            map = this.f7441d;
         }
         obj3 = map.remove(obj2);
         obj = obj2;

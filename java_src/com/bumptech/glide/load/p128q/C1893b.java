@@ -7,10 +7,10 @@ import com.bumptech.glide.p144t.C2081j;
 public class C1893b<T> implements AbstractC1794v<T> {
 
     /* renamed from: b */
-    protected final T f7160b;
+    protected final T f7168b;
 
     public C1893b(T t) {
-        this.f7160b = (T) C2081j.m9432d(t);
+        this.f7168b = (T) C2081j.m9432d(t);
     }
 
     @Override // com.bumptech.glide.load.p122o.AbstractC1794v
@@ -22,13 +22,13 @@ public class C1893b<T> implements AbstractC1794v<T> {
     @Override // com.bumptech.glide.load.p122o.AbstractC1794v
     /* renamed from: c */
     public final T mo7358c() {
-        return this.f7160b;
+        return this.f7168b;
     }
 
     @Override // com.bumptech.glide.load.p122o.AbstractC1794v
     /* renamed from: d */
     public Class<T> mo7359d() {
-        return (Class<T>) this.f7160b.getClass();
+        return (Class<T>) this.f7168b.getClass();
     }
 
     @Override // com.bumptech.glide.load.p122o.AbstractC1794v

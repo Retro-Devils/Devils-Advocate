@@ -18,22 +18,22 @@ import java.io.InputStream;
 public class C1821f<Data> implements AbstractC1843n<File, Data> {
 
     /* renamed from: a */
-    private final AbstractC1826d<Data> f7048a;
+    private final AbstractC1826d<Data> f7056a;
 
     /* renamed from: com.bumptech.glide.load.p.f$a */
     public static class C1822a<Data> implements AbstractC1845o<File, Data> {
 
         /* renamed from: a */
-        private final AbstractC1826d<Data> f7049a;
+        private final AbstractC1826d<Data> f7057a;
 
         public C1822a(AbstractC1826d<Data> dVar) {
-            this.f7049a = dVar;
+            this.f7057a = dVar;
         }
 
         @Override // com.bumptech.glide.load.p126p.AbstractC1845o
         /* renamed from: b */
         public final AbstractC1843n<File, Data> mo7398b(C1851r rVar) {
-            return new C1821f(this.f7049a);
+            return new C1821f(this.f7057a);
         }
     }
 
@@ -72,32 +72,32 @@ public class C1821f<Data> implements AbstractC1843n<File, Data> {
     public static final class C1825c<Data> implements AbstractC1655d<Data> {
 
         /* renamed from: b */
-        private final File f7050b;
+        private final File f7058b;
 
         /* renamed from: c */
-        private final AbstractC1826d<Data> f7051c;
+        private final AbstractC1826d<Data> f7059c;
 
         /* renamed from: d */
-        private Data f7052d;
+        private Data f7060d;
 
         C1825c(File file, AbstractC1826d<Data> dVar) {
-            this.f7050b = file;
-            this.f7051c = dVar;
+            this.f7058b = file;
+            this.f7059c = dVar;
         }
 
         @Override // com.bumptech.glide.load.p120n.AbstractC1655d
         /* renamed from: a */
         public Class<Data> mo7092a() {
-            return this.f7051c.mo7415a();
+            return this.f7059c.mo7415a();
         }
 
         @Override // com.bumptech.glide.load.p120n.AbstractC1655d
         /* renamed from: b */
         public void mo7097b() {
-            Data data = this.f7052d;
+            Data data = this.f7060d;
             if (data != null) {
                 try {
-                    this.f7051c.mo7416b(data);
+                    this.f7059c.mo7416b(data);
                 } catch (IOException unused) {
                 }
             }
@@ -117,8 +117,8 @@ public class C1821f<Data> implements AbstractC1843n<File, Data> {
         /* renamed from: e */
         public void mo7101e(EnumC1616g gVar, AbstractC1655d.AbstractC1656a<? super Data> aVar) {
             try {
-                Data c = this.f7051c.mo7417c(this.f7050b);
-                this.f7052d = c;
+                Data c = this.f7059c.mo7417c(this.f7058b);
+                this.f7060d = c;
                 aVar.mo7109f(c);
             } catch (FileNotFoundException e) {
                 if (Log.isLoggable("FileLoader", 3)) {
@@ -172,12 +172,12 @@ public class C1821f<Data> implements AbstractC1843n<File, Data> {
     }
 
     public C1821f(AbstractC1826d<Data> dVar) {
-        this.f7048a = dVar;
+        this.f7056a = dVar;
     }
 
     /* renamed from: c */
     public AbstractC1843n.C1844a<Data> mo7393a(File file, int i, int i2, C1647i iVar) {
-        return new AbstractC1843n.C1844a<>(new C2067d(file), new C1825c(file, this.f7048a));
+        return new AbstractC1843n.C1844a<>(new C2067d(file), new C1825c(file, this.f7056a));
     }
 
     /* renamed from: d */

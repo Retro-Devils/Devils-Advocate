@@ -4,20 +4,20 @@ package p155e.p164b.p165a;
 public class C3386c {
 
     /* renamed from: a */
-    private static final C3386c f11418a;
+    private static final C3386c f11427a;
 
     /* renamed from: b */
-    private static volatile C3386c f11419b;
+    private static volatile C3386c f11428b;
 
     static {
         C3386c cVar = new C3386c();
-        f11418a = cVar;
-        f11419b = cVar;
+        f11427a = cVar;
+        f11428b = cVar;
     }
 
     /* renamed from: b */
     public static C3386c m14049b() {
-        return f11419b;
+        return f11428b;
     }
 
     /* renamed from: a */

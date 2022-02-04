@@ -452,85 +452,85 @@ public class Toolbar extends ViewGroup {
         this.f868I = new C0187a();
         this.f875P = new RunnableC0188b();
         Context context2 = getContext();
-        int[] iArr = C0763j.f3756k3;
+        int[] iArr = C0763j.f3760k3;
         C0296w0 v = C0296w0.m1432v(context2, attributeSet, iArr, i, 0);
         C1013s.m5762g0(this, context, iArr, attributeSet, v.mo1821r(), i, 0);
-        this.f887m = v.mo1817n(C0763j.f3637M3, 0);
-        this.f888n = v.mo1817n(C0763j.f3592D3, 0);
-        this.f898x = v.mo1815l(C0763j.f3761l3, this.f898x);
-        this.f889o = v.mo1815l(C0763j.f3766m3, 48);
-        int e = v.mo1808e(C0763j.f3607G3, 0);
-        int i2 = C0763j.f3632L3;
+        this.f887m = v.mo1817n(C0763j.f3641M3, 0);
+        this.f888n = v.mo1817n(C0763j.f3596D3, 0);
+        this.f898x = v.mo1815l(C0763j.f3765l3, this.f898x);
+        this.f889o = v.mo1815l(C0763j.f3770m3, 48);
+        int e = v.mo1808e(C0763j.f3611G3, 0);
+        int i2 = C0763j.f3636L3;
         e = v.mo1822s(i2) ? v.mo1808e(i2, e) : e;
         this.f894t = e;
         this.f893s = e;
         this.f892r = e;
         this.f891q = e;
-        int e2 = v.mo1808e(C0763j.f3622J3, -1);
+        int e2 = v.mo1808e(C0763j.f3626J3, -1);
         if (e2 >= 0) {
             this.f891q = e2;
         }
-        int e3 = v.mo1808e(C0763j.f3617I3, -1);
+        int e3 = v.mo1808e(C0763j.f3621I3, -1);
         if (e3 >= 0) {
             this.f892r = e3;
         }
-        int e4 = v.mo1808e(C0763j.f3627K3, -1);
+        int e4 = v.mo1808e(C0763j.f3631K3, -1);
         if (e4 >= 0) {
             this.f893s = e4;
         }
-        int e5 = v.mo1808e(C0763j.f3612H3, -1);
+        int e5 = v.mo1808e(C0763j.f3616H3, -1);
         if (e5 >= 0) {
             this.f894t = e5;
         }
-        this.f890p = v.mo1809f(C0763j.f3821x3, -1);
-        int e6 = v.mo1808e(C0763j.f3801t3, Integer.MIN_VALUE);
-        int e7 = v.mo1808e(C0763j.f3781p3, Integer.MIN_VALUE);
-        int f = v.mo1809f(C0763j.f3791r3, 0);
-        int f2 = v.mo1809f(C0763j.f3796s3, 0);
+        this.f890p = v.mo1809f(C0763j.f3825x3, -1);
+        int e6 = v.mo1808e(C0763j.f3805t3, Integer.MIN_VALUE);
+        int e7 = v.mo1808e(C0763j.f3785p3, Integer.MIN_VALUE);
+        int f = v.mo1809f(C0763j.f3795r3, 0);
+        int f2 = v.mo1809f(C0763j.f3800s3, 0);
         m986h();
         this.f895u.mo1664e(f, f2);
         if (!(e6 == Integer.MIN_VALUE && e7 == Integer.MIN_VALUE)) {
             this.f895u.mo1666g(e6, e7);
         }
-        this.f896v = v.mo1808e(C0763j.f3806u3, Integer.MIN_VALUE);
-        this.f897w = v.mo1808e(C0763j.f3786q3, Integer.MIN_VALUE);
-        this.f881g = v.mo1810g(C0763j.f3776o3);
-        this.f882h = v.mo1819p(C0763j.f3771n3);
-        CharSequence p = v.mo1819p(C0763j.f3602F3);
+        this.f896v = v.mo1808e(C0763j.f3810u3, Integer.MIN_VALUE);
+        this.f897w = v.mo1808e(C0763j.f3790q3, Integer.MIN_VALUE);
+        this.f881g = v.mo1810g(C0763j.f3780o3);
+        this.f882h = v.mo1819p(C0763j.f3775n3);
+        CharSequence p = v.mo1819p(C0763j.f3606F3);
         if (!TextUtils.isEmpty(p)) {
             setTitle(p);
         }
-        CharSequence p2 = v.mo1819p(C0763j.f3587C3);
+        CharSequence p2 = v.mo1819p(C0763j.f3591C3);
         if (!TextUtils.isEmpty(p2)) {
             setSubtitle(p2);
         }
         this.f885k = getContext();
-        setPopupTheme(v.mo1817n(C0763j.f3582B3, 0));
-        Drawable g = v.mo1810g(C0763j.f3577A3);
+        setPopupTheme(v.mo1817n(C0763j.f3586B3, 0));
+        Drawable g = v.mo1810g(C0763j.f3581A3);
         if (g != null) {
             setNavigationIcon(g);
         }
-        CharSequence p3 = v.mo1819p(C0763j.f3831z3);
+        CharSequence p3 = v.mo1819p(C0763j.f3835z3);
         if (!TextUtils.isEmpty(p3)) {
             setNavigationContentDescription(p3);
         }
-        Drawable g2 = v.mo1810g(C0763j.f3811v3);
+        Drawable g2 = v.mo1810g(C0763j.f3815v3);
         if (g2 != null) {
             setLogo(g2);
         }
-        CharSequence p4 = v.mo1819p(C0763j.f3816w3);
+        CharSequence p4 = v.mo1819p(C0763j.f3820w3);
         if (!TextUtils.isEmpty(p4)) {
             setLogoDescription(p4);
         }
-        int i3 = C0763j.f3642N3;
+        int i3 = C0763j.f3646N3;
         if (v.mo1822s(i3)) {
             setTitleTextColor(v.mo1806c(i3));
         }
-        int i4 = C0763j.f3597E3;
+        int i4 = C0763j.f3601E3;
         if (v.mo1822s(i4)) {
             setSubtitleTextColor(v.mo1806c(i4));
         }
-        int i5 = C0763j.f3826y3;
+        int i5 = C0763j.f3830y3;
         if (v.mo1822s(i5)) {
             mo1280x(v.mo1817n(i5, 0));
         }

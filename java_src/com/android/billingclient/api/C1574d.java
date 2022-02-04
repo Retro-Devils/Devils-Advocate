@@ -35,82 +35,82 @@ import p069c.p073b.p074a.p075a.p081d.p084c.C1314b;
 public class C1574d extends AbstractC1571c {
 
     /* renamed from: a */
-    private int f6418a;
+    private int f6426a;
 
     /* renamed from: b */
-    private final String f6419b;
+    private final String f6427b;
 
     /* renamed from: c */
-    private final Handler f6420c;
+    private final Handler f6428c;
 
     /* renamed from: d */
-    private C1606y f6421d;
+    private C1606y f6429d;
 
     /* renamed from: e */
-    private Context f6422e;
+    private Context f6430e;
 
     /* renamed from: f */
-    private Context f6423f;
+    private Context f6431f;
 
     /* renamed from: g */
-    private AbstractC1313a f6424g;
+    private AbstractC1313a f6432g;
 
     /* renamed from: h */
-    private ServiceConnectionC1575a f6425h;
+    private ServiceConnectionC1575a f6433h;
 
     /* renamed from: i */
-    private boolean f6426i;
+    private boolean f6434i;
 
     /* renamed from: j */
-    private boolean f6427j;
+    private boolean f6435j;
 
     /* renamed from: k */
-    private boolean f6428k;
+    private boolean f6436k;
 
     /* renamed from: l */
-    private boolean f6429l;
+    private boolean f6437l;
 
     /* renamed from: m */
-    private boolean f6430m;
+    private boolean f6438m;
 
     /* renamed from: n */
-    private boolean f6431n;
+    private boolean f6439n;
 
     /* renamed from: o */
-    private boolean f6432o;
+    private boolean f6440o;
 
     /* renamed from: p */
-    private boolean f6433p;
+    private boolean f6441p;
 
     /* renamed from: q */
-    private boolean f6434q;
+    private boolean f6442q;
 
     /* renamed from: r */
-    private ExecutorService f6435r;
+    private ExecutorService f6443r;
 
     /* renamed from: s */
-    private String f6436s;
+    private String f6444s;
 
     /* renamed from: t */
-    private final ResultReceiver f6437t;
+    private final ResultReceiver f6445t;
 
     /* access modifiers changed from: private */
     /* renamed from: com.android.billingclient.api.d$a */
     public final class ServiceConnectionC1575a implements ServiceConnection {
 
         /* renamed from: a */
-        private final Object f6438a;
+        private final Object f6446a;
 
         /* renamed from: b */
-        private boolean f6439b;
+        private boolean f6447b;
 
         /* renamed from: c */
-        private AbstractC1577e f6440c;
+        private AbstractC1577e f6448c;
 
         private ServiceConnectionC1575a(AbstractC1577e eVar) {
-            this.f6438a = new Object();
-            this.f6439b = false;
-            this.f6440c = eVar;
+            this.f6446a = new Object();
+            this.f6447b = false;
+            this.f6448c = eVar;
         }
 
         /* synthetic */ ServiceConnectionC1575a(C1574d dVar, AbstractC1577e eVar, ResultReceiverC1573c0 c0Var) {
@@ -118,24 +118,23 @@ public class C1574d extends AbstractC1571c {
         }
 
         /* access modifiers changed from: private */
-        /* access modifiers changed from: public */
         /* renamed from: d */
-        private final void m7684d(C1582g gVar) {
+        public final void m7684d(C1582g gVar) {
             C1574d.this.m7667t(new RunnableC1597p(this, gVar));
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: b */
         public final void mo6923b() {
-            synchronized (this.f6438a) {
-                this.f6440c = null;
-                this.f6439b = true;
+            synchronized (this.f6446a) {
+                this.f6448c = null;
+                this.f6447b = true;
             }
         }
 
         public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {
             C1314b.m6851h("BillingClient", "Billing service connected.");
-            C1574d.this.f6424g = AbstractBinderC1316d.m6865i(iBinder);
+            C1574d.this.f6432g = AbstractBinderC1316d.m6865i(iBinder);
             if (C1574d.this.m7665r(new CallableC1599r(this), 30000, new RunnableC1598q(this)) == null) {
                 m7684d(C1574d.this.m7671x());
             }
@@ -143,10 +142,10 @@ public class C1574d extends AbstractC1571c {
 
         public final void onServiceDisconnected(ComponentName componentName) {
             C1314b.m6854k("BillingClient", "Billing service disconnected.");
-            C1574d.this.f6424g = null;
-            C1574d.this.f6418a = 0;
-            synchronized (this.f6438a) {
-                AbstractC1577e eVar = this.f6440c;
+            C1574d.this.f6432g = null;
+            C1574d.this.f6426a = 0;
+            synchronized (this.f6446a) {
+                AbstractC1577e eVar = this.f6448c;
                 if (eVar != null) {
                     eVar.mo6927a();
                 }
@@ -155,12 +154,12 @@ public class C1574d extends AbstractC1571c {
     }
 
     private C1574d(Context context, boolean z, AbstractC1585h hVar, String str, String str2) {
-        this.f6418a = 0;
+        this.f6426a = 0;
         Handler handler = new Handler(Looper.getMainLooper());
-        this.f6420c = handler;
-        this.f6437t = new ResultReceiverC1573c0(this, handler);
-        this.f6436s = str2;
-        this.f6419b = str;
+        this.f6428c = handler;
+        this.f6445t = new ResultReceiverC1573c0(this, handler);
+        this.f6444s = str2;
+        this.f6427b = str;
         m7657i(context, hVar, z);
     }
 
@@ -171,15 +170,15 @@ public class C1574d extends AbstractC1571c {
     /* renamed from: i */
     private void m7657i(Context context, AbstractC1585h hVar, boolean z) {
         Context applicationContext = context.getApplicationContext();
-        this.f6423f = applicationContext;
-        this.f6421d = new C1606y(applicationContext, hVar);
-        this.f6422e = context;
-        this.f6434q = z;
+        this.f6431f = applicationContext;
+        this.f6429d = new C1606y(applicationContext, hVar);
+        this.f6430e = context;
+        this.f6442q = z;
     }
 
     /* renamed from: k */
     private final C1582g m7659k(C1582g gVar) {
-        this.f6421d.mo6966c().mo6947a(gVar, null);
+        this.f6429d.mo6966c().mo6947a(gVar, null);
         return gVar;
     }
 
@@ -199,12 +198,12 @@ public class C1574d extends AbstractC1571c {
         double d = (double) j;
         Double.isNaN(d);
         long j2 = (long) (d * 0.95d);
-        if (this.f6435r == null) {
-            this.f6435r = Executors.newFixedThreadPool(C1314b.f5577a);
+        if (this.f6443r == null) {
+            this.f6443r = Executors.newFixedThreadPool(C1314b.f5585a);
         }
         try {
-            Future<T> submit = this.f6435r.submit(callable);
-            this.f6420c.postDelayed(new RunnableC1589i0(this, submit, runnable), j2);
+            Future<T> submit = this.f6443r.submit(callable);
+            this.f6428c.postDelayed(new RunnableC1589i0(this, submit, runnable), j2);
             return submit;
         } catch (Exception e) {
             String valueOf = String.valueOf(e);
@@ -221,7 +220,7 @@ public class C1574d extends AbstractC1571c {
     /* renamed from: t */
     private final void m7667t(Runnable runnable) {
         if (!Thread.interrupted()) {
-            this.f6420c.post(runnable);
+            this.f6428c.post(runnable);
         }
     }
 
@@ -229,8 +228,8 @@ public class C1574d extends AbstractC1571c {
     /* access modifiers changed from: public */
     /* renamed from: x */
     private final C1582g m7671x() {
-        int i = this.f6418a;
-        return (i == 0 || i == 3) ? C1602u.f6514q : C1602u.f6509l;
+        int i = this.f6426a;
+        return (i == 0 || i == 3) ? C1602u.f6522q : C1602u.f6517l;
     }
 
     /* access modifiers changed from: private */
@@ -240,13 +239,13 @@ public class C1574d extends AbstractC1571c {
         String valueOf = String.valueOf(str);
         C1314b.m6851h("BillingClient", valueOf.length() != 0 ? "Querying owned items, item type: ".concat(valueOf) : new String("Querying owned items, item type: "));
         ArrayList arrayList = new ArrayList();
-        Bundle e = C1314b.m6848e(this.f6430m, this.f6434q, this.f6419b);
+        Bundle e = C1314b.m6848e(this.f6438m, this.f6442q, this.f6427b);
         String str2 = null;
         do {
             try {
-                Bundle E = this.f6430m ? this.f6424g.mo6322E(9, this.f6423f.getPackageName(), str, str2, e) : this.f6424g.mo6327X(3, this.f6423f.getPackageName(), str, str2);
+                Bundle E = this.f6438m ? this.f6432g.mo6322E(9, this.f6431f.getPackageName(), str, str2, e) : this.f6432g.mo6327X(3, this.f6431f.getPackageName(), str, str2);
                 C1582g a = C1603v.m7731a(E, "BillingClient", "getPurchase()");
-                if (a != C1602u.f6513p) {
+                if (a != C1602u.f6521p) {
                     return new Purchase.C1564a(a, null);
                 }
                 ArrayList<String> stringArrayList = E.getStringArrayList("INAPP_PURCHASE_ITEM_LIST");
@@ -269,7 +268,7 @@ public class C1574d extends AbstractC1571c {
                         sb.append("Got an exception trying to decode the purchase: ");
                         sb.append(valueOf3);
                         C1314b.m6854k("BillingClient", sb.toString());
-                        return new Purchase.C1564a(C1602u.f6509l, null);
+                        return new Purchase.C1564a(C1602u.f6517l, null);
                     }
                 }
                 str2 = E.getString("INAPP_CONTINUATION_TOKEN");
@@ -282,10 +281,10 @@ public class C1574d extends AbstractC1571c {
                 sb2.append(valueOf5);
                 sb2.append("; try to reconnect");
                 C1314b.m6854k("BillingClient", sb2.toString());
-                return new Purchase.C1564a(C1602u.f6514q, null);
+                return new Purchase.C1564a(C1602u.f6522q, null);
             }
         } while (!TextUtils.isEmpty(str2));
-        return new Purchase.C1564a(C1602u.f6513p, arrayList);
+        return new Purchase.C1564a(C1602u.f6521p, arrayList);
     }
 
     @Override // com.android.billingclient.api.AbstractC1571c
@@ -293,12 +292,12 @@ public class C1574d extends AbstractC1571c {
     public void mo6911a(C1566a aVar, AbstractC1569b bVar) {
         C1582g gVar;
         if (!mo6913c()) {
-            gVar = C1602u.f6514q;
+            gVar = C1602u.f6522q;
         } else if (TextUtils.isEmpty(aVar.mo6906a())) {
             C1314b.m6854k("BillingClient", "Please provide a valid purchase token.");
-            gVar = C1602u.f6508k;
-        } else if (!this.f6430m) {
-            gVar = C1602u.f6499b;
+            gVar = C1602u.f6516k;
+        } else if (!this.f6438m) {
+            gVar = C1602u.f6507b;
         } else if (m7665r(new CallableC1581f0(this, aVar, bVar), 30000, new RunnableC1591j0(this, bVar)) == null) {
             bVar.mo6909a(m7671x());
             return;
@@ -312,21 +311,21 @@ public class C1574d extends AbstractC1571c {
     /* renamed from: b */
     public void mo6912b() {
         try {
-            this.f6421d.mo6967d();
-            ServiceConnectionC1575a aVar = this.f6425h;
+            this.f6429d.mo6967d();
+            ServiceConnectionC1575a aVar = this.f6433h;
             if (aVar != null) {
                 aVar.mo6923b();
             }
-            if (!(this.f6425h == null || this.f6424g == null)) {
+            if (!(this.f6433h == null || this.f6432g == null)) {
                 C1314b.m6851h("BillingClient", "Unbinding from service.");
-                this.f6423f.unbindService(this.f6425h);
-                this.f6425h = null;
+                this.f6431f.unbindService(this.f6433h);
+                this.f6433h = null;
             }
-            this.f6424g = null;
-            ExecutorService executorService = this.f6435r;
+            this.f6432g = null;
+            ExecutorService executorService = this.f6443r;
             if (executorService != null) {
                 executorService.shutdownNow();
-                this.f6435r = null;
+                this.f6443r = null;
             }
         } catch (Exception e) {
             String valueOf = String.valueOf(e);
@@ -335,14 +334,14 @@ public class C1574d extends AbstractC1571c {
             sb.append(valueOf);
             C1314b.m6854k("BillingClient", sb.toString());
         } finally {
-            this.f6418a = 3;
+            this.f6426a = 3;
         }
     }
 
     @Override // com.android.billingclient.api.AbstractC1571c
     /* renamed from: c */
     public boolean mo6913c() {
-        return (this.f6418a != 2 || this.f6424g == null || this.f6425h == null) ? false : true;
+        return (this.f6426a != 2 || this.f6432g == null || this.f6433h == null) ? false : true;
     }
 
     @Override // com.android.billingclient.api.AbstractC1571c
@@ -355,13 +354,13 @@ public class C1574d extends AbstractC1571c {
             ArrayList<SkuDetails> h = fVar.mo6934h();
             SkuDetails skuDetails = h.get(0);
             String c = skuDetails.mo6897c();
-            if (!c.equals("subs") || this.f6426i) {
+            if (!c.equals("subs") || this.f6434i) {
                 boolean z = fVar.mo6930a() != null;
-                if (z && !this.f6427j) {
+                if (z && !this.f6435j) {
                     C1314b.m6854k("BillingClient", "Current client doesn't support subscriptions update.");
-                    gVar = C1602u.f6517t;
+                    gVar = C1602u.f6525t;
                     return m7659k(gVar);
-                } else if (!fVar.mo6936n() || this.f6428k) {
+                } else if (!fVar.mo6936n() || this.f6436k) {
                     String str = "";
                     for (int i = 0; i < h.size(); i++) {
                         String valueOf = String.valueOf(str);
@@ -380,16 +379,16 @@ public class C1574d extends AbstractC1571c {
                     sb2.append(", item type: ");
                     sb2.append(c);
                     C1314b.m6851h("BillingClient", sb2.toString());
-                    if (this.f6428k) {
-                        Bundle d = C1314b.m6847d(fVar, this.f6430m, this.f6434q, this.f6419b);
+                    if (this.f6436k) {
+                        Bundle d = C1314b.m6847d(fVar, this.f6438m, this.f6442q, this.f6427b);
                         if (!skuDetails.mo6899e().isEmpty()) {
                             d.putString("skuDetailsToken", skuDetails.mo6899e());
                         }
                         if (!TextUtils.isEmpty(skuDetails.mo6898d())) {
                             d.putString("skuPackageName", skuDetails.mo6898d());
                         }
-                        if (!TextUtils.isEmpty(this.f6436s)) {
-                            d.putString("accountName", this.f6436s);
+                        if (!TextUtils.isEmpty(this.f6444s)) {
+                            d.putString("accountName", this.f6444s);
                         }
                         if (h.size() > 1) {
                             ArrayList<String> arrayList = new ArrayList<>(h.size() - 1);
@@ -398,7 +397,7 @@ public class C1574d extends AbstractC1571c {
                             }
                             d.putStringArrayList("additionalSkus", arrayList);
                         }
-                        future = m7665r(new CallableC1594m(this, this.f6430m ? 9 : fVar.mo6933d() ? 7 : 6, skuDetails, c, fVar, d), 5000, null);
+                        future = m7665r(new CallableC1594m(this, this.f6438m ? 9 : fVar.mo6933d() ? 7 : 6, skuDetails, c, fVar, d), 5000, null);
                         j = 5000;
                     } else {
                         j = 5000;
@@ -416,17 +415,17 @@ public class C1574d extends AbstractC1571c {
                             return m7659k(C1582g.m7711b().mo6945c(b).mo6944b(j2).mo6943a());
                         }
                         Intent intent = new Intent(activity, ProxyBillingActivity.class);
-                        intent.putExtra("result_receiver", this.f6437t);
+                        intent.putExtra("result_receiver", this.f6445t);
                         intent.putExtra("BUY_INTENT", (PendingIntent) bundle.getParcelable("BUY_INTENT"));
                         activity.startActivity(intent);
-                        return C1602u.f6513p;
+                        return C1602u.f6521p;
                     } catch (CancellationException | TimeoutException unused) {
                         StringBuilder sb4 = new StringBuilder(String.valueOf(str).length() + 68);
                         sb4.append("Time out while launching billing flow: ; for sku: ");
                         sb4.append(str);
                         sb4.append("; try to reconnect");
                         C1314b.m6854k("BillingClient", sb4.toString());
-                        gVar = C1602u.f6515r;
+                        gVar = C1602u.f6523r;
                     } catch (Exception unused2) {
                         StringBuilder sb5 = new StringBuilder(String.valueOf(str).length() + 69);
                         sb5.append("Exception while launching billing flow: ; for sku: ");
@@ -436,16 +435,16 @@ public class C1574d extends AbstractC1571c {
                     }
                 } else {
                     C1314b.m6854k("BillingClient", "Current client doesn't support extra params for buy intent.");
-                    gVar = C1602u.f6505h;
+                    gVar = C1602u.f6513h;
                     return m7659k(gVar);
                 }
             } else {
                 C1314b.m6854k("BillingClient", "Current client doesn't support subscriptions.");
-                gVar = C1602u.f6516s;
+                gVar = C1602u.f6524s;
                 return m7659k(gVar);
             }
         }
-        gVar = C1602u.f6514q;
+        gVar = C1602u.f6522q;
         return m7659k(gVar);
     }
 
@@ -453,18 +452,18 @@ public class C1574d extends AbstractC1571c {
     /* renamed from: f */
     public Purchase.C1564a mo6915f(String str) {
         if (!mo6913c()) {
-            return new Purchase.C1564a(C1602u.f6514q, null);
+            return new Purchase.C1564a(C1602u.f6522q, null);
         }
         if (TextUtils.isEmpty(str)) {
             C1314b.m6854k("BillingClient", "Please provide a valid SKU type.");
-            return new Purchase.C1564a(C1602u.f6504g, null);
+            return new Purchase.C1564a(C1602u.f6512g, null);
         }
         try {
             return (Purchase.C1564a) m7665r(new CallableC1595n(this, str), 5000, null).get(5000, TimeUnit.MILLISECONDS);
         } catch (CancellationException | TimeoutException unused) {
-            return new Purchase.C1564a(C1602u.f6515r, null);
+            return new Purchase.C1564a(C1602u.f6523r, null);
         } catch (Exception unused2) {
-            return new Purchase.C1564a(C1602u.f6509l, null);
+            return new Purchase.C1564a(C1602u.f6517l, null);
         }
     }
 
@@ -473,20 +472,20 @@ public class C1574d extends AbstractC1571c {
     public void mo6916g(C1587i iVar, AbstractC1590j jVar) {
         C1582g gVar;
         if (!mo6913c()) {
-            gVar = C1602u.f6514q;
+            gVar = C1602u.f6522q;
         } else {
             String a = iVar.mo6949a();
             List<String> b = iVar.mo6950b();
             String d = iVar.mo6951d();
             if (TextUtils.isEmpty(a)) {
                 C1314b.m6854k("BillingClient", "Please fix the input params. SKU type can't be empty.");
-                gVar = C1602u.f6504g;
+                gVar = C1602u.f6512g;
             } else if (b == null) {
                 C1314b.m6854k("BillingClient", "Please fix the input params. The list of SKUs can't be empty.");
-                gVar = C1602u.f6503f;
-            } else if (!this.f6433p && d != null) {
+                gVar = C1602u.f6511f;
+            } else if (!this.f6441p && d != null) {
                 C1314b.m6854k("BillingClient", "The user's client is too old to handle skuPackageName from SkuDetails.");
-                gVar = C1602u.f6502e;
+                gVar = C1602u.f6510e;
             } else if (m7665r(new CallableC1570b0(this, a, b, d, jVar), 30000, new RunnableC1576d0(this, jVar)) == null) {
                 jVar.mo6956a(m7671x(), null);
                 return;
@@ -504,24 +503,24 @@ public class C1574d extends AbstractC1571c {
         String str;
         if (mo6913c()) {
             C1314b.m6851h("BillingClient", "Service connection is valid. No need to re-initialize.");
-            eVar.mo6928b(C1602u.f6513p);
+            eVar.mo6928b(C1602u.f6521p);
             return;
         }
-        int i = this.f6418a;
+        int i = this.f6426a;
         if (i == 1) {
             C1314b.m6854k("BillingClient", "Client is already in the process of connecting to billing service.");
-            eVar.mo6928b(C1602u.f6501d);
+            eVar.mo6928b(C1602u.f6509d);
         } else if (i == 3) {
             C1314b.m6854k("BillingClient", "Client was already closed and can't be reused. Please create another instance.");
-            eVar.mo6928b(C1602u.f6514q);
+            eVar.mo6928b(C1602u.f6522q);
         } else {
-            this.f6418a = 1;
-            this.f6421d.mo6965b();
+            this.f6426a = 1;
+            this.f6429d.mo6965b();
             C1314b.m6851h("BillingClient", "Starting in-app billing setup.");
-            this.f6425h = new ServiceConnectionC1575a(this, eVar, null);
+            this.f6433h = new ServiceConnectionC1575a(this, eVar, null);
             Intent intent = new Intent("com.android.vending.billing.InAppBillingService.BIND");
             intent.setPackage("com.android.vending");
-            List<ResolveInfo> queryIntentServices = this.f6423f.getPackageManager().queryIntentServices(intent, 0);
+            List<ResolveInfo> queryIntentServices = this.f6431f.getPackageManager().queryIntentServices(intent, 0);
             if (!(queryIntentServices == null || queryIntentServices.isEmpty() || (serviceInfo = queryIntentServices.get(0).serviceInfo) == null)) {
                 String str2 = serviceInfo.packageName;
                 String str3 = serviceInfo.name;
@@ -531,8 +530,8 @@ public class C1574d extends AbstractC1571c {
                     ComponentName componentName = new ComponentName(str2, str3);
                     Intent intent2 = new Intent(intent);
                     intent2.setComponent(componentName);
-                    intent2.putExtra("playBillingLibraryVersion", this.f6419b);
-                    if (this.f6423f.bindService(intent2, this.f6425h, 1)) {
+                    intent2.putExtra("playBillingLibraryVersion", this.f6427b);
+                    if (this.f6431f.bindService(intent2, this.f6433h, 1)) {
                         C1314b.m6851h("BillingClient", "Service was bonded successfully.");
                         return;
                     }
@@ -540,9 +539,9 @@ public class C1574d extends AbstractC1571c {
                 }
                 C1314b.m6854k("BillingClient", str);
             }
-            this.f6418a = 0;
+            this.f6426a = 0;
             C1314b.m6851h("BillingClient", "Billing service unavailable on device.");
-            eVar.mo6928b(C1602u.f6500c);
+            eVar.mo6928b(C1602u.f6508c);
         }
     }
 
@@ -557,9 +556,9 @@ public class C1574d extends AbstractC1571c {
             ArrayList<String> arrayList2 = new ArrayList<>(list.subList(i, i2 > size ? size : i2));
             Bundle bundle = new Bundle();
             bundle.putStringArrayList("ITEM_ID_LIST", arrayList2);
-            bundle.putString("playBillingLibraryVersion", this.f6419b);
+            bundle.putString("playBillingLibraryVersion", this.f6427b);
             try {
-                Bundle z = this.f6431n ? this.f6424g.mo6330z(10, this.f6423f.getPackageName(), str, bundle, C1314b.m6849f(this.f6430m, this.f6433p, this.f6434q, this.f6419b, str2)) : this.f6424g.mo6323F(3, this.f6423f.getPackageName(), str, bundle);
+                Bundle z = this.f6439n ? this.f6432g.mo6330z(10, this.f6431f.getPackageName(), str, bundle, C1314b.m6849f(this.f6438m, this.f6441p, this.f6442q, this.f6427b, str2)) : this.f6432g.mo6323F(3, this.f6431f.getPackageName(), str, bundle);
                 if (z == null) {
                     C1314b.m6854k("BillingClient", "querySkuDetailsAsync got null sku details list");
                     return new SkuDetails.C1565a(4, "Null sku details list", null);

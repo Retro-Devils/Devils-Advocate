@@ -14,41 +14,41 @@ import java.util.List;
 public class C1290a {
 
     /* renamed from: a */
-    private static final Object f5554a = new Object();
+    private static final Object f5562a = new Object();
 
     /* renamed from: b */
-    private static volatile C1290a f5555b;
+    private static volatile C1290a f5563b;
 
     /* renamed from: c */
-    private final List<String> f5556c;
+    private final List<String> f5564c;
 
     /* renamed from: d */
-    private final List<String> f5557d;
+    private final List<String> f5565d;
 
     /* renamed from: e */
-    private final List<String> f5558e;
+    private final List<String> f5566e;
 
     /* renamed from: f */
-    private final List<String> f5559f;
+    private final List<String> f5567f;
 
     private C1290a() {
         List<String> list = Collections.EMPTY_LIST;
-        this.f5556c = list;
-        this.f5557d = list;
-        this.f5558e = list;
-        this.f5559f = list;
+        this.f5564c = list;
+        this.f5565d = list;
+        this.f5566e = list;
+        this.f5567f = list;
     }
 
     /* renamed from: a */
     public static C1290a m6804a() {
-        if (f5555b == null) {
-            synchronized (f5554a) {
-                if (f5555b == null) {
-                    f5555b = new C1290a();
+        if (f5563b == null) {
+            synchronized (f5562a) {
+                if (f5563b == null) {
+                    f5563b = new C1290a();
                 }
             }
         }
-        return f5555b;
+        return f5563b;
     }
 
     @SuppressLint({"UntrackedBindService"})

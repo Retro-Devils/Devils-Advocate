@@ -22,13 +22,13 @@ public class C1286g {
     @Deprecated
 
     /* renamed from: a */
-    public static final int f5547a = 12451000;
+    public static final int f5555a = 12451000;
 
     /* renamed from: b */
-    static final AtomicBoolean f5548b = new AtomicBoolean();
+    static final AtomicBoolean f5556b = new AtomicBoolean();
 
     /* renamed from: c */
-    private static final AtomicBoolean f5549c = new AtomicBoolean();
+    private static final AtomicBoolean f5557c = new AtomicBoolean();
 
     @Deprecated
     /* renamed from: a */
@@ -53,10 +53,10 @@ public class C1286g {
         } catch (Throwable unused) {
             Log.e("GooglePlayServicesUtil", "The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.");
         }
-        if (!"com.google.android.gms".equals(context.getPackageName()) && !f5549c.get()) {
+        if (!"com.google.android.gms".equals(context.getPackageName()) && !f5557c.get()) {
             int a = C3019n0.m12358a(context);
             if (a != 0) {
-                int i2 = f5547a;
+                int i2 = f5555a;
                 if (a != i2) {
                     StringBuilder sb = new StringBuilder(320);
                     sb.append("The meta-data tag in your app's AndroidManifest.xml does not have the right value.  Expected ");

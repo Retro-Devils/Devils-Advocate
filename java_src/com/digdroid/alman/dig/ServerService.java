@@ -28,51 +28,51 @@ import p069c.p070a.p071a.p072w.C1272k;
 public class ServerService extends IntentService {
 
     /* renamed from: b */
-    public static String f7700b = "https://digdroid.com/php";
+    public static String f7708b = "https://digdroid.com/php";
 
     /* renamed from: c */
-    private static Object f7701c = new Object();
+    private static Object f7709c = new Object();
 
     /* renamed from: d */
-    private static boolean f7702d = false;
+    private static boolean f7710d = false;
 
     /* renamed from: e */
-    private static String f7703e = "";
+    private static String f7711e = "";
 
     /* renamed from: f */
-    private C2219c3 f7704f;
+    private C2219c3 f7712f;
 
     /* renamed from: g */
-    int f7705g;
+    int f7713g;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.digdroid.alman.dig.ServerService$a */
     public class C2130a implements C1245p.AbstractC1246a {
 
         /* renamed from: a */
-        final /* synthetic */ String f7706a;
+        final /* synthetic */ String f7714a;
 
         /* renamed from: b */
-        final /* synthetic */ SQLiteDatabase f7707b;
+        final /* synthetic */ SQLiteDatabase f7715b;
 
         /* renamed from: c */
-        final /* synthetic */ long f7708c;
+        final /* synthetic */ long f7716c;
 
         C2130a(String str, SQLiteDatabase sQLiteDatabase, long j) {
-            this.f7706a = str;
-            this.f7707b = sQLiteDatabase;
-            this.f7708c = j;
+            this.f7714a = str;
+            this.f7715b = sQLiteDatabase;
+            this.f7716c = j;
         }
 
         @Override // p069c.p070a.p071a.C1245p.AbstractC1246a
         /* renamed from: a */
         public void mo6225a(C1252u uVar) {
-            if (uVar != null && uVar.f5478b != null) {
-                Log.e("ZZZ", "not found: " + this.f7706a);
-                int i = uVar.f5478b.f5435a;
+            if (uVar != null && uVar.f5485b != null) {
+                Log.e("ZZZ", "not found: " + this.f7714a);
+                int i = uVar.f5485b.f5442a;
                 if (i == 404 || i == 410 || (i >= 300 && i < 400)) {
-                    SQLiteDatabase sQLiteDatabase = this.f7707b;
-                    sQLiteDatabase.execSQL("UPDATE games SET gdbid=-1 WHERE _id=" + this.f7708c);
+                    SQLiteDatabase sQLiteDatabase = this.f7715b;
+                    sQLiteDatabase.execSQL("UPDATE games SET gdbid=-1 WHERE _id=" + this.f7716c);
                 }
             }
         }
@@ -83,30 +83,30 @@ public class ServerService extends IntentService {
     public class C2131b implements C1245p.AbstractC1247b<byte[]> {
 
         /* renamed from: a */
-        final /* synthetic */ C2749t1 f7710a;
+        final /* synthetic */ C2749t1 f7718a;
 
         /* renamed from: b */
-        final /* synthetic */ File f7711b;
+        final /* synthetic */ File f7719b;
 
         /* renamed from: c */
-        final /* synthetic */ SQLiteDatabase f7712c;
+        final /* synthetic */ SQLiteDatabase f7720c;
 
         /* renamed from: d */
-        final /* synthetic */ long f7713d;
+        final /* synthetic */ long f7721d;
 
         C2131b(C2749t1 t1Var, File file, SQLiteDatabase sQLiteDatabase, long j) {
-            this.f7710a = t1Var;
-            this.f7711b = file;
-            this.f7712c = sQLiteDatabase;
-            this.f7713d = j;
+            this.f7718a = t1Var;
+            this.f7719b = file;
+            this.f7720c = sQLiteDatabase;
+            this.f7721d = j;
         }
 
         /* renamed from: b */
         public void mo6226a(byte[] bArr) {
             if (bArr != null) {
-                this.f7710a.mo9287w(bArr, this.f7711b.getAbsolutePath());
-                SQLiteDatabase sQLiteDatabase = this.f7712c;
-                sQLiteDatabase.execSQL("UPDATE games SET gdbid=-1 WHERE _id=" + this.f7713d);
+                this.f7718a.mo9287w(bArr, this.f7719b.getAbsolutePath());
+                SQLiteDatabase sQLiteDatabase = this.f7720c;
+                sQLiteDatabase.execSQL("UPDATE games SET gdbid=-1 WHERE _id=" + this.f7721d);
             }
         }
     }
@@ -116,29 +116,29 @@ public class ServerService extends IntentService {
     public class C2132c implements C1245p.AbstractC1246a {
 
         /* renamed from: a */
-        final /* synthetic */ String f7715a;
+        final /* synthetic */ String f7723a;
 
         /* renamed from: b */
-        final /* synthetic */ SQLiteDatabase f7716b;
+        final /* synthetic */ SQLiteDatabase f7724b;
 
         /* renamed from: c */
-        final /* synthetic */ long f7717c;
+        final /* synthetic */ long f7725c;
 
         C2132c(String str, SQLiteDatabase sQLiteDatabase, long j) {
-            this.f7715a = str;
-            this.f7716b = sQLiteDatabase;
-            this.f7717c = j;
+            this.f7723a = str;
+            this.f7724b = sQLiteDatabase;
+            this.f7725c = j;
         }
 
         @Override // p069c.p070a.p071a.C1245p.AbstractC1246a
         /* renamed from: a */
         public void mo6225a(C1252u uVar) {
-            if (uVar != null && uVar.f5478b != null) {
-                Log.e("ZZZ", "not found: " + this.f7715a);
-                int i = uVar.f5478b.f5435a;
+            if (uVar != null && uVar.f5485b != null) {
+                Log.e("ZZZ", "not found: " + this.f7723a);
+                int i = uVar.f5485b.f5442a;
                 if (i == 404 || i == 410 || (i >= 300 && i < 400)) {
-                    SQLiteDatabase sQLiteDatabase = this.f7716b;
-                    sQLiteDatabase.execSQL("UPDATE games SET gdbid=-1 WHERE _id=" + this.f7717c);
+                    SQLiteDatabase sQLiteDatabase = this.f7724b;
+                    sQLiteDatabase.execSQL("UPDATE games SET gdbid=-1 WHERE _id=" + this.f7725c);
                 }
             }
         }
@@ -149,29 +149,29 @@ public class ServerService extends IntentService {
     public class C2133d implements C1245p.AbstractC1247b<byte[]> {
 
         /* renamed from: a */
-        final /* synthetic */ C2749t1 f7719a;
+        final /* synthetic */ C2749t1 f7727a;
 
         /* renamed from: b */
-        final /* synthetic */ File f7720b;
+        final /* synthetic */ File f7728b;
 
         /* renamed from: c */
-        final /* synthetic */ C2148s f7721c;
+        final /* synthetic */ C2148s f7729c;
 
         C2133d(C2749t1 t1Var, File file, C2148s sVar) {
-            this.f7719a = t1Var;
-            this.f7720b = file;
-            this.f7721c = sVar;
+            this.f7727a = t1Var;
+            this.f7728b = file;
+            this.f7729c = sVar;
         }
 
         /* renamed from: b */
         public void mo6226a(byte[] bArr) {
             if (bArr != null) {
-                this.f7719a.mo9287w(bArr, this.f7720b.getAbsolutePath());
+                this.f7727a.mo9287w(bArr, this.f7728b.getAbsolutePath());
                 try {
                     Thread.sleep(2000);
                 } catch (Exception unused) {
                 }
-                C2490m2.m10682a(ServerService.this).mo6218a(this.f7721c);
+                C2490m2.m10682a(ServerService.this).mo6218a(this.f7729c);
             }
         }
     }
@@ -181,28 +181,28 @@ public class ServerService extends IntentService {
     public class C2134e implements C1245p.AbstractC1246a {
 
         /* renamed from: a */
-        final /* synthetic */ String f7723a;
+        final /* synthetic */ String f7731a;
 
         /* renamed from: b */
-        final /* synthetic */ C2148s f7724b;
+        final /* synthetic */ C2148s f7732b;
 
         C2134e(String str, C2148s sVar) {
-            this.f7723a = str;
-            this.f7724b = sVar;
+            this.f7731a = str;
+            this.f7732b = sVar;
         }
 
         @Override // p069c.p070a.p071a.C1245p.AbstractC1246a
         /* renamed from: a */
         public void mo6225a(C1252u uVar) {
-            if (uVar != null && uVar.f5478b != null) {
-                Log.e("ZZZ", "not found: " + this.f7723a);
-                int i = uVar.f5478b.f5435a;
+            if (uVar != null && uVar.f5485b != null) {
+                Log.e("ZZZ", "not found: " + this.f7731a);
+                int i = uVar.f5485b.f5442a;
                 if (i == 404 || i == 410 || (i >= 300 && i < 400)) {
                     try {
                         Thread.sleep(2000);
                     } catch (Exception unused) {
                     }
-                    C2490m2.m10682a(ServerService.this).mo6218a(this.f7724b);
+                    C2490m2.m10682a(ServerService.this).mo6218a(this.f7732b);
                 }
             }
         }
@@ -213,29 +213,29 @@ public class ServerService extends IntentService {
     public class C2135f implements C1245p.AbstractC1247b<byte[]> {
 
         /* renamed from: a */
-        final /* synthetic */ C2749t1 f7726a;
+        final /* synthetic */ C2749t1 f7734a;
 
         /* renamed from: b */
-        final /* synthetic */ File f7727b;
+        final /* synthetic */ File f7735b;
 
         /* renamed from: c */
-        final /* synthetic */ C2148s f7728c;
+        final /* synthetic */ C2148s f7736c;
 
         C2135f(C2749t1 t1Var, File file, C2148s sVar) {
-            this.f7726a = t1Var;
-            this.f7727b = file;
-            this.f7728c = sVar;
+            this.f7734a = t1Var;
+            this.f7735b = file;
+            this.f7736c = sVar;
         }
 
         /* renamed from: b */
         public void mo6226a(byte[] bArr) {
             if (bArr != null) {
-                this.f7726a.mo9287w(bArr, this.f7727b.getAbsolutePath());
+                this.f7734a.mo9287w(bArr, this.f7735b.getAbsolutePath());
                 try {
                     Thread.sleep(2000);
                 } catch (Exception unused) {
                 }
-                C2490m2.m10682a(ServerService.this).mo6218a(this.f7728c);
+                C2490m2.m10682a(ServerService.this).mo6218a(this.f7736c);
             }
         }
     }
@@ -253,18 +253,18 @@ public class ServerService extends IntentService {
             if (bArr != null) {
                 try {
                     JSONArray jSONArray = new JSONObject(new String(bArr, "UTF-8")).getJSONObject("data").getJSONArray("games");
-                    FileOutputStream fileOutputStream = new FileOutputStream(new File("/storage/emulated/0/masterbase/mame" + ServerService.this.f7705g + ".json"));
+                    FileOutputStream fileOutputStream = new FileOutputStream(new File("/storage/emulated/0/masterbase/mame" + ServerService.this.f7713g + ".json"));
                     fileOutputStream.write(bArr);
                     fileOutputStream.flush();
                     fileOutputStream.close();
                     if (jSONArray.length() > 0) {
                         serverService = ServerService.this;
-                        i = serverService.f7705g + 1;
+                        i = serverService.f7713g + 1;
                     } else {
                         serverService = ServerService.this;
                         i = 0;
                     }
-                    serverService.f7705g = i;
+                    serverService.f7713g = i;
                 } catch (Exception unused) {
                 }
             }
@@ -304,10 +304,10 @@ public class ServerService extends IntentService {
     class C2139j implements C2295f.AbstractC2302g {
 
         /* renamed from: a */
-        final /* synthetic */ Intent f7733a;
+        final /* synthetic */ Intent f7741a;
 
         C2139j(Intent intent) {
-            this.f7733a = intent;
+            this.f7741a = intent;
         }
 
         @Override // com.digdroid.alman.dig.C2295f.AbstractC2302g
@@ -318,7 +318,7 @@ public class ServerService extends IntentService {
         @Override // com.digdroid.alman.dig.C2295f.AbstractC2302g
         /* renamed from: b */
         public void mo7914b() {
-            ServerService.this.m9571n(this.f7733a.getLongExtra("gameid", -1));
+            ServerService.this.m9571n(this.f7741a.getLongExtra("gameid", -1));
         }
     }
 
@@ -353,7 +353,7 @@ public class ServerService extends IntentService {
                 try {
                     String string = jSONObject.getString("status");
                     if (string.equals("badtoken")) {
-                        ServerService.this.f7704f.mo8158G("token", "0");
+                        ServerService.this.f7712f.mo8158G("token", "0");
                     } else if (string.equals("ok") && jSONObject.has("stats")) {
                         JSONArray jSONArray = jSONObject.getJSONArray("stats");
                         if (jSONArray.length() > 0) {
@@ -426,29 +426,29 @@ public class ServerService extends IntentService {
     public class C2145p implements C1245p.AbstractC1246a {
 
         /* renamed from: a */
-        final /* synthetic */ String f7740a;
+        final /* synthetic */ String f7748a;
 
         /* renamed from: b */
-        final /* synthetic */ SQLiteDatabase f7741b;
+        final /* synthetic */ SQLiteDatabase f7749b;
 
         /* renamed from: c */
-        final /* synthetic */ long f7742c;
+        final /* synthetic */ long f7750c;
 
         C2145p(String str, SQLiteDatabase sQLiteDatabase, long j) {
-            this.f7740a = str;
-            this.f7741b = sQLiteDatabase;
-            this.f7742c = j;
+            this.f7748a = str;
+            this.f7749b = sQLiteDatabase;
+            this.f7750c = j;
         }
 
         @Override // p069c.p070a.p071a.C1245p.AbstractC1246a
         /* renamed from: a */
         public void mo6225a(C1252u uVar) {
-            if (uVar != null && uVar.f5478b != null) {
-                Log.e("ZZZ", "not found: " + this.f7740a);
-                int i = uVar.f5478b.f5435a;
+            if (uVar != null && uVar.f5485b != null) {
+                Log.e("ZZZ", "not found: " + this.f7748a);
+                int i = uVar.f5485b.f5442a;
                 if (i == 404 || i == 410 || (i >= 300 && i < 400)) {
-                    SQLiteDatabase sQLiteDatabase = this.f7741b;
-                    sQLiteDatabase.execSQL("UPDATE games SET gdbid=-1 WHERE _id=" + this.f7742c);
+                    SQLiteDatabase sQLiteDatabase = this.f7749b;
+                    sQLiteDatabase.execSQL("UPDATE games SET gdbid=-1 WHERE _id=" + this.f7750c);
                 }
             }
         }
@@ -459,30 +459,30 @@ public class ServerService extends IntentService {
     public class C2146q implements C1245p.AbstractC1247b<byte[]> {
 
         /* renamed from: a */
-        final /* synthetic */ C2749t1 f7744a;
+        final /* synthetic */ C2749t1 f7752a;
 
         /* renamed from: b */
-        final /* synthetic */ File f7745b;
+        final /* synthetic */ File f7753b;
 
         /* renamed from: c */
-        final /* synthetic */ SQLiteDatabase f7746c;
+        final /* synthetic */ SQLiteDatabase f7754c;
 
         /* renamed from: d */
-        final /* synthetic */ long f7747d;
+        final /* synthetic */ long f7755d;
 
         C2146q(C2749t1 t1Var, File file, SQLiteDatabase sQLiteDatabase, long j) {
-            this.f7744a = t1Var;
-            this.f7745b = file;
-            this.f7746c = sQLiteDatabase;
-            this.f7747d = j;
+            this.f7752a = t1Var;
+            this.f7753b = file;
+            this.f7754c = sQLiteDatabase;
+            this.f7755d = j;
         }
 
         /* renamed from: b */
         public void mo6226a(byte[] bArr) {
             if (bArr != null) {
-                this.f7744a.mo9287w(bArr, this.f7745b.getAbsolutePath());
-                SQLiteDatabase sQLiteDatabase = this.f7746c;
-                sQLiteDatabase.execSQL("UPDATE games SET gdbid=-1 WHERE _id=" + this.f7747d);
+                this.f7752a.mo9287w(bArr, this.f7753b.getAbsolutePath());
+                SQLiteDatabase sQLiteDatabase = this.f7754c;
+                sQLiteDatabase.execSQL("UPDATE games SET gdbid=-1 WHERE _id=" + this.f7755d);
             }
         }
     }
@@ -496,7 +496,7 @@ public class ServerService extends IntentService {
         /* access modifiers changed from: protected */
         /* renamed from: a */
         public Void doInBackground(Void... voidArr) {
-            synchronized (ServerService.f7701c) {
+            synchronized (ServerService.f7709c) {
                 File filesDir = ServerService.this.getFilesDir();
                 if (filesDir != null) {
                     File file = new File(filesDir, "queue.json");
@@ -507,7 +507,7 @@ public class ServerService extends IntentService {
                         }
                     }
                 }
-                boolean unused2 = ServerService.f7702d = false;
+                boolean unused2 = ServerService.f7710d = false;
             }
             ServerService.this.m9569l();
             return null;
@@ -519,40 +519,40 @@ public class ServerService extends IntentService {
     public class C2148s extends AbstractC1239n<byte[]> {
 
         /* renamed from: q */
-        private final C1245p.AbstractC1247b<byte[]> f7750q;
+        private final C1245p.AbstractC1247b<byte[]> f7758q;
 
         /* renamed from: r */
-        private Map<String, String> f7751r;
+        private Map<String, String> f7759r;
 
         /* renamed from: s */
-        public Map<String, String> f7752s;
+        public Map<String, String> f7760s;
 
         public C2148s(int i, String str, C1245p.AbstractC1247b<byte[]> bVar, C1245p.AbstractC1246a aVar, HashMap<String, String> hashMap) {
             super(i, str, aVar);
             mo6189L(false);
-            this.f7750q = bVar;
-            this.f7751r = hashMap;
+            this.f7758q = bVar;
+            this.f7759r = hashMap;
         }
 
         /* access modifiers changed from: protected */
         @Override // p069c.p070a.p071a.AbstractC1239n
         /* renamed from: F */
         public C1245p<byte[]> mo6183F(C1236k kVar) {
-            this.f7752s = kVar.f5437c;
-            return C1245p.m6654c(kVar.f5436b, C1266g.m6720c(kVar));
+            this.f7760s = kVar.f5444c;
+            return C1245p.m6654c(kVar.f5443b, C1266g.m6720c(kVar));
         }
 
         /* access modifiers changed from: protected */
         /* renamed from: O */
         public void mo6196e(byte[] bArr) {
-            this.f7750q.mo6226a(bArr);
+            this.f7758q.mo6226a(bArr);
         }
 
         /* access modifiers changed from: protected */
         @Override // p069c.p070a.p071a.AbstractC1239n
         /* renamed from: o */
         public Map<String, String> mo6204o() {
-            return this.f7751r;
+            return this.f7759r;
         }
     }
 
@@ -561,10 +561,10 @@ public class ServerService extends IntentService {
     public static class AsyncTaskC2149t extends AsyncTask<String, Void, Void> {
 
         /* renamed from: a */
-        Context f7754a;
+        Context f7762a;
 
         public AsyncTaskC2149t(Context context) {
-            this.f7754a = context;
+            this.f7762a = context;
         }
 
         /* access modifiers changed from: protected */
@@ -600,8 +600,8 @@ public class ServerService extends IntentService {
             e2.mo9329h();
             SQLiteDatabase c = e2.mo9325c();
             String str = "first_sync_t";
-            long n = ServerService.this.f7704f.mo8190n(str, 0);
-            long n2 = ServerService.this.f7704f.mo8190n("last_sync_t", 2000000000);
+            long n = ServerService.this.f7712f.mo8190n(str, 0);
+            long n2 = ServerService.this.f7712f.mo8190n("last_sync_t", 2000000000);
             try {
                 int length = jSONArray.length();
                 String str2 = ".";
@@ -642,8 +642,8 @@ public class ServerService extends IntentService {
                 }
                 c.setTransactionSuccessful();
                 c.endTransaction();
-                ServerService.this.f7704f.mo8157F(str, n);
-                ServerService.this.f7704f.mo8157F("last_sync_t", n2);
+                ServerService.this.f7712f.mo8157F(str, n);
+                ServerService.this.f7712f.mo8157F("last_sync_t", n2);
                 if (length > 800) {
                     C1088a.m6129b(ServerService.this.getApplicationContext()).mo5723d(new Intent(ServerService.this.getPackageName() + str2 + "STATS_END"));
                 }
@@ -662,8 +662,8 @@ public class ServerService extends IntentService {
                     if (jSONObject.has("status")) {
                         String string = jSONObject.getString("status");
                         if (string.equals("badtoken")) {
-                            ServerService.this.f7704f.mo8158G("token", "0");
-                            boolean unused = ServerService.f7702d = false;
+                            ServerService.this.f7712f.mo8158G("token", "0");
+                            boolean unused = ServerService.f7710d = false;
                             ServerService.this.m9569l();
                             return null;
                         } else if (string.equals("ok")) {
@@ -691,8 +691,8 @@ public class ServerService extends IntentService {
 
     /* renamed from: f */
     static /* synthetic */ String m9563f(Object obj) {
-        String str = f7703e + obj;
-        f7703e = str;
+        String str = f7711e + obj;
+        f7711e = str;
         return str;
     }
 
@@ -705,8 +705,8 @@ public class ServerService extends IntentService {
     /* access modifiers changed from: public */
     /* renamed from: k */
     private void m9568k() {
-        synchronized (f7701c) {
-            f7702d = false;
+        synchronized (f7709c) {
+            f7710d = false;
         }
         m9569l();
     }
@@ -715,9 +715,9 @@ public class ServerService extends IntentService {
     /* access modifiers changed from: public */
     /* renamed from: l */
     private void m9569l() {
-        if (f7703e.length() > 0) {
-            m9573r(this, f7703e);
-            f7703e = "";
+        if (f7711e.length() > 0) {
+            m9573r(this, f7711e);
+            f7711e = "";
         }
     }
 
@@ -737,10 +737,10 @@ public class ServerService extends IntentService {
     /* renamed from: n */
     private void m9571n(long j) {
         try {
-            String q = this.f7704f.mo8193q("userid", "0");
-            String q2 = this.f7704f.mo8193q("token", "0");
+            String q = this.f7712f.mo8193q("userid", "0");
+            String q2 = this.f7712f.mo8193q("token", "0");
             JSONObject jSONObject = new JSONObject("{\"userid\":\"" + q + "\",\"token\":\"" + q2 + "\",\"gameid\":" + j + "}");
-            C2490m2.m10682a(this).mo6218a(new C1272k(f7700b + "/gamestats.php", jSONObject, new C2141l(), new C2142m()));
+            C2490m2.m10682a(this).mo6218a(new C1272k(f7708b + "/gamestats.php", jSONObject, new C2141l(), new C2142m()));
         } catch (Exception unused) {
         }
     }
@@ -774,7 +774,7 @@ public class ServerService extends IntentService {
     /* access modifiers changed from: private */
     /* access modifiers changed from: public */
     /* JADX WARNING: Code restructure failed: missing block: B:30:?, code lost:
-        com.digdroid.alman.dig.C2490m2.m10682a(r13).mo6218a(new p069c.p070a.p071a.p072w.C1272k(com.digdroid.alman.dig.ServerService.f7700b + "/sync.php", r2, new com.digdroid.alman.dig.ServerService.C2143n(r13), new com.digdroid.alman.dig.ServerService.C2144o(r13)));
+        com.digdroid.alman.dig.C2490m2.m10682a(r13).mo6218a(new p069c.p070a.p071a.p072w.C1272k(com.digdroid.alman.dig.ServerService.f7708b + "/sync.php", r2, new com.digdroid.alman.dig.ServerService.C2143n(r13), new com.digdroid.alman.dig.ServerService.C2144o(r13)));
      */
     /* JADX WARNING: Code restructure failed: missing block: B:31:0x010a, code lost:
         m9568k();
@@ -798,9 +798,9 @@ public class ServerService extends IntentService {
     /* access modifiers changed from: package-private */
     /* renamed from: o */
     public void mo7974o() {
-        this.f7705g = 1;
-        while (this.f7705g > 0) {
-            C2490m2.m10682a(this).mo6218a(new C2148s(0, "https://api.thegamesdb.net/v1/Games/ByPlatformID?id=23&fields=players,publishers,genres,overview&apikey=98d4ee59533bec49fd68e12987bd7e0649667f63cf560232a04b62228dd89578&page=" + this.f7705g, new C2136g(), new C2137h(), null));
+        this.f7713g = 1;
+        while (this.f7713g > 0) {
+            C2490m2.m10682a(this).mo6218a(new C2148s(0, "https://api.thegamesdb.net/Games/ByPlatformID?id=23&fields=publishers,genres,overview&apikey=98d4ee59533bec49fd68e12987bd7e0649667f63cf560232a04b62228dd89578&page=" + this.f7713g, new C2136g(), new C2137h(), null));
             try {
                 Thread.sleep(20000);
             } catch (Exception unused) {
@@ -810,7 +810,7 @@ public class ServerService extends IntentService {
 
     public void onCreate() {
         super.onCreate();
-        this.f7704f = C2219c3.m9805k(getApplicationContext());
+        this.f7712f = C2219c3.m9805k(getApplicationContext());
     }
 
     /* access modifiers changed from: protected */
@@ -822,7 +822,7 @@ public class ServerService extends IntentService {
             NetworkInfo activeNetworkInfo = ((ConnectivityManager) getApplicationContext().getSystemService("connectivity")).getActiveNetworkInfo();
             if (activeNetworkInfo != null && activeNetworkInfo.isConnectedOrConnecting()) {
                 int type = activeNetworkInfo.getType();
-                if ((!this.f7704f.mo8180c("wifi_only", true) || type == 1 || type == 9) && (action = intent.getAction()) != null) {
+                if ((!this.f7712f.mo8180c("wifi_only", true) || type == 1 || type == 9) && (action = intent.getAction()) != null) {
                     if ("com.digdroid.alman.dig.action.SYNC".equals(action)) {
                         gVar = new C2138i();
                     } else if ("com.digdroid.alman.dig.action.GAME_STATS".equals(action)) {

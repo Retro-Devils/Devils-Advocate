@@ -4,14 +4,14 @@ package p155e.p164b.p165a.p170w;
 public final class C3420b implements AbstractC3424f {
 
     /* renamed from: a */
-    private final boolean f11518a;
+    private final boolean f11527a;
 
     /* renamed from: b */
-    private int f11519b;
+    private int f11528b;
 
     public C3420b(boolean z, int i) {
-        this.f11518a = z;
-        this.f11519b = i + 4;
+        this.f11527a = z;
+        this.f11528b = i + 4;
     }
 
     @Override // p155e.p164b.p165a.p170w.AbstractC3424f
@@ -26,7 +26,7 @@ public final class C3420b implements AbstractC3424f {
                 if ((bArr[i6] & 248) == 248) {
                     int i7 = i4 + 2;
                     int i8 = (((((bArr[i5] & 7) << 19) | ((bArr[i4] & 255) << 11)) | ((bArr[i6] & 7) << 8)) | (bArr[i7] & 255)) << 1;
-                    int i9 = (this.f11518a ? i8 + ((this.f11519b + i4) - i) : i8 - ((this.f11519b + i4) - i)) >>> 1;
+                    int i9 = (this.f11527a ? i8 + ((this.f11528b + i4) - i) : i8 - ((this.f11528b + i4) - i)) >>> 1;
                     bArr[i5] = (byte) (240 | ((i9 >>> 19) & 7));
                     bArr[i4] = (byte) (i9 >>> 11);
                     bArr[i6] = (byte) (((i9 >>> 8) & 7) | 248);
@@ -37,7 +37,7 @@ public final class C3420b implements AbstractC3424f {
             i4 += 2;
         }
         int i10 = i4 - i;
-        this.f11519b += i10;
+        this.f11528b += i10;
         return i10;
     }
 }

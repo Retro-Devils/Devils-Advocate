@@ -20,13 +20,13 @@ import java.util.Random;
 public class C2292e3 extends AbstractC2531p1 {
 
     /* renamed from: n0 */
-    int f8139n0 = 0;
+    int f8147n0 = 0;
 
     /* renamed from: o0 */
-    Handler f8140o0 = new Handler();
+    Handler f8148o0 = new Handler();
 
     /* renamed from: p0 */
-    Runnable f8141p0 = new RunnableC2293a();
+    Runnable f8149p0 = new RunnableC2293a();
 
     /* renamed from: com.digdroid.alman.dig.e3$a */
     class RunnableC2293a implements Runnable {
@@ -36,7 +36,7 @@ public class C2292e3 extends AbstractC2531p1 {
         public void run() {
             Random random = new Random();
             C2292e3.this.mo2505F0().setBackgroundColor(Color.argb(255, random.nextInt(92), random.nextInt(92), random.nextInt(92)));
-            C2292e3.this.f8140o0.postDelayed(this, 200);
+            C2292e3.this.f8148o0.postDelayed(this, 200);
         }
     }
 
@@ -114,7 +114,7 @@ public class C2292e3 extends AbstractC2531p1 {
     @Override // com.digdroid.alman.dig.AbstractC2531p1
     /* renamed from: R2 */
     public void mo8113R2() {
-        AbstractC2531p1.AbstractC2532a aVar = this.f8806m0;
+        AbstractC2531p1.AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
             aVar.mo8302w(false);
         }
@@ -200,13 +200,13 @@ public class C2292e3 extends AbstractC2531p1 {
 
     /* renamed from: g3 */
     public synchronized void mo8408g3(Intent intent) {
-        this.f8139n0 = intent.getIntExtra("progress", 0);
+        this.f8147n0 = intent.getIntExtra("progress", 0);
         ActivityC0447d c0 = mo2552c0();
         if (c0 != null) {
             if (!c0.isFinishing()) {
                 View F0 = mo2505F0();
                 if (F0 != null) {
-                    ((TextView) F0.findViewById(R.id.standby)).setText(c0.getString(R.string.standby) + " " + this.f8139n0 + "%");
+                    ((TextView) F0.findViewById(R.id.standby)).setText(c0.getString(R.string.standby) + " " + this.f8147n0 + "%");
                 }
             }
         }
@@ -222,7 +222,7 @@ public class C2292e3 extends AbstractC2531p1 {
     /* renamed from: m1 */
     public void mo2585m1() {
         super.mo2585m1();
-        this.f8140o0.removeCallbacks(this.f8141p0);
+        this.f8148o0.removeCallbacks(this.f8149p0);
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2531p1
@@ -236,8 +236,8 @@ public class C2292e3 extends AbstractC2531p1 {
     public void mo2601r1() {
         super.mo2601r1();
         ((TextView) mo2505F0().findViewById(R.id.standby)).setTextColor(-1);
-        this.f8140o0.postDelayed(this.f8141p0, 0);
-        this.f8802i0 = true;
+        this.f8148o0.postDelayed(this.f8149p0, 0);
+        this.f8810i0 = true;
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2531p1

@@ -10,17 +10,17 @@ import p069c.p073b.p074a.p075a.p077b.C1279a;
 public class C2906c extends Exception {
 
     /* renamed from: b */
-    private final C0823a<C2943j0<?>, C1279a> f9760b;
+    private final C0823a<C2943j0<?>, C1279a> f9768b;
 
     public C2906c(C0823a<C2943j0<?>, C1279a> aVar) {
-        this.f9760b = aVar;
+        this.f9768b = aVar;
     }
 
     public String getMessage() {
         ArrayList arrayList = new ArrayList();
         boolean z = true;
-        for (C2943j0<?> j0Var : this.f9760b.keySet()) {
-            C1279a aVar = this.f9760b.get(j0Var);
+        for (C2943j0<?> j0Var : this.f9768b.keySet()) {
+            C1279a aVar = this.f9768b.get(j0Var);
             if (aVar.mo6266l()) {
                 z = false;
             }

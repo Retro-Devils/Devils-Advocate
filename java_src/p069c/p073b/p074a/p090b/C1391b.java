@@ -19,16 +19,16 @@ public final class C1391b {
     public static final int theme = 2130903998;
 
     /* renamed from: F */
-    public static final int f5668F = 2130904032;
+    public static final int f5676F = 2130904032;
 
     /* renamed from: a */
-    public static final int f5669a = 2130903095;
+    public static final int f5677a = 2130903095;
 
     /* renamed from: b */
     public static final int bottomSheetStyle = 2130903137;
 
     /* renamed from: c */
-    public static final int f5670c = 2130903187;
+    public static final int f5678c = 2130903187;
 
     /* renamed from: d */
     public static final int chipGroupStyle = 2130903198;
@@ -37,16 +37,16 @@ public final class C1391b {
     public static final int chipStyle = 2130903213;
 
     /* renamed from: f */
-    public static final int f5671f = 2130903235;
+    public static final int f5679f = 2130903235;
 
     /* renamed from: g */
-    public static final int f5672g = 2130903236;
+    public static final int f5680g = 2130903236;
 
     /* renamed from: h */
     public static final int colorOnSurface = 2130903244;
 
     /* renamed from: i */
-    public static final int f5673i = 2130903245;
+    public static final int f5681i = 2130903245;
 
     /* renamed from: j */
     public static final int colorPrimaryVariant = 2130903248;
@@ -55,7 +55,7 @@ public final class C1391b {
     public static final int colorSurface = 2130903252;
 
     /* renamed from: l */
-    public static final int f5674l = 2130903374;
+    public static final int f5682l = 2130903374;
 
     /* renamed from: m */
     public static final int elevationOverlayColor = 2130903376;
@@ -79,7 +79,7 @@ public final class C1391b {
     public static final int navigationViewStyle = 2130903737;
 
     /* renamed from: t */
-    public static final int f5675t = 2130903828;
+    public static final int f5683t = 2130903828;
 
     /* renamed from: u */
     public static final int snackbarButtonStyle = 2130903897;

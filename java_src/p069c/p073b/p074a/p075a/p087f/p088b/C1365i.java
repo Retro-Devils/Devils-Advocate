@@ -11,14 +11,14 @@ public final class C1365i extends AbstractC3031a {
     public static final Parcelable.Creator<C1365i> CREATOR = new C1366j();
 
     /* renamed from: b */
-    private final int f5631b;
+    private final int f5639b;
 
     /* renamed from: c */
-    private final C3028s f5632c;
+    private final C3028s f5640c;
 
     C1365i(int i, C3028s sVar) {
-        this.f5631b = i;
-        this.f5632c = sVar;
+        this.f5639b = i;
+        this.f5640c = sVar;
     }
 
     public C1365i(C3028s sVar) {
@@ -27,8 +27,8 @@ public final class C1365i extends AbstractC3031a {
 
     public final void writeToParcel(Parcel parcel, int i) {
         int a = C3034c.m12411a(parcel);
-        C3034c.m12417g(parcel, 1, this.f5631b);
-        C3034c.m12419i(parcel, 2, this.f5632c, i, false);
+        C3034c.m12417g(parcel, 1, this.f5639b);
+        C3034c.m12419i(parcel, 2, this.f5640c, i, false);
         C3034c.m12412b(parcel, a);
     }
 }

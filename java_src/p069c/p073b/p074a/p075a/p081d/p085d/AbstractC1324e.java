@@ -8,6 +8,6 @@ import p069c.p073b.p074a.p075a.p086e.C1338c;
 /* renamed from: c.b.a.a.d.d.e */
 abstract class AbstractC1324e<R extends AbstractC2964k> extends AbstractC2925c<R, C1334m> {
     public AbstractC1324e(AbstractC2911f fVar) {
-        super(C1338c.f5604c, fVar);
+        super(C1338c.f5612c, fVar);
     }
 }

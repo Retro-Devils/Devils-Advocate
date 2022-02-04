@@ -11,14 +11,14 @@ import com.bumptech.glide.p144t.C2081j;
 public final class C1943u implements AbstractC1794v<BitmapDrawable>, AbstractC1789r {
 
     /* renamed from: b */
-    private final Resources f7236b;
+    private final Resources f7244b;
 
     /* renamed from: c */
-    private final AbstractC1794v<Bitmap> f7237c;
+    private final AbstractC1794v<Bitmap> f7245c;
 
     private C1943u(Resources resources, AbstractC1794v<Bitmap> vVar) {
-        this.f7236b = (Resources) C2081j.m9432d(resources);
-        this.f7237c = (AbstractC1794v) C2081j.m9432d(vVar);
+        this.f7244b = (Resources) C2081j.m9432d(resources);
+        this.f7245c = (AbstractC1794v) C2081j.m9432d(vVar);
     }
 
     /* renamed from: g */
@@ -32,7 +32,7 @@ public final class C1943u implements AbstractC1794v<BitmapDrawable>, AbstractC17
     @Override // com.bumptech.glide.load.p122o.AbstractC1789r
     /* renamed from: a */
     public void mo7379a() {
-        AbstractC1794v<Bitmap> vVar = this.f7237c;
+        AbstractC1794v<Bitmap> vVar = this.f7245c;
         if (vVar instanceof AbstractC1789r) {
             ((AbstractC1789r) vVar).mo7379a();
         }
@@ -41,7 +41,7 @@ public final class C1943u implements AbstractC1794v<BitmapDrawable>, AbstractC17
     @Override // com.bumptech.glide.load.p122o.AbstractC1794v
     /* renamed from: b */
     public int mo7357b() {
-        return this.f7237c.mo7357b();
+        return this.f7245c.mo7357b();
     }
 
     @Override // com.bumptech.glide.load.p122o.AbstractC1794v
@@ -52,12 +52,12 @@ public final class C1943u implements AbstractC1794v<BitmapDrawable>, AbstractC17
 
     /* renamed from: e */
     public BitmapDrawable mo7358c() {
-        return new BitmapDrawable(this.f7236b, this.f7237c.mo7358c());
+        return new BitmapDrawable(this.f7244b, this.f7245c.mo7358c());
     }
 
     @Override // com.bumptech.glide.load.p122o.AbstractC1794v
     /* renamed from: f */
     public void mo7361f() {
-        this.f7237c.mo7361f();
+        this.f7245c.mo7361f();
     }
 }

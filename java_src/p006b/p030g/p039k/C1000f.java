@@ -9,24 +9,24 @@ import java.lang.reflect.Field;
 public final class C1000f {
 
     /* renamed from: a */
-    private static Field f4741a;
+    private static Field f4745a;
 
     /* renamed from: b */
-    private static boolean f4742b;
+    private static boolean f4746b;
 
     /* renamed from: a */
     private static void m5677a(LayoutInflater layoutInflater, LayoutInflater.Factory2 factory2) {
-        if (!f4742b) {
+        if (!f4746b) {
             try {
                 Field declaredField = LayoutInflater.class.getDeclaredField("mFactory2");
-                f4741a = declaredField;
+                f4745a = declaredField;
                 declaredField.setAccessible(true);
             } catch (NoSuchFieldException e) {
                 Log.e("LayoutInflaterCompatHC", "forceSetFactory2 Could not find field 'mFactory2' on class " + LayoutInflater.class.getName() + "; inflation may have unexpected results.", e);
             }
-            f4742b = true;
+            f4746b = true;
         }
-        Field field = f4741a;
+        Field field = f4745a;
         if (field != null) {
             try {
                 field.set(layoutInflater, factory2);

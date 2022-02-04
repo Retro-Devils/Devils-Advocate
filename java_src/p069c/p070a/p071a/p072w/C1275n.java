@@ -9,15 +9,15 @@ import p069c.p070a.p071a.C1245p;
 public class C1275n extends AbstractC1239n<String> {
 
     /* renamed from: q */
-    private final Object f5526q;
+    private final Object f5533q;
 
     /* renamed from: r */
-    private C1245p.AbstractC1247b<String> f5527r;
+    private C1245p.AbstractC1247b<String> f5534r;
 
     public C1275n(int i, String str, C1245p.AbstractC1247b<String> bVar, C1245p.AbstractC1246a aVar) {
         super(i, str, aVar);
-        this.f5526q = new Object();
-        this.f5527r = bVar;
+        this.f5533q = new Object();
+        this.f5534r = bVar;
     }
 
     public C1275n(String str, C1245p.AbstractC1247b<String> bVar, C1245p.AbstractC1246a aVar) {
@@ -30,9 +30,9 @@ public class C1275n extends AbstractC1239n<String> {
     public C1245p<String> mo6183F(C1236k kVar) {
         String str;
         try {
-            str = new String(kVar.f5436b, C1266g.m6721d(kVar.f5437c));
+            str = new String(kVar.f5443b, C1266g.m6721d(kVar.f5444c));
         } catch (UnsupportedEncodingException unused) {
-            str = new String(kVar.f5436b);
+            str = new String(kVar.f5443b);
         }
         return C1245p.m6654c(str, C1266g.m6720c(kVar));
     }
@@ -41,8 +41,8 @@ public class C1275n extends AbstractC1239n<String> {
     /* renamed from: O */
     public void mo6196e(String str) {
         C1245p.AbstractC1247b<String> bVar;
-        synchronized (this.f5526q) {
-            bVar = this.f5527r;
+        synchronized (this.f5533q) {
+            bVar = this.f5534r;
         }
         if (bVar != null) {
             bVar.mo6226a(str);

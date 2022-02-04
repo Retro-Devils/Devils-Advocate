@@ -6,34 +6,34 @@ import java.util.Locale;
 public final class C0945e {
 
     /* renamed from: a */
-    public static final AbstractC0944d f4639a = new C0950e(null, false);
+    public static final AbstractC0944d f4643a = new C0950e(null, false);
 
     /* renamed from: b */
-    public static final AbstractC0944d f4640b = new C0950e(null, true);
+    public static final AbstractC0944d f4644b = new C0950e(null, true);
 
     /* renamed from: c */
-    public static final AbstractC0944d f4641c;
+    public static final AbstractC0944d f4645c;
 
     /* renamed from: d */
-    public static final AbstractC0944d f4642d;
+    public static final AbstractC0944d f4646d;
 
     /* renamed from: e */
-    public static final AbstractC0944d f4643e = new C0950e(C0946a.f4645a, false);
+    public static final AbstractC0944d f4647e = new C0950e(C0946a.f4649a, false);
 
     /* renamed from: f */
-    public static final AbstractC0944d f4644f = C0951f.f4650b;
+    public static final AbstractC0944d f4648f = C0951f.f4654b;
 
     /* renamed from: b.g.i.e$a */
     private static class C0946a implements AbstractC0948c {
 
         /* renamed from: a */
-        static final C0946a f4645a = new C0946a(true);
+        static final C0946a f4649a = new C0946a(true);
 
         /* renamed from: b */
-        private final boolean f4646b;
+        private final boolean f4650b;
 
         private C0946a(boolean z) {
-            this.f4646b = z;
+            this.f4650b = z;
         }
 
         @Override // p006b.p030g.p037i.C0945e.AbstractC0948c
@@ -47,17 +47,17 @@ public final class C0945e {
                     if (a != 1) {
                         continue;
                         i++;
-                    } else if (!this.f4646b) {
+                    } else if (!this.f4650b) {
                         return 1;
                     }
-                } else if (this.f4646b) {
+                } else if (this.f4650b) {
                     return 0;
                 }
                 z = true;
                 i++;
             }
             if (z) {
-                return this.f4646b ? 1 : 0;
+                return this.f4650b ? 1 : 0;
             }
             return 2;
         }
@@ -67,7 +67,7 @@ public final class C0945e {
     private static class C0947b implements AbstractC0948c {
 
         /* renamed from: a */
-        static final C0947b f4647a = new C0947b();
+        static final C0947b f4651a = new C0947b();
 
         private C0947b() {
         }
@@ -96,15 +96,15 @@ public final class C0945e {
     private static abstract class AbstractC0949d implements AbstractC0944d {
 
         /* renamed from: a */
-        private final AbstractC0948c f4648a;
+        private final AbstractC0948c f4652a;
 
         AbstractC0949d(AbstractC0948c cVar) {
-            this.f4648a = cVar;
+            this.f4652a = cVar;
         }
 
         /* renamed from: c */
         private boolean m5473c(CharSequence charSequence, int i, int i2) {
-            int a = this.f4648a.mo5390a(charSequence, i, i2);
+            int a = this.f4652a.mo5390a(charSequence, i, i2);
             if (a == 0) {
                 return true;
             }
@@ -118,7 +118,7 @@ public final class C0945e {
         /* renamed from: a */
         public boolean mo5389a(CharSequence charSequence, int i, int i2) {
             if (charSequence != null && i >= 0 && i2 >= 0 && charSequence.length() - i2 >= i) {
-                return this.f4648a == null ? mo5391b() : m5473c(charSequence, i, i2);
+                return this.f4652a == null ? mo5391b() : m5473c(charSequence, i, i2);
             }
             throw new IllegalArgumentException();
         }
@@ -132,18 +132,18 @@ public final class C0945e {
     private static class C0950e extends AbstractC0949d {
 
         /* renamed from: b */
-        private final boolean f4649b;
+        private final boolean f4653b;
 
         C0950e(AbstractC0948c cVar, boolean z) {
             super(cVar);
-            this.f4649b = z;
+            this.f4653b = z;
         }
 
         /* access modifiers changed from: protected */
         @Override // p006b.p030g.p037i.C0945e.AbstractC0949d
         /* renamed from: b */
         public boolean mo5391b() {
-            return this.f4649b;
+            return this.f4653b;
         }
     }
 
@@ -151,7 +151,7 @@ public final class C0945e {
     private static class C0951f extends AbstractC0949d {
 
         /* renamed from: b */
-        static final C0951f f4650b = new C0951f();
+        static final C0951f f4654b = new C0951f();
 
         C0951f() {
             super(null);
@@ -166,9 +166,9 @@ public final class C0945e {
     }
 
     static {
-        C0947b bVar = C0947b.f4647a;
-        f4641c = new C0950e(bVar, false);
-        f4642d = new C0950e(bVar, true);
+        C0947b bVar = C0947b.f4651a;
+        f4645c = new C0950e(bVar, false);
+        f4646d = new C0950e(bVar, true);
     }
 
     /* renamed from: a */

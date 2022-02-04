@@ -11,25 +11,25 @@ import java.io.OutputStream;
 public class C2860x3 extends Fragment {
 
     /* renamed from: Z */
-    private AbstractC2862b f9647Z;
+    private AbstractC2862b f9655Z;
 
     /* renamed from: a0 */
-    private AsyncTaskC2863c f9648a0;
+    private AsyncTaskC2863c f9656a0;
 
     /* renamed from: b0 */
-    String f9649b0;
+    String f9657b0;
 
     /* renamed from: c0 */
-    String f9650c0;
+    String f9658c0;
 
     /* renamed from: d0 */
-    String f9651d0;
+    String f9659d0;
 
     /* renamed from: e0 */
-    String f9652e0 = "";
+    String f9660e0 = "";
 
     /* renamed from: f0 */
-    boolean f9653f0;
+    boolean f9661f0;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.digdroid.alman.dig.x3$b */
@@ -52,25 +52,25 @@ public class C2860x3 extends Fragment {
     public class AsyncTaskC2863c extends AsyncTask<Void, Long, Boolean> {
 
         /* renamed from: a */
-        OutputStream f9654a;
+        OutputStream f9662a;
 
         /* renamed from: b */
-        BufferedOutputStream f9655b;
+        BufferedOutputStream f9663b;
 
         /* renamed from: c */
-        C2164a f9656c;
+        C2164a f9664c;
 
         /* renamed from: d */
-        C2883y3 f9657d;
+        C2883y3 f9665d;
 
         /* renamed from: e */
-        long f9658e;
+        long f9666e;
 
         private AsyncTaskC2863c() {
-            this.f9654a = null;
-            this.f9655b = null;
-            this.f9656c = null;
-            this.f9658e = 0;
+            this.f9662a = null;
+            this.f9663b = null;
+            this.f9664c = null;
+            this.f9666e = 0;
         }
 
         /* access modifiers changed from: protected */
@@ -88,9 +88,9 @@ public class C2860x3 extends Fragment {
         /* access modifiers changed from: protected */
         /* renamed from: b */
         public void onCancelled(Boolean bool) {
-            if (C2860x3.this.f9647Z != null) {
+            if (C2860x3.this.f9655Z != null) {
                 try {
-                    C2860x3.this.f9647Z.mo9458j0();
+                    C2860x3.this.f9655Z.mo9458j0();
                 } catch (Exception unused) {
                 }
             }
@@ -99,9 +99,9 @@ public class C2860x3 extends Fragment {
         /* access modifiers changed from: protected */
         /* renamed from: c */
         public void onPostExecute(Boolean bool) {
-            if (C2860x3.this.f9647Z != null) {
+            if (C2860x3.this.f9655Z != null) {
                 try {
-                    C2860x3.this.f9647Z.mo9455O(bool.booleanValue());
+                    C2860x3.this.f9655Z.mo9455O(bool.booleanValue());
                 } catch (Exception unused) {
                 }
             }
@@ -110,9 +110,9 @@ public class C2860x3 extends Fragment {
         /* access modifiers changed from: protected */
         /* renamed from: d */
         public void onProgressUpdate(Long... lArr) {
-            if (C2860x3.this.f9647Z != null) {
+            if (C2860x3.this.f9655Z != null) {
                 try {
-                    C2860x3.this.f9647Z.mo9456Q(this.f9656c.mo8023h(), C2860x3.this.f9652e0, ((int) lArr[1].longValue()) / 1024, ((int) lArr[0].longValue()) / 1024);
+                    C2860x3.this.f9655Z.mo9456Q(this.f9664c.mo8023h(), C2860x3.this.f9660e0, ((int) lArr[1].longValue()) / 1024, ((int) lArr[0].longValue()) / 1024);
                 } catch (Exception unused) {
                 }
             }
@@ -120,8 +120,8 @@ public class C2860x3 extends Fragment {
 
         /* access modifiers changed from: protected */
         public void onPreExecute() {
-            if (C2860x3.this.f9647Z != null) {
-                C2860x3.this.f9647Z.mo9457b(C2860x3.this.f9652e0);
+            if (C2860x3.this.f9655Z != null) {
+                C2860x3.this.f9655Z.mo9457b(C2860x3.this.f9660e0);
             }
         }
     }
@@ -130,7 +130,7 @@ public class C2860x3 extends Fragment {
     /* renamed from: S0 */
     public void mo2529S0(Activity activity) {
         super.mo2529S0(activity);
-        this.f9647Z = (AbstractC2862b) activity;
+        this.f9655Z = (AbstractC2862b) activity;
     }
 
     @Override // androidx.fragment.app.Fragment
@@ -140,15 +140,15 @@ public class C2860x3 extends Fragment {
         boolean z = true;
         mo2580k2(true);
         Bundle h0 = mo2568h0();
-        this.f9649b0 = h0.getString("zipfile");
-        this.f9650c0 = h0.getString("location");
-        this.f9651d0 = h0.getString("name");
+        this.f9657b0 = h0.getString("zipfile");
+        this.f9658c0 = h0.getString("location");
+        this.f9659d0 = h0.getString("name");
         if (h0.getString("launch") != null) {
             z = false;
         }
-        this.f9653f0 = z;
+        this.f9661f0 = z;
         AsyncTaskC2863c cVar = new AsyncTaskC2863c();
-        this.f9648a0 = cVar;
+        this.f9656a0 = cVar;
         cVar.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, new Void[0]);
     }
 
@@ -156,11 +156,11 @@ public class C2860x3 extends Fragment {
     /* renamed from: e1 */
     public void mo2559e1() {
         super.mo2559e1();
-        this.f9647Z = null;
+        this.f9655Z = null;
     }
 
     /* renamed from: q2 */
     public void mo9454q2(boolean z) {
-        this.f9648a0.cancel(z);
+        this.f9656a0.cancel(z);
     }
 }

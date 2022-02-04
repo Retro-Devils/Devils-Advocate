@@ -20,8 +20,8 @@ public class DialogTitle extends C0302y {
         if (layout != null && (lineCount = layout.getLineCount()) > 0 && layout.getEllipsisCount(lineCount - 1) > 0) {
             setSingleLine(false);
             setMaxLines(2);
-            TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(null, C0763j.f3691X2, 16842817, 16973892);
-            int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(C0763j.f3696Y2, 0);
+            TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(null, C0763j.f3695X2, 16842817, 16973892);
+            int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(C0763j.f3700Y2, 0);
             if (dimensionPixelSize != 0) {
                 setTextSize(0, (float) dimensionPixelSize);
             }

@@ -11,11 +11,11 @@ public class C3403b extends AbstractC3402a {
         int i3 = i2 + i;
         while (i < i3) {
             byte b = bArr[i];
-            byte[] bArr2 = this.f11469b;
-            int i4 = this.f11468a;
-            int i5 = this.f11470c;
+            byte[] bArr2 = this.f11478b;
+            int i4 = this.f11477a;
+            int i5 = this.f11479c;
             bArr[i] = (byte) (b + bArr2[(i4 + i5) & 255]);
-            this.f11470c = i5 - 1;
+            this.f11479c = i5 - 1;
             bArr2[i5 & 255] = bArr[i];
             i++;
         }

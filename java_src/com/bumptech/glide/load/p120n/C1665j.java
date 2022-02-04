@@ -20,25 +20,25 @@ import java.util.Map;
 public class C1665j implements AbstractC1655d<InputStream> {
 
     /* renamed from: b */
-    static final AbstractC1667b f6673b = new C1666a();
+    static final AbstractC1667b f6681b = new C1666a();
 
     /* renamed from: c */
-    private final C1829g f6674c;
+    private final C1829g f6682c;
 
     /* renamed from: d */
-    private final int f6675d;
+    private final int f6683d;
 
     /* renamed from: e */
-    private final AbstractC1667b f6676e;
+    private final AbstractC1667b f6684e;
 
     /* renamed from: f */
-    private HttpURLConnection f6677f;
+    private HttpURLConnection f6685f;
 
     /* renamed from: g */
-    private InputStream f6678g;
+    private InputStream f6686g;
 
     /* renamed from: h */
-    private volatile boolean f6679h;
+    private volatile boolean f6687h;
 
     /* renamed from: com.bumptech.glide.load.n.j$a */
     private static class C1666a implements AbstractC1667b {
@@ -60,13 +60,13 @@ public class C1665j implements AbstractC1655d<InputStream> {
     }
 
     public C1665j(C1829g gVar, int i) {
-        this(gVar, i, f6673b);
+        this(gVar, i, f6681b);
     }
 
     C1665j(C1829g gVar, int i, AbstractC1667b bVar) {
-        this.f6674c = gVar;
-        this.f6675d = i;
-        this.f6676e = bVar;
+        this.f6682c = gVar;
+        this.f6683d = i;
+        this.f6684e = bVar;
     }
 
     /* renamed from: d */
@@ -80,8 +80,8 @@ public class C1665j implements AbstractC1655d<InputStream> {
             }
             inputStream = httpURLConnection.getInputStream();
         }
-        this.f6678g = inputStream;
-        return this.f6678g;
+        this.f6686g = inputStream;
+        return this.f6686g;
     }
 
     /* renamed from: f */
@@ -105,26 +105,26 @@ public class C1665j implements AbstractC1655d<InputStream> {
                 } catch (URISyntaxException unused) {
                 }
             }
-            this.f6677f = this.f6676e.mo7126a(url);
+            this.f6685f = this.f6684e.mo7126a(url);
             for (Map.Entry<String, String> entry : map.entrySet()) {
-                this.f6677f.addRequestProperty(entry.getKey(), entry.getValue());
+                this.f6685f.addRequestProperty(entry.getKey(), entry.getValue());
             }
-            this.f6677f.setConnectTimeout(this.f6675d);
-            this.f6677f.setReadTimeout(this.f6675d);
-            this.f6677f.setUseCaches(false);
-            this.f6677f.setDoInput(true);
-            this.f6677f.setInstanceFollowRedirects(false);
-            this.f6677f.connect();
-            this.f6678g = this.f6677f.getInputStream();
-            if (this.f6679h) {
+            this.f6685f.setConnectTimeout(this.f6683d);
+            this.f6685f.setReadTimeout(this.f6683d);
+            this.f6685f.setUseCaches(false);
+            this.f6685f.setDoInput(true);
+            this.f6685f.setInstanceFollowRedirects(false);
+            this.f6685f.connect();
+            this.f6686g = this.f6685f.getInputStream();
+            if (this.f6687h) {
                 return null;
             }
-            int responseCode = this.f6677f.getResponseCode();
+            int responseCode = this.f6685f.getResponseCode();
             if (m7927f(responseCode)) {
-                return m7926d(this.f6677f);
+                return m7926d(this.f6685f);
             }
             if (m7928g(responseCode)) {
-                String headerField = this.f6677f.getHeaderField("Location");
+                String headerField = this.f6685f.getHeaderField("Location");
                 if (!TextUtils.isEmpty(headerField)) {
                     URL url3 = new URL(url, headerField);
                     mo7097b();
@@ -134,7 +134,7 @@ public class C1665j implements AbstractC1655d<InputStream> {
             } else if (responseCode == -1) {
                 throw new C1634e(responseCode);
             } else {
-                throw new C1634e(this.f6677f.getResponseMessage(), responseCode);
+                throw new C1634e(this.f6685f.getResponseMessage(), responseCode);
             }
         } else {
             throw new C1634e("Too many (> 5) redirects!");
@@ -150,18 +150,18 @@ public class C1665j implements AbstractC1655d<InputStream> {
     @Override // com.bumptech.glide.load.p120n.AbstractC1655d
     /* renamed from: b */
     public void mo7097b() {
-        InputStream inputStream = this.f6678g;
+        InputStream inputStream = this.f6686g;
         if (inputStream != null) {
             try {
                 inputStream.close();
             } catch (IOException unused) {
             }
         }
-        HttpURLConnection httpURLConnection = this.f6677f;
+        HttpURLConnection httpURLConnection = this.f6685f;
         if (httpURLConnection != null) {
             httpURLConnection.disconnect();
         }
-        this.f6677f = null;
+        this.f6685f = null;
     }
 
     @Override // com.bumptech.glide.load.p120n.AbstractC1655d
@@ -172,7 +172,7 @@ public class C1665j implements AbstractC1655d<InputStream> {
 
     @Override // com.bumptech.glide.load.p120n.AbstractC1655d
     public void cancel() {
-        this.f6679h = true;
+        this.f6687h = true;
     }
 
     @Override // com.bumptech.glide.load.p120n.AbstractC1655d
@@ -181,7 +181,7 @@ public class C1665j implements AbstractC1655d<InputStream> {
         StringBuilder sb;
         long b = C2077f.m9416b();
         try {
-            aVar.mo7109f(m7929h(this.f6674c.mo7424h(), 0, null, this.f6674c.mo7423e()));
+            aVar.mo7109f(m7929h(this.f6682c.mo7424h(), 0, null, this.f6682c.mo7423e()));
             if (Log.isLoggable("HttpUrlFetcher", 2)) {
                 sb = new StringBuilder();
                 sb.append("Finished http url fetcher fetch in ");

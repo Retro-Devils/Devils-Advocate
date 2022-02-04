@@ -12,38 +12,38 @@ import p006b.p067t.p068a.C1205b;
 public class C2458l2 extends AbstractC2445j2 {
 
     /* renamed from: j */
-    ArrayList<Integer> f8575j = new ArrayList<>();
+    ArrayList<Integer> f8583j = new ArrayList<>();
 
     /* renamed from: k */
-    ArrayList<Bundle> f8576k = new ArrayList<>();
+    ArrayList<Bundle> f8584k = new ArrayList<>();
 
     /* renamed from: l */
-    C2219c3 f8577l;
+    C2219c3 f8585l;
 
     /* renamed from: m */
-    Handler f8578m;
+    Handler f8586m;
 
     /* renamed from: n */
-    boolean f8579n = false;
+    boolean f8587n = false;
 
     public C2458l2(AbstractActivityC2260e0 e0Var) {
         super(e0Var, e0Var.mo2668C0());
-        this.f8577l = C2219c3.m9805k(e0Var);
-        this.f8578m = new Handler();
+        this.f8585l = C2219c3.m9805k(e0Var);
+        this.f8586m = new Handler();
     }
 
     @Override // p006b.p067t.p068a.AbstractC1204a
     /* renamed from: c */
     public synchronized int mo6058c() {
-        return this.f8575j.size();
+        return this.f8583j.size();
     }
 
     @Override // p006b.p067t.p068a.AbstractC1204a, com.digdroid.alman.dig.AbstractC2445j2
     /* renamed from: i */
     public synchronized void mo6064i(Parcelable parcelable, ClassLoader classLoader) {
         Bundle bundle = (Bundle) parcelable;
-        this.f8576k = bundle.getParcelableArrayList("args");
-        this.f8575j = bundle.getIntegerArrayList("types");
+        this.f8584k = bundle.getParcelableArrayList("args");
+        this.f8583j = bundle.getIntegerArrayList("types");
         super.mo6064i(bundle.getParcelable("state"), classLoader);
     }
 
@@ -53,8 +53,8 @@ public class C2458l2 extends AbstractC2445j2 {
         Bundle bundle;
         bundle = new Bundle();
         bundle.putParcelable("state", super.mo6065j());
-        bundle.putIntegerArrayList("types", this.f8575j);
-        bundle.putParcelableArrayList("args", this.f8576k);
+        bundle.putIntegerArrayList("types", this.f8583j);
+        bundle.putParcelableArrayList("args", this.f8584k);
         return bundle;
     }
 
@@ -62,10 +62,10 @@ public class C2458l2 extends AbstractC2445j2 {
     /* renamed from: p */
     public synchronized Fragment mo8688p(int i) {
         Fragment fragment = null;
-        if (i >= this.f8575j.size()) {
+        if (i >= this.f8583j.size()) {
             return null;
         }
-        switch (this.f8575j.get(i).intValue()) {
+        switch (this.f8583j.get(i).intValue()) {
             case 0:
                 fragment = new C2452k1();
                 break;
@@ -139,27 +139,27 @@ public class C2458l2 extends AbstractC2445j2 {
                 fragment = new C2782u3();
                 break;
         }
-        fragment.mo2554c2(this.f8576k.get(i));
+        fragment.mo2554c2(this.f8584k.get(i));
         return fragment;
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2445j2
     /* renamed from: r */
     public synchronized void mo8690r(int i) {
-        if (i < this.f8575j.size()) {
+        if (i < this.f8583j.size()) {
             super.mo8690r(i);
             ArrayList arrayList = new ArrayList();
             ArrayList arrayList2 = new ArrayList();
-            arrayList.addAll(this.f8575j);
-            arrayList2.addAll(this.f8576k);
+            arrayList.addAll(this.f8583j);
+            arrayList2.addAll(this.f8584k);
             while (i < arrayList.size()) {
                 arrayList.remove(i);
                 arrayList2.remove(i);
             }
-            this.f8576k.clear();
-            this.f8576k.addAll(arrayList2);
-            this.f8575j.clear();
-            this.f8575j.addAll(arrayList);
+            this.f8584k.clear();
+            this.f8584k.addAll(arrayList2);
+            this.f8583j.clear();
+            this.f8583j.addAll(arrayList);
             mo6063h();
         }
     }
@@ -168,8 +168,8 @@ public class C2458l2 extends AbstractC2445j2 {
     public synchronized void mo8716t(C1205b bVar, int i, Bundle bundle) {
         ArrayList arrayList = new ArrayList();
         ArrayList arrayList2 = new ArrayList();
-        arrayList.addAll(this.f8575j);
-        arrayList2.addAll(this.f8576k);
+        arrayList.addAll(this.f8583j);
+        arrayList2.addAll(this.f8584k);
         if (arrayList.size() > 0) {
             int currentItem = bVar.getCurrentItem();
             super.mo8690r(currentItem + 1);
@@ -180,19 +180,19 @@ public class C2458l2 extends AbstractC2445j2 {
         }
         arrayList.add(Integer.valueOf(i));
         arrayList2.add(bundle);
-        this.f8576k.clear();
-        this.f8576k.addAll(arrayList2);
-        this.f8575j.clear();
-        this.f8575j.addAll(arrayList);
+        this.f8584k.clear();
+        this.f8584k.addAll(arrayList2);
+        this.f8583j.clear();
+        this.f8583j.addAll(arrayList);
         mo6063h();
-        bVar.mo6072K(this.f8575j.size() - 1, false);
+        bVar.mo6072K(this.f8583j.size() - 1, false);
     }
 
     /* renamed from: u */
     public synchronized void mo8717u(int i) {
-        if (i < this.f8575j.size()) {
-            this.f8576k.remove(i);
-            this.f8575j.remove(i);
+        if (i < this.f8583j.size()) {
+            this.f8584k.remove(i);
+            this.f8583j.remove(i);
             mo6063h();
         }
     }
@@ -200,7 +200,7 @@ public class C2458l2 extends AbstractC2445j2 {
     /* access modifiers changed from: package-private */
     /* renamed from: v */
     public boolean mo8718v() {
-        return this.f8579n;
+        return this.f8587n;
     }
 
     /* renamed from: w */

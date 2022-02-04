@@ -30,70 +30,70 @@ import p069c.p073b.p074a.p090b.C1397h;
 public class C3176h implements AbstractC0145m {
 
     /* renamed from: b */
-    private NavigationMenuView f10649b;
+    private NavigationMenuView f10657b;
 
     /* renamed from: c */
-    LinearLayout f10650c;
+    LinearLayout f10658c;
 
     /* renamed from: d */
-    private AbstractC0145m.AbstractC0146a f10651d;
+    private AbstractC0145m.AbstractC0146a f10659d;
 
     /* renamed from: e */
-    C0130g f10652e;
+    C0130g f10660e;
 
     /* renamed from: f */
-    private int f10653f;
+    private int f10661f;
 
     /* renamed from: g */
-    C3179c f10654g;
+    C3179c f10662g;
 
     /* renamed from: h */
-    LayoutInflater f10655h;
+    LayoutInflater f10663h;
 
     /* renamed from: i */
-    int f10656i;
+    int f10664i;
 
     /* renamed from: j */
-    boolean f10657j;
+    boolean f10665j;
 
     /* renamed from: k */
-    ColorStateList f10658k;
+    ColorStateList f10666k;
 
     /* renamed from: l */
-    ColorStateList f10659l;
+    ColorStateList f10667l;
 
     /* renamed from: m */
-    Drawable f10660m;
+    Drawable f10668m;
 
     /* renamed from: n */
-    int f10661n;
+    int f10669n;
 
     /* renamed from: o */
-    int f10662o;
+    int f10670o;
 
     /* renamed from: p */
-    int f10663p;
+    int f10671p;
 
     /* renamed from: q */
-    boolean f10664q;
+    boolean f10672q;
 
     /* renamed from: r */
-    boolean f10665r = true;
+    boolean f10673r = true;
 
     /* renamed from: s */
-    private int f10666s;
+    private int f10674s;
 
     /* renamed from: t */
-    private int f10667t;
+    private int f10675t;
 
     /* renamed from: u */
-    int f10668u;
+    int f10676u;
 
     /* renamed from: v */
-    private int f10669v = -1;
+    private int f10677v = -1;
 
     /* renamed from: w */
-    final View.OnClickListener f10670w = new View$OnClickListenerC3177a();
+    final View.OnClickListener f10678w = new View$OnClickListenerC3177a();
 
     /* renamed from: com.google.android.material.internal.h$a */
     class View$OnClickListenerC3177a implements View.OnClickListener {
@@ -105,11 +105,11 @@ public class C3176h implements AbstractC0145m {
             C3176h.this.mo10738K(true);
             C0134i itemData = ((NavigationMenuItemView) view).getItemData();
             C3176h hVar = C3176h.this;
-            boolean O = hVar.f10652e.mo624O(itemData, hVar, 0);
+            boolean O = hVar.f10660e.mo624O(itemData, hVar, 0);
             if (itemData == null || !itemData.isCheckable() || !O) {
                 z = false;
             } else {
-                C3176h.this.f10654g.mo10756D(itemData);
+                C3176h.this.f10662g.mo10756D(itemData);
             }
             C3176h.this.mo10738K(false);
             if (z) {
@@ -131,13 +131,13 @@ public class C3176h implements AbstractC0145m {
     public class C3179c extends RecyclerView.AbstractC0658g<AbstractC3188l> {
 
         /* renamed from: c */
-        private final ArrayList<AbstractC3181e> f10672c = new ArrayList<>();
+        private final ArrayList<AbstractC3181e> f10680c = new ArrayList<>();
 
         /* renamed from: d */
-        private C0134i f10673d;
+        private C0134i f10681d;
 
         /* renamed from: e */
-        private boolean f10674e;
+        private boolean f10682e;
 
         C3179c() {
             m13369B();
@@ -145,16 +145,16 @@ public class C3176h implements AbstractC0145m {
 
         /* renamed from: B */
         private void m13369B() {
-            if (!this.f10674e) {
-                this.f10674e = true;
-                this.f10672c.clear();
-                this.f10672c.add(new C3180d());
+            if (!this.f10682e) {
+                this.f10682e = true;
+                this.f10680c.clear();
+                this.f10680c.add(new C3180d());
                 int i = -1;
-                int size = C3176h.this.f10652e.mo616G().size();
+                int size = C3176h.this.f10660e.mo616G().size();
                 boolean z = false;
                 int i2 = 0;
                 for (int i3 = 0; i3 < size; i3++) {
-                    C0134i iVar = C3176h.this.f10652e.mo616G().get(i3);
+                    C0134i iVar = C3176h.this.f10660e.mo616G().get(i3);
                     if (iVar.isChecked()) {
                         mo10756D(iVar);
                     }
@@ -165,10 +165,10 @@ public class C3176h implements AbstractC0145m {
                         SubMenu subMenu = iVar.getSubMenu();
                         if (subMenu.hasVisibleItems()) {
                             if (i3 != 0) {
-                                this.f10672c.add(new C3182f(C3176h.this.f10668u, 0));
+                                this.f10680c.add(new C3182f(C3176h.this.f10676u, 0));
                             }
-                            this.f10672c.add(new C3183g(iVar));
-                            int size2 = this.f10672c.size();
+                            this.f10680c.add(new C3183g(iVar));
+                            int size2 = this.f10680c.size();
                             int size3 = subMenu.size();
                             boolean z2 = false;
                             for (int i4 = 0; i4 < size3; i4++) {
@@ -183,42 +183,42 @@ public class C3176h implements AbstractC0145m {
                                     if (iVar.isChecked()) {
                                         mo10756D(iVar);
                                     }
-                                    this.f10672c.add(new C3183g(iVar2));
+                                    this.f10680c.add(new C3183g(iVar2));
                                 }
                             }
                             if (z2) {
-                                m13370u(size2, this.f10672c.size());
+                                m13370u(size2, this.f10680c.size());
                             }
                         }
                     } else {
                         int groupId = iVar.getGroupId();
                         if (groupId != i) {
-                            i2 = this.f10672c.size();
+                            i2 = this.f10680c.size();
                             z = iVar.getIcon() != null;
                             if (i3 != 0) {
                                 i2++;
-                                ArrayList<AbstractC3181e> arrayList = this.f10672c;
-                                int i5 = C3176h.this.f10668u;
+                                ArrayList<AbstractC3181e> arrayList = this.f10680c;
+                                int i5 = C3176h.this.f10676u;
                                 arrayList.add(new C3182f(i5, i5));
                             }
                         } else if (!z && iVar.getIcon() != null) {
-                            m13370u(i2, this.f10672c.size());
+                            m13370u(i2, this.f10680c.size());
                             z = true;
                         }
                         C3183g gVar = new C3183g(iVar);
-                        gVar.f10679b = z;
-                        this.f10672c.add(gVar);
+                        gVar.f10687b = z;
+                        this.f10680c.add(gVar);
                         i = groupId;
                     }
                 }
-                this.f10674e = false;
+                this.f10682e = false;
             }
         }
 
         /* renamed from: u */
         private void m13370u(int i, int i2) {
             while (i < i2) {
-                ((C3183g) this.f10672c.get(i)).f10679b = true;
+                ((C3183g) this.f10680c.get(i)).f10687b = true;
                 i++;
             }
         }
@@ -238,28 +238,28 @@ public class C3176h implements AbstractC0145m {
             C0134i a2;
             int i = bundle.getInt("android:menu:checked", 0);
             if (i != 0) {
-                this.f10674e = true;
-                int size = this.f10672c.size();
+                this.f10682e = true;
+                int size = this.f10680c.size();
                 int i2 = 0;
                 while (true) {
                     if (i2 >= size) {
                         break;
                     }
-                    AbstractC3181e eVar = this.f10672c.get(i2);
+                    AbstractC3181e eVar = this.f10680c.get(i2);
                     if ((eVar instanceof C3183g) && (a2 = ((C3183g) eVar).mo10766a()) != null && a2.getItemId() == i) {
                         mo10756D(a2);
                         break;
                     }
                     i2++;
                 }
-                this.f10674e = false;
+                this.f10682e = false;
                 m13369B();
             }
             SparseArray sparseParcelableArray = bundle.getSparseParcelableArray("android:menu:action_views");
             if (sparseParcelableArray != null) {
-                int size2 = this.f10672c.size();
+                int size2 = this.f10680c.size();
                 for (int i3 = 0; i3 < size2; i3++) {
-                    AbstractC3181e eVar2 = this.f10672c.get(i3);
+                    AbstractC3181e eVar2 = this.f10680c.get(i3);
                     if (!(!(eVar2 instanceof C3183g) || (a = ((C3183g) eVar2).mo10766a()) == null || (actionView = a.getActionView()) == null || (jVar = (C3190j) sparseParcelableArray.get(a.getItemId())) == null)) {
                         actionView.restoreHierarchyState(jVar);
                     }
@@ -269,19 +269,19 @@ public class C3176h implements AbstractC0145m {
 
         /* renamed from: D */
         public void mo10756D(C0134i iVar) {
-            if (this.f10673d != iVar && iVar.isCheckable()) {
-                C0134i iVar2 = this.f10673d;
+            if (this.f10681d != iVar && iVar.isCheckable()) {
+                C0134i iVar2 = this.f10681d;
                 if (iVar2 != null) {
                     iVar2.setChecked(false);
                 }
-                this.f10673d = iVar;
+                this.f10681d = iVar;
                 iVar.setChecked(true);
             }
         }
 
         /* renamed from: E */
         public void mo10757E(boolean z) {
-            this.f10674e = z;
+            this.f10682e = z;
         }
 
         /* renamed from: F */
@@ -293,7 +293,7 @@ public class C3176h implements AbstractC0145m {
         @Override // androidx.recyclerview.widget.RecyclerView.AbstractC0658g
         /* renamed from: c */
         public int mo3580c() {
-            return this.f10672c.size();
+            return this.f10680c.size();
         }
 
         @Override // androidx.recyclerview.widget.RecyclerView.AbstractC0658g
@@ -305,7 +305,7 @@ public class C3176h implements AbstractC0145m {
         @Override // androidx.recyclerview.widget.RecyclerView.AbstractC0658g
         /* renamed from: e */
         public int mo4026e(int i) {
-            AbstractC3181e eVar = this.f10672c.get(i);
+            AbstractC3181e eVar = this.f10680c.get(i);
             if (eVar instanceof C3182f) {
                 return 2;
             }
@@ -321,14 +321,14 @@ public class C3176h implements AbstractC0145m {
         /* renamed from: v */
         public Bundle mo10759v() {
             Bundle bundle = new Bundle();
-            C0134i iVar = this.f10673d;
+            C0134i iVar = this.f10681d;
             if (iVar != null) {
                 bundle.putInt("android:menu:checked", iVar.getItemId());
             }
             SparseArray<? extends Parcelable> sparseArray = new SparseArray<>();
-            int size = this.f10672c.size();
+            int size = this.f10680c.size();
             for (int i = 0; i < size; i++) {
-                AbstractC3181e eVar = this.f10672c.get(i);
+                AbstractC3181e eVar = this.f10680c.get(i);
                 if (eVar instanceof C3183g) {
                     C0134i a = ((C3183g) eVar).mo10766a();
                     View actionView = a != null ? a.getActionView() : null;
@@ -345,15 +345,15 @@ public class C3176h implements AbstractC0145m {
 
         /* renamed from: w */
         public C0134i mo10760w() {
-            return this.f10673d;
+            return this.f10681d;
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: x */
         public int mo10761x() {
-            int i = C3176h.this.f10650c.getChildCount() == 0 ? 0 : 1;
-            for (int i2 = 0; i2 < C3176h.this.f10654g.mo3580c(); i2++) {
-                if (C3176h.this.f10654g.mo4026e(i2) == 0) {
+            int i = C3176h.this.f10658c.getChildCount() == 0 ? 0 : 1;
+            for (int i2 = 0; i2 < C3176h.this.f10662g.mo3580c(); i2++) {
+                if (C3176h.this.f10662g.mo4026e(i2) == 0) {
                     i++;
                 }
             }
@@ -365,31 +365,31 @@ public class C3176h implements AbstractC0145m {
             int e = mo4026e(i);
             if (e == 0) {
                 NavigationMenuItemView navigationMenuItemView = (NavigationMenuItemView) lVar.f3228b;
-                navigationMenuItemView.setIconTintList(C3176h.this.f10659l);
+                navigationMenuItemView.setIconTintList(C3176h.this.f10667l);
                 C3176h hVar = C3176h.this;
-                if (hVar.f10657j) {
-                    navigationMenuItemView.setTextAppearance(hVar.f10656i);
+                if (hVar.f10665j) {
+                    navigationMenuItemView.setTextAppearance(hVar.f10664i);
                 }
-                ColorStateList colorStateList = C3176h.this.f10658k;
+                ColorStateList colorStateList = C3176h.this.f10666k;
                 if (colorStateList != null) {
                     navigationMenuItemView.setTextColor(colorStateList);
                 }
-                Drawable drawable = C3176h.this.f10660m;
+                Drawable drawable = C3176h.this.f10668m;
                 C1013s.m5772l0(navigationMenuItemView, drawable != null ? drawable.getConstantState().newDrawable() : null);
-                C3183g gVar = (C3183g) this.f10672c.get(i);
-                navigationMenuItemView.setNeedsEmptyIcon(gVar.f10679b);
-                navigationMenuItemView.setHorizontalPadding(C3176h.this.f10661n);
-                navigationMenuItemView.setIconPadding(C3176h.this.f10662o);
+                C3183g gVar = (C3183g) this.f10680c.get(i);
+                navigationMenuItemView.setNeedsEmptyIcon(gVar.f10687b);
+                navigationMenuItemView.setHorizontalPadding(C3176h.this.f10669n);
+                navigationMenuItemView.setIconPadding(C3176h.this.f10670o);
                 C3176h hVar2 = C3176h.this;
-                if (hVar2.f10664q) {
-                    navigationMenuItemView.setIconSize(hVar2.f10663p);
+                if (hVar2.f10672q) {
+                    navigationMenuItemView.setIconSize(hVar2.f10671p);
                 }
-                navigationMenuItemView.setMaxLines(C3176h.this.f10666s);
+                navigationMenuItemView.setMaxLines(C3176h.this.f10674s);
                 navigationMenuItemView.mo450e(gVar.mo10766a(), 0);
             } else if (e == 1) {
-                ((TextView) lVar.f3228b).setText(((C3183g) this.f10672c.get(i)).mo10766a().getTitle());
+                ((TextView) lVar.f3228b).setText(((C3183g) this.f10680c.get(i)).mo10766a().getTitle());
             } else if (e == 2) {
-                C3182f fVar = (C3182f) this.f10672c.get(i);
+                C3182f fVar = (C3182f) this.f10680c.get(i);
                 lVar.f3228b.setPadding(0, fVar.mo10765b(), 0, fVar.mo10764a());
             }
         }
@@ -398,17 +398,17 @@ public class C3176h implements AbstractC0145m {
         public AbstractC3188l mo3582l(ViewGroup viewGroup, int i) {
             if (i == 0) {
                 C3176h hVar = C3176h.this;
-                return new C3185i(hVar.f10655h, viewGroup, hVar.f10670w);
+                return new C3185i(hVar.f10663h, viewGroup, hVar.f10678w);
             } else if (i == 1) {
-                return new C3187k(C3176h.this.f10655h, viewGroup);
+                return new C3187k(C3176h.this.f10663h, viewGroup);
             } else {
                 if (i == 2) {
-                    return new C3186j(C3176h.this.f10655h, viewGroup);
+                    return new C3186j(C3176h.this.f10663h, viewGroup);
                 }
                 if (i != 3) {
                     return null;
                 }
-                return new C3178b(C3176h.this.f10650c);
+                return new C3178b(C3176h.this.f10658c);
             }
         }
     }
@@ -430,24 +430,24 @@ public class C3176h implements AbstractC0145m {
     public static class C3182f implements AbstractC3181e {
 
         /* renamed from: a */
-        private final int f10676a;
+        private final int f10684a;
 
         /* renamed from: b */
-        private final int f10677b;
+        private final int f10685b;
 
         public C3182f(int i, int i2) {
-            this.f10676a = i;
-            this.f10677b = i2;
+            this.f10684a = i;
+            this.f10685b = i2;
         }
 
         /* renamed from: a */
         public int mo10764a() {
-            return this.f10677b;
+            return this.f10685b;
         }
 
         /* renamed from: b */
         public int mo10765b() {
-            return this.f10676a;
+            return this.f10684a;
         }
     }
 
@@ -456,18 +456,18 @@ public class C3176h implements AbstractC0145m {
     public static class C3183g implements AbstractC3181e {
 
         /* renamed from: a */
-        private final C0134i f10678a;
+        private final C0134i f10686a;
 
         /* renamed from: b */
-        boolean f10679b;
+        boolean f10687b;
 
         C3183g(C0134i iVar) {
-            this.f10678a = iVar;
+            this.f10686a = iVar;
         }
 
         /* renamed from: a */
         public C0134i mo10766a() {
-            return this.f10678a;
+            return this.f10686a;
         }
     }
 
@@ -482,7 +482,7 @@ public class C3176h implements AbstractC0145m {
         /* renamed from: g */
         public void mo2362g(View view, C0979c cVar) {
             super.mo2362g(view, cVar);
-            cVar.mo5474c0(C0979c.C0981b.m5654a(C3176h.this.f10654g.mo10761x(), 0, false));
+            cVar.mo5474c0(C0979c.C0981b.m5654a(C3176h.this.f10662g.mo10761x(), 0, false));
         }
     }
 
@@ -520,72 +520,72 @@ public class C3176h implements AbstractC0145m {
 
     /* renamed from: L */
     private void m13332L() {
-        int i = (this.f10650c.getChildCount() != 0 || !this.f10665r) ? 0 : this.f10667t;
-        NavigationMenuView navigationMenuView = this.f10649b;
+        int i = (this.f10658c.getChildCount() != 0 || !this.f10673r) ? 0 : this.f10675t;
+        NavigationMenuView navigationMenuView = this.f10657b;
         navigationMenuView.setPadding(0, i, 0, navigationMenuView.getPaddingBottom());
     }
 
     /* renamed from: A */
     public void mo10728A(int i) {
-        this.f10653f = i;
+        this.f10661f = i;
     }
 
     /* renamed from: B */
     public void mo10729B(Drawable drawable) {
-        this.f10660m = drawable;
+        this.f10668m = drawable;
         mo553n(false);
     }
 
     /* renamed from: C */
     public void mo10730C(int i) {
-        this.f10661n = i;
+        this.f10669n = i;
         mo553n(false);
     }
 
     /* renamed from: D */
     public void mo10731D(int i) {
-        this.f10662o = i;
+        this.f10670o = i;
         mo553n(false);
     }
 
     /* renamed from: E */
     public void mo10732E(int i) {
-        if (this.f10663p != i) {
-            this.f10663p = i;
-            this.f10664q = true;
+        if (this.f10671p != i) {
+            this.f10671p = i;
+            this.f10672q = true;
             mo553n(false);
         }
     }
 
     /* renamed from: F */
     public void mo10733F(ColorStateList colorStateList) {
-        this.f10659l = colorStateList;
+        this.f10667l = colorStateList;
         mo553n(false);
     }
 
     /* renamed from: G */
     public void mo10734G(int i) {
-        this.f10666s = i;
+        this.f10674s = i;
         mo553n(false);
     }
 
     /* renamed from: H */
     public void mo10735H(int i) {
-        this.f10656i = i;
-        this.f10657j = true;
+        this.f10664i = i;
+        this.f10665j = true;
         mo553n(false);
     }
 
     /* renamed from: I */
     public void mo10736I(ColorStateList colorStateList) {
-        this.f10658k = colorStateList;
+        this.f10666k = colorStateList;
         mo553n(false);
     }
 
     /* renamed from: J */
     public void mo10737J(int i) {
-        this.f10669v = i;
-        NavigationMenuView navigationMenuView = this.f10649b;
+        this.f10677v = i;
+        NavigationMenuView navigationMenuView = this.f10657b;
         if (navigationMenuView != null) {
             navigationMenuView.setOverScrollMode(i);
         }
@@ -593,7 +593,7 @@ public class C3176h implements AbstractC0145m {
 
     /* renamed from: K */
     public void mo10738K(boolean z) {
-        C3179c cVar = this.f10654g;
+        C3179c cVar = this.f10662g;
         if (cVar != null) {
             cVar.mo10757E(z);
         }
@@ -602,7 +602,7 @@ public class C3176h implements AbstractC0145m {
     @Override // androidx.appcompat.view.menu.AbstractC0145m
     /* renamed from: b */
     public void mo544b(C0130g gVar, boolean z) {
-        AbstractC0145m.AbstractC0146a aVar = this.f10651d;
+        AbstractC0145m.AbstractC0146a aVar = this.f10659d;
         if (aVar != null) {
             aVar.mo347b(gVar, z);
         }
@@ -610,15 +610,15 @@ public class C3176h implements AbstractC0145m {
 
     /* renamed from: c */
     public void mo10739c(View view) {
-        this.f10650c.addView(view);
-        NavigationMenuView navigationMenuView = this.f10649b;
+        this.f10658c.addView(view);
+        NavigationMenuView navigationMenuView = this.f10657b;
         navigationMenuView.setPadding(0, 0, 0, navigationMenuView.getPaddingBottom());
     }
 
     @Override // androidx.appcompat.view.menu.AbstractC0145m
     /* renamed from: d */
     public int mo546d() {
-        return this.f10653f;
+        return this.f10661f;
     }
 
     @Override // androidx.appcompat.view.menu.AbstractC0145m
@@ -631,18 +631,18 @@ public class C3176h implements AbstractC0145m {
     /* renamed from: f */
     public Parcelable mo569f() {
         Bundle bundle = new Bundle();
-        if (this.f10649b != null) {
+        if (this.f10657b != null) {
             SparseArray<Parcelable> sparseArray = new SparseArray<>();
-            this.f10649b.saveHierarchyState(sparseArray);
+            this.f10657b.saveHierarchyState(sparseArray);
             bundle.putSparseParcelableArray("android:menu:list", sparseArray);
         }
-        C3179c cVar = this.f10654g;
+        C3179c cVar = this.f10662g;
         if (cVar != null) {
             bundle.putBundle("android:menu:adapter", cVar.mo10759v());
         }
-        if (this.f10650c != null) {
+        if (this.f10658c != null) {
             SparseArray<? extends Parcelable> sparseArray2 = new SparseArray<>();
-            this.f10650c.saveHierarchyState(sparseArray2);
+            this.f10658c.saveHierarchyState(sparseArray2);
             bundle.putSparseParcelableArray("android:menu:header", sparseArray2);
         }
         return bundle;
@@ -651,9 +651,9 @@ public class C3176h implements AbstractC0145m {
     @Override // androidx.appcompat.view.menu.AbstractC0145m
     /* renamed from: g */
     public void mo547g(Context context, C0130g gVar) {
-        this.f10655h = LayoutInflater.from(context);
-        this.f10652e = gVar;
-        this.f10668u = context.getResources().getDimensionPixelOffset(C1393d.design_navigation_separator_vertical_padding);
+        this.f10663h = LayoutInflater.from(context);
+        this.f10660e = gVar;
+        this.f10676u = context.getResources().getDimensionPixelOffset(C1393d.design_navigation_separator_vertical_padding);
     }
 
     @Override // androidx.appcompat.view.menu.AbstractC0145m
@@ -663,15 +663,15 @@ public class C3176h implements AbstractC0145m {
             Bundle bundle = (Bundle) parcelable;
             SparseArray<Parcelable> sparseParcelableArray = bundle.getSparseParcelableArray("android:menu:list");
             if (sparseParcelableArray != null) {
-                this.f10649b.restoreHierarchyState(sparseParcelableArray);
+                this.f10657b.restoreHierarchyState(sparseParcelableArray);
             }
             Bundle bundle2 = bundle.getBundle("android:menu:adapter");
             if (bundle2 != null) {
-                this.f10654g.mo10755C(bundle2);
+                this.f10662g.mo10755C(bundle2);
             }
             SparseArray sparseParcelableArray2 = bundle.getSparseParcelableArray("android:menu:header");
             if (sparseParcelableArray2 != null) {
-                this.f10650c.restoreHierarchyState(sparseParcelableArray2);
+                this.f10658c.restoreHierarchyState(sparseParcelableArray2);
             }
         }
     }
@@ -691,13 +691,13 @@ public class C3176h implements AbstractC0145m {
     /* renamed from: l */
     public void mo10740l(C0964a0 a0Var) {
         int h = a0Var.mo5418h();
-        if (this.f10667t != h) {
-            this.f10667t = h;
+        if (this.f10675t != h) {
+            this.f10675t = h;
             m13332L();
         }
-        NavigationMenuView navigationMenuView = this.f10649b;
+        NavigationMenuView navigationMenuView = this.f10657b;
         navigationMenuView.setPadding(0, navigationMenuView.getPaddingTop(), 0, a0Var.mo5414e());
-        C1013s.m5761g(this.f10650c, a0Var);
+        C1013s.m5761g(this.f10658c, a0Var);
     }
 
     @Override // androidx.appcompat.view.menu.AbstractC0145m
@@ -709,7 +709,7 @@ public class C3176h implements AbstractC0145m {
     @Override // androidx.appcompat.view.menu.AbstractC0145m
     /* renamed from: n */
     public void mo553n(boolean z) {
-        C3179c cVar = this.f10654g;
+        C3179c cVar = this.f10662g;
         if (cVar != null) {
             cVar.mo10758F();
         }
@@ -717,80 +717,80 @@ public class C3176h implements AbstractC0145m {
 
     /* renamed from: o */
     public C0134i mo10741o() {
-        return this.f10654g.mo10760w();
+        return this.f10662g.mo10760w();
     }
 
     /* renamed from: p */
     public int mo10742p() {
-        return this.f10650c.getChildCount();
+        return this.f10658c.getChildCount();
     }
 
     /* renamed from: q */
     public Drawable mo10743q() {
-        return this.f10660m;
+        return this.f10668m;
     }
 
     /* renamed from: r */
     public int mo10744r() {
-        return this.f10661n;
+        return this.f10669n;
     }
 
     /* renamed from: s */
     public int mo10745s() {
-        return this.f10662o;
+        return this.f10670o;
     }
 
     /* renamed from: t */
     public int mo10746t() {
-        return this.f10666s;
+        return this.f10674s;
     }
 
     /* renamed from: u */
     public ColorStateList mo10747u() {
-        return this.f10658k;
+        return this.f10666k;
     }
 
     /* renamed from: v */
     public ColorStateList mo10748v() {
-        return this.f10659l;
+        return this.f10667l;
     }
 
     /* renamed from: w */
     public AbstractC0147n mo10749w(ViewGroup viewGroup) {
-        if (this.f10649b == null) {
-            NavigationMenuView navigationMenuView = (NavigationMenuView) this.f10655h.inflate(C1397h.design_navigation_menu, viewGroup, false);
-            this.f10649b = navigationMenuView;
-            navigationMenuView.setAccessibilityDelegateCompat(new C3184h(this.f10649b));
-            if (this.f10654g == null) {
-                this.f10654g = new C3179c();
+        if (this.f10657b == null) {
+            NavigationMenuView navigationMenuView = (NavigationMenuView) this.f10663h.inflate(C1397h.design_navigation_menu, viewGroup, false);
+            this.f10657b = navigationMenuView;
+            navigationMenuView.setAccessibilityDelegateCompat(new C3184h(this.f10657b));
+            if (this.f10662g == null) {
+                this.f10662g = new C3179c();
             }
-            int i = this.f10669v;
+            int i = this.f10677v;
             if (i != -1) {
-                this.f10649b.setOverScrollMode(i);
+                this.f10657b.setOverScrollMode(i);
             }
-            this.f10650c = (LinearLayout) this.f10655h.inflate(C1397h.design_navigation_item_header, (ViewGroup) this.f10649b, false);
-            this.f10649b.setAdapter(this.f10654g);
+            this.f10658c = (LinearLayout) this.f10663h.inflate(C1397h.design_navigation_item_header, (ViewGroup) this.f10657b, false);
+            this.f10657b.setAdapter(this.f10662g);
         }
-        return this.f10649b;
+        return this.f10657b;
     }
 
     /* renamed from: x */
     public View mo10750x(int i) {
-        View inflate = this.f10655h.inflate(i, (ViewGroup) this.f10650c, false);
+        View inflate = this.f10663h.inflate(i, (ViewGroup) this.f10658c, false);
         mo10739c(inflate);
         return inflate;
     }
 
     /* renamed from: y */
     public void mo10751y(boolean z) {
-        if (this.f10665r != z) {
-            this.f10665r = z;
+        if (this.f10673r != z) {
+            this.f10673r = z;
             m13332L();
         }
     }
 
     /* renamed from: z */
     public void mo10752z(C0134i iVar) {
-        this.f10654g.mo10756D(iVar);
+        this.f10662g.mo10756D(iVar);
     }
 }

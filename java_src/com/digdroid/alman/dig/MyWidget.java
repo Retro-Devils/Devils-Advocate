@@ -37,16 +37,16 @@ public class MyWidget extends AppWidgetProvider {
     class RunnableC2121a implements Runnable {
 
         /* renamed from: b */
-        final /* synthetic */ Activity f7667b;
+        final /* synthetic */ Activity f7675b;
 
         /* renamed from: c */
-        final /* synthetic */ C2219c3 f7668c;
+        final /* synthetic */ C2219c3 f7676c;
 
         /* renamed from: d */
-        final /* synthetic */ String f7669d;
+        final /* synthetic */ String f7677d;
 
         /* renamed from: e */
-        final /* synthetic */ long f7670e;
+        final /* synthetic */ long f7678e;
 
         /* renamed from: com.digdroid.alman.dig.MyWidget$a$a */
         class DialogInterface$OnClickListenerC2122a implements DialogInterface.OnClickListener {
@@ -54,9 +54,9 @@ public class MyWidget extends AppWidgetProvider {
             }
 
             public void onClick(DialogInterface dialogInterface, int i) {
-                HashSet hashSet = new HashSet(RunnableC2121a.this.f7668c.mo8194r("homescreen"));
-                hashSet.add(RunnableC2121a.this.f7669d + RunnableC2121a.this.f7670e);
-                RunnableC2121a.this.f7668c.mo8159H("homescreen", hashSet);
+                HashSet hashSet = new HashSet(RunnableC2121a.this.f7676c.mo8194r("homescreen"));
+                hashSet.add(RunnableC2121a.this.f7677d + RunnableC2121a.this.f7678e);
+                RunnableC2121a.this.f7676c.mo8159H("homescreen", hashSet);
             }
         }
 
@@ -66,21 +66,21 @@ public class MyWidget extends AppWidgetProvider {
             }
 
             public void onClick(DialogInterface dialogInterface, int i) {
-                HashSet hashSet = new HashSet(RunnableC2121a.this.f7668c.mo8194r("homescreen"));
-                hashSet.add("+" + RunnableC2121a.this.f7669d + RunnableC2121a.this.f7670e);
-                RunnableC2121a.this.f7668c.mo8159H("homescreen", hashSet);
+                HashSet hashSet = new HashSet(RunnableC2121a.this.f7676c.mo8194r("homescreen"));
+                hashSet.add("+" + RunnableC2121a.this.f7677d + RunnableC2121a.this.f7678e);
+                RunnableC2121a.this.f7676c.mo8159H("homescreen", hashSet);
             }
         }
 
         RunnableC2121a(Activity activity, C2219c3 c3Var, String str, long j) {
-            this.f7667b = activity;
-            this.f7668c = c3Var;
-            this.f7669d = str;
-            this.f7670e = j;
+            this.f7675b = activity;
+            this.f7676c = c3Var;
+            this.f7677d = str;
+            this.f7678e = j;
         }
 
         public void run() {
-            new DialogInterfaceC0068b.C0069a(this.f7667b, C2553q3.m11117c()).mo229i(this.f7667b.getString(R.string.confirm_add_homescreen)).mo232l(R.string.with_label, new DialogInterface$OnClickListenerC2123b()).mo235o(R.string.without_label, new DialogInterface$OnClickListenerC2122a()).mo221a().show();
+            new DialogInterfaceC0068b.C0069a(this.f7675b, C2553q3.m11117c()).mo229i(this.f7675b.getString(R.string.confirm_add_homescreen)).mo232l(R.string.with_label, new DialogInterface$OnClickListenerC2123b()).mo235o(R.string.without_label, new DialogInterface$OnClickListenerC2122a()).mo221a().show();
         }
     }
 
@@ -88,22 +88,22 @@ public class MyWidget extends AppWidgetProvider {
     class DialogInterface$OnClickListenerC2124b implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ Activity f7673b;
+        final /* synthetic */ Activity f7681b;
 
         /* renamed from: c */
-        final /* synthetic */ long f7674c;
+        final /* synthetic */ long f7682c;
 
         /* renamed from: d */
-        final /* synthetic */ boolean f7675d;
+        final /* synthetic */ boolean f7683d;
 
         /* renamed from: e */
-        final /* synthetic */ ShortcutManager f7676e;
+        final /* synthetic */ ShortcutManager f7684e;
 
         DialogInterface$OnClickListenerC2124b(Activity activity, long j, boolean z, ShortcutManager shortcutManager) {
-            this.f7673b = activity;
-            this.f7674c = j;
-            this.f7675d = z;
-            this.f7676e = shortcutManager;
+            this.f7681b = activity;
+            this.f7682c = j;
+            this.f7683d = z;
+            this.f7684e = shortcutManager;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
@@ -112,43 +112,43 @@ public class MyWidget extends AppWidgetProvider {
             String str;
             Icon icon;
             if (Build.VERSION.SDK_INT >= 26) {
-                C2451k0 k0Var = new C2451k0(this.f7673b, this.f7674c);
-                if (this.f7675d) {
+                C2451k0 k0Var = new C2451k0(this.f7681b, this.f7682c);
+                if (this.f7683d) {
                     if (k0Var.mo8702e()) {
                         bitmap = k0Var.mo8703f(128);
-                        intent = new Intent(this.f7673b, MainActivity.class);
+                        intent = new Intent(this.f7681b, MainActivity.class);
                         intent.setAction("com.digdroid.alman.LAUNCH_GAME");
-                        intent.putExtra("system", k0Var.f8555g);
-                        intent.putExtra("name", k0Var.f8557i);
-                        str = k0Var.f8557i;
+                        intent.putExtra("system", k0Var.f8563g);
+                        intent.putExtra("name", k0Var.f8565i);
+                        str = k0Var.f8565i;
                     } else {
                         return;
                     }
                 } else if (k0Var.mo8698a()) {
                     bitmap = k0Var.mo8699b(128);
-                    intent = new Intent(this.f7673b, WidgetActivity.class);
+                    intent = new Intent(this.f7681b, WidgetActivity.class);
                     intent.setAction("com.digdroid.alman.LAUNCH_GAME");
-                    intent.putExtra("gameid", this.f7674c);
-                    str = k0Var.f8558j;
+                    intent.putExtra("gameid", this.f7682c);
+                    str = k0Var.f8566j;
                 } else {
                     return;
                 }
                 if (bitmap != null) {
                     icon = Icon.createWithBitmap(bitmap);
                 } else {
-                    Resources resources = this.f7673b.getResources();
-                    int identifier = resources.getIdentifier("icon_" + k0Var.f8556h, "drawable", this.f7673b.getPackageName());
+                    Resources resources = this.f7681b.getResources();
+                    int identifier = resources.getIdentifier("icon_" + k0Var.f8564h, "drawable", this.f7681b.getPackageName());
                     if (identifier == 0) {
-                        identifier = resources.getIdentifier("play", "drawable", this.f7673b.getPackageName());
+                        identifier = resources.getIdentifier("play", "drawable", this.f7681b.getPackageName());
                     }
-                    icon = Icon.createWithResource(this.f7673b, identifier);
+                    icon = Icon.createWithResource(this.f7681b, identifier);
                 }
-                Activity activity = this.f7673b;
-                ShortcutInfo.Builder shortLabel = new ShortcutInfo.Builder(activity, "game" + this.f7674c).setShortLabel(str.length() <= 110 ? str : str.substring(0, 10));
+                Activity activity = this.f7681b;
+                ShortcutInfo.Builder shortLabel = new ShortcutInfo.Builder(activity, "game" + this.f7682c).setShortLabel(str.length() <= 110 ? str : str.substring(0, 10));
                 if (str.length() > 125) {
                     str = str.substring(0, 25);
                 }
-                this.f7676e.requestPinShortcut(shortLabel.setLongLabel(str).setIcon(icon).setIntent(intent).build(), null);
+                this.f7684e.requestPinShortcut(shortLabel.setLongLabel(str).setIcon(icon).setIntent(intent).build(), null);
             }
         }
     }
@@ -157,14 +157,14 @@ public class MyWidget extends AppWidgetProvider {
     class DialogInterface$OnClickListenerC2125c implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ Runnable f7677b;
+        final /* synthetic */ Runnable f7685b;
 
         DialogInterface$OnClickListenerC2125c(Runnable runnable) {
-            this.f7677b = runnable;
+            this.f7685b = runnable;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
-            this.f7677b.run();
+            this.f7685b.run();
         }
     }
 
@@ -173,22 +173,22 @@ public class MyWidget extends AppWidgetProvider {
     public class C2126d {
 
         /* renamed from: a */
-        long f7678a = -1;
+        long f7686a = -1;
 
         /* renamed from: b */
-        boolean f7679b = false;
+        boolean f7687b = false;
 
         /* renamed from: c */
-        String f7680c;
+        String f7688c;
 
         /* renamed from: d */
-        String f7681d = null;
+        String f7689d = null;
 
         /* renamed from: e */
-        Bitmap f7682e = null;
+        Bitmap f7690e = null;
 
         /* renamed from: f */
-        int f7683f = -1;
+        int f7691f = -1;
 
         C2126d() {
         }
@@ -199,44 +199,44 @@ public class MyWidget extends AppWidgetProvider {
     public class AsyncTaskC2127e extends AsyncTask<Void, Void, C2126d> {
 
         /* renamed from: a */
-        Context f7685a;
+        Context f7693a;
 
         /* renamed from: b */
-        AppWidgetManager f7686b;
+        AppWidgetManager f7694b;
 
         /* renamed from: c */
-        int f7687c;
+        int f7695c;
 
         /* renamed from: d */
-        long f7688d;
+        long f7696d;
 
         /* renamed from: e */
-        boolean f7689e;
+        boolean f7697e;
 
         /* renamed from: f */
-        boolean f7690f;
+        boolean f7698f;
 
         /* renamed from: g */
-        RemoteViews f7691g;
+        RemoteViews f7699g;
 
         /* renamed from: h */
-        Bundle f7692h;
+        Bundle f7700h;
 
         /* renamed from: i */
-        C2219c3 f7693i;
+        C2219c3 f7701i;
 
         public AsyncTaskC2127e(Context context, AppWidgetManager appWidgetManager, int i, Bundle bundle) {
-            this.f7685a = context;
-            this.f7686b = appWidgetManager;
-            this.f7687c = i;
-            this.f7692h = bundle;
-            this.f7693i = C2219c3.m9805k(context);
+            this.f7693a = context;
+            this.f7694b = appWidgetManager;
+            this.f7695c = i;
+            this.f7700h = bundle;
+            this.f7701i = C2219c3.m9805k(context);
         }
 
         /* access modifiers changed from: protected */
         /* renamed from: a */
         public C2126d doInBackground(Void... voidArr) {
-            return MyWidget.this.mo7951f(this.f7685a, this.f7686b, this.f7687c, this.f7688d, this.f7689e, this.f7690f, this.f7692h);
+            return MyWidget.this.mo7951f(this.f7693a, this.f7694b, this.f7695c, this.f7696d, this.f7697e, this.f7698f, this.f7700h);
         }
 
         /* access modifiers changed from: protected */
@@ -247,48 +247,48 @@ public class MyWidget extends AppWidgetProvider {
             C2219c3 c3Var;
             Intent intent;
             if (dVar != null) {
-                String str2 = dVar.f7681d;
+                String str2 = dVar.f7689d;
                 if (str2 != null) {
-                    this.f7691g.setTextViewText(R.id.widgetlabel, str2);
+                    this.f7699g.setTextViewText(R.id.widgetlabel, str2);
                 }
-                this.f7691g.setViewVisibility(R.id.widgetlabel, dVar.f7681d != null ? 0 : 8);
-                Bitmap bitmap = dVar.f7682e;
+                this.f7699g.setViewVisibility(R.id.widgetlabel, dVar.f7689d != null ? 0 : 8);
+                Bitmap bitmap = dVar.f7690e;
                 if (bitmap != null) {
-                    this.f7691g.setImageViewBitmap(R.id.widgetimage, bitmap);
+                    this.f7699g.setImageViewBitmap(R.id.widgetimage, bitmap);
                 } else {
-                    int i = dVar.f7683f;
+                    int i = dVar.f7691f;
                     if (i > 0) {
-                        this.f7691g.setImageViewResource(R.id.widgetimage, i);
+                        this.f7699g.setImageViewResource(R.id.widgetimage, i);
                     }
                 }
-                this.f7688d = dVar.f7678a;
-                boolean z = dVar.f7679b;
-                this.f7689e = z;
+                this.f7696d = dVar.f7686a;
+                boolean z = dVar.f7687b;
+                this.f7697e = z;
                 if (z) {
-                    c3Var = this.f7693i;
+                    c3Var = this.f7701i;
                     sb = new StringBuilder();
                     str = "systemwidget";
                 } else {
-                    c3Var = this.f7693i;
+                    c3Var = this.f7701i;
                     sb = new StringBuilder();
                     str = "widget";
                 }
                 sb.append(str);
-                sb.append(this.f7687c);
-                c3Var.mo8201y(sb.toString(), this.f7688d);
-                if (this.f7688d < 0) {
-                    intent = new Intent(this.f7685a, MainActivity.class);
-                } else if (this.f7689e) {
-                    intent = new Intent(this.f7685a, MainActivity.class);
-                    intent.putExtra("system", dVar.f7680c);
-                    intent.putExtra("name", dVar.f7681d);
+                sb.append(this.f7695c);
+                c3Var.mo8201y(sb.toString(), this.f7696d);
+                if (this.f7696d < 0) {
+                    intent = new Intent(this.f7693a, MainActivity.class);
+                } else if (this.f7697e) {
+                    intent = new Intent(this.f7693a, MainActivity.class);
+                    intent.putExtra("system", dVar.f7688c);
+                    intent.putExtra("name", dVar.f7689d);
                 } else {
-                    intent = new Intent(this.f7685a, WidgetActivity.class);
-                    intent.putExtra("gameid", this.f7688d);
+                    intent = new Intent(this.f7693a, WidgetActivity.class);
+                    intent.putExtra("gameid", this.f7696d);
                 }
-                this.f7691g.setOnClickPendingIntent(R.id.widgetimage, PendingIntent.getActivity(this.f7685a, new Random().nextInt(), intent, 134217728));
+                this.f7699g.setOnClickPendingIntent(R.id.widgetimage, PendingIntent.getActivity(this.f7693a, new Random().nextInt(), intent, 134217728));
                 try {
-                    this.f7686b.updateAppWidget(this.f7687c, this.f7691g);
+                    this.f7694b.updateAppWidget(this.f7695c, this.f7699g);
                 } catch (Exception unused) {
                 }
             }
@@ -297,24 +297,24 @@ public class MyWidget extends AppWidgetProvider {
         /* access modifiers changed from: protected */
         public void onPreExecute() {
             try {
-                C2219c3 c3Var = this.f7693i;
-                long n = c3Var.mo8190n("systemwidget" + this.f7687c, -1);
-                this.f7688d = n;
+                C2219c3 c3Var = this.f7701i;
+                long n = c3Var.mo8190n("systemwidget" + this.f7695c, -1);
+                this.f7696d = n;
                 if (n >= 0) {
-                    this.f7689e = true;
+                    this.f7697e = true;
                 } else {
-                    this.f7689e = false;
-                    C2219c3 c3Var2 = this.f7693i;
-                    this.f7688d = c3Var2.mo8190n("widget" + this.f7687c, -1);
+                    this.f7697e = false;
+                    C2219c3 c3Var2 = this.f7701i;
+                    this.f7696d = c3Var2.mo8190n("widget" + this.f7695c, -1);
                 }
-                C2219c3 c3Var3 = this.f7693i;
-                this.f7690f = c3Var3.mo8180c("widgettext" + this.f7687c, true);
+                C2219c3 c3Var3 = this.f7701i;
+                this.f7698f = c3Var3.mo8180c("widgettext" + this.f7695c, true);
             } catch (Exception unused) {
-                this.f7688d = -1;
-                this.f7689e = false;
-                this.f7690f = true;
+                this.f7696d = -1;
+                this.f7697e = false;
+                this.f7698f = true;
             }
-            this.f7691g = new RemoteViews(this.f7685a.getPackageName(), (int) R.layout.widget);
+            this.f7699g = new RemoteViews(this.f7693a.getPackageName(), (int) R.layout.widget);
         }
     }
 
@@ -340,7 +340,7 @@ public class MyWidget extends AppWidgetProvider {
                 Intent intent = new Intent(context, WidgetActivity.class);
                 intent.setAction("android.intent.action.MAIN");
                 intent.putExtra("gameid", j);
-                ShortcutInfo build = new ShortcutInfo.Builder(context, "sc" + j).setShortLabel(k0Var.f8558j).setLongLabel(k0Var.f8558j).setIcon(m9548d(context, k0Var)).setIntent(intent).build();
+                ShortcutInfo build = new ShortcutInfo.Builder(context, "sc" + j).setShortLabel(k0Var.f8566j).setLongLabel(k0Var.f8566j).setIcon(m9548d(context, k0Var)).setIntent(intent).build();
                 List<ShortcutInfo> dynamicShortcuts = shortcutManager.getDynamicShortcuts();
                 for (int i = 0; i < dynamicShortcuts.size(); i++) {
                     if (dynamicShortcuts.get(i).getId().equals(build.getId())) {
@@ -385,7 +385,7 @@ public class MyWidget extends AppWidgetProvider {
                 intent.setAction("android.intent.action.MAIN");
                 C1173c.C1174a aVar = new C1173c.C1174a();
                 aVar.mo5901e("TYPE_PREVIEW").mo5900d(context.getString(R.string.recently_played)).mo5898b(intent);
-                j2 = ContentUris.parseId(context.getContentResolver().insert(C1179g.C1180a.f5215a, aVar.mo5897a().mo5892b()));
+                j2 = ContentUris.parseId(context.getContentResolver().insert(C1179g.C1180a.f5222a, aVar.mo5897a().mo5892b()));
                 nVar.mo8782s("tv_channel", "" + j2);
                 if (nVar.mo8781r(str)) {
                     C1175d.m6418a(context, j2, BitmapFactory.decodeResource(context.getResources(), R.drawable.channelicon));
@@ -403,10 +403,10 @@ public class MyWidget extends AppWidgetProvider {
                 intent2.putExtra("gameid", j);
                 C2219c3 k = C2219c3.m9805k(context);
                 String q = k.mo8193q("token", "0");
-                if (k0Var.f8551c < 0 || q.length() != 32) {
+                if (k0Var.f8559c < 0 || q.length() != 32) {
                     uri = null;
                 } else {
-                    uri = Uri.parse("https://digdroid.com/php/getcover3.php?game=" + k0Var.f8551c + "&system=" + k0Var.f8556h + "&qual=" + "med" + "&user=" + k.mo8193q("userid", "0") + "&token=" + q);
+                    uri = Uri.parse("https://digdroid.com/php/getcover3.php?game=" + k0Var.f8559c + "&system=" + k0Var.f8564h + "&qual=" + "med" + "&user=" + k.mo8193q("userid", "0") + "&token=" + q);
                 }
                 if (uri == null) {
                     uri = Uri.parse("android.resource://" + context.getPackageName() + "/drawable/play");
@@ -433,8 +433,8 @@ public class MyWidget extends AppWidgetProvider {
                     }
                 }
                 C1177f.C1178a aVar2 = new C1177f.C1178a();
-                ((C1177f.C1178a) ((C1177f.C1178a) ((C1177f.C1178a) ((C1177f.C1178a) ((C1177f.C1178a) ((C1177f.C1178a) aVar2.mo5905i(j2).mo5886g(12)).mo5891c(k0Var.f8558j)).mo5889a(k0Var.f8559k)).mo5885f(3)).mo5906j(g).mo5890b(uri)).mo5883d(Uri.parse(intent2.toUri(1)))).mo5884e("pr" + j);
-                arrayList.add("" + ContentUris.parseId(context.getContentResolver().insert(C1179g.C1181b.f5217a, aVar2.mo5904h().mo5887b())));
+                ((C1177f.C1178a) ((C1177f.C1178a) ((C1177f.C1178a) ((C1177f.C1178a) ((C1177f.C1178a) ((C1177f.C1178a) aVar2.mo5905i(j2).mo5886g(12)).mo5891c(k0Var.f8566j)).mo5889a(k0Var.f8567k)).mo5885f(3)).mo5906j(g).mo5890b(uri)).mo5883d(Uri.parse(intent2.toUri(1)))).mo5884e("pr" + j);
+                arrayList.add("" + ContentUris.parseId(context.getContentResolver().insert(C1179g.C1181b.f5224a, aVar2.mo5904h().mo5887b())));
                 arrayList2.add("" + j);
                 while (arrayList.size() >= 10) {
                     context.getContentResolver().delete(C1179g.m6426a(Long.parseLong((String) arrayList.get(0))), null, null);
@@ -489,8 +489,8 @@ public class MyWidget extends AppWidgetProvider {
         Bitmap bitmap;
         C2219c3 k = C2219c3.m9805k(context.getApplicationContext());
         C2126d dVar = new C2126d();
-        dVar.f7678a = j;
-        dVar.f7679b = z;
+        dVar.f7686a = j;
+        dVar.f7687b = z;
         boolean z4 = false;
         boolean z5 = true;
         if (j < 0) {
@@ -513,8 +513,8 @@ public class MyWidget extends AppWidgetProvider {
                 z4 = true;
             }
             j2 = Long.parseLong(str);
-            dVar.f7678a = j2;
-            dVar.f7679b = z4;
+            dVar.f7686a = j2;
+            dVar.f7687b = z4;
             k.mo8153B("widgettext" + i, z3);
         } else {
             j2 = j;
@@ -534,26 +534,26 @@ public class MyWidget extends AppWidgetProvider {
             if (!k0Var.mo8702e()) {
                 return null;
             }
-            dVar.f7681d = k0Var.f8557i;
-            dVar.f7680c = k0Var.f8555g;
+            dVar.f7689d = k0Var.f8565i;
+            dVar.f7688c = k0Var.f8563g;
             bitmap = k0Var.mo8703f(i2);
         } else if (!k0Var.mo8698a()) {
             return null;
         } else {
-            dVar.f7681d = k0Var.f8558j;
+            dVar.f7689d = k0Var.f8566j;
             bitmap = k0Var.mo8699b(i2);
         }
-        dVar.f7682e = bitmap;
-        if (dVar.f7682e == null && dVar.f7683f < 0) {
+        dVar.f7690e = bitmap;
+        if (dVar.f7690e == null && dVar.f7691f < 0) {
             Resources resources = context.getResources();
-            int identifier = resources.getIdentifier("icon_" + k0Var.f8556h, "drawable", context.getPackageName());
+            int identifier = resources.getIdentifier("icon_" + k0Var.f8564h, "drawable", context.getPackageName());
             if (identifier == 0) {
                 identifier = resources.getIdentifier("play", "drawable", context.getPackageName());
             }
-            dVar.f7683f = identifier;
+            dVar.f7691f = identifier;
         }
         if (!z3) {
-            dVar.f7681d = null;
+            dVar.f7689d = null;
         }
         return dVar;
     }

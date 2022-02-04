@@ -11,7 +11,7 @@ import p069c.p073b.p074a.p075a.p081d.p084c.C1314b;
 public class ProxyBillingActivity extends Activity {
 
     /* renamed from: b */
-    private ResultReceiver f6396b;
+    private ResultReceiver f6404b;
 
     /* access modifiers changed from: protected */
     public void onActivityResult(int i, int i2, Intent intent) {
@@ -26,7 +26,7 @@ public class ProxyBillingActivity extends Activity {
                 sb.append(a);
                 C1314b.m6854k("ProxyBillingActivity", sb.toString());
             }
-            this.f6396b.send(a, intent == null ? null : intent.getExtras());
+            this.f6404b.send(a, intent == null ? null : intent.getExtras());
         } else {
             StringBuilder sb2 = new StringBuilder(69);
             sb2.append("Got onActivityResult with wrong requestCode: ");
@@ -43,7 +43,7 @@ public class ProxyBillingActivity extends Activity {
         super.onCreate(bundle);
         if (bundle == null) {
             C1314b.m6851h("ProxyBillingActivity", "Launching Play Store billing flow");
-            this.f6396b = (ResultReceiver) getIntent().getParcelableExtra("result_receiver");
+            this.f6404b = (ResultReceiver) getIntent().getParcelableExtra("result_receiver");
             String str = "BUY_INTENT";
             if (!getIntent().hasExtra(str)) {
                 str = "SUBS_MANAGEMENT_INTENT";
@@ -61,17 +61,17 @@ public class ProxyBillingActivity extends Activity {
                 sb.append("Got exception while trying to start a purchase flow: ");
                 sb.append(valueOf);
                 C1314b.m6854k("ProxyBillingActivity", sb.toString());
-                this.f6396b.send(6, null);
+                this.f6404b.send(6, null);
                 finish();
             }
         } else {
             C1314b.m6851h("ProxyBillingActivity", "Launching Play Store billing flow from savedInstanceState");
-            this.f6396b = (ResultReceiver) bundle.getParcelable("result_receiver");
+            this.f6404b = (ResultReceiver) bundle.getParcelable("result_receiver");
         }
     }
 
     /* access modifiers changed from: protected */
     public void onSaveInstanceState(Bundle bundle) {
-        bundle.putParcelable("result_receiver", this.f6396b);
+        bundle.putParcelable("result_receiver", this.f6404b);
     }
 }

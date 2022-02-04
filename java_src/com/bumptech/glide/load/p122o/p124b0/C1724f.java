@@ -11,24 +11,24 @@ public final class C1724f extends C1721d {
     class C1725a implements C1721d.AbstractC1722a {
 
         /* renamed from: a */
-        final /* synthetic */ Context f6771a;
+        final /* synthetic */ Context f6779a;
 
         /* renamed from: b */
-        final /* synthetic */ String f6772b;
+        final /* synthetic */ String f6780b;
 
         C1725a(Context context, String str) {
-            this.f6771a = context;
-            this.f6772b = str;
+            this.f6779a = context;
+            this.f6780b = str;
         }
 
         @Override // com.bumptech.glide.load.p122o.p124b0.C1721d.AbstractC1722a
         /* renamed from: a */
         public File mo7220a() {
-            File cacheDir = this.f6771a.getCacheDir();
+            File cacheDir = this.f6779a.getCacheDir();
             if (cacheDir == null) {
                 return null;
             }
-            return this.f6772b != null ? new File(cacheDir, this.f6772b) : cacheDir;
+            return this.f6780b != null ? new File(cacheDir, this.f6780b) : cacheDir;
         }
     }
 

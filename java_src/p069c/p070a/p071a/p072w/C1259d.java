@@ -9,19 +9,19 @@ import java.util.List;
 public class C1259d {
 
     /* renamed from: a */
-    protected static final Comparator<byte[]> f5494a = new C1260a();
+    protected static final Comparator<byte[]> f5501a = new C1260a();
 
     /* renamed from: b */
-    private final List<byte[]> f5495b = new ArrayList();
+    private final List<byte[]> f5502b = new ArrayList();
 
     /* renamed from: c */
-    private final List<byte[]> f5496c = new ArrayList(64);
+    private final List<byte[]> f5503c = new ArrayList(64);
 
     /* renamed from: d */
-    private int f5497d = 0;
+    private int f5504d = 0;
 
     /* renamed from: e */
-    private final int f5498e;
+    private final int f5505e;
 
     /* renamed from: c.a.a.w.d$a */
     class C1260a implements Comparator<byte[]> {
@@ -35,26 +35,26 @@ public class C1259d {
     }
 
     public C1259d(int i) {
-        this.f5498e = i;
+        this.f5505e = i;
     }
 
     /* renamed from: c */
     private synchronized void m6683c() {
-        while (this.f5497d > this.f5498e) {
-            byte[] remove = this.f5495b.remove(0);
-            this.f5496c.remove(remove);
-            this.f5497d -= remove.length;
+        while (this.f5504d > this.f5505e) {
+            byte[] remove = this.f5502b.remove(0);
+            this.f5503c.remove(remove);
+            this.f5504d -= remove.length;
         }
     }
 
     /* renamed from: a */
     public synchronized byte[] mo6233a(int i) {
-        for (int i2 = 0; i2 < this.f5496c.size(); i2++) {
-            byte[] bArr = this.f5496c.get(i2);
+        for (int i2 = 0; i2 < this.f5503c.size(); i2++) {
+            byte[] bArr = this.f5503c.get(i2);
             if (bArr.length >= i) {
-                this.f5497d -= bArr.length;
-                this.f5496c.remove(i2);
-                this.f5495b.remove(bArr);
+                this.f5504d -= bArr.length;
+                this.f5503c.remove(i2);
+                this.f5502b.remove(bArr);
                 return bArr;
             }
         }
@@ -64,14 +64,14 @@ public class C1259d {
     /* renamed from: b */
     public synchronized void mo6234b(byte[] bArr) {
         if (bArr != null) {
-            if (bArr.length <= this.f5498e) {
-                this.f5495b.add(bArr);
-                int binarySearch = Collections.binarySearch(this.f5496c, bArr, f5494a);
+            if (bArr.length <= this.f5505e) {
+                this.f5502b.add(bArr);
+                int binarySearch = Collections.binarySearch(this.f5503c, bArr, f5501a);
                 if (binarySearch < 0) {
                     binarySearch = (-binarySearch) - 1;
                 }
-                this.f5496c.add(binarySearch, bArr);
-                this.f5497d += bArr.length;
+                this.f5503c.add(binarySearch, bArr);
+                this.f5504d += bArr.length;
                 m6683c();
             }
         }

@@ -15,10 +15,10 @@ import p006b.p007a.C0763j;
 public class C0784a {
 
     /* renamed from: a */
-    private Context f3928a;
+    private Context f3932a;
 
     private C0784a(Context context) {
-        this.f3928a = context;
+        this.f3932a = context;
     }
 
     /* renamed from: b */
@@ -28,17 +28,17 @@ public class C0784a {
 
     /* renamed from: a */
     public boolean mo4678a() {
-        return this.f3928a.getApplicationInfo().targetSdkVersion < 14;
+        return this.f3932a.getApplicationInfo().targetSdkVersion < 14;
     }
 
     /* renamed from: c */
     public int mo4679c() {
-        return this.f3928a.getResources().getDisplayMetrics().widthPixels / 2;
+        return this.f3932a.getResources().getDisplayMetrics().widthPixels / 2;
     }
 
     /* renamed from: d */
     public int mo4680d() {
-        Configuration configuration = this.f3928a.getResources().getConfiguration();
+        Configuration configuration = this.f3932a.getResources().getConfiguration();
         int i = configuration.screenWidthDp;
         int i2 = configuration.screenHeightDp;
         if (configuration.smallestScreenWidthDp > 600 || i > 600) {
@@ -64,14 +64,14 @@ public class C0784a {
 
     /* renamed from: e */
     public int mo4681e() {
-        return this.f3928a.getResources().getDimensionPixelSize(C0757d.abc_action_bar_stacked_tab_max_width);
+        return this.f3932a.getResources().getDimensionPixelSize(C0757d.abc_action_bar_stacked_tab_max_width);
     }
 
     /* renamed from: f */
     public int mo4682f() {
-        TypedArray obtainStyledAttributes = this.f3928a.obtainStyledAttributes(null, C0763j.f3702a, C0754a.actionBarStyle, 0);
-        int layoutDimension = obtainStyledAttributes.getLayoutDimension(C0763j.f3747j, 0);
-        Resources resources = this.f3928a.getResources();
+        TypedArray obtainStyledAttributes = this.f3932a.obtainStyledAttributes(null, C0763j.f3706a, C0754a.actionBarStyle, 0);
+        int layoutDimension = obtainStyledAttributes.getLayoutDimension(C0763j.f3751j, 0);
+        Resources resources = this.f3932a.getResources();
         if (!mo4683g()) {
             layoutDimension = Math.min(layoutDimension, resources.getDimensionPixelSize(C0757d.abc_action_bar_stacked_max_height));
         }
@@ -81,7 +81,7 @@ public class C0784a {
 
     /* renamed from: g */
     public boolean mo4683g() {
-        return this.f3928a.getResources().getBoolean(C0755b.abc_action_bar_embed_tabs);
+        return this.f3932a.getResources().getBoolean(C0755b.abc_action_bar_embed_tabs);
     }
 
     /* renamed from: h */
@@ -89,6 +89,6 @@ public class C0784a {
         if (Build.VERSION.SDK_INT >= 19) {
             return true;
         }
-        return !ViewConfiguration.get(this.f3928a).hasPermanentMenuKey();
+        return !ViewConfiguration.get(this.f3932a).hasPermanentMenuKey();
     }
 }

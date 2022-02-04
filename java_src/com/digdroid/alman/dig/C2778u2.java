@@ -15,16 +15,16 @@ public class C2778u2 {
     public class C2779a implements FilenameFilter {
 
         /* renamed from: a */
-        final /* synthetic */ String f9427a;
+        final /* synthetic */ String f9435a;
 
         C2779a(String str) {
-            this.f9427a = str;
+            this.f9435a = str;
         }
 
         public boolean accept(File file, String str) {
             int lastIndexOf;
             if (file.canRead() && (lastIndexOf = str.lastIndexOf(46)) >= 2) {
-                return str.substring(0, lastIndexOf).equalsIgnoreCase(this.f9427a);
+                return str.substring(0, lastIndexOf).equalsIgnoreCase(this.f9435a);
             }
             return false;
         }
@@ -41,29 +41,29 @@ public class C2778u2 {
     public static class AsyncTaskC2781c extends AsyncTask<Void, Void, String> {
 
         /* renamed from: a */
-        ActivityC2888z3 f9428a;
+        ActivityC2888z3 f9436a;
 
         /* renamed from: b */
-        C2375h3 f9429b;
+        C2375h3 f9437b;
 
         /* renamed from: c */
-        Cursor f9430c;
+        Cursor f9438c;
 
         /* renamed from: d */
-        boolean f9431d;
+        boolean f9439d;
 
         /* renamed from: e */
-        AbstractC2780b f9432e;
+        AbstractC2780b f9440e;
 
         /* renamed from: f */
-        String f9433f;
+        String f9441f;
 
         public AsyncTaskC2781c(ActivityC2888z3 z3Var, C2375h3 h3Var, Cursor cursor, boolean z, AbstractC2780b bVar) {
-            this.f9428a = z3Var;
-            this.f9429b = h3Var;
-            this.f9430c = cursor;
-            this.f9431d = z;
-            this.f9432e = bVar;
+            this.f9436a = z3Var;
+            this.f9437b = h3Var;
+            this.f9438c = cursor;
+            this.f9439d = z;
+            this.f9440e = bVar;
         }
 
         /* access modifiers changed from: protected */
@@ -86,12 +86,12 @@ public class C2778u2 {
         public void onPostExecute(String str) {
             String str2;
             if (str == null || !str.equals("")) {
-                this.f9432e.mo8076a(str);
+                this.f9440e.mo8076a(str);
                 return;
             }
-            String string = this.f9428a.getString(R.string.playlist_error);
-            this.f9433f = this.f9433f.toLowerCase();
-            File[] b = C2372h2.m10298b(this.f9428a);
+            String string = this.f9436a.getString(R.string.playlist_error);
+            this.f9441f = this.f9441f.toLowerCase();
+            File[] b = C2372h2.m10298b(this.f9436a);
             if (b != null && b.length > 0) {
                 int length = b.length;
                 int i = 0;
@@ -100,7 +100,7 @@ public class C2778u2 {
                         break;
                     }
                     str2 = b[i].getAbsolutePath().replaceAll("/Android/data.*", "");
-                    if (this.f9433f.length() > str2.length() && this.f9433f.substring(0, str2.length()).equals(str2.toLowerCase())) {
+                    if (this.f9441f.length() > str2.length() && this.f9441f.substring(0, str2.length()).equals(str2.toLowerCase())) {
                         break;
                     }
                     i++;
@@ -110,11 +110,11 @@ public class C2778u2 {
             if (str2 != null) {
                 File file = new File(str2 + "/NVIDIA_SHIELD");
                 if (file.exists()) {
-                    string = string + " " + this.f9428a.getString(R.string.move_games_1) + " " + file.getAbsolutePath() + "\n\n" + this.f9428a.getString(R.string.move_games_2);
+                    string = string + " " + this.f9436a.getString(R.string.move_games_1) + " " + file.getAbsolutePath() + "\n\n" + this.f9436a.getString(R.string.move_games_2);
                 }
             }
-            new DialogInterfaceC0068b.C0069a(this.f9428a, C2553q3.m11117c()).mo229i(string).mo235o(R.string.ok, null).mo221a().show();
-            this.f9432e.mo8076a(null);
+            new DialogInterfaceC0068b.C0069a(this.f9436a, C2553q3.m11117c()).mo229i(string).mo235o(R.string.ok, null).mo221a().show();
+            this.f9440e.mo8076a(null);
         }
     }
 

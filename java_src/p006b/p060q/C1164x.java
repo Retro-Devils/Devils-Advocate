@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 public class C1164x {
 
     /* renamed from: a */
-    private static boolean f5193a = true;
+    private static boolean f5200a = true;
 
     /* renamed from: a */
     static AbstractC1163w m6383a(ViewGroup viewGroup) {
@@ -19,11 +19,11 @@ public class C1164x {
     @SuppressLint({"NewApi"})
     /* renamed from: b */
     private static void m6384b(ViewGroup viewGroup, boolean z) {
-        if (f5193a) {
+        if (f5200a) {
             try {
                 viewGroup.suppressLayout(z);
             } catch (NoSuchMethodError unused) {
-                f5193a = false;
+                f5200a = false;
             }
         }
     }

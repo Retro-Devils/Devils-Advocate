@@ -78,9 +78,9 @@ public class C0230h0 extends ViewGroup {
         public C0231a(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
             this.f1031b = -1;
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C0763j.f3759l1);
-            this.f1030a = obtainStyledAttributes.getFloat(C0763j.f3769n1, 0.0f);
-            this.f1031b = obtainStyledAttributes.getInt(C0763j.f3764m1, -1);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C0763j.f3763l1);
+            this.f1030a = obtainStyledAttributes.getFloat(C0763j.f3773n1, 0.0f);
+            this.f1031b = obtainStyledAttributes.getInt(C0763j.f3768m1, -1);
             obtainStyledAttributes.recycle();
         }
 
@@ -104,27 +104,27 @@ public class C0230h0 extends ViewGroup {
         this.f1016c = -1;
         this.f1017d = 0;
         this.f1019f = 8388659;
-        int[] iArr = C0763j.f3709b1;
+        int[] iArr = C0763j.f3713b1;
         C0296w0 v = C0296w0.m1432v(context, attributeSet, iArr, i, 0);
         C1013s.m5762g0(this, context, iArr, attributeSet, v.mo1821r(), i, 0);
-        int k = v.mo1814k(C0763j.f3719d1, -1);
+        int k = v.mo1814k(C0763j.f3723d1, -1);
         if (k >= 0) {
             setOrientation(k);
         }
-        int k2 = v.mo1814k(C0763j.f3714c1, -1);
+        int k2 = v.mo1814k(C0763j.f3718c1, -1);
         if (k2 >= 0) {
             setGravity(k2);
         }
-        boolean a = v.mo1804a(C0763j.f3724e1, true);
+        boolean a = v.mo1804a(C0763j.f3728e1, true);
         if (!a) {
             setBaselineAligned(a);
         }
-        this.f1021h = v.mo1812i(C0763j.f3734g1, -1.0f);
-        this.f1016c = v.mo1814k(C0763j.f3729f1, -1);
-        this.f1022i = v.mo1804a(C0763j.f3749j1, false);
-        setDividerDrawable(v.mo1810g(C0763j.f3739h1));
-        this.f1028o = v.mo1814k(C0763j.f3754k1, 0);
-        this.f1029p = v.mo1809f(C0763j.f3744i1, 0);
+        this.f1021h = v.mo1812i(C0763j.f3738g1, -1.0f);
+        this.f1016c = v.mo1814k(C0763j.f3733f1, -1);
+        this.f1022i = v.mo1804a(C0763j.f3753j1, false);
+        setDividerDrawable(v.mo1810g(C0763j.f3743h1));
+        this.f1028o = v.mo1814k(C0763j.f3758k1, 0);
+        this.f1029p = v.mo1809f(C0763j.f3748i1, 0);
         v.mo1823w();
     }
 

@@ -7,30 +7,30 @@ import android.content.Context;
 public final class C3043e {
 
     /* renamed from: a */
-    private static Boolean f10042a;
+    private static Boolean f10050a;
 
     /* renamed from: b */
-    private static Boolean f10043b;
+    private static Boolean f10051b;
 
     /* renamed from: c */
-    private static Boolean f10044c;
+    private static Boolean f10052c;
 
     @TargetApi(21)
     /* renamed from: a */
     public static boolean m12438a(Context context) {
-        if (f10043b == null) {
-            f10043b = Boolean.valueOf(C3044f.m12447f() && context.getPackageManager().hasSystemFeature("cn.google"));
+        if (f10051b == null) {
+            f10051b = Boolean.valueOf(C3044f.m12447f() && context.getPackageManager().hasSystemFeature("cn.google"));
         }
-        return f10043b.booleanValue();
+        return f10051b.booleanValue();
     }
 
     @TargetApi(20)
     /* renamed from: b */
     public static boolean m12439b(Context context) {
-        if (f10042a == null) {
-            f10042a = Boolean.valueOf(C3044f.m12446e() && context.getPackageManager().hasSystemFeature("android.hardware.type.watch"));
+        if (f10050a == null) {
+            f10050a = Boolean.valueOf(C3044f.m12446e() && context.getPackageManager().hasSystemFeature("android.hardware.type.watch"));
         }
-        return f10042a.booleanValue();
+        return f10050a.booleanValue();
     }
 
     @TargetApi(26)
@@ -47,9 +47,9 @@ public final class C3043e {
 
     /* renamed from: d */
     public static boolean m12441d(Context context) {
-        if (f10044c == null) {
-            f10044c = Boolean.valueOf(context.getPackageManager().hasSystemFeature("android.hardware.type.iot") || context.getPackageManager().hasSystemFeature("android.hardware.type.embedded"));
+        if (f10052c == null) {
+            f10052c = Boolean.valueOf(context.getPackageManager().hasSystemFeature("android.hardware.type.iot") || context.getPackageManager().hasSystemFeature("android.hardware.type.embedded"));
         }
-        return f10044c.booleanValue();
+        return f10052c.booleanValue();
     }
 }

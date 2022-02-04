@@ -14,39 +14,39 @@ import p006b.p030g.p039k.C1013s;
 abstract class AbstractC3056a<V extends View> extends C3059c<V> {
 
     /* renamed from: d */
-    private Runnable f10090d;
+    private Runnable f10098d;
 
     /* renamed from: e */
-    OverScroller f10091e;
+    OverScroller f10099e;
 
     /* renamed from: f */
-    private boolean f10092f;
+    private boolean f10100f;
 
     /* renamed from: g */
-    private int f10093g = -1;
+    private int f10101g = -1;
 
     /* renamed from: h */
-    private int f10094h;
+    private int f10102h;
 
     /* renamed from: i */
-    private int f10095i = -1;
+    private int f10103i = -1;
 
     /* renamed from: j */
-    private VelocityTracker f10096j;
+    private VelocityTracker f10104j;
 
     /* access modifiers changed from: private */
     /* renamed from: com.google.android.material.appbar.a$a */
     public class RunnableC3057a implements Runnable {
 
         /* renamed from: b */
-        private final CoordinatorLayout f10097b;
+        private final CoordinatorLayout f10105b;
 
         /* renamed from: c */
-        private final V f10098c;
+        private final V f10106c;
 
         RunnableC3057a(CoordinatorLayout coordinatorLayout, V v) {
-            this.f10097b = coordinatorLayout;
-            this.f10098c = v;
+            this.f10105b = coordinatorLayout;
+            this.f10106c = v;
         }
 
         /* JADX DEBUG: Multi-variable search result rejected for r0v4, resolved type: com.google.android.material.appbar.a */
@@ -54,14 +54,14 @@ abstract class AbstractC3056a<V extends View> extends C3059c<V> {
         /* JADX WARN: Multi-variable type inference failed */
         public void run() {
             OverScroller overScroller;
-            if (this.f10098c != null && (overScroller = AbstractC3056a.this.f10091e) != null) {
+            if (this.f10106c != null && (overScroller = AbstractC3056a.this.f10099e) != null) {
                 if (overScroller.computeScrollOffset()) {
                     AbstractC3056a aVar = AbstractC3056a.this;
-                    aVar.mo9902P(this.f10097b, this.f10098c, aVar.f10091e.getCurrY());
-                    C1013s.m5750a0(this.f10098c, this);
+                    aVar.mo9902P(this.f10105b, this.f10106c, aVar.f10099e.getCurrY());
+                    C1013s.m5750a0(this.f10106c, this);
                     return;
                 }
-                AbstractC3056a.this.mo9865N(this.f10097b, this.f10098c);
+                AbstractC3056a.this.mo9865N(this.f10105b, this.f10106c);
             }
         }
     }
@@ -75,8 +75,8 @@ abstract class AbstractC3056a<V extends View> extends C3059c<V> {
 
     /* renamed from: I */
     private void m12548I() {
-        if (this.f10096j == null) {
-            this.f10096j = VelocityTracker.obtain();
+        if (this.f10104j == null) {
+            this.f10104j = VelocityTracker.obtain();
         }
     }
 
@@ -101,18 +101,18 @@ abstract class AbstractC3056a<V extends View> extends C3059c<V> {
     /* access modifiers changed from: package-private */
     /* renamed from: J */
     public final boolean mo9900J(CoordinatorLayout coordinatorLayout, V v, int i, int i2, float f) {
-        Runnable runnable = this.f10090d;
+        Runnable runnable = this.f10098d;
         if (runnable != null) {
             v.removeCallbacks(runnable);
-            this.f10090d = null;
+            this.f10098d = null;
         }
-        if (this.f10091e == null) {
-            this.f10091e = new OverScroller(v.getContext());
+        if (this.f10099e == null) {
+            this.f10099e = new OverScroller(v.getContext());
         }
-        this.f10091e.fling(0, mo9887E(), 0, Math.round(f), 0, 0, i, i2);
-        if (this.f10091e.computeScrollOffset()) {
+        this.f10099e.fling(0, mo9887E(), 0, Math.round(f), 0, 0, i, i2);
+        if (this.f10099e.computeScrollOffset()) {
             RunnableC3057a aVar = new RunnableC3057a(coordinatorLayout, v);
-            this.f10090d = aVar;
+            this.f10098d = aVar;
             C1013s.m5750a0(v, aVar);
             return true;
         }
@@ -156,38 +156,38 @@ abstract class AbstractC3056a<V extends View> extends C3059c<V> {
     /* renamed from: k */
     public boolean mo2097k(CoordinatorLayout coordinatorLayout, V v, MotionEvent motionEvent) {
         int findPointerIndex;
-        if (this.f10095i < 0) {
-            this.f10095i = ViewConfiguration.get(coordinatorLayout.getContext()).getScaledTouchSlop();
+        if (this.f10103i < 0) {
+            this.f10103i = ViewConfiguration.get(coordinatorLayout.getContext()).getScaledTouchSlop();
         }
-        if (motionEvent.getActionMasked() == 2 && this.f10092f) {
-            int i = this.f10093g;
+        if (motionEvent.getActionMasked() == 2 && this.f10100f) {
+            int i = this.f10101g;
             if (i == -1 || (findPointerIndex = motionEvent.findPointerIndex(i)) == -1) {
                 return false;
             }
             int y = (int) motionEvent.getY(findPointerIndex);
-            if (Math.abs(y - this.f10094h) > this.f10095i) {
-                this.f10094h = y;
+            if (Math.abs(y - this.f10102h) > this.f10103i) {
+                this.f10102h = y;
                 return true;
             }
         }
         if (motionEvent.getActionMasked() == 0) {
-            this.f10093g = -1;
+            this.f10101g = -1;
             int x = (int) motionEvent.getX();
             int y2 = (int) motionEvent.getY();
             boolean z = mo9861H(v) && coordinatorLayout.mo2031B(v, x, y2);
-            this.f10092f = z;
+            this.f10100f = z;
             if (z) {
-                this.f10094h = y2;
-                this.f10093g = motionEvent.getPointerId(0);
+                this.f10102h = y2;
+                this.f10101g = motionEvent.getPointerId(0);
                 m12548I();
-                OverScroller overScroller = this.f10091e;
+                OverScroller overScroller = this.f10099e;
                 if (overScroller != null && !overScroller.isFinished()) {
-                    this.f10091e.abortAnimation();
+                    this.f10099e.abortAnimation();
                     return true;
                 }
             }
         }
-        VelocityTracker velocityTracker = this.f10096j;
+        VelocityTracker velocityTracker = this.f10104j;
         if (velocityTracker != null) {
             velocityTracker.addMovement(motionEvent);
         }

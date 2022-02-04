@@ -8,28 +8,28 @@ import p155e.p164b.p165a.p166s.C3403b;
 public class C3389f extends InputStream {
 
     /* renamed from: b */
-    private InputStream f11422b;
+    private InputStream f11431b;
 
     /* renamed from: c */
-    private final C3403b f11423c;
+    private final C3403b f11432c;
 
     /* renamed from: d */
-    private IOException f11424d = null;
+    private IOException f11433d = null;
 
     /* renamed from: e */
-    private final byte[] f11425e = new byte[1];
+    private final byte[] f11434e = new byte[1];
 
     public C3389f(InputStream inputStream, int i) {
         inputStream.getClass();
-        this.f11422b = inputStream;
-        this.f11423c = new C3403b(i);
+        this.f11431b = inputStream;
+        this.f11432c = new C3403b(i);
     }
 
     @Override // java.io.InputStream
     public int available() {
-        InputStream inputStream = this.f11422b;
+        InputStream inputStream = this.f11431b;
         if (inputStream != null) {
-            IOException iOException = this.f11424d;
+            IOException iOException = this.f11433d;
             if (iOException == null) {
                 return inputStream.available();
             }
@@ -40,22 +40,22 @@ public class C3389f extends InputStream {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable, java.io.InputStream
     public void close() {
-        InputStream inputStream = this.f11422b;
+        InputStream inputStream = this.f11431b;
         if (inputStream != null) {
             try {
                 inputStream.close();
             } finally {
-                this.f11422b = null;
+                this.f11431b = null;
             }
         }
     }
 
     @Override // java.io.InputStream
     public int read() {
-        if (read(this.f11425e, 0, 1) == -1) {
+        if (read(this.f11434e, 0, 1) == -1) {
             return -1;
         }
-        return this.f11425e[0] & 255;
+        return this.f11434e[0] & 255;
     }
 
     @Override // java.io.InputStream
@@ -63,19 +63,19 @@ public class C3389f extends InputStream {
         if (i2 == 0) {
             return 0;
         }
-        InputStream inputStream = this.f11422b;
+        InputStream inputStream = this.f11431b;
         if (inputStream != null) {
-            IOException iOException = this.f11424d;
+            IOException iOException = this.f11433d;
             if (iOException == null) {
                 try {
                     int read = inputStream.read(bArr, i, i2);
                     if (read == -1) {
                         return -1;
                     }
-                    this.f11423c.mo11388a(bArr, i, read);
+                    this.f11432c.mo11388a(bArr, i, read);
                     return read;
                 } catch (IOException e) {
-                    this.f11424d = e;
+                    this.f11433d = e;
                     throw e;
                 }
             } else {

@@ -10,7 +10,7 @@ import p069c.p073b.p074a.p090b.p096p.AbstractC1421d;
 public class C1419b extends FrameLayout implements AbstractC1421d {
 
     /* renamed from: b */
-    private final C1420c f6043b;
+    private final C1420c f6051b;
 
     @Override // p069c.p073b.p074a.p090b.p096p.AbstractC1421d
     /* renamed from: a */
@@ -26,7 +26,7 @@ public class C1419b extends FrameLayout implements AbstractC1421d {
 
     @SuppressLint({"MissingSuperCall"})
     public void draw(Canvas canvas) {
-        if (this.f6043b == null) {
+        if (this.f6051b == null) {
             super.draw(canvas);
             return;
         }
@@ -48,7 +48,7 @@ public class C1419b extends FrameLayout implements AbstractC1421d {
     }
 
     public boolean isOpaque() {
-        if (this.f6043b == null) {
+        if (this.f6051b == null) {
             return super.isOpaque();
         }
         throw null;

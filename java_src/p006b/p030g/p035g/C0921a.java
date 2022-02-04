@@ -9,31 +9,31 @@ import java.lang.reflect.Method;
 public final class C0921a {
 
     /* renamed from: a */
-    private static long f4554a;
+    private static long f4558a;
 
     /* renamed from: b */
-    private static Method f4555b;
+    private static Method f4559b;
 
     /* renamed from: c */
-    private static Method f4556c;
+    private static Method f4560c;
 
     /* renamed from: d */
-    private static Method f4557d;
+    private static Method f4561d;
 
     /* renamed from: e */
-    private static Method f4558e;
+    private static Method f4562e;
 
     static {
         int i = Build.VERSION.SDK_INT;
         if (i >= 18 && i < 29) {
             try {
-                f4554a = Trace.class.getField("TRACE_TAG_APP").getLong(null);
+                f4558a = Trace.class.getField("TRACE_TAG_APP").getLong(null);
                 Class cls = Long.TYPE;
-                f4555b = Trace.class.getMethod("isTagEnabled", cls);
+                f4559b = Trace.class.getMethod("isTagEnabled", cls);
                 Class cls2 = Integer.TYPE;
-                f4556c = Trace.class.getMethod("asyncTraceBegin", cls, String.class, cls2);
-                f4557d = Trace.class.getMethod("asyncTraceEnd", cls, String.class, cls2);
-                f4558e = Trace.class.getMethod("traceCounter", cls, String.class, cls2);
+                f4560c = Trace.class.getMethod("asyncTraceBegin", cls, String.class, cls2);
+                f4561d = Trace.class.getMethod("asyncTraceEnd", cls, String.class, cls2);
+                f4562e = Trace.class.getMethod("traceCounter", cls, String.class, cls2);
             } catch (Exception e) {
                 Log.i("TraceCompat", "Unable to initialize via reflection.", e);
             }
