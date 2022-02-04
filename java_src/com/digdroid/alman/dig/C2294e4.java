@@ -18,7 +18,7 @@ public class C2294e4 extends C2728t0 {
     @Override // com.digdroid.alman.dig.C2728t0
     /* renamed from: D3 */
     public Cursor mo8142D3() {
-        return this.f8796c0.mo8841e(mo9244E3(), this.f9278s0);
+        return this.f8804c0.mo8841e(mo9244E3(), this.f9286s0);
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2577r1, com.digdroid.alman.dig.AbstractC2531p1, androidx.fragment.app.Fragment, com.digdroid.alman.dig.C2728t0
@@ -31,10 +31,10 @@ public class C2294e4 extends C2728t0 {
         int i = instance.get(1);
         instance.clear();
         instance.set(i, 0, 1);
-        this.f9278s0.f8301a = instance.getTimeInMillis();
+        this.f9286s0.f8309a = instance.getTimeInMillis();
         instance.clear();
         instance.set(i + 1, 0, 1);
-        this.f9278s0.f8302b = instance.getTimeInMillis();
+        this.f9286s0.f8310b = instance.getTimeInMillis();
     }
 
     /* access modifiers changed from: package-private */

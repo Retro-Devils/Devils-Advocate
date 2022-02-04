@@ -6,14 +6,14 @@ import android.database.sqlite.SQLiteDatabase;
 class C2218c2 extends AbstractC2526p {
 
     /* renamed from: e */
-    SQLiteDatabase f7944e;
+    SQLiteDatabase f7952e;
 
     /* renamed from: f */
-    SQLiteDatabase f7945f;
+    SQLiteDatabase f7953f;
 
     public C2218c2(SQLiteDatabase sQLiteDatabase, SQLiteDatabase sQLiteDatabase2) {
-        this.f7944e = sQLiteDatabase;
-        this.f7945f = sQLiteDatabase2;
+        this.f7952e = sQLiteDatabase;
+        this.f7953f = sQLiteDatabase2;
     }
 
     /* access modifiers changed from: package-private */

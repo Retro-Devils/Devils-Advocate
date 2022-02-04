@@ -29,103 +29,103 @@ import p069c.p111c.p112a.p113a.p116c.C1546a;
 public class C2267e2 {
 
     /* renamed from: A */
-    boolean f8077A = false;
+    boolean f8085A = false;
 
     /* renamed from: B */
-    long f8078B = 0;
+    long f8086B = 0;
 
     /* renamed from: a */
-    AbstractC2286s f8079a;
+    AbstractC2286s f8087a;
 
     /* renamed from: b */
-    AbstractC2289v f8080b;
+    AbstractC2289v f8088b;
 
     /* renamed from: c */
-    AbstractC2290w f8081c;
+    AbstractC2290w f8089c;
 
     /* renamed from: d */
-    AbstractC2291x f8082d = null;
+    AbstractC2291x f8090d = null;
 
     /* renamed from: e */
-    MainActivity f8083e;
+    MainActivity f8091e;
 
     /* renamed from: f */
-    GridView f8084f = null;
+    GridView f8092f = null;
 
     /* renamed from: g */
-    MyListView f8085g = null;
+    MyListView f8093g = null;
 
     /* renamed from: h */
-    AbsListView f8086h = null;
+    AbsListView f8094h = null;
 
     /* renamed from: i */
-    MyCarouselView f8087i = null;
+    MyCarouselView f8095i = null;
 
     /* renamed from: j */
-    MyRecyclerView f8088j = null;
+    MyRecyclerView f8096j = null;
 
     /* renamed from: k */
-    RecyclerView f8089k = null;
+    RecyclerView f8097k = null;
 
     /* renamed from: l */
-    LinearLayoutManager f8090l;
+    LinearLayoutManager f8098l;
 
     /* renamed from: m */
-    C0726h f8091m;
+    C0726h f8099m;
 
     /* renamed from: n */
-    C2453k2 f8092n;
+    C2453k2 f8100n;
 
     /* renamed from: o */
-    View f8093o = null;
+    View f8101o = null;
 
     /* renamed from: p */
-    C2219c3 f8094p;
+    C2219c3 f8102p;
 
     /* renamed from: q */
-    boolean f8095q = false;
+    boolean f8103q = false;
 
     /* renamed from: r */
-    ScaleGestureDetector f8096r;
+    ScaleGestureDetector f8104r;
 
     /* renamed from: s */
-    boolean f8097s = false;
+    boolean f8105s = false;
 
     /* renamed from: t */
-    boolean f8098t = false;
+    boolean f8106t = false;
 
     /* renamed from: u */
-    boolean f8099u = false;
+    boolean f8107u = false;
 
     /* renamed from: v */
-    boolean f8100v;
+    boolean f8108v;
 
     /* renamed from: w */
-    boolean f8101w = false;
+    boolean f8109w = false;
 
     /* renamed from: x */
-    int f8102x = 0;
+    int f8110x = 0;
 
     /* renamed from: y */
-    private boolean f8103y = false;
+    private boolean f8111y = false;
 
     /* renamed from: z */
-    private boolean f8104z = false;
+    private boolean f8112z = false;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.digdroid.alman.dig.e2$a */
     public class C2268a implements AdapterView.OnItemClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ AbstractC2289v f8105b;
+        final /* synthetic */ AbstractC2289v f8113b;
 
         C2268a(AbstractC2289v vVar) {
-            this.f8105b = vVar;
+            this.f8113b = vVar;
         }
 
         @Override // android.widget.AdapterView.OnItemClickListener
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
-            this.f8105b.mo8404a(view, i);
+            this.f8113b.mo8404a(view, i);
         }
     }
 
@@ -134,18 +134,18 @@ public class C2267e2 {
     public class C2269b implements C1546a.AbstractC1553g {
 
         /* renamed from: a */
-        final /* synthetic */ AbstractC2289v f8107a;
+        final /* synthetic */ AbstractC2289v f8115a;
 
         C2269b(AbstractC2289v vVar) {
-            this.f8107a = vVar;
+            this.f8115a = vVar;
         }
 
         @Override // p069c.p111c.p112a.p113a.p116c.C1546a.AbstractC1553g
         /* renamed from: a */
         public void mo6857a(RecyclerView.AbstractC0658g gVar, View view, int i, int i2) {
-            this.f8107a.mo8404a(view, C2267e2.this.f8079a.mo8387l() ? i : C2267e2.this.f8087i.getCurrentPosition());
-            if (!C2267e2.this.f8079a.mo8387l() && C2267e2.this.f8087i.getCurrentPosition() != i) {
-                MyCarouselView myCarouselView = C2267e2.this.f8087i;
+            this.f8115a.mo8404a(view, C2267e2.this.f8087a.mo8387l() ? i : C2267e2.this.f8095i.getCurrentPosition());
+            if (!C2267e2.this.f8087a.mo8387l() && C2267e2.this.f8095i.getCurrentPosition() != i) {
+                MyCarouselView myCarouselView = C2267e2.this.f8095i;
                 myCarouselView.mo3233k1(myCarouselView.getCurrentPosition());
             }
         }
@@ -156,16 +156,16 @@ public class C2267e2 {
     public class C2270c implements AdapterView.OnItemLongClickListener {
 
         /* renamed from: a */
-        final /* synthetic */ AbstractC2290w f8109a;
+        final /* synthetic */ AbstractC2290w f8117a;
 
         C2270c(AbstractC2290w wVar) {
-            this.f8109a = wVar;
+            this.f8117a = wVar;
         }
 
         @Override // android.widget.AdapterView.OnItemLongClickListener
         public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long j) {
-            if (!C2267e2.this.f8094p.mo8196t()) {
-                return this.f8109a.mo8405a(view, i);
+            if (!C2267e2.this.f8102p.mo8196t()) {
+                return this.f8117a.mo8405a(view, i);
             }
             return true;
         }
@@ -176,17 +176,17 @@ public class C2267e2 {
     public class C2271d implements C1546a.AbstractC1554h {
 
         /* renamed from: a */
-        final /* synthetic */ AbstractC2290w f8111a;
+        final /* synthetic */ AbstractC2290w f8119a;
 
         C2271d(AbstractC2290w wVar) {
-            this.f8111a = wVar;
+            this.f8119a = wVar;
         }
 
         @Override // p069c.p111c.p112a.p113a.p116c.C1546a.AbstractC1554h
         /* renamed from: a */
         public boolean mo6858a(RecyclerView.AbstractC0658g gVar, View view, int i, int i2) {
-            if (!C2267e2.this.f8094p.mo8196t()) {
-                return this.f8111a.mo8405a(view, C2267e2.this.f8087i.getCurrentPosition());
+            if (!C2267e2.this.f8102p.mo8196t()) {
+                return this.f8119a.mo8405a(view, C2267e2.this.f8095i.getCurrentPosition());
             }
             return true;
         }
@@ -197,15 +197,15 @@ public class C2267e2 {
     public class RunnableC2272e implements Runnable {
 
         /* renamed from: b */
-        final /* synthetic */ C2252d2 f8113b;
+        final /* synthetic */ C2252d2 f8121b;
 
         RunnableC2272e(C2252d2 d2Var) {
-            this.f8113b = d2Var;
+            this.f8121b = d2Var;
         }
 
         public void run() {
-            C2267e2.this.f8087i.setAdapter(this.f8113b.f8041b);
-            C2267e2.this.f8087i.mo3233k1(0);
+            C2267e2.this.f8095i.setAdapter(this.f8121b.f8049b);
+            C2267e2.this.f8095i.mo3233k1(0);
         }
     }
 
@@ -214,15 +214,15 @@ public class C2267e2 {
     public class RunnableC2273f implements Runnable {
 
         /* renamed from: b */
-        final /* synthetic */ C2252d2 f8115b;
+        final /* synthetic */ C2252d2 f8123b;
 
         RunnableC2273f(C2252d2 d2Var) {
-            this.f8115b = d2Var;
+            this.f8123b = d2Var;
         }
 
         public void run() {
-            C2267e2.this.f8088j.setAdapter(this.f8115b.f8041b);
-            C2267e2.this.f8088j.mo3233k1(0);
+            C2267e2.this.f8096j.setAdapter(this.f8123b.f8049b);
+            C2267e2.this.f8096j.mo3233k1(0);
         }
     }
 
@@ -231,10 +231,10 @@ public class C2267e2 {
     public class RunnableC2274g implements Runnable {
 
         /* renamed from: b */
-        final /* synthetic */ Cursor f8117b;
+        final /* synthetic */ Cursor f8125b;
 
         RunnableC2274g(Cursor cursor) {
-            this.f8117b = cursor;
+            this.f8125b = cursor;
         }
 
         /* JADX WARNING: Removed duplicated region for block: B:10:0x0030  */
@@ -245,25 +245,25 @@ public class C2267e2 {
                 com.digdroid.alman.dig.e2 r0 = com.digdroid.alman.dig.C2267e2.this
                 int r0 = r0.mo8321f()
                 com.digdroid.alman.dig.e2 r1 = com.digdroid.alman.dig.C2267e2.this
-                androidx.recyclerview.widget.RecyclerView r1 = r1.f8089k
+                androidx.recyclerview.widget.RecyclerView r1 = r1.f8097k
                 r2 = 0
                 r1.mo3233k1(r2)
                 com.digdroid.alman.dig.e2 r1 = com.digdroid.alman.dig.C2267e2.this
-                com.digdroid.alman.dig.MyCarouselView r3 = r1.f8087i
+                com.digdroid.alman.dig.MyCarouselView r3 = r1.f8095i
                 if (r3 == 0) goto L_0x001b
                 androidx.recyclerview.widget.RecyclerView$g r1 = r3.getAdapter()
             L_0x0018:
                 com.digdroid.alman.dig.h r1 = (com.digdroid.alman.dig.AbstractC2365h) r1
                 goto L_0x0025
             L_0x001b:
-                com.digdroid.alman.dig.MyRecyclerView r1 = r1.f8088j
+                com.digdroid.alman.dig.MyRecyclerView r1 = r1.f8096j
                 if (r1 == 0) goto L_0x0024
                 androidx.recyclerview.widget.RecyclerView$g r1 = r1.getAdapter()
                 goto L_0x0018
             L_0x0024:
                 r1 = 0
             L_0x0025:
-                android.database.Cursor r3 = r4.f8117b
+                android.database.Cursor r3 = r4.f8125b
                 r1.mo8523u(r3)
                 int r3 = r1.mo3580c()
                 if (r0 < r3) goto L_0x003a
@@ -272,7 +272,7 @@ public class C2267e2 {
                 int r0 = java.lang.Math.max(r0, r2)
             L_0x003a:
                 com.digdroid.alman.dig.e2 r1 = com.digdroid.alman.dig.C2267e2.this
-                androidx.recyclerview.widget.RecyclerView r1 = r1.f8089k
+                androidx.recyclerview.widget.RecyclerView r1 = r1.f8097k
                 r1.mo3233k1(r0)
                 return
             */
@@ -288,7 +288,7 @@ public class C2267e2 {
 
         public void run() {
             C2267e2 e2Var = C2267e2.this;
-            e2Var.f8081c.mo8405a(null, e2Var.mo8321f());
+            e2Var.f8089c.mo8405a(null, e2Var.mo8321f());
         }
     }
 
@@ -300,7 +300,7 @@ public class C2267e2 {
 
         public void run() {
             C2267e2 e2Var = C2267e2.this;
-            e2Var.f8080b.mo8404a(null, e2Var.mo8321f());
+            e2Var.f8088b.mo8404a(null, e2Var.mo8321f());
         }
     }
 
@@ -308,33 +308,33 @@ public class C2267e2 {
     class C2277j implements AdapterView.OnItemSelectedListener {
 
         /* renamed from: b */
-        final /* synthetic */ AbstractC2286s f8121b;
+        final /* synthetic */ AbstractC2286s f8129b;
 
         /* renamed from: c */
-        final /* synthetic */ MainActivity f8122c;
+        final /* synthetic */ MainActivity f8130c;
 
         C2277j(AbstractC2286s sVar, MainActivity mainActivity) {
-            this.f8121b = sVar;
-            this.f8122c = mainActivity;
+            this.f8129b = sVar;
+            this.f8130c = mainActivity;
         }
 
         @Override // android.widget.AdapterView.OnItemSelectedListener
         public void onItemSelected(AdapterView<?> adapterView, View view, int i, long j) {
-            if (!this.f8121b.mo8387l() && C2267e2.this.mo8324i()) {
-                if (C2267e2.this.f8093o != null) {
-                    Animation loadAnimation = AnimationUtils.loadAnimation(this.f8122c, R.anim.scale_out_tv);
-                    C2267e2.this.f8093o.startAnimation(loadAnimation);
+            if (!this.f8129b.mo8387l() && C2267e2.this.mo8324i()) {
+                if (C2267e2.this.f8101o != null) {
+                    Animation loadAnimation = AnimationUtils.loadAnimation(this.f8130c, R.anim.scale_out_tv);
+                    C2267e2.this.f8101o.startAnimation(loadAnimation);
                     loadAnimation.setFillAfter(true);
                 }
                 if (view != null) {
-                    Animation loadAnimation2 = AnimationUtils.loadAnimation(this.f8122c, R.anim.scale_in_tv);
+                    Animation loadAnimation2 = AnimationUtils.loadAnimation(this.f8130c, R.anim.scale_in_tv);
                     view.startAnimation(loadAnimation2);
                     loadAnimation2.setFillAfter(true);
                 }
             }
             C2267e2 e2Var = C2267e2.this;
-            e2Var.f8093o = view;
-            AbstractC2291x xVar = e2Var.f8082d;
+            e2Var.f8101o = view;
+            AbstractC2291x xVar = e2Var.f8090d;
             if (xVar != null) {
                 xVar.mo8406a(view, i);
             }
@@ -349,33 +349,33 @@ public class C2267e2 {
     class C2278k implements AdapterView.OnItemSelectedListener {
 
         /* renamed from: b */
-        final /* synthetic */ AbstractC2286s f8124b;
+        final /* synthetic */ AbstractC2286s f8132b;
 
         /* renamed from: c */
-        final /* synthetic */ MainActivity f8125c;
+        final /* synthetic */ MainActivity f8133c;
 
         C2278k(AbstractC2286s sVar, MainActivity mainActivity) {
-            this.f8124b = sVar;
-            this.f8125c = mainActivity;
+            this.f8132b = sVar;
+            this.f8133c = mainActivity;
         }
 
         @Override // android.widget.AdapterView.OnItemSelectedListener
         public void onItemSelected(AdapterView<?> adapterView, View view, int i, long j) {
-            if (!this.f8124b.mo8387l()) {
-                if (C2267e2.this.f8093o != null) {
-                    Animation loadAnimation = AnimationUtils.loadAnimation(this.f8125c, R.anim.scale_out_tv);
-                    C2267e2.this.f8093o.startAnimation(loadAnimation);
+            if (!this.f8132b.mo8387l()) {
+                if (C2267e2.this.f8101o != null) {
+                    Animation loadAnimation = AnimationUtils.loadAnimation(this.f8133c, R.anim.scale_out_tv);
+                    C2267e2.this.f8101o.startAnimation(loadAnimation);
                     loadAnimation.setFillAfter(true);
                 }
                 if (view != null) {
-                    Animation loadAnimation2 = AnimationUtils.loadAnimation(this.f8125c, R.anim.scale_in_tv);
+                    Animation loadAnimation2 = AnimationUtils.loadAnimation(this.f8133c, R.anim.scale_in_tv);
                     view.startAnimation(loadAnimation2);
                     loadAnimation2.setFillAfter(true);
                 }
             }
             C2267e2 e2Var = C2267e2.this;
-            e2Var.f8093o = view;
-            AbstractC2291x xVar = e2Var.f8082d;
+            e2Var.f8101o = view;
+            AbstractC2291x xVar = e2Var.f8090d;
             if (xVar != null) {
                 xVar.mo8406a(view, i);
             }
@@ -398,13 +398,13 @@ public class C2267e2 {
             }
             if (motionEvent.getAction() == 1) {
                 C2267e2 e2Var = C2267e2.this;
-                if (e2Var.f8095q) {
-                    e2Var.f8095q = false;
+                if (e2Var.f8103q) {
+                    e2Var.f8103q = false;
                     return true;
                 }
             }
-            C2219c3 c3Var = C2267e2.this.f8094p;
-            if (!(c3Var == null || c3Var.mo8196t() || (scaleGestureDetector = C2267e2.this.f8096r) == null)) {
+            C2219c3 c3Var = C2267e2.this.f8102p;
+            if (!(c3Var == null || c3Var.mo8196t() || (scaleGestureDetector = C2267e2.this.f8104r) == null)) {
                 scaleGestureDetector.onTouchEvent(motionEvent);
             }
             return false;
@@ -417,12 +417,12 @@ public class C2267e2 {
         }
 
         public void onScroll(AbsListView absListView, int i, int i2, int i3) {
-            C2267e2.this.f8102x = i;
+            C2267e2.this.f8110x = i;
         }
 
         public void onScrollStateChanged(AbsListView absListView, int i) {
             C2267e2 e2Var = C2267e2.this;
-            e2Var.f8102x = e2Var.f8086h.getFirstVisiblePosition();
+            e2Var.f8110x = e2Var.f8094h.getFirstVisiblePosition();
         }
     }
 
@@ -439,17 +439,17 @@ public class C2267e2 {
             super.mo6864d(aVar, i);
             if (i == 0) {
                 C2267e2 e2Var2 = C2267e2.this;
-                AbstractC2291x xVar2 = e2Var2.f8082d;
+                AbstractC2291x xVar2 = e2Var2.f8090d;
                 if (xVar2 != null) {
                     xVar2.mo8406a(null, e2Var2.mo8321f());
                 }
                 C2267e2 e2Var3 = C2267e2.this;
-                if (e2Var3.f8101w) {
-                    e2Var3.f8101w = false;
-                } else if (!e2Var3.f8100v && !e2Var3.f8099u) {
+                if (e2Var3.f8109w) {
+                    e2Var3.f8109w = false;
+                } else if (!e2Var3.f8108v && !e2Var3.f8107u) {
                     e2Var3.mo8328m();
                 }
-            } else if (i == 2 && (xVar = (e2Var = C2267e2.this).f8082d) != null) {
+            } else if (i == 2 && (xVar = (e2Var = C2267e2.this).f8090d) != null) {
                 xVar.mo8406a(null, e2Var.mo8321f());
             }
         }
@@ -465,18 +465,18 @@ public class C2267e2 {
         public void mo4177a(RecyclerView recyclerView, int i) {
             C2267e2 e2Var;
             AbstractC2291x xVar;
-            super.mo4177a(C2267e2.this.f8088j, i);
+            super.mo4177a(C2267e2.this.f8096j, i);
             if (i == 0) {
                 C2267e2 e2Var2 = C2267e2.this;
-                AbstractC2291x xVar2 = e2Var2.f8082d;
+                AbstractC2291x xVar2 = e2Var2.f8090d;
                 if (xVar2 != null) {
                     xVar2.mo8406a(null, e2Var2.mo8321f());
                 }
                 C2267e2 e2Var3 = C2267e2.this;
-                if (e2Var3.f8101w) {
-                    e2Var3.f8101w = false;
+                if (e2Var3.f8109w) {
+                    e2Var3.f8109w = false;
                 }
-            } else if (i == 2 && (xVar = (e2Var = C2267e2.this).f8082d) != null) {
+            } else if (i == 2 && (xVar = (e2Var = C2267e2.this).f8090d) != null) {
                 xVar.mo8406a(null, e2Var.mo8321f());
             }
         }
@@ -487,14 +487,14 @@ public class C2267e2 {
     public class RunnableC2283p implements Runnable {
 
         /* renamed from: b */
-        final /* synthetic */ int f8131b;
+        final /* synthetic */ int f8139b;
 
         /* renamed from: c */
-        final /* synthetic */ boolean f8132c;
+        final /* synthetic */ boolean f8140c;
 
         RunnableC2283p(int i, boolean z) {
-            this.f8131b = i;
-            this.f8132c = z;
+            this.f8139b = i;
+            this.f8140c = z;
         }
 
         /* JADX WARNING: Removed duplicated region for block: B:19:? A[RETURN, SYNTHETIC] */
@@ -503,16 +503,16 @@ public class C2267e2 {
         public void run() {
             /*
                 r3 = this;
-                int r0 = r3.f8131b
+                int r0 = r3.f8139b
                 com.digdroid.alman.dig.e2 r1 = com.digdroid.alman.dig.C2267e2.this
-                com.digdroid.alman.dig.MyCarouselView r2 = r1.f8087i
+                com.digdroid.alman.dig.MyCarouselView r2 = r1.f8095i
                 if (r2 == 0) goto L_0x000f
                 androidx.recyclerview.widget.RecyclerView$g r1 = r2.getAdapter()
             L_0x000c:
                 com.digdroid.alman.dig.h r1 = (com.digdroid.alman.dig.AbstractC2365h) r1
                 goto L_0x0019
             L_0x000f:
-                com.digdroid.alman.dig.MyRecyclerView r1 = r1.f8088j
+                com.digdroid.alman.dig.MyRecyclerView r1 = r1.f8096j
                 if (r1 == 0) goto L_0x0018
                 androidx.recyclerview.widget.RecyclerView$g r1 = r1.getAdapter()
                 goto L_0x000c
@@ -526,14 +526,14 @@ public class C2267e2 {
                 r0 = 0
                 int r0 = java.lang.Math.max(r1, r0)
             L_0x0028:
-                boolean r1 = r3.f8132c
+                boolean r1 = r3.f8140c
                 if (r1 == 0) goto L_0x0033
                 com.digdroid.alman.dig.e2 r1 = com.digdroid.alman.dig.C2267e2.this
-                androidx.recyclerview.widget.RecyclerView r1 = r1.f8089k
+                androidx.recyclerview.widget.RecyclerView r1 = r1.f8097k
                 r1.mo3233k1(r0)
             L_0x0033:
                 com.digdroid.alman.dig.e2 r1 = com.digdroid.alman.dig.C2267e2.this
-                com.digdroid.alman.dig.MyRecyclerView r2 = r1.f8088j
+                com.digdroid.alman.dig.MyRecyclerView r2 = r1.f8096j
                 if (r2 == 0) goto L_0x003c
                 r1.mo8316A(r0)
             L_0x003c:
@@ -551,12 +551,12 @@ public class C2267e2 {
 
         public void run() {
             C2267e2 e2Var = C2267e2.this;
-            View c = e2Var.mo8319c(e2Var.f8086h.getSelectedItemPosition() - C2267e2.this.f8086h.getFirstVisiblePosition());
+            View c = e2Var.mo8319c(e2Var.f8094h.getSelectedItemPosition() - C2267e2.this.f8094h.getFirstVisiblePosition());
             if (c != null) {
-                Animation loadAnimation = AnimationUtils.loadAnimation(C2267e2.this.f8083e, R.anim.scale_in_tv);
+                Animation loadAnimation = AnimationUtils.loadAnimation(C2267e2.this.f8091e, R.anim.scale_in_tv);
                 c.startAnimation(loadAnimation);
                 loadAnimation.setFillAfter(true);
-                C2267e2.this.f8093o = c;
+                C2267e2.this.f8101o = c;
             }
         }
     }
@@ -566,19 +566,19 @@ public class C2267e2 {
     public class RunnableC2285r implements Runnable {
 
         /* renamed from: b */
-        final /* synthetic */ int f8135b;
+        final /* synthetic */ int f8143b;
 
         RunnableC2285r(int i) {
-            this.f8135b = i;
+            this.f8143b = i;
         }
 
         public void run() {
-            View F = C2267e2.this.f8090l.mo3728F(this.f8135b);
+            View F = C2267e2.this.f8098l.mo3728F(this.f8143b);
             if (F != null) {
                 C2267e2 e2Var = C2267e2.this;
-                int[] c = e2Var.f8091m.mo4430c(e2Var.f8090l, F);
+                int[] c = e2Var.f8099m.mo4430c(e2Var.f8098l, F);
                 if (c[0] != 0 || c[1] != 0) {
-                    C2267e2.this.f8088j.mo3878o1(c[0], c[1]);
+                    C2267e2.this.f8096j.mo3878o1(c[0], c[1]);
                 }
             }
         }
@@ -720,7 +720,7 @@ public class C2267e2 {
         }
 
         public boolean onScaleBegin(ScaleGestureDetector scaleGestureDetector) {
-            C2267e2.this.f8095q = true;
+            C2267e2.this.f8103q = true;
             return true;
         }
 
@@ -744,7 +744,7 @@ public class C2267e2 {
         }
 
         public boolean onScaleBegin(ScaleGestureDetector scaleGestureDetector) {
-            C2267e2.this.f8095q = true;
+            C2267e2.this.f8103q = true;
             return true;
         }
 
@@ -776,37 +776,37 @@ public class C2267e2 {
     public C2267e2(MainActivity mainActivity, View view, String str, AbstractC2286s sVar) {
         MyCarouselView myCarouselView;
         float L;
-        this.f8083e = mainActivity;
-        this.f8079a = sVar;
-        this.f8094p = C2219c3.m9805k(mainActivity);
+        this.f8091e = mainActivity;
+        this.f8087a = sVar;
+        this.f8102p = C2219c3.m9805k(mainActivity);
         if (str.equals("list")) {
-            this.f8085g = (MyListView) view.findViewById(R.id.game_list);
+            this.f8093g = (MyListView) view.findViewById(R.id.game_list);
             if (sVar.mo8375Q().equals("vertical")) {
                 mo8334s();
             }
-            this.f8086h = this.f8085g;
-            if (!this.f8094p.mo8196t()) {
-                this.f8096r = new ScaleGestureDetector(mainActivity, new C2287t());
+            this.f8094h = this.f8093g;
+            if (!this.f8102p.mo8196t()) {
+                this.f8104r = new ScaleGestureDetector(mainActivity, new C2287t());
             }
-            this.f8085g.setOnItemSelectedListener(new C2277j(sVar, mainActivity));
+            this.f8093g.setOnItemSelectedListener(new C2277j(sVar, mainActivity));
         } else if (str.equals("grid")) {
             GridView gridView = (GridView) view.findViewById(R.id.main_grid);
-            this.f8084f = gridView;
-            this.f8086h = gridView;
-            if (!this.f8094p.mo8196t()) {
-                this.f8096r = new ScaleGestureDetector(mainActivity, new C2288u());
+            this.f8092f = gridView;
+            this.f8094h = gridView;
+            if (!this.f8102p.mo8196t()) {
+                this.f8104r = new ScaleGestureDetector(mainActivity, new C2288u());
             }
-            this.f8084f.setColumnWidth(Math.round(C2553q3.m11118d((float) sVar.mo8374P())));
-            this.f8084f.setVerticalSpacing(Math.round(C2553q3.m11119e(this.f8094p.mo8183f("vertical_spacing", 36.0f))));
-            this.f8084f.setOnItemSelectedListener(new C2278k(sVar, mainActivity));
+            this.f8092f.setColumnWidth(Math.round(C2553q3.m11118d((float) sVar.mo8374P())));
+            this.f8092f.setVerticalSpacing(Math.round(C2553q3.m11119e(this.f8102p.mo8183f("vertical_spacing", 36.0f))));
+            this.f8092f.setOnItemSelectedListener(new C2278k(sVar, mainActivity));
         } else {
             if (str.equals("carousel")) {
                 MyCarouselView myCarouselView2 = (MyCarouselView) view.findViewById(R.id.my_recycler_view);
-                this.f8087i = myCarouselView2;
-                this.f8089k = myCarouselView2;
+                this.f8095i = myCarouselView2;
+                this.f8097k = myCarouselView2;
                 C1538b bVar = new C1538b();
                 Point g = sVar.mo8382g(false);
-                MyCarouselView myCarouselView3 = this.f8087i;
+                MyCarouselView myCarouselView3 = this.f8095i;
                 double d = (double) g.y;
                 Double.isNaN(d);
                 myCarouselView3.setPadding(0, 0, 0, (int) Math.round(d / 4.5d));
@@ -815,76 +815,76 @@ public class C2267e2 {
                 double d3 = (double) g.x;
                 Double.isNaN(d3);
                 bVar.mo6835e(Math.min((d2 * 1.1d) / d3, 0.8d));
-                this.f8087i.setTransformer(bVar);
-                myCarouselView = this.f8087i;
+                this.f8095i.setTransformer(bVar);
+                myCarouselView = this.f8095i;
                 L = sVar.mo8396y();
             } else if (str.equals("coverflow")) {
                 MyCarouselView myCarouselView4 = (MyCarouselView) view.findViewById(R.id.my_recycler_view);
-                this.f8087i = myCarouselView4;
-                this.f8089k = myCarouselView4;
-                this.f8087i.setTransformer(new C1537a());
-                myCarouselView = this.f8087i;
+                this.f8095i = myCarouselView4;
+                this.f8097k = myCarouselView4;
+                this.f8095i.setTransformer(new C1537a());
+                myCarouselView = this.f8095i;
                 L = sVar.mo8390p();
             } else if (str.equals("wheel")) {
                 MyCarouselView myCarouselView5 = (MyCarouselView) view.findViewById(R.id.my_recycler_view);
-                this.f8087i = myCarouselView5;
-                this.f8089k = myCarouselView5;
+                this.f8095i = myCarouselView5;
+                this.f8097k = myCarouselView5;
                 C1545i iVar = new C1545i();
                 Point g2 = sVar.mo8382g(false);
-                MyCarouselView myCarouselView6 = this.f8087i;
+                MyCarouselView myCarouselView6 = this.f8095i;
                 double d4 = (double) g2.y;
                 Double.isNaN(d4);
                 myCarouselView6.setPadding(0, 0, 0, (int) Math.round(d4 / 4.5d));
-                this.f8087i.setTransformer(iVar);
-                myCarouselView = this.f8087i;
+                this.f8095i.setTransformer(iVar);
+                myCarouselView = this.f8095i;
                 L = sVar.mo8371M();
             } else if (str.equals("linear")) {
                 MyCarouselView myCarouselView7 = (MyCarouselView) view.findViewById(R.id.my_recycler_view);
-                this.f8087i = myCarouselView7;
-                this.f8089k = myCarouselView7;
-                this.f8087i.setTransformer(new C1541e());
-                myCarouselView = this.f8087i;
+                this.f8095i = myCarouselView7;
+                this.f8097k = myCarouselView7;
+                this.f8095i.setTransformer(new C1541e());
+                myCarouselView = this.f8095i;
                 L = sVar.mo8370L();
             } else if (str.equals("vertical")) {
                 MyRecyclerView myRecyclerView = (MyRecyclerView) view.findViewById(R.id.game_list);
-                this.f8088j = myRecyclerView;
+                this.f8096j = myRecyclerView;
                 myRecyclerView.mo7948A1(C2185a4.m9681k(mainActivity));
-                this.f8089k = this.f8088j;
+                this.f8097k = this.f8096j;
                 LinearLayoutManager linearLayoutManager = new LinearLayoutManager(mainActivity);
-                this.f8090l = linearLayoutManager;
-                this.f8088j.setLayoutManager(linearLayoutManager);
-                this.f8088j.setHasFixedSize(true);
-                while (this.f8088j.getItemDecorationCount() > 0) {
-                    this.f8088j.mo3812Z0(0);
+                this.f8098l = linearLayoutManager;
+                this.f8096j.setLayoutManager(linearLayoutManager);
+                this.f8096j.setHasFixedSize(true);
+                while (this.f8096j.getItemDecorationCount() > 0) {
+                    this.f8096j.mo3812Z0(0);
                 }
                 C2453k2 k2Var = new C2453k2(sVar.mo8376S(), sVar.mo8363E(), sVar.mo8365G());
-                this.f8092n = k2Var;
-                this.f8088j.mo3859h(k2Var);
-                this.f8088j.setOnFlingListener(null);
+                this.f8100n = k2Var;
+                this.f8096j.mo3859h(k2Var);
+                this.f8096j.setOnFlingListener(null);
                 C0726h hVar = new C0726h();
-                this.f8091m = hVar;
-                hVar.mo4477b(this.f8088j);
+                this.f8099m = hVar;
+                hVar.mo4477b(this.f8096j);
             }
             myCarouselView.setYTranslation(2.0f - L);
         }
-        AbsListView absListView = this.f8086h;
+        AbsListView absListView = this.f8094h;
         if (absListView != null) {
             absListView.setOnTouchListener(new View$OnTouchListenerC2279l());
-            this.f8086h.setOnScrollListener(new C2280m());
+            this.f8094h.setOnScrollListener(new C2280m());
             return;
         }
-        MyCarouselView myCarouselView8 = this.f8087i;
+        MyCarouselView myCarouselView8 = this.f8095i;
         if (myCarouselView8 != null) {
             myCarouselView8.setGravity(17);
-            this.f8087i.setClipChildren(false);
-            this.f8087i.setClipToPadding(false);
-            this.f8087i.mo6842T1(new C2281n());
+            this.f8095i.setClipChildren(false);
+            this.f8095i.setClipToPadding(false);
+            this.f8095i.mo6842T1(new C2281n());
         } else {
-            MyRecyclerView myRecyclerView2 = this.f8088j;
+            MyRecyclerView myRecyclerView2 = this.f8096j;
             if (myRecyclerView2 != null) {
                 myRecyclerView2.setClipChildren(false);
-                this.f8088j.setClipToPadding(false);
-                this.f8088j.setOnScrollListener(new C2282o());
+                this.f8096j.setClipToPadding(false);
+                this.f8096j.setOnScrollListener(new C2282o());
             } else {
                 return;
             }
@@ -973,7 +973,7 @@ public class C2267e2 {
     /* access modifiers changed from: package-private */
     /* renamed from: A */
     public void mo8316A(int i) {
-        MyRecyclerView myRecyclerView = this.f8088j;
+        MyRecyclerView myRecyclerView = this.f8096j;
         if (myRecyclerView != null) {
             myRecyclerView.post(new RunnableC2285r(i));
         }
@@ -987,11 +987,11 @@ public class C2267e2 {
 
     /* renamed from: b */
     public synchronized void mo8318b(Cursor cursor) {
-        AbsListView absListView = this.f8086h;
+        AbsListView absListView = this.f8094h;
         if (absListView != null) {
             ((CursorAdapter) absListView.getAdapter()).changeCursor(cursor);
         } else {
-            RecyclerView recyclerView = this.f8089k;
+            RecyclerView recyclerView = this.f8097k;
             if (recyclerView != null) {
                 recyclerView.post(new RunnableC2274g(cursor));
             }
@@ -1000,11 +1000,11 @@ public class C2267e2 {
 
     /* renamed from: c */
     public View mo8319c(int i) {
-        AbsListView absListView = this.f8086h;
+        AbsListView absListView = this.f8094h;
         if (absListView != null) {
             return absListView.getChildAt(i);
         }
-        RecyclerView recyclerView = this.f8089k;
+        RecyclerView recyclerView = this.f8097k;
         if (recyclerView != null) {
             return recyclerView.getChildAt(i);
         }
@@ -1017,7 +1017,7 @@ public class C2267e2 {
     public java.lang.Object mo8320d(int r4) {
         /*
             r3 = this;
-            android.widget.AbsListView r0 = r3.f8086h
+            android.widget.AbsListView r0 = r3.f8094h
             r1 = 0
             if (r0 == 0) goto L_0x0012
             android.widget.Adapter r0 = r0.getAdapter()
@@ -1026,7 +1026,7 @@ public class C2267e2 {
             android.database.Cursor r0 = r0.getCursor()
             goto L_0x0024
         L_0x0012:
-            androidx.recyclerview.widget.RecyclerView r0 = r3.f8089k
+            androidx.recyclerview.widget.RecyclerView r0 = r3.f8097k
             if (r0 == 0) goto L_0x0023
             androidx.recyclerview.widget.RecyclerView$g r0 = r0.getAdapter()
             com.digdroid.alman.dig.h r0 = (com.digdroid.alman.dig.AbstractC2365h) r0
@@ -1052,31 +1052,31 @@ public class C2267e2 {
 
     /* renamed from: f */
     public int mo8321f() {
-        AbsListView absListView = this.f8086h;
+        AbsListView absListView = this.f8094h;
         if (absListView != null) {
             int selectedItemPosition = absListView.getSelectedItemPosition();
             if (selectedItemPosition != -1) {
                 return selectedItemPosition;
             }
         } else {
-            MyCarouselView myCarouselView = this.f8087i;
+            MyCarouselView myCarouselView = this.f8095i;
             if (myCarouselView != null) {
                 int currentPosition = myCarouselView.getCurrentPosition();
                 if (currentPosition < 0) {
                     return 0;
                 }
                 return currentPosition;
-            } else if (this.f8088j == null) {
+            } else if (this.f8096j == null) {
                 return 0;
             } else {
-                int h2 = this.f8090l.mo3745h2();
+                int h2 = this.f8098l.mo3745h2();
                 if (h2 != -1) {
-                    int k2 = (this.f8090l.mo3746k2() - h2) + 1;
-                    int height = this.f8088j.getHeight() / 2;
+                    int k2 = (this.f8098l.mo3746k2() - h2) + 1;
+                    int height = this.f8096j.getHeight() / 2;
                     int i = 0;
                     int i2 = Integer.MAX_VALUE;
                     for (int i3 = 0; i3 < k2; i3++) {
-                        View L = this.f8090l.mo4096L(i3);
+                        View L = this.f8098l.mo4096L(i3);
                         if (L != null) {
                             int abs = Math.abs(L.getTop() - height) + Math.abs(L.getBottom() - height);
                             if (i2 > abs) {
@@ -1089,7 +1089,7 @@ public class C2267e2 {
                 }
             }
         }
-        return this.f8102x;
+        return this.f8110x;
     }
 
     /* renamed from: g */
@@ -1098,41 +1098,41 @@ public class C2267e2 {
             if (i != 1) {
                 switch (i) {
                     case 12:
-                        this.f8103y = false;
+                        this.f8111y = false;
                         return false;
                     case 8:
                     case 9:
                     case 10:
                     case 11:
                         if (i2 == 1) {
-                            this.f8103y = false;
+                            this.f8111y = false;
                             return false;
                         }
                         break;
                 }
             } else if (i2 == 0) {
-                if (!this.f8103y) {
+                if (!this.f8111y) {
                     return false;
                 }
-                this.f8104z = true;
+                this.f8112z = true;
                 return true;
-            } else if (i2 != 1 || !this.f8104z) {
+            } else if (i2 != 1 || !this.f8112z) {
                 return false;
             } else {
-                this.f8104z = false;
-                if (this.f8088j == null) {
+                this.f8112z = false;
+                if (this.f8096j == null) {
                     mo8328m();
                 }
                 return true;
             }
-        } else if (this.f8089k != null && !this.f8099u && !this.f8100v) {
+        } else if (this.f8097k != null && !this.f8107u && !this.f8108v) {
             if (i2 == 0) {
-                if (this.f8078B == 0) {
-                    this.f8078B = System.currentTimeMillis();
+                if (this.f8086B == 0) {
+                    this.f8086B = System.currentTimeMillis();
                 }
             } else if (i2 == 1) {
-                mo8327l(System.currentTimeMillis() - this.f8078B >= 1000 ? new RunnableC2275h() : new RunnableC2276i());
-                this.f8078B = 0;
+                mo8327l(System.currentTimeMillis() - this.f8086B >= 1000 ? new RunnableC2275h() : new RunnableC2276i());
+                this.f8086B = 0;
             }
             return true;
         }
@@ -1140,167 +1140,167 @@ public class C2267e2 {
             return false;
         }
         int i3 = 10;
-        if (this.f8086h != null) {
+        if (this.f8094h != null) {
             if (mo8325j()) {
-                i3 = this.f8084f.getNumColumns() * 10;
+                i3 = this.f8092f.getNumColumns() * 10;
             }
-            int selectedItemPosition = this.f8086h.getSelectedItemPosition();
+            int selectedItemPosition = this.f8094h.getSelectedItemPosition();
             if (i == 8) {
-                this.f8103y = true;
-                if (!this.f8104z) {
+                this.f8111y = true;
+                if (!this.f8112z) {
                     return false;
                 }
-                this.f8086h.setSelection(Math.max(selectedItemPosition - i3, 0));
+                this.f8094h.setSelection(Math.max(selectedItemPosition - i3, 0));
                 return true;
             } else if (i != 9) {
                 return false;
             } else {
-                this.f8103y = true;
-                if (!this.f8104z) {
+                this.f8111y = true;
+                if (!this.f8112z) {
                     return false;
                 }
-                AbstractC2551q1 q1Var = (AbstractC2551q1) this.f8086h.getAdapter();
+                AbstractC2551q1 q1Var = (AbstractC2551q1) this.f8094h.getAdapter();
                 if (q1Var != null) {
-                    this.f8086h.setSelection(Math.min(selectedItemPosition + i3, q1Var.getCount() - 1));
+                    this.f8094h.setSelection(Math.min(selectedItemPosition + i3, q1Var.getCount() - 1));
                 }
                 return true;
             }
         } else {
-            MyCarouselView myCarouselView = this.f8087i;
+            MyCarouselView myCarouselView = this.f8095i;
             if (myCarouselView != null) {
                 int currentPosition = myCarouselView.getCurrentPosition();
                 switch (i) {
                     case 8:
-                        this.f8100v = false;
-                        boolean z = this.f8097s;
-                        this.f8099u = z;
+                        this.f8108v = false;
+                        boolean z = this.f8105s;
+                        this.f8107u = z;
                         if (z) {
-                            this.f8079a.mo8381e();
+                            this.f8087a.mo8381e();
                         }
                         return false;
                     case 9:
-                        this.f8099u = false;
-                        boolean z2 = this.f8098t;
-                        this.f8100v = z2;
+                        this.f8107u = false;
+                        boolean z2 = this.f8106t;
+                        this.f8108v = z2;
                         if (z2) {
-                            this.f8079a.mo8381e();
+                            this.f8087a.mo8381e();
                         }
                         return false;
                     case 10:
-                        if (this.f8099u || this.f8100v) {
+                        if (this.f8107u || this.f8108v) {
                             return false;
                         }
-                        if (this.f8104z) {
+                        if (this.f8112z) {
                             int max = Math.max(currentPosition - 10, 0);
-                            this.f8087i.mo3233k1(max);
-                            AbstractC2291x xVar = this.f8082d;
+                            this.f8095i.mo3233k1(max);
+                            AbstractC2291x xVar = this.f8090d;
                             if (xVar != null) {
                                 xVar.mo8406a(null, max);
                             }
                         } else if (currentPosition > 0) {
                             int i4 = currentPosition - 1;
-                            this.f8087i.mo3237s1(i4);
-                            AbstractC2291x xVar2 = this.f8082d;
+                            this.f8095i.mo3237s1(i4);
+                            AbstractC2291x xVar2 = this.f8090d;
                             if (xVar2 != null) {
                                 xVar2.mo8406a(null, i4);
                             }
                         }
-                        this.f8103y = true;
+                        this.f8111y = true;
                         return true;
                     case 11:
-                        if (this.f8099u || this.f8100v) {
+                        if (this.f8107u || this.f8108v) {
                             return false;
                         }
-                        AbstractC2365h hVar = (AbstractC2365h) this.f8087i.getAdapter();
+                        AbstractC2365h hVar = (AbstractC2365h) this.f8095i.getAdapter();
                         if (hVar != null) {
                             int c = hVar.mo3580c();
-                            if (this.f8104z) {
+                            if (this.f8112z) {
                                 int min = Math.min(currentPosition + 10, c - 1);
-                                this.f8087i.mo3233k1(min);
-                                AbstractC2291x xVar3 = this.f8082d;
+                                this.f8095i.mo3233k1(min);
+                                AbstractC2291x xVar3 = this.f8090d;
                                 if (xVar3 != null) {
                                     xVar3.mo8406a(null, min);
                                 }
                             } else {
                                 int i5 = currentPosition + 1;
                                 if (i5 < c) {
-                                    this.f8087i.mo3237s1(i5);
-                                    AbstractC2291x xVar4 = this.f8082d;
+                                    this.f8095i.mo3237s1(i5);
+                                    AbstractC2291x xVar4 = this.f8090d;
                                     if (xVar4 != null) {
                                         xVar4.mo8406a(null, i5);
                                     }
                                 }
                             }
-                            this.f8103y = true;
+                            this.f8111y = true;
                         }
                         return true;
                     case 12:
-                        this.f8101w = true;
+                        this.f8109w = true;
                         return false;
                 }
-            } else if (this.f8088j != null) {
+            } else if (this.f8096j != null) {
                 int f = mo8321f();
                 switch (i) {
                     case 8:
-                        boolean z3 = this.f8100v;
-                        this.f8100v = false;
+                        boolean z3 = this.f8108v;
+                        this.f8108v = false;
                         if (z3) {
                             mo8328m();
                             return true;
                         } else if (f == 0) {
-                            boolean z4 = this.f8097s;
-                            this.f8099u = z4;
+                            boolean z4 = this.f8105s;
+                            this.f8107u = z4;
                             if (z4) {
-                                this.f8079a.mo8381e();
+                                this.f8087a.mo8381e();
                             }
                             return false;
                         } else {
-                            this.f8099u = false;
-                            if (this.f8104z) {
+                            this.f8107u = false;
+                            if (this.f8112z) {
                                 int max2 = Math.max(f - 10, 0);
-                                this.f8088j.mo3233k1(max2);
+                                this.f8096j.mo3233k1(max2);
                                 mo8316A(max2);
-                                AbstractC2291x xVar5 = this.f8082d;
+                                AbstractC2291x xVar5 = this.f8090d;
                                 if (xVar5 != null) {
                                     xVar5.mo8406a(null, max2);
                                 }
                             } else {
                                 int i6 = f - 1;
                                 mo8316A(i6);
-                                AbstractC2291x xVar6 = this.f8082d;
+                                AbstractC2291x xVar6 = this.f8090d;
                                 if (xVar6 != null) {
                                     xVar6.mo8406a(null, i6);
                                 }
                             }
-                            this.f8103y = true;
+                            this.f8111y = true;
                             return true;
                         }
                     case 9:
-                        if (this.f8099u) {
-                            this.f8099u = false;
+                        if (this.f8107u) {
+                            this.f8107u = false;
                             mo8328m();
                             return true;
                         }
-                        AbstractC2365h hVar2 = (AbstractC2365h) this.f8088j.getAdapter();
+                        AbstractC2365h hVar2 = (AbstractC2365h) this.f8096j.getAdapter();
                         if (hVar2 == null) {
                             return false;
                         }
                         if (f == hVar2.mo3580c() - 1) {
-                            this.f8099u = false;
-                            boolean z5 = this.f8098t;
-                            this.f8100v = z5;
+                            this.f8107u = false;
+                            boolean z5 = this.f8106t;
+                            this.f8108v = z5;
                             if (z5) {
-                                this.f8079a.mo8381e();
+                                this.f8087a.mo8381e();
                             }
                         } else {
-                            this.f8100v = false;
-                            this.f8099u = false;
+                            this.f8108v = false;
+                            this.f8107u = false;
                             int c2 = hVar2.mo3580c();
-                            if (this.f8104z) {
+                            if (this.f8112z) {
                                 int min2 = Math.min(f + 10, c2 - 1);
-                                this.f8088j.mo3233k1(min2);
+                                this.f8096j.mo3233k1(min2);
                                 mo8316A(min2);
-                                AbstractC2291x xVar7 = this.f8082d;
+                                AbstractC2291x xVar7 = this.f8090d;
                                 if (xVar7 != null) {
                                     xVar7.mo8406a(null, min2);
                                 }
@@ -1308,27 +1308,27 @@ public class C2267e2 {
                                 int i7 = f + 1;
                                 if (i7 < c2) {
                                     mo8316A(i7);
-                                    AbstractC2291x xVar8 = this.f8082d;
+                                    AbstractC2291x xVar8 = this.f8090d;
                                     if (xVar8 != null) {
                                         xVar8.mo8406a(null, i7);
                                     }
                                 }
                             }
-                            this.f8103y = true;
+                            this.f8111y = true;
                         }
                         return true;
                     case 10:
-                        if (!this.f8099u && !this.f8100v && this.f8094p.mo8180c("allow_paging", true)) {
-                            this.f8079a.mo8385j();
+                        if (!this.f8107u && !this.f8108v && this.f8102p.mo8180c("allow_paging", true)) {
+                            this.f8087a.mo8385j();
                         }
                         return true;
                     case 11:
-                        if (!this.f8099u && !this.f8100v && this.f8094p.mo8180c("allow_paging", true)) {
-                            this.f8079a.mo8384i();
+                        if (!this.f8107u && !this.f8108v && this.f8102p.mo8180c("allow_paging", true)) {
+                            this.f8087a.mo8384i();
                         }
                         return true;
                     case 12:
-                        this.f8101w = true;
+                        this.f8109w = true;
                         return false;
                 }
             }
@@ -1338,34 +1338,34 @@ public class C2267e2 {
 
     /* renamed from: h */
     public void mo8323h() {
-        if (mo8324i() && !this.f8079a.mo8387l()) {
-            this.f8086h.post(new RunnableC2284q());
+        if (mo8324i() && !this.f8087a.mo8387l()) {
+            this.f8094h.post(new RunnableC2284q());
         }
     }
 
     /* renamed from: i */
     public boolean mo8324i() {
-        return this.f8084f != null;
+        return this.f8092f != null;
     }
 
     /* renamed from: j */
     public boolean mo8325j() {
-        return this.f8084f != null;
+        return this.f8092f != null;
     }
 
     /* renamed from: k */
     public boolean mo8326k() {
-        return this.f8095q;
+        return this.f8103q;
     }
 
     /* renamed from: l */
     public void mo8327l(Runnable runnable) {
-        AbsListView absListView = this.f8086h;
+        AbsListView absListView = this.f8094h;
         if (absListView != null) {
             absListView.post(runnable);
             return;
         }
-        RecyclerView recyclerView = this.f8089k;
+        RecyclerView recyclerView = this.f8097k;
         if (recyclerView != null) {
             recyclerView.post(runnable);
         }
@@ -1373,13 +1373,13 @@ public class C2267e2 {
 
     /* renamed from: m */
     public void mo8328m() {
-        if (this.f8079a.mo8362D()) {
-            AbsListView absListView = this.f8086h;
+        if (this.f8087a.mo8362D()) {
+            AbsListView absListView = this.f8094h;
             if (absListView != null) {
                 absListView.requestFocus();
                 return;
             }
-            RecyclerView recyclerView = this.f8089k;
+            RecyclerView recyclerView = this.f8097k;
             if (recyclerView != null) {
                 recyclerView.requestFocus();
             }
@@ -1402,7 +1402,7 @@ public class C2267e2 {
     /* access modifiers changed from: package-private */
     /* renamed from: o */
     public void mo8330o(float f) {
-        String Q = this.f8079a.mo8375Q();
+        String Q = this.f8087a.mo8375Q();
         Q.hashCode();
         char c = 65535;
         switch (Q.hashCode()) {
@@ -1457,58 +1457,58 @@ public class C2267e2 {
         }
         switch (c) {
             case 0:
-                AbstractC2286s sVar = this.f8079a;
+                AbstractC2286s sVar = this.f8087a;
                 sVar.mo8366H(mo8317a(sVar.mo8376S(), f));
                 break;
             case 1:
-                AbstractC2286s sVar2 = this.f8079a;
+                AbstractC2286s sVar2 = this.f8087a;
                 sVar2.mo8369K(mo8329n(sVar2.mo8379V(), f));
                 break;
             case 2:
-                AbstractC2286s sVar3 = this.f8079a;
+                AbstractC2286s sVar3 = this.f8087a;
                 sVar3.mo8361C(mo8329n(sVar3.mo8397z(), f));
                 break;
             case 3:
-                this.f8083e.getResources();
-                AbstractC2286s sVar4 = this.f8079a;
+                this.f8091e.getResources();
+                AbstractC2286s sVar4 = this.f8087a;
                 double P = sVar4.mo8374P();
                 double d = (double) f;
                 Double.isNaN(d);
                 sVar4.mo8378U(Math.max(P * d, 30.0d));
-                this.f8084f.setColumnWidth(Math.round(C2553q3.m11118d((float) this.f8079a.mo8374P())));
+                this.f8092f.setColumnWidth(Math.round(C2553q3.m11118d((float) this.f8087a.mo8374P())));
                 break;
             case 4:
-                AbstractC2286s sVar5 = this.f8079a;
+                AbstractC2286s sVar5 = this.f8087a;
                 sVar5.mo8373O(mo8329n(sVar5.mo8386k(), f));
                 break;
             case 5:
-                AbstractC2286s sVar6 = this.f8079a;
+                AbstractC2286s sVar6 = this.f8087a;
                 sVar6.mo8359A(mo8329n(sVar6.mo8383h(), f));
                 break;
             case 6:
-                AbstractC2286s sVar7 = this.f8079a;
+                AbstractC2286s sVar7 = this.f8087a;
                 sVar7.mo8391q(mo8329n(sVar7.mo8395x(), f));
                 break;
             case 7:
-                AbstractC2286s sVar8 = this.f8079a;
+                AbstractC2286s sVar8 = this.f8087a;
                 sVar8.mo8393u(mo8329n(sVar8.mo8380W(), f));
                 break;
         }
         if (Q.equals("grid")) {
-            this.f8084f.invalidate();
+            this.f8092f.invalidate();
             return;
         }
         if (Q.equals("vertical")) {
-            this.f8092n.mo8705k(this.f8079a.mo8376S(), this.f8079a.mo8363E());
+            this.f8100n.mo8705k(this.f8087a.mo8376S(), this.f8087a.mo8363E());
         }
-        this.f8079a.mo8360B();
+        this.f8087a.mo8360B();
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: p */
     public void mo8331p(float f) {
         float a;
-        String Q = this.f8079a.mo8375Q();
+        String Q = this.f8087a.mo8375Q();
         Q.hashCode();
         char c = 65535;
         switch (Q.hashCode()) {
@@ -1563,75 +1563,75 @@ public class C2267e2 {
         }
         switch (c) {
             case 0:
-                AbstractC2286s sVar = this.f8079a;
+                AbstractC2286s sVar = this.f8087a;
                 sVar.mo8377T(mo8329n(sVar.mo8363E(), f));
                 break;
             case 1:
-                a = mo8317a(this.f8079a.mo8370L(), f);
-                this.f8079a.mo8372N(a);
-                this.f8087i.setYTranslation(2.0f - a);
+                a = mo8317a(this.f8087a.mo8370L(), f);
+                this.f8087a.mo8372N(a);
+                this.f8095i.setYTranslation(2.0f - a);
                 break;
             case 2:
-                a = mo8317a(this.f8079a.mo8396y(), f);
-                this.f8079a.mo8367I(a);
-                this.f8087i.setYTranslation(2.0f - a);
+                a = mo8317a(this.f8087a.mo8396y(), f);
+                this.f8087a.mo8367I(a);
+                this.f8095i.setYTranslation(2.0f - a);
                 break;
             case 3:
-                this.f8083e.getResources();
-                float max = Math.max(Math.min(this.f8094p.mo8183f("vertical_spacing", 36.0f) * f, 100.0f), 0.2f);
-                this.f8094p.mo8199w("vertical_spacing", max);
-                this.f8084f.setVerticalSpacing(Math.round(C2553q3.m11119e(max)));
+                this.f8091e.getResources();
+                float max = Math.max(Math.min(this.f8102p.mo8183f("vertical_spacing", 36.0f) * f, 100.0f), 0.2f);
+                this.f8102p.mo8199w("vertical_spacing", max);
+                this.f8092f.setVerticalSpacing(Math.round(C2553q3.m11119e(max)));
                 break;
             case 4:
-                AbstractC2286s sVar2 = this.f8079a;
+                AbstractC2286s sVar2 = this.f8087a;
                 sVar2.mo8364F(mo8329n(sVar2.mo8388m(), f));
                 break;
             case 5:
-                AbstractC2286s sVar3 = this.f8079a;
+                AbstractC2286s sVar3 = this.f8087a;
                 sVar3.mo8368J(mo8329n(sVar3.mo8389o(), f));
                 break;
             case 6:
-                a = mo8317a(this.f8079a.mo8371M(), f);
-                this.f8079a.mo8394v(a);
-                this.f8087i.setYTranslation(2.0f - a);
+                a = mo8317a(this.f8087a.mo8371M(), f);
+                this.f8087a.mo8394v(a);
+                this.f8095i.setYTranslation(2.0f - a);
                 break;
             case 7:
-                a = mo8317a(this.f8079a.mo8390p(), f);
-                this.f8079a.mo8392r(a);
-                this.f8087i.setYTranslation(2.0f - a);
+                a = mo8317a(this.f8087a.mo8390p(), f);
+                this.f8087a.mo8392r(a);
+                this.f8095i.setYTranslation(2.0f - a);
                 break;
         }
         if (Q.equals("grid")) {
-            this.f8084f.invalidate();
+            this.f8092f.invalidate();
             return;
         }
         if (Q.equals("vertical")) {
-            this.f8092n.mo8705k(this.f8079a.mo8376S(), this.f8079a.mo8363E());
+            this.f8100n.mo8705k(this.f8087a.mo8376S(), this.f8087a.mo8363E());
         }
-        this.f8079a.mo8360B();
+        this.f8087a.mo8360B();
     }
 
     /* renamed from: q */
     public void mo8332q(C2252d2 d2Var) {
         Runnable fVar;
         if (d2Var != null) {
-            AbsListView absListView = this.f8086h;
+            AbsListView absListView = this.f8094h;
             if (absListView != null) {
-                absListView.setAdapter((ListAdapter) d2Var.f8040a);
+                absListView.setAdapter((ListAdapter) d2Var.f8048a);
                 return;
             }
-            ViewGroup viewGroup = this.f8087i;
+            ViewGroup viewGroup = this.f8095i;
             if (viewGroup != null) {
                 fVar = new RunnableC2272e(d2Var);
-            } else if (this.f8088j != null) {
-                AbstractC2289v vVar = this.f8080b;
+            } else if (this.f8096j != null) {
+                AbstractC2289v vVar = this.f8088b;
                 if (vVar != null) {
-                    d2Var.f8041b.mo8526x(vVar);
+                    d2Var.f8049b.mo8526x(vVar);
                 }
-                if (this.f8081c != null && !this.f8094p.mo8196t()) {
-                    d2Var.f8041b.mo8528z(this.f8081c);
+                if (this.f8089c != null && !this.f8102p.mo8196t()) {
+                    d2Var.f8049b.mo8528z(this.f8089c);
                 }
-                viewGroup = this.f8088j;
+                viewGroup = this.f8096j;
                 fVar = new RunnableC2273f(d2Var);
             } else {
                 return;
@@ -1642,16 +1642,16 @@ public class C2267e2 {
 
     /* renamed from: r */
     public void mo8333r(String str) {
-        AbsListView absListView = this.f8086h;
+        AbsListView absListView = this.f8094h;
         if (absListView != null && (absListView instanceof ListView)) {
             ListView listView = (ListView) absListView;
             RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) listView.getLayoutParams();
             layoutParams.addRule(13);
             listView.setLayoutParams(layoutParams);
             if (str.equals("icons_bottom")) {
-                listView.setPadding(0, C2185a4.m9666D(this.f8083e), 0, 0);
+                listView.setPadding(0, C2185a4.m9666D(this.f8091e), 0, 0);
             } else {
-                listView.setPadding(0, 0, 0, C2185a4.m9666D(this.f8083e));
+                listView.setPadding(0, 0, 0, C2185a4.m9666D(this.f8091e));
             }
         }
     }
@@ -1659,56 +1659,56 @@ public class C2267e2 {
     /* access modifiers changed from: package-private */
     /* renamed from: s */
     public void mo8334s() {
-        if (this.f8085g != null) {
+        if (this.f8093g != null) {
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -1);
-            layoutParams.setMargins(Math.round((this.f8079a.mo8376S() * ((float) this.f8079a.mo8382g(false).x)) / 2.0f), 0, 0, 0);
-            this.f8085g.setLayoutParams(layoutParams);
+            layoutParams.setMargins(Math.round((this.f8087a.mo8376S() * ((float) this.f8087a.mo8382g(false).x)) / 2.0f), 0, 0, 0);
+            this.f8093g.setLayoutParams(layoutParams);
         }
     }
 
     /* renamed from: t */
     public void mo8335t(AbstractC2289v vVar) {
         AbstractC2365h hVar;
-        this.f8080b = vVar;
-        AbsListView absListView = this.f8086h;
+        this.f8088b = vVar;
+        AbsListView absListView = this.f8094h;
         if (absListView != null) {
             absListView.setOnItemClickListener(new C2268a(vVar));
             return;
         }
-        MyCarouselView myCarouselView = this.f8087i;
+        MyCarouselView myCarouselView = this.f8095i;
         if (myCarouselView != null) {
             myCarouselView.mo6840R1(new C2269b(vVar));
             return;
         }
-        MyRecyclerView myRecyclerView = this.f8088j;
+        MyRecyclerView myRecyclerView = this.f8096j;
         if (myRecyclerView != null && (hVar = (AbstractC2365h) myRecyclerView.getAdapter()) != null) {
-            hVar.mo8526x(this.f8080b);
+            hVar.mo8526x(this.f8088b);
         }
     }
 
     /* renamed from: u */
     public void mo8336u(AbstractC2290w wVar) {
         AbstractC2365h hVar;
-        this.f8081c = wVar;
-        AbsListView absListView = this.f8086h;
+        this.f8089c = wVar;
+        AbsListView absListView = this.f8094h;
         if (absListView != null) {
             absListView.setOnItemLongClickListener(new C2270c(wVar));
             return;
         }
-        MyCarouselView myCarouselView = this.f8087i;
+        MyCarouselView myCarouselView = this.f8095i;
         if (myCarouselView != null) {
             myCarouselView.mo6841S1(new C2271d(wVar));
             return;
         }
-        MyRecyclerView myRecyclerView = this.f8088j;
-        if (myRecyclerView != null && (hVar = (AbstractC2365h) myRecyclerView.getAdapter()) != null && !this.f8094p.mo8196t()) {
+        MyRecyclerView myRecyclerView = this.f8096j;
+        if (myRecyclerView != null && (hVar = (AbstractC2365h) myRecyclerView.getAdapter()) != null && !this.f8102p.mo8196t()) {
             hVar.mo8528z(wVar);
         }
     }
 
     /* renamed from: v */
     public void mo8337v(AbstractC2291x xVar) {
-        this.f8082d = xVar;
+        this.f8090d = xVar;
     }
 
     /* renamed from: w */
@@ -1718,19 +1718,19 @@ public class C2267e2 {
 
     /* renamed from: x */
     public void mo8339x(int i, boolean z) {
-        AbsListView absListView = this.f8086h;
+        AbsListView absListView = this.f8094h;
         if (absListView != null) {
             absListView.setSelection(i);
         } else {
-            RecyclerView recyclerView = this.f8089k;
+            RecyclerView recyclerView = this.f8097k;
             if (recyclerView != null) {
                 recyclerView.post(new RunnableC2283p(i, z));
-                this.f8099u = false;
-                this.f8100v = false;
+                this.f8107u = false;
+                this.f8108v = false;
             }
         }
-        this.f8102x = i;
-        AbstractC2291x xVar = this.f8082d;
+        this.f8110x = i;
+        AbstractC2291x xVar = this.f8090d;
         if (xVar != null) {
             xVar.mo8406a(null, i);
         }
@@ -1769,28 +1769,28 @@ public class C2267e2 {
         switch (c) {
             case 0:
             case 3:
-                this.f8097s = true;
+                this.f8105s = true;
                 break;
             case 1:
-                this.f8097s = false;
+                this.f8105s = false;
                 break;
             case 2:
-                this.f8097s = false;
-                this.f8098t = true;
+                this.f8105s = false;
+                this.f8106t = true;
                 return;
             default:
                 return;
         }
-        this.f8098t = false;
+        this.f8106t = false;
     }
 
     /* renamed from: z */
     public void mo8341z(boolean z) {
-        if (!z || !this.f8077A) {
-            this.f8103y = false;
-            this.f8104z = false;
-            this.f8078B = 0;
+        if (!z || !this.f8085A) {
+            this.f8111y = false;
+            this.f8112z = false;
+            this.f8086B = 0;
         }
-        this.f8077A = z;
+        this.f8085A = z;
     }
 }

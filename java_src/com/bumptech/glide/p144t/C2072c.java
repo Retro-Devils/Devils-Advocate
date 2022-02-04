@@ -8,22 +8,22 @@ import java.io.InputStream;
 public final class C2072c extends FilterInputStream {
 
     /* renamed from: b */
-    private final long f7582b;
+    private final long f7590b;
 
     /* renamed from: c */
-    private int f7583c;
+    private int f7591c;
 
     private C2072c(InputStream inputStream, long j) {
         super(inputStream);
-        this.f7582b = j;
+        this.f7590b = j;
     }
 
     /* renamed from: a */
     private int m9407a(int i) {
         if (i >= 0) {
-            this.f7583c += i;
-        } else if (this.f7582b - ((long) this.f7583c) > 0) {
-            throw new IOException("Failed to read all expected data, expected: " + this.f7582b + ", but read: " + this.f7583c);
+            this.f7591c += i;
+        } else if (this.f7590b - ((long) this.f7591c) > 0) {
+            throw new IOException("Failed to read all expected data, expected: " + this.f7590b + ", but read: " + this.f7591c);
         }
         return i;
     }
@@ -35,7 +35,7 @@ public final class C2072c extends FilterInputStream {
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public synchronized int available() {
-        return (int) Math.max(this.f7582b - ((long) this.f7583c), (long) ((FilterInputStream) this).in.available());
+        return (int) Math.max(this.f7590b - ((long) this.f7591c), (long) ((FilterInputStream) this).in.available());
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream

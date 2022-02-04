@@ -17,33 +17,33 @@ import java.util.List;
 class C1682e {
 
     /* renamed from: a */
-    private static final C1676a f6695a = new C1676a();
+    private static final C1676a f6703a = new C1676a();
 
     /* renamed from: b */
-    private final C1676a f6696b;
+    private final C1676a f6704b;
 
     /* renamed from: c */
-    private final AbstractC1681d f6697c;
+    private final AbstractC1681d f6705c;
 
     /* renamed from: d */
-    private final AbstractC1690b f6698d;
+    private final AbstractC1690b f6706d;
 
     /* renamed from: e */
-    private final ContentResolver f6699e;
+    private final ContentResolver f6707e;
 
     /* renamed from: f */
-    private final List<ImageHeaderParser> f6700f;
+    private final List<ImageHeaderParser> f6708f;
 
     C1682e(List<ImageHeaderParser> list, C1676a aVar, AbstractC1681d dVar, AbstractC1690b bVar, ContentResolver contentResolver) {
-        this.f6696b = aVar;
-        this.f6697c = dVar;
-        this.f6698d = bVar;
-        this.f6699e = contentResolver;
-        this.f6700f = list;
+        this.f6704b = aVar;
+        this.f6705c = dVar;
+        this.f6706d = bVar;
+        this.f6707e = contentResolver;
+        this.f6708f = list;
     }
 
     C1682e(List<ImageHeaderParser> list, AbstractC1681d dVar, AbstractC1690b bVar, ContentResolver contentResolver) {
-        this(list, f6695a, dVar, bVar, contentResolver);
+        this(list, f6703a, dVar, bVar, contentResolver);
     }
 
     /* JADX WARNING: Removed duplicated region for block: B:21:0x002d A[Catch:{ all -> 0x0047 }] */
@@ -56,7 +56,7 @@ class C1682e {
             r6 = this;
             java.lang.String r0 = "ThumbStreamOpener"
             r1 = 0
-            com.bumptech.glide.load.n.p.d r2 = r6.f6697c     // Catch:{ SecurityException -> 0x0024, all -> 0x0022 }
+            com.bumptech.glide.load.n.p.d r2 = r6.f6705c     // Catch:{ SecurityException -> 0x0024, all -> 0x0022 }
             android.database.Cursor r2 = r2.mo7140a(r7)     // Catch:{ SecurityException -> 0x0024, all -> 0x0022 }
             if (r2 == 0) goto L_0x001c
             boolean r3 = r2.moveToFirst()     // Catch:{ SecurityException -> 0x001a }
@@ -109,7 +109,7 @@ class C1682e {
 
     /* renamed from: c */
     private boolean m7988c(File file) {
-        return this.f6696b.mo7137a(file) && 0 < this.f6696b.mo7139c(file);
+        return this.f6704b.mo7137a(file) && 0 < this.f6704b.mo7139c(file);
     }
 
     /* access modifiers changed from: package-private */
@@ -117,8 +117,8 @@ class C1682e {
     public int mo7141a(Uri uri) {
         InputStream inputStream = null;
         try {
-            inputStream = this.f6699e.openInputStream(uri);
-            int b = C1635f.m7855b(this.f6700f, inputStream, this.f6698d);
+            inputStream = this.f6707e.openInputStream(uri);
+            int b = C1635f.m7855b(this.f6708f, inputStream, this.f6706d);
             if (inputStream != null) {
                 try {
                     inputStream.close();
@@ -156,13 +156,13 @@ class C1682e {
         if (TextUtils.isEmpty(b)) {
             return null;
         }
-        File b2 = this.f6696b.mo7138b(b);
+        File b2 = this.f6704b.mo7138b(b);
         if (!m7988c(b2)) {
             return null;
         }
         Uri fromFile = Uri.fromFile(b2);
         try {
-            return this.f6699e.openInputStream(fromFile);
+            return this.f6707e.openInputStream(fromFile);
         } catch (NullPointerException e) {
             throw ((FileNotFoundException) new FileNotFoundException("NPE opening uri: " + uri + " -> " + fromFile).initCause(e));
         }

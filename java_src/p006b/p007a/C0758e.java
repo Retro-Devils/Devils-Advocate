@@ -34,19 +34,19 @@ public final class C0758e {
     public static final int abc_text_select_handle_left_mtrl_dark = 2131165265;
 
     /* renamed from: K */
-    public static final int APKTOOL_DUMMY_52 = 2131165266;
+    public static final int f3573K = 2131165266;
 
     /* renamed from: L */
     public static final int abc_text_select_handle_middle_mtrl_dark = 2131165267;
 
     /* renamed from: M */
-    public static final int APKTOOL_DUMMY_54 = 2131165268;
+    public static final int f3574M = 2131165268;
 
     /* renamed from: N */
     public static final int abc_text_select_handle_right_mtrl_dark = 2131165269;
 
     /* renamed from: O */
-    public static final int APKTOOL_DUMMY_56 = 2131165270;
+    public static final int f3575O = 2131165270;
 
     /* renamed from: P */
     public static final int abc_textfield_activated_mtrl_alpha = 2131165271;
@@ -94,7 +94,7 @@ public final class C0758e {
     public static final int abc_cab_background_top_material = 2131165207;
 
     /* renamed from: k */
-    public static final int APKTOOL_DUMMY_18 = 2131165208;
+    public static final int f3576k = 2131165208;
 
     /* renamed from: l */
     public static final int abc_dialog_material_background = 2131165210;

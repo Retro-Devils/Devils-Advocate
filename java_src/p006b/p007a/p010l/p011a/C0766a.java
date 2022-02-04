@@ -36,45 +36,45 @@ import p006b.p064s.p065a.p066a.C1194i;
 public class C0766a extends C0779d implements AbstractC0399b {
 
     /* renamed from: p */
-    private static final String f3837p = C0766a.class.getSimpleName();
+    private static final String f3841p = C0766a.class.getSimpleName();
 
     /* renamed from: q */
-    private C0769c f3838q;
+    private C0769c f3842q;
 
     /* renamed from: r */
-    private AbstractC0773g f3839r;
+    private AbstractC0773g f3843r;
 
     /* renamed from: s */
-    private int f3840s;
+    private int f3844s;
 
     /* renamed from: t */
-    private int f3841t;
+    private int f3845t;
 
     /* renamed from: u */
-    private boolean f3842u;
+    private boolean f3846u;
 
     /* access modifiers changed from: private */
     /* renamed from: b.a.l.a.a$b */
     public static class C0768b extends AbstractC0773g {
 
         /* renamed from: a */
-        private final Animatable f3843a;
+        private final Animatable f3847a;
 
         C0768b(Animatable animatable) {
             super();
-            this.f3843a = animatable;
+            this.f3847a = animatable;
         }
 
         @Override // p006b.p007a.p010l.p011a.C0766a.AbstractC0773g
         /* renamed from: c */
         public void mo4590c() {
-            this.f3843a.start();
+            this.f3847a.start();
         }
 
         @Override // p006b.p007a.p010l.p011a.C0766a.AbstractC0773g
         /* renamed from: d */
         public void mo4591d() {
-            this.f3843a.stop();
+            this.f3847a.stop();
         }
     }
 
@@ -83,22 +83,22 @@ public class C0766a extends C0779d implements AbstractC0399b {
     public static class C0769c extends C0779d.C0780a {
 
         /* renamed from: K */
-        C0830f<Long> f3844K;
+        C0830f<Long> f3848K;
 
         /* renamed from: L */
-        C0839j<Integer> f3845L;
+        C0839j<Integer> f3849L;
 
         C0769c(C0769c cVar, C0766a aVar, Resources resources) {
             super(cVar, aVar, resources);
             C0839j<Integer> jVar;
             if (cVar != null) {
-                this.f3844K = cVar.f3844K;
-                jVar = cVar.f3845L;
+                this.f3848K = cVar.f3848K;
+                jVar = cVar.f3849L;
             } else {
-                this.f3844K = new C0830f<>();
+                this.f3848K = new C0830f<>();
                 jVar = new C0839j<>();
             }
-            this.f3845L = jVar;
+            this.f3849L = jVar;
         }
 
         /* renamed from: D */
@@ -110,7 +110,7 @@ public class C0766a extends C0779d implements AbstractC0399b {
         /* renamed from: B */
         public int mo4592B(int[] iArr, Drawable drawable, int i) {
             int z = super.mo4675z(iArr, drawable);
-            this.f3845L.mo5034j(z, Integer.valueOf(i));
+            this.f3849L.mo5034j(z, Integer.valueOf(i));
             return z;
         }
 
@@ -121,9 +121,9 @@ public class C0766a extends C0779d implements AbstractC0399b {
             long D = m4535D(i, i2);
             long j = z ? 8589934592L : 0;
             long j2 = (long) a;
-            this.f3844K.mo4911a(D, Long.valueOf(j2 | j));
+            this.f3848K.mo4911a(D, Long.valueOf(j2 | j));
             if (z) {
-                this.f3844K.mo4911a(m4535D(i2, i), Long.valueOf(4294967296L | j2 | j));
+                this.f3848K.mo4911a(m4535D(i2, i), Long.valueOf(4294967296L | j2 | j));
             }
             return a;
         }
@@ -134,7 +134,7 @@ public class C0766a extends C0779d implements AbstractC0399b {
             if (i < 0) {
                 return 0;
             }
-            return this.f3845L.mo5030f(i, 0).intValue();
+            return this.f3849L.mo5030f(i, 0).intValue();
         }
 
         /* access modifiers changed from: package-private */
@@ -147,19 +147,19 @@ public class C0766a extends C0779d implements AbstractC0399b {
         /* access modifiers changed from: package-private */
         /* renamed from: G */
         public int mo4596G(int i, int i2) {
-            return (int) this.f3844K.mo4916f(m4535D(i, i2), -1L).longValue();
+            return (int) this.f3848K.mo4916f(m4535D(i, i2), -1L).longValue();
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: H */
         public boolean mo4597H(int i, int i2) {
-            return (this.f3844K.mo4916f(m4535D(i, i2), -1L).longValue() & 4294967296L) != 0;
+            return (this.f3848K.mo4916f(m4535D(i, i2), -1L).longValue() & 4294967296L) != 0;
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: I */
         public boolean mo4598I(int i, int i2) {
-            return (this.f3844K.mo4916f(m4535D(i, i2), -1L).longValue() & 8589934592L) != 0;
+            return (this.f3848K.mo4916f(m4535D(i, i2), -1L).longValue() & 8589934592L) != 0;
         }
 
         @Override // p006b.p007a.p010l.p011a.C0779d.C0780a
@@ -176,8 +176,8 @@ public class C0766a extends C0779d implements AbstractC0399b {
         @Override // p006b.p007a.p010l.p011a.C0779d.C0780a, p006b.p007a.p010l.p011a.C0774b.AbstractC0777c
         /* renamed from: r */
         public void mo4601r() {
-            this.f3844K = this.f3844K.clone();
-            this.f3845L = this.f3845L.clone();
+            this.f3848K = this.f3848K.clone();
+            this.f3849L = this.f3849L.clone();
         }
     }
 
@@ -186,23 +186,23 @@ public class C0766a extends C0779d implements AbstractC0399b {
     public static class C0770d extends AbstractC0773g {
 
         /* renamed from: a */
-        private final C1184c f3846a;
+        private final C1184c f3850a;
 
         C0770d(C1184c cVar) {
             super();
-            this.f3846a = cVar;
+            this.f3850a = cVar;
         }
 
         @Override // p006b.p007a.p010l.p011a.C0766a.AbstractC0773g
         /* renamed from: c */
         public void mo4590c() {
-            this.f3846a.start();
+            this.f3850a.start();
         }
 
         @Override // p006b.p007a.p010l.p011a.C0766a.AbstractC0773g
         /* renamed from: d */
         public void mo4591d() {
-            this.f3846a.stop();
+            this.f3850a.stop();
         }
     }
 
@@ -211,10 +211,10 @@ public class C0766a extends C0779d implements AbstractC0399b {
     public static class C0771e extends AbstractC0773g {
 
         /* renamed from: a */
-        private final ObjectAnimator f3847a;
+        private final ObjectAnimator f3851a;
 
         /* renamed from: b */
-        private final boolean f3848b;
+        private final boolean f3852b;
 
         C0771e(AnimationDrawable animationDrawable, boolean z, boolean z2) {
             super();
@@ -228,32 +228,32 @@ public class C0766a extends C0779d implements AbstractC0399b {
             }
             ofInt.setDuration((long) fVar.mo4604a());
             ofInt.setInterpolator(fVar);
-            this.f3848b = z2;
-            this.f3847a = ofInt;
+            this.f3852b = z2;
+            this.f3851a = ofInt;
         }
 
         @Override // p006b.p007a.p010l.p011a.C0766a.AbstractC0773g
         /* renamed from: a */
         public boolean mo4602a() {
-            return this.f3848b;
+            return this.f3852b;
         }
 
         @Override // p006b.p007a.p010l.p011a.C0766a.AbstractC0773g
         /* renamed from: b */
         public void mo4603b() {
-            this.f3847a.reverse();
+            this.f3851a.reverse();
         }
 
         @Override // p006b.p007a.p010l.p011a.C0766a.AbstractC0773g
         /* renamed from: c */
         public void mo4590c() {
-            this.f3847a.start();
+            this.f3851a.start();
         }
 
         @Override // p006b.p007a.p010l.p011a.C0766a.AbstractC0773g
         /* renamed from: d */
         public void mo4591d() {
-            this.f3847a.cancel();
+            this.f3851a.cancel();
         }
     }
 
@@ -261,13 +261,13 @@ public class C0766a extends C0779d implements AbstractC0399b {
     private static class C0772f implements TimeInterpolator {
 
         /* renamed from: a */
-        private int[] f3849a;
+        private int[] f3853a;
 
         /* renamed from: b */
-        private int f3850b;
+        private int f3854b;
 
         /* renamed from: c */
-        private int f3851c;
+        private int f3855c;
 
         C0772f(AnimationDrawable animationDrawable, boolean z) {
             mo4605b(animationDrawable, z);
@@ -276,39 +276,39 @@ public class C0766a extends C0779d implements AbstractC0399b {
         /* access modifiers changed from: package-private */
         /* renamed from: a */
         public int mo4604a() {
-            return this.f3851c;
+            return this.f3855c;
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: b */
         public int mo4605b(AnimationDrawable animationDrawable, boolean z) {
             int numberOfFrames = animationDrawable.getNumberOfFrames();
-            this.f3850b = numberOfFrames;
-            int[] iArr = this.f3849a;
+            this.f3854b = numberOfFrames;
+            int[] iArr = this.f3853a;
             if (iArr == null || iArr.length < numberOfFrames) {
-                this.f3849a = new int[numberOfFrames];
+                this.f3853a = new int[numberOfFrames];
             }
-            int[] iArr2 = this.f3849a;
+            int[] iArr2 = this.f3853a;
             int i = 0;
             for (int i2 = 0; i2 < numberOfFrames; i2++) {
                 int duration = animationDrawable.getDuration(z ? (numberOfFrames - i2) - 1 : i2);
                 iArr2[i2] = duration;
                 i += duration;
             }
-            this.f3851c = i;
+            this.f3855c = i;
             return i;
         }
 
         public float getInterpolation(float f) {
-            int i = (int) ((f * ((float) this.f3851c)) + 0.5f);
-            int i2 = this.f3850b;
-            int[] iArr = this.f3849a;
+            int i = (int) ((f * ((float) this.f3855c)) + 0.5f);
+            int i2 = this.f3854b;
+            int[] iArr = this.f3853a;
             int i3 = 0;
             while (i3 < i2 && i >= iArr[i3]) {
                 i -= iArr[i3];
                 i3++;
             }
-            return (((float) i3) / ((float) i2)) + (i3 < i2 ? ((float) i) / ((float) this.f3851c) : 0.0f);
+            return (((float) i3) / ((float) i2)) + (i3 < i2 ? ((float) i) / ((float) this.f3855c) : 0.0f);
         }
     }
 
@@ -340,8 +340,8 @@ public class C0766a extends C0779d implements AbstractC0399b {
 
     C0766a(C0769c cVar, Resources resources) {
         super(null);
-        this.f3840s = -1;
-        this.f3841t = -1;
+        this.f3844s = -1;
+        this.f3845t = -1;
         mo4570h(new C0769c(cVar, this, resources));
         onStateChange(getState());
         jumpToCurrentState();
@@ -389,9 +389,9 @@ public class C0766a extends C0779d implements AbstractC0399b {
     /* renamed from: q */
     private int m4524q(Context context, Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) {
         int next;
-        TypedArray k = C0397g.m1946k(resources, theme, attributeSet, C0782b.f3912h);
-        int resourceId = k.getResourceId(C0782b.f3913i, 0);
-        int resourceId2 = k.getResourceId(C0782b.f3914j, -1);
+        TypedArray k = C0397g.m1946k(resources, theme, attributeSet, C0782b.f3916h);
+        int resourceId = k.getResourceId(C0782b.f3917i, 0);
+        int resourceId2 = k.getResourceId(C0782b.f3918j, -1);
         Drawable j = resourceId2 > 0 ? C0254m0.m1289h().mo1589j(context, resourceId2) : null;
         k.recycle();
         int[] k2 = mo4673k(attributeSet);
@@ -406,7 +406,7 @@ public class C0766a extends C0779d implements AbstractC0399b {
             }
         }
         if (j != null) {
-            return this.f3838q.mo4592B(k2, j, resourceId);
+            return this.f3842q.mo4592B(k2, j, resourceId);
         }
         throw new XmlPullParserException(xmlPullParser.getPositionDescription() + ": <item> tag requires a 'drawable' attribute or child tag defining a drawable");
     }
@@ -414,12 +414,12 @@ public class C0766a extends C0779d implements AbstractC0399b {
     /* renamed from: r */
     private int m4525r(Context context, Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) {
         int next;
-        TypedArray k = C0397g.m1946k(resources, theme, attributeSet, C0782b.f3915k);
-        int resourceId = k.getResourceId(C0782b.f3918n, -1);
-        int resourceId2 = k.getResourceId(C0782b.f3917m, -1);
-        int resourceId3 = k.getResourceId(C0782b.f3916l, -1);
+        TypedArray k = C0397g.m1946k(resources, theme, attributeSet, C0782b.f3919k);
+        int resourceId = k.getResourceId(C0782b.f3922n, -1);
+        int resourceId2 = k.getResourceId(C0782b.f3921m, -1);
+        int resourceId3 = k.getResourceId(C0782b.f3920l, -1);
         Drawable j = resourceId3 > 0 ? C0254m0.m1289h().mo1589j(context, resourceId3) : null;
-        boolean z = k.getBoolean(C0782b.f3919o, false);
+        boolean z = k.getBoolean(C0782b.f3923o, false);
         k.recycle();
         if (j == null) {
             do {
@@ -434,7 +434,7 @@ public class C0766a extends C0779d implements AbstractC0399b {
         if (j == null) {
             throw new XmlPullParserException(xmlPullParser.getPositionDescription() + ": <transition> tag requires a 'drawable' attribute or child tag defining a drawable");
         } else if (resourceId != -1 && resourceId2 != -1) {
-            return this.f3838q.mo4593C(resourceId, resourceId2, j, z);
+            return this.f3842q.mo4593C(resourceId, resourceId2, j, z);
         } else {
             throw new XmlPullParserException(xmlPullParser.getPositionDescription() + ": <transition> tag requires 'fromId' & 'toId' attributes");
         }
@@ -445,26 +445,26 @@ public class C0766a extends C0779d implements AbstractC0399b {
         int i2;
         int G;
         AbstractC0773g gVar;
-        AbstractC0773g gVar2 = this.f3839r;
+        AbstractC0773g gVar2 = this.f3843r;
         if (gVar2 == null) {
             i2 = mo4608c();
-        } else if (i == this.f3840s) {
+        } else if (i == this.f3844s) {
             return true;
         } else {
-            if (i != this.f3841t || !gVar2.mo4602a()) {
-                i2 = this.f3840s;
+            if (i != this.f3845t || !gVar2.mo4602a()) {
+                i2 = this.f3844s;
                 gVar2.mo4591d();
             } else {
                 gVar2.mo4603b();
-                this.f3840s = this.f3841t;
-                this.f3841t = i;
+                this.f3844s = this.f3845t;
+                this.f3845t = i;
                 return true;
             }
         }
-        this.f3839r = null;
-        this.f3841t = -1;
-        this.f3840s = -1;
-        C0769c cVar = this.f3838q;
+        this.f3843r = null;
+        this.f3845t = -1;
+        this.f3844s = -1;
+        C0769c cVar = this.f3842q;
         int E = cVar.mo4594E(i2);
         int E2 = cVar.mo4594E(i);
         if (E2 == 0 || E == 0 || (G = cVar.mo4596G(E, E2)) < 0) {
@@ -484,23 +484,23 @@ public class C0766a extends C0779d implements AbstractC0399b {
             return false;
         }
         gVar.mo4590c();
-        this.f3839r = gVar;
-        this.f3841t = i2;
-        this.f3840s = i;
+        this.f3843r = gVar;
+        this.f3845t = i2;
+        this.f3844s = i;
         return true;
     }
 
     /* renamed from: t */
     private void m4527t(TypedArray typedArray) {
-        C0769c cVar = this.f3838q;
+        C0769c cVar = this.f3842q;
         if (Build.VERSION.SDK_INT >= 21) {
-            cVar.f3878d |= typedArray.getChangingConfigurations();
+            cVar.f3882d |= typedArray.getChangingConfigurations();
         }
-        cVar.mo4642x(typedArray.getBoolean(C0782b.f3908d, cVar.f3883i));
-        cVar.mo4638t(typedArray.getBoolean(C0782b.f3909e, cVar.f3886l));
-        cVar.mo4639u(typedArray.getInt(C0782b.f3910f, cVar.f3866A));
-        cVar.mo4640v(typedArray.getInt(C0782b.f3911g, cVar.f3867B));
-        setDither(typedArray.getBoolean(C0782b.f3906b, cVar.f3898x));
+        cVar.mo4642x(typedArray.getBoolean(C0782b.f3912d, cVar.f3887i));
+        cVar.mo4638t(typedArray.getBoolean(C0782b.f3913e, cVar.f3890l));
+        cVar.mo4639u(typedArray.getInt(C0782b.f3914f, cVar.f3870A));
+        cVar.mo4640v(typedArray.getInt(C0782b.f3915g, cVar.f3871B));
+        setDither(typedArray.getBoolean(C0782b.f3910b, cVar.f3902x));
     }
 
     @Override // p006b.p007a.p010l.p011a.C0779d, p006b.p007a.p010l.p011a.C0774b
@@ -579,7 +579,7 @@ public class C0766a extends C0779d implements AbstractC0399b {
     public void mo4570h(C0774b.AbstractC0777c cVar) {
         super.mo4570h(cVar);
         if (cVar instanceof C0769c) {
-            this.f3838q = (C0769c) cVar;
+            this.f3842q = (C0769c) cVar;
         }
     }
 
@@ -601,35 +601,35 @@ public class C0766a extends C0779d implements AbstractC0399b {
     @Override // p006b.p007a.p010l.p011a.C0774b
     public void jumpToCurrentState() {
         super.jumpToCurrentState();
-        AbstractC0773g gVar = this.f3839r;
+        AbstractC0773g gVar = this.f3843r;
         if (gVar != null) {
             gVar.mo4591d();
-            this.f3839r = null;
-            mo4609g(this.f3840s);
-            this.f3840s = -1;
-            this.f3841t = -1;
+            this.f3843r = null;
+            mo4609g(this.f3844s);
+            this.f3844s = -1;
+            this.f3845t = -1;
         }
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: l */
     public C0769c mo4574j() {
-        return new C0769c(this.f3838q, this, null);
+        return new C0769c(this.f3842q, this, null);
     }
 
     @Override // p006b.p007a.p010l.p011a.C0779d, p006b.p007a.p010l.p011a.C0774b
     public Drawable mutate() {
-        if (!this.f3842u && super.mutate() == this) {
-            this.f3838q.mo4601r();
-            this.f3842u = true;
+        if (!this.f3846u && super.mutate() == this) {
+            this.f3842q.mo4601r();
+            this.f3846u = true;
         }
         return this;
     }
 
     /* renamed from: n */
     public void mo4578n(Context context, Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) {
-        TypedArray k = C0397g.m1946k(resources, theme, attributeSet, C0782b.f3905a);
-        setVisible(k.getBoolean(C0782b.f3907c, true), true);
+        TypedArray k = C0397g.m1946k(resources, theme, attributeSet, C0782b.f3909a);
+        setVisible(k.getBoolean(C0782b.f3911c, true), true);
         m4527t(k);
         mo4611i(resources);
         k.recycle();
@@ -645,7 +645,7 @@ public class C0766a extends C0779d implements AbstractC0399b {
     /* access modifiers changed from: protected */
     @Override // p006b.p007a.p010l.p011a.C0779d, p006b.p007a.p010l.p011a.C0774b
     public boolean onStateChange(int[] iArr) {
-        int F = this.f3838q.mo4595F(iArr);
+        int F = this.f3842q.mo4595F(iArr);
         boolean z = F != mo4608c() && (m4526s(F) || mo4609g(F));
         Drawable current = getCurrent();
         return current != null ? z | current.setState(iArr) : z;
@@ -699,7 +699,7 @@ public class C0766a extends C0779d implements AbstractC0399b {
     @Override // p006b.p007a.p010l.p011a.C0774b
     public boolean setVisible(boolean z, boolean z2) {
         boolean visible = super.setVisible(z, z2);
-        AbstractC0773g gVar = this.f3839r;
+        AbstractC0773g gVar = this.f3843r;
         if (gVar != null && (visible || z2)) {
             if (z) {
                 gVar.mo4590c();

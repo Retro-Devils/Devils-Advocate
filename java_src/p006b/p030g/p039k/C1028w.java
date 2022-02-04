@@ -13,42 +13,42 @@ import java.lang.ref.WeakReference;
 public final class C1028w {
 
     /* renamed from: a */
-    private WeakReference<View> f4775a;
+    private WeakReference<View> f4779a;
 
     /* renamed from: b */
-    Runnable f4776b = null;
+    Runnable f4780b = null;
 
     /* renamed from: c */
-    Runnable f4777c = null;
+    Runnable f4781c = null;
 
     /* renamed from: d */
-    int f4778d = -1;
+    int f4782d = -1;
 
     /* access modifiers changed from: package-private */
     /* renamed from: b.g.k.w$a */
     public class C1029a extends AnimatorListenerAdapter {
 
         /* renamed from: a */
-        final /* synthetic */ AbstractC1032x f4779a;
+        final /* synthetic */ AbstractC1032x f4783a;
 
         /* renamed from: b */
-        final /* synthetic */ View f4780b;
+        final /* synthetic */ View f4784b;
 
         C1029a(AbstractC1032x xVar, View view) {
-            this.f4779a = xVar;
-            this.f4780b = view;
+            this.f4783a = xVar;
+            this.f4784b = view;
         }
 
         public void onAnimationCancel(Animator animator) {
-            this.f4779a.mo1307c(this.f4780b);
+            this.f4783a.mo1307c(this.f4784b);
         }
 
         public void onAnimationEnd(Animator animator) {
-            this.f4779a.mo345a(this.f4780b);
+            this.f4783a.mo345a(this.f4784b);
         }
 
         public void onAnimationStart(Animator animator) {
-            this.f4779a.mo346b(this.f4780b);
+            this.f4783a.mo346b(this.f4784b);
         }
     }
 
@@ -57,18 +57,18 @@ public final class C1028w {
     public class C1030b implements ValueAnimator.AnimatorUpdateListener {
 
         /* renamed from: a */
-        final /* synthetic */ AbstractC1034z f4782a;
+        final /* synthetic */ AbstractC1034z f4786a;
 
         /* renamed from: b */
-        final /* synthetic */ View f4783b;
+        final /* synthetic */ View f4787b;
 
         C1030b(AbstractC1034z zVar, View view) {
-            this.f4782a = zVar;
-            this.f4783b = view;
+            this.f4786a = zVar;
+            this.f4787b = view;
         }
 
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
-            this.f4782a.mo431a(this.f4783b);
+            this.f4786a.mo431a(this.f4787b);
         }
     }
 
@@ -77,30 +77,30 @@ public final class C1028w {
     public static class C1031c implements AbstractC1032x {
 
         /* renamed from: a */
-        C1028w f4785a;
+        C1028w f4789a;
 
         /* renamed from: b */
-        boolean f4786b;
+        boolean f4790b;
 
         C1031c(C1028w wVar) {
-            this.f4785a = wVar;
+            this.f4789a = wVar;
         }
 
         @Override // p006b.p030g.p039k.AbstractC1032x
         @SuppressLint({"WrongConstant"})
         /* renamed from: a */
         public void mo345a(View view) {
-            int i = this.f4785a.f4778d;
+            int i = this.f4789a.f4782d;
             AbstractC1032x xVar = null;
             if (i > -1) {
                 view.setLayerType(i, null);
-                this.f4785a.f4778d = -1;
+                this.f4789a.f4782d = -1;
             }
-            if (Build.VERSION.SDK_INT >= 16 || !this.f4786b) {
-                C1028w wVar = this.f4785a;
-                Runnable runnable = wVar.f4777c;
+            if (Build.VERSION.SDK_INT >= 16 || !this.f4790b) {
+                C1028w wVar = this.f4789a;
+                Runnable runnable = wVar.f4781c;
                 if (runnable != null) {
-                    wVar.f4777c = null;
+                    wVar.f4781c = null;
                     runnable.run();
                 }
                 Object tag = view.getTag(2113929216);
@@ -110,22 +110,22 @@ public final class C1028w {
                 if (xVar != null) {
                     xVar.mo345a(view);
                 }
-                this.f4786b = true;
+                this.f4790b = true;
             }
         }
 
         @Override // p006b.p030g.p039k.AbstractC1032x
         /* renamed from: b */
         public void mo346b(View view) {
-            this.f4786b = false;
+            this.f4790b = false;
             AbstractC1032x xVar = null;
-            if (this.f4785a.f4778d > -1) {
+            if (this.f4789a.f4782d > -1) {
                 view.setLayerType(2, null);
             }
-            C1028w wVar = this.f4785a;
-            Runnable runnable = wVar.f4776b;
+            C1028w wVar = this.f4789a;
+            Runnable runnable = wVar.f4780b;
             if (runnable != null) {
-                wVar.f4776b = null;
+                wVar.f4780b = null;
                 runnable.run();
             }
             Object tag = view.getTag(2113929216);
@@ -149,7 +149,7 @@ public final class C1028w {
     }
 
     C1028w(View view) {
-        this.f4775a = new WeakReference<>(view);
+        this.f4779a = new WeakReference<>(view);
     }
 
     /* renamed from: g */
@@ -163,7 +163,7 @@ public final class C1028w {
 
     /* renamed from: a */
     public C1028w mo5578a(float f) {
-        View view = this.f4775a.get();
+        View view = this.f4779a.get();
         if (view != null) {
             view.animate().alpha(f);
         }
@@ -172,7 +172,7 @@ public final class C1028w {
 
     /* renamed from: b */
     public void mo5579b() {
-        View view = this.f4775a.get();
+        View view = this.f4779a.get();
         if (view != null) {
             view.animate().cancel();
         }
@@ -180,7 +180,7 @@ public final class C1028w {
 
     /* renamed from: c */
     public long mo5580c() {
-        View view = this.f4775a.get();
+        View view = this.f4779a.get();
         if (view != null) {
             return view.animate().getDuration();
         }
@@ -189,7 +189,7 @@ public final class C1028w {
 
     /* renamed from: d */
     public C1028w mo5581d(long j) {
-        View view = this.f4775a.get();
+        View view = this.f4779a.get();
         if (view != null) {
             view.animate().setDuration(j);
         }
@@ -198,7 +198,7 @@ public final class C1028w {
 
     /* renamed from: e */
     public C1028w mo5582e(Interpolator interpolator) {
-        View view = this.f4775a.get();
+        View view = this.f4779a.get();
         if (view != null) {
             view.animate().setInterpolator(interpolator);
         }
@@ -207,7 +207,7 @@ public final class C1028w {
 
     /* renamed from: f */
     public C1028w mo5583f(AbstractC1032x xVar) {
-        View view = this.f4775a.get();
+        View view = this.f4779a.get();
         if (view != null) {
             if (Build.VERSION.SDK_INT < 16) {
                 view.setTag(2113929216, xVar);
@@ -220,7 +220,7 @@ public final class C1028w {
 
     /* renamed from: h */
     public C1028w mo5584h(long j) {
-        View view = this.f4775a.get();
+        View view = this.f4779a.get();
         if (view != null) {
             view.animate().setStartDelay(j);
         }
@@ -229,7 +229,7 @@ public final class C1028w {
 
     /* renamed from: i */
     public C1028w mo5585i(AbstractC1034z zVar) {
-        View view = this.f4775a.get();
+        View view = this.f4779a.get();
         if (view != null && Build.VERSION.SDK_INT >= 19) {
             C1030b bVar = null;
             if (zVar != null) {
@@ -242,7 +242,7 @@ public final class C1028w {
 
     /* renamed from: j */
     public void mo5586j() {
-        View view = this.f4775a.get();
+        View view = this.f4779a.get();
         if (view != null) {
             view.animate().start();
         }
@@ -250,7 +250,7 @@ public final class C1028w {
 
     /* renamed from: k */
     public C1028w mo5587k(float f) {
-        View view = this.f4775a.get();
+        View view = this.f4779a.get();
         if (view != null) {
             view.animate().translationY(f);
         }

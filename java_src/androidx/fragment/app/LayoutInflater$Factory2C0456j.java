@@ -55,7 +55,7 @@ import p006b.p030g.p039k.ViewTreeObserver$OnPreDrawListenerC1011q;
 public final class LayoutInflater$Factory2C0456j extends AbstractC0453i implements LayoutInflater.Factory2 {
 
     /* renamed from: d */
-    static boolean f2366d;
+    static boolean f2366d = false;
 
     /* renamed from: e */
     static final Interpolator f2367e = new DecelerateInterpolator(2.5f);

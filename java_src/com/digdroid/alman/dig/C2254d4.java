@@ -19,16 +19,16 @@ import android.webkit.WebViewClient;
 public class C2254d4 extends AbstractC2531p1 {
 
     /* renamed from: n0 */
-    WebView f8044n0;
+    WebView f8052n0;
 
     /* renamed from: o0 */
-    String f8045o0 = "";
+    String f8053o0 = "";
 
     /* renamed from: com.digdroid.alman.dig.d4$a */
     class C2255a implements AbstractC2258b {
 
         /* renamed from: a */
-        final /* synthetic */ String f8046a;
+        final /* synthetic */ String f8054a;
 
         /* renamed from: com.digdroid.alman.dig.d4$a$a */
         class RunnableC2256a implements Runnable {
@@ -36,7 +36,7 @@ public class C2254d4 extends AbstractC2531p1 {
             }
 
             public void run() {
-                C2254d4.this.f8806m0.mo8298u0();
+                C2254d4.this.f8814m0.mo8298u0();
             }
         }
 
@@ -58,7 +58,7 @@ public class C2254d4 extends AbstractC2531p1 {
         }
 
         C2255a(String str) {
-            this.f8046a = str;
+            this.f8054a = str;
         }
 
         @Override // com.digdroid.alman.dig.C2254d4.AbstractC2258b
@@ -66,17 +66,17 @@ public class C2254d4 extends AbstractC2531p1 {
         public void mo8249a() {
             if (C2254d4.this.mo8244g3()) {
                 Intent intent = new Intent("android.intent.action.VIEW");
-                intent.setData(Uri.parse(this.f8046a));
+                intent.setData(Uri.parse(this.f8054a));
                 C2254d4.this.mo2586m2(intent);
                 new Handler().postDelayed(new RunnableC2256a(), 500);
                 return;
             }
-            C2254d4.this.f8044n0.setWebViewClient(new C2257b());
-            WebSettings settings = C2254d4.this.f8044n0.getSettings();
+            C2254d4.this.f8052n0.setWebViewClient(new C2257b());
+            WebSettings settings = C2254d4.this.f8052n0.getSettings();
             settings.setJavaScriptEnabled(true);
             settings.setAppCacheEnabled(false);
             settings.setCacheMode(2);
-            C2254d4.this.f8044n0.loadUrl(this.f8046a);
+            C2254d4.this.f8052n0.loadUrl(this.f8054a);
         }
     }
 
@@ -121,7 +121,7 @@ public class C2254d4 extends AbstractC2531p1 {
     public boolean mo8243H2(MenuItem menuItem) {
         int itemId = menuItem.getItemId();
         if (itemId == R.id.exit_browser) {
-            this.f8806m0.mo8298u0();
+            this.f8814m0.mo8298u0();
             return true;
         } else if (itemId != R.id.open_external) {
             return super.mo8243H2(menuItem);
@@ -233,7 +233,7 @@ public class C2254d4 extends AbstractC2531p1 {
     /* renamed from: a1 */
     public View mo2547a1(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         View inflate = layoutInflater.inflate(R.layout.webpage, viewGroup, false);
-        this.f8044n0 = (WebView) inflate.findViewById(R.id.webpage);
+        this.f8052n0 = (WebView) inflate.findViewById(R.id.webpage);
         return inflate;
     }
 
@@ -264,7 +264,7 @@ public class C2254d4 extends AbstractC2531p1 {
     /* access modifiers changed from: package-private */
     /* renamed from: g3 */
     public boolean mo8244g3() {
-        return this.f8793Z.mo8180c("external_browser", false);
+        return this.f8801Z.mo8180c("external_browser", false);
     }
 
     /* access modifiers changed from: package-private */
@@ -276,7 +276,7 @@ public class C2254d4 extends AbstractC2531p1 {
     /* access modifiers changed from: package-private */
     /* renamed from: i3 */
     public void mo8246i3(String str) {
-        this.f8045o0 = str;
+        this.f8053o0 = str;
     }
 
     /* access modifiers changed from: package-private */
@@ -352,10 +352,10 @@ public class C2254d4 extends AbstractC2531p1 {
     @Override // com.digdroid.alman.dig.AbstractC2531p1
     /* renamed from: x2 */
     public boolean mo8130x2() {
-        if (!this.f8044n0.canGoBack()) {
+        if (!this.f8052n0.canGoBack()) {
             return false;
         }
-        this.f8044n0.goBack();
+        this.f8052n0.goBack();
         return true;
     }
 

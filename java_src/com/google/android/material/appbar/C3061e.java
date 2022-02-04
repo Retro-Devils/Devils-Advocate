@@ -10,7 +10,7 @@ import p069c.p073b.p074a.p090b.C1396g;
 class C3061e {
 
     /* renamed from: a */
-    private static final int[] f10114a = {16843848};
+    private static final int[] f10122a = {16843848};
 
     /* renamed from: a */
     static void m12580a(View view, float f) {

@@ -19,10 +19,10 @@ public interface AbstractC1499f extends IInterface {
         private static class C1501a implements AbstractC1499f {
 
             /* renamed from: a */
-            private IBinder f6287a;
+            private IBinder f6295a;
 
             C1501a(IBinder iBinder) {
-                this.f6287a = iBinder;
+                this.f6295a = iBinder;
             }
 
             @Override // p069c.p073b.p074a.p108c.p109a.p110f.AbstractC1499f
@@ -32,7 +32,7 @@ public interface AbstractC1499f extends IInterface {
                 Parcel obtain2 = Parcel.obtain();
                 try {
                     obtain.writeInterfaceToken("com.google.android.youtube.player.internal.IEmbeddedPlayer");
-                    this.f6287a.transact(36, obtain, obtain2, 0);
+                    this.f6295a.transact(36, obtain, obtain2, 0);
                     obtain2.readException();
                 } finally {
                     obtain2.recycle();
@@ -47,7 +47,7 @@ public interface AbstractC1499f extends IInterface {
                 Parcel obtain2 = Parcel.obtain();
                 try {
                     obtain.writeInterfaceToken("com.google.android.youtube.player.internal.IEmbeddedPlayer");
-                    this.f6287a.transact(34, obtain, obtain2, 0);
+                    this.f6295a.transact(34, obtain, obtain2, 0);
                     obtain2.readException();
                 } finally {
                     obtain2.recycle();
@@ -63,7 +63,7 @@ public interface AbstractC1499f extends IInterface {
                 try {
                     obtain.writeInterfaceToken("com.google.android.youtube.player.internal.IEmbeddedPlayer");
                     obtain.writeStrongBinder(gVar != null ? gVar.asBinder() : null);
-                    this.f6287a.transact(28, obtain, obtain2, 0);
+                    this.f6295a.transact(28, obtain, obtain2, 0);
                     obtain2.readException();
                 } finally {
                     obtain2.recycle();
@@ -78,7 +78,7 @@ public interface AbstractC1499f extends IInterface {
                 Parcel obtain2 = Parcel.obtain();
                 try {
                     obtain.writeInterfaceToken("com.google.android.youtube.player.internal.IEmbeddedPlayer");
-                    this.f6287a.transact(31, obtain, obtain2, 0);
+                    this.f6295a.transact(31, obtain, obtain2, 0);
                     obtain2.readException();
                 } finally {
                     obtain2.recycle();
@@ -100,7 +100,7 @@ public interface AbstractC1499f extends IInterface {
                     } else {
                         obtain.writeInt(0);
                     }
-                    this.f6287a.transact(40, obtain, obtain2, 0);
+                    this.f6295a.transact(40, obtain, obtain2, 0);
                     obtain2.readException();
                     if (obtain2.readInt() == 0) {
                         z = false;
@@ -119,7 +119,7 @@ public interface AbstractC1499f extends IInterface {
                 Parcel obtain2 = Parcel.obtain();
                 try {
                     obtain.writeInterfaceToken("com.google.android.youtube.player.internal.IEmbeddedPlayer");
-                    this.f6287a.transact(43, obtain, obtain2, 0);
+                    this.f6295a.transact(43, obtain, obtain2, 0);
                     obtain2.readException();
                     return AbstractC1526q.AbstractBinderC1527a.m7505i(obtain2.readStrongBinder());
                 } finally {
@@ -141,7 +141,7 @@ public interface AbstractC1499f extends IInterface {
                     } else {
                         obtain.writeInt(0);
                     }
-                    this.f6287a.transact(32, obtain, obtain2, 0);
+                    this.f6295a.transact(32, obtain, obtain2, 0);
                     obtain2.readException();
                 } finally {
                     obtain2.recycle();
@@ -156,7 +156,7 @@ public interface AbstractC1499f extends IInterface {
                 Parcel obtain2 = Parcel.obtain();
                 try {
                     obtain.writeInterfaceToken("com.google.android.youtube.player.internal.IEmbeddedPlayer");
-                    this.f6287a.transact(38, obtain, obtain2, 0);
+                    this.f6295a.transact(38, obtain, obtain2, 0);
                     obtain2.readException();
                 } finally {
                     obtain2.recycle();
@@ -171,7 +171,7 @@ public interface AbstractC1499f extends IInterface {
                 Parcel obtain2 = Parcel.obtain();
                 try {
                     obtain.writeInterfaceToken("com.google.android.youtube.player.internal.IEmbeddedPlayer");
-                    this.f6287a.transact(8, obtain, obtain2, 0);
+                    this.f6295a.transact(8, obtain, obtain2, 0);
                     obtain2.readException();
                 } finally {
                     obtain2.recycle();
@@ -180,7 +180,7 @@ public interface AbstractC1499f extends IInterface {
             }
 
             public final IBinder asBinder() {
-                return this.f6287a;
+                return this.f6295a;
             }
 
             @Override // p069c.p073b.p074a.p108c.p109a.p110f.AbstractC1499f
@@ -191,7 +191,7 @@ public interface AbstractC1499f extends IInterface {
                 try {
                     obtain.writeInterfaceToken("com.google.android.youtube.player.internal.IEmbeddedPlayer");
                     obtain.writeInt(z ? 1 : 0);
-                    this.f6287a.transact(1, obtain, obtain2, 0);
+                    this.f6295a.transact(1, obtain, obtain2, 0);
                     obtain2.readException();
                 } finally {
                     obtain2.recycle();
@@ -206,7 +206,7 @@ public interface AbstractC1499f extends IInterface {
                 Parcel obtain2 = Parcel.obtain();
                 try {
                     obtain.writeInterfaceToken("com.google.android.youtube.player.internal.IEmbeddedPlayer");
-                    this.f6287a.transact(9, obtain, obtain2, 0);
+                    this.f6295a.transact(9, obtain, obtain2, 0);
                     obtain2.readException();
                 } finally {
                     obtain2.recycle();
@@ -221,7 +221,7 @@ public interface AbstractC1499f extends IInterface {
                 Parcel obtain2 = Parcel.obtain();
                 try {
                     obtain.writeInterfaceToken("com.google.android.youtube.player.internal.IEmbeddedPlayer");
-                    this.f6287a.transact(35, obtain, obtain2, 0);
+                    this.f6295a.transact(35, obtain, obtain2, 0);
                     obtain2.readException();
                 } finally {
                     obtain2.recycle();
@@ -237,7 +237,7 @@ public interface AbstractC1499f extends IInterface {
                 try {
                     obtain.writeInterfaceToken("com.google.android.youtube.player.internal.IEmbeddedPlayer");
                     boolean z = false;
-                    this.f6287a.transact(10, obtain, obtain2, 0);
+                    this.f6295a.transact(10, obtain, obtain2, 0);
                     obtain2.readException();
                     if (obtain2.readInt() != 0) {
                         z = true;
@@ -256,7 +256,7 @@ public interface AbstractC1499f extends IInterface {
                 Parcel obtain2 = Parcel.obtain();
                 try {
                     obtain.writeInterfaceToken("com.google.android.youtube.player.internal.IEmbeddedPlayer");
-                    this.f6287a.transact(33, obtain, obtain2, 0);
+                    this.f6295a.transact(33, obtain, obtain2, 0);
                     obtain2.readException();
                 } finally {
                     obtain2.recycle();
@@ -279,7 +279,7 @@ public interface AbstractC1499f extends IInterface {
                     } else {
                         obtain.writeInt(0);
                     }
-                    this.f6287a.transact(42, obtain, obtain2, 0);
+                    this.f6295a.transact(42, obtain, obtain2, 0);
                     obtain2.readException();
                     if (obtain2.readInt() == 0) {
                         z = false;
@@ -299,7 +299,7 @@ public interface AbstractC1499f extends IInterface {
                 try {
                     obtain.writeInterfaceToken("com.google.android.youtube.player.internal.IEmbeddedPlayer");
                     obtain.writeInt(z ? 1 : 0);
-                    this.f6287a.transact(37, obtain, obtain2, 0);
+                    this.f6295a.transact(37, obtain, obtain2, 0);
                     obtain2.readException();
                 } finally {
                     obtain2.recycle();
@@ -316,7 +316,7 @@ public interface AbstractC1499f extends IInterface {
                     obtain.writeInterfaceToken("com.google.android.youtube.player.internal.IEmbeddedPlayer");
                     obtain.writeString(str);
                     obtain.writeInt(i);
-                    this.f6287a.transact(2, obtain, obtain2, 0);
+                    this.f6295a.transact(2, obtain, obtain2, 0);
                     obtain2.readException();
                 } finally {
                     obtain2.recycle();
@@ -331,7 +331,7 @@ public interface AbstractC1499f extends IInterface {
                 Parcel obtain2 = Parcel.obtain();
                 try {
                     obtain.writeInterfaceToken("com.google.android.youtube.player.internal.IEmbeddedPlayer");
-                    this.f6287a.transact(39, obtain, obtain2, 0);
+                    this.f6295a.transact(39, obtain, obtain2, 0);
                     obtain2.readException();
                     return obtain2.readInt() != 0 ? (Bundle) Bundle.CREATOR.createFromParcel(obtain2) : null;
                 } finally {
@@ -355,7 +355,7 @@ public interface AbstractC1499f extends IInterface {
                     } else {
                         obtain.writeInt(0);
                     }
-                    this.f6287a.transact(41, obtain, obtain2, 0);
+                    this.f6295a.transact(41, obtain, obtain2, 0);
                     obtain2.readException();
                     if (obtain2.readInt() == 0) {
                         z = false;

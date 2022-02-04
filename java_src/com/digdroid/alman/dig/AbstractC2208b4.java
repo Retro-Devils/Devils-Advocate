@@ -13,7 +13,7 @@ abstract class AbstractC2208b4 extends AbstractC2365h {
     /* renamed from: j */
     public void mo3581j(RecyclerView.AbstractC0655d0 d0Var, int i) {
         if (d0Var != null) {
-            mo8527y(((C2777u1) d0Var).f9426t, i);
+            mo8527y(((C2777u1) d0Var).f9434t, i);
         }
     }
 }

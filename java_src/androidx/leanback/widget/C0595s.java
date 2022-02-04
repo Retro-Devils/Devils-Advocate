@@ -4,9 +4,8 @@ import androidx.leanback.widget.AbstractC0559e;
 import androidx.recyclerview.widget.RecyclerView;
 import p006b.p021d.C0828d;
 
-/* access modifiers changed from: package-private */
 /* renamed from: androidx.leanback.widget.s */
-public class C0595s extends AbstractC0559e {
+class C0595s extends AbstractC0559e {
 
     /* renamed from: j */
     private final AbstractC0559e.C0560a f2974j = new AbstractC0559e.C0560a(0);

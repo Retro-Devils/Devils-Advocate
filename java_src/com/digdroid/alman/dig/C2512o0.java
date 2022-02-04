@@ -15,65 +15,65 @@ import p150d.p151a.p153b.C3345a;
 public class C2512o0 {
 
     /* renamed from: a */
-    private static C2512o0 f8716a;
+    private static C2512o0 f8724a;
 
     /* renamed from: b */
-    private C2775u f8717b;
+    private C2775u f8725b;
 
     /* renamed from: c */
-    private SQLiteDatabase f8718c;
+    private SQLiteDatabase f8726c;
 
     /* renamed from: d */
-    private Context f8719d;
+    private Context f8727d;
 
     /* renamed from: e */
-    private C2219c3 f8720e;
+    private C2219c3 f8728e;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.digdroid.alman.dig.o0$a */
     public class DialogInterface$OnClickListenerC2513a implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ ArrayList f8721b;
+        final /* synthetic */ ArrayList f8729b;
 
         /* renamed from: c */
-        final /* synthetic */ Cursor f8722c;
+        final /* synthetic */ Cursor f8730c;
 
         /* renamed from: d */
-        final /* synthetic */ ActivityC2888z3 f8723d;
+        final /* synthetic */ ActivityC2888z3 f8731d;
 
         DialogInterface$OnClickListenerC2513a(ArrayList arrayList, Cursor cursor, ActivityC2888z3 z3Var) {
-            this.f8721b = arrayList;
-            this.f8722c = cursor;
-            this.f8723d = z3Var;
+            this.f8729b = arrayList;
+            this.f8730c = cursor;
+            this.f8731d = z3Var;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
             int i2 = 0;
-            boolean z = i >= this.f8721b.size();
-            Cursor cursor = this.f8722c;
+            boolean z = i >= this.f8729b.size();
+            Cursor cursor = this.f8730c;
             if (!z) {
-                i2 = ((Integer) this.f8721b.get(i)).intValue();
+                i2 = ((Integer) this.f8729b.get(i)).intValue();
             }
             cursor.moveToPosition(i2);
-            C2512o0.this.mo8845j(this.f8723d, this.f8722c, z);
+            C2512o0.this.mo8845j(this.f8731d, this.f8730c, z);
         }
     }
 
     private C2512o0(Context context, C2775u uVar) {
-        this.f8719d = context.getApplicationContext();
-        this.f8717b = uVar;
-        this.f8720e = C2219c3.m9805k(context);
+        this.f8727d = context.getApplicationContext();
+        this.f8725b = uVar;
+        this.f8728e = C2219c3.m9805k(context);
     }
 
     /* renamed from: g */
     public static synchronized C2512o0 m10833g(Context context, C2775u uVar) {
         C2512o0 o0Var;
         synchronized (C2512o0.class) {
-            if (f8716a == null) {
-                f8716a = new C2512o0(context, uVar);
+            if (f8724a == null) {
+                f8724a = new C2512o0(context, uVar);
             }
-            o0Var = f8716a;
+            o0Var = f8724a;
         }
         return o0Var;
     }
@@ -86,75 +86,75 @@ public class C2512o0 {
         StringBuilder sb2;
         String str4;
         String str5 = "AND";
-        if (h0Var.f8305e) {
+        if (h0Var.f8313e) {
             str2 = "" + " " + str + " r.favorite=1";
             str3 = str5;
         } else {
             str3 = str;
             str2 = "";
         }
-        if (h0Var.f8306f) {
+        if (h0Var.f8314f) {
             str2 = str2 + " " + str3 + " r.last_played=0";
             str3 = str5;
         }
-        if (h0Var.f8303c >= 0) {
-            str2 = str2 + " " + str3 + " g.genre=" + h0Var.f8303c + " AND r._id=g.game";
+        if (h0Var.f8311c >= 0) {
+            str2 = str2 + " " + str3 + " g.genre=" + h0Var.f8311c + " AND r._id=g.game";
             str3 = str5;
         }
-        if (h0Var.f8304d >= 0) {
-            str2 = str2 + " " + str3 + " c.collection=" + h0Var.f8304d + " AND r._id=c.game";
+        if (h0Var.f8312d >= 0) {
+            str2 = str2 + " " + str3 + " c.collection=" + h0Var.f8312d + " AND r._id=c.game";
             str3 = str5;
         }
-        if (!h0Var.f8309i.equals("")) {
-            str2 = str2 + " " + str3 + " s.slug=r.system AND s.type='" + h0Var.f8309i + "'";
+        if (!h0Var.f8317i.equals("")) {
+            str2 = str2 + " " + str3 + " s.slug=r.system AND s.type='" + h0Var.f8317i + "'";
             str3 = str5;
         }
-        if (h0Var.f8310j > 0) {
-            if (h0Var.f8309i.equals("")) {
+        if (h0Var.f8318j > 0) {
+            if (h0Var.f8317i.equals("")) {
                 str2 = str2 + " " + str3 + " s.slug=r.system";
                 str3 = str5;
             }
-            str2 = str2 + " " + str3 + " s.generation=" + h0Var.f8310j;
+            str2 = str2 + " " + str3 + " s.generation=" + h0Var.f8318j;
             str3 = str5;
         }
-        if (!h0Var.f8308h.equals("")) {
-            str2 = str2 + " " + str3 + " r.system='" + h0Var.f8308h + "'";
+        if (!h0Var.f8316h.equals("")) {
+            str2 = str2 + " " + str3 + " r.system='" + h0Var.f8316h + "'";
             str3 = str5;
         }
-        if (h0Var.f8301a > 0) {
-            str2 = str2 + " " + str3 + " r.released>=" + h0Var.f8301a;
+        if (h0Var.f8309a > 0) {
+            str2 = str2 + " " + str3 + " r.released>=" + h0Var.f8309a;
             str3 = str5;
         }
-        if (h0Var.f8302b > 0) {
-            if (h0Var.f8301a == 0) {
+        if (h0Var.f8310b > 0) {
+            if (h0Var.f8309a == 0) {
                 str2 = str2 + " " + str3 + " r.released>0";
                 str3 = str5;
             }
-            str2 = str2 + " " + str3 + " r.released<" + h0Var.f8302b;
+            str2 = str2 + " " + str3 + " r.released<" + h0Var.f8310b;
             str3 = str5;
         }
-        if (!h0Var.f8311k.equals("")) {
+        if (!h0Var.f8319k.equals("")) {
             StringBuilder sb3 = new StringBuilder();
             sb3.append(str2);
             sb3.append(" ");
             sb3.append(str3);
             sb3.append(" (r.publisher LIKE ");
-            sb3.append(DatabaseUtils.sqlEscapeString("%" + h0Var.f8311k + "%"));
+            sb3.append(DatabaseUtils.sqlEscapeString("%" + h0Var.f8319k + "%"));
             String sb4 = sb3.toString();
             StringBuilder sb5 = new StringBuilder();
             sb5.append(sb4);
             sb5.append(" OR r.developer LIKE ");
-            sb5.append(DatabaseUtils.sqlEscapeString("%" + h0Var.f8311k + "%"));
+            sb5.append(DatabaseUtils.sqlEscapeString("%" + h0Var.f8319k + "%"));
             sb5.append(")");
             str2 = sb5.toString();
         } else {
             str5 = str3;
         }
-        if (!h0Var.f8307g.equals("")) {
-            boolean c = this.f8720e.mo8180c("search_filenames", false);
+        if (!h0Var.f8315g.equals("")) {
+            boolean c = this.f8728e.mo8180c("search_filenames", false);
             String str6 = "r.filename";
-            if (h0Var.f8307g.substring(0, 1).equals("^")) {
-                String substring = h0Var.f8307g.substring(1);
+            if (h0Var.f8315g.substring(0, 1).equals("^")) {
+                String substring = h0Var.f8315g.substring(1);
                 if (!substring.equals("")) {
                     sb = new StringBuilder();
                     sb.append(str2);
@@ -182,7 +182,7 @@ public class C2512o0 {
                 sb.append(" LIKE ");
                 sb2 = new StringBuilder();
                 sb2.append("%");
-                str4 = h0Var.f8307g;
+                str4 = h0Var.f8315g;
             }
             sb2.append(str4);
             sb2.append("%");
@@ -252,7 +252,7 @@ public class C2512o0 {
         ContentValues contentValues = new ContentValues();
         contentValues.put("game", Long.valueOf(j));
         contentValues.put("genre", Integer.valueOf(i));
-        this.f8718c.insert("gamegenres", null, contentValues);
+        this.f8726c.insert("gamegenres", null, contentValues);
     }
 
     /* access modifiers changed from: package-private */
@@ -296,20 +296,20 @@ public class C2512o0 {
         ContentValues contentValues = new ContentValues();
         contentValues.put("cover_status", (Integer) 21255);
         contentValues.put("cover_requested", Long.valueOf(System.currentTimeMillis()));
-        SQLiteDatabase sQLiteDatabase = this.f8718c;
+        SQLiteDatabase sQLiteDatabase = this.f8726c;
         sQLiteDatabase.update("roms", contentValues, "_id=" + j, null);
-        ImageService.m9511a(this.f8719d);
+        ImageService.m9511a(this.f8727d);
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: d */
     public Cursor mo8840d(long j) {
-        Cursor rawQuery = this.f8718c.rawQuery("SELECT e._id,e.name,e.system,e.package,e.class,e.core,e.rom_key,e.data_type,e.action_type,e.takes_zip,e.config_dir,e.use_retroarch64 FROM roms as r,emulators as e" + " WHERE r._id=" + j + " AND r.emulator>=0 AND e._id=r.emulator", null);
+        Cursor rawQuery = this.f8726c.rawQuery("SELECT e._id,e.name,e.system,e.package,e.class,e.core,e.rom_key,e.data_type,e.action_type,e.takes_zip,e.config_dir,e.use_retroarch64 FROM roms as r,emulators as e" + " WHERE r._id=" + j + " AND r.emulator>=0 AND e._id=r.emulator", null);
         if (rawQuery.getCount() != 0) {
             return rawQuery;
         }
         rawQuery.close();
-        return this.f8718c.rawQuery("SELECT e._id,e.name,e.system,e.package,e.class,e.core,e.rom_key,e.data_type,e.action_type,e.takes_zip,e.config_dir,e.use_retroarch64 FROM roms as r,emulators as e" + ",systems as s WHERE r._id=" + j + " AND s.slug=r.system AND e._id=s.emulator", null);
+        return this.f8726c.rawQuery("SELECT e._id,e.name,e.system,e.package,e.class,e.core,e.rom_key,e.data_type,e.action_type,e.takes_zip,e.config_dir,e.use_retroarch64 FROM roms as r,emulators as e" + ",systems as s WHERE r._id=" + j + " AND s.slug=r.system AND e._id=s.emulator", null);
     }
 
     /* renamed from: e */
@@ -317,7 +317,7 @@ public class C2512o0 {
         String q = m10835q(str, h0Var);
         String str2 = "WHERE";
         String p = m10834p(h0Var, str2);
-        SQLiteDatabase sQLiteDatabase = this.f8718c;
+        SQLiteDatabase sQLiteDatabase = this.f8726c;
         StringBuilder sb = new StringBuilder();
         sb.append(q + p);
         sb.append(" ");
@@ -396,7 +396,7 @@ public class C2512o0 {
                 str = "Simulation";
                 break;
         }
-        SQLiteDatabase sQLiteDatabase = this.f8718c;
+        SQLiteDatabase sQLiteDatabase = this.f8726c;
         Cursor rawQuery = sQLiteDatabase.rawQuery("SELECT _id FROM genres WHERE name=" + DatabaseUtils.sqlEscapeString(str), null);
         if (rawQuery.moveToFirst()) {
             int i = rawQuery.getInt(0);
@@ -406,7 +406,7 @@ public class C2512o0 {
         rawQuery.close();
         ContentValues contentValues = new ContentValues();
         contentValues.put("name", str);
-        return (int) this.f8718c.insert("genres", null, contentValues);
+        return (int) this.f8726c.insert("genres", null, contentValues);
     }
 
     /* renamed from: h */
@@ -424,14 +424,14 @@ public class C2512o0 {
         }
         sb.append(str2);
         String str3 = sb.toString() + m10834p(h0Var, "AND");
-        return this.f8718c.rawQuery(str3 + " " + m10836r(h0Var, "AND"), null);
+        return this.f8726c.rawQuery(str3 + " " + m10836r(h0Var, "AND"), null);
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: i */
     public void mo8844i(ActivityC2888z3 z3Var, long j, C2369h0 h0Var) {
         if (!(z3Var == null || z3Var.isFinishing())) {
-            SQLiteDatabase sQLiteDatabase = this.f8718c;
+            SQLiteDatabase sQLiteDatabase = this.f8726c;
             Cursor rawQuery = sQLiteDatabase.rawQuery("SELECT _id,title,released,pathid,system,times_played,time_played,filename,merged_with FROM roms WHERE _id=" + j, null);
             if (!rawQuery.moveToFirst()) {
                 rawQuery.close();
@@ -443,7 +443,7 @@ public class C2512o0 {
                 return;
             }
             rawQuery.close();
-            SQLiteDatabase sQLiteDatabase2 = this.f8718c;
+            SQLiteDatabase sQLiteDatabase2 = this.f8726c;
             Cursor rawQuery2 = sQLiteDatabase2.rawQuery("SELECT _id,title,released,pathid,system,times_played,time_played,filename,merged_with FROM roms WHERE merged_with=" + j2 + " ORDER BY filename", null);
             if (rawQuery2.moveToFirst()) {
                 if (rawQuery2.getCount() == 1) {
@@ -582,9 +582,9 @@ public class C2512o0 {
         contentValues.put("c_rating_count", (Integer) 0);
         contentValues.put("c_played_total", (Integer) 0);
         contentValues.put("c_played_count", (Integer) 0);
-        this.f8718c.update("roms", contentValues, "_id=" + j, null);
+        this.f8726c.update("roms", contentValues, "_id=" + j, null);
         mo8852t(j);
-        this.f8718c.execSQL("DELETE FROM gamegenres WHERE game=" + j);
+        this.f8726c.execSQL("DELETE FROM gamegenres WHERE game=" + j);
         String string = rawQuery.getString(6);
         if (string != null && !string.equals("")) {
             for (String str : string.split(",")) {
@@ -603,14 +603,14 @@ public class C2512o0 {
     public boolean mo8848m(C2369h0 h0Var) {
         if (h0Var != null) {
             try {
-                if (!h0Var.f8308h.equals("")) {
-                    return C2375h3.m10306r(this.f8719d, this.f8717b).mo8573x(h0Var.f8308h);
+                if (!h0Var.f8316h.equals("")) {
+                    return C2375h3.m10306r(this.f8727d, this.f8725b).mo8573x(h0Var.f8316h);
                 }
             } catch (Exception unused) {
                 return false;
             }
         }
-        return this.f8720e.mo8180c("merged_games", true);
+        return this.f8728e.mo8180c("merged_games", true);
     }
 
     /* access modifiers changed from: package-private */
@@ -621,13 +621,13 @@ public class C2512o0 {
 
     /* renamed from: o */
     public void mo8850o() {
-        this.f8718c = this.f8717b.mo9325c();
+        this.f8726c = this.f8725b.mo9325c();
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: s */
     public void mo8851s(long j, SQLiteDatabase sQLiteDatabase) {
-        SQLiteDatabase sQLiteDatabase2 = this.f8718c;
+        SQLiteDatabase sQLiteDatabase2 = this.f8726c;
         Cursor rawQuery = sQLiteDatabase2.rawQuery("SELECT filename FROM roms WHERE _id=" + j, null);
         if (rawQuery.moveToFirst()) {
             String string = rawQuery.getString(0);
@@ -645,9 +645,9 @@ public class C2512o0 {
             contentValues.put("publisher", "");
             contentValues.put("info", "");
             contentValues.put("cover_status", (Integer) 0);
-            SQLiteDatabase sQLiteDatabase3 = this.f8718c;
+            SQLiteDatabase sQLiteDatabase3 = this.f8726c;
             sQLiteDatabase3.update("roms", contentValues, "_id=" + j, null);
-            SQLiteDatabase sQLiteDatabase4 = this.f8718c;
+            SQLiteDatabase sQLiteDatabase4 = this.f8726c;
             sQLiteDatabase4.execSQL("DELETE FROM gamegenres WHERE game=" + j);
             mo8852t(j);
         }
@@ -656,7 +656,7 @@ public class C2512o0 {
 
     /* renamed from: t */
     public void mo8852t(long j) {
-        SQLiteDatabase sQLiteDatabase = this.f8718c;
+        SQLiteDatabase sQLiteDatabase = this.f8726c;
         Cursor rawQuery = sQLiteDatabase.rawQuery("SELECT merged_with,system FROM roms WHERE _id=" + j, null);
         if (rawQuery.moveToFirst()) {
             long j2 = rawQuery.getLong(0);
@@ -664,13 +664,13 @@ public class C2512o0 {
             if (j2 >= 0) {
                 ContentValues contentValues = new ContentValues();
                 contentValues.put("merged_with", (Integer) -1);
-                SQLiteDatabase sQLiteDatabase2 = this.f8718c;
+                SQLiteDatabase sQLiteDatabase2 = this.f8726c;
                 int update = sQLiteDatabase2.update("roms", contentValues, "merged_with=" + j2, null);
                 if (update > 1) {
-                    SQLiteDatabase sQLiteDatabase3 = this.f8718c;
+                    SQLiteDatabase sQLiteDatabase3 = this.f8726c;
                     sQLiteDatabase3.execSQL("UPDATE systems SET numgames=numgames+" + (update - 1) + " WHERE slug='" + string + "'");
                 }
-                DatabaseService.m9478v(this.f8719d, "merge_games");
+                DatabaseService.m9478v(this.f8727d, "merge_games");
             }
         }
         rawQuery.close();
@@ -679,9 +679,9 @@ public class C2512o0 {
     /* access modifiers changed from: package-private */
     /* renamed from: u */
     public void mo8853u(long j, long j2, long j3) {
-        SQLiteDatabase sQLiteDatabase = this.f8718c;
+        SQLiteDatabase sQLiteDatabase = this.f8726c;
         sQLiteDatabase.execSQL("UPDATE roms SET last_played=" + j2 + ",times_played=times_played+1,time_played=time_played+" + j3 + ",c_played_count=c_played_count+1,c_played_total=c_played_total+" + j3 + " WHERE _id=" + j);
-        SQLiteDatabase sQLiteDatabase2 = this.f8718c;
+        SQLiteDatabase sQLiteDatabase2 = this.f8726c;
         StringBuilder sb = new StringBuilder();
         sb.append("SELECT merged_with FROM roms WHERE _id=");
         sb.append(j);
@@ -689,7 +689,7 @@ public class C2512o0 {
         if (rawQuery.moveToFirst()) {
             long j4 = rawQuery.getLong(0);
             if (j4 >= 0) {
-                SQLiteDatabase sQLiteDatabase3 = this.f8718c;
+                SQLiteDatabase sQLiteDatabase3 = this.f8726c;
                 sQLiteDatabase3.execSQL("UPDATE roms SET merged_last_played=" + j2 + ",merged_times_played=merged_times_played+1,merged_time_played=merged_time_played+" + j3 + " WHERE merged_with=" + j4);
             }
         }

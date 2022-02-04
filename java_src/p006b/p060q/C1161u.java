@@ -19,12 +19,12 @@ public class C1161u extends C1167z implements AbstractC1163w {
     @Override // p006b.p060q.AbstractC1163w
     /* renamed from: a */
     public void mo5869a(View view) {
-        this.f5199a.mo5873b(view);
+        this.f5206a.mo5873b(view);
     }
 
     @Override // p006b.p060q.AbstractC1163w
     /* renamed from: c */
     public void mo5870c(View view) {
-        this.f5199a.mo5877g(view);
+        this.f5206a.mo5877g(view);
     }
 }

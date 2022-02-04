@@ -12,7 +12,7 @@ import p006b.p007a.p014o.C0788d;
 public final class C1955a {
 
     /* renamed from: a */
-    private static volatile boolean f7258a = true;
+    private static volatile boolean f7266a = true;
 
     /* renamed from: a */
     public static Drawable m8847a(Context context, int i, Resources.Theme theme) {
@@ -27,11 +27,11 @@ public final class C1955a {
     /* renamed from: c */
     private static Drawable m8849c(Context context, Context context2, int i, Resources.Theme theme) {
         try {
-            if (f7258a) {
+            if (f7266a) {
                 return m8851e(context2, i, theme);
             }
         } catch (NoClassDefFoundError unused) {
-            f7258a = false;
+            f7266a = false;
         } catch (IllegalStateException e) {
             if (!context.getPackageName().equals(context2.getPackageName())) {
                 return C0378a.m1874d(context2, i);

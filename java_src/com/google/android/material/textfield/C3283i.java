@@ -14,13 +14,13 @@ import p069c.p073b.p074a.p090b.C1398i;
 class C3283i extends AbstractC3277e {
 
     /* renamed from: d */
-    private final TextWatcher f10981d = new C3284a();
+    private final TextWatcher f10989d = new C3284a();
 
     /* renamed from: e */
-    private final TextInputLayout.AbstractC3249f f10982e = new C3285b();
+    private final TextInputLayout.AbstractC3249f f10990e = new C3285b();
 
     /* renamed from: f */
-    private final TextInputLayout.AbstractC3250g f10983f = new C3286c();
+    private final TextInputLayout.AbstractC3250g f10991f = new C3286c();
 
     /* renamed from: com.google.android.material.textfield.i$a */
     class C3284a implements TextWatcher {
@@ -32,7 +32,7 @@ class C3283i extends AbstractC3277e {
 
         public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
             C3283i iVar = C3283i.this;
-            iVar.f10949c.setChecked(!iVar.m13750g());
+            iVar.f10957c.setChecked(!iVar.m13750g());
         }
 
         public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
@@ -51,9 +51,9 @@ class C3283i extends AbstractC3277e {
             textInputLayout.setEndIconVisible(true);
             textInputLayout.setEndIconCheckable(true);
             C3283i iVar = C3283i.this;
-            iVar.f10949c.setChecked(!iVar.m13750g());
-            editText.removeTextChangedListener(C3283i.this.f10981d);
-            editText.addTextChangedListener(C3283i.this.f10981d);
+            iVar.f10957c.setChecked(!iVar.m13750g());
+            editText.removeTextChangedListener(C3283i.this.f10989d);
+            editText.addTextChangedListener(C3283i.this.f10989d);
         }
     }
 
@@ -68,7 +68,7 @@ class C3283i extends AbstractC3277e {
             EditText editText = textInputLayout.getEditText();
             if (editText != null && i == 1) {
                 editText.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                editText.removeTextChangedListener(C3283i.this.f10981d);
+                editText.removeTextChangedListener(C3283i.this.f10989d);
             }
         }
     }
@@ -79,7 +79,7 @@ class C3283i extends AbstractC3277e {
         }
 
         public void onClick(View view) {
-            EditText editText = C3283i.this.f10947a.getEditText();
+            EditText editText = C3283i.this.f10955a.getEditText();
             if (editText != null) {
                 int selectionEnd = editText.getSelectionEnd();
                 editText.setTransformationMethod(C3283i.this.m13750g() ? null : PasswordTransformationMethod.getInstance());
@@ -98,7 +98,7 @@ class C3283i extends AbstractC3277e {
     /* access modifiers changed from: public */
     /* renamed from: g */
     private boolean m13750g() {
-        EditText editText = this.f10947a.getEditText();
+        EditText editText = this.f10955a.getEditText();
         return editText != null && (editText.getTransformationMethod() instanceof PasswordTransformationMethod);
     }
 
@@ -111,13 +111,13 @@ class C3283i extends AbstractC3277e {
     @Override // com.google.android.material.textfield.AbstractC3277e
     /* renamed from: a */
     public void mo11089a() {
-        this.f10947a.setEndIconDrawable(C0764a.m4517d(this.f10948b, C1394e.design_password_eye));
-        TextInputLayout textInputLayout = this.f10947a;
+        this.f10955a.setEndIconDrawable(C0764a.m4517d(this.f10956b, C1394e.design_password_eye));
+        TextInputLayout textInputLayout = this.f10955a;
         textInputLayout.setEndIconContentDescription(textInputLayout.getResources().getText(C1398i.password_toggle_content_description));
-        this.f10947a.setEndIconOnClickListener(new View$OnClickListenerC3287d());
-        this.f10947a.mo10937e(this.f10982e);
-        this.f10947a.mo10938f(this.f10983f);
-        EditText editText = this.f10947a.getEditText();
+        this.f10955a.setEndIconOnClickListener(new View$OnClickListenerC3287d());
+        this.f10955a.mo10937e(this.f10990e);
+        this.f10955a.mo10938f(this.f10991f);
+        EditText editText = this.f10955a.getEditText();
         if (m13751h(editText)) {
             editText.setTransformationMethod(PasswordTransformationMethod.getInstance());
         }

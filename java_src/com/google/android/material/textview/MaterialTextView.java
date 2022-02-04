@@ -34,8 +34,8 @@ public class MaterialTextView extends C0302y {
 
     /* renamed from: f */
     private void m13755f(Resources.Theme theme, int i) {
-        TypedArray obtainStyledAttributes = theme.obtainStyledAttributes(i, C1400k.f5940p2);
-        int i2 = m13758i(getContext(), obtainStyledAttributes, C1400k.f5947q2, C1400k.f5954r2);
+        TypedArray obtainStyledAttributes = theme.obtainStyledAttributes(i, C1400k.f5948p2);
+        int i2 = m13758i(getContext(), obtainStyledAttributes, C1400k.f5955q2, C1400k.f5962r2);
         obtainStyledAttributes.recycle();
         if (i2 >= 0) {
             setLineHeight(i2);
@@ -49,8 +49,8 @@ public class MaterialTextView extends C0302y {
 
     /* renamed from: h */
     private static int m13757h(Resources.Theme theme, AttributeSet attributeSet, int i, int i2) {
-        TypedArray obtainStyledAttributes = theme.obtainStyledAttributes(attributeSet, C1400k.f5961s2, i, i2);
-        int resourceId = obtainStyledAttributes.getResourceId(C1400k.f5967t2, -1);
+        TypedArray obtainStyledAttributes = theme.obtainStyledAttributes(attributeSet, C1400k.f5969s2, i, i2);
+        int resourceId = obtainStyledAttributes.getResourceId(C1400k.f5975t2, -1);
         obtainStyledAttributes.recycle();
         return resourceId;
     }
@@ -66,8 +66,8 @@ public class MaterialTextView extends C0302y {
 
     /* renamed from: j */
     private static boolean m13759j(Context context, Resources.Theme theme, AttributeSet attributeSet, int i, int i2) {
-        TypedArray obtainStyledAttributes = theme.obtainStyledAttributes(attributeSet, C1400k.f5961s2, i, i2);
-        int i3 = m13758i(context, obtainStyledAttributes, C1400k.f5973u2, C1400k.f5979v2);
+        TypedArray obtainStyledAttributes = theme.obtainStyledAttributes(attributeSet, C1400k.f5969s2, i, i2);
+        int i3 = m13758i(context, obtainStyledAttributes, C1400k.f5981u2, C1400k.f5987v2);
         obtainStyledAttributes.recycle();
         return i3 != -1;
     }

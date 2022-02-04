@@ -8,33 +8,33 @@ import java.util.Map;
 public class C0831g<K, V> {
 
     /* renamed from: a */
-    private final LinkedHashMap<K, V> f4093a;
+    private final LinkedHashMap<K, V> f4097a;
 
     /* renamed from: b */
-    private int f4094b;
+    private int f4098b;
 
     /* renamed from: c */
-    private int f4095c;
+    private int f4099c;
 
     /* renamed from: d */
-    private int f4096d;
+    private int f4100d;
 
     /* renamed from: e */
-    private int f4097e;
+    private int f4101e;
 
     /* renamed from: f */
-    private int f4098f;
+    private int f4102f;
 
     /* renamed from: g */
-    private int f4099g;
+    private int f4103g;
 
     /* renamed from: h */
-    private int f4100h;
+    private int f4104h;
 
     public C0831g(int i) {
         if (i > 0) {
-            this.f4095c = i;
-            this.f4093a = new LinkedHashMap<>(0, 0.75f, true);
+            this.f4099c = i;
+            this.f4097a = new LinkedHashMap<>(0, 0.75f, true);
             return;
         }
         throw new IllegalArgumentException("maxSize <= 0");
@@ -78,17 +78,17 @@ public class C0831g<K, V> {
         monitor-enter(r4);
      */
     /* JADX WARNING: Code restructure failed: missing block: B:15:?, code lost:
-        r4.f4097e++;
-        r1 = r4.f4093a.put(r5, r0);
+        r4.f4101e++;
+        r1 = r4.f4097a.put(r5, r0);
      */
     /* JADX WARNING: Code restructure failed: missing block: B:16:0x002f, code lost:
         if (r1 == null) goto L_0x0037;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:17:0x0031, code lost:
-        r4.f4093a.put(r5, r1);
+        r4.f4097a.put(r5, r1);
      */
     /* JADX WARNING: Code restructure failed: missing block: B:18:0x0037, code lost:
-        r4.f4094b += m4863h(r5, r0);
+        r4.f4098b += m4863h(r5, r0);
      */
     /* JADX WARNING: Code restructure failed: missing block: B:19:0x0040, code lost:
         monitor-exit(r4);
@@ -103,7 +103,7 @@ public class C0831g<K, V> {
         return r1;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:23:0x0048, code lost:
-        mo4935l(r4.f4095c);
+        mo4935l(r4.f4099c);
      */
     /* JADX WARNING: Code restructure failed: missing block: B:24:0x004d, code lost:
         return r0;
@@ -115,18 +115,18 @@ public class C0831g<K, V> {
             r4 = this;
             if (r5 == 0) goto L_0x0054
             monitor-enter(r4)
-            java.util.LinkedHashMap<K, V> r0 = r4.f4093a     // Catch:{ all -> 0x0051 }
+            java.util.LinkedHashMap<K, V> r0 = r4.f4097a     // Catch:{ all -> 0x0051 }
             java.lang.Object r0 = r0.get(r5)     // Catch:{ all -> 0x0051 }
             if (r0 == 0) goto L_0x0013
-            int r5 = r4.f4099g     // Catch:{ all -> 0x0051 }
+            int r5 = r4.f4103g     // Catch:{ all -> 0x0051 }
             int r5 = r5 + 1
-            r4.f4099g = r5     // Catch:{ all -> 0x0051 }
+            r4.f4103g = r5     // Catch:{ all -> 0x0051 }
             monitor-exit(r4)     // Catch:{ all -> 0x0051 }
             return r0
         L_0x0013:
-            int r0 = r4.f4100h     // Catch:{ all -> 0x0051 }
+            int r0 = r4.f4104h     // Catch:{ all -> 0x0051 }
             int r0 = r0 + 1
-            r4.f4100h = r0     // Catch:{ all -> 0x0051 }
+            r4.f4104h = r0     // Catch:{ all -> 0x0051 }
             monitor-exit(r4)     // Catch:{ all -> 0x0051 }
             java.lang.Object r0 = r4.mo4925a(r5)
             if (r0 != 0) goto L_0x0022
@@ -134,20 +134,20 @@ public class C0831g<K, V> {
             return r5
         L_0x0022:
             monitor-enter(r4)
-            int r1 = r4.f4097e     // Catch:{ all -> 0x004e }
+            int r1 = r4.f4101e     // Catch:{ all -> 0x004e }
             int r1 = r1 + 1
-            r4.f4097e = r1     // Catch:{ all -> 0x004e }
-            java.util.LinkedHashMap<K, V> r1 = r4.f4093a     // Catch:{ all -> 0x004e }
+            r4.f4101e = r1     // Catch:{ all -> 0x004e }
+            java.util.LinkedHashMap<K, V> r1 = r4.f4097a     // Catch:{ all -> 0x004e }
             java.lang.Object r1 = r1.put(r5, r0)     // Catch:{ all -> 0x004e }
             if (r1 == 0) goto L_0x0037
-            java.util.LinkedHashMap<K, V> r2 = r4.f4093a     // Catch:{ all -> 0x004e }
+            java.util.LinkedHashMap<K, V> r2 = r4.f4097a     // Catch:{ all -> 0x004e }
             r2.put(r5, r1)     // Catch:{ all -> 0x004e }
             goto L_0x0040
         L_0x0037:
-            int r2 = r4.f4094b     // Catch:{ all -> 0x004e }
+            int r2 = r4.f4098b     // Catch:{ all -> 0x004e }
             int r3 = r4.m4863h(r5, r0)     // Catch:{ all -> 0x004e }
             int r2 = r2 + r3
-            r4.f4094b = r2     // Catch:{ all -> 0x004e }
+            r4.f4098b = r2     // Catch:{ all -> 0x004e }
         L_0x0040:
             monitor-exit(r4)     // Catch:{ all -> 0x004e }
             if (r1 == 0) goto L_0x0048
@@ -155,7 +155,7 @@ public class C0831g<K, V> {
             r4.mo4926b(r2, r5, r0, r1)
             return r1
         L_0x0048:
-            int r5 = r4.f4095c
+            int r5 = r4.f4099c
             r4.mo4935l(r5)
             return r0
         L_0x004e:
@@ -177,7 +177,7 @@ public class C0831g<K, V> {
 
     /* renamed from: e */
     public final synchronized int mo4929e() {
-        return this.f4095c;
+        return this.f4099c;
     }
 
     /* renamed from: f */
@@ -187,17 +187,17 @@ public class C0831g<K, V> {
             throw new NullPointerException("key == null || value == null");
         }
         synchronized (this) {
-            this.f4096d++;
-            this.f4094b += m4863h(k, v);
-            put = this.f4093a.put(k, v);
+            this.f4100d++;
+            this.f4098b += m4863h(k, v);
+            put = this.f4097a.put(k, v);
             if (put != null) {
-                this.f4094b -= m4863h(k, put);
+                this.f4098b -= m4863h(k, put);
             }
         }
         if (put != null) {
             mo4926b(false, k, put, v);
         }
-        mo4935l(this.f4095c);
+        mo4935l(this.f4099c);
         return put;
     }
 
@@ -206,9 +206,9 @@ public class C0831g<K, V> {
         V remove;
         if (k != null) {
             synchronized (this) {
-                remove = this.f4093a.remove(k);
+                remove = this.f4097a.remove(k);
                 if (remove != null) {
-                    this.f4094b -= m4863h(k, remove);
+                    this.f4098b -= m4863h(k, remove);
                 }
             }
             if (remove != null) {
@@ -221,7 +221,7 @@ public class C0831g<K, V> {
 
     /* renamed from: i */
     public final synchronized int mo4932i() {
-        return this.f4094b;
+        return this.f4098b;
     }
 
     /* access modifiers changed from: protected */
@@ -232,7 +232,7 @@ public class C0831g<K, V> {
 
     /* renamed from: k */
     public final synchronized Map<K, V> mo4934k() {
-        return new LinkedHashMap(this.f4093a);
+        return new LinkedHashMap(this.f4097a);
     }
 
     /* JADX WARNING: Code restructure failed: missing block: B:19:0x0070, code lost:
@@ -250,8 +250,8 @@ public class C0831g<K, V> {
     public final synchronized String toString() {
         int i;
         int i2;
-        i = this.f4099g;
-        i2 = this.f4100h + i;
-        return String.format(Locale.US, "LruCache[maxSize=%d,hits=%d,misses=%d,hitRate=%d%%]", Integer.valueOf(this.f4095c), Integer.valueOf(this.f4099g), Integer.valueOf(this.f4100h), Integer.valueOf(i2 != 0 ? (i * 100) / i2 : 0));
+        i = this.f4103g;
+        i2 = this.f4104h + i;
+        return String.format(Locale.US, "LruCache[maxSize=%d,hits=%d,misses=%d,hitRate=%d%%]", Integer.valueOf(this.f4099c), Integer.valueOf(this.f4103g), Integer.valueOf(this.f4104h), Integer.valueOf(i2 != 0 ? (i * 100) / i2 : 0));
     }
 }

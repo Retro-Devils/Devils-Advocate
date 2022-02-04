@@ -7,14 +7,14 @@ import java.security.MessageDigest;
 public final class C2066c implements AbstractC1643g {
 
     /* renamed from: b */
-    private static final C2066c f7573b = new C2066c();
+    private static final C2066c f7581b = new C2066c();
 
     private C2066c() {
     }
 
     /* renamed from: c */
     public static C2066c m9395c() {
-        return f7573b;
+        return f7581b;
     }
 
     @Override // com.bumptech.glide.load.AbstractC1643g

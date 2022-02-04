@@ -11,26 +11,26 @@ import java.util.Locale;
 public final class C0940b {
 
     /* renamed from: a */
-    private static Method f4624a;
+    private static Method f4628a;
 
     /* renamed from: b */
-    private static Method f4625b;
+    private static Method f4629b;
 
     static {
         int i = Build.VERSION.SDK_INT;
         if (i < 21) {
             try {
                 Class<?> cls = Class.forName("libcore.icu.ICU");
-                f4624a = cls.getMethod("getScript", String.class);
-                f4625b = cls.getMethod("addLikelySubtags", String.class);
+                f4628a = cls.getMethod("getScript", String.class);
+                f4629b = cls.getMethod("addLikelySubtags", String.class);
             } catch (Exception e) {
-                f4624a = null;
-                f4625b = null;
+                f4628a = null;
+                f4629b = null;
                 Log.w("ICUCompat", e);
             }
         } else if (i < 24) {
             try {
-                f4625b = Class.forName("libcore.icu.ICU").getMethod("addLikelySubtags", Locale.class);
+                f4629b = Class.forName("libcore.icu.ICU").getMethod("addLikelySubtags", Locale.class);
             } catch (Exception e2) {
                 throw new IllegalStateException(e2);
             }
@@ -41,7 +41,7 @@ public final class C0940b {
     private static String m5453a(Locale locale) {
         String locale2 = locale.toString();
         try {
-            Method method = f4625b;
+            Method method = f4629b;
             if (method != null) {
                 return (String) method.invoke(null, locale2);
             }
@@ -54,7 +54,7 @@ public final class C0940b {
     /* renamed from: b */
     private static String m5454b(String str) {
         try {
-            Method method = f4624a;
+            Method method = f4628a;
             if (method != null) {
                 return (String) method.invoke(null, str);
             }
@@ -72,7 +72,7 @@ public final class C0940b {
         }
         if (i >= 21) {
             try {
-                return ((Locale) f4625b.invoke(null, locale)).getScript();
+                return ((Locale) f4629b.invoke(null, locale)).getScript();
             } catch (IllegalAccessException | InvocationTargetException e) {
                 Log.w("ICUCompat", e);
                 return locale.getScript();

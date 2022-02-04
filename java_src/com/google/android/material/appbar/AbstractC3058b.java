@@ -16,16 +16,16 @@ import p006b.p030g.p039k.C1013s;
 abstract class AbstractC3058b extends C3059c<View> {
 
     /* renamed from: d */
-    final Rect f10100d = new Rect();
+    final Rect f10108d = new Rect();
 
     /* renamed from: e */
-    final Rect f10101e = new Rect();
+    final Rect f10109e = new Rect();
 
     /* renamed from: f */
-    private int f10102f = 0;
+    private int f10110f = 0;
 
     /* renamed from: g */
-    private int f10103g;
+    private int f10111g;
 
     public AbstractC3058b() {
     }
@@ -50,14 +50,14 @@ abstract class AbstractC3058b extends C3059c<View> {
         View H = mo9889H(coordinatorLayout.mo2067r(view));
         if (H != null) {
             CoordinatorLayout.C0340f fVar = (CoordinatorLayout.C0340f) view.getLayoutParams();
-            Rect rect = this.f10100d;
+            Rect rect = this.f10108d;
             rect.set(coordinatorLayout.getPaddingLeft() + ((ViewGroup.MarginLayoutParams) fVar).leftMargin, H.getBottom() + ((ViewGroup.MarginLayoutParams) fVar).topMargin, (coordinatorLayout.getWidth() - coordinatorLayout.getPaddingRight()) - ((ViewGroup.MarginLayoutParams) fVar).rightMargin, ((coordinatorLayout.getHeight() + H.getBottom()) - coordinatorLayout.getPaddingBottom()) - ((ViewGroup.MarginLayoutParams) fVar).bottomMargin);
             C0964a0 lastWindowInsets = coordinatorLayout.getLastWindowInsets();
             if (lastWindowInsets != null && C1013s.m5791v(coordinatorLayout) && !C1013s.m5791v(view)) {
                 rect.left += lastWindowInsets.mo5416f();
                 rect.right -= lastWindowInsets.mo5417g();
             }
-            Rect rect2 = this.f10101e;
+            Rect rect2 = this.f10109e;
             C0997d.m5668a(m12560N(fVar.f1925c), view.getMeasuredWidth(), view.getMeasuredHeight(), rect, rect2, i);
             int I = mo9905I(H);
             view.layout(rect2.left, rect2.top - I, rect2.right, rect2.bottom - I);
@@ -66,7 +66,7 @@ abstract class AbstractC3058b extends C3059c<View> {
             super.mo9904F(coordinatorLayout, view, i);
             i2 = 0;
         }
-        this.f10102f = i2;
+        this.f10110f = i2;
     }
 
     /* access modifiers changed from: package-private */
@@ -76,11 +76,11 @@ abstract class AbstractC3058b extends C3059c<View> {
     /* access modifiers changed from: package-private */
     /* renamed from: I */
     public final int mo9905I(View view) {
-        if (this.f10103g == 0) {
+        if (this.f10111g == 0) {
             return 0;
         }
         float J = mo9890J(view);
-        int i = this.f10103g;
+        int i = this.f10111g;
         return C0920a.m5393b((int) (J * ((float) i)), 0, i);
     }
 
@@ -90,7 +90,7 @@ abstract class AbstractC3058b extends C3059c<View> {
 
     /* renamed from: K */
     public final int mo9906K() {
-        return this.f10103g;
+        return this.f10111g;
     }
 
     /* access modifiers changed from: package-private */
@@ -102,12 +102,12 @@ abstract class AbstractC3058b extends C3059c<View> {
     /* access modifiers changed from: package-private */
     /* renamed from: M */
     public final int mo9907M() {
-        return this.f10102f;
+        return this.f10110f;
     }
 
     /* renamed from: O */
     public final void mo9908O(int i) {
-        this.f10103g = i;
+        this.f10111g = i;
     }
 
     /* access modifiers changed from: protected */

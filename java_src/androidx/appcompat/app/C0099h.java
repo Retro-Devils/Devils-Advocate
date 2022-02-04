@@ -189,9 +189,9 @@ public class C0099h {
 
     /* renamed from: t */
     private static Context m434t(Context context, AttributeSet attributeSet, boolean z, boolean z2) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C0763j.f3647O3, 0, 0);
-        int resourceId = z ? obtainStyledAttributes.getResourceId(C0763j.f3652P3, 0) : 0;
-        if (z2 && resourceId == 0 && (resourceId = obtainStyledAttributes.getResourceId(C0763j.f3657Q3, 0)) != 0) {
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C0763j.f3651O3, 0, 0);
+        int resourceId = z ? obtainStyledAttributes.getResourceId(C0763j.f3656P3, 0) : 0;
+        if (z2 && resourceId == 0 && (resourceId = obtainStyledAttributes.getResourceId(C0763j.f3661Q3, 0)) != 0) {
             Log.i("AppCompatViewInflater", "app:theme is now deprecated. Please move to using android:theme instead.");
         }
         obtainStyledAttributes.recycle();

@@ -7,21 +7,21 @@ import java.util.List;
 public class C3447e {
 
     /* renamed from: a */
-    private String f11692a = "";
+    private String f11701a = "";
 
     /* renamed from: b */
-    private String f11693b = "";
+    private String f11702b = "";
 
     /* renamed from: c */
-    private String f11694c = "";
+    private String f11703c = "";
 
     /* renamed from: d */
-    private List<EnumC3448f> f11695d = new ArrayList();
+    private List<EnumC3448f> f11704d = new ArrayList();
 
     public C3447e(String str, String str2, String str3, List<EnumC3448f> list) {
-        this.f11692a = str;
-        this.f11693b = str2;
-        this.f11694c = str3;
-        this.f11695d = list;
+        this.f11701a = str;
+        this.f11702b = str2;
+        this.f11703c = str3;
+        this.f11704d = list;
     }
 }

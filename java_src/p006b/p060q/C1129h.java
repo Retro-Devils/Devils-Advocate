@@ -10,44 +10,44 @@ import android.util.Property;
 public class C1129h<T> extends Property<T, Float> {
 
     /* renamed from: a */
-    private final Property<T, PointF> f5090a;
+    private final Property<T, PointF> f5097a;
 
     /* renamed from: b */
-    private final PathMeasure f5091b;
+    private final PathMeasure f5098b;
 
     /* renamed from: c */
-    private final float f5092c;
+    private final float f5099c;
 
     /* renamed from: d */
-    private final float[] f5093d = new float[2];
+    private final float[] f5100d = new float[2];
 
     /* renamed from: e */
-    private final PointF f5094e = new PointF();
+    private final PointF f5101e = new PointF();
 
     /* renamed from: f */
-    private float f5095f;
+    private float f5102f;
 
     C1129h(Property<T, PointF> property, Path path) {
         super(Float.class, property.getName());
-        this.f5090a = property;
+        this.f5097a = property;
         PathMeasure pathMeasure = new PathMeasure(path, false);
-        this.f5091b = pathMeasure;
-        this.f5092c = pathMeasure.getLength();
+        this.f5098b = pathMeasure;
+        this.f5099c = pathMeasure.getLength();
     }
 
     /* renamed from: a */
     public Float get(T t) {
-        return Float.valueOf(this.f5095f);
+        return Float.valueOf(this.f5102f);
     }
 
     /* renamed from: b */
     public void set(T t, Float f) {
-        this.f5095f = f.floatValue();
-        this.f5091b.getPosTan(this.f5092c * f.floatValue(), this.f5093d, null);
-        PointF pointF = this.f5094e;
-        float[] fArr = this.f5093d;
+        this.f5102f = f.floatValue();
+        this.f5098b.getPosTan(this.f5099c * f.floatValue(), this.f5100d, null);
+        PointF pointF = this.f5101e;
+        float[] fArr = this.f5100d;
         pointF.x = fArr[0];
         pointF.y = fArr[1];
-        this.f5090a.set(t, pointF);
+        this.f5097a.set(t, pointF);
     }
 }

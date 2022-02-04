@@ -13,10 +13,10 @@ import java.util.List;
 public final class C2027d {
 
     /* renamed from: a */
-    private final Context f7450a;
+    private final Context f7458a;
 
     public C2027d(Context context) {
-        this.f7450a = context;
+        this.f7458a = context;
     }
 
     /* renamed from: b */
@@ -50,7 +50,7 @@ public final class C2027d {
         }
         ArrayList arrayList = new ArrayList();
         try {
-            ApplicationInfo applicationInfo = this.f7450a.getPackageManager().getApplicationInfo(this.f7450a.getPackageName(), 128);
+            ApplicationInfo applicationInfo = this.f7458a.getPackageManager().getApplicationInfo(this.f7458a.getPackageName(), 128);
             if (applicationInfo.metaData == null) {
                 if (Log.isLoggable("ManifestParser", 3)) {
                     Log.d("ManifestParser", "Got null app info metadata");

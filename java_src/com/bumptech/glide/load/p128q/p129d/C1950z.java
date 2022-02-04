@@ -22,19 +22,19 @@ import java.util.concurrent.locks.ReentrantLock;
 public final class C1950z {
 
     /* renamed from: a */
-    private static final Paint f7251a = new Paint(6);
+    private static final Paint f7259a = new Paint(6);
 
     /* renamed from: b */
-    private static final Paint f7252b = new Paint(7);
+    private static final Paint f7260b = new Paint(7);
 
     /* renamed from: c */
-    private static final Paint f7253c;
+    private static final Paint f7261c;
 
     /* renamed from: d */
-    private static final Set<String> f7254d;
+    private static final Set<String> f7262d;
 
     /* renamed from: e */
-    private static final Lock f7255e;
+    private static final Lock f7263e;
 
     /* renamed from: com.bumptech.glide.load.q.d.z$a  reason: invalid class name */
     private static final class locksLockC1951a implements Lock {
@@ -67,24 +67,24 @@ public final class C1950z {
 
     static {
         HashSet hashSet = new HashSet(Arrays.asList("XT1085", "XT1092", "XT1093", "XT1094", "XT1095", "XT1096", "XT1097", "XT1098", "XT1031", "XT1028", "XT937C", "XT1032", "XT1008", "XT1033", "XT1035", "XT1034", "XT939G", "XT1039", "XT1040", "XT1042", "XT1045", "XT1063", "XT1064", "XT1068", "XT1069", "XT1072", "XT1077", "XT1078", "XT1079"));
-        f7254d = hashSet;
-        f7255e = hashSet.contains(Build.MODEL) ? new ReentrantLock() : new locksLockC1951a();
+        f7262d = hashSet;
+        f7263e = hashSet.contains(Build.MODEL) ? new ReentrantLock() : new locksLockC1951a();
         Paint paint = new Paint(7);
-        f7253c = paint;
+        f7261c = paint;
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
     }
 
     /* renamed from: a */
     private static void m8824a(Bitmap bitmap, Bitmap bitmap2, Matrix matrix) {
-        Lock lock = f7255e;
+        Lock lock = f7263e;
         lock.lock();
         try {
             Canvas canvas = new Canvas(bitmap2);
-            canvas.drawBitmap(bitmap, matrix, f7251a);
+            canvas.drawBitmap(bitmap, matrix, f7259a);
             m8827d(canvas);
             lock.unlock();
         } catch (Throwable th) {
-            f7255e.unlock();
+            f7263e.unlock();
             throw th;
         }
     }
@@ -169,7 +169,7 @@ public final class C1950z {
 
     /* renamed from: f */
     public static Lock m8829f() {
-        return f7255e;
+        return f7263e;
     }
 
     /* renamed from: g */

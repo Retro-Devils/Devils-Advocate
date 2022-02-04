@@ -25,7 +25,7 @@ public class C1272k extends AbstractC1273l<JSONObject> {
     public C1245p<JSONObject> mo6183F(C1236k kVar) {
         C1238m mVar;
         try {
-            return C1245p.m6654c(new JSONObject(new String(kVar.f5436b, C1266g.m6722e(kVar.f5437c, "utf-8"))), C1266g.m6720c(kVar));
+            return C1245p.m6654c(new JSONObject(new String(kVar.f5443b, C1266g.m6722e(kVar.f5444c, "utf-8"))), C1266g.m6720c(kVar));
         } catch (UnsupportedEncodingException e) {
             mVar = new C1238m(e);
             return C1245p.m6653a(mVar);

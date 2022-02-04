@@ -8,15 +8,15 @@ import android.text.TextUtils;
 public final class C3008j0 {
 
     /* renamed from: a */
-    private static final Uri f10012a;
+    private static final Uri f10020a;
 
     /* renamed from: b */
-    private static final Uri f10013b;
+    private static final Uri f10021b;
 
     static {
         Uri parse = Uri.parse("https://plus.google.com/");
-        f10012a = parse;
-        f10013b = parse.buildUpon().appendPath("circles").appendPath("find").build();
+        f10020a = parse;
+        f10021b = parse.buildUpon().appendPath("circles").appendPath("find").build();
     }
 
     /* renamed from: a */

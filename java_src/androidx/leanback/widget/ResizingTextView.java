@@ -55,13 +55,13 @@ class ResizingTextView extends TextView {
         super(context, attributeSet, i);
         this.f2680g = false;
         this.f2681h = false;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4936P, i, i2);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4943P, i, i2);
         try {
-            this.f2675b = obtainStyledAttributes.getInt(C1080l.f4938R, 1);
-            this.f2676c = obtainStyledAttributes.getDimensionPixelSize(C1080l.f4941U, -1);
-            this.f2677d = obtainStyledAttributes.getBoolean(C1080l.f4937Q, false);
-            this.f2678e = obtainStyledAttributes.getDimensionPixelOffset(C1080l.f4940T, 0);
-            this.f2679f = obtainStyledAttributes.getDimensionPixelOffset(C1080l.f4939S, 0);
+            this.f2675b = obtainStyledAttributes.getInt(C1080l.f4945R, 1);
+            this.f2676c = obtainStyledAttributes.getDimensionPixelSize(C1080l.f4948U, -1);
+            this.f2677d = obtainStyledAttributes.getBoolean(C1080l.f4944Q, false);
+            this.f2678e = obtainStyledAttributes.getDimensionPixelOffset(C1080l.f4947T, 0);
+            this.f2679f = obtainStyledAttributes.getDimensionPixelOffset(C1080l.f4946S, 0);
         } finally {
             obtainStyledAttributes.recycle();
         }

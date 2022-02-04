@@ -13,16 +13,16 @@ public class RestoreActivity extends ActivityC0070c implements C2318g.AbstractC2
     class AsyncTaskC2128a extends AsyncTask<Void, Void, Void> {
 
         /* renamed from: a */
-        boolean f7695a;
+        boolean f7703a;
 
         public AsyncTaskC2128a(boolean z) {
-            this.f7695a = z;
+            this.f7703a = z;
         }
 
         /* access modifiers changed from: protected */
         /* renamed from: a */
         public Void doInBackground(Void... voidArr) {
-            if (!this.f7695a) {
+            if (!this.f7703a) {
                 return null;
             }
             try {
@@ -40,7 +40,7 @@ public class RestoreActivity extends ActivityC0070c implements C2318g.AbstractC2
                 c.execSQL("UPDATE roms SET present=0,merged_with=-1,has_images=NULL,cover_status=21255");
                 return null;
             } catch (Exception unused) {
-                this.f7695a = false;
+                this.f7703a = false;
                 return null;
             }
         }
@@ -53,7 +53,7 @@ public class RestoreActivity extends ActivityC0070c implements C2318g.AbstractC2
             RestoreActivity restoreActivity = RestoreActivity.this;
             Intent intent = new Intent(restoreActivity, C2219c3.m9805k(restoreActivity).mo8197u() ? TVActivity.class : MainActivity.class);
             intent.setFlags(268435456);
-            intent.putExtra("restore_success", this.f7695a);
+            intent.putExtra("restore_success", this.f7703a);
             RestoreActivity.this.startActivity(intent);
             RestoreActivity.this.finish();
         }

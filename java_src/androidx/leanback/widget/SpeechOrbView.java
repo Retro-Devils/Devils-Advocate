@@ -45,7 +45,7 @@ public class SpeechOrbView extends SearchOrbView {
     /* renamed from: f */
     public void mo3182f() {
         setOrbColors(this.f2774u);
-        setOrbIcon(getResources().getDrawable(C1072d.APKTOOL_DUMMY_17b));
+        setOrbIcon(getResources().getDrawable(C1072d.f4926c));
         mo3144a(true);
         mo3145b(false);
         mo3146c(1.0f);
@@ -56,7 +56,7 @@ public class SpeechOrbView extends SearchOrbView {
     /* renamed from: g */
     public void mo3183g() {
         setOrbColors(this.f2775v);
-        setOrbIcon(getResources().getDrawable(C1072d.APKTOOL_DUMMY_17c));
+        setOrbIcon(getResources().getDrawable(C1072d.f4927d));
         mo3144a(hasFocus());
         mo3146c(1.0f);
         this.f2777x = false;

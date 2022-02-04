@@ -16,7 +16,7 @@ import java.util.concurrent.locks.Lock;
 public final class C1933n {
 
     /* renamed from: a */
-    private static final AbstractC1695e f7218a = new C1934a();
+    private static final AbstractC1695e f7226a = new C1934a();
 
     /* renamed from: com.bumptech.glide.load.q.d.n$a */
     class C1934a extends C1696f {
@@ -43,7 +43,7 @@ public final class C1933n {
             bitmap = null;
         }
         if (!z) {
-            eVar = f7218a;
+            eVar = f7226a;
         }
         return C1910e.m8673g(bitmap, eVar);
     }

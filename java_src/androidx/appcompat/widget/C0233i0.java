@@ -302,9 +302,9 @@ public class C0233i0 implements AbstractC0150p {
         this.f1047G = new Rect();
         this.f1051e = context;
         this.f1046F = new Handler(context.getMainLooper());
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C0763j.f3774o1, i, i2);
-        this.f1056j = obtainStyledAttributes.getDimensionPixelOffset(C0763j.f3779p1, 0);
-        int dimensionPixelOffset = obtainStyledAttributes.getDimensionPixelOffset(C0763j.f3784q1, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C0763j.f3778o1, i, i2);
+        this.f1056j = obtainStyledAttributes.getDimensionPixelOffset(C0763j.f3783p1, 0);
+        int dimensionPixelOffset = obtainStyledAttributes.getDimensionPixelOffset(C0763j.f3788q1, 0);
         this.f1057k = dimensionPixelOffset;
         if (dimensionPixelOffset != 0) {
             this.f1059m = true;

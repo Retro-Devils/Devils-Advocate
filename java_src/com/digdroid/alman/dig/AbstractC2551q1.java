@@ -11,28 +11,28 @@ import java.util.Calendar;
 public abstract class AbstractC2551q1 extends CursorAdapter {
 
     /* renamed from: b */
-    C2774t3 f8884b;
+    C2774t3 f8892b;
 
     /* renamed from: c */
-    Cursor f8885c;
+    Cursor f8893c;
 
     /* renamed from: d */
-    float f8886d;
+    float f8894d;
 
     /* renamed from: e */
-    LayoutInflater f8887e;
+    LayoutInflater f8895e;
 
     public AbstractC2551q1(Activity activity, C2774t3 t3Var, Cursor cursor, float f) {
         super((Context) activity, cursor, false);
-        this.f8884b = t3Var;
-        this.f8885c = cursor;
-        this.f8886d = f;
-        this.f8887e = LayoutInflater.from(activity);
+        this.f8892b = t3Var;
+        this.f8893c = cursor;
+        this.f8894d = f;
+        this.f8895e = LayoutInflater.from(activity);
     }
 
     /* renamed from: a */
     public void mo8970a() {
-        Cursor cursor = this.f8885c;
+        Cursor cursor = this.f8893c;
         if (cursor != null) {
             cursor.close();
         }

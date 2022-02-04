@@ -13,13 +13,13 @@ import java.util.WeakHashMap;
 public class C2020n {
 
     /* renamed from: a */
-    private final Set<AbstractC2039c> f7439a = Collections.newSetFromMap(new WeakHashMap());
+    private final Set<AbstractC2039c> f7447a = Collections.newSetFromMap(new WeakHashMap());
 
     /* renamed from: b */
-    private final List<AbstractC2039c> f7440b = new ArrayList();
+    private final List<AbstractC2039c> f7448b = new ArrayList();
 
     /* renamed from: c */
-    private boolean f7441c;
+    private boolean f7449c;
 
     /* renamed from: a */
     public boolean mo7696a(AbstractC2039c cVar) {
@@ -27,8 +27,8 @@ public class C2020n {
         if (cVar == null) {
             return true;
         }
-        boolean remove = this.f7439a.remove(cVar);
-        if (!this.f7440b.remove(cVar) && !remove) {
+        boolean remove = this.f7447a.remove(cVar);
+        if (!this.f7448b.remove(cVar) && !remove) {
             z = false;
         }
         if (z) {
@@ -39,43 +39,43 @@ public class C2020n {
 
     /* renamed from: b */
     public void mo7697b() {
-        for (AbstractC2039c cVar : C2082k.m9442i(this.f7439a)) {
+        for (AbstractC2039c cVar : C2082k.m9442i(this.f7447a)) {
             mo7696a(cVar);
         }
-        this.f7440b.clear();
+        this.f7448b.clear();
     }
 
     /* renamed from: c */
     public void mo7698c() {
-        this.f7441c = true;
-        for (AbstractC2039c cVar : C2082k.m9442i(this.f7439a)) {
+        this.f7449c = true;
+        for (AbstractC2039c cVar : C2082k.m9442i(this.f7447a)) {
             if (cVar.isRunning() || cVar.mo7795i()) {
                 cVar.clear();
-                this.f7440b.add(cVar);
+                this.f7448b.add(cVar);
             }
         }
     }
 
     /* renamed from: d */
     public void mo7699d() {
-        this.f7441c = true;
-        for (AbstractC2039c cVar : C2082k.m9442i(this.f7439a)) {
+        this.f7449c = true;
+        for (AbstractC2039c cVar : C2082k.m9442i(this.f7447a)) {
             if (cVar.isRunning()) {
                 cVar.mo7787b();
-                this.f7440b.add(cVar);
+                this.f7448b.add(cVar);
             }
         }
     }
 
     /* renamed from: e */
     public void mo7700e() {
-        for (AbstractC2039c cVar : C2082k.m9442i(this.f7439a)) {
+        for (AbstractC2039c cVar : C2082k.m9442i(this.f7447a)) {
             if (!cVar.mo7795i() && !cVar.mo7797j()) {
                 cVar.clear();
-                if (!this.f7441c) {
+                if (!this.f7449c) {
                     cVar.mo7792f();
                 } else {
-                    this.f7440b.add(cVar);
+                    this.f7448b.add(cVar);
                 }
             }
         }
@@ -83,19 +83,19 @@ public class C2020n {
 
     /* renamed from: f */
     public void mo7701f() {
-        this.f7441c = false;
-        for (AbstractC2039c cVar : C2082k.m9442i(this.f7439a)) {
+        this.f7449c = false;
+        for (AbstractC2039c cVar : C2082k.m9442i(this.f7447a)) {
             if (!cVar.mo7795i() && !cVar.isRunning()) {
                 cVar.mo7792f();
             }
         }
-        this.f7440b.clear();
+        this.f7448b.clear();
     }
 
     /* renamed from: g */
     public void mo7702g(AbstractC2039c cVar) {
-        this.f7439a.add(cVar);
-        if (!this.f7441c) {
+        this.f7447a.add(cVar);
+        if (!this.f7449c) {
             cVar.mo7792f();
             return;
         }
@@ -103,10 +103,10 @@ public class C2020n {
         if (Log.isLoggable("RequestTracker", 2)) {
             Log.v("RequestTracker", "Paused, delaying request");
         }
-        this.f7440b.add(cVar);
+        this.f7448b.add(cVar);
     }
 
     public String toString() {
-        return super.toString() + "{numRequests=" + this.f7439a.size() + ", isPaused=" + this.f7441c + "}";
+        return super.toString() + "{numRequests=" + this.f7447a.size() + ", isPaused=" + this.f7449c + "}";
     }
 }

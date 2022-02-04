@@ -8,7 +8,7 @@ import p006b.p061r.p062a.p063a.AbstractC1169a;
 public final class C1177f extends AbstractC1169a {
 
     /* renamed from: d */
-    public static final String[] f5214d = m6420a();
+    public static final String[] f5221d = m6420a();
 
     /* renamed from: b.r.a.a.f$a */
     public static final class C1178a extends AbstractC1169a.AbstractC1170a<C1178a> {
@@ -19,13 +19,13 @@ public final class C1177f extends AbstractC1169a {
 
         /* renamed from: i */
         public C1178a mo5905i(long j) {
-            this.f5210a.put("channel_id", Long.valueOf(j));
+            this.f5217a.put("channel_id", Long.valueOf(j));
             return this;
         }
 
         /* renamed from: j */
         public C1178a mo5906j(int i) {
-            this.f5210a.put("weight", Integer.valueOf(i));
+            this.f5217a.put("weight", Integer.valueOf(i));
             return this;
         }
     }
@@ -36,7 +36,7 @@ public final class C1177f extends AbstractC1169a {
 
     /* renamed from: a */
     private static String[] m6420a() {
-        return (String[]) C1176e.m6419a(AbstractC1169a.f5206c, new String[]{"channel_id", "weight"});
+        return (String[]) C1176e.m6419a(AbstractC1169a.f5213c, new String[]{"channel_id", "weight"});
     }
 
     @Override // p006b.p061r.p062a.p063a.AbstractC1171b
@@ -60,10 +60,10 @@ public final class C1177f extends AbstractC1169a {
         if (!(obj instanceof C1177f)) {
             return false;
         }
-        return this.f5209b.equals(((C1177f) obj).f5209b);
+        return this.f5216b.equals(((C1177f) obj).f5216b);
     }
 
     public String toString() {
-        return "PreviewProgram{" + this.f5209b.toString() + "}";
+        return "PreviewProgram{" + this.f5216b.toString() + "}";
     }
 }

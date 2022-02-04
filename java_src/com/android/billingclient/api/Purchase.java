@@ -7,36 +7,36 @@ import org.json.JSONObject;
 public class Purchase {
 
     /* renamed from: a */
-    private final String f6397a;
+    private final String f6405a;
 
     /* renamed from: b */
-    private final String f6398b;
+    private final String f6406b;
 
     /* renamed from: c */
-    private final JSONObject f6399c;
+    private final JSONObject f6407c;
 
     /* renamed from: com.android.billingclient.api.Purchase$a */
     public static class C1564a {
 
         /* renamed from: a */
-        private final List<Purchase> f6400a;
+        private final List<Purchase> f6408a;
 
         /* renamed from: b */
-        private final C1582g f6401b;
+        private final C1582g f6409b;
 
         public C1564a(C1582g gVar, List<Purchase> list) {
-            this.f6400a = list;
-            this.f6401b = gVar;
+            this.f6408a = list;
+            this.f6409b = gVar;
         }
 
         /* renamed from: a */
         public C1582g mo6892a() {
-            return this.f6401b;
+            return this.f6409b;
         }
 
         /* renamed from: b */
         public List<Purchase> mo6893b() {
-            return this.f6400a;
+            return this.f6408a;
         }
 
         /* renamed from: c */
@@ -46,35 +46,35 @@ public class Purchase {
     }
 
     public Purchase(String str, String str2) {
-        this.f6397a = str;
-        this.f6398b = str2;
-        this.f6399c = new JSONObject(str);
+        this.f6405a = str;
+        this.f6406b = str2;
+        this.f6407c = new JSONObject(str);
     }
 
     /* renamed from: a */
     public String mo6882a() {
-        return this.f6399c.optString("developerPayload");
+        return this.f6407c.optString("developerPayload");
     }
 
     /* renamed from: b */
     public String mo6883b() {
-        return this.f6397a;
+        return this.f6405a;
     }
 
     /* renamed from: c */
     public int mo6884c() {
-        return this.f6399c.optInt("purchaseState", 1) != 4 ? 1 : 2;
+        return this.f6407c.optInt("purchaseState", 1) != 4 ? 1 : 2;
     }
 
     /* renamed from: d */
     public String mo6885d() {
-        JSONObject jSONObject = this.f6399c;
+        JSONObject jSONObject = this.f6407c;
         return jSONObject.optString("token", jSONObject.optString("purchaseToken"));
     }
 
     /* renamed from: e */
     public String mo6886e() {
-        return this.f6398b;
+        return this.f6406b;
     }
 
     public boolean equals(Object obj) {
@@ -85,25 +85,25 @@ public class Purchase {
             return false;
         }
         Purchase purchase = (Purchase) obj;
-        return TextUtils.equals(this.f6397a, purchase.mo6883b()) && TextUtils.equals(this.f6398b, purchase.mo6886e());
+        return TextUtils.equals(this.f6405a, purchase.mo6883b()) && TextUtils.equals(this.f6406b, purchase.mo6886e());
     }
 
     /* renamed from: f */
     public String mo6888f() {
-        return this.f6399c.optString("productId");
+        return this.f6407c.optString("productId");
     }
 
     /* renamed from: g */
     public boolean mo6889g() {
-        return this.f6399c.optBoolean("acknowledged", true);
+        return this.f6407c.optBoolean("acknowledged", true);
     }
 
     public int hashCode() {
-        return this.f6397a.hashCode();
+        return this.f6405a.hashCode();
     }
 
     public String toString() {
-        String valueOf = String.valueOf(this.f6397a);
+        String valueOf = String.valueOf(this.f6405a);
         return valueOf.length() != 0 ? "Purchase. Json: ".concat(valueOf) : new String("Purchase. Json: ");
     }
 }

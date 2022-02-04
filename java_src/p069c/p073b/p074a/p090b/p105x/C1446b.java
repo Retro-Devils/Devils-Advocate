@@ -9,40 +9,40 @@ import android.util.Log;
 public class C1446b {
 
     /* renamed from: a */
-    public static final boolean f6088a = (Build.VERSION.SDK_INT >= 21);
+    public static final boolean f6096a = (Build.VERSION.SDK_INT >= 21);
 
     /* renamed from: b */
-    private static final int[] f6089b = {16842919};
+    private static final int[] f6097b = {16842919};
 
     /* renamed from: c */
-    private static final int[] f6090c = {16843623, 16842908};
+    private static final int[] f6098c = {16843623, 16842908};
 
     /* renamed from: d */
-    private static final int[] f6091d = {16842908};
+    private static final int[] f6099d = {16842908};
 
     /* renamed from: e */
-    private static final int[] f6092e = {16843623};
+    private static final int[] f6100e = {16843623};
 
     /* renamed from: f */
-    private static final int[] f6093f = {16842913, 16842919};
+    private static final int[] f6101f = {16842913, 16842919};
 
     /* renamed from: g */
-    private static final int[] f6094g = {16842913, 16843623, 16842908};
+    private static final int[] f6102g = {16842913, 16843623, 16842908};
 
     /* renamed from: h */
-    private static final int[] f6095h = {16842913, 16842908};
+    private static final int[] f6103h = {16842913, 16842908};
 
     /* renamed from: i */
-    private static final int[] f6096i = {16842913, 16843623};
+    private static final int[] f6104i = {16842913, 16843623};
 
     /* renamed from: j */
-    private static final int[] f6097j = {16842913};
+    private static final int[] f6105j = {16842913};
 
     /* renamed from: k */
-    private static final int[] f6098k = {16842910, 16842919};
+    private static final int[] f6106k = {16842910, 16842919};
 
     /* renamed from: l */
-    static final String f6099l = C1446b.class.getSimpleName();
+    static final String f6107l = C1446b.class.getSimpleName();
 
     private C1446b() {
     }
@@ -53,8 +53,8 @@ public class C1446b {
             return ColorStateList.valueOf(0);
         }
         int i = Build.VERSION.SDK_INT;
-        if (i >= 22 && i <= 27 && Color.alpha(colorStateList.getDefaultColor()) == 0 && Color.alpha(colorStateList.getColorForState(f6098k, 0)) != 0) {
-            Log.w(f6099l, "Use a non-transparent color for the default color as it will be used to finish ripple animations.");
+        if (i >= 22 && i <= 27 && Color.alpha(colorStateList.getDefaultColor()) == 0 && Color.alpha(colorStateList.getColorForState(f6106k, 0)) != 0) {
+            Log.w(f6107l, "Use a non-transparent color for the default color as it will be used to finish ripple animations.");
         }
         return colorStateList;
     }

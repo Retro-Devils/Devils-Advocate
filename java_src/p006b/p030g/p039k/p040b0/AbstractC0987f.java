@@ -10,11 +10,11 @@ public interface AbstractC0987f {
     public static abstract class AbstractC0988a {
 
         /* renamed from: a */
-        Bundle f4735a;
+        Bundle f4739a;
 
         /* renamed from: a */
         public void mo5530a(Bundle bundle) {
-            this.f4735a = bundle;
+            this.f4739a = bundle;
         }
     }
 

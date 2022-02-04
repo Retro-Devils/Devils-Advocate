@@ -17,7 +17,7 @@ import p069c.p073b.p074a.p075a.p077b.C1282d;
 public class GoogleApiActivity extends Activity implements DialogInterface.OnCancelListener {
 
     /* renamed from: b */
-    private int f9742b = 0;
+    private int f9750b = 0;
 
     /* renamed from: a */
     public static PendingIntent m11999a(Context context, PendingIntent pendingIntent, int i) {
@@ -38,7 +38,7 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
         super.onActivityResult(i, i2, intent);
         if (i == 1) {
             boolean booleanExtra = getIntent().getBooleanExtra("notify_manager", true);
-            this.f9742b = 0;
+            this.f9750b = 0;
             setResult(i2, intent);
             if (booleanExtra) {
                 C2927d f = C2927d.m12078f(this);
@@ -49,14 +49,14 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
                 }
             }
         } else if (i == 2) {
-            this.f9742b = 0;
+            this.f9750b = 0;
             setResult(i2, intent);
         }
         finish();
     }
 
     public void onCancel(DialogInterface dialogInterface) {
-        this.f9742b = 0;
+        this.f9750b = 0;
         setResult(0);
         finish();
     }
@@ -66,9 +66,9 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
         String str;
         super.onCreate(bundle);
         if (bundle != null) {
-            this.f9742b = bundle.getInt("resolution");
+            this.f9750b = bundle.getInt("resolution");
         }
-        if (this.f9742b != 1) {
+        if (this.f9750b != 1) {
             Bundle extras = getIntent().getExtras();
             if (extras == null) {
                 str = "Activity started without extras";
@@ -80,14 +80,14 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
                 } else if (pendingIntent != null) {
                     try {
                         startIntentSenderForResult(pendingIntent.getIntentSender(), 1, null, 0, 0, 0);
-                        this.f9742b = 1;
+                        this.f9750b = 1;
                         return;
                     } catch (IntentSender.SendIntentException e) {
                         Log.e("GoogleApiActivity", "Failed to launch pendingIntent", e);
                     }
                 } else {
                     C1282d.m6764k().mo6286l(this, num.intValue(), 2, this);
-                    this.f9742b = 1;
+                    this.f9750b = 1;
                     return;
                 }
             }
@@ -98,7 +98,7 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
 
     /* access modifiers changed from: protected */
     public void onSaveInstanceState(Bundle bundle) {
-        bundle.putInt("resolution", this.f9742b);
+        bundle.putInt("resolution", this.f9750b);
         super.onSaveInstanceState(bundle);
     }
 }

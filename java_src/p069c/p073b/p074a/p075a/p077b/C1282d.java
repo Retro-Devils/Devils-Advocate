@@ -33,16 +33,16 @@ import p069c.p073b.p074a.p075a.p081d.p082a.HandlerC1308d;
 public class C1282d extends C1284e {
 
     /* renamed from: c */
-    private static final Object f5538c = new Object();
+    private static final Object f5546c = new Object();
 
     /* renamed from: d */
-    private static final C1282d f5539d = new C1282d();
+    private static final C1282d f5547d = new C1282d();
 
     /* renamed from: e */
-    public static final int f5540e = C1284e.f5544a;
+    public static final int f5548e = C1284e.f5552a;
 
     /* renamed from: f */
-    private String f5541f;
+    private String f5549f;
 
     /* access modifiers changed from: private */
     @SuppressLint({"HandlerLeak"})
@@ -50,12 +50,12 @@ public class C1282d extends C1284e {
     public class HandlerC1283a extends HandlerC1308d {
 
         /* renamed from: a */
-        private final Context f5542a;
+        private final Context f5550a;
 
         /* JADX INFO: super call moved to the top of the method (can break code semantics) */
         public HandlerC1283a(Context context) {
             super(Looper.myLooper() == null ? Looper.getMainLooper() : Looper.myLooper());
-            this.f5542a = context.getApplicationContext();
+            this.f5550a = context.getApplicationContext();
         }
 
         public final void handleMessage(Message message) {
@@ -67,16 +67,16 @@ public class C1282d extends C1284e {
                 Log.w("GoogleApiAvailability", sb.toString());
                 return;
             }
-            int e = C1282d.this.mo6281e(this.f5542a);
+            int e = C1282d.this.mo6281e(this.f5550a);
             if (C1282d.this.mo6283g(e)) {
-                C1282d.this.mo6287m(this.f5542a, e);
+                C1282d.this.mo6287m(this.f5550a, e);
             }
         }
     }
 
     /* renamed from: k */
     public static C1282d m6764k() {
-        return f5539d;
+        return f5547d;
     }
 
     /* renamed from: n */
@@ -133,7 +133,7 @@ public class C1282d extends C1284e {
                 C3027r.m12378j(C3044f.m12446e());
                 n.mo2195m(context.getApplicationInfo().icon).mo2194l(2);
                 if (C3043e.m12440c(context)) {
-                    n.mo2185a(C1277a.APKTOOL_DUMMY_6b, resources.getString(C1278b.common_open_on_phone), pendingIntent);
+                    n.mo2185a(C1277a.f5535a, resources.getString(C1278b.common_open_on_phone), pendingIntent);
                 } else {
                     n.mo2190g(pendingIntent);
                 }
@@ -159,7 +159,7 @@ public class C1282d extends C1284e {
             Notification b2 = n.mo2186b();
             if (i == 1 || i == 2 || i == 3) {
                 i2 = 10436;
-                C1286g.f5548b.set(false);
+                C1286g.f5556b.set(false);
             } else {
                 i2 = 39789;
             }
@@ -172,8 +172,8 @@ public class C1282d extends C1284e {
     /* renamed from: s */
     private final String m6768s() {
         String str;
-        synchronized (f5538c) {
-            str = this.f5541f;
+        synchronized (f5546c) {
+            str = this.f5549f;
         }
         return str;
     }

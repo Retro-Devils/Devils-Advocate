@@ -7,28 +7,28 @@ import java.util.BitSet;
 public class C3351b {
 
     /* renamed from: a */
-    long f11282a;
+    long f11291a;
 
     /* renamed from: b */
-    long[] f11283b;
+    long[] f11292b;
 
     /* renamed from: c */
-    BitSet f11284c;
+    BitSet f11293c;
 
     /* renamed from: d */
-    long[] f11285d;
+    long[] f11294d;
 
     /* renamed from: e */
-    C3366i[] f11286e;
+    C3366i[] f11295e;
 
     /* renamed from: f */
-    C3374q f11287f;
+    C3374q f11296f;
 
     /* renamed from: g */
-    C3368k[] f11288g;
+    C3368k[] f11297g;
 
     /* renamed from: h */
-    C3373p f11289h;
+    C3373p f11298h;
 
     C3351b() {
     }
@@ -44,6 +44,6 @@ public class C3351b {
     }
 
     public String toString() {
-        return "Archive with packed streams starting at offset " + this.f11282a + ", " + m13944a(this.f11283b) + " pack sizes, " + m13944a(this.f11285d) + " CRCs, " + m13945b(this.f11286e) + " folders, " + m13945b(this.f11288g) + " files and " + this.f11289h;
+        return "Archive with packed streams starting at offset " + this.f11291a + ", " + m13944a(this.f11292b) + " pack sizes, " + m13944a(this.f11294d) + " CRCs, " + m13945b(this.f11295e) + " folders, " + m13945b(this.f11297g) + " files and " + this.f11298h;
     }
 }

@@ -11,28 +11,28 @@ import p069c.p073b.p074a.p108c.p109a.p110f.AbstractC1523p;
 public final class C1512l extends AbstractC1514n<AbstractC1507i> implements AbstractC1496d {
 
     /* renamed from: l */
-    private final String f6302l;
+    private final String f6310l;
 
     /* renamed from: m */
-    private final String f6303m;
+    private final String f6311m;
 
     /* renamed from: n */
-    private final String f6304n;
+    private final String f6312n;
 
     /* renamed from: o */
-    private boolean f6305o;
+    private boolean f6313o;
 
     public C1512l(Context context, String str, String str2, String str3, AbstractC1523p.AbstractC1524a aVar, AbstractC1523p.AbstractC1525b bVar) {
         super(context, aVar, bVar);
-        this.f6302l = (String) C1494b.m7373a(str);
-        this.f6303m = C1494b.m7375c(str2, "callingPackage cannot be null or empty");
-        this.f6304n = C1494b.m7375c(str3, "callingAppVersion cannot be null or empty");
+        this.f6310l = (String) C1494b.m7373a(str);
+        this.f6311m = C1494b.m7375c(str2, "callingPackage cannot be null or empty");
+        this.f6312n = C1494b.m7375c(str3, "callingAppVersion cannot be null or empty");
     }
 
     /* renamed from: y */
     private final void m7438y() {
         mo6800w();
-        if (this.f6305o) {
+        if (this.f6313o) {
             throw new IllegalStateException("Connection client has been released");
         }
     }
@@ -56,7 +56,7 @@ public final class C1512l extends AbstractC1514n<AbstractC1507i> implements Abst
                 ((AbstractC1507i) mo6801x()).mo6783b(z);
             } catch (RemoteException unused) {
             }
-            this.f6305o = true;
+            this.f6313o = true;
         }
     }
 
@@ -72,13 +72,13 @@ public final class C1512l extends AbstractC1514n<AbstractC1507i> implements Abst
     @Override // p069c.p073b.p074a.p108c.p109a.p110f.AbstractC1514n
     /* renamed from: j */
     public final void mo6790j(AbstractC1504h hVar, AbstractC1514n.BinderC1519e eVar) {
-        hVar.mo6780p(eVar, 1202, this.f6303m, this.f6304n, this.f6302l, null);
+        hVar.mo6780p(eVar, 1202, this.f6311m, this.f6312n, this.f6310l, null);
     }
 
     @Override // p069c.p073b.p074a.p108c.p109a.p110f.AbstractC1523p, p069c.p073b.p074a.p108c.p109a.p110f.AbstractC1514n
     /* renamed from: k */
     public final void mo6791k() {
-        if (!this.f6305o) {
+        if (!this.f6313o) {
             mo6748b(true);
         }
         super.mo6791k();

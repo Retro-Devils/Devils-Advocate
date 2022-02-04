@@ -9,10 +9,10 @@ import android.os.Message;
 public class C1797y {
 
     /* renamed from: a */
-    private boolean f7020a;
+    private boolean f7028a;
 
     /* renamed from: b */
-    private final Handler f7021b = new Handler(Looper.getMainLooper(), new C1798a());
+    private final Handler f7029b = new Handler(Looper.getMainLooper(), new C1798a());
 
     /* renamed from: com.bumptech.glide.load.o.y$a */
     private static final class C1798a implements Handler.Callback {
@@ -34,13 +34,13 @@ public class C1797y {
     /* access modifiers changed from: package-private */
     /* renamed from: a */
     public synchronized void mo7388a(AbstractC1794v<?> vVar, boolean z) {
-        if (!this.f7020a) {
+        if (!this.f7028a) {
             if (!z) {
-                this.f7020a = true;
+                this.f7028a = true;
                 vVar.mo7361f();
-                this.f7020a = false;
+                this.f7028a = false;
             }
         }
-        this.f7021b.obtainMessage(1, vVar).sendToTarget();
+        this.f7029b.obtainMessage(1, vVar).sendToTarget();
     }
 }

@@ -9,142 +9,142 @@ import p155e.p156a.p157a.p158a.p161c.AbstractC3375a;
 public class C3376a extends AbstractC3375a {
 
     /* renamed from: A */
-    private C3377a f11368A;
+    private C3377a f11377A;
 
     /* renamed from: c */
-    private int f11369c;
+    private int f11378c;
 
     /* renamed from: d */
-    private int f11370d;
+    private int f11379d;
 
     /* renamed from: e */
-    private int f11371e;
+    private int f11380e;
 
     /* renamed from: f */
-    private boolean f11372f;
+    private boolean f11381f;
 
     /* renamed from: g */
-    private int f11373g;
+    private int f11382g;
 
     /* renamed from: h */
-    private int f11374h;
+    private int f11383h;
 
     /* renamed from: i */
-    private final C3378b f11375i;
+    private final C3378b f11384i;
 
     /* renamed from: j */
-    private int f11376j;
+    private int f11385j;
 
     /* renamed from: k */
-    private InputStream f11377k;
+    private InputStream f11386k;
 
     /* renamed from: l */
-    private final boolean f11378l;
+    private final boolean f11387l;
 
     /* renamed from: m */
-    private int f11379m;
+    private int f11388m;
 
     /* renamed from: n */
-    private int f11380n;
+    private int f11389n;
 
     /* renamed from: o */
-    private int f11381o;
+    private int f11390o;
 
     /* renamed from: p */
-    private int f11382p;
+    private int f11391p;
 
     /* renamed from: q */
-    private int f11383q;
+    private int f11392q;
 
     /* renamed from: r */
-    private int f11384r;
+    private int f11393r;
 
     /* renamed from: s */
-    private int f11385s;
+    private int f11394s;
 
     /* renamed from: t */
-    private int f11386t;
+    private int f11395t;
 
     /* renamed from: u */
-    private int f11387u;
+    private int f11396u;
 
     /* renamed from: v */
-    private int f11388v;
+    private int f11397v;
 
     /* renamed from: w */
-    private int f11389w;
+    private int f11398w;
 
     /* renamed from: x */
-    private int f11390x;
+    private int f11399x;
 
     /* renamed from: y */
-    private int f11391y;
+    private int f11400y;
 
     /* renamed from: z */
-    private char f11392z;
+    private char f11401z;
 
     /* access modifiers changed from: private */
     /* renamed from: e.a.a.a.c.b.a$a */
     public static final class C3377a {
 
         /* renamed from: a */
-        final boolean[] f11393a = new boolean[256];
+        final boolean[] f11402a = new boolean[256];
 
         /* renamed from: b */
-        final byte[] f11394b = new byte[256];
+        final byte[] f11403b = new byte[256];
 
         /* renamed from: c */
-        final byte[] f11395c = new byte[18002];
+        final byte[] f11404c = new byte[18002];
 
         /* renamed from: d */
-        final byte[] f11396d = new byte[18002];
+        final byte[] f11405d = new byte[18002];
 
         /* renamed from: e */
-        final int[] f11397e = new int[256];
+        final int[] f11406e = new int[256];
 
         /* renamed from: f */
-        final int[][] f11398f = ((int[][]) Array.newInstance(int.class, 6, 258));
+        final int[][] f11407f = ((int[][]) Array.newInstance(int.class, 6, 258));
 
         /* renamed from: g */
-        final int[][] f11399g = ((int[][]) Array.newInstance(int.class, 6, 258));
+        final int[][] f11408g = ((int[][]) Array.newInstance(int.class, 6, 258));
 
         /* renamed from: h */
-        final int[][] f11400h = ((int[][]) Array.newInstance(int.class, 6, 258));
+        final int[][] f11409h = ((int[][]) Array.newInstance(int.class, 6, 258));
 
         /* renamed from: i */
-        final int[] f11401i = new int[6];
+        final int[] f11410i = new int[6];
 
         /* renamed from: j */
-        final int[] f11402j = new int[257];
+        final int[] f11411j = new int[257];
 
         /* renamed from: k */
-        final char[] f11403k = new char[256];
+        final char[] f11412k = new char[256];
 
         /* renamed from: l */
-        final char[][] f11404l = ((char[][]) Array.newInstance(char.class, 6, 258));
+        final char[][] f11413l = ((char[][]) Array.newInstance(char.class, 6, 258));
 
         /* renamed from: m */
-        final byte[] f11405m = new byte[6];
+        final byte[] f11414m = new byte[6];
 
         /* renamed from: n */
-        int[] f11406n;
+        int[] f11415n;
 
         /* renamed from: o */
-        byte[] f11407o;
+        byte[] f11416o;
 
         C3377a(int i) {
-            this.f11407o = new byte[(i * 100000)];
+            this.f11416o = new byte[(i * 100000)];
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: a */
         public int[] mo11352a(int i) {
-            int[] iArr = this.f11406n;
+            int[] iArr = this.f11415n;
             if (iArr != null && iArr.length >= i) {
                 return iArr;
             }
             int[] iArr2 = new int[i];
-            this.f11406n = iArr2;
+            this.f11415n = iArr2;
             return iArr2;
         }
     }
@@ -154,10 +154,10 @@ public class C3376a extends AbstractC3375a {
     }
 
     public C3376a(InputStream inputStream, boolean z) {
-        this.f11375i = new C3378b();
-        this.f11379m = 1;
-        this.f11377k = inputStream;
-        this.f11378l = z;
+        this.f11384i = new C3378b();
+        this.f11388m = 1;
+        this.f11386k = inputStream;
+        this.f11387l = z;
         m14028m(true);
         m14029n();
     }
@@ -179,10 +179,10 @@ public class C3376a extends AbstractC3375a {
 
     /* renamed from: f */
     private int m14021f(int i) {
-        int i2 = this.f11374h;
-        int i3 = this.f11373g;
+        int i2 = this.f11383h;
+        int i3 = this.f11382g;
         if (i2 < i) {
-            InputStream inputStream = this.f11377k;
+            InputStream inputStream = this.f11386k;
             do {
                 int read = inputStream.read();
                 if (read >= 0) {
@@ -192,33 +192,33 @@ public class C3376a extends AbstractC3375a {
                     throw new IOException("unexpected end of stream");
                 }
             } while (i2 < i);
-            this.f11373g = i3;
+            this.f11382g = i3;
         }
         int i4 = i2 - i;
-        this.f11374h = i4;
+        this.f11383h = i4;
         return ((1 << i) - 1) & (i3 >> i4);
     }
 
     /* renamed from: g */
     private boolean m14022g() {
         int d = m14019d();
-        this.f11381o = d;
-        this.f11379m = 0;
-        this.f11368A = null;
-        if (d == this.f11383q) {
-            return !this.f11378l || !m14028m(false);
+        this.f11390o = d;
+        this.f11388m = 0;
+        this.f11377A = null;
+        if (d == this.f11392q) {
+            return !this.f11387l || !m14028m(false);
         }
         throw new IOException("BZip2 CRC error");
     }
 
     /* renamed from: h */
     private void m14023h(int i, int i2) {
-        C3377a aVar = this.f11368A;
-        char[][] cArr = aVar.f11404l;
-        int[] iArr = aVar.f11401i;
-        int[][] iArr2 = aVar.f11398f;
-        int[][] iArr3 = aVar.f11399g;
-        int[][] iArr4 = aVar.f11400h;
+        C3377a aVar = this.f11377A;
+        char[][] cArr = aVar.f11413l;
+        int[] iArr = aVar.f11410i;
+        int[][] iArr2 = aVar.f11407f;
+        int[][] iArr3 = aVar.f11408g;
+        int[][] iArr4 = aVar.f11409h;
         for (int i3 = 0; i3 < i2; i3++) {
             int i4 = 32;
             char[] cArr2 = cArr[i3];
@@ -244,20 +244,20 @@ public class C3376a extends AbstractC3375a {
 
     /* renamed from: i */
     private void m14024i() {
-        int a = this.f11375i.mo11353a();
-        this.f11382p = a;
-        int i = this.f11380n;
+        int a = this.f11384i.mo11353a();
+        this.f11391p = a;
+        int i = this.f11389n;
         if (i == a) {
-            int i2 = this.f11383q;
+            int i2 = this.f11392q;
             int i3 = (i2 >>> 31) | (i2 << 1);
-            this.f11383q = i3;
-            this.f11383q = a ^ i3;
+            this.f11392q = i3;
+            this.f11392q = a ^ i3;
             return;
         }
-        int i4 = this.f11381o;
+        int i4 = this.f11390o;
         int i5 = (i4 >>> 31) | (i4 << 1);
-        this.f11383q = i5;
-        this.f11383q = i5 ^ i;
+        this.f11392q = i5;
+        this.f11392q = i5 ^ i;
         throw new IOException("BZip2 CRC error");
     }
 
@@ -268,20 +268,20 @@ public class C3376a extends AbstractC3375a {
         char c;
         int i3;
         C3376a aVar = this;
-        aVar.f11370d = aVar.m14021f(24);
+        aVar.f11379d = aVar.m14021f(24);
         m14032q();
-        InputStream inputStream = aVar.f11377k;
-        C3377a aVar2 = aVar.f11368A;
-        byte[] bArr = aVar2.f11407o;
-        int[] iArr = aVar2.f11397e;
-        byte[] bArr2 = aVar2.f11395c;
-        byte[] bArr3 = aVar2.f11394b;
-        char[] cArr = aVar2.f11403k;
-        int[] iArr2 = aVar2.f11401i;
-        int[][] iArr3 = aVar2.f11398f;
-        int[][] iArr4 = aVar2.f11399g;
-        int[][] iArr5 = aVar2.f11400h;
-        int i4 = aVar.f11371e * 100000;
+        InputStream inputStream = aVar.f11386k;
+        C3377a aVar2 = aVar.f11377A;
+        byte[] bArr = aVar2.f11416o;
+        int[] iArr = aVar2.f11406e;
+        byte[] bArr2 = aVar2.f11404c;
+        byte[] bArr3 = aVar2.f11403b;
+        char[] cArr = aVar2.f11412k;
+        int[] iArr2 = aVar2.f11410i;
+        int[][] iArr3 = aVar2.f11407f;
+        int[][] iArr4 = aVar2.f11408g;
+        int[][] iArr5 = aVar2.f11409h;
+        int i4 = aVar.f11380e * 100000;
         int i5 = 256;
         while (true) {
             i5--;
@@ -291,10 +291,10 @@ public class C3376a extends AbstractC3375a {
             cArr[i5] = (char) i5;
             iArr[i5] = 0;
         }
-        int i6 = aVar.f11376j + 1;
+        int i6 = aVar.f11385j + 1;
         int k = aVar.m14026k(0);
-        int i7 = aVar.f11373g;
-        int i8 = aVar.f11374h;
+        int i7 = aVar.f11382g;
+        int i8 = aVar.f11383h;
         int i9 = bArr2[0] & 255;
         int[] iArr6 = iArr4[i9];
         int[] iArr7 = iArr3[i9];
@@ -469,21 +469,21 @@ public class C3376a extends AbstractC3375a {
                 }
             }
         }
-        aVar.f11369c = i12;
-        aVar.f11374h = i10;
-        aVar.f11373g = i16;
+        aVar.f11378c = i12;
+        aVar.f11383h = i10;
+        aVar.f11382g = i16;
     }
 
     /* renamed from: k */
     private int m14026k(int i) {
-        InputStream inputStream = this.f11377k;
-        C3377a aVar = this.f11368A;
-        int i2 = aVar.f11395c[i] & 255;
-        int[] iArr = aVar.f11398f[i2];
-        int i3 = aVar.f11401i[i2];
+        InputStream inputStream = this.f11386k;
+        C3377a aVar = this.f11377A;
+        int i2 = aVar.f11404c[i] & 255;
+        int[] iArr = aVar.f11407f[i2];
+        int i3 = aVar.f11410i[i2];
         int f = m14021f(i3);
-        int i4 = this.f11374h;
-        int i5 = this.f11373g;
+        int i4 = this.f11383h;
+        int i5 = this.f11382g;
         while (f > iArr[i3]) {
             i3++;
             while (i4 < 1) {
@@ -498,9 +498,9 @@ public class C3376a extends AbstractC3375a {
             i4--;
             f = (f << 1) | (1 & (i5 >> i4));
         }
-        this.f11374h = i4;
-        this.f11373g = i5;
-        return aVar.f11400h[i2][f - aVar.f11399g[i2][i3]];
+        this.f11383h = i4;
+        this.f11382g = i5;
+        return aVar.f11409h[i2][f - aVar.f11408g[i2][i3]];
     }
 
     /* renamed from: l */
@@ -551,22 +551,22 @@ public class C3376a extends AbstractC3375a {
 
     /* renamed from: m */
     private boolean m14028m(boolean z) {
-        InputStream inputStream = this.f11377k;
+        InputStream inputStream = this.f11386k;
         if (inputStream != null) {
             int read = inputStream.read();
             if (read == -1 && !z) {
                 return false;
             }
-            int read2 = this.f11377k.read();
-            int read3 = this.f11377k.read();
+            int read2 = this.f11386k.read();
+            int read3 = this.f11386k.read();
             if (read == 66 && read2 == 90 && read3 == 104) {
-                int read4 = this.f11377k.read();
+                int read4 = this.f11386k.read();
                 if (read4 < 49 || read4 > 57) {
                     throw new IOException("BZip2 block size is invalid");
                 }
-                this.f11371e = read4 - 48;
-                this.f11374h = 0;
-                this.f11383q = 0;
+                this.f11380e = read4 - 48;
+                this.f11383h = 0;
+                this.f11392q = 0;
                 return true;
             }
             throw new IOException(z ? "Stream is not in the BZip2 format" : "Garbage after a valid BZip2 stream");
@@ -586,20 +586,20 @@ public class C3376a extends AbstractC3375a {
             if (e != 23 || e2 != 'r' || e3 != 'E' || e4 != '8' || e5 != 'P' || e6 != 144) {
                 boolean z = false;
                 if (e == '1' && e2 == 'A' && e3 == 'Y' && e4 == '&' && e5 == 'S' && e6 == 'Y') {
-                    this.f11380n = m14019d();
+                    this.f11389n = m14019d();
                     if (m14021f(1) == 1) {
                         z = true;
                     }
-                    this.f11372f = z;
-                    if (this.f11368A == null) {
-                        this.f11368A = new C3377a(this.f11371e);
+                    this.f11381f = z;
+                    if (this.f11377A == null) {
+                        this.f11377A = new C3377a(this.f11380e);
                     }
                     m14025j();
-                    this.f11375i.mo11354b();
-                    this.f11379m = 1;
+                    this.f11384i.mo11354b();
+                    this.f11388m = 1;
                     return;
                 }
-                this.f11379m = 0;
+                this.f11388m = 0;
                 throw new IOException("bad block header");
             }
         } while (!m14022g());
@@ -607,9 +607,9 @@ public class C3376a extends AbstractC3375a {
 
     /* renamed from: o */
     private void m14030o() {
-        C3377a aVar = this.f11368A;
-        boolean[] zArr = aVar.f11393a;
-        byte[] bArr = aVar.f11394b;
+        C3377a aVar = this.f11377A;
+        boolean[] zArr = aVar.f11402a;
+        byte[] bArr = aVar.f11403b;
         int i = 0;
         for (int i2 = 0; i2 < 256; i2++) {
             if (zArr[i2]) {
@@ -617,12 +617,12 @@ public class C3376a extends AbstractC3375a {
                 i++;
             }
         }
-        this.f11376j = i;
+        this.f11385j = i;
     }
 
     /* renamed from: p */
     private int m14031p() {
-        switch (this.f11379m) {
+        switch (this.f11388m) {
             case 0:
                 return -1;
             case 1:
@@ -646,11 +646,11 @@ public class C3376a extends AbstractC3375a {
 
     /* renamed from: q */
     private void m14032q() {
-        C3377a aVar = this.f11368A;
-        boolean[] zArr = aVar.f11393a;
-        byte[] bArr = aVar.f11405m;
-        byte[] bArr2 = aVar.f11395c;
-        byte[] bArr3 = aVar.f11396d;
+        C3377a aVar = this.f11377A;
+        boolean[] zArr = aVar.f11402a;
+        byte[] bArr = aVar.f11414m;
+        byte[] bArr2 = aVar.f11404c;
+        byte[] bArr3 = aVar.f11405d;
         int i = 0;
         for (int i2 = 0; i2 < 16; i2++) {
             if (m14018c()) {
@@ -676,7 +676,7 @@ public class C3376a extends AbstractC3375a {
             }
         }
         m14030o();
-        int i7 = this.f11376j + 2;
+        int i7 = this.f11385j + 2;
         int f = m14021f(3);
         int f2 = m14021f(15);
         for (int i8 = 0; i8 < f2; i8++) {
@@ -704,7 +704,7 @@ public class C3376a extends AbstractC3375a {
             bArr[0] = b;
             bArr2[i11] = b;
         }
-        char[][] cArr = aVar.f11404l;
+        char[][] cArr = aVar.f11413l;
         for (int i13 = 0; i13 < f; i13++) {
             int f3 = m14021f(5);
             char[] cArr2 = cArr[i13];
@@ -721,60 +721,60 @@ public class C3376a extends AbstractC3375a {
     /* renamed from: r */
     private int m14033r() {
         C3377a aVar;
-        if (this.f11379m == 0 || (aVar = this.f11368A) == null) {
+        if (this.f11388m == 0 || (aVar = this.f11377A) == null) {
             return -1;
         }
-        int[] iArr = aVar.f11402j;
-        int[] a = aVar.mo11352a(this.f11369c + 1);
-        C3377a aVar2 = this.f11368A;
-        byte[] bArr = aVar2.f11407o;
+        int[] iArr = aVar.f11411j;
+        int[] a = aVar.mo11352a(this.f11378c + 1);
+        C3377a aVar2 = this.f11377A;
+        byte[] bArr = aVar2.f11416o;
         iArr[0] = 0;
-        System.arraycopy(aVar2.f11397e, 0, iArr, 1, 256);
+        System.arraycopy(aVar2.f11406e, 0, iArr, 1, 256);
         int i = iArr[0];
         for (int i2 = 1; i2 <= 256; i2++) {
             i += iArr[i2];
             iArr[i2] = i;
         }
-        int i3 = this.f11369c;
+        int i3 = this.f11378c;
         for (int i4 = 0; i4 <= i3; i4++) {
             int i5 = bArr[i4] & 255;
             int i6 = iArr[i5];
             iArr[i5] = i6 + 1;
             a[i6] = i4;
         }
-        int i7 = this.f11370d;
+        int i7 = this.f11379d;
         if (i7 < 0 || i7 >= a.length) {
             throw new IOException("stream corrupted");
         }
-        this.f11391y = a[i7];
-        this.f11384r = 0;
-        this.f11387u = 0;
-        this.f11385s = 256;
-        if (!this.f11372f) {
+        this.f11400y = a[i7];
+        this.f11393r = 0;
+        this.f11396u = 0;
+        this.f11394s = 256;
+        if (!this.f11381f) {
             return m14034s();
         }
-        this.f11389w = 0;
-        this.f11390x = 0;
+        this.f11398w = 0;
+        this.f11399x = 0;
         return m14037v();
     }
 
     /* renamed from: s */
     private int m14034s() {
-        int i = this.f11387u;
-        if (i <= this.f11369c) {
-            this.f11386t = this.f11385s;
-            C3377a aVar = this.f11368A;
-            byte[] bArr = aVar.f11407o;
-            int i2 = this.f11391y;
+        int i = this.f11396u;
+        if (i <= this.f11378c) {
+            this.f11395t = this.f11394s;
+            C3377a aVar = this.f11377A;
+            byte[] bArr = aVar.f11416o;
+            int i2 = this.f11400y;
             int i3 = bArr[i2] & 255;
-            this.f11385s = i3;
-            this.f11391y = aVar.f11406n[i2];
-            this.f11387u = i + 1;
-            this.f11379m = 6;
-            this.f11375i.mo11355c(i3);
+            this.f11394s = i3;
+            this.f11400y = aVar.f11415n[i2];
+            this.f11396u = i + 1;
+            this.f11388m = 6;
+            this.f11384i.mo11355c(i3);
             return i3;
         }
-        this.f11379m = 5;
+        this.f11388m = 5;
         m14024i();
         m14029n();
         return m14033r();
@@ -782,67 +782,67 @@ public class C3376a extends AbstractC3375a {
 
     /* renamed from: t */
     private int m14035t() {
-        if (this.f11385s != this.f11386t) {
-            this.f11384r = 1;
+        if (this.f11394s != this.f11395t) {
+            this.f11393r = 1;
             return m14034s();
         }
-        int i = this.f11384r + 1;
-        this.f11384r = i;
+        int i = this.f11393r + 1;
+        this.f11393r = i;
         if (i < 4) {
             return m14034s();
         }
-        C3377a aVar = this.f11368A;
-        byte[] bArr = aVar.f11407o;
-        int i2 = this.f11391y;
-        this.f11392z = (char) (bArr[i2] & 255);
-        this.f11391y = aVar.f11406n[i2];
-        this.f11388v = 0;
+        C3377a aVar = this.f11377A;
+        byte[] bArr = aVar.f11416o;
+        int i2 = this.f11400y;
+        this.f11401z = (char) (bArr[i2] & 255);
+        this.f11400y = aVar.f11415n[i2];
+        this.f11397v = 0;
         return m14036u();
     }
 
     /* renamed from: u */
     private int m14036u() {
-        if (this.f11388v < this.f11392z) {
-            int i = this.f11385s;
-            this.f11375i.mo11355c(i);
-            this.f11388v++;
-            this.f11379m = 7;
+        if (this.f11397v < this.f11401z) {
+            int i = this.f11394s;
+            this.f11384i.mo11355c(i);
+            this.f11397v++;
+            this.f11388m = 7;
             return i;
         }
-        this.f11387u++;
-        this.f11384r = 0;
+        this.f11396u++;
+        this.f11393r = 0;
         return m14034s();
     }
 
     /* renamed from: v */
     private int m14037v() {
-        if (this.f11387u <= this.f11369c) {
-            this.f11386t = this.f11385s;
-            C3377a aVar = this.f11368A;
-            byte[] bArr = aVar.f11407o;
-            int i = this.f11391y;
+        if (this.f11396u <= this.f11378c) {
+            this.f11395t = this.f11394s;
+            C3377a aVar = this.f11377A;
+            byte[] bArr = aVar.f11416o;
+            int i = this.f11400y;
             int i2 = bArr[i] & 255;
-            this.f11391y = aVar.f11406n[i];
-            int i3 = this.f11389w;
+            this.f11400y = aVar.f11415n[i];
+            int i3 = this.f11398w;
             int i4 = 0;
             if (i3 == 0) {
-                this.f11389w = C3379c.m14044a(this.f11390x) - 1;
-                int i5 = this.f11390x + 1;
-                this.f11390x = i5;
+                this.f11398w = C3379c.m14044a(this.f11399x) - 1;
+                int i5 = this.f11399x + 1;
+                this.f11399x = i5;
                 if (i5 == 512) {
-                    this.f11390x = 0;
+                    this.f11399x = 0;
                 }
             } else {
-                this.f11389w = i3 - 1;
+                this.f11398w = i3 - 1;
             }
-            if (this.f11389w == 1) {
+            if (this.f11398w == 1) {
                 i4 = 1;
             }
             int i6 = i2 ^ i4;
-            this.f11385s = i6;
-            this.f11387u++;
-            this.f11379m = 3;
-            this.f11375i.mo11355c(i6);
+            this.f11394s = i6;
+            this.f11396u++;
+            this.f11388m = 3;
+            this.f11384i.mo11355c(i6);
             return i6;
         }
         m14024i();
@@ -852,72 +852,72 @@ public class C3376a extends AbstractC3375a {
 
     /* renamed from: w */
     private int m14038w() {
-        if (this.f11385s != this.f11386t) {
-            this.f11379m = 2;
-            this.f11384r = 1;
+        if (this.f11394s != this.f11395t) {
+            this.f11388m = 2;
+            this.f11393r = 1;
         } else {
-            int i = this.f11384r + 1;
-            this.f11384r = i;
+            int i = this.f11393r + 1;
+            this.f11393r = i;
             if (i >= 4) {
-                C3377a aVar = this.f11368A;
-                byte[] bArr = aVar.f11407o;
-                int i2 = this.f11391y;
-                this.f11392z = (char) (bArr[i2] & 255);
-                this.f11391y = aVar.f11406n[i2];
-                int i3 = this.f11389w;
+                C3377a aVar = this.f11377A;
+                byte[] bArr = aVar.f11416o;
+                int i2 = this.f11400y;
+                this.f11401z = (char) (bArr[i2] & 255);
+                this.f11400y = aVar.f11415n[i2];
+                int i3 = this.f11398w;
                 if (i3 == 0) {
-                    this.f11389w = C3379c.m14044a(this.f11390x) - 1;
-                    int i4 = this.f11390x + 1;
-                    this.f11390x = i4;
+                    this.f11398w = C3379c.m14044a(this.f11399x) - 1;
+                    int i4 = this.f11399x + 1;
+                    this.f11399x = i4;
                     if (i4 == 512) {
-                        this.f11390x = 0;
+                        this.f11399x = 0;
                     }
                 } else {
-                    this.f11389w = i3 - 1;
+                    this.f11398w = i3 - 1;
                 }
-                this.f11388v = 0;
-                this.f11379m = 4;
-                if (this.f11389w == 1) {
-                    this.f11392z = (char) (this.f11392z ^ 1);
+                this.f11397v = 0;
+                this.f11388m = 4;
+                if (this.f11398w == 1) {
+                    this.f11401z = (char) (this.f11401z ^ 1);
                 }
                 return m14039x();
             }
-            this.f11379m = 2;
+            this.f11388m = 2;
         }
         return m14037v();
     }
 
     /* renamed from: x */
     private int m14039x() {
-        if (this.f11388v < this.f11392z) {
-            this.f11375i.mo11355c(this.f11385s);
-            this.f11388v++;
-            return this.f11385s;
+        if (this.f11397v < this.f11401z) {
+            this.f11384i.mo11355c(this.f11394s);
+            this.f11397v++;
+            return this.f11394s;
         }
-        this.f11379m = 2;
-        this.f11387u++;
-        this.f11384r = 0;
+        this.f11388m = 2;
+        this.f11396u++;
+        this.f11393r = 0;
         return m14037v();
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable, java.io.InputStream
     public void close() {
-        InputStream inputStream = this.f11377k;
+        InputStream inputStream = this.f11386k;
         if (inputStream != null) {
             try {
                 if (inputStream != System.in) {
                     inputStream.close();
                 }
             } finally {
-                this.f11368A = null;
-                this.f11377k = null;
+                this.f11377A = null;
+                this.f11386k = null;
             }
         }
     }
 
     @Override // java.io.InputStream
     public int read() {
-        if (this.f11377k != null) {
+        if (this.f11386k != null) {
             int p = m14031p();
             mo11347a(p < 0 ? -1 : 1);
             return p;
@@ -933,7 +933,7 @@ public class C3376a extends AbstractC3375a {
             int i3 = i + i2;
             if (i3 > bArr.length) {
                 throw new IndexOutOfBoundsException("offs(" + i + ") + len(" + i2 + ") > dest.length(" + bArr.length + ").");
-            } else if (this.f11377k == null) {
+            } else if (this.f11386k == null) {
                 throw new IOException("stream closed");
             } else if (i2 == 0) {
                 return 0;

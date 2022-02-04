@@ -14,16 +14,16 @@ import p069c.p073b.p074a.p090b.p092l.C1401a;
 public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorLayout.AbstractC0337c<V> {
 
     /* renamed from: a */
-    private int f10115a = 0;
+    private int f10123a = 0;
 
     /* renamed from: b */
-    private int f10116b = 2;
+    private int f10124b = 2;
 
     /* renamed from: c */
-    private int f10117c = 0;
+    private int f10125c = 0;
 
     /* renamed from: d */
-    private ViewPropertyAnimator f10118d;
+    private ViewPropertyAnimator f10126d;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.google.android.material.behavior.HideBottomViewOnScrollBehavior$a */
@@ -32,7 +32,7 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
         }
 
         public void onAnimationEnd(Animator animator) {
-            HideBottomViewOnScrollBehavior.this.f10118d = null;
+            HideBottomViewOnScrollBehavior.this.f10126d = null;
         }
     }
 
@@ -45,7 +45,7 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
 
     /* renamed from: F */
     private void m12582F(V v, int i, long j, TimeInterpolator timeInterpolator) {
-        this.f10118d = v.animate().translationY((float) i).setInterpolator(timeInterpolator).setDuration(j).setListener(new C3062a());
+        this.f10126d = v.animate().translationY((float) i).setInterpolator(timeInterpolator).setDuration(j).setListener(new C3062a());
     }
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.AbstractC0337c
@@ -56,42 +56,42 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
 
     /* renamed from: G */
     public void mo9915G(V v, int i) {
-        this.f10117c = i;
-        if (this.f10116b == 1) {
-            v.setTranslationY((float) (this.f10115a + i));
+        this.f10125c = i;
+        if (this.f10124b == 1) {
+            v.setTranslationY((float) (this.f10123a + i));
         }
     }
 
     /* renamed from: H */
     public void mo9916H(V v) {
-        if (this.f10116b != 1) {
-            ViewPropertyAnimator viewPropertyAnimator = this.f10118d;
+        if (this.f10124b != 1) {
+            ViewPropertyAnimator viewPropertyAnimator = this.f10126d;
             if (viewPropertyAnimator != null) {
                 viewPropertyAnimator.cancel();
                 v.clearAnimation();
             }
-            this.f10116b = 1;
-            m12582F(v, this.f10115a + this.f10117c, 175, C1401a.f6008c);
+            this.f10124b = 1;
+            m12582F(v, this.f10123a + this.f10125c, 175, C1401a.f6016c);
         }
     }
 
     /* renamed from: I */
     public void mo9917I(V v) {
-        if (this.f10116b != 2) {
-            ViewPropertyAnimator viewPropertyAnimator = this.f10118d;
+        if (this.f10124b != 2) {
+            ViewPropertyAnimator viewPropertyAnimator = this.f10126d;
             if (viewPropertyAnimator != null) {
                 viewPropertyAnimator.cancel();
                 v.clearAnimation();
             }
-            this.f10116b = 2;
-            m12582F(v, 0, 225, C1401a.f6009d);
+            this.f10124b = 2;
+            m12582F(v, 0, 225, C1401a.f6017d);
         }
     }
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.AbstractC0337c
     /* renamed from: l */
     public boolean mo2098l(CoordinatorLayout coordinatorLayout, V v, int i) {
-        this.f10115a = v.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) v.getLayoutParams()).bottomMargin;
+        this.f10123a = v.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) v.getLayoutParams()).bottomMargin;
         return super.mo2098l(coordinatorLayout, v, i);
     }
 

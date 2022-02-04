@@ -10,7 +10,7 @@ import p006b.p030g.p038j.C0960h;
 public final class C2084a {
 
     /* renamed from: a */
-    private static final AbstractC2091g<Object> f7602a = new C2085a();
+    private static final AbstractC2091g<Object> f7610a = new C2085a();
 
     /* renamed from: com.bumptech.glide.t.l.a$a */
     class C2085a implements AbstractC2091g<Object> {
@@ -58,18 +58,18 @@ public final class C2084a {
     public static final class C2089e<T> implements AbstractC0958f<T> {
 
         /* renamed from: a */
-        private final AbstractC2088d<T> f7603a;
+        private final AbstractC2088d<T> f7611a;
 
         /* renamed from: b */
-        private final AbstractC2091g<T> f7604b;
+        private final AbstractC2091g<T> f7612b;
 
         /* renamed from: c */
-        private final AbstractC0958f<T> f7605c;
+        private final AbstractC0958f<T> f7613c;
 
         C2089e(AbstractC0958f<T> fVar, AbstractC2088d<T> dVar, AbstractC2091g<T> gVar) {
-            this.f7605c = fVar;
-            this.f7603a = dVar;
-            this.f7604b = gVar;
+            this.f7613c = fVar;
+            this.f7611a = dVar;
+            this.f7612b = gVar;
         }
 
         @Override // p006b.p030g.p038j.AbstractC0958f
@@ -78,16 +78,16 @@ public final class C2084a {
             if (t instanceof AbstractC2090f) {
                 t.mo7240e().mo7874b(true);
             }
-            this.f7604b.mo7871a(t);
-            return this.f7605c.mo5398a(t);
+            this.f7612b.mo7871a(t);
+            return this.f7613c.mo5398a(t);
         }
 
         @Override // p006b.p030g.p038j.AbstractC0958f
         /* renamed from: b */
         public T mo5399b() {
-            T b = this.f7605c.mo5399b();
+            T b = this.f7613c.mo5399b();
             if (b == null) {
-                b = this.f7603a.mo7238a();
+                b = this.f7611a.mo7238a();
                 if (Log.isLoggable("FactoryPools", 2)) {
                     Log.v("FactoryPools", "Created new " + b.getClass());
                 }
@@ -123,7 +123,7 @@ public final class C2084a {
 
     /* renamed from: c */
     private static <T> AbstractC2091g<T> m9455c() {
-        return (AbstractC2091g<T>) f7602a;
+        return (AbstractC2091g<T>) f7610a;
     }
 
     /* renamed from: d */

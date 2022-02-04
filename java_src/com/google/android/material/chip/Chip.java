@@ -54,64 +54,64 @@ import p069c.p073b.p074a.p090b.p107z.C1462k;
 public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477n {
 
     /* renamed from: e */
-    private static final int f10272e = C1399j.Widget_MaterialComponents_Chip_Action;
+    private static final int f10280e = C1399j.Widget_MaterialComponents_Chip_Action;
 
     /* renamed from: f */
-    private static final Rect f10273f = new Rect();
+    private static final Rect f10281f = new Rect();
 
     /* renamed from: g */
-    private static final int[] f10274g = {16842913};
+    private static final int[] f10282g = {16842913};
 
     /* renamed from: h */
-    private static final int[] f10275h = {16842911};
+    private static final int[] f10283h = {16842911};
 
     /* renamed from: i */
-    private C3100a f10276i;
+    private C3100a f10284i;
 
     /* renamed from: j */
-    private InsetDrawable f10277j;
+    private InsetDrawable f10285j;
 
     /* renamed from: k */
-    private RippleDrawable f10278k;
+    private RippleDrawable f10286k;
 
     /* renamed from: l */
-    private View.OnClickListener f10279l;
+    private View.OnClickListener f10287l;
 
     /* renamed from: m */
-    private CompoundButton.OnCheckedChangeListener f10280m;
+    private CompoundButton.OnCheckedChangeListener f10288m;
 
     /* renamed from: n */
-    private boolean f10281n;
+    private boolean f10289n;
 
     /* renamed from: o */
-    private boolean f10282o;
+    private boolean f10290o;
 
     /* renamed from: p */
-    private boolean f10283p;
+    private boolean f10291p;
 
     /* renamed from: q */
-    private boolean f10284q;
+    private boolean f10292q;
 
     /* renamed from: r */
-    private boolean f10285r;
+    private boolean f10293r;
 
     /* renamed from: s */
-    private int f10286s;
+    private int f10294s;
 
     /* renamed from: t */
-    private int f10287t;
+    private int f10295t;
 
     /* renamed from: u */
-    private final C3094c f10288u;
+    private final C3094c f10296u;
 
     /* renamed from: v */
-    private final Rect f10289v;
+    private final Rect f10297v;
 
     /* renamed from: w */
-    private final RectF f10290w;
+    private final RectF f10298w;
 
     /* renamed from: x */
-    private final AbstractC1442f f10291x;
+    private final AbstractC1442f f10299x;
 
     /* renamed from: com.google.android.material.chip.Chip$a */
     class C3092a extends AbstractC1442f {
@@ -127,7 +127,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
         /* renamed from: b */
         public void mo6556b(Typeface typeface, boolean z) {
             Chip chip = Chip.this;
-            chip.setText(chip.f10276i.mo10284G2() ? Chip.this.f10276i.mo10327c1() : Chip.this.getText());
+            chip.setText(chip.f10284i.mo10284G2() ? Chip.this.f10284i.mo10327c1() : Chip.this.getText());
             Chip.this.requestLayout();
             Chip.this.invalidate();
         }
@@ -141,8 +141,8 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
         @TargetApi(21)
         public void getOutline(View view, Outline outline) {
-            if (Chip.this.f10276i != null) {
-                Chip.this.f10276i.getOutline(outline);
+            if (Chip.this.f10284i != null) {
+                Chip.this.f10284i.getOutline(outline);
             } else {
                 outline.setAlpha(0.0f);
             }
@@ -168,7 +168,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
         /* renamed from: C */
         public void mo5618C(List<Integer> list) {
             list.add(0);
-            if (Chip.this.m12797n() && Chip.this.mo10131s() && Chip.this.f10279l != null) {
+            if (Chip.this.m12797n() && Chip.this.mo10131s() && Chip.this.f10287l != null) {
                 list.add(1);
             }
         }
@@ -224,12 +224,12 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
                 }
                 cVar.mo5477e0(closeIconContentDescription);
                 cVar.mo5465W(Chip.this.getCloseIconTouchBoundsInt());
-                cVar.mo5471b(C0979c.C0980a.f4705e);
+                cVar.mo5471b(C0979c.C0980a.f4709e);
                 cVar.mo5481g0(Chip.this.isEnabled());
                 return;
             }
             cVar.mo5477e0(charSequence);
-            cVar.mo5465W(Chip.f10273f);
+            cVar.mo5465W(Chip.f10281f);
         }
 
         /* access modifiers changed from: protected */
@@ -237,7 +237,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
         /* renamed from: O */
         public void mo5626O(int i, boolean z) {
             if (i == 1) {
-                Chip.this.f10284q = z;
+                Chip.this.f10292q = z;
                 Chip.this.refreshDrawableState();
             }
         }
@@ -259,12 +259,12 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     /* renamed from: A */
     private void m12783A() {
         C3100a aVar;
-        if (!TextUtils.isEmpty(getText()) && (aVar = this.f10276i) != null) {
-            int G0 = (int) (aVar.mo10282G0() + this.f10276i.mo10331e1() + this.f10276i.mo10352n0());
-            int L0 = (int) (this.f10276i.mo10293L0() + this.f10276i.mo10333f1() + this.f10276i.mo10344j0());
-            if (this.f10277j != null) {
+        if (!TextUtils.isEmpty(getText()) && (aVar = this.f10284i) != null) {
+            int G0 = (int) (aVar.mo10282G0() + this.f10284i.mo10331e1() + this.f10284i.mo10352n0());
+            int L0 = (int) (this.f10284i.mo10293L0() + this.f10284i.mo10333f1() + this.f10284i.mo10344j0());
+            if (this.f10285j != null) {
                 Rect rect = new Rect();
-                this.f10277j.getPadding(rect);
+                this.f10285j.getPadding(rect);
                 L0 += rect.left;
                 G0 += rect.right;
             }
@@ -275,13 +275,13 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     /* renamed from: B */
     private void m12784B() {
         TextPaint paint = getPaint();
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             paint.drawableState = aVar.getState();
         }
         C1438d textAppearance = getTextAppearance();
         if (textAppearance != null) {
-            textAppearance.mo6563i(getContext(), paint, this.f10291x);
+            textAppearance.mo6563i(getContext(), paint, this.f10299x);
         }
     }
 
@@ -310,23 +310,23 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     /* access modifiers changed from: private */
     /* access modifiers changed from: public */
     private RectF getCloseIconTouchBounds() {
-        this.f10290w.setEmpty();
+        this.f10298w.setEmpty();
         if (m12797n()) {
-            this.f10276i.mo10313V0(this.f10290w);
+            this.f10284i.mo10313V0(this.f10298w);
         }
-        return this.f10290w;
+        return this.f10298w;
     }
 
     /* access modifiers changed from: private */
     /* access modifiers changed from: public */
     private Rect getCloseIconTouchBoundsInt() {
         RectF closeIconTouchBounds = getCloseIconTouchBounds();
-        this.f10289v.set((int) closeIconTouchBounds.left, (int) closeIconTouchBounds.top, (int) closeIconTouchBounds.right, (int) closeIconTouchBounds.bottom);
-        return this.f10289v;
+        this.f10297v.set((int) closeIconTouchBounds.left, (int) closeIconTouchBounds.top, (int) closeIconTouchBounds.right, (int) closeIconTouchBounds.bottom);
+        return this.f10297v;
     }
 
     private C1438d getTextAppearance() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10329d1();
         }
@@ -342,13 +342,13 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     private int[] m12794j() {
         int i = 0;
         int i2 = isEnabled() ? 1 : 0;
-        if (this.f10284q) {
+        if (this.f10292q) {
             i2++;
         }
-        if (this.f10283p) {
+        if (this.f10291p) {
             i2++;
         }
-        if (this.f10282o) {
+        if (this.f10290o) {
             i2++;
         }
         if (isChecked()) {
@@ -359,15 +359,15 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
             iArr[0] = 16842910;
             i = 1;
         }
-        if (this.f10284q) {
+        if (this.f10292q) {
             iArr[i] = 16842908;
             i++;
         }
-        if (this.f10283p) {
+        if (this.f10291p) {
             iArr[i] = 16843623;
             i++;
         }
-        if (this.f10282o) {
+        if (this.f10290o) {
             iArr[i] = 16842919;
             i++;
         }
@@ -379,8 +379,8 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
     /* renamed from: l */
     private void m12795l() {
-        if (getBackgroundDrawable() == this.f10277j && this.f10276i.getCallback() == null) {
-            this.f10276i.setCallback(this.f10277j);
+        if (getBackgroundDrawable() == this.f10285j && this.f10284i.getCallback() == null) {
+            this.f10284i.setCallback(this.f10285j);
         }
     }
 
@@ -391,10 +391,10 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
             try {
                 Field declaredField = AbstractC1044a.class.getDeclaredField("p");
                 declaredField.setAccessible(true);
-                if (((Integer) declaredField.get(this.f10288u)).intValue() != Integer.MIN_VALUE) {
+                if (((Integer) declaredField.get(this.f10296u)).intValue() != Integer.MIN_VALUE) {
                     Method declaredMethod = AbstractC1044a.class.getDeclaredMethod("V", Integer.TYPE);
                     declaredMethod.setAccessible(true);
-                    declaredMethod.invoke(this.f10288u, Integer.MIN_VALUE);
+                    declaredMethod.invoke(this.f10296u, Integer.MIN_VALUE);
                     return true;
                 }
             } catch (IllegalAccessException | NoSuchFieldException | NoSuchMethodException | InvocationTargetException e) {
@@ -408,15 +408,15 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     /* access modifiers changed from: public */
     /* renamed from: n */
     private boolean m12797n() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         return (aVar == null || aVar.mo10299O0() == null) ? false : true;
     }
 
     /* renamed from: o */
     private void m12798o(Context context, AttributeSet attributeSet, int i) {
-        TypedArray h = C3202o.m13430h(context, attributeSet, C1400k.f5748M, i, f10272e, new int[0]);
-        this.f10285r = h.getBoolean(C1400k.f5959s0, false);
-        this.f10287t = (int) Math.ceil((double) h.getDimension(C1400k.f5875g0, (float) Math.ceil((double) C3203p.m13433b(getContext(), 48))));
+        TypedArray h = C3202o.m13430h(context, attributeSet, C1400k.f5756M, i, f10280e, new int[0]);
+        this.f10293r = h.getBoolean(C1400k.f5967s0, false);
+        this.f10295t = (int) Math.ceil((double) h.getDimension(C1400k.f5883g0, (float) Math.ceil((double) C3203p.m13433b(getContext(), 48))));
         h.recycle();
     }
 
@@ -429,27 +429,27 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
     /* renamed from: q */
     private void m12800q(int i, int i2, int i3, int i4) {
-        this.f10277j = new InsetDrawable((Drawable) this.f10276i, i, i2, i3, i4);
+        this.f10285j = new InsetDrawable((Drawable) this.f10284i, i, i2, i3, i4);
     }
 
     private void setCloseIconHovered(boolean z) {
-        if (this.f10283p != z) {
-            this.f10283p = z;
+        if (this.f10291p != z) {
+            this.f10291p = z;
             refreshDrawableState();
         }
     }
 
     private void setCloseIconPressed(boolean z) {
-        if (this.f10282o != z) {
-            this.f10282o = z;
+        if (this.f10290o != z) {
+            this.f10290o = z;
             refreshDrawableState();
         }
     }
 
     /* renamed from: u */
     private void m12801u() {
-        if (this.f10277j != null) {
-            this.f10277j = null;
+        if (this.f10285j != null) {
+            this.f10285j = null;
             setMinWidth(0);
             setMinHeight((int) getChipMinHeight());
             m12804y();
@@ -465,16 +465,16 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
     /* renamed from: x */
     private void m12803x() {
-        C1013s.m5766i0(this, (!m12797n() || !mo10131s() || this.f10279l == null) ? null : this.f10288u);
+        C1013s.m5766i0(this, (!m12797n() || !mo10131s() || this.f10287l == null) ? null : this.f10296u);
     }
 
     /* renamed from: y */
     private void m12804y() {
-        if (C1446b.f6088a) {
+        if (C1446b.f6096a) {
             m12805z();
             return;
         }
-        this.f10276i.mo10281F2(true);
+        this.f10284i.mo10281F2(true);
         C1013s.m5772l0(this, getBackgroundDrawable());
         m12783A();
         m12795l();
@@ -482,16 +482,16 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
     /* renamed from: z */
     private void m12805z() {
-        this.f10278k = new RippleDrawable(C1446b.m7103a(this.f10276i.mo10323a1()), getBackgroundDrawable(), null);
-        this.f10276i.mo10281F2(false);
-        C1013s.m5772l0(this, this.f10278k);
+        this.f10286k = new RippleDrawable(C1446b.m7103a(this.f10284i.mo10323a1()), getBackgroundDrawable(), null);
+        this.f10284i.mo10281F2(false);
+        C1013s.m5772l0(this, this.f10286k);
         m12783A();
     }
 
     @Override // com.google.android.material.chip.C3100a.AbstractC3101a
     /* renamed from: a */
     public void mo10087a() {
-        mo10121k(this.f10287t);
+        mo10121k(this.f10295t);
         requestLayout();
         if (Build.VERSION.SDK_INT >= 21) {
             invalidateOutline();
@@ -500,11 +500,11 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
     /* access modifiers changed from: protected */
     public boolean dispatchHoverEvent(MotionEvent motionEvent) {
-        return m12796m(motionEvent) || this.f10288u.mo5631v(motionEvent) || super.dispatchHoverEvent(motionEvent);
+        return m12796m(motionEvent) || this.f10296u.mo5631v(motionEvent) || super.dispatchHoverEvent(motionEvent);
     }
 
     public boolean dispatchKeyEvent(KeyEvent keyEvent) {
-        if (!this.f10288u.mo5632w(keyEvent) || this.f10288u.mo5616A() == Integer.MIN_VALUE) {
+        if (!this.f10296u.mo5632w(keyEvent) || this.f10296u.mo5616A() == Integer.MIN_VALUE) {
             return super.dispatchKeyEvent(keyEvent);
         }
         return true;
@@ -514,19 +514,19 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     @Override // androidx.appcompat.widget.C0225g
     public void drawableStateChanged() {
         super.drawableStateChanged();
-        C3100a aVar = this.f10276i;
-        if ((aVar == null || !aVar.mo10347k1()) ? false : this.f10276i.mo10335g2(m12794j())) {
+        C3100a aVar = this.f10284i;
+        if ((aVar == null || !aVar.mo10347k1()) ? false : this.f10284i.mo10335g2(m12794j())) {
             invalidate();
         }
     }
 
     public Drawable getBackgroundDrawable() {
-        InsetDrawable insetDrawable = this.f10277j;
-        return insetDrawable == null ? this.f10276i : insetDrawable;
+        InsetDrawable insetDrawable = this.f10285j;
+        return insetDrawable == null ? this.f10284i : insetDrawable;
     }
 
     public Drawable getCheckedIcon() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10270C0();
         }
@@ -534,7 +534,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public ColorStateList getCheckedIconTint() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10273D0();
         }
@@ -542,7 +542,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public ColorStateList getChipBackgroundColor() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10276E0();
         }
@@ -550,7 +550,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public float getChipCornerRadius() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return Math.max(0.0f, aVar.mo10279F0());
         }
@@ -558,11 +558,11 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public Drawable getChipDrawable() {
-        return this.f10276i;
+        return this.f10284i;
     }
 
     public float getChipEndPadding() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10282G0();
         }
@@ -570,7 +570,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public Drawable getChipIcon() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10285H0();
         }
@@ -578,7 +578,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public float getChipIconSize() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10287I0();
         }
@@ -586,7 +586,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public ColorStateList getChipIconTint() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10289J0();
         }
@@ -594,7 +594,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public float getChipMinHeight() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10291K0();
         }
@@ -602,7 +602,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public float getChipStartPadding() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10293L0();
         }
@@ -610,7 +610,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public ColorStateList getChipStrokeColor() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10295M0();
         }
@@ -618,7 +618,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public float getChipStrokeWidth() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10297N0();
         }
@@ -631,7 +631,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public Drawable getCloseIcon() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10299O0();
         }
@@ -639,7 +639,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public CharSequence getCloseIconContentDescription() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10301P0();
         }
@@ -647,7 +647,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public float getCloseIconEndPadding() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10303Q0();
         }
@@ -655,7 +655,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public float getCloseIconSize() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10305R0();
         }
@@ -663,7 +663,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public float getCloseIconStartPadding() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10307S0();
         }
@@ -671,7 +671,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public ColorStateList getCloseIconTint() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10311U0();
         }
@@ -679,7 +679,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public TextUtils.TruncateAt getEllipsize() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10315W0();
         }
@@ -687,7 +687,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public void getFocusedRect(Rect rect) {
-        if (this.f10288u.mo5616A() == 1 || this.f10288u.mo5633x() == 1) {
+        if (this.f10296u.mo5616A() == 1 || this.f10296u.mo5633x() == 1) {
             rect.set(getCloseIconTouchBoundsInt());
         } else {
             super.getFocusedRect(rect);
@@ -695,7 +695,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public C1408h getHideMotionSpec() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10316X0();
         }
@@ -703,7 +703,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public float getIconEndPadding() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10318Y0();
         }
@@ -711,7 +711,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public float getIconStartPadding() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10320Z0();
         }
@@ -719,7 +719,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public ColorStateList getRippleColor() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10323a1();
         }
@@ -727,11 +727,11 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public C1462k getShapeAppearanceModel() {
-        return this.f10276i.mo6597C();
+        return this.f10284i.mo6597C();
     }
 
     public C1408h getShowMotionSpec() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10325b1();
         }
@@ -739,7 +739,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public float getTextEndPadding() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10331e1();
         }
@@ -747,7 +747,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public float getTextStartPadding() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             return aVar.mo10333f1();
         }
@@ -769,17 +769,17 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     /* access modifiers changed from: protected */
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        C1459h.m7186f(this, this.f10276i);
+        C1459h.m7186f(this, this.f10284i);
     }
 
     /* access modifiers changed from: protected */
     public int[] onCreateDrawableState(int i) {
         int[] onCreateDrawableState = super.onCreateDrawableState(i + 2);
         if (isChecked()) {
-            CheckBox.mergeDrawableStates(onCreateDrawableState, f10274g);
+            CheckBox.mergeDrawableStates(onCreateDrawableState, f10282g);
         }
         if (mo10130r()) {
-            CheckBox.mergeDrawableStates(onCreateDrawableState, f10275h);
+            CheckBox.mergeDrawableStates(onCreateDrawableState, f10283h);
         }
         return onCreateDrawableState;
     }
@@ -787,7 +787,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     /* access modifiers changed from: protected */
     public void onFocusChanged(boolean z, int i, Rect rect) {
         super.onFocusChanged(z, i, rect);
-        this.f10288u.mo5620I(z, i, rect);
+        this.f10296u.mo5620I(z, i, rect);
     }
 
     public boolean onHoverEvent(MotionEvent motionEvent) {
@@ -826,8 +826,8 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     @TargetApi(17)
     public void onRtlPropertiesChanged(int i) {
         super.onRtlPropertiesChanged(i);
-        if (this.f10286s != i) {
-            this.f10286s = i;
+        if (this.f10294s != i) {
+            this.f10294s = i;
             m12783A();
         }
     }
@@ -856,13 +856,13 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
             if (r0 == r1) goto L_0x0034
             goto L_0x0040
         L_0x0021:
-            boolean r0 = r5.f10282o
+            boolean r0 = r5.f10290o
             if (r0 == 0) goto L_0x0040
             if (r1 != 0) goto L_0x003e
             r5.setCloseIconPressed(r2)
             goto L_0x003e
         L_0x002b:
-            boolean r0 = r5.f10282o
+            boolean r0 = r5.f10290o
             if (r0 == 0) goto L_0x0034
             r5.mo10226t()
             r0 = 1
@@ -894,18 +894,18 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
     /* renamed from: r */
     public boolean mo10130r() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         return aVar != null && aVar.mo10345j1();
     }
 
     /* renamed from: s */
     public boolean mo10131s() {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         return aVar != null && aVar.mo10349l1();
     }
 
     public void setBackground(Drawable drawable) {
-        if (drawable == getBackgroundDrawable() || drawable == this.f10278k) {
+        if (drawable == getBackgroundDrawable() || drawable == this.f10286k) {
             super.setBackground(drawable);
         } else {
             Log.w("Chip", "Do not set the background; Chip manages its own background drawable.");
@@ -918,7 +918,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
     @Override // androidx.appcompat.widget.C0225g
     public void setBackgroundDrawable(Drawable drawable) {
-        if (drawable == getBackgroundDrawable() || drawable == this.f10278k) {
+        if (drawable == getBackgroundDrawable() || drawable == this.f10286k) {
             super.setBackgroundDrawable(drawable);
         } else {
             Log.w("Chip", "Do not set the background drawable; Chip manages its own background drawable.");
@@ -939,14 +939,14 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public void setCheckable(boolean z) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10362s1(z);
         }
     }
 
     public void setCheckableResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10366t1(i);
         }
@@ -954,20 +954,20 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
     public void setChecked(boolean z) {
         CompoundButton.OnCheckedChangeListener onCheckedChangeListener;
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar == null) {
-            this.f10281n = z;
+            this.f10289n = z;
         } else if (aVar.mo10345j1()) {
             boolean isChecked = isChecked();
             super.setChecked(z);
-            if (isChecked != z && (onCheckedChangeListener = this.f10280m) != null) {
+            if (isChecked != z && (onCheckedChangeListener = this.f10288m) != null) {
                 onCheckedChangeListener.onCheckedChanged(this, z);
             }
         }
     }
 
     public void setCheckedIcon(Drawable drawable) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10368u1(drawable);
         }
@@ -984,49 +984,49 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public void setCheckedIconResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10371v1(i);
         }
     }
 
     public void setCheckedIconTint(ColorStateList colorStateList) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10373w1(colorStateList);
         }
     }
 
     public void setCheckedIconTintResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10375x1(i);
         }
     }
 
     public void setCheckedIconVisible(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10377y1(i);
         }
     }
 
     public void setCheckedIconVisible(boolean z) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10379z1(z);
         }
     }
 
     public void setChipBackgroundColor(ColorStateList colorStateList) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10266A1(colorStateList);
         }
     }
 
     public void setChipBackgroundColorResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10268B1(i);
         }
@@ -1034,7 +1034,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
     @Deprecated
     public void setChipCornerRadius(float f) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10271C1(f);
         }
@@ -1042,39 +1042,39 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
     @Deprecated
     public void setChipCornerRadiusResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10274D1(i);
         }
     }
 
     public void setChipDrawable(C3100a aVar) {
-        C3100a aVar2 = this.f10276i;
+        C3100a aVar2 = this.f10284i;
         if (aVar2 != aVar) {
             m12802w(aVar2);
-            this.f10276i = aVar;
+            this.f10284i = aVar;
             aVar.mo10372v2(false);
-            m12793i(this.f10276i);
-            mo10121k(this.f10287t);
+            m12793i(this.f10284i);
+            mo10121k(this.f10295t);
         }
     }
 
     public void setChipEndPadding(float f) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10277E1(f);
         }
     }
 
     public void setChipEndPaddingResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10280F1(i);
         }
     }
 
     public void setChipIcon(Drawable drawable) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10283G1(drawable);
         }
@@ -1091,105 +1091,105 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public void setChipIconResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10286H1(i);
         }
     }
 
     public void setChipIconSize(float f) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10288I1(f);
         }
     }
 
     public void setChipIconSizeResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10290J1(i);
         }
     }
 
     public void setChipIconTint(ColorStateList colorStateList) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10292K1(colorStateList);
         }
     }
 
     public void setChipIconTintResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10294L1(i);
         }
     }
 
     public void setChipIconVisible(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10296M1(i);
         }
     }
 
     public void setChipIconVisible(boolean z) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10298N1(z);
         }
     }
 
     public void setChipMinHeight(float f) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10300O1(f);
         }
     }
 
     public void setChipMinHeightResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10302P1(i);
         }
     }
 
     public void setChipStartPadding(float f) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10304Q1(f);
         }
     }
 
     public void setChipStartPaddingResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10306R1(i);
         }
     }
 
     public void setChipStrokeColor(ColorStateList colorStateList) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10308S1(colorStateList);
         }
     }
 
     public void setChipStrokeColorResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10310T1(i);
         }
     }
 
     public void setChipStrokeWidth(float f) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10312U1(f);
         }
     }
 
     public void setChipStrokeWidthResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10314V1(i);
         }
@@ -1206,7 +1206,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public void setCloseIcon(Drawable drawable) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10317X1(drawable);
         }
@@ -1214,7 +1214,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public void setCloseIconContentDescription(CharSequence charSequence) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10319Y1(charSequence);
         }
@@ -1231,21 +1231,21 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public void setCloseIconEndPadding(float f) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10321Z1(f);
         }
     }
 
     public void setCloseIconEndPaddingResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10324a2(i);
         }
     }
 
     public void setCloseIconResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10326b2(i);
         }
@@ -1253,42 +1253,42 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public void setCloseIconSize(float f) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10328c2(f);
         }
     }
 
     public void setCloseIconSizeResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10330d2(i);
         }
     }
 
     public void setCloseIconStartPadding(float f) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10332e2(f);
         }
     }
 
     public void setCloseIconStartPaddingResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10334f2(i);
         }
     }
 
     public void setCloseIconTint(ColorStateList colorStateList) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10341h2(colorStateList);
         }
     }
 
     public void setCloseIconTintResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10342i2(i);
         }
@@ -1299,7 +1299,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public void setCloseIconVisible(boolean z) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10346j2(z);
         }
@@ -1372,17 +1372,17 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
     public void setElevation(float f) {
         super.setElevation(f);
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo6607U(f);
         }
     }
 
     public void setEllipsize(TextUtils.TruncateAt truncateAt) {
-        if (this.f10276i != null) {
+        if (this.f10284i != null) {
             if (truncateAt != TextUtils.TruncateAt.MARQUEE) {
                 super.setEllipsize(truncateAt);
-                C3100a aVar = this.f10276i;
+                C3100a aVar = this.f10284i;
                 if (aVar != null) {
                     aVar.mo10350l2(truncateAt);
                     return;
@@ -1394,8 +1394,8 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public void setEnsureMinTouchTargetSize(boolean z) {
-        this.f10285r = z;
-        mo10121k(this.f10287t);
+        this.f10293r = z;
+        mo10121k(this.f10295t);
     }
 
     public void setGravity(int i) {
@@ -1407,49 +1407,49 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public void setHideMotionSpec(C1408h hVar) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10351m2(hVar);
         }
     }
 
     public void setHideMotionSpecResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10353n2(i);
         }
     }
 
     public void setIconEndPadding(float f) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10354o2(f);
         }
     }
 
     public void setIconEndPaddingResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10357p2(i);
         }
     }
 
     public void setIconStartPadding(float f) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10360q2(f);
         }
     }
 
     public void setIconStartPaddingResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10361r2(i);
         }
     }
 
     public void setLayoutDirection(int i) {
-        if (this.f10276i != null && Build.VERSION.SDK_INT >= 17) {
+        if (this.f10284i != null && Build.VERSION.SDK_INT >= 17) {
             super.setLayoutDirection(i);
         }
     }
@@ -1472,7 +1472,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
     public void setMaxWidth(int i) {
         super.setMaxWidth(i);
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10363s2(i);
         }
@@ -1488,29 +1488,29 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
     /* access modifiers changed from: package-private */
     public void setOnCheckedChangeListenerInternal(CompoundButton.OnCheckedChangeListener onCheckedChangeListener) {
-        this.f10280m = onCheckedChangeListener;
+        this.f10288m = onCheckedChangeListener;
     }
 
     public void setOnCloseIconClickListener(View.OnClickListener onClickListener) {
-        this.f10279l = onClickListener;
+        this.f10287l = onClickListener;
         m12803x();
     }
 
     public void setRippleColor(ColorStateList colorStateList) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10367t2(colorStateList);
         }
-        if (!this.f10276i.mo10340h1()) {
+        if (!this.f10284i.mo10340h1()) {
             m12805z();
         }
     }
 
     public void setRippleColorResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10369u2(i);
-            if (!this.f10276i.mo10340h1()) {
+            if (!this.f10284i.mo10340h1()) {
                 m12805z();
             }
         }
@@ -1518,18 +1518,18 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
     @Override // p069c.p073b.p074a.p090b.p107z.AbstractC1477n
     public void setShapeAppearanceModel(C1462k kVar) {
-        this.f10276i.setShapeAppearanceModel(kVar);
+        this.f10284i.setShapeAppearanceModel(kVar);
     }
 
     public void setShowMotionSpec(C1408h hVar) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10374w2(hVar);
         }
     }
 
     public void setShowMotionSpecResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10376x2(i);
         }
@@ -1545,13 +1545,13 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
     @Override // android.widget.TextView
     public void setText(CharSequence charSequence, TextView.BufferType bufferType) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             if (charSequence == null) {
                 charSequence = "";
             }
             super.setText(aVar.mo10284G2() ? null : charSequence, bufferType);
-            C3100a aVar2 = this.f10276i;
+            C3100a aVar2 = this.f10284i;
             if (aVar2 != null) {
                 aVar2.mo10378y2(charSequence);
             }
@@ -1560,7 +1560,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
     public void setTextAppearance(int i) {
         super.setTextAppearance(i);
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10267A2(i);
         }
@@ -1569,7 +1569,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
 
     public void setTextAppearance(Context context, int i) {
         super.setTextAppearance(context, i);
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10267A2(i);
         }
@@ -1577,7 +1577,7 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public void setTextAppearance(C1438d dVar) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10380z2(dVar);
         }
@@ -1589,28 +1589,28 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     }
 
     public void setTextEndPadding(float f) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10269B2(f);
         }
     }
 
     public void setTextEndPaddingResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10272C2(i);
         }
     }
 
     public void setTextStartPadding(float f) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10275D2(f);
         }
     }
 
     public void setTextStartPaddingResource(int i) {
-        C3100a aVar = this.f10276i;
+        C3100a aVar = this.f10284i;
         if (aVar != null) {
             aVar.mo10278E2(i);
         }
@@ -1620,17 +1620,17 @@ public class Chip extends C0225g implements C3100a.AbstractC3101a, AbstractC1477
     public boolean mo10226t() {
         boolean z = false;
         playSoundEffect(0);
-        View.OnClickListener onClickListener = this.f10279l;
+        View.OnClickListener onClickListener = this.f10287l;
         if (onClickListener != null) {
             onClickListener.onClick(this);
             z = true;
         }
-        this.f10288u.mo5629U(1, 1);
+        this.f10296u.mo5629U(1, 1);
         return z;
     }
 
     /* renamed from: v */
     public boolean mo10227v() {
-        return this.f10285r;
+        return this.f10293r;
     }
 }

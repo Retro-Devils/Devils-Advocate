@@ -12,25 +12,25 @@ import javax.annotation.CheckReturnValue;
 public class C1287h {
 
     /* renamed from: a */
-    private static C1287h f5550a;
+    private static C1287h f5558a;
 
     /* renamed from: b */
-    private final Context f5551b;
+    private final Context f5559b;
 
     private C1287h(Context context) {
-        this.f5551b = context.getApplicationContext();
+        this.f5559b = context.getApplicationContext();
     }
 
     /* renamed from: a */
     public static C1287h m6798a(Context context) {
         C3027r.m12376h(context);
         synchronized (C1287h.class) {
-            if (f5550a == null) {
+            if (f5558a == null) {
                 C1295o.m6812a(context);
-                f5550a = new C1287h(context);
+                f5558a = new C1287h(context);
             }
         }
-        return f5550a;
+        return f5558a;
     }
 
     /* renamed from: b */
@@ -57,9 +57,9 @@ public class C1287h {
         AbstractBinderC1296p pVar;
         if (!(packageInfo == null || packageInfo.signatures == null)) {
             if (z) {
-                pVar = m6799b(packageInfo, C1299s.f5569a);
+                pVar = m6799b(packageInfo, C1299s.f5577a);
             } else {
-                pVar = m6799b(packageInfo, C1299s.f5569a[0]);
+                pVar = m6799b(packageInfo, C1299s.f5577a[0]);
             }
             if (pVar != null) {
                 return true;

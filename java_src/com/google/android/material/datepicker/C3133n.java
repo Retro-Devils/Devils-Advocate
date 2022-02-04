@@ -6,9 +6,8 @@ import androidx.recyclerview.widget.C0725g;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* access modifiers changed from: package-private */
 /* renamed from: com.google.android.material.datepicker.n */
-public class C3133n extends LinearLayoutManager {
+class C3133n extends LinearLayoutManager {
 
     /* renamed from: com.google.android.material.datepicker.n$a */
     class C3134a extends C0725g {

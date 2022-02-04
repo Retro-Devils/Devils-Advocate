@@ -15,29 +15,29 @@ import java.util.Locale;
 public class C2885z0 {
 
     /* renamed from: a */
-    Typeface f9705a;
+    Typeface f9713a;
 
     /* renamed from: b */
-    boolean f9706b;
+    boolean f9714b;
 
     /* renamed from: c */
-    MainActivity f9707c;
+    MainActivity f9715c;
 
     public C2885z0(Activity activity, boolean z) {
-        this.f9707c = (MainActivity) activity;
+        this.f9715c = (MainActivity) activity;
         String q = C2219c3.m9805k(activity).mo8193q("language", "device");
         q = q.equals("device") ? Locale.getDefault().getLanguage() : q;
         boolean z2 = z && !q.equals("ja") && !q.equals("ru") && !q.equals("ko") && !q.equals("ar");
-        this.f9706b = z2;
+        this.f9714b = z2;
         if (z2) {
-            this.f9705a = Typeface.createFromAsset(activity.getAssets(), "fonts/PressStart2P.ttf");
+            this.f9713a = Typeface.createFromAsset(activity.getAssets(), "fonts/PressStart2P.ttf");
         }
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: a */
     public int mo9510a() {
-        return Math.round(C2553q3.m11119e((float) (!this.f9706b ? 6 : 12)));
+        return Math.round(C2553q3.m11119e((float) (!this.f9714b ? 6 : 12)));
     }
 
     /* access modifiers changed from: package-private */
@@ -45,7 +45,7 @@ public class C2885z0 {
     public float mo9511b() {
         float f;
         float f2;
-        Point g = this.f9707c.mo8203g(true);
+        Point g = this.f9715c.mo8203g(true);
         int i = g.y;
         int i2 = g.x;
         if (i > i2) {
@@ -56,7 +56,7 @@ public class C2885z0 {
             f = 35.0f;
         }
         float f3 = f2 / f;
-        return !this.f9706b ? f3 * 1.3f : f3;
+        return !this.f9714b ? f3 * 1.3f : f3;
     }
 
     /* renamed from: c */
@@ -70,9 +70,9 @@ public class C2885z0 {
         textView.setVisibility(i2);
         if (z) {
             if (str2 != null) {
-                n1Var = C2457l1.m10578c(this.f9707c).mo8860K(new File(str2 + "/" + str + ".png")).mo7762e(AbstractC1763j.f6903b).mo7754Y(true);
+                n1Var = C2457l1.m10578c(this.f9715c).mo8860K(new File(str2 + "/" + str + ".png")).mo7762e(AbstractC1763j.f6911b).mo7754Y(true);
             } else {
-                n1Var = C2457l1.m10578c(this.f9707c).mo8862M(str);
+                n1Var = C2457l1.m10578c(this.f9715c).mo8862M(str);
             }
             n1Var.mo7030p0(imageView);
             return;
@@ -90,12 +90,12 @@ public class C2885z0 {
 
     /* renamed from: e */
     public void mo9514e(TextView textView, String str) {
-        if (this.f9706b) {
+        if (this.f9714b) {
             str = C2185a4.m9696z(str).toUpperCase();
         }
         textView.setText(str);
-        if (this.f9706b) {
-            textView.setTypeface(this.f9705a);
+        if (this.f9714b) {
+            textView.setTypeface(this.f9713a);
         }
     }
 }

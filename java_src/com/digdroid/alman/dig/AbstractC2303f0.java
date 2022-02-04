@@ -13,32 +13,32 @@ import androidx.appcompat.app.DialogInterfaceC0068b;
 public abstract class AbstractC2303f0 extends AbstractC2307f1 {
 
     /* renamed from: x0 */
-    SQLiteDatabase f8157x0;
+    SQLiteDatabase f8165x0;
 
     /* renamed from: y0 */
-    boolean f8158y0;
+    boolean f8166y0;
 
     /* renamed from: z0 */
-    long f8159z0 = 0;
+    long f8167z0 = 0;
 
     /* renamed from: com.digdroid.alman.dig.f0$a */
     class DialogInterface$OnClickListenerC2304a implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ long f8160b;
+        final /* synthetic */ long f8168b;
 
         DialogInterface$OnClickListenerC2304a(long j) {
-            this.f8160b = j;
+            this.f8168b = j;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
-            AbstractC2303f0.this.mo8418E3(this.f8160b);
+            AbstractC2303f0.this.mo8418E3(this.f8168b);
             AbstractC2303f0 f0Var = AbstractC2303f0.this;
-            f0Var.f8159z0 = 0;
-            f0Var.f8806m0.mo8264R();
+            f0Var.f8167z0 = 0;
+            f0Var.f8814m0.mo8264R();
             AbstractC2303f0.this.mo8106G2(false);
             AbstractC2303f0 f0Var2 = AbstractC2303f0.this;
-            f0Var2.f8806m0.mo8260K(f0Var2.f8958p0.mo8321f());
+            f0Var2.f8814m0.mo8260K(f0Var2.f8966p0.mo8321f());
         }
     }
 
@@ -46,26 +46,26 @@ public abstract class AbstractC2303f0 extends AbstractC2307f1 {
     class DialogInterface$OnClickListenerC2305b implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ EditText f8162b;
+        final /* synthetic */ EditText f8170b;
 
         /* renamed from: c */
-        final /* synthetic */ long f8163c;
+        final /* synthetic */ long f8171c;
 
         DialogInterface$OnClickListenerC2305b(EditText editText, long j) {
-            this.f8162b = editText;
-            this.f8163c = j;
+            this.f8170b = editText;
+            this.f8171c = j;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
-            String trim = this.f8162b.getText().toString().trim();
+            String trim = this.f8170b.getText().toString().trim();
             if (trim != null && !trim.equals("")) {
-                AbstractC2303f0.this.mo8422I3(this.f8163c, trim);
+                AbstractC2303f0.this.mo8422I3(this.f8171c, trim);
                 AbstractC2303f0 f0Var = AbstractC2303f0.this;
-                f0Var.f8159z0 = 0;
-                f0Var.f8806m0.mo8264R();
+                f0Var.f8167z0 = 0;
+                f0Var.f8814m0.mo8264R();
                 AbstractC2303f0.this.mo8106G2(false);
                 AbstractC2303f0 f0Var2 = AbstractC2303f0.this;
-                f0Var2.f8806m0.mo8260K(f0Var2.f8958p0.mo8321f());
+                f0Var2.f8814m0.mo8260K(f0Var2.f8966p0.mo8321f());
             }
         }
     }
@@ -74,14 +74,14 @@ public abstract class AbstractC2303f0 extends AbstractC2307f1 {
     class DialogInterface$OnClickListenerC2306c implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ EditText f8165b;
+        final /* synthetic */ EditText f8173b;
 
         DialogInterface$OnClickListenerC2306c(EditText editText) {
-            this.f8165b = editText;
+            this.f8173b = editText;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
-            String trim = this.f8165b.getText().toString().trim();
+            String trim = this.f8173b.getText().toString().trim();
             if (trim != null && !trim.equals("")) {
                 AbstractC2303f0.this.mo8417D3(trim);
             }
@@ -129,11 +129,11 @@ public abstract class AbstractC2303f0 extends AbstractC2307f1 {
     /* renamed from: H2 */
     public boolean mo8243H2(MenuItem menuItem) {
         if (menuItem.getItemId() == R.id.hide_genres) {
-            boolean z = !this.f8158y0;
-            this.f8158y0 = z;
-            this.f8793Z.mo8152A("show_all_genres", z);
+            boolean z = !this.f8166y0;
+            this.f8166y0 = z;
+            this.f8801Z.mo8152A("show_all_genres", z);
             mo2552c0().invalidateOptionsMenu();
-            this.f8159z0 = 0;
+            this.f8167z0 = 0;
             mo8407O2();
         } else if (menuItem.getItemId() == R.id.add_genre) {
             View inflate = mo2598q0().inflate(R.layout.genre_edit, (ViewGroup) null);
@@ -162,9 +162,9 @@ public abstract class AbstractC2303f0 extends AbstractC2307f1 {
     /* renamed from: O2 */
     public synchronized void mo8407O2() {
         long currentTimeMillis = System.currentTimeMillis();
-        if (currentTimeMillis - this.f8159z0 >= 10000) {
+        if (currentTimeMillis - this.f8167z0 >= 10000) {
             super.mo8407O2();
-            this.f8159z0 = currentTimeMillis;
+            this.f8167z0 = currentTimeMillis;
         }
     }
 
@@ -211,7 +211,7 @@ public abstract class AbstractC2303f0 extends AbstractC2307f1 {
     /* renamed from: t1 */
     public void mo2605t1() {
         super.mo2605t1();
-        this.f8157x0 = this.f8794a0.mo9325c();
-        this.f8158y0 = mo8421H3();
+        this.f8165x0 = this.f8802a0.mo9325c();
+        this.f8166y0 = mo8421H3();
     }
 }

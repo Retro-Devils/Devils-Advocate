@@ -9,10 +9,10 @@ import android.provider.DocumentsContract;
 public abstract class AbstractC1056a {
 
     /* renamed from: a */
-    private final AbstractC1056a f4845a;
+    private final AbstractC1056a f4849a;
 
     AbstractC1056a(AbstractC1056a aVar) {
-        this.f4845a = aVar;
+        this.f4849a = aVar;
     }
 
     /* renamed from: h */

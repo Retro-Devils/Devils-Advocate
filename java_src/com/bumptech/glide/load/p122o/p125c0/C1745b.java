@@ -15,14 +15,14 @@ public final class C1745b {
     public class C1746a implements FilenameFilter {
 
         /* renamed from: a */
-        final /* synthetic */ Pattern f6820a;
+        final /* synthetic */ Pattern f6828a;
 
         C1746a(Pattern pattern) {
-            this.f6820a = pattern;
+            this.f6828a = pattern;
         }
 
         public boolean accept(File file, String str) {
-            return this.f6820a.matcher(str).matches();
+            return this.f6828a.matcher(str).matches();
         }
     }
 

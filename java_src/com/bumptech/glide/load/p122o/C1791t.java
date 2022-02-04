@@ -13,31 +13,31 @@ import p006b.p030g.p038j.AbstractC0958f;
 public class C1791t<Data, ResourceType, Transcode> {
 
     /* renamed from: a */
-    private final Class<Data> f6992a;
+    private final Class<Data> f7000a;
 
     /* renamed from: b */
-    private final AbstractC0958f<List<Throwable>> f6993b;
+    private final AbstractC0958f<List<Throwable>> f7001b;
 
     /* renamed from: c */
-    private final List<? extends C1761i<Data, ResourceType, Transcode>> f6994c;
+    private final List<? extends C1761i<Data, ResourceType, Transcode>> f7002c;
 
     /* renamed from: d */
-    private final String f6995d;
+    private final String f7003d;
 
     public C1791t(Class<Data> cls, Class<ResourceType> cls2, Class<Transcode> cls3, List<C1761i<Data, ResourceType, Transcode>> list, AbstractC0958f<List<Throwable>> fVar) {
-        this.f6992a = cls;
-        this.f6993b = fVar;
-        this.f6994c = (List) C2081j.m9431c(list);
-        this.f6995d = "Failed LoadPath{" + cls.getSimpleName() + "->" + cls2.getSimpleName() + "->" + cls3.getSimpleName() + "}";
+        this.f7000a = cls;
+        this.f7001b = fVar;
+        this.f7002c = (List) C2081j.m9431c(list);
+        this.f7003d = "Failed LoadPath{" + cls.getSimpleName() + "->" + cls2.getSimpleName() + "->" + cls3.getSimpleName() + "}";
     }
 
     /* renamed from: b */
     private AbstractC1794v<Transcode> m8362b(AbstractC1657e<Data> eVar, C1647i iVar, int i, int i2, C1761i.AbstractC1762a<ResourceType> aVar, List<Throwable> list) {
-        int size = this.f6994c.size();
+        int size = this.f7002c.size();
         AbstractC1794v<Transcode> vVar = null;
         for (int i3 = 0; i3 < size; i3++) {
             try {
-                vVar = ((C1761i) this.f6994c.get(i3)).mo7313a(eVar, i, i2, iVar, aVar);
+                vVar = ((C1761i) this.f7002c.get(i3)).mo7313a(eVar, i, i2, iVar, aVar);
             } catch (C1787q e) {
                 list.add(e);
             }
@@ -48,20 +48,20 @@ public class C1791t<Data, ResourceType, Transcode> {
         if (vVar != null) {
             return vVar;
         }
-        throw new C1787q(this.f6995d, new ArrayList(list));
+        throw new C1787q(this.f7003d, new ArrayList(list));
     }
 
     /* renamed from: a */
     public AbstractC1794v<Transcode> mo7383a(AbstractC1657e<Data> eVar, C1647i iVar, int i, int i2, C1761i.AbstractC1762a<ResourceType> aVar) {
-        List<Throwable> list = (List) C2081j.m9432d(this.f6993b.mo5399b());
+        List<Throwable> list = (List) C2081j.m9432d(this.f7001b.mo5399b());
         try {
             return m8362b(eVar, iVar, i, i2, aVar, list);
         } finally {
-            this.f6993b.mo5398a(list);
+            this.f7001b.mo5398a(list);
         }
     }
 
     public String toString() {
-        return "LoadPath{decodePaths=" + Arrays.toString(this.f6994c.toArray()) + '}';
+        return "LoadPath{decodePaths=" + Arrays.toString(this.f7002c.toArray()) + '}';
     }
 }

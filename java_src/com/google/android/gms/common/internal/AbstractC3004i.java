@@ -9,51 +9,51 @@ import android.content.ServiceConnection;
 public abstract class AbstractC3004i {
 
     /* renamed from: a */
-    private static final Object f9997a = new Object();
+    private static final Object f10005a = new Object();
 
     /* renamed from: b */
-    private static AbstractC3004i f9998b;
+    private static AbstractC3004i f10006b;
 
     /* access modifiers changed from: protected */
     /* renamed from: com.google.android.gms.common.internal.i$a */
     public static final class C3005a {
 
         /* renamed from: a */
-        private final String f9999a;
+        private final String f10007a;
 
         /* renamed from: b */
-        private final String f10000b;
+        private final String f10008b;
 
         /* renamed from: c */
-        private final ComponentName f10001c = null;
+        private final ComponentName f10009c = null;
 
         /* renamed from: d */
-        private final int f10002d;
+        private final int f10010d;
 
         public C3005a(String str, String str2, int i) {
-            this.f9999a = C3027r.m12373e(str);
-            this.f10000b = C3027r.m12373e(str2);
-            this.f10002d = i;
+            this.f10007a = C3027r.m12373e(str);
+            this.f10008b = C3027r.m12373e(str2);
+            this.f10010d = i;
         }
 
         /* renamed from: a */
         public final ComponentName mo9775a() {
-            return this.f10001c;
+            return this.f10009c;
         }
 
         /* renamed from: b */
         public final String mo9776b() {
-            return this.f10000b;
+            return this.f10008b;
         }
 
         /* renamed from: c */
         public final Intent mo9777c(Context context) {
-            return this.f9999a != null ? new Intent(this.f9999a).setPackage(this.f10000b) : new Intent().setComponent(this.f10001c);
+            return this.f10007a != null ? new Intent(this.f10007a).setPackage(this.f10008b) : new Intent().setComponent(this.f10009c);
         }
 
         /* renamed from: d */
         public final int mo9778d() {
-            return this.f10002d;
+            return this.f10010d;
         }
 
         public final boolean equals(Object obj) {
@@ -64,27 +64,27 @@ public abstract class AbstractC3004i {
                 return false;
             }
             C3005a aVar = (C3005a) obj;
-            return C3022p.m12361a(this.f9999a, aVar.f9999a) && C3022p.m12361a(this.f10000b, aVar.f10000b) && C3022p.m12361a(this.f10001c, aVar.f10001c) && this.f10002d == aVar.f10002d;
+            return C3022p.m12361a(this.f10007a, aVar.f10007a) && C3022p.m12361a(this.f10008b, aVar.f10008b) && C3022p.m12361a(this.f10009c, aVar.f10009c) && this.f10010d == aVar.f10010d;
         }
 
         public final int hashCode() {
-            return C3022p.m12362b(this.f9999a, this.f10000b, this.f10001c, Integer.valueOf(this.f10002d));
+            return C3022p.m12362b(this.f10007a, this.f10008b, this.f10009c, Integer.valueOf(this.f10010d));
         }
 
         public final String toString() {
-            String str = this.f9999a;
-            return str == null ? this.f10001c.flattenToString() : str;
+            String str = this.f10007a;
+            return str == null ? this.f10009c.flattenToString() : str;
         }
     }
 
     /* renamed from: a */
     public static AbstractC3004i m12321a(Context context) {
-        synchronized (f9997a) {
-            if (f9998b == null) {
-                f9998b = new C3003h0(context.getApplicationContext());
+        synchronized (f10005a) {
+            if (f10006b == null) {
+                f10006b = new C3003h0(context.getApplicationContext());
             }
         }
-        return f9998b;
+        return f10006b;
     }
 
     /* renamed from: b */

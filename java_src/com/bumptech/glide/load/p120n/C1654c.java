@@ -7,49 +7,49 @@ import java.io.OutputStream;
 public final class C1654c extends OutputStream {
 
     /* renamed from: b */
-    private final OutputStream f6661b;
+    private final OutputStream f6669b;
 
     /* renamed from: c */
-    private byte[] f6662c;
+    private byte[] f6670c;
 
     /* renamed from: d */
-    private AbstractC1690b f6663d;
+    private AbstractC1690b f6671d;
 
     /* renamed from: e */
-    private int f6664e;
+    private int f6672e;
 
     public C1654c(OutputStream outputStream, AbstractC1690b bVar) {
         this(outputStream, bVar, 65536);
     }
 
     C1654c(OutputStream outputStream, AbstractC1690b bVar, int i) {
-        this.f6661b = outputStream;
-        this.f6663d = bVar;
-        this.f6662c = (byte[]) bVar.mo7162e(i, byte[].class);
+        this.f6669b = outputStream;
+        this.f6671d = bVar;
+        this.f6670c = (byte[]) bVar.mo7162e(i, byte[].class);
     }
 
     /* renamed from: a */
     private void m7897a() {
-        int i = this.f6664e;
+        int i = this.f6672e;
         if (i > 0) {
-            this.f6661b.write(this.f6662c, 0, i);
-            this.f6664e = 0;
+            this.f6669b.write(this.f6670c, 0, i);
+            this.f6672e = 0;
         }
     }
 
     /* renamed from: b */
     private void m7898b() {
-        if (this.f6664e == this.f6662c.length) {
+        if (this.f6672e == this.f6670c.length) {
             m7897a();
         }
     }
 
     /* renamed from: c */
     private void m7899c() {
-        byte[] bArr = this.f6662c;
+        byte[] bArr = this.f6670c;
         if (bArr != null) {
-            this.f6663d.mo7161d(bArr);
-            this.f6662c = null;
+            this.f6671d.mo7161d(bArr);
+            this.f6670c = null;
         }
     }
 
@@ -58,10 +58,10 @@ public final class C1654c extends OutputStream {
     public void close() {
         try {
             flush();
-            this.f6661b.close();
+            this.f6669b.close();
             m7899c();
         } catch (Throwable th) {
-            this.f6661b.close();
+            this.f6669b.close();
             throw th;
         }
     }
@@ -69,14 +69,14 @@ public final class C1654c extends OutputStream {
     @Override // java.io.OutputStream, java.io.Flushable
     public void flush() {
         m7897a();
-        this.f6661b.flush();
+        this.f6669b.flush();
     }
 
     @Override // java.io.OutputStream
     public void write(int i) {
-        byte[] bArr = this.f6662c;
-        int i2 = this.f6664e;
-        this.f6664e = i2 + 1;
+        byte[] bArr = this.f6670c;
+        int i2 = this.f6672e;
+        this.f6672e = i2 + 1;
         bArr[i2] = (byte) i;
         m7898b();
     }
@@ -92,15 +92,15 @@ public final class C1654c extends OutputStream {
         do {
             int i4 = i2 - i3;
             int i5 = i + i3;
-            int i6 = this.f6664e;
-            if (i6 != 0 || i4 < this.f6662c.length) {
-                int min = Math.min(i4, this.f6662c.length - i6);
-                System.arraycopy(bArr, i5, this.f6662c, this.f6664e, min);
-                this.f6664e += min;
+            int i6 = this.f6672e;
+            if (i6 != 0 || i4 < this.f6670c.length) {
+                int min = Math.min(i4, this.f6670c.length - i6);
+                System.arraycopy(bArr, i5, this.f6670c, this.f6672e, min);
+                this.f6672e += min;
                 i3 += min;
                 m7898b();
             } else {
-                this.f6661b.write(bArr, i5, i4);
+                this.f6669b.write(bArr, i5, i4);
                 return;
             }
         } while (i3 < i2);

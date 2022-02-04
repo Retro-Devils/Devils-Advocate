@@ -4,5 +4,5 @@ package p069c.p073b.p074a.p075a.p076a;
 public final class C1277a {
 
     /* renamed from: a */
-    public static final int APKTOOL_DUMMY_6b = 2131165291;
+    public static final int f5535a = 2131165291;
 }

@@ -461,21 +461,21 @@ public class C0304z {
     public void mo1904t(AttributeSet attributeSet, int i) {
         int resourceId;
         Context context = this.f1298m;
-        int[] iArr = C0763j.f3743i0;
+        int[] iArr = C0763j.f3747i0;
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, iArr, i, 0);
         TextView textView = this.f1297l;
         C1013s.m5762g0(textView, textView.getContext(), iArr, attributeSet, obtainStyledAttributes, i, 0);
-        int i2 = C0763j.f3768n0;
+        int i2 = C0763j.f3772n0;
         if (obtainStyledAttributes.hasValue(i2)) {
             this.f1289d = obtainStyledAttributes.getInt(i2, 0);
         }
-        int i3 = C0763j.f3763m0;
+        int i3 = C0763j.f3767m0;
         float dimension = obtainStyledAttributes.hasValue(i3) ? obtainStyledAttributes.getDimension(i3, -1.0f) : -1.0f;
-        int i4 = C0763j.f3753k0;
+        int i4 = C0763j.f3757k0;
         float dimension2 = obtainStyledAttributes.hasValue(i4) ? obtainStyledAttributes.getDimension(i4, -1.0f) : -1.0f;
-        int i5 = C0763j.f3748j0;
+        int i5 = C0763j.f3752j0;
         float dimension3 = obtainStyledAttributes.hasValue(i5) ? obtainStyledAttributes.getDimension(i5, -1.0f) : -1.0f;
-        int i6 = C0763j.f3758l0;
+        int i6 = C0763j.f3762l0;
         if (obtainStyledAttributes.hasValue(i6) && (resourceId = obtainStyledAttributes.getResourceId(i6, 0)) > 0) {
             TypedArray obtainTypedArray = obtainStyledAttributes.getResources().obtainTypedArray(resourceId);
             m1526A(obtainTypedArray);

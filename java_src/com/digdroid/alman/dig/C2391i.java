@@ -14,22 +14,22 @@ import java.util.ArrayList;
 public class C2391i implements DialogFragmentC2864y.AbstractC2879m {
 
     /* renamed from: a */
-    private final WeakReference<Activity> f8360a;
+    private final WeakReference<Activity> f8368a;
 
     /* renamed from: b */
-    String f8361b;
+    String f8369b;
 
     /* renamed from: c */
-    boolean f8362c = false;
+    boolean f8370c = false;
 
     /* renamed from: d */
-    int f8363d = -1;
+    int f8371d = -1;
 
     /* renamed from: e */
-    private DialogFragmentC2864y f8364e;
+    private DialogFragmentC2864y f8372e;
 
     /* renamed from: f */
-    AbstractC2394b f8365f;
+    AbstractC2394b f8373f;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.digdroid.alman.dig.i$a */
@@ -39,14 +39,14 @@ public class C2391i implements DialogFragmentC2864y.AbstractC2879m {
         class DialogInterface$OnClickListenerC2393a implements DialogInterface.OnClickListener {
 
             /* renamed from: b */
-            final /* synthetic */ ArrayList f8367b;
+            final /* synthetic */ ArrayList f8375b;
 
             DialogInterface$OnClickListenerC2393a(ArrayList arrayList) {
-                this.f8367b = arrayList;
+                this.f8375b = arrayList;
             }
 
             public void onClick(DialogInterface dialogInterface, int i) {
-                C2391i.this.mo8589e((String) this.f8367b.get(i));
+                C2391i.this.mo8589e((String) this.f8375b.get(i));
             }
         }
 
@@ -56,7 +56,7 @@ public class C2391i implements DialogFragmentC2864y.AbstractC2879m {
         @Override // com.digdroid.alman.dig.C2372h2.AbstractC2374b
         /* renamed from: a */
         public void mo8540a(String[] strArr) {
-            Activity activity = (Activity) C2391i.this.f8360a.get();
+            Activity activity = (Activity) C2391i.this.f8368a.get();
             if (!(activity == null || activity.isFinishing())) {
                 ArrayList arrayList = new ArrayList();
                 if (strArr != null && Build.VERSION.SDK_INT < 30) {
@@ -64,7 +64,7 @@ public class C2391i implements DialogFragmentC2864y.AbstractC2879m {
                         arrayList.add(str);
                     }
                 }
-                if (C2391i.this.f8363d > 0 && Build.VERSION.SDK_INT >= 19) {
+                if (C2391i.this.f8371d > 0 && Build.VERSION.SDK_INT >= 19) {
                     arrayList.add("saf");
                 }
                 if (arrayList.size() != 0) {
@@ -95,25 +95,25 @@ public class C2391i implements DialogFragmentC2864y.AbstractC2879m {
     }
 
     public C2391i(Activity activity) {
-        this.f8360a = new WeakReference<>(activity);
+        this.f8368a = new WeakReference<>(activity);
     }
 
     @Override // com.digdroid.alman.dig.DialogFragmentC2864y.AbstractC2879m
     /* renamed from: a */
     public void mo8586a() {
-        this.f8364e.dismiss();
+        this.f8372e.dismiss();
     }
 
     @Override // com.digdroid.alman.dig.DialogFragmentC2864y.AbstractC2879m
     /* renamed from: b */
     public void mo8587b(String str) {
-        this.f8364e.dismiss();
-        this.f8365f.mo8043a(new String[]{str});
+        this.f8372e.dismiss();
+        this.f8373f.mo8043a(new String[]{str});
     }
 
     /* renamed from: d */
     public void mo8588d() {
-        Activity activity = this.f8360a.get();
+        Activity activity = this.f8368a.get();
         if (activity != null && !activity.isFinishing()) {
             C2372h2.m10301e(activity, new C2392a());
         }
@@ -121,21 +121,21 @@ public class C2391i implements DialogFragmentC2864y.AbstractC2879m {
 
     /* renamed from: e */
     public void mo8589e(String str) {
-        Activity activity = this.f8360a.get();
+        Activity activity = this.f8368a.get();
         if (activity != null && !activity.isFinishing()) {
             if (str.equals("saf")) {
                 Intent intent = new Intent("android.intent.action.OPEN_DOCUMENT_TREE");
                 intent.addFlags(65731);
-                activity.startActivityForResult(intent, this.f8363d);
+                activity.startActivityForResult(intent, this.f8371d);
                 return;
             }
             try {
                 DialogFragmentC2864y E = DialogFragmentC2864y.m11887E();
-                this.f8364e = E;
+                this.f8372e = E;
                 E.mo9468J(this);
-                this.f8364e.mo9469K(str);
-                this.f8364e.mo9470L(this.f8362c);
-                this.f8364e.show(activity.getFragmentManager(), (String) null);
+                this.f8372e.mo9469K(str);
+                this.f8372e.mo9470L(this.f8370c);
+                this.f8372e.show(activity.getFragmentManager(), (String) null);
             } catch (Exception unused) {
             }
         }
@@ -143,21 +143,21 @@ public class C2391i implements DialogFragmentC2864y.AbstractC2879m {
 
     /* renamed from: f */
     public void mo8590f(int i) {
-        this.f8363d = i;
+        this.f8371d = i;
     }
 
     /* renamed from: g */
     public void mo8591g(boolean z) {
-        this.f8362c = z;
+        this.f8370c = z;
     }
 
     /* renamed from: h */
     public void mo8592h(AbstractC2394b bVar) {
-        this.f8365f = bVar;
+        this.f8373f = bVar;
     }
 
     /* renamed from: i */
     public void mo8593i(String str) {
-        this.f8361b = str;
+        this.f8369b = str;
     }
 }

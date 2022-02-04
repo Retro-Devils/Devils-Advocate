@@ -179,8 +179,8 @@ public class FadeAndShortSlide extends Visibility {
         this.f2557i = new Fade();
         this.f2558j = -1.0f;
         this.f2559k = new C0501f();
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4948a0);
-        mo2925d(obtainStyledAttributes.getInt(C1080l.f4956e0, 8388611));
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4955a0);
+        mo2925d(obtainStyledAttributes.getInt(C1080l.f4963e0, 8388611));
         obtainStyledAttributes.recycle();
     }
 

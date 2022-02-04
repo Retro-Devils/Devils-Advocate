@@ -12,25 +12,25 @@ public final class C3125i implements Comparable<C3125i>, Parcelable {
     public static final Parcelable.Creator<C3125i> CREATOR = new C3126a();
 
     /* renamed from: b */
-    private final Calendar f10436b;
+    private final Calendar f10444b;
 
     /* renamed from: c */
-    private final String f10437c;
+    private final String f10445c;
 
     /* renamed from: d */
-    final int f10438d;
+    final int f10446d;
 
     /* renamed from: e */
-    final int f10439e;
+    final int f10447e;
 
     /* renamed from: f */
-    final int f10440f;
+    final int f10448f;
 
     /* renamed from: g */
-    final int f10441g;
+    final int f10449g;
 
     /* renamed from: h */
-    final long f10442h;
+    final long f10450h;
 
     /* renamed from: com.google.android.material.datepicker.i$a */
     static class C3126a implements Parcelable.Creator<C3125i> {
@@ -51,13 +51,13 @@ public final class C3125i implements Comparable<C3125i>, Parcelable {
     private C3125i(Calendar calendar) {
         calendar.set(5, 1);
         Calendar d = C3136p.m13074d(calendar);
-        this.f10436b = d;
-        this.f10438d = d.get(2);
-        this.f10439e = d.get(1);
-        this.f10440f = d.getMaximum(7);
-        this.f10441g = d.getActualMaximum(5);
-        this.f10437c = C3136p.m13085o().format(d.getTime());
-        this.f10442h = d.getTimeInMillis();
+        this.f10444b = d;
+        this.f10446d = d.get(2);
+        this.f10447e = d.get(1);
+        this.f10448f = d.getMaximum(7);
+        this.f10449g = d.getActualMaximum(5);
+        this.f10445c = C3136p.m13085o().format(d.getTime());
+        this.f10450h = d.getTimeInMillis();
     }
 
     /* renamed from: g */
@@ -75,7 +75,7 @@ public final class C3125i implements Comparable<C3125i>, Parcelable {
 
     /* renamed from: b */
     public int compareTo(C3125i iVar) {
-        return this.f10436b.compareTo(iVar.f10436b);
+        return this.f10444b.compareTo(iVar.f10444b);
     }
 
     public int describeContents() {
@@ -90,24 +90,24 @@ public final class C3125i implements Comparable<C3125i>, Parcelable {
             return false;
         }
         C3125i iVar = (C3125i) obj;
-        return this.f10438d == iVar.f10438d && this.f10439e == iVar.f10439e;
+        return this.f10446d == iVar.f10446d && this.f10447e == iVar.f10447e;
     }
 
     public int hashCode() {
-        return Arrays.hashCode(new Object[]{Integer.valueOf(this.f10438d), Integer.valueOf(this.f10439e)});
+        return Arrays.hashCode(new Object[]{Integer.valueOf(this.f10446d), Integer.valueOf(this.f10447e)});
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: i */
     public int mo10436i() {
-        int firstDayOfWeek = this.f10436b.get(7) - this.f10436b.getFirstDayOfWeek();
-        return firstDayOfWeek < 0 ? firstDayOfWeek + this.f10440f : firstDayOfWeek;
+        int firstDayOfWeek = this.f10444b.get(7) - this.f10444b.getFirstDayOfWeek();
+        return firstDayOfWeek < 0 ? firstDayOfWeek + this.f10448f : firstDayOfWeek;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: j */
     public long mo10437j(int i) {
-        Calendar d = C3136p.m13074d(this.f10436b);
+        Calendar d = C3136p.m13074d(this.f10444b);
         d.set(5, i);
         return d.getTimeInMillis();
     }
@@ -115,19 +115,19 @@ public final class C3125i implements Comparable<C3125i>, Parcelable {
     /* access modifiers changed from: package-private */
     /* renamed from: k */
     public String mo10438k() {
-        return this.f10437c;
+        return this.f10445c;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: l */
     public long mo10439l() {
-        return this.f10436b.getTimeInMillis();
+        return this.f10444b.getTimeInMillis();
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: m */
     public C3125i mo10440m(int i) {
-        Calendar d = C3136p.m13074d(this.f10436b);
+        Calendar d = C3136p.m13074d(this.f10444b);
         d.add(2, i);
         return new C3125i(d);
     }
@@ -135,14 +135,14 @@ public final class C3125i implements Comparable<C3125i>, Parcelable {
     /* access modifiers changed from: package-private */
     /* renamed from: n */
     public int mo10441n(C3125i iVar) {
-        if (this.f10436b instanceof GregorianCalendar) {
-            return ((iVar.f10439e - this.f10439e) * 12) + (iVar.f10438d - this.f10438d);
+        if (this.f10444b instanceof GregorianCalendar) {
+            return ((iVar.f10447e - this.f10447e) * 12) + (iVar.f10446d - this.f10446d);
         }
         throw new IllegalArgumentException("Only Gregorian calendars are supported.");
     }
 
     public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeInt(this.f10439e);
-        parcel.writeInt(this.f10438d);
+        parcel.writeInt(this.f10447e);
+        parcel.writeInt(this.f10446d);
     }
 }

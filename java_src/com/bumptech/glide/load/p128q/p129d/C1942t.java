@@ -12,11 +12,11 @@ import java.io.InputStream;
 public final class C1942t implements AbstractC1649k<InputStream, Bitmap> {
 
     /* renamed from: a */
-    private final C1909d f7235a = new C1909d();
+    private final C1909d f7243a = new C1909d();
 
     /* renamed from: c */
     public AbstractC1794v<Bitmap> mo7088a(InputStream inputStream, int i, int i2, C1647i iVar) {
-        return this.f7235a.mo7088a(ImageDecoder.createSource(C2068a.m9399b(inputStream)), i, i2, iVar);
+        return this.f7243a.mo7088a(ImageDecoder.createSource(C2068a.m9399b(inputStream)), i, i2, iVar);
     }
 
     /* renamed from: d */

@@ -15,26 +15,26 @@ import p069c.p073b.p074a.p090b.p107z.C1462k;
 public class C1443a extends Drawable implements AbstractC1477n, AbstractC0399b {
 
     /* renamed from: b */
-    private C1445b f6085b;
+    private C1445b f6093b;
 
     /* access modifiers changed from: package-private */
     /* renamed from: c.b.a.b.x.a$b */
     public static final class C1445b extends Drawable.ConstantState {
 
         /* renamed from: a */
-        C1455g f6086a;
+        C1455g f6094a;
 
         /* renamed from: b */
-        boolean f6087b;
+        boolean f6095b;
 
         public C1445b(C1445b bVar) {
-            this.f6086a = (C1455g) bVar.f6086a.getConstantState().newDrawable();
-            this.f6087b = bVar.f6087b;
+            this.f6094a = (C1455g) bVar.f6094a.getConstantState().newDrawable();
+            this.f6095b = bVar.f6095b;
         }
 
         public C1445b(C1455g gVar) {
-            this.f6086a = gVar;
-            this.f6087b = false;
+            this.f6094a = gVar;
+            this.f6095b = false;
         }
 
         /* renamed from: a */
@@ -48,7 +48,7 @@ public class C1443a extends Drawable implements AbstractC1477n, AbstractC0399b {
     }
 
     private C1443a(C1445b bVar) {
-        this.f6085b = bVar;
+        this.f6093b = bVar;
     }
 
     public C1443a(C1462k kVar) {
@@ -57,23 +57,23 @@ public class C1443a extends Drawable implements AbstractC1477n, AbstractC0399b {
 
     /* renamed from: a */
     public C1443a mutate() {
-        this.f6085b = new C1445b(this.f6085b);
+        this.f6093b = new C1445b(this.f6093b);
         return this;
     }
 
     public void draw(Canvas canvas) {
-        C1445b bVar = this.f6085b;
-        if (bVar.f6087b) {
-            bVar.f6086a.draw(canvas);
+        C1445b bVar = this.f6093b;
+        if (bVar.f6095b) {
+            bVar.f6094a.draw(canvas);
         }
     }
 
     public Drawable.ConstantState getConstantState() {
-        return this.f6085b;
+        return this.f6093b;
     }
 
     public int getOpacity() {
-        return this.f6085b.f6086a.getOpacity();
+        return this.f6093b.f6094a.getOpacity();
     }
 
     public boolean isStateful() {
@@ -83,49 +83,49 @@ public class C1443a extends Drawable implements AbstractC1477n, AbstractC0399b {
     /* access modifiers changed from: protected */
     public void onBoundsChange(Rect rect) {
         super.onBoundsChange(rect);
-        this.f6085b.f6086a.setBounds(rect);
+        this.f6093b.f6094a.setBounds(rect);
     }
 
     /* access modifiers changed from: protected */
     public boolean onStateChange(int[] iArr) {
         boolean onStateChange = super.onStateChange(iArr);
-        if (this.f6085b.f6086a.setState(iArr)) {
+        if (this.f6093b.f6094a.setState(iArr)) {
             onStateChange = true;
         }
         boolean b = C1446b.m7104b(iArr);
-        C1445b bVar = this.f6085b;
-        if (bVar.f6087b == b) {
+        C1445b bVar = this.f6093b;
+        if (bVar.f6095b == b) {
             return onStateChange;
         }
-        bVar.f6087b = b;
+        bVar.f6095b = b;
         return true;
     }
 
     public void setAlpha(int i) {
-        this.f6085b.f6086a.setAlpha(i);
+        this.f6093b.f6094a.setAlpha(i);
     }
 
     public void setColorFilter(ColorFilter colorFilter) {
-        this.f6085b.f6086a.setColorFilter(colorFilter);
+        this.f6093b.f6094a.setColorFilter(colorFilter);
     }
 
     @Override // p069c.p073b.p074a.p090b.p107z.AbstractC1477n
     public void setShapeAppearanceModel(C1462k kVar) {
-        this.f6085b.f6086a.setShapeAppearanceModel(kVar);
+        this.f6093b.f6094a.setShapeAppearanceModel(kVar);
     }
 
     @Override // androidx.core.graphics.drawable.AbstractC0399b
     public void setTint(int i) {
-        this.f6085b.f6086a.setTint(i);
+        this.f6093b.f6094a.setTint(i);
     }
 
     @Override // androidx.core.graphics.drawable.AbstractC0399b
     public void setTintList(ColorStateList colorStateList) {
-        this.f6085b.f6086a.setTintList(colorStateList);
+        this.f6093b.f6094a.setTintList(colorStateList);
     }
 
     @Override // androidx.core.graphics.drawable.AbstractC0399b
     public void setTintMode(PorterDuff.Mode mode) {
-        this.f6085b.f6086a.setTintMode(mode);
+        this.f6093b.f6094a.setTintMode(mode);
     }
 }

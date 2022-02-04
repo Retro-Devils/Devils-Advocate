@@ -14,20 +14,20 @@ public class C1329j implements AbstractC1339d {
     static class C1330a implements AbstractC1339d.AbstractC1341b {
 
         /* renamed from: b */
-        private final Status f5584b;
+        private final Status f5592b;
 
         /* renamed from: c */
-        private final C1343f f5585c;
+        private final C1343f f5593c;
 
         public C1330a(Status status, C1343f fVar) {
-            this.f5584b = status;
-            this.f5585c = fVar;
+            this.f5592b = status;
+            this.f5593c = fVar;
         }
 
         @Override // p069c.p073b.p074a.p075a.p086e.AbstractC1339d.AbstractC1341b
         /* renamed from: b */
         public final String mo6350b() {
-            C1343f fVar = this.f5585c;
+            C1343f fVar = this.f5593c;
             if (fVar == null) {
                 return null;
             }
@@ -37,7 +37,7 @@ public class C1329j implements AbstractC1339d {
         @Override // com.google.android.gms.common.api.AbstractC2964k
         /* renamed from: g */
         public final Status mo6351g() {
-            return this.f5584b;
+            return this.f5592b;
         }
     }
 
@@ -46,7 +46,7 @@ public class C1329j implements AbstractC1339d {
     public static abstract class AbstractC1331b extends AbstractC1324e<AbstractC1339d.AbstractC1341b> {
 
         /* renamed from: s */
-        protected AbstractC1325f f5586s = new BinderC1333l(this);
+        protected AbstractC1325f f5594s = new BinderC1333l(this);
 
         public AbstractC1331b(AbstractC2911f fVar) {
             super(fVar);

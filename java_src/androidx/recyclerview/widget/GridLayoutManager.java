@@ -486,7 +486,7 @@ public class GridLayoutManager extends LinearLayoutManager {
     /* JADX DEBUG: Multi-variable search result rejected for r17v0, resolved type: androidx.recyclerview.widget.GridLayoutManager */
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r5v0 */
-    /* JADX WARN: Type inference failed for: r5v1, types: [int, boolean] */
+    /* JADX WARN: Type inference failed for: r5v1, types: [boolean, int] */
     /* JADX WARN: Type inference failed for: r5v19 */
     /* access modifiers changed from: package-private */
     /* JADX WARNING: Unknown variable types count: 1 */

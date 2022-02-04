@@ -11,22 +11,22 @@ import p069c.p073b.p074a.p090b.p104w.C1438d;
 public class C3199n {
 
     /* renamed from: a */
-    private final TextPaint f10707a = new TextPaint(1);
+    private final TextPaint f10715a = new TextPaint(1);
 
     /* renamed from: b */
-    private final AbstractC1442f f10708b = new C3200a();
+    private final AbstractC1442f f10716b = new C3200a();
 
     /* renamed from: c */
-    private float f10709c;
+    private float f10717c;
 
     /* renamed from: d */
-    private boolean f10710d = true;
+    private boolean f10718d = true;
 
     /* renamed from: e */
-    private WeakReference<AbstractC3201b> f10711e = new WeakReference<>(null);
+    private WeakReference<AbstractC3201b> f10719e = new WeakReference<>(null);
 
     /* renamed from: f */
-    private C1438d f10712f;
+    private C1438d f10720f;
 
     /* renamed from: com.google.android.material.internal.n$a */
     class C3200a extends AbstractC1442f {
@@ -36,8 +36,8 @@ public class C3199n {
         @Override // p069c.p073b.p074a.p090b.p104w.AbstractC1442f
         /* renamed from: a */
         public void mo6555a(int i) {
-            C3199n.this.f10710d = true;
-            AbstractC3201b bVar = (AbstractC3201b) C3199n.this.f10711e.get();
+            C3199n.this.f10718d = true;
+            AbstractC3201b bVar = (AbstractC3201b) C3199n.this.f10719e.get();
             if (bVar != null) {
                 bVar.mo10322a();
             }
@@ -47,8 +47,8 @@ public class C3199n {
         /* renamed from: b */
         public void mo6556b(Typeface typeface, boolean z) {
             if (!z) {
-                C3199n.this.f10710d = true;
-                AbstractC3201b bVar = (AbstractC3201b) C3199n.this.f10711e.get();
+                C3199n.this.f10718d = true;
+                AbstractC3201b bVar = (AbstractC3201b) C3199n.this.f10719e.get();
                 if (bVar != null) {
                     bVar.mo10322a();
                 }
@@ -75,49 +75,49 @@ public class C3199n {
         if (charSequence == null) {
             return 0.0f;
         }
-        return this.f10707a.measureText(charSequence, 0, charSequence.length());
+        return this.f10715a.measureText(charSequence, 0, charSequence.length());
     }
 
     /* renamed from: d */
     public C1438d mo10792d() {
-        return this.f10712f;
+        return this.f10720f;
     }
 
     /* renamed from: e */
     public TextPaint mo10793e() {
-        return this.f10707a;
+        return this.f10715a;
     }
 
     /* renamed from: f */
     public float mo10794f(String str) {
-        if (!this.f10710d) {
-            return this.f10709c;
+        if (!this.f10718d) {
+            return this.f10717c;
         }
         float c = m13412c(str);
-        this.f10709c = c;
-        this.f10710d = false;
+        this.f10717c = c;
+        this.f10718d = false;
         return c;
     }
 
     /* renamed from: g */
     public void mo10795g(AbstractC3201b bVar) {
-        this.f10711e = new WeakReference<>(bVar);
+        this.f10719e = new WeakReference<>(bVar);
     }
 
     /* renamed from: h */
     public void mo10796h(C1438d dVar, Context context) {
-        if (this.f10712f != dVar) {
-            this.f10712f = dVar;
+        if (this.f10720f != dVar) {
+            this.f10720f = dVar;
             if (dVar != null) {
-                dVar.mo6564j(context, this.f10707a, this.f10708b);
-                AbstractC3201b bVar = this.f10711e.get();
+                dVar.mo6564j(context, this.f10715a, this.f10716b);
+                AbstractC3201b bVar = this.f10719e.get();
                 if (bVar != null) {
-                    this.f10707a.drawableState = bVar.getState();
+                    this.f10715a.drawableState = bVar.getState();
                 }
-                dVar.mo6563i(context, this.f10707a, this.f10708b);
-                this.f10710d = true;
+                dVar.mo6563i(context, this.f10715a, this.f10716b);
+                this.f10718d = true;
             }
-            AbstractC3201b bVar2 = this.f10711e.get();
+            AbstractC3201b bVar2 = this.f10719e.get();
             if (bVar2 != null) {
                 bVar2.mo10322a();
                 bVar2.onStateChange(bVar2.getState());
@@ -127,11 +127,11 @@ public class C3199n {
 
     /* renamed from: i */
     public void mo10797i(boolean z) {
-        this.f10710d = z;
+        this.f10718d = z;
     }
 
     /* renamed from: j */
     public void mo10798j(Context context) {
-        this.f10712f.mo6563i(context, this.f10707a, this.f10708b);
+        this.f10720f.mo6563i(context, this.f10715a, this.f10716b);
     }
 }

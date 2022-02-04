@@ -12,16 +12,16 @@ import p069c.p070a.p071a.p072w.C1272k;
 public class C2313f3 extends C2254d4 {
 
     /* renamed from: p0 */
-    String f8181p0;
+    String f8189p0;
 
     /* renamed from: com.digdroid.alman.dig.f3$a */
     class C2314a implements C1245p.AbstractC1247b<JSONObject> {
 
         /* renamed from: a */
-        final /* synthetic */ C2254d4.AbstractC2258b f8182a;
+        final /* synthetic */ C2254d4.AbstractC2258b f8190a;
 
         C2314a(C2254d4.AbstractC2258b bVar) {
-            this.f8182a = bVar;
+            this.f8190a = bVar;
         }
 
         /* renamed from: b */
@@ -29,9 +29,9 @@ public class C2313f3 extends C2254d4 {
             if (jSONObject != null && jSONObject.has("status")) {
                 try {
                     if (jSONObject.getString("status").equals("ok")) {
-                        SQLiteDatabase c = C2313f3.this.f8794a0.mo9325c();
-                        c.execSQL("UPDATE systems SET forumcreated=1 WHERE slug='" + C2313f3.this.f8181p0 + "'");
-                        this.f8182a.mo8249a();
+                        SQLiteDatabase c = C2313f3.this.f8802a0.mo9325c();
+                        c.execSQL("UPDATE systems SET forumcreated=1 WHERE slug='" + C2313f3.this.f8189p0 + "'");
+                        this.f8190a.mo8249a();
                     }
                 } catch (Exception unused) {
                 }
@@ -54,22 +54,22 @@ public class C2313f3 extends C2254d4 {
     @Override // com.digdroid.alman.dig.C2254d4
     /* renamed from: g3 */
     public boolean mo8244g3() {
-        return this.f8793Z.mo8180c("external_browser", false);
+        return this.f8801Z.mo8180c("external_browser", false);
     }
 
     /* access modifiers changed from: package-private */
     @Override // com.digdroid.alman.dig.C2254d4
     /* renamed from: h3 */
     public String mo8245h3() {
-        return "https://digdroid.com/forums/categories/system-" + this.f8181p0;
+        return "https://digdroid.com/forums/categories/system-" + this.f8189p0;
     }
 
     /* access modifiers changed from: package-private */
     @Override // com.digdroid.alman.dig.C2254d4
     /* renamed from: j3 */
     public void mo8247j3(C2254d4.AbstractC2258b bVar) {
-        SQLiteDatabase c = this.f8794a0.mo9325c();
-        Cursor rawQuery = c.rawQuery("SELECT forumcreated FROM systems WHERE slug='" + this.f8181p0 + "'", null);
+        SQLiteDatabase c = this.f8802a0.mo9325c();
+        Cursor rawQuery = c.rawQuery("SELECT forumcreated FROM systems WHERE slug='" + this.f8189p0 + "'", null);
         if (!rawQuery.moveToFirst()) {
             rawQuery.close();
             return;
@@ -84,8 +84,8 @@ public class C2313f3 extends C2254d4 {
             return;
         }
         try {
-            JSONObject jSONObject = new JSONObject("{\"system\":" + this.f8181p0 + "}");
-            C2490m2.m10682a(mo2575j0()).mo6218a(new C1272k(ServerService.f7700b + "/getsystemforum.php?system=" + this.f8181p0, jSONObject, new C2314a(bVar), new C2315b()));
+            JSONObject jSONObject = new JSONObject("{\"system\":" + this.f8189p0 + "}");
+            C2490m2.m10682a(mo2575j0()).mo6218a(new C1272k(ServerService.f7708b + "/getsystemforum.php?system=" + this.f8189p0, jSONObject, new C2314a(bVar), new C2315b()));
         } catch (Exception unused) {
         }
     }
@@ -94,6 +94,6 @@ public class C2313f3 extends C2254d4 {
     /* renamed from: t1 */
     public void mo2605t1() {
         super.mo2605t1();
-        this.f8181p0 = this.f8795b0.mo8569t(mo2568h0().getString("system"));
+        this.f8189p0 = this.f8803b0.mo8569t(mo2568h0().getString("system"));
     }
 }

@@ -36,47 +36,47 @@ import java.util.Set;
 public final class C1930m {
 
     /* renamed from: a */
-    public static final C1644h<EnumC1631b> f7204a = C1644h.m7873f("com.bumptech.glide.load.resource.bitmap.Downsampler.DecodeFormat", EnumC1631b.f6633d);
+    public static final C1644h<EnumC1631b> f7212a = C1644h.m7873f("com.bumptech.glide.load.resource.bitmap.Downsampler.DecodeFormat", EnumC1631b.f6641d);
 
     /* renamed from: b */
-    public static final C1644h<EnumC1648j> f7205b = C1644h.m7873f("com.bumptech.glide.load.resource.bitmap.Downsampler.PreferredColorSpace", EnumC1648j.SRGB);
+    public static final C1644h<EnumC1648j> f7213b = C1644h.m7873f("com.bumptech.glide.load.resource.bitmap.Downsampler.PreferredColorSpace", EnumC1648j.SRGB);
     @Deprecated
 
     /* renamed from: c */
-    public static final C1644h<AbstractC1922l> f7206c = AbstractC1922l.f7199h;
+    public static final C1644h<AbstractC1922l> f7214c = AbstractC1922l.f7207h;
 
     /* renamed from: d */
-    public static final C1644h<Boolean> f7207d;
+    public static final C1644h<Boolean> f7215d;
 
     /* renamed from: e */
-    public static final C1644h<Boolean> f7208e;
+    public static final C1644h<Boolean> f7216e;
 
     /* renamed from: f */
-    private static final Set<String> f7209f = Collections.unmodifiableSet(new HashSet(Arrays.asList("image/vnd.wap.wbmp", "image/x-ico")));
+    private static final Set<String> f7217f = Collections.unmodifiableSet(new HashSet(Arrays.asList("image/vnd.wap.wbmp", "image/x-ico")));
 
     /* renamed from: g */
-    private static final AbstractC1932b f7210g = new C1931a();
+    private static final AbstractC1932b f7218g = new C1931a();
 
     /* renamed from: h */
-    private static final Set<ImageHeaderParser.ImageType> f7211h = Collections.unmodifiableSet(EnumSet.of(ImageHeaderParser.ImageType.JPEG, ImageHeaderParser.ImageType.PNG_A, ImageHeaderParser.ImageType.PNG));
+    private static final Set<ImageHeaderParser.ImageType> f7219h = Collections.unmodifiableSet(EnumSet.of(ImageHeaderParser.ImageType.JPEG, ImageHeaderParser.ImageType.PNG_A, ImageHeaderParser.ImageType.PNG));
 
     /* renamed from: i */
-    private static final Queue<BitmapFactory.Options> f7212i = C2082k.m9438e(0);
+    private static final Queue<BitmapFactory.Options> f7220i = C2082k.m9438e(0);
 
     /* renamed from: j */
-    private final AbstractC1695e f7213j;
+    private final AbstractC1695e f7221j;
 
     /* renamed from: k */
-    private final DisplayMetrics f7214k;
+    private final DisplayMetrics f7222k;
 
     /* renamed from: l */
-    private final AbstractC1690b f7215l;
+    private final AbstractC1690b f7223l;
 
     /* renamed from: m */
-    private final List<ImageHeaderParser> f7216m;
+    private final List<ImageHeaderParser> f7224m;
 
     /* renamed from: n */
-    private final C1938r f7217n = C1938r.m8778a();
+    private final C1938r f7225n = C1938r.m8778a();
 
     /* renamed from: com.bumptech.glide.load.q.d.m$a */
     class C1931a implements AbstractC1932b {
@@ -105,15 +105,15 @@ public final class C1930m {
 
     static {
         Boolean bool = Boolean.FALSE;
-        f7207d = C1644h.m7873f("com.bumptech.glide.load.resource.bitmap.Downsampler.FixBitmapSize", bool);
-        f7208e = C1644h.m7873f("com.bumptech.glide.load.resource.bitmap.Downsampler.AllowHardwareDecode", bool);
+        f7215d = C1644h.m7873f("com.bumptech.glide.load.resource.bitmap.Downsampler.FixBitmapSize", bool);
+        f7216e = C1644h.m7873f("com.bumptech.glide.load.resource.bitmap.Downsampler.AllowHardwareDecode", bool);
     }
 
     public C1930m(List<ImageHeaderParser> list, DisplayMetrics displayMetrics, AbstractC1695e eVar, AbstractC1690b bVar) {
-        this.f7216m = list;
-        this.f7214k = (DisplayMetrics) C2081j.m9432d(displayMetrics);
-        this.f7213j = (AbstractC1695e) C2081j.m9432d(eVar);
-        this.f7215l = (AbstractC1690b) C2081j.m9432d(bVar);
+        this.f7224m = list;
+        this.f7222k = (DisplayMetrics) C2081j.m9432d(displayMetrics);
+        this.f7221j = (AbstractC1695e) C2081j.m9432d(eVar);
+        this.f7223l = (AbstractC1690b) C2081j.m9432d(bVar);
     }
 
     /* renamed from: a */
@@ -131,7 +131,7 @@ public final class C1930m {
 
     /* renamed from: b */
     private void m8737b(AbstractC1939s sVar, EnumC1631b bVar, boolean z, boolean z2, BitmapFactory.Options options, int i, int i2) {
-        if (!this.f7217n.mo7526e(i, i2, options, z, z2)) {
+        if (!this.f7225n.mo7526e(i, i2, options, z, z2)) {
             if (bVar == EnumC1631b.PREFER_ARGB_8888 || Build.VERSION.SDK_INT == 16) {
                 options.inPreferredConfig = Bitmap.Config.ARGB_8888;
                 return;
@@ -178,7 +178,7 @@ public final class C1930m {
                     AbstractC1922l.EnumC1929g gVar = AbstractC1922l.EnumC1929g.MEMORY;
                     int max = a == gVar ? Math.max(x, x2) : Math.min(x, x2);
                     int i11 = Build.VERSION.SDK_INT;
-                    if (i11 > 23 || !f7209f.contains(options.outMimeType)) {
+                    if (i11 > 23 || !f7217f.contains(options.outMimeType)) {
                         int max2 = Math.max(1, Integer.highestOneBit(max));
                         if (a == gVar && ((float) max2) < 1.0f / b) {
                             max2 <<= 1;
@@ -245,19 +245,19 @@ public final class C1930m {
 
     /* renamed from: e */
     private AbstractC1794v<Bitmap> m8739e(AbstractC1939s sVar, int i, int i2, C1647i iVar, AbstractC1932b bVar) {
-        byte[] bArr = (byte[]) this.f7215l.mo7162e(65536, byte[].class);
+        byte[] bArr = (byte[]) this.f7223l.mo7162e(65536, byte[].class);
         BitmapFactory.Options k = m8743k();
         k.inTempStorage = bArr;
-        EnumC1631b bVar2 = (EnumC1631b) iVar.mo7084c(f7204a);
-        EnumC1648j jVar = (EnumC1648j) iVar.mo7084c(f7205b);
-        AbstractC1922l lVar = (AbstractC1922l) iVar.mo7084c(AbstractC1922l.f7199h);
-        boolean booleanValue = ((Boolean) iVar.mo7084c(f7207d)).booleanValue();
-        C1644h<Boolean> hVar = f7208e;
+        EnumC1631b bVar2 = (EnumC1631b) iVar.mo7084c(f7212a);
+        EnumC1648j jVar = (EnumC1648j) iVar.mo7084c(f7213b);
+        AbstractC1922l lVar = (AbstractC1922l) iVar.mo7084c(AbstractC1922l.f7207h);
+        boolean booleanValue = ((Boolean) iVar.mo7084c(f7215d)).booleanValue();
+        C1644h<Boolean> hVar = f7216e;
         try {
-            return C1910e.m8673g(m8740h(sVar, k, lVar, bVar2, jVar, iVar.mo7084c(hVar) != null && ((Boolean) iVar.mo7084c(hVar)).booleanValue(), i, i2, booleanValue, bVar), this.f7213j);
+            return C1910e.m8673g(m8740h(sVar, k, lVar, bVar2, jVar, iVar.mo7084c(hVar) != null && ((Boolean) iVar.mo7084c(hVar)).booleanValue(), i, i2, booleanValue, bVar), this.f7221j);
         } finally {
             m8751v(k);
-            this.f7215l.mo7161d(bArr);
+            this.f7223l.mo7161d(bArr);
         }
     }
 
@@ -329,7 +329,7 @@ public final class C1930m {
     private static synchronized BitmapFactory.Options m8743k() {
         BitmapFactory.Options poll;
         synchronized (C1930m.class) {
-            Queue<BitmapFactory.Options> queue = f7212i;
+            Queue<BitmapFactory.Options> queue = f7220i;
             synchronized (queue) {
                 poll = queue.poll();
             }
@@ -387,7 +387,7 @@ public final class C1930m {
     /* renamed from: v */
     private static void m8751v(BitmapFactory.Options options) {
         m8752w(options);
-        Queue<BitmapFactory.Options> queue = f7212i;
+        Queue<BitmapFactory.Options> queue = f7220i;
         synchronized (queue) {
             queue.offer(options);
         }
@@ -442,22 +442,22 @@ public final class C1930m {
         if (Build.VERSION.SDK_INT >= 19) {
             return true;
         }
-        return f7211h.contains(imageType);
+        return f7219h.contains(imageType);
     }
 
     /* renamed from: d */
     public AbstractC1794v<Bitmap> mo7516d(ParcelFileDescriptor parcelFileDescriptor, int i, int i2, C1647i iVar) {
-        return m8739e(new AbstractC1939s.C1941b(parcelFileDescriptor, this.f7216m, this.f7215l), i, i2, iVar, f7210g);
+        return m8739e(new AbstractC1939s.C1941b(parcelFileDescriptor, this.f7224m, this.f7223l), i, i2, iVar, f7218g);
     }
 
     /* renamed from: f */
     public AbstractC1794v<Bitmap> mo7517f(InputStream inputStream, int i, int i2, C1647i iVar) {
-        return mo7518g(inputStream, i, i2, iVar, f7210g);
+        return mo7518g(inputStream, i, i2, iVar, f7218g);
     }
 
     /* renamed from: g */
     public AbstractC1794v<Bitmap> mo7518g(InputStream inputStream, int i, int i2, C1647i iVar, AbstractC1932b bVar) {
-        return m8739e(new AbstractC1939s.C1940a(inputStream, this.f7216m, this.f7215l), i, i2, iVar, bVar);
+        return m8739e(new AbstractC1939s.C1940a(inputStream, this.f7224m, this.f7223l), i, i2, iVar, bVar);
     }
 
     /* renamed from: o */

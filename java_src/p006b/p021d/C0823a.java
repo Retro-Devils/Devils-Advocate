@@ -8,7 +8,7 @@ import java.util.Set;
 public class C0823a<K, V> extends C0838i<K, V> implements Map<K, V> {
 
     /* renamed from: i */
-    AbstractC0832h<K, V> f4064i;
+    AbstractC0832h<K, V> f4068i;
 
     /* access modifiers changed from: package-private */
     /* renamed from: b.d.a$a */
@@ -27,7 +27,7 @@ public class C0823a<K, V> extends C0838i<K, V> implements Map<K, V> {
         @Override // p006b.p021d.AbstractC0832h
         /* renamed from: b */
         public Object mo4870b(int i, int i2) {
-            return C0823a.this.f4121g[(i << 1) + i2];
+            return C0823a.this.f4125g[(i << 1) + i2];
         }
 
         /* access modifiers changed from: protected */
@@ -41,7 +41,7 @@ public class C0823a<K, V> extends C0838i<K, V> implements Map<K, V> {
         @Override // p006b.p021d.AbstractC0832h
         /* renamed from: d */
         public int mo4872d() {
-            return C0823a.this.f4122h;
+            return C0823a.this.f4126h;
         }
 
         /* access modifiers changed from: protected */
@@ -93,10 +93,10 @@ public class C0823a<K, V> extends C0838i<K, V> implements Map<K, V> {
 
     /* renamed from: n */
     private AbstractC0832h<K, V> m4800n() {
-        if (this.f4064i == null) {
-            this.f4064i = new C0824a();
+        if (this.f4068i == null) {
+            this.f4068i = new C0824a();
         }
-        return this.f4064i;
+        return this.f4068i;
     }
 
     @Override // java.util.Map
@@ -118,7 +118,7 @@ public class C0823a<K, V> extends C0838i<K, V> implements Map<K, V> {
     /* JADX WARN: Multi-variable type inference failed */
     @Override // java.util.Map
     public void putAll(Map<? extends K, ? extends V> map) {
-        mo4999c(this.f4122h + map.size());
+        mo4999c(this.f4126h + map.size());
         for (Map.Entry<? extends K, ? extends V> entry : map.entrySet()) {
             put(entry.getKey(), entry.getValue());
         }

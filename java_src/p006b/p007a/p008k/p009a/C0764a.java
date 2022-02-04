@@ -20,34 +20,34 @@ import java.util.WeakHashMap;
 public final class C0764a {
 
     /* renamed from: a */
-    private static final ThreadLocal<TypedValue> f3832a = new ThreadLocal<>();
+    private static final ThreadLocal<TypedValue> f3836a = new ThreadLocal<>();
 
     /* renamed from: b */
-    private static final WeakHashMap<Context, SparseArray<C0765a>> f3833b = new WeakHashMap<>(0);
+    private static final WeakHashMap<Context, SparseArray<C0765a>> f3837b = new WeakHashMap<>(0);
 
     /* renamed from: c */
-    private static final Object f3834c = new Object();
+    private static final Object f3838c = new Object();
 
     /* access modifiers changed from: private */
     /* renamed from: b.a.k.a.a$a */
     public static class C0765a {
 
         /* renamed from: a */
-        final ColorStateList f3835a;
+        final ColorStateList f3839a;
 
         /* renamed from: b */
-        final Configuration f3836b;
+        final Configuration f3840b;
 
         C0765a(ColorStateList colorStateList, Configuration configuration) {
-            this.f3835a = colorStateList;
-            this.f3836b = configuration;
+            this.f3839a = colorStateList;
+            this.f3840b = configuration;
         }
     }
 
     /* renamed from: a */
     private static void m4514a(Context context, int i, ColorStateList colorStateList) {
-        synchronized (f3834c) {
-            WeakHashMap<Context, SparseArray<C0765a>> weakHashMap = f3833b;
+        synchronized (f3838c) {
+            WeakHashMap<Context, SparseArray<C0765a>> weakHashMap = f3837b;
             SparseArray<C0765a> sparseArray = weakHashMap.get(context);
             if (sparseArray == null) {
                 sparseArray = new SparseArray<>();
@@ -60,11 +60,11 @@ public final class C0764a {
     /* renamed from: b */
     private static ColorStateList m4515b(Context context, int i) {
         C0765a aVar;
-        synchronized (f3834c) {
-            SparseArray<C0765a> sparseArray = f3833b.get(context);
+        synchronized (f3838c) {
+            SparseArray<C0765a> sparseArray = f3837b.get(context);
             if (!(sparseArray == null || sparseArray.size() <= 0 || (aVar = sparseArray.get(i)) == null)) {
-                if (aVar.f3836b.equals(context.getResources().getConfiguration())) {
-                    return aVar.f3835a;
+                if (aVar.f3840b.equals(context.getResources().getConfiguration())) {
+                    return aVar.f3839a;
                 }
                 sparseArray.remove(i);
             }
@@ -96,7 +96,7 @@ public final class C0764a {
 
     /* renamed from: e */
     private static TypedValue m4518e() {
-        ThreadLocal<TypedValue> threadLocal = f3832a;
+        ThreadLocal<TypedValue> threadLocal = f3836a;
         TypedValue typedValue = threadLocal.get();
         if (typedValue != null) {
             return typedValue;

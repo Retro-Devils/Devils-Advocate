@@ -16,20 +16,20 @@ public class C3203p {
     static class C3204a implements AbstractC1010p {
 
         /* renamed from: a */
-        final /* synthetic */ AbstractC3206c f10716a;
+        final /* synthetic */ AbstractC3206c f10724a;
 
         /* renamed from: b */
-        final /* synthetic */ C3207d f10717b;
+        final /* synthetic */ C3207d f10725b;
 
         C3204a(AbstractC3206c cVar, C3207d dVar) {
-            this.f10716a = cVar;
-            this.f10717b = dVar;
+            this.f10724a = cVar;
+            this.f10725b = dVar;
         }
 
         @Override // p006b.p030g.p039k.AbstractC1010p
         /* renamed from: a */
         public C0964a0 mo340a(View view, C0964a0 a0Var) {
-            return this.f10716a.mo9996a(view, a0Var, new C3207d(this.f10717b));
+            return this.f10724a.mo9996a(view, a0Var, new C3207d(this.f10725b));
         }
     }
 
@@ -58,29 +58,29 @@ public class C3203p {
     public static class C3207d {
 
         /* renamed from: a */
-        public int f10718a;
+        public int f10726a;
 
         /* renamed from: b */
-        public int f10719b;
+        public int f10727b;
 
         /* renamed from: c */
-        public int f10720c;
+        public int f10728c;
 
         /* renamed from: d */
-        public int f10721d;
+        public int f10729d;
 
         public C3207d(int i, int i2, int i3, int i4) {
-            this.f10718a = i;
-            this.f10719b = i2;
-            this.f10720c = i3;
-            this.f10721d = i4;
+            this.f10726a = i;
+            this.f10727b = i2;
+            this.f10728c = i3;
+            this.f10729d = i4;
         }
 
         public C3207d(C3207d dVar) {
-            this.f10718a = dVar.f10718a;
-            this.f10719b = dVar.f10719b;
-            this.f10720c = dVar.f10720c;
-            this.f10721d = dVar.f10721d;
+            this.f10726a = dVar.f10726a;
+            this.f10727b = dVar.f10727b;
+            this.f10728c = dVar.f10728c;
+            this.f10729d = dVar.f10729d;
         }
     }
 

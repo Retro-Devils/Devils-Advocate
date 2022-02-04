@@ -4,7 +4,7 @@ package p069c.p073b.p074a.p090b.p107z;
 public class C1453e extends C1452d {
 
     /* renamed from: a */
-    float f6115a = -1.0f;
+    float f6123a = -1.0f;
 
     @Override // p069c.p073b.p074a.p090b.p107z.C1452d
     /* renamed from: a */

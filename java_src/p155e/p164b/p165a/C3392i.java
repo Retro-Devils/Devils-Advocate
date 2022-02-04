@@ -12,7 +12,7 @@ public class C3392i extends AbstractC3387d {
     @Override // p155e.p164b.p165a.AbstractC3391h
     /* renamed from: b */
     public InputStream mo11364b(InputStream inputStream, C3386c cVar) {
-        return new C3398o(inputStream, new C3421c(false, this.f11421c));
+        return new C3398o(inputStream, new C3421c(false, this.f11430c));
     }
 
     @Override // java.lang.Object, p155e.p164b.p165a.AbstractC3387d

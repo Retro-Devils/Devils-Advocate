@@ -26,13 +26,13 @@ import p069c.p073b.p074a.p090b.C1400k;
 public class C3280g extends C0215d {
 
     /* renamed from: e */
-    private final C0233i0 f10977e;
+    private final C0233i0 f10985e;
 
     /* renamed from: f */
-    private final AccessibilityManager f10978f;
+    private final AccessibilityManager f10986f;
 
     /* renamed from: g */
-    private final Rect f10979g;
+    private final Rect f10987g;
 
     /* renamed from: com.google.android.material.textfield.g$a */
     class C3281a implements AdapterView.OnItemClickListener {
@@ -42,36 +42,36 @@ public class C3280g extends C0215d {
         @Override // android.widget.AdapterView.OnItemClickListener
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
             C3280g gVar = C3280g.this;
-            C3280g.this.m13746e(i < 0 ? gVar.f10977e.mo1531v() : gVar.getAdapter().getItem(i));
+            C3280g.this.m13746e(i < 0 ? gVar.f10985e.mo1531v() : gVar.getAdapter().getItem(i));
             AdapterView.OnItemClickListener onItemClickListener = C3280g.this.getOnItemClickListener();
             if (onItemClickListener != null) {
                 if (view == null || i < 0) {
-                    view = C3280g.this.f10977e.mo1534y();
-                    i = C3280g.this.f10977e.mo1533x();
-                    j = C3280g.this.f10977e.mo1532w();
+                    view = C3280g.this.f10985e.mo1534y();
+                    i = C3280g.this.f10985e.mo1533x();
+                    j = C3280g.this.f10985e.mo1532w();
                 }
-                onItemClickListener.onItemClick(C3280g.this.f10977e.mo571l(), view, i, j);
+                onItemClickListener.onItemClick(C3280g.this.f10985e.mo571l(), view, i, j);
             }
-            C3280g.this.f10977e.dismiss();
+            C3280g.this.f10985e.dismiss();
         }
     }
 
     public C3280g(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, C1391b.f5669a);
+        this(context, attributeSet, C1391b.f5677a);
     }
 
     public C3280g(Context context, AttributeSet attributeSet, int i) {
         super(C3288a.m13767c(context, attributeSet, i, 0), attributeSet, i);
-        this.f10979g = new Rect();
+        this.f10987g = new Rect();
         Context context2 = getContext();
-        TypedArray h = C3202o.m13430h(context2, attributeSet, C1400k.f5932o1, i, C1399j.Widget_AppCompat_AutoCompleteTextView, new int[0]);
-        int i2 = C1400k.f5939p1;
+        TypedArray h = C3202o.m13430h(context2, attributeSet, C1400k.f5940o1, i, C1399j.Widget_AppCompat_AutoCompleteTextView, new int[0]);
+        int i2 = C1400k.f5947p1;
         if (h.hasValue(i2) && h.getInt(i2, 0) == 0) {
             setKeyListener(null);
         }
-        this.f10978f = (AccessibilityManager) context2.getSystemService("accessibility");
+        this.f10986f = (AccessibilityManager) context2.getSystemService("accessibility");
         C0233i0 i0Var = new C0233i0(context2);
-        this.f10977e = i0Var;
+        this.f10985e = i0Var;
         i0Var.mo1514J(true);
         i0Var.mo1508D(this);
         i0Var.mo1513I(2);
@@ -100,7 +100,7 @@ public class C3280g extends C0215d {
         }
         int makeMeasureSpec = View.MeasureSpec.makeMeasureSpec(getMeasuredWidth(), 0);
         int makeMeasureSpec2 = View.MeasureSpec.makeMeasureSpec(getMeasuredHeight(), 0);
-        int min = Math.min(adapter.getCount(), Math.max(0, this.f10977e.mo1533x()) + 15);
+        int min = Math.min(adapter.getCount(), Math.max(0, this.f10985e.mo1533x()) + 15);
         View view = null;
         int i2 = 0;
         for (int max = Math.max(0, min - 15); max < min; max++) {
@@ -116,10 +116,10 @@ public class C3280g extends C0215d {
             view.measure(makeMeasureSpec, makeMeasureSpec2);
             i2 = Math.max(i2, view.getMeasuredWidth());
         }
-        Drawable j = this.f10977e.mo1525j();
+        Drawable j = this.f10985e.mo1525j();
         if (j != null) {
-            j.getPadding(this.f10979g);
-            Rect rect = this.f10979g;
+            j.getPadding(this.f10987g);
+            Rect rect = this.f10987g;
             i2 += rect.left + rect.right;
         }
         return i2 + c.getEndIconView().getMeasuredWidth();
@@ -166,15 +166,15 @@ public class C3280g extends C0215d {
     @Override // android.widget.AutoCompleteTextView
     public <T extends ListAdapter & Filterable> void setAdapter(T t) {
         super.setAdapter(t);
-        this.f10977e.mo1527o(getAdapter());
+        this.f10985e.mo1527o(getAdapter());
     }
 
     public void showDropDown() {
         AccessibilityManager accessibilityManager;
-        if (getInputType() != 0 || (accessibilityManager = this.f10978f) == null || !accessibilityManager.isTouchExplorationEnabled()) {
+        if (getInputType() != 0 || (accessibilityManager = this.f10986f) == null || !accessibilityManager.isTouchExplorationEnabled()) {
             super.showDropDown();
         } else {
-            this.f10977e.mo565a();
+            this.f10985e.mo565a();
         }
     }
 }

@@ -8,10 +8,10 @@ import p069c.p073b.p074a.p108c.p109a.p110f.AbstractC1526q;
 public final class BinderC1529r<T> extends AbstractC1526q.AbstractBinderC1527a {
 
     /* renamed from: a */
-    private final T f6331a;
+    private final T f6339a;
 
     private BinderC1529r(T t) {
-        this.f6331a = t;
+        this.f6339a = t;
     }
 
     /* renamed from: j */
@@ -22,7 +22,7 @@ public final class BinderC1529r<T> extends AbstractC1526q.AbstractBinderC1527a {
     /* renamed from: m */
     public static <T> T m7507m(AbstractC1526q qVar) {
         if (qVar instanceof BinderC1529r) {
-            return ((BinderC1529r) qVar).f6331a;
+            return ((BinderC1529r) qVar).f6339a;
         }
         IBinder asBinder = qVar.asBinder();
         Field[] declaredFields = asBinder.getClass().getDeclaredFields();

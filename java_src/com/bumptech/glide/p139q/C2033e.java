@@ -10,46 +10,46 @@ import java.util.Map;
 public class C2033e {
 
     /* renamed from: a */
-    private final List<String> f7460a = new ArrayList();
+    private final List<String> f7468a = new ArrayList();
 
     /* renamed from: b */
-    private final Map<String, List<C2034a<?, ?>>> f7461b = new HashMap();
+    private final Map<String, List<C2034a<?, ?>>> f7469b = new HashMap();
 
     /* access modifiers changed from: private */
     /* renamed from: com.bumptech.glide.q.e$a */
     public static class C2034a<T, R> {
 
         /* renamed from: a */
-        private final Class<T> f7462a;
+        private final Class<T> f7470a;
 
         /* renamed from: b */
-        final Class<R> f7463b;
+        final Class<R> f7471b;
 
         /* renamed from: c */
-        final AbstractC1649k<T, R> f7464c;
+        final AbstractC1649k<T, R> f7472c;
 
         public C2034a(Class<T> cls, Class<R> cls2, AbstractC1649k<T, R> kVar) {
-            this.f7462a = cls;
-            this.f7463b = cls2;
-            this.f7464c = kVar;
+            this.f7470a = cls;
+            this.f7471b = cls2;
+            this.f7472c = kVar;
         }
 
         /* renamed from: a */
         public boolean mo7732a(Class<?> cls, Class<?> cls2) {
-            return this.f7462a.isAssignableFrom(cls) && cls2.isAssignableFrom(this.f7463b);
+            return this.f7470a.isAssignableFrom(cls) && cls2.isAssignableFrom(this.f7471b);
         }
     }
 
     /* renamed from: c */
     private synchronized List<C2034a<?, ?>> m9176c(String str) {
         List<C2034a<?, ?>> list;
-        if (!this.f7460a.contains(str)) {
-            this.f7460a.add(str);
+        if (!this.f7468a.contains(str)) {
+            this.f7468a.add(str);
         }
-        list = this.f7461b.get(str);
+        list = this.f7469b.get(str);
         if (list == null) {
             list = new ArrayList<>();
-            this.f7461b.put(str, list);
+            this.f7469b.put(str, list);
         }
         return list;
     }
@@ -63,12 +63,12 @@ public class C2033e {
     public synchronized <T, R> List<AbstractC1649k<T, R>> mo7729b(Class<T> cls, Class<R> cls2) {
         ArrayList arrayList;
         arrayList = new ArrayList();
-        for (String str : this.f7460a) {
-            List<C2034a<?, ?>> list = this.f7461b.get(str);
+        for (String str : this.f7468a) {
+            List<C2034a<?, ?>> list = this.f7469b.get(str);
             if (list != null) {
                 for (C2034a<?, ?> aVar : list) {
                     if (aVar.mo7732a(cls, cls2)) {
-                        arrayList.add(aVar.f7464c);
+                        arrayList.add(aVar.f7472c);
                     }
                 }
             }
@@ -80,12 +80,12 @@ public class C2033e {
     public synchronized <T, R> List<Class<R>> mo7730d(Class<T> cls, Class<R> cls2) {
         ArrayList arrayList;
         arrayList = new ArrayList();
-        for (String str : this.f7460a) {
-            List<C2034a<?, ?>> list = this.f7461b.get(str);
+        for (String str : this.f7468a) {
+            List<C2034a<?, ?>> list = this.f7469b.get(str);
             if (list != null) {
                 for (C2034a<?, ?> aVar : list) {
-                    if (aVar.mo7732a(cls, cls2) && !arrayList.contains(aVar.f7463b)) {
-                        arrayList.add(aVar.f7463b);
+                    if (aVar.mo7732a(cls, cls2) && !arrayList.contains(aVar.f7471b)) {
+                        arrayList.add(aVar.f7471b);
                     }
                 }
             }
@@ -95,14 +95,14 @@ public class C2033e {
 
     /* renamed from: e */
     public synchronized void mo7731e(List<String> list) {
-        ArrayList<String> arrayList = new ArrayList(this.f7460a);
-        this.f7460a.clear();
+        ArrayList<String> arrayList = new ArrayList(this.f7468a);
+        this.f7468a.clear();
         for (String str : list) {
-            this.f7460a.add(str);
+            this.f7468a.add(str);
         }
         for (String str2 : arrayList) {
             if (!list.contains(str2)) {
-                this.f7460a.add(str2);
+                this.f7468a.add(str2);
             }
         }
     }

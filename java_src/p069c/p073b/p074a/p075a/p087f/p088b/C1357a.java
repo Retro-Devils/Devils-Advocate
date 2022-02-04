@@ -24,23 +24,23 @@ import p069c.p073b.p074a.p075a.p087f.C1355a;
 public class C1357a extends AbstractC3002h<AbstractC1363g> implements AbstractC1372f {
 
     /* renamed from: G */
-    private final boolean f5624G;
+    private final boolean f5632G;
 
     /* renamed from: H */
-    private final C2992d f5625H;
+    private final C2992d f5633H;
 
     /* renamed from: I */
-    private final Bundle f5626I;
+    private final Bundle f5634I;
 
     /* renamed from: J */
-    private Integer f5627J;
+    private Integer f5635J;
 
     private C1357a(Context context, Looper looper, boolean z, C2992d dVar, Bundle bundle, AbstractC2911f.AbstractC2912a aVar, AbstractC2911f.AbstractC2913b bVar) {
         super(context, looper, 44, dVar, aVar, bVar);
-        this.f5624G = true;
-        this.f5625H = dVar;
-        this.f5626I = bundle;
-        this.f5627J = dVar.mo9749d();
+        this.f5632G = true;
+        this.f5633H = dVar;
+        this.f5634I = bundle;
+        this.f5635J = dVar.mo9749d();
     }
 
     public C1357a(Context context, Looper looper, boolean z, C2992d dVar, C1355a aVar, AbstractC2911f.AbstractC2912a aVar2, AbstractC2911f.AbstractC2913b bVar) {
@@ -79,12 +79,12 @@ public class C1357a extends AbstractC3002h<AbstractC1363g> implements AbstractC1
     public final void mo6394b(AbstractC1361e eVar) {
         C3027r.m12377i(eVar, "Expecting a valid ISignInCallbacks");
         try {
-            Account b = this.f5625H.mo9747b();
+            Account b = this.f5633H.mo9747b();
             GoogleSignInAccount googleSignInAccount = null;
             if ("<<default account>>".equals(b.name)) {
                 googleSignInAccount = C2892a.m11994a(mo9725w()).mo9540b();
             }
-            ((AbstractC1363g) mo9701A()).mo6406V(new C1365i(new C3028s(b, this.f5627J.intValue(), googleSignInAccount)), eVar);
+            ((AbstractC1363g) mo9701A()).mo6406V(new C1365i(new C3028s(b, this.f5635J.intValue(), googleSignInAccount)), eVar);
         } catch (RemoteException e) {
             Log.w("SignInClientImpl", "Remote service probably died when signIn is called");
             try {
@@ -122,7 +122,7 @@ public class C1357a extends AbstractC3002h<AbstractC1363g> implements AbstractC1
     @Override // com.google.android.gms.common.api.C2894a.AbstractC2902f, com.google.android.gms.common.internal.AbstractC2978c
     /* renamed from: m */
     public boolean mo6396m() {
-        return this.f5624G;
+        return this.f5632G;
     }
 
     /* access modifiers changed from: protected */
@@ -135,16 +135,16 @@ public class C1357a extends AbstractC3002h<AbstractC1363g> implements AbstractC1
     @Override // com.google.android.gms.common.internal.AbstractC3002h, com.google.android.gms.common.api.C2894a.AbstractC2902f, com.google.android.gms.common.internal.AbstractC2978c
     /* renamed from: q */
     public int mo6358q() {
-        return C1286g.f5547a;
+        return C1286g.f5555a;
     }
 
     /* access modifiers changed from: protected */
     @Override // com.google.android.gms.common.internal.AbstractC2978c
     /* renamed from: x */
     public Bundle mo6397x() {
-        if (!mo9725w().getPackageName().equals(this.f5625H.mo9751f())) {
-            this.f5626I.putString("com.google.android.gms.signin.internal.realClientPackageName", this.f5625H.mo9751f());
+        if (!mo9725w().getPackageName().equals(this.f5633H.mo9751f())) {
+            this.f5634I.putString("com.google.android.gms.signin.internal.realClientPackageName", this.f5633H.mo9751f());
         }
-        return this.f5626I;
+        return this.f5634I;
     }
 }

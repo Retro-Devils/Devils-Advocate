@@ -18,7 +18,7 @@ public final class C2996e {
     @GuardedBy("sCache")
 
     /* renamed from: a */
-    private static final C0838i<String, String> f9974a = new C0838i<>();
+    private static final C0838i<String, String> f9982a = new C0838i<>();
 
     /* renamed from: a */
     public static String m12296a(Context context) {
@@ -151,7 +151,7 @@ public final class C2996e {
 
     /* renamed from: h */
     private static String m12303h(Context context, String str) {
-        C0838i<String, String> iVar = f9974a;
+        C0838i<String, String> iVar = f9982a;
         synchronized (iVar) {
             String str2 = iVar.get(str);
             if (str2 != null) {

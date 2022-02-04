@@ -16,21 +16,21 @@ import javax.annotation.concurrent.GuardedBy;
 public final class ComponentCallbacks2C2922b implements Application.ActivityLifecycleCallbacks, ComponentCallbacks2 {
 
     /* renamed from: b */
-    private static final ComponentCallbacks2C2922b f9794b = new ComponentCallbacks2C2922b();
+    private static final ComponentCallbacks2C2922b f9802b = new ComponentCallbacks2C2922b();
 
     /* renamed from: c */
-    private final AtomicBoolean f9795c = new AtomicBoolean();
+    private final AtomicBoolean f9803c = new AtomicBoolean();
 
     /* renamed from: d */
-    private final AtomicBoolean f9796d = new AtomicBoolean();
+    private final AtomicBoolean f9804d = new AtomicBoolean();
     @GuardedBy("sInstance")
 
     /* renamed from: e */
-    private final ArrayList<AbstractC2923a> f9797e = new ArrayList<>();
+    private final ArrayList<AbstractC2923a> f9805e = new ArrayList<>();
     @GuardedBy("sInstance")
 
     /* renamed from: f */
-    private boolean f9798f = false;
+    private boolean f9806f = false;
 
     /* renamed from: com.google.android.gms.common.api.internal.b$a */
     public interface AbstractC2923a {
@@ -43,25 +43,25 @@ public final class ComponentCallbacks2C2922b implements Application.ActivityLife
 
     /* renamed from: b */
     public static ComponentCallbacks2C2922b m12062b() {
-        return f9794b;
+        return f9802b;
     }
 
     /* renamed from: c */
     public static void m12063c(Application application) {
-        ComponentCallbacks2C2922b bVar = f9794b;
+        ComponentCallbacks2C2922b bVar = f9802b;
         synchronized (bVar) {
-            if (!bVar.f9798f) {
+            if (!bVar.f9806f) {
                 application.registerActivityLifecycleCallbacks(bVar);
                 application.registerComponentCallbacks(bVar);
-                bVar.f9798f = true;
+                bVar.f9806f = true;
             }
         }
     }
 
     /* renamed from: e */
     private final void m12064e(boolean z) {
-        synchronized (f9794b) {
-            ArrayList<AbstractC2923a> arrayList = this.f9797e;
+        synchronized (f9802b) {
+            ArrayList<AbstractC2923a> arrayList = this.f9805e;
             int size = arrayList.size();
             int i = 0;
             while (i < size) {
@@ -74,35 +74,35 @@ public final class ComponentCallbacks2C2922b implements Application.ActivityLife
 
     /* renamed from: a */
     public final void mo9607a(AbstractC2923a aVar) {
-        synchronized (f9794b) {
-            this.f9797e.add(aVar);
+        synchronized (f9802b) {
+            this.f9805e.add(aVar);
         }
     }
 
     /* renamed from: d */
     public final boolean mo9608d() {
-        return this.f9795c.get();
+        return this.f9803c.get();
     }
 
     @TargetApi(16)
     /* renamed from: f */
     public final boolean mo9609f(boolean z) {
-        if (!this.f9796d.get()) {
+        if (!this.f9804d.get()) {
             if (!C3044f.m12444c()) {
                 return z;
             }
             ActivityManager.RunningAppProcessInfo runningAppProcessInfo = new ActivityManager.RunningAppProcessInfo();
             ActivityManager.getMyMemoryState(runningAppProcessInfo);
-            if (!this.f9796d.getAndSet(true) && runningAppProcessInfo.importance > 100) {
-                this.f9795c.set(true);
+            if (!this.f9804d.getAndSet(true) && runningAppProcessInfo.importance > 100) {
+                this.f9803c.set(true);
             }
         }
         return mo9608d();
     }
 
     public final void onActivityCreated(Activity activity, Bundle bundle) {
-        boolean compareAndSet = this.f9795c.compareAndSet(true, false);
-        this.f9796d.set(true);
+        boolean compareAndSet = this.f9803c.compareAndSet(true, false);
+        this.f9804d.set(true);
         if (compareAndSet) {
             m12064e(false);
         }
@@ -115,8 +115,8 @@ public final class ComponentCallbacks2C2922b implements Application.ActivityLife
     }
 
     public final void onActivityResumed(Activity activity) {
-        boolean compareAndSet = this.f9795c.compareAndSet(true, false);
-        this.f9796d.set(true);
+        boolean compareAndSet = this.f9803c.compareAndSet(true, false);
+        this.f9804d.set(true);
         if (compareAndSet) {
             m12064e(false);
         }
@@ -138,8 +138,8 @@ public final class ComponentCallbacks2C2922b implements Application.ActivityLife
     }
 
     public final void onTrimMemory(int i) {
-        if (i == 20 && this.f9795c.compareAndSet(false, true)) {
-            this.f9796d.set(true);
+        if (i == 20 && this.f9803c.compareAndSet(false, true)) {
+            this.f9804d.set(true);
             m12064e(true);
         }
     }

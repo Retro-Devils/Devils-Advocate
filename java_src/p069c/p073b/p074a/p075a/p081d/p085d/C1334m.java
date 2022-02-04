@@ -15,11 +15,11 @@ import com.google.android.gms.common.internal.C2992d;
 public final class C1334m extends AbstractC3002h<AbstractC1327h> {
 
     /* renamed from: G */
-    private final Context f5590G;
+    private final Context f5598G;
 
     public C1334m(Context context, Looper looper, C2992d dVar, AbstractC2911f.AbstractC2912a aVar, AbstractC2911f.AbstractC2913b bVar) {
         super(context, looper, 45, dVar, aVar, bVar);
-        this.f5590G = context;
+        this.f5598G = context;
     }
 
     /* access modifiers changed from: protected */
@@ -46,8 +46,8 @@ public final class C1334m extends AbstractC3002h<AbstractC1327h> {
         ApplicationInfo applicationInfo;
         Bundle bundle;
         try {
-            PackageManager packageManager = this.f5590G.getPackageManager();
-            if (packageManager == null || (applicationInfo = packageManager.getApplicationInfo(this.f5590G.getPackageName(), 128)) == null || (bundle = applicationInfo.metaData) == null) {
+            PackageManager packageManager = this.f5598G.getPackageManager();
+            if (packageManager == null || (applicationInfo = packageManager.getApplicationInfo(this.f5598G.getPackageName(), 128)) == null || (bundle = applicationInfo.metaData) == null) {
                 return null;
             }
             return (String) bundle.get(str);

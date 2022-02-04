@@ -10,10 +10,10 @@ import java.nio.charset.Charset;
 public final class C1995c {
 
     /* renamed from: a */
-    static final Charset f7363a = Charset.forName("US-ASCII");
+    static final Charset f7371a = Charset.forName("US-ASCII");
 
     /* renamed from: b */
-    static final Charset f7364b = Charset.forName("UTF-8");
+    static final Charset f7372b = Charset.forName("UTF-8");
 
     /* renamed from: a */
     static void m9012a(Closeable closeable) {

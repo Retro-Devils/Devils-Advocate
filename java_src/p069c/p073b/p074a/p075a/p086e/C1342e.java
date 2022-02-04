@@ -12,7 +12,7 @@ import p069c.p073b.p074a.p075a.p089g.AbstractC1376d;
 /* renamed from: c.b.a.a.e.e */
 public class C1342e extends C2908e<?> {
     C1342e(Context context) {
-        super(context, C1338c.f5604c, (C2894a.AbstractC2898d) null, new C2920a());
+        super(context, C1338c.f5612c, (C2894a.AbstractC2898d) null, new C2920a());
     }
 
     /* renamed from: j */

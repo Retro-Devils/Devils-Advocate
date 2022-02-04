@@ -14,22 +14,22 @@ import java.util.List;
 public class C1958d implements AbstractC1649k<Uri, Drawable> {
 
     /* renamed from: a */
-    private final Context f7260a;
+    private final Context f7268a;
 
     public C1958d(Context context) {
-        this.f7260a = context.getApplicationContext();
+        this.f7268a = context.getApplicationContext();
     }
 
     /* renamed from: d */
     private Context m8859d(Uri uri, String str) {
-        if (str.equals(this.f7260a.getPackageName())) {
-            return this.f7260a;
+        if (str.equals(this.f7268a.getPackageName())) {
+            return this.f7268a;
         }
         try {
-            return this.f7260a.createPackageContext(str, 0);
+            return this.f7268a.createPackageContext(str, 0);
         } catch (PackageManager.NameNotFoundException e) {
-            if (str.contains(this.f7260a.getPackageName())) {
-                return this.f7260a;
+            if (str.contains(this.f7268a.getPackageName())) {
+                return this.f7268a;
             }
             throw new IllegalArgumentException("Failed to obtain context or unrecognized Uri format for: " + uri, e);
         }
@@ -75,7 +75,7 @@ public class C1958d implements AbstractC1649k<Uri, Drawable> {
     /* renamed from: c */
     public AbstractC1794v<Drawable> mo7088a(Uri uri, int i, int i2, C1647i iVar) {
         Context d = m8859d(uri, uri.getAuthority());
-        return C1957c.m8855g(C1955a.m8848b(this.f7260a, d, m8862g(d, uri)));
+        return C1957c.m8855g(C1955a.m8848b(this.f7268a, d, m8862g(d, uri)));
     }
 
     /* renamed from: h */

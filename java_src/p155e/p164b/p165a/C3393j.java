@@ -11,40 +11,40 @@ import p155e.p164b.p165a.p169v.C3417c;
 public class C3393j extends InputStream {
 
     /* renamed from: b */
-    private final C3386c f11427b;
+    private final C3386c f11436b;
 
     /* renamed from: c */
-    private DataInputStream f11428c;
+    private DataInputStream f11437c;
 
     /* renamed from: d */
-    private C3404a f11429d;
+    private C3404a f11438d;
 
     /* renamed from: e */
-    private C3417c f11430e;
+    private C3417c f11439e;
 
     /* renamed from: f */
-    private C3409b f11431f;
+    private C3409b f11440f;
 
     /* renamed from: g */
-    private int f11432g;
+    private int f11441g;
 
     /* renamed from: h */
-    private boolean f11433h;
+    private boolean f11442h;
 
     /* renamed from: i */
-    private boolean f11434i;
+    private boolean f11443i;
 
     /* renamed from: j */
-    private boolean f11435j;
+    private boolean f11444j;
 
     /* renamed from: k */
-    private boolean f11436k;
+    private boolean f11445k;
 
     /* renamed from: l */
-    private IOException f11437l;
+    private IOException f11446l;
 
     /* renamed from: m */
-    private final byte[] f11438m;
+    private final byte[] f11447m;
 
     public C3393j(InputStream inputStream, int i) {
         this(inputStream, i, null);
@@ -55,56 +55,56 @@ public class C3393j extends InputStream {
     }
 
     C3393j(InputStream inputStream, int i, byte[] bArr, C3386c cVar) {
-        this.f11432g = 0;
-        this.f11433h = false;
-        this.f11434i = true;
-        this.f11435j = true;
-        this.f11436k = false;
-        this.f11437l = null;
-        this.f11438m = new byte[1];
+        this.f11441g = 0;
+        this.f11442h = false;
+        this.f11443i = true;
+        this.f11444j = true;
+        this.f11445k = false;
+        this.f11446l = null;
+        this.f11447m = new byte[1];
         inputStream.getClass();
-        this.f11427b = cVar;
-        this.f11428c = new DataInputStream(inputStream);
-        this.f11430e = new C3417c(65536, cVar);
-        this.f11429d = new C3404a(m14059c(i), bArr, cVar);
+        this.f11436b = cVar;
+        this.f11437c = new DataInputStream(inputStream);
+        this.f11439e = new C3417c(65536, cVar);
+        this.f11438d = new C3404a(m14059c(i), bArr, cVar);
         if (bArr != null && bArr.length > 0) {
-            this.f11434i = false;
+            this.f11443i = false;
         }
     }
 
     /* renamed from: a */
     private void m14057a() {
-        int readUnsignedByte = this.f11428c.readUnsignedByte();
+        int readUnsignedByte = this.f11437c.readUnsignedByte();
         if (readUnsignedByte == 0) {
-            this.f11436k = true;
+            this.f11445k = true;
             m14060d();
             return;
         }
         if (readUnsignedByte >= 224 || readUnsignedByte == 1) {
-            this.f11435j = true;
-            this.f11434i = false;
-            this.f11429d.mo11399k();
-        } else if (this.f11434i) {
+            this.f11444j = true;
+            this.f11443i = false;
+            this.f11438d.mo11399k();
+        } else if (this.f11443i) {
             throw new C3388e();
         }
         if (readUnsignedByte >= 128) {
-            this.f11433h = true;
+            this.f11442h = true;
             int i = (readUnsignedByte & 31) << 16;
-            this.f11432g = i;
-            this.f11432g = i + this.f11428c.readUnsignedShort() + 1;
-            int readUnsignedShort = this.f11428c.readUnsignedShort() + 1;
+            this.f11441g = i;
+            this.f11441g = i + this.f11437c.readUnsignedShort() + 1;
+            int readUnsignedShort = this.f11437c.readUnsignedShort() + 1;
             if (readUnsignedByte >= 192) {
-                this.f11435j = false;
+                this.f11444j = false;
                 m14058b();
-            } else if (this.f11435j) {
+            } else if (this.f11444j) {
                 throw new C3388e();
             } else if (readUnsignedByte >= 160) {
-                this.f11431f.mo11401b();
+                this.f11440f.mo11401b();
             }
-            this.f11430e.mo11424h(this.f11428c, readUnsignedShort);
+            this.f11439e.mo11424h(this.f11437c, readUnsignedShort);
         } else if (readUnsignedByte <= 2) {
-            this.f11433h = false;
-            this.f11432g = this.f11428c.readUnsignedShort() + 1;
+            this.f11442h = false;
+            this.f11441g = this.f11437c.readUnsignedShort() + 1;
         } else {
             throw new C3388e();
         }
@@ -112,14 +112,14 @@ public class C3393j extends InputStream {
 
     /* renamed from: b */
     private void m14058b() {
-        int readUnsignedByte = this.f11428c.readUnsignedByte();
+        int readUnsignedByte = this.f11437c.readUnsignedByte();
         if (readUnsignedByte <= 224) {
             int i = readUnsignedByte / 45;
             int i2 = readUnsignedByte - ((i * 9) * 5);
             int i3 = i2 / 9;
             int i4 = i2 - (i3 * 9);
             if (i4 + i3 <= 4) {
-                this.f11431f = new C3409b(this.f11429d, this.f11430e, i4, i3, i);
+                this.f11440f = new C3409b(this.f11438d, this.f11439e, i4, i3, i);
                 return;
             }
             throw new C3388e();
@@ -137,22 +137,22 @@ public class C3393j extends InputStream {
 
     /* renamed from: d */
     private void m14060d() {
-        C3404a aVar = this.f11429d;
+        C3404a aVar = this.f11438d;
         if (aVar != null) {
-            aVar.mo11395g(this.f11427b);
-            this.f11429d = null;
-            this.f11430e.mo11425i(this.f11427b);
-            this.f11430e = null;
+            aVar.mo11395g(this.f11436b);
+            this.f11438d = null;
+            this.f11439e.mo11425i(this.f11436b);
+            this.f11439e = null;
         }
     }
 
     @Override // java.io.InputStream
     public int available() {
-        DataInputStream dataInputStream = this.f11428c;
+        DataInputStream dataInputStream = this.f11437c;
         if (dataInputStream != null) {
-            IOException iOException = this.f11437l;
+            IOException iOException = this.f11446l;
             if (iOException == null) {
-                return this.f11433h ? this.f11432g : Math.min(this.f11432g, dataInputStream.available());
+                return this.f11442h ? this.f11441g : Math.min(this.f11441g, dataInputStream.available());
             }
             throw iOException;
         }
@@ -161,22 +161,22 @@ public class C3393j extends InputStream {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable, java.io.InputStream
     public void close() {
-        if (this.f11428c != null) {
+        if (this.f11437c != null) {
             m14060d();
             try {
-                this.f11428c.close();
+                this.f11437c.close();
             } finally {
-                this.f11428c = null;
+                this.f11437c = null;
             }
         }
     }
 
     @Override // java.io.InputStream
     public int read() {
-        if (read(this.f11438m, 0, 1) == -1) {
+        if (read(this.f11447m, 0, 1) == -1) {
             return -1;
         }
-        return this.f11438m[0] & 255;
+        return this.f11447m[0] & 255;
     }
 
     @Override // java.io.InputStream
@@ -189,44 +189,44 @@ public class C3393j extends InputStream {
         if (i2 == 0) {
             return 0;
         }
-        if (this.f11428c != null) {
-            IOException iOException = this.f11437l;
+        if (this.f11437c != null) {
+            IOException iOException = this.f11446l;
             if (iOException != null) {
                 throw iOException;
-            } else if (this.f11436k) {
+            } else if (this.f11445k) {
                 return -1;
             } else {
                 while (i2 > 0) {
                     try {
-                        if (this.f11432g == 0) {
+                        if (this.f11441g == 0) {
                             m14057a();
-                            if (this.f11436k) {
+                            if (this.f11445k) {
                                 if (i4 == 0) {
                                     return -1;
                                 }
                                 return i4;
                             }
                         }
-                        int min = Math.min(this.f11432g, i2);
-                        if (!this.f11433h) {
-                            this.f11429d.mo11389a(this.f11428c, min);
+                        int min = Math.min(this.f11441g, i2);
+                        if (!this.f11442h) {
+                            this.f11438d.mo11389a(this.f11437c, min);
                         } else {
-                            this.f11429d.mo11400l(min);
-                            this.f11431f.mo11405e();
+                            this.f11438d.mo11400l(min);
+                            this.f11440f.mo11405e();
                         }
-                        int b = this.f11429d.mo11390b(bArr, i);
+                        int b = this.f11438d.mo11390b(bArr, i);
                         i += b;
                         i2 -= b;
                         i4 += b;
-                        int i5 = this.f11432g - b;
-                        this.f11432g = i5;
+                        int i5 = this.f11441g - b;
+                        this.f11441g = i5;
                         if (i5 == 0) {
-                            if (!this.f11430e.mo11423g() || this.f11429d.mo11393e()) {
+                            if (!this.f11439e.mo11423g() || this.f11438d.mo11393e()) {
                                 throw new C3388e();
                             }
                         }
                     } catch (IOException e) {
-                        this.f11437l = e;
+                        this.f11446l = e;
                         throw e;
                     }
                 }

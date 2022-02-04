@@ -22,64 +22,64 @@ import p006b.p046j.p047a.AbstractC1056a;
 public class C2399i2 extends File {
 
     /* renamed from: b */
-    private static HashMap<String, AbstractC1056a> f8376b = new HashMap<>();
+    private static HashMap<String, AbstractC1056a> f8384b = new HashMap<>();
 
     /* renamed from: c */
-    private AbstractC1056a f8377c;
+    private AbstractC1056a f8385c;
 
     /* renamed from: d */
-    private boolean f8378d;
+    private boolean f8386d;
 
     /* renamed from: e */
-    private boolean f8379e;
+    private boolean f8387e;
 
     /* renamed from: f */
-    private String f8380f;
+    private String f8388f;
 
     /* renamed from: g */
-    private int f8381g;
+    private int f8389g;
 
     /* renamed from: h */
-    private Context f8382h;
+    private Context f8390h;
 
     public C2399i2() {
         super("");
-        this.f8378d = false;
-        this.f8379e = false;
-        this.f8380f = null;
-        this.f8381g = 0;
+        this.f8386d = false;
+        this.f8387e = false;
+        this.f8388f = null;
+        this.f8389g = 0;
     }
 
     public C2399i2(Context context, Uri uri) {
         super("");
-        this.f8378d = false;
-        this.f8379e = false;
-        this.f8380f = null;
-        this.f8381g = 0;
-        this.f8382h = context;
-        this.f8380f = uri.toString();
+        this.f8386d = false;
+        this.f8387e = false;
+        this.f8388f = null;
+        this.f8389g = 0;
+        this.f8390h = context;
+        this.f8388f = uri.toString();
         m10384t(1);
     }
 
     public C2399i2(Context context, AbstractC1056a aVar) {
         super("");
-        this.f8378d = false;
-        this.f8379e = false;
-        this.f8380f = null;
-        this.f8381g = 0;
-        this.f8382h = context;
-        this.f8380f = aVar.mo5674k().toString();
+        this.f8386d = false;
+        this.f8387e = false;
+        this.f8388f = null;
+        this.f8389g = 0;
+        this.f8390h = context;
+        this.f8388f = aVar.mo5674k().toString();
         m10384t(1);
     }
 
     public C2399i2(Context context, String str) {
         super("");
-        this.f8378d = false;
-        this.f8379e = false;
-        this.f8380f = null;
-        this.f8381g = 0;
-        this.f8382h = context;
-        this.f8380f = str;
+        this.f8386d = false;
+        this.f8387e = false;
+        this.f8388f = null;
+        this.f8389g = 0;
+        this.f8390h = context;
+        this.f8388f = str;
         m10384t(1);
     }
 
@@ -94,10 +94,10 @@ public class C2399i2 extends File {
 
     public C2399i2(String str) {
         super(str);
-        this.f8378d = false;
-        this.f8379e = false;
-        this.f8380f = null;
-        this.f8381g = 0;
+        this.f8386d = false;
+        this.f8387e = false;
+        this.f8388f = null;
+        this.f8389g = 0;
     }
 
     /* renamed from: a */
@@ -146,13 +146,13 @@ public class C2399i2 extends File {
     public static C2399i2 m10373c(File file) {
         if (file instanceof C2399i2) {
             C2399i2 i2Var = (C2399i2) file;
-            if (i2Var.f8380f != null) {
+            if (i2Var.f8388f != null) {
                 C2399i2 i2Var2 = new C2399i2();
-                i2Var2.f8382h = i2Var.f8382h;
-                i2Var2.f8377c = i2Var.f8377c;
-                i2Var2.f8378d = i2Var.f8378d;
-                i2Var2.f8379e = i2Var.f8379e;
-                i2Var2.f8380f = i2Var.f8380f;
+                i2Var2.f8390h = i2Var.f8390h;
+                i2Var2.f8385c = i2Var.f8385c;
+                i2Var2.f8386d = i2Var.f8386d;
+                i2Var2.f8387e = i2Var.f8387e;
+                i2Var2.f8388f = i2Var.f8388f;
                 return i2Var2;
             }
         }
@@ -293,28 +293,28 @@ public class C2399i2 extends File {
     private synchronized boolean m10384t(int i) {
         boolean z = true;
         if (i == 1) {
-            int indexOf = this.f8380f.indexOf("/document/");
+            int indexOf = this.f8388f.indexOf("/document/");
             if (indexOf < 0) {
-                AbstractC1056a aVar = f8376b.get(this.f8380f);
-                this.f8377c = aVar;
+                AbstractC1056a aVar = f8384b.get(this.f8388f);
+                this.f8385c = aVar;
                 if (aVar == null) {
-                    this.f8377c = AbstractC1056a.m6014i(this.f8382h, Uri.parse(this.f8380f));
+                    this.f8385c = AbstractC1056a.m6014i(this.f8390h, Uri.parse(this.f8388f));
                 }
-                if (this.f8377c == null) {
+                if (this.f8385c == null) {
                     z = false;
                 }
                 return m10385u(z);
             } else if (Build.VERSION.SDK_INT >= 21) {
-                Uri parse = Uri.parse(this.f8380f.substring(0, indexOf));
+                Uri parse = Uri.parse(this.f8388f.substring(0, indexOf));
                 if (parse == null) {
                     return m10385u(false);
                 }
-                Uri buildDocumentUriUsingTree = DocumentsContract.buildDocumentUriUsingTree(parse, Uri.decode(this.f8380f.substring(indexOf + 10)));
+                Uri buildDocumentUriUsingTree = DocumentsContract.buildDocumentUriUsingTree(parse, Uri.decode(this.f8388f.substring(indexOf + 10)));
                 if (buildDocumentUriUsingTree == null) {
                     return m10385u(false);
                 }
-                AbstractC1056a h = AbstractC1056a.m6013h(this.f8382h, buildDocumentUriUsingTree);
-                this.f8377c = h;
+                AbstractC1056a h = AbstractC1056a.m6013h(this.f8390h, buildDocumentUriUsingTree);
+                this.f8385c = h;
                 if (h == null) {
                     return m10385u(false);
                 }
@@ -323,7 +323,7 @@ public class C2399i2 extends File {
                 }
             }
         }
-        String[] split = Uri.decode(this.f8380f).split(":");
+        String[] split = Uri.decode(this.f8388f).split(":");
         String[] split2 = split[split.length - 1].split("/");
         String str = split[0] + ":" + split[1] + "%3A";
         int i2 = 0;
@@ -337,16 +337,16 @@ public class C2399i2 extends File {
             int i3 = i2 + 1;
             sb.append(Uri.encode(split2[i2]));
             String sb2 = sb.toString();
-            AbstractC1056a aVar2 = f8376b.get(sb2);
-            this.f8377c = aVar2;
+            AbstractC1056a aVar2 = f8384b.get(sb2);
+            this.f8385c = aVar2;
             if (aVar2 == null) {
-                AbstractC1056a i4 = AbstractC1056a.m6014i(this.f8382h, Uri.parse(sb2));
-                this.f8377c = i4;
+                AbstractC1056a i4 = AbstractC1056a.m6014i(this.f8390h, Uri.parse(sb2));
+                this.f8385c = i4;
                 if (i4 != null && i4.mo5666a()) {
-                    f8376b.put(sb2, this.f8377c);
+                    f8384b.put(sb2, this.f8385c);
                 }
             }
-            AbstractC1056a aVar3 = this.f8377c;
+            AbstractC1056a aVar3 = this.f8385c;
             if (aVar3 == null) {
                 return m10385u(false);
             }
@@ -367,27 +367,27 @@ public class C2399i2 extends File {
         }
         while (i2 < split2.length) {
             str = str + "%2F" + Uri.encode(split2[i2]);
-            AbstractC1056a aVar4 = f8376b.get(str);
-            if (aVar4 == null && (aVar4 = this.f8377c.mo5672g(split2[i2])) != null && aVar4.mo5675l()) {
-                f8376b.put(str, aVar4);
+            AbstractC1056a aVar4 = f8384b.get(str);
+            if (aVar4 == null && (aVar4 = this.f8385c.mo5672g(split2[i2])) != null && aVar4.mo5675l()) {
+                f8384b.put(str, aVar4);
             }
             if ((i == 3 || i == 2) && aVar4 != null && !aVar4.mo5671f()) {
                 aVar4 = null;
             }
             if (aVar4 == null) {
                 if (i == 3 || (i == 2 && i2 < split2.length - 1)) {
-                    aVar4 = this.f8377c.mo5668c(split2[i2]);
+                    aVar4 = this.f8385c.mo5668c(split2[i2]);
                     if (aVar4 != null) {
-                        f8376b.put(str, aVar4);
+                        f8384b.put(str, aVar4);
                     }
                 } else if (i == 2) {
-                    aVar4 = this.f8377c.mo5669d("*/*", split2[i2]);
+                    aVar4 = this.f8385c.mo5669d("*/*", split2[i2]);
                 }
             }
             if (aVar4 == null) {
                 return m10385u(false);
             }
-            this.f8377c = aVar4;
+            this.f8385c = aVar4;
             i2++;
         }
         return m10385u(true);
@@ -395,38 +395,38 @@ public class C2399i2 extends File {
 
     /* renamed from: u */
     private boolean m10385u(boolean z) {
-        this.f8379e = true;
-        this.f8378d = z;
-        this.f8381g = 0;
+        this.f8387e = true;
+        this.f8386d = z;
+        this.f8389g = 0;
         return z;
     }
 
     public boolean canExecute() {
-        if (this.f8380f == null) {
+        if (this.f8388f == null) {
             return super.canExecute();
         }
         return true;
     }
 
     public boolean canRead() {
-        return this.f8380f == null ? super.canRead() : this.f8378d && this.f8377c.mo5666a();
+        return this.f8388f == null ? super.canRead() : this.f8386d && this.f8385c.mo5666a();
     }
 
     public boolean canWrite() {
-        return this.f8380f == null ? super.canWrite() : this.f8378d && this.f8377c.mo5667b();
+        return this.f8388f == null ? super.canWrite() : this.f8386d && this.f8385c.mo5667b();
     }
 
     public synchronized boolean delete() {
-        if (this.f8380f == null) {
+        if (this.f8388f == null) {
             return super.delete();
         }
-        boolean z = this.f8378d && this.f8377c.mo5670e();
-        this.f8379e = false;
+        boolean z = this.f8386d && this.f8385c.mo5670e();
+        this.f8387e = false;
         return z;
     }
 
     public boolean exists() {
-        return this.f8380f == null ? super.exists() : this.f8378d && this.f8377c.mo5671f();
+        return this.f8388f == null ? super.exists() : this.f8386d && this.f8385c.mo5671f();
     }
 
     /* JADX WARNING: Removed duplicated region for block: B:48:0x00e6  */
@@ -440,27 +440,27 @@ public class C2399i2 extends File {
     }
 
     public String getAbsolutePath() {
-        String str = this.f8380f;
+        String str = this.f8388f;
         return str == null ? super.getAbsolutePath() : str;
     }
 
     public String getName() {
-        return this.f8380f == null ? super.getName() : this.f8378d ? this.f8377c.mo5673j() : "";
+        return this.f8388f == null ? super.getName() : this.f8386d ? this.f8385c.mo5673j() : "";
     }
 
     public String getPath() {
-        String str = this.f8380f;
+        String str = this.f8388f;
         return str == null ? super.getPath() : str;
     }
 
     /* renamed from: i */
     public InputStream mo8606i() {
         try {
-            if (this.f8380f == null) {
+            if (this.f8388f == null) {
                 return new FileInputStream(this);
             }
             if (m10384t(1)) {
-                return this.f8382h.getContentResolver().openInputStream(this.f8377c.mo5674k());
+                return this.f8390h.getContentResolver().openInputStream(this.f8385c.mo5674k());
             }
             return null;
         } catch (Exception unused) {
@@ -469,17 +469,17 @@ public class C2399i2 extends File {
     }
 
     public boolean isDirectory() {
-        return this.f8380f == null ? super.isDirectory() : this.f8378d && this.f8377c.mo5675l();
+        return this.f8388f == null ? super.isDirectory() : this.f8386d && this.f8385c.mo5675l();
     }
 
     /* renamed from: j */
     public synchronized OutputStream mo8608j() {
         try {
-            if (this.f8380f == null) {
+            if (this.f8388f == null) {
                 return new FileOutputStream(this);
             }
             if (m10384t(2)) {
-                return this.f8382h.getContentResolver().openOutputStream(this.f8377c.mo5674k());
+                return this.f8390h.getContentResolver().openOutputStream(this.f8385c.mo5674k());
             }
             return null;
         } catch (Exception e) {
@@ -489,53 +489,53 @@ public class C2399i2 extends File {
 
     /* renamed from: k */
     public C2399i2 getParentFile() {
-        String str = this.f8380f;
+        String str = this.f8388f;
         if (str == null) {
             return new C2399i2(getParent());
         }
         int lastIndexOf = str.lastIndexOf("%2F");
         if (lastIndexOf < 0) {
-            lastIndexOf = this.f8380f.lastIndexOf("%2f");
+            lastIndexOf = this.f8388f.lastIndexOf("%2f");
         }
         if (lastIndexOf < 0) {
             return null;
         }
-        return new C2399i2(this.f8382h, this.f8380f.substring(0, lastIndexOf));
+        return new C2399i2(this.f8390h, this.f8388f.substring(0, lastIndexOf));
     }
 
     public long lastModified() {
-        if (this.f8380f == null) {
+        if (this.f8388f == null) {
             return super.lastModified();
         }
-        if (this.f8378d) {
-            return this.f8377c.mo5676m();
+        if (this.f8386d) {
+            return this.f8385c.mo5676m();
         }
         return 0;
     }
 
     public long length() {
-        if (this.f8380f == null) {
+        if (this.f8388f == null) {
             return super.length();
         }
-        if (this.f8378d) {
-            return this.f8377c.mo5677n();
+        if (this.f8386d) {
+            return this.f8385c.mo5677n();
         }
         return 0;
     }
 
     public synchronized File[] listFiles() {
-        if (this.f8380f == null) {
+        if (this.f8388f == null) {
             return super.listFiles();
-        } else if (!this.f8378d) {
+        } else if (!this.f8386d) {
             return null;
         } else {
-            AbstractC1056a[] o = this.f8377c.mo5678o();
+            AbstractC1056a[] o = this.f8385c.mo5678o();
             if (o == null) {
                 return null;
             }
             C2399i2[] i2VarArr = new C2399i2[o.length];
             for (int i = 0; i < o.length; i++) {
-                i2VarArr[i] = new C2399i2(this.f8382h, o[i]);
+                i2VarArr[i] = new C2399i2(this.f8390h, o[i]);
             }
             return i2VarArr;
         }
@@ -543,18 +543,18 @@ public class C2399i2 extends File {
 
     @Override // java.io.File
     public synchronized File[] listFiles(FileFilter fileFilter) {
-        if (this.f8380f == null) {
+        if (this.f8388f == null) {
             return super.listFiles(fileFilter);
-        } else if (!this.f8378d) {
+        } else if (!this.f8386d) {
             return null;
         } else {
-            AbstractC1056a[] o = this.f8377c.mo5678o();
+            AbstractC1056a[] o = this.f8385c.mo5678o();
             if (o == null) {
                 return null;
             }
             ArrayList arrayList = new ArrayList();
             for (AbstractC1056a aVar : o) {
-                C2399i2 i2Var = new C2399i2(this.f8382h, aVar);
+                C2399i2 i2Var = new C2399i2(this.f8390h, aVar);
                 if (fileFilter.accept(i2Var)) {
                     arrayList.add(i2Var);
                 }
@@ -569,17 +569,17 @@ public class C2399i2 extends File {
 
     /* renamed from: m */
     public Uri mo8614m() {
-        if (this.f8380f == null) {
+        if (this.f8388f == null) {
             return Uri.fromFile(this);
         }
-        if (this.f8378d) {
-            return this.f8377c.mo5674k();
+        if (this.f8386d) {
+            return this.f8385c.mo5674k();
         }
         return null;
     }
 
     public synchronized boolean mkdirs() {
-        if (this.f8380f == null) {
+        if (this.f8388f == null) {
             return super.mkdirs();
         }
         return m10384t(3);
@@ -591,7 +591,7 @@ public class C2399i2 extends File {
     }
 
     public String toString() {
-        String str = this.f8380f;
+        String str = this.f8388f;
         return str != null ? str : super.toString();
     }
 }

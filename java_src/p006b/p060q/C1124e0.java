@@ -8,10 +8,10 @@ import android.view.View;
 class C1124e0 extends C1118d0 {
 
     /* renamed from: f */
-    private static boolean f5086f = true;
+    private static boolean f5093f = true;
 
     /* renamed from: g */
-    private static boolean f5087g = true;
+    private static boolean f5094g = true;
 
     C1124e0() {
     }
@@ -20,11 +20,11 @@ class C1124e0 extends C1118d0 {
     @SuppressLint({"NewApi"})
     /* renamed from: h */
     public void mo5785h(View view, Matrix matrix) {
-        if (f5086f) {
+        if (f5093f) {
             try {
                 view.transformMatrixToGlobal(matrix);
             } catch (NoSuchMethodError unused) {
-                f5086f = false;
+                f5093f = false;
             }
         }
     }
@@ -33,11 +33,11 @@ class C1124e0 extends C1118d0 {
     @SuppressLint({"NewApi"})
     /* renamed from: i */
     public void mo5786i(View view, Matrix matrix) {
-        if (f5087g) {
+        if (f5094g) {
             try {
                 view.transformMatrixToLocal(matrix);
             } catch (NoSuchMethodError unused) {
-                f5087g = false;
+                f5094g = false;
             }
         }
     }

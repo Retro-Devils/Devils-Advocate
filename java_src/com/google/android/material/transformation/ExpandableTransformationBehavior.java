@@ -11,7 +11,7 @@ import android.view.View;
 public abstract class ExpandableTransformationBehavior extends ExpandableBehavior {
 
     /* renamed from: b */
-    private AnimatorSet f10995b;
+    private AnimatorSet f11003b;
 
     /* renamed from: com.google.android.material.transformation.ExpandableTransformationBehavior$a */
     class C3290a extends AnimatorListenerAdapter {
@@ -19,7 +19,7 @@ public abstract class ExpandableTransformationBehavior extends ExpandableBehavio
         }
 
         public void onAnimationEnd(Animator animator) {
-            ExpandableTransformationBehavior.this.f10995b = null;
+            ExpandableTransformationBehavior.this.f11003b = null;
         }
     }
 
@@ -34,17 +34,17 @@ public abstract class ExpandableTransformationBehavior extends ExpandableBehavio
     @Override // com.google.android.material.transformation.ExpandableBehavior
     /* renamed from: H */
     public boolean mo11155H(View view, View view2, boolean z, boolean z2) {
-        AnimatorSet animatorSet = this.f10995b;
+        AnimatorSet animatorSet = this.f11003b;
         boolean z3 = animatorSet != null;
         if (z3) {
             animatorSet.cancel();
         }
         AnimatorSet J = mo11157J(view, view2, z, z3);
-        this.f10995b = J;
+        this.f11003b = J;
         J.addListener(new C3290a());
-        this.f10995b.start();
+        this.f11003b.start();
         if (!z2) {
-            this.f10995b.end();
+            this.f11003b.end();
         }
         return true;
     }

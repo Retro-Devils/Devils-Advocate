@@ -10,13 +10,13 @@ import com.digdroid.alman.dig.C2267e2;
 public class C2576r0 extends AbstractC2365h {
 
     /* renamed from: l */
-    C2550q0 f8955l;
+    C2550q0 f8963l;
 
     public C2576r0(MainActivity mainActivity, C2774t3 t3Var, Cursor cursor, float f, float f2, C2775u uVar, String str, String str2, boolean z) {
         super(mainActivity, t3Var, cursor, f, f2);
         C2550q0 q0Var = new C2550q0(mainActivity, t3Var, cursor, f, f2, uVar, str, str2, z);
-        this.f8955l = q0Var;
-        this.f8296k = q0Var;
+        this.f8963l = q0Var;
+        this.f8304k = q0Var;
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2365h, androidx.recyclerview.widget.RecyclerView.AbstractC0658g
@@ -30,14 +30,14 @@ public class C2576r0 extends AbstractC2365h {
     public void mo3581j(RecyclerView.AbstractC0655d0 d0Var, int i) {
         if (d0Var != null) {
             C2847x0 x0Var = (C2847x0) d0Var;
-            this.f8955l.mo8960b(x0Var.f9605u, x0Var.f9606v, x0Var.f9607w, x0Var.f9608x, x0Var.f9609y, i);
+            this.f8963l.mo8960b(x0Var.f9613u, x0Var.f9614v, x0Var.f9615w, x0Var.f9616x, x0Var.f9617y, i);
         }
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.AbstractC0658g
     /* renamed from: l */
     public RecyclerView.AbstractC0655d0 mo3582l(ViewGroup viewGroup, int i) {
-        return this.f8955l.mo8967i(LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.carousel_view, viewGroup, false), (float) this.f8291f);
+        return this.f8963l.mo8967i(LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.carousel_view, viewGroup, false), (float) this.f8299f);
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2365h

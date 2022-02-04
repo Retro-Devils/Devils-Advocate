@@ -11,11 +11,11 @@ import java.io.InputStream;
 public class C1675o extends AbstractC1670l<InputStream> {
 
     /* renamed from: e */
-    private static final UriMatcher f6687e;
+    private static final UriMatcher f6695e;
 
     static {
         UriMatcher uriMatcher = new UriMatcher(-1);
-        f6687e = uriMatcher;
+        f6695e = uriMatcher;
         uriMatcher.addURI("com.android.contacts", "contacts/lookup/*/#", 1);
         uriMatcher.addURI("com.android.contacts", "contacts/lookup/*", 1);
         uriMatcher.addURI("com.android.contacts", "contacts/#/photo", 2);
@@ -30,7 +30,7 @@ public class C1675o extends AbstractC1670l<InputStream> {
 
     /* renamed from: i */
     private InputStream m7961i(Uri uri, ContentResolver contentResolver) {
-        int match = f6687e.match(uri);
+        int match = f6695e.match(uri);
         if (match != 1) {
             if (match == 3) {
                 return m7962j(contentResolver, uri);

@@ -9,10 +9,10 @@ import java.util.WeakHashMap;
 public class C1405e extends Property<Drawable, Integer> {
 
     /* renamed from: a */
-    public static final Property<Drawable, Integer> f6013a = new C1405e();
+    public static final Property<Drawable, Integer> f6021a = new C1405e();
 
     /* renamed from: b */
-    private final WeakHashMap<Drawable, Integer> f6014b = new WeakHashMap<>();
+    private final WeakHashMap<Drawable, Integer> f6022b = new WeakHashMap<>();
 
     private C1405e() {
         super(Integer.class, "drawableAlphaCompat");
@@ -23,8 +23,8 @@ public class C1405e extends Property<Drawable, Integer> {
         if (Build.VERSION.SDK_INT >= 19) {
             return Integer.valueOf(drawable.getAlpha());
         }
-        if (this.f6014b.containsKey(drawable)) {
-            return this.f6014b.get(drawable);
+        if (this.f6022b.containsKey(drawable)) {
+            return this.f6022b.get(drawable);
         }
         return 255;
     }
@@ -32,7 +32,7 @@ public class C1405e extends Property<Drawable, Integer> {
     /* renamed from: b */
     public void set(Drawable drawable, Integer num) {
         if (Build.VERSION.SDK_INT < 19) {
-            this.f6014b.put(drawable, num);
+            this.f6022b.put(drawable, num);
         }
         drawable.setAlpha(num.intValue());
     }

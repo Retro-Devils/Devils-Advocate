@@ -19,31 +19,31 @@ import p069c.p073b.p074a.p090b.p107z.C1462k;
 public class C1413a extends C0812a implements Checkable, AbstractC1477n {
 
     /* renamed from: j */
-    private static final int[] f6029j = {16842911};
+    private static final int[] f6037j = {16842911};
 
     /* renamed from: k */
-    private static final int[] f6030k = {16842912};
+    private static final int[] f6038k = {16842912};
 
     /* renamed from: l */
-    private static final int[] f6031l = {C1391b.state_dragged};
+    private static final int[] f6039l = {C1391b.state_dragged};
 
     /* renamed from: m */
-    private static final int f6032m = C1399j.Widget_MaterialComponents_CardView;
+    private static final int f6040m = C1399j.Widget_MaterialComponents_CardView;
 
     /* renamed from: n */
-    private final C1415b f6033n;
+    private final C1415b f6041n;
 
     /* renamed from: o */
-    private boolean f6034o;
+    private boolean f6042o;
 
     /* renamed from: p */
-    private boolean f6035p;
+    private boolean f6043p;
 
     /* renamed from: q */
-    private boolean f6036q;
+    private boolean f6044q;
 
     /* renamed from: r */
-    private AbstractC1414a f6037r;
+    private AbstractC1414a f6045r;
 
     /* renamed from: c.b.a.b.n.a$a */
     public interface AbstractC1414a {
@@ -65,7 +65,7 @@ public class C1413a extends C0812a implements Checkable, AbstractC1477n {
 
     /* renamed from: e */
     public boolean mo6482e() {
-        if (this.f6033n == null) {
+        if (this.f6041n == null) {
             return false;
         }
         throw null;
@@ -73,7 +73,7 @@ public class C1413a extends C0812a implements Checkable, AbstractC1477n {
 
     /* renamed from: f */
     public boolean mo6483f() {
-        return this.f6036q;
+        return this.f6044q;
     }
 
     @Override // p006b.p019c.p020a.C0812a
@@ -149,7 +149,7 @@ public class C1413a extends C0812a implements Checkable, AbstractC1477n {
     }
 
     public boolean isChecked() {
-        return this.f6035p;
+        return this.f6043p;
     }
 
     /* access modifiers changed from: protected */
@@ -162,13 +162,13 @@ public class C1413a extends C0812a implements Checkable, AbstractC1477n {
     public int[] onCreateDrawableState(int i) {
         int[] onCreateDrawableState = super.onCreateDrawableState(i + 3);
         if (mo6482e()) {
-            FrameLayout.mergeDrawableStates(onCreateDrawableState, f6029j);
+            FrameLayout.mergeDrawableStates(onCreateDrawableState, f6037j);
         }
         if (isChecked()) {
-            FrameLayout.mergeDrawableStates(onCreateDrawableState, f6030k);
+            FrameLayout.mergeDrawableStates(onCreateDrawableState, f6038k);
         }
         if (mo6483f()) {
-            FrameLayout.mergeDrawableStates(onCreateDrawableState, f6031l);
+            FrameLayout.mergeDrawableStates(onCreateDrawableState, f6039l);
         }
         return onCreateDrawableState;
     }
@@ -201,7 +201,7 @@ public class C1413a extends C0812a implements Checkable, AbstractC1477n {
     }
 
     public void setBackgroundDrawable(Drawable drawable) {
-        if (this.f6034o) {
+        if (this.f6042o) {
             throw null;
         }
     }
@@ -237,7 +237,7 @@ public class C1413a extends C0812a implements Checkable, AbstractC1477n {
     }
 
     public void setChecked(boolean z) {
-        if (this.f6035p != z) {
+        if (this.f6043p != z) {
             toggle();
         }
     }
@@ -257,14 +257,14 @@ public class C1413a extends C0812a implements Checkable, AbstractC1477n {
 
     public void setClickable(boolean z) {
         super.setClickable(z);
-        if (this.f6033n != null) {
+        if (this.f6041n != null) {
             throw null;
         }
     }
 
     public void setDragged(boolean z) {
-        if (this.f6036q != z) {
-            this.f6036q = z;
+        if (this.f6044q != z) {
+            this.f6044q = z;
             refreshDrawableState();
             m7032d();
             invalidate();
@@ -278,7 +278,7 @@ public class C1413a extends C0812a implements Checkable, AbstractC1477n {
     }
 
     public void setOnCheckedChangeListener(AbstractC1414a aVar) {
-        this.f6037r = aVar;
+        this.f6045r = aVar;
     }
 
     @Override // p006b.p019c.p020a.C0812a
@@ -335,12 +335,12 @@ public class C1413a extends C0812a implements Checkable, AbstractC1477n {
 
     public void toggle() {
         if (mo6482e() && isEnabled()) {
-            this.f6035p = !this.f6035p;
+            this.f6043p = !this.f6043p;
             refreshDrawableState();
             m7032d();
-            AbstractC1414a aVar = this.f6037r;
+            AbstractC1414a aVar = this.f6045r;
             if (aVar != null) {
-                aVar.mo6519a(this, this.f6035p);
+                aVar.mo6519a(this, this.f6043p);
             }
         }
     }

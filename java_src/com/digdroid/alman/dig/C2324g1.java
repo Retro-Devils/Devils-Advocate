@@ -12,28 +12,28 @@ import android.widget.TextView;
 class C2324g1 extends AbstractC2551q1 {
 
     /* renamed from: f */
-    AbstractC2325a f8192f;
+    AbstractC2325a f8200f;
 
     /* renamed from: g */
-    float f8193g;
+    float f8201g;
 
     /* renamed from: h */
-    LayoutInflater f8194h;
+    LayoutInflater f8202h;
 
     /* renamed from: i */
-    int f8195i = this.f8198l.mo9510a();
+    int f8203i = this.f8206l.mo9510a();
 
     /* renamed from: j */
-    float f8196j;
+    float f8204j;
 
     /* renamed from: k */
-    float f8197k;
+    float f8205k;
 
     /* renamed from: l */
-    C2885z0 f8198l;
+    C2885z0 f8206l;
 
     /* renamed from: m */
-    C2464m f8199m;
+    C2464m f8207m;
 
     /* renamed from: com.digdroid.alman.dig.g1$a */
     interface AbstractC2325a {
@@ -58,38 +58,38 @@ class C2324g1 extends AbstractC2551q1 {
 
     public C2324g1(Activity activity, C2774t3 t3Var, Cursor cursor, float f, AbstractC2325a aVar) {
         super(activity, t3Var, cursor, f);
-        this.f8199m = aVar.mo8310b();
-        this.f8192f = aVar;
+        this.f8207m = aVar.mo8310b();
+        this.f8200f = aVar;
         C2885z0 z0Var = new C2885z0(activity, aVar.mo8459c());
-        this.f8198l = z0Var;
-        this.f8193g = z0Var.mo9511b();
-        this.f8196j = aVar.mo8460h();
-        this.f8197k = aVar.mo8461o();
-        this.f8194h = LayoutInflater.from(activity);
+        this.f8206l = z0Var;
+        this.f8201g = z0Var.mo9511b();
+        this.f8204j = aVar.mo8460h();
+        this.f8205k = aVar.mo8461o();
+        this.f8202h = LayoutInflater.from(activity);
     }
 
     public void bindView(View view, Context context, Cursor cursor) {
         if (view != null && context != null && cursor != null && !cursor.isClosed() && cursor.getCount() > 0) {
-            int a = this.f8199m.mo8725a(cursor.getPosition());
+            int a = this.f8207m.mo8725a(cursor.getPosition());
             TextView textView = (TextView) view.findViewById(R.id.genre_name);
-            this.f8198l.mo9514e(textView, this.f8192f.mo8458a(cursor));
+            this.f8206l.mo9514e(textView, this.f8200f.mo8458a(cursor));
             textView.setTextColor(a);
-            textView.setTextSize(0, this.f8193g * this.f8196j);
+            textView.setTextSize(0, this.f8201g * this.f8204j);
             TextView textView2 = (TextView) view.findViewById(R.id.genre_count);
-            int R = this.f8192f.mo8424R(cursor);
-            C2885z0 z0Var = this.f8198l;
+            int R = this.f8200f.mo8424R(cursor);
+            C2885z0 z0Var = this.f8206l;
             String str = "";
             if (R >= 0) {
                 str = str + R;
             }
             z0Var.mo9514e(textView2, str);
             textView2.setTextColor(a);
-            textView2.setTextSize(0, this.f8193g * this.f8196j);
-            view.setPadding(0, Math.round(((float) this.f8195i) * this.f8196j * this.f8197k), 0, Math.round(((float) this.f8195i) * this.f8196j * this.f8197k));
+            textView2.setTextSize(0, this.f8201g * this.f8204j);
+            view.setPadding(0, Math.round(((float) this.f8203i) * this.f8204j * this.f8205k), 0, Math.round(((float) this.f8203i) * this.f8204j * this.f8205k));
         }
     }
 
     public View newView(Context context, Cursor cursor, ViewGroup viewGroup) {
-        return this.f8194h.inflate(R.layout.genre, viewGroup, false);
+        return this.f8202h.inflate(R.layout.genre, viewGroup, false);
     }
 }

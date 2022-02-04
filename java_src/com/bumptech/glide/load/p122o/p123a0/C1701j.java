@@ -11,51 +11,51 @@ import java.util.TreeMap;
 public final class C1701j implements AbstractC1690b {
 
     /* renamed from: a */
-    private final C1698h<C1702a, Object> f6727a = new C1698h<>();
+    private final C1698h<C1702a, Object> f6735a = new C1698h<>();
 
     /* renamed from: b */
-    private final C1703b f6728b = new C1703b();
+    private final C1703b f6736b = new C1703b();
 
     /* renamed from: c */
-    private final Map<Class<?>, NavigableMap<Integer, Integer>> f6729c = new HashMap();
+    private final Map<Class<?>, NavigableMap<Integer, Integer>> f6737c = new HashMap();
 
     /* renamed from: d */
-    private final Map<Class<?>, AbstractC1689a<?>> f6730d = new HashMap();
+    private final Map<Class<?>, AbstractC1689a<?>> f6738d = new HashMap();
 
     /* renamed from: e */
-    private final int f6731e;
+    private final int f6739e;
 
     /* renamed from: f */
-    private int f6732f;
+    private int f6740f;
 
     /* access modifiers changed from: private */
     /* renamed from: com.bumptech.glide.load.o.a0.j$a */
     public static final class C1702a implements AbstractC1708m {
 
         /* renamed from: a */
-        private final C1703b f6733a;
+        private final C1703b f6741a;
 
         /* renamed from: b */
-        int f6734b;
+        int f6742b;
 
         /* renamed from: c */
-        private Class<?> f6735c;
+        private Class<?> f6743c;
 
         C1702a(C1703b bVar) {
-            this.f6733a = bVar;
+            this.f6741a = bVar;
         }
 
         @Override // com.bumptech.glide.load.p122o.p123a0.AbstractC1708m
         /* renamed from: a */
         public void mo7170a() {
-            this.f6733a.mo7179c(this);
+            this.f6741a.mo7179c(this);
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: b */
         public void mo7196b(int i, Class<?> cls) {
-            this.f6734b = i;
-            this.f6735c = cls;
+            this.f6742b = i;
+            this.f6743c = cls;
         }
 
         public boolean equals(Object obj) {
@@ -63,17 +63,17 @@ public final class C1701j implements AbstractC1690b {
                 return false;
             }
             C1702a aVar = (C1702a) obj;
-            return this.f6734b == aVar.f6734b && this.f6735c == aVar.f6735c;
+            return this.f6742b == aVar.f6742b && this.f6743c == aVar.f6743c;
         }
 
         public int hashCode() {
-            int i = this.f6734b * 31;
-            Class<?> cls = this.f6735c;
+            int i = this.f6742b * 31;
+            Class<?> cls = this.f6743c;
             return i + (cls != null ? cls.hashCode() : 0);
         }
 
         public String toString() {
-            return "Key{size=" + this.f6734b + "array=" + this.f6735c + '}';
+            return "Key{size=" + this.f6742b + "array=" + this.f6743c + '}';
         }
     }
 
@@ -98,7 +98,7 @@ public final class C1701j implements AbstractC1690b {
     }
 
     public C1701j(int i) {
-        this.f6731e = i;
+        this.f6739e = i;
     }
 
     /* renamed from: f */
@@ -120,16 +120,16 @@ public final class C1701j implements AbstractC1690b {
 
     /* renamed from: g */
     private void m8054g() {
-        m8055h(this.f6731e);
+        m8055h(this.f6739e);
     }
 
     /* renamed from: h */
     private void m8055h(int i) {
-        while (this.f6732f > i) {
-            Object f = this.f6727a.mo7189f();
+        while (this.f6740f > i) {
+            Object f = this.f6735a.mo7189f();
             C2081j.m9432d(f);
             AbstractC1689a i2 = m8056i(f);
-            this.f6732f -= i2.mo7155b(f) * i2.mo7156c();
+            this.f6740f -= i2.mo7155b(f) * i2.mo7156c();
             m8053f(i2.mo7155b(f), f.getClass());
             if (Log.isLoggable(i2.mo7154a(), 2)) {
                 Log.v(i2.mo7154a(), "evicted: " + i2.mo7155b(f));
@@ -144,7 +144,7 @@ public final class C1701j implements AbstractC1690b {
 
     /* renamed from: j */
     private <T> AbstractC1689a<T> m8057j(Class<T> cls) {
-        C1697g gVar = (AbstractC1689a<T>) this.f6730d.get(cls);
+        C1697g gVar = (AbstractC1689a<T>) this.f6738d.get(cls);
         if (gVar == null) {
             if (cls.equals(int[].class)) {
                 gVar = new C1700i();
@@ -153,14 +153,14 @@ public final class C1701j implements AbstractC1690b {
             } else {
                 throw new IllegalArgumentException("No array pool found for: " + cls.getSimpleName());
             }
-            this.f6730d.put(cls, gVar);
+            this.f6738d.put(cls, gVar);
         }
         return gVar;
     }
 
     /* renamed from: k */
     private <T> T m8058k(C1702a aVar) {
-        return (T) this.f6727a.mo7187a(aVar);
+        return (T) this.f6735a.mo7187a(aVar);
     }
 
     /* renamed from: l */
@@ -168,38 +168,38 @@ public final class C1701j implements AbstractC1690b {
         AbstractC1689a<T> j = m8057j(cls);
         T t = (T) m8058k(aVar);
         if (t != null) {
-            this.f6732f -= j.mo7155b(t) * j.mo7156c();
+            this.f6740f -= j.mo7155b(t) * j.mo7156c();
             m8053f(j.mo7155b(t), cls);
         }
         if (t != null) {
             return t;
         }
         if (Log.isLoggable(j.mo7154a(), 2)) {
-            Log.v(j.mo7154a(), "Allocated " + aVar.f6734b + " bytes");
+            Log.v(j.mo7154a(), "Allocated " + aVar.f6742b + " bytes");
         }
-        return j.newArray(aVar.f6734b);
+        return j.newArray(aVar.f6742b);
     }
 
     /* renamed from: m */
     private NavigableMap<Integer, Integer> m8060m(Class<?> cls) {
-        NavigableMap<Integer, Integer> navigableMap = this.f6729c.get(cls);
+        NavigableMap<Integer, Integer> navigableMap = this.f6737c.get(cls);
         if (navigableMap != null) {
             return navigableMap;
         }
         TreeMap treeMap = new TreeMap();
-        this.f6729c.put(cls, treeMap);
+        this.f6737c.put(cls, treeMap);
         return treeMap;
     }
 
     /* renamed from: n */
     private boolean m8061n() {
-        int i = this.f6732f;
-        return i == 0 || this.f6731e / i >= 2;
+        int i = this.f6740f;
+        return i == 0 || this.f6739e / i >= 2;
     }
 
     /* renamed from: o */
     private boolean m8062o(int i) {
-        return i <= this.f6731e / 2;
+        return i <= this.f6739e / 2;
     }
 
     /* renamed from: p */
@@ -217,7 +217,7 @@ public final class C1701j implements AbstractC1690b {
                 throw th;
             }
         } else if (i >= 20 || i == 15) {
-            m8055h(this.f6731e / 2);
+            m8055h(this.f6739e / 2);
         }
     }
 
@@ -230,7 +230,7 @@ public final class C1701j implements AbstractC1690b {
     @Override // com.bumptech.glide.load.p122o.p123a0.AbstractC1690b
     /* renamed from: c */
     public synchronized <T> T mo7160c(int i, Class<T> cls) {
-        return (T) m8059l(this.f6728b.mo7201e(i, cls), cls);
+        return (T) m8059l(this.f6736b.mo7201e(i, cls), cls);
     }
 
     @Override // com.bumptech.glide.load.p122o.p123a0.AbstractC1690b
@@ -241,17 +241,17 @@ public final class C1701j implements AbstractC1690b {
         int b = j.mo7155b(t);
         int c = j.mo7156c() * b;
         if (m8062o(c)) {
-            C1702a e = this.f6728b.mo7201e(b, cls);
-            this.f6727a.mo7188d(e, t);
+            C1702a e = this.f6736b.mo7201e(b, cls);
+            this.f6735a.mo7188d(e, t);
             NavigableMap<Integer, Integer> m = m8060m(cls);
-            Integer num = (Integer) m.get(Integer.valueOf(e.f6734b));
-            Integer valueOf = Integer.valueOf(e.f6734b);
+            Integer num = (Integer) m.get(Integer.valueOf(e.f6742b));
+            Integer valueOf = Integer.valueOf(e.f6742b);
             int i = 1;
             if (num != null) {
                 i = 1 + num.intValue();
             }
             m.put(valueOf, Integer.valueOf(i));
-            this.f6732f += c;
+            this.f6740f += c;
             m8054g();
         }
     }
@@ -261,6 +261,6 @@ public final class C1701j implements AbstractC1690b {
     public synchronized <T> T mo7162e(int i, Class<T> cls) {
         Integer ceilingKey;
         ceilingKey = m8060m(cls).ceilingKey(Integer.valueOf(i));
-        return (T) m8059l(m8063p(i, ceilingKey) ? this.f6728b.mo7201e(ceilingKey.intValue(), cls) : this.f6728b.mo7201e(i, cls), cls);
+        return (T) m8059l(m8063p(i, ceilingKey) ? this.f6736b.mo7201e(ceilingKey.intValue(), cls) : this.f6736b.mo7201e(i, cls), cls);
     }
 }

@@ -13,19 +13,19 @@ import p006b.p007a.C0762i;
 public class C0788d extends ContextWrapper {
 
     /* renamed from: a */
-    private int f3931a;
+    private int f3935a;
 
     /* renamed from: b */
-    private Resources.Theme f3932b;
+    private Resources.Theme f3936b;
 
     /* renamed from: c */
-    private LayoutInflater f3933c;
+    private LayoutInflater f3937c;
 
     /* renamed from: d */
-    private Configuration f3934d;
+    private Configuration f3938d;
 
     /* renamed from: e */
-    private Resources f3935e;
+    private Resources f3939e;
 
     public C0788d() {
         super(null);
@@ -33,19 +33,19 @@ public class C0788d extends ContextWrapper {
 
     public C0788d(Context context, int i) {
         super(context);
-        this.f3931a = i;
+        this.f3935a = i;
     }
 
     public C0788d(Context context, Resources.Theme theme) {
         super(context);
-        this.f3932b = theme;
+        this.f3936b = theme;
     }
 
     /* renamed from: b */
     private Resources m4633b() {
         Resources resources;
-        if (this.f3935e == null) {
-            Configuration configuration = this.f3934d;
+        if (this.f3939e == null) {
+            Configuration configuration = this.f3938d;
             if (configuration == null) {
                 resources = super.getResources();
             } else if (Build.VERSION.SDK_INT >= 17) {
@@ -53,33 +53,33 @@ public class C0788d extends ContextWrapper {
             } else {
                 Resources resources2 = super.getResources();
                 Configuration configuration2 = new Configuration(resources2.getConfiguration());
-                configuration2.updateFrom(this.f3934d);
-                this.f3935e = new Resources(resources2.getAssets(), resources2.getDisplayMetrics(), configuration2);
+                configuration2.updateFrom(this.f3938d);
+                this.f3939e = new Resources(resources2.getAssets(), resources2.getDisplayMetrics(), configuration2);
             }
-            this.f3935e = resources;
+            this.f3939e = resources;
         }
-        return this.f3935e;
+        return this.f3939e;
     }
 
     /* renamed from: d */
     private void m4634d() {
-        boolean z = this.f3932b == null;
+        boolean z = this.f3936b == null;
         if (z) {
-            this.f3932b = getResources().newTheme();
+            this.f3936b = getResources().newTheme();
             Resources.Theme theme = getBaseContext().getTheme();
             if (theme != null) {
-                this.f3932b.setTo(theme);
+                this.f3936b.setTo(theme);
             }
         }
-        mo4691e(this.f3932b, this.f3931a, z);
+        mo4691e(this.f3936b, this.f3935a, z);
     }
 
     /* renamed from: a */
     public void mo4688a(Configuration configuration) {
-        if (this.f3935e != null) {
+        if (this.f3939e != null) {
             throw new IllegalStateException("getResources() or getAssets() has already been called");
-        } else if (this.f3934d == null) {
-            this.f3934d = new Configuration(configuration);
+        } else if (this.f3938d == null) {
+            this.f3938d = new Configuration(configuration);
         } else {
             throw new IllegalStateException("Override configuration has already been set");
         }
@@ -92,7 +92,7 @@ public class C0788d extends ContextWrapper {
 
     /* renamed from: c */
     public int mo4690c() {
-        return this.f3931a;
+        return this.f3935a;
     }
 
     /* access modifiers changed from: protected */
@@ -114,27 +114,27 @@ public class C0788d extends ContextWrapper {
         if (!"layout_inflater".equals(str)) {
             return getBaseContext().getSystemService(str);
         }
-        if (this.f3933c == null) {
-            this.f3933c = LayoutInflater.from(getBaseContext()).cloneInContext(this);
+        if (this.f3937c == null) {
+            this.f3937c = LayoutInflater.from(getBaseContext()).cloneInContext(this);
         }
-        return this.f3933c;
+        return this.f3937c;
     }
 
     public Resources.Theme getTheme() {
-        Resources.Theme theme = this.f3932b;
+        Resources.Theme theme = this.f3936b;
         if (theme != null) {
             return theme;
         }
-        if (this.f3931a == 0) {
-            this.f3931a = C0762i.Theme_AppCompat_Light;
+        if (this.f3935a == 0) {
+            this.f3935a = C0762i.Theme_AppCompat_Light;
         }
         m4634d();
-        return this.f3932b;
+        return this.f3936b;
     }
 
     public void setTheme(int i) {
-        if (this.f3931a != i) {
-            this.f3931a = i;
+        if (this.f3935a != i) {
+            this.f3935a = i;
             m4634d();
         }
     }

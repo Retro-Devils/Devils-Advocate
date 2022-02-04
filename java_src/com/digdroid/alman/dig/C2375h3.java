@@ -20,47 +20,47 @@ import java.util.HashMap;
 public class C2375h3 {
 
     /* renamed from: a */
-    private static C2375h3 f8322a;
+    private static C2375h3 f8330a;
 
     /* renamed from: b */
-    Context f8323b;
+    Context f8331b;
 
     /* renamed from: c */
-    C2775u f8324c;
+    C2775u f8332c;
 
     /* renamed from: d */
-    SQLiteDatabase f8325d;
+    SQLiteDatabase f8333d;
 
     /* renamed from: e */
-    C2219c3 f8326e;
+    C2219c3 f8334e;
 
     /* renamed from: f */
-    HashMap<String, C2387l> f8327f = null;
+    HashMap<String, C2387l> f8335f = null;
 
     /* renamed from: com.digdroid.alman.dig.h3$a */
     class DialogInterface$OnClickListenerC2376a implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ String f8328b;
+        final /* synthetic */ String f8336b;
 
         DialogInterface$OnClickListenerC2376a(String str) {
-            this.f8328b = str;
+            this.f8336b = str;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
-            SQLiteDatabase sQLiteDatabase = C2375h3.this.f8325d;
-            sQLiteDatabase.execSQL("UPDATE systems SET ignored=0 WHERE slug='" + this.f8328b + "'");
-            SQLiteDatabase sQLiteDatabase2 = C2375h3.this.f8325d;
-            sQLiteDatabase2.execSQL("UPDATE roms SET ignored=0 WHERE system='" + this.f8328b + "'");
-            SQLiteDatabase sQLiteDatabase3 = C2375h3.this.f8325d;
-            sQLiteDatabase3.execSQL("UPDATE rompaths SET last_checked=0 WHERE system='" + this.f8328b + "'");
-            C2375h3.this.mo8545E(this.f8328b);
-            if (this.f8328b.equals("android")) {
-                DatabaseService.m9478v(C2375h3.this.f8323b, "scandroid");
+            SQLiteDatabase sQLiteDatabase = C2375h3.this.f8333d;
+            sQLiteDatabase.execSQL("UPDATE systems SET ignored=0 WHERE slug='" + this.f8336b + "'");
+            SQLiteDatabase sQLiteDatabase2 = C2375h3.this.f8333d;
+            sQLiteDatabase2.execSQL("UPDATE roms SET ignored=0 WHERE system='" + this.f8336b + "'");
+            SQLiteDatabase sQLiteDatabase3 = C2375h3.this.f8333d;
+            sQLiteDatabase3.execSQL("UPDATE rompaths SET last_checked=0 WHERE system='" + this.f8336b + "'");
+            C2375h3.this.mo8545E(this.f8336b);
+            if (this.f8336b.equals("android")) {
+                DatabaseService.m9478v(C2375h3.this.f8331b, "scandroid");
             } else {
-                C2375h3.this.mo8555d(this.f8328b, true);
+                C2375h3.this.mo8555d(this.f8336b, true);
             }
-            DatabaseService.m9478v(C2375h3.this.f8323b, "merge_games");
+            DatabaseService.m9478v(C2375h3.this.f8331b, "merge_games");
         }
     }
 
@@ -73,7 +73,7 @@ public class C2375h3 {
         @Override // com.digdroid.alman.dig.C2375h3.AbstractC2389n
         /* renamed from: a */
         public void mo8577a(String str, String str2) {
-            C2375h3.this.f8327f.get(str).f8353g = str2;
+            C2375h3.this.f8335f.get(str).f8361g = str2;
         }
     }
 
@@ -81,14 +81,14 @@ public class C2375h3 {
     class AsyncTaskC2378c extends AsyncTask<Void, Void, String> {
 
         /* renamed from: a */
-        final /* synthetic */ String f8331a;
+        final /* synthetic */ String f8339a;
 
         /* renamed from: b */
-        final /* synthetic */ AbstractC2388m f8332b;
+        final /* synthetic */ AbstractC2388m f8340b;
 
         AsyncTaskC2378c(String str, AbstractC2388m mVar) {
-            this.f8331a = str;
-            this.f8332b = mVar;
+            this.f8339a = str;
+            this.f8340b = mVar;
         }
 
         /* access modifiers changed from: protected */
@@ -96,7 +96,7 @@ public class C2375h3 {
         public String doInBackground(Void... voidArr) {
             int i = 1;
             while (true) {
-                Cursor rawQuery = C2375h3.this.f8325d.rawQuery("SELECT _id FROM systems WHERE slug='clone" + i + "'", null);
+                Cursor rawQuery = C2375h3.this.f8333d.rawQuery("SELECT _id FROM systems WHERE slug='clone" + i + "'", null);
                 boolean moveToFirst = rawQuery.moveToFirst();
                 rawQuery.close();
                 if (!moveToFirst) {
@@ -105,7 +105,7 @@ public class C2375h3 {
                 i++;
             }
             String str = "clone" + i;
-            Cursor rawQuery2 = C2375h3.this.f8325d.rawQuery("SELECT * FROM systems WHERE slug='" + this.f8331a + "'", null);
+            Cursor rawQuery2 = C2375h3.this.f8333d.rawQuery("SELECT * FROM systems WHERE slug='" + this.f8339a + "'", null);
             if (!rawQuery2.moveToFirst()) {
                 rawQuery2.close();
                 return null;
@@ -126,13 +126,13 @@ public class C2375h3 {
             contentValues.put("overlay", rawQuery2.getString(rawQuery2.getColumnIndex("overlay")));
             contentValues.put("overlay_opacity", Float.valueOf(rawQuery2.getFloat(rawQuery2.getColumnIndex("overlay_opacity"))));
             rawQuery2.close();
-            C2375h3.this.f8325d.insert("systems", null, contentValues);
+            C2375h3.this.f8333d.insert("systems", null, contentValues);
             C2387l lVar = new C2387l();
-            lVar.f8347a = str2;
-            lVar.f8348b = string;
-            lVar.f8350d = true;
-            lVar.f8349c = true;
-            C2375h3.this.f8327f.put(str, lVar);
+            lVar.f8355a = str2;
+            lVar.f8356b = string;
+            lVar.f8358d = true;
+            lVar.f8357c = true;
+            C2375h3.this.f8335f.put(str, lVar);
             return str;
         }
 
@@ -140,7 +140,7 @@ public class C2375h3 {
         /* renamed from: b */
         public void onPostExecute(String str) {
             AbstractC2388m mVar;
-            if (str != null && (mVar = this.f8332b) != null) {
+            if (str != null && (mVar = this.f8340b) != null) {
                 mVar.mo8585a(str);
             }
         }
@@ -155,7 +155,7 @@ public class C2375h3 {
         @Override // com.digdroid.alman.dig.C2375h3.AbstractC2389n
         /* renamed from: a */
         public void mo8577a(String str, String str2) {
-            C2375h3.this.f8327f.get(str).f8354h = str2;
+            C2375h3.this.f8335f.get(str).f8362h = str2;
         }
     }
 
@@ -168,7 +168,7 @@ public class C2375h3 {
         @Override // com.digdroid.alman.dig.C2375h3.AbstractC2389n
         /* renamed from: a */
         public void mo8577a(String str, String str2) {
-            C2375h3.this.f8327f.get(str).f8355i = str2;
+            C2375h3.this.f8335f.get(str).f8363i = str2;
         }
     }
 
@@ -181,7 +181,7 @@ public class C2375h3 {
         @Override // com.digdroid.alman.dig.C2375h3.AbstractC2389n
         /* renamed from: a */
         public void mo8577a(String str, String str2) {
-            C2375h3.this.f8327f.get(str).f8356j = str2;
+            C2375h3.this.f8335f.get(str).f8364j = str2;
         }
     }
 
@@ -194,7 +194,7 @@ public class C2375h3 {
         @Override // com.digdroid.alman.dig.C2375h3.AbstractC2389n
         /* renamed from: a */
         public void mo8577a(String str, String str2) {
-            C2375h3.this.f8327f.get(str).f8357k = str2;
+            C2375h3.this.f8335f.get(str).f8365k = str2;
         }
     }
 
@@ -207,7 +207,7 @@ public class C2375h3 {
         @Override // com.digdroid.alman.dig.C2375h3.AbstractC2389n
         /* renamed from: a */
         public void mo8577a(String str, String str2) {
-            C2375h3.this.f8327f.get(str).f8358l = str2;
+            C2375h3.this.f8335f.get(str).f8366l = str2;
         }
     }
 
@@ -226,27 +226,27 @@ public class C2375h3 {
     class DialogInterface$OnClickListenerC2385j implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ EditText f8340b;
+        final /* synthetic */ EditText f8348b;
 
         /* renamed from: c */
-        final /* synthetic */ String f8341c;
+        final /* synthetic */ String f8349c;
 
         /* renamed from: d */
-        final /* synthetic */ Activity f8342d;
+        final /* synthetic */ Activity f8350d;
 
         DialogInterface$OnClickListenerC2385j(EditText editText, String str, Activity activity) {
-            this.f8340b = editText;
-            this.f8341c = str;
-            this.f8342d = activity;
+            this.f8348b = editText;
+            this.f8349c = str;
+            this.f8350d = activity;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
-            String trim = this.f8340b.getText().toString().trim();
+            String trim = this.f8348b.getText().toString().trim();
             if (!trim.equals("")) {
-                SQLiteDatabase sQLiteDatabase = C2375h3.this.f8325d;
-                sQLiteDatabase.execSQL("UPDATE systems SET name=" + DatabaseUtils.sqlEscapeString(trim) + " WHERE slug='" + this.f8341c + "'");
-                C2375h3.this.f8327f = null;
-                this.f8342d.recreate();
+                SQLiteDatabase sQLiteDatabase = C2375h3.this.f8333d;
+                sQLiteDatabase.execSQL("UPDATE systems SET name=" + DatabaseUtils.sqlEscapeString(trim) + " WHERE slug='" + this.f8349c + "'");
+                C2375h3.this.f8335f = null;
+                this.f8350d.recreate();
             }
         }
     }
@@ -255,22 +255,22 @@ public class C2375h3 {
     class DialogInterface$OnClickListenerC2386k implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ String f8344b;
+        final /* synthetic */ String f8352b;
 
         /* renamed from: c */
-        final /* synthetic */ AbstractC2390o f8345c;
+        final /* synthetic */ AbstractC2390o f8353c;
 
         DialogInterface$OnClickListenerC2386k(String str, AbstractC2390o oVar) {
-            this.f8344b = str;
-            this.f8345c = oVar;
+            this.f8352b = str;
+            this.f8353c = oVar;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
-            SQLiteDatabase sQLiteDatabase = C2375h3.this.f8325d;
-            sQLiteDatabase.execSQL("UPDATE roms SET ignored=1 WHERE system='" + this.f8344b + "'");
-            SQLiteDatabase sQLiteDatabase2 = C2375h3.this.f8325d;
-            sQLiteDatabase2.execSQL("UPDATE systems SET ignored=1,numgames=0 WHERE slug='" + this.f8344b + "'");
-            this.f8345c.mo8502a();
+            SQLiteDatabase sQLiteDatabase = C2375h3.this.f8333d;
+            sQLiteDatabase.execSQL("UPDATE roms SET ignored=1 WHERE system='" + this.f8352b + "'");
+            SQLiteDatabase sQLiteDatabase2 = C2375h3.this.f8333d;
+            sQLiteDatabase2.execSQL("UPDATE systems SET ignored=1,numgames=0 WHERE slug='" + this.f8352b + "'");
+            this.f8353c.mo8502a();
         }
     }
 
@@ -279,40 +279,40 @@ public class C2375h3 {
     public class C2387l {
 
         /* renamed from: a */
-        String f8347a;
+        String f8355a;
 
         /* renamed from: b */
-        String f8348b;
+        String f8356b;
 
         /* renamed from: c */
-        boolean f8349c;
+        boolean f8357c;
 
         /* renamed from: d */
-        boolean f8350d;
+        boolean f8358d;
 
         /* renamed from: e */
-        boolean f8351e;
+        boolean f8359e;
 
         /* renamed from: f */
-        float f8352f;
+        float f8360f;
 
         /* renamed from: g */
-        String f8353g;
+        String f8361g;
 
         /* renamed from: h */
-        String f8354h;
+        String f8362h;
 
         /* renamed from: i */
-        String f8355i;
+        String f8363i;
 
         /* renamed from: j */
-        String f8356j;
+        String f8364j;
 
         /* renamed from: k */
-        String f8357k;
+        String f8365k;
 
         /* renamed from: l */
-        String f8358l;
+        String f8366l;
 
         C2387l() {
         }
@@ -339,22 +339,22 @@ public class C2375h3 {
     }
 
     private C2375h3(Context context, C2775u uVar) {
-        this.f8323b = context;
-        this.f8324c = uVar;
-        this.f8326e = C2219c3.m9805k(context);
+        this.f8331b = context;
+        this.f8332c = uVar;
+        this.f8334e = C2219c3.m9805k(context);
     }
 
     /* renamed from: j */
     private void m10305j(String str, String str2, AbstractC2389n nVar) {
         File[] listFiles;
-        String G = C2553q3.f8891a.f9397a.mo9206G(str, str2);
+        String G = C2553q3.f8899a.f9405a.mo9206G(str, str2);
         if (!(G == null || G.equals("") || (listFiles = new File(G).listFiles()) == null)) {
             for (File file : listFiles) {
                 String name = file.getName();
                 int lastIndexOf = name.lastIndexOf(46);
                 if (lastIndexOf > 0) {
                     String lowerCase = name.substring(0, lastIndexOf).toLowerCase();
-                    if (this.f8327f.containsKey(lowerCase)) {
+                    if (this.f8335f.containsKey(lowerCase)) {
                         nVar.mo8577a(lowerCase, file.getAbsolutePath());
                     }
                 }
@@ -366,10 +366,10 @@ public class C2375h3 {
     public static synchronized C2375h3 m10306r(Context context, C2775u uVar) {
         C2375h3 h3Var;
         synchronized (C2375h3.class) {
-            if (f8322a == null) {
-                f8322a = new C2375h3(context.getApplicationContext(), uVar);
+            if (f8330a == null) {
+                f8330a = new C2375h3(context.getApplicationContext(), uVar);
             }
-            h3Var = f8322a;
+            h3Var = f8330a;
         }
         return h3Var;
     }
@@ -378,10 +378,10 @@ public class C2375h3 {
     /* renamed from: A */
     public boolean mo8541A(String str) {
         mo8560i();
-        HashMap<String, C2387l> hashMap = this.f8327f;
+        HashMap<String, C2387l> hashMap = this.f8335f;
         if (!(hashMap == null || str == null)) {
             try {
-                return hashMap.get(str).f8351e;
+                return hashMap.get(str).f8359e;
             } catch (Exception unused) {
             }
         }
@@ -396,7 +396,7 @@ public class C2375h3 {
 
     /* renamed from: C */
     public synchronized void mo8543C() {
-        this.f8325d = this.f8324c.mo9325c();
+        this.f8333d = this.f8332c.mo9325c();
     }
 
     /* access modifiers changed from: package-private */
@@ -417,13 +417,13 @@ public class C2375h3 {
         String str2;
         SQLiteDatabase sQLiteDatabase;
         if (mo8573x(str)) {
-            sQLiteDatabase = this.f8325d;
+            sQLiteDatabase = this.f8333d;
             sb = new StringBuilder();
             sb.append("SELECT COUNT (*) as count FROM roms WHERE system='");
             sb.append(str);
             str2 = "' AND ignored=0 AND present=1 AND (merged_with=-1 OR merged_with=_id)";
         } else {
-            sQLiteDatabase = this.f8325d;
+            sQLiteDatabase = this.f8333d;
             sb = new StringBuilder();
             sb.append("SELECT COUNT (*) as count FROM roms WHERE system='");
             sb.append(str);
@@ -436,7 +436,7 @@ public class C2375h3 {
         rawQuery.close();
         ContentValues contentValues = new ContentValues();
         contentValues.put("numgames", Integer.valueOf(i));
-        SQLiteDatabase sQLiteDatabase2 = this.f8325d;
+        SQLiteDatabase sQLiteDatabase2 = this.f8333d;
         StringBuilder sb2 = new StringBuilder();
         sb2.append("slug='");
         sb2.append(str);
@@ -450,7 +450,7 @@ public class C2375h3 {
     public void mo8546F(String str, int i) {
         ContentValues contentValues = new ContentValues();
         contentValues.put("emulator", Integer.valueOf(i));
-        SQLiteDatabase sQLiteDatabase = this.f8325d;
+        SQLiteDatabase sQLiteDatabase = this.f8333d;
         sQLiteDatabase.update("systems", contentValues, "slug='" + str + "'", null);
     }
 
@@ -459,7 +459,7 @@ public class C2375h3 {
     public void mo8547G(String str, float f) {
         ContentValues contentValues = new ContentValues();
         contentValues.put("icon_aspect_ratio", Float.valueOf(f));
-        SQLiteDatabase sQLiteDatabase = this.f8325d;
+        SQLiteDatabase sQLiteDatabase = this.f8333d;
         sQLiteDatabase.update("systems", contentValues, "slug='" + str + "'", null);
         mo8557f();
     }
@@ -468,7 +468,7 @@ public class C2375h3 {
     /* renamed from: H */
     public void mo8548H(String str, boolean z) {
         try {
-            SQLiteDatabase sQLiteDatabase = this.f8325d;
+            SQLiteDatabase sQLiteDatabase = this.f8333d;
             StringBuilder sb = new StringBuilder();
             sb.append("UPDATE systems SET show_covers=");
             sb.append(z ? 1 : 0);
@@ -476,9 +476,9 @@ public class C2375h3 {
             sb.append(str);
             sb.append("'");
             sQLiteDatabase.execSQL(sb.toString());
-            HashMap<String, C2387l> hashMap = this.f8327f;
+            HashMap<String, C2387l> hashMap = this.f8335f;
             if (hashMap != null && str != null) {
-                hashMap.get(str).f8349c = z;
+                hashMap.get(str).f8357c = z;
             }
         } catch (Exception unused) {
         }
@@ -488,11 +488,11 @@ public class C2375h3 {
     /* renamed from: I */
     public void mo8549I(String str, boolean z) {
         if (str != null) {
-            SQLiteDatabase sQLiteDatabase = this.f8325d;
+            SQLiteDatabase sQLiteDatabase = this.f8333d;
             sQLiteDatabase.execSQL("UPDATE systems SET show_merged=" + (z ? 1 : 0) + " WHERE slug='" + str + "'");
-            HashMap<String, C2387l> hashMap = this.f8327f;
+            HashMap<String, C2387l> hashMap = this.f8335f;
             if (hashMap != null) {
-                hashMap.get(str).f8350d = z;
+                hashMap.get(str).f8358d = z;
             }
         }
     }
@@ -520,7 +520,7 @@ public class C2375h3 {
         } else {
             str5 = str3;
         }
-        if (this.f8326e.mo8180c("has_theme_icon", false)) {
+        if (this.f8334e.mo8180c("has_theme_icon", false)) {
             str6 = str6 + str5 + "has_theme_icon=1";
         }
         if (str2.equals("name")) {
@@ -533,7 +533,7 @@ public class C2375h3 {
             str4 = " ORDER BY introduced";
         }
         sb.append(str4);
-        return this.f8325d.rawQuery(sb.toString(), null);
+        return this.f8333d.rawQuery(sb.toString(), null);
     }
 
     /* access modifiers changed from: package-private */
@@ -557,7 +557,7 @@ public class C2375h3 {
     /* access modifiers changed from: package-private */
     /* renamed from: b */
     public void mo8553b(long j, boolean z) {
-        DatabaseService.m9481y(this.f8323b, "romupdates", "pathid", (int) j, "rescan", z);
+        DatabaseService.m9481y(this.f8331b, "romupdates", "pathid", (int) j, "rescan", z);
     }
 
     /* access modifiers changed from: package-private */
@@ -576,19 +576,19 @@ public class C2375h3 {
     /* access modifiers changed from: package-private */
     /* renamed from: d */
     public void mo8555d(String str, boolean z) {
-        SQLiteDatabase sQLiteDatabase = this.f8325d;
+        SQLiteDatabase sQLiteDatabase = this.f8333d;
         mo8554c(sQLiteDatabase.rawQuery("SELECT _id FROM rompaths WHERE system='" + str + "'", null), z);
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: e */
     public void mo8556e(boolean z) {
-        mo8554c(this.f8325d.rawQuery("SELECT _id FROM rompaths WHERE system!='none'", null), z);
+        mo8554c(this.f8333d.rawQuery("SELECT _id FROM rompaths WHERE system!='none'", null), z);
     }
 
     /* renamed from: f */
     public synchronized void mo8557f() {
-        this.f8327f = null;
+        this.f8335f = null;
     }
 
     /* access modifiers changed from: package-private */
@@ -599,9 +599,9 @@ public class C2375h3 {
 
     /* renamed from: h */
     public void mo8559h(String str) {
-        HashMap<String, C2387l> hashMap = this.f8327f;
+        HashMap<String, C2387l> hashMap = this.f8335f;
         if (hashMap != null && str != null && hashMap.containsKey(str)) {
-            this.f8327f.remove(str);
+            this.f8335f.remove(str);
         }
     }
 
@@ -609,34 +609,34 @@ public class C2375h3 {
     /* renamed from: i */
     public synchronized void mo8560i() {
         File[] b;
-        if (this.f8327f == null) {
+        if (this.f8335f == null) {
             try {
-                String G = C2553q3.f8891a.f9397a.mo9206G("systems", "icons");
-                if (G.equals("") && (b = C2372h2.m10298b(this.f8323b)) != null) {
+                String G = C2553q3.f8899a.f9405a.mo9206G("systems", "icons");
+                if (G.equals("") && (b = C2372h2.m10298b(this.f8331b)) != null) {
                     G = b[0].getAbsolutePath() + "/Systems/icons";
                 }
-                Cursor rawQuery = this.f8325d.rawQuery("SELECT _id,slug,name,parent,show_covers,show_merged,icon_aspect_ratio FROM systems", null);
+                Cursor rawQuery = this.f8333d.rawQuery("SELECT _id,slug,name,parent,show_covers,show_merged,icon_aspect_ratio FROM systems", null);
                 if (rawQuery.moveToFirst()) {
-                    this.f8327f = new HashMap<>();
-                    this.f8325d.beginTransaction();
+                    this.f8335f = new HashMap<>();
+                    this.f8333d.beginTransaction();
                     do {
                         C2387l lVar = new C2387l();
-                        lVar.f8347a = rawQuery.getString(2);
-                        lVar.f8348b = rawQuery.getString(3);
+                        lVar.f8355a = rawQuery.getString(2);
+                        lVar.f8356b = rawQuery.getString(3);
                         int i = 1;
-                        lVar.f8349c = rawQuery.getInt(4) != 0;
-                        lVar.f8350d = rawQuery.getInt(5) != 0;
-                        lVar.f8351e = new File(G + "/" + rawQuery.getString(1) + ".png").exists();
-                        lVar.f8353g = null;
-                        lVar.f8354h = null;
-                        lVar.f8355i = null;
-                        lVar.f8352f = rawQuery.getFloat(6);
-                        this.f8327f.put(rawQuery.getString(1), lVar);
-                        new ContentValues().put("has_theme_icon", Boolean.valueOf(lVar.f8351e));
-                        SQLiteDatabase sQLiteDatabase = this.f8325d;
+                        lVar.f8357c = rawQuery.getInt(4) != 0;
+                        lVar.f8358d = rawQuery.getInt(5) != 0;
+                        lVar.f8359e = new File(G + "/" + rawQuery.getString(1) + ".png").exists();
+                        lVar.f8361g = null;
+                        lVar.f8362h = null;
+                        lVar.f8363i = null;
+                        lVar.f8360f = rawQuery.getFloat(6);
+                        this.f8335f.put(rawQuery.getString(1), lVar);
+                        new ContentValues().put("has_theme_icon", Boolean.valueOf(lVar.f8359e));
+                        SQLiteDatabase sQLiteDatabase = this.f8333d;
                         StringBuilder sb = new StringBuilder();
                         sb.append("UPDATE systems SET has_theme_icon=");
-                        if (!lVar.f8351e) {
+                        if (!lVar.f8359e) {
                             i = 0;
                         }
                         sb.append(i);
@@ -644,8 +644,8 @@ public class C2375h3 {
                         sb.append(rawQuery.getLong(0));
                         sQLiteDatabase.execSQL(sb.toString());
                     } while (rawQuery.moveToNext());
-                    this.f8325d.setTransactionSuccessful();
-                    this.f8325d.endTransaction();
+                    this.f8333d.setTransactionSuccessful();
+                    this.f8333d.endTransaction();
                 }
                 rawQuery.close();
                 m10305j("systems", "system_backgrounds", new C2377b());
@@ -655,7 +655,7 @@ public class C2375h3 {
                 m10305j("game", "system_audio", new C2382g());
                 m10305j("gameinfo", "system_audio", new C2383h());
             } catch (Exception unused) {
-                this.f8327f = null;
+                this.f8335f = null;
             }
         }
     }
@@ -663,20 +663,20 @@ public class C2375h3 {
     /* access modifiers changed from: package-private */
     /* renamed from: k */
     public Cursor mo8561k(String str) {
-        SQLiteDatabase sQLiteDatabase = this.f8325d;
+        SQLiteDatabase sQLiteDatabase = this.f8333d;
         Cursor rawQuery = sQLiteDatabase.rawQuery("SELECT e._id,e.name,e.system,e.package,e.class,e.core,e.rom_key,e.use_retroarch64 FROM emulators as e,systems as s WHERE s.slug='" + str + "'AND e._id=s.emulator", null);
         if (rawQuery.moveToFirst()) {
             return rawQuery;
         }
         rawQuery.close();
-        SQLiteDatabase sQLiteDatabase2 = this.f8325d;
+        SQLiteDatabase sQLiteDatabase2 = this.f8333d;
         return sQLiteDatabase2.rawQuery("SELECT e._id,e.name,e.system,e.package,e.class,e.core,e.rom_key,e.use_retroarch64 FROM emulators as e WHERE e.system='" + str + "' LIMIT 1", null);
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: l */
     public Cursor mo8562l(String str) {
-        SQLiteDatabase sQLiteDatabase = this.f8325d;
+        SQLiteDatabase sQLiteDatabase = this.f8333d;
         return sQLiteDatabase.rawQuery("SELECT _id,name,system,package,class,core,rom_key,use_retroarch64 FROM emulators WHERE system='" + str + "' ORDER BY name", null);
     }
 
@@ -684,10 +684,10 @@ public class C2375h3 {
     /* renamed from: m */
     public String mo8563m(String str) {
         mo8560i();
-        HashMap<String, C2387l> hashMap = this.f8327f;
+        HashMap<String, C2387l> hashMap = this.f8335f;
         if (!(hashMap == null || str == null)) {
             try {
-                return hashMap.get(str).f8358l;
+                return hashMap.get(str).f8366l;
             } catch (Exception unused) {
             }
         }
@@ -698,10 +698,10 @@ public class C2375h3 {
     /* renamed from: n */
     public String mo8564n(String str) {
         mo8560i();
-        HashMap<String, C2387l> hashMap = this.f8327f;
+        HashMap<String, C2387l> hashMap = this.f8335f;
         if (!(hashMap == null || str == null)) {
             try {
-                return hashMap.get(str).f8355i;
+                return hashMap.get(str).f8363i;
             } catch (Exception unused) {
             }
         }
@@ -712,10 +712,10 @@ public class C2375h3 {
     /* renamed from: o */
     public String mo8565o(String str) {
         mo8560i();
-        HashMap<String, C2387l> hashMap = this.f8327f;
+        HashMap<String, C2387l> hashMap = this.f8335f;
         if (!(hashMap == null || str == null)) {
             try {
-                return hashMap.get(str).f8357k;
+                return hashMap.get(str).f8365k;
             } catch (Exception unused) {
             }
         }
@@ -726,10 +726,10 @@ public class C2375h3 {
     /* renamed from: p */
     public String mo8566p(String str) {
         mo8560i();
-        HashMap<String, C2387l> hashMap = this.f8327f;
+        HashMap<String, C2387l> hashMap = this.f8335f;
         if (!(hashMap == null || str == null)) {
             try {
-                return hashMap.get(str).f8354h;
+                return hashMap.get(str).f8362h;
             } catch (Exception unused) {
             }
         }
@@ -740,10 +740,10 @@ public class C2375h3 {
     /* renamed from: q */
     public float mo8567q(String str) {
         mo8560i();
-        HashMap<String, C2387l> hashMap = this.f8327f;
+        HashMap<String, C2387l> hashMap = this.f8335f;
         if (!(hashMap == null || str == null)) {
             try {
-                return hashMap.get(str).f8352f;
+                return hashMap.get(str).f8360f;
             } catch (Exception unused) {
             }
         }
@@ -755,8 +755,8 @@ public class C2375h3 {
     public String mo8568s(String str) {
         try {
             mo8560i();
-            HashMap<String, C2387l> hashMap = this.f8327f;
-            return (hashMap == null || str == null) ? "" : hashMap.get(str).f8347a;
+            HashMap<String, C2387l> hashMap = this.f8335f;
+            return (hashMap == null || str == null) ? "" : hashMap.get(str).f8355a;
         } catch (Exception unused) {
             return "";
         }
@@ -768,8 +768,8 @@ public class C2375h3 {
         String str2;
         try {
             mo8560i();
-            HashMap<String, C2387l> hashMap = this.f8327f;
-            return (hashMap == null || str == null || (str2 = hashMap.get(str).f8348b) == null) ? str : str2;
+            HashMap<String, C2387l> hashMap = this.f8335f;
+            return (hashMap == null || str == null || (str2 = hashMap.get(str).f8356b) == null) ? str : str2;
         } catch (Exception unused) {
             return str;
         }
@@ -778,7 +778,7 @@ public class C2375h3 {
     /* access modifiers changed from: package-private */
     /* renamed from: u */
     public String mo8570u(int i) {
-        SQLiteDatabase sQLiteDatabase = this.f8325d;
+        SQLiteDatabase sQLiteDatabase = this.f8333d;
         Cursor rawQuery = sQLiteDatabase.rawQuery("SELECT path,uri FROM rompaths WHERE _id=" + i, null);
         rawQuery.moveToFirst();
         int i2 = 1;
@@ -793,7 +793,7 @@ public class C2375h3 {
     /* access modifiers changed from: package-private */
     /* renamed from: v */
     public long mo8571v(String str, String str2, String str3) {
-        SQLiteDatabase sQLiteDatabase = this.f8325d;
+        SQLiteDatabase sQLiteDatabase = this.f8333d;
         Cursor rawQuery = sQLiteDatabase.rawQuery("SELECT _id FROM rompaths WHERE system='" + str + "' AND path=" + DatabaseUtils.sqlEscapeString(str2), null);
         if (rawQuery.moveToFirst()) {
             long j = rawQuery.getLong(0);
@@ -807,7 +807,7 @@ public class C2375h3 {
         contentValues.put("uri", str3);
         contentValues.put("last_checked", (Integer) 0);
         contentValues.put("selected", (Integer) 0);
-        return this.f8325d.insert("rompaths", null, contentValues);
+        return this.f8333d.insert("rompaths", null, contentValues);
     }
 
     /* access modifiers changed from: package-private */
@@ -815,11 +815,11 @@ public class C2375h3 {
     public boolean mo8572w(String str) {
         try {
             mo8560i();
-            HashMap<String, C2387l> hashMap = this.f8327f;
+            HashMap<String, C2387l> hashMap = this.f8335f;
             if (hashMap == null || str == null) {
                 return false;
             }
-            return hashMap.get(str).f8349c;
+            return hashMap.get(str).f8357c;
         } catch (Exception unused) {
             return false;
         }
@@ -829,10 +829,10 @@ public class C2375h3 {
     /* renamed from: x */
     public boolean mo8573x(String str) {
         mo8560i();
-        HashMap<String, C2387l> hashMap = this.f8327f;
+        HashMap<String, C2387l> hashMap = this.f8335f;
         if (!(hashMap == null || str == null)) {
             try {
-                return hashMap.get(str).f8350d;
+                return hashMap.get(str).f8358d;
             } catch (Exception unused) {
             }
         }
@@ -843,10 +843,10 @@ public class C2375h3 {
     /* renamed from: y */
     public String mo8574y(String str) {
         mo8560i();
-        HashMap<String, C2387l> hashMap = this.f8327f;
+        HashMap<String, C2387l> hashMap = this.f8335f;
         if (!(hashMap == null || str == null)) {
             try {
-                return hashMap.get(str).f8356j;
+                return hashMap.get(str).f8364j;
             } catch (Exception unused) {
             }
         }
@@ -857,10 +857,10 @@ public class C2375h3 {
     /* renamed from: z */
     public String mo8575z(String str) {
         mo8560i();
-        HashMap<String, C2387l> hashMap = this.f8327f;
+        HashMap<String, C2387l> hashMap = this.f8335f;
         if (!(hashMap == null || str == null)) {
             try {
-                return hashMap.get(str).f8353g;
+                return hashMap.get(str).f8361g;
             } catch (Exception unused) {
             }
         }

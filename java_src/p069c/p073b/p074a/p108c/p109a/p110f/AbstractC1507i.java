@@ -16,10 +16,10 @@ public interface AbstractC1507i extends IInterface {
         public static class C1509a implements AbstractC1507i {
 
             /* renamed from: a */
-            private IBinder f6289a;
+            private IBinder f6297a;
 
             C1509a(IBinder iBinder) {
-                this.f6289a = iBinder;
+                this.f6297a = iBinder;
             }
 
             @Override // p069c.p073b.p074a.p108c.p109a.p110f.AbstractC1507i
@@ -29,7 +29,7 @@ public interface AbstractC1507i extends IInterface {
                 Parcel obtain2 = Parcel.obtain();
                 try {
                     obtain.writeInterfaceToken("com.google.android.youtube.player.internal.IYouTubeService");
-                    this.f6289a.transact(1, obtain, obtain2, 0);
+                    this.f6297a.transact(1, obtain, obtain2, 0);
                     obtain2.readException();
                     return obtain2.readStrongBinder();
                 } finally {
@@ -39,7 +39,7 @@ public interface AbstractC1507i extends IInterface {
             }
 
             public final IBinder asBinder() {
-                return this.f6289a;
+                return this.f6297a;
             }
 
             @Override // p069c.p073b.p074a.p108c.p109a.p110f.AbstractC1507i
@@ -50,7 +50,7 @@ public interface AbstractC1507i extends IInterface {
                 try {
                     obtain.writeInterfaceToken("com.google.android.youtube.player.internal.IYouTubeService");
                     obtain.writeInt(z ? 1 : 0);
-                    this.f6289a.transact(3, obtain, obtain2, 0);
+                    this.f6297a.transact(3, obtain, obtain2, 0);
                     obtain2.readException();
                 } finally {
                     obtain2.recycle();

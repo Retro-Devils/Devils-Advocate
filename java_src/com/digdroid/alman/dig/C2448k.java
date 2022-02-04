@@ -14,23 +14,23 @@ import java.io.File;
 public class C2448k extends AbstractC2303f0 {
 
     /* renamed from: A0 */
-    long f8543A0;
+    long f8551A0;
 
     /* renamed from: B0 */
-    String f8544B0;
+    String f8552B0;
 
     /* renamed from: com.digdroid.alman.dig.k$a */
     class DialogInterface$OnClickListenerC2449a implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ String f8545b;
+        final /* synthetic */ String f8553b;
 
         DialogInterface$OnClickListenerC2449a(String str) {
-            this.f8545b = str;
+            this.f8553b = str;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
-            C2448k.this.mo8693K3(this.f8545b, false);
+            C2448k.this.mo8693K3(this.f8553b, false);
         }
     }
 
@@ -38,14 +38,14 @@ public class C2448k extends AbstractC2303f0 {
     class DialogInterface$OnClickListenerC2450b implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ String f8547b;
+        final /* synthetic */ String f8555b;
 
         DialogInterface$OnClickListenerC2450b(String str) {
-            this.f8547b = str;
+            this.f8555b = str;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
-            C2448k.this.mo8693K3(this.f8547b, true);
+            C2448k.this.mo8693K3(this.f8555b, true);
         }
     }
 
@@ -64,7 +64,7 @@ public class C2448k extends AbstractC2303f0 {
     @Override // com.digdroid.alman.dig.AbstractC2307f1
     /* renamed from: B3 */
     public String mo8430B3() {
-        return this.f8544B0;
+        return this.f8552B0;
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2307f1, com.digdroid.alman.dig.AbstractC2303f0
@@ -84,12 +84,12 @@ public class C2448k extends AbstractC2303f0 {
     @Override // com.digdroid.alman.dig.AbstractC2303f0
     /* renamed from: E3 */
     public void mo8418E3(long j) {
-        SQLiteDatabase sQLiteDatabase = this.f8157x0;
+        SQLiteDatabase sQLiteDatabase = this.f8165x0;
         sQLiteDatabase.execSQL("DELETE FROM gamecollection WHERE collection=" + j);
-        SQLiteDatabase sQLiteDatabase2 = this.f8157x0;
+        SQLiteDatabase sQLiteDatabase2 = this.f8165x0;
         sQLiteDatabase2.execSQL("DELETE FROM collections WHERE _id=" + j);
-        SQLiteDatabase sQLiteDatabase3 = this.f8157x0;
-        sQLiteDatabase3.execSQL("UPDATE collections SET parent=" + this.f8543A0 + " WHERE parent=" + j);
+        SQLiteDatabase sQLiteDatabase3 = this.f8165x0;
+        sQLiteDatabase3.execSQL("UPDATE collections SET parent=" + this.f8551A0 + " WHERE parent=" + j);
     }
 
     /* access modifiers changed from: package-private */
@@ -119,7 +119,7 @@ public class C2448k extends AbstractC2303f0 {
     public void mo8422I3(long j, String str) {
         StringBuilder sb;
         SQLiteDatabase sQLiteDatabase;
-        SQLiteDatabase sQLiteDatabase2 = this.f8157x0;
+        SQLiteDatabase sQLiteDatabase2 = this.f8165x0;
         Cursor rawQuery = sQLiteDatabase2.rawQuery("SELECT isfolder FROM collections WHERE _id=" + j, null);
         if (!rawQuery.moveToFirst()) {
             rawQuery.close();
@@ -127,26 +127,26 @@ public class C2448k extends AbstractC2303f0 {
         }
         int i = rawQuery.getInt(0);
         rawQuery.close();
-        SQLiteDatabase sQLiteDatabase3 = this.f8157x0;
-        Cursor rawQuery2 = sQLiteDatabase3.rawQuery("SELECT _id FROM collections WHERE parent=" + this.f8543A0 + " AND isfolder=" + i + " AND name LIKE " + DatabaseUtils.sqlEscapeString(str), null);
+        SQLiteDatabase sQLiteDatabase3 = this.f8165x0;
+        Cursor rawQuery2 = sQLiteDatabase3.rawQuery("SELECT _id FROM collections WHERE parent=" + this.f8551A0 + " AND isfolder=" + i + " AND name LIKE " + DatabaseUtils.sqlEscapeString(str), null);
         if (rawQuery2.moveToFirst()) {
             long j2 = rawQuery2.getLong(0);
             if (j2 != j) {
-                SQLiteDatabase sQLiteDatabase4 = this.f8157x0;
+                SQLiteDatabase sQLiteDatabase4 = this.f8165x0;
                 sQLiteDatabase4.execSQL("UPDATE gamecollection SET collection=" + j2 + " WHERE collection=" + j);
-                SQLiteDatabase sQLiteDatabase5 = this.f8157x0;
+                SQLiteDatabase sQLiteDatabase5 = this.f8165x0;
                 StringBuilder sb2 = new StringBuilder();
                 sb2.append("DELETE FROM collections WHERE _id=");
                 sb2.append(j);
                 sQLiteDatabase5.execSQL(sb2.toString());
-                SQLiteDatabase sQLiteDatabase6 = this.f8157x0;
+                SQLiteDatabase sQLiteDatabase6 = this.f8165x0;
                 sQLiteDatabase6.execSQL("UPDATE collections SET parent=" + j2 + " WHERE parent=" + j);
                 rawQuery2.close();
             }
-            sQLiteDatabase = this.f8157x0;
+            sQLiteDatabase = this.f8165x0;
             sb = new StringBuilder();
         } else {
-            sQLiteDatabase = this.f8157x0;
+            sQLiteDatabase = this.f8165x0;
             sb = new StringBuilder();
         }
         sb.append("UPDATE collections SET name=");
@@ -162,24 +162,24 @@ public class C2448k extends AbstractC2303f0 {
     /* renamed from: J3 */
     public void mo8423J3(Cursor cursor) {
         if (cursor.getInt(3) == 1) {
-            this.f8806m0.mo8272e0(cursor.getLong(0), cursor.getString(1));
+            this.f8814m0.mo8272e0(cursor.getLong(0), cursor.getString(1));
         } else {
-            this.f8806m0.mo8262M(cursor.getLong(0), cursor.getString(1));
+            this.f8814m0.mo8262M(cursor.getLong(0), cursor.getString(1));
         }
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: K3 */
     public void mo8693K3(String str, boolean z) {
-        SQLiteDatabase sQLiteDatabase = this.f8157x0;
-        Cursor rawQuery = sQLiteDatabase.rawQuery("SELECT _id FROM collections WHERE parent=" + this.f8543A0 + " AND name LIKE " + DatabaseUtils.sqlEscapeString(str), null);
+        SQLiteDatabase sQLiteDatabase = this.f8165x0;
+        Cursor rawQuery = sQLiteDatabase.rawQuery("SELECT _id FROM collections WHERE parent=" + this.f8551A0 + " AND name LIKE " + DatabaseUtils.sqlEscapeString(str), null);
         if (!rawQuery.moveToFirst()) {
             ContentValues contentValues = new ContentValues();
             contentValues.put("name", str);
-            contentValues.put("parent", Long.valueOf(this.f8543A0));
+            contentValues.put("parent", Long.valueOf(this.f8551A0));
             contentValues.put("isfolder", Integer.valueOf(z ? 1 : 0));
-            this.f8157x0.insert("collections", null, contentValues);
-            this.f8806m0.mo8260K(this.f8958p0.mo8321f());
+            this.f8165x0.insert("collections", null, contentValues);
+            this.f8814m0.mo8260K(this.f8966p0.mo8321f());
         }
         rawQuery.close();
     }
@@ -189,8 +189,8 @@ public class C2448k extends AbstractC2303f0 {
     public void mo2537W0(Bundle bundle) {
         super.mo2537W0(bundle);
         Bundle h0 = mo2568h0();
-        this.f8543A0 = h0.getLong("id");
-        this.f8544B0 = h0.getString("title");
+        this.f8551A0 = h0.getLong("id");
+        this.f8552B0 = h0.getString("title");
     }
 
     @Override // com.digdroid.alman.dig.C2324g1.AbstractC2325a, com.digdroid.alman.dig.C2264e1.AbstractC2265a, com.digdroid.alman.dig.C2215c1.AbstractC2216a
@@ -216,7 +216,7 @@ public class C2448k extends AbstractC2303f0 {
     public Cursor mo8694k3() {
         String str;
         StringBuilder sb;
-        if (this.f8793Z.mo8180c("merged_games", true)) {
+        if (this.f8801Z.mo8180c("merged_games", true)) {
             sb = new StringBuilder();
             sb.append("SELECT _id,name,CASE isfolder WHEN 1 THEN (SELECT COUNT(*) FROM collections as c WHERE c.parent=collections._id) ELSE ");
             str = "(SELECT COUNT(*) FROM gamecollection as g,roms as r WHERE g.collection=collections._id AND r._id=g.game AND r.ignored=0 AND r.present=1 AND (r.merged_with=-1 OR r.merged_with=r._id))";
@@ -227,7 +227,7 @@ public class C2448k extends AbstractC2303f0 {
         }
         sb.append(str);
         String sb2 = sb.toString();
-        Cursor rawQuery = this.f8157x0.rawQuery(sb2 + " END count,isfolder FROM collections WHERE parent=" + this.f8543A0 + " ORDER BY name", null);
+        Cursor rawQuery = this.f8165x0.rawQuery(sb2 + " END count,isfolder FROM collections WHERE parent=" + this.f8551A0 + " ORDER BY name", null);
         mo8434z3(rawQuery);
         return rawQuery;
     }

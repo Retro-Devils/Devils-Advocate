@@ -111,12 +111,12 @@ public class C0218e {
     /* renamed from: e */
     public void mo1386e(AttributeSet attributeSet, int i) {
         Context context = this.f975a.getContext();
-        int[] iArr = C0763j.f3662R3;
+        int[] iArr = C0763j.f3666R3;
         C0296w0 v = C0296w0.m1432v(context, attributeSet, iArr, i, 0);
         View view = this.f975a;
         C1013s.m5762g0(view, view.getContext(), iArr, attributeSet, v.mo1821r(), i, 0);
         try {
-            int i2 = C0763j.f3667S3;
+            int i2 = C0763j.f3671S3;
             if (v.mo1822s(i2)) {
                 this.f977c = v.mo1817n(i2, -1);
                 ColorStateList f = this.f976b.mo1548f(this.f975a.getContext(), this.f977c);
@@ -124,11 +124,11 @@ public class C0218e {
                     mo1389h(f);
                 }
             }
-            int i3 = C0763j.f3672T3;
+            int i3 = C0763j.f3676T3;
             if (v.mo1822s(i3)) {
                 C1013s.m5774m0(this.f975a, v.mo1806c(i3));
             }
-            int i4 = C0763j.f3677U3;
+            int i4 = C0763j.f3681U3;
             if (v.mo1822s(i4)) {
                 C1013s.m5776n0(this.f975a, C0216d0.m1138e(v.mo1814k(i4, -1), null));
             }

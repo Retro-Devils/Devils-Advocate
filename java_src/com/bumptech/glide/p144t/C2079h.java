@@ -7,7 +7,7 @@ import java.io.InputStream;
 public class C2079h extends FilterInputStream {
 
     /* renamed from: b */
-    private int f7595b = Integer.MIN_VALUE;
+    private int f7603b = Integer.MIN_VALUE;
 
     public C2079h(InputStream inputStream) {
         super(inputStream);
@@ -15,7 +15,7 @@ public class C2079h extends FilterInputStream {
 
     /* renamed from: a */
     private long m9426a(long j) {
-        int i = this.f7595b;
+        int i = this.f7603b;
         if (i == 0) {
             return -1;
         }
@@ -24,21 +24,21 @@ public class C2079h extends FilterInputStream {
 
     /* renamed from: b */
     private void m9427b(long j) {
-        int i = this.f7595b;
+        int i = this.f7603b;
         if (i != Integer.MIN_VALUE && j != -1) {
-            this.f7595b = (int) (((long) i) - j);
+            this.f7603b = (int) (((long) i) - j);
         }
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public int available() {
-        int i = this.f7595b;
+        int i = this.f7603b;
         return i == Integer.MIN_VALUE ? super.available() : Math.min(i, super.available());
     }
 
     public synchronized void mark(int i) {
         super.mark(i);
-        this.f7595b = i;
+        this.f7603b = i;
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
@@ -65,7 +65,7 @@ public class C2079h extends FilterInputStream {
     @Override // java.io.FilterInputStream, java.io.InputStream
     public synchronized void reset() {
         super.reset();
-        this.f7595b = Integer.MIN_VALUE;
+        this.f7603b = Integer.MIN_VALUE;
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream

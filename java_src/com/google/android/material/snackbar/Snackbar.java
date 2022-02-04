@@ -23,16 +23,16 @@ import p069c.p073b.p074a.p090b.C1397h;
 public class Snackbar extends BaseTransientBottomBar<Snackbar> {
 
     /* renamed from: w */
-    private static final int[] f10790w;
+    private static final int[] f10798w;
 
     /* renamed from: x */
-    private static final int[] f10791x;
+    private static final int[] f10799x;
 
     /* renamed from: y */
-    private final AccessibilityManager f10792y;
+    private final AccessibilityManager f10800y;
 
     /* renamed from: z */
-    private boolean f10793z;
+    private boolean f10801z;
 
     public static final class SnackbarLayout extends BaseTransientBottomBar.C3236v {
         public SnackbarLayout(Context context, AttributeSet attributeSet) {
@@ -83,27 +83,27 @@ public class Snackbar extends BaseTransientBottomBar<Snackbar> {
     public class View$OnClickListenerC3238a implements View.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ View.OnClickListener f10794b;
+        final /* synthetic */ View.OnClickListener f10802b;
 
         View$OnClickListenerC3238a(View.OnClickListener onClickListener) {
-            this.f10794b = onClickListener;
+            this.f10802b = onClickListener;
         }
 
         public void onClick(View view) {
-            this.f10794b.onClick(view);
+            this.f10802b.onClick(view);
             Snackbar.this.mo10853t(1);
         }
     }
 
     static {
         int i = C1391b.snackbarButtonStyle;
-        f10790w = new int[]{i};
-        f10791x = new int[]{i, C1391b.snackbarTextViewStyle};
+        f10798w = new int[]{i};
+        f10799x = new int[]{i, C1391b.snackbarTextViewStyle};
     }
 
     private Snackbar(ViewGroup viewGroup, View view, AbstractC3239a aVar) {
         super(viewGroup, view, aVar);
-        this.f10792y = (AccessibilityManager) viewGroup.getContext().getSystemService("accessibility");
+        this.f10800y = (AccessibilityManager) viewGroup.getContext().getSystemService("accessibility");
     }
 
     /* renamed from: V */
@@ -135,7 +135,7 @@ public class Snackbar extends BaseTransientBottomBar<Snackbar> {
 
     /* renamed from: W */
     private static boolean m13523W(Context context) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(f10791x);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(f10799x);
         int resourceId = obtainStyledAttributes.getResourceId(0, -1);
         int resourceId2 = obtainStyledAttributes.getResourceId(1, -1);
         obtainStyledAttributes.recycle();
@@ -173,13 +173,13 @@ public class Snackbar extends BaseTransientBottomBar<Snackbar> {
 
     /* renamed from: a0 */
     public Snackbar mo10897a0(CharSequence charSequence, View.OnClickListener onClickListener) {
-        Button actionView = ((SnackbarContentLayout) this.f10742g.getChildAt(0)).getActionView();
+        Button actionView = ((SnackbarContentLayout) this.f10750g.getChildAt(0)).getActionView();
         if (TextUtils.isEmpty(charSequence) || onClickListener == null) {
             actionView.setVisibility(8);
             actionView.setOnClickListener(null);
-            this.f10793z = false;
+            this.f10801z = false;
         } else {
-            this.f10793z = true;
+            this.f10801z = true;
             actionView.setVisibility(0);
             actionView.setText(charSequence);
             actionView.setOnClickListener(new View$OnClickListenerC3238a(onClickListener));
@@ -189,7 +189,7 @@ public class Snackbar extends BaseTransientBottomBar<Snackbar> {
 
     /* renamed from: b0 */
     public Snackbar mo10898b0(CharSequence charSequence) {
-        ((SnackbarContentLayout) this.f10742g.getChildAt(0)).getMessageView().setText(charSequence);
+        ((SnackbarContentLayout) this.f10750g.getChildAt(0)).getMessageView().setText(charSequence);
         return this;
     }
 
@@ -207,8 +207,8 @@ public class Snackbar extends BaseTransientBottomBar<Snackbar> {
             return -2;
         }
         if (Build.VERSION.SDK_INT >= 29) {
-            return this.f10792y.getRecommendedTimeoutMillis(w, (this.f10793z ? 4 : 0) | 1 | 2);
-        } else if (!this.f10793z || !this.f10792y.isTouchExplorationEnabled()) {
+            return this.f10800y.getRecommendedTimeoutMillis(w, (this.f10801z ? 4 : 0) | 1 | 2);
+        } else if (!this.f10801z || !this.f10800y.isTouchExplorationEnabled()) {
             return w;
         } else {
             return -2;

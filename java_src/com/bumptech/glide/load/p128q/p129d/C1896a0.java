@@ -14,21 +14,21 @@ public final class C1896a0 implements AbstractC1649k<Bitmap, Bitmap> {
     public static final class C1897a implements AbstractC1794v<Bitmap> {
 
         /* renamed from: b */
-        private final Bitmap f7164b;
+        private final Bitmap f7172b;
 
         C1897a(Bitmap bitmap) {
-            this.f7164b = bitmap;
+            this.f7172b = bitmap;
         }
 
         /* renamed from: a */
         public Bitmap mo7358c() {
-            return this.f7164b;
+            return this.f7172b;
         }
 
         @Override // com.bumptech.glide.load.p122o.AbstractC1794v
         /* renamed from: b */
         public int mo7357b() {
-            return C2082k.m9440g(this.f7164b);
+            return C2082k.m9440g(this.f7172b);
         }
 
         @Override // com.bumptech.glide.load.p122o.AbstractC1794v

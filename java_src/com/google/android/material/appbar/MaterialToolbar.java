@@ -16,14 +16,14 @@ import p069c.p073b.p074a.p090b.p107z.C1459h;
 public class MaterialToolbar extends Toolbar {
 
     /* renamed from: Q */
-    private static final int f10089Q = C1399j.Widget_MaterialComponents_Toolbar;
+    private static final int f10097Q = C1399j.Widget_MaterialComponents_Toolbar;
 
     public MaterialToolbar(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, C1391b.f5668F);
+        this(context, attributeSet, C1391b.f5676F);
     }
 
     public MaterialToolbar(Context context, AttributeSet attributeSet, int i) {
-        super(C3288a.m13767c(context, attributeSet, i, f10089Q), attributeSet, i);
+        super(C3288a.m13767c(context, attributeSet, i, f10097Q), attributeSet, i);
         m12547P(getContext());
     }
 

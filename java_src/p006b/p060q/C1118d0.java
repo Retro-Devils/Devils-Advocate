@@ -7,7 +7,7 @@ import android.view.View;
 class C1118d0 extends C1132i0 {
 
     /* renamed from: e */
-    private static boolean f5071e = true;
+    private static boolean f5078e = true;
 
     C1118d0() {
     }
@@ -21,11 +21,11 @@ class C1118d0 extends C1132i0 {
     @SuppressLint({"NewApi"})
     /* renamed from: c */
     public float mo5781c(View view) {
-        if (f5071e) {
+        if (f5078e) {
             try {
                 return view.getTransitionAlpha();
             } catch (NoSuchMethodError unused) {
-                f5071e = false;
+                f5078e = false;
             }
         }
         return view.getAlpha();
@@ -40,12 +40,12 @@ class C1118d0 extends C1132i0 {
     @SuppressLint({"NewApi"})
     /* renamed from: f */
     public void mo5783f(View view, float f) {
-        if (f5071e) {
+        if (f5078e) {
             try {
                 view.setTransitionAlpha(f);
                 return;
             } catch (NoSuchMethodError unused) {
-                f5071e = false;
+                f5078e = false;
             }
         }
         view.setAlpha(f);

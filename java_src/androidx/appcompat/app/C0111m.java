@@ -418,11 +418,11 @@ public class C0111m extends AbstractC0064a implements ActionBarOverlayLayout.Abs
         C0784a b = C0784a.m4602b(this.f384c);
         mo422K(b.mo4678a() || z);
         m493I(b.mo4683g());
-        TypedArray obtainStyledAttributes = this.f384c.obtainStyledAttributes(null, C0763j.f3702a, C0754a.actionBarStyle, 0);
-        if (obtainStyledAttributes.getBoolean(C0763j.f3752k, false)) {
+        TypedArray obtainStyledAttributes = this.f384c.obtainStyledAttributes(null, C0763j.f3706a, C0754a.actionBarStyle, 0);
+        if (obtainStyledAttributes.getBoolean(C0763j.f3756k, false)) {
             mo421J(true);
         }
-        int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(C0763j.f3742i, 0);
+        int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(C0763j.f3746i, 0);
         if (dimensionPixelSize != 0) {
             mo420H((float) dimensionPixelSize);
         }

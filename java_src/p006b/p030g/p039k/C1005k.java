@@ -7,22 +7,22 @@ import android.view.ViewParent;
 public class C1005k {
 
     /* renamed from: a */
-    private ViewParent f4743a;
+    private ViewParent f4747a;
 
     /* renamed from: b */
-    private ViewParent f4744b;
+    private ViewParent f4748b;
 
     /* renamed from: c */
-    private final View f4745c;
+    private final View f4749c;
 
     /* renamed from: d */
-    private boolean f4746d;
+    private boolean f4750d;
 
     /* renamed from: e */
-    private int[] f4747e;
+    private int[] f4751e;
 
     public C1005k(View view) {
-        this.f4745c = view;
+        this.f4749c = view;
     }
 
     /* renamed from: g */
@@ -42,7 +42,7 @@ public class C1005k {
             return false;
         }
         if (iArr != null) {
-            this.f4745c.getLocationInWindow(iArr);
+            this.f4749c.getLocationInWindow(iArr);
             i7 = iArr[0];
             i6 = iArr[1];
         } else {
@@ -57,9 +57,9 @@ public class C1005k {
         } else {
             iArr3 = iArr2;
         }
-        C1027v.m5849d(h, this.f4745c, i, i2, i3, i4, i5, iArr3);
+        C1027v.m5849d(h, this.f4749c, i, i2, i3, i4, i5, iArr3);
         if (iArr != null) {
-            this.f4745c.getLocationInWindow(iArr);
+            this.f4749c.getLocationInWindow(iArr);
             iArr[0] = iArr[0] - i7;
             iArr[1] = iArr[1] - i6;
         }
@@ -69,28 +69,28 @@ public class C1005k {
     /* renamed from: h */
     private ViewParent m5692h(int i) {
         if (i == 0) {
-            return this.f4743a;
+            return this.f4747a;
         }
         if (i != 1) {
             return null;
         }
-        return this.f4744b;
+        return this.f4748b;
     }
 
     /* renamed from: i */
     private int[] m5693i() {
-        if (this.f4747e == null) {
-            this.f4747e = new int[2];
+        if (this.f4751e == null) {
+            this.f4751e = new int[2];
         }
-        return this.f4747e;
+        return this.f4751e;
     }
 
     /* renamed from: n */
     private void m5694n(int i, ViewParent viewParent) {
         if (i == 0) {
-            this.f4743a = viewParent;
+            this.f4747a = viewParent;
         } else if (i == 1) {
-            this.f4744b = viewParent;
+            this.f4748b = viewParent;
         }
     }
 
@@ -100,7 +100,7 @@ public class C1005k {
         if (!mo5542l() || (h = m5692h(0)) == null) {
             return false;
         }
-        return C1027v.m5846a(h, this.f4745c, f, f2, z);
+        return C1027v.m5846a(h, this.f4749c, f, f2, z);
     }
 
     /* renamed from: b */
@@ -109,7 +109,7 @@ public class C1005k {
         if (!mo5542l() || (h = m5692h(0)) == null) {
             return false;
         }
-        return C1027v.m5847b(h, this.f4745c, f, f2);
+        return C1027v.m5847b(h, this.f4749c, f, f2);
     }
 
     /* renamed from: c */
@@ -127,7 +127,7 @@ public class C1005k {
         }
         if (i != 0 || i2 != 0) {
             if (iArr2 != null) {
-                this.f4745c.getLocationInWindow(iArr2);
+                this.f4749c.getLocationInWindow(iArr2);
                 i5 = iArr2[0];
                 i4 = iArr2[1];
             } else {
@@ -139,9 +139,9 @@ public class C1005k {
             }
             iArr[0] = 0;
             iArr[1] = 0;
-            C1027v.m5848c(h, this.f4745c, i, i2, iArr, i3);
+            C1027v.m5848c(h, this.f4749c, i, i2, iArr, i3);
             if (iArr2 != null) {
-                this.f4745c.getLocationInWindow(iArr2);
+                this.f4749c.getLocationInWindow(iArr2);
                 iArr2[0] = iArr2[0] - i5;
                 iArr2[1] = iArr2[1] - i4;
             }
@@ -177,15 +177,15 @@ public class C1005k {
 
     /* renamed from: l */
     public boolean mo5542l() {
-        return this.f4746d;
+        return this.f4750d;
     }
 
     /* renamed from: m */
     public void mo5543m(boolean z) {
-        if (this.f4746d) {
-            C1013s.m5800z0(this.f4745c);
+        if (this.f4750d) {
+            C1013s.m5800z0(this.f4749c);
         }
-        this.f4746d = z;
+        this.f4750d = z;
     }
 
     /* renamed from: o */
@@ -201,11 +201,11 @@ public class C1005k {
         if (!mo5542l()) {
             return false;
         }
-        View view = this.f4745c;
-        for (ViewParent parent = this.f4745c.getParent(); parent != null; parent = parent.getParent()) {
-            if (C1027v.m5851f(parent, view, this.f4745c, i, i2)) {
+        View view = this.f4749c;
+        for (ViewParent parent = this.f4749c.getParent(); parent != null; parent = parent.getParent()) {
+            if (C1027v.m5851f(parent, view, this.f4749c, i, i2)) {
                 m5694n(i2, parent);
-                C1027v.m5850e(parent, view, this.f4745c, i, i2);
+                C1027v.m5850e(parent, view, this.f4749c, i, i2);
                 return true;
             }
             if (parent instanceof View) {
@@ -224,7 +224,7 @@ public class C1005k {
     public void mo5547r(int i) {
         ViewParent h = m5692h(i);
         if (h != null) {
-            C1027v.m5852g(h, this.f4745c, i);
+            C1027v.m5852g(h, this.f4749c, i);
             m5694n(i, null);
         }
     }

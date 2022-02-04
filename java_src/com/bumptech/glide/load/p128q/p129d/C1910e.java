@@ -11,14 +11,14 @@ import com.bumptech.glide.p144t.C2082k;
 public class C1910e implements AbstractC1794v<Bitmap>, AbstractC1789r {
 
     /* renamed from: b */
-    private final Bitmap f7181b;
+    private final Bitmap f7189b;
 
     /* renamed from: c */
-    private final AbstractC1695e f7182c;
+    private final AbstractC1695e f7190c;
 
     public C1910e(Bitmap bitmap, AbstractC1695e eVar) {
-        this.f7181b = (Bitmap) C2081j.m9433e(bitmap, "Bitmap must not be null");
-        this.f7182c = (AbstractC1695e) C2081j.m9433e(eVar, "BitmapPool must not be null");
+        this.f7189b = (Bitmap) C2081j.m9433e(bitmap, "Bitmap must not be null");
+        this.f7190c = (AbstractC1695e) C2081j.m9433e(eVar, "BitmapPool must not be null");
     }
 
     /* renamed from: g */
@@ -32,13 +32,13 @@ public class C1910e implements AbstractC1794v<Bitmap>, AbstractC1789r {
     @Override // com.bumptech.glide.load.p122o.AbstractC1789r
     /* renamed from: a */
     public void mo7379a() {
-        this.f7181b.prepareToDraw();
+        this.f7189b.prepareToDraw();
     }
 
     @Override // com.bumptech.glide.load.p122o.AbstractC1794v
     /* renamed from: b */
     public int mo7357b() {
-        return C2082k.m9440g(this.f7181b);
+        return C2082k.m9440g(this.f7189b);
     }
 
     @Override // com.bumptech.glide.load.p122o.AbstractC1794v
@@ -49,12 +49,12 @@ public class C1910e implements AbstractC1794v<Bitmap>, AbstractC1789r {
 
     /* renamed from: e */
     public Bitmap mo7358c() {
-        return this.f7181b;
+        return this.f7189b;
     }
 
     @Override // com.bumptech.glide.load.p122o.AbstractC1794v
     /* renamed from: f */
     public void mo7361f() {
-        this.f7182c.mo7183d(this.f7181b);
+        this.f7190c.mo7183d(this.f7189b);
     }
 }

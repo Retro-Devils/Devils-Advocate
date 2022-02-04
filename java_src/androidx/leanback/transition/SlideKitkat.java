@@ -235,17 +235,17 @@ class SlideKitkat extends Visibility {
     }
 
     public SlideKitkat(Context context, AttributeSet attributeSet) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4948a0);
-        mo2936b(obtainStyledAttributes.getInt(C1080l.f4956e0, 80));
-        long j = (long) obtainStyledAttributes.getInt(C1080l.f4952c0, -1);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4955a0);
+        mo2936b(obtainStyledAttributes.getInt(C1080l.f4963e0, 80));
+        long j = (long) obtainStyledAttributes.getInt(C1080l.f4959c0, -1);
         if (j >= 0) {
             setDuration(j);
         }
-        long j2 = (long) obtainStyledAttributes.getInt(C1080l.f4954d0, -1);
+        long j2 = (long) obtainStyledAttributes.getInt(C1080l.f4961d0, -1);
         if (j2 > 0) {
             setStartDelay(j2);
         }
-        int resourceId = obtainStyledAttributes.getResourceId(C1080l.f4950b0, 0);
+        int resourceId = obtainStyledAttributes.getResourceId(C1080l.f4957b0, 0);
         if (resourceId > 0) {
             setInterpolator(AnimationUtils.loadInterpolator(context, resourceId));
         }

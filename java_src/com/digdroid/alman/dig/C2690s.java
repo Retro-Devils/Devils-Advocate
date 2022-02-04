@@ -31,67 +31,67 @@ import java.util.ArrayList;
 public class C2690s extends AbstractC2531p1 {
 
     /* renamed from: n0 */
-    public static final int[] f9182n0 = {R.string.name, R.string.custom_media, R.string.zoom, R.string.custom_time, R.string.custom_sound, R.string.toolbar_icons, R.string.item_icons, R.string.system_backgrounds, R.string.toolbar_text_color, R.string.background, R.string.cover_background, R.string.text1, R.string.text2, R.string.text3, R.string.gradient, R.string.default_covers, R.string.system_audio, R.string.foreground_image, R.string.play_button};
+    public static final int[] f9190n0 = {R.string.name, R.string.custom_media, R.string.zoom, R.string.custom_time, R.string.custom_sound, R.string.toolbar_icons, R.string.item_icons, R.string.system_backgrounds, R.string.toolbar_text_color, R.string.background, R.string.cover_background, R.string.text1, R.string.text2, R.string.text3, R.string.gradient, R.string.default_covers, R.string.system_audio, R.string.foreground_image, R.string.play_button};
 
     /* renamed from: o0 */
-    public static final String[] f9183o0 = {"name", "media", "zoom", "image_time", "sound", "tool_icons", "icons", "system_backgrounds", "toolbar_text", "background", "cover_background", "text1", "text2", "text3", "gradient", "default_covers", "system_audio", "foreground", "play_button"};
+    public static final String[] f9191o0 = {"name", "media", "zoom", "image_time", "sound", "tool_icons", "icons", "system_backgrounds", "toolbar_text", "background", "cover_background", "text1", "text2", "text3", "gradient", "default_covers", "system_audio", "foreground", "play_button"};
 
     /* renamed from: p0 */
-    public static final int[] f9184p0 = {R.string.defaults, R.string.home, R.string.systems, R.string.games, R.string.game_info, R.string.genres, R.string.collections, R.string.options, R.string.gamepad, R.string.themes, R.string.webpage};
+    public static final int[] f9192p0 = {R.string.defaults, R.string.home, R.string.systems, R.string.games, R.string.game_info, R.string.genres, R.string.collections, R.string.options, R.string.gamepad, R.string.themes, R.string.webpage};
 
     /* renamed from: q0 */
-    public static final String[] f9185q0 = {"default", "home", "systems", "game", "gameinfo", "genres", "collections", "options", "gamepad", "editthemes", "webpage"};
+    public static final String[] f9193q0 = {"default", "home", "systems", "game", "gameinfo", "genres", "collections", "options", "gamepad", "editthemes", "webpage"};
 
     /* renamed from: r0 */
-    public static final int[][] f9186r0 = {new int[]{0, 1, 2, 3, 4, 17, 5, 8, 9, 11, 12, 13}, new int[]{1, 2, 3, 4, 17, 6, 9, 11, 12, 13, 14}, new int[]{1, 2, 3, 4, 17, 6, 7, 16, 9, 11, 12, 13, 14}, new int[]{1, 2, 3, 4, 17, 7, 16, 15, 9, 10, 11, 12, 13, 14}, new int[]{1, 2, 3, 4, 18, 17, 7, 16, 9, 11, 12, 13}, new int[]{1, 2, 3, 4, 17, 9, 11, 12, 13, 14}, new int[]{1, 2, 3, 4, 17, 9, 11, 12, 13, 14}, new int[]{1, 2, 3, 4, 17, 9, 11, 12, 13}, new int[]{1, 2, 3, 4, 17, 9, 11, 12, 13}, new int[]{1, 2, 3, 4, 17, 9, 11, 12, 13}, new int[]{4, 9}};
+    public static final int[][] f9194r0 = {new int[]{0, 1, 2, 3, 4, 17, 5, 8, 9, 11, 12, 13}, new int[]{1, 2, 3, 4, 17, 6, 9, 11, 12, 13, 14}, new int[]{1, 2, 3, 4, 17, 6, 7, 16, 9, 11, 12, 13, 14}, new int[]{1, 2, 3, 4, 17, 7, 16, 15, 9, 10, 11, 12, 13, 14}, new int[]{1, 2, 3, 4, 18, 17, 7, 16, 9, 11, 12, 13}, new int[]{1, 2, 3, 4, 17, 9, 11, 12, 13, 14}, new int[]{1, 2, 3, 4, 17, 9, 11, 12, 13, 14}, new int[]{1, 2, 3, 4, 17, 9, 11, 12, 13}, new int[]{1, 2, 3, 4, 17, 9, 11, 12, 13}, new int[]{1, 2, 3, 4, 17, 9, 11, 12, 13}, new int[]{4, 9}};
 
     /* renamed from: s0 */
-    MyListView f9187s0;
+    MyListView f9195s0;
 
     /* renamed from: t0 */
-    C2564r f9188t0;
+    C2564r f9196t0;
 
     /* renamed from: u0 */
-    ArrayList<C2724s3> f9189u0;
+    ArrayList<C2724s3> f9197u0;
 
     /* renamed from: v0 */
-    C2724s3 f9190v0;
+    C2724s3 f9198v0;
 
     /* renamed from: w0 */
-    int f9191w0;
+    int f9199w0;
 
     /* renamed from: x0 */
-    int f9192x0;
+    int f9200x0;
 
     /* renamed from: y0 */
-    String f9193y0 = "default";
+    String f9201y0 = "default";
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.digdroid.alman.dig.s$a */
     public class C2691a implements AdapterView.OnItemSelectedListener {
 
         /* renamed from: b */
-        int f9194b = -1;
+        int f9202b = -1;
 
         C2691a() {
         }
 
         @Override // android.widget.AdapterView.OnItemSelectedListener
         public void onItemSelected(AdapterView<?> adapterView, View view, int i, long j) {
-            if (i != this.f9194b) {
+            if (i != this.f9202b) {
                 C2690s sVar = C2690s.this;
-                sVar.f9192x0 = i;
-                String[] strArr = C2690s.f9185q0;
-                sVar.f9193y0 = strArr[i];
+                sVar.f9200x0 = i;
+                String[] strArr = C2690s.f9193q0;
+                sVar.f9201y0 = strArr[i];
                 ActivityC0447d c0 = C2690s.this.mo2552c0();
                 C2690s sVar2 = C2690s.this;
-                C2774t3 t3Var = sVar2.f8800g0;
-                C2724s3 s3Var = sVar2.f9190v0;
-                int i2 = sVar2.f9192x0;
-                sVar.f9188t0 = new C2564r(c0, t3Var, s3Var, strArr[i2], C2690s.f9186r0[i2]);
+                C2774t3 t3Var = sVar2.f8808g0;
+                C2724s3 s3Var = sVar2.f9198v0;
+                int i2 = sVar2.f9200x0;
+                sVar.f9196t0 = new C2564r(c0, t3Var, s3Var, strArr[i2], C2690s.f9194r0[i2]);
                 C2690s sVar3 = C2690s.this;
-                sVar3.f9187s0.setAdapter((ListAdapter) sVar3.f9188t0);
-                this.f9194b = i;
+                sVar3.f9195s0.setAdapter((ListAdapter) sVar3.f9196t0);
+                this.f9202b = i;
             }
         }
 
@@ -120,7 +120,7 @@ public class C2690s extends AbstractC2531p1 {
     public class View$OnClickListenerC2693c implements View.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ ArrayList f9197b;
+        final /* synthetic */ ArrayList f9205b;
 
         /* renamed from: com.digdroid.alman.dig.s$c$a */
         class DialogInterface$OnClickListenerC2694a implements DialogInterface.OnClickListener {
@@ -128,24 +128,24 @@ public class C2690s extends AbstractC2531p1 {
             }
 
             public void onClick(DialogInterface dialogInterface, int i) {
-                C2724s3 s3Var = new C2724s3(C2690s.this.f9190v0);
+                C2724s3 s3Var = new C2724s3(C2690s.this.f9198v0);
                 s3Var.mo8782s("name", C2690s.this.mo2501D0(R.string.my_theme));
-                s3Var.f9252f = null;
+                s3Var.f9260f = null;
                 synchronized (C2690s.class) {
-                    View$OnClickListenerC2693c.this.f9197b.add(s3Var);
+                    View$OnClickListenerC2693c.this.f9205b.add(s3Var);
                     View$OnClickListenerC2693c cVar = View$OnClickListenerC2693c.this;
-                    C2690s.this.f9191w0 = cVar.f9197b.size() - 1;
+                    C2690s.this.f9199w0 = cVar.f9205b.size() - 1;
                     C2690s.this.m11466k3();
                 }
                 C2690s sVar = C2690s.this;
-                sVar.f9192x0 = 0;
-                sVar.f9193y0 = C2690s.f9185q0[0];
-                ((Spinner) C2690s.this.mo2505F0().findViewById(R.id.select_theme)).setSelection(sVar.f9191w0);
+                sVar.f9200x0 = 0;
+                sVar.f9201y0 = C2690s.f9193q0[0];
+                ((Spinner) C2690s.this.mo2505F0().findViewById(R.id.select_theme)).setSelection(sVar.f9199w0);
             }
         }
 
         View$OnClickListenerC2693c(ArrayList arrayList) {
-            this.f9197b = arrayList;
+            this.f9205b = arrayList;
         }
 
         public void onClick(View view) {
@@ -161,14 +161,14 @@ public class C2690s extends AbstractC2531p1 {
         class DialogInterface$OnClickListenerC2696a implements DialogInterface.OnClickListener {
 
             /* renamed from: b */
-            final /* synthetic */ Activity f9201b;
+            final /* synthetic */ Activity f9209b;
 
             DialogInterface$OnClickListenerC2696a(Activity activity) {
-                this.f9201b = activity;
+                this.f9209b = activity;
             }
 
             public void onClick(DialogInterface dialogInterface, int i) {
-                C2553q3.m11115a(this.f9201b, C2690s.this.f9190v0);
+                C2553q3.m11115a(this.f9209b, C2690s.this.f9198v0);
             }
         }
 
@@ -177,7 +177,7 @@ public class C2690s extends AbstractC2531p1 {
 
         public void onClick(View view) {
             ActivityC0447d c0 = C2690s.this.mo2552c0();
-            if (c0 != null && !c0.isFinishing() && C2690s.this.f9190v0.f9252f != null) {
+            if (c0 != null && !c0.isFinishing() && C2690s.this.f9198v0.f9260f != null) {
                 new DialogInterfaceC0068b.C0069a(c0, C2553q3.m11117c()).mo228h(R.string.bundle_theme).mo235o(R.string.ok, new DialogInterface$OnClickListenerC2696a(c0)).mo232l(R.string.cancel, null).mo221a().show();
             }
         }
@@ -194,10 +194,10 @@ public class C2690s extends AbstractC2531p1 {
 
             public void onClick(DialogInterface dialogInterface, int i) {
                 String str;
-                C2724s3 s3Var = C2690s.this.f9190v0;
+                C2724s3 s3Var = C2690s.this.f9198v0;
                 String w = C2185a4.m9693w(s3Var.mo8772i("name"));
                 if (!w.equals("")) {
-                    if (s3Var.f9252f == null) {
+                    if (s3Var.f9260f == null) {
                         int i2 = 1;
                         do {
                             String w2 = C2185a4.m9693w(w);
@@ -213,7 +213,7 @@ public class C2690s extends AbstractC2531p1 {
                             }
                             sb.append(str);
                             sb.append(".cfg");
-                            s3Var.f9252f = sb.toString();
+                            s3Var.f9260f = sb.toString();
                             i2++;
                         } while (s3Var.mo9232z());
                         int i3 = i2 - 1;
@@ -227,9 +227,9 @@ public class C2690s extends AbstractC2531p1 {
                     s3Var.mo8777n("theme_aspect_ratio", ((float) g.x) / ((float) g.y));
                     s3Var.mo8777n("theme_density", C2690s.this.mo2613x0().getDisplayMetrics().density);
                     s3Var.mo8777n("theme_scaled_density", C2690s.this.mo2613x0().getDisplayMetrics().scaledDensity);
-                    String str2 = C2553q3.f8891a.f9406j;
-                    C2553q3.m11129o(C2690s.this.mo2552c0(), s3Var.f9252f);
-                    s3Var.mo9216S(s3Var.f9252f.equals(str2));
+                    String str2 = C2553q3.f8899a.f9414j;
+                    C2553q3.m11129o(C2690s.this.mo2552c0(), s3Var.f9260f);
+                    s3Var.mo9216S(s3Var.f9260f.equals(str2));
                     C2185a4.m9691u(C2690s.this.mo2552c0());
                 }
             }
@@ -248,13 +248,13 @@ public class C2690s extends AbstractC2531p1 {
     public class View$OnClickListenerC2699f implements View.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ ArrayList f9205b;
+        final /* synthetic */ ArrayList f9213b;
 
         /* renamed from: com.digdroid.alman.dig.s$f$a */
         class DialogInterface$OnClickListenerC2700a implements DialogInterface.OnClickListener {
 
             /* renamed from: b */
-            final /* synthetic */ C2724s3 f9207b;
+            final /* synthetic */ C2724s3 f9215b;
 
             /* renamed from: com.digdroid.alman.dig.s$f$a$a */
             class C2701a implements C2553q3.AbstractC2559e {
@@ -265,8 +265,8 @@ public class C2690s extends AbstractC2531p1 {
                 /* renamed from: a */
                 public void mo8981a(ArrayList<C2724s3> arrayList) {
                     C2690s sVar = C2690s.this;
-                    sVar.f9191w0 = -1;
-                    sVar.f8806m0.mo8264R();
+                    sVar.f9199w0 = -1;
+                    sVar.f8814m0.mo8264R();
                     try {
                         C2690s.this.mo9170j3(arrayList);
                     } catch (Exception unused) {
@@ -275,23 +275,23 @@ public class C2690s extends AbstractC2531p1 {
             }
 
             DialogInterface$OnClickListenerC2700a(C2724s3 s3Var) {
-                this.f9207b = s3Var;
+                this.f9215b = s3Var;
             }
 
             public void onClick(DialogInterface dialogInterface, int i) {
-                this.f9207b.mo9228u();
+                this.f9215b.mo9228u();
                 C2553q3.m11124j((MainActivity) C2690s.this.mo2552c0(), new C2701a());
             }
         }
 
         View$OnClickListenerC2699f(ArrayList arrayList) {
-            this.f9205b = arrayList;
+            this.f9213b = arrayList;
         }
 
         public void onClick(View view) {
             DialogInterfaceC0068b.C0069a o;
-            C2724s3 s3Var = (C2724s3) this.f9205b.get(C2690s.this.f9191w0);
-            if (s3Var.f9252f.equals(C2553q3.f8891a.f9406j)) {
+            C2724s3 s3Var = (C2724s3) this.f9213b.get(C2690s.this.f9199w0);
+            if (s3Var.f9260f.equals(C2553q3.f8899a.f9414j)) {
                 o = new DialogInterfaceC0068b.C0069a(C2690s.this.mo2552c0(), C2553q3.m11117c()).mo228h(R.string.cant_delete_theme).mo235o(R.string.ok, null);
             } else {
                 DialogInterfaceC0068b.C0069a aVar = new DialogInterfaceC0068b.C0069a(C2690s.this.mo2552c0(), C2553q3.m11117c());
@@ -309,20 +309,20 @@ public class C2690s extends AbstractC2531p1 {
         class C2703a implements C2326g2.AbstractC2328b {
 
             /* renamed from: a */
-            final /* synthetic */ int f9211a;
+            final /* synthetic */ int f9219a;
 
             C2703a(int i) {
-                this.f9211a = i;
+                this.f9219a = i;
             }
 
             @Override // com.digdroid.alman.dig.C2326g2.AbstractC2328b
             /* renamed from: a */
             public void mo8464a(int i) {
                 C2690s sVar = C2690s.this;
-                C2724s3 s3Var = sVar.f9190v0;
-                int i2 = this.f9211a;
-                s3Var.mo8778o(i2 == 10 ? C2690s.f9183o0[i2] : sVar.m11465i3(C2690s.f9183o0[i2]), i);
-                C2690s.this.f9188t0.notifyDataSetChanged();
+                C2724s3 s3Var = sVar.f9198v0;
+                int i2 = this.f9219a;
+                s3Var.mo8778o(i2 == 10 ? C2690s.f9191o0[i2] : sVar.m11465i3(C2690s.f9191o0[i2]), i);
+                C2690s.this.f9196t0.notifyDataSetChanged();
             }
         }
 
@@ -330,35 +330,35 @@ public class C2690s extends AbstractC2531p1 {
         class DialogInterface$OnClickListenerC2704b implements DialogInterface.OnClickListener {
 
             /* renamed from: b */
-            final /* synthetic */ int f9213b;
+            final /* synthetic */ int f9221b;
 
             /* renamed from: com.digdroid.alman.dig.s$g$b$a */
             class C2705a implements C2326g2.AbstractC2328b {
 
                 /* renamed from: a */
-                final /* synthetic */ String f9215a;
+                final /* synthetic */ String f9223a;
 
                 C2705a(String str) {
-                    this.f9215a = str;
+                    this.f9223a = str;
                 }
 
                 @Override // com.digdroid.alman.dig.C2326g2.AbstractC2328b
                 /* renamed from: a */
                 public void mo8464a(int i) {
                     C2690s sVar = C2690s.this;
-                    sVar.f9190v0.mo8778o(sVar.m11465i3(this.f9215a), i);
-                    C2690s.this.f9188t0.notifyDataSetChanged();
+                    sVar.f9198v0.mo8778o(sVar.m11465i3(this.f9223a), i);
+                    C2690s.this.f9196t0.notifyDataSetChanged();
                 }
             }
 
             DialogInterface$OnClickListenerC2704b(int i) {
-                this.f9213b = i;
+                this.f9221b = i;
             }
 
             public void onClick(DialogInterface dialogInterface, int i) {
-                String str = C2690s.f9183o0[this.f9213b] + "2";
+                String str = C2690s.f9191o0[this.f9221b] + "2";
                 C2690s sVar = C2690s.this;
-                new C2326g2((ActivityC2455l) C2690s.this.mo2552c0(), C2690s.f9182n0[this.f9213b], sVar.f9190v0.mo9204E(sVar.f9193y0, str, 0), false, new C2705a(str)).mo8462a();
+                new C2326g2((ActivityC2455l) C2690s.this.mo2552c0(), C2690s.f9190n0[this.f9221b], sVar.f9198v0.mo9204E(sVar.f9201y0, str, 0), false, new C2705a(str)).mo8462a();
             }
         }
 
@@ -366,35 +366,35 @@ public class C2690s extends AbstractC2531p1 {
         class DialogInterface$OnClickListenerC2706c implements DialogInterface.OnClickListener {
 
             /* renamed from: b */
-            final /* synthetic */ int f9217b;
+            final /* synthetic */ int f9225b;
 
             /* renamed from: com.digdroid.alman.dig.s$g$c$a */
             class C2707a implements C2326g2.AbstractC2328b {
 
                 /* renamed from: a */
-                final /* synthetic */ String f9219a;
+                final /* synthetic */ String f9227a;
 
                 C2707a(String str) {
-                    this.f9219a = str;
+                    this.f9227a = str;
                 }
 
                 @Override // com.digdroid.alman.dig.C2326g2.AbstractC2328b
                 /* renamed from: a */
                 public void mo8464a(int i) {
                     C2690s sVar = C2690s.this;
-                    sVar.f9190v0.mo8778o(sVar.m11465i3(this.f9219a), i);
-                    C2690s.this.f9188t0.notifyDataSetChanged();
+                    sVar.f9198v0.mo8778o(sVar.m11465i3(this.f9227a), i);
+                    C2690s.this.f9196t0.notifyDataSetChanged();
                 }
             }
 
             DialogInterface$OnClickListenerC2706c(int i) {
-                this.f9217b = i;
+                this.f9225b = i;
             }
 
             public void onClick(DialogInterface dialogInterface, int i) {
-                String str = C2690s.f9183o0[this.f9217b] + "1";
+                String str = C2690s.f9191o0[this.f9225b] + "1";
                 C2690s sVar = C2690s.this;
-                new C2326g2((ActivityC2455l) C2690s.this.mo2552c0(), C2690s.f9182n0[this.f9217b], sVar.f9190v0.mo9204E(sVar.f9193y0, str, 0), false, new C2707a(str)).mo8462a();
+                new C2326g2((ActivityC2455l) C2690s.this.mo2552c0(), C2690s.f9190n0[this.f9225b], sVar.f9198v0.mo9204E(sVar.f9201y0, str, 0), false, new C2707a(str)).mo8462a();
             }
         }
 
@@ -406,13 +406,13 @@ public class C2690s extends AbstractC2531p1 {
             int intValue = ((Integer) view.getTag()).intValue();
             if (intValue >= 8) {
                 if (intValue == 8) {
-                    C2724s3 s3Var = C2690s.this.f9190v0;
-                    String[] strArr = C2690s.f9183o0;
+                    C2724s3 s3Var = C2690s.this.f9198v0;
+                    String[] strArr = C2690s.f9191o0;
                     s3Var.mo8778o(strArr[intValue], s3Var.mo8769f(strArr[intValue], -1) ^ -1);
-                    C2690s.this.f9188t0.notifyDataSetChanged();
+                    C2690s.this.f9196t0.notifyDataSetChanged();
                 } else if (intValue <= 13) {
                     C2690s sVar = C2690s.this;
-                    new C2326g2((ActivityC2455l) C2690s.this.mo2552c0(), C2690s.f9182n0[intValue], sVar.f9190v0.mo9204E(intValue == 10 ? "default" : sVar.f9193y0, C2690s.f9183o0[intValue], 0), true, new C2703a(intValue)).mo8462a();
+                    new C2326g2((ActivityC2455l) C2690s.this.mo2552c0(), C2690s.f9190n0[intValue], sVar.f9198v0.mo9204E(intValue == 10 ? "default" : sVar.f9201y0, C2690s.f9191o0[intValue], 0), true, new C2703a(intValue)).mo8462a();
                 } else if (intValue == 14) {
                     new DialogInterfaceC0068b.C0069a(C2690s.this.mo2552c0(), C2553q3.m11117c()).mo228h(R.string.gradient_select).mo232l(R.string.start, new DialogInterface$OnClickListenerC2706c(intValue)).mo235o(R.string.end, new DialogInterface$OnClickListenerC2704b(intValue)).mo233m(R.string.cancel, null).mo221a().show();
                 }
@@ -425,7 +425,7 @@ public class C2690s extends AbstractC2531p1 {
     public class C2708h implements AdapterView.OnItemSelectedListener {
 
         /* renamed from: b */
-        View f9221b = null;
+        View f9229b = null;
 
         C2708h() {
         }
@@ -442,7 +442,7 @@ public class C2690s extends AbstractC2531p1 {
 
         @Override // android.widget.AdapterView.OnItemSelectedListener
         public void onNothingSelected(AdapterView<?> adapterView) {
-            C2690s.this.f9187s0.setDescendantFocusability(131072);
+            C2690s.this.f9195s0.setDescendantFocusability(131072);
         }
     }
 
@@ -467,46 +467,46 @@ public class C2690s extends AbstractC2531p1 {
     public class C2710j implements AdapterView.OnItemSelectedListener {
 
         /* renamed from: b */
-        int f9224b = -1;
+        int f9232b = -1;
 
         /* renamed from: c */
-        final /* synthetic */ ArrayList f9225c;
+        final /* synthetic */ ArrayList f9233c;
 
         /* renamed from: d */
-        final /* synthetic */ Spinner f9226d;
+        final /* synthetic */ Spinner f9234d;
 
         C2710j(ArrayList arrayList, Spinner spinner) {
-            this.f9225c = arrayList;
-            this.f9226d = spinner;
+            this.f9233c = arrayList;
+            this.f9234d = spinner;
         }
 
         @Override // android.widget.AdapterView.OnItemSelectedListener
         public void onItemSelected(AdapterView<?> adapterView, View view, int i, long j) {
-            if (i != this.f9224b) {
+            if (i != this.f9232b) {
                 C2690s sVar = C2690s.this;
-                sVar.f9191w0 = i;
-                sVar.f9190v0 = (C2724s3) this.f9225c.get(i);
+                sVar.f9199w0 = i;
+                sVar.f9198v0 = (C2724s3) this.f9233c.get(i);
                 C2690s sVar2 = C2690s.this;
-                if (sVar2.f9192x0 > 0) {
-                    if (this.f9224b >= 0) {
-                        sVar2.f9192x0 = 0;
+                if (sVar2.f9200x0 > 0) {
+                    if (this.f9232b >= 0) {
+                        sVar2.f9200x0 = 0;
                     }
-                    String[] strArr = C2690s.f9185q0;
-                    int i2 = sVar2.f9192x0;
-                    sVar2.f9193y0 = strArr[i2];
-                    this.f9226d.setSelection(i2);
+                    String[] strArr = C2690s.f9193q0;
+                    int i2 = sVar2.f9200x0;
+                    sVar2.f9201y0 = strArr[i2];
+                    this.f9234d.setSelection(i2);
                 } else {
                     ActivityC0447d c0 = C2690s.this.mo2552c0();
                     C2690s sVar3 = C2690s.this;
-                    C2774t3 t3Var = sVar3.f8800g0;
-                    C2724s3 s3Var = sVar3.f9190v0;
-                    String[] strArr2 = C2690s.f9185q0;
-                    int i3 = sVar3.f9192x0;
-                    sVar2.f9188t0 = new C2564r(c0, t3Var, s3Var, strArr2[i3], C2690s.f9186r0[i3]);
+                    C2774t3 t3Var = sVar3.f8808g0;
+                    C2724s3 s3Var = sVar3.f9198v0;
+                    String[] strArr2 = C2690s.f9193q0;
+                    int i3 = sVar3.f9200x0;
+                    sVar2.f9196t0 = new C2564r(c0, t3Var, s3Var, strArr2[i3], C2690s.f9194r0[i3]);
                     C2690s sVar4 = C2690s.this;
-                    sVar4.f9187s0.setAdapter((ListAdapter) sVar4.f9188t0);
+                    sVar4.f9195s0.setAdapter((ListAdapter) sVar4.f9196t0);
                 }
-                this.f9224b = i;
+                this.f9232b = i;
             }
         }
 
@@ -519,10 +519,10 @@ public class C2690s extends AbstractC2531p1 {
     /* access modifiers changed from: public */
     /* renamed from: i3 */
     private String m11465i3(String str) {
-        if (this.f9193y0.equals("default")) {
+        if (this.f9201y0.equals("default")) {
             return str;
         }
-        return this.f9193y0 + "_" + str;
+        return this.f9201y0 + "_" + str;
     }
 
     /* access modifiers changed from: private */
@@ -530,17 +530,17 @@ public class C2690s extends AbstractC2531p1 {
     /* renamed from: k3 */
     private void m11466k3() {
         ArrayList arrayList = new ArrayList();
-        for (int i = 0; i < this.f9189u0.size(); i++) {
-            C2724s3 s3Var = this.f9189u0.get(i);
+        for (int i = 0; i < this.f9197u0.size(); i++) {
+            C2724s3 s3Var = this.f9197u0.get(i);
             arrayList.add(i, s3Var.mo8772i("name"));
-            if (this.f9191w0 < 0 && C2553q3.f8892b.equals(s3Var.f9252f)) {
-                this.f9191w0 = i;
+            if (this.f9199w0 < 0 && C2553q3.f8900b.equals(s3Var.f9260f)) {
+                this.f9199w0 = i;
             }
         }
-        if (this.f9191w0 < 0) {
-            this.f9191w0 = 0;
+        if (this.f9199w0 < 0) {
+            this.f9199w0 = 0;
         }
-        this.f9190v0 = this.f9189u0.get(this.f9191w0);
+        this.f9198v0 = this.f9197u0.get(this.f9199w0);
         ArrayAdapter arrayAdapter = new ArrayAdapter(mo2552c0(), (int) R.layout.spinner_item, arrayList);
         arrayAdapter.setDropDownViewResource(17367049);
         ((Spinner) mo2505F0().findViewById(R.id.select_theme)).setAdapter((SpinnerAdapter) arrayAdapter);
@@ -683,13 +683,13 @@ public class C2690s extends AbstractC2531p1 {
     public View mo2547a1(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         int i;
         if (bundle != null) {
-            this.f9191w0 = bundle.getInt("selected_theme");
+            this.f9199w0 = bundle.getInt("selected_theme");
             i = bundle.getInt("selected_type");
         } else {
             i = -1;
-            this.f9191w0 = -1;
+            this.f9199w0 = -1;
         }
-        this.f9192x0 = i;
+        this.f9200x0 = i;
         return layoutInflater.inflate(R.layout.fragment_custom_theme, viewGroup, false);
     }
 
@@ -722,34 +722,34 @@ public class C2690s extends AbstractC2531p1 {
     public void mo9170j3(ArrayList<C2724s3> arrayList) {
         if (arrayList != null) {
             synchronized (C2690s.class) {
-                this.f9189u0 = arrayList;
+                this.f9197u0 = arrayList;
             }
-            int i = this.f9191w0;
+            int i = this.f9199w0;
             if (i >= 0 && i < arrayList.size()) {
-                arrayList.get(this.f9191w0).mo9214Q();
+                arrayList.get(this.f9199w0).mo9214Q();
             }
             mo8118X2(mo2501D0(R.string.edit_themes));
             TextView textView = (TextView) mo2505F0().findViewById(R.id.clone);
-            textView.setTextColor(this.f8800g0.f9402f);
+            textView.setTextColor(this.f8808g0.f9410f);
             C2553q3.m11131q(textView);
             textView.setOnClickListener(new View$OnClickListenerC2693c(arrayList));
             TextView textView2 = (TextView) mo2505F0().findViewById(R.id.bundle);
-            textView2.setTextColor(this.f8800g0.f9402f);
+            textView2.setTextColor(this.f8808g0.f9410f);
             C2553q3.m11131q(textView2);
             textView2.setOnClickListener(new View$OnClickListenerC2695d());
             TextView textView3 = (TextView) mo2505F0().findViewById(R.id.ok);
-            textView3.setTextColor(this.f8800g0.f9402f);
+            textView3.setTextColor(this.f8808g0.f9410f);
             C2553q3.m11131q(textView3);
             textView3.setOnClickListener(new View$OnClickListenerC2697e());
             TextView textView4 = (TextView) mo2505F0().findViewById(R.id.delete);
-            textView4.setTextColor(this.f8800g0.f9402f);
+            textView4.setTextColor(this.f8808g0.f9410f);
             C2553q3.m11131q(textView4);
             textView4.setOnClickListener(new View$OnClickListenerC2699f(arrayList));
             MyListView myListView = (MyListView) mo2505F0().findViewById(R.id.colors_list);
-            this.f9187s0 = myListView;
+            this.f9195s0 = myListView;
             myListView.setOnItemClickListener(new C2702g());
-            this.f9187s0.setOnItemSelectedListener(new C2708h());
-            this.f9187s0.setRecyclerListener(new C2709i());
+            this.f9195s0.setOnItemSelectedListener(new C2708h());
+            this.f9195s0.setRecyclerListener(new C2709i());
             synchronized (C2690s.class) {
                 m11466k3();
             }
@@ -759,23 +759,23 @@ public class C2690s extends AbstractC2531p1 {
             ArrayList arrayList2 = new ArrayList();
             int i2 = 0;
             while (true) {
-                int[] iArr = f9184p0;
+                int[] iArr = f9192p0;
                 if (i2 >= iArr.length) {
                     break;
                 }
                 arrayList2.add(i2, mo2501D0(iArr[i2]).substring(0, 1).toUpperCase() + mo2501D0(iArr[i2]).substring(1));
                 i2++;
             }
-            if (this.f9192x0 < 0) {
-                this.f9192x0 = 0;
+            if (this.f9200x0 < 0) {
+                this.f9200x0 = 0;
             }
-            this.f9193y0 = f9185q0[this.f9192x0];
+            this.f9201y0 = f9193q0[this.f9200x0];
             ArrayAdapter arrayAdapter = new ArrayAdapter(mo2552c0(), (int) R.layout.spinner_item, arrayList2);
             arrayAdapter.setDropDownViewResource(17367049);
             spinner2.setAdapter((SpinnerAdapter) arrayAdapter);
             spinner2.setOnItemSelectedListener(new C2691a());
-            spinner.setSelection(this.f9191w0);
-            this.f8802i0 = true;
+            spinner.setSelection(this.f9199w0);
+            this.f8810i0 = true;
         }
     }
 
@@ -790,9 +790,9 @@ public class C2690s extends AbstractC2531p1 {
     public void mo2585m1() {
         int i;
         super.mo2585m1();
-        ArrayList<C2724s3> arrayList = this.f9189u0;
-        if (arrayList != null && (i = this.f9191w0) >= 0 && i < arrayList.size()) {
-            this.f9189u0.get(this.f9191w0).mo9217T();
+        ArrayList<C2724s3> arrayList = this.f9197u0;
+        if (arrayList != null && (i = this.f9199w0) >= 0 && i < arrayList.size()) {
+            this.f9197u0.get(this.f9199w0).mo9217T();
         }
     }
 
@@ -812,8 +812,8 @@ public class C2690s extends AbstractC2531p1 {
     @Override // androidx.fragment.app.Fragment
     /* renamed from: s1 */
     public void mo2603s1(Bundle bundle) {
-        bundle.putInt("selected_theme", this.f9191w0);
-        bundle.putInt("selected_type", this.f9192x0);
+        bundle.putInt("selected_theme", this.f9199w0);
+        bundle.putInt("selected_type", this.f9200x0);
         super.mo2603s1(bundle);
     }
 

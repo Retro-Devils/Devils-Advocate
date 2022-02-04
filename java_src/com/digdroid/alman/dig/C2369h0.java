@@ -9,133 +9,133 @@ import java.util.Calendar;
 public class C2369h0 {
 
     /* renamed from: a */
-    long f8301a;
+    long f8309a;
 
     /* renamed from: b */
-    long f8302b;
+    long f8310b;
 
     /* renamed from: c */
-    int f8303c;
+    int f8311c;
 
     /* renamed from: d */
-    int f8304d;
+    int f8312d;
 
     /* renamed from: e */
-    boolean f8305e;
+    boolean f8313e;
 
     /* renamed from: f */
-    boolean f8306f;
+    boolean f8314f;
 
     /* renamed from: g */
-    String f8307g;
+    String f8315g;
 
     /* renamed from: h */
-    String f8308h;
+    String f8316h;
 
     /* renamed from: i */
-    String f8309i;
+    String f8317i;
 
     /* renamed from: j */
-    int f8310j;
+    int f8318j;
 
     /* renamed from: k */
-    String f8311k;
+    String f8319k;
 
     /* renamed from: l */
-    String f8312l;
+    String f8320l;
 
     /* renamed from: m */
-    String f8313m;
+    String f8321m;
 
     /* renamed from: n */
-    String f8314n;
+    String f8322n;
 
     /* renamed from: o */
-    boolean f8315o;
+    boolean f8323o;
 
     public C2369h0() {
         mo8532a();
     }
 
     public C2369h0(C2369h0 h0Var) {
-        this.f8301a = h0Var.f8301a;
-        this.f8302b = h0Var.f8302b;
-        this.f8303c = h0Var.f8303c;
-        this.f8304d = h0Var.f8304d;
-        this.f8312l = h0Var.f8312l;
-        this.f8313m = h0Var.f8313m;
-        this.f8305e = h0Var.f8305e;
-        this.f8306f = h0Var.f8306f;
-        this.f8307g = h0Var.f8307g;
-        this.f8308h = h0Var.f8308h;
-        this.f8309i = h0Var.f8309i;
-        this.f8310j = h0Var.f8310j;
-        this.f8311k = h0Var.f8311k;
-        this.f8314n = h0Var.f8314n;
-        this.f8315o = h0Var.f8315o;
+        this.f8309a = h0Var.f8309a;
+        this.f8310b = h0Var.f8310b;
+        this.f8311c = h0Var.f8311c;
+        this.f8312d = h0Var.f8312d;
+        this.f8320l = h0Var.f8320l;
+        this.f8321m = h0Var.f8321m;
+        this.f8313e = h0Var.f8313e;
+        this.f8314f = h0Var.f8314f;
+        this.f8315g = h0Var.f8315g;
+        this.f8316h = h0Var.f8316h;
+        this.f8317i = h0Var.f8317i;
+        this.f8318j = h0Var.f8318j;
+        this.f8319k = h0Var.f8319k;
+        this.f8322n = h0Var.f8322n;
+        this.f8323o = h0Var.f8323o;
     }
 
     /* renamed from: a */
     public void mo8532a() {
-        this.f8301a = 0;
-        this.f8302b = 0;
-        this.f8303c = -1;
-        this.f8304d = -1;
-        this.f8305e = false;
-        this.f8306f = false;
-        this.f8307g = "";
-        this.f8308h = "";
-        this.f8309i = "";
-        this.f8310j = -1;
-        this.f8311k = "";
-        this.f8314n = "title";
-        this.f8315o = true;
+        this.f8309a = 0;
+        this.f8310b = 0;
+        this.f8311c = -1;
+        this.f8312d = -1;
+        this.f8313e = false;
+        this.f8314f = false;
+        this.f8315g = "";
+        this.f8316h = "";
+        this.f8317i = "";
+        this.f8318j = -1;
+        this.f8319k = "";
+        this.f8322n = "title";
+        this.f8323o = true;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: b */
     public void mo8533b(Bundle bundle) {
         if (bundle.containsKey("filter_favorite")) {
-            this.f8305e = bundle.getBoolean("filter_favorite");
+            this.f8313e = bundle.getBoolean("filter_favorite");
         }
         if (bundle.containsKey("filter_genre")) {
-            this.f8303c = bundle.getInt("filter_genre");
+            this.f8311c = bundle.getInt("filter_genre");
         }
         if (bundle.containsKey("filter_genrename")) {
-            this.f8312l = bundle.getString("filter_genrename");
+            this.f8320l = bundle.getString("filter_genrename");
         }
         if (bundle.containsKey("filter_collection")) {
-            this.f8304d = bundle.getInt("filter_collection");
+            this.f8312d = bundle.getInt("filter_collection");
         }
         if (bundle.containsKey("filter_collectionname")) {
-            this.f8313m = bundle.getString("filter_collectionname");
+            this.f8321m = bundle.getString("filter_collectionname");
         }
         if (bundle.containsKey("filter_system")) {
-            this.f8308h = bundle.getString("filter_system");
+            this.f8316h = bundle.getString("filter_system");
         }
         if (bundle.containsKey("filter_publisher")) {
-            this.f8311k = bundle.getString("filter_publisher");
+            this.f8319k = bundle.getString("filter_publisher");
         }
         if (bundle.containsKey("filter_type")) {
-            this.f8309i = bundle.getString("filter_type");
+            this.f8317i = bundle.getString("filter_type");
         }
         if (bundle.containsKey("filter_generation")) {
-            this.f8310j = bundle.getInt("filter_generation");
+            this.f8318j = bundle.getInt("filter_generation");
         }
         if (bundle.containsKey("filter_search")) {
-            this.f8307g = bundle.getString("filter_search");
+            this.f8315g = bundle.getString("filter_search");
         }
         if (bundle.containsKey("filter_date_start")) {
-            this.f8301a = bundle.getLong("filter_date_start");
+            this.f8309a = bundle.getLong("filter_date_start");
         }
         if (bundle.containsKey("filter_date_end")) {
-            this.f8302b = bundle.getLong("filter_date_end");
+            this.f8310b = bundle.getLong("filter_date_end");
         }
         if (bundle.containsKey("filter_sorttype")) {
-            this.f8314n = bundle.getString("filter_sorttype");
+            this.f8322n = bundle.getString("filter_sorttype");
         }
         if (bundle.containsKey("filter_sortascending")) {
-            this.f8315o = bundle.getBoolean("filter_sortascending");
+            this.f8323o = bundle.getBoolean("filter_sortascending");
         }
     }
 
@@ -151,28 +151,28 @@ public class C2369h0 {
         if (context == null || h3Var == null) {
             return "";
         }
-        if (this.f8304d >= 0) {
-            str = "" + this.f8313m;
+        if (this.f8312d >= 0) {
+            str = "" + this.f8321m;
         } else {
             str = "";
         }
-        if (this.f8305e) {
+        if (this.f8313e) {
             if (!str.equals("")) {
                 str = str + ", ";
             }
             str = str + context.getString(R.string.favorites);
         }
-        if (!this.f8308h.equals("")) {
+        if (!this.f8316h.equals("")) {
             if (!str.equals("")) {
                 str = str + ", ";
             }
-            str = str + h3Var.mo8568s(this.f8308h);
+            str = str + h3Var.mo8568s(this.f8316h);
         }
-        if (!this.f8309i.equals("")) {
+        if (!this.f8317i.equals("")) {
             if (!str.equals("")) {
                 str = str + ", ";
             }
-            String str3 = this.f8309i;
+            String str3 = this.f8317i;
             str3.hashCode();
             char c = 65535;
             switch (str3.hashCode()) {
@@ -232,11 +232,11 @@ public class C2369h0 {
                     break;
             }
         }
-        if (this.f8310j >= 2) {
+        if (this.f8318j >= 2) {
             if (!str.equals("")) {
                 str = str + ", ";
             }
-            switch (this.f8310j) {
+            switch (this.f8318j) {
                 case 2:
                     sb2 = new StringBuilder();
                     sb2.append(str);
@@ -288,26 +288,26 @@ public class C2369h0 {
                     break;
             }
         }
-        if (this.f8303c >= 0) {
+        if (this.f8311c >= 0) {
             if (!str.equals("")) {
                 str = str + ", ";
             }
-            str = str + this.f8312l.substring(0, 1).toUpperCase() + this.f8312l.substring(1);
+            str = str + this.f8320l.substring(0, 1).toUpperCase() + this.f8320l.substring(1);
         }
-        if (!this.f8307g.equals("")) {
+        if (!this.f8315g.equals("")) {
             if (!str.equals("")) {
                 str = str + ", ";
             }
-            str = str + this.f8307g;
+            str = str + this.f8315g;
         }
-        if (this.f8301a > 0) {
+        if (this.f8309a > 0) {
             if (!str.equals("")) {
                 str = str + ", ";
             }
             Calendar instance = Calendar.getInstance();
-            instance.setTimeInMillis(this.f8301a);
+            instance.setTimeInMillis(this.f8309a);
             int i3 = instance.get(1);
-            long j = this.f8302b;
+            long j = this.f8310b;
             if (j == 0) {
                 sb = new StringBuilder();
                 sb.append(str);
@@ -326,39 +326,39 @@ public class C2369h0 {
             sb.append(i3);
             str2 = sb.toString();
             str = str2;
-        } else if (this.f8302b > 0) {
+        } else if (this.f8310b > 0) {
             if (!str.equals("")) {
                 str = str + ", ";
             }
             Calendar instance2 = Calendar.getInstance();
-            instance2.setTimeInMillis(this.f8302b);
+            instance2.setTimeInMillis(this.f8310b);
             str = str + "before " + (instance2.get(1) - 1);
         }
-        if (this.f8311k.equals("")) {
+        if (this.f8319k.equals("")) {
             return str;
         }
         if (!str.equals("")) {
             str = str + ", ";
         }
-        return str + "by " + this.f8311k.substring(0, 1).toUpperCase() + this.f8311k.substring(1);
+        return str + "by " + this.f8319k.substring(0, 1).toUpperCase() + this.f8319k.substring(1);
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: d */
     public void mo8535d(Bundle bundle) {
-        bundle.putBoolean("filter_favorite", this.f8305e);
-        bundle.putInt("filter_genre", this.f8303c);
-        bundle.putString("filter_genrename", this.f8312l);
-        bundle.putInt("filter_collection", this.f8304d);
-        bundle.putString("filter_collectionname", this.f8313m);
-        bundle.putString("filter_type", this.f8309i);
-        bundle.putInt("filter_generation", this.f8310j);
-        bundle.putString("filter_system", this.f8308h);
-        bundle.putLong("filter_date_start", this.f8301a);
-        bundle.putLong("filter_date_end", this.f8302b);
-        bundle.putString("filter_search", this.f8307g);
-        bundle.putString("filter_publisher", this.f8311k);
-        bundle.putString("filter_sorttype", this.f8314n);
-        bundle.putBoolean("filter_sortascending", this.f8315o);
+        bundle.putBoolean("filter_favorite", this.f8313e);
+        bundle.putInt("filter_genre", this.f8311c);
+        bundle.putString("filter_genrename", this.f8320l);
+        bundle.putInt("filter_collection", this.f8312d);
+        bundle.putString("filter_collectionname", this.f8321m);
+        bundle.putString("filter_type", this.f8317i);
+        bundle.putInt("filter_generation", this.f8318j);
+        bundle.putString("filter_system", this.f8316h);
+        bundle.putLong("filter_date_start", this.f8309a);
+        bundle.putLong("filter_date_end", this.f8310b);
+        bundle.putString("filter_search", this.f8315g);
+        bundle.putString("filter_publisher", this.f8319k);
+        bundle.putString("filter_sorttype", this.f8322n);
+        bundle.putBoolean("filter_sortascending", this.f8323o);
     }
 }

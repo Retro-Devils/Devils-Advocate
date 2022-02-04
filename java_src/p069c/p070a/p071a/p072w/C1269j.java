@@ -19,26 +19,26 @@ import p069c.p070a.p071a.C1232g;
 public class C1269j extends AbstractC1257b {
 
     /* renamed from: a */
-    private final AbstractC1271b f5518a;
+    private final AbstractC1271b f5525a;
 
     /* renamed from: b */
-    private final SSLSocketFactory f5519b;
+    private final SSLSocketFactory f5526b;
 
     /* renamed from: c.a.a.w.j$a */
     static class C1270a extends FilterInputStream {
 
         /* renamed from: b */
-        private final HttpURLConnection f5520b;
+        private final HttpURLConnection f5527b;
 
         C1270a(HttpURLConnection httpURLConnection) {
             super(C1269j.m6736i(httpURLConnection));
-            this.f5520b = httpURLConnection;
+            this.f5527b = httpURLConnection;
         }
 
         @Override // java.io.FilterInputStream, java.io.Closeable, java.lang.AutoCloseable, java.io.InputStream
         public void close() {
             super.close();
-            this.f5520b.disconnect();
+            this.f5527b.disconnect();
         }
     }
 
@@ -57,8 +57,8 @@ public class C1269j extends AbstractC1257b {
     }
 
     public C1269j(AbstractC1271b bVar, SSLSocketFactory sSLSocketFactory) {
-        this.f5518a = bVar;
-        this.f5519b = sSLSocketFactory;
+        this.f5525a = bVar;
+        this.f5526b = sSLSocketFactory;
     }
 
     /* renamed from: d */
@@ -117,7 +117,7 @@ public class C1269j extends AbstractC1257b {
         g.setReadTimeout(w);
         g.setUseCaches(false);
         g.setDoInput(true);
-        if ("https".equals(url.getProtocol()) && (sSLSocketFactory = this.f5519b) != null) {
+        if ("https".equals(url.getProtocol()) && (sSLSocketFactory = this.f5526b) != null) {
             ((HttpsURLConnection) g).setSSLSocketFactory(sSLSocketFactory);
         }
         return g;
@@ -182,7 +182,7 @@ public class C1269j extends AbstractC1257b {
         HashMap hashMap = new HashMap();
         hashMap.putAll(map);
         hashMap.putAll(nVar.mo6202m());
-        AbstractC1271b bVar = this.f5518a;
+        AbstractC1271b bVar = this.f5525a;
         if (bVar != null) {
             String a = bVar.mo6254a(y);
             if (a != null) {

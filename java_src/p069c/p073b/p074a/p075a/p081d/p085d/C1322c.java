@@ -8,7 +8,7 @@ import android.os.Parcelable;
 public class C1322c {
 
     /* renamed from: a */
-    private static final ClassLoader f5583a = C1322c.class.getClassLoader();
+    private static final ClassLoader f5591a = C1322c.class.getClassLoader();
 
     private C1322c() {
     }

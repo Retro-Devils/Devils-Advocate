@@ -20,81 +20,81 @@ import java.util.HashMap;
 public class C2494n0 extends AbstractC2531p1 {
 
     /* renamed from: n0 */
-    static final int[] f8644n0 = {R.string.select, R.string.back, R.string.voice_search, R.string.forward, R.string.main_menu, R.string.page_menu, R.string.page_info, R.string.sort_menu, R.string.next_letter, R.string.prev_letter, R.string.page_top, R.string.launch_game, R.string.preview_pane, R.string.change_view, R.string.home, R.string.systems, R.string.genres, R.string.favorites, R.string.played_games, R.string.all_games, R.string.options, R.string.select_random, R.string.faq};
+    static final int[] f8652n0 = {R.string.select, R.string.back, R.string.voice_search, R.string.forward, R.string.main_menu, R.string.page_menu, R.string.page_info, R.string.sort_menu, R.string.next_letter, R.string.prev_letter, R.string.page_top, R.string.launch_game, R.string.preview_pane, R.string.change_view, R.string.home, R.string.systems, R.string.genres, R.string.favorites, R.string.played_games, R.string.all_games, R.string.options, R.string.select_random, R.string.faq};
 
     /* renamed from: o0 */
-    static final int[] f8645o0 = {0, 1, 3, 2, 4, 5, 26, 15, 13, 14, 24, 6, 32, 7, 16, 17, 18, 19, 23, 20, 21, 25, 22};
+    static final int[] f8653o0 = {0, 1, 3, 2, 4, 5, 26, 15, 13, 14, 24, 6, 32, 7, 16, 17, 18, 19, 23, 20, 21, 25, 22};
 
     /* renamed from: p0 */
-    HashMap<Integer, Integer> f8646p0;
+    HashMap<Integer, Integer> f8654p0;
 
     /* renamed from: q0 */
-    HashMap<Integer, Integer> f8647q0;
+    HashMap<Integer, Integer> f8655q0;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.digdroid.alman.dig.n0$a */
     public class View$OnClickListenerC2495a implements View.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ String f8648b;
+        final /* synthetic */ String f8656b;
 
         /* renamed from: c */
-        final /* synthetic */ TextView f8649c;
+        final /* synthetic */ TextView f8657c;
 
         /* renamed from: d */
-        final /* synthetic */ int f8650d;
+        final /* synthetic */ int f8658d;
 
         /* renamed from: e */
-        final /* synthetic */ String f8651e;
+        final /* synthetic */ String f8659e;
 
         /* renamed from: com.digdroid.alman.dig.n0$a$a */
         class DialogInterface$OnClickListenerC2496a implements DialogInterface.OnClickListener {
 
             /* renamed from: b */
-            final /* synthetic */ int[] f8653b;
+            final /* synthetic */ int[] f8661b;
 
             DialogInterface$OnClickListenerC2496a(int[] iArr) {
-                this.f8653b = iArr;
+                this.f8661b = iArr;
             }
 
             public void onClick(DialogInterface dialogInterface, int i) {
-                int i2 = this.f8653b[i];
+                int i2 = this.f8661b[i];
                 View$OnClickListenerC2495a aVar = View$OnClickListenerC2495a.this;
-                C2494n0.this.mo8785h3(aVar.f8649c, aVar.f8648b, i2);
+                C2494n0.this.mo8785h3(aVar.f8657c, aVar.f8656b, i2);
                 View$OnClickListenerC2495a aVar2 = View$OnClickListenerC2495a.this;
-                C2494n0.this.f8646p0.put(Integer.valueOf(aVar2.f8650d), Integer.valueOf(i2));
+                C2494n0.this.f8654p0.put(Integer.valueOf(aVar2.f8658d), Integer.valueOf(i2));
                 View$OnClickListenerC2495a aVar3 = View$OnClickListenerC2495a.this;
-                C2494n0.this.f8793Z.mo8156E(aVar3.f8651e, i2);
+                C2494n0.this.f8801Z.mo8156E(aVar3.f8659e, i2);
                 View$OnClickListenerC2495a aVar4 = View$OnClickListenerC2495a.this;
-                if (aVar4.f8650d == 109) {
-                    C2494n0.this.f8646p0.put(4, Integer.valueOf(i2));
+                if (aVar4.f8658d == 109) {
+                    C2494n0.this.f8654p0.put(4, Integer.valueOf(i2));
                 }
             }
         }
 
         View$OnClickListenerC2495a(String str, TextView textView, int i, String str2) {
-            this.f8648b = str;
-            this.f8649c = textView;
-            this.f8650d = i;
-            this.f8651e = str2;
+            this.f8656b = str;
+            this.f8657c = textView;
+            this.f8658d = i;
+            this.f8659e = str2;
         }
 
         public void onClick(View view) {
-            int[] iArr = C2494n0.f8644n0;
+            int[] iArr = C2494n0.f8652n0;
             CharSequence[] charSequenceArr = new CharSequence[(iArr.length - 1)];
             int[] iArr2 = new int[(iArr.length - 1)];
             charSequenceArr[0] = C2494n0.this.mo2552c0().getString(R.string.unbind);
             iArr2[0] = -1;
             int i = 2;
             while (true) {
-                int[] iArr3 = C2494n0.f8644n0;
+                int[] iArr3 = C2494n0.f8652n0;
                 if (i < iArr3.length) {
                     int i2 = i - 1;
                     charSequenceArr[i2] = C2494n0.this.mo2552c0().getString(iArr3[i]);
-                    iArr2[i2] = C2494n0.f8645o0[i];
+                    iArr2[i2] = C2494n0.f8653o0[i];
                     i++;
                 } else {
-                    new DialogInterfaceC0068b.C0069a(C2494n0.this.mo2552c0(), C2553q3.m11117c()).mo239s(this.f8648b).mo227g(charSequenceArr, new DialogInterface$OnClickListenerC2496a(iArr2)).mo221a().show();
+                    new DialogInterfaceC0068b.C0069a(C2494n0.this.mo2552c0(), C2553q3.m11117c()).mo239s(this.f8656b).mo227g(charSequenceArr, new DialogInterface$OnClickListenerC2496a(iArr2)).mo221a().show();
                     return;
                 }
             }
@@ -284,10 +284,10 @@ public class C2494n0 extends AbstractC2531p1 {
     /* renamed from: g3 */
     public void mo8784g3(int i, float f, String str, int i2, String str2) {
         TextView textView = (TextView) mo2505F0().findViewById(i);
-        textView.setTextColor(this.f8800g0.f9401e);
+        textView.setTextColor(this.f8808g0.f9409e);
         C2553q3.m11131q(textView);
         textView.setTextSize(0, f);
-        mo8785h3(textView, str, this.f8646p0.get(Integer.valueOf(i2)).intValue());
+        mo8785h3(textView, str, this.f8654p0.get(Integer.valueOf(i2)).intValue());
         if (i2 != 96 && i2 != 97) {
             textView.setOnClickListener(new View$OnClickListenerC2495a(str, textView, i2, str2));
         }
@@ -301,7 +301,7 @@ public class C2494n0 extends AbstractC2531p1 {
         if (i < 0) {
             str2 = str3 + "-";
         } else {
-            str2 = str3 + mo2552c0().getString(this.f8647q0.get(Integer.valueOf(i)).intValue());
+            str2 = str3 + mo2552c0().getString(this.f8655q0.get(Integer.valueOf(i)).intValue());
         }
         textView.setText(str2);
     }
@@ -328,13 +328,13 @@ public class C2494n0 extends AbstractC2531p1 {
     /* renamed from: r1 */
     public void mo2601r1() {
         super.mo2601r1();
-        this.f8646p0 = this.f8806m0.mo8909o();
-        this.f8647q0 = new HashMap<>();
+        this.f8654p0 = this.f8814m0.mo8909o();
+        this.f8655q0 = new HashMap<>();
         int i = 0;
         while (true) {
-            int[] iArr = f8644n0;
+            int[] iArr = f8652n0;
             if (i < iArr.length) {
-                this.f8647q0.put(Integer.valueOf(f8645o0[i]), Integer.valueOf(iArr[i]));
+                this.f8655q0.put(Integer.valueOf(f8653o0[i]), Integer.valueOf(iArr[i]));
                 i++;
             } else {
                 mo2505F0().post(new RunnableC2497b());
@@ -377,7 +377,7 @@ public class C2494n0 extends AbstractC2531p1 {
     @Override // com.digdroid.alman.dig.AbstractC2531p1
     /* renamed from: w2 */
     public String mo8409w2() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8193q(mo8127t2() + "_toolbar", "none");
     }
 

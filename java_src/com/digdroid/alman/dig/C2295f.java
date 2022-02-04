@@ -21,25 +21,25 @@ import p069c.p073b.p074a.p075a.p089g.AbstractC1374b;
 public class C2295f {
 
     /* renamed from: a */
-    private static String f8143a = "AIzaSyCjUGS0FaPsJExUR4cgeYG8R9-t4hGQMM8";
+    private static String f8151a = "AIzaSyCjUGS0FaPsJExUR4cgeYG8R9-t4hGQMM8";
 
     /* renamed from: b */
-    private static C2295f f8144b;
+    private static C2295f f8152b;
 
     /* renamed from: c */
-    Context f8145c = null;
+    Context f8153c = null;
 
     /* renamed from: d */
-    C1243o f8146d;
+    C1243o f8154d;
 
     /* renamed from: e */
-    ArrayList<AbstractC2302g> f8147e = new ArrayList<>();
+    ArrayList<AbstractC2302g> f8155e = new ArrayList<>();
 
     /* renamed from: f */
-    C2219c3 f8148f;
+    C2219c3 f8156f;
 
     /* renamed from: g */
-    boolean f8149g = false;
+    boolean f8157g = false;
 
     /* renamed from: com.digdroid.alman.dig.f$a */
     class C2296a implements C1245p.AbstractC1247b<String> {
@@ -107,10 +107,10 @@ public class C2295f {
     public class C2300e implements C1245p.AbstractC1247b<JSONObject> {
 
         /* renamed from: a */
-        final /* synthetic */ String f8154a;
+        final /* synthetic */ String f8162a;
 
         C2300e(String str) {
-            this.f8154a = str;
+            this.f8162a = str;
         }
 
         /* renamed from: b */
@@ -118,35 +118,35 @@ public class C2295f {
             if (jSONObject != null) {
                 try {
                     if (jSONObject.has("premium")) {
-                        C2223d0.m9876p().mo8208F(C2295f.this.f8145c, jSONObject.getJSONArray("premium"));
+                        C2223d0.m9876p().mo8208F(C2295f.this.f8153c, jSONObject.getJSONArray("premium"));
                     }
                     if (jSONObject.has("themes")) {
-                        C2295f.this.f8148f.mo8157F("new_themes_updated", jSONObject.getLong("themes"));
+                        C2295f.this.f8156f.mo8157F("new_themes_updated", jSONObject.getLong("themes"));
                     }
                     if (jSONObject.has("announcement")) {
-                        C2295f.this.f8148f.mo8161J(jSONObject.getString("announcement"));
-                        if (C2295f.this.f8145c != null) {
-                            C1088a.m6129b(C2295f.this.f8145c).mo5723d(new Intent(C2295f.this.f8145c.getPackageName() + "." + "ANNOUNCEMENT"));
+                        C2295f.this.f8156f.mo8161J(jSONObject.getString("announcement"));
+                        if (C2295f.this.f8153c != null) {
+                            C1088a.m6129b(C2295f.this.f8153c).mo5723d(new Intent(C2295f.this.f8153c.getPackageName() + "." + "ANNOUNCEMENT"));
                         }
                     }
                     if (!jSONObject.getString("pass").equals("true")) {
                         C2295f.this.m10149f();
                         return;
                     }
-                    if (this.f8154a == null) {
-                        C2295f.this.f8148f.mo8158G("userid", jSONObject.getString("userid"));
+                    if (this.f8162a == null) {
+                        C2295f.this.f8156f.mo8158G("userid", jSONObject.getString("userid"));
                     }
-                    C2295f.this.f8148f.mo8158G("token", jSONObject.getString("token"));
-                    C2295f.this.f8148f.mo8157F("token_expires", System.currentTimeMillis() + 129600000);
-                    C2295f.this.f8148f.mo8157F("attest_retry_next", 0);
-                    C2295f.this.f8148f.mo8157F("attest_retry_in", 1800000);
+                    C2295f.this.f8156f.mo8158G("token", jSONObject.getString("token"));
+                    C2295f.this.f8156f.mo8157F("token_expires", System.currentTimeMillis() + 129600000);
+                    C2295f.this.f8156f.mo8157F("attest_retry_next", 0);
+                    C2295f.this.f8156f.mo8157F("attest_retry_in", 1800000);
                     synchronized (C2295f.this) {
-                        Iterator<AbstractC2302g> it = C2295f.this.f8147e.iterator();
+                        Iterator<AbstractC2302g> it = C2295f.this.f8155e.iterator();
                         while (it.hasNext()) {
                             it.next().mo7914b();
                         }
-                        C2295f.this.f8147e.clear();
-                        C2295f.this.f8149g = false;
+                        C2295f.this.f8155e.clear();
+                        C2295f.this.f8157g = false;
                     }
                 } catch (Exception unused) {
                     C2295f.this.m10149f();
@@ -179,9 +179,9 @@ public class C2295f {
 
     private C2295f(Context context) {
         if (context != null) {
-            this.f8145c = context.getApplicationContext();
-            this.f8146d = C2490m2.m10682a(context);
-            this.f8148f = C2219c3.m9805k(this.f8145c);
+            this.f8153c = context.getApplicationContext();
+            this.f8154d = C2490m2.m10682a(context);
+            this.f8156f = C2219c3.m9805k(this.f8153c);
         }
     }
 
@@ -189,32 +189,32 @@ public class C2295f {
     /* access modifiers changed from: public */
     /* renamed from: e */
     private void m10148e(String str) {
-        C1338c.m6914a(this.f8145c).mo6367j(C2185a4.m9682l(str), f8143a).mo6419c(new C2299d()).mo6417a(new C2298c());
+        C1338c.m6914a(this.f8153c).mo6367j(C2185a4.m9682l(str), f8151a).mo6419c(new C2299d()).mo6417a(new C2298c());
     }
 
     /* access modifiers changed from: private */
     /* access modifiers changed from: public */
     /* renamed from: f */
     private synchronized void m10149f() {
-        Iterator<AbstractC2302g> it = this.f8147e.iterator();
+        Iterator<AbstractC2302g> it = this.f8155e.iterator();
         while (it.hasNext()) {
             it.next().mo7913a();
         }
-        this.f8147e.clear();
-        this.f8149g = false;
+        this.f8155e.clear();
+        this.f8157g = false;
     }
 
     /* renamed from: g */
     public static synchronized C2295f m10150g(Context context, AbstractC2302g gVar) {
         C2295f fVar;
         synchronized (C2295f.class) {
-            if (f8144b == null) {
-                f8144b = new C2295f(context);
+            if (f8152b == null) {
+                f8152b = new C2295f(context);
             }
-            synchronized (f8144b) {
-                f8144b.f8147e.add(gVar);
+            synchronized (f8152b) {
+                f8152b.f8155e.add(gVar);
             }
-            fVar = f8144b;
+            fVar = f8152b;
         }
         return fVar;
     }
@@ -223,9 +223,9 @@ public class C2295f {
     /* access modifiers changed from: public */
     /* renamed from: h */
     private void m10151h(String str) {
-        String q = this.f8148f.mo8193q("userid", null);
+        String q = this.f8156f.mo8193q("userid", null);
         StringBuilder sb = new StringBuilder();
-        sb.append(ServerService.f7700b);
+        sb.append(ServerService.f7708b);
         sb.append(q == null ? "/newuser2.php" : "/refreshuser2.php");
         String sb2 = sb.toString();
         HashMap hashMap = new HashMap();
@@ -236,14 +236,14 @@ public class C2295f {
         C1272k kVar = new C1272k(sb2, new JSONObject(hashMap), new C2300e(q), new C2301f());
         try {
             kVar.mo6189L(false);
-            this.f8146d.mo6218a(kVar);
+            this.f8154d.mo6218a(kVar);
         } catch (Exception unused) {
             m10149f();
         }
     }
 
     /* JADX WARNING: Code restructure failed: missing block: B:28:0x0063, code lost:
-        if (r7.f8148f.mo8190n("attest_retry_next", 0) <= java.lang.System.currentTimeMillis()) goto L_0x006a;
+        if (r7.f8156f.mo8190n("attest_retry_next", 0) <= java.lang.System.currentTimeMillis()) goto L_0x006a;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:29:0x0065, code lost:
         m10149f();
@@ -252,12 +252,12 @@ public class C2295f {
         return;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:32:0x006a, code lost:
-        r0 = r7.f8148f.mo8190n("attest_retry_in", 1800000);
-        r7.f8148f.mo8157F("attest_retry_next", java.lang.System.currentTimeMillis() + r0);
-        r7.f8148f.mo8157F("attest_retry_in", java.lang.Math.min(r0 * 2, 129600000L));
+        r0 = r7.f8156f.mo8190n("attest_retry_in", 1800000);
+        r7.f8156f.mo8157F("attest_retry_next", java.lang.System.currentTimeMillis() + r0);
+        r7.f8156f.mo8157F("attest_retry_in", java.lang.Math.min(r0 * 2, 129600000L));
      */
     /* JADX WARNING: Code restructure failed: missing block: B:33:0x009d, code lost:
-        if (p069c.p073b.p074a.p075a.p077b.C1282d.m6764k().mo6281e(r7.f8145c) == 0) goto L_0x00a4;
+        if (p069c.p073b.p074a.p075a.p077b.C1282d.m6764k().mo6281e(r7.f8153c) == 0) goto L_0x00a4;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:34:0x009f, code lost:
         m10149f();
@@ -266,7 +266,7 @@ public class C2295f {
         return;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:39:?, code lost:
-        r7.f8146d.mo6218a(new p069c.p070a.p071a.p072w.C1275n(0, com.digdroid.alman.dig.ServerService.f7700b + "/gettoken.php", new com.digdroid.alman.dig.C2295f.C2296a(r7), new com.digdroid.alman.dig.C2295f.C2297b(r7)));
+        r7.f8154d.mo6218a(new p069c.p070a.p071a.p072w.C1275n(0, com.digdroid.alman.dig.ServerService.f7708b + "/gettoken.php", new com.digdroid.alman.dig.C2295f.C2296a(r7), new com.digdroid.alman.dig.C2295f.C2297b(r7)));
      */
     /* JADX WARNING: Code restructure failed: missing block: B:40:0x00cd, code lost:
         m10149f();

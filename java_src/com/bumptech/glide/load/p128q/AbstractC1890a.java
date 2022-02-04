@@ -20,29 +20,29 @@ import com.bumptech.glide.load.p128q.p129d.C1938r;
 public abstract class AbstractC1890a<T> implements AbstractC1649k<ImageDecoder.Source, T> {
 
     /* renamed from: a */
-    final C1938r f7151a = C1938r.m8778a();
+    final C1938r f7159a = C1938r.m8778a();
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.bumptech.glide.load.q.a$a */
     public class C1891a implements ImageDecoder.OnHeaderDecodedListener {
 
         /* renamed from: a */
-        final /* synthetic */ int f7152a;
+        final /* synthetic */ int f7160a;
 
         /* renamed from: b */
-        final /* synthetic */ int f7153b;
+        final /* synthetic */ int f7161b;
 
         /* renamed from: c */
-        final /* synthetic */ boolean f7154c;
+        final /* synthetic */ boolean f7162c;
 
         /* renamed from: d */
-        final /* synthetic */ EnumC1631b f7155d;
+        final /* synthetic */ EnumC1631b f7163d;
 
         /* renamed from: e */
-        final /* synthetic */ AbstractC1922l f7156e;
+        final /* synthetic */ AbstractC1922l f7164e;
 
         /* renamed from: f */
-        final /* synthetic */ EnumC1648j f7157f;
+        final /* synthetic */ EnumC1648j f7165f;
 
         /* renamed from: com.bumptech.glide.load.q.a$a$a */
         class C1892a implements ImageDecoder.OnPartialImageListener {
@@ -55,37 +55,37 @@ public abstract class AbstractC1890a<T> implements AbstractC1649k<ImageDecoder.S
         }
 
         C1891a(int i, int i2, boolean z, EnumC1631b bVar, AbstractC1922l lVar, EnumC1648j jVar) {
-            this.f7152a = i;
-            this.f7153b = i2;
-            this.f7154c = z;
-            this.f7155d = bVar;
-            this.f7156e = lVar;
-            this.f7157f = jVar;
+            this.f7160a = i;
+            this.f7161b = i2;
+            this.f7162c = z;
+            this.f7163d = bVar;
+            this.f7164e = lVar;
+            this.f7165f = jVar;
         }
 
         @SuppressLint({"Override"})
         public void onHeaderDecoded(ImageDecoder imageDecoder, ImageDecoder.ImageInfo imageInfo, ImageDecoder.Source source) {
             ColorSpace.Named named;
             boolean z = false;
-            if (AbstractC1890a.this.f7151a.mo7525c(this.f7152a, this.f7153b, this.f7154c, false)) {
+            if (AbstractC1890a.this.f7159a.mo7525c(this.f7160a, this.f7161b, this.f7162c, false)) {
                 imageDecoder.setAllocator(3);
             } else {
                 imageDecoder.setAllocator(1);
             }
-            if (this.f7155d == EnumC1631b.PREFER_RGB_565) {
+            if (this.f7163d == EnumC1631b.PREFER_RGB_565) {
                 imageDecoder.setMemorySizePolicy(0);
             }
             imageDecoder.setOnPartialImageListener(new C1892a());
             Size size = imageInfo.getSize();
-            int i = this.f7152a;
+            int i = this.f7160a;
             if (i == Integer.MIN_VALUE) {
                 i = size.getWidth();
             }
-            int i2 = this.f7153b;
+            int i2 = this.f7161b;
             if (i2 == Integer.MIN_VALUE) {
                 i2 = size.getHeight();
             }
-            float b = this.f7156e.mo7515b(size.getWidth(), size.getHeight(), i, i2);
+            float b = this.f7164e.mo7515b(size.getWidth(), size.getHeight(), i, i2);
             int round = Math.round(((float) size.getWidth()) * b);
             int round2 = Math.round(((float) size.getHeight()) * b);
             if (Log.isLoggable("ImageDecoder", 2)) {
@@ -94,7 +94,7 @@ public abstract class AbstractC1890a<T> implements AbstractC1649k<ImageDecoder.S
             imageDecoder.setTargetSize(round, round2);
             int i3 = Build.VERSION.SDK_INT;
             if (i3 >= 28) {
-                if (this.f7157f == EnumC1648j.DISPLAY_P3 && imageInfo.getColorSpace() != null && imageInfo.getColorSpace().isWideGamut()) {
+                if (this.f7165f == EnumC1648j.DISPLAY_P3 && imageInfo.getColorSpace() != null && imageInfo.getColorSpace().isWideGamut()) {
                     z = true;
                 }
                 if (z) {
@@ -117,10 +117,10 @@ public abstract class AbstractC1890a<T> implements AbstractC1649k<ImageDecoder.S
     /* JADX WARN: Multi-variable type inference failed */
     /* renamed from: d */
     public final AbstractC1794v<T> mo7088a(ImageDecoder.Source source, int i, int i2, C1647i iVar) {
-        EnumC1631b bVar = (EnumC1631b) iVar.mo7084c(C1930m.f7204a);
-        AbstractC1922l lVar = (AbstractC1922l) iVar.mo7084c(AbstractC1922l.f7199h);
-        C1644h<Boolean> hVar = C1930m.f7208e;
-        return mo7480c(source, i, i2, new C1891a(i, i2, iVar.mo7084c(hVar) != null && ((Boolean) iVar.mo7084c(hVar)).booleanValue(), bVar, lVar, (EnumC1648j) iVar.mo7084c(C1930m.f7205b)));
+        EnumC1631b bVar = (EnumC1631b) iVar.mo7084c(C1930m.f7212a);
+        AbstractC1922l lVar = (AbstractC1922l) iVar.mo7084c(AbstractC1922l.f7207h);
+        C1644h<Boolean> hVar = C1930m.f7216e;
+        return mo7480c(source, i, i2, new C1891a(i, i2, iVar.mo7084c(hVar) != null && ((Boolean) iVar.mo7084c(hVar)).booleanValue(), bVar, lVar, (EnumC1648j) iVar.mo7084c(C1930m.f7213b)));
     }
 
     /* renamed from: e */

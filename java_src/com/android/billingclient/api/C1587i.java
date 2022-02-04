@@ -7,35 +7,35 @@ import java.util.List;
 public class C1587i {
 
     /* renamed from: a */
-    private String f6472a;
+    private String f6480a;
 
     /* renamed from: b */
-    private String f6473b;
+    private String f6481b;
 
     /* renamed from: c */
-    private List<String> f6474c;
+    private List<String> f6482c;
 
     /* renamed from: com.android.billingclient.api.i$a */
     public static class C1588a {
 
         /* renamed from: a */
-        private String f6475a;
+        private String f6483a;
 
         /* renamed from: b */
-        private List<String> f6476b;
+        private List<String> f6484b;
 
         private C1588a() {
         }
 
         /* renamed from: a */
         public C1587i mo6952a() {
-            if (this.f6475a == null) {
+            if (this.f6483a == null) {
                 throw new IllegalArgumentException("SKU type must be set");
-            } else if (this.f6476b != null) {
+            } else if (this.f6484b != null) {
                 C1587i iVar = new C1587i();
-                iVar.f6472a = this.f6475a;
-                iVar.f6474c = this.f6476b;
-                iVar.f6473b = null;
+                iVar.f6480a = this.f6483a;
+                iVar.f6482c = this.f6484b;
+                iVar.f6481b = null;
                 return iVar;
             } else {
                 throw new IllegalArgumentException("SKUs list must be set");
@@ -44,13 +44,13 @@ public class C1587i {
 
         /* renamed from: b */
         public C1588a mo6953b(List<String> list) {
-            this.f6476b = new ArrayList(list);
+            this.f6484b = new ArrayList(list);
             return this;
         }
 
         /* renamed from: c */
         public C1588a mo6954c(String str) {
-            this.f6475a = str;
+            this.f6483a = str;
             return this;
         }
     }
@@ -62,16 +62,16 @@ public class C1587i {
 
     /* renamed from: a */
     public String mo6949a() {
-        return this.f6472a;
+        return this.f6480a;
     }
 
     /* renamed from: b */
     public List<String> mo6950b() {
-        return this.f6474c;
+        return this.f6482c;
     }
 
     /* renamed from: d */
     public final String mo6951d() {
-        return this.f6473b;
+        return this.f6481b;
     }
 }

@@ -6,10 +6,10 @@ import java.lang.ref.WeakReference;
 abstract class AbstractBinderC1298r extends AbstractBinderC1296p {
 
     /* renamed from: b */
-    private static final WeakReference<byte[]> f5567b = new WeakReference<>(null);
+    private static final WeakReference<byte[]> f5575b = new WeakReference<>(null);
 
     /* renamed from: c */
-    private WeakReference<byte[]> f5568c = f5567b;
+    private WeakReference<byte[]> f5576c = f5575b;
 
     AbstractBinderC1298r(byte[] bArr) {
         super(bArr);
@@ -21,10 +21,10 @@ abstract class AbstractBinderC1298r extends AbstractBinderC1296p {
     public final byte[] mo6305j() {
         byte[] bArr;
         synchronized (this) {
-            bArr = this.f5568c.get();
+            bArr = this.f5576c.get();
             if (bArr == null) {
                 bArr = mo6307w0();
-                this.f5568c = new WeakReference<>(bArr);
+                this.f5576c = new WeakReference<>(bArr);
             }
         }
         return bArr;

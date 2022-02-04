@@ -25,35 +25,35 @@ import java.io.InputStream;
 public final class C1883e<DataT> implements AbstractC1843n<Uri, DataT> {
 
     /* renamed from: a */
-    private final Context f7133a;
+    private final Context f7141a;
 
     /* renamed from: b */
-    private final AbstractC1843n<File, DataT> f7134b;
+    private final AbstractC1843n<File, DataT> f7142b;
 
     /* renamed from: c */
-    private final AbstractC1843n<Uri, DataT> f7135c;
+    private final AbstractC1843n<Uri, DataT> f7143c;
 
     /* renamed from: d */
-    private final Class<DataT> f7136d;
+    private final Class<DataT> f7144d;
 
     /* renamed from: com.bumptech.glide.load.p.y.e$a */
     private static abstract class AbstractC1884a<DataT> implements AbstractC1845o<Uri, DataT> {
 
         /* renamed from: a */
-        private final Context f7137a;
+        private final Context f7145a;
 
         /* renamed from: b */
-        private final Class<DataT> f7138b;
+        private final Class<DataT> f7146b;
 
         AbstractC1884a(Context context, Class<DataT> cls) {
-            this.f7137a = context;
-            this.f7138b = cls;
+            this.f7145a = context;
+            this.f7146b = cls;
         }
 
         @Override // com.bumptech.glide.load.p126p.AbstractC1845o
         /* renamed from: b */
         public final AbstractC1843n<Uri, DataT> mo7398b(C1851r rVar) {
-            return new C1883e(this.f7137a, rVar.mo7452d(File.class, this.f7138b), rVar.mo7452d(Uri.class, this.f7138b), this.f7138b);
+            return new C1883e(this.f7145a, rVar.mo7452d(File.class, this.f7146b), rVar.mo7452d(Uri.class, this.f7146b), this.f7146b);
         }
     }
 
@@ -76,55 +76,55 @@ public final class C1883e<DataT> implements AbstractC1843n<Uri, DataT> {
     public static final class C1887d<DataT> implements AbstractC1655d<DataT> {
 
         /* renamed from: b */
-        private static final String[] f7139b = {"_data"};
+        private static final String[] f7147b = {"_data"};
 
         /* renamed from: c */
-        private final Context f7140c;
+        private final Context f7148c;
 
         /* renamed from: d */
-        private final AbstractC1843n<File, DataT> f7141d;
+        private final AbstractC1843n<File, DataT> f7149d;
 
         /* renamed from: e */
-        private final AbstractC1843n<Uri, DataT> f7142e;
+        private final AbstractC1843n<Uri, DataT> f7150e;
 
         /* renamed from: f */
-        private final Uri f7143f;
+        private final Uri f7151f;
 
         /* renamed from: g */
-        private final int f7144g;
+        private final int f7152g;
 
         /* renamed from: h */
-        private final int f7145h;
+        private final int f7153h;
 
         /* renamed from: i */
-        private final C1647i f7146i;
+        private final C1647i f7154i;
 
         /* renamed from: j */
-        private final Class<DataT> f7147j;
+        private final Class<DataT> f7155j;
 
         /* renamed from: k */
-        private volatile boolean f7148k;
+        private volatile boolean f7156k;
 
         /* renamed from: l */
-        private volatile AbstractC1655d<DataT> f7149l;
+        private volatile AbstractC1655d<DataT> f7157l;
 
         C1887d(Context context, AbstractC1843n<File, DataT> nVar, AbstractC1843n<Uri, DataT> nVar2, Uri uri, int i, int i2, C1647i iVar, Class<DataT> cls) {
-            this.f7140c = context.getApplicationContext();
-            this.f7141d = nVar;
-            this.f7142e = nVar2;
-            this.f7143f = uri;
-            this.f7144g = i;
-            this.f7145h = i2;
-            this.f7146i = iVar;
-            this.f7147j = cls;
+            this.f7148c = context.getApplicationContext();
+            this.f7149d = nVar;
+            this.f7150e = nVar2;
+            this.f7151f = uri;
+            this.f7152g = i;
+            this.f7153h = i2;
+            this.f7154i = iVar;
+            this.f7155j = cls;
         }
 
         /* renamed from: d */
         private AbstractC1843n.C1844a<DataT> m8609d() {
             if (Environment.isExternalStorageLegacy()) {
-                return this.f7141d.mo7393a(m8612h(this.f7143f), this.f7144g, this.f7145h, this.f7146i);
+                return this.f7149d.mo7393a(m8612h(this.f7151f), this.f7152g, this.f7153h, this.f7154i);
             }
-            return this.f7142e.mo7393a(m8611g() ? MediaStore.setRequireOriginal(this.f7143f) : this.f7143f, this.f7144g, this.f7145h, this.f7146i);
+            return this.f7150e.mo7393a(m8611g() ? MediaStore.setRequireOriginal(this.f7151f) : this.f7151f, this.f7152g, this.f7153h, this.f7154i);
         }
 
         /* JADX DEBUG: Type inference failed for r0v2. Raw type applied. Possible types: com.bumptech.glide.load.n.d<Data>, com.bumptech.glide.load.n.d<DataT> */
@@ -132,21 +132,21 @@ public final class C1883e<DataT> implements AbstractC1843n<Uri, DataT> {
         private AbstractC1655d<DataT> m8610f() {
             AbstractC1843n.C1844a<DataT> d = m8609d();
             if (d != null) {
-                return (AbstractC1655d<Data>) d.f7083c;
+                return (AbstractC1655d<Data>) d.f7091c;
             }
             return null;
         }
 
         /* renamed from: g */
         private boolean m8611g() {
-            return this.f7140c.checkSelfPermission("android.permission.ACCESS_MEDIA_LOCATION") == 0;
+            return this.f7148c.checkSelfPermission("android.permission.ACCESS_MEDIA_LOCATION") == 0;
         }
 
         /* renamed from: h */
         private File m8612h(Uri uri) {
             Cursor cursor = null;
             try {
-                Cursor query = this.f7140c.getContentResolver().query(uri, f7139b, null, null, null);
+                Cursor query = this.f7148c.getContentResolver().query(uri, f7147b, null, null, null);
                 if (query == null || !query.moveToFirst()) {
                     throw new FileNotFoundException("Failed to media store entry for: " + uri);
                 }
@@ -168,13 +168,13 @@ public final class C1883e<DataT> implements AbstractC1843n<Uri, DataT> {
         @Override // com.bumptech.glide.load.p120n.AbstractC1655d
         /* renamed from: a */
         public Class<DataT> mo7092a() {
-            return this.f7147j;
+            return this.f7155j;
         }
 
         @Override // com.bumptech.glide.load.p120n.AbstractC1655d
         /* renamed from: b */
         public void mo7097b() {
-            AbstractC1655d<DataT> dVar = this.f7149l;
+            AbstractC1655d<DataT> dVar = this.f7157l;
             if (dVar != null) {
                 dVar.mo7097b();
             }
@@ -188,8 +188,8 @@ public final class C1883e<DataT> implements AbstractC1843n<Uri, DataT> {
 
         @Override // com.bumptech.glide.load.p120n.AbstractC1655d
         public void cancel() {
-            this.f7148k = true;
-            AbstractC1655d<DataT> dVar = this.f7149l;
+            this.f7156k = true;
+            AbstractC1655d<DataT> dVar = this.f7157l;
             if (dVar != null) {
                 dVar.cancel();
             }
@@ -201,11 +201,11 @@ public final class C1883e<DataT> implements AbstractC1843n<Uri, DataT> {
             try {
                 AbstractC1655d<DataT> f = m8610f();
                 if (f == null) {
-                    aVar.mo7108d(new IllegalArgumentException("Failed to build fetcher for: " + this.f7143f));
+                    aVar.mo7108d(new IllegalArgumentException("Failed to build fetcher for: " + this.f7151f));
                     return;
                 }
-                this.f7149l = f;
-                if (this.f7148k) {
+                this.f7157l = f;
+                if (this.f7156k) {
                     cancel();
                 } else {
                     f.mo7101e(gVar, aVar);
@@ -217,15 +217,15 @@ public final class C1883e<DataT> implements AbstractC1843n<Uri, DataT> {
     }
 
     C1883e(Context context, AbstractC1843n<File, DataT> nVar, AbstractC1843n<Uri, DataT> nVar2, Class<DataT> cls) {
-        this.f7133a = context.getApplicationContext();
-        this.f7134b = nVar;
-        this.f7135c = nVar2;
-        this.f7136d = cls;
+        this.f7141a = context.getApplicationContext();
+        this.f7142b = nVar;
+        this.f7143c = nVar2;
+        this.f7144d = cls;
     }
 
     /* renamed from: c */
     public AbstractC1843n.C1844a<DataT> mo7393a(Uri uri, int i, int i2, C1647i iVar) {
-        return new AbstractC1843n.C1844a<>(new C2067d(uri), new C1887d(this.f7133a, this.f7134b, this.f7135c, uri, i, i2, iVar, this.f7136d));
+        return new AbstractC1843n.C1844a<>(new C2067d(uri), new C1887d(this.f7141a, this.f7142b, this.f7143c, uri, i, i2, iVar, this.f7144d));
     }
 
     /* renamed from: d */

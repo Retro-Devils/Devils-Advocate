@@ -63,20 +63,20 @@ final class C0387d {
     static Shader m1917b(Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) {
         String name = xmlPullParser.getName();
         if (name.equals("gradient")) {
-            TypedArray k = C0397g.m1946k(resources, theme, attributeSet, C0900c.f4519w);
-            float f = C0397g.m1941f(k, xmlPullParser, "startX", C0900c.f4490F, 0.0f);
-            float f2 = C0397g.m1941f(k, xmlPullParser, "startY", C0900c.f4491G, 0.0f);
-            float f3 = C0397g.m1941f(k, xmlPullParser, "endX", C0900c.f4492H, 0.0f);
-            float f4 = C0397g.m1941f(k, xmlPullParser, "endY", C0900c.f4493I, 0.0f);
-            float f5 = C0397g.m1941f(k, xmlPullParser, "centerX", C0900c.f4485A, 0.0f);
-            float f6 = C0397g.m1941f(k, xmlPullParser, "centerY", C0900c.f4486B, 0.0f);
-            int g = C0397g.m1942g(k, xmlPullParser, "type", C0900c.f4522z, 0);
-            int b = C0397g.m1937b(k, xmlPullParser, "startColor", C0900c.f4520x, 0);
+            TypedArray k = C0397g.m1946k(resources, theme, attributeSet, C0900c.f4523w);
+            float f = C0397g.m1941f(k, xmlPullParser, "startX", C0900c.f4494F, 0.0f);
+            float f2 = C0397g.m1941f(k, xmlPullParser, "startY", C0900c.f4495G, 0.0f);
+            float f3 = C0397g.m1941f(k, xmlPullParser, "endX", C0900c.f4496H, 0.0f);
+            float f4 = C0397g.m1941f(k, xmlPullParser, "endY", C0900c.f4497I, 0.0f);
+            float f5 = C0397g.m1941f(k, xmlPullParser, "centerX", C0900c.f4489A, 0.0f);
+            float f6 = C0397g.m1941f(k, xmlPullParser, "centerY", C0900c.f4490B, 0.0f);
+            int g = C0397g.m1942g(k, xmlPullParser, "type", C0900c.f4526z, 0);
+            int b = C0397g.m1937b(k, xmlPullParser, "startColor", C0900c.f4524x, 0);
             boolean j = C0397g.m1945j(xmlPullParser, "centerColor");
-            int b2 = C0397g.m1937b(k, xmlPullParser, "centerColor", C0900c.f4489E, 0);
-            int b3 = C0397g.m1937b(k, xmlPullParser, "endColor", C0900c.f4521y, 0);
-            int g2 = C0397g.m1942g(k, xmlPullParser, "tileMode", C0900c.f4488D, 0);
-            float f7 = C0397g.m1941f(k, xmlPullParser, "gradientRadius", C0900c.f4487C, 0.0f);
+            int b2 = C0397g.m1937b(k, xmlPullParser, "centerColor", C0900c.f4493E, 0);
+            int b3 = C0397g.m1937b(k, xmlPullParser, "endColor", C0900c.f4525y, 0);
+            int g2 = C0397g.m1942g(k, xmlPullParser, "tileMode", C0900c.f4492D, 0);
+            float f7 = C0397g.m1941f(k, xmlPullParser, "gradientRadius", C0900c.f4491C, 0.0f);
             k.recycle();
             C0388a a = m1916a(m1918c(resources, xmlPullParser, attributeSet, theme), b, b3, j, b2);
             if (g != 1) {

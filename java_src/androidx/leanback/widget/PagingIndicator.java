@@ -309,23 +309,23 @@ public class PagingIndicator extends View {
         AnimatorSet animatorSet = new AnimatorSet();
         this.f2637A = animatorSet;
         Resources resources = getResources();
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4967l, i, 0);
-        int g = m2729g(obtainStyledAttributes, C1080l.f4974s, C1071c.lb_page_indicator_dot_radius);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4974l, i, 0);
+        int g = m2729g(obtainStyledAttributes, C1080l.f4981s, C1071c.lb_page_indicator_dot_radius);
         this.f2644h = g;
         this.f2643g = g * 2;
-        int g2 = m2729g(obtainStyledAttributes, C1080l.f4970o, C1071c.lb_page_indicator_arrow_radius);
+        int g2 = m2729g(obtainStyledAttributes, C1080l.f4977o, C1071c.lb_page_indicator_arrow_radius);
         this.f2647k = g2;
         int i2 = g2 * 2;
         this.f2646j = i2;
-        this.f2645i = m2729g(obtainStyledAttributes, C1080l.f4973r, C1071c.lb_page_indicator_dot_gap);
-        this.f2648l = m2729g(obtainStyledAttributes, C1080l.f4972q, C1071c.lb_page_indicator_arrow_gap);
-        int f = m2728f(obtainStyledAttributes, C1080l.f4971p, C1070b.lb_page_indicator_dot);
+        this.f2645i = m2729g(obtainStyledAttributes, C1080l.f4980r, C1071c.lb_page_indicator_dot_gap);
+        this.f2648l = m2729g(obtainStyledAttributes, C1080l.f4979q, C1071c.lb_page_indicator_arrow_gap);
+        int f = m2728f(obtainStyledAttributes, C1080l.f4978p, C1070b.lb_page_indicator_dot);
         Paint paint = new Paint(1);
         this.f2659w = paint;
         paint.setColor(f);
-        this.f2658v = m2728f(obtainStyledAttributes, C1080l.f4968m, C1070b.lb_page_indicator_arrow_background);
+        this.f2658v = m2728f(obtainStyledAttributes, C1080l.f4975m, C1070b.lb_page_indicator_arrow_background);
         if (this.f2639C == null) {
-            int i3 = C1080l.f4969n;
+            int i3 = C1080l.f4976n;
             if (obtainStyledAttributes.hasValue(i3)) {
                 setArrowColor(obtainStyledAttributes.getColor(i3, 0));
             }

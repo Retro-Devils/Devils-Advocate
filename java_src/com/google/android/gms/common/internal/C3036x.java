@@ -9,21 +9,21 @@ import com.google.android.gms.common.internal.AbstractC2978c;
 public final class C3036x implements AbstractC2978c.AbstractC2979a {
 
     /* renamed from: a */
-    private final /* synthetic */ AbstractC2911f.AbstractC2912a f10039a;
+    private final /* synthetic */ AbstractC2911f.AbstractC2912a f10047a;
 
     C3036x(AbstractC2911f.AbstractC2912a aVar) {
-        this.f10039a = aVar;
+        this.f10047a = aVar;
     }
 
     @Override // com.google.android.gms.common.internal.AbstractC2978c.AbstractC2979a
     /* renamed from: j */
     public final void mo9728j(int i) {
-        this.f10039a.mo9592j(i);
+        this.f10047a.mo9592j(i);
     }
 
     @Override // com.google.android.gms.common.internal.AbstractC2978c.AbstractC2979a
     /* renamed from: m */
     public final void mo9729m(Bundle bundle) {
-        this.f10039a.mo9593m(bundle);
+        this.f10047a.mo9593m(bundle);
     }
 }

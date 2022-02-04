@@ -10,24 +10,24 @@ import com.google.android.gms.common.api.internal.C2927d;
 public final class C2939h0<A extends AbstractC2925c<? extends AbstractC2964k, C2894a.AbstractC2896b>> extends AbstractC2951o {
 
     /* renamed from: b */
-    private final A f9846b;
+    private final A f9854b;
 
     public C2939h0(int i, A a) {
         super(i);
-        this.f9846b = a;
+        this.f9854b = a;
     }
 
     @Override // com.google.android.gms.common.api.internal.AbstractC2951o
     /* renamed from: b */
     public final void mo9657b(Status status) {
-        this.f9846b.mo9624p(status);
+        this.f9854b.mo9624p(status);
     }
 
     @Override // com.google.android.gms.common.api.internal.AbstractC2951o
     /* renamed from: c */
     public final void mo9658c(C2927d.C2928a<?> aVar) {
         try {
-            this.f9846b.mo9623n(aVar.mo9644o());
+            this.f9854b.mo9623n(aVar.mo9644o());
         } catch (RuntimeException e) {
             mo9659e(e);
         }
@@ -36,7 +36,7 @@ public final class C2939h0<A extends AbstractC2925c<? extends AbstractC2964k, C2
     @Override // com.google.android.gms.common.api.internal.AbstractC2951o
     /* renamed from: d */
     public final void mo9661d(C2942j jVar, boolean z) {
-        jVar.mo9664b(this.f9846b, z);
+        jVar.mo9664b(this.f9854b, z);
     }
 
     @Override // com.google.android.gms.common.api.internal.AbstractC2951o
@@ -48,6 +48,6 @@ public final class C2939h0<A extends AbstractC2925c<? extends AbstractC2964k, C2
         sb.append(simpleName);
         sb.append(": ");
         sb.append(localizedMessage);
-        this.f9846b.mo9624p(new Status(10, sb.toString()));
+        this.f9854b.mo9624p(new Status(10, sb.toString()));
     }
 }

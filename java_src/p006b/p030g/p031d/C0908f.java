@@ -20,16 +20,16 @@ import p006b.p030g.p036h.C0923b;
 class C0908f extends C0912j {
 
     /* renamed from: b */
-    private static final Class<?> f4540b;
+    private static final Class<?> f4544b;
 
     /* renamed from: c */
-    private static final Constructor<?> f4541c;
+    private static final Constructor<?> f4545c;
 
     /* renamed from: d */
-    private static final Method f4542d;
+    private static final Method f4546d;
 
     /* renamed from: e */
-    private static final Method f4543e;
+    private static final Method f4547e;
 
     static {
         Method method;
@@ -49,10 +49,10 @@ class C0908f extends C0912j {
             method2 = null;
             method = null;
         }
-        f4541c = constructor;
-        f4540b = cls;
-        f4542d = method;
-        f4543e = method2;
+        f4545c = constructor;
+        f4544b = cls;
+        f4546d = method;
+        f4547e = method2;
     }
 
     C0908f() {
@@ -61,7 +61,7 @@ class C0908f extends C0912j {
     /* renamed from: k */
     private static boolean m5333k(Object obj, ByteBuffer byteBuffer, int i, int i2, boolean z) {
         try {
-            return ((Boolean) f4542d.invoke(obj, byteBuffer, Integer.valueOf(i), null, Integer.valueOf(i2), Boolean.valueOf(z))).booleanValue();
+            return ((Boolean) f4546d.invoke(obj, byteBuffer, Integer.valueOf(i), null, Integer.valueOf(i2), Boolean.valueOf(z))).booleanValue();
         } catch (IllegalAccessException | InvocationTargetException unused) {
             return false;
         }
@@ -70,9 +70,9 @@ class C0908f extends C0912j {
     /* renamed from: l */
     private static Typeface m5334l(Object obj) {
         try {
-            Object newInstance = Array.newInstance(f4540b, 1);
+            Object newInstance = Array.newInstance(f4544b, 1);
             Array.set(newInstance, 0, obj);
-            return (Typeface) f4543e.invoke(null, newInstance);
+            return (Typeface) f4547e.invoke(null, newInstance);
         } catch (IllegalAccessException | InvocationTargetException unused) {
             return null;
         }
@@ -80,7 +80,7 @@ class C0908f extends C0912j {
 
     /* renamed from: m */
     public static boolean m5335m() {
-        Method method = f4542d;
+        Method method = f4546d;
         if (method == null) {
             Log.w("TypefaceCompatApi24Impl", "Unable to collect necessary private methods.Fallback to legacy implementation.");
         }
@@ -90,7 +90,7 @@ class C0908f extends C0912j {
     /* renamed from: n */
     private static Object m5336n() {
         try {
-            return f4541c.newInstance(new Object[0]);
+            return f4545c.newInstance(new Object[0]);
         } catch (IllegalAccessException | InstantiationException | InvocationTargetException unused) {
             return null;
         }

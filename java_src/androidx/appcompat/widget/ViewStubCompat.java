@@ -42,10 +42,10 @@ public final class ViewStubCompat extends View {
     public ViewStubCompat(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
         this.f910b = 0;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C0763j.f3682V3, i, 0);
-        this.f911c = obtainStyledAttributes.getResourceId(C0763j.f3697Y3, -1);
-        this.f910b = obtainStyledAttributes.getResourceId(C0763j.f3692X3, 0);
-        setId(obtainStyledAttributes.getResourceId(C0763j.f3687W3, -1));
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C0763j.f3686V3, i, 0);
+        this.f911c = obtainStyledAttributes.getResourceId(C0763j.f3701Y3, -1);
+        this.f910b = obtainStyledAttributes.getResourceId(C0763j.f3696X3, 0);
+        setId(obtainStyledAttributes.getResourceId(C0763j.f3691W3, -1));
         obtainStyledAttributes.recycle();
         setVisibility(8);
         setWillNotDraw(true);

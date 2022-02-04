@@ -8,17 +8,17 @@ import android.database.sqlite.SQLiteDatabase;
 public class C2206b2 extends AbstractC2526p {
 
     /* renamed from: e */
-    SQLiteDatabase f7919e;
+    SQLiteDatabase f7927e;
 
     /* renamed from: f */
-    SQLiteDatabase f7920f;
+    SQLiteDatabase f7928f;
 
     public C2206b2() {
     }
 
     public C2206b2(SQLiteDatabase sQLiteDatabase, SQLiteDatabase sQLiteDatabase2) {
-        this.f7919e = sQLiteDatabase;
-        this.f7920f = sQLiteDatabase2;
+        this.f7927e = sQLiteDatabase;
+        this.f7928f = sQLiteDatabase2;
     }
 
     /* access modifiers changed from: package-private */
@@ -26,7 +26,7 @@ public class C2206b2 extends AbstractC2526p {
     /* renamed from: b */
     public String mo8091b(long j) {
         String str = null;
-        Cursor rawQuery = this.f7920f.rawQuery("SELECT title,system FROM roms WHERE _id=" + j, null);
+        Cursor rawQuery = this.f7928f.rawQuery("SELECT title,system FROM roms WHERE _id=" + j, null);
         if (rawQuery.moveToFirst()) {
             str = "http://www.mobygames.com/game/" + mo8093f(rawQuery.getString(1)) + "/" + mo8094g(rawQuery.getString(0));
         }

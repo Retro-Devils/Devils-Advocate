@@ -4,14 +4,14 @@ package com.google.android.gms.common.util;
 public class C3042d implements AbstractC3041c {
 
     /* renamed from: a */
-    private static final C3042d f10041a = new C3042d();
+    private static final C3042d f10049a = new C3042d();
 
     private C3042d() {
     }
 
     /* renamed from: b */
     public static AbstractC3041c m12436b() {
-        return f10041a;
+        return f10049a;
     }
 
     @Override // com.google.android.gms.common.util.AbstractC3041c

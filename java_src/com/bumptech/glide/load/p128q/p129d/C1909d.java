@@ -12,7 +12,7 @@ import com.bumptech.glide.load.p128q.AbstractC1890a;
 public final class C1909d extends AbstractC1890a<Bitmap> {
 
     /* renamed from: b */
-    private final AbstractC1695e f7180b = new C1696f();
+    private final AbstractC1695e f7188b = new C1696f();
 
     /* access modifiers changed from: protected */
     @Override // com.bumptech.glide.load.p128q.AbstractC1890a
@@ -22,6 +22,6 @@ public final class C1909d extends AbstractC1890a<Bitmap> {
         if (Log.isLoggable("BitmapImageDecoder", 2)) {
             Log.v("BitmapImageDecoder", "Decoded [" + decodeBitmap.getWidth() + "x" + decodeBitmap.getHeight() + "] for [" + i + "x" + i2 + "]");
         }
-        return new C1910e(decodeBitmap, this.f7180b);
+        return new C1910e(decodeBitmap, this.f7188b);
     }
 }

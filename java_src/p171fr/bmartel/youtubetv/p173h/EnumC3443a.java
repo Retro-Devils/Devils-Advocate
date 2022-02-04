@@ -10,14 +10,14 @@ public enum EnumC3443a {
     
 
     /* renamed from: h */
-    private String f11672h;
+    private String f11681h;
 
     /* renamed from: i */
-    private int f11673i;
+    private int f11682i;
 
     private EnumC3443a(int i, String str) {
-        this.f11673i = i;
-        this.f11672h = str;
+        this.f11682i = i;
+        this.f11681h = str;
     }
 
     /* renamed from: b */
@@ -33,11 +33,11 @@ public enum EnumC3443a {
 
     /* renamed from: a */
     public int mo11522a() {
-        return this.f11673i;
+        return this.f11682i;
     }
 
     /* renamed from: c */
     public String mo11523c() {
-        return this.f11672h;
+        return this.f11681h;
     }
 }

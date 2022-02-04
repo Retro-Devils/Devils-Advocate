@@ -13,10 +13,10 @@ import java.util.Set;
 public class C1873x<Data> implements AbstractC1843n<Uri, Data> {
 
     /* renamed from: a */
-    private static final Set<String> f7122a = Collections.unmodifiableSet(new HashSet(Arrays.asList("http", "https")));
+    private static final Set<String> f7130a = Collections.unmodifiableSet(new HashSet(Arrays.asList("http", "https")));
 
     /* renamed from: b */
-    private final AbstractC1843n<C1829g, Data> f7123b;
+    private final AbstractC1843n<C1829g, Data> f7131b;
 
     /* renamed from: com.bumptech.glide.load.p.x$a */
     public static class C1874a implements AbstractC1845o<Uri, InputStream> {
@@ -28,16 +28,16 @@ public class C1873x<Data> implements AbstractC1843n<Uri, Data> {
     }
 
     public C1873x(AbstractC1843n<C1829g, Data> nVar) {
-        this.f7123b = nVar;
+        this.f7131b = nVar;
     }
 
     /* renamed from: c */
     public AbstractC1843n.C1844a<Data> mo7393a(Uri uri, int i, int i2, C1647i iVar) {
-        return this.f7123b.mo7393a(new C1829g(uri.toString()), i, i2, iVar);
+        return this.f7131b.mo7393a(new C1829g(uri.toString()), i, i2, iVar);
     }
 
     /* renamed from: d */
     public boolean mo7394b(Uri uri) {
-        return f7122a.contains(uri.getScheme());
+        return f7130a.contains(uri.getScheme());
     }
 }

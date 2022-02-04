@@ -17,46 +17,46 @@ import java.util.HashMap;
 public abstract class AbstractC2531p1 extends Fragment {
 
     /* renamed from: Z */
-    C2219c3 f8793Z;
+    C2219c3 f8801Z;
 
     /* renamed from: a0 */
-    C2775u f8794a0;
+    C2775u f8802a0;
 
     /* renamed from: b0 */
-    C2375h3 f8795b0;
+    C2375h3 f8803b0;
 
     /* renamed from: c0 */
-    C2512o0 f8796c0;
+    C2512o0 f8804c0;
 
     /* renamed from: d0 */
-    C2187b0 f8797d0;
+    C2187b0 f8805d0;
 
     /* renamed from: e0 */
-    C2886z1 f8798e0;
+    C2886z1 f8806e0;
 
     /* renamed from: f0 */
-    C2749t1 f8799f0;
+    C2749t1 f8807f0;
 
     /* renamed from: g0 */
-    C2774t3 f8800g0;
+    C2774t3 f8808g0;
 
     /* renamed from: h0 */
-    String f8801h0 = "";
+    String f8809h0 = "";
 
     /* renamed from: i0 */
-    boolean f8802i0 = false;
+    boolean f8810i0 = false;
 
     /* renamed from: j0 */
-    boolean f8803j0 = false;
+    boolean f8811j0 = false;
 
     /* renamed from: k0 */
-    private boolean f8804k0 = false;
+    private boolean f8812k0 = false;
 
     /* renamed from: l0 */
-    Context f8805l0;
+    Context f8813l0;
 
     /* renamed from: m0 */
-    AbstractC2532a f8806m0;
+    AbstractC2532a f8814m0;
 
     /* renamed from: com.digdroid.alman.dig.p1$a */
     public interface AbstractC2532a {
@@ -219,7 +219,7 @@ public abstract class AbstractC2531p1 extends Fragment {
 
     /* renamed from: B2 */
     public boolean mo8102B2() {
-        return this.f8802i0;
+        return this.f8810i0;
     }
 
     /* renamed from: C2 */
@@ -239,15 +239,15 @@ public abstract class AbstractC2531p1 extends Fragment {
 
     /* renamed from: F2 */
     public void mo8105F2() {
-        if (mo8102B2() && this.f8804k0) {
+        if (mo8102B2() && this.f8812k0) {
             mo8407O2();
         }
-        this.f8804k0 = false;
+        this.f8812k0 = false;
     }
 
     /* renamed from: G2 */
     public void mo8106G2(boolean z) {
-        this.f8804k0 = z;
+        this.f8812k0 = z;
     }
 
     /* access modifiers changed from: package-private */
@@ -335,7 +335,7 @@ public abstract class AbstractC2531p1 extends Fragment {
 
     /* renamed from: P2 */
     public void mo8111P2() {
-        AbstractC2532a aVar = this.f8806m0;
+        AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
             aVar.mo8293r();
         }
@@ -343,15 +343,15 @@ public abstract class AbstractC2531p1 extends Fragment {
 
     /* renamed from: Q2 */
     public void mo8112Q2() {
-        AbstractC2532a aVar = this.f8806m0;
+        AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
-            aVar.mo8903G(this.f8800g0, null, null);
+            aVar.mo8903G(this.f8808g0, null, null);
         }
     }
 
     /* renamed from: R2 */
     public void mo8113R2() {
-        AbstractC2532a aVar = this.f8806m0;
+        AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
             aVar.mo8302w(true);
         }
@@ -359,7 +359,7 @@ public abstract class AbstractC2531p1 extends Fragment {
 
     /* renamed from: S2 */
     public void mo8114S2() {
-        AbstractC2532a aVar = this.f8806m0;
+        AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
             Menu B = aVar.mo8254B();
             B.findItem(R.id.game_group).setVisible(false);
@@ -373,15 +373,15 @@ public abstract class AbstractC2531p1 extends Fragment {
     @Override // androidx.fragment.app.Fragment
     /* renamed from: T0 */
     public void mo2531T0(Context context) {
-        this.f8802i0 = false;
+        this.f8810i0 = false;
         super.mo2531T0(context);
-        this.f8805l0 = context.getApplicationContext();
-        this.f8806m0 = (AbstractC2532a) context;
+        this.f8813l0 = context.getApplicationContext();
+        this.f8814m0 = (AbstractC2532a) context;
     }
 
     /* renamed from: T2 */
     public void mo8115T2(C2369h0 h0Var) {
-        AbstractC2532a aVar = this.f8806m0;
+        AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
             aVar.mo8265T(h0Var);
         }
@@ -393,7 +393,7 @@ public abstract class AbstractC2531p1 extends Fragment {
 
     /* renamed from: V2 */
     public void mo8897V2() {
-        this.f8802i0 = true;
+        this.f8810i0 = true;
         mo8109K2();
     }
 
@@ -401,41 +401,41 @@ public abstract class AbstractC2531p1 extends Fragment {
     /* renamed from: W0 */
     public void mo2537W0(Bundle bundle) {
         boolean z = false;
-        this.f8802i0 = false;
+        this.f8810i0 = false;
         super.mo2537W0(bundle);
         if (!mo8103C2()) {
-            this.f8793Z = C2219c3.m9805k(this.f8805l0);
-            C2775u e = C2775u.m11726e(this.f8805l0);
-            this.f8794a0 = e;
-            this.f8795b0 = C2375h3.m10306r(this.f8805l0, e);
-            C2512o0 g = C2512o0.m10833g(this.f8805l0, this.f8794a0);
-            this.f8796c0 = g;
-            this.f8797d0 = C2187b0.m9701o(this.f8805l0, this.f8795b0, g);
-            this.f8798e0 = C2886z1.m11967b(this.f8805l0);
-            if (mo8248r2() >= 0 && !this.f8793Z.mo8196t()) {
+            this.f8801Z = C2219c3.m9805k(this.f8813l0);
+            C2775u e = C2775u.m11726e(this.f8813l0);
+            this.f8802a0 = e;
+            this.f8803b0 = C2375h3.m10306r(this.f8813l0, e);
+            C2512o0 g = C2512o0.m10833g(this.f8813l0, this.f8802a0);
+            this.f8804c0 = g;
+            this.f8805d0 = C2187b0.m9701o(this.f8813l0, this.f8803b0, g);
+            this.f8806e0 = C2886z1.m11967b(this.f8813l0);
+            if (mo8248r2() >= 0 && !this.f8801Z.mo8196t()) {
                 z = true;
             }
         }
         mo2557d2(z);
-        this.f8800g0 = new C2774t3();
-        C2553q3.f8891a.f9397a.mo9210M(mo8127t2(), this.f8800g0);
+        this.f8808g0 = new C2774t3();
+        C2553q3.f8899a.f9405a.mo9210M(mo8127t2(), this.f8808g0);
     }
 
     /* renamed from: W2 */
     public void mo8117W2() {
-        if (this.f8806m0 != null && !mo8103C2()) {
-            this.f8806m0.mo8905W(this.f8801h0);
+        if (this.f8814m0 != null && !mo8103C2()) {
+            this.f8814m0.mo8905W(this.f8809h0);
         }
     }
 
     /* renamed from: X2 */
     public void mo8118X2(String str) {
-        this.f8801h0 = str;
+        this.f8809h0 = str;
     }
 
     /* renamed from: Y2 */
     public void mo8119Y2(String str) {
-        AbstractC2532a aVar = this.f8806m0;
+        AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
             aVar.mo8911v(str);
         }
@@ -452,27 +452,27 @@ public abstract class AbstractC2531p1 extends Fragment {
     /* access modifiers changed from: package-private */
     /* renamed from: Z2 */
     public void mo8898Z2(String str) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8158G(mo8127t2() + "_toolbar", str);
     }
 
     /* renamed from: a3 */
     public void mo8120a3(boolean z) {
-        if (z && !this.f8803j0) {
+        if (z && !this.f8811j0) {
             mo8119Y2(mo8409w2());
             mo8117W2();
             mo8105F2();
             mo8113R2();
             mo8114S2();
         }
-        this.f8803j0 = z;
+        this.f8811j0 = z;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: b3 */
     public boolean mo8899b3(String str) {
-        boolean w = this.f8795b0.mo8572w(str);
-        return this.f8795b0.mo8569t(str).equals("mame") ? !w : w;
+        boolean w = this.f8803b0.mo8572w(str);
+        return this.f8803b0.mo8569t(str).equals("mame") ? !w : w;
     }
 
     /* renamed from: c3 */
@@ -486,7 +486,7 @@ public abstract class AbstractC2531p1 extends Fragment {
 
     /* renamed from: e */
     public void mo8900e() {
-        AbstractC2532a aVar = this.f8806m0;
+        AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
             aVar.mo8906e();
         }
@@ -513,7 +513,7 @@ public abstract class AbstractC2531p1 extends Fragment {
 
     /* renamed from: l */
     public boolean mo8902l() {
-        AbstractC2532a aVar = this.f8806m0;
+        AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
             return aVar.mo8908l();
         }
@@ -524,7 +524,7 @@ public abstract class AbstractC2531p1 extends Fragment {
     /* renamed from: m1 */
     public void mo2585m1() {
         super.mo2585m1();
-        this.f8803j0 = false;
+        this.f8811j0 = false;
     }
 
     /* access modifiers changed from: package-private */
@@ -539,10 +539,10 @@ public abstract class AbstractC2531p1 extends Fragment {
     @Override // androidx.fragment.app.Fragment
     /* renamed from: r1 */
     public void mo2601r1() {
-        this.f8802i0 = false;
+        this.f8810i0 = false;
         super.mo2601r1();
-        if (!mo8103C2() && !this.f8793Z.mo8186i()) {
-            ImageService.m9511a(this.f8805l0);
+        if (!mo8103C2() && !this.f8801Z.mo8186i()) {
+            ImageService.m9511a(this.f8813l0);
         }
     }
 
@@ -554,20 +554,20 @@ public abstract class AbstractC2531p1 extends Fragment {
 
     /* renamed from: s2 */
     public String mo8126s2() {
-        return this.f8801h0;
+        return this.f8809h0;
     }
 
     @Override // androidx.fragment.app.Fragment
     /* renamed from: t1 */
     public void mo2605t1() {
-        this.f8802i0 = false;
+        this.f8810i0 = false;
         super.mo2605t1();
         if (!mo8103C2()) {
-            this.f8794a0.mo9329h();
-            this.f8798e0.mo9516c();
-            this.f8796c0.mo8850o();
-            this.f8795b0.mo8543C();
-            this.f8799f0 = C2749t1.m11663p(this.f8805l0);
+            this.f8802a0.mo9329h();
+            this.f8806e0.mo9516c();
+            this.f8804c0.mo8850o();
+            this.f8803b0.mo8543C();
+            this.f8807f0 = C2749t1.m11663p(this.f8813l0);
         }
     }
 
@@ -582,13 +582,13 @@ public abstract class AbstractC2531p1 extends Fragment {
 
     /* renamed from: v2 */
     public C2774t3 mo8129v2() {
-        return this.f8800g0;
+        return this.f8808g0;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: w2 */
     public String mo8409w2() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8193q(mo8127t2() + "_toolbar", "default");
     }
 

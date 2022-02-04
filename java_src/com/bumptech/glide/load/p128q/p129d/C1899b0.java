@@ -21,29 +21,29 @@ import java.security.MessageDigest;
 public class C1899b0<T> implements AbstractC1649k<T, Bitmap> {
 
     /* renamed from: a */
-    public static final C1644h<Long> f7167a = C1644h.m7869a("com.bumptech.glide.load.resource.bitmap.VideoBitmapDecode.TargetFrame", -1L, new C1900a());
+    public static final C1644h<Long> f7175a = C1644h.m7869a("com.bumptech.glide.load.resource.bitmap.VideoBitmapDecode.TargetFrame", -1L, new C1900a());
 
     /* renamed from: b */
-    public static final C1644h<Integer> f7168b = C1644h.m7869a("com.bumptech.glide.load.resource.bitmap.VideoBitmapDecode.FrameOption", 2, new C1901b());
+    public static final C1644h<Integer> f7176b = C1644h.m7869a("com.bumptech.glide.load.resource.bitmap.VideoBitmapDecode.FrameOption", 2, new C1901b());
 
     /* renamed from: c */
-    private static final C1905e f7169c = new C1905e();
+    private static final C1905e f7177c = new C1905e();
 
     /* renamed from: d */
-    private final AbstractC1906f<T> f7170d;
+    private final AbstractC1906f<T> f7178d;
 
     /* renamed from: e */
-    private final AbstractC1695e f7171e;
+    private final AbstractC1695e f7179e;
 
     /* renamed from: f */
-    private final C1905e f7172f;
+    private final C1905e f7180f;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.bumptech.glide.load.q.d.b0$a */
     public class C1900a implements C1644h.AbstractC1646b<Long> {
 
         /* renamed from: a */
-        private final ByteBuffer f7173a = ByteBuffer.allocate(8);
+        private final ByteBuffer f7181a = ByteBuffer.allocate(8);
 
         C1900a() {
         }
@@ -51,9 +51,9 @@ public class C1899b0<T> implements AbstractC1649k<T, Bitmap> {
         /* renamed from: b */
         public void mo7083a(byte[] bArr, Long l, MessageDigest messageDigest) {
             messageDigest.update(bArr);
-            synchronized (this.f7173a) {
-                this.f7173a.position(0);
-                messageDigest.update(this.f7173a.putLong(l.longValue()).array());
+            synchronized (this.f7181a) {
+                this.f7181a.position(0);
+                messageDigest.update(this.f7181a.putLong(l.longValue()).array());
             }
         }
     }
@@ -62,7 +62,7 @@ public class C1899b0<T> implements AbstractC1649k<T, Bitmap> {
     class C1901b implements C1644h.AbstractC1646b<Integer> {
 
         /* renamed from: a */
-        private final ByteBuffer f7174a = ByteBuffer.allocate(4);
+        private final ByteBuffer f7182a = ByteBuffer.allocate(4);
 
         C1901b() {
         }
@@ -71,9 +71,9 @@ public class C1899b0<T> implements AbstractC1649k<T, Bitmap> {
         public void mo7083a(byte[] bArr, Integer num, MessageDigest messageDigest) {
             if (num != null) {
                 messageDigest.update(bArr);
-                synchronized (this.f7174a) {
-                    this.f7174a.position(0);
-                    messageDigest.update(this.f7174a.putInt(num.intValue()).array());
+                synchronized (this.f7182a) {
+                    this.f7182a.position(0);
+                    messageDigest.update(this.f7182a.putInt(num.intValue()).array());
                 }
             }
         }
@@ -104,10 +104,10 @@ public class C1899b0<T> implements AbstractC1649k<T, Bitmap> {
         public class C1904a extends MediaDataSource {
 
             /* renamed from: b */
-            final /* synthetic */ ByteBuffer f7175b;
+            final /* synthetic */ ByteBuffer f7183b;
 
             C1904a(ByteBuffer byteBuffer) {
-                this.f7175b = byteBuffer;
+                this.f7183b = byteBuffer;
             }
 
             @Override // java.io.Closeable, java.lang.AutoCloseable
@@ -116,17 +116,17 @@ public class C1899b0<T> implements AbstractC1649k<T, Bitmap> {
 
             @Override // android.media.MediaDataSource
             public long getSize() {
-                return (long) this.f7175b.limit();
+                return (long) this.f7183b.limit();
             }
 
             @Override // android.media.MediaDataSource
             public int readAt(long j, byte[] bArr, int i, int i2) {
-                if (j >= ((long) this.f7175b.limit())) {
+                if (j >= ((long) this.f7183b.limit())) {
                     return -1;
                 }
-                this.f7175b.position((int) j);
-                int min = Math.min(i2, this.f7175b.remaining());
-                this.f7175b.get(bArr, i, min);
+                this.f7183b.position((int) j);
+                int min = Math.min(i2, this.f7183b.remaining());
+                this.f7183b.get(bArr, i, min);
                 return min;
             }
         }
@@ -171,13 +171,13 @@ public class C1899b0<T> implements AbstractC1649k<T, Bitmap> {
     }
 
     C1899b0(AbstractC1695e eVar, AbstractC1906f<T> fVar) {
-        this(eVar, fVar, f7169c);
+        this(eVar, fVar, f7177c);
     }
 
     C1899b0(AbstractC1695e eVar, AbstractC1906f<T> fVar, C1905e eVar2) {
-        this.f7171e = eVar;
-        this.f7170d = fVar;
-        this.f7172f = eVar2;
+        this.f7179e = eVar;
+        this.f7178d = fVar;
+        this.f7180f = eVar2;
     }
 
     /* renamed from: c */
@@ -192,7 +192,7 @@ public class C1899b0<T> implements AbstractC1649k<T, Bitmap> {
 
     /* renamed from: e */
     private static Bitmap m8650e(MediaMetadataRetriever mediaMetadataRetriever, long j, int i, int i2, int i3, AbstractC1922l lVar) {
-        Bitmap g = (Build.VERSION.SDK_INT < 27 || i2 == Integer.MIN_VALUE || i3 == Integer.MIN_VALUE || lVar == AbstractC1922l.f7197f) ? null : m8652g(mediaMetadataRetriever, j, i, i2, i3, lVar);
+        Bitmap g = (Build.VERSION.SDK_INT < 27 || i2 == Integer.MIN_VALUE || i3 == Integer.MIN_VALUE || lVar == AbstractC1922l.f7205f) ? null : m8652g(mediaMetadataRetriever, j, i, i2, i3, lVar);
         return g == null ? m8651f(mediaMetadataRetriever, j, i) : g;
     }
 
@@ -233,22 +233,22 @@ public class C1899b0<T> implements AbstractC1649k<T, Bitmap> {
     @Override // com.bumptech.glide.load.AbstractC1649k
     /* renamed from: a */
     public AbstractC1794v<Bitmap> mo7088a(T t, int i, int i2, C1647i iVar) {
-        long longValue = ((Long) iVar.mo7084c(f7167a)).longValue();
+        long longValue = ((Long) iVar.mo7084c(f7175a)).longValue();
         if (longValue >= 0 || longValue == -1) {
-            Integer num = (Integer) iVar.mo7084c(f7168b);
+            Integer num = (Integer) iVar.mo7084c(f7176b);
             if (num == null) {
                 num = 2;
             }
-            AbstractC1922l lVar = (AbstractC1922l) iVar.mo7084c(AbstractC1922l.f7199h);
+            AbstractC1922l lVar = (AbstractC1922l) iVar.mo7084c(AbstractC1922l.f7207h);
             if (lVar == null) {
-                lVar = AbstractC1922l.f7198g;
+                lVar = AbstractC1922l.f7206g;
             }
-            MediaMetadataRetriever a = this.f7172f.mo7497a();
+            MediaMetadataRetriever a = this.f7180f.mo7497a();
             try {
-                this.f7170d.mo7491a(a, t);
+                this.f7178d.mo7491a(a, t);
                 Bitmap e = m8650e(a, longValue, num.intValue(), i, i2, lVar);
                 a.release();
-                return C1910e.m8673g(e, this.f7171e);
+                return C1910e.m8673g(e, this.f7179e);
             } catch (RuntimeException e2) {
                 throw new IOException(e2);
             } catch (Throwable th) {

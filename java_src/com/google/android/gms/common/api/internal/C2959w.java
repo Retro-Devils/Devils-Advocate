@@ -6,17 +6,17 @@ import com.google.android.gms.common.api.C2908e;
 public final class C2959w {
 
     /* renamed from: a */
-    public final AbstractC2951o f9873a;
+    public final AbstractC2951o f9881a;
 
     /* renamed from: b */
-    public final int f9874b;
+    public final int f9882b;
 
     /* renamed from: c */
-    public final C2908e<?> f9875c;
+    public final C2908e<?> f9883c;
 
     public C2959w(AbstractC2951o oVar, int i, C2908e<?> eVar) {
-        this.f9873a = oVar;
-        this.f9874b = i;
-        this.f9875c = eVar;
+        this.f9881a = oVar;
+        this.f9882b = i;
+        this.f9883c = eVar;
     }
 }

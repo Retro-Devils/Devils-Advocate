@@ -11,21 +11,21 @@ import com.bumptech.glide.load.p122o.p123a0.AbstractC1690b;
 public class C1908c implements AbstractC1650l<Bitmap> {
 
     /* renamed from: a */
-    public static final C1644h<Integer> f7177a = C1644h.m7873f("com.bumptech.glide.load.resource.bitmap.BitmapEncoder.CompressionQuality", 90);
+    public static final C1644h<Integer> f7185a = C1644h.m7873f("com.bumptech.glide.load.resource.bitmap.BitmapEncoder.CompressionQuality", 90);
 
     /* renamed from: b */
-    public static final C1644h<Bitmap.CompressFormat> f7178b = C1644h.m7872e("com.bumptech.glide.load.resource.bitmap.BitmapEncoder.CompressionFormat");
+    public static final C1644h<Bitmap.CompressFormat> f7186b = C1644h.m7872e("com.bumptech.glide.load.resource.bitmap.BitmapEncoder.CompressionFormat");
 
     /* renamed from: c */
-    private final AbstractC1690b f7179c;
+    private final AbstractC1690b f7187c;
 
     public C1908c(AbstractC1690b bVar) {
-        this.f7179c = bVar;
+        this.f7187c = bVar;
     }
 
     /* renamed from: d */
     private Bitmap.CompressFormat m8668d(Bitmap bitmap, C1647i iVar) {
-        Bitmap.CompressFormat compressFormat = (Bitmap.CompressFormat) iVar.mo7084c(f7178b);
+        Bitmap.CompressFormat compressFormat = (Bitmap.CompressFormat) iVar.mo7084c(f7186b);
         return compressFormat != null ? compressFormat : bitmap.hasAlpha() ? Bitmap.CompressFormat.PNG : Bitmap.CompressFormat.JPEG;
     }
 

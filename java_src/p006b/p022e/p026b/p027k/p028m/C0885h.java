@@ -8,23 +8,23 @@ import p006b.p022e.p026b.p027k.C0868g;
 public class C0885h extends AbstractC0892m {
     public C0885h(C0864e eVar) {
         super(eVar);
-        eVar.f4301f.mo5268f();
-        eVar.f4303g.mo5268f();
-        this.f4458f = ((C0868g) eVar).mo5247H0();
+        eVar.f4305f.mo5268f();
+        eVar.f4307g.mo5268f();
+        this.f4462f = ((C0868g) eVar).mo5247H0();
     }
 
     /* renamed from: q */
     private void m5248q(C0882f fVar) {
-        this.f4460h.f4428k.add(fVar);
-        fVar.f4429l.add(this.f4460h);
+        this.f4464h.f4432k.add(fVar);
+        fVar.f4433l.add(this.f4464h);
     }
 
     @Override // p006b.p022e.p026b.p027k.p028m.AbstractC0892m, p006b.p022e.p026b.p027k.p028m.AbstractC0880d
     /* renamed from: a */
     public void mo5265a(AbstractC0880d dVar) {
-        C0882f fVar = this.f4460h;
-        if (fVar.f4420c && !fVar.f4427j) {
-            this.f4460h.mo5283d((int) ((((float) fVar.f4429l.get(0).f4424g) * ((C0868g) this.f4454b).mo5250K0()) + 0.5f));
+        C0882f fVar = this.f4464h;
+        if (fVar.f4424c && !fVar.f4431j) {
+            this.f4464h.mo5283d((int) ((((float) fVar.f4433l.get(0).f4428g) * ((C0868g) this.f4458b).mo5250K0()) + 0.5f));
         }
     }
 
@@ -35,63 +35,63 @@ public class C0885h extends AbstractC0892m {
         AbstractC0892m mVar;
         C0882f fVar;
         C0882f fVar2;
-        C0868g gVar = (C0868g) this.f4454b;
+        C0868g gVar = (C0868g) this.f4458b;
         int I0 = gVar.mo5248I0();
         int J0 = gVar.mo5249J0();
         gVar.mo5250K0();
         if (gVar.mo5247H0() == 1) {
-            C0882f fVar3 = this.f4460h;
+            C0882f fVar3 = this.f4464h;
             if (I0 != -1) {
-                fVar3.f4429l.add(this.f4454b.f4280O.f4301f.f4460h);
-                this.f4454b.f4280O.f4301f.f4460h.f4428k.add(this.f4460h);
-                fVar2 = this.f4460h;
+                fVar3.f4433l.add(this.f4458b.f4284O.f4305f.f4464h);
+                this.f4458b.f4284O.f4305f.f4464h.f4432k.add(this.f4464h);
+                fVar2 = this.f4464h;
             } else if (J0 != -1) {
-                fVar3.f4429l.add(this.f4454b.f4280O.f4301f.f4461i);
-                this.f4454b.f4280O.f4301f.f4461i.f4428k.add(this.f4460h);
-                fVar2 = this.f4460h;
+                fVar3.f4433l.add(this.f4458b.f4284O.f4305f.f4465i);
+                this.f4458b.f4284O.f4305f.f4465i.f4432k.add(this.f4464h);
+                fVar2 = this.f4464h;
                 I0 = -J0;
             } else {
-                fVar3.f4419b = true;
-                fVar3.f4429l.add(this.f4454b.f4280O.f4301f.f4461i);
-                this.f4454b.f4280O.f4301f.f4461i.f4428k.add(this.f4460h);
-                m5248q(this.f4454b.f4301f.f4460h);
-                mVar = this.f4454b.f4301f;
+                fVar3.f4423b = true;
+                fVar3.f4433l.add(this.f4458b.f4284O.f4305f.f4465i);
+                this.f4458b.f4284O.f4305f.f4465i.f4432k.add(this.f4464h);
+                m5248q(this.f4458b.f4305f.f4464h);
+                mVar = this.f4458b.f4305f;
             }
-            fVar2.f4423f = I0;
-            m5248q(this.f4454b.f4301f.f4460h);
-            mVar = this.f4454b.f4301f;
+            fVar2.f4427f = I0;
+            m5248q(this.f4458b.f4305f.f4464h);
+            mVar = this.f4458b.f4305f;
         } else {
-            C0882f fVar4 = this.f4460h;
+            C0882f fVar4 = this.f4464h;
             if (I0 != -1) {
-                fVar4.f4429l.add(this.f4454b.f4280O.f4303g.f4460h);
-                this.f4454b.f4280O.f4303g.f4460h.f4428k.add(this.f4460h);
-                fVar = this.f4460h;
+                fVar4.f4433l.add(this.f4458b.f4284O.f4307g.f4464h);
+                this.f4458b.f4284O.f4307g.f4464h.f4432k.add(this.f4464h);
+                fVar = this.f4464h;
             } else if (J0 != -1) {
-                fVar4.f4429l.add(this.f4454b.f4280O.f4303g.f4461i);
-                this.f4454b.f4280O.f4303g.f4461i.f4428k.add(this.f4460h);
-                fVar = this.f4460h;
+                fVar4.f4433l.add(this.f4458b.f4284O.f4307g.f4465i);
+                this.f4458b.f4284O.f4307g.f4465i.f4432k.add(this.f4464h);
+                fVar = this.f4464h;
                 I0 = -J0;
             } else {
-                fVar4.f4419b = true;
-                fVar4.f4429l.add(this.f4454b.f4280O.f4303g.f4461i);
-                this.f4454b.f4280O.f4303g.f4461i.f4428k.add(this.f4460h);
-                m5248q(this.f4454b.f4303g.f4460h);
-                mVar = this.f4454b.f4303g;
+                fVar4.f4423b = true;
+                fVar4.f4433l.add(this.f4458b.f4284O.f4307g.f4465i);
+                this.f4458b.f4284O.f4307g.f4465i.f4432k.add(this.f4464h);
+                m5248q(this.f4458b.f4307g.f4464h);
+                mVar = this.f4458b.f4307g;
             }
-            fVar.f4423f = I0;
-            m5248q(this.f4454b.f4303g.f4460h);
-            mVar = this.f4454b.f4303g;
+            fVar.f4427f = I0;
+            m5248q(this.f4458b.f4307g.f4464h);
+            mVar = this.f4458b.f4307g;
         }
-        m5248q(mVar.f4461i);
+        m5248q(mVar.f4465i);
     }
 
     @Override // p006b.p022e.p026b.p027k.p028m.AbstractC0892m
     /* renamed from: e */
     public void mo5267e() {
-        if (((C0868g) this.f4454b).mo5247H0() == 1) {
-            this.f4454b.mo5155C0(this.f4460h.f4424g);
+        if (((C0868g) this.f4458b).mo5247H0() == 1) {
+            this.f4458b.mo5155C0(this.f4464h.f4428g);
         } else {
-            this.f4454b.mo5157D0(this.f4460h.f4424g);
+            this.f4458b.mo5157D0(this.f4464h.f4428g);
         }
     }
 
@@ -99,7 +99,7 @@ public class C0885h extends AbstractC0892m {
     @Override // p006b.p022e.p026b.p027k.p028m.AbstractC0892m
     /* renamed from: f */
     public void mo5268f() {
-        this.f4460h.mo5282c();
+        this.f4464h.mo5282c();
     }
 
     /* access modifiers changed from: package-private */

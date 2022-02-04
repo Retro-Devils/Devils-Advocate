@@ -8,20 +8,20 @@ import android.os.SystemClock;
 public final class C2077f {
 
     /* renamed from: a */
-    private static final double f7590a;
+    private static final double f7598a;
 
     static {
         double d = 1.0d;
         if (Build.VERSION.SDK_INT >= 17) {
             d = 1.0d / Math.pow(10.0d, 6.0d);
         }
-        f7590a = d;
+        f7598a = d;
     }
 
     /* renamed from: a */
     public static double m9415a(long j) {
         double b = (double) (m9416b() - j);
-        double d = f7590a;
+        double d = f7598a;
         Double.isNaN(b);
         return b * d;
     }

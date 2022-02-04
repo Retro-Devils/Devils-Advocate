@@ -1,6 +1,7 @@
 package androidx.activity;
 
+/* access modifiers changed from: package-private */
 /* renamed from: androidx.activity.a */
-interface AbstractC0048a {
+public interface AbstractC0048a {
     void cancel();
 }

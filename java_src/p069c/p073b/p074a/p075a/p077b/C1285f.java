@@ -8,7 +8,7 @@ public final class C1285f extends C1286g {
     @Deprecated
 
     /* renamed from: d */
-    public static final int f5546d = C1286g.f5547a;
+    public static final int f5554d = C1286g.f5555a;
 
     /* renamed from: b */
     public static Resources m6789b(Context context) {

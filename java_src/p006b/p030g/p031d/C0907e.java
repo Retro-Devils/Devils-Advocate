@@ -23,19 +23,19 @@ import p006b.p030g.p036h.C0923b;
 class C0907e extends C0912j {
 
     /* renamed from: b */
-    private static Class<?> f4535b;
+    private static Class<?> f4539b = null;
 
     /* renamed from: c */
-    private static Constructor<?> f4536c;
+    private static Constructor<?> f4540c = null;
 
     /* renamed from: d */
-    private static Method f4537d;
+    private static Method f4541d = null;
 
     /* renamed from: e */
-    private static Method f4538e;
+    private static Method f4542e = null;
 
     /* renamed from: f */
-    private static boolean f4539f;
+    private static boolean f4543f = false;
 
     C0907e() {
     }
@@ -44,7 +44,7 @@ class C0907e extends C0912j {
     private static boolean m5326k(Object obj, String str, int i, boolean z) {
         m5329n();
         try {
-            return ((Boolean) f4537d.invoke(obj, str, Integer.valueOf(i), Boolean.valueOf(z))).booleanValue();
+            return ((Boolean) f4541d.invoke(obj, str, Integer.valueOf(i), Boolean.valueOf(z))).booleanValue();
         } catch (IllegalAccessException | InvocationTargetException e) {
             throw new RuntimeException(e);
         }
@@ -54,9 +54,9 @@ class C0907e extends C0912j {
     private static Typeface mo5309l(Object obj) {
         m5329n();
         try {
-            Object newInstance = Array.newInstance(f4535b, 1);
+            Object newInstance = Array.newInstance(f4539b, 1);
             Array.set(newInstance, 0, obj);
-            return (Typeface) f4538e.invoke(null, newInstance);
+            return (Typeface) f4542e.invoke(null, newInstance);
         } catch (IllegalAccessException | InvocationTargetException e) {
             throw new RuntimeException(e);
         }
@@ -79,8 +79,8 @@ class C0907e extends C0912j {
         Method method;
         Class<?> cls;
         Method method2;
-        if (!f4539f) {
-            f4539f = true;
+        if (!f4543f) {
+            f4543f = true;
             Constructor<?> constructor = null;
             try {
                 cls = Class.forName("android.graphics.FontFamily");
@@ -94,10 +94,10 @@ class C0907e extends C0912j {
                 cls = null;
                 method = null;
             }
-            f4536c = constructor;
-            f4535b = cls;
-            f4537d = method;
-            f4538e = method2;
+            f4540c = constructor;
+            f4539b = cls;
+            f4541d = method;
+            f4542e = method2;
         }
     }
 
@@ -105,7 +105,7 @@ class C0907e extends C0912j {
     private static Object m5330o() {
         m5329n();
         try {
-            return f4536c.newInstance(new Object[0]);
+            return f4540c.newInstance(new Object[0]);
         } catch (IllegalAccessException | InstantiationException | InvocationTargetException e) {
             throw new RuntimeException(e);
         }

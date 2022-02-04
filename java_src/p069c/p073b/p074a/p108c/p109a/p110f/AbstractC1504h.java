@@ -16,14 +16,14 @@ public interface AbstractC1504h extends IInterface {
         private static class C1506a implements AbstractC1504h {
 
             /* renamed from: a */
-            private IBinder f6288a;
+            private IBinder f6296a;
 
             C1506a(IBinder iBinder) {
-                this.f6288a = iBinder;
+                this.f6296a = iBinder;
             }
 
             public final IBinder asBinder() {
-                return this.f6288a;
+                return this.f6296a;
             }
 
             @Override // p069c.p073b.p074a.p108c.p109a.p110f.AbstractC1504h
@@ -44,7 +44,7 @@ public interface AbstractC1504h extends IInterface {
                     } else {
                         obtain.writeInt(0);
                     }
-                    this.f6288a.transact(1, obtain, obtain2, 0);
+                    this.f6296a.transact(1, obtain, obtain2, 0);
                     obtain2.readException();
                 } finally {
                     obtain2.recycle();

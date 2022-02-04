@@ -8,12 +8,12 @@ import p069c.p111c.p112a.p113a.p116c.C1546a;
 public class C1540d implements C1546a.AbstractC1558l {
 
     /* renamed from: a */
-    private float f6343a = 0.0f;
+    private float f6351a = 0.0f;
 
     @Override // p069c.p111c.p112a.p113a.p116c.C1546a.AbstractC1558l
     /* renamed from: a */
     public void mo6833a(float f) {
-        this.f6343a = f - 1.0f;
+        this.f6351a = f - 1.0f;
     }
 
     @Override // p069c.p111c.p112a.p113a.p116c.C1546a.AbstractC1558l

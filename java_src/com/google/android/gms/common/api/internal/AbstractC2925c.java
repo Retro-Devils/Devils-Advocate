@@ -14,16 +14,16 @@ import com.google.android.gms.common.internal.C3030u;
 public abstract class AbstractC2925c<R extends AbstractC2964k, A extends C2894a.AbstractC2896b> extends BasePendingResult<R> {
 
     /* renamed from: q */
-    private final C2894a.C2897c<A> f9801q;
+    private final C2894a.C2897c<A> f9809q;
 
     /* renamed from: r */
-    private final C2894a<?> f9802r;
+    private final C2894a<?> f9810r;
 
     protected AbstractC2925c(C2894a<?> aVar, AbstractC2911f fVar) {
         super((AbstractC2911f) C3027r.m12377i(fVar, "GoogleApiClient must not be null"));
         C3027r.m12377i(aVar, "Api must not be null");
-        this.f9801q = (C2894a.C2897c<A>) aVar.mo9561a();
-        this.f9802r = aVar;
+        this.f9809q = (C2894a.C2897c<A>) aVar.mo9561a();
+        this.f9810r = aVar;
     }
 
     /* renamed from: o */

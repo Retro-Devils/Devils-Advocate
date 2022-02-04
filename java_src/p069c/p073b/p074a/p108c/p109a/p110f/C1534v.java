@@ -13,17 +13,17 @@ import android.os.Build;
 public final class C1534v {
 
     /* renamed from: a */
-    private static final Uri f6332a = Uri.parse("http://play.google.com/store/apps/details");
+    private static final Uri f6340a = Uri.parse("http://play.google.com/store/apps/details");
 
     /* renamed from: b */
-    private static final String[] f6333b = {"com.google.android.youtube", "com.google.android.youtube.tv", "com.google.android.youtube.googletv", "com.google.android.gms", null};
+    private static final String[] f6341b = {"com.google.android.youtube", "com.google.android.youtube.tv", "com.google.android.youtube.googletv", "com.google.android.gms", null};
 
     /* renamed from: a */
     public static String m7515a(Context context) {
         ServiceInfo serviceInfo;
         String str;
         PackageManager packageManager = context.getPackageManager();
-        for (String str2 : f6333b) {
+        for (String str2 : f6341b) {
             ResolveInfo resolveService = packageManager.resolveService(new Intent("com.google.android.youtube.api.service.START").setPackage(str2), 0);
             if (!(resolveService == null || (serviceInfo = resolveService.serviceInfo) == null || (str = serviceInfo.packageName) == null)) {
                 return str;

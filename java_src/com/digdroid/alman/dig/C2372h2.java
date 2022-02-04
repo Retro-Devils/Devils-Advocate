@@ -11,35 +11,35 @@ import java.util.ArrayList;
 public class C2372h2 {
 
     /* renamed from: a */
-    static File f8318a;
+    static File f8326a;
 
     /* renamed from: b */
-    static File f8319b;
+    static File f8327b;
 
     /* renamed from: com.digdroid.alman.dig.h2$a */
     static class AsyncTaskC2373a extends AsyncTask<Void, Void, String[]> {
 
         /* renamed from: a */
-        Context f8320a;
+        Context f8328a;
 
         /* renamed from: b */
-        AbstractC2374b f8321b;
+        AbstractC2374b f8329b;
 
         public AsyncTaskC2373a(Context context, AbstractC2374b bVar) {
-            this.f8320a = context;
-            this.f8321b = bVar;
+            this.f8328a = context;
+            this.f8329b = bVar;
         }
 
         /* access modifiers changed from: protected */
         /* renamed from: a */
         public String[] doInBackground(Void... voidArr) {
-            return C2372h2.m10300d(this.f8320a);
+            return C2372h2.m10300d(this.f8328a);
         }
 
         /* access modifiers changed from: protected */
         /* renamed from: b */
         public void onPostExecute(String[] strArr) {
-            this.f8321b.mo8540a(strArr);
+            this.f8329b.mo8540a(strArr);
         }
     }
 
@@ -53,17 +53,17 @@ public class C2372h2 {
     /* renamed from: a */
     static synchronized boolean m10297a(Context context, String str) {
         synchronized (C2372h2.class) {
-            File file = f8318a;
+            File file = f8326a;
             if (file != null) {
                 if (str != null) {
                     if (file.getAbsolutePath().equals(str)) {
                         return true;
                     }
-                    if (f8319b == null) {
+                    if (f8327b == null) {
                         String str2 = "Android/data/" + context.getPackageName() + "/files";
                         int length = str.length() - str2.length();
                         if (length > 0 && str.substring(length).equals(str2)) {
-                            f8319b = new File(str);
+                            f8327b = new File(str);
                         }
                     }
                     return false;
@@ -80,27 +80,27 @@ public class C2372h2 {
             if (context == null) {
                 return null;
             }
-            if (f8318a == null) {
+            if (f8326a == null) {
                 File externalFilesDir = context.getExternalFilesDir(null);
-                f8318a = externalFilesDir;
+                f8326a = externalFilesDir;
                 if (externalFilesDir == null) {
                     return null;
                 }
             }
-            if (f8319b == null && Build.VERSION.SDK_INT >= 19) {
+            if (f8327b == null && Build.VERSION.SDK_INT >= 19) {
                 try {
                     File[] externalFilesDirs = context.getExternalFilesDirs(null);
                     if (externalFilesDirs != null) {
-                        for (int i = 1; i < externalFilesDirs.length && f8319b == null; i++) {
+                        for (int i = 1; i < externalFilesDirs.length && f8327b == null; i++) {
                             if (externalFilesDirs[i] != null && externalFilesDirs[i].exists()) {
-                                f8319b = externalFilesDirs[i];
+                                f8327b = externalFilesDirs[i];
                             }
                         }
                     }
                 } catch (Exception unused) {
                 }
             }
-            if (f8319b == null) {
+            if (f8327b == null) {
                 C2219c3 k = C2219c3.m9805k(context);
                 int l = k.mo8188l("num_storage_dirs", 0);
                 int i2 = 0;
@@ -112,19 +112,19 @@ public class C2372h2 {
                     if (!q.equals("")) {
                         File file2 = new File(q + "/Android/data/" + context.getPackageName() + "/files");
                         if (file2.exists()) {
-                            f8319b = file2;
+                            f8327b = file2;
                             break;
                         }
                     }
                     i2++;
                 }
             }
-            File file3 = f8319b;
+            File file3 = f8327b;
             File[] fileArr = new File[(file3 == null ? 1 : 2)];
-            fileArr[0] = f8318a;
+            fileArr[0] = f8326a;
             if (file3 != null) {
                 if (file3.exists()) {
-                    file = f8319b;
+                    file = f8327b;
                 }
                 fileArr[1] = file;
             }
@@ -136,10 +136,10 @@ public class C2372h2 {
     static synchronized File m10299c(Context context) {
         File file;
         synchronized (C2372h2.class) {
-            if (f8318a == null) {
-                f8318a = context.getExternalFilesDir(null);
+            if (f8326a == null) {
+                f8326a = context.getExternalFilesDir(null);
             }
-            file = f8318a;
+            file = f8326a;
         }
         return file;
     }

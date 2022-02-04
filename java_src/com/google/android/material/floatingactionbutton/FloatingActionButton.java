@@ -44,69 +44,69 @@ import p069c.p073b.p074a.p090b.p107z.C1462k;
 public class FloatingActionButton extends C3208q implements AbstractC1012r, AbstractC0422l, AbstractC1431a, AbstractC1477n, CoordinatorLayout.AbstractC0336b {
 
     /* renamed from: c */
-    private static final int f10484c = C1399j.Widget_Design_FloatingActionButton;
+    private static final int f10492c = C1399j.Widget_Design_FloatingActionButton;
 
     /* renamed from: d */
-    private ColorStateList f10485d;
+    private ColorStateList f10493d;
 
     /* renamed from: e */
-    private PorterDuff.Mode f10486e;
+    private PorterDuff.Mode f10494e;
 
     /* renamed from: f */
-    private ColorStateList f10487f;
+    private ColorStateList f10495f;
 
     /* renamed from: g */
-    private PorterDuff.Mode f10488g;
+    private PorterDuff.Mode f10496g;
 
     /* renamed from: h */
-    private ColorStateList f10489h;
+    private ColorStateList f10497h;
 
     /* renamed from: i */
-    private int f10490i;
+    private int f10498i;
 
     /* renamed from: j */
-    private int f10491j;
+    private int f10499j;
 
     /* renamed from: k */
-    private int f10492k;
+    private int f10500k;
 
     /* renamed from: l */
-    private int f10493l;
+    private int f10501l;
 
     /* renamed from: m */
-    boolean f10494m;
+    boolean f10502m;
 
     /* renamed from: n */
-    final Rect f10495n;
+    final Rect f10503n;
 
     /* renamed from: o */
-    private final Rect f10496o;
+    private final Rect f10504o;
 
     /* renamed from: p */
-    private final C0261n f10497p;
+    private final C0261n f10505p;
 
     /* renamed from: q */
-    private C3149b f10498q;
+    private C3149b f10506q;
 
     protected static class BaseBehavior<T extends FloatingActionButton> extends CoordinatorLayout.AbstractC0337c<T> {
 
         /* renamed from: a */
-        private Rect f10499a;
+        private Rect f10507a;
 
         /* renamed from: b */
-        private AbstractC3145b f10500b;
+        private AbstractC3145b f10508b;
 
         /* renamed from: c */
-        private boolean f10501c;
+        private boolean f10509c;
 
         public BaseBehavior() {
-            this.f10501c = true;
+            this.f10509c = true;
         }
 
         public BaseBehavior(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1400k.f5803V0);
-            this.f10501c = obtainStyledAttributes.getBoolean(C1400k.f5809W0, true);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1400k.f5811V0);
+            this.f10509c = obtainStyledAttributes.getBoolean(C1400k.f5817W0, true);
             obtainStyledAttributes.recycle();
         }
 
@@ -121,7 +121,7 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
 
         /* renamed from: G */
         private void m13141G(CoordinatorLayout coordinatorLayout, FloatingActionButton floatingActionButton) {
-            Rect rect = floatingActionButton.f10495n;
+            Rect rect = floatingActionButton.f10503n;
             if (rect != null && rect.centerX() > 0 && rect.centerY() > 0) {
                 CoordinatorLayout.C0340f fVar = (CoordinatorLayout.C0340f) floatingActionButton.getLayoutParams();
                 int i = 0;
@@ -142,7 +142,7 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
 
         /* renamed from: J */
         private boolean m13142J(View view, FloatingActionButton floatingActionButton) {
-            return this.f10501c && ((CoordinatorLayout.C0340f) floatingActionButton.getLayoutParams()).mo2120e() == view.getId() && floatingActionButton.getUserSetVisibility() == 0;
+            return this.f10509c && ((CoordinatorLayout.C0340f) floatingActionButton.getLayoutParams()).mo2120e() == view.getId() && floatingActionButton.getUserSetVisibility() == 0;
         }
 
         /* renamed from: K */
@@ -150,16 +150,16 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
             if (!m13142J(appBarLayout, floatingActionButton)) {
                 return false;
             }
-            if (this.f10499a == null) {
-                this.f10499a = new Rect();
+            if (this.f10507a == null) {
+                this.f10507a = new Rect();
             }
-            Rect rect = this.f10499a;
+            Rect rect = this.f10507a;
             C3171c.m13324a(coordinatorLayout, appBarLayout, rect);
             if (rect.bottom <= appBarLayout.getMinimumHeightForVisibleOverlappingContent()) {
-                floatingActionButton.mo10529m(this.f10500b, false);
+                floatingActionButton.mo10529m(this.f10508b, false);
                 return true;
             }
-            floatingActionButton.mo10571t(this.f10500b, false);
+            floatingActionButton.mo10571t(this.f10508b, false);
             return true;
         }
 
@@ -169,16 +169,16 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
                 return false;
             }
             if (view.getTop() < (floatingActionButton.getHeight() / 2) + ((ViewGroup.MarginLayoutParams) ((CoordinatorLayout.C0340f) floatingActionButton.getLayoutParams())).topMargin) {
-                floatingActionButton.mo10529m(this.f10500b, false);
+                floatingActionButton.mo10529m(this.f10508b, false);
                 return true;
             }
-            floatingActionButton.mo10571t(this.f10500b, false);
+            floatingActionButton.mo10571t(this.f10508b, false);
             return true;
         }
 
         /* renamed from: E */
         public boolean mo2088b(CoordinatorLayout coordinatorLayout, FloatingActionButton floatingActionButton, Rect rect) {
-            Rect rect2 = floatingActionButton.f10495n;
+            Rect rect2 = floatingActionButton.f10503n;
             rect.set(floatingActionButton.getLeft() + rect2.left, floatingActionButton.getTop() + rect2.top, floatingActionButton.getRight() - rect2.right, floatingActionButton.getBottom() - rect2.bottom);
             return true;
         }
@@ -262,22 +262,22 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
     public class C3144a implements C3149b.AbstractC3159j {
 
         /* renamed from: a */
-        final /* synthetic */ AbstractC3145b f10502a;
+        final /* synthetic */ AbstractC3145b f10510a;
 
         C3144a(AbstractC3145b bVar) {
-            this.f10502a = bVar;
+            this.f10510a = bVar;
         }
 
         @Override // com.google.android.material.floatingactionbutton.C3149b.AbstractC3159j
         /* renamed from: a */
         public void mo10575a() {
-            this.f10502a.mo9952b(FloatingActionButton.this);
+            this.f10510a.mo9952b(FloatingActionButton.this);
         }
 
         @Override // com.google.android.material.floatingactionbutton.C3149b.AbstractC3159j
         /* renamed from: b */
         public void mo10576b() {
-            this.f10502a.mo9951a(FloatingActionButton.this);
+            this.f10510a.mo9951a(FloatingActionButton.this);
         }
     }
 
@@ -301,9 +301,9 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
         @Override // p069c.p073b.p074a.p090b.p106y.AbstractC1448b
         /* renamed from: a */
         public void mo6583a(int i, int i2, int i3, int i4) {
-            FloatingActionButton.this.f10495n.set(i, i2, i3, i4);
+            FloatingActionButton.this.f10503n.set(i, i2, i3, i4);
             FloatingActionButton floatingActionButton = FloatingActionButton.this;
-            floatingActionButton.setPadding(i + floatingActionButton.f10492k, i2 + FloatingActionButton.this.f10492k, i3 + FloatingActionButton.this.f10492k, i4 + FloatingActionButton.this.f10492k);
+            floatingActionButton.setPadding(i + floatingActionButton.f10500k, i2 + FloatingActionButton.this.f10500k, i3 + FloatingActionButton.this.f10500k, i4 + FloatingActionButton.this.f10500k);
         }
 
         @Override // p069c.p073b.p074a.p090b.p106y.AbstractC1448b
@@ -317,7 +317,7 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
         @Override // p069c.p073b.p074a.p090b.p106y.AbstractC1448b
         /* renamed from: c */
         public boolean mo6585c() {
-            return FloatingActionButton.this.f10494m;
+            return FloatingActionButton.this.f10502m;
         }
     }
 
@@ -325,10 +325,10 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
     class C3147d<T extends FloatingActionButton> implements C3149b.AbstractC3158i {
 
         /* renamed from: a */
-        private final AbstractC1411k<T> f10505a;
+        private final AbstractC1411k<T> f10513a;
 
         C3147d(AbstractC1411k<T> kVar) {
-            this.f10505a = kVar;
+            this.f10513a = kVar;
         }
 
         /* JADX DEBUG: Multi-variable search result rejected for r0v0, resolved type: c.b.a.b.l.k<T extends com.google.android.material.floatingactionbutton.FloatingActionButton> */
@@ -336,7 +336,7 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
         @Override // com.google.android.material.floatingactionbutton.C3149b.AbstractC3158i
         /* renamed from: a */
         public void mo10577a() {
-            this.f10505a.mo6480a(FloatingActionButton.this);
+            this.f10513a.mo6480a(FloatingActionButton.this);
         }
 
         /* JADX DEBUG: Multi-variable search result rejected for r0v0, resolved type: c.b.a.b.l.k<T extends com.google.android.material.floatingactionbutton.FloatingActionButton> */
@@ -344,23 +344,23 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
         @Override // com.google.android.material.floatingactionbutton.C3149b.AbstractC3158i
         /* renamed from: b */
         public void mo10578b() {
-            this.f10505a.mo6481b(FloatingActionButton.this);
+            this.f10513a.mo6481b(FloatingActionButton.this);
         }
 
         public boolean equals(Object obj) {
-            return (obj instanceof C3147d) && ((C3147d) obj).f10505a.equals(this.f10505a);
+            return (obj instanceof C3147d) && ((C3147d) obj).f10513a.equals(this.f10513a);
         }
 
         public int hashCode() {
-            return this.f10505a.hashCode();
+            return this.f10513a.hashCode();
         }
     }
 
     private C3149b getImpl() {
-        if (this.f10498q == null) {
-            this.f10498q = m13122h();
+        if (this.f10506q == null) {
+            this.f10506q = m13122h();
         }
-        return this.f10498q;
+        return this.f10506q;
     }
 
     /* renamed from: h */
@@ -370,7 +370,7 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
 
     /* renamed from: k */
     private int m13123k(int i) {
-        int i2 = this.f10491j;
+        int i2 = this.f10499j;
         if (i2 != 0) {
             return i2;
         }
@@ -384,7 +384,7 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
     /* renamed from: p */
     private void m13124p(Rect rect) {
         int i = rect.left;
-        Rect rect2 = this.f10495n;
+        Rect rect2 = this.f10503n;
         rect.left = i + rect2.left;
         rect.top += rect2.top;
         rect.right -= rect2.right;
@@ -395,13 +395,13 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
     private void m13125q() {
         Drawable drawable = getDrawable();
         if (drawable != null) {
-            ColorStateList colorStateList = this.f10487f;
+            ColorStateList colorStateList = this.f10495f;
             if (colorStateList == null) {
                 C0398a.m1966c(drawable);
                 return;
             }
             int colorForState = colorStateList.getColorForState(getDrawableState(), 0);
-            PorterDuff.Mode mode = this.f10488g;
+            PorterDuff.Mode mode = this.f10496g;
             if (mode == null) {
                 mode = PorterDuff.Mode.SRC_IN;
             }
@@ -461,11 +461,11 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
     }
 
     public ColorStateList getBackgroundTintList() {
-        return this.f10485d;
+        return this.f10493d;
     }
 
     public PorterDuff.Mode getBackgroundTintMode() {
-        return this.f10486e;
+        return this.f10494e;
     }
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.AbstractC0336b
@@ -490,7 +490,7 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
     }
 
     public int getCustomSize() {
-        return this.f10491j;
+        return this.f10499j;
     }
 
     public int getExpandedComponentIdHint() {
@@ -503,7 +503,7 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
 
     @Deprecated
     public int getRippleColor() {
-        ColorStateList colorStateList = this.f10489h;
+        ColorStateList colorStateList = this.f10497h;
         if (colorStateList != null) {
             return colorStateList.getDefaultColor();
         }
@@ -511,7 +511,7 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
     }
 
     public ColorStateList getRippleColorStateList() {
-        return this.f10489h;
+        return this.f10497h;
     }
 
     public C1462k getShapeAppearanceModel() {
@@ -523,12 +523,12 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
     }
 
     public int getSize() {
-        return this.f10490i;
+        return this.f10498i;
     }
 
     /* access modifiers changed from: package-private */
     public int getSizeDimension() {
-        return m13123k(this.f10490i);
+        return m13123k(this.f10498i);
     }
 
     @Override // p006b.p030g.p039k.AbstractC1012r
@@ -543,16 +543,16 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
 
     @Override // androidx.core.widget.AbstractC0422l
     public ColorStateList getSupportImageTintList() {
-        return this.f10487f;
+        return this.f10495f;
     }
 
     @Override // androidx.core.widget.AbstractC0422l
     public PorterDuff.Mode getSupportImageTintMode() {
-        return this.f10488g;
+        return this.f10496g;
     }
 
     public boolean getUseCompatPadding() {
-        return this.f10494m;
+        return this.f10502m;
     }
 
     @Deprecated
@@ -613,10 +613,10 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
     /* access modifiers changed from: protected */
     public void onMeasure(int i, int i2) {
         int sizeDimension = getSizeDimension();
-        this.f10492k = (sizeDimension - this.f10493l) / 2;
+        this.f10500k = (sizeDimension - this.f10501l) / 2;
         getImpl().mo10607b0();
         int min = Math.min(m13126r(sizeDimension, i), m13126r(sizeDimension, i2));
-        Rect rect = this.f10495n;
+        Rect rect = this.f10503n;
         setMeasuredDimension(rect.left + min + rect.right, min + rect.top + rect.bottom);
     }
 
@@ -628,7 +628,7 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
         }
         C1389a aVar = (C1389a) parcelable;
         super.onRestoreInstanceState(aVar.mo5608b());
-        Bundle bundle = (Bundle) C0961i.m5494c(aVar.f5667d.get("expandableWidgetHelper"));
+        Bundle bundle = (Bundle) C0961i.m5494c(aVar.f5675d.get("expandableWidgetHelper"));
         throw null;
     }
 
@@ -643,7 +643,7 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
     }
 
     public boolean onTouchEvent(MotionEvent motionEvent) {
-        if (motionEvent.getAction() != 0 || !mo10525i(this.f10496o) || this.f10496o.contains((int) motionEvent.getX(), (int) motionEvent.getY())) {
+        if (motionEvent.getAction() != 0 || !mo10525i(this.f10504o) || this.f10504o.contains((int) motionEvent.getX(), (int) motionEvent.getY())) {
             return super.onTouchEvent(motionEvent);
         }
         return false;
@@ -667,15 +667,15 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
     }
 
     public void setBackgroundTintList(ColorStateList colorStateList) {
-        if (this.f10485d != colorStateList) {
-            this.f10485d = colorStateList;
+        if (this.f10493d != colorStateList) {
+            this.f10493d = colorStateList;
             getImpl().mo10590J(colorStateList);
         }
     }
 
     public void setBackgroundTintMode(PorterDuff.Mode mode) {
-        if (this.f10486e != mode) {
-            this.f10486e = mode;
+        if (this.f10494e != mode) {
+            this.f10494e = mode;
             getImpl().mo10591K(mode);
         }
     }
@@ -707,8 +707,8 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
     public void setCustomSize(int i) {
         if (i < 0) {
             throw new IllegalArgumentException("Custom size must be non-negative");
-        } else if (i != this.f10491j) {
-            this.f10491j = i;
+        } else if (i != this.f10499j) {
+            this.f10499j = i;
             requestLayout();
         }
     }
@@ -741,14 +741,14 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
         if (getDrawable() != drawable) {
             super.setImageDrawable(drawable);
             getImpl().mo10606a0();
-            if (this.f10487f != null) {
+            if (this.f10495f != null) {
                 m13125q();
             }
         }
     }
 
     public void setImageResource(int i) {
-        this.f10497p.mo1605g(i);
+        this.f10505p.mo1605g(i);
         m13125q();
     }
 
@@ -757,9 +757,9 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
     }
 
     public void setRippleColor(ColorStateList colorStateList) {
-        if (this.f10489h != colorStateList) {
-            this.f10489h = colorStateList;
-            getImpl().mo10598R(this.f10489h);
+        if (this.f10497h != colorStateList) {
+            this.f10497h = colorStateList;
+            getImpl().mo10598R(this.f10497h);
         }
     }
 
@@ -791,9 +791,9 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
     }
 
     public void setSize(int i) {
-        this.f10491j = 0;
-        if (i != this.f10490i) {
-            this.f10490i = i;
+        this.f10499j = 0;
+        if (i != this.f10498i) {
+            this.f10498i = i;
             requestLayout();
         }
     }
@@ -810,16 +810,16 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
 
     @Override // androidx.core.widget.AbstractC0422l
     public void setSupportImageTintList(ColorStateList colorStateList) {
-        if (this.f10487f != colorStateList) {
-            this.f10487f = colorStateList;
+        if (this.f10495f != colorStateList) {
+            this.f10495f = colorStateList;
             m13125q();
         }
     }
 
     @Override // androidx.core.widget.AbstractC0422l
     public void setSupportImageTintMode(PorterDuff.Mode mode) {
-        if (this.f10488g != mode) {
-            this.f10488g = mode;
+        if (this.f10496g != mode) {
+            this.f10496g = mode;
             m13125q();
         }
     }
@@ -840,8 +840,8 @@ public class FloatingActionButton extends C3208q implements AbstractC1012r, Abst
     }
 
     public void setUseCompatPadding(boolean z) {
-        if (this.f10494m != z) {
-            this.f10494m = z;
+        if (this.f10502m != z) {
+            this.f10502m = z;
             getImpl().mo10581A();
         }
     }

@@ -8,20 +8,20 @@ import java.io.Writer;
 public class C0954b extends Writer {
 
     /* renamed from: b */
-    private final String f4652b;
+    private final String f4656b;
 
     /* renamed from: c */
-    private StringBuilder f4653c = new StringBuilder(128);
+    private StringBuilder f4657c = new StringBuilder(128);
 
     public C0954b(String str) {
-        this.f4652b = str;
+        this.f4656b = str;
     }
 
     /* renamed from: a */
     private void m5481a() {
-        if (this.f4653c.length() > 0) {
-            Log.d(this.f4652b, this.f4653c.toString());
-            StringBuilder sb = this.f4653c;
+        if (this.f4657c.length() > 0) {
+            Log.d(this.f4656b, this.f4657c.toString());
+            StringBuilder sb = this.f4657c;
             sb.delete(0, sb.length());
         }
     }
@@ -43,7 +43,7 @@ public class C0954b extends Writer {
             if (c == '\n') {
                 m5481a();
             } else {
-                this.f4653c.append(c);
+                this.f4657c.append(c);
             }
         }
     }

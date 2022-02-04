@@ -7,19 +7,19 @@ import java.io.InputStream;
 public abstract class AbstractC3355f {
 
     /* renamed from: a */
-    private static final byte[] f11298a = new byte[0];
+    private static final byte[] f11307a = new byte[0];
 
     /* renamed from: b */
-    private final Class<?>[] f11299b;
+    private final Class<?>[] f11308b;
 
     protected AbstractC3355f(Class<?>... clsArr) {
-        this.f11299b = clsArr;
+        this.f11308b = clsArr;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: a */
     public boolean mo11302a(Object obj) {
-        for (Class<?> cls : this.f11299b) {
+        for (Class<?> cls : this.f11308b) {
             if (cls.isInstance(obj)) {
                 return true;
             }

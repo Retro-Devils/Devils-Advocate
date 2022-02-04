@@ -8,24 +8,24 @@ import android.content.pm.PackageInfo;
 public class C1291a {
 
     /* renamed from: a */
-    private final Context f5560a;
+    private final Context f5568a;
 
     public C1291a(Context context) {
-        this.f5560a = context;
+        this.f5568a = context;
     }
 
     /* renamed from: a */
     public ApplicationInfo mo6295a(String str, int i) {
-        return this.f5560a.getPackageManager().getApplicationInfo(str, i);
+        return this.f5568a.getPackageManager().getApplicationInfo(str, i);
     }
 
     /* renamed from: b */
     public CharSequence mo6296b(String str) {
-        return this.f5560a.getPackageManager().getApplicationLabel(this.f5560a.getPackageManager().getApplicationInfo(str, 0));
+        return this.f5568a.getPackageManager().getApplicationLabel(this.f5568a.getPackageManager().getApplicationInfo(str, 0));
     }
 
     /* renamed from: c */
     public PackageInfo mo6297c(String str, int i) {
-        return this.f5560a.getPackageManager().getPackageInfo(str, i);
+        return this.f5568a.getPackageManager().getPackageInfo(str, i);
     }
 }

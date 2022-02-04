@@ -8,19 +8,19 @@ import com.google.android.gms.common.api.Status;
 public final class C2944k implements AbstractC2914g.AbstractC2915a {
 
     /* renamed from: a */
-    private final /* synthetic */ BasePendingResult f9854a;
+    private final /* synthetic */ BasePendingResult f9862a;
 
     /* renamed from: b */
-    private final /* synthetic */ C2942j f9855b;
+    private final /* synthetic */ C2942j f9863b;
 
     C2944k(C2942j jVar, BasePendingResult basePendingResult) {
-        this.f9855b = jVar;
-        this.f9854a = basePendingResult;
+        this.f9863b = jVar;
+        this.f9862a = basePendingResult;
     }
 
     @Override // com.google.android.gms.common.api.AbstractC2914g.AbstractC2915a
     /* renamed from: a */
     public final void mo9597a(Status status) {
-        this.f9855b.f9848a.remove(this.f9854a);
+        this.f9863b.f9856a.remove(this.f9862a);
     }
 }

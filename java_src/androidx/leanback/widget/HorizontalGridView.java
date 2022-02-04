@@ -121,9 +121,9 @@ public class HorizontalGridView extends AbstractC0548a {
     /* renamed from: C1 */
     public void mo2998C1(Context context, AttributeSet attributeSet) {
         mo3207A1(context, attributeSet);
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4931K);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4938K);
         setRowHeight(obtainStyledAttributes);
-        setNumRows(obtainStyledAttributes.getInt(C1080l.f4932L, 1));
+        setNumRows(obtainStyledAttributes.getInt(C1080l.f4939L, 1));
         obtainStyledAttributes.recycle();
         m2716F1();
         Paint paint = new Paint();
@@ -286,7 +286,7 @@ public class HorizontalGridView extends AbstractC0548a {
 
     /* access modifiers changed from: package-private */
     public void setRowHeight(TypedArray typedArray) {
-        int i = C1080l.f4933M;
+        int i = C1080l.f4940M;
         if (typedArray.peekValue(i) != null) {
             setRowHeight(typedArray.getLayoutDimension(i, 0));
         }

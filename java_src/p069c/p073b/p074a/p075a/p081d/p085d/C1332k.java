@@ -8,16 +8,16 @@ import p069c.p073b.p074a.p075a.p081d.p085d.C1329j;
 final class C1332k extends C1329j.AbstractC1331b {
 
     /* renamed from: t */
-    private final /* synthetic */ byte[] f5587t;
+    private final /* synthetic */ byte[] f5595t;
 
     /* renamed from: u */
-    private final /* synthetic */ String f5588u;
+    private final /* synthetic */ String f5596u;
 
     /* JADX INFO: super call moved to the top of the method (can break code semantics) */
     C1332k(AbstractC2911f fVar, byte[] bArr, String str) {
         super(fVar);
-        this.f5587t = bArr;
-        this.f5588u = str;
+        this.f5595t = bArr;
+        this.f5596u = str;
     }
 
     /* JADX DEBUG: Method arguments types fixed to match base method, original types: [com.google.android.gms.common.api.a$b] */
@@ -26,9 +26,9 @@ final class C1332k extends C1329j.AbstractC1331b {
     /* renamed from: l */
     public final /* synthetic */ void mo6353l(C1334m mVar) {
         C1334m mVar2 = mVar;
-        AbstractC1325f fVar = this.f5586s;
-        byte[] bArr = this.f5587t;
-        String str = this.f5588u;
+        AbstractC1325f fVar = this.f5594s;
+        byte[] bArr = this.f5595t;
+        String str = this.f5596u;
         if (TextUtils.isEmpty(str)) {
             str = mVar2.mo6356i0("com.google.android.safetynet.ATTEST_API_KEY");
         }

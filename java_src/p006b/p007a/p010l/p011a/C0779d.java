@@ -13,31 +13,31 @@ import p006b.p007a.p010l.p011a.C0774b;
 public class C0779d extends C0774b {
 
     /* renamed from: n */
-    private C0780a f3902n;
+    private C0780a f3906n;
 
     /* renamed from: o */
-    private boolean f3903o;
+    private boolean f3907o;
 
     /* access modifiers changed from: package-private */
     /* renamed from: b.a.l.a.d$a */
     public static class C0780a extends C0774b.AbstractC0777c {
 
         /* renamed from: J */
-        int[][] f3904J;
+        int[][] f3908J;
 
         C0780a(C0780a aVar, C0779d dVar, Resources resources) {
             super(aVar, dVar, resources);
             if (aVar != null) {
-                this.f3904J = aVar.f3904J;
+                this.f3908J = aVar.f3908J;
             } else {
-                this.f3904J = new int[mo4625f()][];
+                this.f3908J = new int[mo4625f()][];
             }
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: A */
         public int mo4674A(int[] iArr) {
-            int[][] iArr2 = this.f3904J;
+            int[][] iArr2 = this.f3908J;
             int h = mo4628h();
             for (int i = 0; i < h; i++) {
                 if (StateSet.stateSetMatches(iArr2[i], iArr)) {
@@ -60,28 +60,28 @@ public class C0779d extends C0774b {
         public void mo4635o(int i, int i2) {
             super.mo4635o(i, i2);
             int[][] iArr = new int[i2][];
-            System.arraycopy(this.f3904J, 0, iArr, 0, i);
-            this.f3904J = iArr;
+            System.arraycopy(this.f3908J, 0, iArr, 0, i);
+            this.f3908J = iArr;
         }
 
         /* access modifiers changed from: package-private */
         @Override // p006b.p007a.p010l.p011a.C0774b.AbstractC0777c
         /* renamed from: r */
         public void mo4601r() {
-            int[][] iArr = this.f3904J;
+            int[][] iArr = this.f3908J;
             int[][] iArr2 = new int[iArr.length][];
             for (int length = iArr.length - 1; length >= 0; length--) {
-                int[][] iArr3 = this.f3904J;
+                int[][] iArr3 = this.f3908J;
                 iArr2[length] = iArr3[length] != null ? (int[]) iArr3[length].clone() : null;
             }
-            this.f3904J = iArr2;
+            this.f3908J = iArr2;
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: z */
         public int mo4675z(int[] iArr, Drawable drawable) {
             int a = mo4620a(drawable);
-            this.f3904J[a] = iArr;
+            this.f3908J[a] = iArr;
             return a;
         }
     }
@@ -109,7 +109,7 @@ public class C0779d extends C0774b {
     public void mo4570h(C0774b.AbstractC0777c cVar) {
         super.mo4570h(cVar);
         if (cVar instanceof C0780a) {
-            this.f3902n = (C0780a) cVar;
+            this.f3906n = (C0780a) cVar;
         }
     }
 
@@ -120,7 +120,7 @@ public class C0779d extends C0774b {
     /* access modifiers changed from: package-private */
     /* renamed from: j */
     public C0780a mo4556b() {
-        return new C0780a(this.f3902n, this, null);
+        return new C0780a(this.f3906n, this, null);
     }
 
     /* access modifiers changed from: package-private */
@@ -145,9 +145,9 @@ public class C0779d extends C0774b {
 
     @Override // p006b.p007a.p010l.p011a.C0774b
     public Drawable mutate() {
-        if (!this.f3903o && super.mutate() == this) {
-            this.f3902n.mo4601r();
-            this.f3903o = true;
+        if (!this.f3907o && super.mutate() == this) {
+            this.f3906n.mo4601r();
+            this.f3907o = true;
         }
         return this;
     }
@@ -156,9 +156,9 @@ public class C0779d extends C0774b {
     @Override // p006b.p007a.p010l.p011a.C0774b
     public boolean onStateChange(int[] iArr) {
         boolean onStateChange = super.onStateChange(iArr);
-        int A = this.f3902n.mo4674A(iArr);
+        int A = this.f3906n.mo4674A(iArr);
         if (A < 0) {
-            A = this.f3902n.mo4674A(StateSet.WILD_CARD);
+            A = this.f3906n.mo4674A(StateSet.WILD_CARD);
         }
         return mo4609g(A) || onStateChange;
     }

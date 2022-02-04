@@ -15,13 +15,13 @@ import java.io.InputStream;
 public class C1801a<Data> implements AbstractC1843n<Uri, Data> {
 
     /* renamed from: a */
-    private static final int f7031a = 22;
+    private static final int f7039a = 22;
 
     /* renamed from: b */
-    private final AssetManager f7032b;
+    private final AssetManager f7040b;
 
     /* renamed from: c */
-    private final AbstractC1802a<Data> f7033c;
+    private final AbstractC1802a<Data> f7041c;
 
     /* renamed from: com.bumptech.glide.load.p.a$a */
     public interface AbstractC1802a<Data> {
@@ -33,10 +33,10 @@ public class C1801a<Data> implements AbstractC1843n<Uri, Data> {
     public static class C1803b implements AbstractC1845o<Uri, ParcelFileDescriptor>, AbstractC1802a<ParcelFileDescriptor> {
 
         /* renamed from: a */
-        private final AssetManager f7034a;
+        private final AssetManager f7042a;
 
         public C1803b(AssetManager assetManager) {
-            this.f7034a = assetManager;
+            this.f7042a = assetManager;
         }
 
         @Override // com.bumptech.glide.load.p126p.C1801a.AbstractC1802a
@@ -48,7 +48,7 @@ public class C1801a<Data> implements AbstractC1843n<Uri, Data> {
         @Override // com.bumptech.glide.load.p126p.AbstractC1845o
         /* renamed from: b */
         public AbstractC1843n<Uri, ParcelFileDescriptor> mo7398b(C1851r rVar) {
-            return new C1801a(this.f7034a, this);
+            return new C1801a(this.f7042a, this);
         }
     }
 
@@ -56,10 +56,10 @@ public class C1801a<Data> implements AbstractC1843n<Uri, Data> {
     public static class C1804c implements AbstractC1845o<Uri, InputStream>, AbstractC1802a<InputStream> {
 
         /* renamed from: a */
-        private final AssetManager f7035a;
+        private final AssetManager f7043a;
 
         public C1804c(AssetManager assetManager) {
-            this.f7035a = assetManager;
+            this.f7043a = assetManager;
         }
 
         @Override // com.bumptech.glide.load.p126p.C1801a.AbstractC1802a
@@ -71,18 +71,18 @@ public class C1801a<Data> implements AbstractC1843n<Uri, Data> {
         @Override // com.bumptech.glide.load.p126p.AbstractC1845o
         /* renamed from: b */
         public AbstractC1843n<Uri, InputStream> mo7398b(C1851r rVar) {
-            return new C1801a(this.f7035a, this);
+            return new C1801a(this.f7043a, this);
         }
     }
 
     public C1801a(AssetManager assetManager, AbstractC1802a<Data> aVar) {
-        this.f7032b = assetManager;
-        this.f7033c = aVar;
+        this.f7040b = assetManager;
+        this.f7041c = aVar;
     }
 
     /* renamed from: c */
     public AbstractC1843n.C1844a<Data> mo7393a(Uri uri, int i, int i2, C1647i iVar) {
-        return new AbstractC1843n.C1844a<>(new C2067d(uri), this.f7033c.mo7397a(this.f7032b, uri.toString().substring(f7031a)));
+        return new AbstractC1843n.C1844a<>(new C2067d(uri), this.f7041c.mo7397a(this.f7040b, uri.toString().substring(f7039a)));
     }
 
     /* renamed from: d */

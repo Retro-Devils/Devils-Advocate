@@ -15,13 +15,13 @@ import p069c.p073b.p074a.p075a.p077b.C1282d;
 public abstract class AbstractC3002h<T extends IInterface> extends AbstractC2978c<T> implements C2894a.AbstractC2902f {
 
     /* renamed from: D */
-    private final C2992d f9988D;
+    private final C2992d f9996D;
 
     /* renamed from: E */
-    private final Set<Scope> f9989E;
+    private final Set<Scope> f9997E;
 
     /* renamed from: F */
-    private final Account f9990F;
+    private final Account f9998F;
 
     protected AbstractC3002h(Context context, Looper looper, int i, C2992d dVar, AbstractC2911f.AbstractC2912a aVar, AbstractC2911f.AbstractC2913b bVar) {
         this(context, looper, AbstractC3004i.m12321a(context), C1282d.m6764k(), i, dVar, (AbstractC2911f.AbstractC2912a) C3027r.m12376h(aVar), (AbstractC2911f.AbstractC2913b) C3027r.m12376h(bVar));
@@ -29,9 +29,9 @@ public abstract class AbstractC3002h<T extends IInterface> extends AbstractC2978
 
     protected AbstractC3002h(Context context, Looper looper, AbstractC3004i iVar, C1282d dVar, int i, C2992d dVar2, AbstractC2911f.AbstractC2912a aVar, AbstractC2911f.AbstractC2913b bVar) {
         super(context, looper, iVar, dVar, i, m12307f0(aVar), m12308g0(bVar), dVar2.mo9750e());
-        this.f9988D = dVar2;
-        this.f9990F = dVar2.mo9746a();
-        this.f9989E = m12309h0(dVar2.mo9748c());
+        this.f9996D = dVar2;
+        this.f9998F = dVar2.mo9746a();
+        this.f9997E = m12309h0(dVar2.mo9748c());
     }
 
     /* renamed from: f0 */
@@ -76,13 +76,13 @@ public abstract class AbstractC3002h<T extends IInterface> extends AbstractC2978
     @Override // com.google.android.gms.common.internal.AbstractC2978c
     /* renamed from: t */
     public final Account mo9722t() {
-        return this.f9990F;
+        return this.f9998F;
     }
 
     /* access modifiers changed from: protected */
     @Override // com.google.android.gms.common.internal.AbstractC2978c
     /* renamed from: z */
     public final Set<Scope> mo9727z() {
-        return this.f9989E;
+        return this.f9997E;
     }
 }

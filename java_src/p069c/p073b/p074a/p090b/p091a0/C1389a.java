@@ -11,7 +11,7 @@ public class C1389a extends AbstractC1041a {
     public static final Parcelable.Creator<C1389a> CREATOR = new C1390a();
 
     /* renamed from: d */
-    public final C0838i<String, Bundle> f5667d;
+    public final C0838i<String, Bundle> f5675d;
 
     /* renamed from: c.b.a.b.a0.a$a */
     static class C1390a implements Parcelable.ClassLoaderCreator<C1389a> {
@@ -41,9 +41,9 @@ public class C1389a extends AbstractC1041a {
         parcel.readStringArray(strArr);
         Bundle[] bundleArr = new Bundle[readInt];
         parcel.readTypedArray(bundleArr, Bundle.CREATOR);
-        this.f5667d = new C0838i<>(readInt);
+        this.f5675d = new C0838i<>(readInt);
         for (int i = 0; i < readInt; i++) {
-            this.f5667d.put(strArr[i], bundleArr[i]);
+            this.f5675d.put(strArr[i], bundleArr[i]);
         }
     }
 
@@ -53,23 +53,23 @@ public class C1389a extends AbstractC1041a {
 
     public C1389a(Parcelable parcelable) {
         super(parcelable);
-        this.f5667d = new C0838i<>();
+        this.f5675d = new C0838i<>();
     }
 
     public String toString() {
-        return "ExtendableSavedState{" + Integer.toHexString(System.identityHashCode(this)) + " states=" + this.f5667d + "}";
+        return "ExtendableSavedState{" + Integer.toHexString(System.identityHashCode(this)) + " states=" + this.f5675d + "}";
     }
 
     @Override // p006b.p043i.p044a.AbstractC1041a
     public void writeToParcel(Parcel parcel, int i) {
         super.writeToParcel(parcel, i);
-        int size = this.f5667d.size();
+        int size = this.f5675d.size();
         parcel.writeInt(size);
         String[] strArr = new String[size];
         Bundle[] bundleArr = new Bundle[size];
         for (int i2 = 0; i2 < size; i2++) {
-            strArr[i2] = this.f5667d.mo5011i(i2);
-            bundleArr[i2] = this.f5667d.mo5016m(i2);
+            strArr[i2] = this.f5675d.mo5011i(i2);
+            bundleArr[i2] = this.f5675d.mo5016m(i2);
         }
         parcel.writeStringArray(strArr);
         parcel.writeTypedArray(bundleArr, 0);

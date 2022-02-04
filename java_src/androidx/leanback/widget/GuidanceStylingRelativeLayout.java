@@ -25,8 +25,8 @@ class GuidanceStylingRelativeLayout extends RelativeLayout {
 
     /* renamed from: a */
     public static float m2712a(Context context) {
-        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(C1080l.f4961h);
-        float f = obtainStyledAttributes.getFloat(C1080l.f4963i, 40.0f);
+        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(C1080l.f4968h);
+        float f = obtainStyledAttributes.getFloat(C1080l.f4970i, 40.0f);
         obtainStyledAttributes.recycle();
         return f;
     }

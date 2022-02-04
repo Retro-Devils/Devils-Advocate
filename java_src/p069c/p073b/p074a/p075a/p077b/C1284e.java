@@ -13,10 +13,10 @@ import p069c.p073b.p074a.p075a.p077b.p079l.C1292b;
 public class C1284e {
 
     /* renamed from: a */
-    public static final int f5544a = C1286g.f5547a;
+    public static final int f5552a = C1286g.f5555a;
 
     /* renamed from: b */
-    private static final C1284e f5545b = new C1284e();
+    private static final C1284e f5553b = new C1284e();
 
     C1284e() {
     }
@@ -25,7 +25,7 @@ public class C1284e {
     private static String m6781h(Context context, String str) {
         StringBuilder sb = new StringBuilder();
         sb.append("gcore_");
-        sb.append(f5544a);
+        sb.append(f5552a);
         sb.append("-");
         if (!TextUtils.isEmpty(str)) {
             sb.append(str);
@@ -76,7 +76,7 @@ public class C1284e {
 
     /* renamed from: e */
     public int mo6281e(Context context) {
-        return mo6282f(context, f5544a);
+        return mo6282f(context, f5552a);
     }
 
     /* renamed from: f */

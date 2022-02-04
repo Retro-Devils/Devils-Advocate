@@ -20,10 +20,10 @@ public class C1813d implements AbstractC1843n<File, ByteBuffer> {
     public static final class C1814a implements AbstractC1655d<ByteBuffer> {
 
         /* renamed from: b */
-        private final File f7041b;
+        private final File f7049b;
 
         C1814a(File file) {
-            this.f7041b = file;
+            this.f7049b = file;
         }
 
         @Override // com.bumptech.glide.load.p120n.AbstractC1655d
@@ -51,7 +51,7 @@ public class C1813d implements AbstractC1843n<File, ByteBuffer> {
         /* renamed from: e */
         public void mo7101e(EnumC1616g gVar, AbstractC1655d.AbstractC1656a<? super ByteBuffer> aVar) {
             try {
-                aVar.mo7109f(C2068a.m9398a(this.f7041b));
+                aVar.mo7109f(C2068a.m9398a(this.f7049b));
             } catch (IOException e) {
                 if (Log.isLoggable("ByteBufferFileLoader", 3)) {
                     Log.d("ByteBufferFileLoader", "Failed to obtain ByteBuffer for file", e);

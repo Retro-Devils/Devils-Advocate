@@ -149,12 +149,12 @@ public class NestedScrollView extends FrameLayout implements AbstractC1007m, Abs
             if (nestedScrollView.isEnabled() && (scrollRange = nestedScrollView.getScrollRange()) > 0) {
                 cVar.mo5503t0(true);
                 if (nestedScrollView.getScrollY() > 0) {
-                    cVar.mo5471b(C0979c.C0980a.f4714n);
-                    cVar.mo5471b(C0979c.C0980a.f4725y);
+                    cVar.mo5471b(C0979c.C0980a.f4718n);
+                    cVar.mo5471b(C0979c.C0980a.f4729y);
                 }
                 if (nestedScrollView.getScrollY() < scrollRange) {
-                    cVar.mo5471b(C0979c.C0980a.f4713m);
-                    cVar.mo5471b(C0979c.C0980a.f4690A);
+                    cVar.mo5471b(C0979c.C0980a.f4717m);
+                    cVar.mo5471b(C0979c.C0980a.f4694A);
                 }
             }
         }

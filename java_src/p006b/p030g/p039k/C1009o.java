@@ -7,17 +7,17 @@ import android.view.ViewGroup;
 public class C1009o {
 
     /* renamed from: a */
-    private int f4748a;
+    private int f4752a;
 
     /* renamed from: b */
-    private int f4749b;
+    private int f4753b;
 
     public C1009o(ViewGroup viewGroup) {
     }
 
     /* renamed from: a */
     public int mo5548a() {
-        return this.f4748a | this.f4749b;
+        return this.f4752a | this.f4753b;
     }
 
     /* renamed from: b */
@@ -28,18 +28,18 @@ public class C1009o {
     /* renamed from: c */
     public void mo5550c(View view, View view2, int i, int i2) {
         if (i2 == 1) {
-            this.f4749b = i;
+            this.f4753b = i;
         } else {
-            this.f4748a = i;
+            this.f4752a = i;
         }
     }
 
     /* renamed from: d */
     public void mo5551d(View view, int i) {
         if (i == 1) {
-            this.f4749b = 0;
+            this.f4753b = 0;
         } else {
-            this.f4748a = 0;
+            this.f4752a = 0;
         }
     }
 }

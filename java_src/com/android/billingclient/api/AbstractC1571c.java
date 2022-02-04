@@ -11,25 +11,25 @@ public abstract class AbstractC1571c {
     public static final class C1572a {
 
         /* renamed from: a */
-        private boolean f6414a;
+        private boolean f6422a;
 
         /* renamed from: b */
-        private final Context f6415b;
+        private final Context f6423b;
 
         /* renamed from: c */
-        private AbstractC1585h f6416c;
+        private AbstractC1585h f6424c;
 
         private C1572a(Context context) {
-            this.f6415b = context;
+            this.f6423b = context;
         }
 
         /* renamed from: a */
         public final AbstractC1571c mo6918a() {
-            Context context = this.f6415b;
+            Context context = this.f6423b;
             if (context != null) {
-                AbstractC1585h hVar = this.f6416c;
+                AbstractC1585h hVar = this.f6424c;
                 if (hVar != null) {
-                    boolean z = this.f6414a;
+                    boolean z = this.f6422a;
                     if (z) {
                         return new C1574d(null, z, context, hVar);
                     }
@@ -42,13 +42,13 @@ public abstract class AbstractC1571c {
 
         /* renamed from: b */
         public final C1572a mo6919b() {
-            this.f6414a = true;
+            this.f6422a = true;
             return this;
         }
 
         /* renamed from: c */
         public final C1572a mo6920c(AbstractC1585h hVar) {
-            this.f6416c = hVar;
+            this.f6424c = hVar;
             return this;
         }
     }

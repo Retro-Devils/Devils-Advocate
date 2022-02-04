@@ -8,39 +8,39 @@ import android.database.sqlite.SQLiteDatabase;
 public class C2549q {
 
     /* renamed from: a */
-    Context f8843a;
+    Context f8851a;
 
     /* renamed from: b */
-    C2219c3 f8844b;
+    C2219c3 f8852b;
 
     /* renamed from: c */
-    AbstractC2526p f8845c = new C2548p3();
+    AbstractC2526p f8853c = new C2548p3();
 
     /* renamed from: d */
-    AbstractC2526p f8846d = new C2323g0();
+    AbstractC2526p f8854d = new C2323g0();
 
     /* renamed from: e */
-    AbstractC2526p f8847e;
+    AbstractC2526p f8855e;
 
     /* renamed from: f */
-    AbstractC2526p f8848f;
+    AbstractC2526p f8856f;
 
     /* renamed from: g */
-    AbstractC2526p f8849g;
+    AbstractC2526p f8857g;
 
     /* renamed from: h */
-    AbstractC2526p f8850h;
+    AbstractC2526p f8858h;
 
     /* renamed from: i */
-    AbstractC2526p f8851i = new C2825w();
+    AbstractC2526p f8859i = new C2825w();
 
     public C2549q(Context context, SQLiteDatabase sQLiteDatabase, SQLiteDatabase sQLiteDatabase2) {
-        this.f8843a = context;
-        this.f8844b = C2219c3.m9805k(context);
-        this.f8847e = new C2259e(sQLiteDatabase, sQLiteDatabase2);
-        this.f8848f = new C2222d(sQLiteDatabase, sQLiteDatabase2);
-        this.f8849g = new C2206b2(sQLiteDatabase, sQLiteDatabase2);
-        this.f8850h = new C2218c2(sQLiteDatabase, sQLiteDatabase2);
+        this.f8851a = context;
+        this.f8852b = C2219c3.m9805k(context);
+        this.f8855e = new C2259e(sQLiteDatabase, sQLiteDatabase2);
+        this.f8856f = new C2222d(sQLiteDatabase, sQLiteDatabase2);
+        this.f8857g = new C2206b2(sQLiteDatabase, sQLiteDatabase2);
+        this.f8858h = new C2218c2(sQLiteDatabase, sQLiteDatabase2);
     }
 
     /* access modifiers changed from: package-private */
@@ -51,7 +51,7 @@ public class C2549q {
 
     /* renamed from: b */
     public AbstractC2526p mo8954b(int i) {
-        return (i == 32 || i == 64) ? this.f8849g : i == 16 ? this.f8850h : i == 256 ? this.f8847e : i == 8 ? this.f8848f : i == 4 ? this.f8846d : (i == 512 || i == 4096) ? this.f8851i : this.f8845c;
+        return (i == 32 || i == 64) ? this.f8857g : i == 16 ? this.f8858h : i == 256 ? this.f8855e : i == 8 ? this.f8856f : i == 4 ? this.f8854d : (i == 512 || i == 4096) ? this.f8859i : this.f8853c;
     }
 
     /* access modifiers changed from: package-private */
@@ -91,17 +91,17 @@ public class C2549q {
     /* access modifiers changed from: package-private */
     /* renamed from: f */
     public String mo8958f() {
-        int i = !this.f8845c.mo8883e() ? 3 : 0;
-        if (!this.f8851i.mo8883e()) {
+        int i = !this.f8853c.mo8883e() ? 3 : 0;
+        if (!this.f8859i.mo8883e()) {
             i |= 4608;
         }
-        if (!this.f8846d.mo8883e()) {
+        if (!this.f8854d.mo8883e()) {
             i |= 4;
         }
-        if (!this.f8847e.mo8883e()) {
+        if (!this.f8855e.mo8883e()) {
             i |= 256;
         }
-        if (!this.f8848f.mo8883e()) {
+        if (!this.f8856f.mo8883e()) {
             i |= 8;
         }
         return "cover_status>=16384" + " AND (cover_status & " + i + ")!=0 AND (ignored=0 OR system='android') AND present=1";

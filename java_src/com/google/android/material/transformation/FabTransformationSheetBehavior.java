@@ -18,7 +18,7 @@ import p069c.p073b.p074a.p090b.p092l.C1410j;
 public class FabTransformationSheetBehavior extends FabTransformationBehavior {
 
     /* renamed from: i */
-    private Map<View, Integer> f11021i;
+    private Map<View, Integer> f11029i;
 
     public FabTransformationSheetBehavior() {
     }
@@ -35,20 +35,20 @@ public class FabTransformationSheetBehavior extends FabTransformationBehavior {
             CoordinatorLayout coordinatorLayout = (CoordinatorLayout) parent;
             int childCount = coordinatorLayout.getChildCount();
             if (Build.VERSION.SDK_INT >= 16 && z) {
-                this.f11021i = new HashMap(childCount);
+                this.f11029i = new HashMap(childCount);
             }
             for (int i2 = 0; i2 < childCount; i2++) {
                 View childAt = coordinatorLayout.getChildAt(i2);
                 boolean z2 = (childAt.getLayoutParams() instanceof CoordinatorLayout.C0340f) && (((CoordinatorLayout.C0340f) childAt.getLayoutParams()).mo2121f() instanceof FabTransformationScrimBehavior);
                 if (childAt != view && !z2) {
                     if (!z) {
-                        Map<View, Integer> map = this.f11021i;
+                        Map<View, Integer> map = this.f11029i;
                         if (map != null && map.containsKey(childAt)) {
-                            i = this.f11021i.get(childAt).intValue();
+                            i = this.f11029i.get(childAt).intValue();
                         }
                     } else {
                         if (Build.VERSION.SDK_INT >= 16) {
-                            this.f11021i.put(childAt, Integer.valueOf(childAt.getImportantForAccessibility()));
+                            this.f11029i.put(childAt, Integer.valueOf(childAt.getImportantForAccessibility()));
                         }
                         i = 4;
                     }
@@ -56,7 +56,7 @@ public class FabTransformationSheetBehavior extends FabTransformationBehavior {
                 }
             }
             if (!z) {
-                this.f11021i = null;
+                this.f11029i = null;
             }
         }
     }
@@ -75,8 +75,8 @@ public class FabTransformationSheetBehavior extends FabTransformationBehavior {
     public FabTransformationBehavior.C3295e mo11159e0(Context context, boolean z) {
         int i = z ? C1388a.mtrl_fab_transformation_sheet_expand_spec : C1388a.mtrl_fab_transformation_sheet_collapse_spec;
         FabTransformationBehavior.C3295e eVar = new FabTransformationBehavior.C3295e();
-        eVar.f11014a = C1408h.m7013c(context, i);
-        eVar.f11015b = new C1410j(17, 0.0f, 0.0f);
+        eVar.f11022a = C1408h.m7013c(context, i);
+        eVar.f11023b = new C1410j(17, 0.0f, 0.0f);
         return eVar;
     }
 }

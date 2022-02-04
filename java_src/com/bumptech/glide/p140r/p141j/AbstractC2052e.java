@@ -9,7 +9,7 @@ import com.bumptech.glide.p140r.p142k.AbstractC2061b;
 public abstract class AbstractC2052e<Z> extends AbstractC2056i<ImageView, Z> implements AbstractC2061b.AbstractC2062a {
 
     /* renamed from: i */
-    private Animatable f7554i;
+    private Animatable f7562i;
 
     public AbstractC2052e(ImageView imageView) {
         super(imageView);
@@ -19,11 +19,11 @@ public abstract class AbstractC2052e<Z> extends AbstractC2056i<ImageView, Z> imp
     private void m9343p(Z z) {
         if (z instanceof Animatable) {
             Z z2 = z;
-            this.f7554i = z2;
+            this.f7562i = z2;
             z2.start();
             return;
         }
-        this.f7554i = null;
+        this.f7562i = null;
     }
 
     /* renamed from: s */
@@ -35,7 +35,7 @@ public abstract class AbstractC2052e<Z> extends AbstractC2056i<ImageView, Z> imp
     @Override // com.bumptech.glide.p140r.p141j.AbstractC2048a, com.bumptech.glide.p137o.AbstractC2012i
     /* renamed from: a */
     public void mo7041a() {
-        Animatable animatable = this.f7554i;
+        Animatable animatable = this.f7562i;
         if (animatable != null) {
             animatable.start();
         }
@@ -70,7 +70,7 @@ public abstract class AbstractC2052e<Z> extends AbstractC2056i<ImageView, Z> imp
     @Override // com.bumptech.glide.p140r.p141j.AbstractC2048a, com.bumptech.glide.p137o.AbstractC2012i
     /* renamed from: f */
     public void mo7042f() {
-        Animatable animatable = this.f7554i;
+        Animatable animatable = this.f7562i;
         if (animatable != null) {
             animatable.stop();
         }
@@ -80,7 +80,7 @@ public abstract class AbstractC2052e<Z> extends AbstractC2056i<ImageView, Z> imp
     /* renamed from: h */
     public void mo7615h(Drawable drawable) {
         super.mo7615h(drawable);
-        Animatable animatable = this.f7554i;
+        Animatable animatable = this.f7562i;
         if (animatable != null) {
             animatable.stop();
         }
@@ -90,7 +90,7 @@ public abstract class AbstractC2052e<Z> extends AbstractC2056i<ImageView, Z> imp
 
     /* renamed from: q */
     public void mo7818q(Drawable drawable) {
-        ((ImageView) this.f7557d).setImageDrawable(drawable);
+        ((ImageView) this.f7565d).setImageDrawable(drawable);
     }
 
     /* access modifiers changed from: protected */

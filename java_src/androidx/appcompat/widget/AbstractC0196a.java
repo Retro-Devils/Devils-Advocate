@@ -159,8 +159,8 @@ public abstract class AbstractC0196a extends ViewGroup {
     /* access modifiers changed from: protected */
     public void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
-        TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(null, C0763j.f3702a, C0754a.actionBarStyle, 0);
-        setContentHeight(obtainStyledAttributes.getLayoutDimension(C0763j.f3747j, 0));
+        TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(null, C0763j.f3706a, C0754a.actionBarStyle, 0);
+        setContentHeight(obtainStyledAttributes.getLayoutDimension(C0763j.f3751j, 0));
         obtainStyledAttributes.recycle();
         C0203c cVar = this.f918e;
         if (cVar != null) {

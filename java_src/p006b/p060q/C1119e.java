@@ -17,10 +17,10 @@ public class C1119e extends AbstractC0490q {
     class C1120a extends AbstractC1142m.AbstractC1147e {
 
         /* renamed from: a */
-        final /* synthetic */ Rect f5072a;
+        final /* synthetic */ Rect f5079a;
 
         C1120a(Rect rect) {
-            this.f5072a = rect;
+            this.f5079a = rect;
         }
     }
 
@@ -28,14 +28,14 @@ public class C1119e extends AbstractC0490q {
     class C1121b implements AbstractC1142m.AbstractC1148f {
 
         /* renamed from: a */
-        final /* synthetic */ View f5074a;
+        final /* synthetic */ View f5081a;
 
         /* renamed from: b */
-        final /* synthetic */ ArrayList f5075b;
+        final /* synthetic */ ArrayList f5082b;
 
         C1121b(View view, ArrayList arrayList) {
-            this.f5074a = view;
-            this.f5075b = arrayList;
+            this.f5081a = view;
+            this.f5082b = arrayList;
         }
 
         @Override // p006b.p060q.AbstractC1142m.AbstractC1148f
@@ -62,10 +62,10 @@ public class C1119e extends AbstractC0490q {
         /* renamed from: e */
         public void mo5765e(AbstractC1142m mVar) {
             mVar.mo5816P(this);
-            this.f5074a.setVisibility(8);
-            int size = this.f5075b.size();
+            this.f5081a.setVisibility(8);
+            int size = this.f5082b.size();
             for (int i = 0; i < size; i++) {
-                ((View) this.f5075b.get(i)).setVisibility(0);
+                ((View) this.f5082b.get(i)).setVisibility(0);
             }
         }
     }
@@ -74,46 +74,46 @@ public class C1119e extends AbstractC0490q {
     class C1122c extends C1150n {
 
         /* renamed from: a */
-        final /* synthetic */ Object f5077a;
+        final /* synthetic */ Object f5084a;
 
         /* renamed from: b */
-        final /* synthetic */ ArrayList f5078b;
+        final /* synthetic */ ArrayList f5085b;
 
         /* renamed from: c */
-        final /* synthetic */ Object f5079c;
+        final /* synthetic */ Object f5086c;
 
         /* renamed from: d */
-        final /* synthetic */ ArrayList f5080d;
+        final /* synthetic */ ArrayList f5087d;
 
         /* renamed from: e */
-        final /* synthetic */ Object f5081e;
+        final /* synthetic */ Object f5088e;
 
         /* renamed from: f */
-        final /* synthetic */ ArrayList f5082f;
+        final /* synthetic */ ArrayList f5089f;
 
         C1122c(Object obj, ArrayList arrayList, Object obj2, ArrayList arrayList2, Object obj3, ArrayList arrayList3) {
-            this.f5077a = obj;
-            this.f5078b = arrayList;
-            this.f5079c = obj2;
-            this.f5080d = arrayList2;
-            this.f5081e = obj3;
-            this.f5082f = arrayList3;
+            this.f5084a = obj;
+            this.f5085b = arrayList;
+            this.f5086c = obj2;
+            this.f5087d = arrayList2;
+            this.f5088e = obj3;
+            this.f5089f = arrayList3;
         }
 
         @Override // p006b.p060q.AbstractC1142m.AbstractC1148f, p006b.p060q.C1150n
         /* renamed from: c */
         public void mo5784c(AbstractC1142m mVar) {
-            Object obj = this.f5077a;
+            Object obj = this.f5084a;
             if (obj != null) {
-                C1119e.this.mo2886q(obj, this.f5078b, null);
+                C1119e.this.mo2886q(obj, this.f5085b, null);
             }
-            Object obj2 = this.f5079c;
+            Object obj2 = this.f5086c;
             if (obj2 != null) {
-                C1119e.this.mo2886q(obj2, this.f5080d, null);
+                C1119e.this.mo2886q(obj2, this.f5087d, null);
             }
-            Object obj3 = this.f5081e;
+            Object obj3 = this.f5088e;
             if (obj3 != null) {
-                C1119e.this.mo2886q(obj3, this.f5082f, null);
+                C1119e.this.mo2886q(obj3, this.f5089f, null);
             }
         }
 
@@ -128,10 +128,10 @@ public class C1119e extends AbstractC0490q {
     class C1123d extends AbstractC1142m.AbstractC1147e {
 
         /* renamed from: a */
-        final /* synthetic */ Rect f5084a;
+        final /* synthetic */ Rect f5091a;
 
         C1123d(Rect rect) {
-            this.f5084a = rect;
+            this.f5091a = rect;
         }
     }
 

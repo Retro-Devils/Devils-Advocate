@@ -8,7 +8,7 @@ import p069c.p111c.p112a.p113a.p116c.C1546a;
 public class C1537a extends AbstractC1542f {
 
     /* renamed from: o */
-    private double f6334o = 60.0d;
+    private double f6342o = 60.0d;
 
     public C1537a() {
         mo6831f(0.8f);
@@ -24,9 +24,9 @@ public class C1537a extends AbstractC1542f {
         view.setPivotX(f2 / 2.0f);
         float f3 = (float) measuredHeight;
         view.setPivotY(f3 / 2.0f);
-        view.setTranslationX(f2 * f * this.f6344a);
-        view.setRotationY(Math.signum(f) * ((float) ((Math.log((double) (Math.abs(f) + 1.0f)) / Math.log(3.0d)) * (-this.f6334o))));
-        view.setScaleY((this.f6354k * Math.abs(f)) + 1.0f);
+        view.setTranslationX(f2 * f * this.f6352a);
+        view.setRotationY(Math.signum(f) * ((float) ((Math.log((double) (Math.abs(f) + 1.0f)) / Math.log(3.0d)) * (-this.f6342o))));
+        view.setScaleY((this.f6362k * Math.abs(f)) + 1.0f);
         view.setTranslationY(mo6837d(f3));
     }
 

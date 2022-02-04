@@ -13,16 +13,16 @@ public interface AbstractC2040d {
         
 
         /* renamed from: h */
-        private final boolean f7506h;
+        private final boolean f7514h;
 
         private EnumC2041a(boolean z) {
-            this.f7506h = z;
+            this.f7514h = z;
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: a */
         public boolean mo7801a() {
-            return this.f7506h;
+            return this.f7514h;
         }
     }
 

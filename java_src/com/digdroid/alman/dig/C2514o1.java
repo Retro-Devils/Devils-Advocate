@@ -29,7 +29,7 @@ public class C2514o1 extends ComponentCallbacks2C1626k {
 
     /* renamed from: F */
     public <ResourceType> C2498n1<ResourceType> mo7044l(Class<ResourceType> cls) {
-        return new C2498n1<>(this.f6608e, this, cls, this.f6609f);
+        return new C2498n1<>(this.f6616e, this, cls, this.f6617f);
     }
 
     /* renamed from: G */

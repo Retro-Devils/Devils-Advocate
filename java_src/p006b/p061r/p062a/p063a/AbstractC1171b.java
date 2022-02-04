@@ -8,38 +8,38 @@ import android.os.Build;
 public abstract class AbstractC1171b {
 
     /* renamed from: a */
-    public static final String[] f5208a = m6405a();
+    public static final String[] f5215a = m6405a();
 
     /* renamed from: b */
-    protected ContentValues f5209b;
+    protected ContentValues f5216b;
 
     /* renamed from: b.r.a.a.b$a */
     public static abstract class AbstractC1172a<T extends AbstractC1172a> {
 
         /* renamed from: a */
-        protected ContentValues f5210a = new ContentValues();
+        protected ContentValues f5217a = new ContentValues();
 
         /* renamed from: a */
         public T mo5889a(String str) {
-            this.f5210a.put("short_description", str);
+            this.f5217a.put("short_description", str);
             return this;
         }
 
         /* renamed from: b */
         public T mo5890b(Uri uri) {
-            this.f5210a.put("poster_art_uri", uri == null ? null : uri.toString());
+            this.f5217a.put("poster_art_uri", uri == null ? null : uri.toString());
             return this;
         }
 
         /* renamed from: c */
         public T mo5891c(String str) {
-            this.f5210a.put("title", str);
+            this.f5217a.put("title", str);
             return this;
         }
     }
 
     AbstractC1171b(AbstractC1172a aVar) {
-        this.f5209b = aVar.f5210a;
+        this.f5216b = aVar.f5217a;
     }
 
     /* renamed from: a */
@@ -80,7 +80,7 @@ public abstract class AbstractC1171b {
 
     /* renamed from: b */
     public ContentValues mo5887b() {
-        ContentValues contentValues = new ContentValues(this.f5209b);
+        ContentValues contentValues = new ContentValues(this.f5216b);
         int i = Build.VERSION.SDK_INT;
         if (i < 23) {
             contentValues.remove("searchable");
@@ -100,6 +100,6 @@ public abstract class AbstractC1171b {
     }
 
     public int hashCode() {
-        return this.f5209b.hashCode();
+        return this.f5216b.hashCode();
     }
 }

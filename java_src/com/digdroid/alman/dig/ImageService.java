@@ -10,32 +10,32 @@ import com.digdroid.alman.dig.C2295f;
 public class ImageService extends IntentService {
 
     /* renamed from: b */
-    private C2502o f7630b;
+    private C2502o f7638b;
 
     /* renamed from: c */
-    private C2219c3 f7631c;
+    private C2219c3 f7639c;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.digdroid.alman.dig.ImageService$a */
     public class C2100a implements C2295f.AbstractC2302g {
 
         /* renamed from: a */
-        final /* synthetic */ Context f7632a;
+        final /* synthetic */ Context f7640a;
 
         C2100a(Context context) {
-            this.f7632a = context;
+            this.f7640a = context;
         }
 
         @Override // com.digdroid.alman.dig.C2295f.AbstractC2302g
         /* renamed from: a */
         public void mo7913a() {
-            ImageService.m9512b(this.f7632a);
+            ImageService.m9512b(this.f7640a);
         }
 
         @Override // com.digdroid.alman.dig.C2295f.AbstractC2302g
         /* renamed from: b */
         public void mo7914b() {
-            ImageService.m9512b(this.f7632a);
+            ImageService.m9512b(this.f7640a);
         }
     }
 
@@ -103,8 +103,8 @@ public class ImageService extends IntentService {
 
     public void onCreate() {
         super.onCreate();
-        this.f7630b = C2502o.m10802j(getApplicationContext());
-        this.f7631c = C2219c3.m9805k(getApplicationContext());
+        this.f7638b = C2502o.m10802j(getApplicationContext());
+        this.f7639c = C2219c3.m9805k(getApplicationContext());
     }
 
     /* access modifiers changed from: protected */
@@ -113,30 +113,30 @@ public class ImageService extends IntentService {
         if (!C2185a4.m9694x(this) && intent != null) {
             try {
                 boolean z = true;
-                this.f7631c.mo8168Q(true);
+                this.f7639c.mo8168Q(true);
                 String action = intent.getAction();
                 if ("rename".equals(action)) {
-                    this.f7630b.mo8825p();
+                    this.f7638b.mo8825p();
                 } else if ("start".equals(action)) {
-                    if (this.f7630b.mo8821l()) {
+                    if (this.f7638b.mo8821l()) {
                         NetworkInfo activeNetworkInfo = ((ConnectivityManager) getApplicationContext().getSystemService("connectivity")).getActiveNetworkInfo();
                         if (activeNetworkInfo != null && activeNetworkInfo.isConnectedOrConnecting()) {
                             int type = activeNetworkInfo.getType();
-                            if (!this.f7631c.mo8180c("wifi_only", true)) {
-                                oVar = this.f7630b;
+                            if (!this.f7639c.mo8180c("wifi_only", true)) {
+                                oVar = this.f7638b;
                             } else if (type == 1 || type == 9) {
-                                oVar = this.f7630b;
+                                oVar = this.f7638b;
                             }
                             z = oVar.mo8818h();
                         }
                     }
                 } else if (action.equals("get_moby")) {
-                    this.f7630b.mo8820k();
+                    this.f7638b.mo8820k();
                 } else if (action.equals("get_gamefaqs")) {
-                    this.f7630b.mo8815e();
+                    this.f7638b.mo8815e();
                 }
                 if (z) {
-                    this.f7631c.mo8168Q(false);
+                    this.f7639c.mo8168Q(false);
                 }
             } catch (Exception unused) {
             }

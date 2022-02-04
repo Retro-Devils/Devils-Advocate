@@ -9,7 +9,7 @@ import java.util.Set;
 final class GeneratedAppGlideModuleImpl extends GeneratedAppGlideModule {
 
     /* renamed from: a */
-    private final MyAppGlideModule f6524a = new MyAppGlideModule();
+    private final MyAppGlideModule f6532a = new MyAppGlideModule();
 
     public GeneratedAppGlideModuleImpl(Context context) {
         if (Log.isLoggable("Glide", 3)) {
@@ -20,19 +20,19 @@ final class GeneratedAppGlideModuleImpl extends GeneratedAppGlideModule {
     @Override // com.bumptech.glide.p138p.AbstractC2026c
     /* renamed from: a */
     public void mo6973a(Context context, ComponentCallbacks2C1610c cVar, C1618i iVar) {
-        this.f6524a.mo6973a(context, cVar, iVar);
+        this.f6532a.mo6973a(context, cVar, iVar);
     }
 
     @Override // com.bumptech.glide.p138p.AbstractC2024a
     /* renamed from: b */
     public void mo6974b(Context context, C1612d dVar) {
-        this.f6524a.mo6974b(context, dVar);
+        this.f6532a.mo6974b(context, dVar);
     }
 
     @Override // com.bumptech.glide.p138p.AbstractC2024a
     /* renamed from: c */
     public boolean mo6975c() {
-        return this.f6524a.mo6975c();
+        return this.f6532a.mo6975c();
     }
 
     @Override // com.bumptech.glide.GeneratedAppGlideModule

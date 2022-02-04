@@ -9,21 +9,21 @@ import p069c.p070a.p071a.C1253v;
 public abstract class AbstractC1273l<T> extends AbstractC1239n<T> {
 
     /* renamed from: q */
-    private static final String f5521q = String.format("application/json; charset=%s", "utf-8");
+    private static final String f5528q = String.format("application/json; charset=%s", "utf-8");
 
     /* renamed from: r */
-    private final Object f5522r = new Object();
+    private final Object f5529r = new Object();
 
     /* renamed from: s */
-    private C1245p.AbstractC1247b<T> f5523s;
+    private C1245p.AbstractC1247b<T> f5530s;
 
     /* renamed from: t */
-    private final String f5524t;
+    private final String f5531t;
 
     public AbstractC1273l(int i, String str, String str2, C1245p.AbstractC1247b<T> bVar, C1245p.AbstractC1246a aVar) {
         super(i, str, aVar);
-        this.f5523s = bVar;
-        this.f5524t = str2;
+        this.f5530s = bVar;
+        this.f5531t = str2;
     }
 
     /* access modifiers changed from: protected */
@@ -31,8 +31,8 @@ public abstract class AbstractC1273l<T> extends AbstractC1239n<T> {
     /* renamed from: e */
     public void mo6196e(T t) {
         C1245p.AbstractC1247b<T> bVar;
-        synchronized (this.f5522r) {
-            bVar = this.f5523s;
+        synchronized (this.f5529r) {
+            bVar = this.f5530s;
         }
         if (bVar != null) {
             bVar.mo6226a(t);
@@ -43,13 +43,13 @@ public abstract class AbstractC1273l<T> extends AbstractC1239n<T> {
     /* renamed from: i */
     public byte[] mo6198i() {
         try {
-            String str = this.f5524t;
+            String str = this.f5531t;
             if (str == null) {
                 return null;
             }
             return str.getBytes("utf-8");
         } catch (UnsupportedEncodingException unused) {
-            C1253v.m6670f("Unsupported Encoding while trying to get the bytes of %s using %s", this.f5524t, "utf-8");
+            C1253v.m6670f("Unsupported Encoding while trying to get the bytes of %s using %s", this.f5531t, "utf-8");
             return null;
         }
     }
@@ -57,7 +57,7 @@ public abstract class AbstractC1273l<T> extends AbstractC1239n<T> {
     @Override // p069c.p070a.p071a.AbstractC1239n
     /* renamed from: j */
     public String mo6199j() {
-        return f5521q;
+        return f5528q;
     }
 
     @Override // p069c.p070a.p071a.AbstractC1239n

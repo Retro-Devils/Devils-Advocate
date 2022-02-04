@@ -17,7 +17,7 @@ public class C2403j extends C2728t0 {
     @Override // com.digdroid.alman.dig.C2728t0
     /* renamed from: D3 */
     public Cursor mo8142D3() {
-        return this.f8796c0.mo8841e(mo9244E3(), this.f9278s0);
+        return this.f8804c0.mo8841e(mo9244E3(), this.f9286s0);
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2577r1, com.digdroid.alman.dig.AbstractC2531p1, androidx.fragment.app.Fragment, com.digdroid.alman.dig.C2728t0
@@ -25,8 +25,8 @@ public class C2403j extends C2728t0 {
     public void mo2537W0(Bundle bundle) {
         super.mo2537W0(bundle);
         Bundle h0 = mo2568h0();
-        this.f9278s0.f8304d = (int) h0.getLong("collection");
-        this.f9278s0.f8313m = this.f8801h0;
+        this.f9286s0.f8312d = (int) h0.getLong("collection");
+        this.f9286s0.f8321m = this.f8809h0;
     }
 
     /* access modifiers changed from: package-private */

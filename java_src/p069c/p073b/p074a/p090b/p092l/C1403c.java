@@ -6,11 +6,11 @@ import android.animation.TypeEvaluator;
 public class C1403c implements TypeEvaluator<Integer> {
 
     /* renamed from: a */
-    private static final C1403c f6011a = new C1403c();
+    private static final C1403c f6019a = new C1403c();
 
     /* renamed from: b */
     public static C1403c m7002b() {
-        return f6011a;
+        return f6019a;
     }
 
     /* renamed from: a */

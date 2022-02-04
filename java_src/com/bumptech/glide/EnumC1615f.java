@@ -8,9 +8,9 @@ public enum EnumC1615f {
     
 
     /* renamed from: f */
-    private final float f6572f;
+    private final float f6580f;
 
     private EnumC1615f(float f) {
-        this.f6572f = f;
+        this.f6580f = f;
     }
 }

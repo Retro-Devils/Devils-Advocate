@@ -8,10 +8,10 @@ public enum EnumC3445c {
     
 
     /* renamed from: f */
-    private int f11686f;
+    private int f11695f;
 
     private EnumC3445c(int i) {
-        this.f11686f = i;
+        this.f11695f = i;
     }
 
     /* renamed from: b */
@@ -27,6 +27,6 @@ public enum EnumC3445c {
 
     /* renamed from: a */
     public int mo11526a() {
-        return this.f11686f;
+        return this.f11695f;
     }
 }

@@ -26,6 +26,6 @@ class C0813b extends C0816d {
     @Override // p006b.p019c.p020a.AbstractC0819f, p006b.p019c.p020a.C0816d
     /* renamed from: m */
     public void mo4806m() {
-        C0821h.f4047b = new C0814a();
+        C0821h.f4051b = new C0814a();
     }
 }

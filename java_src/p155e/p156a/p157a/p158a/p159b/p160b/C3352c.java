@@ -5,15 +5,15 @@ package p155e.p156a.p157a.p158a.p159b.p160b;
 public class C3352c {
 
     /* renamed from: a */
-    long f11290a;
+    long f11299a;
 
     /* renamed from: b */
-    long f11291b;
+    long f11300b;
 
     C3352c() {
     }
 
     public String toString() {
-        return "BindPair binding input " + this.f11290a + " to output " + this.f11291b;
+        return "BindPair binding input " + this.f11299a + " to output " + this.f11300b;
     }
 }

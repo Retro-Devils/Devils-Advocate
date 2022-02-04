@@ -12,53 +12,53 @@ import android.util.Log;
 public final class C1729i {
 
     /* renamed from: a */
-    private final int f6774a;
+    private final int f6782a;
 
     /* renamed from: b */
-    private final int f6775b;
+    private final int f6783b;
 
     /* renamed from: c */
-    private final Context f6776c;
+    private final Context f6784c;
 
     /* renamed from: d */
-    private final int f6777d;
+    private final int f6785d;
 
     /* renamed from: com.bumptech.glide.load.o.b0.i$a */
     public static final class C1730a {
 
         /* renamed from: a */
-        static final int f6778a = (Build.VERSION.SDK_INT < 26 ? 4 : 1);
+        static final int f6786a = (Build.VERSION.SDK_INT < 26 ? 4 : 1);
 
         /* renamed from: b */
-        final Context f6779b;
+        final Context f6787b;
 
         /* renamed from: c */
-        ActivityManager f6780c;
+        ActivityManager f6788c;
 
         /* renamed from: d */
-        AbstractC1732c f6781d;
+        AbstractC1732c f6789d;
 
         /* renamed from: e */
-        float f6782e = 2.0f;
+        float f6790e = 2.0f;
 
         /* renamed from: f */
-        float f6783f = ((float) f6778a);
+        float f6791f = ((float) f6786a);
 
         /* renamed from: g */
-        float f6784g = 0.4f;
+        float f6792g = 0.4f;
 
         /* renamed from: h */
-        float f6785h = 0.33f;
+        float f6793h = 0.33f;
 
         /* renamed from: i */
-        int f6786i = 4194304;
+        int f6794i = 4194304;
 
         public C1730a(Context context) {
-            this.f6779b = context;
-            this.f6780c = (ActivityManager) context.getSystemService("activity");
-            this.f6781d = new C1731b(context.getResources().getDisplayMetrics());
-            if (Build.VERSION.SDK_INT >= 26 && C1729i.m8150e(this.f6780c)) {
-                this.f6783f = 0.0f;
+            this.f6787b = context;
+            this.f6788c = (ActivityManager) context.getSystemService("activity");
+            this.f6789d = new C1731b(context.getResources().getDisplayMetrics());
+            if (Build.VERSION.SDK_INT >= 26 && C1729i.m8150e(this.f6788c)) {
+                this.f6791f = 0.0f;
             }
         }
 
@@ -72,22 +72,22 @@ public final class C1729i {
     private static final class C1731b implements AbstractC1732c {
 
         /* renamed from: a */
-        private final DisplayMetrics f6787a;
+        private final DisplayMetrics f6795a;
 
         C1731b(DisplayMetrics displayMetrics) {
-            this.f6787a = displayMetrics;
+            this.f6795a = displayMetrics;
         }
 
         @Override // com.bumptech.glide.load.p122o.p124b0.C1729i.AbstractC1732c
         /* renamed from: a */
         public int mo7235a() {
-            return this.f6787a.heightPixels;
+            return this.f6795a.heightPixels;
         }
 
         @Override // com.bumptech.glide.load.p122o.p124b0.C1729i.AbstractC1732c
         /* renamed from: b */
         public int mo7236b() {
-            return this.f6787a.widthPixels;
+            return this.f6795a.widthPixels;
         }
     }
 
@@ -101,32 +101,32 @@ public final class C1729i {
     }
 
     C1729i(C1730a aVar) {
-        this.f6776c = aVar.f6779b;
-        int i = m8150e(aVar.f6780c) ? aVar.f6786i / 2 : aVar.f6786i;
-        this.f6777d = i;
-        int c = m8149c(aVar.f6780c, aVar.f6784g, aVar.f6785h);
-        float b = (float) (aVar.f6781d.mo7236b() * aVar.f6781d.mo7235a() * 4);
-        int round = Math.round(aVar.f6783f * b);
-        int round2 = Math.round(b * aVar.f6782e);
+        this.f6784c = aVar.f6787b;
+        int i = m8150e(aVar.f6788c) ? aVar.f6794i / 2 : aVar.f6794i;
+        this.f6785d = i;
+        int c = m8149c(aVar.f6788c, aVar.f6792g, aVar.f6793h);
+        float b = (float) (aVar.f6789d.mo7236b() * aVar.f6789d.mo7235a() * 4);
+        int round = Math.round(aVar.f6791f * b);
+        int round2 = Math.round(b * aVar.f6790e);
         int i2 = c - i;
         int i3 = round2 + round;
         if (i3 <= i2) {
-            this.f6775b = round2;
-            this.f6774a = round;
+            this.f6783b = round2;
+            this.f6782a = round;
         } else {
             float f = (float) i2;
-            float f2 = aVar.f6783f;
-            float f3 = aVar.f6782e;
+            float f2 = aVar.f6791f;
+            float f3 = aVar.f6790e;
             float f4 = f / (f2 + f3);
-            this.f6775b = Math.round(f3 * f4);
-            this.f6774a = Math.round(f4 * aVar.f6783f);
+            this.f6783b = Math.round(f3 * f4);
+            this.f6782a = Math.round(f4 * aVar.f6791f);
         }
         if (Log.isLoggable("MemorySizeCalculator", 3)) {
             StringBuilder sb = new StringBuilder();
             sb.append("Calculation complete, Calculated memory cache size: ");
-            sb.append(m8151f(this.f6775b));
+            sb.append(m8151f(this.f6783b));
             sb.append(", pool size: ");
-            sb.append(m8151f(this.f6774a));
+            sb.append(m8151f(this.f6782a));
             sb.append(", byte array size: ");
             sb.append(m8151f(i));
             sb.append(", memory class limited? ");
@@ -134,9 +134,9 @@ public final class C1729i {
             sb.append(", max size: ");
             sb.append(m8151f(c));
             sb.append(", memoryClass: ");
-            sb.append(aVar.f6780c.getMemoryClass());
+            sb.append(aVar.f6788c.getMemoryClass());
             sb.append(", isLowMemoryDevice: ");
-            sb.append(m8150e(aVar.f6780c));
+            sb.append(m8150e(aVar.f6788c));
             Log.d("MemorySizeCalculator", sb.toString());
         }
     }
@@ -162,21 +162,21 @@ public final class C1729i {
 
     /* renamed from: f */
     private String m8151f(int i) {
-        return Formatter.formatFileSize(this.f6776c, (long) i);
+        return Formatter.formatFileSize(this.f6784c, (long) i);
     }
 
     /* renamed from: a */
     public int mo7231a() {
-        return this.f6777d;
+        return this.f6785d;
     }
 
     /* renamed from: b */
     public int mo7232b() {
-        return this.f6774a;
+        return this.f6782a;
     }
 
     /* renamed from: d */
     public int mo7233d() {
-        return this.f6775b;
+        return this.f6783b;
     }
 }

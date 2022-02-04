@@ -19,7 +19,7 @@ final class C1370d extends C2894a.AbstractC2895a<C1357a, C1355a> {
     public final /* synthetic */ C1357a mo6385a(Context context, Looper looper, C2992d dVar, C1355a aVar, AbstractC2911f.AbstractC2912a aVar2, AbstractC2911f.AbstractC2913b bVar) {
         C1355a aVar3 = aVar;
         if (aVar3 == null) {
-            aVar3 = C1355a.f5615a;
+            aVar3 = C1355a.f5623a;
         }
         return new C1357a(context, looper, true, dVar, aVar3, aVar2, bVar);
     }

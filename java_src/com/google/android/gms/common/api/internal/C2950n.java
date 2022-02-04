@@ -6,9 +6,9 @@ import com.google.android.gms.common.api.AbstractC2911f;
 public class C2950n extends AbstractC2911f {
 
     /* renamed from: b */
-    private final String f9863b;
+    private final String f9871b;
 
     public C2950n(String str) {
-        this.f9863b = str;
+        this.f9871b = str;
     }
 }

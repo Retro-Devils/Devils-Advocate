@@ -5,37 +5,37 @@ package com.bumptech.glide.p136n;
 public class C1998b {
 
     /* renamed from: a */
-    int f7365a;
+    int f7373a;
 
     /* renamed from: b */
-    int f7366b;
+    int f7374b;
 
     /* renamed from: c */
-    int f7367c;
+    int f7375c;
 
     /* renamed from: d */
-    int f7368d;
+    int f7376d;
 
     /* renamed from: e */
-    boolean f7369e;
+    boolean f7377e;
 
     /* renamed from: f */
-    boolean f7370f;
+    boolean f7378f;
 
     /* renamed from: g */
-    int f7371g;
+    int f7379g;
 
     /* renamed from: h */
-    int f7372h;
+    int f7380h;
 
     /* renamed from: i */
-    int f7373i;
+    int f7381i;
 
     /* renamed from: j */
-    int f7374j;
+    int f7382j;
 
     /* renamed from: k */
-    int[] f7375k;
+    int[] f7383k;
 
     C1998b() {
     }

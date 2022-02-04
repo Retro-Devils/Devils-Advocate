@@ -6,13 +6,13 @@ import android.content.Intent;
 public class C1221a extends C1252u {
 
     /* renamed from: d */
-    private Intent f5398d;
+    private Intent f5405d;
 
     public C1221a(C1236k kVar) {
         super(kVar);
     }
 
     public String getMessage() {
-        return this.f5398d != null ? "User needs to (re)enter credentials." : super.getMessage();
+        return this.f5405d != null ? "User needs to (re)enter credentials." : super.getMessage();
     }
 }

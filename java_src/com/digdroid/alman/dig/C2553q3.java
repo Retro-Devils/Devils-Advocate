@@ -38,22 +38,22 @@ import p006b.p057o.p058a.C1088a;
 public class C2553q3 {
 
     /* renamed from: a */
-    static C2774t3 f8891a;
+    static C2774t3 f8899a;
 
     /* renamed from: b */
-    static String f8892b;
+    static String f8900b;
 
     /* renamed from: c */
-    static boolean f8893c;
+    static boolean f8901c;
 
     /* renamed from: com.digdroid.alman.dig.q3$a */
     class View$OnClickListenerC2554a implements View.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ Activity f8894b;
+        final /* synthetic */ Activity f8902b;
 
         /* renamed from: c */
-        final /* synthetic */ TextView f8895c;
+        final /* synthetic */ TextView f8903c;
 
         /* renamed from: com.digdroid.alman.dig.q3$a$a */
         class C2555a implements C2391i.AbstractC2394b {
@@ -63,17 +63,17 @@ public class C2553q3 {
             @Override // com.digdroid.alman.dig.C2391i.AbstractC2394b
             /* renamed from: a */
             public void mo8043a(String[] strArr) {
-                View$OnClickListenerC2554a.this.f8895c.setText(strArr[0]);
+                View$OnClickListenerC2554a.this.f8903c.setText(strArr[0]);
             }
         }
 
         View$OnClickListenerC2554a(Activity activity, TextView textView) {
-            this.f8894b = activity;
-            this.f8895c = textView;
+            this.f8902b = activity;
+            this.f8903c = textView;
         }
 
         public void onClick(View view) {
-            C2391i iVar = new C2391i(this.f8894b);
+            C2391i iVar = new C2391i(this.f8902b);
             iVar.mo8592h(new C2555a());
             iVar.mo8588d();
         }
@@ -83,48 +83,48 @@ public class C2553q3 {
     class DialogInterface$OnClickListenerC2556b implements DialogInterface.OnClickListener {
 
         /* renamed from: b */
-        final /* synthetic */ C2724s3 f8897b;
+        final /* synthetic */ C2724s3 f8905b;
 
         /* renamed from: c */
-        final /* synthetic */ EditText f8898c;
+        final /* synthetic */ EditText f8906c;
 
         /* renamed from: d */
-        final /* synthetic */ EditText f8899d;
+        final /* synthetic */ EditText f8907d;
 
         /* renamed from: e */
-        final /* synthetic */ EditText f8900e;
+        final /* synthetic */ EditText f8908e;
 
         /* renamed from: f */
-        final /* synthetic */ TextView f8901f;
+        final /* synthetic */ TextView f8909f;
 
         /* renamed from: g */
-        final /* synthetic */ CheckBox f8902g;
+        final /* synthetic */ CheckBox f8910g;
 
         /* renamed from: h */
-        final /* synthetic */ Activity f8903h;
+        final /* synthetic */ Activity f8911h;
 
         DialogInterface$OnClickListenerC2556b(C2724s3 s3Var, EditText editText, EditText editText2, EditText editText3, TextView textView, CheckBox checkBox, Activity activity) {
-            this.f8897b = s3Var;
-            this.f8898c = editText;
-            this.f8899d = editText2;
-            this.f8900e = editText3;
-            this.f8901f = textView;
-            this.f8902g = checkBox;
-            this.f8903h = activity;
+            this.f8905b = s3Var;
+            this.f8906c = editText;
+            this.f8907d = editText2;
+            this.f8908e = editText3;
+            this.f8909f = textView;
+            this.f8910g = checkBox;
+            this.f8911h = activity;
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
-            this.f8897b.mo8780q("author", this.f8898c.getText().toString().trim());
-            this.f8897b.mo8780q("author_contact", this.f8899d.getText().toString().trim());
-            this.f8897b.mo8780q("description", this.f8900e.getText().toString().trim());
-            String charSequence = this.f8901f.getText().toString();
+            this.f8905b.mo8780q("author", this.f8906c.getText().toString().trim());
+            this.f8905b.mo8780q("author_contact", this.f8907d.getText().toString().trim());
+            this.f8905b.mo8780q("description", this.f8908e.getText().toString().trim());
+            String charSequence = this.f8909f.getText().toString();
             if (charSequence.length() > 1 && charSequence.substring(0, 1).equals("/")) {
-                this.f8897b.mo8782s("screenshots", charSequence);
+                this.f8905b.mo8782s("screenshots", charSequence);
             }
-            this.f8897b.mo8776m("allow_playstore", this.f8902g.isChecked());
-            C2724s3 s3Var = this.f8897b;
-            s3Var.mo9216S(s3Var.f9252f.equals(C2553q3.f8891a.f9406j));
-            new AsyncTaskC2558d(this.f8903h, this.f8897b).execute(new Void[0]);
+            this.f8905b.mo8776m("allow_playstore", this.f8910g.isChecked());
+            C2724s3 s3Var = this.f8905b;
+            s3Var.mo9216S(s3Var.f9260f.equals(C2553q3.f8899a.f9414j));
+            new AsyncTaskC2558d(this.f8911h, this.f8905b).execute(new Void[0]);
         }
     }
 
@@ -132,16 +132,16 @@ public class C2553q3 {
     class C2557c implements C2391i.AbstractC2394b {
 
         /* renamed from: a */
-        final /* synthetic */ MainActivity f8904a;
+        final /* synthetic */ MainActivity f8912a;
 
         C2557c(MainActivity mainActivity) {
-            this.f8904a = mainActivity;
+            this.f8912a = mainActivity;
         }
 
         @Override // com.digdroid.alman.dig.C2391i.AbstractC2394b
         /* renamed from: a */
         public void mo8043a(String[] strArr) {
-            new AsyncTaskC2563g(this.f8904a, strArr[0]).execute(new Void[0]);
+            new AsyncTaskC2563g(this.f8912a, strArr[0]).execute(new Void[0]);
         }
     }
 
@@ -149,44 +149,44 @@ public class C2553q3 {
     static class AsyncTaskC2558d extends AsyncTask<Void, Void, Boolean> {
 
         /* renamed from: a */
-        Activity f8905a;
+        Activity f8913a;
 
         /* renamed from: b */
-        Context f8906b;
+        Context f8914b;
 
         /* renamed from: c */
-        C2724s3 f8907c;
+        C2724s3 f8915c;
 
         /* renamed from: d */
-        File f8908d = null;
+        File f8916d = null;
 
         /* renamed from: e */
-        FileInputStream f8909e = null;
+        FileInputStream f8917e = null;
 
         /* renamed from: f */
-        BufferedInputStream f8910f = null;
+        BufferedInputStream f8918f = null;
 
         /* renamed from: g */
-        FileOutputStream f8911g = null;
+        FileOutputStream f8919g = null;
 
         /* renamed from: h */
-        BufferedOutputStream f8912h = null;
+        BufferedOutputStream f8920h = null;
 
         /* renamed from: i */
-        ZipOutputStream f8913i = null;
+        ZipOutputStream f8921i = null;
 
         /* renamed from: j */
-        C2219c3 f8914j;
+        C2219c3 f8922j;
 
         /* renamed from: k */
-        HashMap<String, String> f8915k;
+        HashMap<String, String> f8923k;
 
         public AsyncTaskC2558d(Activity activity, C2724s3 s3Var) {
-            this.f8905a = activity;
-            this.f8906b = activity.getApplicationContext();
-            this.f8907c = s3Var;
-            this.f8914j = C2219c3.m9805k(activity);
-            this.f8915k = new HashMap<>();
+            this.f8913a = activity;
+            this.f8914b = activity.getApplicationContext();
+            this.f8915c = s3Var;
+            this.f8922j = C2219c3.m9805k(activity);
+            this.f8923k = new HashMap<>();
         }
 
         /* access modifiers changed from: protected */
@@ -207,67 +207,67 @@ public class C2553q3 {
         /* renamed from: b */
         public void onPostExecute(Boolean bool) {
             File file;
-            if (!bool.booleanValue() && (file = this.f8908d) != null && file.exists()) {
+            if (!bool.booleanValue() && (file = this.f8916d) != null && file.exists()) {
                 try {
-                    this.f8908d.delete();
+                    this.f8916d.delete();
                 } catch (Exception unused) {
                 }
             }
-            if (!bool.booleanValue() && !this.f8914j.f7952g) {
+            if (!bool.booleanValue() && !this.f8922j.f7960g) {
                 try {
-                    if (!this.f8905a.isFinishing()) {
-                        new DialogInterfaceC0068b.C0069a(this.f8905a, C2553q3.m11117c()).mo228h(R.string.bundle_fail).mo235o(R.string.ok, null).mo224d(false).mo221a().show();
+                    if (!this.f8913a.isFinishing()) {
+                        new DialogInterfaceC0068b.C0069a(this.f8913a, C2553q3.m11117c()).mo228h(R.string.bundle_fail).mo235o(R.string.ok, null).mo224d(false).mo221a().show();
                     }
                 } catch (Exception unused2) {
                 }
             }
-            C2553q3.m11128n(this.f8906b, null, 0);
+            C2553q3.m11128n(this.f8914b, null, 0);
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: c */
         public boolean mo8977c(File file, String str) {
             boolean z;
-            String str2 = this.f8905a.getString(R.string.adding) + " " + file.getName();
-            C2553q3.m11128n(this.f8905a, str2, 0);
+            String str2 = this.f8913a.getString(R.string.adding) + " " + file.getName();
+            C2553q3.m11128n(this.f8913a, str2, 0);
             byte[] bArr = new byte[1024];
             float length = (float) file.length();
             int max = Math.max(Math.round(length / 100.0f), 10000);
             try {
-                this.f8909e = new FileInputStream(file);
-                this.f8910f = new BufferedInputStream(this.f8909e);
+                this.f8917e = new FileInputStream(file);
+                this.f8918f = new BufferedInputStream(this.f8917e);
                 ZipEntry zipEntry = new ZipEntry(str + "/" + file.getName());
                 zipEntry.setSize(file.length());
-                this.f8913i.putNextEntry(zipEntry);
+                this.f8921i.putNextEntry(zipEntry);
                 int i = 0;
                 loop0:
                 while (true) {
                     int i2 = 0;
                     do {
-                        int read = this.f8910f.read(bArr);
+                        int read = this.f8918f.read(bArr);
                         if (read <= 0) {
                             z = true;
                             break loop0;
-                        } else if (this.f8914j.f7952g) {
+                        } else if (this.f8922j.f7960g) {
                             z = false;
                             break loop0;
                         } else {
-                            this.f8913i.write(bArr, 0, read);
+                            this.f8921i.write(bArr, 0, read);
                             i += read;
                             i2 += read;
                         }
                     } while (i2 < max);
-                    C2553q3.m11128n(this.f8906b, str2, Math.round((float) Math.round((((float) i) * 100.0f) / length)));
+                    C2553q3.m11128n(this.f8914b, str2, Math.round((float) Math.round((((float) i) * 100.0f) / length)));
                 }
-                this.f8913i.closeEntry();
-                BufferedInputStream bufferedInputStream = this.f8910f;
+                this.f8921i.closeEntry();
+                BufferedInputStream bufferedInputStream = this.f8918f;
                 if (bufferedInputStream != null) {
                     try {
                         bufferedInputStream.close();
                     } catch (Exception unused) {
                     }
                 }
-                FileInputStream fileInputStream = this.f8909e;
+                FileInputStream fileInputStream = this.f8917e;
                 if (fileInputStream != null) {
                     try {
                         fileInputStream.close();
@@ -276,14 +276,14 @@ public class C2553q3 {
                 }
                 return z;
             } catch (Exception unused3) {
-                BufferedInputStream bufferedInputStream2 = this.f8910f;
+                BufferedInputStream bufferedInputStream2 = this.f8918f;
                 if (bufferedInputStream2 != null) {
                     try {
                         bufferedInputStream2.close();
                     } catch (Exception unused4) {
                     }
                 }
-                FileInputStream fileInputStream2 = this.f8909e;
+                FileInputStream fileInputStream2 = this.f8917e;
                 if (fileInputStream2 == null) {
                     return false;
                 }
@@ -294,14 +294,14 @@ public class C2553q3 {
                     return false;
                 }
             } catch (Throwable th) {
-                BufferedInputStream bufferedInputStream3 = this.f8910f;
+                BufferedInputStream bufferedInputStream3 = this.f8918f;
                 if (bufferedInputStream3 != null) {
                     try {
                         bufferedInputStream3.close();
                     } catch (Exception unused6) {
                     }
                 }
-                FileInputStream fileInputStream3 = this.f8909e;
+                FileInputStream fileInputStream3 = this.f8917e;
                 if (fileInputStream3 != null) {
                     try {
                         fileInputStream3.close();
@@ -316,12 +316,12 @@ public class C2553q3 {
         /* renamed from: d */
         public boolean mo8978d(String str, String str2) {
             HashMap<String, String> hashMap;
-            String I = this.f8907c.mo9208I(str);
+            String I = this.f8915c.mo9208I(str);
             if (I.equals("")) {
                 return true;
             }
-            if (this.f8915k.containsKey(I)) {
-                this.f8907c.mo8782s(str, this.f8915k.get(I));
+            if (this.f8923k.containsKey(I)) {
+                this.f8915c.mo8782s(str, this.f8923k.get(I));
                 return true;
             }
             File file = new File(I);
@@ -329,23 +329,23 @@ public class C2553q3 {
                 return true;
             }
             if (file.isDirectory()) {
-                this.f8907c.mo8782s(str, str2);
+                this.f8915c.mo8782s(str, str2);
                 File[] listFiles = file.listFiles();
                 for (File file2 : listFiles) {
-                    if (this.f8914j.f7952g) {
+                    if (this.f8922j.f7960g) {
                         return false;
                     }
                     if (!(file2.isDirectory() || mo8977c(file2, str2))) {
                         return false;
                     }
                 }
-                hashMap = this.f8915k;
+                hashMap = this.f8923k;
             } else {
-                this.f8907c.mo8782s(str, str2 + "/" + file.getName());
+                this.f8915c.mo8782s(str, str2 + "/" + file.getName());
                 if (!mo8977c(file, str2)) {
                     return false;
                 }
-                hashMap = this.f8915k;
+                hashMap = this.f8923k;
                 str2 = str2 + "/" + file.getName();
             }
             hashMap.put(I, str2);
@@ -363,21 +363,21 @@ public class C2553q3 {
     static class AsyncTaskC2560f extends AsyncTask<ActivityC2220c4, Void, ArrayList<C2724s3>> {
 
         /* renamed from: a */
-        AbstractC2559e f8916a;
+        AbstractC2559e f8924a;
 
         /* access modifiers changed from: package-private */
         /* renamed from: com.digdroid.alman.dig.q3$f$a */
         public class C2561a implements FilenameFilter {
 
             /* renamed from: a */
-            final /* synthetic */ Pattern f8917a;
+            final /* synthetic */ Pattern f8925a;
 
             C2561a(Pattern pattern) {
-                this.f8917a = pattern;
+                this.f8925a = pattern;
             }
 
             public boolean accept(File file, String str) {
-                return this.f8917a.matcher(str).find() && !str.equals("___tmp.cfg");
+                return this.f8925a.matcher(str).find() && !str.equals("___tmp.cfg");
             }
         }
 
@@ -394,7 +394,7 @@ public class C2553q3 {
         }
 
         public AsyncTaskC2560f(AbstractC2559e eVar) {
-            this.f8916a = eVar;
+            this.f8924a = eVar;
         }
 
         /* access modifiers changed from: protected */
@@ -426,7 +426,7 @@ public class C2553q3 {
         /* renamed from: b */
         public void onPostExecute(ArrayList<C2724s3> arrayList) {
             if (arrayList != null) {
-                this.f8916a.mo8981a(arrayList);
+                this.f8924a.mo8981a(arrayList);
             }
         }
     }
@@ -435,26 +435,26 @@ public class C2553q3 {
     static class AsyncTaskC2563g extends AsyncTask<Void, Void, Boolean> {
 
         /* renamed from: a */
-        MainActivity f8920a;
+        MainActivity f8928a;
 
         /* renamed from: b */
-        Context f8921b;
+        Context f8929b;
 
         /* renamed from: c */
-        String f8922c;
+        String f8930c;
 
         /* renamed from: d */
-        C2219c3 f8923d;
+        C2219c3 f8931d;
 
         /* renamed from: e */
-        String f8924e = null;
+        String f8932e = null;
 
         public AsyncTaskC2563g(MainActivity mainActivity, String str) {
-            this.f8920a = mainActivity;
+            this.f8928a = mainActivity;
             Context applicationContext = mainActivity.getApplicationContext();
-            this.f8921b = applicationContext;
-            this.f8923d = C2219c3.m9805k(applicationContext);
-            this.f8922c = str;
+            this.f8929b = applicationContext;
+            this.f8931d = C2219c3.m9805k(applicationContext);
+            this.f8930c = str;
         }
 
         /* JADX DEBUG: Multi-variable search result rejected for r14v0, resolved type: java.io.BufferedInputStream */
@@ -524,17 +524,17 @@ public class C2553q3 {
         /* access modifiers changed from: protected */
         /* renamed from: b */
         public void onPostExecute(Boolean bool) {
-            C2553q3.m11128n(this.f8921b, null, 0);
-            if (!bool.booleanValue() && !this.f8923d.f7952g && !this.f8920a.isFinishing()) {
-                new DialogInterfaceC0068b.C0069a(this.f8920a, C2553q3.m11117c()).mo228h(R.string.theme_install_fail).mo224d(false).mo235o(R.string.ok, null).mo221a().show();
+            C2553q3.m11128n(this.f8929b, null, 0);
+            if (!bool.booleanValue() && !this.f8931d.f7960g && !this.f8928a.isFinishing()) {
+                new DialogInterfaceC0068b.C0069a(this.f8928a, C2553q3.m11117c()).mo228h(R.string.theme_install_fail).mo224d(false).mo235o(R.string.ok, null).mo221a().show();
             }
             if (bool.booleanValue()) {
-                C1088a.m6129b(this.f8921b).mo5723d(new Intent(this.f8921b.getPackageName() + "." + "request_refresh"));
+                C1088a.m6129b(this.f8929b).mo5723d(new Intent(this.f8929b.getPackageName() + "." + "request_refresh"));
                 return;
             }
-            String str = this.f8924e;
+            String str = this.f8932e;
             if (str != null) {
-                new C2724s3(this.f8920a, str).mo9228u();
+                new C2724s3(this.f8928a, str).mo9228u();
             }
         }
     }
@@ -561,28 +561,28 @@ public class C2553q3 {
 
     /* renamed from: b */
     static int m11116b() {
-        return f8891a.mo9320d();
+        return f8899a.mo9320d();
     }
 
     /* renamed from: c */
     static int m11117c() {
-        return f8891a.mo9321e();
+        return f8899a.mo9321e();
     }
 
     /* renamed from: d */
     static float m11118d(float f) {
-        return f8891a.f9397a.mo9230x(f);
+        return f8899a.f9405a.mo9230x(f);
     }
 
     /* renamed from: e */
     static float m11119e(float f) {
-        return f8891a.f9397a.mo9231y(f);
+        return f8899a.f9405a.mo9231y(f);
     }
 
     /* renamed from: f */
     public static void m11120f(ActivityC2220c4 c4Var) {
         C2219c3 k = C2219c3.m9805k(c4Var);
-        f8893c = k.mo8197u();
+        f8901c = k.mo8197u();
         C2724s3 s3Var = new C2724s3(c4Var, "black.cfg");
         if (!s3Var.mo9232z()) {
             s3Var.mo8773j("themes/black.cfg");
@@ -608,8 +608,8 @@ public class C2553q3 {
             s3Var4.mo9215R();
         }
         String q = k.mo8193q("theme_file", "black.cfg");
-        f8892b = q;
-        f8891a = new C2774t3(c4Var, q);
+        f8900b = q;
+        f8899a = new C2774t3(c4Var, q);
     }
 
     /* renamed from: g */
@@ -643,7 +643,7 @@ public class C2553q3 {
 
     /* renamed from: k */
     static float m11125k(C2774t3 t3Var) {
-        return 1.0f - (((float) ((t3Var.f9399c >> 24) & 255)) / 255.0f);
+        return 1.0f - (((float) ((t3Var.f9407c >> 24) & 255)) / 255.0f);
     }
 
     /* renamed from: l */
@@ -674,24 +674,24 @@ public class C2553q3 {
     public static void m11129o(Context context, String str) {
         C2724s3 s3Var;
         C2219c3 k = C2219c3.m9805k(context);
-        C2774t3 t3Var = f8891a;
-        if (!(t3Var == null || (s3Var = t3Var.f9397a) == null)) {
+        C2774t3 t3Var = f8899a;
+        if (!(t3Var == null || (s3Var = t3Var.f9405a) == null)) {
             s3Var.mo9215R();
             k.mo8153B("new_theme_set", true);
         }
-        f8892b = str;
+        f8900b = str;
         k.mo8202z("theme_file", str);
     }
 
     /* renamed from: p */
     public static void m11130p(C2774t3 t3Var) {
-        t3Var.f9397a = f8891a.f9397a;
-        f8891a = t3Var;
+        t3Var.f9405a = f8899a.f9405a;
+        f8899a = t3Var;
     }
 
     /* renamed from: q */
     public static void m11131q(View view) {
-        m11132r(view, f8891a.f9399c);
+        m11132r(view, f8899a.f9407c);
     }
 
     /* renamed from: r */
@@ -706,8 +706,8 @@ public class C2553q3 {
 
     /* renamed from: s */
     public static void m11133s(TextView textView) {
-        textView.setTextColor(f8891a.mo9320d());
-        m11132r(textView, f8891a.mo9318b());
+        textView.setTextColor(f8899a.mo9320d());
+        m11132r(textView, f8899a.mo9318b());
     }
 
     /* renamed from: t */
@@ -722,16 +722,16 @@ public class C2553q3 {
 
     /* renamed from: u */
     static float m11135u(float f) {
-        return f8891a.f9397a.mo9225b0(f);
+        return f8899a.f9405a.mo9225b0(f);
     }
 
     /* renamed from: v */
     static int m11136v() {
-        return f8891a.mo9317a();
+        return f8899a.mo9317a();
     }
 
     /* renamed from: w */
     static int m11137w() {
-        return f8891a.f9398b;
+        return f8899a.f9406b;
     }
 }

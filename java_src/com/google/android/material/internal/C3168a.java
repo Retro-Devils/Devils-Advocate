@@ -29,163 +29,163 @@ import p069c.p073b.p074a.p090b.p104w.C1438d;
 public final class C3168a {
 
     /* renamed from: a */
-    private static final boolean f10583a = (Build.VERSION.SDK_INT < 18);
+    private static final boolean f10591a = (Build.VERSION.SDK_INT < 18);
 
     /* renamed from: b */
-    private static final Paint f10584b = null;
+    private static final Paint f10592b = null;
 
     /* renamed from: A */
-    private CharSequence f10585A;
+    private CharSequence f10593A;
 
     /* renamed from: B */
-    private boolean f10586B;
+    private boolean f10594B;
 
     /* renamed from: C */
-    private boolean f10587C;
+    private boolean f10595C;
 
     /* renamed from: D */
-    private Bitmap f10588D;
+    private Bitmap f10596D;
 
     /* renamed from: E */
-    private Paint f10589E;
+    private Paint f10597E;
 
     /* renamed from: F */
-    private float f10590F;
+    private float f10598F;
 
     /* renamed from: G */
-    private float f10591G;
+    private float f10599G;
 
     /* renamed from: H */
-    private int[] f10592H;
+    private int[] f10600H;
 
     /* renamed from: I */
-    private boolean f10593I;
+    private boolean f10601I;
 
     /* renamed from: J */
-    private final TextPaint f10594J;
+    private final TextPaint f10602J;
 
     /* renamed from: K */
-    private final TextPaint f10595K;
+    private final TextPaint f10603K;
 
     /* renamed from: L */
-    private TimeInterpolator f10596L;
+    private TimeInterpolator f10604L;
 
     /* renamed from: M */
-    private TimeInterpolator f10597M;
+    private TimeInterpolator f10605M;
 
     /* renamed from: N */
-    private float f10598N;
+    private float f10606N;
 
     /* renamed from: O */
-    private float f10599O;
+    private float f10607O;
 
     /* renamed from: P */
-    private float f10600P;
+    private float f10608P;
 
     /* renamed from: Q */
-    private ColorStateList f10601Q;
+    private ColorStateList f10609Q;
 
     /* renamed from: R */
-    private float f10602R;
+    private float f10610R;
 
     /* renamed from: S */
-    private float f10603S;
+    private float f10611S;
 
     /* renamed from: T */
-    private float f10604T;
+    private float f10612T;
 
     /* renamed from: U */
-    private ColorStateList f10605U;
+    private ColorStateList f10613U;
 
     /* renamed from: V */
-    private StaticLayout f10606V;
+    private StaticLayout f10614V;
 
     /* renamed from: W */
-    private float f10607W;
+    private float f10615W;
 
     /* renamed from: X */
-    private float f10608X;
+    private float f10616X;
 
     /* renamed from: Y */
-    private float f10609Y;
+    private float f10617Y;
 
     /* renamed from: Z */
-    private CharSequence f10610Z;
+    private CharSequence f10618Z;
 
     /* renamed from: a0 */
-    private int f10611a0 = 1;
+    private int f10619a0 = 1;
 
     /* renamed from: c */
-    private final View f10612c;
+    private final View f10620c;
 
     /* renamed from: d */
-    private boolean f10613d;
+    private boolean f10621d;
 
     /* renamed from: e */
-    private float f10614e;
+    private float f10622e;
 
     /* renamed from: f */
-    private final Rect f10615f;
+    private final Rect f10623f;
 
     /* renamed from: g */
-    private final Rect f10616g;
+    private final Rect f10624g;
 
     /* renamed from: h */
-    private final RectF f10617h;
+    private final RectF f10625h;
 
     /* renamed from: i */
-    private int f10618i = 16;
+    private int f10626i = 16;
 
     /* renamed from: j */
-    private int f10619j = 16;
+    private int f10627j = 16;
 
     /* renamed from: k */
-    private float f10620k = 15.0f;
+    private float f10628k = 15.0f;
 
     /* renamed from: l */
-    private float f10621l = 15.0f;
+    private float f10629l = 15.0f;
 
     /* renamed from: m */
-    private ColorStateList f10622m;
+    private ColorStateList f10630m;
 
     /* renamed from: n */
-    private ColorStateList f10623n;
+    private ColorStateList f10631n;
 
     /* renamed from: o */
-    private float f10624o;
+    private float f10632o;
 
     /* renamed from: p */
-    private float f10625p;
+    private float f10633p;
 
     /* renamed from: q */
-    private float f10626q;
+    private float f10634q;
 
     /* renamed from: r */
-    private float f10627r;
+    private float f10635r;
 
     /* renamed from: s */
-    private float f10628s;
+    private float f10636s;
 
     /* renamed from: t */
-    private float f10629t;
+    private float f10637t;
 
     /* renamed from: u */
-    private Typeface f10630u;
+    private Typeface f10638u;
 
     /* renamed from: v */
-    private Typeface f10631v;
+    private Typeface f10639v;
 
     /* renamed from: w */
-    private Typeface f10632w;
+    private Typeface f10640w;
 
     /* renamed from: x */
-    private C1434a f10633x;
+    private C1434a f10641x;
 
     /* renamed from: y */
-    private C1434a f10634y;
+    private C1434a f10642y;
 
     /* renamed from: z */
-    private CharSequence f10635z;
+    private CharSequence f10643z;
 
     /* renamed from: com.google.android.material.internal.a$a */
     class C3169a implements C1434a.AbstractC1435a {
@@ -208,18 +208,18 @@ public final class C3168a {
     }
 
     public C3168a(View view) {
-        this.f10612c = view;
+        this.f10620c = view;
         TextPaint textPaint = new TextPaint(129);
-        this.f10594J = textPaint;
-        this.f10595K = new TextPaint(textPaint);
-        this.f10616g = new Rect();
-        this.f10615f = new Rect();
-        this.f10617h = new RectF();
+        this.f10602J = textPaint;
+        this.f10603K = new TextPaint(textPaint);
+        this.f10624g = new Rect();
+        this.f10623f = new Rect();
+        this.f10625h = new RectF();
     }
 
     /* renamed from: A */
     private boolean m13267A() {
-        return C1013s.m5797y(this.f10612c) == 1;
+        return C1013s.m5797y(this.f10620c) == 1;
     }
 
     /* renamed from: C */
@@ -237,51 +237,51 @@ public final class C3168a {
 
     /* renamed from: J */
     private void m13270J(float f) {
-        this.f10607W = f;
-        C1013s.m5748Z(this.f10612c);
+        this.f10615W = f;
+        C1013s.m5748Z(this.f10620c);
     }
 
     /* renamed from: N */
     private boolean m13271N(Typeface typeface) {
-        C1434a aVar = this.f10634y;
+        C1434a aVar = this.f10642y;
         if (aVar != null) {
             aVar.mo6557c();
         }
-        if (this.f10630u == typeface) {
+        if (this.f10638u == typeface) {
             return false;
         }
-        this.f10630u = typeface;
+        this.f10638u = typeface;
         return true;
     }
 
     /* renamed from: Q */
     private void m13272Q(float f) {
-        this.f10608X = f;
-        C1013s.m5748Z(this.f10612c);
+        this.f10616X = f;
+        C1013s.m5748Z(this.f10620c);
     }
 
     /* renamed from: U */
     private boolean m13273U(Typeface typeface) {
-        C1434a aVar = this.f10633x;
+        C1434a aVar = this.f10641x;
         if (aVar != null) {
             aVar.mo6557c();
         }
-        if (this.f10631v == typeface) {
+        if (this.f10639v == typeface) {
             return false;
         }
-        this.f10631v = typeface;
+        this.f10639v = typeface;
         return true;
     }
 
     /* renamed from: W */
     private void m13274W(float f) {
         m13281g(f);
-        boolean z = f10583a && this.f10590F != 1.0f;
-        this.f10587C = z;
+        boolean z = f10591a && this.f10598F != 1.0f;
+        this.f10595C = z;
         if (z) {
             m13285l();
         }
-        C1013s.m5748Z(this.f10612c);
+        C1013s.m5748Z(this.f10620c);
     }
 
     /* renamed from: a */
@@ -312,17 +312,17 @@ public final class C3168a {
 
     /* renamed from: c0 */
     private boolean m13277c0() {
-        return this.f10611a0 > 1 && !this.f10586B && !this.f10587C;
+        return this.f10619a0 > 1 && !this.f10594B && !this.f10595C;
     }
 
     /* renamed from: d */
     private void m13278d() {
-        m13280f(this.f10614e);
+        m13280f(this.f10622e);
     }
 
     /* renamed from: e */
     private boolean m13279e(CharSequence charSequence) {
-        return (m13267A() ? C0945e.f4642d : C0945e.f4641c).mo5389a(charSequence, 0, charSequence.length());
+        return (m13267A() ? C0945e.f4646d : C0945e.f4645c).mo5389a(charSequence, 0, charSequence.length());
     }
 
     /* renamed from: f */
@@ -330,22 +330,22 @@ public final class C3168a {
         int i;
         TextPaint textPaint;
         m13292y(f);
-        this.f10628s = m13268C(this.f10626q, this.f10627r, f, this.f10596L);
-        this.f10629t = m13268C(this.f10624o, this.f10625p, f, this.f10596L);
-        m13274W(m13268C(this.f10620k, this.f10621l, f, this.f10597M));
-        TimeInterpolator timeInterpolator = C1401a.f6007b;
+        this.f10636s = m13268C(this.f10634q, this.f10635r, f, this.f10604L);
+        this.f10637t = m13268C(this.f10632o, this.f10633p, f, this.f10604L);
+        m13274W(m13268C(this.f10628k, this.f10629l, f, this.f10605M));
+        TimeInterpolator timeInterpolator = C1401a.f6015b;
         m13270J(1.0f - m13268C(0.0f, 1.0f, 1.0f - f, timeInterpolator));
         m13272Q(m13268C(1.0f, 0.0f, f, timeInterpolator));
-        if (this.f10623n != this.f10622m) {
-            textPaint = this.f10594J;
+        if (this.f10631n != this.f10630m) {
+            textPaint = this.f10602J;
             i = m13275a(m13289t(), mo10707r(), f);
         } else {
-            textPaint = this.f10594J;
+            textPaint = this.f10602J;
             i = mo10707r();
         }
         textPaint.setColor(i);
-        this.f10594J.setShadowLayer(m13268C(this.f10602R, this.f10598N, f, null), m13268C(this.f10603S, this.f10599O, f, null), m13268C(this.f10604T, this.f10600P, f, null), m13275a(m13288s(this.f10605U), m13288s(this.f10601Q), f));
-        C1013s.m5748Z(this.f10612c);
+        this.f10602J.setShadowLayer(m13268C(this.f10610R, this.f10606N, f, null), m13268C(this.f10611S, this.f10607O, f, null), m13268C(this.f10612T, this.f10608P, f, null), m13275a(m13288s(this.f10613U), m13288s(this.f10609Q), f));
+        C1013s.m5748Z(this.f10620c);
     }
 
     /* renamed from: g */
@@ -353,72 +353,72 @@ public final class C3168a {
         float f2;
         boolean z;
         boolean z2;
-        if (this.f10635z != null) {
-            float width = (float) this.f10616g.width();
-            float width2 = (float) this.f10615f.width();
+        if (this.f10643z != null) {
+            float width = (float) this.f10624g.width();
+            float width2 = (float) this.f10623f.width();
             boolean z3 = false;
             int i = 1;
-            if (m13293z(f, this.f10621l)) {
-                f2 = this.f10621l;
-                this.f10590F = 1.0f;
-                Typeface typeface = this.f10632w;
-                Typeface typeface2 = this.f10630u;
+            if (m13293z(f, this.f10629l)) {
+                f2 = this.f10629l;
+                this.f10598F = 1.0f;
+                Typeface typeface = this.f10640w;
+                Typeface typeface2 = this.f10638u;
                 if (typeface != typeface2) {
-                    this.f10632w = typeface2;
+                    this.f10640w = typeface2;
                     z = true;
                 } else {
                     z = false;
                 }
             } else {
-                float f3 = this.f10620k;
-                Typeface typeface3 = this.f10632w;
-                Typeface typeface4 = this.f10631v;
+                float f3 = this.f10628k;
+                Typeface typeface3 = this.f10640w;
+                Typeface typeface4 = this.f10639v;
                 if (typeface3 != typeface4) {
-                    this.f10632w = typeface4;
+                    this.f10640w = typeface4;
                     z2 = true;
                 } else {
                     z2 = false;
                 }
                 if (m13293z(f, f3)) {
-                    this.f10590F = 1.0f;
+                    this.f10598F = 1.0f;
                 } else {
-                    this.f10590F = f / this.f10620k;
+                    this.f10598F = f / this.f10628k;
                 }
-                float f4 = this.f10621l / this.f10620k;
+                float f4 = this.f10629l / this.f10628k;
                 width = width2 * f4 > width ? Math.min(width / f4, width2) : width2;
                 f2 = f3;
                 z = z2;
             }
             if (width > 0.0f) {
-                z = this.f10591G != f2 || this.f10593I || z;
-                this.f10591G = f2;
-                this.f10593I = false;
+                z = this.f10599G != f2 || this.f10601I || z;
+                this.f10599G = f2;
+                this.f10601I = false;
             }
-            if (this.f10585A == null || z) {
-                this.f10594J.setTextSize(this.f10591G);
-                this.f10594J.setTypeface(this.f10632w);
-                TextPaint textPaint = this.f10594J;
-                if (this.f10590F != 1.0f) {
+            if (this.f10593A == null || z) {
+                this.f10602J.setTextSize(this.f10599G);
+                this.f10602J.setTypeface(this.f10640w);
+                TextPaint textPaint = this.f10602J;
+                if (this.f10598F != 1.0f) {
                     z3 = true;
                 }
                 textPaint.setLinearText(z3);
-                this.f10586B = m13279e(this.f10635z);
+                this.f10594B = m13279e(this.f10643z);
                 if (m13277c0()) {
-                    i = this.f10611a0;
+                    i = this.f10619a0;
                 }
-                StaticLayout i2 = m13283i(i, width, this.f10586B);
-                this.f10606V = i2;
-                this.f10585A = i2.getText();
+                StaticLayout i2 = m13283i(i, width, this.f10594B);
+                this.f10614V = i2;
+                this.f10593A = i2.getText();
             }
         }
     }
 
     /* renamed from: h */
     private void m13282h() {
-        Bitmap bitmap = this.f10588D;
+        Bitmap bitmap = this.f10596D;
         if (bitmap != null) {
             bitmap.recycle();
-            this.f10588D = null;
+            this.f10596D = null;
         }
     }
 
@@ -426,7 +426,7 @@ public final class C3168a {
     private StaticLayout m13283i(int i, float f, boolean z) {
         StaticLayout staticLayout;
         try {
-            staticLayout = C3197m.m13403c(this.f10635z, this.f10594J, (int) f).mo10788e(TextUtils.TruncateAt.END).mo10790g(z).mo10787d(Layout.Alignment.ALIGN_NORMAL).mo10789f(false).mo10791h(i).mo10786a();
+            staticLayout = C3197m.m13403c(this.f10643z, this.f10602J, (int) f).mo10788e(TextUtils.TruncateAt.END).mo10790g(z).mo10787d(Layout.Alignment.ALIGN_NORMAL).mo10789f(false).mo10791h(i).mo10786a();
         } catch (C3197m.C3198a e) {
             Log.e("CollapsingTextHelper", e.getCause().getMessage(), e);
             staticLayout = null;
@@ -436,35 +436,35 @@ public final class C3168a {
 
     /* renamed from: k */
     private void m13284k(Canvas canvas, float f, float f2) {
-        int alpha = this.f10594J.getAlpha();
+        int alpha = this.f10602J.getAlpha();
         canvas.translate(f, f2);
         float f3 = (float) alpha;
-        this.f10594J.setAlpha((int) (this.f10608X * f3));
-        this.f10606V.draw(canvas);
-        this.f10594J.setAlpha((int) (this.f10607W * f3));
-        int lineBaseline = this.f10606V.getLineBaseline(0);
-        CharSequence charSequence = this.f10610Z;
+        this.f10602J.setAlpha((int) (this.f10616X * f3));
+        this.f10614V.draw(canvas);
+        this.f10602J.setAlpha((int) (this.f10615W * f3));
+        int lineBaseline = this.f10614V.getLineBaseline(0);
+        CharSequence charSequence = this.f10618Z;
         float f4 = (float) lineBaseline;
-        canvas.drawText(charSequence, 0, charSequence.length(), 0.0f, f4, this.f10594J);
-        String trim = this.f10610Z.toString().trim();
+        canvas.drawText(charSequence, 0, charSequence.length(), 0.0f, f4, this.f10602J);
+        String trim = this.f10618Z.toString().trim();
         if (trim.endsWith("…")) {
             trim = trim.substring(0, trim.length() - 1);
         }
-        this.f10594J.setAlpha(alpha);
-        canvas.drawText(trim, 0, Math.min(this.f10606V.getLineEnd(0), trim.length()), 0.0f, f4, (Paint) this.f10594J);
+        this.f10602J.setAlpha(alpha);
+        canvas.drawText(trim, 0, Math.min(this.f10614V.getLineEnd(0), trim.length()), 0.0f, f4, (Paint) this.f10602J);
     }
 
     /* renamed from: l */
     private void m13285l() {
-        if (this.f10588D == null && !this.f10615f.isEmpty() && !TextUtils.isEmpty(this.f10585A)) {
+        if (this.f10596D == null && !this.f10623f.isEmpty() && !TextUtils.isEmpty(this.f10593A)) {
             m13280f(0.0f);
-            int width = this.f10606V.getWidth();
-            int height = this.f10606V.getHeight();
+            int width = this.f10614V.getWidth();
+            int height = this.f10614V.getHeight();
             if (width > 0 && height > 0) {
-                this.f10588D = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-                this.f10606V.draw(new Canvas(this.f10588D));
-                if (this.f10589E == null) {
-                    this.f10589E = new Paint(3);
+                this.f10596D = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+                this.f10614V.draw(new Canvas(this.f10596D));
+                if (this.f10597E == null) {
+                    this.f10597E = new Paint(3);
                 }
             }
         }
@@ -472,12 +472,12 @@ public final class C3168a {
 
     /* renamed from: p */
     private float m13286p(int i, int i2) {
-        return (i2 == 17 || (i2 & 7) == 1) ? (((float) i) / 2.0f) - (mo10702c() / 2.0f) : ((i2 & 8388613) == 8388613 || (i2 & 5) == 5) ? this.f10586B ? (float) this.f10616g.left : ((float) this.f10616g.right) - mo10702c() : this.f10586B ? ((float) this.f10616g.right) - mo10702c() : (float) this.f10616g.left;
+        return (i2 == 17 || (i2 & 7) == 1) ? (((float) i) / 2.0f) - (mo10702c() / 2.0f) : ((i2 & 8388613) == 8388613 || (i2 & 5) == 5) ? this.f10594B ? (float) this.f10624g.left : ((float) this.f10624g.right) - mo10702c() : this.f10594B ? ((float) this.f10624g.right) - mo10702c() : (float) this.f10624g.left;
     }
 
     /* renamed from: q */
     private float m13287q(RectF rectF, int i, int i2) {
-        return (i2 == 17 || (i2 & 7) == 1) ? (((float) i) / 2.0f) + (mo10702c() / 2.0f) : ((i2 & 8388613) == 8388613 || (i2 & 5) == 5) ? this.f10586B ? rectF.left + mo10702c() : (float) this.f10616g.right : this.f10586B ? (float) this.f10616g.right : rectF.left + mo10702c();
+        return (i2 == 17 || (i2 & 7) == 1) ? (((float) i) / 2.0f) + (mo10702c() / 2.0f) : ((i2 & 8388613) == 8388613 || (i2 & 5) == 5) ? this.f10594B ? rectF.left + mo10702c() : (float) this.f10624g.right : this.f10594B ? (float) this.f10624g.right : rectF.left + mo10702c();
     }
 
     /* renamed from: s */
@@ -485,33 +485,33 @@ public final class C3168a {
         if (colorStateList == null) {
             return 0;
         }
-        int[] iArr = this.f10592H;
+        int[] iArr = this.f10600H;
         return iArr != null ? colorStateList.getColorForState(iArr, 0) : colorStateList.getDefaultColor();
     }
 
     /* renamed from: t */
     private int m13289t() {
-        return m13288s(this.f10622m);
+        return m13288s(this.f10630m);
     }
 
     /* renamed from: w */
     private void m13290w(TextPaint textPaint) {
-        textPaint.setTextSize(this.f10621l);
-        textPaint.setTypeface(this.f10630u);
+        textPaint.setTextSize(this.f10629l);
+        textPaint.setTypeface(this.f10638u);
     }
 
     /* renamed from: x */
     private void m13291x(TextPaint textPaint) {
-        textPaint.setTextSize(this.f10620k);
-        textPaint.setTypeface(this.f10631v);
+        textPaint.setTextSize(this.f10628k);
+        textPaint.setTypeface(this.f10639v);
     }
 
     /* renamed from: y */
     private void m13292y(float f) {
-        this.f10617h.left = m13268C((float) this.f10615f.left, (float) this.f10616g.left, f, this.f10596L);
-        this.f10617h.top = m13268C(this.f10624o, this.f10625p, f, this.f10596L);
-        this.f10617h.right = m13268C((float) this.f10615f.right, (float) this.f10616g.right, f, this.f10596L);
-        this.f10617h.bottom = m13268C((float) this.f10615f.bottom, (float) this.f10616g.bottom, f, this.f10596L);
+        this.f10625h.left = m13268C((float) this.f10623f.left, (float) this.f10624g.left, f, this.f10604L);
+        this.f10625h.top = m13268C(this.f10632o, this.f10633p, f, this.f10604L);
+        this.f10625h.right = m13268C((float) this.f10623f.right, (float) this.f10624g.right, f, this.f10604L);
+        this.f10625h.bottom = m13268C((float) this.f10623f.bottom, (float) this.f10624g.bottom, f, this.f10604L);
     }
 
     /* renamed from: z */
@@ -522,19 +522,19 @@ public final class C3168a {
     /* renamed from: B */
     public final boolean mo10682B() {
         ColorStateList colorStateList;
-        ColorStateList colorStateList2 = this.f10623n;
-        return (colorStateList2 != null && colorStateList2.isStateful()) || ((colorStateList = this.f10622m) != null && colorStateList.isStateful());
+        ColorStateList colorStateList2 = this.f10631n;
+        return (colorStateList2 != null && colorStateList2.isStateful()) || ((colorStateList = this.f10630m) != null && colorStateList.isStateful());
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: D */
     public void mo10683D() {
-        this.f10613d = this.f10616g.width() > 0 && this.f10616g.height() > 0 && this.f10615f.width() > 0 && this.f10615f.height() > 0;
+        this.f10621d = this.f10624g.width() > 0 && this.f10624g.height() > 0 && this.f10623f.width() > 0 && this.f10623f.height() > 0;
     }
 
     /* renamed from: E */
     public void mo10684E() {
-        if (this.f10612c.getHeight() > 0 && this.f10612c.getWidth() > 0) {
+        if (this.f10620c.getHeight() > 0 && this.f10620c.getWidth() > 0) {
             m13276b();
             m13278d();
         }
@@ -542,9 +542,9 @@ public final class C3168a {
 
     /* renamed from: G */
     public void mo10685G(int i, int i2, int i3, int i4) {
-        if (!m13269F(this.f10616g, i, i2, i3, i4)) {
-            this.f10616g.set(i, i2, i3, i4);
-            this.f10593I = true;
+        if (!m13269F(this.f10624g, i, i2, i3, i4)) {
+            this.f10624g.set(i, i2, i3, i4);
+            this.f10601I = true;
             mo10683D();
         }
     }
@@ -556,43 +556,43 @@ public final class C3168a {
 
     /* renamed from: I */
     public void mo10687I(int i) {
-        C1438d dVar = new C1438d(this.f10612c.getContext(), i);
-        ColorStateList colorStateList = dVar.f6065b;
+        C1438d dVar = new C1438d(this.f10620c.getContext(), i);
+        ColorStateList colorStateList = dVar.f6073b;
         if (colorStateList != null) {
-            this.f10623n = colorStateList;
+            this.f10631n = colorStateList;
         }
-        float f = dVar.f6064a;
+        float f = dVar.f6072a;
         if (f != 0.0f) {
-            this.f10621l = f;
+            this.f10629l = f;
         }
-        ColorStateList colorStateList2 = dVar.f6072i;
+        ColorStateList colorStateList2 = dVar.f6080i;
         if (colorStateList2 != null) {
-            this.f10601Q = colorStateList2;
+            this.f10609Q = colorStateList2;
         }
-        this.f10599O = dVar.f6073j;
-        this.f10600P = dVar.f6074k;
-        this.f10598N = dVar.f6075l;
-        C1434a aVar = this.f10634y;
+        this.f10607O = dVar.f6081j;
+        this.f10608P = dVar.f6082k;
+        this.f10606N = dVar.f6083l;
+        C1434a aVar = this.f10642y;
         if (aVar != null) {
             aVar.mo6557c();
         }
-        this.f10634y = new C1434a(new C3169a(), dVar.mo6559e());
-        dVar.mo6562h(this.f10612c.getContext(), this.f10634y);
+        this.f10642y = new C1434a(new C3169a(), dVar.mo6559e());
+        dVar.mo6562h(this.f10620c.getContext(), this.f10642y);
         mo10684E();
     }
 
     /* renamed from: K */
     public void mo10688K(ColorStateList colorStateList) {
-        if (this.f10623n != colorStateList) {
-            this.f10623n = colorStateList;
+        if (this.f10631n != colorStateList) {
+            this.f10631n = colorStateList;
             mo10684E();
         }
     }
 
     /* renamed from: L */
     public void mo10689L(int i) {
-        if (this.f10619j != i) {
-            this.f10619j = i;
+        if (this.f10627j != i) {
+            this.f10627j = i;
             mo10684E();
         }
     }
@@ -606,9 +606,9 @@ public final class C3168a {
 
     /* renamed from: O */
     public void mo10691O(int i, int i2, int i3, int i4) {
-        if (!m13269F(this.f10615f, i, i2, i3, i4)) {
-            this.f10615f.set(i, i2, i3, i4);
-            this.f10593I = true;
+        if (!m13269F(this.f10623f, i, i2, i3, i4)) {
+            this.f10623f.set(i, i2, i3, i4);
+            this.f10601I = true;
             mo10683D();
         }
     }
@@ -620,24 +620,24 @@ public final class C3168a {
 
     /* renamed from: R */
     public void mo10693R(ColorStateList colorStateList) {
-        if (this.f10622m != colorStateList) {
-            this.f10622m = colorStateList;
+        if (this.f10630m != colorStateList) {
+            this.f10630m = colorStateList;
             mo10684E();
         }
     }
 
     /* renamed from: S */
     public void mo10694S(int i) {
-        if (this.f10618i != i) {
-            this.f10618i = i;
+        if (this.f10626i != i) {
+            this.f10626i = i;
             mo10684E();
         }
     }
 
     /* renamed from: T */
     public void mo10695T(float f) {
-        if (this.f10620k != f) {
-            this.f10620k = f;
+        if (this.f10628k != f) {
+            this.f10628k = f;
             mo10684E();
         }
     }
@@ -645,21 +645,21 @@ public final class C3168a {
     /* renamed from: V */
     public void mo10696V(float f) {
         float a = C0920a.m5392a(f, 0.0f, 1.0f);
-        if (a != this.f10614e) {
-            this.f10614e = a;
+        if (a != this.f10622e) {
+            this.f10622e = a;
             m13278d();
         }
     }
 
     /* renamed from: X */
     public void mo10697X(TimeInterpolator timeInterpolator) {
-        this.f10596L = timeInterpolator;
+        this.f10604L = timeInterpolator;
         mo10684E();
     }
 
     /* renamed from: Y */
     public final boolean mo10698Y(int[] iArr) {
-        this.f10592H = iArr;
+        this.f10600H = iArr;
         if (!mo10682B()) {
             return false;
         }
@@ -669,9 +669,9 @@ public final class C3168a {
 
     /* renamed from: Z */
     public void mo10699Z(CharSequence charSequence) {
-        if (charSequence == null || !TextUtils.equals(this.f10635z, charSequence)) {
-            this.f10635z = charSequence;
-            this.f10585A = null;
+        if (charSequence == null || !TextUtils.equals(this.f10643z, charSequence)) {
+            this.f10643z = charSequence;
+            this.f10593A = null;
             m13282h();
             mo10684E();
         }
@@ -679,7 +679,7 @@ public final class C3168a {
 
     /* renamed from: a0 */
     public void mo10700a0(TimeInterpolator timeInterpolator) {
-        this.f10597M = timeInterpolator;
+        this.f10605M = timeInterpolator;
         mo10684E();
     }
 
@@ -694,33 +694,33 @@ public final class C3168a {
 
     /* renamed from: c */
     public float mo10702c() {
-        if (this.f10635z == null) {
+        if (this.f10643z == null) {
             return 0.0f;
         }
-        m13290w(this.f10595K);
-        TextPaint textPaint = this.f10595K;
-        CharSequence charSequence = this.f10635z;
+        m13290w(this.f10603K);
+        TextPaint textPaint = this.f10603K;
+        CharSequence charSequence = this.f10643z;
         return textPaint.measureText(charSequence, 0, charSequence.length());
     }
 
     /* renamed from: j */
     public void mo10703j(Canvas canvas) {
         int save = canvas.save();
-        if (this.f10585A != null && this.f10613d) {
+        if (this.f10593A != null && this.f10621d) {
             boolean z = false;
-            float lineLeft = (this.f10628s + this.f10606V.getLineLeft(0)) - (this.f10609Y * 2.0f);
-            this.f10594J.setTextSize(this.f10591G);
-            float f = this.f10628s;
-            float f2 = this.f10629t;
-            if (this.f10587C && this.f10588D != null) {
+            float lineLeft = (this.f10636s + this.f10614V.getLineLeft(0)) - (this.f10617Y * 2.0f);
+            this.f10602J.setTextSize(this.f10599G);
+            float f = this.f10636s;
+            float f2 = this.f10637t;
+            if (this.f10595C && this.f10596D != null) {
                 z = true;
             }
-            float f3 = this.f10590F;
+            float f3 = this.f10598F;
             if (f3 != 1.0f) {
                 canvas.scale(f3, f3, f, f2);
             }
             if (z) {
-                canvas.drawBitmap(this.f10588D, f, f2, this.f10589E);
+                canvas.drawBitmap(this.f10596D, f, f2, this.f10597E);
                 canvas.restoreToCount(save);
                 return;
             }
@@ -728,7 +728,7 @@ public final class C3168a {
                 m13284k(canvas, lineLeft, f2);
             } else {
                 canvas.translate(f, f2);
-                this.f10606V.draw(canvas);
+                this.f10614V.draw(canvas);
             }
             canvas.restoreToCount(save);
         }
@@ -736,37 +736,37 @@ public final class C3168a {
 
     /* renamed from: m */
     public void mo10704m(RectF rectF, int i, int i2) {
-        this.f10586B = m13279e(this.f10635z);
+        this.f10594B = m13279e(this.f10643z);
         rectF.left = m13286p(i, i2);
-        rectF.top = (float) this.f10616g.top;
+        rectF.top = (float) this.f10624g.top;
         rectF.right = m13287q(rectF, i, i2);
-        rectF.bottom = ((float) this.f10616g.top) + mo10706o();
+        rectF.bottom = ((float) this.f10624g.top) + mo10706o();
     }
 
     /* renamed from: n */
     public ColorStateList mo10705n() {
-        return this.f10623n;
+        return this.f10631n;
     }
 
     /* renamed from: o */
     public float mo10706o() {
-        m13290w(this.f10595K);
-        return -this.f10595K.ascent();
+        m13290w(this.f10603K);
+        return -this.f10603K.ascent();
     }
 
     /* renamed from: r */
     public int mo10707r() {
-        return m13288s(this.f10623n);
+        return m13288s(this.f10631n);
     }
 
     /* renamed from: u */
     public float mo10708u() {
-        m13291x(this.f10595K);
-        return -this.f10595K.ascent();
+        m13291x(this.f10603K);
+        return -this.f10603K.ascent();
     }
 
     /* renamed from: v */
     public float mo10709v() {
-        return this.f10614e;
+        return this.f10622e;
     }
 }

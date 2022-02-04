@@ -4,10 +4,10 @@ package com.google.android.gms.common.api.internal;
 public final class C2936g<L> {
 
     /* renamed from: a */
-    private final L f9843a;
+    private final L f9851a;
 
     /* renamed from: b */
-    private final String f9844b;
+    private final String f9852b;
 
     public final boolean equals(Object obj) {
         if (this == obj) {
@@ -17,10 +17,10 @@ public final class C2936g<L> {
             return false;
         }
         C2936g gVar = (C2936g) obj;
-        return this.f9843a == gVar.f9843a && this.f9844b.equals(gVar.f9844b);
+        return this.f9851a == gVar.f9851a && this.f9852b.equals(gVar.f9852b);
     }
 
     public final int hashCode() {
-        return (System.identityHashCode(this.f9843a) * 31) + this.f9844b.hashCode();
+        return (System.identityHashCode(this.f9851a) * 31) + this.f9852b.hashCode();
     }
 }

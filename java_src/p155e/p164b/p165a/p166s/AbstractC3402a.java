@@ -5,18 +5,18 @@ package p155e.p164b.p165a.p166s;
 public abstract class AbstractC3402a {
 
     /* renamed from: a */
-    final int f11468a;
+    final int f11477a;
 
     /* renamed from: b */
-    final byte[] f11469b = new byte[256];
+    final byte[] f11478b = new byte[256];
 
     /* renamed from: c */
-    int f11470c = 0;
+    int f11479c = 0;
 
     AbstractC3402a(int i) {
         if (i < 1 || i > 256) {
             throw new IllegalArgumentException();
         }
-        this.f11468a = i;
+        this.f11477a = i;
     }
 }

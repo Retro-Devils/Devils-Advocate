@@ -19,33 +19,33 @@ import java.io.InputStream;
 public class C1678c implements AbstractC1655d<InputStream> {
 
     /* renamed from: b */
-    private final Uri f6688b;
+    private final Uri f6696b;
 
     /* renamed from: c */
-    private final C1682e f6689c;
+    private final C1682e f6697c;
 
     /* renamed from: d */
-    private InputStream f6690d;
+    private InputStream f6698d;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.bumptech.glide.load.n.p.c$a */
     public static class C1679a implements AbstractC1681d {
 
         /* renamed from: a */
-        private static final String[] f6691a = {"_data"};
+        private static final String[] f6699a = {"_data"};
 
         /* renamed from: b */
-        private final ContentResolver f6692b;
+        private final ContentResolver f6700b;
 
         C1679a(ContentResolver contentResolver) {
-            this.f6692b = contentResolver;
+            this.f6700b = contentResolver;
         }
 
         @Override // com.bumptech.glide.load.p120n.p121p.AbstractC1681d
         /* renamed from: a */
         public Cursor mo7140a(Uri uri) {
             String lastPathSegment = uri.getLastPathSegment();
-            return this.f6692b.query(MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI, f6691a, "kind = 1 AND image_id = ?", new String[]{lastPathSegment}, null);
+            return this.f6700b.query(MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI, f6699a, "kind = 1 AND image_id = ?", new String[]{lastPathSegment}, null);
         }
     }
 
@@ -54,26 +54,26 @@ public class C1678c implements AbstractC1655d<InputStream> {
     public static class C1680b implements AbstractC1681d {
 
         /* renamed from: a */
-        private static final String[] f6693a = {"_data"};
+        private static final String[] f6701a = {"_data"};
 
         /* renamed from: b */
-        private final ContentResolver f6694b;
+        private final ContentResolver f6702b;
 
         C1680b(ContentResolver contentResolver) {
-            this.f6694b = contentResolver;
+            this.f6702b = contentResolver;
         }
 
         @Override // com.bumptech.glide.load.p120n.p121p.AbstractC1681d
         /* renamed from: a */
         public Cursor mo7140a(Uri uri) {
             String lastPathSegment = uri.getLastPathSegment();
-            return this.f6694b.query(MediaStore.Video.Thumbnails.EXTERNAL_CONTENT_URI, f6693a, "kind = 1 AND video_id = ?", new String[]{lastPathSegment}, null);
+            return this.f6702b.query(MediaStore.Video.Thumbnails.EXTERNAL_CONTENT_URI, f6701a, "kind = 1 AND video_id = ?", new String[]{lastPathSegment}, null);
         }
     }
 
     C1678c(Uri uri, C1682e eVar) {
-        this.f6688b = uri;
-        this.f6689c = eVar;
+        this.f6696b = uri;
+        this.f6697c = eVar;
     }
 
     /* renamed from: d */
@@ -93,8 +93,8 @@ public class C1678c implements AbstractC1655d<InputStream> {
 
     /* renamed from: h */
     private InputStream m7979h() {
-        InputStream d = this.f6689c.mo7142d(this.f6688b);
-        int a = d != null ? this.f6689c.mo7141a(this.f6688b) : -1;
+        InputStream d = this.f6697c.mo7142d(this.f6696b);
+        int a = d != null ? this.f6697c.mo7141a(this.f6696b) : -1;
         return a != -1 ? new C1662g(d, a) : d;
     }
 
@@ -107,7 +107,7 @@ public class C1678c implements AbstractC1655d<InputStream> {
     @Override // com.bumptech.glide.load.p120n.AbstractC1655d
     /* renamed from: b */
     public void mo7097b() {
-        InputStream inputStream = this.f6690d;
+        InputStream inputStream = this.f6698d;
         if (inputStream != null) {
             try {
                 inputStream.close();
@@ -131,7 +131,7 @@ public class C1678c implements AbstractC1655d<InputStream> {
     public void mo7101e(EnumC1616g gVar, AbstractC1655d.AbstractC1656a<? super InputStream> aVar) {
         try {
             InputStream h = m7979h();
-            this.f6690d = h;
+            this.f6698d = h;
             aVar.mo7109f(h);
         } catch (FileNotFoundException e) {
             if (Log.isLoggable("MediaStoreThumbFetcher", 3)) {

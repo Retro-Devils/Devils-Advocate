@@ -16,16 +16,16 @@ import java.lang.reflect.Method;
 public class C0998e {
 
     /* renamed from: a */
-    private static boolean f4737a;
+    private static boolean f4741a = false;
 
     /* renamed from: b */
-    private static Method f4738b;
+    private static Method f4742b = null;
 
     /* renamed from: c */
-    private static boolean f4739c;
+    private static boolean f4743c = false;
 
     /* renamed from: d */
-    private static Field f4740d;
+    private static Field f4744d;
 
     /* renamed from: b.g.k.e$a */
     public interface AbstractC0999a {
@@ -35,14 +35,14 @@ public class C0998e {
 
     /* renamed from: a */
     private static boolean m5670a(ActionBar actionBar, KeyEvent keyEvent) {
-        if (!f4737a) {
+        if (!f4741a) {
             try {
-                f4738b = actionBar.getClass().getMethod("onMenuKeyEvent", KeyEvent.class);
+                f4742b = actionBar.getClass().getMethod("onMenuKeyEvent", KeyEvent.class);
             } catch (NoSuchMethodException unused) {
             }
-            f4737a = true;
+            f4741a = true;
         }
-        Method method = f4738b;
+        Method method = f4742b;
         if (method != null) {
             try {
                 return ((Boolean) method.invoke(actionBar, keyEvent)).booleanValue();
@@ -104,16 +104,16 @@ public class C0998e {
 
     /* renamed from: f */
     private static DialogInterface.OnKeyListener m5675f(Dialog dialog) {
-        if (!f4739c) {
+        if (!f4743c) {
             try {
                 Field declaredField = Dialog.class.getDeclaredField("mOnKeyListener");
-                f4740d = declaredField;
+                f4744d = declaredField;
                 declaredField.setAccessible(true);
             } catch (NoSuchFieldException unused) {
             }
-            f4739c = true;
+            f4743c = true;
         }
-        Field field = f4740d;
+        Field field = f4744d;
         if (field == null) {
             return null;
         }

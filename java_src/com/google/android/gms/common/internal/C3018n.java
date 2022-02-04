@@ -7,14 +7,14 @@ import android.os.Parcel;
 final class C3018n implements AbstractC3020o {
 
     /* renamed from: a */
-    private final IBinder f10018a;
+    private final IBinder f10026a;
 
     C3018n(IBinder iBinder) {
-        this.f10018a = iBinder;
+        this.f10026a = iBinder;
     }
 
     public final IBinder asBinder() {
-        return this.f10018a;
+        return this.f10026a;
     }
 
     @Override // com.google.android.gms.common.internal.AbstractC3020o
@@ -31,7 +31,7 @@ final class C3018n implements AbstractC3020o {
             } else {
                 obtain.writeInt(0);
             }
-            this.f10018a.transact(46, obtain, obtain2, 0);
+            this.f10026a.transact(46, obtain, obtain2, 0);
             obtain2.readException();
         } finally {
             obtain2.recycle();

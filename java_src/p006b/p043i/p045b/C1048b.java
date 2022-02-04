@@ -27,28 +27,28 @@ class C1048b {
     private static class C1051c<T> implements Comparator<T> {
 
         /* renamed from: a */
-        private final Rect f4817a = new Rect();
+        private final Rect f4821a = new Rect();
 
         /* renamed from: b */
-        private final Rect f4818b = new Rect();
+        private final Rect f4822b = new Rect();
 
         /* renamed from: c */
-        private final boolean f4819c;
+        private final boolean f4823c;
 
         /* renamed from: d */
-        private final AbstractC1049a<T> f4820d;
+        private final AbstractC1049a<T> f4824d;
 
         C1051c(boolean z, AbstractC1049a<T> aVar) {
-            this.f4819c = z;
-            this.f4820d = aVar;
+            this.f4823c = z;
+            this.f4824d = aVar;
         }
 
         @Override // java.util.Comparator
         public int compare(T t, T t2) {
-            Rect rect = this.f4817a;
-            Rect rect2 = this.f4818b;
-            this.f4820d.mo5634a(t, rect);
-            this.f4820d.mo5634a(t2, rect2);
+            Rect rect = this.f4821a;
+            Rect rect2 = this.f4822b;
+            this.f4824d.mo5634a(t, rect);
+            this.f4824d.mo5634a(t2, rect2);
             int i = rect.top;
             int i2 = rect2.top;
             if (i < i2) {
@@ -60,10 +60,10 @@ class C1048b {
             int i3 = rect.left;
             int i4 = rect2.left;
             if (i3 < i4) {
-                return this.f4819c ? 1 : -1;
+                return this.f4823c ? 1 : -1;
             }
             if (i3 > i4) {
-                return this.f4819c ? -1 : 1;
+                return this.f4823c ? -1 : 1;
             }
             int i5 = rect.bottom;
             int i6 = rect2.bottom;
@@ -76,10 +76,10 @@ class C1048b {
             int i7 = rect.right;
             int i8 = rect2.right;
             if (i7 < i8) {
-                return this.f4819c ? 1 : -1;
+                return this.f4823c ? 1 : -1;
             }
             if (i7 > i8) {
-                return this.f4819c ? -1 : 1;
+                return this.f4823c ? -1 : 1;
             }
             return 0;
         }

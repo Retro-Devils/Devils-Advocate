@@ -12,29 +12,29 @@ public final class C1279a extends AbstractC3031a {
     public static final Parcelable.Creator<C1279a> CREATOR = new C1293m();
 
     /* renamed from: b */
-    public static final C1279a f5528b = new C1279a(0);
+    public static final C1279a f5536b = new C1279a(0);
 
     /* renamed from: c */
-    private final int f5529c;
+    private final int f5537c;
 
     /* renamed from: d */
-    private final int f5530d;
+    private final int f5538d;
 
     /* renamed from: e */
-    private final PendingIntent f5531e;
+    private final PendingIntent f5539e;
 
     /* renamed from: f */
-    private final String f5532f;
+    private final String f5540f;
 
     public C1279a(int i) {
         this(i, null, null);
     }
 
     C1279a(int i, int i2, PendingIntent pendingIntent, String str) {
-        this.f5529c = i;
-        this.f5530d = i2;
-        this.f5531e = pendingIntent;
-        this.f5532f = str;
+        this.f5537c = i;
+        this.f5538d = i2;
+        this.f5539e = pendingIntent;
+        this.f5540f = str;
     }
 
     public C1279a(int i, PendingIntent pendingIntent) {
@@ -118,45 +118,45 @@ public final class C1279a extends AbstractC3031a {
             return false;
         }
         C1279a aVar = (C1279a) obj;
-        return this.f5530d == aVar.f5530d && C3022p.m12361a(this.f5531e, aVar.f5531e) && C3022p.m12361a(this.f5532f, aVar.f5532f);
+        return this.f5538d == aVar.f5538d && C3022p.m12361a(this.f5539e, aVar.f5539e) && C3022p.m12361a(this.f5540f, aVar.f5540f);
     }
 
     /* renamed from: h */
     public final int mo6261h() {
-        return this.f5530d;
+        return this.f5538d;
     }
 
     public final int hashCode() {
-        return C3022p.m12362b(Integer.valueOf(this.f5530d), this.f5531e, this.f5532f);
+        return C3022p.m12362b(Integer.valueOf(this.f5538d), this.f5539e, this.f5540f);
     }
 
     /* renamed from: i */
     public final String mo6263i() {
-        return this.f5532f;
+        return this.f5540f;
     }
 
     /* renamed from: j */
     public final PendingIntent mo6264j() {
-        return this.f5531e;
+        return this.f5539e;
     }
 
     /* renamed from: k */
     public final boolean mo6265k() {
-        return (this.f5530d == 0 || this.f5531e == null) ? false : true;
+        return (this.f5538d == 0 || this.f5539e == null) ? false : true;
     }
 
     /* renamed from: l */
     public final boolean mo6266l() {
-        return this.f5530d == 0;
+        return this.f5538d == 0;
     }
 
     public final String toString() {
-        return C3022p.m12363c(this).mo9802a("statusCode", m6755m(this.f5530d)).mo9802a("resolution", this.f5531e).mo9802a("message", this.f5532f).toString();
+        return C3022p.m12363c(this).mo9802a("statusCode", m6755m(this.f5538d)).mo9802a("resolution", this.f5539e).mo9802a("message", this.f5540f).toString();
     }
 
     public final void writeToParcel(Parcel parcel, int i) {
         int a = C3034c.m12411a(parcel);
-        C3034c.m12417g(parcel, 1, this.f5529c);
+        C3034c.m12417g(parcel, 1, this.f5537c);
         C3034c.m12417g(parcel, 2, mo6261h());
         C3034c.m12419i(parcel, 3, mo6264j(), i, false);
         C3034c.m12420j(parcel, 4, mo6263i(), false);

@@ -17,25 +17,25 @@ import java.util.concurrent.ThreadFactory;
 public final class C1683a {
 
     /* renamed from: a */
-    private final boolean f6701a;
+    private final boolean f6709a;
 
     /* renamed from: b */
-    private final Executor f6702b;
+    private final Executor f6710b;
 
     /* renamed from: c */
-    final Map<AbstractC1643g, C1688d> f6703c;
+    final Map<AbstractC1643g, C1688d> f6711c;
 
     /* renamed from: d */
-    private final ReferenceQueue<C1785p<?>> f6704d;
+    private final ReferenceQueue<C1785p<?>> f6712d;
 
     /* renamed from: e */
-    private C1785p.AbstractC1786a f6705e;
+    private C1785p.AbstractC1786a f6713e;
 
     /* renamed from: f */
-    private volatile boolean f6706f;
+    private volatile boolean f6714f;
 
     /* renamed from: g */
-    private volatile AbstractC1687c f6707g;
+    private volatile AbstractC1687c f6715g;
 
     /* renamed from: com.bumptech.glide.load.o.a$a */
     class ThreadFactoryC1684a implements ThreadFactory {
@@ -44,15 +44,15 @@ public final class C1683a {
         class RunnableC1685a implements Runnable {
 
             /* renamed from: b */
-            final /* synthetic */ Runnable f6708b;
+            final /* synthetic */ Runnable f6716b;
 
             RunnableC1685a(Runnable runnable) {
-                this.f6708b = runnable;
+                this.f6716b = runnable;
             }
 
             public void run() {
                 Process.setThreadPriority(10);
-                this.f6708b.run();
+                this.f6716b.run();
             }
         }
 
@@ -86,25 +86,25 @@ public final class C1683a {
     public static final class C1688d extends WeakReference<C1785p<?>> {
 
         /* renamed from: a */
-        final AbstractC1643g f6711a;
+        final AbstractC1643g f6719a;
 
         /* renamed from: b */
-        final boolean f6712b;
+        final boolean f6720b;
 
         /* renamed from: c */
-        AbstractC1794v<?> f6713c;
+        AbstractC1794v<?> f6721c;
 
         C1688d(AbstractC1643g gVar, C1785p<?> pVar, ReferenceQueue<? super C1785p<?>> referenceQueue, boolean z) {
             super(pVar, referenceQueue);
-            this.f6711a = (AbstractC1643g) C2081j.m9432d(gVar);
-            this.f6713c = (!pVar.mo7362g() || !z) ? null : (AbstractC1794v) C2081j.m9432d(pVar.mo7360e());
-            this.f6712b = pVar.mo7362g();
+            this.f6719a = (AbstractC1643g) C2081j.m9432d(gVar);
+            this.f6721c = (!pVar.mo7362g() || !z) ? null : (AbstractC1794v) C2081j.m9432d(pVar.mo7360e());
+            this.f6720b = pVar.mo7362g();
         }
 
         /* access modifiers changed from: package-private */
         /* renamed from: a */
         public void mo7153a() {
-            this.f6713c = null;
+            this.f6721c = null;
             clear();
         }
     }
@@ -114,17 +114,17 @@ public final class C1683a {
     }
 
     C1683a(boolean z, Executor executor) {
-        this.f6703c = new HashMap();
-        this.f6704d = new ReferenceQueue<>();
-        this.f6701a = z;
-        this.f6702b = executor;
+        this.f6711c = new HashMap();
+        this.f6712d = new ReferenceQueue<>();
+        this.f6709a = z;
+        this.f6710b = executor;
         executor.execute(new RunnableC1686b());
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: a */
     public synchronized void mo7143a(AbstractC1643g gVar, C1785p<?> pVar) {
-        C1688d put = this.f6703c.put(gVar, new C1688d(gVar, pVar, this.f6704d, this.f6701a));
+        C1688d put = this.f6711c.put(gVar, new C1688d(gVar, pVar, this.f6712d, this.f6709a));
         if (put != null) {
             put.mo7153a();
         }
@@ -133,10 +133,10 @@ public final class C1683a {
     /* access modifiers changed from: package-private */
     /* renamed from: b */
     public void mo7144b() {
-        while (!this.f6706f) {
+        while (!this.f6714f) {
             try {
-                mo7145c((C1688d) this.f6704d.remove());
-                AbstractC1687c cVar = this.f6707g;
+                mo7145c((C1688d) this.f6712d.remove());
+                AbstractC1687c cVar = this.f6715g;
                 if (cVar != null) {
                     cVar.mo7152a();
                 }
@@ -150,11 +150,11 @@ public final class C1683a {
     /* renamed from: c */
     public void mo7145c(C1688d dVar) {
         synchronized (this) {
-            this.f6703c.remove(dVar.f6711a);
-            if (dVar.f6712b) {
-                AbstractC1794v<?> vVar = dVar.f6713c;
+            this.f6711c.remove(dVar.f6719a);
+            if (dVar.f6720b) {
+                AbstractC1794v<?> vVar = dVar.f6721c;
                 if (vVar != null) {
-                    this.f6705e.mo7319a(dVar.f6711a, new C1785p<>(vVar, true, false, dVar.f6711a, this.f6705e));
+                    this.f6713e.mo7319a(dVar.f6719a, new C1785p<>(vVar, true, false, dVar.f6719a, this.f6713e));
                 }
             }
         }
@@ -163,7 +163,7 @@ public final class C1683a {
     /* access modifiers changed from: package-private */
     /* renamed from: d */
     public synchronized void mo7146d(AbstractC1643g gVar) {
-        C1688d remove = this.f6703c.remove(gVar);
+        C1688d remove = this.f6711c.remove(gVar);
         if (remove != null) {
             remove.mo7153a();
         }
@@ -172,7 +172,7 @@ public final class C1683a {
     /* access modifiers changed from: package-private */
     /* renamed from: e */
     public synchronized C1785p<?> mo7147e(AbstractC1643g gVar) {
-        C1688d dVar = this.f6703c.get(gVar);
+        C1688d dVar = this.f6711c.get(gVar);
         if (dVar == null) {
             return null;
         }
@@ -188,7 +188,7 @@ public final class C1683a {
     public void mo7148f(C1785p.AbstractC1786a aVar) {
         synchronized (aVar) {
             synchronized (this) {
-                this.f6705e = aVar;
+                this.f6713e = aVar;
             }
         }
     }

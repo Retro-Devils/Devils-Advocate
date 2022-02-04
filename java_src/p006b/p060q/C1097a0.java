@@ -8,21 +8,21 @@ import android.view.ViewOverlay;
 class C1097a0 implements AbstractC1099b0 {
 
     /* renamed from: a */
-    private final ViewOverlay f5026a;
+    private final ViewOverlay f5033a;
 
     C1097a0(View view) {
-        this.f5026a = view.getOverlay();
+        this.f5033a = view.getOverlay();
     }
 
     @Override // p006b.p060q.AbstractC1099b0
     /* renamed from: b */
     public void mo5729b(Drawable drawable) {
-        this.f5026a.add(drawable);
+        this.f5033a.add(drawable);
     }
 
     @Override // p006b.p060q.AbstractC1099b0
     /* renamed from: d */
     public void mo5730d(Drawable drawable) {
-        this.f5026a.remove(drawable);
+        this.f5033a.remove(drawable);
     }
 }

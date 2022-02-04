@@ -12,9 +12,9 @@ public class C0910h extends C0909g {
     /* renamed from: l */
     public Typeface mo5309l(Object obj) {
         try {
-            Object newInstance = Array.newInstance(this.f4544g, 1);
+            Object newInstance = Array.newInstance(this.f4548g, 1);
             Array.set(newInstance, 0, obj);
-            return (Typeface) this.f4550m.invoke(null, newInstance, "sans-serif", -1, -1);
+            return (Typeface) this.f4554m.invoke(null, newInstance, "sans-serif", -1, -1);
         } catch (IllegalAccessException | InvocationTargetException e) {
             throw new RuntimeException(e);
         }

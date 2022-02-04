@@ -14,22 +14,22 @@ public interface AbstractC1843n<Model, Data> {
     public static class C1844a<Data> {
 
         /* renamed from: a */
-        public final AbstractC1643g f7081a;
+        public final AbstractC1643g f7089a;
 
         /* renamed from: b */
-        public final List<AbstractC1643g> f7082b;
+        public final List<AbstractC1643g> f7090b;
 
         /* renamed from: c */
-        public final AbstractC1655d<Data> f7083c;
+        public final AbstractC1655d<Data> f7091c;
 
         public C1844a(AbstractC1643g gVar, AbstractC1655d<Data> dVar) {
             this(gVar, Collections.emptyList(), dVar);
         }
 
         public C1844a(AbstractC1643g gVar, List<AbstractC1643g> list, AbstractC1655d<Data> dVar) {
-            this.f7081a = (AbstractC1643g) C2081j.m9432d(gVar);
-            this.f7082b = (List) C2081j.m9432d(list);
-            this.f7083c = (AbstractC1655d) C2081j.m9432d(dVar);
+            this.f7089a = (AbstractC1643g) C2081j.m9432d(gVar);
+            this.f7090b = (List) C2081j.m9432d(list);
+            this.f7091c = (AbstractC1655d) C2081j.m9432d(dVar);
         }
     }
 

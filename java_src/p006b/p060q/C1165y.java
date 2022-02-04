@@ -11,19 +11,19 @@ import java.lang.reflect.Method;
 public class C1165y {
 
     /* renamed from: a */
-    private static LayoutTransition f5194a;
+    private static LayoutTransition f5201a;
 
     /* renamed from: b */
-    private static Field f5195b;
+    private static Field f5202b;
 
     /* renamed from: c */
-    private static boolean f5196c;
+    private static boolean f5203c;
 
     /* renamed from: d */
-    private static Method f5197d;
+    private static Method f5204d;
 
     /* renamed from: e */
-    private static boolean f5198e;
+    private static boolean f5205e;
 
     /* access modifiers changed from: package-private */
     /* renamed from: b.q.y$a */
@@ -38,17 +38,17 @@ public class C1165y {
 
     /* renamed from: a */
     private static void m6386a(LayoutTransition layoutTransition) {
-        if (!f5198e) {
+        if (!f5205e) {
             try {
                 Method declaredMethod = LayoutTransition.class.getDeclaredMethod("cancel", new Class[0]);
-                f5197d = declaredMethod;
+                f5204d = declaredMethod;
                 declaredMethod.setAccessible(true);
             } catch (NoSuchMethodException unused) {
                 Log.i("ViewGroupUtilsApi14", "Failed to access cancel method by reflection");
             }
-            f5198e = true;
+            f5205e = true;
         }
-        Method method = f5197d;
+        Method method = f5204d;
         if (method != null) {
             try {
                 method.invoke(layoutTransition, new Object[0]);

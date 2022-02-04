@@ -9,31 +9,31 @@ import p006b.p021d.C0823a;
 public class C2032d {
 
     /* renamed from: a */
-    private final AtomicReference<C2080i> f7458a = new AtomicReference<>();
+    private final AtomicReference<C2080i> f7466a = new AtomicReference<>();
 
     /* renamed from: b */
-    private final C0823a<C2080i, List<Class<?>>> f7459b = new C0823a<>();
+    private final C0823a<C2080i, List<Class<?>>> f7467b = new C0823a<>();
 
     /* renamed from: a */
     public List<Class<?>> mo7726a(Class<?> cls, Class<?> cls2, Class<?> cls3) {
         List<Class<?>> list;
-        C2080i andSet = this.f7458a.getAndSet(null);
+        C2080i andSet = this.f7466a.getAndSet(null);
         if (andSet == null) {
             andSet = new C2080i(cls, cls2, cls3);
         } else {
             andSet.mo7867a(cls, cls2, cls3);
         }
-        synchronized (this.f7459b) {
-            list = this.f7459b.get(andSet);
+        synchronized (this.f7467b) {
+            list = this.f7467b.get(andSet);
         }
-        this.f7458a.set(andSet);
+        this.f7466a.set(andSet);
         return list;
     }
 
     /* renamed from: b */
     public void mo7727b(Class<?> cls, Class<?> cls2, Class<?> cls3, List<Class<?>> list) {
-        synchronized (this.f7459b) {
-            this.f7459b.put(new C2080i(cls, cls2, cls3), list);
+        synchronized (this.f7467b) {
+            this.f7467b.put(new C2080i(cls, cls2, cls3), list);
         }
     }
 }

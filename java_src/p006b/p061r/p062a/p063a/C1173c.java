@@ -9,16 +9,16 @@ import android.os.Build;
 public final class C1173c {
 
     /* renamed from: a */
-    public static final String[] f5211a = m6410a();
+    public static final String[] f5218a = m6410a();
 
     /* renamed from: b */
-    ContentValues f5212b;
+    ContentValues f5219b;
 
     /* renamed from: b.r.a.a.c$a */
     public static final class C1174a {
 
         /* renamed from: a */
-        ContentValues f5213a = new ContentValues();
+        ContentValues f5220a = new ContentValues();
 
         /* renamed from: a */
         public C1173c mo5897a() {
@@ -32,25 +32,25 @@ public final class C1173c {
 
         /* renamed from: c */
         public C1174a mo5899c(Uri uri) {
-            this.f5213a.put("app_link_intent_uri", uri == null ? null : uri.toString());
+            this.f5220a.put("app_link_intent_uri", uri == null ? null : uri.toString());
             return this;
         }
 
         /* renamed from: d */
         public C1174a mo5900d(String str) {
-            this.f5213a.put("display_name", str);
+            this.f5220a.put("display_name", str);
             return this;
         }
 
         /* renamed from: e */
         public C1174a mo5901e(String str) {
-            this.f5213a.put("type", str);
+            this.f5220a.put("type", str);
             return this;
         }
     }
 
     C1173c(C1174a aVar) {
-        this.f5212b = aVar.f5213a;
+        this.f5219b = aVar.f5220a;
     }
 
     /* renamed from: a */
@@ -77,7 +77,7 @@ public final class C1173c {
 
     /* renamed from: c */
     public ContentValues mo5893c(boolean z) {
-        ContentValues contentValues = new ContentValues(this.f5212b);
+        ContentValues contentValues = new ContentValues(this.f5219b);
         int i = Build.VERSION.SDK_INT;
         if (i < 23) {
             contentValues.remove("app_link_color");
@@ -110,14 +110,14 @@ public final class C1173c {
         if (!(obj instanceof C1173c)) {
             return false;
         }
-        return this.f5212b.equals(((C1173c) obj).f5212b);
+        return this.f5219b.equals(((C1173c) obj).f5219b);
     }
 
     public int hashCode() {
-        return this.f5212b.hashCode();
+        return this.f5219b.hashCode();
     }
 
     public String toString() {
-        return "Channel{" + this.f5212b.toString() + "}";
+        return "Channel{" + this.f5219b.toString() + "}";
     }
 }

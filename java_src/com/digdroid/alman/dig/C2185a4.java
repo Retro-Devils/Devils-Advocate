@@ -88,7 +88,7 @@ public class C2185a4 {
     public static int m9666D(MainActivity mainActivity) {
         char c;
         C2219c3 k = C2219c3.m9805k(mainActivity);
-        String str = C2219c3.m9805k(mainActivity).f7955j;
+        String str = C2219c3.m9805k(mainActivity).f7963j;
         str.hashCode();
         switch (str.hashCode()) {
             case -1372576080:

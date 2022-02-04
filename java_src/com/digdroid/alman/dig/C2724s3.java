@@ -9,48 +9,48 @@ import java.io.File;
 public class C2724s3 extends C2492n {
 
     /* renamed from: f */
-    String f9252f;
+    String f9260f;
 
     /* renamed from: g */
-    C2219c3 f9253g;
+    C2219c3 f9261g;
 
     /* renamed from: h */
-    ActivityC2220c4 f9254h;
+    ActivityC2220c4 f9262h;
 
     /* renamed from: i */
-    float f9255i = 1.0f;
+    float f9263i = 1.0f;
 
     /* renamed from: j */
-    float f9256j = 1.0f;
+    float f9264j = 1.0f;
 
     /* renamed from: k */
-    int f9257k = 0;
+    int f9265k = 0;
 
     /* renamed from: l */
-    int f9258l = 0;
+    int f9266l = 0;
 
     /* renamed from: m */
-    Point f9259m;
+    Point f9267m;
 
     public C2724s3(ActivityC2220c4 c4Var) {
         super(c4Var);
-        this.f9254h = c4Var;
-        this.f9252f = null;
-        this.f9253g = C2219c3.m9805k(c4Var);
+        this.f9262h = c4Var;
+        this.f9260f = null;
+        this.f9261g = C2219c3.m9805k(c4Var);
     }
 
     public C2724s3(ActivityC2220c4 c4Var, String str) {
         super(c4Var);
-        this.f9254h = c4Var;
-        this.f9252f = str;
-        this.f9253g = C2219c3.m9805k(c4Var);
+        this.f9262h = c4Var;
+        this.f9260f = str;
+        this.f9261g = C2219c3.m9805k(c4Var);
     }
 
     public C2724s3(C2724s3 s3Var) {
         super(s3Var);
-        this.f9254h = s3Var.f9254h;
-        this.f9252f = s3Var.f9252f;
-        this.f9253g = s3Var.f9253g;
+        this.f9262h = s3Var.f9262h;
+        this.f9260f = s3Var.f9260f;
+        this.f9261g = s3Var.f9261g;
     }
 
     /* renamed from: J */
@@ -109,7 +109,7 @@ public class C2724s3 extends C2492n {
     public void mo9200A(String str) {
         String i = mo8772i(str);
         if (!i.equals("")) {
-            this.f9253g.mo8153B(str, i.equalsIgnoreCase("true"));
+            this.f9261g.mo8153B(str, i.equalsIgnoreCase("true"));
         }
     }
 
@@ -119,7 +119,7 @@ public class C2724s3 extends C2492n {
         String i = mo8772i(str);
         if (!i.equals("")) {
             try {
-                this.f9253g.mo8155D(str, Float.parseFloat(i));
+                this.f9261g.mo8155D(str, Float.parseFloat(i));
             } catch (Exception unused) {
             }
         }
@@ -128,7 +128,7 @@ public class C2724s3 extends C2492n {
     /* renamed from: C */
     public String mo9202C() {
         File externalFilesDir;
-        Context context = this.f8639a;
+        Context context = this.f8647a;
         if (context == null || (externalFilesDir = context.getExternalFilesDir(null)) == null) {
             return null;
         }
@@ -149,7 +149,7 @@ public class C2724s3 extends C2492n {
     public void mo9203D(String str) {
         String i = mo8772i(str);
         if (!i.equals("")) {
-            this.f9253g.mo8156E(str, Integer.parseInt(i));
+            this.f9261g.mo8156E(str, Integer.parseInt(i));
         }
     }
 
@@ -201,7 +201,7 @@ public class C2724s3 extends C2492n {
         if (i.equals("") || i.substring(0, 1).equals("/")) {
             return i;
         }
-        String J = m11551J(this.f8639a);
+        String J = m11551J(this.f8647a);
         if (J == null) {
             return "";
         }
@@ -213,7 +213,7 @@ public class C2724s3 extends C2492n {
     public void mo9209L(String str) {
         String i = mo8772i(str);
         if (!i.equals("")) {
-            this.f9253g.mo8158G(str, i);
+            this.f9261g.mo8158G(str, i);
         }
     }
 
@@ -233,13 +233,13 @@ public class C2724s3 extends C2492n {
     /* access modifiers changed from: package-private */
     /* renamed from: N */
     public void mo9211N() {
-        this.f9255i = mo8768e("theme_density", 1.0f);
-        this.f9256j = mo8768e("theme_scaled_density", 1.0f);
-        this.f9257k = mo8770g("theme_width", 0);
-        this.f9258l = mo8770g("theme_height", 0);
-        this.f9259m = this.f9254h.mo8203g(true);
-        if (this.f9253g.mo8180c("new_theme_set", true)) {
-            this.f9253g.mo8155D("main_aspect_ratio", mo8768e("theme_aspect_ratio", -1.0f));
+        this.f9263i = mo8768e("theme_density", 1.0f);
+        this.f9264j = mo8768e("theme_scaled_density", 1.0f);
+        this.f9265k = mo8770g("theme_width", 0);
+        this.f9266l = mo8770g("theme_height", 0);
+        this.f9267m = this.f9262h.mo8203g(true);
+        if (this.f9261g.mo8180c("new_theme_set", true)) {
+            this.f9261g.mo8155D("main_aspect_ratio", mo8768e("theme_aspect_ratio", -1.0f));
             mo9212O("game");
             mo9212O("systems");
             mo9212O("home");
@@ -263,7 +263,7 @@ public class C2724s3 extends C2492n {
             mo9200A("games_preview_play_mobile");
             mo9203D("games_preview_size");
             mo9203D("games_preview_padding");
-            this.f9253g.mo8153B("new_theme_set", false);
+            this.f9261g.mo8153B("new_theme_set", false);
         }
     }
 
@@ -294,13 +294,13 @@ public class C2724s3 extends C2492n {
 
     /* renamed from: P */
     public boolean mo9213P(String str) {
-        this.f9252f = str;
+        this.f9260f = str;
         String C = mo9202C();
         if (C != null) {
-            Context context = this.f8639a;
+            Context context = this.f8647a;
             super.mo8774k(C2399i2.m10374d(context, C + "/" + str));
         }
-        if (this.f8640b.equals("")) {
+        if (this.f8648b.equals("")) {
             return false;
         }
         mo8775l();
@@ -313,7 +313,7 @@ public class C2724s3 extends C2492n {
     public void mo9214Q() {
         String C = mo9202C();
         if (C != null) {
-            Context context = this.f8639a;
+            Context context = this.f8647a;
             C2399i2 d = C2399i2.m10374d(context, C + "/___tmp.cfg");
             super.mo8774k(d);
             mo8775l();
@@ -336,7 +336,7 @@ public class C2724s3 extends C2492n {
             if (z) {
                 mo9222Y();
             }
-            super.mo8781r(C + "/" + this.f9252f);
+            super.mo8781r(C + "/" + this.f9260f);
         }
     }
 
@@ -351,25 +351,25 @@ public class C2724s3 extends C2492n {
     /* access modifiers changed from: package-private */
     /* renamed from: U */
     public void mo9218U(String str, boolean z) {
-        mo8782s(str, this.f9253g.mo8180c(str, z) ? "true" : "false");
+        mo8782s(str, this.f9261g.mo8180c(str, z) ? "true" : "false");
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: V */
     public void mo9219V(String str, float f) {
-        mo8782s(str, "" + this.f9253g.mo8183f(str, f));
+        mo8782s(str, "" + this.f9261g.mo8183f(str, f));
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: W */
     public void mo9220W(String str, int i) {
-        mo8782s(str, "" + this.f9253g.mo8188l(str, i));
+        mo8782s(str, "" + this.f9261g.mo8188l(str, i));
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: X */
     public void mo9221X(String str, String str2) {
-        mo8782s(str, this.f9253g.mo8193q(str, str2));
+        mo8782s(str, this.f9261g.mo8193q(str, str2));
     }
 
     /* access modifiers changed from: package-private */
@@ -448,25 +448,25 @@ public class C2724s3 extends C2492n {
     /* access modifiers changed from: package-private */
     /* renamed from: b0 */
     public float mo9225b0(float f) {
-        int i = this.f9258l;
+        int i = this.f9266l;
         if (i == 0) {
-            return f * this.f8639a.getResources().getDisplayMetrics().scaledDensity;
+            return f * this.f8647a.getResources().getDisplayMetrics().scaledDensity;
         }
-        return ((float) this.f9259m.y) * ((f * this.f9256j) / ((float) i));
+        return ((float) this.f9267m.y) * ((f * this.f9264j) / ((float) i));
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: c0 */
     public String mo9226c0() {
-        String str = this.f9252f;
+        String str = this.f9260f;
         if (str == null) {
             return "<theme-name>";
         }
         int lastIndexOf = str.lastIndexOf(46);
         if (lastIndexOf > 0) {
-            return this.f9252f.substring(0, lastIndexOf);
+            return this.f9260f.substring(0, lastIndexOf);
         }
-        return this.f9252f + ".dir";
+        return this.f9260f + ".dir";
     }
 
     /* access modifiers changed from: package-private */
@@ -474,7 +474,7 @@ public class C2724s3 extends C2492n {
     public void mo9227d0() {
         int g = mo8770g("version", 1);
         if (g < 13) {
-            this.f9253g.mo8153B("new_theme_set", true);
+            this.f9261g.mo8153B("new_theme_set", true);
             if (g < 2) {
                 mo9224a0();
                 mo8782s("systems_icons", mo8772i("system_icons"));
@@ -548,7 +548,7 @@ public class C2724s3 extends C2492n {
     @Override // com.digdroid.alman.dig.C2492n
     /* renamed from: j */
     public void mo8773j(String str) {
-        this.f9252f = str.substring(str.indexOf(47) + 1);
+        this.f9260f = str.substring(str.indexOf(47) + 1);
         super.mo8773j(str);
         mo8775l();
         mo9227d0();
@@ -560,10 +560,10 @@ public class C2724s3 extends C2492n {
         String C = mo9202C();
         if (C != null) {
             try {
-                new File(C + "/" + this.f9252f).delete();
+                new File(C + "/" + this.f9260f).delete();
             } catch (Exception unused) {
             }
-            File file = new File(m11551J(this.f8639a) + "/" + mo9226c0());
+            File file = new File(m11551J(this.f8647a) + "/" + mo9226c0());
             if (file.exists() && file.isDirectory()) {
                 m11553v(file);
             }
@@ -574,21 +574,21 @@ public class C2724s3 extends C2492n {
     /* renamed from: w */
     public float mo9229w(float f, int i, int i2) {
         if (i == 0) {
-            return f * this.f8639a.getResources().getDisplayMetrics().density;
+            return f * this.f8647a.getResources().getDisplayMetrics().density;
         }
-        return ((float) i2) * ((f * this.f9255i) / ((float) i));
+        return ((float) i2) * ((f * this.f9263i) / ((float) i));
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: x */
     public float mo9230x(float f) {
-        return mo9229w(f, this.f9257k, this.f9259m.x);
+        return mo9229w(f, this.f9265k, this.f9267m.x);
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: y */
     public float mo9231y(float f) {
-        return mo9229w(f, this.f9258l, this.f9259m.y);
+        return mo9229w(f, this.f9266l, this.f9267m.y);
     }
 
     /* renamed from: z */
@@ -597,6 +597,6 @@ public class C2724s3 extends C2492n {
         if (C == null) {
             return false;
         }
-        return new File(C + "/" + this.f9252f).exists();
+        return new File(C + "/" + this.f9260f).exists();
     }
 }

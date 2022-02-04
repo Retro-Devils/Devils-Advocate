@@ -8,25 +8,25 @@ import java.util.Map;
 public class C2078g<T, Y> {
 
     /* renamed from: a */
-    private final Map<T, Y> f7591a = new LinkedHashMap(100, 0.75f, true);
+    private final Map<T, Y> f7599a = new LinkedHashMap(100, 0.75f, true);
 
     /* renamed from: b */
-    private final long f7592b;
+    private final long f7600b;
 
     /* renamed from: c */
-    private long f7593c;
+    private long f7601c;
 
     /* renamed from: d */
-    private long f7594d;
+    private long f7602d;
 
     public C2078g(long j) {
-        this.f7592b = j;
-        this.f7593c = j;
+        this.f7600b = j;
+        this.f7601c = j;
     }
 
     /* renamed from: f */
     private void m9417f() {
-        mo7860m(this.f7593c);
+        mo7860m(this.f7601c);
     }
 
     /* renamed from: b */
@@ -36,12 +36,12 @@ public class C2078g<T, Y> {
 
     /* renamed from: g */
     public synchronized Y mo7856g(T t) {
-        return this.f7591a.get(t);
+        return this.f7599a.get(t);
     }
 
     /* renamed from: h */
     public synchronized long mo7857h() {
-        return this.f7593c;
+        return this.f7601c;
     }
 
     /* access modifiers changed from: protected */
@@ -58,16 +58,16 @@ public class C2078g<T, Y> {
     /* renamed from: k */
     public synchronized Y mo7858k(T t, Y y) {
         long i = (long) mo7225i(y);
-        if (i >= this.f7593c) {
+        if (i >= this.f7601c) {
             mo7226j(t, y);
             return null;
         }
         if (y != null) {
-            this.f7594d += i;
+            this.f7602d += i;
         }
-        Y put = this.f7591a.put(t, y);
+        Y put = this.f7599a.put(t, y);
         if (put != null) {
-            this.f7594d -= (long) mo7225i(put);
+            this.f7602d -= (long) mo7225i(put);
             if (!put.equals(y)) {
                 mo7226j(t, put);
             }
@@ -79,9 +79,9 @@ public class C2078g<T, Y> {
     /* renamed from: l */
     public synchronized Y mo7859l(T t) {
         Y remove;
-        remove = this.f7591a.remove(t);
+        remove = this.f7599a.remove(t);
         if (remove != null) {
-            this.f7594d -= (long) mo7225i(remove);
+            this.f7602d -= (long) mo7225i(remove);
         }
         return remove;
     }
@@ -89,11 +89,11 @@ public class C2078g<T, Y> {
     /* access modifiers changed from: protected */
     /* renamed from: m */
     public synchronized void mo7860m(long j) {
-        while (this.f7594d > j) {
-            Iterator<Map.Entry<T, Y>> it = this.f7591a.entrySet().iterator();
+        while (this.f7602d > j) {
+            Iterator<Map.Entry<T, Y>> it = this.f7599a.entrySet().iterator();
             Map.Entry<T, Y> next = it.next();
             Y value = next.getValue();
-            this.f7594d -= (long) mo7225i(value);
+            this.f7602d -= (long) mo7225i(value);
             T key = next.getKey();
             it.remove();
             mo7226j(key, value);

@@ -9,14 +9,14 @@ import java.security.MessageDigest;
 public final class C1894c<T> implements AbstractC1651m<T> {
 
     /* renamed from: b */
-    private static final AbstractC1651m<?> f7161b = new C1894c();
+    private static final AbstractC1651m<?> f7169b = new C1894c();
 
     private C1894c() {
     }
 
     /* renamed from: c */
     public static <T> C1894c<T> m8631c() {
-        return (C1894c) f7161b;
+        return (C1894c) f7169b;
     }
 
     @Override // com.bumptech.glide.load.AbstractC1643g

@@ -8,25 +8,25 @@ import android.os.Parcel;
 public class C1305a implements IInterface {
 
     /* renamed from: a */
-    private final IBinder f5571a;
+    private final IBinder f5579a;
 
     /* renamed from: b */
-    private final String f5572b;
+    private final String f5580b;
 
     protected C1305a(IBinder iBinder, String str) {
-        this.f5571a = iBinder;
-        this.f5572b = str;
+        this.f5579a = iBinder;
+        this.f5580b = str;
     }
 
     public IBinder asBinder() {
-        return this.f5571a;
+        return this.f5579a;
     }
 
     /* access modifiers changed from: protected */
     /* renamed from: i */
     public final Parcel mo6309i() {
         Parcel obtain = Parcel.obtain();
-        obtain.writeInterfaceToken(this.f5572b);
+        obtain.writeInterfaceToken(this.f5580b);
         return obtain;
     }
 
@@ -35,7 +35,7 @@ public class C1305a implements IInterface {
     public final void mo6310j(int i, Parcel parcel) {
         Parcel obtain = Parcel.obtain();
         try {
-            this.f5571a.transact(i, parcel, obtain, 0);
+            this.f5579a.transact(i, parcel, obtain, 0);
             obtain.readException();
         } finally {
             parcel.recycle();

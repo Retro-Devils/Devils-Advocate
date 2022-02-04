@@ -197,13 +197,13 @@ public class C0382c {
 
     /* renamed from: e */
     private static AbstractC0383a m1902e(XmlPullParser xmlPullParser, Resources resources) {
-        TypedArray obtainAttributes = resources.obtainAttributes(Xml.asAttributeSet(xmlPullParser), C0900c.f4501e);
-        String string = obtainAttributes.getString(C0900c.f4502f);
-        String string2 = obtainAttributes.getString(C0900c.f4506j);
-        String string3 = obtainAttributes.getString(C0900c.f4507k);
-        int resourceId = obtainAttributes.getResourceId(C0900c.f4503g, 0);
-        int integer = obtainAttributes.getInteger(C0900c.f4504h, 1);
-        int integer2 = obtainAttributes.getInteger(C0900c.f4505i, 500);
+        TypedArray obtainAttributes = resources.obtainAttributes(Xml.asAttributeSet(xmlPullParser), C0900c.f4505e);
+        String string = obtainAttributes.getString(C0900c.f4506f);
+        String string2 = obtainAttributes.getString(C0900c.f4510j);
+        String string3 = obtainAttributes.getString(C0900c.f4511k);
+        int resourceId = obtainAttributes.getResourceId(C0900c.f4507g, 0);
+        int integer = obtainAttributes.getInteger(C0900c.f4508h, 1);
+        int integer2 = obtainAttributes.getInteger(C0900c.f4509i, 500);
         obtainAttributes.recycle();
         if (string == null || string2 == null || string3 == null) {
             ArrayList arrayList = new ArrayList();
@@ -229,30 +229,30 @@ public class C0382c {
 
     /* renamed from: f */
     private static C0385c m1903f(XmlPullParser xmlPullParser, Resources resources) {
-        TypedArray obtainAttributes = resources.obtainAttributes(Xml.asAttributeSet(xmlPullParser), C0900c.f4508l);
-        int i = C0900c.f4517u;
+        TypedArray obtainAttributes = resources.obtainAttributes(Xml.asAttributeSet(xmlPullParser), C0900c.f4512l);
+        int i = C0900c.f4521u;
         if (!obtainAttributes.hasValue(i)) {
-            i = C0900c.f4510n;
+            i = C0900c.f4514n;
         }
         int i2 = obtainAttributes.getInt(i, 400);
-        int i3 = C0900c.f4515s;
+        int i3 = C0900c.f4519s;
         if (!obtainAttributes.hasValue(i3)) {
-            i3 = C0900c.f4511o;
+            i3 = C0900c.f4515o;
         }
         boolean z = 1 == obtainAttributes.getInt(i3, 0);
-        int i4 = C0900c.f4518v;
+        int i4 = C0900c.f4522v;
         if (!obtainAttributes.hasValue(i4)) {
-            i4 = C0900c.f4512p;
+            i4 = C0900c.f4516p;
         }
-        int i5 = C0900c.f4516t;
+        int i5 = C0900c.f4520t;
         if (!obtainAttributes.hasValue(i5)) {
-            i5 = C0900c.f4513q;
+            i5 = C0900c.f4517q;
         }
         String string = obtainAttributes.getString(i5);
         int i6 = obtainAttributes.getInt(i4, 0);
-        int i7 = C0900c.f4514r;
+        int i7 = C0900c.f4518r;
         if (!obtainAttributes.hasValue(i7)) {
-            i7 = C0900c.f4509m;
+            i7 = C0900c.f4513m;
         }
         int resourceId = obtainAttributes.getResourceId(i7, 0);
         String string2 = obtainAttributes.getString(i7);

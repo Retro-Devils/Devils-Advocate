@@ -8,10 +8,10 @@ import java.io.InputStream;
 public class C1860t implements AbstractC1633d<InputStream> {
 
     /* renamed from: a */
-    private final AbstractC1690b f7112a;
+    private final AbstractC1690b f7120a;
 
     public C1860t(AbstractC1690b bVar) {
-        this.f7112a = bVar;
+        this.f7120a = bVar;
     }
 
     /* JADX WARNING: Removed duplicated region for block: B:21:0x0038 A[Catch:{ all -> 0x002e }] */
@@ -23,7 +23,7 @@ public class C1860t implements AbstractC1633d<InputStream> {
         /*
             r4 = this;
             java.lang.String r7 = "StreamEncoder"
-            com.bumptech.glide.load.o.a0.b r0 = r4.f7112a
+            com.bumptech.glide.load.o.a0.b r0 = r4.f7120a
             java.lang.Class<byte[]> r1 = byte[].class
             r2 = 65536(0x10000, float:9.18355E-41)
             java.lang.Object r0 = r0.mo7162e(r2, r1)
@@ -66,14 +66,14 @@ public class C1860t implements AbstractC1633d<InputStream> {
             if (r2 == 0) goto L_0x0042
             r2.close()
         L_0x0042:
-            com.bumptech.glide.load.o.a0.b r5 = r4.f7112a
+            com.bumptech.glide.load.o.a0.b r5 = r4.f7120a
             r5.mo7161d(r0)
             return r1
         L_0x0048:
             if (r2 == 0) goto L_0x004d
             r2.close()     // Catch:{ IOException -> 0x004d }
         L_0x004d:
-            com.bumptech.glide.load.o.a0.b r6 = r4.f7112a
+            com.bumptech.glide.load.o.a0.b r6 = r4.f7120a
             r6.mo7161d(r0)
             goto L_0x0054
         L_0x0053:

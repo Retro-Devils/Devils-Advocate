@@ -16,14 +16,14 @@ public interface AbstractC1526q extends IInterface {
         public static class C1528a implements AbstractC1526q {
 
             /* renamed from: a */
-            private IBinder f6330a;
+            private IBinder f6338a;
 
             C1528a(IBinder iBinder) {
-                this.f6330a = iBinder;
+                this.f6338a = iBinder;
             }
 
             public final IBinder asBinder() {
-                return this.f6330a;
+                return this.f6338a;
             }
         }
 

@@ -17,97 +17,97 @@ import p069c.p073b.p074a.p075a.p087f.C1355a;
 public final class C2992d {
 
     /* renamed from: a */
-    private final Account f9953a;
+    private final Account f9961a;
 
     /* renamed from: b */
-    private final Set<Scope> f9954b;
+    private final Set<Scope> f9962b;
 
     /* renamed from: c */
-    private final Set<Scope> f9955c;
+    private final Set<Scope> f9963c;
 
     /* renamed from: d */
-    private final Map<C2894a<?>, C2994b> f9956d;
+    private final Map<C2894a<?>, C2994b> f9964d;
 
     /* renamed from: e */
-    private final int f9957e;
+    private final int f9965e;
 
     /* renamed from: f */
-    private final View f9958f;
+    private final View f9966f;
 
     /* renamed from: g */
-    private final String f9959g;
+    private final String f9967g;
 
     /* renamed from: h */
-    private final String f9960h;
+    private final String f9968h;
 
     /* renamed from: i */
-    private final C1355a f9961i;
+    private final C1355a f9969i;
 
     /* renamed from: j */
-    private final boolean f9962j;
+    private final boolean f9970j;
 
     /* renamed from: k */
-    private Integer f9963k;
+    private Integer f9971k;
 
     /* renamed from: com.google.android.gms.common.internal.d$a */
     public static final class C2993a {
 
         /* renamed from: a */
-        private Account f9964a;
+        private Account f9972a;
 
         /* renamed from: b */
-        private C0825b<Scope> f9965b;
+        private C0825b<Scope> f9973b;
 
         /* renamed from: c */
-        private Map<C2894a<?>, C2994b> f9966c;
+        private Map<C2894a<?>, C2994b> f9974c;
 
         /* renamed from: d */
-        private int f9967d = 0;
+        private int f9975d = 0;
 
         /* renamed from: e */
-        private View f9968e;
+        private View f9976e;
 
         /* renamed from: f */
-        private String f9969f;
+        private String f9977f;
 
         /* renamed from: g */
-        private String f9970g;
+        private String f9978g;
 
         /* renamed from: h */
-        private C1355a f9971h = C1355a.f5615a;
+        private C1355a f9979h = C1355a.f5623a;
 
         /* renamed from: i */
-        private boolean f9972i;
+        private boolean f9980i;
 
         /* renamed from: a */
         public final C2993a mo9755a(Collection<Scope> collection) {
-            if (this.f9965b == null) {
-                this.f9965b = new C0825b<>();
+            if (this.f9973b == null) {
+                this.f9973b = new C0825b<>();
             }
-            this.f9965b.addAll(collection);
+            this.f9973b.addAll(collection);
             return this;
         }
 
         /* renamed from: b */
         public final C2992d mo9756b() {
-            return new C2992d(this.f9964a, this.f9965b, this.f9966c, this.f9967d, this.f9968e, this.f9969f, this.f9970g, this.f9971h, this.f9972i);
+            return new C2992d(this.f9972a, this.f9973b, this.f9974c, this.f9975d, this.f9976e, this.f9977f, this.f9978g, this.f9979h, this.f9980i);
         }
 
         /* renamed from: c */
         public final C2993a mo9757c(Account account) {
-            this.f9964a = account;
+            this.f9972a = account;
             return this;
         }
 
         /* renamed from: d */
         public final C2993a mo9758d(String str) {
-            this.f9970g = str;
+            this.f9978g = str;
             return this;
         }
 
         /* renamed from: e */
         public final C2993a mo9759e(String str) {
-            this.f9969f = str;
+            this.f9977f = str;
             return this;
         }
     }
@@ -116,76 +116,76 @@ public final class C2992d {
     public static final class C2994b {
 
         /* renamed from: a */
-        public final Set<Scope> f9973a;
+        public final Set<Scope> f9981a;
     }
 
     public C2992d(Account account, Set<Scope> set, Map<C2894a<?>, C2994b> map, int i, View view, String str, String str2, C1355a aVar, boolean z) {
-        this.f9953a = account;
+        this.f9961a = account;
         Set<Scope> unmodifiableSet = set == null ? Collections.EMPTY_SET : Collections.unmodifiableSet(set);
-        this.f9954b = unmodifiableSet;
+        this.f9962b = unmodifiableSet;
         map = map == null ? Collections.EMPTY_MAP : map;
-        this.f9956d = map;
-        this.f9958f = view;
-        this.f9957e = i;
-        this.f9959g = str;
-        this.f9960h = str2;
-        this.f9961i = aVar;
-        this.f9962j = z;
+        this.f9964d = map;
+        this.f9966f = view;
+        this.f9965e = i;
+        this.f9967g = str;
+        this.f9968h = str2;
+        this.f9969i = aVar;
+        this.f9970j = z;
         HashSet hashSet = new HashSet(unmodifiableSet);
         for (C2994b bVar : map.values()) {
-            hashSet.addAll(bVar.f9973a);
+            hashSet.addAll(bVar.f9981a);
         }
-        this.f9955c = Collections.unmodifiableSet(hashSet);
+        this.f9963c = Collections.unmodifiableSet(hashSet);
     }
 
     @Nullable
     /* renamed from: a */
     public final Account mo9746a() {
-        return this.f9953a;
+        return this.f9961a;
     }
 
     /* renamed from: b */
     public final Account mo9747b() {
-        Account account = this.f9953a;
+        Account account = this.f9961a;
         return account != null ? account : new Account("<<default account>>", "com.google");
     }
 
     /* renamed from: c */
     public final Set<Scope> mo9748c() {
-        return this.f9955c;
+        return this.f9963c;
     }
 
     @Nullable
     /* renamed from: d */
     public final Integer mo9749d() {
-        return this.f9963k;
+        return this.f9971k;
     }
 
     @Nullable
     /* renamed from: e */
     public final String mo9750e() {
-        return this.f9960h;
+        return this.f9968h;
     }
 
     @Nullable
     /* renamed from: f */
     public final String mo9751f() {
-        return this.f9959g;
+        return this.f9967g;
     }
 
     /* renamed from: g */
     public final Set<Scope> mo9752g() {
-        return this.f9954b;
+        return this.f9962b;
     }
 
     @Nullable
     /* renamed from: h */
     public final C1355a mo9753h() {
-        return this.f9961i;
+        return this.f9969i;
     }
 
     /* renamed from: i */
     public final void mo9754i(Integer num) {
-        this.f9963k = num;
+        this.f9971k = num;
     }
 }

@@ -29,16 +29,16 @@ import p069c.p070a.p071a.p072w.C1275n;
 public class C2209c extends AbstractC2531p1 {
 
     /* renamed from: n0 */
-    MyListView f7923n0;
+    MyListView f7931n0;
 
     /* renamed from: o0 */
-    JSONArray f7924o0;
+    JSONArray f7932o0;
 
     /* renamed from: p0 */
-    C2213d f7925p0;
+    C2213d f7933p0;
 
     /* renamed from: q0 */
-    String f7926q0;
+    String f7934q0;
 
     /* renamed from: com.digdroid.alman.dig.c$a */
     class C2210a implements AdapterView.OnItemClickListener {
@@ -49,16 +49,16 @@ public class C2209c extends AbstractC2531p1 {
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
             C2213d dVar;
             boolean z;
-            if (!C2209c.this.f7925p0.mo8134a(i)) {
-                dVar = C2209c.this.f7925p0;
+            if (!C2209c.this.f7933p0.mo8134a(i)) {
+                dVar = C2209c.this.f7933p0;
                 z = true;
             } else {
                 try {
-                    AbstractC2531p1.AbstractC2532a aVar = C2209c.this.f8806m0;
-                    aVar.mo8304z("https://digdroid.com/forums/discussion/" + C2209c.this.f7924o0.getJSONObject(i).getLong("DiscussionID"));
+                    AbstractC2531p1.AbstractC2532a aVar = C2209c.this.f8814m0;
+                    aVar.mo8304z("https://digdroid.com/forums/discussion/" + C2209c.this.f7932o0.getJSONObject(i).getLong("DiscussionID"));
                 } catch (Exception unused) {
                 }
-                dVar = C2209c.this.f7925p0;
+                dVar = C2209c.this.f7933p0;
                 z = false;
             }
             dVar.mo8136c(i, z);
@@ -94,23 +94,23 @@ public class C2209c extends AbstractC2531p1 {
     public class C2213d extends BaseAdapter {
 
         /* renamed from: b */
-        JSONArray f7930b;
+        JSONArray f7938b;
 
         /* renamed from: c */
-        boolean[] f7931c;
+        boolean[] f7939c;
 
         /* renamed from: d */
-        LayoutInflater f7932d;
+        LayoutInflater f7940d;
 
         public C2213d(Context context, JSONArray jSONArray) {
-            this.f7930b = jSONArray;
-            this.f7931c = new boolean[jSONArray.length()];
-            this.f7932d = (LayoutInflater) context.getSystemService("layout_inflater");
+            this.f7938b = jSONArray;
+            this.f7939c = new boolean[jSONArray.length()];
+            this.f7940d = (LayoutInflater) context.getSystemService("layout_inflater");
         }
 
         /* renamed from: a */
         public boolean mo8134a(int i) {
-            return this.f7931c[i];
+            return this.f7939c[i];
         }
 
         /* access modifiers changed from: package-private */
@@ -160,12 +160,12 @@ public class C2209c extends AbstractC2531p1 {
 
         /* renamed from: c */
         public void mo8136c(int i, boolean z) {
-            this.f7931c[i] = z;
+            this.f7939c[i] = z;
             notifyDataSetChanged();
         }
 
         public int getCount() {
-            return this.f7930b.length();
+            return this.f7938b.length();
         }
 
         public Object getItem(int i) {
@@ -178,22 +178,22 @@ public class C2209c extends AbstractC2531p1 {
 
         public View getView(int i, View view, ViewGroup viewGroup) {
             int i2 = 0;
-            View inflate = this.f7932d.inflate(R.layout.announcement, viewGroup, false);
+            View inflate = this.f7940d.inflate(R.layout.announcement, viewGroup, false);
             try {
-                JSONObject jSONObject = this.f7930b.getJSONObject(i);
+                JSONObject jSONObject = this.f7938b.getJSONObject(i);
                 long t = C2185a4.m9690t(jSONObject.getString("DateInserted"));
                 Calendar.getInstance().setTimeInMillis(t);
                 SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMMM d, yyyy");
                 TextView textView = (TextView) inflate.findViewById(R.id.date);
                 textView.setText(simpleDateFormat.format(new Date(t)));
-                textView.setTextColor(C2209c.this.f8800g0.f9401e & -855638017);
+                textView.setTextColor(C2209c.this.f8808g0.f9409e & -855638017);
                 TextView textView2 = (TextView) inflate.findViewById(R.id.title);
                 textView2.setText(jSONObject.getString("Name"));
-                textView2.setTextColor(C2209c.this.f8800g0.f9402f);
+                textView2.setTextColor(C2209c.this.f8808g0.f9410f);
                 TextView textView3 = (TextView) inflate.findViewById(R.id.body);
                 textView3.setText(mo8135b(jSONObject.getString("Body")));
-                textView3.setTextColor(C2209c.this.f8800g0.f9401e);
-                if (!this.f7931c[i]) {
+                textView3.setTextColor(C2209c.this.f8808g0.f9409e);
+                if (!this.f7939c[i]) {
                     i2 = 8;
                 }
                 textView3.setVisibility(i2);
@@ -303,7 +303,7 @@ public class C2209c extends AbstractC2531p1 {
     /* renamed from: W0 */
     public void mo2537W0(Bundle bundle) {
         super.mo2537W0(bundle);
-        this.f7926q0 = bundle == null ? null : bundle.getString("announcements");
+        this.f7934q0 = bundle == null ? null : bundle.getString("announcements");
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2531p1
@@ -335,10 +335,10 @@ public class C2209c extends AbstractC2531p1 {
     public View mo2547a1(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         View inflate = layoutInflater.inflate(R.layout.announcements, viewGroup, false);
         MyListView myListView = (MyListView) inflate.findViewById(R.id.announcements);
-        this.f7923n0 = myListView;
-        myListView.setDivider(new ColorDrawable(this.f8800g0.f9401e & 1090519039));
-        this.f7923n0.setDividerHeight(C2185a4.m9675e(mo2575j0(), 1.5f));
-        this.f7923n0.setOnItemClickListener(new C2210a());
+        this.f7931n0 = myListView;
+        myListView.setDivider(new ColorDrawable(this.f8808g0.f9409e & 1090519039));
+        this.f7931n0.setDividerHeight(C2185a4.m9675e(mo2575j0(), 1.5f));
+        this.f7931n0.setOnItemClickListener(new C2210a());
         return inflate;
     }
 
@@ -372,11 +372,11 @@ public class C2209c extends AbstractC2531p1 {
         try {
             JSONObject jSONObject = new JSONObject(str);
             if (jSONObject.has("announcements")) {
-                this.f7926q0 = str;
-                this.f7924o0 = jSONObject.getJSONArray("announcements");
-                C2213d dVar = new C2213d(mo2575j0(), this.f7924o0);
-                this.f7925p0 = dVar;
-                this.f7923n0.setAdapter((ListAdapter) dVar);
+                this.f7934q0 = str;
+                this.f7932o0 = jSONObject.getJSONArray("announcements");
+                C2213d dVar = new C2213d(mo2575j0(), this.f7932o0);
+                this.f7933p0 = dVar;
+                this.f7931n0.setAdapter((ListAdapter) dVar);
             }
         } catch (Exception unused) {
         }
@@ -404,18 +404,18 @@ public class C2209c extends AbstractC2531p1 {
     /* renamed from: r1 */
     public void mo2601r1() {
         super.mo2601r1();
-        if (this.f8793Z.mo8198v()) {
-            this.f7926q0 = null;
+        if (this.f8801Z.mo8198v()) {
+            this.f7934q0 = null;
         }
-        this.f8793Z.mo8176Y();
+        this.f8801Z.mo8176Y();
         mo8118X2(mo2501D0(R.string.announcements));
-        String str = this.f7926q0;
+        String str = this.f7934q0;
         if (str != null) {
             mo8124g3(str);
             return;
         }
         try {
-            C2490m2.m10682a(mo2552c0()).mo6218a(new C1275n(ServerService.f7700b + "/announcements.txt", new C2211b(), new C2212c()));
+            C2490m2.m10682a(mo2552c0()).mo6218a(new C1275n(ServerService.f7708b + "/announcements.txt", new C2211b(), new C2212c()));
         } catch (Exception unused) {
         }
     }
@@ -423,7 +423,7 @@ public class C2209c extends AbstractC2531p1 {
     @Override // androidx.fragment.app.Fragment
     /* renamed from: s1 */
     public void mo2603s1(Bundle bundle) {
-        bundle.putString("announcements", this.f7926q0);
+        bundle.putString("announcements", this.f7934q0);
         super.mo2603s1(bundle);
     }
 

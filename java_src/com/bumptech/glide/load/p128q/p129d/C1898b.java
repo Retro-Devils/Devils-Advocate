@@ -13,24 +13,24 @@ import java.io.File;
 public class C1898b implements AbstractC1650l<BitmapDrawable> {
 
     /* renamed from: a */
-    private final AbstractC1695e f7165a;
+    private final AbstractC1695e f7173a;
 
     /* renamed from: b */
-    private final AbstractC1650l<Bitmap> f7166b;
+    private final AbstractC1650l<Bitmap> f7174b;
 
     public C1898b(AbstractC1695e eVar, AbstractC1650l<Bitmap> lVar) {
-        this.f7165a = eVar;
-        this.f7166b = lVar;
+        this.f7173a = eVar;
+        this.f7174b = lVar;
     }
 
     @Override // com.bumptech.glide.load.AbstractC1650l
     /* renamed from: b */
     public EnumC1632c mo7090b(C1647i iVar) {
-        return this.f7166b.mo7090b(iVar);
+        return this.f7174b.mo7090b(iVar);
     }
 
     /* renamed from: c */
     public boolean mo7072a(AbstractC1794v<BitmapDrawable> vVar, File file, C1647i iVar) {
-        return this.f7166b.mo7072a(new C1910e(vVar.mo7358c().getBitmap(), this.f7165a), file, iVar);
+        return this.f7174b.mo7072a(new C1910e(vVar.mo7358c().getBitmap(), this.f7173a), file, iVar);
     }
 }

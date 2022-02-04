@@ -10,10 +10,10 @@ import com.google.android.gms.common.util.C3044f;
 public abstract class AbstractC2951o {
 
     /* renamed from: a */
-    private final int f9864a;
+    private final int f9872a;
 
     public AbstractC2951o(int i) {
-        this.f9864a = i;
+        this.f9872a = i;
     }
 
     /* access modifiers changed from: private */

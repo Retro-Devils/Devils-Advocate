@@ -4,16 +4,16 @@ package p006b.p053m;
 public final class C1072d {
 
     /* renamed from: a */
-    public static final int APKTOOL_DUMMY_16f = 2131165551;
+    public static final int f4925a = 2131165551;
 
     /* renamed from: b */
     public static final int lb_ic_nav_arrow = 2131165555;
 
     /* renamed from: c */
-    public static final int APKTOOL_DUMMY_17b = 2131165563;
+    public static final int f4926c = 2131165563;
 
     /* renamed from: d */
-    public static final int APKTOOL_DUMMY_17c = 2131165564;
+    public static final int f4927d = 2131165564;
 
     /* renamed from: e */
     public static final int lb_text_dot_one = 2131165582;

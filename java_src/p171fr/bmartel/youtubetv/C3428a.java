@@ -28,129 +28,129 @@ import p171fr.bmartel.youtubetv.p174i.C3450a;
 public class C3428a {
 
     /* renamed from: A */
-    private String f11562A;
+    private String f11571A;
 
     /* renamed from: B */
-    private String f11563B;
+    private String f11572B;
 
     /* renamed from: C */
-    private int f11564C;
+    private int f11573C;
 
     /* renamed from: D */
-    private AbstractC3440a f11565D;
+    private AbstractC3440a f11574D;
 
     /* renamed from: E */
-    private AbstractC3442c f11566E;
+    private AbstractC3442c f11575E;
 
     /* renamed from: F */
-    private List<EnumC3448f> f11567F = new ArrayList();
+    private List<EnumC3448f> f11576F = new ArrayList();
 
     /* renamed from: G */
-    private C3447e f11568G = new C3447e("", "", "", new ArrayList());
+    private C3447e f11577G = new C3447e("", "", "", new ArrayList());
 
     /* renamed from: a */
-    private final String f11569a = C3428a.class.getSimpleName();
+    private final String f11578a = C3428a.class.getSimpleName();
 
     /* renamed from: b */
-    private WebView f11570b;
+    private WebView f11579b;
 
     /* renamed from: c */
-    private boolean f11571c;
+    private boolean f11580c;
 
     /* renamed from: d */
-    private ProgressBar f11572d;
+    private ProgressBar f11581d;
 
     /* renamed from: e */
-    private ImageView f11573e;
+    private ImageView f11582e;
 
     /* renamed from: f */
-    private Handler f11574f;
+    private Handler f11583f;
 
     /* renamed from: g */
-    private ConditionVariable f11575g;
+    private ConditionVariable f11584g;
 
     /* renamed from: h */
-    private int f11576h;
+    private int f11585h;
 
     /* renamed from: i */
-    private boolean f11577i;
+    private boolean f11586i;
 
     /* renamed from: j */
-    private int f11578j;
+    private int f11587j;
 
     /* renamed from: k */
-    private EnumC3449g f11579k;
+    private EnumC3449g f11588k;
 
     /* renamed from: l */
-    private List<Integer> f11580l = new ArrayList();
+    private List<Integer> f11589l = new ArrayList();
 
     /* renamed from: m */
-    private List<String> f11581m = new ArrayList();
+    private List<String> f11590m = new ArrayList();
 
     /* renamed from: n */
-    private float f11582n;
+    private float f11591n;
 
     /* renamed from: o */
-    private boolean f11583o;
+    private boolean f11592o;
 
     /* renamed from: p */
-    private List<AbstractC3441b> f11584p = new ArrayList();
+    private List<AbstractC3441b> f11593p = new ArrayList();
 
     /* renamed from: q */
-    private YoutubeTvView f11585q;
+    private YoutubeTvView f11594q;
 
     /* renamed from: r */
-    private String f11586r = C3439f.f11664e.mo11523c();
+    private String f11595r = C3439f.f11673e.mo11523c();
 
     /* renamed from: s */
-    private boolean f11587s;
+    private boolean f11596s;
 
     /* renamed from: t */
-    private int f11588t;
+    private int f11597t;
 
     /* renamed from: u */
-    private int f11589u;
+    private int f11598u;
 
     /* renamed from: v */
-    private float f11590v;
+    private float f11599v;
 
     /* renamed from: w */
-    private float f11591w;
+    private float f11600w;
 
     /* renamed from: x */
-    private EnumC3448f f11592x;
+    private EnumC3448f f11601x;
 
     /* renamed from: y */
-    private String f11593y;
+    private String f11602y;
 
     /* renamed from: z */
-    private String f11594z;
+    private String f11603z;
 
     /* renamed from: fr.bmartel.youtubetv.a$a */
     class RunnableC3429a implements Runnable {
 
         /* renamed from: b */
-        final /* synthetic */ String f11595b;
+        final /* synthetic */ String f11604b;
 
         /* renamed from: c */
-        final /* synthetic */ String f11596c;
+        final /* synthetic */ String f11605c;
 
         /* renamed from: d */
-        final /* synthetic */ String f11597d;
+        final /* synthetic */ String f11606d;
 
         /* renamed from: e */
-        final /* synthetic */ String f11598e;
+        final /* synthetic */ String f11607e;
 
         RunnableC3429a(String str, String str2, String str3, String str4) {
-            this.f11595b = str;
-            this.f11596c = str2;
-            this.f11597d = str3;
-            this.f11598e = str4;
+            this.f11604b = str;
+            this.f11605c = str2;
+            this.f11606d = str3;
+            this.f11607e = str4;
         }
 
         public void run() {
-            C3447e eVar = new C3447e(this.f11595b, this.f11596c, this.f11597d, C3450a.m14201h(this.f11598e));
-            for (AbstractC3441b bVar : C3428a.this.f11584p) {
+            C3447e eVar = new C3447e(this.f11604b, this.f11605c, this.f11606d, C3450a.m14201h(this.f11607e));
+            for (AbstractC3441b bVar : C3428a.this.f11593p) {
                 bVar.mo8878b(eVar);
             }
         }
@@ -160,15 +160,15 @@ public class C3428a {
     class RunnableC3430b implements Runnable {
 
         /* renamed from: b */
-        final /* synthetic */ float f11600b;
+        final /* synthetic */ float f11609b;
 
         RunnableC3430b(float f) {
-            this.f11600b = f;
+            this.f11609b = f;
         }
 
         public void run() {
-            if (C3428a.this.f11566E != null) {
-                C3428a.this.f11566E.mo11521a(this.f11600b);
+            if (C3428a.this.f11575E != null) {
+                C3428a.this.f11575E.mo11521a(this.f11609b);
             }
         }
     }
@@ -177,84 +177,84 @@ public class C3428a {
     class RunnableC3431c implements Runnable {
 
         /* renamed from: b */
-        final /* synthetic */ int f11602b;
+        final /* synthetic */ int f11611b;
 
         /* renamed from: c */
-        final /* synthetic */ float f11603c;
+        final /* synthetic */ float f11612c;
 
         /* renamed from: d */
-        final /* synthetic */ float f11604d;
+        final /* synthetic */ float f11613d;
 
         /* renamed from: e */
-        final /* synthetic */ String f11605e;
+        final /* synthetic */ String f11614e;
 
         /* renamed from: f */
-        final /* synthetic */ long f11606f;
+        final /* synthetic */ long f11615f;
 
         /* renamed from: g */
-        final /* synthetic */ float f11607g;
+        final /* synthetic */ float f11616g;
 
         /* renamed from: h */
-        final /* synthetic */ String f11608h;
+        final /* synthetic */ String f11617h;
 
         /* renamed from: i */
-        final /* synthetic */ String f11609i;
+        final /* synthetic */ String f11618i;
 
         /* renamed from: j */
-        final /* synthetic */ String f11610j;
+        final /* synthetic */ String f11619j;
 
         RunnableC3431c(int i, float f, float f2, String str, long j, float f3, String str2, String str3, String str4) {
-            this.f11602b = i;
-            this.f11603c = f;
-            this.f11604d = f2;
-            this.f11605e = str;
-            this.f11606f = j;
-            this.f11607g = f3;
-            this.f11608h = str2;
-            this.f11609i = str3;
-            this.f11610j = str4;
+            this.f11611b = i;
+            this.f11612c = f;
+            this.f11613d = f2;
+            this.f11614e = str;
+            this.f11615f = j;
+            this.f11616g = f3;
+            this.f11617h = str2;
+            this.f11618i = str3;
+            this.f11619j = str4;
         }
 
         /* JADX INFO: Can't fix incorrect switch cases order, some code will duplicate */
         public void run() {
             int i;
             boolean z;
-            EnumC3449g b = EnumC3449g.m14192b(this.f11602b);
-            if (C3428a.this.f11585q.mo11431e()) {
-                switch (C3434f.f11621a[b.ordinal()]) {
+            EnumC3449g b = EnumC3449g.m14192b(this.f11611b);
+            if (C3428a.this.f11594q.mo11431e()) {
+                switch (C3434f.f11630a[b.ordinal()]) {
                     case 1:
-                        C3428a.this.f11583o = false;
+                        C3428a.this.f11592o = false;
                         z = true;
                         i = 1;
                         break;
                     case 2:
-                        if (C3428a.this.f11585q.getPlaylistIndex() != -1) {
-                            C3428a.this.f11585q.mo11453l();
+                        if (C3428a.this.f11594q.getPlaylistIndex() != -1) {
+                            C3428a.this.f11594q.mo11453l();
                         }
-                        C3428a.this.f11583o = false;
+                        C3428a.this.f11592o = false;
                         z = true;
                         i = 1;
                         break;
                     case 3:
-                        C3428a.this.f11583o = true;
-                        z = !C3428a.this.f11583o;
+                        C3428a.this.f11592o = true;
+                        z = !C3428a.this.f11592o;
                         i = 3;
                         break;
                     case 4:
-                        C3428a.this.f11583o = true;
-                        z = !C3428a.this.f11583o;
+                        C3428a.this.f11592o = true;
+                        z = !C3428a.this.f11592o;
                         i = 2;
                         break;
                     case 5:
-                        C3428a.this.f11583o = false;
-                        if (C3428a.this.f11565D != null) {
-                            C3428a.this.f11565D.mo11520a(this.f11603c, this.f11604d);
+                        C3428a.this.f11592o = false;
+                        if (C3428a.this.f11574D != null) {
+                            C3428a.this.f11574D.mo11520a(this.f11612c, this.f11613d);
                         }
                         z = true;
                         i = 6;
                         break;
                     case 6:
-                        C3428a.this.f11583o = false;
+                        C3428a.this.f11592o = false;
                         z = true;
                         i = 3;
                         break;
@@ -264,10 +264,10 @@ public class C3428a {
                         break;
                 }
                 C3428a aVar = C3428a.this;
-                aVar.m14139G(this.f11605e, z, i, this.f11606f, this.f11607g, this.f11608h, aVar.f11585q.getMediaSession());
+                aVar.m14139G(this.f11614e, z, i, this.f11615f, this.f11616g, this.f11617h, aVar.f11594q.getMediaSession());
             }
-            for (AbstractC3441b bVar : C3428a.this.f11584p) {
-                bVar.mo8877a(b, this.f11606f, this.f11607g, this.f11603c, new C3447e(this.f11605e, this.f11609i, this.f11608h, C3450a.m14201h(this.f11610j)));
+            for (AbstractC3441b bVar : C3428a.this.f11593p) {
+                bVar.mo8877a(b, this.f11615f, this.f11616g, this.f11612c, new C3447e(this.f11614e, this.f11618i, this.f11617h, C3450a.m14201h(this.f11619j)));
             }
         }
     }
@@ -277,30 +277,30 @@ public class C3428a {
     public class AsyncTaskC3432d extends AsyncTask<String, Void, Void> {
 
         /* renamed from: a */
-        final /* synthetic */ boolean f11612a;
+        final /* synthetic */ boolean f11621a;
 
         /* renamed from: b */
-        final /* synthetic */ String f11613b;
+        final /* synthetic */ String f11622b;
 
         /* renamed from: c */
-        final /* synthetic */ MediaSession f11614c;
+        final /* synthetic */ MediaSession f11623c;
 
         /* renamed from: d */
-        final /* synthetic */ int f11615d;
+        final /* synthetic */ int f11624d;
 
         /* renamed from: e */
-        final /* synthetic */ long f11616e;
+        final /* synthetic */ long f11625e;
 
         /* renamed from: f */
-        final /* synthetic */ float f11617f;
+        final /* synthetic */ float f11626f;
 
         AsyncTaskC3432d(boolean z, String str, MediaSession mediaSession, int i, long j, float f) {
-            this.f11612a = z;
-            this.f11613b = str;
-            this.f11614c = mediaSession;
-            this.f11615d = i;
-            this.f11616e = j;
-            this.f11617f = f;
+            this.f11621a = z;
+            this.f11622b = str;
+            this.f11623c = mediaSession;
+            this.f11624d = i;
+            this.f11625e = j;
+            this.f11626f = f;
         }
 
         /* access modifiers changed from: protected */
@@ -309,21 +309,21 @@ public class C3428a {
             MediaMetadata.Builder builder;
             boolean z;
             Bitmap bitmap;
-            String d = C3450a.m14197d(strArr[0], C3428a.this.f11586r);
+            String d = C3450a.m14197d(strArr[0], C3428a.this.f11595r);
             try {
-                d = C3450a.m14196c(strArr[0], C3428a.this.f11586r);
+                d = C3450a.m14196c(strArr[0], C3428a.this.f11595r);
             } catch (IOException e) {
-                Log.e(C3428a.this.f11569a, "getThumbnailQuality", e);
+                Log.e(C3428a.this.f11578a, "getThumbnailQuality", e);
             }
-            if (this.f11612a) {
+            if (this.f11621a) {
                 try {
                     bitmap = BitmapFactory.decodeStream(new URL(d).openConnection().getInputStream());
                 } catch (IOException e2) {
-                    Log.e(C3428a.this.f11569a, "BitmapFactory.decodeStream", e2);
+                    Log.e(C3428a.this.f11578a, "BitmapFactory.decodeStream", e2);
                     bitmap = null;
                 }
                 MediaMetadata.Builder builder2 = new MediaMetadata.Builder();
-                builder2.putString("android.media.metadata.TITLE", this.f11613b);
+                builder2.putString("android.media.metadata.TITLE", this.f11622b);
                 if (bitmap != null) {
                     builder2.putBitmap("android.media.metadata.ART", bitmap);
                 }
@@ -333,7 +333,7 @@ public class C3428a {
                 builder = null;
                 z = false;
             }
-            C3450a.m14202i(z, builder, this.f11614c, this.f11615d, this.f11616e, this.f11617f);
+            C3450a.m14202i(z, builder, this.f11623c, this.f11624d, this.f11625e, this.f11626f);
             return null;
         }
 
@@ -348,21 +348,21 @@ public class C3428a {
     class RunnableC3433e implements Runnable {
 
         /* renamed from: b */
-        final /* synthetic */ boolean f11619b;
+        final /* synthetic */ boolean f11628b;
 
         RunnableC3433e(boolean z) {
-            this.f11619b = z;
+            this.f11628b = z;
         }
 
         public void run() {
             ImageView imageView;
             int i = 8;
-            C3428a.this.f11572d.setVisibility(8);
-            if (this.f11619b) {
-                imageView = C3428a.this.f11573e;
+            C3428a.this.f11581d.setVisibility(8);
+            if (this.f11628b) {
+                imageView = C3428a.this.f11582e;
                 i = 0;
             } else {
-                imageView = C3428a.this.f11573e;
+                imageView = C3428a.this.f11582e;
             }
             imageView.setVisibility(i);
         }
@@ -372,7 +372,7 @@ public class C3428a {
     static /* synthetic */ class C3434f {
 
         /* renamed from: a */
-        static final /* synthetic */ int[] f11621a;
+        static final /* synthetic */ int[] f11630a;
 
         /* JADX WARNING: Can't wrap try/catch for region: R(14:0|1|2|3|4|5|6|7|8|9|10|11|12|14) */
         /* JADX WARNING: Failed to process nested try/catch */
@@ -386,37 +386,37 @@ public class C3428a {
                 fr.bmartel.youtubetv.h.g[] r0 = p171fr.bmartel.youtubetv.p173h.EnumC3449g.values()
                 int r0 = r0.length
                 int[] r0 = new int[r0]
-                p171fr.bmartel.youtubetv.C3428a.C3434f.f11621a = r0
+                p171fr.bmartel.youtubetv.C3428a.C3434f.f11630a = r0
                 fr.bmartel.youtubetv.h.g r1 = p171fr.bmartel.youtubetv.p173h.EnumC3449g.UNSTARTED     // Catch:{ NoSuchFieldError -> 0x0012 }
                 int r1 = r1.ordinal()     // Catch:{ NoSuchFieldError -> 0x0012 }
                 r2 = 1
                 r0[r1] = r2     // Catch:{ NoSuchFieldError -> 0x0012 }
             L_0x0012:
-                int[] r0 = p171fr.bmartel.youtubetv.C3428a.C3434f.f11621a     // Catch:{ NoSuchFieldError -> 0x001d }
+                int[] r0 = p171fr.bmartel.youtubetv.C3428a.C3434f.f11630a     // Catch:{ NoSuchFieldError -> 0x001d }
                 fr.bmartel.youtubetv.h.g r1 = p171fr.bmartel.youtubetv.p173h.EnumC3449g.ENDED     // Catch:{ NoSuchFieldError -> 0x001d }
                 int r1 = r1.ordinal()     // Catch:{ NoSuchFieldError -> 0x001d }
                 r2 = 2
                 r0[r1] = r2     // Catch:{ NoSuchFieldError -> 0x001d }
             L_0x001d:
-                int[] r0 = p171fr.bmartel.youtubetv.C3428a.C3434f.f11621a     // Catch:{ NoSuchFieldError -> 0x0028 }
+                int[] r0 = p171fr.bmartel.youtubetv.C3428a.C3434f.f11630a     // Catch:{ NoSuchFieldError -> 0x0028 }
                 fr.bmartel.youtubetv.h.g r1 = p171fr.bmartel.youtubetv.p173h.EnumC3449g.PLAYING     // Catch:{ NoSuchFieldError -> 0x0028 }
                 int r1 = r1.ordinal()     // Catch:{ NoSuchFieldError -> 0x0028 }
                 r2 = 3
                 r0[r1] = r2     // Catch:{ NoSuchFieldError -> 0x0028 }
             L_0x0028:
-                int[] r0 = p171fr.bmartel.youtubetv.C3428a.C3434f.f11621a     // Catch:{ NoSuchFieldError -> 0x0033 }
+                int[] r0 = p171fr.bmartel.youtubetv.C3428a.C3434f.f11630a     // Catch:{ NoSuchFieldError -> 0x0033 }
                 fr.bmartel.youtubetv.h.g r1 = p171fr.bmartel.youtubetv.p173h.EnumC3449g.PAUSED     // Catch:{ NoSuchFieldError -> 0x0033 }
                 int r1 = r1.ordinal()     // Catch:{ NoSuchFieldError -> 0x0033 }
                 r2 = 4
                 r0[r1] = r2     // Catch:{ NoSuchFieldError -> 0x0033 }
             L_0x0033:
-                int[] r0 = p171fr.bmartel.youtubetv.C3428a.C3434f.f11621a     // Catch:{ NoSuchFieldError -> 0x003e }
+                int[] r0 = p171fr.bmartel.youtubetv.C3428a.C3434f.f11630a     // Catch:{ NoSuchFieldError -> 0x003e }
                 fr.bmartel.youtubetv.h.g r1 = p171fr.bmartel.youtubetv.p173h.EnumC3449g.BUFFERING     // Catch:{ NoSuchFieldError -> 0x003e }
                 int r1 = r1.ordinal()     // Catch:{ NoSuchFieldError -> 0x003e }
                 r2 = 5
                 r0[r1] = r2     // Catch:{ NoSuchFieldError -> 0x003e }
             L_0x003e:
-                int[] r0 = p171fr.bmartel.youtubetv.C3428a.C3434f.f11621a     // Catch:{ NoSuchFieldError -> 0x0049 }
+                int[] r0 = p171fr.bmartel.youtubetv.C3428a.C3434f.f11630a     // Catch:{ NoSuchFieldError -> 0x0049 }
                 fr.bmartel.youtubetv.h.g r1 = p171fr.bmartel.youtubetv.p173h.EnumC3449g.VIDEO_CUED     // Catch:{ NoSuchFieldError -> 0x0049 }
                 int r1 = r1.ordinal()     // Catch:{ NoSuchFieldError -> 0x0049 }
                 r2 = 6
@@ -429,13 +429,13 @@ public class C3428a {
     }
 
     public C3428a(List<AbstractC3441b> list, Handler handler, ProgressBar progressBar, ImageView imageView, WebView webView, YoutubeTvView youtubeTvView, String str) {
-        this.f11584p = list;
-        this.f11570b = webView;
-        this.f11572d = progressBar;
-        this.f11574f = handler;
-        this.f11573e = imageView;
-        this.f11585q = youtubeTvView;
-        this.f11586r = str;
+        this.f11593p = list;
+        this.f11579b = webView;
+        this.f11581d = progressBar;
+        this.f11583f = handler;
+        this.f11582e = imageView;
+        this.f11594q = youtubeTvView;
+        this.f11595r = str;
     }
 
     /* access modifiers changed from: private */
@@ -447,34 +447,34 @@ public class C3428a {
 
     /* renamed from: A */
     public int mo11467A() {
-        return this.f11576h;
+        return this.f11585h;
     }
 
     /* renamed from: B */
     public boolean mo11468B() {
-        return this.f11571c;
+        return this.f11580c;
     }
 
     /* renamed from: C */
     public void mo11469C(ConditionVariable conditionVariable) {
-        this.f11575g = conditionVariable;
+        this.f11584g = conditionVariable;
     }
 
     /* renamed from: D */
     public void mo11470D(AbstractC3440a aVar) {
-        this.f11565D = aVar;
+        this.f11574D = aVar;
     }
 
     /* renamed from: E */
     public void mo11471E(AbstractC3442c cVar) {
-        this.f11566E = cVar;
+        this.f11575E = cVar;
     }
 
     /* renamed from: F */
     public void mo11472F(int i, int i2) {
-        this.f11587s = true;
-        this.f11588t = i;
-        this.f11589u = i2;
+        this.f11596s = true;
+        this.f11597t = i;
+        this.f11598u = i2;
     }
 
     @JavascriptInterface
@@ -482,21 +482,21 @@ public class C3428a {
         try {
             return C3450a.m14196c(str, str2);
         } catch (IOException e) {
-            Log.e(this.f11569a, "getThumbnailQuality", e);
+            Log.e(this.f11578a, "getThumbnailQuality", e);
             return "";
         }
     }
 
     @JavascriptInterface
     public void hideLoading(boolean z) {
-        if (this.f11572d != null) {
-            this.f11574f.post(new RunnableC3433e(z));
+        if (this.f11581d != null) {
+            this.f11583f.post(new RunnableC3433e(z));
         }
     }
 
     /* renamed from: l */
     public List<Integer> mo11475l() {
-        return this.f11580l;
+        return this.f11589l;
     }
 
     @JavascriptInterface
@@ -506,23 +506,23 @@ public class C3428a {
 
     /* renamed from: m */
     public List<EnumC3448f> mo11477m() {
-        return this.f11567F;
+        return this.f11576F;
     }
 
     /* renamed from: n */
     public float mo11478n() {
-        return this.f11591w;
+        return this.f11600w;
     }
 
     /* renamed from: o */
     public float mo11479o() {
-        return this.f11582n;
+        return this.f11591n;
     }
 
     @JavascriptInterface
     public void onAvailableQualityLevelsReceived(String str) {
-        this.f11567F = C3450a.m14201h(str);
-        ConditionVariable conditionVariable = this.f11575g;
+        this.f11576F = C3450a.m14201h(str);
+        ConditionVariable conditionVariable = this.f11584g;
         if (conditionVariable != null) {
             conditionVariable.open();
         }
@@ -530,20 +530,20 @@ public class C3428a {
 
     @JavascriptInterface
     public void onCurrentTimeReceived(float f) {
-        this.f11591w = f;
-        this.f11575g.open();
+        this.f11600w = f;
+        this.f11584g.open();
     }
 
     @JavascriptInterface
     public void onDurationReceived(float f) {
-        this.f11582n = f;
-        this.f11575g.open();
+        this.f11591n = f;
+        this.f11584g.open();
     }
 
     @JavascriptInterface
     public void onMuteReceived(boolean z) {
-        this.f11577i = z;
-        ConditionVariable conditionVariable = this.f11575g;
+        this.f11586i = z;
+        ConditionVariable conditionVariable = this.f11584g;
         if (conditionVariable != null) {
             conditionVariable.open();
         }
@@ -551,22 +551,22 @@ public class C3428a {
 
     @JavascriptInterface
     public void onPageLoaded() {
-        this.f11571c = true;
-        if (this.f11587s) {
-            C3450a.m14195b(this.f11570b, "setSize", Integer.valueOf(this.f11588t), Integer.valueOf(this.f11589u));
+        this.f11580c = true;
+        if (this.f11596s) {
+            C3450a.m14195b(this.f11579b, "setSize", Integer.valueOf(this.f11597t), Integer.valueOf(this.f11598u));
         }
     }
 
     @JavascriptInterface
     public void onPlaybackQualityReceived(String str) {
-        this.f11592x = EnumC3448f.m14189d(str);
-        this.f11575g.open();
+        this.f11601x = EnumC3448f.m14189d(str);
+        this.f11584g.open();
     }
 
     @JavascriptInterface
     public void onPlaybackRateReceived(int i) {
-        this.f11578j = i;
-        ConditionVariable conditionVariable = this.f11575g;
+        this.f11587j = i;
+        ConditionVariable conditionVariable = this.f11584g;
         if (conditionVariable != null) {
             conditionVariable.open();
         }
@@ -574,8 +574,8 @@ public class C3428a {
 
     @JavascriptInterface
     public void onPlaybackRatesListReceived(String str) {
-        this.f11580l = C3450a.m14199f(str);
-        ConditionVariable conditionVariable = this.f11575g;
+        this.f11589l = C3450a.m14199f(str);
+        ConditionVariable conditionVariable = this.f11584g;
         if (conditionVariable != null) {
             conditionVariable.open();
         }
@@ -583,18 +583,18 @@ public class C3428a {
 
     @JavascriptInterface
     public void onPlayerReady(String str, String str2, String str3, String str4) {
-        this.f11574f.post(new RunnableC3429a(str3, str2, str, str4));
+        this.f11583f.post(new RunnableC3429a(str3, str2, str, str4));
     }
 
     @JavascriptInterface
     public void onPlayerStateChange(int i, long j, float f, String str, String str2, String str3, float f2, float f3, String str4) {
-        this.f11574f.post(new RunnableC3431c(i, f2, f3, str2, j, f, str, str3, str4));
+        this.f11583f.post(new RunnableC3431c(i, f2, f3, str2, j, f, str, str3, str4));
     }
 
     @JavascriptInterface
     public void onPlayerStateReceived(int i) {
-        this.f11579k = EnumC3449g.m14192b(i);
-        ConditionVariable conditionVariable = this.f11575g;
+        this.f11588k = EnumC3449g.m14192b(i);
+        ConditionVariable conditionVariable = this.f11584g;
         if (conditionVariable != null) {
             conditionVariable.open();
         }
@@ -602,43 +602,43 @@ public class C3428a {
 
     @JavascriptInterface
     public void onPlaylistIndexReceived(int i) {
-        this.f11564C = i;
-        this.f11575g.open();
+        this.f11573C = i;
+        this.f11584g.open();
     }
 
     @JavascriptInterface
     public void onPlaylistReceived(String str) {
-        this.f11581m = C3450a.m14200g(str);
-        this.f11575g.open();
+        this.f11590m = C3450a.m14200g(str);
+        this.f11584g.open();
     }
 
     @JavascriptInterface
     public void onProgressUpdate(float f) {
-        this.f11574f.post(new RunnableC3430b(f));
+        this.f11583f.post(new RunnableC3430b(f));
     }
 
     @JavascriptInterface
     public void onVideoEmbedCodeReceived(String str) {
-        this.f11563B = str;
-        this.f11575g.open();
+        this.f11572B = str;
+        this.f11584g.open();
     }
 
     @JavascriptInterface
     public void onVideoIdReceived(String str) {
-        this.f11594z = str;
-        this.f11575g.open();
+        this.f11603z = str;
+        this.f11584g.open();
     }
 
     @JavascriptInterface
     public void onVideoInfoReceived(String str, String str2, String str3, String str4) {
-        this.f11568G = new C3447e(str3, str2, str, C3450a.m14201h(str4));
-        this.f11575g.open();
+        this.f11577G = new C3447e(str3, str2, str, C3450a.m14201h(str4));
+        this.f11584g.open();
     }
 
     @JavascriptInterface
     public void onVideoLoadedFractionReceived(float f) {
-        this.f11590v = f;
-        ConditionVariable conditionVariable = this.f11575g;
+        this.f11599v = f;
+        ConditionVariable conditionVariable = this.f11584g;
         if (conditionVariable != null) {
             conditionVariable.open();
         }
@@ -646,20 +646,20 @@ public class C3428a {
 
     @JavascriptInterface
     public void onVideoTitleReceived(String str) {
-        this.f11562A = str;
-        this.f11575g.open();
+        this.f11571A = str;
+        this.f11584g.open();
     }
 
     @JavascriptInterface
     public void onVideoUrlReceived(String str) {
-        this.f11593y = str;
-        this.f11575g.open();
+        this.f11602y = str;
+        this.f11584g.open();
     }
 
     @JavascriptInterface
     public void onVolumeReceived(int i) {
-        this.f11576h = i;
-        ConditionVariable conditionVariable = this.f11575g;
+        this.f11585h = i;
+        ConditionVariable conditionVariable = this.f11584g;
         if (conditionVariable != null) {
             conditionVariable.open();
         }
@@ -667,56 +667,56 @@ public class C3428a {
 
     /* renamed from: p */
     public EnumC3448f mo11501p() {
-        return this.f11592x;
+        return this.f11601x;
     }
 
     /* renamed from: q */
     public int mo11502q() {
-        return this.f11578j;
+        return this.f11587j;
     }
 
     /* renamed from: r */
     public EnumC3449g mo11503r() {
-        return this.f11579k;
+        return this.f11588k;
     }
 
     /* renamed from: s */
     public List<String> mo11504s() {
-        return this.f11581m;
+        return this.f11590m;
     }
 
     /* renamed from: t */
     public int mo11505t() {
-        return this.f11564C;
+        return this.f11573C;
     }
 
     /* renamed from: u */
     public String mo11506u() {
-        return this.f11563B;
+        return this.f11572B;
     }
 
     /* renamed from: v */
     public String mo11507v() {
-        return this.f11594z;
+        return this.f11603z;
     }
 
     /* renamed from: w */
     public C3447e mo11508w() {
-        return this.f11568G;
+        return this.f11577G;
     }
 
     /* renamed from: x */
     public float mo11509x() {
-        return this.f11590v;
+        return this.f11599v;
     }
 
     /* renamed from: y */
     public String mo11510y() {
-        return this.f11562A;
+        return this.f11571A;
     }
 
     /* renamed from: z */
     public String mo11511z() {
-        return this.f11593y;
+        return this.f11602y;
     }
 }

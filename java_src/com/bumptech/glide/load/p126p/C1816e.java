@@ -15,7 +15,7 @@ import java.io.InputStream;
 public final class C1816e<Model, Data> implements AbstractC1843n<Model, Data> {
 
     /* renamed from: a */
-    private final AbstractC1817a<Data> f7042a;
+    private final AbstractC1817a<Data> f7050a;
 
     /* renamed from: com.bumptech.glide.load.p.e$a */
     public interface AbstractC1817a<Data> {
@@ -33,30 +33,30 @@ public final class C1816e<Model, Data> implements AbstractC1843n<Model, Data> {
     private static final class C1818b<Data> implements AbstractC1655d<Data> {
 
         /* renamed from: b */
-        private final String f7043b;
+        private final String f7051b;
 
         /* renamed from: c */
-        private final AbstractC1817a<Data> f7044c;
+        private final AbstractC1817a<Data> f7052c;
 
         /* renamed from: d */
-        private Data f7045d;
+        private Data f7053d;
 
         C1818b(String str, AbstractC1817a<Data> aVar) {
-            this.f7043b = str;
-            this.f7044c = aVar;
+            this.f7051b = str;
+            this.f7052c = aVar;
         }
 
         @Override // com.bumptech.glide.load.p120n.AbstractC1655d
         /* renamed from: a */
         public Class<Data> mo7092a() {
-            return this.f7044c.mo7408a();
+            return this.f7052c.mo7408a();
         }
 
         @Override // com.bumptech.glide.load.p120n.AbstractC1655d
         /* renamed from: b */
         public void mo7097b() {
             try {
-                this.f7044c.mo7409b(this.f7045d);
+                this.f7052c.mo7409b(this.f7053d);
             } catch (IOException unused) {
             }
         }
@@ -75,8 +75,8 @@ public final class C1816e<Model, Data> implements AbstractC1843n<Model, Data> {
         /* renamed from: e */
         public void mo7101e(EnumC1616g gVar, AbstractC1655d.AbstractC1656a<? super Data> aVar) {
             try {
-                Data c = this.f7044c.mo7410c(this.f7043b);
-                this.f7045d = c;
+                Data c = this.f7052c.mo7410c(this.f7051b);
+                this.f7053d = c;
                 aVar.mo7109f(c);
             } catch (IllegalArgumentException e) {
                 aVar.mo7108d(e);
@@ -88,7 +88,7 @@ public final class C1816e<Model, Data> implements AbstractC1843n<Model, Data> {
     public static final class C1819c<Model> implements AbstractC1845o<Model, InputStream> {
 
         /* renamed from: a */
-        private final AbstractC1817a<InputStream> f7046a = new C1820a();
+        private final AbstractC1817a<InputStream> f7054a = new C1820a();
 
         /* renamed from: com.bumptech.glide.load.p.e$c$a */
         class C1820a implements AbstractC1817a<InputStream> {
@@ -126,18 +126,18 @@ public final class C1816e<Model, Data> implements AbstractC1843n<Model, Data> {
         @Override // com.bumptech.glide.load.p126p.AbstractC1845o
         /* renamed from: b */
         public AbstractC1843n<Model, InputStream> mo7398b(C1851r rVar) {
-            return new C1816e(this.f7046a);
+            return new C1816e(this.f7054a);
         }
     }
 
     public C1816e(AbstractC1817a<Data> aVar) {
-        this.f7042a = aVar;
+        this.f7050a = aVar;
     }
 
     @Override // com.bumptech.glide.load.p126p.AbstractC1843n
     /* renamed from: a */
     public AbstractC1843n.C1844a<Data> mo7393a(Model model, int i, int i2, C1647i iVar) {
-        return new AbstractC1843n.C1844a<>(new C2067d(model), new C1818b(model.toString(), this.f7042a));
+        return new AbstractC1843n.C1844a<>(new C2067d(model), new C1818b(model.toString(), this.f7050a));
     }
 
     @Override // com.bumptech.glide.load.p126p.AbstractC1843n

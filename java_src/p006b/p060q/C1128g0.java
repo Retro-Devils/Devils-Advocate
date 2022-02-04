@@ -8,7 +8,7 @@ import android.view.View;
 class C1128g0 extends C1126f0 {
 
     /* renamed from: i */
-    private static boolean f5089i = true;
+    private static boolean f5096i = true;
 
     C1128g0() {
     }
@@ -19,11 +19,11 @@ class C1128g0 extends C1126f0 {
     public void mo5789g(View view, int i) {
         if (Build.VERSION.SDK_INT == 28) {
             super.mo5789g(view, i);
-        } else if (f5089i) {
+        } else if (f5096i) {
             try {
                 view.setTransitionVisibility(i);
             } catch (NoSuchMethodError unused) {
-                f5089i = false;
+                f5096i = false;
             }
         }
     }

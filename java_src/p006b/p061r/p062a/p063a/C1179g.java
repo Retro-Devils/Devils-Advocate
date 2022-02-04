@@ -16,14 +16,14 @@ public final class C1179g {
     public static final class C1180a implements BaseColumns {
 
         /* renamed from: a */
-        public static final Uri f5215a = Uri.parse("content://android.media.tv/channel");
+        public static final Uri f5222a = Uri.parse("content://android.media.tv/channel");
 
         /* renamed from: b */
-        private static final Map<String, String> f5216b;
+        private static final Map<String, String> f5223b;
 
         static {
             HashMap hashMap = new HashMap();
-            f5216b = hashMap;
+            f5223b = hashMap;
             hashMap.put("VIDEO_FORMAT_480I", "VIDEO_RESOLUTION_SD");
             hashMap.put("VIDEO_FORMAT_480P", "VIDEO_RESOLUTION_ED");
             hashMap.put("VIDEO_FORMAT_576I", "VIDEO_RESOLUTION_SD");
@@ -40,12 +40,12 @@ public final class C1179g {
     public static final class C1181b implements BaseColumns {
 
         /* renamed from: a */
-        public static final Uri f5217a = Uri.parse("content://android.media.tv/preview_program");
+        public static final Uri f5224a = Uri.parse("content://android.media.tv/preview_program");
     }
 
     /* renamed from: a */
     public static Uri m6426a(long j) {
-        return ContentUris.withAppendedId(C1181b.f5217a, j);
+        return ContentUris.withAppendedId(C1181b.f5224a, j);
     }
 
     /* renamed from: b */

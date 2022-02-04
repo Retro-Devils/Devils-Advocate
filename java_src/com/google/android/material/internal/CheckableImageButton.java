@@ -18,16 +18,16 @@ import p006b.p043i.p044a.AbstractC1041a;
 public class CheckableImageButton extends C0253m implements Checkable {
 
     /* renamed from: d */
-    private static final int[] f10565d = {16842912};
+    private static final int[] f10573d = {16842912};
 
     /* renamed from: e */
-    private boolean f10566e;
+    private boolean f10574e;
 
     /* renamed from: f */
-    private boolean f10567f;
+    private boolean f10575f;
 
     /* renamed from: g */
-    private boolean f10568g;
+    private boolean f10576g;
 
     /* renamed from: com.google.android.material.internal.CheckableImageButton$a */
     class C3164a extends C0962a {
@@ -56,7 +56,7 @@ public class CheckableImageButton extends C0253m implements Checkable {
         public static final Parcelable.Creator<C3165b> CREATOR = new C3166a();
 
         /* renamed from: d */
-        boolean f10570d;
+        boolean f10578d;
 
         /* renamed from: com.google.android.material.internal.CheckableImageButton$b$a */
         static class C3166a implements Parcelable.ClassLoaderCreator<C3165b> {
@@ -94,13 +94,13 @@ public class CheckableImageButton extends C0253m implements Checkable {
             if (parcel.readInt() != 1) {
                 z = false;
             }
-            this.f10570d = z;
+            this.f10578d = z;
         }
 
         @Override // p006b.p043i.p044a.AbstractC1041a
         public void writeToParcel(Parcel parcel, int i) {
             super.writeToParcel(parcel, i);
-            parcel.writeInt(this.f10570d ? 1 : 0);
+            parcel.writeInt(this.f10578d ? 1 : 0);
         }
     }
 
@@ -110,25 +110,25 @@ public class CheckableImageButton extends C0253m implements Checkable {
 
     public CheckableImageButton(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        this.f10567f = true;
-        this.f10568g = true;
+        this.f10575f = true;
+        this.f10576g = true;
         C1013s.m5766i0(this, new C3164a());
     }
 
     /* renamed from: a */
     public boolean mo10651a() {
-        return this.f10567f;
+        return this.f10575f;
     }
 
     public boolean isChecked() {
-        return this.f10566e;
+        return this.f10574e;
     }
 
     public int[] onCreateDrawableState(int i) {
-        if (!this.f10566e) {
+        if (!this.f10574e) {
             return super.onCreateDrawableState(i);
         }
-        int[] iArr = f10565d;
+        int[] iArr = f10573d;
         return ImageButton.mergeDrawableStates(super.onCreateDrawableState(i + iArr.length), iArr);
     }
 
@@ -140,42 +140,42 @@ public class CheckableImageButton extends C0253m implements Checkable {
         }
         C3165b bVar = (C3165b) parcelable;
         super.onRestoreInstanceState(bVar.mo5608b());
-        setChecked(bVar.f10570d);
+        setChecked(bVar.f10578d);
     }
 
     /* access modifiers changed from: protected */
     public Parcelable onSaveInstanceState() {
         C3165b bVar = new C3165b(super.onSaveInstanceState());
-        bVar.f10570d = this.f10566e;
+        bVar.f10578d = this.f10574e;
         return bVar;
     }
 
     public void setCheckable(boolean z) {
-        if (this.f10567f != z) {
-            this.f10567f = z;
+        if (this.f10575f != z) {
+            this.f10575f = z;
             sendAccessibilityEvent(0);
         }
     }
 
     public void setChecked(boolean z) {
-        if (this.f10567f && this.f10566e != z) {
-            this.f10566e = z;
+        if (this.f10575f && this.f10574e != z) {
+            this.f10574e = z;
             refreshDrawableState();
             sendAccessibilityEvent(2048);
         }
     }
 
     public void setPressable(boolean z) {
-        this.f10568g = z;
+        this.f10576g = z;
     }
 
     public void setPressed(boolean z) {
-        if (this.f10568g) {
+        if (this.f10576g) {
             super.setPressed(z);
         }
     }
 
     public void toggle() {
-        setChecked(!this.f10566e);
+        setChecked(!this.f10574e);
     }
 }

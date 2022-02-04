@@ -21,26 +21,26 @@ import p069c.p070a.p071a.C1253v;
 public class C1258c implements AbstractC1233h {
 
     /* renamed from: a */
-    protected static final boolean f5490a = C1253v.f5481b;
+    protected static final boolean f5497a = C1253v.f5488b;
     @Deprecated
 
     /* renamed from: b */
-    protected final AbstractC1268i f5491b;
+    protected final AbstractC1268i f5498b;
 
     /* renamed from: c */
-    private final AbstractC1257b f5492c;
+    private final AbstractC1257b f5499c;
 
     /* renamed from: d */
-    protected final C1259d f5493d;
+    protected final C1259d f5500d;
 
     public C1258c(AbstractC1257b bVar) {
         this(bVar, new C1259d(4096));
     }
 
     public C1258c(AbstractC1257b bVar, C1259d dVar) {
-        this.f5492c = bVar;
-        this.f5491b = bVar;
-        this.f5493d = dVar;
+        this.f5499c = bVar;
+        this.f5498b = bVar;
+        this.f5500d = dVar;
     }
 
     @Deprecated
@@ -50,9 +50,9 @@ public class C1258c implements AbstractC1233h {
 
     @Deprecated
     public C1258c(AbstractC1268i iVar, C1259d dVar) {
-        this.f5491b = iVar;
-        this.f5492c = new C1256a(iVar);
-        this.f5493d = dVar;
+        this.f5498b = iVar;
+        this.f5499c = new C1256a(iVar);
+        this.f5500d = dVar;
     }
 
     /* renamed from: b */
@@ -77,17 +77,17 @@ public class C1258c implements AbstractC1233h {
             }
         }
         ArrayList arrayList = new ArrayList(list);
-        List<C1232g> list2 = aVar.f5406h;
+        List<C1232g> list2 = aVar.f5413h;
         if (list2 != null) {
             if (!list2.isEmpty()) {
-                for (C1232g gVar2 : aVar.f5406h) {
+                for (C1232g gVar2 : aVar.f5413h) {
                     if (!treeSet.contains(gVar2.mo6169a())) {
                         arrayList.add(gVar2);
                     }
                 }
             }
-        } else if (!aVar.f5405g.isEmpty()) {
-            for (Map.Entry<String, String> entry : aVar.f5405g.entrySet()) {
+        } else if (!aVar.f5412g.isEmpty()) {
+            for (Map.Entry<String, String> entry : aVar.f5412g.entrySet()) {
                 if (!treeSet.contains(entry.getKey())) {
                     arrayList.add(new C1232g(entry.getKey(), entry.getValue()));
                 }
@@ -102,11 +102,11 @@ public class C1258c implements AbstractC1233h {
             return Collections.emptyMap();
         }
         HashMap hashMap = new HashMap();
-        String str = aVar.f5400b;
+        String str = aVar.f5407b;
         if (str != null) {
             hashMap.put("If-None-Match", str);
         }
-        long j = aVar.f5402d;
+        long j = aVar.f5409d;
         if (j > 0) {
             hashMap.put("If-Modified-Since", C1266g.m6718a(j));
         }
@@ -115,10 +115,10 @@ public class C1258c implements AbstractC1233h {
 
     /* renamed from: e */
     private byte[] m6680e(InputStream inputStream, int i) {
-        C1274m mVar = new C1274m(this.f5493d, i);
+        C1274m mVar = new C1274m(this.f5500d, i);
         if (inputStream != null) {
             try {
-                byte[] a = this.f5493d.mo6233a(1024);
+                byte[] a = this.f5500d.mo6233a(1024);
                 while (true) {
                     int read = inputStream.read(a);
                     if (read == -1) {
@@ -132,7 +132,7 @@ public class C1258c implements AbstractC1233h {
                 } catch (IOException unused) {
                     C1253v.m6669e("Error occurred when closing InputStream", new Object[0]);
                 }
-                this.f5493d.mo6234b(a);
+                this.f5500d.mo6234b(a);
                 mVar.close();
                 return byteArray;
             } catch (Throwable th) {
@@ -143,7 +143,7 @@ public class C1258c implements AbstractC1233h {
                         C1253v.m6669e("Error occurred when closing InputStream", new Object[0]);
                     }
                 }
-                this.f5493d.mo6234b(null);
+                this.f5500d.mo6234b(null);
                 mVar.close();
                 throw th;
             }
@@ -154,7 +154,7 @@ public class C1258c implements AbstractC1233h {
 
     /* renamed from: f */
     private void m6681f(long j, AbstractC1239n<?> nVar, byte[] bArr, int i) {
-        if (f5490a || j > 3000) {
+        if (f5497a || j > 3000) {
             Object[] objArr = new Object[5];
             objArr[0] = nVar;
             objArr[1] = Long.valueOf(j);

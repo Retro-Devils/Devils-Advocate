@@ -10,29 +10,29 @@ import p069c.p073b.p074a.p075a.p081d.p085d.C1335n;
 public final class C1338c {
 
     /* renamed from: a */
-    private static final C2894a.C2903g<C1334m> f5602a;
+    private static final C2894a.C2903g<C1334m> f5610a;
 
     /* renamed from: b */
-    private static final C2894a.AbstractC2895a<C1334m, ?> f5603b;
+    private static final C2894a.AbstractC2895a<C1334m, ?> f5611b;
     @Deprecated
 
     /* renamed from: c */
-    public static final C2894a<?> f5604c;
+    public static final C2894a<?> f5612c;
     @Deprecated
 
     /* renamed from: d */
-    public static final AbstractC1339d f5605d = new C1329j();
+    public static final AbstractC1339d f5613d = new C1329j();
 
     /* renamed from: e */
-    private static final AbstractC1354q f5606e = new C1335n();
+    private static final AbstractC1354q f5614e = new C1335n();
 
     /* JADX WARN: Type inference failed for: r0v2, types: [c.b.a.a.e.q, c.b.a.a.d.d.n] */
     static {
         C2894a.C2903g<C1334m> gVar = new C2894a.C2903g<>();
-        f5602a = gVar;
+        f5610a = gVar;
         C1353p pVar = new C1353p();
-        f5603b = pVar;
-        f5604c = new C2894a<>("SafetyNet.API", pVar, gVar);
+        f5611b = pVar;
+        f5612c = new C2894a<>("SafetyNet.API", pVar, gVar);
     }
 
     /* renamed from: a */

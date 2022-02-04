@@ -37,7 +37,7 @@ public class C1266g {
         long j4;
         long j5;
         long currentTimeMillis = System.currentTimeMillis();
-        Map<String, String> map = kVar.f5437c;
+        Map<String, String> map = kVar.f5444c;
         String str = map.get("Date");
         long f = str != null ? m6723f(str) : 0;
         String str2 = map.get("Cache-Control");
@@ -95,14 +95,14 @@ public class C1266g {
             }
         }
         AbstractC1222b.C1223a aVar = new AbstractC1222b.C1223a();
-        aVar.f5399a = kVar.f5436b;
-        aVar.f5400b = str5;
-        aVar.f5404f = j4;
-        aVar.f5403e = j3;
-        aVar.f5401c = f;
-        aVar.f5402d = f3;
-        aVar.f5405g = map;
-        aVar.f5406h = kVar.f5438d;
+        aVar.f5406a = kVar.f5443b;
+        aVar.f5407b = str5;
+        aVar.f5411f = j4;
+        aVar.f5410e = j3;
+        aVar.f5408c = f;
+        aVar.f5409d = f3;
+        aVar.f5412g = map;
+        aVar.f5413h = kVar.f5445d;
         return aVar;
     }
 

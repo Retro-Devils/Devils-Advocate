@@ -7,10 +7,10 @@ import androidx.recyclerview.widget.RecyclerView;
 class C2777u1 extends RecyclerView.AbstractC0655d0 {
 
     /* renamed from: t */
-    View f9426t;
+    View f9434t;
 
     public C2777u1(View view) {
         super(view);
-        this.f9426t = view;
+        this.f9434t = view;
     }
 }

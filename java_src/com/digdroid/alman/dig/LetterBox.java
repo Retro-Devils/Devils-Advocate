@@ -8,7 +8,7 @@ import androidx.appcompat.widget.C0302y;
 final class LetterBox extends C0302y {
 
     /* renamed from: f */
-    private float f7633f = 1.0f;
+    private float f7641f = 1.0f;
 
     public LetterBox(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -16,7 +16,7 @@ final class LetterBox extends C0302y {
 
     /* renamed from: f */
     public void mo7915f(float f) {
-        this.f7633f = f;
+        this.f7641f = f;
     }
 
     /* access modifiers changed from: protected */
@@ -25,7 +25,7 @@ final class LetterBox extends C0302y {
         float f;
         int size = View.MeasureSpec.getSize(i);
         float f2 = (float) size;
-        setMeasuredDimension(size, Math.round(f2 / this.f7633f));
+        setMeasuredDimension(size, Math.round(f2 / this.f7641f));
         boolean[] zArr = (boolean[]) getTag();
         boolean z = zArr[0];
         boolean z2 = zArr[1];

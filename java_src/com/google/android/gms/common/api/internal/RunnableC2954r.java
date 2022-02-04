@@ -7,13 +7,13 @@ import com.google.android.gms.common.api.internal.C2927d;
 public final class RunnableC2954r implements Runnable {
 
     /* renamed from: b */
-    private final /* synthetic */ C2927d.C2928a f9867b;
+    private final /* synthetic */ C2927d.C2928a f9875b;
 
     RunnableC2954r(C2927d.C2928a aVar) {
-        this.f9867b = aVar;
+        this.f9875b = aVar;
     }
 
     public final void run() {
-        this.f9867b.m12113u();
+        this.f9875b.m12113u();
     }
 }

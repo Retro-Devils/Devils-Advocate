@@ -186,9 +186,9 @@ public class AlertController {
 
         public RecycleListView(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C0763j.f3730f2);
-            this.f154c = obtainStyledAttributes.getDimensionPixelOffset(C0763j.f3735g2, -1);
-            this.f153b = obtainStyledAttributes.getDimensionPixelOffset(C0763j.f3740h2, -1);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C0763j.f3734f2);
+            this.f154c = obtainStyledAttributes.getDimensionPixelOffset(C0763j.f3739g2, -1);
+            this.f153b = obtainStyledAttributes.getDimensionPixelOffset(C0763j.f3744h2, -1);
         }
 
         /* renamed from: a */
@@ -662,15 +662,15 @@ public class AlertController {
         this.f128b = gVar;
         this.f129c = window;
         this.f125R = new HandlerC0062g(gVar);
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(null, C0763j.f3598F, C0754a.alertDialogStyle, 0);
-        this.f117J = obtainStyledAttributes.getResourceId(C0763j.f3603G, 0);
-        this.f118K = obtainStyledAttributes.getResourceId(C0763j.f3613I, 0);
-        this.f119L = obtainStyledAttributes.getResourceId(C0763j.f3623K, 0);
-        this.f120M = obtainStyledAttributes.getResourceId(C0763j.f3628L, 0);
-        this.f121N = obtainStyledAttributes.getResourceId(C0763j.f3638N, 0);
-        this.f122O = obtainStyledAttributes.getResourceId(C0763j.f3618J, 0);
-        this.f123P = obtainStyledAttributes.getBoolean(C0763j.f3633M, true);
-        this.f130d = obtainStyledAttributes.getDimensionPixelSize(C0763j.f3608H, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(null, C0763j.f3602F, C0754a.alertDialogStyle, 0);
+        this.f117J = obtainStyledAttributes.getResourceId(C0763j.f3607G, 0);
+        this.f118K = obtainStyledAttributes.getResourceId(C0763j.f3617I, 0);
+        this.f119L = obtainStyledAttributes.getResourceId(C0763j.f3627K, 0);
+        this.f120M = obtainStyledAttributes.getResourceId(C0763j.f3632L, 0);
+        this.f121N = obtainStyledAttributes.getResourceId(C0763j.f3642N, 0);
+        this.f122O = obtainStyledAttributes.getResourceId(C0763j.f3622J, 0);
+        this.f123P = obtainStyledAttributes.getBoolean(C0763j.f3637M, true);
+        this.f130d = obtainStyledAttributes.getDimensionPixelSize(C0763j.f3612H, 0);
         obtainStyledAttributes.recycle();
         gVar.mo380d(1);
     }

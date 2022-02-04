@@ -38,196 +38,196 @@ import p069c.p073b.p074a.p090b.p107z.C1455g;
 public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback, C3199n.AbstractC3201b {
 
     /* renamed from: A */
-    private static final ShapeDrawable f10308A = new ShapeDrawable(new OvalShape());
+    private static final ShapeDrawable f10316A = new ShapeDrawable(new OvalShape());
 
     /* renamed from: z */
-    private static final int[] f10309z = {16842910};
+    private static final int[] f10317z = {16842910};
 
     /* renamed from: A0 */
-    private PorterDuffColorFilter f10310A0;
+    private PorterDuffColorFilter f10318A0;
 
     /* renamed from: B */
-    private ColorStateList f10311B;
+    private ColorStateList f10319B;
 
     /* renamed from: B0 */
-    private ColorStateList f10312B0;
+    private ColorStateList f10320B0;
 
     /* renamed from: C */
-    private ColorStateList f10313C;
+    private ColorStateList f10321C;
 
     /* renamed from: C0 */
-    private PorterDuff.Mode f10314C0 = PorterDuff.Mode.SRC_IN;
+    private PorterDuff.Mode f10322C0 = PorterDuff.Mode.SRC_IN;
 
     /* renamed from: D */
-    private float f10315D;
+    private float f10323D;
 
     /* renamed from: D0 */
-    private int[] f10316D0;
+    private int[] f10324D0;
 
     /* renamed from: E */
-    private float f10317E = -1.0f;
+    private float f10325E = -1.0f;
 
     /* renamed from: E0 */
-    private boolean f10318E0;
+    private boolean f10326E0;
 
     /* renamed from: F */
-    private ColorStateList f10319F;
+    private ColorStateList f10327F;
 
     /* renamed from: F0 */
-    private ColorStateList f10320F0;
+    private ColorStateList f10328F0;
 
     /* renamed from: G */
-    private float f10321G;
+    private float f10329G;
 
     /* renamed from: G0 */
-    private WeakReference<AbstractC3101a> f10322G0 = new WeakReference<>(null);
+    private WeakReference<AbstractC3101a> f10330G0 = new WeakReference<>(null);
 
     /* renamed from: H */
-    private ColorStateList f10323H;
+    private ColorStateList f10331H;
 
     /* renamed from: H0 */
-    private TextUtils.TruncateAt f10324H0;
+    private TextUtils.TruncateAt f10332H0;
 
     /* renamed from: I */
-    private CharSequence f10325I;
+    private CharSequence f10333I;
 
     /* renamed from: I0 */
-    private boolean f10326I0;
+    private boolean f10334I0;
 
     /* renamed from: J */
-    private boolean f10327J;
+    private boolean f10335J;
 
     /* renamed from: J0 */
-    private int f10328J0;
+    private int f10336J0;
 
     /* renamed from: K */
-    private Drawable f10329K;
+    private Drawable f10337K;
 
     /* renamed from: K0 */
-    private boolean f10330K0;
+    private boolean f10338K0;
 
     /* renamed from: L */
-    private ColorStateList f10331L;
+    private ColorStateList f10339L;
 
     /* renamed from: M */
-    private float f10332M;
+    private float f10340M;
 
     /* renamed from: N */
-    private boolean f10333N;
+    private boolean f10341N;
 
     /* renamed from: O */
-    private boolean f10334O;
+    private boolean f10342O;
 
     /* renamed from: P */
-    private Drawable f10335P;
+    private Drawable f10343P;
 
     /* renamed from: Q */
-    private Drawable f10336Q;
+    private Drawable f10344Q;
 
     /* renamed from: R */
-    private ColorStateList f10337R;
+    private ColorStateList f10345R;
 
     /* renamed from: S */
-    private float f10338S;
+    private float f10346S;
 
     /* renamed from: T */
-    private CharSequence f10339T;
+    private CharSequence f10347T;
 
     /* renamed from: U */
-    private boolean f10340U;
+    private boolean f10348U;
 
     /* renamed from: V */
-    private boolean f10341V;
+    private boolean f10349V;
 
     /* renamed from: W */
-    private Drawable f10342W;
+    private Drawable f10350W;
 
     /* renamed from: X */
-    private ColorStateList f10343X;
+    private ColorStateList f10351X;
 
     /* renamed from: Y */
-    private C1408h f10344Y;
+    private C1408h f10352Y;
 
     /* renamed from: Z */
-    private C1408h f10345Z;
+    private C1408h f10353Z;
 
     /* renamed from: a0 */
-    private float f10346a0;
+    private float f10354a0;
 
     /* renamed from: b0 */
-    private float f10347b0;
+    private float f10355b0;
 
     /* renamed from: c0 */
-    private float f10348c0;
+    private float f10356c0;
 
     /* renamed from: d0 */
-    private float f10349d0;
+    private float f10357d0;
 
     /* renamed from: e0 */
-    private float f10350e0;
+    private float f10358e0;
 
     /* renamed from: f0 */
-    private float f10351f0;
+    private float f10359f0;
 
     /* renamed from: g0 */
-    private float f10352g0;
+    private float f10360g0;
 
     /* renamed from: h0 */
-    private float f10353h0;
+    private float f10361h0;
 
     /* renamed from: i0 */
-    private final Context f10354i0;
+    private final Context f10362i0;
 
     /* renamed from: j0 */
-    private final Paint f10355j0 = new Paint(1);
+    private final Paint f10363j0 = new Paint(1);
 
     /* renamed from: k0 */
-    private final Paint f10356k0;
+    private final Paint f10364k0;
 
     /* renamed from: l0 */
-    private final Paint.FontMetrics f10357l0 = new Paint.FontMetrics();
+    private final Paint.FontMetrics f10365l0 = new Paint.FontMetrics();
 
     /* renamed from: m0 */
-    private final RectF f10358m0 = new RectF();
+    private final RectF f10366m0 = new RectF();
 
     /* renamed from: n0 */
-    private final PointF f10359n0 = new PointF();
+    private final PointF f10367n0 = new PointF();
 
     /* renamed from: o0 */
-    private final Path f10360o0 = new Path();
+    private final Path f10368o0 = new Path();
 
     /* renamed from: p0 */
-    private final C3199n f10361p0;
+    private final C3199n f10369p0;
 
     /* renamed from: q0 */
-    private int f10362q0;
+    private int f10370q0;
 
     /* renamed from: r0 */
-    private int f10363r0;
+    private int f10371r0;
 
     /* renamed from: s0 */
-    private int f10364s0;
+    private int f10372s0;
 
     /* renamed from: t0 */
-    private int f10365t0;
+    private int f10373t0;
 
     /* renamed from: u0 */
-    private int f10366u0;
+    private int f10374u0;
 
     /* renamed from: v0 */
-    private int f10367v0;
+    private int f10375v0;
 
     /* renamed from: w0 */
-    private boolean f10368w0;
+    private boolean f10376w0;
 
     /* renamed from: x0 */
-    private int f10369x0;
+    private int f10377x0;
 
     /* renamed from: y0 */
-    private int f10370y0 = 255;
+    private int f10378y0 = 255;
 
     /* renamed from: z0 */
-    private ColorFilter f10371z0;
+    private ColorFilter f10379z0;
 
     /* renamed from: com.google.android.material.chip.a$a */
     public interface AbstractC3101a {
@@ -238,70 +238,70 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
     private C3100a(Context context, AttributeSet attributeSet, int i, int i2) {
         super(context, attributeSet, i, i2);
         mo6603M(context);
-        this.f10354i0 = context;
+        this.f10362i0 = context;
         C3199n nVar = new C3199n(this);
-        this.f10361p0 = nVar;
-        this.f10325I = "";
+        this.f10369p0 = nVar;
+        this.f10333I = "";
         nVar.mo10793e().density = context.getResources().getDisplayMetrics().density;
-        this.f10356k0 = null;
-        int[] iArr = f10309z;
+        this.f10364k0 = null;
+        int[] iArr = f10317z;
         setState(iArr);
         mo10335g2(iArr);
-        this.f10326I0 = true;
-        if (C1446b.f6088a) {
-            f10308A.setTint(-1);
+        this.f10334I0 = true;
+        if (C1446b.f6096a) {
+            f10316A.setTint(-1);
         }
     }
 
     /* renamed from: A0 */
     private void m12836A0(Canvas canvas, Rect rect) {
-        Paint paint = this.f10356k0;
+        Paint paint = this.f10364k0;
         if (paint != null) {
             paint.setColor(C0901a.m5300h(-16777216, 127));
-            canvas.drawRect(rect, this.f10356k0);
+            canvas.drawRect(rect, this.f10364k0);
             if (m12839I2() || m12838H2()) {
-                m12847i0(rect, this.f10358m0);
-                canvas.drawRect(this.f10358m0, this.f10356k0);
+                m12847i0(rect, this.f10366m0);
+                canvas.drawRect(this.f10366m0, this.f10364k0);
             }
-            if (this.f10325I != null) {
-                canvas.drawLine((float) rect.left, rect.exactCenterY(), (float) rect.right, rect.exactCenterY(), this.f10356k0);
+            if (this.f10333I != null) {
+                canvas.drawLine((float) rect.left, rect.exactCenterY(), (float) rect.right, rect.exactCenterY(), this.f10364k0);
             }
             if (m12840J2()) {
-                m12850l0(rect, this.f10358m0);
-                canvas.drawRect(this.f10358m0, this.f10356k0);
+                m12850l0(rect, this.f10366m0);
+                canvas.drawRect(this.f10366m0, this.f10364k0);
             }
-            this.f10356k0.setColor(C0901a.m5300h(-65536, 127));
-            m12849k0(rect, this.f10358m0);
-            canvas.drawRect(this.f10358m0, this.f10356k0);
-            this.f10356k0.setColor(C0901a.m5300h(-16711936, 127));
-            m12851m0(rect, this.f10358m0);
-            canvas.drawRect(this.f10358m0, this.f10356k0);
+            this.f10364k0.setColor(C0901a.m5300h(-65536, 127));
+            m12849k0(rect, this.f10366m0);
+            canvas.drawRect(this.f10366m0, this.f10364k0);
+            this.f10364k0.setColor(C0901a.m5300h(-16711936, 127));
+            m12851m0(rect, this.f10366m0);
+            canvas.drawRect(this.f10366m0, this.f10364k0);
         }
     }
 
     /* renamed from: B0 */
     private void m12837B0(Canvas canvas, Rect rect) {
-        if (this.f10325I != null) {
-            Paint.Align q0 = mo10358q0(rect, this.f10359n0);
-            m12854o0(rect, this.f10358m0);
-            if (this.f10361p0.mo10792d() != null) {
-                this.f10361p0.mo10793e().drawableState = getState();
-                this.f10361p0.mo10798j(this.f10354i0);
+        if (this.f10333I != null) {
+            Paint.Align q0 = mo10358q0(rect, this.f10367n0);
+            m12854o0(rect, this.f10366m0);
+            if (this.f10369p0.mo10792d() != null) {
+                this.f10369p0.mo10793e().drawableState = getState();
+                this.f10369p0.mo10798j(this.f10362i0);
             }
-            this.f10361p0.mo10793e().setTextAlign(q0);
+            this.f10369p0.mo10793e().setTextAlign(q0);
             int i = 0;
-            boolean z = Math.round(this.f10361p0.mo10794f(mo10327c1().toString())) > Math.round(this.f10358m0.width());
+            boolean z = Math.round(this.f10369p0.mo10794f(mo10327c1().toString())) > Math.round(this.f10366m0.width());
             if (z) {
                 i = canvas.save();
-                canvas.clipRect(this.f10358m0);
+                canvas.clipRect(this.f10366m0);
             }
-            CharSequence charSequence = this.f10325I;
-            if (z && this.f10324H0 != null) {
-                charSequence = TextUtils.ellipsize(charSequence, this.f10361p0.mo10793e(), this.f10358m0.width(), this.f10324H0);
+            CharSequence charSequence = this.f10333I;
+            if (z && this.f10332H0 != null) {
+                charSequence = TextUtils.ellipsize(charSequence, this.f10369p0.mo10793e(), this.f10366m0.width(), this.f10332H0);
             }
             int length = charSequence.length();
-            PointF pointF = this.f10359n0;
-            canvas.drawText(charSequence, 0, length, pointF.x, pointF.y, this.f10361p0.mo10793e());
+            PointF pointF = this.f10367n0;
+            canvas.drawText(charSequence, 0, length, pointF.x, pointF.y, this.f10369p0.mo10793e());
             if (z) {
                 canvas.restoreToCount(i);
             }
@@ -310,17 +310,17 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: H2 */
     private boolean m12838H2() {
-        return this.f10341V && this.f10342W != null && this.f10368w0;
+        return this.f10349V && this.f10350W != null && this.f10376w0;
     }
 
     /* renamed from: I2 */
     private boolean m12839I2() {
-        return this.f10327J && this.f10329K != null;
+        return this.f10335J && this.f10337K != null;
     }
 
     /* renamed from: J2 */
     private boolean m12840J2() {
-        return this.f10334O && this.f10335P != null;
+        return this.f10342O && this.f10343P != null;
     }
 
     /* renamed from: K2 */
@@ -332,27 +332,27 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: L2 */
     private void m12842L2() {
-        this.f10320F0 = this.f10318E0 ? C1446b.m7103a(this.f10323H) : null;
+        this.f10328F0 = this.f10326E0 ? C1446b.m7103a(this.f10331H) : null;
     }
 
     @TargetApi(21)
     /* renamed from: M2 */
     private void m12843M2() {
-        this.f10336Q = new RippleDrawable(C1446b.m7103a(mo10323a1()), this.f10335P, f10308A);
+        this.f10344Q = new RippleDrawable(C1446b.m7103a(mo10323a1()), this.f10343P, f10316A);
     }
 
     /* renamed from: W1 */
     private void m12844W1(ColorStateList colorStateList) {
-        if (this.f10311B != colorStateList) {
-            this.f10311B = colorStateList;
+        if (this.f10319B != colorStateList) {
+            this.f10319B = colorStateList;
             onStateChange(getState());
         }
     }
 
     /* renamed from: g1 */
     private ColorFilter m12845g1() {
-        ColorFilter colorFilter = this.f10371z0;
-        return colorFilter != null ? colorFilter : this.f10310A0;
+        ColorFilter colorFilter = this.f10379z0;
+        return colorFilter != null ? colorFilter : this.f10318A0;
     }
 
     /* renamed from: h0 */
@@ -362,19 +362,19 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
             C0398a.m1976m(drawable, C0398a.m1969f(this));
             drawable.setLevel(getLevel());
             drawable.setVisible(isVisible(), false);
-            if (drawable == this.f10335P) {
+            if (drawable == this.f10343P) {
                 if (drawable.isStateful()) {
                     drawable.setState(mo10309T0());
                 }
-                C0398a.m1978o(drawable, this.f10337R);
+                C0398a.m1978o(drawable, this.f10345R);
                 return;
             }
             if (drawable.isStateful()) {
                 drawable.setState(getState());
             }
-            Drawable drawable2 = this.f10329K;
-            if (drawable == drawable2 && this.f10333N) {
-                C0398a.m1978o(drawable2, this.f10331L);
+            Drawable drawable2 = this.f10337K;
+            if (drawable == drawable2 && this.f10341N) {
+                C0398a.m1978o(drawable2, this.f10339L);
             }
         }
     }
@@ -383,18 +383,18 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
     private void m12847i0(Rect rect, RectF rectF) {
         rectF.setEmpty();
         if (m12839I2() || m12838H2()) {
-            float f = this.f10346a0 + this.f10347b0;
+            float f = this.f10354a0 + this.f10355b0;
             if (C0398a.m1969f(this) == 0) {
                 float f2 = ((float) rect.left) + f;
                 rectF.left = f2;
-                rectF.right = f2 + this.f10332M;
+                rectF.right = f2 + this.f10340M;
             } else {
                 float f3 = ((float) rect.right) - f;
                 rectF.right = f3;
-                rectF.left = f3 - this.f10332M;
+                rectF.left = f3 - this.f10340M;
             }
             float exactCenterY = rect.exactCenterY();
-            float f4 = this.f10332M;
+            float f4 = this.f10340M;
             float f5 = exactCenterY - (f4 / 2.0f);
             rectF.top = f5;
             rectF.bottom = f5 + f4;
@@ -418,7 +418,7 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
     private void m12849k0(Rect rect, RectF rectF) {
         rectF.set(rect);
         if (m12840J2()) {
-            float f = this.f10353h0 + this.f10352g0 + this.f10338S + this.f10351f0 + this.f10350e0;
+            float f = this.f10361h0 + this.f10360g0 + this.f10346S + this.f10359f0 + this.f10358e0;
             if (C0398a.m1969f(this) == 0) {
                 rectF.right = ((float) rect.right) - f;
             } else {
@@ -431,18 +431,18 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
     private void m12850l0(Rect rect, RectF rectF) {
         rectF.setEmpty();
         if (m12840J2()) {
-            float f = this.f10353h0 + this.f10352g0;
+            float f = this.f10361h0 + this.f10360g0;
             if (C0398a.m1969f(this) == 0) {
                 float f2 = ((float) rect.right) - f;
                 rectF.right = f2;
-                rectF.left = f2 - this.f10338S;
+                rectF.left = f2 - this.f10346S;
             } else {
                 float f3 = ((float) rect.left) + f;
                 rectF.left = f3;
-                rectF.right = f3 + this.f10338S;
+                rectF.right = f3 + this.f10346S;
             }
             float exactCenterY = rect.exactCenterY();
-            float f4 = this.f10338S;
+            float f4 = this.f10346S;
             float f5 = exactCenterY - (f4 / 2.0f);
             rectF.top = f5;
             rectF.bottom = f5 + f4;
@@ -453,7 +453,7 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
     private void m12851m0(Rect rect, RectF rectF) {
         rectF.setEmpty();
         if (m12840J2()) {
-            float f = this.f10353h0 + this.f10352g0 + this.f10338S + this.f10351f0 + this.f10350e0;
+            float f = this.f10361h0 + this.f10360g0 + this.f10346S + this.f10359f0 + this.f10358e0;
             if (C0398a.m1969f(this) == 0) {
                 float f2 = (float) rect.right;
                 rectF.right = f2;
@@ -481,9 +481,9 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
     /* renamed from: o0 */
     private void m12854o0(Rect rect, RectF rectF) {
         rectF.setEmpty();
-        if (this.f10325I != null) {
-            float j0 = this.f10346a0 + mo10344j0() + this.f10349d0;
-            float n0 = this.f10353h0 + mo10352n0() + this.f10350e0;
+        if (this.f10333I != null) {
+            float j0 = this.f10354a0 + mo10344j0() + this.f10357d0;
+            float n0 = this.f10361h0 + mo10352n0() + this.f10358e0;
             if (C0398a.m1969f(this) == 0) {
                 rectF.left = ((float) rect.left) + j0;
                 rectF.right = ((float) rect.right) - n0;
@@ -499,13 +499,13 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
     /* renamed from: o1 */
     private static boolean m12855o1(C1438d dVar) {
         ColorStateList colorStateList;
-        return (dVar == null || (colorStateList = dVar.f6065b) == null || !colorStateList.isStateful()) ? false : true;
+        return (dVar == null || (colorStateList = dVar.f6073b) == null || !colorStateList.isStateful()) ? false : true;
     }
 
     /* renamed from: p0 */
     private float m12856p0() {
-        this.f10361p0.mo10793e().getFontMetrics(this.f10357l0);
-        Paint.FontMetrics fontMetrics = this.f10357l0;
+        this.f10369p0.mo10793e().getFontMetrics(this.f10365l0);
+        Paint.FontMetrics fontMetrics = this.f10365l0;
         return (fontMetrics.descent + fontMetrics.ascent) / 2.0f;
     }
 
@@ -522,7 +522,7 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: r0 */
     private boolean m12858r0() {
-        return this.f10341V && this.f10342W != null && this.f10340U;
+        return this.f10349V && this.f10350W != null && this.f10348U;
     }
 
     /* JADX WARNING: Removed duplicated region for block: B:69:0x00db  */
@@ -553,65 +553,65 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
     /* renamed from: t0 */
     private void m12861t0(Canvas canvas, Rect rect) {
         if (m12838H2()) {
-            m12847i0(rect, this.f10358m0);
-            RectF rectF = this.f10358m0;
+            m12847i0(rect, this.f10366m0);
+            RectF rectF = this.f10366m0;
             float f = rectF.left;
             float f2 = rectF.top;
             canvas.translate(f, f2);
-            this.f10342W.setBounds(0, 0, (int) this.f10358m0.width(), (int) this.f10358m0.height());
-            this.f10342W.draw(canvas);
+            this.f10350W.setBounds(0, 0, (int) this.f10366m0.width(), (int) this.f10366m0.height());
+            this.f10350W.draw(canvas);
             canvas.translate(-f, -f2);
         }
     }
 
     /* renamed from: u0 */
     private void m12862u0(Canvas canvas, Rect rect) {
-        if (!this.f10330K0) {
-            this.f10355j0.setColor(this.f10363r0);
-            this.f10355j0.setStyle(Paint.Style.FILL);
-            this.f10355j0.setColorFilter(m12845g1());
-            this.f10358m0.set(rect);
-            canvas.drawRoundRect(this.f10358m0, mo10279F0(), mo10279F0(), this.f10355j0);
+        if (!this.f10338K0) {
+            this.f10363j0.setColor(this.f10371r0);
+            this.f10363j0.setStyle(Paint.Style.FILL);
+            this.f10363j0.setColorFilter(m12845g1());
+            this.f10366m0.set(rect);
+            canvas.drawRoundRect(this.f10366m0, mo10279F0(), mo10279F0(), this.f10363j0);
         }
     }
 
     /* renamed from: v0 */
     private void m12863v0(Canvas canvas, Rect rect) {
         if (m12839I2()) {
-            m12847i0(rect, this.f10358m0);
-            RectF rectF = this.f10358m0;
+            m12847i0(rect, this.f10366m0);
+            RectF rectF = this.f10366m0;
             float f = rectF.left;
             float f2 = rectF.top;
             canvas.translate(f, f2);
-            this.f10329K.setBounds(0, 0, (int) this.f10358m0.width(), (int) this.f10358m0.height());
-            this.f10329K.draw(canvas);
+            this.f10337K.setBounds(0, 0, (int) this.f10366m0.width(), (int) this.f10366m0.height());
+            this.f10337K.draw(canvas);
             canvas.translate(-f, -f2);
         }
     }
 
     /* renamed from: w0 */
     private void m12864w0(Canvas canvas, Rect rect) {
-        if (this.f10321G > 0.0f && !this.f10330K0) {
-            this.f10355j0.setColor(this.f10365t0);
-            this.f10355j0.setStyle(Paint.Style.STROKE);
-            if (!this.f10330K0) {
-                this.f10355j0.setColorFilter(m12845g1());
+        if (this.f10329G > 0.0f && !this.f10338K0) {
+            this.f10363j0.setColor(this.f10373t0);
+            this.f10363j0.setStyle(Paint.Style.STROKE);
+            if (!this.f10338K0) {
+                this.f10363j0.setColorFilter(m12845g1());
             }
-            RectF rectF = this.f10358m0;
-            float f = this.f10321G;
+            RectF rectF = this.f10366m0;
+            float f = this.f10329G;
             rectF.set(((float) rect.left) + (f / 2.0f), ((float) rect.top) + (f / 2.0f), ((float) rect.right) - (f / 2.0f), ((float) rect.bottom) - (f / 2.0f));
-            float f2 = this.f10317E - (this.f10321G / 2.0f);
-            canvas.drawRoundRect(this.f10358m0, f2, f2, this.f10355j0);
+            float f2 = this.f10325E - (this.f10329G / 2.0f);
+            canvas.drawRoundRect(this.f10366m0, f2, f2, this.f10363j0);
         }
     }
 
     /* renamed from: x0 */
     private void m12865x0(Canvas canvas, Rect rect) {
-        if (!this.f10330K0) {
-            this.f10355j0.setColor(this.f10362q0);
-            this.f10355j0.setStyle(Paint.Style.FILL);
-            this.f10358m0.set(rect);
-            canvas.drawRoundRect(this.f10358m0, mo10279F0(), mo10279F0(), this.f10355j0);
+        if (!this.f10338K0) {
+            this.f10363j0.setColor(this.f10370q0);
+            this.f10363j0.setStyle(Paint.Style.FILL);
+            this.f10366m0.set(rect);
+            canvas.drawRoundRect(this.f10366m0, mo10279F0(), mo10279F0(), this.f10363j0);
         }
     }
 
@@ -619,18 +619,18 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
     private void m12866y0(Canvas canvas, Rect rect) {
         Drawable drawable;
         if (m12840J2()) {
-            m12850l0(rect, this.f10358m0);
-            RectF rectF = this.f10358m0;
+            m12850l0(rect, this.f10366m0);
+            RectF rectF = this.f10366m0;
             float f = rectF.left;
             float f2 = rectF.top;
             canvas.translate(f, f2);
-            this.f10335P.setBounds(0, 0, (int) this.f10358m0.width(), (int) this.f10358m0.height());
-            if (C1446b.f6088a) {
-                this.f10336Q.setBounds(this.f10335P.getBounds());
-                this.f10336Q.jumpToCurrentState();
-                drawable = this.f10336Q;
+            this.f10343P.setBounds(0, 0, (int) this.f10366m0.width(), (int) this.f10366m0.height());
+            if (C1446b.f6096a) {
+                this.f10344Q.setBounds(this.f10343P.getBounds());
+                this.f10344Q.jumpToCurrentState();
+                drawable = this.f10344Q;
             } else {
-                drawable = this.f10335P;
+                drawable = this.f10343P;
             }
             drawable.draw(canvas);
             canvas.translate(-f, -f2);
@@ -639,39 +639,39 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: z0 */
     private void m12867z0(Canvas canvas, Rect rect) {
-        this.f10355j0.setColor(this.f10366u0);
-        this.f10355j0.setStyle(Paint.Style.FILL);
-        this.f10358m0.set(rect);
-        if (!this.f10330K0) {
-            canvas.drawRoundRect(this.f10358m0, mo10279F0(), mo10279F0(), this.f10355j0);
+        this.f10363j0.setColor(this.f10374u0);
+        this.f10363j0.setStyle(Paint.Style.FILL);
+        this.f10366m0.set(rect);
+        if (!this.f10338K0) {
+            canvas.drawRoundRect(this.f10366m0, mo10279F0(), mo10279F0(), this.f10363j0);
             return;
         }
-        mo6623h(new RectF(rect), this.f10360o0);
-        super.mo6629p(canvas, this.f10355j0, this.f10360o0, mo6634u());
+        mo6623h(new RectF(rect), this.f10368o0);
+        super.mo6629p(canvas, this.f10363j0, this.f10368o0, mo6634u());
     }
 
     /* renamed from: A1 */
     public void mo10266A1(ColorStateList colorStateList) {
-        if (this.f10313C != colorStateList) {
-            this.f10313C = colorStateList;
+        if (this.f10321C != colorStateList) {
+            this.f10321C = colorStateList;
             onStateChange(getState());
         }
     }
 
     /* renamed from: A2 */
     public void mo10267A2(int i) {
-        mo10380z2(new C1438d(this.f10354i0, i));
+        mo10380z2(new C1438d(this.f10362i0, i));
     }
 
     /* renamed from: B1 */
     public void mo10268B1(int i) {
-        mo10266A1(C0764a.m4516c(this.f10354i0, i));
+        mo10266A1(C0764a.m4516c(this.f10362i0, i));
     }
 
     /* renamed from: B2 */
     public void mo10269B2(float f) {
-        if (this.f10350e0 != f) {
-            this.f10350e0 = f;
+        if (this.f10358e0 != f) {
+            this.f10358e0 = f;
             invalidateSelf();
             mo10359q1();
         }
@@ -679,38 +679,38 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: C0 */
     public Drawable mo10270C0() {
-        return this.f10342W;
+        return this.f10350W;
     }
 
     @Deprecated
     /* renamed from: C1 */
     public void mo10271C1(float f) {
-        if (this.f10317E != f) {
-            this.f10317E = f;
+        if (this.f10325E != f) {
+            this.f10325E = f;
             setShapeAppearanceModel(mo6597C().mo6660w(f));
         }
     }
 
     /* renamed from: C2 */
     public void mo10272C2(int i) {
-        mo10269B2(this.f10354i0.getResources().getDimension(i));
+        mo10269B2(this.f10362i0.getResources().getDimension(i));
     }
 
     /* renamed from: D0 */
     public ColorStateList mo10273D0() {
-        return this.f10343X;
+        return this.f10351X;
     }
 
     @Deprecated
     /* renamed from: D1 */
     public void mo10274D1(int i) {
-        mo10271C1(this.f10354i0.getResources().getDimension(i));
+        mo10271C1(this.f10362i0.getResources().getDimension(i));
     }
 
     /* renamed from: D2 */
     public void mo10275D2(float f) {
-        if (this.f10349d0 != f) {
-            this.f10349d0 = f;
+        if (this.f10357d0 != f) {
+            this.f10357d0 = f;
             invalidateSelf();
             mo10359q1();
         }
@@ -718,13 +718,13 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: E0 */
     public ColorStateList mo10276E0() {
-        return this.f10313C;
+        return this.f10321C;
     }
 
     /* renamed from: E1 */
     public void mo10277E1(float f) {
-        if (this.f10353h0 != f) {
-            this.f10353h0 = f;
+        if (this.f10361h0 != f) {
+            this.f10361h0 = f;
             invalidateSelf();
             mo10359q1();
         }
@@ -732,23 +732,23 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: E2 */
     public void mo10278E2(int i) {
-        mo10275D2(this.f10354i0.getResources().getDimension(i));
+        mo10275D2(this.f10362i0.getResources().getDimension(i));
     }
 
     /* renamed from: F0 */
     public float mo10279F0() {
-        return this.f10330K0 ? mo6599F() : this.f10317E;
+        return this.f10338K0 ? mo6599F() : this.f10325E;
     }
 
     /* renamed from: F1 */
     public void mo10280F1(int i) {
-        mo10277E1(this.f10354i0.getResources().getDimension(i));
+        mo10277E1(this.f10362i0.getResources().getDimension(i));
     }
 
     /* renamed from: F2 */
     public void mo10281F2(boolean z) {
-        if (this.f10318E0 != z) {
-            this.f10318E0 = z;
+        if (this.f10326E0 != z) {
+            this.f10326E0 = z;
             m12842L2();
             onStateChange(getState());
         }
@@ -756,7 +756,7 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: G0 */
     public float mo10282G0() {
-        return this.f10353h0;
+        return this.f10361h0;
     }
 
     /* renamed from: G1 */
@@ -764,11 +764,11 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
         Drawable H0 = mo10285H0();
         if (H0 != drawable) {
             float j0 = mo10344j0();
-            this.f10329K = drawable != null ? C0398a.m1981r(drawable).mutate() : null;
+            this.f10337K = drawable != null ? C0398a.m1981r(drawable).mutate() : null;
             float j02 = mo10344j0();
             m12841K2(H0);
             if (m12839I2()) {
-                m12846h0(this.f10329K);
+                m12846h0(this.f10337K);
             }
             invalidateSelf();
             if (j0 != j02) {
@@ -780,12 +780,12 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
     /* access modifiers changed from: package-private */
     /* renamed from: G2 */
     public boolean mo10284G2() {
-        return this.f10326I0;
+        return this.f10334I0;
     }
 
     /* renamed from: H0 */
     public Drawable mo10285H0() {
-        Drawable drawable = this.f10329K;
+        Drawable drawable = this.f10337K;
         if (drawable != null) {
             return C0398a.m1980q(drawable);
         }
@@ -794,19 +794,19 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: H1 */
     public void mo10286H1(int i) {
-        mo10283G1(C0764a.m4517d(this.f10354i0, i));
+        mo10283G1(C0764a.m4517d(this.f10362i0, i));
     }
 
     /* renamed from: I0 */
     public float mo10287I0() {
-        return this.f10332M;
+        return this.f10340M;
     }
 
     /* renamed from: I1 */
     public void mo10288I1(float f) {
-        if (this.f10332M != f) {
+        if (this.f10340M != f) {
             float j0 = mo10344j0();
-            this.f10332M = f;
+            this.f10340M = f;
             float j02 = mo10344j0();
             invalidateSelf();
             if (j0 != j02) {
@@ -817,26 +817,26 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: J0 */
     public ColorStateList mo10289J0() {
-        return this.f10331L;
+        return this.f10339L;
     }
 
     /* renamed from: J1 */
     public void mo10290J1(int i) {
-        mo10288I1(this.f10354i0.getResources().getDimension(i));
+        mo10288I1(this.f10362i0.getResources().getDimension(i));
     }
 
     /* renamed from: K0 */
     public float mo10291K0() {
-        return this.f10315D;
+        return this.f10323D;
     }
 
     /* renamed from: K1 */
     public void mo10292K1(ColorStateList colorStateList) {
-        this.f10333N = true;
-        if (this.f10331L != colorStateList) {
-            this.f10331L = colorStateList;
+        this.f10341N = true;
+        if (this.f10339L != colorStateList) {
+            this.f10339L = colorStateList;
             if (m12839I2()) {
-                C0398a.m1978o(this.f10329K, colorStateList);
+                C0398a.m1978o(this.f10337K, colorStateList);
             }
             onStateChange(getState());
         }
@@ -844,40 +844,40 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: L0 */
     public float mo10293L0() {
-        return this.f10346a0;
+        return this.f10354a0;
     }
 
     /* renamed from: L1 */
     public void mo10294L1(int i) {
-        mo10292K1(C0764a.m4516c(this.f10354i0, i));
+        mo10292K1(C0764a.m4516c(this.f10362i0, i));
     }
 
     /* renamed from: M0 */
     public ColorStateList mo10295M0() {
-        return this.f10319F;
+        return this.f10327F;
     }
 
     /* renamed from: M1 */
     public void mo10296M1(int i) {
-        mo10298N1(this.f10354i0.getResources().getBoolean(i));
+        mo10298N1(this.f10362i0.getResources().getBoolean(i));
     }
 
     /* renamed from: N0 */
     public float mo10297N0() {
-        return this.f10321G;
+        return this.f10329G;
     }
 
     /* renamed from: N1 */
     public void mo10298N1(boolean z) {
-        if (this.f10327J != z) {
+        if (this.f10335J != z) {
             boolean I2 = m12839I2();
-            this.f10327J = z;
+            this.f10335J = z;
             boolean I22 = m12839I2();
             if (I2 != I22) {
                 if (I22) {
-                    m12846h0(this.f10329K);
+                    m12846h0(this.f10337K);
                 } else {
-                    m12841K2(this.f10329K);
+                    m12841K2(this.f10337K);
                 }
                 invalidateSelf();
                 mo10359q1();
@@ -887,7 +887,7 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: O0 */
     public Drawable mo10299O0() {
-        Drawable drawable = this.f10335P;
+        Drawable drawable = this.f10343P;
         if (drawable != null) {
             return C0398a.m1980q(drawable);
         }
@@ -896,8 +896,8 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: O1 */
     public void mo10300O1(float f) {
-        if (this.f10315D != f) {
-            this.f10315D = f;
+        if (this.f10323D != f) {
+            this.f10323D = f;
             invalidateSelf();
             mo10359q1();
         }
@@ -905,23 +905,23 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: P0 */
     public CharSequence mo10301P0() {
-        return this.f10339T;
+        return this.f10347T;
     }
 
     /* renamed from: P1 */
     public void mo10302P1(int i) {
-        mo10300O1(this.f10354i0.getResources().getDimension(i));
+        mo10300O1(this.f10362i0.getResources().getDimension(i));
     }
 
     /* renamed from: Q0 */
     public float mo10303Q0() {
-        return this.f10352g0;
+        return this.f10360g0;
     }
 
     /* renamed from: Q1 */
     public void mo10304Q1(float f) {
-        if (this.f10346a0 != f) {
-            this.f10346a0 = f;
+        if (this.f10354a0 != f) {
+            this.f10354a0 = f;
             invalidateSelf();
             mo10359q1();
         }
@@ -929,24 +929,24 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: R0 */
     public float mo10305R0() {
-        return this.f10338S;
+        return this.f10346S;
     }
 
     /* renamed from: R1 */
     public void mo10306R1(int i) {
-        mo10304Q1(this.f10354i0.getResources().getDimension(i));
+        mo10304Q1(this.f10362i0.getResources().getDimension(i));
     }
 
     /* renamed from: S0 */
     public float mo10307S0() {
-        return this.f10351f0;
+        return this.f10359f0;
     }
 
     /* renamed from: S1 */
     public void mo10308S1(ColorStateList colorStateList) {
-        if (this.f10319F != colorStateList) {
-            this.f10319F = colorStateList;
-            if (this.f10330K0) {
+        if (this.f10327F != colorStateList) {
+            this.f10327F = colorStateList;
+            if (this.f10338K0) {
                 mo6615c0(colorStateList);
             }
             onStateChange(getState());
@@ -955,25 +955,25 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: T0 */
     public int[] mo10309T0() {
-        return this.f10316D0;
+        return this.f10324D0;
     }
 
     /* renamed from: T1 */
     public void mo10310T1(int i) {
-        mo10308S1(C0764a.m4516c(this.f10354i0, i));
+        mo10308S1(C0764a.m4516c(this.f10362i0, i));
     }
 
     /* renamed from: U0 */
     public ColorStateList mo10311U0() {
-        return this.f10337R;
+        return this.f10345R;
     }
 
     /* renamed from: U1 */
     public void mo10312U1(float f) {
-        if (this.f10321G != f) {
-            this.f10321G = f;
-            this.f10355j0.setStrokeWidth(f);
-            if (this.f10330K0) {
+        if (this.f10329G != f) {
+            this.f10329G = f;
+            this.f10363j0.setStrokeWidth(f);
+            if (this.f10338K0) {
                 super.mo6616d0(f);
             }
             invalidateSelf();
@@ -987,17 +987,17 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: V1 */
     public void mo10314V1(int i) {
-        mo10312U1(this.f10354i0.getResources().getDimension(i));
+        mo10312U1(this.f10362i0.getResources().getDimension(i));
     }
 
     /* renamed from: W0 */
     public TextUtils.TruncateAt mo10315W0() {
-        return this.f10324H0;
+        return this.f10332H0;
     }
 
     /* renamed from: X0 */
     public C1408h mo10316X0() {
-        return this.f10345Z;
+        return this.f10353Z;
     }
 
     /* renamed from: X1 */
@@ -1005,14 +1005,14 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
         Drawable O0 = mo10299O0();
         if (O0 != drawable) {
             float n0 = mo10352n0();
-            this.f10335P = drawable != null ? C0398a.m1981r(drawable).mutate() : null;
-            if (C1446b.f6088a) {
+            this.f10343P = drawable != null ? C0398a.m1981r(drawable).mutate() : null;
+            if (C1446b.f6096a) {
                 m12843M2();
             }
             float n02 = mo10352n0();
             m12841K2(O0);
             if (m12840J2()) {
-                m12846h0(this.f10335P);
+                m12846h0(this.f10343P);
             }
             invalidateSelf();
             if (n0 != n02) {
@@ -1023,26 +1023,26 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: Y0 */
     public float mo10318Y0() {
-        return this.f10348c0;
+        return this.f10356c0;
     }
 
     /* renamed from: Y1 */
     public void mo10319Y1(CharSequence charSequence) {
-        if (this.f10339T != charSequence) {
-            this.f10339T = C0937a.m5432c().mo5355h(charSequence);
+        if (this.f10347T != charSequence) {
+            this.f10347T = C0937a.m5432c().mo5355h(charSequence);
             invalidateSelf();
         }
     }
 
     /* renamed from: Z0 */
     public float mo10320Z0() {
-        return this.f10347b0;
+        return this.f10355b0;
     }
 
     /* renamed from: Z1 */
     public void mo10321Z1(float f) {
-        if (this.f10352g0 != f) {
-            this.f10352g0 = f;
+        if (this.f10360g0 != f) {
+            this.f10360g0 = f;
             invalidateSelf();
             if (m12840J2()) {
                 mo10359q1();
@@ -1059,33 +1059,33 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: a1 */
     public ColorStateList mo10323a1() {
-        return this.f10323H;
+        return this.f10331H;
     }
 
     /* renamed from: a2 */
     public void mo10324a2(int i) {
-        mo10321Z1(this.f10354i0.getResources().getDimension(i));
+        mo10321Z1(this.f10362i0.getResources().getDimension(i));
     }
 
     /* renamed from: b1 */
     public C1408h mo10325b1() {
-        return this.f10344Y;
+        return this.f10352Y;
     }
 
     /* renamed from: b2 */
     public void mo10326b2(int i) {
-        mo10317X1(C0764a.m4517d(this.f10354i0, i));
+        mo10317X1(C0764a.m4517d(this.f10362i0, i));
     }
 
     /* renamed from: c1 */
     public CharSequence mo10327c1() {
-        return this.f10325I;
+        return this.f10333I;
     }
 
     /* renamed from: c2 */
     public void mo10328c2(float f) {
-        if (this.f10338S != f) {
-            this.f10338S = f;
+        if (this.f10346S != f) {
+            this.f10346S = f;
             invalidateSelf();
             if (m12840J2()) {
                 mo10359q1();
@@ -1095,12 +1095,12 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: d1 */
     public C1438d mo10329d1() {
-        return this.f10361p0.mo10792d();
+        return this.f10369p0.mo10792d();
     }
 
     /* renamed from: d2 */
     public void mo10330d2(int i) {
-        mo10328c2(this.f10354i0.getResources().getDimension(i));
+        mo10328c2(this.f10362i0.getResources().getDimension(i));
     }
 
     @Override // p069c.p073b.p074a.p090b.p107z.C1455g
@@ -1108,25 +1108,25 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
         Rect bounds = getBounds();
         if (!bounds.isEmpty() && getAlpha() != 0) {
             int i = 0;
-            int i2 = this.f10370y0;
+            int i2 = this.f10378y0;
             if (i2 < 255) {
                 i = C1412a.m7030a(canvas, (float) bounds.left, (float) bounds.top, (float) bounds.right, (float) bounds.bottom, i2);
             }
             m12865x0(canvas, bounds);
             m12862u0(canvas, bounds);
-            if (this.f10330K0) {
+            if (this.f10338K0) {
                 super.draw(canvas);
             }
             m12864w0(canvas, bounds);
             m12867z0(canvas, bounds);
             m12863v0(canvas, bounds);
             m12861t0(canvas, bounds);
-            if (this.f10326I0) {
+            if (this.f10334I0) {
                 m12837B0(canvas, bounds);
             }
             m12866y0(canvas, bounds);
             m12836A0(canvas, bounds);
-            if (this.f10370y0 < 255) {
+            if (this.f10378y0 < 255) {
                 canvas.restoreToCount(i);
             }
         }
@@ -1134,13 +1134,13 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: e1 */
     public float mo10331e1() {
-        return this.f10350e0;
+        return this.f10358e0;
     }
 
     /* renamed from: e2 */
     public void mo10332e2(float f) {
-        if (this.f10351f0 != f) {
-            this.f10351f0 = f;
+        if (this.f10359f0 != f) {
+            this.f10359f0 = f;
             invalidateSelf();
             if (m12840J2()) {
                 mo10359q1();
@@ -1150,20 +1150,20 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: f1 */
     public float mo10333f1() {
-        return this.f10349d0;
+        return this.f10357d0;
     }
 
     /* renamed from: f2 */
     public void mo10334f2(int i) {
-        mo10332e2(this.f10354i0.getResources().getDimension(i));
+        mo10332e2(this.f10362i0.getResources().getDimension(i));
     }
 
     /* renamed from: g2 */
     public boolean mo10335g2(int[] iArr) {
-        if (Arrays.equals(this.f10316D0, iArr)) {
+        if (Arrays.equals(this.f10324D0, iArr)) {
             return false;
         }
-        this.f10316D0 = iArr;
+        this.f10324D0 = iArr;
         if (m12840J2()) {
             return m12859r1(getState(), iArr);
         }
@@ -1171,19 +1171,19 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
     }
 
     public int getAlpha() {
-        return this.f10370y0;
+        return this.f10378y0;
     }
 
     public ColorFilter getColorFilter() {
-        return this.f10371z0;
+        return this.f10379z0;
     }
 
     public int getIntrinsicHeight() {
-        return (int) this.f10315D;
+        return (int) this.f10323D;
     }
 
     public int getIntrinsicWidth() {
-        return Math.min(Math.round(this.f10346a0 + mo10344j0() + this.f10349d0 + this.f10361p0.mo10794f(mo10327c1().toString()) + this.f10350e0 + mo10352n0() + this.f10353h0), this.f10328J0);
+        return Math.min(Math.round(this.f10354a0 + mo10344j0() + this.f10357d0 + this.f10369p0.mo10794f(mo10327c1().toString()) + this.f10358e0 + mo10352n0() + this.f10361h0), this.f10336J0);
     }
 
     @Override // p069c.p073b.p074a.p090b.p107z.C1455g
@@ -1194,30 +1194,30 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
     @Override // p069c.p073b.p074a.p090b.p107z.C1455g
     @TargetApi(21)
     public void getOutline(Outline outline) {
-        if (this.f10330K0) {
+        if (this.f10338K0) {
             super.getOutline(outline);
             return;
         }
         Rect bounds = getBounds();
         if (!bounds.isEmpty()) {
-            outline.setRoundRect(bounds, this.f10317E);
+            outline.setRoundRect(bounds, this.f10325E);
         } else {
-            outline.setRoundRect(0, 0, getIntrinsicWidth(), getIntrinsicHeight(), this.f10317E);
+            outline.setRoundRect(0, 0, getIntrinsicWidth(), getIntrinsicHeight(), this.f10325E);
         }
         outline.setAlpha(((float) getAlpha()) / 255.0f);
     }
 
     /* renamed from: h1 */
     public boolean mo10340h1() {
-        return this.f10318E0;
+        return this.f10326E0;
     }
 
     /* renamed from: h2 */
     public void mo10341h2(ColorStateList colorStateList) {
-        if (this.f10337R != colorStateList) {
-            this.f10337R = colorStateList;
+        if (this.f10345R != colorStateList) {
+            this.f10345R = colorStateList;
             if (m12840J2()) {
-                C0398a.m1978o(this.f10335P, colorStateList);
+                C0398a.m1978o(this.f10343P, colorStateList);
             }
             onStateChange(getState());
         }
@@ -1225,7 +1225,7 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: i2 */
     public void mo10342i2(int i) {
-        mo10341h2(C0764a.m4516c(this.f10354i0, i));
+        mo10341h2(C0764a.m4516c(this.f10362i0, i));
     }
 
     public void invalidateDrawable(Drawable drawable) {
@@ -1237,34 +1237,34 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     @Override // p069c.p073b.p074a.p090b.p107z.C1455g
     public boolean isStateful() {
-        return m12852m1(this.f10311B) || m12852m1(this.f10313C) || m12852m1(this.f10319F) || (this.f10318E0 && m12852m1(this.f10320F0)) || m12855o1(this.f10361p0.mo10792d()) || m12858r0() || m12853n1(this.f10329K) || m12853n1(this.f10342W) || m12852m1(this.f10312B0);
+        return m12852m1(this.f10319B) || m12852m1(this.f10321C) || m12852m1(this.f10327F) || (this.f10326E0 && m12852m1(this.f10328F0)) || m12855o1(this.f10369p0.mo10792d()) || m12858r0() || m12853n1(this.f10337K) || m12853n1(this.f10350W) || m12852m1(this.f10320B0);
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: j0 */
     public float mo10344j0() {
         if (m12839I2() || m12838H2()) {
-            return this.f10347b0 + this.f10332M + this.f10348c0;
+            return this.f10355b0 + this.f10340M + this.f10356c0;
         }
         return 0.0f;
     }
 
     /* renamed from: j1 */
     public boolean mo10345j1() {
-        return this.f10340U;
+        return this.f10348U;
     }
 
     /* renamed from: j2 */
     public void mo10346j2(boolean z) {
-        if (this.f10334O != z) {
+        if (this.f10342O != z) {
             boolean J2 = m12840J2();
-            this.f10334O = z;
+            this.f10342O = z;
             boolean J22 = m12840J2();
             if (J2 != J22) {
                 if (J22) {
-                    m12846h0(this.f10335P);
+                    m12846h0(this.f10343P);
                 } else {
-                    m12841K2(this.f10335P);
+                    m12841K2(this.f10343P);
                 }
                 invalidateSelf();
                 mo10359q1();
@@ -1274,48 +1274,48 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: k1 */
     public boolean mo10347k1() {
-        return m12853n1(this.f10335P);
+        return m12853n1(this.f10343P);
     }
 
     /* renamed from: k2 */
     public void mo10348k2(AbstractC3101a aVar) {
-        this.f10322G0 = new WeakReference<>(aVar);
+        this.f10330G0 = new WeakReference<>(aVar);
     }
 
     /* renamed from: l1 */
     public boolean mo10349l1() {
-        return this.f10334O;
+        return this.f10342O;
     }
 
     /* renamed from: l2 */
     public void mo10350l2(TextUtils.TruncateAt truncateAt) {
-        this.f10324H0 = truncateAt;
+        this.f10332H0 = truncateAt;
     }
 
     /* renamed from: m2 */
     public void mo10351m2(C1408h hVar) {
-        this.f10345Z = hVar;
+        this.f10353Z = hVar;
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: n0 */
     public float mo10352n0() {
         if (m12840J2()) {
-            return this.f10351f0 + this.f10338S + this.f10352g0;
+            return this.f10359f0 + this.f10346S + this.f10360g0;
         }
         return 0.0f;
     }
 
     /* renamed from: n2 */
     public void mo10353n2(int i) {
-        mo10351m2(C1408h.m7013c(this.f10354i0, i));
+        mo10351m2(C1408h.m7013c(this.f10362i0, i));
     }
 
     /* renamed from: o2 */
     public void mo10354o2(float f) {
-        if (this.f10348c0 != f) {
+        if (this.f10356c0 != f) {
             float j0 = mo10344j0();
-            this.f10348c0 = f;
+            this.f10356c0 = f;
             float j02 = mo10344j0();
             invalidateSelf();
             if (j0 != j02) {
@@ -1327,13 +1327,13 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
     public boolean onLayoutDirectionChanged(int i) {
         boolean onLayoutDirectionChanged = super.onLayoutDirectionChanged(i);
         if (m12839I2()) {
-            onLayoutDirectionChanged |= C0398a.m1976m(this.f10329K, i);
+            onLayoutDirectionChanged |= C0398a.m1976m(this.f10337K, i);
         }
         if (m12838H2()) {
-            onLayoutDirectionChanged |= C0398a.m1976m(this.f10342W, i);
+            onLayoutDirectionChanged |= C0398a.m1976m(this.f10350W, i);
         }
         if (m12840J2()) {
-            onLayoutDirectionChanged |= C0398a.m1976m(this.f10335P, i);
+            onLayoutDirectionChanged |= C0398a.m1976m(this.f10343P, i);
         }
         if (!onLayoutDirectionChanged) {
             return true;
@@ -1346,13 +1346,13 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
     public boolean onLevelChange(int i) {
         boolean onLevelChange = super.onLevelChange(i);
         if (m12839I2()) {
-            onLevelChange |= this.f10329K.setLevel(i);
+            onLevelChange |= this.f10337K.setLevel(i);
         }
         if (m12838H2()) {
-            onLevelChange |= this.f10342W.setLevel(i);
+            onLevelChange |= this.f10350W.setLevel(i);
         }
         if (m12840J2()) {
-            onLevelChange |= this.f10335P.setLevel(i);
+            onLevelChange |= this.f10343P.setLevel(i);
         }
         if (onLevelChange) {
             invalidateSelf();
@@ -1362,7 +1362,7 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     @Override // p069c.p073b.p074a.p090b.p107z.C1455g, com.google.android.material.internal.C3199n.AbstractC3201b
     public boolean onStateChange(int[] iArr) {
-        if (this.f10330K0) {
+        if (this.f10338K0) {
             super.onStateChange(iArr);
         }
         return m12859r1(iArr, mo10309T0());
@@ -1370,7 +1370,7 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: p2 */
     public void mo10357p2(int i) {
-        mo10354o2(this.f10354i0.getResources().getDimension(i));
+        mo10354o2(this.f10362i0.getResources().getDimension(i));
     }
 
     /* access modifiers changed from: package-private */
@@ -1378,8 +1378,8 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
     public Paint.Align mo10358q0(Rect rect, PointF pointF) {
         pointF.set(0.0f, 0.0f);
         Paint.Align align = Paint.Align.LEFT;
-        if (this.f10325I != null) {
-            float j0 = this.f10346a0 + mo10344j0() + this.f10349d0;
+        if (this.f10333I != null) {
+            float j0 = this.f10354a0 + mo10344j0() + this.f10357d0;
             if (C0398a.m1969f(this) == 0) {
                 pointF.x = ((float) rect.left) + j0;
                 align = Paint.Align.LEFT;
@@ -1395,7 +1395,7 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
     /* access modifiers changed from: protected */
     /* renamed from: q1 */
     public void mo10359q1() {
-        AbstractC3101a aVar = this.f10322G0.get();
+        AbstractC3101a aVar = this.f10330G0.get();
         if (aVar != null) {
             aVar.mo10087a();
         }
@@ -1403,9 +1403,9 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: q2 */
     public void mo10360q2(float f) {
-        if (this.f10347b0 != f) {
+        if (this.f10355b0 != f) {
             float j0 = mo10344j0();
-            this.f10347b0 = f;
+            this.f10355b0 = f;
             float j02 = mo10344j0();
             invalidateSelf();
             if (j0 != j02) {
@@ -1416,16 +1416,16 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: r2 */
     public void mo10361r2(int i) {
-        mo10360q2(this.f10354i0.getResources().getDimension(i));
+        mo10360q2(this.f10362i0.getResources().getDimension(i));
     }
 
     /* renamed from: s1 */
     public void mo10362s1(boolean z) {
-        if (this.f10340U != z) {
-            this.f10340U = z;
+        if (this.f10348U != z) {
+            this.f10348U = z;
             float j0 = mo10344j0();
-            if (!z && this.f10368w0) {
-                this.f10368w0 = false;
+            if (!z && this.f10376w0) {
+                this.f10376w0 = false;
             }
             float j02 = mo10344j0();
             invalidateSelf();
@@ -1437,7 +1437,7 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: s2 */
     public void mo10363s2(int i) {
-        this.f10328J0 = i;
+        this.f10336J0 = i;
     }
 
     public void scheduleDrawable(Drawable drawable, Runnable runnable, long j) {
@@ -1449,33 +1449,33 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     @Override // p069c.p073b.p074a.p090b.p107z.C1455g
     public void setAlpha(int i) {
-        if (this.f10370y0 != i) {
-            this.f10370y0 = i;
+        if (this.f10378y0 != i) {
+            this.f10378y0 = i;
             invalidateSelf();
         }
     }
 
     @Override // p069c.p073b.p074a.p090b.p107z.C1455g
     public void setColorFilter(ColorFilter colorFilter) {
-        if (this.f10371z0 != colorFilter) {
-            this.f10371z0 = colorFilter;
+        if (this.f10379z0 != colorFilter) {
+            this.f10379z0 = colorFilter;
             invalidateSelf();
         }
     }
 
     @Override // p069c.p073b.p074a.p090b.p107z.C1455g, androidx.core.graphics.drawable.AbstractC0399b
     public void setTintList(ColorStateList colorStateList) {
-        if (this.f10312B0 != colorStateList) {
-            this.f10312B0 = colorStateList;
+        if (this.f10320B0 != colorStateList) {
+            this.f10320B0 = colorStateList;
             onStateChange(getState());
         }
     }
 
     @Override // p069c.p073b.p074a.p090b.p107z.C1455g, androidx.core.graphics.drawable.AbstractC0399b
     public void setTintMode(PorterDuff.Mode mode) {
-        if (this.f10314C0 != mode) {
-            this.f10314C0 = mode;
-            this.f10310A0 = C1429a.m7057a(this, this.f10312B0, mode);
+        if (this.f10322C0 != mode) {
+            this.f10322C0 = mode;
+            this.f10318A0 = C1429a.m7057a(this, this.f10320B0, mode);
             invalidateSelf();
         }
     }
@@ -1483,13 +1483,13 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
     public boolean setVisible(boolean z, boolean z2) {
         boolean visible = super.setVisible(z, z2);
         if (m12839I2()) {
-            visible |= this.f10329K.setVisible(z, z2);
+            visible |= this.f10337K.setVisible(z, z2);
         }
         if (m12838H2()) {
-            visible |= this.f10342W.setVisible(z, z2);
+            visible |= this.f10350W.setVisible(z, z2);
         }
         if (m12840J2()) {
-            visible |= this.f10335P.setVisible(z, z2);
+            visible |= this.f10343P.setVisible(z, z2);
         }
         if (visible) {
             invalidateSelf();
@@ -1499,13 +1499,13 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: t1 */
     public void mo10366t1(int i) {
-        mo10362s1(this.f10354i0.getResources().getBoolean(i));
+        mo10362s1(this.f10362i0.getResources().getBoolean(i));
     }
 
     /* renamed from: t2 */
     public void mo10367t2(ColorStateList colorStateList) {
-        if (this.f10323H != colorStateList) {
-            this.f10323H = colorStateList;
+        if (this.f10331H != colorStateList) {
+            this.f10331H = colorStateList;
             m12842L2();
             onStateChange(getState());
         }
@@ -1513,12 +1513,12 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: u1 */
     public void mo10368u1(Drawable drawable) {
-        if (this.f10342W != drawable) {
+        if (this.f10350W != drawable) {
             float j0 = mo10344j0();
-            this.f10342W = drawable;
+            this.f10350W = drawable;
             float j02 = mo10344j0();
-            m12841K2(this.f10342W);
-            m12846h0(this.f10342W);
+            m12841K2(this.f10350W);
+            m12846h0(this.f10350W);
             invalidateSelf();
             if (j0 != j02) {
                 mo10359q1();
@@ -1528,7 +1528,7 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: u2 */
     public void mo10369u2(int i) {
-        mo10367t2(C0764a.m4516c(this.f10354i0, i));
+        mo10367t2(C0764a.m4516c(this.f10362i0, i));
     }
 
     public void unscheduleDrawable(Drawable drawable, Runnable runnable) {
@@ -1540,21 +1540,21 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: v1 */
     public void mo10371v1(int i) {
-        mo10368u1(C0764a.m4517d(this.f10354i0, i));
+        mo10368u1(C0764a.m4517d(this.f10362i0, i));
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: v2 */
     public void mo10372v2(boolean z) {
-        this.f10326I0 = z;
+        this.f10334I0 = z;
     }
 
     /* renamed from: w1 */
     public void mo10373w1(ColorStateList colorStateList) {
-        if (this.f10343X != colorStateList) {
-            this.f10343X = colorStateList;
+        if (this.f10351X != colorStateList) {
+            this.f10351X = colorStateList;
             if (m12858r0()) {
-                C0398a.m1978o(this.f10342W, colorStateList);
+                C0398a.m1978o(this.f10350W, colorStateList);
             }
             onStateChange(getState());
         }
@@ -1562,22 +1562,22 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: w2 */
     public void mo10374w2(C1408h hVar) {
-        this.f10344Y = hVar;
+        this.f10352Y = hVar;
     }
 
     /* renamed from: x1 */
     public void mo10375x1(int i) {
-        mo10373w1(C0764a.m4516c(this.f10354i0, i));
+        mo10373w1(C0764a.m4516c(this.f10362i0, i));
     }
 
     /* renamed from: x2 */
     public void mo10376x2(int i) {
-        mo10374w2(C1408h.m7013c(this.f10354i0, i));
+        mo10374w2(C1408h.m7013c(this.f10362i0, i));
     }
 
     /* renamed from: y1 */
     public void mo10377y1(int i) {
-        mo10379z1(this.f10354i0.getResources().getBoolean(i));
+        mo10379z1(this.f10362i0.getResources().getBoolean(i));
     }
 
     /* renamed from: y2 */
@@ -1585,9 +1585,9 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
         if (charSequence == null) {
             charSequence = "";
         }
-        if (!TextUtils.equals(this.f10325I, charSequence)) {
-            this.f10325I = charSequence;
-            this.f10361p0.mo10797i(true);
+        if (!TextUtils.equals(this.f10333I, charSequence)) {
+            this.f10333I = charSequence;
+            this.f10369p0.mo10797i(true);
             invalidateSelf();
             mo10359q1();
         }
@@ -1595,15 +1595,15 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: z1 */
     public void mo10379z1(boolean z) {
-        if (this.f10341V != z) {
+        if (this.f10349V != z) {
             boolean H2 = m12838H2();
-            this.f10341V = z;
+            this.f10349V = z;
             boolean H22 = m12838H2();
             if (H2 != H22) {
                 if (H22) {
-                    m12846h0(this.f10342W);
+                    m12846h0(this.f10350W);
                 } else {
-                    m12841K2(this.f10342W);
+                    m12841K2(this.f10350W);
                 }
                 invalidateSelf();
                 mo10359q1();
@@ -1613,6 +1613,6 @@ public class C3100a extends C1455g implements AbstractC0399b, Drawable.Callback,
 
     /* renamed from: z2 */
     public void mo10380z2(C1438d dVar) {
-        this.f10361p0.mo10796h(dVar, this.f10354i0);
+        this.f10369p0.mo10796h(dVar, this.f10362i0);
     }
 }

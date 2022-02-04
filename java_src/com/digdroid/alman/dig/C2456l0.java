@@ -10,22 +10,22 @@ import p006b.p007a.C0763j;
 class C2456l0 {
 
     /* renamed from: a */
-    SQLiteDatabase f8570a;
+    SQLiteDatabase f8578a;
 
     /* renamed from: b */
-    Pattern f8571b = Pattern.compile("^(the|an?) ");
+    Pattern f8579b = Pattern.compile("^(the|an?) ");
 
     /* renamed from: c */
-    Pattern f8572c = Pattern.compile("[^a-z0-9]");
+    Pattern f8580c = Pattern.compile("[^a-z0-9]");
 
     /* renamed from: d */
-    Pattern f8573d = Pattern.compile("(?:\\:|\\- ).+$");
+    Pattern f8581d = Pattern.compile("(?:\\:|\\- ).+$");
 
     /* renamed from: e */
-    Pattern f8574e = Pattern.compile("^(.*), ?(the|an?)(.*)$", 2);
+    Pattern f8582e = Pattern.compile("^(.*), ?(the|an?)(.*)$", 2);
 
     public C2456l0(SQLiteDatabase sQLiteDatabase) {
-        this.f8570a = sQLiteDatabase;
+        this.f8578a = sQLiteDatabase;
     }
 
     /* access modifiers changed from: package-private */
@@ -60,7 +60,7 @@ class C2456l0 {
         if (indexOf2 > 0) {
             str = str.substring(0, indexOf2);
         }
-        Matcher matcher = this.f8574e.matcher(str);
+        Matcher matcher = this.f8582e.matcher(str);
         if (!matcher.find()) {
             return str;
         }
@@ -121,7 +121,7 @@ class C2456l0 {
                     break;
                 }
                 break;
-            case C0763j.f3609H0:
+            case C0763j.f3613H0:
                 if (str.equals("v")) {
                     c = '\b';
                     break;
@@ -215,7 +215,7 @@ class C2456l0 {
     /* access modifiers changed from: package-private */
     /* renamed from: e */
     public long mo8712e(String str, String str2, boolean z, int i, boolean z2) {
-        return mo8713f(str, str2, z, i, z2, this.f8570a);
+        return mo8713f(str, str2, z, i, z2, this.f8578a);
     }
 
     /* access modifiers changed from: package-private */
@@ -240,6 +240,6 @@ class C2456l0 {
     /* access modifiers changed from: package-private */
     /* renamed from: h */
     public String mo8715h(String str) {
-        return this.f8572c.matcher(this.f8571b.matcher(str.toLowerCase()).replaceFirst("")).replaceAll("");
+        return this.f8580c.matcher(this.f8579b.matcher(str.toLowerCase()).replaceFirst("")).replaceAll("");
     }
 }

@@ -7,26 +7,26 @@ import java.util.Arrays;
 public final class C1449a implements AbstractC1451c {
 
     /* renamed from: a */
-    private final float f6112a;
+    private final float f6120a;
 
     public C1449a(float f) {
-        this.f6112a = f;
+        this.f6120a = f;
     }
 
     @Override // p069c.p073b.p074a.p090b.p107z.AbstractC1451c
     /* renamed from: a */
     public float mo6586a(RectF rectF) {
-        return this.f6112a;
+        return this.f6120a;
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof C1449a) && this.f6112a == ((C1449a) obj).f6112a;
+        return (obj instanceof C1449a) && this.f6120a == ((C1449a) obj).f6120a;
     }
 
     public int hashCode() {
-        return Arrays.hashCode(new Object[]{Float.valueOf(this.f6112a)});
+        return Arrays.hashCode(new Object[]{Float.valueOf(this.f6120a)});
     }
 }

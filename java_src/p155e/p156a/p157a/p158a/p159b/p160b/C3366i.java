@@ -7,31 +7,31 @@ import java.util.LinkedList;
 public class C3366i {
 
     /* renamed from: a */
-    C3354e[] f11306a;
+    C3354e[] f11315a;
 
     /* renamed from: b */
-    long f11307b;
+    long f11316b;
 
     /* renamed from: c */
-    long f11308c;
+    long f11317c;
 
     /* renamed from: d */
-    C3352c[] f11309d;
+    C3352c[] f11318d;
 
     /* renamed from: e */
-    long[] f11310e;
+    long[] f11319e;
 
     /* renamed from: f */
-    long[] f11311f;
+    long[] f11320f;
 
     /* renamed from: g */
-    boolean f11312g;
+    boolean f11321g;
 
     /* renamed from: h */
-    long f11313h;
+    long f11322h;
 
     /* renamed from: i */
-    int f11314i;
+    int f11323i;
 
     C3366i() {
     }
@@ -41,11 +41,11 @@ public class C3366i {
     public int mo11310a(int i) {
         int i2 = 0;
         while (true) {
-            C3352c[] cVarArr = this.f11309d;
+            C3352c[] cVarArr = this.f11318d;
             if (i2 >= cVarArr.length) {
                 return -1;
             }
-            if (cVarArr[i2].f11290a == ((long) i)) {
+            if (cVarArr[i2].f11299a == ((long) i)) {
                 return i2;
             }
             i2++;
@@ -57,11 +57,11 @@ public class C3366i {
     public int mo11311b(int i) {
         int i2 = 0;
         while (true) {
-            C3352c[] cVarArr = this.f11309d;
+            C3352c[] cVarArr = this.f11318d;
             if (i2 >= cVarArr.length) {
                 return -1;
             }
-            if (cVarArr[i2].f11291b == ((long) i)) {
+            if (cVarArr[i2].f11300b == ((long) i)) {
                 return i2;
             }
             i2++;
@@ -72,11 +72,11 @@ public class C3366i {
     /* renamed from: c */
     public Iterable<C3354e> mo11312c() {
         LinkedList linkedList = new LinkedList();
-        int i = (int) this.f11310e[0];
+        int i = (int) this.f11319e[0];
         while (i != -1) {
-            linkedList.addLast(this.f11306a[i]);
+            linkedList.addLast(this.f11315a[i]);
             int b = mo11311b(i);
-            i = b != -1 ? (int) this.f11309d[b].f11290a : -1;
+            i = b != -1 ? (int) this.f11318d[b].f11299a : -1;
         }
         return linkedList;
     }
@@ -84,13 +84,13 @@ public class C3366i {
     /* access modifiers changed from: package-private */
     /* renamed from: d */
     public long mo11313d() {
-        long j = this.f11308c;
+        long j = this.f11317c;
         if (j == 0) {
             return 0;
         }
         for (int i = ((int) j) - 1; i >= 0; i--) {
             if (mo11311b(i) < 0) {
-                return this.f11311f[i];
+                return this.f11320f[i];
             }
         }
         return 0;
@@ -99,17 +99,17 @@ public class C3366i {
     /* access modifiers changed from: package-private */
     /* renamed from: e */
     public long mo11314e(C3354e eVar) {
-        if (this.f11306a == null) {
+        if (this.f11315a == null) {
             return 0;
         }
         int i = 0;
         while (true) {
-            C3354e[] eVarArr = this.f11306a;
+            C3354e[] eVarArr = this.f11315a;
             if (i >= eVarArr.length) {
                 return 0;
             }
             if (eVarArr[i] == eVar) {
-                return this.f11311f[i];
+                return this.f11320f[i];
             }
             i++;
         }
@@ -119,26 +119,26 @@ public class C3366i {
         String str;
         StringBuilder sb = new StringBuilder();
         sb.append("Folder with ");
-        sb.append(this.f11306a.length);
+        sb.append(this.f11315a.length);
         sb.append(" coders, ");
-        sb.append(this.f11307b);
+        sb.append(this.f11316b);
         sb.append(" input streams, ");
-        sb.append(this.f11308c);
+        sb.append(this.f11317c);
         sb.append(" output streams, ");
-        sb.append(this.f11309d.length);
+        sb.append(this.f11318d.length);
         sb.append(" bind pairs, ");
-        sb.append(this.f11310e.length);
+        sb.append(this.f11319e.length);
         sb.append(" packed streams, ");
-        sb.append(this.f11311f.length);
+        sb.append(this.f11320f.length);
         sb.append(" unpack sizes, ");
-        if (this.f11312g) {
-            str = "with CRC " + this.f11313h;
+        if (this.f11321g) {
+            str = "with CRC " + this.f11322h;
         } else {
             str = "without CRC";
         }
         sb.append(str);
         sb.append(" and ");
-        sb.append(this.f11314i);
+        sb.append(this.f11323i);
         sb.append(" unpack streams");
         return sb.toString();
     }

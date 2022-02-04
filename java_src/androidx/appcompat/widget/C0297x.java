@@ -106,20 +106,20 @@ public class C0297x {
         String o;
         Typeface typeface;
         Typeface typeface2;
-        this.f1252j = w0Var.mo1814k(C0763j.f3706a3, this.f1252j);
+        this.f1252j = w0Var.mo1814k(C0763j.f3710a3, this.f1252j);
         int i = Build.VERSION.SDK_INT;
         boolean z = false;
         if (i >= 28) {
-            int k = w0Var.mo1814k(C0763j.f3731f3, -1);
+            int k = w0Var.mo1814k(C0763j.f3735f3, -1);
             this.f1253k = k;
             if (k != -1) {
                 this.f1252j = (this.f1252j & 2) | 0;
             }
         }
-        int i2 = C0763j.f3726e3;
-        if (w0Var.mo1822s(i2) || w0Var.mo1822s(C0763j.f3736g3)) {
+        int i2 = C0763j.f3730e3;
+        if (w0Var.mo1822s(i2) || w0Var.mo1822s(C0763j.f3740g3)) {
             this.f1254l = null;
-            int i3 = C0763j.f3736g3;
+            int i3 = C0763j.f3740g3;
             if (w0Var.mo1822s(i3)) {
                 i2 = i3;
             }
@@ -154,7 +154,7 @@ public class C0297x {
             }
             return;
         }
-        int i7 = C0763j.f3701Z2;
+        int i7 = C0763j.f3705Z2;
         if (w0Var.mo1822s(i7)) {
             this.f1255m = false;
             int k2 = w0Var.mo1814k(i7, 1);
@@ -414,25 +414,25 @@ public class C0297x {
     public void mo1838q(Context context, int i) {
         String o;
         ColorStateList c;
-        C0296w0 t = C0296w0.m1430t(context, i, C0763j.f3691X2);
-        int i2 = C0763j.f3746i3;
+        C0296w0 t = C0296w0.m1430t(context, i, C0763j.f3695X2);
+        int i2 = C0763j.f3750i3;
         if (t.mo1822s(i2)) {
             mo1839r(t.mo1804a(i2, false));
         }
         int i3 = Build.VERSION.SDK_INT;
         if (i3 < 23) {
-            int i4 = C0763j.f3711b3;
+            int i4 = C0763j.f3715b3;
             if (t.mo1822s(i4) && (c = t.mo1806c(i4)) != null) {
                 this.f1243a.setTextColor(c);
             }
         }
-        int i5 = C0763j.f3696Y2;
+        int i5 = C0763j.f3700Y2;
         if (t.mo1822s(i5) && t.mo1809f(i5, -1) == 0) {
             this.f1243a.setTextSize(0, 0.0f);
         }
         m1454B(context, t);
         if (i3 >= 26) {
-            int i6 = C0763j.f3741h3;
+            int i6 = C0763j.f3745h3;
             if (t.mo1822s(i6) && (o = t.mo1818o(i6)) != null) {
                 this.f1243a.setFontVariationSettings(o);
             }

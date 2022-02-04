@@ -33,7 +33,7 @@ public class C1189e {
     public static class C1190a implements TypeEvaluator<C0903c.C0905b[]> {
 
         /* renamed from: a */
-        private C0903c.C0905b[] f5243a;
+        private C0903c.C0905b[] f5250a;
 
         C1190a() {
         }
@@ -41,13 +41,13 @@ public class C1189e {
         /* renamed from: a */
         public C0903c.C0905b[] evaluate(float f, C0903c.C0905b[] bVarArr, C0903c.C0905b[] bVarArr2) {
             if (C0903c.m5305b(bVarArr, bVarArr2)) {
-                if (!C0903c.m5305b(this.f5243a, bVarArr)) {
-                    this.f5243a = C0903c.m5309f(bVarArr);
+                if (!C0903c.m5305b(this.f5250a, bVarArr)) {
+                    this.f5250a = C0903c.m5309f(bVarArr);
                 }
                 for (int i = 0; i < bVarArr.length; i++) {
-                    this.f5243a[i].mo5304d(bVarArr[i], bVarArr2[i], f);
+                    this.f5250a[i].mo5304d(bVarArr[i], bVarArr2[i], f);
                 }
-                return this.f5243a;
+                return this.f5250a;
             }
             throw new IllegalArgumentException("Can't interpolate between two incompatible pathData");
         }
@@ -169,7 +169,7 @@ public class C1189e {
 
     /* renamed from: g */
     private static int m6441g(Resources resources, Resources.Theme theme, AttributeSet attributeSet, XmlPullParser xmlPullParser) {
-        TypedArray k = C0397g.m1946k(resources, theme, attributeSet, C1182a.f5227j);
+        TypedArray k = C0397g.m1946k(resources, theme, attributeSet, C1182a.f5234j);
         int i = 0;
         TypedValue l = C0397g.m1947l(k, xmlPullParser, "value", 0);
         if ((l != null) && m6442h(l.type)) {
@@ -222,8 +222,8 @@ public class C1189e {
 
     /* renamed from: l */
     private static ValueAnimator m6446l(Context context, Resources resources, Resources.Theme theme, AttributeSet attributeSet, ValueAnimator valueAnimator, float f, XmlPullParser xmlPullParser) {
-        TypedArray k = C0397g.m1946k(resources, theme, attributeSet, C1182a.f5224g);
-        TypedArray k2 = C0397g.m1946k(resources, theme, attributeSet, C1182a.f5228k);
+        TypedArray k = C0397g.m1946k(resources, theme, attributeSet, C1182a.f5231g);
+        TypedArray k2 = C0397g.m1946k(resources, theme, attributeSet, C1182a.f5235k);
         if (valueAnimator == null) {
             valueAnimator = new ValueAnimator();
         }
@@ -241,7 +241,7 @@ public class C1189e {
 
     /* renamed from: m */
     private static Keyframe m6447m(Context context, Resources resources, Resources.Theme theme, AttributeSet attributeSet, int i, XmlPullParser xmlPullParser) {
-        TypedArray k = C0397g.m1946k(resources, theme, attributeSet, C1182a.f5227j);
+        TypedArray k = C0397g.m1946k(resources, theme, attributeSet, C1182a.f5234j);
         float f = C0397g.m1941f(k, xmlPullParser, "fraction", 3, -1.0f);
         TypedValue l = C0397g.m1947l(k, xmlPullParser, "value", 0);
         boolean z = l != null;

@@ -22,10 +22,10 @@ public class ButtonBarLayout extends LinearLayout {
 
     public ButtonBarLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        int[] iArr = C0763j.f3644O0;
+        int[] iArr = C0763j.f3648O0;
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, iArr);
         C1013s.m5762g0(this, context, iArr, attributeSet, obtainStyledAttributes, 0, 0);
-        this.f730b = obtainStyledAttributes.getBoolean(C0763j.f3649P0, true);
+        this.f730b = obtainStyledAttributes.getBoolean(C0763j.f3653P0, true);
         obtainStyledAttributes.recycle();
     }
 

@@ -20,17 +20,17 @@ public enum EnumC3370m {
     
 
     /* renamed from: p */
-    private final byte[] f11354p;
+    private final byte[] f11363p;
 
     private EnumC3370m(byte[] bArr) {
-        this.f11354p = bArr;
+        this.f11363p = bArr;
     }
 
     /* renamed from: a */
     static EnumC3370m m14015a(byte[] bArr) {
         EnumC3370m[] mVarArr = (EnumC3370m[]) EnumC3370m.class.getEnumConstants();
         for (EnumC3370m mVar : mVarArr) {
-            if (Arrays.equals(mVar.f11354p, bArr)) {
+            if (Arrays.equals(mVar.f11363p, bArr)) {
                 return mVar;
             }
         }

@@ -25,12 +25,12 @@ public class C0271q extends PopupWindow {
 
     /* renamed from: a */
     private void m1344a(Context context, AttributeSet attributeSet, int i, int i2) {
-        C0296w0 v = C0296w0.m1432v(context, attributeSet, C0763j.f3710b2, i, i2);
-        int i3 = C0763j.f3720d2;
+        C0296w0 v = C0296w0.m1432v(context, attributeSet, C0763j.f3714b2, i, i2);
+        int i3 = C0763j.f3724d2;
         if (v.mo1822s(i3)) {
             m1345b(v.mo1804a(i3, false));
         }
-        setBackgroundDrawable(v.mo1810g(C0763j.f3715c2));
+        setBackgroundDrawable(v.mo1810g(C0763j.f3719c2));
         v.mo1823w();
     }
 

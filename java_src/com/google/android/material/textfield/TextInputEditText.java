@@ -25,20 +25,20 @@ import p069c.p073b.p074a.p090b.C1400k;
 public class TextInputEditText extends C0244k {
 
     /* renamed from: e */
-    private final Rect f10809e;
+    private final Rect f10817e;
 
     /* renamed from: f */
-    private boolean f10810f;
+    private boolean f10818f;
 
     public TextInputEditText(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, C1391b.f5674l);
+        this(context, attributeSet, C1391b.f5682l);
     }
 
     public TextInputEditText(Context context, AttributeSet attributeSet, int i) {
         super(C3288a.m13767c(context, attributeSet, i, 0), attributeSet, i);
-        this.f10809e = new Rect();
-        TypedArray h = C3202o.m13430h(context, attributeSet, C1400k.f5818X3, i, C1399j.Widget_Design_TextInputEditText, new int[0]);
-        setTextInputLayoutFocusedRectEnabled(h.getBoolean(C1400k.f5824Y3, false));
+        this.f10817e = new Rect();
+        TypedArray h = C3202o.m13430h(context, attributeSet, C1400k.f5826X3, i, C1399j.Widget_Design_TextInputEditText, new int[0]);
+        setTextInputLayoutFocusedRectEnabled(h.getBoolean(C1400k.f5832Y3, false));
         h.recycle();
     }
 
@@ -99,18 +99,18 @@ public class TextInputEditText extends C0244k {
     public void getFocusedRect(Rect rect) {
         super.getFocusedRect(rect);
         TextInputLayout textInputLayout = getTextInputLayout();
-        if (textInputLayout != null && this.f10810f && rect != null) {
-            textInputLayout.getFocusedRect(this.f10809e);
-            rect.bottom = this.f10809e.bottom;
+        if (textInputLayout != null && this.f10818f && rect != null) {
+            textInputLayout.getFocusedRect(this.f10817e);
+            rect.bottom = this.f10817e.bottom;
         }
     }
 
     public boolean getGlobalVisibleRect(Rect rect, Point point) {
         boolean globalVisibleRect = super.getGlobalVisibleRect(rect, point);
         TextInputLayout textInputLayout = getTextInputLayout();
-        if (!(textInputLayout == null || !this.f10810f || rect == null)) {
-            textInputLayout.getGlobalVisibleRect(this.f10809e, point);
-            rect.bottom = this.f10809e.bottom;
+        if (!(textInputLayout == null || !this.f10818f || rect == null)) {
+            textInputLayout.getGlobalVisibleRect(this.f10817e, point);
+            rect.bottom = this.f10817e.bottom;
         }
         return globalVisibleRect;
     }
@@ -149,14 +149,14 @@ public class TextInputEditText extends C0244k {
     public boolean requestRectangleOnScreen(Rect rect) {
         boolean requestRectangleOnScreen = super.requestRectangleOnScreen(rect);
         TextInputLayout textInputLayout = getTextInputLayout();
-        if (textInputLayout != null && this.f10810f) {
-            this.f10809e.set(0, textInputLayout.getHeight() - getResources().getDimensionPixelOffset(C1393d.mtrl_edittext_rectangle_top_offset), textInputLayout.getWidth(), textInputLayout.getHeight());
-            textInputLayout.requestRectangleOnScreen(this.f10809e, true);
+        if (textInputLayout != null && this.f10818f) {
+            this.f10817e.set(0, textInputLayout.getHeight() - getResources().getDimensionPixelOffset(C1393d.mtrl_edittext_rectangle_top_offset), textInputLayout.getWidth(), textInputLayout.getHeight());
+            textInputLayout.requestRectangleOnScreen(this.f10817e, true);
         }
         return requestRectangleOnScreen;
     }
 
     public void setTextInputLayoutFocusedRectEnabled(boolean z) {
-        this.f10810f = z;
+        this.f10818f = z;
     }
 }

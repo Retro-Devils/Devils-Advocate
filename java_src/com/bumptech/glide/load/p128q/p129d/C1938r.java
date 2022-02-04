@@ -11,67 +11,67 @@ import java.io.File;
 public final class C1938r {
 
     /* renamed from: a */
-    private static final File f7222a = new File("/proc/self/fd");
+    private static final File f7230a = new File("/proc/self/fd");
 
     /* renamed from: b */
-    private static volatile C1938r f7223b;
+    private static volatile C1938r f7231b;
 
     /* renamed from: c */
-    private final boolean f7224c = m8780d();
+    private final boolean f7232c = m8780d();
 
     /* renamed from: d */
-    private final int f7225d;
+    private final int f7233d;
 
     /* renamed from: e */
-    private final int f7226e;
+    private final int f7234e;
 
     /* renamed from: f */
-    private int f7227f;
+    private int f7235f;
 
     /* renamed from: g */
-    private boolean f7228g = true;
+    private boolean f7236g = true;
 
     C1938r() {
         int i;
         if (Build.VERSION.SDK_INT >= 28) {
-            this.f7225d = 20000;
+            this.f7233d = 20000;
             i = 0;
         } else {
-            this.f7225d = 700;
+            this.f7233d = 700;
             i = 128;
         }
-        this.f7226e = i;
+        this.f7234e = i;
     }
 
     /* renamed from: a */
     public static C1938r m8778a() {
-        if (f7223b == null) {
+        if (f7231b == null) {
             synchronized (C1938r.class) {
-                if (f7223b == null) {
-                    f7223b = new C1938r();
+                if (f7231b == null) {
+                    f7231b = new C1938r();
                 }
             }
         }
-        return f7223b;
+        return f7231b;
     }
 
     /* renamed from: b */
     private synchronized boolean m8779b() {
         boolean z = true;
-        int i = this.f7227f + 1;
-        this.f7227f = i;
+        int i = this.f7235f + 1;
+        this.f7235f = i;
         if (i >= 50) {
-            this.f7227f = 0;
-            int length = f7222a.list().length;
-            if (length >= this.f7225d) {
+            this.f7235f = 0;
+            int length = f7230a.list().length;
+            if (length >= this.f7233d) {
                 z = false;
             }
-            this.f7228g = z;
+            this.f7236g = z;
             if (!z && Log.isLoggable("Downsampler", 5)) {
-                Log.w("Downsampler", "Excluding HARDWARE bitmap config because we're over the file descriptor limit, file descriptors " + length + ", limit " + this.f7225d);
+                Log.w("Downsampler", "Excluding HARDWARE bitmap config because we're over the file descriptor limit, file descriptors " + length + ", limit " + this.f7233d);
             }
         }
-        return this.f7228g;
+        return this.f7236g;
     }
 
     /* renamed from: d */
@@ -144,7 +144,7 @@ public final class C1938r {
     /* renamed from: c */
     public boolean mo7525c(int i, int i2, boolean z, boolean z2) {
         int i3;
-        return z && this.f7224c && Build.VERSION.SDK_INT >= 26 && !z2 && i >= (i3 = this.f7226e) && i2 >= i3 && m8779b();
+        return z && this.f7232c && Build.VERSION.SDK_INT >= 26 && !z2 && i >= (i3 = this.f7234e) && i2 >= i3 && m8779b();
     }
 
     /* access modifiers changed from: package-private */

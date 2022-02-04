@@ -10,13 +10,13 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class C2887z2 extends SQLiteOpenHelper {
 
     /* renamed from: b */
-    private static C2775u f9714b;
+    private static C2775u f9722b;
 
     /* renamed from: c */
-    private static C2887z2 f9715c;
+    private static C2887z2 f9723c;
 
     /* renamed from: d */
-    public boolean f9716d = false;
+    public boolean f9724d = false;
 
     public C2887z2(Context context, String str) {
         super(context, str, (SQLiteDatabase.CursorFactory) null, 1);
@@ -26,17 +26,17 @@ public class C2887z2 extends SQLiteOpenHelper {
     public static synchronized C2887z2 m11970a(Context context, String str, C2775u uVar) {
         C2887z2 z2Var;
         synchronized (C2887z2.class) {
-            f9714b = uVar;
-            if (f9715c == null) {
-                f9715c = new C2887z2(context.getApplicationContext(), str);
+            f9722b = uVar;
+            if (f9723c == null) {
+                f9723c = new C2887z2(context.getApplicationContext(), str);
             }
-            z2Var = f9715c;
+            z2Var = f9723c;
         }
         return z2Var;
     }
 
     public void onCreate(SQLiteDatabase sQLiteDatabase) {
-        this.f9716d = true;
+        this.f9724d = true;
         sQLiteDatabase.execSQL(((((("CREATE TABLE roms(_id integer primary key autoincrement, mdbid integer, gdbid integer, crc integer, gfcover text," + "title text, sortname text, system text, pathid integer, filename text, foldername text, merged_with integer default -1, emulator integer,") + "last_played integer, times_played integer, time_played integer, favorite int, released integer, publisher text, developer text, info text, notes text,") + "merged_last_played integer, merged_times_played integer, merged_time_played integer, rating real,") + "comments INTEGER NOT NULL default 0,lastcomment INTEGER NOT NULL DEFAULT 0,c_rating real NOT NULL default 0, c_rating_count integer NOT NULL default 0,") + "c_played_total integer NOT NULL default 0, c_played_count integer NOT NULL default 0,fuzzy_match integer,forumcreated INTEGER NOT NULL DEFAULT 0,") + "present integer, ignored integer, cover_status integer, cover_requested integer, has_images integer, age_rating integer, youtube text )");
         sQLiteDatabase.execSQL("CREATE INDEX mdbididx ON roms (mdbid)");
         sQLiteDatabase.execSQL("CREATE INDEX sortidx ON roms (sortname)");

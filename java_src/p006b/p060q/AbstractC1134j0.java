@@ -11,41 +11,41 @@ import p006b.p060q.C1095a;
 public abstract class AbstractC1134j0 extends AbstractC1142m {
 
     /* renamed from: L */
-    private static final String[] f5100L = {"android:visibility:visibility", "android:visibility:parent"};
+    private static final String[] f5107L = {"android:visibility:visibility", "android:visibility:parent"};
 
     /* renamed from: M */
-    private int f5101M = 3;
+    private int f5108M = 3;
 
     /* access modifiers changed from: package-private */
     /* renamed from: b.q.j0$a */
     public class C1135a extends C1150n {
 
         /* renamed from: a */
-        final /* synthetic */ ViewGroup f5102a;
+        final /* synthetic */ ViewGroup f5109a;
 
         /* renamed from: b */
-        final /* synthetic */ View f5103b;
+        final /* synthetic */ View f5110b;
 
         /* renamed from: c */
-        final /* synthetic */ View f5104c;
+        final /* synthetic */ View f5111c;
 
         C1135a(ViewGroup viewGroup, View view, View view2) {
-            this.f5102a = viewGroup;
-            this.f5103b = view;
-            this.f5104c = view2;
+            this.f5109a = viewGroup;
+            this.f5110b = view;
+            this.f5111c = view2;
         }
 
         @Override // p006b.p060q.AbstractC1142m.AbstractC1148f, p006b.p060q.C1150n
         /* renamed from: a */
         public void mo5762a(AbstractC1142m mVar) {
-            C1164x.m6383a(this.f5102a).mo5870c(this.f5103b);
+            C1164x.m6383a(this.f5109a).mo5870c(this.f5110b);
         }
 
         @Override // p006b.p060q.AbstractC1142m.AbstractC1148f, p006b.p060q.C1150n
         /* renamed from: b */
         public void mo5763b(AbstractC1142m mVar) {
-            if (this.f5103b.getParent() == null) {
-                C1164x.m6383a(this.f5102a).mo5869a(this.f5103b);
+            if (this.f5110b.getParent() == null) {
+                C1164x.m6383a(this.f5109a).mo5869a(this.f5110b);
             } else {
                 AbstractC1134j0.this.mo5832f();
             }
@@ -54,8 +54,8 @@ public abstract class AbstractC1134j0 extends AbstractC1142m {
         @Override // p006b.p060q.AbstractC1142m.AbstractC1148f
         /* renamed from: e */
         public void mo5765e(AbstractC1142m mVar) {
-            this.f5104c.setTag(C1133j.save_overlay_view, null);
-            C1164x.m6383a(this.f5102a).mo5870c(this.f5103b);
+            this.f5111c.setTag(C1133j.save_overlay_view, null);
+            C1164x.m6383a(this.f5109a).mo5870c(this.f5110b);
             mVar.mo5816P(this);
         }
     }
@@ -65,36 +65,36 @@ public abstract class AbstractC1134j0 extends AbstractC1142m {
     public static class C1136b extends AnimatorListenerAdapter implements AbstractC1142m.AbstractC1148f, C1095a.AbstractC1096a {
 
         /* renamed from: a */
-        private final View f5106a;
+        private final View f5113a;
 
         /* renamed from: b */
-        private final int f5107b;
+        private final int f5114b;
 
         /* renamed from: c */
-        private final ViewGroup f5108c;
+        private final ViewGroup f5115c;
 
         /* renamed from: d */
-        private final boolean f5109d;
+        private final boolean f5116d;
 
         /* renamed from: e */
-        private boolean f5110e;
+        private boolean f5117e;
 
         /* renamed from: f */
-        boolean f5111f = false;
+        boolean f5118f = false;
 
         C1136b(View view, int i, boolean z) {
-            this.f5106a = view;
-            this.f5107b = i;
-            this.f5108c = (ViewGroup) view.getParent();
-            this.f5109d = z;
+            this.f5113a = view;
+            this.f5114b = i;
+            this.f5115c = (ViewGroup) view.getParent();
+            this.f5116d = z;
             m6255g(true);
         }
 
         /* renamed from: f */
         private void m6254f() {
-            if (!this.f5111f) {
-                C1112c0.m6174h(this.f5106a, this.f5107b);
-                ViewGroup viewGroup = this.f5108c;
+            if (!this.f5118f) {
+                C1112c0.m6174h(this.f5113a, this.f5114b);
+                ViewGroup viewGroup = this.f5115c;
                 if (viewGroup != null) {
                     viewGroup.invalidate();
                 }
@@ -105,8 +105,8 @@ public abstract class AbstractC1134j0 extends AbstractC1142m {
         /* renamed from: g */
         private void m6255g(boolean z) {
             ViewGroup viewGroup;
-            if (this.f5109d && this.f5110e != z && (viewGroup = this.f5108c) != null) {
-                this.f5110e = z;
+            if (this.f5116d && this.f5117e != z && (viewGroup = this.f5115c) != null) {
+                this.f5117e = z;
                 C1164x.m6385c(viewGroup, z);
             }
         }
@@ -141,7 +141,7 @@ public abstract class AbstractC1134j0 extends AbstractC1142m {
         }
 
         public void onAnimationCancel(Animator animator) {
-            this.f5111f = true;
+            this.f5118f = true;
         }
 
         public void onAnimationEnd(Animator animator) {
@@ -150,8 +150,8 @@ public abstract class AbstractC1134j0 extends AbstractC1142m {
 
         @Override // p006b.p060q.C1095a.AbstractC1096a
         public void onAnimationPause(Animator animator) {
-            if (!this.f5111f) {
-                C1112c0.m6174h(this.f5106a, this.f5107b);
+            if (!this.f5118f) {
+                C1112c0.m6174h(this.f5113a, this.f5114b);
             }
         }
 
@@ -160,8 +160,8 @@ public abstract class AbstractC1134j0 extends AbstractC1142m {
 
         @Override // p006b.p060q.C1095a.AbstractC1096a
         public void onAnimationResume(Animator animator) {
-            if (!this.f5111f) {
-                C1112c0.m6174h(this.f5106a, 0);
+            if (!this.f5118f) {
+                C1112c0.m6174h(this.f5113a, 0);
             }
         }
 
@@ -174,22 +174,22 @@ public abstract class AbstractC1134j0 extends AbstractC1142m {
     public static class C1137c {
 
         /* renamed from: a */
-        boolean f5112a;
+        boolean f5119a;
 
         /* renamed from: b */
-        boolean f5113b;
+        boolean f5120b;
 
         /* renamed from: c */
-        int f5114c;
+        int f5121c;
 
         /* renamed from: d */
-        int f5115d;
+        int f5122d;
 
         /* renamed from: e */
-        ViewGroup f5116e;
+        ViewGroup f5123e;
 
         /* renamed from: f */
-        ViewGroup f5117f;
+        ViewGroup f5124f;
 
         C1137c() {
         }
@@ -197,21 +197,21 @@ public abstract class AbstractC1134j0 extends AbstractC1142m {
 
     /* renamed from: c0 */
     private void m6239c0(C1159s sVar) {
-        sVar.f5185a.put("android:visibility:visibility", Integer.valueOf(sVar.f5186b.getVisibility()));
-        sVar.f5185a.put("android:visibility:parent", sVar.f5186b.getParent());
+        sVar.f5192a.put("android:visibility:visibility", Integer.valueOf(sVar.f5193b.getVisibility()));
+        sVar.f5192a.put("android:visibility:parent", sVar.f5193b.getParent());
         int[] iArr = new int[2];
-        sVar.f5186b.getLocationOnScreen(iArr);
-        sVar.f5185a.put("android:visibility:screenLocation", iArr);
+        sVar.f5193b.getLocationOnScreen(iArr);
+        sVar.f5192a.put("android:visibility:screenLocation", iArr);
     }
 
     /* JADX WARNING: Code restructure failed: missing block: B:21:0x0075, code lost:
         if (r9 == 0) goto L_0x0088;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:25:0x007f, code lost:
-        if (r0.f5116e == null) goto L_0x0088;
+        if (r0.f5123e == null) goto L_0x0088;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:33:0x0091, code lost:
-        if (r0.f5114c == 0) goto L_0x0093;
+        if (r0.f5121c == 0) goto L_0x0093;
      */
     /* renamed from: d0 */
     /* Code decompiled incorrectly, please refer to instructions dump. */
@@ -225,7 +225,7 @@ public abstract class AbstractC1134j0 extends AbstractC1142m {
     @Override // p006b.p060q.AbstractC1142m
     /* renamed from: D */
     public String[] mo5731D() {
-        return f5100L;
+        return f5107L;
     }
 
     @Override // p006b.p060q.AbstractC1142m
@@ -234,12 +234,12 @@ public abstract class AbstractC1134j0 extends AbstractC1142m {
         if (sVar == null && sVar2 == null) {
             return false;
         }
-        if (sVar != null && sVar2 != null && sVar2.f5185a.containsKey("android:visibility:visibility") != sVar.f5185a.containsKey("android:visibility:visibility")) {
+        if (sVar != null && sVar2 != null && sVar2.f5192a.containsKey("android:visibility:visibility") != sVar.f5192a.containsKey("android:visibility:visibility")) {
             return false;
         }
         C1137c d0 = m6240d0(sVar, sVar2);
-        if (d0.f5112a) {
-            return d0.f5114c == 0 || d0.f5115d == 0;
+        if (d0.f5119a) {
+            return d0.f5121c == 0 || d0.f5122d == 0;
         }
         return false;
     }
@@ -249,16 +249,16 @@ public abstract class AbstractC1134j0 extends AbstractC1142m {
 
     /* renamed from: f0 */
     public Animator mo5795f0(ViewGroup viewGroup, C1159s sVar, int i, C1159s sVar2, int i2) {
-        if ((this.f5101M & 1) != 1 || sVar2 == null) {
+        if ((this.f5108M & 1) != 1 || sVar2 == null) {
             return null;
         }
         if (sVar == null) {
-            View view = (View) sVar2.f5186b.getParent();
-            if (m6240d0(mo5842t(view, false), mo5812E(view, false)).f5112a) {
+            View view = (View) sVar2.f5193b.getParent();
+            if (m6240d0(mo5842t(view, false), mo5812E(view, false)).f5119a) {
                 return null;
             }
         }
-        return mo5776e0(viewGroup, sVar2.f5186b, sVar, sVar2);
+        return mo5776e0(viewGroup, sVar2.f5193b, sVar, sVar2);
     }
 
     @Override // p006b.p060q.AbstractC1142m
@@ -271,7 +271,7 @@ public abstract class AbstractC1134j0 extends AbstractC1142m {
     public abstract Animator mo5777g0(ViewGroup viewGroup, View view, C1159s sVar, C1159s sVar2);
 
     /* JADX WARNING: Code restructure failed: missing block: B:37:0x0089, code lost:
-        if (r17.f5126A != false) goto L_0x008b;
+        if (r17.f5133A != false) goto L_0x008b;
      */
     /* JADX WARNING: Removed duplicated region for block: B:23:0x004a  */
     /* renamed from: h0 */
@@ -286,7 +286,7 @@ public abstract class AbstractC1134j0 extends AbstractC1142m {
     /* renamed from: i0 */
     public void mo5797i0(int i) {
         if ((i & -4) == 0) {
-            this.f5101M = i;
+            this.f5108M = i;
             return;
         }
         throw new IllegalArgumentException("Only MODE_IN and MODE_OUT flags are allowed");
@@ -302,12 +302,12 @@ public abstract class AbstractC1134j0 extends AbstractC1142m {
     /* renamed from: n */
     public Animator mo5734n(ViewGroup viewGroup, C1159s sVar, C1159s sVar2) {
         C1137c d0 = m6240d0(sVar, sVar2);
-        if (!d0.f5112a) {
+        if (!d0.f5119a) {
             return null;
         }
-        if (d0.f5116e == null && d0.f5117f == null) {
+        if (d0.f5123e == null && d0.f5124f == null) {
             return null;
         }
-        return d0.f5113b ? mo5795f0(viewGroup, sVar, d0.f5114c, sVar2, d0.f5115d) : mo5796h0(viewGroup, sVar, d0.f5114c, sVar2, d0.f5115d);
+        return d0.f5120b ? mo5795f0(viewGroup, sVar, d0.f5121c, sVar2, d0.f5122d) : mo5796h0(viewGroup, sVar, d0.f5121c, sVar2, d0.f5122d);
     }
 }

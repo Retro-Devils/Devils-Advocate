@@ -14,13 +14,13 @@ import java.util.zip.ZipOutputStream;
 public class C2318g {
 
     /* renamed from: a */
-    private AbstractC2319a f8187a = null;
+    private AbstractC2319a f8195a = null;
 
     /* renamed from: b */
-    private AbstractC2321c f8188b = null;
+    private AbstractC2321c f8196b = null;
 
     /* renamed from: c */
-    Context f8189c;
+    Context f8197c;
 
     /* renamed from: com.digdroid.alman.dig.g$a */
     public interface AbstractC2319a {
@@ -91,8 +91,8 @@ public class C2318g {
         /* access modifiers changed from: protected */
         /* renamed from: b */
         public void onPostExecute(Boolean bool) {
-            if (C2318g.this.f8187a != null) {
-                C2318g.this.f8187a.mo7932a(bool.booleanValue());
+            if (C2318g.this.f8195a != null) {
+                C2318g.this.f8195a.mo7932a(bool.booleanValue());
             }
         }
     }
@@ -185,14 +185,14 @@ public class C2318g {
         /* access modifiers changed from: protected */
         /* renamed from: b */
         public void onPostExecute(Boolean bool) {
-            if (C2318g.this.f8188b != null) {
-                C2318g.this.f8188b.mo7966X(bool.booleanValue());
+            if (C2318g.this.f8196b != null) {
+                C2318g.this.f8196b.mo7966X(bool.booleanValue());
             }
         }
     }
 
     public C2318g(Context context) {
-        this.f8189c = context;
+        this.f8197c = context;
     }
 
     /* access modifiers changed from: package-private */
@@ -221,9 +221,9 @@ public class C2318g {
     /* access modifiers changed from: package-private */
     /* renamed from: e */
     public void mo8443e() {
-        File[] b = C2372h2.m10298b(this.f8189c);
+        File[] b = C2372h2.m10298b(this.f8197c);
         if (b == null || b.length <= 0) {
-            AbstractC2319a aVar = this.f8187a;
+            AbstractC2319a aVar = this.f8195a;
             if (aVar != null) {
                 aVar.mo7932a(false);
                 return;
@@ -249,12 +249,12 @@ public class C2318g {
 
     /* renamed from: g */
     public void mo8445g(AbstractC2319a aVar) {
-        this.f8187a = aVar;
+        this.f8195a = aVar;
     }
 
     /* renamed from: h */
     public void mo8446h(AbstractC2321c cVar) {
-        this.f8188b = cVar;
+        this.f8196b = cVar;
     }
 
     /* access modifiers changed from: package-private */

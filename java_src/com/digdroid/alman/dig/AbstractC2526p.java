@@ -5,27 +5,27 @@ package com.digdroid.alman.dig;
 public abstract class AbstractC2526p {
 
     /* renamed from: a */
-    int f8770a = 0;
+    int f8778a = 0;
 
     /* renamed from: b */
-    int f8771b = 5;
+    int f8779b = 5;
 
     /* renamed from: c */
-    int f8772c = 600000;
+    int f8780c = 600000;
 
     /* renamed from: d */
-    long f8773d = 0;
+    long f8781d = 0;
 
     /* access modifiers changed from: package-private */
     /* renamed from: a */
     public void mo8881a() {
         synchronized (this) {
             if (!mo8883e()) {
-                this.f8770a++;
+                this.f8778a++;
             }
-            if (this.f8770a == this.f8771b) {
-                this.f8770a = 0;
-                this.f8773d = System.currentTimeMillis();
+            if (this.f8778a == this.f8779b) {
+                this.f8778a = 0;
+                this.f8781d = System.currentTimeMillis();
             }
         }
     }
@@ -51,7 +51,7 @@ public abstract class AbstractC2526p {
     public boolean mo8883e() {
         boolean z;
         synchronized (this) {
-            z = System.currentTimeMillis() - this.f8773d < ((long) this.f8772c);
+            z = System.currentTimeMillis() - this.f8781d < ((long) this.f8780c);
         }
         return z;
     }

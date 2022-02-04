@@ -7,18 +7,18 @@ import android.content.Context;
 public class C2785v {
 
     /* renamed from: a */
-    Context f9437a;
+    Context f9445a;
 
     /* renamed from: b */
-    private String f9438b;
+    private String f9446b;
 
     /* renamed from: c */
-    private String f9439c;
+    private String f9447c;
 
     public C2785v(Context context, String str, String str2) {
-        this.f9437a = context;
-        this.f9438b = str;
-        this.f9439c = str2;
+        this.f9445a = context;
+        this.f9446b = str;
+        this.f9447c = str2;
     }
 
     /* JADX WARNING: Removed duplicated region for block: B:68:0x0177 A[SYNTHETIC, Splitter:B:68:0x0177] */

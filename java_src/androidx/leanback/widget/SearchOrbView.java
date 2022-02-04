@@ -146,11 +146,11 @@ public class SearchOrbView extends FrameLayout implements View.OnClickListener {
         float dimensionPixelSize = (float) context.getResources().getDimensionPixelSize(C1071c.lb_search_orb_focused_z);
         this.f2745l = dimensionPixelSize;
         this.f2744k = (float) context.getResources().getDimensionPixelSize(C1071c.lb_search_orb_unfocused_z);
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4942V, i, 0);
-        Drawable drawable = obtainStyledAttributes.getDrawable(C1080l.f4945Y);
-        setOrbIcon(drawable == null ? resources.getDrawable(C1072d.APKTOOL_DUMMY_16f) : drawable);
-        int color = obtainStyledAttributes.getColor(C1080l.f4944X, resources.getColor(C1070b.lb_default_search_color));
-        setOrbColors(new C0545c(color, obtainStyledAttributes.getColor(C1080l.f4943W, color), obtainStyledAttributes.getColor(C1080l.f4946Z, 0)));
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1080l.f4949V, i, 0);
+        Drawable drawable = obtainStyledAttributes.getDrawable(C1080l.f4952Y);
+        setOrbIcon(drawable == null ? resources.getDrawable(C1072d.f4925a) : drawable);
+        int color = obtainStyledAttributes.getColor(C1080l.f4951X, resources.getColor(C1070b.lb_default_search_color));
+        setOrbColors(new C0545c(color, obtainStyledAttributes.getColor(C1080l.f4950W, color), obtainStyledAttributes.getColor(C1080l.f4953Z, 0)));
         obtainStyledAttributes.recycle();
         setFocusable(true);
         setClipChildren(false);

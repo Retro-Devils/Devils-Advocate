@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 public class C2316f4 extends C2254d4 {
 
     /* renamed from: p0 */
-    long f8185p0;
+    long f8193p0;
 
     /* renamed from: com.digdroid.alman.dig.f4$a */
     class DialogInterface$OnClickListenerC2317a implements DialogInterface.OnClickListener {
@@ -23,13 +23,13 @@ public class C2316f4 extends C2254d4 {
         }
 
         public void onClick(DialogInterface dialogInterface, int i) {
-            Matcher matcher = Pattern.compile("v=([-_0-9a-zA-Z]+)$").matcher(C2316f4.this.f8045o0);
+            Matcher matcher = Pattern.compile("v=([-_0-9a-zA-Z]+)$").matcher(C2316f4.this.f8053o0);
             if (matcher.find()) {
                 ContentValues contentValues = new ContentValues();
                 contentValues.put("youtube", matcher.group(1));
-                SQLiteDatabase c = C2316f4.this.f8794a0.mo9325c();
-                c.update("roms", contentValues, "_id=" + C2316f4.this.f8185p0, null);
-                C2316f4.this.f8806m0.mo8264R();
+                SQLiteDatabase c = C2316f4.this.f8802a0.mo9325c();
+                c.update("roms", contentValues, "_id=" + C2316f4.this.f8193p0, null);
+                C2316f4.this.f8814m0.mo8264R();
             }
         }
     }
@@ -56,14 +56,14 @@ public class C2316f4 extends C2254d4 {
     /* renamed from: h3 */
     public String mo8245h3() {
         String str;
-        this.f8185p0 = mo2568h0().getLong("game_id");
-        SQLiteDatabase c = this.f8794a0.mo9325c();
-        Cursor rawQuery = c.rawQuery("SELECT title,system FROM roms WHERE _id=" + this.f8185p0, null);
+        this.f8193p0 = mo2568h0().getLong("game_id");
+        SQLiteDatabase c = this.f8802a0.mo9325c();
+        Cursor rawQuery = c.rawQuery("SELECT title,system FROM roms WHERE _id=" + this.f8193p0, null);
         if (rawQuery.moveToFirst()) {
             try {
                 StringBuilder sb = new StringBuilder();
                 sb.append("https://www.youtube.com/results?search_query=");
-                sb.append(URLEncoder.encode(rawQuery.getString(0) + " " + this.f8795b0.mo8568s(rawQuery.getString(1)), "utf-8"));
+                sb.append(URLEncoder.encode(rawQuery.getString(0) + " " + this.f8803b0.mo8568s(rawQuery.getString(1)), "utf-8"));
                 str = sb.toString();
             } catch (Exception unused) {
             }
@@ -87,7 +87,7 @@ public class C2316f4 extends C2254d4 {
     /* renamed from: p2 */
     public void mo8439p2(Menu menu) {
         super.mo8439p2(menu);
-        menu.findItem(R.id.save_video).setVisible(Pattern.compile("v=[-_0-9a-zA-Z]+$").matcher(this.f8045o0).find());
+        menu.findItem(R.id.save_video).setVisible(Pattern.compile("v=[-_0-9a-zA-Z]+$").matcher(this.f8053o0).find());
     }
 
     /* access modifiers changed from: package-private */

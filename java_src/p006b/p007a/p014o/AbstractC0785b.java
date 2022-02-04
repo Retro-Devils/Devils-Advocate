@@ -9,10 +9,10 @@ import android.view.View;
 public abstract class AbstractC0785b {
 
     /* renamed from: b */
-    private Object f3929b;
+    private Object f3933b;
 
     /* renamed from: c */
-    private boolean f3930c;
+    private boolean f3934c;
 
     /* renamed from: b.a.o.b$a */
     public interface AbstractC0786a {
@@ -46,7 +46,7 @@ public abstract class AbstractC0785b {
 
     /* renamed from: h */
     public Object mo4685h() {
-        return this.f3929b;
+        return this.f3933b;
     }
 
     /* renamed from: i */
@@ -54,7 +54,7 @@ public abstract class AbstractC0785b {
 
     /* renamed from: j */
     public boolean mo4686j() {
-        return this.f3930c;
+        return this.f3934c;
     }
 
     /* renamed from: k */
@@ -74,7 +74,7 @@ public abstract class AbstractC0785b {
 
     /* renamed from: p */
     public void mo4687p(Object obj) {
-        this.f3929b = obj;
+        this.f3933b = obj;
     }
 
     /* renamed from: q */
@@ -85,6 +85,6 @@ public abstract class AbstractC0785b {
 
     /* renamed from: s */
     public void mo445s(boolean z) {
-        this.f3930c = z;
+        this.f3934c = z;
     }
 }

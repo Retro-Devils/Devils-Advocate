@@ -404,14 +404,14 @@ public class CoordinatorLayout extends ViewGroup implements AbstractC1006l, Abst
 
         C0340f(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C0897c.f4473e);
-            this.f1925c = obtainStyledAttributes.getInteger(C0897c.f4474f, 0);
-            this.f1928f = obtainStyledAttributes.getResourceId(C0897c.f4475g, -1);
-            this.f1926d = obtainStyledAttributes.getInteger(C0897c.f4476h, 0);
-            this.f1927e = obtainStyledAttributes.getInteger(C0897c.f4480l, -1);
-            this.f1929g = obtainStyledAttributes.getInt(C0897c.f4479k, 0);
-            this.f1930h = obtainStyledAttributes.getInt(C0897c.f4478j, 0);
-            int i = C0897c.f4477i;
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C0897c.f4477e);
+            this.f1925c = obtainStyledAttributes.getInteger(C0897c.f4478f, 0);
+            this.f1928f = obtainStyledAttributes.getResourceId(C0897c.f4479g, -1);
+            this.f1926d = obtainStyledAttributes.getInteger(C0897c.f4480h, 0);
+            this.f1927e = obtainStyledAttributes.getInteger(C0897c.f4484l, -1);
+            this.f1929g = obtainStyledAttributes.getInt(C0897c.f4483k, 0);
+            this.f1930h = obtainStyledAttributes.getInt(C0897c.f4482j, 0);
+            int i = C0897c.f4481i;
             boolean hasValue = obtainStyledAttributes.hasValue(i);
             this.f1924b = hasValue;
             if (hasValue) {
@@ -744,17 +744,17 @@ public class CoordinatorLayout extends ViewGroup implements AbstractC1006l, Abst
         this.f1906l = new int[2];
         this.f1907m = new int[2];
         this.f1920z = new C1009o(this);
-        int[] iArr = C0897c.f4470b;
+        int[] iArr = C0897c.f4474b;
         TypedArray obtainStyledAttributes = i == 0 ? context.obtainStyledAttributes(attributeSet, iArr, 0, C0896b.Widget_Support_CoordinatorLayout) : context.obtainStyledAttributes(attributeSet, iArr, i, 0);
         if (Build.VERSION.SDK_INT >= 29) {
-            int[] iArr2 = C0897c.f4470b;
+            int[] iArr2 = C0897c.f4474b;
             if (i == 0) {
                 saveAttributeDataForStyleable(context, iArr2, attributeSet, obtainStyledAttributes, 0, C0896b.Widget_Support_CoordinatorLayout);
             } else {
                 saveAttributeDataForStyleable(context, iArr2, attributeSet, obtainStyledAttributes, i, 0);
             }
         }
-        int resourceId = obtainStyledAttributes.getResourceId(C0897c.f4471c, 0);
+        int resourceId = obtainStyledAttributes.getResourceId(C0897c.f4475c, 0);
         if (resourceId != 0) {
             Resources resources = context.getResources();
             this.f1910p = resources.getIntArray(resourceId);
@@ -765,7 +765,7 @@ public class CoordinatorLayout extends ViewGroup implements AbstractC1006l, Abst
                 iArr3[i2] = (int) (((float) iArr3[i2]) * f);
             }
         }
-        this.f1917w = obtainStyledAttributes.getDrawable(C0897c.f4472d);
+        this.f1917w = obtainStyledAttributes.getDrawable(C0897c.f4476d);
         obtainStyledAttributes.recycle();
         m1670X();
         super.setOnHierarchyChangeListener(new ViewGroup$OnHierarchyChangeListenerC0339e());

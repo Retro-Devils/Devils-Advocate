@@ -8,18 +8,18 @@ import android.widget.ImageButton;
 public class C3208q extends ImageButton {
 
     /* renamed from: b */
-    private int f10722b;
+    private int f10730b;
 
     /* renamed from: b */
     public final void mo10802b(int i, boolean z) {
         super.setVisibility(i);
         if (z) {
-            this.f10722b = i;
+            this.f10730b = i;
         }
     }
 
     public final int getUserSetVisibility() {
-        return this.f10722b;
+        return this.f10730b;
     }
 
     public void setVisibility(int i) {

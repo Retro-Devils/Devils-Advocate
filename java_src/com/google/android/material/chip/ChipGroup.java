@@ -18,34 +18,34 @@ import p069c.p073b.p074a.p090b.C1399j;
 public class ChipGroup extends C3172d {
 
     /* renamed from: f */
-    private static final int f10295f = C1399j.Widget_MaterialComponents_ChipGroup;
+    private static final int f10303f = C1399j.Widget_MaterialComponents_ChipGroup;
 
     /* renamed from: g */
-    private int f10296g;
+    private int f10304g;
 
     /* renamed from: h */
-    private int f10297h;
+    private int f10305h;
 
     /* renamed from: i */
-    private boolean f10298i;
+    private boolean f10306i;
 
     /* renamed from: j */
-    private boolean f10299j;
+    private boolean f10307j;
 
     /* renamed from: k */
-    private AbstractC3098d f10300k;
+    private AbstractC3098d f10308k;
 
     /* renamed from: l */
-    private final C3096b f10301l;
+    private final C3096b f10309l;
 
     /* renamed from: m */
-    private ViewGroup$OnHierarchyChangeListenerC3099e f10302m;
+    private ViewGroup$OnHierarchyChangeListenerC3099e f10310m;
 
     /* renamed from: n */
-    private int f10303n;
+    private int f10311n;
 
     /* renamed from: o */
-    private boolean f10304o;
+    private boolean f10312o;
 
     /* access modifiers changed from: private */
     /* renamed from: com.google.android.material.chip.ChipGroup$b */
@@ -54,16 +54,16 @@ public class ChipGroup extends C3172d {
         }
 
         public void onCheckedChanged(CompoundButton compoundButton, boolean z) {
-            if (!ChipGroup.this.f10304o) {
-                if (!ChipGroup.this.getCheckedChipIds().isEmpty() || !ChipGroup.this.f10299j) {
+            if (!ChipGroup.this.f10312o) {
+                if (!ChipGroup.this.getCheckedChipIds().isEmpty() || !ChipGroup.this.f10307j) {
                     int id = compoundButton.getId();
                     if (z) {
-                        if (!(ChipGroup.this.f10303n == -1 || ChipGroup.this.f10303n == id || !ChipGroup.this.f10298i)) {
+                        if (!(ChipGroup.this.f10311n == -1 || ChipGroup.this.f10311n == id || !ChipGroup.this.f10306i)) {
                             ChipGroup chipGroup = ChipGroup.this;
-                            chipGroup.m12829q(chipGroup.f10303n, false);
+                            chipGroup.m12829q(chipGroup.f10311n, false);
                         }
                         ChipGroup.this.setCheckedId(id);
-                    } else if (ChipGroup.this.f10303n == id) {
+                    } else if (ChipGroup.this.f10311n == id) {
                         ChipGroup.this.setCheckedId(-1);
                     }
                 } else {
@@ -99,7 +99,7 @@ public class ChipGroup extends C3172d {
     private class ViewGroup$OnHierarchyChangeListenerC3099e implements ViewGroup.OnHierarchyChangeListener {
 
         /* renamed from: b */
-        private ViewGroup.OnHierarchyChangeListener f10306b;
+        private ViewGroup.OnHierarchyChangeListener f10314b;
 
         private ViewGroup$OnHierarchyChangeListenerC3099e() {
         }
@@ -109,9 +109,9 @@ public class ChipGroup extends C3172d {
                 if (view2.getId() == -1) {
                     view2.setId(Build.VERSION.SDK_INT >= 17 ? View.generateViewId() : view2.hashCode());
                 }
-                ((Chip) view2).setOnCheckedChangeListenerInternal(ChipGroup.this.f10301l);
+                ((Chip) view2).setOnCheckedChangeListenerInternal(ChipGroup.this.f10309l);
             }
-            ViewGroup.OnHierarchyChangeListener onHierarchyChangeListener = this.f10306b;
+            ViewGroup.OnHierarchyChangeListener onHierarchyChangeListener = this.f10314b;
             if (onHierarchyChangeListener != null) {
                 onHierarchyChangeListener.onChildViewAdded(view, view2);
             }
@@ -121,7 +121,7 @@ public class ChipGroup extends C3172d {
             if (view == ChipGroup.this && (view2 instanceof Chip)) {
                 ((Chip) view2).setOnCheckedChangeListenerInternal(null);
             }
-            ViewGroup.OnHierarchyChangeListener onHierarchyChangeListener = this.f10306b;
+            ViewGroup.OnHierarchyChangeListener onHierarchyChangeListener = this.f10314b;
             if (onHierarchyChangeListener != null) {
                 onHierarchyChangeListener.onChildViewRemoved(view, view2);
             }
@@ -155,9 +155,9 @@ public class ChipGroup extends C3172d {
     /* access modifiers changed from: public */
     /* renamed from: p */
     private void m12828p(int i, boolean z) {
-        this.f10303n = i;
-        AbstractC3098d dVar = this.f10300k;
-        if (dVar != null && this.f10298i && z) {
+        this.f10311n = i;
+        AbstractC3098d dVar = this.f10308k;
+        if (dVar != null && this.f10306i && z) {
             dVar.mo10263a(this, i);
         }
     }
@@ -168,9 +168,9 @@ public class ChipGroup extends C3172d {
     private void m12829q(int i, boolean z) {
         View findViewById = findViewById(i);
         if (findViewById instanceof Chip) {
-            this.f10304o = true;
+            this.f10312o = true;
             ((Chip) findViewById).setChecked(z);
-            this.f10304o = false;
+            this.f10312o = false;
         }
     }
 
@@ -185,8 +185,8 @@ public class ChipGroup extends C3172d {
         if (view instanceof Chip) {
             Chip chip = (Chip) view;
             if (chip.isChecked()) {
-                int i2 = this.f10303n;
-                if (i2 != -1 && this.f10298i) {
+                int i2 = this.f10311n;
+                if (i2 != -1 && this.f10306i) {
                     m12829q(i2, false);
                 }
                 setCheckedId(chip.getId());
@@ -223,8 +223,8 @@ public class ChipGroup extends C3172d {
     }
 
     public int getCheckedChipId() {
-        if (this.f10298i) {
-            return this.f10303n;
+        if (this.f10306i) {
+            return this.f10311n;
         }
         return -1;
     }
@@ -235,7 +235,7 @@ public class ChipGroup extends C3172d {
             View childAt = getChildAt(i);
             if ((childAt instanceof Chip) && ((Chip) childAt).isChecked()) {
                 arrayList.add(Integer.valueOf(childAt.getId()));
-                if (this.f10298i) {
+                if (this.f10306i) {
                     return arrayList;
                 }
             }
@@ -244,23 +244,23 @@ public class ChipGroup extends C3172d {
     }
 
     public int getChipSpacingHorizontal() {
-        return this.f10296g;
+        return this.f10304g;
     }
 
     public int getChipSpacingVertical() {
-        return this.f10297h;
+        return this.f10305h;
     }
 
     /* renamed from: m */
     public void mo10239m() {
-        this.f10304o = true;
+        this.f10312o = true;
         for (int i = 0; i < getChildCount(); i++) {
             View childAt = getChildAt(i);
             if (childAt instanceof Chip) {
                 ((Chip) childAt).setChecked(false);
             }
         }
-        this.f10304o = false;
+        this.f10312o = false;
         setCheckedId(-1);
     }
 
@@ -284,16 +284,16 @@ public class ChipGroup extends C3172d {
 
     /* renamed from: o */
     public boolean mo10241o() {
-        return this.f10298i;
+        return this.f10306i;
     }
 
     /* access modifiers changed from: protected */
     public void onFinishInflate() {
         super.onFinishInflate();
-        int i = this.f10303n;
+        int i = this.f10311n;
         if (i != -1) {
             m12829q(i, true);
-            setCheckedId(this.f10303n);
+            setCheckedId(this.f10311n);
         }
     }
 
@@ -308,8 +308,8 @@ public class ChipGroup extends C3172d {
     }
 
     public void setChipSpacingHorizontal(int i) {
-        if (this.f10296g != i) {
-            this.f10296g = i;
+        if (this.f10304g != i) {
+            this.f10304g = i;
             setItemSpacing(i);
             requestLayout();
         }
@@ -324,8 +324,8 @@ public class ChipGroup extends C3172d {
     }
 
     public void setChipSpacingVertical(int i) {
-        if (this.f10297h != i) {
-            this.f10297h = i;
+        if (this.f10305h != i) {
+            this.f10305h = i;
             setLineSpacing(i);
             requestLayout();
         }
@@ -351,15 +351,15 @@ public class ChipGroup extends C3172d {
     }
 
     public void setOnCheckedChangeListener(AbstractC3098d dVar) {
-        this.f10300k = dVar;
+        this.f10308k = dVar;
     }
 
     public void setOnHierarchyChangeListener(ViewGroup.OnHierarchyChangeListener onHierarchyChangeListener) {
-        this.f10302m.f10306b = onHierarchyChangeListener;
+        this.f10310m.f10314b = onHierarchyChangeListener;
     }
 
     public void setSelectionRequired(boolean z) {
-        this.f10299j = z;
+        this.f10307j = z;
     }
 
     @Deprecated
@@ -386,8 +386,8 @@ public class ChipGroup extends C3172d {
     }
 
     public void setSingleSelection(boolean z) {
-        if (this.f10298i != z) {
-            this.f10298i = z;
+        if (this.f10306i != z) {
+            this.f10306i = z;
             mo10239m();
         }
     }

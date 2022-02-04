@@ -15,19 +15,19 @@ import com.bumptech.glide.p144t.C2081j;
 final class C2007e implements AbstractC2004c {
 
     /* renamed from: b */
-    private final Context f7417b;
+    private final Context f7425b;
 
     /* renamed from: c */
-    final AbstractC2004c.AbstractC2005a f7418c;
+    final AbstractC2004c.AbstractC2005a f7426c;
 
     /* renamed from: d */
-    boolean f7419d;
+    boolean f7427d;
 
     /* renamed from: e */
-    private boolean f7420e;
+    private boolean f7428e;
 
     /* renamed from: f */
-    private final BroadcastReceiver f7421f = new C2008a();
+    private final BroadcastReceiver f7429f = new C2008a();
 
     /* renamed from: com.bumptech.glide.o.e$a */
     class C2008a extends BroadcastReceiver {
@@ -36,30 +36,30 @@ final class C2007e implements AbstractC2004c {
 
         public void onReceive(Context context, Intent intent) {
             C2007e eVar = C2007e.this;
-            boolean z = eVar.f7419d;
-            eVar.f7419d = eVar.mo7674l(context);
-            if (z != C2007e.this.f7419d) {
+            boolean z = eVar.f7427d;
+            eVar.f7427d = eVar.mo7674l(context);
+            if (z != C2007e.this.f7427d) {
                 if (Log.isLoggable("ConnectivityMonitor", 3)) {
-                    Log.d("ConnectivityMonitor", "connectivity changed, isConnected: " + C2007e.this.f7419d);
+                    Log.d("ConnectivityMonitor", "connectivity changed, isConnected: " + C2007e.this.f7427d);
                 }
                 C2007e eVar2 = C2007e.this;
-                eVar2.f7418c.mo7064a(eVar2.f7419d);
+                eVar2.f7426c.mo7064a(eVar2.f7427d);
             }
         }
     }
 
     C2007e(Context context, AbstractC2004c.AbstractC2005a aVar) {
-        this.f7417b = context.getApplicationContext();
-        this.f7418c = aVar;
+        this.f7425b = context.getApplicationContext();
+        this.f7426c = aVar;
     }
 
     /* renamed from: m */
     private void m9079m() {
-        if (!this.f7420e) {
-            this.f7419d = mo7674l(this.f7417b);
+        if (!this.f7428e) {
+            this.f7427d = mo7674l(this.f7425b);
             try {
-                this.f7417b.registerReceiver(this.f7421f, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
-                this.f7420e = true;
+                this.f7425b.registerReceiver(this.f7429f, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
+                this.f7428e = true;
             } catch (SecurityException e) {
                 if (Log.isLoggable("ConnectivityMonitor", 5)) {
                     Log.w("ConnectivityMonitor", "Failed to register", e);
@@ -70,9 +70,9 @@ final class C2007e implements AbstractC2004c {
 
     /* renamed from: n */
     private void m9080n() {
-        if (this.f7420e) {
-            this.f7417b.unregisterReceiver(this.f7421f);
-            this.f7420e = false;
+        if (this.f7428e) {
+            this.f7425b.unregisterReceiver(this.f7429f);
+            this.f7428e = false;
         }
     }
 

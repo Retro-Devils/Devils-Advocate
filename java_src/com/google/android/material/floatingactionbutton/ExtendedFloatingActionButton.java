@@ -25,59 +25,59 @@ import p069c.p073b.p074a.p090b.p092l.C1408h;
 public class ExtendedFloatingActionButton extends MaterialButton implements CoordinatorLayout.AbstractC0336b {
 
     /* renamed from: s */
-    private static final int f10466s = C1399j.Widget_MaterialComponents_ExtendedFloatingActionButton_Icon;
+    private static final int f10474s = C1399j.Widget_MaterialComponents_ExtendedFloatingActionButton_Icon;
 
     /* renamed from: t */
-    static final Property<View, Float> f10467t = new C3141b(Float.class, "width");
+    static final Property<View, Float> f10475t = new C3141b(Float.class, "width");
 
     /* renamed from: u */
-    static final Property<View, Float> f10468u = new C3142c(Float.class, "height");
+    static final Property<View, Float> f10476u = new C3142c(Float.class, "height");
 
     /* renamed from: A */
-    private boolean f10469A;
+    private boolean f10477A;
 
     /* renamed from: v */
-    private final AbstractC3163d f10470v;
+    private final AbstractC3163d f10478v;
 
     /* renamed from: w */
-    private final AbstractC3163d f10471w;
+    private final AbstractC3163d f10479w;
 
     /* renamed from: x */
-    private final AbstractC3163d f10472x;
+    private final AbstractC3163d f10480x;
 
     /* renamed from: y */
-    private final AbstractC3163d f10473y;
+    private final AbstractC3163d f10481y;
 
     /* renamed from: z */
-    private final CoordinatorLayout.AbstractC0337c<ExtendedFloatingActionButton> f10474z;
+    private final CoordinatorLayout.AbstractC0337c<ExtendedFloatingActionButton> f10482z;
 
     protected static class ExtendedFloatingActionButtonBehavior<T extends ExtendedFloatingActionButton> extends CoordinatorLayout.AbstractC0337c<T> {
 
         /* renamed from: a */
-        private Rect f10475a;
+        private Rect f10483a;
 
         /* renamed from: b */
-        private AbstractC3143d f10476b;
+        private AbstractC3143d f10484b;
 
         /* renamed from: c */
-        private AbstractC3143d f10477c;
+        private AbstractC3143d f10485c;
 
         /* renamed from: d */
-        private boolean f10478d;
+        private boolean f10486d;
 
         /* renamed from: e */
-        private boolean f10479e;
+        private boolean f10487e;
 
         public ExtendedFloatingActionButtonBehavior() {
-            this.f10478d = false;
-            this.f10479e = true;
+            this.f10486d = false;
+            this.f10487e = true;
         }
 
         public ExtendedFloatingActionButtonBehavior(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1400k.f5779R0);
-            this.f10478d = obtainStyledAttributes.getBoolean(C1400k.f5785S0, false);
-            this.f10479e = obtainStyledAttributes.getBoolean(C1400k.f5791T0, true);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, C1400k.f5787R0);
+            this.f10486d = obtainStyledAttributes.getBoolean(C1400k.f5793S0, false);
+            this.f10487e = obtainStyledAttributes.getBoolean(C1400k.f5799T0, true);
             obtainStyledAttributes.recycle();
         }
 
@@ -92,7 +92,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
 
         /* renamed from: J */
         private boolean m13104J(View view, ExtendedFloatingActionButton extendedFloatingActionButton) {
-            return (this.f10478d || this.f10479e) && ((CoordinatorLayout.C0340f) extendedFloatingActionButton.getLayoutParams()).mo2120e() == view.getId();
+            return (this.f10486d || this.f10487e) && ((CoordinatorLayout.C0340f) extendedFloatingActionButton.getLayoutParams()).mo2120e() == view.getId();
         }
 
         /* renamed from: L */
@@ -100,10 +100,10 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
             if (!m13104J(appBarLayout, extendedFloatingActionButton)) {
                 return false;
             }
-            if (this.f10475a == null) {
-                this.f10475a = new Rect();
+            if (this.f10483a == null) {
+                this.f10483a = new Rect();
             }
-            Rect rect = this.f10475a;
+            Rect rect = this.f10483a;
             C3171c.m13324a(coordinatorLayout, appBarLayout, rect);
             if (rect.bottom <= appBarLayout.getMinimumHeightForVisibleOverlappingContent()) {
                 mo10493K(extendedFloatingActionButton);
@@ -129,8 +129,8 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
         /* access modifiers changed from: protected */
         /* renamed from: E */
         public void mo10489E(ExtendedFloatingActionButton extendedFloatingActionButton) {
-            boolean z = this.f10479e;
-            extendedFloatingActionButton.m13101l(z ? extendedFloatingActionButton.f10471w : extendedFloatingActionButton.f10472x, z ? this.f10477c : this.f10476b);
+            boolean z = this.f10487e;
+            extendedFloatingActionButton.m13101l(z ? extendedFloatingActionButton.f10479w : extendedFloatingActionButton.f10480x, z ? this.f10485c : this.f10484b);
         }
 
         /* renamed from: F */
@@ -172,8 +172,8 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
         /* access modifiers changed from: protected */
         /* renamed from: K */
         public void mo10493K(ExtendedFloatingActionButton extendedFloatingActionButton) {
-            boolean z = this.f10479e;
-            extendedFloatingActionButton.m13101l(z ? extendedFloatingActionButton.f10470v : extendedFloatingActionButton.f10473y, z ? this.f10477c : this.f10476b);
+            boolean z = this.f10487e;
+            extendedFloatingActionButton.m13101l(z ? extendedFloatingActionButton.f10478v : extendedFloatingActionButton.f10481y, z ? this.f10485c : this.f10484b);
         }
 
         @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.AbstractC0337c
@@ -190,33 +190,33 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
     public class C3140a extends AnimatorListenerAdapter {
 
         /* renamed from: a */
-        private boolean f10480a;
+        private boolean f10488a;
 
         /* renamed from: b */
-        final /* synthetic */ AbstractC3163d f10481b;
+        final /* synthetic */ AbstractC3163d f10489b;
 
         /* renamed from: c */
-        final /* synthetic */ AbstractC3143d f10482c;
+        final /* synthetic */ AbstractC3143d f10490c;
 
         C3140a(AbstractC3163d dVar, AbstractC3143d dVar2) {
-            this.f10481b = dVar;
+            this.f10489b = dVar;
         }
 
         public void onAnimationCancel(Animator animator) {
-            this.f10480a = true;
-            this.f10481b.mo10641d();
+            this.f10488a = true;
+            this.f10489b.mo10641d();
         }
 
         public void onAnimationEnd(Animator animator) {
-            this.f10481b.mo10640c();
-            if (!this.f10480a) {
-                this.f10481b.mo10643f(this.f10482c);
+            this.f10489b.mo10640c();
+            if (!this.f10488a) {
+                this.f10489b.mo10643f(this.f10490c);
             }
         }
 
         public void onAnimationStart(Animator animator) {
-            this.f10481b.onAnimationStart(animator);
-            this.f10480a = false;
+            this.f10489b.onAnimationStart(animator);
+            this.f10488a = false;
         }
     }
 
@@ -287,7 +287,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.AbstractC0336b
     public CoordinatorLayout.AbstractC0337c<ExtendedFloatingActionButton> getBehavior() {
-        return this.f10474z;
+        return this.f10482z;
     }
 
     /* access modifiers changed from: package-private */
@@ -296,33 +296,33 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
     }
 
     public C1408h getExtendMotionSpec() {
-        return this.f10471w.mo10638a();
+        return this.f10479w.mo10638a();
     }
 
     public C1408h getHideMotionSpec() {
-        return this.f10473y.mo10638a();
+        return this.f10481y.mo10638a();
     }
 
     public C1408h getShowMotionSpec() {
-        return this.f10472x.mo10638a();
+        return this.f10480x.mo10638a();
     }
 
     public C1408h getShrinkMotionSpec() {
-        return this.f10470v.mo10638a();
+        return this.f10478v.mo10638a();
     }
 
     /* access modifiers changed from: protected */
     @Override // com.google.android.material.button.MaterialButton
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        if (this.f10469A && TextUtils.isEmpty(getText()) && getIcon() != null) {
-            this.f10469A = false;
-            this.f10470v.mo10646i();
+        if (this.f10477A && TextUtils.isEmpty(getText()) && getIcon() != null) {
+            this.f10477A = false;
+            this.f10478v.mo10646i();
         }
     }
 
     public void setExtendMotionSpec(C1408h hVar) {
-        this.f10471w.mo10645h(hVar);
+        this.f10479w.mo10645h(hVar);
     }
 
     public void setExtendMotionSpecResource(int i) {
@@ -330,8 +330,8 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
     }
 
     public void setExtended(boolean z) {
-        if (this.f10469A != z) {
-            AbstractC3163d dVar = z ? this.f10471w : this.f10470v;
+        if (this.f10477A != z) {
+            AbstractC3163d dVar = z ? this.f10479w : this.f10478v;
             if (!dVar.mo10644g()) {
                 dVar.mo10646i();
             }
@@ -339,7 +339,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
     }
 
     public void setHideMotionSpec(C1408h hVar) {
-        this.f10473y.mo10645h(hVar);
+        this.f10481y.mo10645h(hVar);
     }
 
     public void setHideMotionSpecResource(int i) {
@@ -347,7 +347,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
     }
 
     public void setShowMotionSpec(C1408h hVar) {
-        this.f10472x.mo10645h(hVar);
+        this.f10480x.mo10645h(hVar);
     }
 
     public void setShowMotionSpecResource(int i) {
@@ -355,7 +355,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
     }
 
     public void setShrinkMotionSpec(C1408h hVar) {
-        this.f10470v.mo10645h(hVar);
+        this.f10478v.mo10645h(hVar);
     }
 
     public void setShrinkMotionSpecResource(int i) {

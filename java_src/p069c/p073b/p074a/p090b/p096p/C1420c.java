@@ -6,10 +6,10 @@ import android.os.Build;
 public class C1420c {
 
     /* renamed from: a */
-    public static final int f6044a;
+    public static final int f6052a;
 
     static {
         int i = Build.VERSION.SDK_INT;
-        f6044a = i >= 21 ? 2 : i >= 18 ? 1 : 0;
+        f6052a = i >= 21 ? 2 : i >= 18 ? 1 : 0;
     }
 }

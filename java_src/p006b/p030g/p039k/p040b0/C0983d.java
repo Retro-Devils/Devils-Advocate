@@ -11,20 +11,20 @@ import java.util.List;
 public class C0983d {
 
     /* renamed from: a */
-    private final Object f4733a;
+    private final Object f4737a;
 
     /* renamed from: b.g.k.b0.d$a */
     static class C0984a extends AccessibilityNodeProvider {
 
         /* renamed from: a */
-        final C0983d f4734a;
+        final C0983d f4738a;
 
         C0984a(C0983d dVar) {
-            this.f4734a = dVar;
+            this.f4738a = dVar;
         }
 
         public AccessibilityNodeInfo createAccessibilityNodeInfo(int i) {
-            C0979c a = this.f4734a.mo5520a(i);
+            C0979c a = this.f4738a.mo5520a(i);
             if (a == null) {
                 return null;
             }
@@ -33,7 +33,7 @@ public class C0983d {
 
         @Override // android.view.accessibility.AccessibilityNodeProvider
         public List<AccessibilityNodeInfo> findAccessibilityNodeInfosByText(String str, int i) {
-            List<C0979c> b = this.f4734a.mo5521b(str, i);
+            List<C0979c> b = this.f4738a.mo5521b(str, i);
             if (b == null) {
                 return null;
             }
@@ -46,7 +46,7 @@ public class C0983d {
         }
 
         public boolean performAction(int i, int i2, Bundle bundle) {
-            return this.f4734a.mo5524e(i, i2, bundle);
+            return this.f4738a.mo5524e(i, i2, bundle);
         }
     }
 
@@ -57,7 +57,7 @@ public class C0983d {
         }
 
         public AccessibilityNodeInfo findFocus(int i) {
-            C0979c c = this.f4734a.mo5522c(i);
+            C0979c c = this.f4738a.mo5522c(i);
             if (c == null) {
                 return null;
             }
@@ -67,11 +67,11 @@ public class C0983d {
 
     public C0983d() {
         int i = Build.VERSION.SDK_INT;
-        this.f4733a = i >= 19 ? new C0985b(this) : i >= 16 ? new C0984a(this) : null;
+        this.f4737a = i >= 19 ? new C0985b(this) : i >= 16 ? new C0984a(this) : null;
     }
 
     public C0983d(Object obj) {
-        this.f4733a = obj;
+        this.f4737a = obj;
     }
 
     /* renamed from: a */
@@ -91,7 +91,7 @@ public class C0983d {
 
     /* renamed from: d */
     public Object mo5523d() {
-        return this.f4733a;
+        return this.f4737a;
     }
 
     /* renamed from: e */

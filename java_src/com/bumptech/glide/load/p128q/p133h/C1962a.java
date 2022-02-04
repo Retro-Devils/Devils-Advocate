@@ -25,25 +25,25 @@ import java.util.Queue;
 public class C1962a implements AbstractC1649k<ByteBuffer, C1966c> {
 
     /* renamed from: a */
-    private static final C1963a f7261a = new C1963a();
+    private static final C1963a f7269a = new C1963a();
 
     /* renamed from: b */
-    private static final C1964b f7262b = new C1964b();
+    private static final C1964b f7270b = new C1964b();
 
     /* renamed from: c */
-    private final Context f7263c;
+    private final Context f7271c;
 
     /* renamed from: d */
-    private final List<ImageHeaderParser> f7264d;
+    private final List<ImageHeaderParser> f7272d;
 
     /* renamed from: e */
-    private final C1964b f7265e;
+    private final C1964b f7273e;
 
     /* renamed from: f */
-    private final C1963a f7266f;
+    private final C1963a f7274f;
 
     /* renamed from: g */
-    private final C1965b f7267g;
+    private final C1965b f7275g;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.bumptech.glide.load.q.h.a$a */
@@ -63,7 +63,7 @@ public class C1962a implements AbstractC1649k<ByteBuffer, C1966c> {
     public static class C1964b {
 
         /* renamed from: a */
-        private final Queue<C2000d> f7268a = C2082k.m9438e(0);
+        private final Queue<C2000d> f7276a = C2082k.m9438e(0);
 
         C1964b() {
         }
@@ -72,7 +72,7 @@ public class C1962a implements AbstractC1649k<ByteBuffer, C1966c> {
         /* renamed from: a */
         public synchronized C2000d mo7569a(ByteBuffer byteBuffer) {
             C2000d poll;
-            poll = this.f7268a.poll();
+            poll = this.f7276a.poll();
             if (poll == null) {
                 poll = new C2000d();
             }
@@ -83,20 +83,20 @@ public class C1962a implements AbstractC1649k<ByteBuffer, C1966c> {
         /* renamed from: b */
         public synchronized void mo7570b(C2000d dVar) {
             dVar.mo7663a();
-            this.f7268a.offer(dVar);
+            this.f7276a.offer(dVar);
         }
     }
 
     public C1962a(Context context, List<ImageHeaderParser> list, AbstractC1695e eVar, AbstractC1690b bVar) {
-        this(context, list, eVar, bVar, f7262b, f7261a);
+        this(context, list, eVar, bVar, f7270b, f7269a);
     }
 
     C1962a(Context context, List<ImageHeaderParser> list, AbstractC1695e eVar, AbstractC1690b bVar, C1964b bVar2, C1963a aVar) {
-        this.f7263c = context.getApplicationContext();
-        this.f7264d = list;
-        this.f7266f = aVar;
-        this.f7267g = new C1965b(eVar, bVar);
-        this.f7265e = bVar2;
+        this.f7271c = context.getApplicationContext();
+        this.f7272d = list;
+        this.f7274f = aVar;
+        this.f7275g = new C1965b(eVar, bVar);
+        this.f7273e = bVar2;
     }
 
     /* renamed from: c */
@@ -106,8 +106,8 @@ public class C1962a implements AbstractC1649k<ByteBuffer, C1966c> {
             C1999c c = dVar.mo7664c();
             if (c.mo7660b() > 0) {
                 if (c.mo7661c() == 0) {
-                    Bitmap.Config config = iVar.mo7084c(C1977i.f7309a) == EnumC1631b.PREFER_RGB_565 ? Bitmap.Config.RGB_565 : Bitmap.Config.ARGB_8888;
-                    AbstractC1996a a = this.f7266f.mo7568a(this.f7267g, c, byteBuffer, m8876e(c, i, i2));
+                    Bitmap.Config config = iVar.mo7084c(C1977i.f7317a) == EnumC1631b.PREFER_RGB_565 ? Bitmap.Config.RGB_565 : Bitmap.Config.ARGB_8888;
+                    AbstractC1996a a = this.f7274f.mo7568a(this.f7275g, c, byteBuffer, m8876e(c, i, i2));
                     a.mo7651c(config);
                     a.mo7654e();
                     Bitmap d = a.mo7653d();
@@ -117,7 +117,7 @@ public class C1962a implements AbstractC1649k<ByteBuffer, C1966c> {
                         }
                         return null;
                     }
-                    C1969e eVar = new C1969e(new C1966c(this.f7263c, a, C1894c.m8631c(), i, i2, d));
+                    C1969e eVar = new C1969e(new C1966c(this.f7271c, a, C1894c.m8631c(), i, i2, d));
                     if (Log.isLoggable("BufferGifDecoder", 2)) {
                         Log.v("BufferGifDecoder", "Decoded GIF from stream in " + C2077f.m9415a(b));
                     }
@@ -144,16 +144,16 @@ public class C1962a implements AbstractC1649k<ByteBuffer, C1966c> {
 
     /* renamed from: d */
     public C1969e mo7088a(ByteBuffer byteBuffer, int i, int i2, C1647i iVar) {
-        C2000d a = this.f7265e.mo7569a(byteBuffer);
+        C2000d a = this.f7273e.mo7569a(byteBuffer);
         try {
             return m8875c(byteBuffer, i, i2, a, iVar);
         } finally {
-            this.f7265e.mo7570b(a);
+            this.f7273e.mo7570b(a);
         }
     }
 
     /* renamed from: f */
     public boolean mo7089b(ByteBuffer byteBuffer, C1647i iVar) {
-        return !((Boolean) iVar.mo7084c(C1977i.f7310b)).booleanValue() && C1635f.m7859f(this.f7264d, byteBuffer) == ImageHeaderParser.ImageType.GIF;
+        return !((Boolean) iVar.mo7084c(C1977i.f7318b)).booleanValue() && C1635f.m7859f(this.f7272d, byteBuffer) == ImageHeaderParser.ImageType.GIF;
     }
 }

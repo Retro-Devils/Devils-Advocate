@@ -861,7 +861,7 @@ public class C0322d {
                         this.f1533e = obtainStyledAttributes.getInt(index, this.f1533e);
                         break;
                     case 3:
-                        this.f1532d = obtainStyledAttributes.peekValue(index).type == 3 ? obtainStyledAttributes.getString(index) : C0840a.f4129b[obtainStyledAttributes.getInteger(index, 0)];
+                        this.f1532d = obtainStyledAttributes.peekValue(index).type == 3 ? obtainStyledAttributes.getString(index) : C0840a.f4133b[obtainStyledAttributes.getInteger(index, 0)];
                         break;
                     case 4:
                         this.f1534f = obtainStyledAttributes.getInt(index, 0);
@@ -1498,7 +1498,7 @@ public class C0322d {
                         str = typedArray.getString(index);
                     } else {
                         cVar = aVar.f1462c;
-                        str = C0840a.f4129b[typedArray.getInteger(index, 0)];
+                        str = C0840a.f4133b[typedArray.getInteger(index, 0)];
                     }
                     cVar.f1532d = str;
                     continue;

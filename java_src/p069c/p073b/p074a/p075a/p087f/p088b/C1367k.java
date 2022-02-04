@@ -12,22 +12,22 @@ public final class C1367k extends AbstractC3031a {
     public static final Parcelable.Creator<C1367k> CREATOR = new C1368l();
 
     /* renamed from: b */
-    private final int f5633b;
+    private final int f5641b;
 
     /* renamed from: c */
-    private final C1279a f5634c;
+    private final C1279a f5642c;
 
     /* renamed from: d */
-    private final C3029t f5635d;
+    private final C3029t f5643d;
 
     public C1367k(int i) {
         this(new C1279a(8, null), null);
     }
 
     C1367k(int i, C1279a aVar, C3029t tVar) {
-        this.f5633b = i;
-        this.f5634c = aVar;
-        this.f5635d = tVar;
+        this.f5641b = i;
+        this.f5642c = aVar;
+        this.f5643d = tVar;
     }
 
     private C1367k(C1279a aVar, C3029t tVar) {
@@ -36,19 +36,19 @@ public final class C1367k extends AbstractC3031a {
 
     /* renamed from: h */
     public final C1279a mo6410h() {
-        return this.f5634c;
+        return this.f5642c;
     }
 
     /* renamed from: i */
     public final C3029t mo6411i() {
-        return this.f5635d;
+        return this.f5643d;
     }
 
     public final void writeToParcel(Parcel parcel, int i) {
         int a = C3034c.m12411a(parcel);
-        C3034c.m12417g(parcel, 1, this.f5633b);
-        C3034c.m12419i(parcel, 2, this.f5634c, i, false);
-        C3034c.m12419i(parcel, 3, this.f5635d, i, false);
+        C3034c.m12417g(parcel, 1, this.f5641b);
+        C3034c.m12419i(parcel, 2, this.f5642c, i, false);
+        C3034c.m12419i(parcel, 3, this.f5643d, i, false);
         C3034c.m12412b(parcel, a);
     }
 }

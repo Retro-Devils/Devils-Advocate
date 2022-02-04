@@ -18,13 +18,13 @@ import android.widget.EditText;
 public class C2552q2 extends AbstractC2531p1 {
 
     /* renamed from: n0 */
-    long f8888n0;
+    long f8896n0;
 
     /* renamed from: o0 */
-    EditText f8889o0;
+    EditText f8897o0;
 
     /* renamed from: p0 */
-    boolean f8890p0;
+    boolean f8898p0;
 
     @Override // com.digdroid.alman.dig.AbstractC2531p1
     /* renamed from: B2 */
@@ -131,7 +131,7 @@ public class C2552q2 extends AbstractC2531p1 {
     /* renamed from: W0 */
     public void mo2537W0(Bundle bundle) {
         super.mo2537W0(bundle);
-        this.f8890p0 = bundle == null ? false : bundle.getBoolean("editing");
+        this.f8898p0 = bundle == null ? false : bundle.getBoolean("editing");
         mo2557d2(true);
     }
 
@@ -157,7 +157,7 @@ public class C2552q2 extends AbstractC2531p1 {
     /* renamed from: Z0 */
     public void mo2545Z0(Menu menu, MenuInflater menuInflater) {
         menuInflater.inflate(R.menu.notes_menu, menu);
-        menu.findItem(R.id.edit_notes).setTitle(this.f8890p0 ? R.string.done : R.string.edit);
+        menu.findItem(R.id.edit_notes).setTitle(this.f8898p0 ? R.string.done : R.string.edit);
     }
 
     @Override // androidx.fragment.app.Fragment
@@ -193,11 +193,11 @@ public class C2552q2 extends AbstractC2531p1 {
     /* access modifiers changed from: package-private */
     /* renamed from: g3 */
     public void mo8972g3() {
-        String trim = this.f8889o0.getText().toString().trim();
+        String trim = this.f8897o0.getText().toString().trim();
         ContentValues contentValues = new ContentValues();
         contentValues.put("notes", trim);
-        SQLiteDatabase c = this.f8794a0.mo9325c();
-        c.update("roms", contentValues, "_id=" + this.f8888n0, null);
+        SQLiteDatabase c = this.f8802a0.mo9325c();
+        c.update("roms", contentValues, "_id=" + this.f8896n0, null);
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2531p1, androidx.fragment.app.Fragment
@@ -206,11 +206,11 @@ public class C2552q2 extends AbstractC2531p1 {
         if (menuItem.getItemId() != R.id.edit_notes) {
             return super.mo2579k1(menuItem);
         }
-        boolean z = !this.f8890p0;
-        this.f8890p0 = z;
-        this.f8889o0.setEnabled(z);
-        this.f8889o0.setTextColor(this.f8890p0 ? -1 : this.f8800g0.f9401e);
-        this.f8889o0.setBackgroundColor(this.f8890p0 ? C2553q3.m11127m() : 0);
+        boolean z = !this.f8898p0;
+        this.f8898p0 = z;
+        this.f8897o0.setEnabled(z);
+        this.f8897o0.setTextColor(this.f8898p0 ? -1 : this.f8808g0.f9409e);
+        this.f8897o0.setBackgroundColor(this.f8898p0 ? C2553q3.m11127m() : 0);
         mo2552c0().invalidateOptionsMenu();
         return true;
     }
@@ -232,9 +232,9 @@ public class C2552q2 extends AbstractC2531p1 {
     /* renamed from: r1 */
     public void mo2601r1() {
         super.mo2601r1();
-        this.f8888n0 = mo2568h0().getLong("gameid");
-        SQLiteDatabase c = this.f8794a0.mo9325c();
-        Cursor rawQuery = c.rawQuery("SELECT title,notes FROM roms WHERE _id=" + this.f8888n0, null);
+        this.f8896n0 = mo2568h0().getLong("gameid");
+        SQLiteDatabase c = this.f8802a0.mo9325c();
+        Cursor rawQuery = c.rawQuery("SELECT title,notes FROM roms WHERE _id=" + this.f8896n0, null);
         if (rawQuery.moveToFirst()) {
             mo8118X2(rawQuery.getString(0));
             String string = rawQuery.getString(1);
@@ -242,11 +242,11 @@ public class C2552q2 extends AbstractC2531p1 {
                 string = "";
             }
             EditText editText = (EditText) mo2505F0().findViewById(R.id.notes);
-            this.f8889o0 = editText;
+            this.f8897o0 = editText;
             editText.setText(string);
-            this.f8889o0.setBackgroundColor(0);
-            this.f8889o0.setTextColor(this.f8800g0.f9401e);
-            this.f8889o0.setEnabled(false);
+            this.f8897o0.setBackgroundColor(0);
+            this.f8897o0.setTextColor(this.f8808g0.f9409e);
+            this.f8897o0.setEnabled(false);
         }
         rawQuery.close();
     }
@@ -254,7 +254,7 @@ public class C2552q2 extends AbstractC2531p1 {
     @Override // androidx.fragment.app.Fragment
     /* renamed from: s1 */
     public void mo2603s1(Bundle bundle) {
-        bundle.putBoolean("editing", this.f8890p0);
+        bundle.putBoolean("editing", this.f8898p0);
         super.mo2603s1(bundle);
     }
 

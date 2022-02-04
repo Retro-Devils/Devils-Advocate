@@ -20,31 +20,31 @@ import p006b.p030g.p039k.p040b0.C0983d;
 public class C0962a {
 
     /* renamed from: a */
-    private static final View.AccessibilityDelegate f4659a = new View.AccessibilityDelegate();
+    private static final View.AccessibilityDelegate f4663a = new View.AccessibilityDelegate();
 
     /* renamed from: b */
-    private final View.AccessibilityDelegate f4660b;
+    private final View.AccessibilityDelegate f4664b;
 
     /* renamed from: c */
-    private final View.AccessibilityDelegate f4661c;
+    private final View.AccessibilityDelegate f4665c;
 
     /* access modifiers changed from: package-private */
     /* renamed from: b.g.k.a$a */
     public static final class C0963a extends View.AccessibilityDelegate {
 
         /* renamed from: a */
-        final C0962a f4662a;
+        final C0962a f4666a;
 
         C0963a(C0962a aVar) {
-            this.f4662a = aVar;
+            this.f4666a = aVar;
         }
 
         public boolean dispatchPopulateAccessibilityEvent(View view, AccessibilityEvent accessibilityEvent) {
-            return this.f4662a.mo2468a(view, accessibilityEvent);
+            return this.f4666a.mo2468a(view, accessibilityEvent);
         }
 
         public AccessibilityNodeProvider getAccessibilityNodeProvider(View view) {
-            C0983d b = this.f4662a.mo4454b(view);
+            C0983d b = this.f4666a.mo4454b(view);
             if (b != null) {
                 return (AccessibilityNodeProvider) b.mo5523d();
             }
@@ -52,7 +52,7 @@ public class C0962a {
         }
 
         public void onInitializeAccessibilityEvent(View view, AccessibilityEvent accessibilityEvent) {
-            this.f4662a.mo2361f(view, accessibilityEvent);
+            this.f4666a.mo2361f(view, accessibilityEvent);
         }
 
         public void onInitializeAccessibilityNodeInfo(View view, AccessibilityNodeInfo accessibilityNodeInfo) {
@@ -60,7 +60,7 @@ public class C0962a {
             B0.mo5502s0(C1013s.m5740R(view));
             B0.mo5488k0(C1013s.m5735M(view));
             B0.mo5497p0(C1013s.m5775n(view));
-            this.f4662a.mo2362g(view, B0);
+            this.f4666a.mo2362g(view, B0);
             B0.mo5479f(accessibilityNodeInfo.getText(), view);
             List<C0979c.C0980a> c = C0962a.m5496c(view);
             for (int i = 0; i < c.size(); i++) {
@@ -69,33 +69,33 @@ public class C0962a {
         }
 
         public void onPopulateAccessibilityEvent(View view, AccessibilityEvent accessibilityEvent) {
-            this.f4662a.mo4455h(view, accessibilityEvent);
+            this.f4666a.mo4455h(view, accessibilityEvent);
         }
 
         public boolean onRequestSendAccessibilityEvent(ViewGroup viewGroup, View view, AccessibilityEvent accessibilityEvent) {
-            return this.f4662a.mo2469i(viewGroup, view, accessibilityEvent);
+            return this.f4666a.mo2469i(viewGroup, view, accessibilityEvent);
         }
 
         public boolean performAccessibilityAction(View view, int i, Bundle bundle) {
-            return this.f4662a.mo2363j(view, i, bundle);
+            return this.f4666a.mo2363j(view, i, bundle);
         }
 
         public void sendAccessibilityEvent(View view, int i) {
-            this.f4662a.mo4456l(view, i);
+            this.f4666a.mo4456l(view, i);
         }
 
         public void sendAccessibilityEventUnchecked(View view, AccessibilityEvent accessibilityEvent) {
-            this.f4662a.mo4457m(view, accessibilityEvent);
+            this.f4666a.mo4457m(view, accessibilityEvent);
         }
     }
 
     public C0962a() {
-        this(f4659a);
+        this(f4663a);
     }
 
     public C0962a(View.AccessibilityDelegate accessibilityDelegate) {
-        this.f4660b = accessibilityDelegate;
-        this.f4661c = new C0963a(this);
+        this.f4664b = accessibilityDelegate;
+        this.f4665c = new C0963a(this);
     }
 
     /* renamed from: c */
@@ -136,13 +136,13 @@ public class C0962a {
 
     /* renamed from: a */
     public boolean mo2468a(View view, AccessibilityEvent accessibilityEvent) {
-        return this.f4660b.dispatchPopulateAccessibilityEvent(view, accessibilityEvent);
+        return this.f4664b.dispatchPopulateAccessibilityEvent(view, accessibilityEvent);
     }
 
     /* renamed from: b */
     public C0983d mo4454b(View view) {
         AccessibilityNodeProvider accessibilityNodeProvider;
-        if (Build.VERSION.SDK_INT < 16 || (accessibilityNodeProvider = this.f4660b.getAccessibilityNodeProvider(view)) == null) {
+        if (Build.VERSION.SDK_INT < 16 || (accessibilityNodeProvider = this.f4664b.getAccessibilityNodeProvider(view)) == null) {
             return null;
         }
         return new C0983d(accessibilityNodeProvider);
@@ -151,27 +151,27 @@ public class C0962a {
     /* access modifiers changed from: package-private */
     /* renamed from: d */
     public View.AccessibilityDelegate mo5400d() {
-        return this.f4661c;
+        return this.f4665c;
     }
 
     /* renamed from: f */
     public void mo2361f(View view, AccessibilityEvent accessibilityEvent) {
-        this.f4660b.onInitializeAccessibilityEvent(view, accessibilityEvent);
+        this.f4664b.onInitializeAccessibilityEvent(view, accessibilityEvent);
     }
 
     /* renamed from: g */
     public void mo2362g(View view, C0979c cVar) {
-        this.f4660b.onInitializeAccessibilityNodeInfo(view, cVar.mo5448A0());
+        this.f4664b.onInitializeAccessibilityNodeInfo(view, cVar.mo5448A0());
     }
 
     /* renamed from: h */
     public void mo4455h(View view, AccessibilityEvent accessibilityEvent) {
-        this.f4660b.onPopulateAccessibilityEvent(view, accessibilityEvent);
+        this.f4664b.onPopulateAccessibilityEvent(view, accessibilityEvent);
     }
 
     /* renamed from: i */
     public boolean mo2469i(ViewGroup viewGroup, View view, AccessibilityEvent accessibilityEvent) {
-        return this.f4660b.onRequestSendAccessibilityEvent(viewGroup, view, accessibilityEvent);
+        return this.f4664b.onRequestSendAccessibilityEvent(viewGroup, view, accessibilityEvent);
     }
 
     /* renamed from: j */
@@ -191,18 +191,18 @@ public class C0962a {
             i2++;
         }
         if (!z && Build.VERSION.SDK_INT >= 16) {
-            z = this.f4660b.performAccessibilityAction(view, i, bundle);
+            z = this.f4664b.performAccessibilityAction(view, i, bundle);
         }
         return (z || i != C0899b.accessibility_action_clickable_span) ? z : m5498k(bundle.getInt("ACCESSIBILITY_CLICKABLE_SPAN_ID", -1), view);
     }
 
     /* renamed from: l */
     public void mo4456l(View view, int i) {
-        this.f4660b.sendAccessibilityEvent(view, i);
+        this.f4664b.sendAccessibilityEvent(view, i);
     }
 
     /* renamed from: m */
     public void mo4457m(View view, AccessibilityEvent accessibilityEvent) {
-        this.f4660b.sendAccessibilityEventUnchecked(view, accessibilityEvent);
+        this.f4664b.sendAccessibilityEventUnchecked(view, accessibilityEvent);
     }
 }

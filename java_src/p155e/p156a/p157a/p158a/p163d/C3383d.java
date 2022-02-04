@@ -6,7 +6,7 @@ import java.io.InputStream;
 public final class C3383d {
 
     /* renamed from: a */
-    private static final byte[] f11417a = new byte[4096];
+    private static final byte[] f11426a = new byte[4096];
 
     /* renamed from: a */
     public static int m14045a(InputStream inputStream, byte[] bArr, int i, int i2) {
@@ -35,7 +35,7 @@ public final class C3383d {
             }
             j2 -= skip;
         }
-        while (j2 > 0 && (a = m14045a(inputStream, f11417a, 0, (int) Math.min(j2, 4096L))) >= 1) {
+        while (j2 > 0 && (a = m14045a(inputStream, f11426a, 0, (int) Math.min(j2, 4096L))) >= 1) {
             j2 -= (long) a;
         }
         return j - j2;

@@ -12,55 +12,55 @@ import java.util.Set;
 public abstract class AbstractC0832h<K, V> {
 
     /* renamed from: a */
-    AbstractC0832h<K, V>.C0834b f4101a;
+    AbstractC0832h<K, V>.C0834b f4105a;
 
     /* renamed from: b */
-    AbstractC0832h<K, V>.C0835c f4102b;
+    AbstractC0832h<K, V>.C0835c f4106b;
 
     /* renamed from: c */
-    AbstractC0832h<K, V>.C0837e f4103c;
+    AbstractC0832h<K, V>.C0837e f4107c;
 
     /* renamed from: b.d.h$a */
     final class C0833a<T> implements Iterator<T> {
 
         /* renamed from: b */
-        final int f4104b;
+        final int f4108b;
 
         /* renamed from: c */
-        int f4105c;
+        int f4109c;
 
         /* renamed from: d */
-        int f4106d;
+        int f4110d;
 
         /* renamed from: e */
-        boolean f4107e = false;
+        boolean f4111e = false;
 
         C0833a(int i) {
-            this.f4104b = i;
-            this.f4105c = AbstractC0832h.this.mo4872d();
+            this.f4108b = i;
+            this.f4109c = AbstractC0832h.this.mo4872d();
         }
 
         public boolean hasNext() {
-            return this.f4106d < this.f4105c;
+            return this.f4110d < this.f4109c;
         }
 
         @Override // java.util.Iterator
         public T next() {
             if (hasNext()) {
-                T t = (T) AbstractC0832h.this.mo4870b(this.f4106d, this.f4104b);
-                this.f4106d++;
-                this.f4107e = true;
+                T t = (T) AbstractC0832h.this.mo4870b(this.f4110d, this.f4108b);
+                this.f4110d++;
+                this.f4111e = true;
                 return t;
             }
             throw new NoSuchElementException();
         }
 
         public void remove() {
-            if (this.f4107e) {
-                int i = this.f4106d - 1;
-                this.f4106d = i;
-                this.f4105c--;
-                this.f4107e = false;
+            if (this.f4111e) {
+                int i = this.f4110d - 1;
+                this.f4110d = i;
+                this.f4109c--;
+                this.f4111e = false;
                 AbstractC0832h.this.mo4876h(i);
                 return;
             }
@@ -258,65 +258,65 @@ public abstract class AbstractC0832h<K, V> {
     final class C0836d implements Iterator<Map.Entry<K, V>>, Map.Entry<K, V> {
 
         /* renamed from: b */
-        int f4111b;
+        int f4115b;
 
         /* renamed from: c */
-        int f4112c;
+        int f4116c;
 
         /* renamed from: d */
-        boolean f4113d = false;
+        boolean f4117d = false;
 
         C0836d() {
-            this.f4111b = AbstractC0832h.this.mo4872d() - 1;
-            this.f4112c = -1;
+            this.f4115b = AbstractC0832h.this.mo4872d() - 1;
+            this.f4116c = -1;
         }
 
         /* renamed from: a */
         public Map.Entry<K, V> next() {
             if (hasNext()) {
-                this.f4112c++;
-                this.f4113d = true;
+                this.f4116c++;
+                this.f4117d = true;
                 return this;
             }
             throw new NoSuchElementException();
         }
 
         public boolean equals(Object obj) {
-            if (!this.f4113d) {
+            if (!this.f4117d) {
                 throw new IllegalStateException("This container does not support retaining Map.Entry objects");
             } else if (!(obj instanceof Map.Entry)) {
                 return false;
             } else {
                 Map.Entry entry = (Map.Entry) obj;
-                return C0829e.m4846c(entry.getKey(), AbstractC0832h.this.mo4870b(this.f4112c, 0)) && C0829e.m4846c(entry.getValue(), AbstractC0832h.this.mo4870b(this.f4112c, 1));
+                return C0829e.m4846c(entry.getKey(), AbstractC0832h.this.mo4870b(this.f4116c, 0)) && C0829e.m4846c(entry.getValue(), AbstractC0832h.this.mo4870b(this.f4116c, 1));
             }
         }
 
         @Override // java.util.Map.Entry
         public K getKey() {
-            if (this.f4113d) {
-                return (K) AbstractC0832h.this.mo4870b(this.f4112c, 0);
+            if (this.f4117d) {
+                return (K) AbstractC0832h.this.mo4870b(this.f4116c, 0);
             }
             throw new IllegalStateException("This container does not support retaining Map.Entry objects");
         }
 
         @Override // java.util.Map.Entry
         public V getValue() {
-            if (this.f4113d) {
-                return (V) AbstractC0832h.this.mo4870b(this.f4112c, 1);
+            if (this.f4117d) {
+                return (V) AbstractC0832h.this.mo4870b(this.f4116c, 1);
             }
             throw new IllegalStateException("This container does not support retaining Map.Entry objects");
         }
 
         public boolean hasNext() {
-            return this.f4112c < this.f4111b;
+            return this.f4116c < this.f4115b;
         }
 
         public int hashCode() {
-            if (this.f4113d) {
+            if (this.f4117d) {
                 int i = 0;
-                Object b = AbstractC0832h.this.mo4870b(this.f4112c, 0);
-                Object b2 = AbstractC0832h.this.mo4870b(this.f4112c, 1);
+                Object b = AbstractC0832h.this.mo4870b(this.f4116c, 0);
+                Object b2 = AbstractC0832h.this.mo4870b(this.f4116c, 1);
                 int hashCode = b == null ? 0 : b.hashCode();
                 if (b2 != null) {
                     i = b2.hashCode();
@@ -327,11 +327,11 @@ public abstract class AbstractC0832h<K, V> {
         }
 
         public void remove() {
-            if (this.f4113d) {
-                AbstractC0832h.this.mo4876h(this.f4112c);
-                this.f4112c--;
-                this.f4111b--;
-                this.f4113d = false;
+            if (this.f4117d) {
+                AbstractC0832h.this.mo4876h(this.f4116c);
+                this.f4116c--;
+                this.f4115b--;
+                this.f4117d = false;
                 return;
             }
             throw new IllegalStateException();
@@ -339,8 +339,8 @@ public abstract class AbstractC0832h<K, V> {
 
         @Override // java.util.Map.Entry
         public V setValue(V v) {
-            if (this.f4113d) {
-                return (V) AbstractC0832h.this.mo4877i(this.f4112c, v);
+            if (this.f4117d) {
+                return (V) AbstractC0832h.this.mo4877i(this.f4116c, v);
             }
             throw new IllegalStateException("This container does not support retaining Map.Entry objects");
         }
@@ -540,26 +540,26 @@ public abstract class AbstractC0832h<K, V> {
 
     /* renamed from: l */
     public Set<Map.Entry<K, V>> mo4937l() {
-        if (this.f4101a == null) {
-            this.f4101a = new C0834b();
+        if (this.f4105a == null) {
+            this.f4105a = new C0834b();
         }
-        return this.f4101a;
+        return this.f4105a;
     }
 
     /* renamed from: m */
     public Set<K> mo4938m() {
-        if (this.f4102b == null) {
-            this.f4102b = new C0835c();
+        if (this.f4106b == null) {
+            this.f4106b = new C0835c();
         }
-        return this.f4102b;
+        return this.f4106b;
     }
 
     /* renamed from: n */
     public Collection<V> mo4939n() {
-        if (this.f4103c == null) {
-            this.f4103c = new C0837e();
+        if (this.f4107c == null) {
+            this.f4107c = new C0837e();
         }
-        return this.f4103c;
+        return this.f4107c;
     }
 
     /* renamed from: q */

@@ -6,24 +6,24 @@ import android.text.TextUtils;
 public final class C1232g {
 
     /* renamed from: a */
-    private final String f5428a;
+    private final String f5435a;
 
     /* renamed from: b */
-    private final String f5429b;
+    private final String f5436b;
 
     public C1232g(String str, String str2) {
-        this.f5428a = str;
-        this.f5429b = str2;
+        this.f5435a = str;
+        this.f5436b = str2;
     }
 
     /* renamed from: a */
     public final String mo6169a() {
-        return this.f5428a;
+        return this.f5435a;
     }
 
     /* renamed from: b */
     public final String mo6170b() {
-        return this.f5429b;
+        return this.f5436b;
     }
 
     public boolean equals(Object obj) {
@@ -34,14 +34,14 @@ public final class C1232g {
             return false;
         }
         C1232g gVar = (C1232g) obj;
-        return TextUtils.equals(this.f5428a, gVar.f5428a) && TextUtils.equals(this.f5429b, gVar.f5429b);
+        return TextUtils.equals(this.f5435a, gVar.f5435a) && TextUtils.equals(this.f5436b, gVar.f5436b);
     }
 
     public int hashCode() {
-        return (this.f5428a.hashCode() * 31) + this.f5429b.hashCode();
+        return (this.f5435a.hashCode() * 31) + this.f5436b.hashCode();
     }
 
     public String toString() {
-        return "Header[name=" + this.f5428a + ",value=" + this.f5429b + "]";
+        return "Header[name=" + this.f5435a + ",value=" + this.f5436b + "]";
     }
 }

@@ -9,32 +9,32 @@ import p006b.p022e.p026b.C0855i;
 public class C0861d {
 
     /* renamed from: a */
-    private HashSet<C0861d> f4247a = null;
+    private HashSet<C0861d> f4251a = null;
 
     /* renamed from: b */
-    public final C0864e f4248b;
+    public final C0864e f4252b;
 
     /* renamed from: c */
-    public final EnumC0863b f4249c;
+    public final EnumC0863b f4253c;
 
     /* renamed from: d */
-    public C0861d f4250d;
+    public C0861d f4254d;
 
     /* renamed from: e */
-    public int f4251e = 0;
+    public int f4255e = 0;
 
     /* renamed from: f */
-    int f4252f = -1;
+    int f4256f = -1;
 
     /* renamed from: g */
-    C0855i f4253g;
+    C0855i f4257g;
 
     /* access modifiers changed from: package-private */
     /* renamed from: b.e.b.k.d$a */
     public static /* synthetic */ class C0862a {
 
         /* renamed from: a */
-        static final /* synthetic */ int[] f4254a;
+        static final /* synthetic */ int[] f4258a;
 
         /* JADX WARNING: Can't wrap try/catch for region: R(18:0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|(3:17|18|20)) */
         /* JADX WARNING: Failed to process nested try/catch */
@@ -68,8 +68,8 @@ public class C0861d {
     }
 
     public C0861d(C0864e eVar, EnumC0863b bVar) {
-        this.f4248b = eVar;
-        this.f4249c = bVar;
+        this.f4252b = eVar;
+        this.f4253c = bVar;
     }
 
     /* renamed from: a */
@@ -80,17 +80,17 @@ public class C0861d {
         } else if (!z && !mo5146j(dVar)) {
             return false;
         } else {
-            this.f4250d = dVar;
-            if (dVar.f4247a == null) {
-                dVar.f4247a = new HashSet<>();
+            this.f4254d = dVar;
+            if (dVar.f4251a == null) {
+                dVar.f4251a = new HashSet<>();
             }
-            this.f4250d.f4247a.add(this);
+            this.f4254d.f4251a.add(this);
             if (i > 0) {
-                this.f4251e = i;
+                this.f4255e = i;
             } else {
-                this.f4251e = 0;
+                this.f4255e = 0;
             }
-            this.f4252f = i2;
+            this.f4256f = i2;
             return true;
         }
     }
@@ -98,15 +98,15 @@ public class C0861d {
     /* renamed from: b */
     public int mo5138b() {
         C0861d dVar;
-        if (this.f4248b.mo5169M() == 8) {
+        if (this.f4252b.mo5169M() == 8) {
             return 0;
         }
-        return (this.f4252f <= -1 || (dVar = this.f4250d) == null || dVar.f4248b.mo5169M() != 8) ? this.f4251e : this.f4252f;
+        return (this.f4256f <= -1 || (dVar = this.f4254d) == null || dVar.f4252b.mo5169M() != 8) ? this.f4255e : this.f4256f;
     }
 
     /* renamed from: c */
     public final C0861d mo5139c() {
-        switch (C0862a.f4254a[this.f4249c.ordinal()]) {
+        switch (C0862a.f4258a[this.f4253c.ordinal()]) {
             case 1:
             case 6:
             case 7:
@@ -114,41 +114,41 @@ public class C0861d {
             case 9:
                 return null;
             case 2:
-                return this.f4248b.f4270E;
+                return this.f4252b.f4274E;
             case 3:
-                return this.f4248b.f4268C;
+                return this.f4252b.f4272C;
             case 4:
-                return this.f4248b.f4271F;
+                return this.f4252b.f4275F;
             case 5:
-                return this.f4248b.f4269D;
+                return this.f4252b.f4273D;
             default:
-                throw new AssertionError(this.f4249c.name());
+                throw new AssertionError(this.f4253c.name());
         }
     }
 
     /* renamed from: d */
     public C0864e mo5140d() {
-        return this.f4248b;
+        return this.f4252b;
     }
 
     /* renamed from: e */
     public C0855i mo5141e() {
-        return this.f4253g;
+        return this.f4257g;
     }
 
     /* renamed from: f */
     public C0861d mo5142f() {
-        return this.f4250d;
+        return this.f4254d;
     }
 
     /* renamed from: g */
     public EnumC0863b mo5143g() {
-        return this.f4249c;
+        return this.f4253c;
     }
 
     /* renamed from: h */
     public boolean mo5144h() {
-        HashSet<C0861d> hashSet = this.f4247a;
+        HashSet<C0861d> hashSet = this.f4251a;
         if (hashSet == null) {
             return false;
         }
@@ -163,7 +163,7 @@ public class C0861d {
 
     /* renamed from: i */
     public boolean mo5145i() {
-        return this.f4250d != null;
+        return this.f4254d != null;
     }
 
     /* renamed from: j */
@@ -173,11 +173,11 @@ public class C0861d {
             return false;
         }
         EnumC0863b g = dVar.mo5143g();
-        EnumC0863b bVar = this.f4249c;
+        EnumC0863b bVar = this.f4253c;
         if (g == bVar) {
             return bVar != EnumC0863b.BASELINE || (dVar.mo5140d().mo5173Q() && mo5140d().mo5173Q());
         }
-        switch (C0862a.f4254a[bVar.ordinal()]) {
+        switch (C0862a.f4258a[bVar.ordinal()]) {
             case 1:
                 return (g == EnumC0863b.BASELINE || g == EnumC0863b.CENTER_X || g == EnumC0863b.CENTER_Y) ? false : true;
             case 2:
@@ -206,33 +206,33 @@ public class C0861d {
             case 9:
                 return false;
             default:
-                throw new AssertionError(this.f4249c.name());
+                throw new AssertionError(this.f4253c.name());
         }
     }
 
     /* renamed from: k */
     public void mo5147k() {
         HashSet<C0861d> hashSet;
-        C0861d dVar = this.f4250d;
-        if (!(dVar == null || (hashSet = dVar.f4247a) == null)) {
+        C0861d dVar = this.f4254d;
+        if (!(dVar == null || (hashSet = dVar.f4251a) == null)) {
             hashSet.remove(this);
         }
-        this.f4250d = null;
-        this.f4251e = 0;
-        this.f4252f = -1;
+        this.f4254d = null;
+        this.f4255e = 0;
+        this.f4256f = -1;
     }
 
     /* renamed from: l */
     public void mo5148l(C0845c cVar) {
-        C0855i iVar = this.f4253g;
+        C0855i iVar = this.f4257g;
         if (iVar == null) {
-            this.f4253g = new C0855i(C0855i.EnumC0856a.UNRESTRICTED, null);
+            this.f4257g = new C0855i(C0855i.EnumC0856a.UNRESTRICTED, null);
         } else {
             iVar.mo5119d();
         }
     }
 
     public String toString() {
-        return this.f4248b.mo5205p() + ":" + this.f4249c.toString();
+        return this.f4252b.mo5205p() + ":" + this.f4253c.toString();
     }
 }

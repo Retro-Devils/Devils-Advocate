@@ -27,46 +27,46 @@ import java.util.concurrent.TimeUnit;
 public final class C1987a implements Closeable {
 
     /* renamed from: b */
-    private final File f7325b;
+    private final File f7333b;
 
     /* renamed from: c */
-    private final File f7326c;
+    private final File f7334c;
 
     /* renamed from: d */
-    private final File f7327d;
+    private final File f7335d;
 
     /* renamed from: e */
-    private final File f7328e;
+    private final File f7336e;
 
     /* renamed from: f */
-    private final int f7329f;
+    private final int f7337f;
 
     /* renamed from: g */
-    private long f7330g;
+    private long f7338g;
 
     /* renamed from: h */
-    private final int f7331h;
+    private final int f7339h;
 
     /* renamed from: i */
-    private long f7332i = 0;
+    private long f7340i = 0;
 
     /* renamed from: j */
-    private Writer f7333j;
+    private Writer f7341j;
 
     /* renamed from: k */
-    private final LinkedHashMap<String, C1991d> f7334k = new LinkedHashMap<>(0, 0.75f, true);
+    private final LinkedHashMap<String, C1991d> f7342k = new LinkedHashMap<>(0, 0.75f, true);
 
     /* renamed from: l */
-    private int f7335l;
+    private int f7343l;
 
     /* renamed from: m */
-    private long f7336m = 0;
+    private long f7344m = 0;
 
     /* renamed from: n */
-    final ThreadPoolExecutor f7337n = new ThreadPoolExecutor(0, 1, 60, TimeUnit.SECONDS, new LinkedBlockingQueue(), new ThreadFactoryC1989b(null));
+    final ThreadPoolExecutor f7345n = new ThreadPoolExecutor(0, 1, 60, TimeUnit.SECONDS, new LinkedBlockingQueue(), new ThreadFactoryC1989b(null));
 
     /* renamed from: o */
-    private final Callable<Void> f7338o = new CallableC1988a();
+    private final Callable<Void> f7346o = new CallableC1988a();
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.bumptech.glide.m.a$a */
@@ -77,13 +77,13 @@ public final class C1987a implements Closeable {
         /* renamed from: a */
         public Void call() {
             synchronized (C1987a.this) {
-                if (C1987a.this.f7333j == null) {
+                if (C1987a.this.f7341j == null) {
                     return null;
                 }
                 C1987a.this.m8981z();
                 if (C1987a.this.m8974r()) {
                     C1987a.this.m8979w();
-                    C1987a.this.f7335l = 0;
+                    C1987a.this.f7343l = 0;
                 }
                 return null;
             }
@@ -111,17 +111,17 @@ public final class C1987a implements Closeable {
     public final class C1990c {
 
         /* renamed from: a */
-        private final C1991d f7340a;
+        private final C1991d f7348a;
 
         /* renamed from: b */
-        private final boolean[] f7341b;
+        private final boolean[] f7349b;
 
         /* renamed from: c */
-        private boolean f7342c;
+        private boolean f7350c;
 
         private C1990c(C1991d dVar) {
-            this.f7340a = dVar;
-            this.f7341b = dVar.f7348e ? null : new boolean[C1987a.this.f7331h];
+            this.f7348a = dVar;
+            this.f7349b = dVar.f7356e ? null : new boolean[C1987a.this.f7339h];
         }
 
         /* synthetic */ C1990c(C1987a aVar, C1991d dVar, CallableC1988a aVar2) {
@@ -135,7 +135,7 @@ public final class C1987a implements Closeable {
 
         /* renamed from: b */
         public void mo7638b() {
-            if (!this.f7342c) {
+            if (!this.f7350c) {
                 try {
                     mo7637a();
                 } catch (IOException unused) {
@@ -146,20 +146,20 @@ public final class C1987a implements Closeable {
         /* renamed from: e */
         public void mo7639e() {
             C1987a.this.m8970k(this, true);
-            this.f7342c = true;
+            this.f7350c = true;
         }
 
         /* renamed from: f */
         public File mo7640f(int i) {
             File k;
             synchronized (C1987a.this) {
-                if (this.f7340a.f7349f == this) {
-                    if (!this.f7340a.f7348e) {
-                        this.f7341b[i] = true;
+                if (this.f7348a.f7357f == this) {
+                    if (!this.f7348a.f7356e) {
+                        this.f7349b[i] = true;
                     }
-                    k = this.f7340a.mo7642k(i);
-                    if (!C1987a.this.f7325b.exists()) {
-                        C1987a.this.f7325b.mkdirs();
+                    k = this.f7348a.mo7642k(i);
+                    if (!C1987a.this.f7333b.exists()) {
+                        C1987a.this.f7333b.mkdirs();
                     }
                 } else {
                     throw new IllegalStateException();
@@ -174,39 +174,39 @@ public final class C1987a implements Closeable {
     public final class C1991d {
 
         /* renamed from: a */
-        private final String f7344a;
+        private final String f7352a;
 
         /* renamed from: b */
-        private final long[] f7345b;
+        private final long[] f7353b;
 
         /* renamed from: c */
-        File[] f7346c;
+        File[] f7354c;
 
         /* renamed from: d */
-        File[] f7347d;
+        File[] f7355d;
 
         /* renamed from: e */
-        private boolean f7348e;
+        private boolean f7356e;
 
         /* renamed from: f */
-        private C1990c f7349f;
+        private C1990c f7357f;
 
         /* renamed from: g */
-        private long f7350g;
+        private long f7358g;
 
         private C1991d(String str) {
-            this.f7344a = str;
-            this.f7345b = new long[C1987a.this.f7331h];
-            this.f7346c = new File[C1987a.this.f7331h];
-            this.f7347d = new File[C1987a.this.f7331h];
+            this.f7352a = str;
+            this.f7353b = new long[C1987a.this.f7339h];
+            this.f7354c = new File[C1987a.this.f7339h];
+            this.f7355d = new File[C1987a.this.f7339h];
             StringBuilder sb = new StringBuilder(str);
             sb.append('.');
             int length = sb.length();
-            for (int i = 0; i < C1987a.this.f7331h; i++) {
+            for (int i = 0; i < C1987a.this.f7339h; i++) {
                 sb.append(i);
-                this.f7346c[i] = new File(C1987a.this.f7325b, sb.toString());
+                this.f7354c[i] = new File(C1987a.this.f7333b, sb.toString());
                 sb.append(".tmp");
-                this.f7347d[i] = new File(C1987a.this.f7325b, sb.toString());
+                this.f7355d[i] = new File(C1987a.this.f7333b, sb.toString());
                 sb.setLength(length);
             }
         }
@@ -224,10 +224,10 @@ public final class C1987a implements Closeable {
         /* access modifiers changed from: public */
         /* renamed from: n */
         private void m9003n(String[] strArr) {
-            if (strArr.length == C1987a.this.f7331h) {
+            if (strArr.length == C1987a.this.f7339h) {
                 for (int i = 0; i < strArr.length; i++) {
                     try {
-                        this.f7345b[i] = Long.parseLong(strArr[i]);
+                        this.f7353b[i] = Long.parseLong(strArr[i]);
                     } catch (NumberFormatException unused) {
                         throw m9002m(strArr);
                     }
@@ -239,18 +239,18 @@ public final class C1987a implements Closeable {
 
         /* renamed from: j */
         public File mo7641j(int i) {
-            return this.f7346c[i];
+            return this.f7354c[i];
         }
 
         /* renamed from: k */
         public File mo7642k(int i) {
-            return this.f7347d[i];
+            return this.f7355d[i];
         }
 
         /* renamed from: l */
         public String mo7643l() {
             StringBuilder sb = new StringBuilder();
-            long[] jArr = this.f7345b;
+            long[] jArr = this.f7353b;
             for (long j : jArr) {
                 sb.append(' ');
                 sb.append(j);
@@ -263,22 +263,22 @@ public final class C1987a implements Closeable {
     public final class C1992e {
 
         /* renamed from: a */
-        private final String f7352a;
+        private final String f7360a;
 
         /* renamed from: b */
-        private final long f7353b;
+        private final long f7361b;
 
         /* renamed from: c */
-        private final long[] f7354c;
+        private final long[] f7362c;
 
         /* renamed from: d */
-        private final File[] f7355d;
+        private final File[] f7363d;
 
         private C1992e(String str, long j, File[] fileArr, long[] jArr) {
-            this.f7352a = str;
-            this.f7353b = j;
-            this.f7355d = fileArr;
-            this.f7354c = jArr;
+            this.f7360a = str;
+            this.f7361b = j;
+            this.f7363d = fileArr;
+            this.f7362c = jArr;
         }
 
         /* synthetic */ C1992e(C1987a aVar, String str, long j, File[] fileArr, long[] jArr, CallableC1988a aVar2) {
@@ -287,23 +287,23 @@ public final class C1987a implements Closeable {
 
         /* renamed from: a */
         public File mo7644a(int i) {
-            return this.f7355d[i];
+            return this.f7363d[i];
         }
     }
 
     private C1987a(File file, int i, int i2, long j) {
-        this.f7325b = file;
-        this.f7329f = i;
-        this.f7326c = new File(file, "journal");
-        this.f7327d = new File(file, "journal.tmp");
-        this.f7328e = new File(file, "journal.bkp");
-        this.f7331h = i2;
-        this.f7330g = j;
+        this.f7333b = file;
+        this.f7337f = i;
+        this.f7334c = new File(file, "journal");
+        this.f7335d = new File(file, "journal.tmp");
+        this.f7336e = new File(file, "journal.bkp");
+        this.f7339h = i2;
+        this.f7338g = j;
     }
 
     /* renamed from: i */
     private void m8968i() {
-        if (this.f7333j == null) {
+        if (this.f7341j == null) {
             throw new IllegalStateException("cache is closed");
         }
     }
@@ -328,11 +328,11 @@ public final class C1987a implements Closeable {
     /* access modifiers changed from: public */
     /* renamed from: k */
     private synchronized void m8970k(C1990c cVar, boolean z) {
-        C1991d dVar = cVar.f7340a;
-        if (dVar.f7349f == cVar) {
-            if (z && !dVar.f7348e) {
-                for (int i = 0; i < this.f7331h; i++) {
-                    if (!cVar.f7341b[i]) {
+        C1991d dVar = cVar.f7348a;
+        if (dVar.f7357f == cVar) {
+            if (z && !dVar.f7356e) {
+                for (int i = 0; i < this.f7339h; i++) {
+                    if (!cVar.f7349b[i]) {
                         cVar.mo7637a();
                         throw new IllegalStateException("Newly created entry didn't create value for index " + i);
                     } else if (!dVar.mo7642k(i).exists()) {
@@ -341,43 +341,43 @@ public final class C1987a implements Closeable {
                     }
                 }
             }
-            for (int i2 = 0; i2 < this.f7331h; i2++) {
+            for (int i2 = 0; i2 < this.f7339h; i2++) {
                 File k = dVar.mo7642k(i2);
                 if (!z) {
                     m8971m(k);
                 } else if (k.exists()) {
                     File j = dVar.mo7641j(i2);
                     k.renameTo(j);
-                    long j2 = dVar.f7345b[i2];
+                    long j2 = dVar.f7353b[i2];
                     long length = j.length();
-                    dVar.f7345b[i2] = length;
-                    this.f7332i = (this.f7332i - j2) + length;
+                    dVar.f7353b[i2] = length;
+                    this.f7340i = (this.f7340i - j2) + length;
                 }
             }
-            this.f7335l++;
-            dVar.f7349f = null;
-            if (dVar.f7348e || z) {
-                dVar.f7348e = true;
-                this.f7333j.append((CharSequence) "CLEAN");
-                this.f7333j.append(' ');
-                this.f7333j.append((CharSequence) dVar.f7344a);
-                this.f7333j.append((CharSequence) dVar.mo7643l());
-                this.f7333j.append('\n');
+            this.f7343l++;
+            dVar.f7357f = null;
+            if (dVar.f7356e || z) {
+                dVar.f7356e = true;
+                this.f7341j.append((CharSequence) "CLEAN");
+                this.f7341j.append(' ');
+                this.f7341j.append((CharSequence) dVar.f7352a);
+                this.f7341j.append((CharSequence) dVar.mo7643l());
+                this.f7341j.append('\n');
                 if (z) {
-                    long j3 = this.f7336m;
-                    this.f7336m = 1 + j3;
-                    dVar.f7350g = j3;
+                    long j3 = this.f7344m;
+                    this.f7344m = 1 + j3;
+                    dVar.f7358g = j3;
                 }
             } else {
-                this.f7334k.remove(dVar.f7344a);
-                this.f7333j.append((CharSequence) "REMOVE");
-                this.f7333j.append(' ');
-                this.f7333j.append((CharSequence) dVar.f7344a);
-                this.f7333j.append('\n');
+                this.f7342k.remove(dVar.f7352a);
+                this.f7341j.append((CharSequence) "REMOVE");
+                this.f7341j.append(' ');
+                this.f7341j.append((CharSequence) dVar.f7352a);
+                this.f7341j.append('\n');
             }
-            m8973p(this.f7333j);
-            if (this.f7332i > this.f7330g || m8974r()) {
-                this.f7337n.submit(this.f7338o);
+            m8973p(this.f7341j);
+            if (this.f7340i > this.f7338g || m8974r()) {
+                this.f7345n.submit(this.f7346o);
             }
             return;
         }
@@ -394,23 +394,23 @@ public final class C1987a implements Closeable {
     /* renamed from: o */
     private synchronized C1990c m8972o(String str, long j) {
         m8968i();
-        C1991d dVar = this.f7334k.get(str);
-        if (j != -1 && (dVar == null || dVar.f7350g != j)) {
+        C1991d dVar = this.f7342k.get(str);
+        if (j != -1 && (dVar == null || dVar.f7358g != j)) {
             return null;
         }
         if (dVar == null) {
             dVar = new C1991d(this, str, null);
-            this.f7334k.put(str, dVar);
-        } else if (dVar.f7349f != null) {
+            this.f7342k.put(str, dVar);
+        } else if (dVar.f7357f != null) {
             return null;
         }
         C1990c cVar = new C1990c(this, dVar, null);
-        dVar.f7349f = cVar;
-        this.f7333j.append((CharSequence) "DIRTY");
-        this.f7333j.append(' ');
-        this.f7333j.append((CharSequence) str);
-        this.f7333j.append('\n');
-        m8973p(this.f7333j);
+        dVar.f7357f = cVar;
+        this.f7341j.append((CharSequence) "DIRTY");
+        this.f7341j.append(' ');
+        this.f7341j.append((CharSequence) str);
+        this.f7341j.append('\n');
+        m8973p(this.f7341j);
         return cVar;
     }
 
@@ -434,8 +434,8 @@ public final class C1987a implements Closeable {
     /* access modifiers changed from: public */
     /* renamed from: r */
     private boolean m8974r() {
-        int i = this.f7335l;
-        return i >= 2000 && i >= this.f7334k.size();
+        int i = this.f7343l;
+        return i >= 2000 && i >= this.f7342k.size();
     }
 
     /* renamed from: s */
@@ -453,7 +453,7 @@ public final class C1987a implements Closeable {
                 }
             }
             C1987a aVar = new C1987a(file, i, i2, j);
-            if (aVar.f7326c.exists()) {
+            if (aVar.f7334c.exists()) {
                 try {
                     aVar.m8977u();
                     aVar.m8976t();
@@ -475,19 +475,19 @@ public final class C1987a implements Closeable {
 
     /* renamed from: t */
     private void m8976t() {
-        m8971m(this.f7327d);
-        Iterator<C1991d> it = this.f7334k.values().iterator();
+        m8971m(this.f7335d);
+        Iterator<C1991d> it = this.f7342k.values().iterator();
         while (it.hasNext()) {
             C1991d next = it.next();
             int i = 0;
-            if (next.f7349f == null) {
-                while (i < this.f7331h) {
-                    this.f7332i += next.f7345b[i];
+            if (next.f7357f == null) {
+                while (i < this.f7339h) {
+                    this.f7340i += next.f7353b[i];
                     i++;
                 }
             } else {
-                next.f7349f = null;
-                while (i < this.f7331h) {
+                next.f7357f = null;
+                while (i < this.f7339h) {
                     m8971m(next.mo7641j(i));
                     m8971m(next.mo7642k(i));
                     i++;
@@ -499,14 +499,14 @@ public final class C1987a implements Closeable {
 
     /* renamed from: u */
     private void m8977u() {
-        C1993b bVar = new C1993b(new FileInputStream(this.f7326c), C1995c.f7363a);
+        C1993b bVar = new C1993b(new FileInputStream(this.f7334c), C1995c.f7371a);
         try {
             String d = bVar.mo7647d();
             String d2 = bVar.mo7647d();
             String d3 = bVar.mo7647d();
             String d4 = bVar.mo7647d();
             String d5 = bVar.mo7647d();
-            if (!"libcore.io.DiskLruCache".equals(d) || !"1".equals(d2) || !Integer.toString(this.f7329f).equals(d3) || !Integer.toString(this.f7331h).equals(d4) || !"".equals(d5)) {
+            if (!"libcore.io.DiskLruCache".equals(d) || !"1".equals(d2) || !Integer.toString(this.f7337f).equals(d3) || !Integer.toString(this.f7339h).equals(d4) || !"".equals(d5)) {
                 throw new IOException("unexpected journal header: [" + d + ", " + d2 + ", " + d4 + ", " + d5 + "]");
             }
             int i = 0;
@@ -515,11 +515,11 @@ public final class C1987a implements Closeable {
                     m8978v(bVar.mo7647d());
                     i++;
                 } catch (EOFException unused) {
-                    this.f7335l = i - this.f7334k.size();
+                    this.f7343l = i - this.f7342k.size();
                     if (bVar.mo7645c()) {
                         m8979w();
                     } else {
-                        this.f7333j = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(this.f7326c, true), C1995c.f7363a));
+                        this.f7341j = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(this.f7334c, true), C1995c.f7371a));
                     }
                     return;
                 }
@@ -539,24 +539,24 @@ public final class C1987a implements Closeable {
             if (indexOf2 == -1) {
                 str2 = str.substring(i);
                 if (indexOf == 6 && str.startsWith("REMOVE")) {
-                    this.f7334k.remove(str2);
+                    this.f7342k.remove(str2);
                     return;
                 }
             } else {
                 str2 = str.substring(i, indexOf2);
             }
-            C1991d dVar = this.f7334k.get(str2);
+            C1991d dVar = this.f7342k.get(str2);
             if (dVar == null) {
                 dVar = new C1991d(this, str2, null);
-                this.f7334k.put(str2, dVar);
+                this.f7342k.put(str2, dVar);
             }
             if (indexOf2 != -1 && indexOf == 5 && str.startsWith("CLEAN")) {
                 String[] split = str.substring(indexOf2 + 1).split(" ");
-                dVar.f7348e = true;
-                dVar.f7349f = null;
+                dVar.f7356e = true;
+                dVar.f7357f = null;
                 dVar.m9003n(split);
             } else if (indexOf2 == -1 && indexOf == 5 && str.startsWith("DIRTY")) {
-                dVar.f7349f = new C1990c(this, dVar, null);
+                dVar.f7357f = new C1990c(this, dVar, null);
             } else if (indexOf2 != -1 || indexOf != 4 || !str.startsWith("READ")) {
                 throw new IOException("unexpected journal line: " + str);
             }
@@ -570,31 +570,31 @@ public final class C1987a implements Closeable {
     /* access modifiers changed from: public */
     /* renamed from: w */
     private synchronized void m8979w() {
-        Writer writer = this.f7333j;
+        Writer writer = this.f7341j;
         if (writer != null) {
             m8969j(writer);
         }
-        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(this.f7327d), C1995c.f7363a));
+        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(this.f7335d), C1995c.f7371a));
         try {
             bufferedWriter.write("libcore.io.DiskLruCache");
             bufferedWriter.write("\n");
             bufferedWriter.write("1");
             bufferedWriter.write("\n");
-            bufferedWriter.write(Integer.toString(this.f7329f));
+            bufferedWriter.write(Integer.toString(this.f7337f));
             bufferedWriter.write("\n");
-            bufferedWriter.write(Integer.toString(this.f7331h));
+            bufferedWriter.write(Integer.toString(this.f7339h));
             bufferedWriter.write("\n");
             bufferedWriter.write("\n");
-            for (C1991d dVar : this.f7334k.values()) {
-                bufferedWriter.write(dVar.f7349f != null ? "DIRTY " + dVar.f7344a + '\n' : "CLEAN " + dVar.f7344a + dVar.mo7643l() + '\n');
+            for (C1991d dVar : this.f7342k.values()) {
+                bufferedWriter.write(dVar.f7357f != null ? "DIRTY " + dVar.f7352a + '\n' : "CLEAN " + dVar.f7352a + dVar.mo7643l() + '\n');
             }
             m8969j(bufferedWriter);
-            if (this.f7326c.exists()) {
-                m8980y(this.f7326c, this.f7328e, true);
+            if (this.f7334c.exists()) {
+                m8980y(this.f7334c, this.f7336e, true);
             }
-            m8980y(this.f7327d, this.f7326c, false);
-            this.f7328e.delete();
-            this.f7333j = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(this.f7326c, true), C1995c.f7363a));
+            m8980y(this.f7335d, this.f7334c, false);
+            this.f7336e.delete();
+            this.f7341j = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(this.f7334c, true), C1995c.f7371a));
         } catch (Throwable th) {
             m8969j(bufferedWriter);
             throw th;
@@ -615,31 +615,31 @@ public final class C1987a implements Closeable {
     /* access modifiers changed from: public */
     /* renamed from: z */
     private void m8981z() {
-        while (this.f7332i > this.f7330g) {
-            mo7633x(this.f7334k.entrySet().iterator().next().getKey());
+        while (this.f7340i > this.f7338g) {
+            mo7633x(this.f7342k.entrySet().iterator().next().getKey());
         }
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public synchronized void close() {
-        if (this.f7333j != null) {
-            Iterator it = new ArrayList(this.f7334k.values()).iterator();
+        if (this.f7341j != null) {
+            Iterator it = new ArrayList(this.f7342k.values()).iterator();
             while (it.hasNext()) {
                 C1991d dVar = (C1991d) it.next();
-                if (dVar.f7349f != null) {
-                    dVar.f7349f.mo7637a();
+                if (dVar.f7357f != null) {
+                    dVar.f7357f.mo7637a();
                 }
             }
             m8981z();
-            m8969j(this.f7333j);
-            this.f7333j = null;
+            m8969j(this.f7341j);
+            this.f7341j = null;
         }
     }
 
     /* renamed from: l */
     public void mo7630l() {
         close();
-        C1995c.m9013b(this.f7325b);
+        C1995c.m9013b(this.f7333b);
     }
 
     /* renamed from: n */
@@ -650,53 +650,53 @@ public final class C1987a implements Closeable {
     /* renamed from: q */
     public synchronized C1992e mo7632q(String str) {
         m8968i();
-        C1991d dVar = this.f7334k.get(str);
+        C1991d dVar = this.f7342k.get(str);
         if (dVar == null) {
             return null;
         }
-        if (!dVar.f7348e) {
+        if (!dVar.f7356e) {
             return null;
         }
-        for (File file : dVar.f7346c) {
+        for (File file : dVar.f7354c) {
             if (!file.exists()) {
                 return null;
             }
         }
-        this.f7335l++;
-        this.f7333j.append((CharSequence) "READ");
-        this.f7333j.append(' ');
-        this.f7333j.append((CharSequence) str);
-        this.f7333j.append('\n');
+        this.f7343l++;
+        this.f7341j.append((CharSequence) "READ");
+        this.f7341j.append(' ');
+        this.f7341j.append((CharSequence) str);
+        this.f7341j.append('\n');
         if (m8974r()) {
-            this.f7337n.submit(this.f7338o);
+            this.f7345n.submit(this.f7346o);
         }
-        return new C1992e(this, str, dVar.f7350g, dVar.f7346c, dVar.f7345b, null);
+        return new C1992e(this, str, dVar.f7358g, dVar.f7354c, dVar.f7353b, null);
     }
 
     /* renamed from: x */
     public synchronized boolean mo7633x(String str) {
         m8968i();
-        C1991d dVar = this.f7334k.get(str);
+        C1991d dVar = this.f7342k.get(str);
         if (dVar != null) {
-            if (dVar.f7349f == null) {
-                for (int i = 0; i < this.f7331h; i++) {
+            if (dVar.f7357f == null) {
+                for (int i = 0; i < this.f7339h; i++) {
                     File j = dVar.mo7641j(i);
                     if (j.exists()) {
                         if (!j.delete()) {
                             throw new IOException("failed to delete " + j);
                         }
                     }
-                    this.f7332i -= dVar.f7345b[i];
-                    dVar.f7345b[i] = 0;
+                    this.f7340i -= dVar.f7353b[i];
+                    dVar.f7353b[i] = 0;
                 }
-                this.f7335l++;
-                this.f7333j.append((CharSequence) "REMOVE");
-                this.f7333j.append(' ');
-                this.f7333j.append((CharSequence) str);
-                this.f7333j.append('\n');
-                this.f7334k.remove(str);
+                this.f7343l++;
+                this.f7341j.append((CharSequence) "REMOVE");
+                this.f7341j.append(' ');
+                this.f7341j.append((CharSequence) str);
+                this.f7341j.append('\n');
+                this.f7342k.remove(str);
                 if (m8974r()) {
-                    this.f7337n.submit(this.f7338o);
+                    this.f7345n.submit(this.f7346o);
                 }
                 return true;
             }

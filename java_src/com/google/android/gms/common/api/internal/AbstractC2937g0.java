@@ -12,17 +12,17 @@ import p069c.p073b.p074a.p075a.p089g.C1377e;
 public abstract class AbstractC2937g0<T> extends AbstractC2961y {
 
     /* renamed from: b */
-    protected final C1377e<T> f9845b;
+    protected final C1377e<T> f9853b;
 
     public AbstractC2937g0(int i, C1377e<T> eVar) {
         super(i);
-        this.f9845b = eVar;
+        this.f9853b = eVar;
     }
 
     @Override // com.google.android.gms.common.api.internal.AbstractC2951o
     /* renamed from: b */
     public void mo9657b(Status status) {
-        this.f9845b.mo6428d(new C2905b(status));
+        this.f9853b.mo6428d(new C2905b(status));
     }
 
     @Override // com.google.android.gms.common.api.internal.AbstractC2951o
@@ -43,7 +43,7 @@ public abstract class AbstractC2937g0<T> extends AbstractC2961y {
     @Override // com.google.android.gms.common.api.internal.AbstractC2951o
     /* renamed from: e */
     public void mo9659e(RuntimeException runtimeException) {
-        this.f9845b.mo6428d(runtimeException);
+        this.f9853b.mo6428d(runtimeException);
     }
 
     /* access modifiers changed from: protected */

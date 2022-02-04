@@ -24,19 +24,19 @@ import java.util.concurrent.Callable;
 public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2.AbstractC2286s {
 
     /* renamed from: n0 */
-    int f8956n0 = 0;
+    int f8964n0 = 0;
 
     /* renamed from: o0 */
-    Cursor f8957o0 = null;
+    Cursor f8965o0 = null;
 
     /* renamed from: p0 */
-    C2267e2 f8958p0;
+    C2267e2 f8966p0;
 
     /* renamed from: q0 */
-    C2252d2 f8959q0 = null;
+    C2252d2 f8967q0 = null;
 
     /* renamed from: r0 */
-    View f8960r0;
+    View f8968r0;
 
     /* access modifiers changed from: package-private */
     /* renamed from: com.digdroid.alman.dig.r1$a */
@@ -47,9 +47,9 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
         @Override // com.digdroid.alman.dig.C2267e2.AbstractC2289v
         /* renamed from: a */
         public void mo8404a(View view, int i) {
-            if (!AbstractC2577r1.this.f8958p0.mo8326k() && AbstractC2577r1.this.mo8102B2()) {
+            if (!AbstractC2577r1.this.f8966p0.mo8326k() && AbstractC2577r1.this.mo8102B2()) {
                 AbstractC2577r1 r1Var = AbstractC2577r1.this;
-                r1Var.mo8425n3(view, r1Var.f8958p0.mo8320d(i));
+                r1Var.mo8425n3(view, r1Var.f8966p0.mo8320d(i));
             }
         }
     }
@@ -64,11 +64,11 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
         /* renamed from: a */
         public boolean mo8405a(View view, int i) {
             AbstractC2531p1.AbstractC2532a aVar;
-            if (AbstractC2577r1.this.f8958p0.mo8326k() || (aVar = AbstractC2577r1.this.f8806m0) == null || !aVar.mo8912y()) {
+            if (AbstractC2577r1.this.f8966p0.mo8326k() || (aVar = AbstractC2577r1.this.f8814m0) == null || !aVar.mo8912y()) {
                 return false;
             }
             AbstractC2577r1 r1Var = AbstractC2577r1.this;
-            r1Var.mo8431h3(view, r1Var.f8958p0.mo8320d(i));
+            r1Var.mo8431h3(view, r1Var.f8966p0.mo8320d(i));
             return true;
         }
     }
@@ -83,8 +83,8 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
         public String call() {
             AbstractC2577r1.this.mo8897V2();
             AbstractC2577r1 r1Var = AbstractC2577r1.this;
-            r1Var.f8958p0.mo8338w(r1Var.f8956n0);
-            AbstractC2577r1.this.f8958p0.mo8323h();
+            r1Var.f8966p0.mo8338w(r1Var.f8964n0);
+            AbstractC2577r1.this.f8966p0.mo8323h();
             return null;
         }
     }
@@ -96,7 +96,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
         }
 
         public void onClick(View view) {
-            AbstractC2577r1.this.f8958p0.mo8330o(0.9756098f);
+            AbstractC2577r1.this.f8966p0.mo8330o(0.9756098f);
         }
     }
 
@@ -107,7 +107,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
         }
 
         public void onClick(View view) {
-            AbstractC2577r1.this.f8958p0.mo8330o(1.025f);
+            AbstractC2577r1.this.f8966p0.mo8330o(1.025f);
         }
     }
 
@@ -118,7 +118,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
         }
 
         public void onClick(View view) {
-            AbstractC2577r1.this.f8958p0.mo8331p(0.952381f);
+            AbstractC2577r1.this.f8966p0.mo8331p(0.952381f);
         }
     }
 
@@ -129,7 +129,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
         }
 
         public void onClick(View view) {
-            AbstractC2577r1.this.f8958p0.mo8331p(1.05f);
+            AbstractC2577r1.this.f8966p0.mo8331p(1.05f);
         }
     }
 
@@ -140,7 +140,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
         }
 
         public void onClick(View view) {
-            AbstractC2577r1.this.f8806m0.mo8259H(false);
+            AbstractC2577r1.this.f8814m0.mo8259H(false);
         }
     }
 
@@ -149,36 +149,36 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     public class AsyncTaskC2586i extends AsyncTask<String, Void, Cursor> {
 
         /* renamed from: a */
-        boolean f8969a;
+        boolean f8977a;
 
         /* renamed from: b */
-        boolean f8970b;
+        boolean f8978b;
 
         /* renamed from: c */
-        Callable<String> f8971c;
+        Callable<String> f8979c;
 
         /* access modifiers changed from: package-private */
         /* renamed from: com.digdroid.alman.dig.r1$i$a */
         public class RunnableC2587a implements Runnable {
 
             /* renamed from: b */
-            final /* synthetic */ Cursor f8973b;
+            final /* synthetic */ Cursor f8981b;
 
             RunnableC2587a(Cursor cursor) {
-                this.f8973b = cursor;
+                this.f8981b = cursor;
             }
 
             public void run() {
                 ActivityC0447d c0;
                 try {
                     AsyncTaskC2586i iVar = AsyncTaskC2586i.this;
-                    AbstractC2577r1.this.mo9024t3(this.f8973b, iVar.f8969a);
-                    Callable<String> callable = AsyncTaskC2586i.this.f8971c;
+                    AbstractC2577r1.this.mo9024t3(this.f8981b, iVar.f8977a);
+                    Callable<String> callable = AsyncTaskC2586i.this.f8979c;
                     if (callable != null) {
                         callable.call();
                     }
                     AsyncTaskC2586i iVar2 = AsyncTaskC2586i.this;
-                    if (iVar2.f8970b && (c0 = AbstractC2577r1.this.mo2552c0()) != null && !c0.isFinishing()) {
+                    if (iVar2.f8978b && (c0 = AbstractC2577r1.this.mo2552c0()) != null && !c0.isFinishing()) {
                         c0.invalidateOptionsMenu();
                     }
                 } catch (Exception e) {
@@ -188,9 +188,9 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
         }
 
         public AsyncTaskC2586i(boolean z, boolean z2, Callable<String> callable) {
-            this.f8969a = z;
-            this.f8970b = z2;
-            this.f8971c = callable;
+            this.f8977a = z;
+            this.f8978b = z2;
+            this.f8979c = callable;
         }
 
         /* access modifiers changed from: protected */
@@ -203,7 +203,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
         /* renamed from: b */
         public void onPostExecute(Cursor cursor) {
             if (cursor != null) {
-                AbstractC2577r1.this.f8958p0.mo8327l(new RunnableC2587a(cursor));
+                AbstractC2577r1.this.f8966p0.mo8327l(new RunnableC2587a(cursor));
             }
         }
     }
@@ -211,20 +211,20 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: A */
     public void mo8359A(float f) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8199w(mo8127t2() + "_title_scale", f);
     }
 
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: B */
     public void mo8360B() {
-        C2453k2 k2Var = this.f8958p0.f8092n;
+        C2453k2 k2Var = this.f8966p0.f8100n;
         if (k2Var != null) {
-            k2Var.f8562c = 0;
+            k2Var.f8570c = 0;
         }
-        C2252d2 j3 = mo8432j3(this.f8959q0.mo8241c());
-        this.f8959q0 = j3;
-        this.f8958p0.mo8332q(j3);
+        C2252d2 j3 = mo8432j3(this.f8967q0.mo8241c());
+        this.f8967q0 = j3;
+        this.f8966p0.mo8332q(j3);
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2531p1
@@ -236,7 +236,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: C */
     public void mo8361C(float f) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8155D(mo8127t2() + "_carousel_scale", f);
     }
 
@@ -249,14 +249,14 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: D */
     public boolean mo8362D() {
-        AbstractC2531p1.AbstractC2532a aVar = this.f8806m0;
+        AbstractC2531p1.AbstractC2532a aVar = this.f8814m0;
         return aVar != null && !aVar.mo8273g0();
     }
 
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: E */
     public float mo8363E() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8183f(mo8127t2() + "_vertical_scale", 1.0f);
     }
 
@@ -269,7 +269,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: F */
     public void mo8364F(float f) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8199w(mo8127t2() + "_list_spacing", f);
     }
 
@@ -294,7 +294,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: H */
     public void mo8366H(float f) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8199w(mo8127t2() + "_vertical_spacing", f);
     }
 
@@ -304,79 +304,79 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
         int itemId = menuItem.getItemId();
         switch (itemId) {
             case R.id.as_carousel /*{ENCODED_INT: 2131296371}*/:
-                mo8723w3("carousel", this.f8958p0.mo8321f());
+                mo8723w3("carousel", this.f8966p0.mo8321f());
                 return true;
             case R.id.as_coverflow /*{ENCODED_INT: 2131296372}*/:
-                mo8723w3("coverflow", this.f8958p0.mo8321f());
+                mo8723w3("coverflow", this.f8966p0.mo8321f());
                 return true;
             case R.id.as_linear /*{ENCODED_INT: 2131296373}*/:
-                mo8723w3("linear", this.f8958p0.mo8321f());
+                mo8723w3("linear", this.f8966p0.mo8321f());
                 return true;
             case R.id.as_list /*{ENCODED_INT: 2131296374}*/:
-                mo8723w3("list", this.f8958p0.mo8321f());
+                mo8723w3("list", this.f8966p0.mo8321f());
                 return true;
             case R.id.as_vertical /*{ENCODED_INT: 2131296375}*/:
-                mo8723w3("vertical", this.f8958p0.mo8321f());
+                mo8723w3("vertical", this.f8966p0.mo8321f());
                 return true;
             case R.id.as_wheel /*{ENCODED_INT: 2131296376}*/:
-                mo8723w3("wheel", this.f8958p0.mo8321f());
+                mo8723w3("wheel", this.f8966p0.mo8321f());
                 return true;
             default:
                 switch (itemId) {
                     case R.id.aspect16_9 /*{ENCODED_INT: 2131296378}*/:
                         mo8469u3(1.7777778f);
-                        mo8723w3(mo8375Q(), this.f8958p0.mo8321f());
+                        mo8723w3(mo8375Q(), this.f8966p0.mo8321f());
                         return true;
                     case R.id.aspect1_1 /*{ENCODED_INT: 2131296379}*/:
                         mo8469u3(1.0f);
-                        mo8723w3(mo8375Q(), this.f8958p0.mo8321f());
+                        mo8723w3(mo8375Q(), this.f8966p0.mo8321f());
                         return true;
                     case R.id.aspect1_2 /*{ENCODED_INT: 2131296380}*/:
                         mo8469u3(0.5f);
-                        mo8723w3(mo8375Q(), this.f8958p0.mo8321f());
+                        mo8723w3(mo8375Q(), this.f8966p0.mo8321f());
                         return true;
                     case R.id.aspect2_1 /*{ENCODED_INT: 2131296381}*/:
                         mo8469u3(2.0f);
-                        mo8723w3(mo8375Q(), this.f8958p0.mo8321f());
+                        mo8723w3(mo8375Q(), this.f8966p0.mo8321f());
                         return true;
                     case R.id.aspect2_3 /*{ENCODED_INT: 2131296382}*/:
                         mo8469u3(0.6666667f);
-                        mo8723w3(mo8375Q(), this.f8958p0.mo8321f());
+                        mo8723w3(mo8375Q(), this.f8966p0.mo8321f());
                         return true;
                     case R.id.aspect3_2 /*{ENCODED_INT: 2131296383}*/:
                         mo8469u3(1.5f);
-                        mo8723w3(mo8375Q(), this.f8958p0.mo8321f());
+                        mo8723w3(mo8375Q(), this.f8966p0.mo8321f());
                         return true;
                     case R.id.aspect3_4 /*{ENCODED_INT: 2131296384}*/:
                         mo8469u3(0.75f);
-                        mo8723w3(mo8375Q(), this.f8958p0.mo8321f());
+                        mo8723w3(mo8375Q(), this.f8966p0.mo8321f());
                         return true;
                     case R.id.aspect4_3 /*{ENCODED_INT: 2131296385}*/:
                         mo8469u3(1.3333334f);
-                        mo8723w3(mo8375Q(), this.f8958p0.mo8321f());
+                        mo8723w3(mo8375Q(), this.f8966p0.mo8321f());
                         return true;
                     case R.id.aspect9_16 /*{ENCODED_INT: 2131296386}*/:
                         mo8469u3(0.5625f);
-                        mo8723w3(mo8375Q(), this.f8958p0.mo8321f());
+                        mo8723w3(mo8375Q(), this.f8966p0.mo8321f());
                         return true;
                     default:
                         switch (itemId) {
                             case R.id.icons_only /*{ENCODED_INT: 2131296785}*/:
                                 mo9025v3(!mo9026w());
-                                mo8723w3(mo8375Q(), this.f8958p0.mo8321f());
+                                mo8723w3(mo8375Q(), this.f8966p0.mo8321f());
                                 return true;
                             case R.id.resize /*{ENCODED_INT: 2131297079}*/:
                                 mo9023s3();
                                 return true;
                             case R.id.use_8bit /*{ENCODED_INT: 2131297325}*/:
                                 mo9027x3(!mo9016c());
-                                mo8723w3(mo8375Q(), this.f8958p0.mo8321f());
+                                mo8723w3(mo8375Q(), this.f8966p0.mo8321f());
                                 return true;
                             case R.id.view_grid /*{ENCODED_INT: 2131297340}*/:
-                                mo8723w3("grid", this.f8958p0.mo8321f());
+                                mo8723w3("grid", this.f8966p0.mo8321f());
                                 return true;
                             case R.id.view_titles /*{ENCODED_INT: 2131297342}*/:
-                                mo8723w3("title", this.f8958p0.mo8321f());
+                                mo8723w3("title", this.f8966p0.mo8321f());
                                 return true;
                             default:
                                 return super.mo8243H2(menuItem);
@@ -388,7 +388,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: I */
     public void mo8367I(float f) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8155D(mo8127t2() + "_carousel_spacing", f);
     }
 
@@ -401,7 +401,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: J */
     public void mo8368J(float f) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8199w(mo8127t2() + "_title_spacing", f);
     }
 
@@ -414,7 +414,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: K */
     public void mo8369K(float f) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8155D(mo8127t2() + "_linear_scale", f);
     }
 
@@ -427,21 +427,21 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: L */
     public float mo8370L() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8183f(mo8127t2() + "_linear_spacing", 1.0f);
     }
 
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: M */
     public float mo8371M() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8183f(mo8127t2() + "_wheel_spacing", 1.0f);
     }
 
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: N */
     public void mo8372N(float f) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8155D(mo8127t2() + "_linear_spacing", f);
     }
 
@@ -454,7 +454,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: O */
     public void mo8373O(float f) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8199w(mo8127t2() + "_list_scale", f);
     }
 
@@ -468,7 +468,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: P */
     public double mo8374P() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return (double) c3Var.mo8183f(mo8127t2() + "_block_size", 170.0f);
     }
 
@@ -476,8 +476,8 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     /* renamed from: P2 */
     public void mo8111P2() {
         C2267e2 e2Var;
-        AbstractC2531p1.AbstractC2532a aVar = this.f8806m0;
-        if (aVar != null && (e2Var = this.f8958p0) != null) {
+        AbstractC2531p1.AbstractC2532a aVar = this.f8814m0;
+        if (aVar != null && (e2Var = this.f8966p0) != null) {
             aVar.mo8260K(e2Var.mo8321f());
         }
     }
@@ -485,7 +485,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: Q */
     public String mo8375Q() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8193q(mo8127t2() + "_list_type", mo8695l3());
     }
 
@@ -504,7 +504,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: S */
     public float mo8376S() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8183f(mo8127t2() + "_vertical_spacing", 1.0f);
     }
 
@@ -512,7 +512,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     /* renamed from: S2 */
     public void mo8114S2() {
         super.mo8114S2();
-        AbstractC2531p1.AbstractC2532a aVar = this.f8806m0;
+        AbstractC2531p1.AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
             aVar.mo8254B().findItem(R.id.nav_random).setVisible(true);
         }
@@ -521,7 +521,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: T */
     public void mo8377T(float f) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8199w(mo8127t2() + "_vertical_scale", f);
     }
 
@@ -540,7 +540,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: U */
     public void mo8378U(double d) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8155D(mo8127t2() + "_block_size", (float) d);
     }
 
@@ -548,15 +548,15 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     /* renamed from: U2 */
     public void mo8116U2() {
         C2252d2 d2Var;
-        if (mo8102B2() && (d2Var = this.f8959q0) != null && d2Var.mo8240b() > 1) {
-            this.f8958p0.mo8338w(new Random().nextInt(this.f8959q0.mo8240b()));
+        if (mo8102B2() && (d2Var = this.f8967q0) != null && d2Var.mo8240b() > 1) {
+            this.f8966p0.mo8338w(new Random().nextInt(this.f8967q0.mo8240b()));
         }
     }
 
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: V */
     public float mo8379V() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8183f(mo8127t2() + "_linear_scale", 1.0f);
     }
 
@@ -569,7 +569,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: W */
     public float mo8380W() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8183f(mo8127t2() + "_coverflow_scale", 1.0f);
     }
 
@@ -579,7 +579,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
         String str;
         super.mo2537W0(bundle);
         if (bundle == null) {
-            this.f8956n0 = 0;
+            this.f8964n0 = 0;
             bundle = mo2568h0();
             str = "scroll_position";
             if (!bundle.containsKey(str)) {
@@ -588,7 +588,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
         } else {
             str = "selected_item";
         }
-        this.f8956n0 = bundle.getInt(str);
+        this.f8964n0 = bundle.getInt(str);
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2531p1
@@ -620,24 +620,24 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     /* renamed from: Z2 */
     public void mo8898Z2(String str) {
         super.mo8898Z2(str);
-        this.f8958p0.mo8340y(str);
+        this.f8966p0.mo8340y(str);
     }
 
     @Override // androidx.fragment.app.Fragment
     /* renamed from: a1 */
     public View mo2547a1(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
-        this.f8806m0.mo8257E(this.f8800g0);
-        this.f8960r0 = C2267e2.m10028e(layoutInflater, viewGroup, mo8375Q());
-        C2267e2 e2Var = new C2267e2((MainActivity) mo2552c0(), this.f8960r0, mo9019o3(), this);
-        this.f8958p0 = e2Var;
+        this.f8814m0.mo8257E(this.f8808g0);
+        this.f8968r0 = C2267e2.m10028e(layoutInflater, viewGroup, mo8375Q());
+        C2267e2 e2Var = new C2267e2((MainActivity) mo2552c0(), this.f8968r0, mo9019o3(), this);
+        this.f8966p0 = e2Var;
         e2Var.mo8340y(mo8409w2());
-        AbsListView absListView = this.f8958p0.f8086h;
+        AbsListView absListView = this.f8966p0.f8094h;
         if (absListView != null) {
             mo8895L2(absListView);
         }
-        this.f8958p0.mo8335t(new C2578a());
-        this.f8958p0.mo8336u(new C2579b());
-        return this.f8960r0;
+        this.f8966p0.mo8335t(new C2578a());
+        this.f8966p0.mo8336u(new C2579b());
+        return this.f8968r0;
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2531p1
@@ -647,30 +647,30 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
         AbstractC2531p1.AbstractC2532a aVar;
         C2267e2 e2Var2;
         boolean z2 = true;
-        boolean z3 = z && !this.f8803j0;
-        if (z || !this.f8803j0) {
+        boolean z3 = z && !this.f8811j0;
+        if (z || !this.f8811j0) {
             z2 = false;
         }
         super.mo8120a3(z);
-        if (z2 && (e2Var2 = this.f8958p0) != null) {
-            this.f8956n0 = e2Var2.mo8321f();
+        if (z2 && (e2Var2 = this.f8966p0) != null) {
+            this.f8964n0 = e2Var2.mo8321f();
         }
-        if (z && (e2Var = this.f8958p0) != null && e2Var.f8087i != null && (aVar = this.f8806m0) != null && !aVar.mo8282m() && !this.f8806m0.mo8263P() && !this.f8806m0.mo8273g0()) {
-            this.f8958p0.f8087i.requestFocus();
+        if (z && (e2Var = this.f8966p0) != null && e2Var.f8095i != null && (aVar = this.f8814m0) != null && !aVar.mo8282m() && !this.f8814m0.mo8263P() && !this.f8814m0.mo8273g0()) {
+            this.f8966p0.f8095i.requestFocus();
         }
-        C2267e2 e2Var3 = this.f8958p0;
+        C2267e2 e2Var3 = this.f8966p0;
         if (e2Var3 != null) {
             e2Var3.mo8341z(z);
             if (z3) {
-                this.f8958p0.mo8323h();
-                this.f8958p0.mo8338w(this.f8956n0);
+                this.f8966p0.mo8323h();
+                this.f8966p0.mo8338w(this.f8964n0);
             }
         }
     }
 
     /* renamed from: c */
     public boolean mo9016c() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8180c(mo8127t2() + "_8bit", true);
     }
 
@@ -683,8 +683,8 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.AbstractC2531p1
     /* renamed from: d3 */
     public boolean mo8122d3() {
-        C2267e2 e2Var = this.f8958p0;
-        return e2Var == null || e2Var.f8087i == null;
+        C2267e2 e2Var = this.f8966p0;
+        return e2Var == null || e2Var.f8095i == null;
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2531p1, com.digdroid.alman.dig.C2267e2.AbstractC2286s
@@ -702,27 +702,27 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: g */
     public Point mo8382g(boolean z) {
-        return this.f8806m0.mo8907g(z);
+        return this.f8814m0.mo8907g(z);
     }
 
     /* access modifiers changed from: package-private */
     /* renamed from: g3 */
     public void mo9017g3() {
-        C2252d2 d2Var = this.f8959q0;
+        C2252d2 d2Var = this.f8967q0;
         if (d2Var != null) {
             Cursor c = d2Var.mo8241c();
             if (c != null && !c.isClosed()) {
                 c.close();
             }
-            this.f8959q0.mo8239a();
-            this.f8959q0 = null;
+            this.f8967q0.mo8239a();
+            this.f8967q0 = null;
         }
     }
 
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: h */
     public float mo8383h() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8183f(mo8127t2() + "_title_scale", 1.0f);
     }
 
@@ -733,7 +733,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: i */
     public void mo8384i() {
-        AbstractC2531p1.AbstractC2532a aVar = this.f8806m0;
+        AbstractC2531p1.AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
             aVar.mo8275i();
         }
@@ -741,7 +741,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
 
     /* renamed from: i3 */
     public boolean mo9018i3() {
-        int f = this.f8958p0.mo8321f();
+        int f = this.f8966p0.mo8321f();
         String Q = mo8375Q();
         Q.hashCode();
         char c = 65535;
@@ -828,7 +828,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: j */
     public void mo8385j() {
-        AbstractC2531p1.AbstractC2532a aVar = this.f8806m0;
+        AbstractC2531p1.AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
             aVar.mo8277j();
         }
@@ -841,7 +841,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: k */
     public float mo8386k() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8183f(mo8127t2() + "_list_scale", 1.0f);
     }
 
@@ -868,7 +868,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: m */
     public float mo8388m() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8183f(mo8127t2() + "_list_spacing", 1.0f);
     }
 
@@ -876,13 +876,13 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     /* renamed from: m1 */
     public void mo2585m1() {
         super.mo2585m1();
-        this.f8956n0 = this.f8958p0.mo8321f();
+        this.f8964n0 = this.f8966p0.mo8321f();
         mo9017g3();
     }
 
     /* renamed from: m3 */
     public float mo8468m3() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8183f(mo8127t2() + "_aspect_ratio", 1.0f);
     }
 
@@ -893,7 +893,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: o */
     public float mo8389o() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8183f(mo8127t2() + "_title_spacing", 1.0f);
     }
 
@@ -957,7 +957,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: p */
     public float mo8390p() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8183f(mo8127t2() + "_coverflow_spacing", 1.0f);
     }
 
@@ -1002,16 +1002,16 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: q */
     public void mo8391q(float f) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8155D(mo8127t2() + "_wheel_scale", f);
     }
 
     @Override // com.digdroid.alman.dig.AbstractC2531p1
     /* renamed from: q2 */
     public void mo8125q2() {
-        C2267e2 e2Var = this.f8958p0;
+        C2267e2 e2Var = this.f8966p0;
         if (e2Var != null && e2Var.mo8321f() > 0) {
-            this.f8958p0.mo8338w(0);
+            this.f8966p0.mo8338w(0);
         }
     }
 
@@ -1023,7 +1023,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: r */
     public void mo8392r(float f) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8155D(mo8127t2() + "_coverflow_spacing", f);
     }
 
@@ -1031,21 +1031,21 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     /* renamed from: r1 */
     public void mo2601r1() {
         super.mo2601r1();
-        this.f8795b0.mo8543C();
-        this.f8796c0.mo8850o();
+        this.f8803b0.mo8543C();
+        this.f8804c0.mo8850o();
         new AsyncTaskC2586i(false, true, new CallableC2580c()).execute(new String[0]);
     }
 
     /* renamed from: r3 */
     public void mo9022r3(boolean z) {
-        this.f8956n0 = 0;
+        this.f8964n0 = 0;
         new AsyncTaskC2586i(true, z, null).execute(new String[0]);
     }
 
     @Override // androidx.fragment.app.Fragment
     /* renamed from: s1 */
     public void mo2603s1(Bundle bundle) {
-        bundle.putInt("selected_item", this.f8958p0.mo8321f());
+        bundle.putInt("selected_item", this.f8966p0.mo8321f());
         super.mo2603s1(bundle);
     }
 
@@ -1060,7 +1060,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     public void mo9023s3() {
         ActivityC0447d c0 = mo2552c0();
         if (c0 != null && !c0.isFinishing()) {
-            this.f8806m0.mo8259H(true);
+            this.f8814m0.mo8259H(true);
             View findViewById = c0.findViewById(R.id.resize_view);
             findViewById.setVisibility(0);
             TextView textView = (TextView) findViewById.findViewById(R.id.horizontal_down);
@@ -1094,20 +1094,20 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
         if (z) {
             mo9017g3();
         }
-        if (this.f8959q0 == null) {
+        if (this.f8967q0 == null) {
             C2252d2 j3 = mo8432j3(cursor);
-            this.f8959q0 = j3;
-            this.f8958p0.mo8332q(j3);
+            this.f8967q0 = j3;
+            this.f8966p0.mo8332q(j3);
         } else {
-            this.f8958p0.mo8318b(cursor);
+            this.f8966p0.mo8318b(cursor);
         }
-        this.f8957o0 = cursor;
+        this.f8965o0 = cursor;
     }
 
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: u */
     public void mo8393u(float f) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8155D(mo8127t2() + "_coverflow_scale", f);
     }
 
@@ -1115,11 +1115,11 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     /* renamed from: u2 */
     public long mo8128u2() {
         C2252d2 d2Var;
-        if (!mo8102B2() || (d2Var = this.f8959q0) == null || d2Var.mo8240b() <= 1) {
+        if (!mo8102B2() || (d2Var = this.f8967q0) == null || d2Var.mo8240b() <= 1) {
             return -1;
         }
-        int nextInt = new Random().nextInt(this.f8959q0.mo8240b());
-        Cursor c = this.f8959q0.mo8241c();
+        int nextInt = new Random().nextInt(this.f8967q0.mo8240b());
+        Cursor c = this.f8967q0.mo8241c();
         if (c == null || c.isClosed() || !c.moveToPosition(nextInt)) {
             return -1;
         }
@@ -1128,14 +1128,14 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
 
     /* renamed from: u3 */
     public void mo8469u3(float f) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8155D(mo8127t2() + "_aspect_ratio", f);
     }
 
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: v */
     public void mo8394v(float f) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8155D(mo8127t2() + "_wheel_spacing", f);
     }
 
@@ -1147,21 +1147,21 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
 
     /* renamed from: v3 */
     public void mo9025v3(boolean z) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8153B(mo8127t2() + "_icons_only", z);
     }
 
     /* renamed from: w */
     public boolean mo9026w() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8180c(mo8127t2() + "_icons_only", false);
     }
 
     /* renamed from: w3 */
     public void mo8723w3(String str, int i) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8202z(mo8127t2() + "_list_type", str);
-        AbstractC2531p1.AbstractC2532a aVar = this.f8806m0;
+        AbstractC2531p1.AbstractC2532a aVar = this.f8814m0;
         if (aVar != null) {
             aVar.mo8260K(i);
         }
@@ -1170,7 +1170,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: x */
     public float mo8395x() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8183f(mo8127t2() + "_wheel_scale", 1.0f);
     }
 
@@ -1182,14 +1182,14 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
 
     /* renamed from: x3 */
     public void mo9027x3(boolean z) {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         c3Var.mo8153B(mo8127t2() + "_8bit", z);
     }
 
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: y */
     public float mo8396y() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8183f(mo8127t2() + "_carousel_spacing", 1.0f);
     }
 
@@ -1197,7 +1197,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     /* renamed from: y2 */
     public boolean mo8131y2(int i, int i2) {
         C2267e2 e2Var;
-        if (!mo8102B2() || (e2Var = this.f8958p0) == null) {
+        if (!mo8102B2() || (e2Var = this.f8966p0) == null) {
             return false;
         }
         return (i == 7 && i2 == 1) ? mo9018i3() : e2Var.mo8322g(i, i2);
@@ -1206,7 +1206,7 @@ public abstract class AbstractC2577r1 extends AbstractC2531p1 implements C2267e2
     @Override // com.digdroid.alman.dig.C2267e2.AbstractC2286s
     /* renamed from: z */
     public float mo8397z() {
-        C2219c3 c3Var = this.f8793Z;
+        C2219c3 c3Var = this.f8801Z;
         return c3Var.mo8183f(mo8127t2() + "_carousel_scale", 1.0f);
     }
 }
