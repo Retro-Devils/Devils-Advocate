@@ -1,122 +1,103 @@
 .class Lcom/digdroid/alman/dig/g3$i;
-.super Landroid/os/AsyncTask;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/g3;->H2(Landroid/view/MenuItem;)Z
+    value = Lcom/digdroid/alman/dig/g3;->A(Landroid/app/Activity;Ljava/lang/String;Lcom/digdroid/alman/dig/g3$n;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x0
-    name = "i"
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Landroid/os/AsyncTask<",
-        "Ljava/lang/Void;",
-        "Ljava/lang/Void;",
-        "Ljava/lang/Void;",
-        ">;"
-    }
+    name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Lcom/digdroid/alman/dig/g3;
+.field final synthetic b:Ljava/lang/String;
+
+.field final synthetic c:Lcom/digdroid/alman/dig/g3$n;
+
+.field final synthetic d:Lcom/digdroid/alman/dig/g3;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/g3;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/g3;Ljava/lang/String;Lcom/digdroid/alman/dig/g3$n;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/g3$i;->a:Lcom/digdroid/alman/dig/g3;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/g3$i;->d:Lcom/digdroid/alman/dig/g3;
 
-    invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
+    iput-object p2, p0, Lcom/digdroid/alman/dig/g3$i;->b:Ljava/lang/String;
+
+    iput-object p3, p0, Lcom/digdroid/alman/dig/g3$i;->c:Lcom/digdroid/alman/dig/g3$n;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected varargs a([Ljava/lang/Void;)Ljava/lang/Void;
+.method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$i;->a:Lcom/digdroid/alman/dig/g3;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$i;->d:Lcom/digdroid/alman/dig/g3;
 
-    iget-object v0, p1, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/h3;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/g3;->d:Landroid/database/sqlite/SQLiteDatabase;
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/t0;->s0:Lcom/digdroid/alman/dig/h0;
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/h0;->h:Ljava/lang/String;
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v0, p1}, Lcom/digdroid/alman/dig/h3;->w(Ljava/lang/String;)Z
+    const-string v0, "UPDATE roms SET ignored=1 WHERE system=\'"
 
-    move-result v1
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    xor-int/lit8 v1, v1, 0x1
+    iget-object v0, p0, Lcom/digdroid/alman/dig/g3$i;->b:Ljava/lang/String;
 
-    invoke-virtual {v0, p1, v1}, Lcom/digdroid/alman/dig/h3;->H(Ljava/lang/String;Z)V
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 p1, 0x0
+    const-string v0, "\'"
 
-    return-object p1
-.end method
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-.method protected b(Ljava/lang/Void;)V
-    .locals 3
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$i;->a:Lcom/digdroid/alman/dig/g3;
+    move-result-object p2
 
-    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
+    invoke-virtual {p1, p2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    move-result-object p1
+    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$i;->d:Lcom/digdroid/alman/dig/g3;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/ImageService;->a(Landroid/content/Context;)V
+    iget-object p1, p1, Lcom/digdroid/alman/dig/g3;->d:Landroid/database/sqlite/SQLiteDatabase;
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$i;->a:Lcom/digdroid/alman/dig/g3;
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    iget-object v0, p1, Lcom/digdroid/alman/dig/p1;->m0:Lcom/digdroid/alman/dig/p1$a;
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/r1;->o3()Ljava/lang/String;
+    const-string v1, "UPDATE systems SET ignored=1,numgames=0 WHERE slug=\'"
 
-    move-result-object p1
+    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/g3$i;->a:Lcom/digdroid/alman/dig/g3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/g3$i;->b:Ljava/lang/String;
 
-    iget-object v2, v1, Lcom/digdroid/alman/dig/t0;->s0:Lcom/digdroid/alman/dig/h0;
+    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, v1, Lcom/digdroid/alman/dig/r1;->p0:Lcom/digdroid/alman/dig/e2;
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/e2;->f()I
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result v1
+    move-result-object p2
 
-    invoke-interface {v0, p1, v2, v1}, Lcom/digdroid/alman/dig/p1$a;->q(Ljava/lang/String;Lcom/digdroid/alman/dig/h0;I)V
+    invoke-virtual {p1, p2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    return-void
-.end method
+    iget-object p1, p0, Lcom/digdroid/alman/dig/g3$i;->c:Lcom/digdroid/alman/dig/g3$n;
 
-.method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    check-cast p1, [Ljava/lang/Void;
-
-    invoke-virtual {p0, p1}, Lcom/digdroid/alman/dig/g3$i;->a([Ljava/lang/Void;)Ljava/lang/Void;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
-    .locals 0
-
-    check-cast p1, Ljava/lang/Void;
-
-    invoke-virtual {p0, p1}, Lcom/digdroid/alman/dig/g3$i;->b(Ljava/lang/Void;)V
+    invoke-interface {p1}, Lcom/digdroid/alman/dig/g3$n;->a()V
 
     return-void
 .end method

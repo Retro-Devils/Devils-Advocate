@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method public s0(ILandroid/os/Bundle;)V
+.method public t0(ILandroid/os/Bundle;)V
     .locals 3
 
     iget-object v0, p0, La/a/a/a/b$b;->a:La/a/a/a/b;

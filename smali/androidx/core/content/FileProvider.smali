@@ -154,7 +154,7 @@
     if-nez v1, :cond_0
 
     :try_start_1
-    invoke-static {p0, p1}, Landroidx/core/content/FileProvider;->f(Landroid/content/Context;Ljava/lang/String;)Landroidx/core/content/FileProvider$a;
+    invoke-static {p0, p1}, Landroidx/core/content/FileProvider;->g(Landroid/content/Context;Ljava/lang/String;)Landroidx/core/content/FileProvider$a;
 
     move-result-object v1
     :try_end_1
@@ -207,7 +207,21 @@
     throw p0
 .end method
 
-.method private static e(Ljava/lang/String;)I
+.method public static e(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;)Landroid/net/Uri;
+    .locals 0
+
+    invoke-static {p0, p1}, Landroidx/core/content/FileProvider;->d(Landroid/content/Context;Ljava/lang/String;)Landroidx/core/content/FileProvider$a;
+
+    move-result-object p0
+
+    invoke-interface {p0, p2}, Landroidx/core/content/FileProvider$a;->b(Ljava/io/File;)Landroid/net/Uri;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private static f(Ljava/lang/String;)I
     .locals 3
 
     const-string v0, "r"
@@ -309,7 +323,7 @@
     return p0
 .end method
 
-.method private static f(Landroid/content/Context;Ljava/lang/String;)Landroidx/core/content/FileProvider$a;
+.method private static g(Landroid/content/Context;Ljava/lang/String;)Landroidx/core/content/FileProvider$a;
     .locals 9
 
     new-instance v0, Landroidx/core/content/FileProvider$b;
@@ -510,7 +524,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v4, v1}, Landroidx/core/content/FileProvider$b;->b(Ljava/lang/String;Ljava/io/File;)V
+    invoke-virtual {v0, v4, v1}, Landroidx/core/content/FileProvider$b;->c(Ljava/lang/String;Ljava/io/File;)V
 
     goto/16 :goto_0
 
@@ -692,7 +706,7 @@
 
     move-result-object p1
 
-    invoke-static {p2}, Landroidx/core/content/FileProvider;->e(Ljava/lang/String;)I
+    invoke-static {p2}, Landroidx/core/content/FileProvider;->f(Ljava/lang/String;)I
 
     move-result p2
 

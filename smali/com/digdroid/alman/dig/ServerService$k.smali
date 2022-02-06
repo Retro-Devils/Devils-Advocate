@@ -67,7 +67,7 @@
 
     const-string v1, "sync"
 
-    invoke-static {v0, v1}, Lcom/digdroid/alman/dig/DatabaseService;->v(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/digdroid/alman/dig/DatabaseService;->t(Landroid/content/Context;Ljava/lang/String;)V
 
     return-void
 .end method

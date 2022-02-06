@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/o2$g;
+.implements Lcom/digdroid/alman/dig/n2$g;
 
 
 # annotations

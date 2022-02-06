@@ -69,7 +69,7 @@
 
     const-string p2, "retroarch"
 
-    invoke-static {p1, p2}, Lcom/digdroid/alman/dig/a4;->F(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lcom/digdroid/alman/dig/z3;->D(Landroid/content/Context;Ljava/lang/String;)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/MainActivity$d;->c:Lcom/digdroid/alman/dig/MainActivity;
 

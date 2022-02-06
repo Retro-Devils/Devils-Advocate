@@ -1,85 +1,226 @@
-.class public Lc/b/a/a/d/c/g;
-.super Ljava/lang/Object;
+.class public abstract Lc/b/a/a/d/c/g;
+.super Lc/b/a/a/d/c/b;
 .source ""
 
-
-# static fields
-.field private static final a:Ljava/lang/ClassLoader;
+# interfaces
+.implements Lc/b/a/a/d/c/f;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>()V
     .locals 1
 
-    const-class v0, Lc/b/a/a/d/c/g;
+    const-string v0, "com.google.android.gms.safetynet.internal.ISafetyNetCallbacks"
 
-    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
-
-    move-result-object v0
-
-    sput-object v0, Lc/b/a/a/d/c/g;->a:Ljava/lang/ClassLoader;
+    invoke-direct {p0, v0}, Lc/b/a/a/d/c/b;-><init>(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method private constructor <init>()V
+
+# virtual methods
+.method protected final i(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 p3, 0x1
 
-    return-void
-.end method
+    if-eq p1, p3, :cond_8
 
-.method public static a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T::",
-            "Landroid/os/Parcelable;",
-            ">(",
-            "Landroid/os/Parcel;",
-            "Landroid/os/Parcelable$Creator<",
-            "TT;>;)TT;"
-        }
-    .end annotation
+    const/4 p4, 0x2
 
-    invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
+    if-eq p1, p4, :cond_7
 
-    move-result v0
+    const/4 p4, 0x3
 
-    if-nez v0, :cond_0
+    if-eq p1, p4, :cond_6
 
-    const/4 p0, 0x0
+    const/4 p4, 0x4
 
-    return-object p0
+    if-eq p1, p4, :cond_5
 
-    :cond_0
-    invoke-interface {p1, p0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    const/4 p4, 0x6
 
-    move-result-object p0
+    if-eq p1, p4, :cond_4
 
-    check-cast p0, Landroid/os/Parcelable;
+    const/16 p4, 0x8
 
-    return-object p0
-.end method
+    if-eq p1, p4, :cond_3
 
-.method public static b(Landroid/os/Parcel;Landroid/os/Parcelable;)V
-    .locals 2
+    const/16 p4, 0xf
 
-    const/4 v0, 0x0
+    if-eq p1, p4, :cond_2
 
-    if-nez p1, :cond_0
+    const/16 p4, 0xa
 
-    invoke-virtual {p0, v0}, Landroid/os/Parcel;->writeInt(I)V
+    if-eq p1, p4, :cond_1
 
-    return-void
+    const/16 p4, 0xb
+
+    if-eq p1, p4, :cond_0
+
+    const/4 p1, 0x0
+
+    return p1
 
     :cond_0
-    const/4 v1, 0x1
+    sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-static {p2, p1}, Lc/b/a/a/d/c/c;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
-    invoke-interface {p1, p0, v0}, Landroid/os/Parcelable;->writeToParcel(Landroid/os/Parcel;I)V
+    move-result-object p1
 
-    return-void
+    check-cast p1, Lcom/google/android/gms/common/api/Status;
+
+    invoke-interface {p0, p1}, Lc/b/a/a/d/c/f;->V(Lcom/google/android/gms/common/api/Status;)V
+
+    goto/16 :goto_0
+
+    :cond_1
+    sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    invoke-static {p2, p1}, Lc/b/a/a/d/c/c;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/google/android/gms/common/api/Status;
+
+    invoke-static {p2}, Lc/b/a/a/d/c/c;->c(Landroid/os/Parcel;)Z
+
+    move-result p2
+
+    invoke-interface {p0, p1, p2}, Lc/b/a/a/d/c/f;->q(Lcom/google/android/gms/common/api/Status;Z)V
+
+    goto/16 :goto_0
+
+    :cond_2
+    sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    invoke-static {p2, p1}, Lc/b/a/a/d/c/c;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/google/android/gms/common/api/Status;
+
+    sget-object p4, Lc/b/a/a/e/m;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    invoke-static {p2, p4}, Lc/b/a/a/d/c/c;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object p2
+
+    check-cast p2, Lc/b/a/a/e/m;
+
+    invoke-interface {p0, p1, p2}, Lc/b/a/a/d/c/f;->s(Lcom/google/android/gms/common/api/Status;Lc/b/a/a/e/m;)V
+
+    goto :goto_0
+
+    :cond_3
+    sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    invoke-static {p2, p1}, Lc/b/a/a/d/c/c;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/google/android/gms/common/api/Status;
+
+    sget-object p4, Lc/b/a/a/e/i;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    invoke-static {p2, p4}, Lc/b/a/a/d/c/c;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object p2
+
+    check-cast p2, Lc/b/a/a/e/i;
+
+    invoke-interface {p0, p1, p2}, Lc/b/a/a/d/c/f;->q0(Lcom/google/android/gms/common/api/Status;Lc/b/a/a/e/i;)V
+
+    goto :goto_0
+
+    :cond_4
+    sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    invoke-static {p2, p1}, Lc/b/a/a/d/c/c;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/google/android/gms/common/api/Status;
+
+    sget-object p4, Lc/b/a/a/e/k;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    invoke-static {p2, p4}, Lc/b/a/a/d/c/c;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object p2
+
+    check-cast p2, Lc/b/a/a/e/k;
+
+    invoke-interface {p0, p1, p2}, Lc/b/a/a/d/c/f;->n(Lcom/google/android/gms/common/api/Status;Lc/b/a/a/e/k;)V
+
+    goto :goto_0
+
+    :cond_5
+    sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    invoke-static {p2, p1}, Lc/b/a/a/d/c/c;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/google/android/gms/common/api/Status;
+
+    invoke-static {p2}, Lc/b/a/a/d/c/c;->c(Landroid/os/Parcel;)Z
+
+    move-result p2
+
+    invoke-interface {p0, p1, p2}, Lc/b/a/a/d/c/f;->R(Lcom/google/android/gms/common/api/Status;Z)V
+
+    goto :goto_0
+
+    :cond_6
+    sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    invoke-static {p2, p1}, Lc/b/a/a/d/c/c;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/google/android/gms/common/api/Status;
+
+    sget-object p4, Lc/b/a/a/e/b;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    invoke-static {p2, p4}, Lc/b/a/a/d/c/c;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object p2
+
+    check-cast p2, Lc/b/a/a/e/b;
+
+    invoke-interface {p0, p1, p2}, Lc/b/a/a/d/c/f;->F(Lcom/google/android/gms/common/api/Status;Lc/b/a/a/e/b;)V
+
+    goto :goto_0
+
+    :cond_7
+    invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-interface {p0, p1}, Lc/b/a/a/d/c/f;->t(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_8
+    sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    invoke-static {p2, p1}, Lc/b/a/a/d/c/c;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/google/android/gms/common/api/Status;
+
+    sget-object p4, Lc/b/a/a/e/f;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    invoke-static {p2, p4}, Lc/b/a/a/d/c/c;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object p2
+
+    check-cast p2, Lc/b/a/a/e/f;
+
+    invoke-interface {p0, p1, p2}, Lc/b/a/a/d/c/f;->J(Lcom/google/android/gms/common/api/Status;Lc/b/a/a/e/f;)V
+
+    :goto_0
+    return p3
 .end method

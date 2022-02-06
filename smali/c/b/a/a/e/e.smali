@@ -48,7 +48,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, p1, p2}, Lc/b/a/a/d/d/j;->a(Lcom/google/android/gms/common/api/f;[BLjava/lang/String;)Lcom/google/android/gms/common/api/g;
+    invoke-static {v0, p1, p2}, Lc/b/a/a/d/c/j;->a(Lcom/google/android/gms/common/api/f;[BLjava/lang/String;)Lcom/google/android/gms/common/api/g;
 
     move-result-object p1
 

@@ -186,11 +186,11 @@
 
     iget-object v4, v0, Lcom/digdroid/alman/dig/v;->a:Landroid/content/Context;
 
-    invoke-static {v4}, Lb/o/a/a;->b(Landroid/content/Context;)Lb/o/a/a;
+    invoke-static {v4}, Lb/n/a/a;->b(Landroid/content/Context;)Lb/n/a/a;
 
     move-result-object v4
 
-    invoke-virtual {v4, v15}, Lb/o/a/a;->d(Landroid/content/Intent;)Z
+    invoke-virtual {v4, v15}, Lb/n/a/a;->d(Landroid/content/Intent;)Z
 
     move-wide/from16 v17, v2
 
@@ -343,11 +343,11 @@
 
     iget-object v9, v0, Lcom/digdroid/alman/dig/v;->a:Landroid/content/Context;
 
-    invoke-static {v9}, Lb/o/a/a;->b(Landroid/content/Context;)Lb/o/a/a;
+    invoke-static {v9}, Lb/n/a/a;->b(Landroid/content/Context;)Lb/n/a/a;
 
     move-result-object v9
 
-    invoke-virtual {v9, v8}, Lb/o/a/a;->d(Landroid/content/Intent;)Z
+    invoke-virtual {v9, v8}, Lb/n/a/a;->d(Landroid/content/Intent;)Z
 
     move-wide v15, v5
 

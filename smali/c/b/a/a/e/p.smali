@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/google/android/gms/common/api/a$a<",
-        "Lc/b/a/a/d/d/m;",
+        "Lc/b/a/a/d/c/m;",
         "*>;"
     }
 .end annotation
@@ -27,7 +27,7 @@
 .method public final synthetic a(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/d;Ljava/lang/Object;Lcom/google/android/gms/common/api/f$a;Lcom/google/android/gms/common/api/f$b;)Lcom/google/android/gms/common/api/a$f;
     .locals 6
 
-    new-instance p4, Lc/b/a/a/d/d/m;
+    new-instance p4, Lc/b/a/a/d/c/m;
 
     move-object v0, p4
 
@@ -41,7 +41,7 @@
 
     move-object v5, p6
 
-    invoke-direct/range {v0 .. v5}, Lc/b/a/a/d/d/m;-><init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/d;Lcom/google/android/gms/common/api/f$a;Lcom/google/android/gms/common/api/f$b;)V
+    invoke-direct/range {v0 .. v5}, Lc/b/a/a/d/c/m;-><init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/d;Lcom/google/android/gms/common/api/f$a;Lcom/google/android/gms/common/api/f$b;)V
 
     return-object p4
 .end method

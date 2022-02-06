@@ -103,7 +103,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/bumptech/glide/c;->u(Landroid/content/Context;)Lcom/bumptech/glide/k;
+    invoke-static {v0}, Lcom/bumptech/glide/c;->t(Landroid/content/Context;)Lcom/bumptech/glide/k;
 
     move-result-object v2
 
@@ -111,7 +111,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lcom/bumptech/glide/c;->u(Landroid/content/Context;)Lcom/bumptech/glide/k;
+    invoke-static {p1}, Lcom/bumptech/glide/c;->t(Landroid/content/Context;)Lcom/bumptech/glide/k;
 
     move-result-object p1
 
@@ -366,7 +366,7 @@
 
     iget-object v1, p0, Lcom/bumptech/glide/load/q/h/g;->a:Lcom/bumptech/glide/n/a;
 
-    invoke-virtual {v0, v1}, Lcom/bumptech/glide/j;->v0(Ljava/lang/Object;)Lcom/bumptech/glide/j;
+    invoke-virtual {v0, v1}, Lcom/bumptech/glide/j;->u0(Ljava/lang/Object;)Lcom/bumptech/glide/j;
 
     move-result-object v0
 

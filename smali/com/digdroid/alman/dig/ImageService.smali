@@ -6,7 +6,7 @@
 # instance fields
 .field private b:Lcom/digdroid/alman/dig/o;
 
-.field private c:Lcom/digdroid/alman/dig/c3;
+.field private c:Lcom/digdroid/alman/dig/b3;
 
 
 # direct methods
@@ -155,11 +155,11 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/digdroid/alman/dig/ImageService;->c:Lcom/digdroid/alman/dig/c3;
+    iput-object v0, p0, Lcom/digdroid/alman/dig/ImageService;->c:Lcom/digdroid/alman/dig/b3;
 
     return-void
 .end method
@@ -167,7 +167,7 @@
 .method protected onHandleIntent(Landroid/content/Intent;)V
     .locals 4
 
-    invoke-static {p0}, Lcom/digdroid/alman/dig/a4;->x(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/digdroid/alman/dig/z3;->w(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -176,11 +176,11 @@
     if-eqz p1, :cond_7
 
     :try_start_0
-    iget-object v0, p0, Lcom/digdroid/alman/dig/ImageService;->c:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/ImageService;->c:Lcom/digdroid/alman/dig/b3;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/c3;->Q(Z)V
+    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/b3;->Q(Z)V
 
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -257,11 +257,11 @@
 
     move-result p1
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/ImageService;->c:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/ImageService;->c:Lcom/digdroid/alman/dig/b3;
 
     const-string v3, "wifi_only"
 
-    invoke-virtual {v0, v3, v1}, Lcom/digdroid/alman/dig/c3;->c(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v3, v1}, Lcom/digdroid/alman/dig/b3;->c(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -322,9 +322,9 @@
     :goto_2
     if-eqz v1, :cond_7
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/ImageService;->c:Lcom/digdroid/alman/dig/c3;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/ImageService;->c:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {p1, v2}, Lcom/digdroid/alman/dig/c3;->Q(Z)V
+    invoke-virtual {p1, v2}, Lcom/digdroid/alman/dig/b3;->Q(Z)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

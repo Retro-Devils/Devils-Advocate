@@ -129,7 +129,7 @@
     const/4 p2, 0x0
 
     :goto_0
-    invoke-interface {p0, p1, p2}, La/a/a/a/a;->s0(ILandroid/os/Bundle;)V
+    invoke-interface {p0, p1, p2}, La/a/a/a/a;->t0(ILandroid/os/Bundle;)V
 
     return v0
 .end method

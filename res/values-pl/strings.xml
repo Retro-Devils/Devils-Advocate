@@ -27,7 +27,7 @@
     <string name="abc_shareactionprovider_share_with">Udostępnij przez:</string>
     <string name="abc_shareactionprovider_share_with_application">Udostępnij przez: %s</string>
     <string name="abc_toolbar_collapse_description">Zwiń</string>
-    <string name="app_name">Dig</string>
+    <string name="app_name">"Devil's Advocate"</string>
     <string name="common_google_play_services_enable_button">Włącz</string>
     <string name="common_google_play_services_enable_text">Aplikacja %1$s nie będzie działać, jeśli nie włączysz Usług Google Play.</string>
     <string name="common_google_play_services_enable_title">Włącz Usługi Google Play</string>

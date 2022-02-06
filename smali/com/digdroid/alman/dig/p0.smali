@@ -14,7 +14,7 @@
 
 
 # instance fields
-.field f:Lcom/digdroid/alman/dig/c3;
+.field f:Lcom/digdroid/alman/dig/b3;
 
 .field g:F
 
@@ -24,12 +24,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FLcom/digdroid/alman/dig/u;Ljava/lang/String;Ljava/lang/String;Z)V
+.method public constructor <init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FLcom/digdroid/alman/dig/u;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 12
 
     move-object v0, p0
 
-    invoke-direct/range {p0 .. p4}, Lcom/digdroid/alman/dig/q1;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;F)V
+    invoke-direct/range {p0 .. p4}, Lcom/digdroid/alman/dig/q1;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;F)V
 
     new-instance v11, Lcom/digdroid/alman/dig/q0;
 
@@ -53,7 +53,7 @@
 
     move/from16 v10, p8
 
-    invoke-direct/range {v1 .. v10}, Lcom/digdroid/alman/dig/q0;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FFLcom/digdroid/alman/dig/u;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-direct/range {v1 .. v10}, Lcom/digdroid/alman/dig/q0;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FFLcom/digdroid/alman/dig/u;Ljava/lang/String;Ljava/lang/String;Z)V
 
     iput-object v11, v0, Lcom/digdroid/alman/dig/p0;->i:Lcom/digdroid/alman/dig/q0;
 
@@ -61,27 +61,27 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
+    invoke-static {v1}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/digdroid/alman/dig/p0;->f:Lcom/digdroid/alman/dig/c3;
+    iput-object v1, v0, Lcom/digdroid/alman/dig/p0;->f:Lcom/digdroid/alman/dig/b3;
 
     const-string v2, "game_list_scale"
 
     const/high16 v3, 0x3f800000    # 1.0f
 
-    invoke-virtual {v1, v2, v3}, Lcom/digdroid/alman/dig/c3;->f(Ljava/lang/String;F)F
+    invoke-virtual {v1, v2, v3}, Lcom/digdroid/alman/dig/b3;->f(Ljava/lang/String;F)F
 
     move-result v1
 
     iput v1, v0, Lcom/digdroid/alman/dig/p0;->g:F
 
-    iget-object v1, v0, Lcom/digdroid/alman/dig/p0;->f:Lcom/digdroid/alman/dig/c3;
+    iget-object v1, v0, Lcom/digdroid/alman/dig/p0;->f:Lcom/digdroid/alman/dig/b3;
 
     const-string v2, "game_list_spacing"
 
-    invoke-virtual {v1, v2, v3}, Lcom/digdroid/alman/dig/c3;->f(Ljava/lang/String;F)F
+    invoke-virtual {v1, v2, v3}, Lcom/digdroid/alman/dig/b3;->f(Ljava/lang/String;F)F
 
     move-result v1
 
@@ -163,13 +163,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
-
     :catch_0
-    move-exception p1
-
-    invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
-
     :cond_3
     :goto_0
     return-void
@@ -258,13 +252,13 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/p0;->i:Lcom/digdroid/alman/dig/q0;
 
-    invoke-virtual {p1, p3}, Lcom/digdroid/alman/dig/q0;->h(Landroid/database/Cursor;)Ljava/lang/String;
+    invoke-virtual {p1, p3}, Lcom/digdroid/alman/dig/q0;->g(Landroid/database/Cursor;)Ljava/lang/String;
 
     move-result-object p1
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/p0;->i:Lcom/digdroid/alman/dig/q0;
 
-    invoke-virtual {v0, p3}, Lcom/digdroid/alman/dig/q0;->g(Landroid/database/Cursor;)J
+    invoke-virtual {v0, p3}, Lcom/digdroid/alman/dig/q0;->f(Landroid/database/Cursor;)J
 
     move-result-wide v0
 
@@ -302,7 +296,7 @@
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v0, 0x7f1101f4
+    const v0, 0x7f1101f2
 
     invoke-virtual {p2, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -316,7 +310,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/p0;->i:Lcom/digdroid/alman/dig/q0;
 
-    invoke-virtual {v0, p2, p3}, Lcom/digdroid/alman/dig/q0;->f(Landroid/content/Context;Landroid/database/Cursor;)Ljava/lang/String;
+    invoke-virtual {v0, p2, p3}, Lcom/digdroid/alman/dig/q0;->e(Landroid/content/Context;Landroid/database/Cursor;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -382,9 +376,9 @@
 
     iget-object v1, v0, Lcom/digdroid/alman/dig/p0$c;->a:Lcom/digdroid/alman/dig/SquaredImageView;
 
-    iget-object v2, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/t3;
+    iget-object v2, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/s3;
 
-    iget v2, v2, Lcom/digdroid/alman/dig/t3;->d:I
+    iget v2, v2, Lcom/digdroid/alman/dig/s3;->d:I
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setBackgroundColor(I)V
 
@@ -398,9 +392,9 @@
 
     iput-object v1, v0, Lcom/digdroid/alman/dig/p0$c;->b:Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/t3;
+    iget-object v2, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/s3;
 
-    iget v2, v2, Lcom/digdroid/alman/dig/t3;->e:I
+    iget v2, v2, Lcom/digdroid/alman/dig/s3;->e:I
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -414,9 +408,9 @@
 
     iput-object v1, v0, Lcom/digdroid/alman/dig/p0$c;->c:Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/t3;
+    iget-object v2, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/s3;
 
-    iget v2, v2, Lcom/digdroid/alman/dig/t3;->f:I
+    iget v2, v2, Lcom/digdroid/alman/dig/s3;->f:I
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -440,15 +434,15 @@
 
     iput-object v1, v0, Lcom/digdroid/alman/dig/p0$c;->e:Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/t3;
+    iget-object v2, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/s3;
 
-    iget v2, v2, Lcom/digdroid/alman/dig/t3;->g:I
+    iget v2, v2, Lcom/digdroid/alman/dig/s3;->g:I
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/p0;->i:Lcom/digdroid/alman/dig/q0;
 
-    iget-boolean v2, v1, Lcom/digdroid/alman/dig/q0;->s:Z
+    iget-boolean v2, v1, Lcom/digdroid/alman/dig/q0;->o:Z
 
     const v3, 0x7f090328
 
@@ -630,9 +624,9 @@
 
     iget-object p3, p2, Lcom/digdroid/alman/dig/p0$a;->a:Lcom/digdroid/alman/dig/SquaredImageView;
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/t3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/s3;
 
-    iget v1, v1, Lcom/digdroid/alman/dig/t3;->d:I
+    iget v1, v1, Lcom/digdroid/alman/dig/s3;->d:I
 
     invoke-virtual {p3, v1}, Landroid/widget/ImageView;->setBackgroundColor(I)V
 
@@ -646,9 +640,9 @@
 
     iput-object p3, p2, Lcom/digdroid/alman/dig/p0$a;->b:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/t3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/s3;
 
-    iget v1, v1, Lcom/digdroid/alman/dig/t3;->e:I
+    iget v1, v1, Lcom/digdroid/alman/dig/s3;->e:I
 
     invoke-virtual {p3, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -662,9 +656,9 @@
 
     iput-object p3, p2, Lcom/digdroid/alman/dig/p0$a;->c:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/t3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/s3;
 
-    iget v1, v1, Lcom/digdroid/alman/dig/t3;->f:I
+    iget v1, v1, Lcom/digdroid/alman/dig/s3;->f:I
 
     invoke-virtual {p3, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -678,9 +672,9 @@
 
     iput-object p3, p2, Lcom/digdroid/alman/dig/p0$a;->d:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/t3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/s3;
 
-    iget v1, v1, Lcom/digdroid/alman/dig/t3;->f:I
+    iget v1, v1, Lcom/digdroid/alman/dig/s3;->f:I
 
     invoke-virtual {p3, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -704,9 +698,9 @@
 
     iput-object p3, p2, Lcom/digdroid/alman/dig/p0$a;->f:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/t3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/s3;
 
-    iget v1, v1, Lcom/digdroid/alman/dig/t3;->g:I
+    iget v1, v1, Lcom/digdroid/alman/dig/s3;->g:I
 
     invoke-virtual {p3, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -716,7 +710,7 @@
 
     mul-float p3, p3, v1
 
-    invoke-static {p3}, Lcom/digdroid/alman/dig/q3;->d(F)F
+    invoke-static {p3}, Lcom/digdroid/alman/dig/p3;->d(F)F
 
     move-result p3
 
@@ -740,7 +734,7 @@
 
     mul-float p3, p3, v1
 
-    invoke-static {p3}, Lcom/digdroid/alman/dig/q3;->d(F)F
+    invoke-static {p3}, Lcom/digdroid/alman/dig/p3;->d(F)F
 
     move-result p3
 
@@ -776,7 +770,7 @@
 
     mul-float v1, v1, v2
 
-    invoke-static {v1}, Lcom/digdroid/alman/dig/q3;->u(F)F
+    invoke-static {v1}, Lcom/digdroid/alman/dig/p3;->u(F)F
 
     move-result v1
 
@@ -788,7 +782,7 @@
 
     mul-float p3, p3, v1
 
-    invoke-static {p3}, Lcom/digdroid/alman/dig/q3;->d(F)F
+    invoke-static {p3}, Lcom/digdroid/alman/dig/p3;->d(F)F
 
     move-result p3
 
@@ -808,7 +802,7 @@
 
     mul-float v2, v2, v3
 
-    invoke-static {v2}, Lcom/digdroid/alman/dig/q3;->u(F)F
+    invoke-static {v2}, Lcom/digdroid/alman/dig/p3;->u(F)F
 
     move-result v2
 
@@ -822,7 +816,7 @@
 
     mul-float v2, v2, v3
 
-    invoke-static {v2}, Lcom/digdroid/alman/dig/q3;->u(F)F
+    invoke-static {v2}, Lcom/digdroid/alman/dig/p3;->u(F)F
 
     move-result v2
 
@@ -982,19 +976,19 @@
 
     iput-object p3, p2, Lcom/digdroid/alman/dig/p0$b;->a:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/t3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/s3;
 
-    iget v1, v1, Lcom/digdroid/alman/dig/t3;->e:I
+    iget v1, v1, Lcom/digdroid/alman/dig/s3;->e:I
 
     invoke-virtual {p3, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    iget-object p3, p0, Lcom/digdroid/alman/dig/p0;->f:Lcom/digdroid/alman/dig/c3;
+    iget-object p3, p0, Lcom/digdroid/alman/dig/p0;->f:Lcom/digdroid/alman/dig/b3;
 
     const-string v1, "game_title_scale"
 
     const/high16 v2, 0x3f800000    # 1.0f
 
-    invoke-virtual {p3, v1, v2}, Lcom/digdroid/alman/dig/c3;->f(Ljava/lang/String;F)F
+    invoke-virtual {p3, v1, v2}, Lcom/digdroid/alman/dig/b3;->f(Ljava/lang/String;F)F
 
     move-result p3
 
@@ -1004,7 +998,7 @@
 
     mul-float v2, v2, p3
 
-    invoke-static {v2}, Lcom/digdroid/alman/dig/q3;->u(F)F
+    invoke-static {v2}, Lcom/digdroid/alman/dig/p3;->u(F)F
 
     move-result v2
 
@@ -1014,7 +1008,7 @@
 
     mul-float v1, v1, p3
 
-    invoke-static {v1}, Lcom/digdroid/alman/dig/q3;->e(F)F
+    invoke-static {v1}, Lcom/digdroid/alman/dig/p3;->e(F)F
 
     move-result v1
 
@@ -1026,7 +1020,7 @@
 
     mul-float p3, p3, v2
 
-    invoke-static {p3}, Lcom/digdroid/alman/dig/q3;->d(F)F
+    invoke-static {p3}, Lcom/digdroid/alman/dig/p3;->d(F)F
 
     move-result p3
 
@@ -1046,9 +1040,9 @@
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/p0;->f:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/p0;->f:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/c3;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/b3;->b()Ljava/lang/String;
 
     move-result-object v0
 

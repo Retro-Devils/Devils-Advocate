@@ -39,7 +39,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/WidgetActivity$a;->a:Lcom/digdroid/alman/dig/WidgetActivity;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/WidgetActivity;->j1()V
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/WidgetActivity;->h1()V
 
     const/4 v0, 0x0
 

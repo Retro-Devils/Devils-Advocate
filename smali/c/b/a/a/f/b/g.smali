@@ -7,5 +7,5 @@
 
 
 # virtual methods
-.method public abstract V(Lc/b/a/a/f/b/i;Lc/b/a/a/f/b/e;)V
+.method public abstract U(Lc/b/a/a/f/b/i;Lc/b/a/a/f/b/e;)V
 .end method

@@ -240,14 +240,14 @@
 
     move-result-object p2
 
-    invoke-virtual {p0, p2}, Lcom/bumptech/glide/k;->B(Lcom/bumptech/glide/r/f;)V
+    invoke-virtual {p0, p2}, Lcom/bumptech/glide/k;->A(Lcom/bumptech/glide/r/f;)V
 
     invoke-virtual {p1, p0}, Lcom/bumptech/glide/c;->o(Lcom/bumptech/glide/k;)V
 
     return-void
 .end method
 
-.method private E(Lcom/bumptech/glide/r/j/h;)V
+.method private D(Lcom/bumptech/glide/r/j/h;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -257,7 +257,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0, p1}, Lcom/bumptech/glide/k;->D(Lcom/bumptech/glide/r/j/h;)Z
+    invoke-virtual {p0, p1}, Lcom/bumptech/glide/k;->C(Lcom/bumptech/glide/r/j/h;)Z
 
     move-result v0
 
@@ -289,31 +289,7 @@
 
 
 # virtual methods
-.method public declared-synchronized A()V
-    .locals 1
-
-    monitor-enter p0
-
-    :try_start_0
-    iget-object v0, p0, Lcom/bumptech/glide/k;->h:Lcom/bumptech/glide/o/n;
-
-    invoke-virtual {v0}, Lcom/bumptech/glide/o/n;->f()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method protected declared-synchronized B(Lcom/bumptech/glide/r/f;)V
+.method protected declared-synchronized A(Lcom/bumptech/glide/r/f;)V
     .locals 0
 
     monitor-enter p0
@@ -347,7 +323,7 @@
     throw p1
 .end method
 
-.method declared-synchronized C(Lcom/bumptech/glide/r/j/h;Lcom/bumptech/glide/r/c;)V
+.method declared-synchronized B(Lcom/bumptech/glide/r/j/h;Lcom/bumptech/glide/r/c;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -384,7 +360,7 @@
     throw p1
 .end method
 
-.method declared-synchronized D(Lcom/bumptech/glide/r/j/h;)Z
+.method declared-synchronized C(Lcom/bumptech/glide/r/j/h;)Z
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -456,7 +432,7 @@
     monitor-enter p0
 
     :try_start_0
-    invoke-virtual {p0}, Lcom/bumptech/glide/k;->A()V
+    invoke-virtual {p0}, Lcom/bumptech/glide/k;->z()V
 
     iget-object v0, p0, Lcom/bumptech/glide/k;->j:Lcom/bumptech/glide/o/p;
 
@@ -482,7 +458,7 @@
     monitor-enter p0
 
     :try_start_0
-    invoke-virtual {p0}, Lcom/bumptech/glide/k;->z()V
+    invoke-virtual {p0}, Lcom/bumptech/glide/k;->y()V
 
     iget-object v0, p0, Lcom/bumptech/glide/k;->j:Lcom/bumptech/glide/o/p;
 
@@ -674,7 +650,7 @@
     return-void
 
     :cond_0
-    invoke-direct {p0, p1}, Lcom/bumptech/glide/k;->E(Lcom/bumptech/glide/r/j/h;)V
+    invoke-direct {p0, p1}, Lcom/bumptech/glide/k;->D(Lcom/bumptech/glide/r/j/h;)V
 
     return-void
 .end method
@@ -702,7 +678,7 @@
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p0}, Lcom/bumptech/glide/k;->y()V
+    invoke-virtual {p0}, Lcom/bumptech/glide/k;->x()V
 
     :cond_0
     return-void
@@ -798,12 +774,12 @@
     return-object p1
 .end method
 
-.method public t(Landroid/net/Uri;)Lcom/bumptech/glide/j;
+.method public t(Ljava/io/File;)Lcom/bumptech/glide/j;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroid/net/Uri;",
+            "Ljava/io/File;",
             ")",
             "Lcom/bumptech/glide/j<",
             "Landroid/graphics/drawable/Drawable;",
@@ -815,7 +791,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/bumptech/glide/j;->s0(Landroid/net/Uri;)Lcom/bumptech/glide/j;
+    invoke-virtual {v0, p1}, Lcom/bumptech/glide/j;->s0(Ljava/io/File;)Lcom/bumptech/glide/j;
 
     move-result-object p1
 
@@ -876,31 +852,7 @@
     throw v0
 .end method
 
-.method public u(Ljava/io/File;)Lcom/bumptech/glide/j;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/io/File;",
-            ")",
-            "Lcom/bumptech/glide/j<",
-            "Landroid/graphics/drawable/Drawable;",
-            ">;"
-        }
-    .end annotation
-
-    invoke-virtual {p0}, Lcom/bumptech/glide/k;->n()Lcom/bumptech/glide/j;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Lcom/bumptech/glide/j;->t0(Ljava/io/File;)Lcom/bumptech/glide/j;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public v(Ljava/lang/Integer;)Lcom/bumptech/glide/j;
+.method public u(Ljava/lang/Integer;)Lcom/bumptech/glide/j;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -917,14 +869,14 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/bumptech/glide/j;->u0(Ljava/lang/Integer;)Lcom/bumptech/glide/j;
+    invoke-virtual {v0, p1}, Lcom/bumptech/glide/j;->t0(Ljava/lang/Integer;)Lcom/bumptech/glide/j;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public w(Ljava/lang/String;)Lcom/bumptech/glide/j;
+.method public v(Ljava/lang/String;)Lcom/bumptech/glide/j;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -941,14 +893,14 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/bumptech/glide/j;->w0(Ljava/lang/String;)Lcom/bumptech/glide/j;
+    invoke-virtual {v0, p1}, Lcom/bumptech/glide/j;->v0(Ljava/lang/String;)Lcom/bumptech/glide/j;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public declared-synchronized x()V
+.method public declared-synchronized w()V
     .locals 1
 
     monitor-enter p0
@@ -972,13 +924,13 @@
     throw v0
 .end method
 
-.method public declared-synchronized y()V
+.method public declared-synchronized x()V
     .locals 2
 
     monitor-enter p0
 
     :try_start_0
-    invoke-virtual {p0}, Lcom/bumptech/glide/k;->x()V
+    invoke-virtual {p0}, Lcom/bumptech/glide/k;->w()V
 
     iget-object v0, p0, Lcom/bumptech/glide/k;->i:Lcom/bumptech/glide/o/m;
 
@@ -1003,7 +955,7 @@
 
     check-cast v1, Lcom/bumptech/glide/k;
 
-    invoke-virtual {v1}, Lcom/bumptech/glide/k;->x()V
+    invoke-virtual {v1}, Lcom/bumptech/glide/k;->w()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1028,7 +980,7 @@
     goto :goto_1
 .end method
 
-.method public declared-synchronized z()V
+.method public declared-synchronized y()V
     .locals 1
 
     monitor-enter p0
@@ -1037,6 +989,30 @@
     iget-object v0, p0, Lcom/bumptech/glide/k;->h:Lcom/bumptech/glide/o/n;
 
     invoke-virtual {v0}, Lcom/bumptech/glide/o/n;->d()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method
+
+.method public declared-synchronized z()V
+    .locals 1
+
+    monitor-enter p0
+
+    :try_start_0
+    iget-object v0, p0, Lcom/bumptech/glide/k;->h:Lcom/bumptech/glide/o/n;
+
+    invoke-virtual {v0}, Lcom/bumptech/glide/o/n;->f()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

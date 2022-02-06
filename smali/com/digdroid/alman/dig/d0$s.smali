@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/digdroid/alman/dig/d0$s;
+.class interface abstract Lcom/digdroid/alman/dig/d0$s;
 .super Ljava/lang/Object;
 .source ""
 
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x609
+    accessFlags = 0x608
     name = "s"
 .end annotation
 
@@ -18,5 +18,5 @@
 .method public abstract a()V
 .end method
 
-.method public abstract b()V
+.method public abstract b(Ljava/lang/String;)V
 .end method

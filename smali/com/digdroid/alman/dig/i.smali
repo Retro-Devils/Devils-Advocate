@@ -29,11 +29,9 @@
 
 .field c:Z
 
-.field d:I
+.field private d:Lcom/digdroid/alman/dig/y;
 
-.field private e:Lcom/digdroid/alman/dig/y;
-
-.field f:Lcom/digdroid/alman/dig/i$b;
+.field e:Lcom/digdroid/alman/dig/i$b;
 
 
 # direct methods
@@ -52,10 +50,6 @@
 
     iput-boolean p1, p0, Lcom/digdroid/alman/dig/i;->c:Z
 
-    const/4 p1, -0x1
-
-    iput p1, p0, Lcom/digdroid/alman/dig/i;->d:I
-
     return-void
 .end method
 
@@ -72,7 +66,7 @@
 .method public a()V
     .locals 1
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/i;->e:Lcom/digdroid/alman/dig/y;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/i;->d:Lcom/digdroid/alman/dig/y;
 
     invoke-virtual {v0}, Landroid/app/DialogFragment;->dismiss()V
 
@@ -82,7 +76,7 @@
 .method public b(Ljava/lang/String;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/i;->e:Lcom/digdroid/alman/dig/y;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/i;->d:Lcom/digdroid/alman/dig/y;
 
     invoke-virtual {v0}, Landroid/app/DialogFragment;->dismiss()V
 
@@ -94,7 +88,7 @@
 
     aput-object p1, v0, v1
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/i;->f:Lcom/digdroid/alman/dig/i$b;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/i;->e:Lcom/digdroid/alman/dig/i$b;
 
     invoke-interface {p1, v0}, Lcom/digdroid/alman/dig/i$b;->a([Ljava/lang/String;)V
 
@@ -145,7 +139,7 @@
 
     check-cast v0, Landroid/app/Activity;
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_1
 
     invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
 
@@ -156,51 +150,26 @@
     goto :goto_0
 
     :cond_0
-    const-string v1, "saf"
-
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    new-instance p1, Landroid/content/Intent;
-
-    const-string v1, "android.intent.action.OPEN_DOCUMENT_TREE"
-
-    invoke-direct {p1, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    const v1, 0x100c3
-
-    invoke-virtual {p1, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
-
-    iget v1, p0, Lcom/digdroid/alman/dig/i;->d:I
-
-    invoke-virtual {v0, p1, v1}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
-
-    return-void
-
-    :cond_1
     :try_start_0
     invoke-static {}, Lcom/digdroid/alman/dig/y;->E()Lcom/digdroid/alman/dig/y;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/digdroid/alman/dig/i;->e:Lcom/digdroid/alman/dig/y;
+    iput-object v1, p0, Lcom/digdroid/alman/dig/i;->d:Lcom/digdroid/alman/dig/y;
 
     invoke-virtual {v1, p0}, Lcom/digdroid/alman/dig/y;->J(Lcom/digdroid/alman/dig/y$m;)V
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/i;->e:Lcom/digdroid/alman/dig/y;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/i;->d:Lcom/digdroid/alman/dig/y;
 
     invoke-virtual {v1, p1}, Lcom/digdroid/alman/dig/y;->K(Ljava/lang/String;)V
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/i;->e:Lcom/digdroid/alman/dig/y;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/i;->d:Lcom/digdroid/alman/dig/y;
 
     iget-boolean v1, p0, Lcom/digdroid/alman/dig/i;->c:Z
 
     invoke-virtual {p1, v1}, Lcom/digdroid/alman/dig/y;->L(Z)V
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/i;->e:Lcom/digdroid/alman/dig/y;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/i;->d:Lcom/digdroid/alman/dig/y;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
 
@@ -213,20 +182,12 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :catch_0
-    :cond_2
+    :cond_1
     :goto_0
     return-void
 .end method
 
-.method public f(I)V
-    .locals 0
-
-    iput p1, p0, Lcom/digdroid/alman/dig/i;->d:I
-
-    return-void
-.end method
-
-.method public g(Z)V
+.method public f(Z)V
     .locals 0
 
     iput-boolean p1, p0, Lcom/digdroid/alman/dig/i;->c:Z
@@ -234,15 +195,15 @@
     return-void
 .end method
 
-.method public h(Lcom/digdroid/alman/dig/i$b;)V
+.method public g(Lcom/digdroid/alman/dig/i$b;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/i;->f:Lcom/digdroid/alman/dig/i$b;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/i;->e:Lcom/digdroid/alman/dig/i$b;
 
     return-void
 .end method
 
-.method public i(Ljava/lang/String;)V
+.method public h(Ljava/lang/String;)V
     .locals 0
 
     iput-object p1, p0, Lcom/digdroid/alman/dig/i;->b:Ljava/lang/String;

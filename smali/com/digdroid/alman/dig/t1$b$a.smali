@@ -35,25 +35,23 @@
 
 # virtual methods
 .method public a([Ljava/lang/String;)V
-    .locals 6
+    .locals 5
+
+    const/4 v0, 0x0
+
+    aget-object p1, p1, v0
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/t1$b$a;->a:Lcom/digdroid/alman/dig/t1$b;
 
-    iget-object v1, v0, Lcom/digdroid/alman/dig/t1$b;->b:Landroid/app/Activity;
+    iget-object v1, v0, Lcom/digdroid/alman/dig/t1$b;->j:Lcom/digdroid/alman/dig/t1;
 
-    const/4 v2, 0x0
+    iget-object v2, v0, Lcom/digdroid/alman/dig/t1$b;->c:Ljava/lang/String;
 
-    aget-object p1, p1, v2
-
-    iget-object v2, v0, Lcom/digdroid/alman/dig/t1$b;->j:Lcom/digdroid/alman/dig/t1;
-
-    iget-object v3, v0, Lcom/digdroid/alman/dig/t1$b;->c:Ljava/lang/String;
-
-    iget-wide v4, v0, Lcom/digdroid/alman/dig/t1$b;->d:J
+    iget-wide v3, v0, Lcom/digdroid/alman/dig/t1$b;->d:J
 
     const/4 v0, 0x1
 
-    invoke-virtual {v2, v3, v4, v5, v0}, Lcom/digdroid/alman/dig/t1;->h(Ljava/lang/String;JZ)Ljava/io/File;
+    invoke-virtual {v1, v2, v3, v4, v0}, Lcom/digdroid/alman/dig/t1;->h(Ljava/lang/String;JZ)Ljava/io/File;
 
     move-result-object v0
 
@@ -61,7 +59,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, p1, v0}, Lcom/digdroid/alman/dig/a4;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lcom/digdroid/alman/dig/z3;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/t1$b$a;->a:Lcom/digdroid/alman/dig/t1$b;
 

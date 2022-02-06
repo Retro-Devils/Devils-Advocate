@@ -47,56 +47,36 @@
 
     move-result-object p1
 
-    instance-of v0, p1, Lcom/digdroid/alman/dig/i2;
-
-    if-eqz v0, :cond_0
-
-    move-object v0, p1
-
-    check-cast v0, Lcom/digdroid/alman/dig/i2;
-
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/i2;->m()Landroid/net/Uri;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-static {p1}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
-
-    move-result-object v0
-
-    :goto_0
-    if-eqz p1, :cond_1
+    if-eqz p1, :cond_0
 
     :try_start_0
-    iget-object v1, p0, Lcom/digdroid/alman/dig/j0$w;->b:Lcom/digdroid/alman/dig/j0;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/j0$w;->b:Lcom/digdroid/alman/dig/j0;
 
-    invoke-virtual {v1}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
+    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v1}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-static {v1}, Lcom/digdroid/alman/dig/l1;->b(Landroid/content/Context;)Lcom/digdroid/alman/dig/o1;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/l1;->a(Landroid/content/Context;)Lcom/digdroid/alman/dig/o1;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v1, v0}, Lcom/digdroid/alman/dig/o1;->J(Landroid/net/Uri;)Lcom/digdroid/alman/dig/n1;
+    invoke-virtual {v0, p1}, Lcom/digdroid/alman/dig/o1;->I(Ljava/io/File;)Lcom/digdroid/alman/dig/n1;
 
     move-result-object v0
 
     sget-object v1, Lcom/bumptech/glide/load/o/j;->b:Lcom/bumptech/glide/load/o/j;
 
-    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/n1;->D0(Lcom/bumptech/glide/load/o/j;)Lcom/digdroid/alman/dig/n1;
+    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/n1;->C0(Lcom/bumptech/glide/load/o/j;)Lcom/digdroid/alman/dig/n1;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/n1;->V0(Z)Lcom/digdroid/alman/dig/n1;
+    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/n1;->T0(Z)Lcom/digdroid/alman/dig/n1;
 
     move-result-object v0
 
@@ -128,7 +108,7 @@
 
     invoke-direct {v2, p1}, Lcom/bumptech/glide/s/d;-><init>(Ljava/lang/Object;)V
 
-    invoke-virtual {v0, v2}, Lcom/digdroid/alman/dig/n1;->T0(Lcom/bumptech/glide/load/g;)Lcom/digdroid/alman/dig/n1;
+    invoke-virtual {v0, v2}, Lcom/digdroid/alman/dig/n1;->R0(Lcom/bumptech/glide/load/g;)Lcom/digdroid/alman/dig/n1;
 
     move-result-object p1
 
@@ -151,6 +131,6 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :catch_0
-    :cond_1
+    :cond_0
     return-void
 .end method

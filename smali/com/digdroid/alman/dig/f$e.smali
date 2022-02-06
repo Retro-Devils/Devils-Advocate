@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lc/a/a/p$b;
+.implements Lc/a/c/p$b;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lc/a/a/p$b<",
+        "Lc/a/c/p$b<",
         "Lorg/json/JSONObject;",
         ">;"
     }
@@ -98,7 +98,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/f$e;->b:Lcom/digdroid/alman/dig/f;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, v0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/b3;
 
     const-string v1, "new_themes_updated"
 
@@ -108,7 +108,7 @@
 
     move-result-wide v2
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/digdroid/alman/dig/c3;->F(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
 
     :cond_1
     const-string v0, "announcement"
@@ -121,7 +121,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/f$e;->b:Lcom/digdroid/alman/dig/f;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, v0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/b3;
 
     const-string v1, "announcement"
 
@@ -129,7 +129,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/c3;->J(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/digdroid/alman/dig/b3;->J(Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/f$e;->b:Lcom/digdroid/alman/dig/f;
 
@@ -171,11 +171,11 @@
 
     iget-object v1, v1, Lcom/digdroid/alman/dig/f;->c:Landroid/content/Context;
 
-    invoke-static {v1}, Lb/o/a/a;->b(Landroid/content/Context;)Lb/o/a/a;
+    invoke-static {v1}, Lb/n/a/a;->b(Landroid/content/Context;)Lb/n/a/a;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lb/o/a/a;->d(Landroid/content/Intent;)Z
+    invoke-virtual {v1, v0}, Lb/n/a/a;->d(Landroid/content/Intent;)Z
 
     :cond_2
     const-string v0, "pass"
@@ -211,11 +211,11 @@
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/f$e;->b:Lcom/digdroid/alman/dig/f;
 
-    iget-object v1, v1, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/c3;
+    iget-object v1, v1, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/b3;
 
     const-string v2, "userid"
 
-    invoke-virtual {v1, v2, v0}, Lcom/digdroid/alman/dig/c3;->G(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v0}, Lcom/digdroid/alman/dig/b3;->G(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_4
     const-string v0, "token"
@@ -226,15 +226,15 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/f$e;->b:Lcom/digdroid/alman/dig/f;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, v0, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/b3;
 
     const-string v1, "token"
 
-    invoke-virtual {v0, v1, p1}, Lcom/digdroid/alman/dig/c3;->G(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, p1}, Lcom/digdroid/alman/dig/b3;->G(Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/f$e;->b:Lcom/digdroid/alman/dig/f;
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/c3;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/b3;
 
     const-string v0, "token_expires"
 
@@ -246,27 +246,27 @@
 
     add-long/2addr v1, v3
 
-    invoke-virtual {p1, v0, v1, v2}, Lcom/digdroid/alman/dig/c3;->F(Ljava/lang/String;J)V
+    invoke-virtual {p1, v0, v1, v2}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/f$e;->b:Lcom/digdroid/alman/dig/f;
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/c3;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/b3;
 
     const-string v0, "attest_retry_next"
 
     const-wide/16 v1, 0x0
 
-    invoke-virtual {p1, v0, v1, v2}, Lcom/digdroid/alman/dig/c3;->F(Ljava/lang/String;J)V
+    invoke-virtual {p1, v0, v1, v2}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/f$e;->b:Lcom/digdroid/alman/dig/f;
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/c3;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/f;->f:Lcom/digdroid/alman/dig/b3;
 
     const-string v0, "attest_retry_in"
 
     const-wide/32 v1, 0x1b7740
 
-    invoke-virtual {p1, v0, v1, v2}, Lcom/digdroid/alman/dig/c3;->F(Ljava/lang/String;J)V
+    invoke-virtual {p1, v0, v1, v2}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/f$e;->b:Lcom/digdroid/alman/dig/f;
 

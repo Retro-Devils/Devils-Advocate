@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lc/a/a/p$b;
+.implements Lc/a/c/p$b;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lc/a/a/p$b<",
+        "Lc/a/c/p$b<",
         "[B>;"
     }
 .end annotation

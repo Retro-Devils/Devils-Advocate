@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/o2;->s()V
+    value = Lcom/digdroid/alman/dig/o2;->U1()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,83 +34,12 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 2
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 0
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/o2$c;->b:Lcom/digdroid/alman/dig/o2;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/o2$c;->b:Lcom/digdroid/alman/dig/o2;
 
-    iget-boolean v1, v0, Lcom/digdroid/alman/dig/o2;->h:Z
+    invoke-virtual {p1}, Landroid/app/Activity;->finish()V
 
-    if-eqz v1, :cond_1
-
-    iget-object v0, v0, Lcom/digdroid/alman/dig/o2;->b:Lcom/digdroid/alman/dig/o2$g;
-
-    invoke-interface {v0}, Lcom/digdroid/alman/dig/o2$g;->b()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/o2$c;->b:Lcom/digdroid/alman/dig/o2;
-
-    invoke-static {v0}, Lcom/digdroid/alman/dig/o2;->d(Lcom/digdroid/alman/dig/o2;)Ljava/lang/String;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/o2$c;->b:Lcom/digdroid/alman/dig/o2;
-
-    invoke-static {v0}, Lcom/digdroid/alman/dig/o2;->e(Lcom/digdroid/alman/dig/o2;)Ljava/lang/String;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/o2$c;->b:Lcom/digdroid/alman/dig/o2;
-
-    invoke-static {v0}, Lcom/digdroid/alman/dig/o2;->e(Lcom/digdroid/alman/dig/o2;)Ljava/lang/String;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/o2$c;->b:Lcom/digdroid/alman/dig/o2;
-
-    invoke-static {v1}, Lcom/digdroid/alman/dig/o2;->d(Lcom/digdroid/alman/dig/o2;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/o2$c;->b:Lcom/digdroid/alman/dig/o2;
-
-    invoke-static {v0}, Lcom/digdroid/alman/dig/o2;->i(Lcom/digdroid/alman/dig/o2;)Lfr/bmartel/youtubetv/YoutubeTvView;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lfr/bmartel/youtubetv/YoutubeTvView;->g()V
-
-    goto :goto_0
-
-    :cond_0
-    iget-object v0, p0, Lcom/digdroid/alman/dig/o2$c;->b:Lcom/digdroid/alman/dig/o2;
-
-    invoke-static {v0}, Lcom/digdroid/alman/dig/o2;->i(Lcom/digdroid/alman/dig/o2;)Lfr/bmartel/youtubetv/YoutubeTvView;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/o2$c;->b:Lcom/digdroid/alman/dig/o2;
-
-    invoke-static {v1}, Lcom/digdroid/alman/dig/o2;->d(Lcom/digdroid/alman/dig/o2;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lfr/bmartel/youtubetv/YoutubeTvView;->h(Ljava/lang/String;)V
-
-    :cond_1
-    :goto_0
     return-void
 .end method

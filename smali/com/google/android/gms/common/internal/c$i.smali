@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method public final R(ILandroid/os/IBinder;Lcom/google/android/gms/common/internal/e0;)V
+.method public final P(ILandroid/os/IBinder;Lcom/google/android/gms/common/internal/e0;)V
     .locals 2
 
     iget-object v0, p0, Lcom/google/android/gms/common/internal/c$i;->a:Lcom/google/android/gms/common/internal/c;
@@ -52,12 +52,12 @@
 
     iget-object p3, p3, Lcom/google/android/gms/common/internal/e0;->b:Landroid/os/Bundle;
 
-    invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/gms/common/internal/c$i;->t0(ILandroid/os/IBinder;Landroid/os/Bundle;)V
+    invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/gms/common/internal/c$i;->u0(ILandroid/os/IBinder;Landroid/os/Bundle;)V
 
     return-void
 .end method
 
-.method public final b0(ILandroid/os/Bundle;)V
+.method public final Z(ILandroid/os/Bundle;)V
     .locals 1
 
     new-instance p1, Ljava/lang/Exception;
@@ -73,7 +73,7 @@
     return-void
 .end method
 
-.method public final t0(ILandroid/os/IBinder;Landroid/os/Bundle;)V
+.method public final u0(ILandroid/os/IBinder;Landroid/os/Bundle;)V
     .locals 2
 
     iget-object v0, p0, Lcom/google/android/gms/common/internal/c$i;->a:Lcom/google/android/gms/common/internal/c;

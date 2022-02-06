@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/d0$s;
+.implements Lcom/digdroid/alman/dig/d0$r;
 
 
 # annotations
@@ -47,13 +47,13 @@
 
     iget-object v0, v0, Lcom/digdroid/alman/dig/MainActivity$l;->b:Lcom/digdroid/alman/dig/MainActivity;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, v0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
     const-string v1, "merged_games"
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/c3;->A(Ljava/lang/String;Z)V
+    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/b3;->A(Ljava/lang/String;Z)V
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/MainActivity$l$a;->a:Lcom/digdroid/alman/dig/MainActivity$l;
 

@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/b0$m;
+.implements Lcom/digdroid/alman/dig/b0$l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/WidgetActivity;->j1()V
+    value = Lcom/digdroid/alman/dig/WidgetActivity;->h1()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -39,11 +39,11 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/WidgetActivity$c;->a:Lcom/digdroid/alman/dig/WidgetActivity;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/z3;->c1()V
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/y3;->a1()V
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/WidgetActivity$c;->a:Lcom/digdroid/alman/dig/WidgetActivity;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
 
     move-result-object v0
 
@@ -55,10 +55,10 @@
 
     const-string v2, "retroarch"
 
-    invoke-static {v1, v2}, Lcom/digdroid/alman/dig/a4;->F(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/digdroid/alman/dig/z3;->D(Landroid/content/Context;Ljava/lang/String;)V
 
     :cond_0
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/c3;->u()Z
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/b3;->u()Z
 
     move-result v0
 

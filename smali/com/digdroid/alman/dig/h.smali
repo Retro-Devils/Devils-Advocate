@@ -20,7 +20,7 @@
 
 
 # instance fields
-.field c:Lcom/digdroid/alman/dig/t3;
+.field c:Lcom/digdroid/alman/dig/s3;
 
 .field d:Landroid/database/Cursor;
 
@@ -40,7 +40,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FF)V
+.method public constructor <init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FF)V
     .locals 4
 
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$g;-><init>()V
@@ -62,7 +62,7 @@
     monitor-enter v1
 
     :try_start_0
-    iput-object p2, p0, Lcom/digdroid/alman/dig/h;->c:Lcom/digdroid/alman/dig/t3;
+    iput-object p2, p0, Lcom/digdroid/alman/dig/h;->c:Lcom/digdroid/alman/dig/s3;
 
     iput-object p3, p0, Lcom/digdroid/alman/dig/h;->d:Landroid/database/Cursor;
 
@@ -84,7 +84,7 @@
     iput v0, p0, Lcom/digdroid/alman/dig/h;->e:I
 
     :goto_0
-    invoke-virtual {p1, v0}, Lcom/digdroid/alman/dig/c4;->g(Z)Landroid/graphics/Point;
+    invoke-virtual {p1, v0}, Lcom/digdroid/alman/dig/b4;->g(Z)Landroid/graphics/Point;
 
     move-result-object p1
 

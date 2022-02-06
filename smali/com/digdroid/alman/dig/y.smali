@@ -128,7 +128,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/y;->o:Ljava/io/File;
 
-    const v1, 0x7f1100a9
+    const v1, 0x7f1100a8
 
     if-eqz v0, :cond_0
 
@@ -169,7 +169,7 @@
 
     if-eqz v2, :cond_1
 
-    const v0, 0x7f1100aa
+    const v0, 0x7f1100a9
 
     return v0
 
@@ -180,7 +180,7 @@
 
     if-eqz v0, :cond_2
 
-    const v0, 0x7f1100ae
+    const v0, 0x7f1100ad
 
     return v0
 
@@ -198,7 +198,7 @@
 
     if-nez v0, :cond_4
 
-    const v0, 0x7f1100ab
+    const v0, 0x7f1100aa
 
     return v0
 
@@ -304,7 +304,7 @@
 
     aput-object v5, v4, v6
 
-    const v5, 0x7f1100ad
+    const v5, 0x7f1100ac
 
     invoke-virtual {p0, v5, v4}, Landroid/app/DialogFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -318,13 +318,13 @@
 
     move-result-object v5
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v7
 
     invoke-direct {v4, v5, v7}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
-    const v5, 0x7f1100ac
+    const v5, 0x7f1100ab
 
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -1089,7 +1089,7 @@
 
     check-cast p2, Landroid/widget/TextView;
 
-    const p3, 0x7f11023f
+    const p3, 0x7f11023b
 
     invoke-virtual {p2, p3}, Landroid/widget/TextView;->setText(I)V
 

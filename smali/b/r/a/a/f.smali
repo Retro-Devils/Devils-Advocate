@@ -1,165 +1,262 @@
-.class public final Lb/r/a/a/f;
-.super Lb/r/a/a/a;
+.class public Lb/r/a/a/f;
+.super Ljava/lang/Object;
 .source ""
 
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lb/r/a/a/f$a;
-    }
-.end annotation
+# interfaces
+.implements Landroid/animation/TypeEvaluator;
 
 
 # static fields
-.field public static final d:[Ljava/lang/String;
+.field private static final a:Lb/r/a/a/f;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    invoke-static {}, Lb/r/a/a/f;->a()[Ljava/lang/String;
+    new-instance v0, Lb/r/a/a/f;
 
-    move-result-object v0
+    invoke-direct {v0}, Lb/r/a/a/f;-><init>()V
 
-    sput-object v0, Lb/r/a/a/f;->d:[Ljava/lang/String;
+    sput-object v0, Lb/r/a/a/f;->a:Lb/r/a/a/f;
 
     return-void
 .end method
 
-.method constructor <init>(Lb/r/a/a/f$a;)V
+.method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0, p1}, Lb/r/a/a/a;-><init>(Lb/r/a/a/a$a;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method private static a()[Ljava/lang/String;
-    .locals 4
+.method public static a()Lb/r/a/a/f;
+    .locals 1
 
-    const/4 v0, 0x2
-
-    new-array v0, v0, [Ljava/lang/String;
-
-    const-string v1, "channel_id"
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    const-string v1, "weight"
-
-    const/4 v3, 0x1
-
-    aput-object v1, v0, v3
-
-    sget-object v1, Lb/r/a/a/a;->c:[Ljava/lang/String;
-
-    new-array v3, v3, [[Ljava/lang/String;
-
-    aput-object v0, v3, v2
-
-    invoke-static {v1, v3}, Lb/r/a/a/e;->a([Ljava/lang/Object;[[Ljava/lang/Object;)[Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, [Ljava/lang/String;
+    sget-object v0, Lb/r/a/a/f;->a:Lb/r/a/a/f;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public b()Landroid/content/ContentValues;
-    .locals 1
+.method public evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 11
 
-    const/4 v0, 0x0
+    check-cast p2, Ljava/lang/Integer;
 
-    invoke-virtual {p0, v0}, Lb/r/a/a/f;->c(Z)Landroid/content/ContentValues;
+    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
 
-    move-result-object v0
+    move-result p2
 
-    return-object v0
-.end method
+    shr-int/lit8 v0, p2, 0x18
 
-.method public c(Z)Landroid/content/ContentValues;
-    .locals 2
+    and-int/lit16 v0, v0, 0xff
 
-    invoke-super {p0, p1}, Lb/r/a/a/a;->c(Z)Landroid/content/ContentValues;
+    int-to-float v0, v0
 
-    move-result-object p1
+    const/high16 v1, 0x437f0000    # 255.0f
 
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    div-float/2addr v0, v1
 
-    const/16 v1, 0x1a
+    shr-int/lit8 v2, p2, 0x10
 
-    if-ge v0, v1, :cond_0
+    and-int/lit16 v2, v2, 0xff
 
-    const-string v0, "channel_id"
+    int-to-float v2, v2
 
-    invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+    div-float/2addr v2, v1
 
-    const-string v0, "weight"
+    shr-int/lit8 v3, p2, 0x8
 
-    invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
+    and-int/lit16 v3, v3, 0xff
 
-    :cond_0
-    return-object p1
-.end method
+    int-to-float v3, v3
 
-.method public equals(Ljava/lang/Object;)Z
-    .locals 1
+    div-float/2addr v3, v1
 
-    instance-of v0, p1, Lb/r/a/a/f;
+    and-int/lit16 p2, p2, 0xff
 
-    if-nez v0, :cond_0
+    int-to-float p2, p2
 
-    const/4 p1, 0x0
+    div-float/2addr p2, v1
 
-    return p1
+    check-cast p3, Ljava/lang/Integer;
 
-    :cond_0
-    iget-object v0, p0, Lb/r/a/a/b;->b:Landroid/content/ContentValues;
+    invoke-virtual {p3}, Ljava/lang/Integer;->intValue()I
 
-    check-cast p1, Lb/r/a/a/f;
+    move-result p3
 
-    iget-object p1, p1, Lb/r/a/a/b;->b:Landroid/content/ContentValues;
+    shr-int/lit8 v4, p3, 0x18
 
-    invoke-virtual {v0, p1}, Landroid/content/ContentValues;->equals(Ljava/lang/Object;)Z
+    and-int/lit16 v4, v4, 0xff
+
+    int-to-float v4, v4
+
+    div-float/2addr v4, v1
+
+    shr-int/lit8 v5, p3, 0x10
+
+    and-int/lit16 v5, v5, 0xff
+
+    int-to-float v5, v5
+
+    div-float/2addr v5, v1
+
+    shr-int/lit8 v6, p3, 0x8
+
+    and-int/lit16 v6, v6, 0xff
+
+    int-to-float v6, v6
+
+    div-float/2addr v6, v1
+
+    and-int/lit16 p3, p3, 0xff
+
+    int-to-float p3, p3
+
+    div-float/2addr p3, v1
+
+    float-to-double v7, v2
+
+    const-wide v9, 0x400199999999999aL    # 2.2
+
+    invoke-static {v7, v8, v9, v10}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v7
+
+    double-to-float v2, v7
+
+    float-to-double v7, v3
+
+    invoke-static {v7, v8, v9, v10}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v7
+
+    double-to-float v3, v7
+
+    float-to-double v7, p2
+
+    invoke-static {v7, v8, v9, v10}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v7
+
+    double-to-float p2, v7
+
+    float-to-double v7, v5
+
+    invoke-static {v7, v8, v9, v10}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v7
+
+    double-to-float v5, v7
+
+    float-to-double v6, v6
+
+    invoke-static {v6, v7, v9, v10}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v6
+
+    double-to-float v6, v6
+
+    float-to-double v7, p3
+
+    invoke-static {v7, v8, v9, v10}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v7
+
+    double-to-float p3, v7
+
+    sub-float/2addr v4, v0
+
+    mul-float v4, v4, p1
+
+    add-float/2addr v0, v4
+
+    sub-float/2addr v5, v2
+
+    mul-float v5, v5, p1
+
+    add-float/2addr v2, v5
+
+    sub-float/2addr v6, v3
+
+    mul-float v6, v6, p1
+
+    add-float/2addr v3, v6
+
+    sub-float/2addr p3, p2
+
+    mul-float p1, p1, p3
+
+    add-float/2addr p2, p1
+
+    mul-float v0, v0, v1
+
+    float-to-double v4, v2
+
+    const-wide v6, 0x3fdd1745d1745d17L    # 0.45454545454545453
+
+    invoke-static {v4, v5, v6, v7}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v4
+
+    double-to-float p1, v4
+
+    mul-float p1, p1, v1
+
+    float-to-double v2, v3
+
+    invoke-static {v2, v3, v6, v7}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v2
+
+    double-to-float p3, v2
+
+    mul-float p3, p3, v1
+
+    float-to-double v2, p2
+
+    invoke-static {v2, v3, v6, v7}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v2
+
+    double-to-float p2, v2
+
+    mul-float p2, p2, v1
+
+    invoke-static {v0}, Ljava/lang/Math;->round(F)I
+
+    move-result v0
+
+    shl-int/lit8 v0, v0, 0x18
+
+    invoke-static {p1}, Ljava/lang/Math;->round(F)I
 
     move-result p1
 
-    return p1
-.end method
+    shl-int/lit8 p1, p1, 0x10
 
-.method public toString()Ljava/lang/String;
-    .locals 2
+    or-int/2addr p1, v0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-static {p3}, Ljava/lang/Math;->round(F)I
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    move-result p3
 
-    const-string v1, "PreviewProgram{"
+    shl-int/lit8 p3, p3, 0x8
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    or-int/2addr p1, p3
 
-    iget-object v1, p0, Lb/r/a/a/b;->b:Landroid/content/ContentValues;
+    invoke-static {p2}, Ljava/lang/Math;->round(F)I
 
-    invoke-virtual {v1}, Landroid/content/ContentValues;->toString()Ljava/lang/String;
+    move-result p2
 
-    move-result-object v1
+    or-int/2addr p1, p2
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const-string v1, "}"
+    move-result-object p1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    return-object p1
 .end method

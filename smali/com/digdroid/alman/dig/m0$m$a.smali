@@ -47,7 +47,7 @@
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v0, "SELECT  p.path,r.filename,p.uri FROM rompaths as p,roms as r WHERE r._id="
+    const-string v0, "SELECT  p.path,r.filename FROM rompaths as p,roms as r WHERE r._id="
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -77,77 +77,51 @@
 
     move-result p2
 
-    if-eqz p2, :cond_4
+    if-eqz p2, :cond_3
 
-    const/4 p2, 0x2
+    const/4 p2, 0x0
 
-    invoke-interface {p1, p2}, Landroid/database/Cursor;->isNull(I)Z
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {p1, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object p2
-
-    goto :goto_0
-
-    :cond_0
     invoke-interface {p1, p2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object p2
-
-    :goto_0
-    const/4 v0, 0x1
-
-    invoke-interface {p1, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/digdroid/alman/dig/m0$m$a;->b:Lcom/digdroid/alman/dig/m0$m;
+    const/4 v1, 0x1
 
-    iget-object v2, v2, Lcom/digdroid/alman/dig/m0$m;->a:Lcom/digdroid/alman/dig/m0;
+    invoke-interface {p1, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
-    iget-object v2, v2, Lcom/digdroid/alman/dig/m0;->a:Landroid/app/Activity;
+    move-result-object v1
 
-    invoke-static {v2, p2}, Lcom/digdroid/alman/dig/i2;->d(Landroid/content/Context;Ljava/lang/String;)Lcom/digdroid/alman/dig/i2;
+    new-instance v2, Ljava/io/File;
 
-    move-result-object p2
+    invoke-direct {v2, v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    new-instance v2, Lcom/digdroid/alman/dig/i2;
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
-    invoke-direct {v2, p2, v0}, Lcom/digdroid/alman/dig/i2;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    move-result v0
 
-    invoke-virtual {v2}, Lcom/digdroid/alman/dig/i2;->exists()Z
-
-    move-result p2
-
-    if-eqz p2, :cond_1
+    if-eqz v0, :cond_0
 
     :try_start_0
-    invoke-virtual {v2}, Lcom/digdroid/alman/dig/i2;->delete()Z
+    invoke-virtual {v2}, Ljava/io/File;->delete()Z
 
-    move-result p2
+    move-result v0
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_1
+    goto :goto_0
 
     :catch_0
-    :cond_1
-    const/4 p2, 0x0
+    :cond_0
+    const/4 v0, 0x0
 
-    :goto_1
-    if-eqz p2, :cond_2
+    :goto_0
+    if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/m0$m$a;->b:Lcom/digdroid/alman/dig/m0$m;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/m0$m$a;->b:Lcom/digdroid/alman/dig/m0$m;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/m0$m;->a:Lcom/digdroid/alman/dig/m0;
+    iget-object v1, v1, Lcom/digdroid/alman/dig/m0$m;->a:Lcom/digdroid/alman/dig/m0;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/m0;->c:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, v1, Lcom/digdroid/alman/dig/m0;->c:Landroid/database/sqlite/SQLiteDatabase;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -169,13 +143,13 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/m0$m$a;->b:Lcom/digdroid/alman/dig/m0$m;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/m0$m$a;->b:Lcom/digdroid/alman/dig/m0$m;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/m0$m;->a:Lcom/digdroid/alman/dig/m0;
+    iget-object v1, v1, Lcom/digdroid/alman/dig/m0$m;->a:Lcom/digdroid/alman/dig/m0;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/m0;->c:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, v1, Lcom/digdroid/alman/dig/m0;->c:Landroid/database/sqlite/SQLiteDatabase;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -197,13 +171,13 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/m0$m$a;->b:Lcom/digdroid/alman/dig/m0$m;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/m0$m$a;->b:Lcom/digdroid/alman/dig/m0$m;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/m0$m;->a:Lcom/digdroid/alman/dig/m0;
+    iget-object v1, v1, Lcom/digdroid/alman/dig/m0$m;->a:Lcom/digdroid/alman/dig/m0;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/m0;->c:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, v1, Lcom/digdroid/alman/dig/m0;->c:Landroid/database/sqlite/SQLiteDatabase;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -225,20 +199,20 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/m0$m$a;->b:Lcom/digdroid/alman/dig/m0$m;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/m0$m$a;->b:Lcom/digdroid/alman/dig/m0$m;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/m0$m;->a:Lcom/digdroid/alman/dig/m0;
+    iget-object v1, v1, Lcom/digdroid/alman/dig/m0$m;->a:Lcom/digdroid/alman/dig/m0;
 
-    iget-object v0, v0, Lcom/digdroid/alman/dig/m0;->a:Landroid/app/Activity;
+    iget-object v1, v1, Lcom/digdroid/alman/dig/m0;->a:Landroid/app/Activity;
 
     const-string v2, "merge_games"
 
-    invoke-static {v0, v2}, Lcom/digdroid/alman/dig/DatabaseService;->v(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/digdroid/alman/dig/DatabaseService;->t(Landroid/content/Context;Ljava/lang/String;)V
 
-    :cond_2
-    new-instance v0, Landroidx/appcompat/app/b$a;
+    :cond_1
+    new-instance v1, Landroidx/appcompat/app/b$a;
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/m0$m$a;->b:Lcom/digdroid/alman/dig/m0$m;
 
@@ -246,37 +220,37 @@
 
     iget-object v2, v2, Lcom/digdroid/alman/dig/m0;->a:Landroid/app/Activity;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v3
 
-    invoke-direct {v0, v2, v3}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v1, v2, v3}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
 
-    if-eqz p2, :cond_3
+    if-eqz v0, :cond_2
 
-    const v2, 0x7f1100c3
+    const v2, 0x7f1100c2
 
-    goto :goto_2
+    goto :goto_1
 
-    :cond_3
-    const v2, 0x7f1100be
+    :cond_2
+    const v2, 0x7f1100bd
 
-    :goto_2
-    invoke-virtual {v0, v2}, Landroidx/appcompat/app/b$a;->h(I)Landroidx/appcompat/app/b$a;
+    :goto_1
+    invoke-virtual {v1, v2}, Landroidx/appcompat/app/b$a;->h(I)Landroidx/appcompat/app/b$a;
 
-    move-result-object v0
+    move-result-object v1
 
-    const v2, 0x7f1101da
+    const v2, 0x7f1101d8
 
     new-instance v3, Lcom/digdroid/alman/dig/m0$m$a$a;
 
-    invoke-direct {v3, p0, p2}, Lcom/digdroid/alman/dig/m0$m$a$a;-><init>(Lcom/digdroid/alman/dig/m0$m$a;Z)V
+    invoke-direct {v3, p0, v0}, Lcom/digdroid/alman/dig/m0$m$a$a;-><init>(Lcom/digdroid/alman/dig/m0$m$a;Z)V
 
-    invoke-virtual {v0, v2, v3}, Landroidx/appcompat/app/b$a;->o(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
+    invoke-virtual {v1, v2, v3}, Landroidx/appcompat/app/b$a;->o(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
 
-    move-result-object p2
+    move-result-object v0
 
-    invoke-virtual {p2, v1}, Landroidx/appcompat/app/b$a;->d(Z)Landroidx/appcompat/app/b$a;
+    invoke-virtual {v0, p2}, Landroidx/appcompat/app/b$a;->d(Z)Landroidx/appcompat/app/b$a;
 
     move-result-object p2
 
@@ -286,7 +260,7 @@
 
     invoke-virtual {p2}, Landroid/app/Dialog;->show()V
 
-    :cond_4
+    :cond_3
     invoke-interface {p1}, Landroid/database/Cursor;->close()V
 
     return-void

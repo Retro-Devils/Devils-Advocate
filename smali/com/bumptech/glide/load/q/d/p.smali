@@ -28,15 +28,15 @@
 .method public b(Ljava/io/InputStream;Lcom/bumptech/glide/load/o/a0/b;)I
     .locals 1
 
-    new-instance p2, Lb/k/a/a;
+    new-instance p2, Lb/j/a/a;
 
-    invoke-direct {p2, p1}, Lb/k/a/a;-><init>(Ljava/io/InputStream;)V
+    invoke-direct {p2, p1}, Lb/j/a/a;-><init>(Ljava/io/InputStream;)V
 
     const-string p1, "Orientation"
 
     const/4 v0, 0x1
 
-    invoke-virtual {p2, p1, v0}, Lb/k/a/a;->d(Ljava/lang/String;I)I
+    invoke-virtual {p2, p1, v0}, Lb/j/a/a;->d(Ljava/lang/String;I)I
 
     move-result p1
 

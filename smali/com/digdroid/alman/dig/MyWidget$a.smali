@@ -20,7 +20,7 @@
 # instance fields
 .field final synthetic b:Landroid/app/Activity;
 
-.field final synthetic c:Lcom/digdroid/alman/dig/c3;
+.field final synthetic c:Lcom/digdroid/alman/dig/b3;
 
 .field final synthetic d:Ljava/lang/String;
 
@@ -28,12 +28,12 @@
 
 
 # direct methods
-.method constructor <init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/c3;Ljava/lang/String;J)V
+.method constructor <init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/b3;Ljava/lang/String;J)V
     .locals 0
 
     iput-object p1, p0, Lcom/digdroid/alman/dig/MyWidget$a;->b:Landroid/app/Activity;
 
-    iput-object p2, p0, Lcom/digdroid/alman/dig/MyWidget$a;->c:Lcom/digdroid/alman/dig/c3;
+    iput-object p2, p0, Lcom/digdroid/alman/dig/MyWidget$a;->c:Lcom/digdroid/alman/dig/b3;
 
     iput-object p3, p0, Lcom/digdroid/alman/dig/MyWidget$a;->d:Ljava/lang/String;
 
@@ -53,7 +53,7 @@
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/MyWidget$a;->b:Landroid/app/Activity;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v2
 
@@ -75,7 +75,7 @@
 
     invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/MyWidget$a$b;-><init>(Lcom/digdroid/alman/dig/MyWidget$a;)V
 
-    const v2, 0x7f11029d
+    const v2, 0x7f110299
 
     invoke-virtual {v0, v2, v1}, Landroidx/appcompat/app/b$a;->l(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
 
@@ -85,7 +85,7 @@
 
     invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/MyWidget$a$a;-><init>(Lcom/digdroid/alman/dig/MyWidget$a;)V
 
-    const v2, 0x7f11029e
+    const v2, 0x7f11029a
 
     invoke-virtual {v0, v2, v1}, Landroidx/appcompat/app/b$a;->o(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
 

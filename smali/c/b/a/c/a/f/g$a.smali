@@ -64,7 +64,7 @@
 
     move-result-object p1
 
-    invoke-interface {p0, p1}, Lc/b/a/c/a/f/g;->j0(Ljava/lang/String;)V
+    invoke-interface {p0, p1}, Lc/b/a/c/a/f/g;->g0(Ljava/lang/String;)V
 
     :goto_0
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
@@ -99,7 +99,7 @@
 
     move-result-object p1
 
-    invoke-interface {p0, p1}, Lc/b/a/c/a/f/g;->G(Ljava/lang/String;)V
+    invoke-interface {p0, p1}, Lc/b/a/c/a/f/g;->D(Ljava/lang/String;)V
 
     goto :goto_0
 

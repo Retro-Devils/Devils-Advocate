@@ -213,14 +213,14 @@
     :cond_3
     iget-object p1, p0, Lcom/digdroid/alman/dig/s1$e;->f:Lcom/digdroid/alman/dig/s1;
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/c3;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
 
     if-ne v1, v7, :cond_4
 
     const/4 p2, 0x1
 
     :cond_4
-    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/c3;->P(Z)V
+    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/b3;->P(Z)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/s1$e;->f:Lcom/digdroid/alman/dig/s1;
 

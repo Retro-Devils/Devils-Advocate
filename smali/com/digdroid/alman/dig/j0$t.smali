@@ -37,7 +37,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 4
 
-    new-instance p1, Lcom/digdroid/alman/dig/w2;
+    new-instance p1, Lcom/digdroid/alman/dig/v2;
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/j0$t;->b:Lcom/digdroid/alman/dig/j0;
 
@@ -55,13 +55,13 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {p1, v0, v1, v3, v2}, Lcom/digdroid/alman/dig/w2;-><init>(Landroid/app/Activity;Landroid/database/sqlite/SQLiteDatabase;ZLcom/digdroid/alman/dig/w2$j;)V
+    invoke-direct {p1, v0, v1, v3, v2}, Lcom/digdroid/alman/dig/v2;-><init>(Landroid/app/Activity;Landroid/database/sqlite/SQLiteDatabase;ZLcom/digdroid/alman/dig/v2$j;)V
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/j0$t;->b:Lcom/digdroid/alman/dig/j0;
 
     iget-wide v0, v0, Lcom/digdroid/alman/dig/j0;->q0:J
 
-    invoke-virtual {p1, v0, v1}, Lcom/digdroid/alman/dig/w2;->f(J)V
+    invoke-virtual {p1, v0, v1}, Lcom/digdroid/alman/dig/v2;->f(J)V
 
     return-void
 .end method

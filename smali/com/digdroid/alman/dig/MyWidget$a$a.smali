@@ -41,11 +41,11 @@
 
     iget-object p2, p0, Lcom/digdroid/alman/dig/MyWidget$a$a;->b:Lcom/digdroid/alman/dig/MyWidget$a;
 
-    iget-object p2, p2, Lcom/digdroid/alman/dig/MyWidget$a;->c:Lcom/digdroid/alman/dig/c3;
+    iget-object p2, p2, Lcom/digdroid/alman/dig/MyWidget$a;->c:Lcom/digdroid/alman/dig/b3;
 
     const-string v0, "homescreen"
 
-    invoke-virtual {p2, v0}, Lcom/digdroid/alman/dig/c3;->r(Ljava/lang/String;)Ljava/util/Set;
+    invoke-virtual {p2, v0}, Lcom/digdroid/alman/dig/b3;->r(Ljava/lang/String;)Ljava/util/Set;
 
     move-result-object p2
 
@@ -75,9 +75,9 @@
 
     iget-object p2, p0, Lcom/digdroid/alman/dig/MyWidget$a$a;->b:Lcom/digdroid/alman/dig/MyWidget$a;
 
-    iget-object p2, p2, Lcom/digdroid/alman/dig/MyWidget$a;->c:Lcom/digdroid/alman/dig/c3;
+    iget-object p2, p2, Lcom/digdroid/alman/dig/MyWidget$a;->c:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {p2, v0, p1}, Lcom/digdroid/alman/dig/c3;->H(Ljava/lang/String;Ljava/util/Set;)V
+    invoke-virtual {p2, v0, p1}, Lcom/digdroid/alman/dig/b3;->H(Ljava/lang/String;Ljava/util/Set;)V
 
     return-void
 .end method

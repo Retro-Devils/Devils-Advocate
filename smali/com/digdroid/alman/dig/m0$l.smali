@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/d0$s;
+.implements Lcom/digdroid/alman/dig/d0$r;
 
 
 # annotations
@@ -58,7 +58,7 @@
 
     iget-object v1, v1, Lcom/digdroid/alman/dig/m0;->a:Landroid/app/Activity;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v2
 

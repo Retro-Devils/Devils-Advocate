@@ -45,7 +45,7 @@
 
     move-result-object v0
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v1
 
@@ -69,7 +69,7 @@
 
     invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/s$e$a;-><init>(Lcom/digdroid/alman/dig/s$e;)V
 
-    const v1, 0x7f1101da
+    const v1, 0x7f1101d8
 
     invoke-virtual {p1, v1, v0}, Landroidx/appcompat/app/b$a;->o(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
 

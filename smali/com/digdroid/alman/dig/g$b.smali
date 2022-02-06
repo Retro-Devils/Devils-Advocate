@@ -91,7 +91,7 @@
 
     iget-object v4, v4, Lcom/digdroid/alman/dig/g;->c:Landroid/content/Context;
 
-    invoke-static {v4}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
+    invoke-static {v4}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
 
     move-result-object v4
 
@@ -99,7 +99,7 @@
 
     const-string v7, "0"
 
-    invoke-virtual {v4, v5, v7}, Lcom/digdroid/alman/dig/c3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v4, v5, v7}, Lcom/digdroid/alman/dig/b3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
@@ -107,7 +107,7 @@
 
     const-wide/16 v10, 0x0
 
-    invoke-virtual {v4, v9, v10, v11}, Lcom/digdroid/alman/dig/c3;->n(Ljava/lang/String;J)J
+    invoke-virtual {v4, v9, v10, v11}, Lcom/digdroid/alman/dig/b3;->n(Ljava/lang/String;J)J
 
     move-result-wide v12
 
@@ -119,15 +119,15 @@
 
     move-wide/from16 v16, v12
 
-    invoke-virtual {v4, v14, v2, v3}, Lcom/digdroid/alman/dig/c3;->n(Ljava/lang/String;J)J
+    invoke-virtual {v4, v14, v2, v3}, Lcom/digdroid/alman/dig/b3;->n(Ljava/lang/String;J)J
 
     move-result-wide v12
 
-    invoke-virtual {v4, v5, v7}, Lcom/digdroid/alman/dig/c3;->z(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v4, v5, v7}, Lcom/digdroid/alman/dig/b3;->z(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v4, v9, v10, v11}, Lcom/digdroid/alman/dig/c3;->F(Ljava/lang/String;J)V
+    invoke-virtual {v4, v9, v10, v11}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
 
-    invoke-virtual {v4, v14, v2, v3}, Lcom/digdroid/alman/dig/c3;->F(Ljava/lang/String;J)V
+    invoke-virtual {v4, v14, v2, v3}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
 
     :try_start_0
     new-instance v2, Ljava/io/FileInputStream;
@@ -823,13 +823,13 @@
     move-object/from16 v19, v3
 
     :cond_9
-    invoke-virtual {v4, v5, v8}, Lcom/digdroid/alman/dig/c3;->z(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v4, v5, v8}, Lcom/digdroid/alman/dig/b3;->z(Ljava/lang/String;Ljava/lang/String;)V
 
     move-wide/from16 v6, v16
 
-    invoke-virtual {v4, v9, v6, v7}, Lcom/digdroid/alman/dig/c3;->F(Ljava/lang/String;J)V
+    invoke-virtual {v4, v9, v6, v7}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
 
-    invoke-virtual {v4, v14, v12, v13}, Lcom/digdroid/alman/dig/c3;->F(Ljava/lang/String;J)V
+    invoke-virtual {v4, v14, v12, v13}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
 
     :try_start_16
     invoke-virtual {v11}, Ljava/util/zip/ZipOutputStream;->flush()V
@@ -1023,11 +1023,11 @@
     move-object/from16 v25, v24
 
     :goto_13
-    invoke-virtual {v4, v5, v8}, Lcom/digdroid/alman/dig/c3;->z(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v4, v5, v8}, Lcom/digdroid/alman/dig/b3;->z(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v4, v9, v6, v7}, Lcom/digdroid/alman/dig/c3;->F(Ljava/lang/String;J)V
+    invoke-virtual {v4, v9, v6, v7}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
 
-    invoke-virtual {v4, v14, v12, v13}, Lcom/digdroid/alman/dig/c3;->F(Ljava/lang/String;J)V
+    invoke-virtual {v4, v14, v12, v13}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
 
     if-eqz v11, :cond_a
 
@@ -1120,11 +1120,11 @@
     move-object/from16 v25, v24
 
     :goto_1a
-    invoke-virtual {v4, v5, v8}, Lcom/digdroid/alman/dig/c3;->z(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v4, v5, v8}, Lcom/digdroid/alman/dig/b3;->z(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v4, v9, v6, v7}, Lcom/digdroid/alman/dig/c3;->F(Ljava/lang/String;J)V
+    invoke-virtual {v4, v9, v6, v7}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
 
-    invoke-virtual {v4, v14, v12, v13}, Lcom/digdroid/alman/dig/c3;->F(Ljava/lang/String;J)V
+    invoke-virtual {v4, v14, v12, v13}, Lcom/digdroid/alman/dig/b3;->F(Ljava/lang/String;J)V
 
     if-eqz v11, :cond_f
 

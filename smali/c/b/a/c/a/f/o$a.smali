@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method public final G(Ljava/lang/String;)V
+.method public final D(Ljava/lang/String;)V
     .locals 1
 
     iget-object v0, p0, Lc/b/a/c/a/f/o$a;->a:Lc/b/a/c/a/c$c;
@@ -75,7 +75,7 @@
     return-void
 .end method
 
-.method public final j0(Ljava/lang/String;)V
+.method public final g0(Ljava/lang/String;)V
     .locals 1
 
     :try_start_0

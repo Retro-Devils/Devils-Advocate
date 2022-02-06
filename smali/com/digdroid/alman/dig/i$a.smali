@@ -35,7 +35,7 @@
 
 # virtual methods
 .method public a([Ljava/lang/String;)V
-    .locals 6
+    .locals 4
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/i$a;->a:Lcom/digdroid/alman/dig/i;
 
@@ -49,7 +49,7 @@
 
     check-cast v0, Landroid/app/Activity;
 
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_4
 
     invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
 
@@ -57,139 +57,58 @@
 
     if-eqz v1, :cond_0
 
-    goto/16 :goto_3
+    goto :goto_1
 
     :cond_0
-    new-instance v1, Ljava/util/ArrayList;
+    if-nez p1, :cond_1
 
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+    return-void
+
+    :cond_1
+    array-length v1, p1
 
     const/4 v2, 0x0
 
-    if-eqz p1, :cond_1
+    const/4 v3, 0x1
 
-    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
+    if-ne v1, v3, :cond_2
 
-    const/16 v4, 0x1e
+    iget-object v0, p0, Lcom/digdroid/alman/dig/i$a;->a:Lcom/digdroid/alman/dig/i;
 
-    if-ge v3, v4, :cond_1
+    aget-object p1, p1, v2
 
-    const/4 v3, 0x0
+    invoke-virtual {v0, p1}, Lcom/digdroid/alman/dig/i;->e(Ljava/lang/String;)V
+
+    return-void
+
+    :cond_2
+    array-length v1, p1
+
+    new-array v1, v1, [Ljava/lang/CharSequence;
 
     :goto_0
-    array-length v4, p1
+    array-length v3, p1
 
-    if-ge v3, v4, :cond_1
+    if-ge v2, v3, :cond_3
 
-    aget-object v4, p1, v3
+    aget-object v3, p1, v2
 
-    invoke-virtual {v1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    aput-object v3, v1, v2
 
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    :cond_1
-    iget-object p1, p0, Lcom/digdroid/alman/dig/i$a;->a:Lcom/digdroid/alman/dig/i;
-
-    iget p1, p1, Lcom/digdroid/alman/dig/i;->d:I
-
-    const-string v3, "saf"
-
-    if-lez p1, :cond_2
-
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v4, 0x13
-
-    if-lt p1, v4, :cond_2
-
-    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    :cond_2
-    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
-
-    move-result p1
-
-    if-nez p1, :cond_3
-
-    return-void
-
     :cond_3
-    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
-
-    move-result p1
-
-    const/4 v4, 0x1
-
-    if-ne p1, v4, :cond_4
-
-    iget-object p1, p0, Lcom/digdroid/alman/dig/i$a;->a:Lcom/digdroid/alman/dig/i;
-
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    invoke-virtual {p1, v0}, Lcom/digdroid/alman/dig/i;->e(Ljava/lang/String;)V
-
-    return-void
-
-    :cond_4
-    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
-
-    move-result p1
-
-    new-array p1, p1, [Ljava/lang/CharSequence;
-
-    :goto_1
-    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
-
-    move-result v4
-
-    if-ge v2, v4, :cond_6
-
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ljava/lang/String;
-
-    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_5
-
-    const v4, 0x7f11023c
-
-    invoke-virtual {v0, v4}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
-
-    move-result-object v4
-
-    aput-object v4, p1, v2
-
-    goto :goto_2
-
-    :cond_5
-    aput-object v4, p1, v2
-
-    :goto_2
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_1
-
-    :cond_6
     new-instance v2, Landroidx/appcompat/app/b$a;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v3
 
     invoke-direct {v2, v0, v3}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
 
-    const v0, 0x7f11023a
+    const v0, 0x7f110237
 
     invoke-virtual {v2, v0}, Landroidx/appcompat/app/b$a;->r(I)Landroidx/appcompat/app/b$a;
 
@@ -197,9 +116,9 @@
 
     new-instance v2, Lcom/digdroid/alman/dig/i$a$a;
 
-    invoke-direct {v2, p0, v1}, Lcom/digdroid/alman/dig/i$a$a;-><init>(Lcom/digdroid/alman/dig/i$a;Ljava/util/ArrayList;)V
+    invoke-direct {v2, p0, p1}, Lcom/digdroid/alman/dig/i$a$a;-><init>(Lcom/digdroid/alman/dig/i$a;[Ljava/lang/String;)V
 
-    invoke-virtual {v0, p1, v2}, Landroidx/appcompat/app/b$a;->g([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
+    invoke-virtual {v0, v1, v2}, Landroidx/appcompat/app/b$a;->g([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
 
     move-result-object p1
 
@@ -209,7 +128,7 @@
 
     invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
-    :cond_7
-    :goto_3
+    :cond_4
+    :goto_1
     return-void
 .end method

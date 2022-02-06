@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private final a:Ljava/util/List;
+.field private a:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -25,16 +25,16 @@
     .end annotation
 .end field
 
-.field private final b:Lcom/android/billingclient/api/g;
+.field private b:Lcom/android/billingclient/api/h;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/billingclient/api/g;Ljava/util/List;)V
+.method public constructor <init>(Lcom/android/billingclient/api/h;Ljava/util/List;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/android/billingclient/api/g;",
+            "Lcom/android/billingclient/api/h;",
             "Ljava/util/List<",
             "Lcom/android/billingclient/api/Purchase;",
             ">;)V"
@@ -45,17 +45,17 @@
 
     iput-object p2, p0, Lcom/android/billingclient/api/Purchase$a;->a:Ljava/util/List;
 
-    iput-object p1, p0, Lcom/android/billingclient/api/Purchase$a;->b:Lcom/android/billingclient/api/g;
+    iput-object p1, p0, Lcom/android/billingclient/api/Purchase$a;->b:Lcom/android/billingclient/api/h;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Lcom/android/billingclient/api/g;
+.method public a()Lcom/android/billingclient/api/h;
     .locals 1
 
-    iget-object v0, p0, Lcom/android/billingclient/api/Purchase$a;->b:Lcom/android/billingclient/api/g;
+    iget-object v0, p0, Lcom/android/billingclient/api/Purchase$a;->b:Lcom/android/billingclient/api/h;
 
     return-object v0
 .end method
@@ -79,11 +79,11 @@
 .method public c()I
     .locals 1
 
-    invoke-virtual {p0}, Lcom/android/billingclient/api/Purchase$a;->a()Lcom/android/billingclient/api/g;
+    invoke-virtual {p0}, Lcom/android/billingclient/api/Purchase$a;->a()Lcom/android/billingclient/api/h;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/billingclient/api/g;->a()I
+    invoke-virtual {v0}, Lcom/android/billingclient/api/h;->c()I
 
     move-result v0
 

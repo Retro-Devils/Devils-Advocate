@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract s0(JJLjava/lang/String;Z)V
+.method public abstract a()V
 .end method

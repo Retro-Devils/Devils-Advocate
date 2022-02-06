@@ -25,7 +25,7 @@
 
 
 # instance fields
-.field a:Lc/a/a/u;
+.field a:Lc/a/c/u;
 
 .field final synthetic b:J
 
@@ -41,12 +41,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/digdroid/alman/dig/o;Lc/a/a/u;JIIJLjava/lang/String;)V
+.method public constructor <init>(Lcom/digdroid/alman/dig/o;Lc/a/c/u;JIIJLjava/lang/String;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lc/a/a/u;",
+            "Lc/a/c/u;",
             ")V"
         }
     .end annotation
@@ -65,7 +65,7 @@
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
-    iput-object p2, p0, Lcom/digdroid/alman/dig/o$b;->a:Lc/a/a/u;
+    iput-object p2, p0, Lcom/digdroid/alman/dig/o$b;->a:Lc/a/c/u;
 
     return-void
 .end method
@@ -78,15 +78,15 @@
     const/4 p1, 0x1
 
     :try_start_0
-    iget-object v0, p0, Lcom/digdroid/alman/dig/o$b;->a:Lc/a/a/u;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/o$b;->a:Lc/a/c/u;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, v0, Lc/a/a/u;->b:Lc/a/a/k;
+    iget-object v0, v0, Lc/a/c/u;->b:Lc/a/c/k;
 
     if-eqz v0, :cond_2
 
-    iget v0, v0, Lc/a/a/k;->a:I
+    iget v0, v0, Lc/a/c/k;->a:I
 
     const/16 v1, 0x194
 

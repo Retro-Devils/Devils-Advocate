@@ -24,7 +24,7 @@
 .method public static a(Landroid/app/Activity;JZ)V
     .locals 9
 
-    invoke-static {p0}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
+    invoke-static {p0}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
 
     move-result-object v2
 
@@ -48,7 +48,7 @@
 
     move-wide v4, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/digdroid/alman/dig/MyWidget$a;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/c3;Ljava/lang/String;J)V
+    invoke-direct/range {v0 .. v5}, Lcom/digdroid/alman/dig/MyWidget$a;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/b3;Ljava/lang/String;J)V
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -74,19 +74,19 @@
 
     new-instance v0, Landroidx/appcompat/app/b$a;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v1
 
     invoke-direct {v0, p0, v1}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
 
-    const v1, 0x7f11029a
+    const v1, 0x7f110296
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/app/b$a;->h(I)Landroidx/appcompat/app/b$a;
 
     move-result-object v0
 
-    const v1, 0x7f110299
+    const v1, 0x7f110295
 
     new-instance v2, Lcom/digdroid/alman/dig/MyWidget$c;
 
@@ -96,7 +96,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f110249
+    const v7, 0x7f110245
 
     new-instance v8, Lcom/digdroid/alman/dig/MyWidget$b;
 
@@ -390,11 +390,11 @@
 
     invoke-direct {v4, v0}, Lcom/digdroid/alman/dig/n;-><init>(Landroid/content/Context;)V
 
-    invoke-static {v0, v3}, Lcom/digdroid/alman/dig/i2;->d(Landroid/content/Context;Ljava/lang/String;)Lcom/digdroid/alman/dig/i2;
+    new-instance v5, Ljava/io/File;
 
-    move-result-object v5
+    invoke-direct {v5, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v4, v5}, Lcom/digdroid/alman/dig/n;->k(Lcom/digdroid/alman/dig/i2;)V
+    invoke-virtual {v4, v5}, Lcom/digdroid/alman/dig/n;->k(Ljava/io/File;)V
 
     const/16 v5, 0x3e8
 
@@ -432,39 +432,39 @@
 
     invoke-virtual {v7, v10}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    new-instance v9, Lb/r/a/a/c$a;
+    new-instance v9, Lb/q/a/a/c$a;
 
-    invoke-direct {v9}, Lb/r/a/a/c$a;-><init>()V
+    invoke-direct {v9}, Lb/q/a/a/c$a;-><init>()V
 
     const-string v11, "TYPE_PREVIEW"
 
-    invoke-virtual {v9, v11}, Lb/r/a/a/c$a;->e(Ljava/lang/String;)Lb/r/a/a/c$a;
+    invoke-virtual {v9, v11}, Lb/q/a/a/c$a;->e(Ljava/lang/String;)Lb/q/a/a/c$a;
 
     move-result-object v11
 
-    const v12, 0x7f110208
+    const v12, 0x7f110206
 
     invoke-virtual {v0, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v12
 
-    invoke-virtual {v11, v12}, Lb/r/a/a/c$a;->d(Ljava/lang/String;)Lb/r/a/a/c$a;
+    invoke-virtual {v11, v12}, Lb/q/a/a/c$a;->d(Ljava/lang/String;)Lb/q/a/a/c$a;
 
     move-result-object v11
 
-    invoke-virtual {v11, v7}, Lb/r/a/a/c$a;->b(Landroid/content/Intent;)Lb/r/a/a/c$a;
+    invoke-virtual {v11, v7}, Lb/q/a/a/c$a;->b(Landroid/content/Intent;)Lb/q/a/a/c$a;
 
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
-    sget-object v11, Lb/r/a/a/g$a;->a:Landroid/net/Uri;
+    sget-object v11, Lb/q/a/a/g$a;->a:Landroid/net/Uri;
 
-    invoke-virtual {v9}, Lb/r/a/a/c$a;->a()Lb/r/a/a/c;
+    invoke-virtual {v9}, Lb/q/a/a/c$a;->a()Lb/q/a/a/c;
 
     move-result-object v9
 
-    invoke-virtual {v9}, Lb/r/a/a/c;->b()Landroid/content/ContentValues;
+    invoke-virtual {v9}, Lb/q/a/a/c;->b()Landroid/content/ContentValues;
 
     move-result-object v9
 
@@ -509,9 +509,9 @@
 
     move-result-object v6
 
-    invoke-static {v0, v11, v12, v6}, Lb/r/a/a/d;->a(Landroid/content/Context;JLandroid/graphics/Bitmap;)Z
+    invoke-static {v0, v11, v12, v6}, Lb/q/a/a/d;->a(Landroid/content/Context;JLandroid/graphics/Bitmap;)Z
 
-    invoke-static {v0, v11, v12}, Lb/r/a/a/g;->b(Landroid/content/Context;J)V
+    invoke-static {v0, v11, v12}, Lb/q/a/a/g;->b(Landroid/content/Context;J)V
 
     goto :goto_0
 
@@ -546,7 +546,7 @@
 
     invoke-virtual {v7, v9, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;J)Landroid/content/Intent;
 
-    invoke-static/range {p0 .. p0}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
+    invoke-static/range {p0 .. p0}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
 
     move-result-object v9
 
@@ -554,7 +554,7 @@
 
     const-string v13, "0"
 
-    invoke-virtual {v9, v10, v13}, Lcom/digdroid/alman/dig/c3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v9, v10, v13}, Lcom/digdroid/alman/dig/b3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
 
@@ -576,7 +576,7 @@
 
     const-string v14, "userid"
 
-    invoke-virtual {v9, v14, v13}, Lcom/digdroid/alman/dig/c3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v9, v14, v13}, Lcom/digdroid/alman/dig/b3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v9
 
@@ -755,7 +755,7 @@
 
     move-object/from16 v22, v4
 
-    invoke-static/range {v20 .. v21}, Lb/r/a/a/g;->a(J)Landroid/net/Uri;
+    invoke-static/range {v20 .. v21}, Lb/q/a/a/g;->a(J)Landroid/net/Uri;
 
     move-result-object v4
 
@@ -789,55 +789,55 @@
 
     move-object/from16 v20, v14
 
-    new-instance v3, Lb/r/a/a/f$a;
+    new-instance v3, Lb/q/a/a/f$a;
 
-    invoke-direct {v3}, Lb/r/a/a/f$a;-><init>()V
+    invoke-direct {v3}, Lb/q/a/a/f$a;-><init>()V
 
-    invoke-virtual {v3, v11, v12}, Lb/r/a/a/f$a;->i(J)Lb/r/a/a/f$a;
+    invoke-virtual {v3, v11, v12}, Lb/q/a/a/f$a;->i(J)Lb/q/a/a/f$a;
 
     move-result-object v4
 
     const/16 v11, 0xc
 
-    invoke-virtual {v4, v11}, Lb/r/a/a/a$a;->g(I)Lb/r/a/a/a$a;
+    invoke-virtual {v4, v11}, Lb/q/a/a/a$a;->g(I)Lb/q/a/a/a$a;
 
     move-result-object v4
 
-    check-cast v4, Lb/r/a/a/f$a;
+    check-cast v4, Lb/q/a/a/f$a;
 
     iget-object v11, v6, Lcom/digdroid/alman/dig/k0;->j:Ljava/lang/String;
 
-    invoke-virtual {v4, v11}, Lb/r/a/a/b$a;->c(Ljava/lang/String;)Lb/r/a/a/b$a;
+    invoke-virtual {v4, v11}, Lb/q/a/a/b$a;->c(Ljava/lang/String;)Lb/q/a/a/b$a;
 
     move-result-object v4
 
-    check-cast v4, Lb/r/a/a/f$a;
+    check-cast v4, Lb/q/a/a/f$a;
 
     iget-object v6, v6, Lcom/digdroid/alman/dig/k0;->k:Ljava/lang/String;
 
-    invoke-virtual {v4, v6}, Lb/r/a/a/b$a;->a(Ljava/lang/String;)Lb/r/a/a/b$a;
+    invoke-virtual {v4, v6}, Lb/q/a/a/b$a;->a(Ljava/lang/String;)Lb/q/a/a/b$a;
 
     move-result-object v4
 
-    check-cast v4, Lb/r/a/a/f$a;
+    check-cast v4, Lb/q/a/a/f$a;
 
     const/4 v6, 0x3
 
-    invoke-virtual {v4, v6}, Lb/r/a/a/a$a;->f(I)Lb/r/a/a/a$a;
+    invoke-virtual {v4, v6}, Lb/q/a/a/a$a;->f(I)Lb/q/a/a/a$a;
 
     move-result-object v4
 
-    check-cast v4, Lb/r/a/a/f$a;
+    check-cast v4, Lb/q/a/a/f$a;
 
-    invoke-virtual {v4, v5}, Lb/r/a/a/f$a;->j(I)Lb/r/a/a/f$a;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v9}, Lb/r/a/a/b$a;->b(Landroid/net/Uri;)Lb/r/a/a/b$a;
+    invoke-virtual {v4, v5}, Lb/q/a/a/f$a;->j(I)Lb/q/a/a/f$a;
 
     move-result-object v4
 
-    check-cast v4, Lb/r/a/a/f$a;
+    invoke-virtual {v4, v9}, Lb/q/a/a/b$a;->b(Landroid/net/Uri;)Lb/q/a/a/b$a;
+
+    move-result-object v4
+
+    check-cast v4, Lb/q/a/a/f$a;
 
     const/4 v5, 0x1
 
@@ -849,11 +849,11 @@
 
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Lb/r/a/a/a$a;->d(Landroid/net/Uri;)Lb/r/a/a/a$a;
+    invoke-virtual {v4, v5}, Lb/q/a/a/a$a;->d(Landroid/net/Uri;)Lb/q/a/a/a$a;
 
     move-result-object v4
 
-    check-cast v4, Lb/r/a/a/f$a;
+    check-cast v4, Lb/q/a/a/f$a;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -869,19 +869,19 @@
 
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Lb/r/a/a/a$a;->e(Ljava/lang/String;)Lb/r/a/a/a$a;
+    invoke-virtual {v4, v5}, Lb/q/a/a/a$a;->e(Ljava/lang/String;)Lb/q/a/a/a$a;
 
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
-    sget-object v5, Lb/r/a/a/g$b;->a:Landroid/net/Uri;
+    sget-object v5, Lb/q/a/a/g$b;->a:Landroid/net/Uri;
 
-    invoke-virtual {v3}, Lb/r/a/a/f$a;->h()Lb/r/a/a/f;
+    invoke-virtual {v3}, Lb/q/a/a/f$a;->h()Lb/q/a/a/f;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lb/r/a/a/f;->b()Landroid/content/ContentValues;
+    invoke-virtual {v3}, Lb/q/a/a/f;->b()Landroid/content/ContentValues;
 
     move-result-object v3
 
@@ -946,7 +946,7 @@
 
     move-result-wide v3
 
-    invoke-static {v3, v4}, Lb/r/a/a/g;->a(J)Landroid/net/Uri;
+    invoke-static {v3, v4}, Lb/q/a/a/g;->a(J)Landroid/net/Uri;
 
     move-result-object v3
 
@@ -961,7 +961,7 @@
     goto :goto_3
 
     :cond_8
-    invoke-static {v0, v10}, Lcom/digdroid/alman/dig/n2;->a(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
+    invoke-static {v0, v10}, Lcom/digdroid/alman/dig/m2;->a(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -971,7 +971,7 @@
 
     invoke-virtual {v2, v3, v1}, Lcom/digdroid/alman/dig/n;->s(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-static {v0, v13}, Lcom/digdroid/alman/dig/n2;->a(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
+    invoke-static {v0, v13}, Lcom/digdroid/alman/dig/m2;->a(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1165,7 +1165,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
+    invoke-static {v2}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
 
     move-result-object v2
 
@@ -1197,7 +1197,7 @@
 
     const-string v1, "homescreen"
 
-    invoke-virtual {v2, v1}, Lcom/digdroid/alman/dig/c3;->r(Ljava/lang/String;)Ljava/util/Set;
+    invoke-virtual {v2, v1}, Lcom/digdroid/alman/dig/b3;->r(Ljava/lang/String;)Ljava/util/Set;
 
     move-result-object v5
 
@@ -1224,7 +1224,7 @@
 
     invoke-interface {v5}, Ljava/util/Iterator;->remove()V
 
-    invoke-virtual {v2, v1, v0}, Lcom/digdroid/alman/dig/c3;->H(Ljava/lang/String;Ljava/util/Set;)V
+    invoke-virtual {v2, v1, v0}, Lcom/digdroid/alman/dig/b3;->H(Ljava/lang/String;Ljava/util/Set;)V
 
     invoke-virtual {v9, v7, v8}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
@@ -1293,7 +1293,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v2, v1, v0}, Lcom/digdroid/alman/dig/c3;->B(Ljava/lang/String;Z)V
+    invoke-virtual {v2, v1, v0}, Lcom/digdroid/alman/dig/b3;->B(Ljava/lang/String;Z)V
 
     goto :goto_1
 
@@ -1470,7 +1470,7 @@
     monitor-enter p0
 
     :try_start_0
-    invoke-static {p1}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
 
     move-result-object v0
 
@@ -1490,7 +1490,7 @@
 
     const-wide/16 v2, -0x1
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/digdroid/alman/dig/c3;->n(Ljava/lang/String;J)J
+    invoke-virtual {v0, v1, v2, v3}, Lcom/digdroid/alman/dig/b3;->n(Ljava/lang/String;J)J
 
     move-result-wide v4
 
@@ -1514,7 +1514,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/digdroid/alman/dig/c3;->n(Ljava/lang/String;J)J
+    invoke-virtual {v0, v1, v2, v3}, Lcom/digdroid/alman/dig/b3;->n(Ljava/lang/String;J)J
 
     move-result-wide v0
 
@@ -1569,7 +1569,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
 
     move-result-object p1
 
@@ -1596,7 +1596,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p1, v3}, Lcom/digdroid/alman/dig/c3;->I(Ljava/lang/String;)V
+    invoke-virtual {p1, v3}, Lcom/digdroid/alman/dig/b3;->I(Ljava/lang/String;)V
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1612,7 +1612,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p1, v2}, Lcom/digdroid/alman/dig/c3;->I(Ljava/lang/String;)V
+    invoke-virtual {p1, v2}, Lcom/digdroid/alman/dig/b3;->I(Ljava/lang/String;)V
 
     add-int/lit8 v1, v1, 0x1
 
@@ -1685,7 +1685,7 @@
 .method public onUpdate(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V
     .locals 1
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/a4;->v(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z3;->u(Landroid/content/Context;)Z
 
     move-result v0
 

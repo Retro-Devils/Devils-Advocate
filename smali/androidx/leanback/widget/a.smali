@@ -100,13 +100,13 @@
 .method A1(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
 
-    sget-object v0, Lb/m/l;->w:[I
+    sget-object v0, Lb/l/l;->w:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    sget p2, Lb/m/l;->B:I
+    sget p2, Lb/l/l;->B:I
 
     const/4 v0, 0x0
 
@@ -114,7 +114,7 @@
 
     move-result p2
 
-    sget v1, Lb/m/l;->A:I
+    sget v1, Lb/l/l;->A:I
 
     invoke-virtual {p1, v1, v0}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
@@ -124,7 +124,7 @@
 
     invoke-virtual {v2, p2, v1}, Landroidx/leanback/widget/f;->J3(ZZ)V
 
-    sget p2, Lb/m/l;->D:I
+    sget p2, Lb/l/l;->D:I
 
     const/4 v1, 0x1
 
@@ -132,7 +132,7 @@
 
     move-result p2
 
-    sget v2, Lb/m/l;->C:I
+    sget v2, Lb/l/l;->C:I
 
     invoke-virtual {p1, v2, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
@@ -144,9 +144,9 @@
 
     iget-object p2, p0, Landroidx/leanback/widget/a;->I0:Landroidx/leanback/widget/f;
 
-    sget v1, Lb/m/l;->z:I
+    sget v1, Lb/l/l;->z:I
 
-    sget v2, Lb/m/l;->F:I
+    sget v2, Lb/l/l;->F:I
 
     invoke-virtual {p1, v2, v0}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -160,9 +160,9 @@
 
     iget-object p2, p0, Landroidx/leanback/widget/a;->I0:Landroidx/leanback/widget/f;
 
-    sget v1, Lb/m/l;->y:I
+    sget v1, Lb/l/l;->y:I
 
-    sget v2, Lb/m/l;->E:I
+    sget v2, Lb/l/l;->E:I
 
     invoke-virtual {p1, v2, v0}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -174,7 +174,7 @@
 
     invoke-virtual {p2, v1}, Landroidx/leanback/widget/f;->O3(I)V
 
-    sget p2, Lb/m/l;->x:I
+    sget p2, Lb/l/l;->x:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->hasValue(I)Z
 

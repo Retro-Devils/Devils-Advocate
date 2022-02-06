@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/s2$d;
+.implements Lcom/digdroid/alman/dig/r2$c;
 
 
 # annotations
@@ -39,9 +39,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/MainActivity$a;->a:Lcom/digdroid/alman/dig/MainActivity;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/s2;->a1()Z
-
-    move-result v1
+    const/4 v1, 0x1
 
     iput-boolean v1, v0, Lcom/digdroid/alman/dig/MainActivity;->t1:Z
 
@@ -57,7 +55,7 @@
 
     invoke-direct {v0, v1}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f11025f
+    const v1, 0x7f11025b
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/app/b$a;->h(I)Landroidx/appcompat/app/b$a;
 
@@ -73,7 +71,7 @@
 
     invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/MainActivity$a$a;-><init>(Lcom/digdroid/alman/dig/MainActivity$a;)V
 
-    const v2, 0x7f1101da
+    const v2, 0x7f1101d8
 
     invoke-virtual {v0, v2, v1}, Landroidx/appcompat/app/b$a;->o(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
 

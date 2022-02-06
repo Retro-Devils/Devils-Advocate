@@ -1,5 +1,5 @@
 .class Lcom/digdroid/alman/dig/w0;
-.super Lcom/digdroid/alman/dig/b4;
+.super Lcom/digdroid/alman/dig/a4;
 .source ""
 
 
@@ -8,12 +8,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FFLcom/digdroid/alman/dig/u;Ljava/lang/String;Ljava/lang/String;Z)V
+.method public constructor <init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FFLcom/digdroid/alman/dig/u;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 12
 
     move-object v0, p0
 
-    invoke-direct/range {p0 .. p5}, Lcom/digdroid/alman/dig/b4;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FF)V
+    invoke-direct/range {p0 .. p5}, Lcom/digdroid/alman/dig/a4;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FF)V
 
     new-instance v11, Lcom/digdroid/alman/dig/q0;
 
@@ -37,7 +37,7 @@
 
     move/from16 v10, p9
 
-    invoke-direct/range {v1 .. v10}, Lcom/digdroid/alman/dig/q0;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FFLcom/digdroid/alman/dig/u;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-direct/range {v1 .. v10}, Lcom/digdroid/alman/dig/q0;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FFLcom/digdroid/alman/dig/u;Ljava/lang/String;Ljava/lang/String;Z)V
 
     iput-object v11, v0, Lcom/digdroid/alman/dig/w0;->l:Lcom/digdroid/alman/dig/q0;
 
@@ -51,7 +51,7 @@
 .method public j(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
     .locals 7
 
-    invoke-super {p0, p1, p2}, Lcom/digdroid/alman/dig/b4;->j(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
+    invoke-super {p0, p1, p2}, Lcom/digdroid/alman/dig/a4;->j(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
 
     if-eqz p1, :cond_0
 
@@ -102,7 +102,7 @@
 
     int-to-float v0, v0
 
-    invoke-virtual {p2, p1, v0}, Lcom/digdroid/alman/dig/q0;->i(Landroid/view/View;F)Lcom/digdroid/alman/dig/x0;
+    invoke-virtual {p2, p1, v0}, Lcom/digdroid/alman/dig/q0;->h(Landroid/view/View;F)Lcom/digdroid/alman/dig/x0;
 
     move-result-object p1
 

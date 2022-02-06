@@ -45,11 +45,11 @@
 
     iput-boolean p2, p1, Lcom/digdroid/alman/dig/v0;->i:Z
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/v0;->f:Lcom/digdroid/alman/dig/c3;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/v0;->f:Lcom/digdroid/alman/dig/b3;
 
     const-string v0, "games_preview_play_mobile"
 
-    invoke-virtual {p1, v0, p2}, Lcom/digdroid/alman/dig/c3;->B(Ljava/lang/String;Z)V
+    invoke-virtual {p1, v0, p2}, Lcom/digdroid/alman/dig/b3;->B(Ljava/lang/String;Z)V
 
     return-void
 .end method

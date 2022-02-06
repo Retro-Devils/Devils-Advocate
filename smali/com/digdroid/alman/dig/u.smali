@@ -6,7 +6,7 @@
 # static fields
 .field private static a:Landroid/database/sqlite/SQLiteDatabase;
 
-.field private static b:Lcom/digdroid/alman/dig/z2;
+.field private static b:Lcom/digdroid/alman/dig/y2;
 
 .field private static c:Lcom/digdroid/alman/dig/u;
 
@@ -14,7 +14,7 @@
 # instance fields
 .field private d:Landroid/content/Context;
 
-.field private e:Lcom/digdroid/alman/dig/c3;
+.field private e:Lcom/digdroid/alman/dig/b3;
 
 
 # direct methods
@@ -35,11 +35,11 @@
 
     iput-object v0, p0, Lcom/digdroid/alman/dig/u;->d:Landroid/content/Context;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/u;->e:Lcom/digdroid/alman/dig/c3;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/u;->e:Lcom/digdroid/alman/dig/b3;
 
     return-void
 .end method
@@ -509,7 +509,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/digdroid/alman/dig/a4;->t(Ljava/lang/String;)J
+    invoke-static {v2}, Lcom/digdroid/alman/dig/z3;->s(Ljava/lang/String;)J
 
     move-result-wide v2
 
@@ -834,7 +834,7 @@
 .method public c()Landroid/database/sqlite/SQLiteDatabase;
     .locals 1
 
-    sget-object v0, Lcom/digdroid/alman/dig/u;->b:Lcom/digdroid/alman/dig/z2;
+    sget-object v0, Lcom/digdroid/alman/dig/u;->b:Lcom/digdroid/alman/dig/y2;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -999,11 +999,11 @@
 
     iget-object v3, v6, Lcom/digdroid/alman/dig/u;->d:Landroid/content/Context;
 
-    invoke-static {v3}, Lb/o/a/a;->b(Landroid/content/Context;)Lb/o/a/a;
+    invoke-static {v3}, Lb/n/a/a;->b(Landroid/content/Context;)Lb/n/a/a;
 
     move-result-object v3
 
-    invoke-virtual {v3, v2}, Lb/o/a/a;->d(Landroid/content/Intent;)Z
+    invoke-virtual {v3, v2}, Lb/n/a/a;->d(Landroid/content/Intent;)Z
 
     move-wide/from16 v18, v0
 
@@ -1144,11 +1144,11 @@
 
     const-string v1, "games.db"
 
-    invoke-static {v0, v1, p0}, Lcom/digdroid/alman/dig/z2;->a(Landroid/content/Context;Ljava/lang/String;Lcom/digdroid/alman/dig/u;)Lcom/digdroid/alman/dig/z2;
+    invoke-static {v0, v1, p0}, Lcom/digdroid/alman/dig/y2;->a(Landroid/content/Context;Ljava/lang/String;Lcom/digdroid/alman/dig/u;)Lcom/digdroid/alman/dig/y2;
 
     move-result-object v0
 
-    sput-object v0, Lcom/digdroid/alman/dig/u;->b:Lcom/digdroid/alman/dig/z2;
+    sput-object v0, Lcom/digdroid/alman/dig/u;->b:Lcom/digdroid/alman/dig/y2;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1158,19 +1158,19 @@
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->enableWriteAheadLogging()Z
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/u;->e:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/u;->e:Lcom/digdroid/alman/dig/b3;
 
     const-string v1, "data_version"
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/c3;->l(Ljava/lang/String;I)I
+    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/b3;->l(Ljava/lang/String;I)I
 
     move-result v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 v1, 0x1cf
+    const/16 v1, 0x1c9
 
     if-lt v0, v1, :cond_0
 
@@ -1553,7 +1553,7 @@
     :try_start_1a
     sget-object v0, Lcom/digdroid/alman/dig/u;->a:Landroid/database/sqlite/SQLiteDatabase;
 
-    const-string v1, "ALTER TABLE rompaths ADD COLUMN uri text"
+    const-string v1, "ALTER TABLE emulators ADD COLUMN data_type text"
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
     :try_end_1a
@@ -1564,7 +1564,7 @@
     :try_start_1b
     sget-object v0, Lcom/digdroid/alman/dig/u;->a:Landroid/database/sqlite/SQLiteDatabase;
 
-    const-string v1, "ALTER TABLE emulators ADD COLUMN data_type text"
+    const-string v1, "ALTER TABLE emulators ADD COLUMN action_type text"
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
     :try_end_1b
@@ -1575,7 +1575,7 @@
     :try_start_1c
     sget-object v0, Lcom/digdroid/alman/dig/u;->a:Landroid/database/sqlite/SQLiteDatabase;
 
-    const-string v1, "ALTER TABLE emulators ADD COLUMN action_type text"
+    const-string v1, "ALTER TABLE emulators ADD COLUMN takes_zip integer"
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
     :try_end_1c
@@ -1586,7 +1586,7 @@
     :try_start_1d
     sget-object v0, Lcom/digdroid/alman/dig/u;->a:Landroid/database/sqlite/SQLiteDatabase;
 
-    const-string v1, "ALTER TABLE emulators ADD COLUMN takes_zip integer"
+    const-string v1, "ALTER TABLE emulators ADD COLUMN config_dir text"
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
     :try_end_1d
@@ -1597,7 +1597,7 @@
     :try_start_1e
     sget-object v0, Lcom/digdroid/alman/dig/u;->a:Landroid/database/sqlite/SQLiteDatabase;
 
-    const-string v1, "ALTER TABLE emulators ADD COLUMN config_dir text"
+    const-string v1, "ALTER TABLE emulators ADD COLUMN use_retroarch64 integer not null default 0"
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
     :try_end_1e
@@ -1608,7 +1608,7 @@
     :try_start_1f
     sget-object v0, Lcom/digdroid/alman/dig/u;->a:Landroid/database/sqlite/SQLiteDatabase;
 
-    const-string v1, "ALTER TABLE emulators ADD COLUMN use_retroarch64 integer not null default 0"
+    const-string v1, "ALTER TABLE emulators ADD COLUMN user_edited integer not null default 0"
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
     :try_end_1f
@@ -1617,17 +1617,6 @@
 
     :catch_1e
     :try_start_20
-    sget-object v0, Lcom/digdroid/alman/dig/u;->a:Landroid/database/sqlite/SQLiteDatabase;
-
-    const-string v1, "ALTER TABLE emulators ADD COLUMN user_edited integer not null default 0"
-
-    invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-    :try_end_20
-    .catch Ljava/lang/Exception; {:try_start_20 .. :try_end_20} :catch_1f
-    .catchall {:try_start_20 .. :try_end_20} :catchall_0
-
-    :catch_1f
-    :try_start_21
     sget-object v0, Lcom/digdroid/alman/dig/u;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v1, "CREATE TABLE collections(_id integer primary key autoincrement, name text, parent integer )"
@@ -1657,27 +1646,27 @@
     const-string v1, "CREATE INDEX colectioncolectionidx ON gamegenres( genre )"
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-    :try_end_21
-    .catch Ljava/lang/Exception; {:try_start_21 .. :try_end_21} :catch_20
-    .catchall {:try_start_21 .. :try_end_21} :catchall_0
+    :try_end_20
+    .catch Ljava/lang/Exception; {:try_start_20 .. :try_end_20} :catch_1f
+    .catchall {:try_start_20 .. :try_end_20} :catchall_0
 
-    :catch_20
-    :try_start_22
+    :catch_1f
+    :try_start_21
     sget-object v0, Lcom/digdroid/alman/dig/u;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v1, "ALTER TABLE collections ADD COLUMN isfolder integer"
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-    :try_end_22
-    .catch Ljava/lang/Exception; {:try_start_22 .. :try_end_22} :catch_21
-    .catchall {:try_start_22 .. :try_end_22} :catchall_0
+    :try_end_21
+    .catch Ljava/lang/Exception; {:try_start_21 .. :try_end_21} :catch_20
+    .catchall {:try_start_21 .. :try_end_21} :catchall_0
 
-    :catch_21
+    :catch_20
     const/4 v0, 0x0
 
     const/4 v1, 0x7
 
-    :try_start_23
+    :try_start_22
     sget-object v3, Lcom/digdroid/alman/dig/u;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v4, "CREATE TABLE main(_id integer primary key autoincrement, type integer)"
@@ -1706,17 +1695,17 @@
     const-string v6, "main"
 
     invoke-virtual {v5, v6, v0, v4}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
-    :try_end_23
-    .catch Ljava/lang/Exception; {:try_start_23 .. :try_end_23} :catch_22
-    .catchall {:try_start_23 .. :try_end_23} :catchall_0
+    :try_end_22
+    .catch Ljava/lang/Exception; {:try_start_22 .. :try_end_22} :catch_21
+    .catchall {:try_start_22 .. :try_end_22} :catchall_0
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    :catch_22
+    :catch_21
     :cond_1
-    :try_start_24
+    :try_start_23
     sget-object v3, Lcom/digdroid/alman/dig/u;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v4, "ALTER TABLE main ADD COLUMN position INTEGER"
@@ -1787,17 +1776,17 @@
     move-result-object v6
 
     invoke-virtual {v4, v5, v3, v6, v0}, Landroid/database/sqlite/SQLiteDatabase;->update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
-    :try_end_24
-    .catch Ljava/lang/Exception; {:try_start_24 .. :try_end_24} :catch_23
-    .catchall {:try_start_24 .. :try_end_24} :catchall_0
+    :try_end_23
+    .catch Ljava/lang/Exception; {:try_start_23 .. :try_end_23} :catch_22
+    .catchall {:try_start_23 .. :try_end_23} :catchall_0
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
-    :catch_23
+    :catch_22
     :cond_3
-    :try_start_25
+    :try_start_24
     sget-object v0, Lcom/digdroid/alman/dig/u;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v1, "CREATE TABLE themes(_id integer primary key autoincrement, name text, forum_id integer, image_url text, modified integer)"
@@ -1815,12 +1804,12 @@
     const-string v1, "CREATE INDEX thememodifiedidx ON themes( modified ) "
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-    :try_end_25
-    .catch Ljava/lang/Exception; {:try_start_25 .. :try_end_25} :catch_24
-    .catchall {:try_start_25 .. :try_end_25} :catchall_0
+    :try_end_24
+    .catch Ljava/lang/Exception; {:try_start_24 .. :try_end_24} :catch_23
+    .catchall {:try_start_24 .. :try_end_24} :catchall_0
 
-    :catch_24
-    :try_start_26
+    :catch_23
+    :try_start_25
     sget-object v0, Lcom/digdroid/alman/dig/u;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v1, "ALTER TABLE themes ADD COLUMN minsize INTEGER NOT NULL DEFAULT 0"
@@ -1832,19 +1821,19 @@
     const-string v1, "ALTER TABLE themes ADD COLUMN maxsize INTEGER NOT NULL DEFAULT 0"
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-    :try_end_26
-    .catch Ljava/lang/Exception; {:try_start_26 .. :try_end_26} :catch_25
-    .catchall {:try_start_26 .. :try_end_26} :catchall_0
+    :try_end_25
+    .catch Ljava/lang/Exception; {:try_start_25 .. :try_end_25} :catch_24
+    .catchall {:try_start_25 .. :try_end_25} :catchall_0
 
-    :catch_25
-    :try_start_27
+    :catch_24
+    :try_start_26
     iget-object v0, p0, Lcom/digdroid/alman/dig/u;->d:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/a4;->v(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/digdroid/alman/dig/z3;->u(Landroid/content/Context;)Z
 
     move-result v0
-    :try_end_27
-    .catchall {:try_start_27 .. :try_end_27} :catchall_0
+    :try_end_26
+    .catchall {:try_start_26 .. :try_end_26} :catchall_0
 
     if-eqz v0, :cond_4
 
@@ -1853,7 +1842,7 @@
     return-void
 
     :cond_4
-    :try_start_28
+    :try_start_27
     new-instance v0, Landroid/content/Intent;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1890,11 +1879,11 @@
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/u;->d:Landroid/content/Context;
 
-    invoke-static {v1}, Lb/o/a/a;->b(Landroid/content/Context;)Lb/o/a/a;
+    invoke-static {v1}, Lb/n/a/a;->b(Landroid/content/Context;)Lb/n/a/a;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lb/o/a/a;->d(Landroid/content/Intent;)Z
+    invoke-virtual {v1, v0}, Lb/n/a/a;->d(Landroid/content/Intent;)Z
 
     sget-object v0, Lcom/digdroid/alman/dig/u;->a:Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1936,11 +1925,11 @@
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/u;->d:Landroid/content/Context;
 
-    invoke-static {v1}, Lb/o/a/a;->b(Landroid/content/Context;)Lb/o/a/a;
+    invoke-static {v1}, Lb/n/a/a;->b(Landroid/content/Context;)Lb/n/a/a;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lb/o/a/a;->d(Landroid/content/Intent;)Z
+    invoke-virtual {v1, v0}, Lb/n/a/a;->d(Landroid/content/Intent;)Z
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -1992,13 +1981,13 @@
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/u;->d:Landroid/content/Context;
 
-    invoke-static {v1}, Lb/o/a/a;->b(Landroid/content/Context;)Lb/o/a/a;
+    invoke-static {v1}, Lb/n/a/a;->b(Landroid/content/Context;)Lb/n/a/a;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lb/o/a/a;->d(Landroid/content/Intent;)Z
-    :try_end_28
-    .catchall {:try_start_28 .. :try_end_28} :catchall_0
+    invoke-virtual {v1, v0}, Lb/n/a/a;->d(Landroid/content/Intent;)Z
+    :try_end_27
+    .catchall {:try_start_27 .. :try_end_27} :catchall_0
 
     :cond_5
     monitor-exit p0

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/e0;->v1()V
+    value = Lcom/digdroid/alman/dig/e0;->t1()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -39,7 +39,7 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/e0$b;->b:Lcom/digdroid/alman/dig/e0;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/e0;->k1()Lcom/digdroid/alman/dig/p1;
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/e0;->i1()Lcom/digdroid/alman/dig/p1;
 
     move-result-object v0
 
@@ -47,11 +47,11 @@
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/e0$b;->b:Lcom/digdroid/alman/dig/e0;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/p1;->v2()Lcom/digdroid/alman/dig/t3;
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/p1;->v2()Lcom/digdroid/alman/dig/s3;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/digdroid/alman/dig/e0;->E(Lcom/digdroid/alman/dig/t3;)V
+    invoke-virtual {v1, v2}, Lcom/digdroid/alman/dig/e0;->E(Lcom/digdroid/alman/dig/s3;)V
 
     invoke-virtual {v0}, Lcom/digdroid/alman/dig/p1;->Q2()V
 

@@ -1,5 +1,5 @@
 .class Lcom/digdroid/alman/dig/MyViewPager;
-.super Lb/t/a/b;
+.super Lb/s/a/b;
 .source ""
 
 
@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field m0:Lcom/digdroid/alman/dig/c3;
+.field m0:Lcom/digdroid/alman/dig/b3;
 
 .field n0:Lcom/digdroid/alman/dig/MyViewPager$a;
 
@@ -23,7 +23,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lb/t/a/b;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Lb/s/a/b;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 p2, 0x0
 
@@ -33,11 +33,11 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/MyViewPager;->m0:Lcom/digdroid/alman/dig/c3;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/MyViewPager;->m0:Lcom/digdroid/alman/dig/b3;
 
     return-void
 .end method
@@ -106,13 +106,13 @@
 .method public c(I)Z
     .locals 3
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/MyViewPager;->m0:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/MyViewPager;->m0:Lcom/digdroid/alman/dig/b3;
 
     const-string v1, "allow_paging"
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/c3;->c(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/b3;->c(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -140,15 +140,15 @@
 
     if-ne p1, v0, :cond_2
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/MyViewPager;->m0:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/MyViewPager;->m0:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/c3;->h()Z
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/b3;->h()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {p0}, Lb/t/a/b;->getCurrentItem()I
+    invoke-virtual {p0}, Lb/s/a/b;->getCurrentItem()I
 
     move-result v0
 
@@ -157,7 +157,7 @@
     return v1
 
     :cond_2
-    invoke-super {p0, p1}, Lb/t/a/b;->c(I)Z
+    invoke-super {p0, p1}, Lb/s/a/b;->c(I)Z
 
     move-result p1
 
@@ -176,15 +176,15 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/MyViewPager;->m0:Lcom/digdroid/alman/dig/c3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/MyViewPager;->m0:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/c3;->h()Z
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/b3;->h()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Lb/t/a/b;->getCurrentItem()I
+    invoke-virtual {p0}, Lb/s/a/b;->getCurrentItem()I
 
     move-result v1
 
@@ -205,7 +205,7 @@
 
     if-eqz v1, :cond_1
 
-    invoke-super {p0, p1}, Lb/t/a/b;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
+    invoke-super {p0, p1}, Lb/s/a/b;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result p1
     :try_end_0
@@ -222,7 +222,7 @@
     .locals 0
 
     :try_start_0
-    invoke-super {p0, p1, p2}, Lb/t/a/b;->onMeasure(II)V
+    invoke-super {p0, p1, p2}, Lb/s/a/b;->onMeasure(II)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -241,15 +241,15 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/MyViewPager;->m0:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/MyViewPager;->m0:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/c3;->h()Z
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/b3;->h()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lb/t/a/b;->getCurrentItem()I
+    invoke-virtual {p0}, Lb/s/a/b;->getCurrentItem()I
 
     move-result v0
 
@@ -270,7 +270,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-super {p0, p1}, Lb/t/a/b;->onTouchEvent(Landroid/view/MotionEvent;)Z
+    invoke-super {p0, p1}, Lb/s/a/b;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result p1
 

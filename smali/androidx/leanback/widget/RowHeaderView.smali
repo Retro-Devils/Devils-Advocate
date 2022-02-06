@@ -7,7 +7,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    sget v0, Lb/m/a;->b:I
+    sget v0, Lb/l/a;->b:I
 
     invoke-direct {p0, p1, p2, v0}, Landroidx/leanback/widget/RowHeaderView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 

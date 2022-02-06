@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: DIGGING.apk
+apkFileName: Devils_Advocate_v1.39.6.1.apk
 compressionType: false
 doNotCompress:
 - resources.arsc
@@ -12,16 +12,13 @@ packageInfo:
   renameManifestPackage: null
 sdkInfo:
   minSdkVersion: '14'
-  targetSdkVersion: '30'
+  targetSdkVersion: '29'
 sharedLibrary: false
 sparseResources: false
 unknownFiles:
+  play-services-base.properties: '8'
   play-services-basement.properties: '8'
   play-services-safetynet.properties: '8'
-  play-services-base.properties: '8'
-  billing.properties: '8'
-  ANTISPLIT_BY_APKTOOL_M.txt: '8'
-  stamp-cert-sha256: '8'
   play-services-tasks.properties: '8'
 usesFramework:
   ids:
@@ -29,5 +26,5 @@ usesFramework:
   tag: null
 version: 2.6.0
 versionInfo:
-  versionCode: '167'
-  versionName: 1.39.7.1
+  versionCode: '165'
+  versionName: 1.39.6.1

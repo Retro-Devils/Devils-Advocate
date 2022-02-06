@@ -166,7 +166,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lb/m/l;->l:[I
+    sget-object v2, Lb/l/l;->l:[I
 
     const/4 v3, 0x0
 
@@ -174,9 +174,9 @@
 
     move-result-object p1
 
-    sget p2, Lb/m/l;->s:I
+    sget p2, Lb/l/l;->s:I
 
-    sget p3, Lb/m/c;->f:I
+    sget p3, Lb/l/c;->f:I
 
     invoke-direct {p0, p1, p2, p3}, Landroidx/leanback/widget/PagingIndicator;->g(Landroid/content/res/TypedArray;II)I
 
@@ -188,9 +188,9 @@
 
     iput p3, p0, Landroidx/leanback/widget/PagingIndicator;->g:I
 
-    sget p3, Lb/m/l;->o:I
+    sget p3, Lb/l/l;->o:I
 
-    sget v2, Lb/m/c;->b:I
+    sget v2, Lb/l/c;->b:I
 
     invoke-direct {p0, p1, p3, v2}, Landroidx/leanback/widget/PagingIndicator;->g(Landroid/content/res/TypedArray;II)I
 
@@ -202,9 +202,9 @@
 
     iput v2, p0, Landroidx/leanback/widget/PagingIndicator;->j:I
 
-    sget v4, Lb/m/l;->r:I
+    sget v4, Lb/l/l;->r:I
 
-    sget v5, Lb/m/c;->e:I
+    sget v5, Lb/l/c;->e:I
 
     invoke-direct {p0, p1, v4, v5}, Landroidx/leanback/widget/PagingIndicator;->g(Landroid/content/res/TypedArray;II)I
 
@@ -212,9 +212,9 @@
 
     iput v4, p0, Landroidx/leanback/widget/PagingIndicator;->i:I
 
-    sget v4, Lb/m/l;->q:I
+    sget v4, Lb/l/l;->q:I
 
-    sget v5, Lb/m/c;->a:I
+    sget v5, Lb/l/c;->a:I
 
     invoke-direct {p0, p1, v4, v5}, Landroidx/leanback/widget/PagingIndicator;->g(Landroid/content/res/TypedArray;II)I
 
@@ -222,9 +222,9 @@
 
     iput v4, p0, Landroidx/leanback/widget/PagingIndicator;->l:I
 
-    sget v4, Lb/m/l;->p:I
+    sget v4, Lb/l/l;->p:I
 
-    sget v5, Lb/m/b;->d:I
+    sget v5, Lb/l/b;->d:I
 
     invoke-direct {p0, p1, v4, v5}, Landroidx/leanback/widget/PagingIndicator;->f(Landroid/content/res/TypedArray;II)I
 
@@ -240,9 +240,9 @@
 
     invoke-virtual {v5, v4}, Landroid/graphics/Paint;->setColor(I)V
 
-    sget v4, Lb/m/l;->m:I
+    sget v4, Lb/l/l;->m:I
 
-    sget v5, Lb/m/b;->b:I
+    sget v5, Lb/l/b;->b:I
 
     invoke-direct {p0, p1, v4, v5}, Landroidx/leanback/widget/PagingIndicator;->f(Landroid/content/res/TypedArray;II)I
 
@@ -254,7 +254,7 @@
 
     if-nez v4, :cond_0
 
-    sget v4, Lb/m/l;->n:I
+    sget v4, Lb/l/l;->n:I
 
     invoke-virtual {p1, v4}, Landroid/content/res/TypedArray;->hasValue(I)Z
 
@@ -291,13 +291,13 @@
     :goto_0
     iput-boolean p1, p0, Landroidx/leanback/widget/PagingIndicator;->f:Z
 
-    sget p1, Lb/m/b;->c:I
+    sget p1, Lb/l/b;->c:I
 
     invoke-virtual {v1, p1}, Landroid/content/res/Resources;->getColor(I)I
 
     move-result p1
 
-    sget v4, Lb/m/c;->d:I
+    sget v4, Lb/l/c;->d:I
 
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -311,7 +311,7 @@
 
     iput-object v5, p0, Landroidx/leanback/widget/PagingIndicator;->x:Landroid/graphics/Paint;
 
-    sget v7, Lb/m/c;->c:I
+    sget v7, Lb/l/c;->c:I
 
     invoke-virtual {v1, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1009,7 +1009,7 @@
 
     move-result-object v0
 
-    sget v1, Lb/m/d;->b:I
+    sget v1, Lb/l/d;->b:I
 
     invoke-static {v0, v1}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 

@@ -611,7 +611,7 @@
 .method private static q(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
 
-    instance-of v0, p0, Lb/s/a/a/i;
+    instance-of v0, p0, Lb/r/a/a/i;
 
     if-nez v0, :cond_1
 

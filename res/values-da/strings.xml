@@ -27,7 +27,7 @@
     <string name="abc_shareactionprovider_share_with">Del med</string>
     <string name="abc_shareactionprovider_share_with_application">Del med %s</string>
     <string name="abc_toolbar_collapse_description">Skjul</string>
-    <string name="app_name">Dig</string>
+    <string name="app_name">"Devil's Advocate"</string>
     <string name="common_google_play_services_enable_button">Aktivér</string>
     <string name="common_google_play_services_enable_text">Du skal aktivere Google Play-tjenester, for at %1$s kan fungere.</string>
     <string name="common_google_play_services_enable_title">Aktivér Google Play-tjenester</string>

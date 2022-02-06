@@ -41,7 +41,7 @@
 
 .field h:Landroid/os/Bundle;
 
-.field i:Lcom/digdroid/alman/dig/c3;
+.field i:Lcom/digdroid/alman/dig/b3;
 
 .field final synthetic j:Lcom/digdroid/alman/dig/MyWidget;
 
@@ -62,11 +62,11 @@
 
     iput-object p5, p0, Lcom/digdroid/alman/dig/MyWidget$e;->h:Landroid/os/Bundle;
 
-    invoke-static {p2}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
+    invoke-static {p2}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/MyWidget$e;->i:Lcom/digdroid/alman/dig/c3;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/MyWidget$e;->i:Lcom/digdroid/alman/dig/b3;
 
     return-void
 .end method
@@ -167,7 +167,7 @@
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/MyWidget$e;->i:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/MyWidget$e;->i:Lcom/digdroid/alman/dig/b3;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -178,7 +178,7 @@
     goto :goto_2
 
     :cond_5
-    iget-object v0, p0, Lcom/digdroid/alman/dig/MyWidget$e;->i:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/MyWidget$e;->i:Lcom/digdroid/alman/dig/b3;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -199,7 +199,7 @@
 
     iget-wide v3, p0, Lcom/digdroid/alman/dig/MyWidget$e;->d:J
 
-    invoke-virtual {v0, v2, v3, v4}, Lcom/digdroid/alman/dig/c3;->y(Ljava/lang/String;J)V
+    invoke-virtual {v0, v2, v3, v4}, Lcom/digdroid/alman/dig/b3;->y(Ljava/lang/String;J)V
 
     iget-wide v2, p0, Lcom/digdroid/alman/dig/MyWidget$e;->d:J
 
@@ -329,7 +329,7 @@
     const-wide/16 v2, -0x1
 
     :try_start_0
-    iget-object v4, p0, Lcom/digdroid/alman/dig/MyWidget$e;->i:Lcom/digdroid/alman/dig/c3;
+    iget-object v4, p0, Lcom/digdroid/alman/dig/MyWidget$e;->i:Lcom/digdroid/alman/dig/b3;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -347,7 +347,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v4, v5, v2, v3}, Lcom/digdroid/alman/dig/c3;->n(Ljava/lang/String;J)J
+    invoke-virtual {v4, v5, v2, v3}, Lcom/digdroid/alman/dig/b3;->n(Ljava/lang/String;J)J
 
     move-result-wide v4
 
@@ -366,7 +366,7 @@
     :cond_0
     iput-boolean v0, p0, Lcom/digdroid/alman/dig/MyWidget$e;->e:Z
 
-    iget-object v4, p0, Lcom/digdroid/alman/dig/MyWidget$e;->i:Lcom/digdroid/alman/dig/c3;
+    iget-object v4, p0, Lcom/digdroid/alman/dig/MyWidget$e;->i:Lcom/digdroid/alman/dig/b3;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -384,14 +384,14 @@
 
     move-result-object v5
 
-    invoke-virtual {v4, v5, v2, v3}, Lcom/digdroid/alman/dig/c3;->n(Ljava/lang/String;J)J
+    invoke-virtual {v4, v5, v2, v3}, Lcom/digdroid/alman/dig/b3;->n(Ljava/lang/String;J)J
 
     move-result-wide v4
 
     iput-wide v4, p0, Lcom/digdroid/alman/dig/MyWidget$e;->d:J
 
     :goto_0
-    iget-object v4, p0, Lcom/digdroid/alman/dig/MyWidget$e;->i:Lcom/digdroid/alman/dig/c3;
+    iget-object v4, p0, Lcom/digdroid/alman/dig/MyWidget$e;->i:Lcom/digdroid/alman/dig/b3;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -409,7 +409,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v4, v5, v1}, Lcom/digdroid/alman/dig/c3;->c(Ljava/lang/String;Z)Z
+    invoke-virtual {v4, v5, v1}, Lcom/digdroid/alman/dig/b3;->c(Ljava/lang/String;Z)Z
 
     move-result v4
 

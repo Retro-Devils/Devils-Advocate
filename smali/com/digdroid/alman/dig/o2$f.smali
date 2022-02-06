@@ -2,59 +2,57 @@
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Lcom/digdroid/alman/dig/d0$r;
+
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/digdroid/alman/dig/o2;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/digdroid/alman/dig/o2;->x1(I)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x0
-    name = "f"
+    name = null
 .end annotation
 
 
 # instance fields
-.field a:Lcom/digdroid/alman/dig/o2$g;
-
-.field b:I
-
-.field c:I
-
-.field d:Z
-
-.field e:I
-
-.field f:Z
-
-.field g:I
-
-.field h:I
-
-.field i:I
-
-.field j:I
-
-.field final synthetic k:Lcom/digdroid/alman/dig/o2;
+.field final synthetic a:Lcom/digdroid/alman/dig/o2;
 
 
 # direct methods
 .method constructor <init>(Lcom/digdroid/alman/dig/o2;)V
-    .locals 1
+    .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/o2$f;->k:Lcom/digdroid/alman/dig/o2;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/o2$f;->a:Lcom/digdroid/alman/dig/o2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 p1, 0x0
+    return-void
+.end method
 
-    iput-boolean p1, p0, Lcom/digdroid/alman/dig/o2$f;->d:Z
 
-    const/16 v0, 0x3e8
+# virtual methods
+.method public a()V
+    .locals 1
 
-    iput v0, p0, Lcom/digdroid/alman/dig/o2$f;->e:I
+    iget-object v0, p0, Lcom/digdroid/alman/dig/o2$f;->a:Lcom/digdroid/alman/dig/o2;
 
-    iput-boolean p1, p0, Lcom/digdroid/alman/dig/o2$f;->f:Z
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/e0;->i1()Lcom/digdroid/alman/dig/p1;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/p1;->U2()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public b()V
+    .locals 0
 
     return-void
 .end method

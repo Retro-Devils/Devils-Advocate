@@ -31,10 +31,10 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FLjava/lang/String;[ZLcom/digdroid/alman/dig/e1$a;)V
+.method public constructor <init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FLjava/lang/String;[ZLcom/digdroid/alman/dig/e1$a;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/digdroid/alman/dig/q1;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;F)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/digdroid/alman/dig/q1;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;F)V
 
     iput-object p5, p0, Lcom/digdroid/alman/dig/e1;->f:Ljava/lang/String;
 
@@ -270,9 +270,9 @@
 
     iput-object p3, p2, Lcom/digdroid/alman/dig/e1$b;->c:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/t3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/s3;
 
-    iget v1, v1, Lcom/digdroid/alman/dig/t3;->e:I
+    iget v1, v1, Lcom/digdroid/alman/dig/s3;->e:I
 
     invoke-virtual {p3, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -286,9 +286,9 @@
 
     iput-object p3, p2, Lcom/digdroid/alman/dig/e1$b;->d:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/t3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/q1;->b:Lcom/digdroid/alman/dig/s3;
 
-    iget v1, v1, Lcom/digdroid/alman/dig/t3;->f:I
+    iget v1, v1, Lcom/digdroid/alman/dig/s3;->f:I
 
     invoke-virtual {p3, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -298,7 +298,7 @@
 
     mul-float p3, p3, v1
 
-    invoke-static {p3}, Lcom/digdroid/alman/dig/q3;->e(F)F
+    invoke-static {p3}, Lcom/digdroid/alman/dig/p3;->e(F)F
 
     move-result p3
 
@@ -322,7 +322,7 @@
 
     mul-float p3, p3, v1
 
-    invoke-static {p3}, Lcom/digdroid/alman/dig/q3;->e(F)F
+    invoke-static {p3}, Lcom/digdroid/alman/dig/p3;->e(F)F
 
     move-result p3
 
@@ -354,7 +354,7 @@
 
     mul-float v1, v1, v2
 
-    invoke-static {v1}, Lcom/digdroid/alman/dig/q3;->u(F)F
+    invoke-static {v1}, Lcom/digdroid/alman/dig/p3;->u(F)F
 
     move-result v1
 
@@ -366,7 +366,7 @@
 
     mul-float p3, p3, v1
 
-    invoke-static {p3}, Lcom/digdroid/alman/dig/q3;->d(F)F
+    invoke-static {p3}, Lcom/digdroid/alman/dig/p3;->d(F)F
 
     move-result p3
 
@@ -386,7 +386,7 @@
 
     mul-float v2, v2, v3
 
-    invoke-static {v2}, Lcom/digdroid/alman/dig/q3;->u(F)F
+    invoke-static {v2}, Lcom/digdroid/alman/dig/p3;->u(F)F
 
     move-result v2
 

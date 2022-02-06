@@ -75,7 +75,7 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/r$b;->d:Lcom/digdroid/alman/dig/r;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/r;->a(Lcom/digdroid/alman/dig/r;)Lcom/digdroid/alman/dig/s3;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/r;->a(Lcom/digdroid/alman/dig/r;)Lcom/digdroid/alman/dig/r3;
 
     move-result-object p1
 
@@ -124,15 +124,15 @@
 
     move-result-object p3
 
-    invoke-virtual {p2, p3}, Lcom/digdroid/alman/dig/i;->i(Ljava/lang/String;)V
+    invoke-virtual {p2, p3}, Lcom/digdroid/alman/dig/i;->h(Ljava/lang/String;)V
 
-    invoke-virtual {p2, p1}, Lcom/digdroid/alman/dig/i;->g(Z)V
+    invoke-virtual {p2, p1}, Lcom/digdroid/alman/dig/i;->f(Z)V
 
     new-instance p1, Lcom/digdroid/alman/dig/r$b$a;
 
     invoke-direct {p1, p0}, Lcom/digdroid/alman/dig/r$b$a;-><init>(Lcom/digdroid/alman/dig/r$b;)V
 
-    invoke-virtual {p2, p1}, Lcom/digdroid/alman/dig/i;->h(Lcom/digdroid/alman/dig/i$b;)V
+    invoke-virtual {p2, p1}, Lcom/digdroid/alman/dig/i;->g(Lcom/digdroid/alman/dig/i$b;)V
 
     invoke-virtual {p2}, Lcom/digdroid/alman/dig/i;->d()V
 
@@ -165,13 +165,13 @@
 
     move-result-object p2
 
-    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/i;->i(Ljava/lang/String;)V
+    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/i;->h(Ljava/lang/String;)V
 
     new-instance p2, Lcom/digdroid/alman/dig/r$b$b;
 
     invoke-direct {p2, p0}, Lcom/digdroid/alman/dig/r$b$b;-><init>(Lcom/digdroid/alman/dig/r$b;)V
 
-    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/i;->h(Lcom/digdroid/alman/dig/i$b;)V
+    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/i;->g(Lcom/digdroid/alman/dig/i$b;)V
 
     invoke-virtual {p1}, Lcom/digdroid/alman/dig/i;->d()V
 
@@ -184,7 +184,7 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/r$b;->d:Lcom/digdroid/alman/dig/r;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/r;->a(Lcom/digdroid/alman/dig/r;)Lcom/digdroid/alman/dig/s3;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/r;->a(Lcom/digdroid/alman/dig/r;)Lcom/digdroid/alman/dig/r3;
 
     move-result-object p1
 

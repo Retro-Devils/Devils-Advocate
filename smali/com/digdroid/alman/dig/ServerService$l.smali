@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lc/a/a/p$b;
+.implements Lc/a/c/p$b;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lc/a/a/p$b<",
+        "Lc/a/c/p$b<",
         "Lorg/json/JSONObject;",
         ">;"
     }
@@ -81,7 +81,7 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/ServerService$l;->a:Lcom/digdroid/alman/dig/ServerService;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/ServerService;->g(Lcom/digdroid/alman/dig/ServerService;)Lcom/digdroid/alman/dig/c3;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/ServerService;->g(Lcom/digdroid/alman/dig/ServerService;)Lcom/digdroid/alman/dig/b3;
 
     move-result-object p1
 
@@ -89,7 +89,7 @@
 
     const-string v1, "0"
 
-    invoke-virtual {p1, v0, v1}, Lcom/digdroid/alman/dig/c3;->G(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v0, v1}, Lcom/digdroid/alman/dig/b3;->G(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -294,11 +294,11 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/ServerService$l;->a:Lcom/digdroid/alman/dig/ServerService;
 
-    invoke-static {v0}, Lb/o/a/a;->b(Landroid/content/Context;)Lb/o/a/a;
+    invoke-static {v0}, Lb/n/a/a;->b(Landroid/content/Context;)Lb/n/a/a;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lb/o/a/a;->d(Landroid/content/Intent;)Z
+    invoke-virtual {v0, p1}, Lb/n/a/a;->d(Landroid/content/Intent;)Z
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 

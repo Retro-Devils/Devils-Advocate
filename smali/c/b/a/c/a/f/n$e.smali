@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method public final d0(Ljava/lang/String;Landroid/os/IBinder;)V
+.method public final b0(Ljava/lang/String;Landroid/os/IBinder;)V
     .locals 3
 
     iget-object v0, p0, Lc/b/a/c/a/f/n$e;->a:Lc/b/a/c/a/f/n;

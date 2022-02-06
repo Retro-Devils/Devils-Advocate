@@ -48,7 +48,7 @@
 
 
 # virtual methods
-.method public N(Lcom/digdroid/alman/dig/t3;ZLjava/lang/String;)V
+.method public N(Lcom/digdroid/alman/dig/s3;ZLjava/lang/String;)V
     .locals 3
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/u1;->t:Landroid/view/View;
@@ -63,7 +63,7 @@
 
     iput-object v0, p0, Lcom/digdroid/alman/dig/x0;->u:Landroid/widget/ImageView;
 
-    iget v1, p1, Lcom/digdroid/alman/dig/t3;->d:I
+    iget v1, p1, Lcom/digdroid/alman/dig/s3;->d:I
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundColor(I)V
 
@@ -79,7 +79,7 @@
 
     iput-object v0, p0, Lcom/digdroid/alman/dig/x0;->v:Landroid/widget/TextView;
 
-    iget v1, p1, Lcom/digdroid/alman/dig/t3;->e:I
+    iget v1, p1, Lcom/digdroid/alman/dig/s3;->e:I
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -95,7 +95,7 @@
 
     iput-object v0, p0, Lcom/digdroid/alman/dig/x0;->w:Landroid/widget/TextView;
 
-    iget v1, p1, Lcom/digdroid/alman/dig/t3;->f:I
+    iget v1, p1, Lcom/digdroid/alman/dig/s3;->f:I
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -123,7 +123,7 @@
 
     iput-object v0, p0, Lcom/digdroid/alman/dig/x0;->y:Landroid/widget/TextView;
 
-    iget p1, p1, Lcom/digdroid/alman/dig/t3;->g:I
+    iget p1, p1, Lcom/digdroid/alman/dig/s3;->g:I
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setTextColor(I)V
 

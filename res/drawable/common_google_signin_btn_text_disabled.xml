@@ -9,6 +9,6 @@
         </shape>
     </item>
     <item android:left="-36.0dip">
-        <bitmap android:gravity="center|left" android:src="@null" />
+        <bitmap android:gravity="center|left" android:src="@drawable/googleg_disabled_color_18" />
     </item>
 </layer-list>

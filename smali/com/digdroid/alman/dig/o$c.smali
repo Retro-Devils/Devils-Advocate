@@ -216,11 +216,11 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lb/o/a/a;->b(Landroid/content/Context;)Lb/o/a/a;
+    invoke-static {v1}, Lb/n/a/a;->b(Landroid/content/Context;)Lb/n/a/a;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lb/o/a/a;->d(Landroid/content/Intent;)Z
+    invoke-virtual {v1, v0}, Lb/n/a/a;->d(Landroid/content/Intent;)Z
 
     goto :goto_1
 

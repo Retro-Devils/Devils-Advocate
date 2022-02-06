@@ -43,7 +43,7 @@
 
 
 # virtual methods
-.method public B(Landroid/support/v4/media/MediaMetadataCompat;)V
+.method public A(Landroid/support/v4/media/MediaMetadataCompat;)V
     .locals 3
 
     iget-object v0, p0, Landroid/support/v4/media/session/c$c;->a:Ljava/lang/ref/WeakReference;
@@ -66,7 +66,7 @@
     return-void
 .end method
 
-.method public N(I)V
+.method public L(I)V
     .locals 3
 
     iget-object v0, p0, Landroid/support/v4/media/session/c$c;->a:Ljava/lang/ref/WeakReference;
@@ -93,7 +93,7 @@
     return-void
 .end method
 
-.method public U(Z)V
+.method public T(Z)V
     .locals 3
 
     iget-object v0, p0, Landroid/support/v4/media/session/c$c;->a:Ljava/lang/ref/WeakReference;
@@ -151,6 +151,33 @@
     return-void
 .end method
 
+.method public d0(I)V
+    .locals 3
+
+    iget-object v0, p0, Landroid/support/v4/media/session/c$c;->a:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/support/v4/media/session/c;
+
+    if-eqz v0, :cond_0
+
+    const/16 v1, 0xc
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, p1, v2}, Landroid/support/v4/media/session/c;->i(ILjava/lang/Object;Landroid/os/Bundle;)V
+
+    :cond_0
+    return-void
+.end method
+
 .method public e(Ljava/lang/CharSequence;)V
     .locals 3
 
@@ -174,7 +201,7 @@
     return-void
 .end method
 
-.method public f0(I)V
+.method public f0()V
     .locals 3
 
     iget-object v0, p0, Landroid/support/v4/media/session/c$c;->a:Ljava/lang/ref/WeakReference;
@@ -187,15 +214,11 @@
 
     if-eqz v0, :cond_0
 
-    const/16 v1, 0xc
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p1
+    const/16 v1, 0xd
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, p1, v2}, Landroid/support/v4/media/session/c;->i(ILjava/lang/Object;Landroid/os/Bundle;)V
+    invoke-virtual {v0, v1, v2, v2}, Landroid/support/v4/media/session/c;->i(ILjava/lang/Object;Landroid/os/Bundle;)V
 
     :cond_0
     return-void
@@ -224,30 +247,7 @@
     return-void
 .end method
 
-.method public h0()V
-    .locals 3
-
-    iget-object v0, p0, Landroid/support/v4/media/session/c$c;->a:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/support/v4/media/session/c;
-
-    if-eqz v0, :cond_0
-
-    const/16 v1, 0xd
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v1, v2, v2}, Landroid/support/v4/media/session/c;->i(ILjava/lang/Object;Landroid/os/Bundle;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public k0(Landroid/support/v4/media/session/PlaybackStateCompat;)V
+.method public h0(Landroid/support/v4/media/session/PlaybackStateCompat;)V
     .locals 3
 
     iget-object v0, p0, Landroid/support/v4/media/session/c$c;->a:Ljava/lang/ref/WeakReference;
@@ -265,6 +265,27 @@
     const/4 v2, 0x0
 
     invoke-virtual {v0, v1, p1, v2}, Landroid/support/v4/media/session/c;->i(ILjava/lang/Object;Landroid/os/Bundle;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public i0(Ljava/lang/String;Landroid/os/Bundle;)V
+    .locals 2
+
+    iget-object v0, p0, Landroid/support/v4/media/session/c$c;->a:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/support/v4/media/session/c;
+
+    if-eqz v0, :cond_0
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1, p1, p2}, Landroid/support/v4/media/session/c;->i(ILjava/lang/Object;Landroid/os/Bundle;)V
 
     :cond_0
     return-void
@@ -293,34 +314,13 @@
     return-void
 .end method
 
-.method public l0(Ljava/lang/String;Landroid/os/Bundle;)V
-    .locals 2
-
-    iget-object v0, p0, Landroid/support/v4/media/session/c$c;->a:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/support/v4/media/session/c;
-
-    if-eqz v0, :cond_0
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1, p1, p2}, Landroid/support/v4/media/session/c;->i(ILjava/lang/Object;Landroid/os/Bundle;)V
-
-    :cond_0
-    return-void
-.end method
-
 .method public o(Z)V
     .locals 0
 
     return-void
 .end method
 
-.method public u0(Landroid/support/v4/media/session/ParcelableVolumeInfo;)V
+.method public v0(Landroid/support/v4/media/session/ParcelableVolumeInfo;)V
     .locals 9
 
     iget-object v0, p0, Landroid/support/v4/media/session/c$c;->a:Ljava/lang/ref/WeakReference;

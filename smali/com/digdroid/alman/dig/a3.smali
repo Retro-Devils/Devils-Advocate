@@ -1,179 +1,420 @@
 .class Lcom/digdroid/alman/dig/a3;
-.super Ljava/lang/Object;
+.super Lcom/digdroid/alman/dig/n;
 .source ""
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/digdroid/alman/dig/a3$b;
-    }
-.end annotation
-
-
 # instance fields
-.field a:Landroid/app/Activity;
+.field f:Landroid/database/sqlite/SQLiteDatabase;
+
+.field g:Landroid/database/sqlite/SQLiteDatabase;
 
 
 # direct methods
-.method public constructor <init>(Landroid/app/Activity;)V
-    .locals 0
+.method constructor <init>(Landroid/content/Context;)V
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Lcom/digdroid/alman/dig/n;-><init>(Landroid/content/Context;)V
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/a3;->a:Landroid/app/Activity;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/u;->e(Landroid/content/Context;)Lcom/digdroid/alman/dig/u;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/u;->c()Landroid/database/sqlite/SQLiteDatabase;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/digdroid/alman/dig/a3;->g:Landroid/database/sqlite/SQLiteDatabase;
+
+    invoke-static {p1}, Lcom/digdroid/alman/dig/z1;->b(Landroid/content/Context;)Lcom/digdroid/alman/dig/z1;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/z1;->c()Z
+
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/z1;->a()Landroid/database/sqlite/SQLiteDatabase;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/digdroid/alman/dig/a3;->f:Landroid/database/sqlite/SQLiteDatabase;
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p0, p1}, Lcom/digdroid/alman/dig/n;->t(Z)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lcom/digdroid/alman/dig/a3$b;)V
-    .locals 8
+.method public A(Ljava/lang/String;J)V
+    .locals 5
 
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    iget-object v0, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
 
-    const v1, 0x7f110298
+    const/16 v1, 0x5b
 
-    const v2, 0x7f11023b
+    const/16 v2, 0xa
 
-    const/4 v3, 0x1
+    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->indexOf(II)I
 
-    const/4 v4, 0x0
+    move-result v0
 
-    const/4 v5, 0x2
+    const/4 v1, 0x0
 
-    const/16 v6, 0x13
+    if-lez v0, :cond_0
 
-    if-ge v0, v6, :cond_0
+    iget-object v2, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
 
-    new-array v0, v5, [Ljava/lang/CharSequence;
+    invoke-virtual {v2, v1, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    iget-object v6, p0, Lcom/digdroid/alman/dig/a3;->a:Landroid/app/Activity;
+    move-result-object v0
 
-    invoke-virtual {v6, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
+    iput-object v0, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    :cond_0
+    invoke-virtual {p0, p2, p3}, Lcom/digdroid/alman/dig/a3;->x(J)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    return-void
+
+    :cond_1
+    const-string v2, "lastselectedgame"
+
+    invoke-virtual {p0, v2, v0}, Lcom/digdroid/alman/dig/n;->s(Ljava/lang/String;Ljava/lang/String;)V
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v3, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v3, "["
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v3, "]\n"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v3, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v3, "\ngameid="
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "\n"
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    iget-object v2, p0, Lcom/digdroid/alman/dig/a3;->f:Landroid/database/sqlite/SQLiteDatabase;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "SELECT title FROM titles WHERE rowid="
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p2, p3}, Lcom/digdroid/alman/dig/a3;->w(J)J
+
+    move-result-wide p2
+
+    invoke-virtual {v3, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    const/4 p3, 0x0
+
+    invoke-virtual {v2, p2, p3}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object p2
+
+    invoke-interface {p2}, Landroid/database/Cursor;->moveToFirst()Z
+
+    new-instance p3, Ljava/lang/StringBuilder;
+
+    invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v2, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    invoke-virtual {p3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "description="
+
+    invoke-virtual {p3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-interface {p2, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    aput-object v1, v0, v4
+    invoke-virtual {p3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/a3;->a:Landroid/app/Activity;
+    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p3
+
+    iput-object p3, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    invoke-interface {p2}, Landroid/database/Cursor;->close()V
+
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object p3, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p3, "path="
+
+    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/digdroid/alman/dig/n;->b:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public u()Ljava/lang/String;
+    .locals 3
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/n;->a:Landroid/content/Context;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "Android.*"
+
+    const-string v2, "Dig/Emu config/ScummVM"
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public v()Ljava/lang/String;
+    .locals 2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/a3;->u()Ljava/lang/String;
 
     move-result-object v1
 
-    aput-object v1, v0, v3
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    new-array v1, v5, [I
+    const-string v1, "/.config/scummvm/scummvm.ini"
 
-    fill-array-data v1, :array_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method w(J)J
+    .locals 3
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/a3;->g:Landroid/database/sqlite/SQLiteDatabase;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "SELECT mdbid FROM roms WHERE _id="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    const/4 p2, 0x0
+
+    invoke-virtual {v0, p1, p2}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Landroid/database/Cursor;->moveToFirst()Z
+
+    move-result p2
+
+    if-eqz p2, :cond_0
+
+    const/4 p2, 0x0
+
+    invoke-interface {p1, p2}, Landroid/database/Cursor;->getLong(I)J
+
+    move-result-wide v0
 
     goto :goto_0
 
     :cond_0
-    const/16 v6, 0x1e
-
-    if-ge v0, v6, :cond_1
-
-    const/4 v0, 0x3
-
-    new-array v6, v0, [Ljava/lang/CharSequence;
-
-    iget-object v7, p0, Lcom/digdroid/alman/dig/a3;->a:Landroid/app/Activity;
-
-    invoke-virtual {v7, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    aput-object v1, v6, v4
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/a3;->a:Landroid/app/Activity;
-
-    invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    aput-object v1, v6, v3
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/a3;->a:Landroid/app/Activity;
-
-    const v2, 0x7f11023c
-
-    invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    aput-object v1, v6, v5
-
-    new-array v1, v0, [I
-
-    fill-array-data v1, :array_1
-
-    move-object v0, v6
-
-    goto :goto_0
-
-    :cond_1
-    new-array v0, v3, [Ljava/lang/CharSequence;
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/a3;->a:Landroid/app/Activity;
-
-    invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    aput-object v1, v0, v4
-
-    new-array v1, v3, [I
-
-    aput v5, v1, v4
+    const-wide/16 v0, -0x1
 
     :goto_0
-    new-instance v2, Landroidx/appcompat/app/b$a;
+    invoke-interface {p1}, Landroid/database/Cursor;->close()V
 
-    iget-object v3, p0, Lcom/digdroid/alman/dig/a3;->a:Landroid/app/Activity;
+    return-wide v0
+.end method
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+.method x(J)Ljava/lang/String;
+    .locals 4
 
-    move-result v4
+    invoke-virtual {p0, p1, p2}, Lcom/digdroid/alman/dig/a3;->w(J)J
 
-    invoke-direct {v2, v3, v4}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
+    move-result-wide p1
 
-    const v3, 0x7f1100c7
+    const/4 v0, 0x0
 
-    invoke-virtual {v2, v3}, Landroidx/appcompat/app/b$a;->r(I)Landroidx/appcompat/app/b$a;
+    const-wide/16 v1, 0x0
 
-    move-result-object v2
+    cmp-long v3, p1, v1
 
-    new-instance v3, Lcom/digdroid/alman/dig/a3$a;
+    if-ltz v3, :cond_1
 
-    invoke-direct {v3, p0, v1, p1}, Lcom/digdroid/alman/dig/a3$a;-><init>(Lcom/digdroid/alman/dig/a3;[ILcom/digdroid/alman/dig/a3$b;)V
+    iget-object v1, p0, Lcom/digdroid/alman/dig/a3;->f:Landroid/database/sqlite/SQLiteDatabase;
 
-    invoke-virtual {v2, v0, v3}, Landroidx/appcompat/app/b$a;->g([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "SELECT slug FROM slugs WHERE gameid="
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Landroidx/appcompat/app/b$a;->a()Landroidx/appcompat/app/b;
+    invoke-virtual {v1, p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Landroid/app/Dialog;->show()V
+    invoke-interface {p1}, Landroid/database/Cursor;->moveToFirst()Z
+
+    move-result p2
+
+    if-eqz p2, :cond_0
+
+    const/4 p2, 0x0
+
+    invoke-interface {p1, p2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object p2
+
+    move-object v0, p2
+
+    :cond_0
+    invoke-interface {p1}, Landroid/database/Cursor;->close()V
+
+    :cond_1
+    return-object v0
+.end method
+
+.method public y()V
+    .locals 2
+
+    new-instance v0, Ljava/io/File;
+
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/a3;->v()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/n;->k(Ljava/io/File;)V
 
     return-void
+.end method
 
-    nop
+.method public z()Z
+    .locals 2
 
-    :array_0
-    .array-data 4
-        0x0
-        0x1
-    .end array-data
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/a3;->u()Ljava/lang/String;
 
-    :array_1
-    .array-data 4
-        0x0
-        0x1
-        0x2
-    .end array-data
+    move-result-object v0
+
+    new-instance v1, Ljava/io/File;
+
+    invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    :try_start_0
+    invoke-virtual {v1}, Ljava/io/File;->mkdirs()Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :cond_0
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/a3;->v()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/n;->r(Ljava/lang/String;)Z
+
+    move-result v0
+
+    return v0
 .end method

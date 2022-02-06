@@ -27,7 +27,7 @@
     <string name="abc_shareactionprovider_share_with">Κοινοποίηση σε</string>
     <string name="abc_shareactionprovider_share_with_application">Κοινοποίηση στην εφαρμογή %s</string>
     <string name="abc_toolbar_collapse_description">Σύμπτυξη</string>
-    <string name="app_name">Dig</string>
+    <string name="app_name">"Devil's Advocate"</string>
     <string name="common_google_play_services_enable_button">Ενεργοποίηση</string>
     <string name="common_google_play_services_enable_text">Η εφαρμογή %1$s δεν θα λειτουργήσει εάν δεν έχετε ενεργοποιήσει τις υπηρεσίες Google Play.</string>
     <string name="common_google_play_services_enable_title">Ενεργοποίηση υπηρεσιών Google Play</string>

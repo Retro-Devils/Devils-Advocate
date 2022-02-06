@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract d0(Ljava/lang/String;Landroid/os/IBinder;)V
+.method public abstract b0(Ljava/lang/String;Landroid/os/IBinder;)V
 .end method

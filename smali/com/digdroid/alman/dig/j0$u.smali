@@ -53,7 +53,7 @@
 
     const/4 v2, 0x5
 
-    invoke-virtual {p1, v0, v2, v1}, Lcom/digdroid/alman/dig/d0;->r(Landroid/app/Activity;ILcom/digdroid/alman/dig/d0$s;)V
+    invoke-virtual {p1, v0, v2, v1}, Lcom/digdroid/alman/dig/d0;->r(Landroid/app/Activity;ILcom/digdroid/alman/dig/d0$r;)V
 
     return-void
 .end method

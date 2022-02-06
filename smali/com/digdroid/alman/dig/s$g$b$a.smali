@@ -47,7 +47,7 @@
 
     iget-object v0, v0, Lcom/digdroid/alman/dig/s$g;->b:Lcom/digdroid/alman/dig/s;
 
-    iget-object v1, v0, Lcom/digdroid/alman/dig/s;->v0:Lcom/digdroid/alman/dig/s3;
+    iget-object v1, v0, Lcom/digdroid/alman/dig/s;->v0:Lcom/digdroid/alman/dig/r3;
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/s$g$b$a;->a:Ljava/lang/String;
 

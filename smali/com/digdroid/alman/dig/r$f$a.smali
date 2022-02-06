@@ -41,7 +41,7 @@
 
     iget-object v0, v0, Lcom/digdroid/alman/dig/r$f;->e:Lcom/digdroid/alman/dig/r;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/r;->a(Lcom/digdroid/alman/dig/r;)Lcom/digdroid/alman/dig/s3;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/r;->a(Lcom/digdroid/alman/dig/r;)Lcom/digdroid/alman/dig/r3;
 
     move-result-object v0
 

@@ -171,17 +171,17 @@
 
     const-string p2, "merge_games"
 
-    invoke-static {p1, p2}, Lcom/digdroid/alman/dig/DatabaseService;->v(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lcom/digdroid/alman/dig/DatabaseService;->t(Landroid/content/Context;Ljava/lang/String;)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/t1$a$d;->b:Lcom/digdroid/alman/dig/t1$a;
 
     iget-object p2, p1, Lcom/digdroid/alman/dig/t1$a;->h:Lcom/digdroid/alman/dig/t1;
 
-    iget-object p2, p2, Lcom/digdroid/alman/dig/t1;->d:Lcom/digdroid/alman/dig/h3;
+    iget-object p2, p2, Lcom/digdroid/alman/dig/t1;->d:Lcom/digdroid/alman/dig/g3;
 
     iget-object p1, p1, Lcom/digdroid/alman/dig/t1$a;->f:Ljava/lang/String;
 
-    invoke-virtual {p2, p1}, Lcom/digdroid/alman/dig/h3;->E(Ljava/lang/String;)Z
+    invoke-virtual {p2, p1}, Lcom/digdroid/alman/dig/g3;->D(Ljava/lang/String;)Z
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/t1$a$d;->b:Lcom/digdroid/alman/dig/t1$a;
 
@@ -219,11 +219,11 @@
 
     iget-object p2, p1, Lcom/digdroid/alman/dig/t1$a;->h:Lcom/digdroid/alman/dig/t1;
 
-    iget-object p2, p2, Lcom/digdroid/alman/dig/t1;->d:Lcom/digdroid/alman/dig/h3;
+    iget-object p2, p2, Lcom/digdroid/alman/dig/t1;->d:Lcom/digdroid/alman/dig/g3;
 
     iget-object p1, p1, Lcom/digdroid/alman/dig/t1$a;->b:Ljava/lang/String;
 
-    invoke-virtual {p2, p1}, Lcom/digdroid/alman/dig/h3;->h(Ljava/lang/String;)V
+    invoke-virtual {p2, p1}, Lcom/digdroid/alman/dig/g3;->g(Ljava/lang/String;)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/t1$a$d;->b:Lcom/digdroid/alman/dig/t1$a;
 

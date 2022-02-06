@@ -1,5 +1,5 @@
 .class public Lcom/digdroid/alman/dig/i0;
-.super Lcom/digdroid/alman/dig/d4;
+.super Lcom/digdroid/alman/dig/c4;
 .source ""
 
 
@@ -17,7 +17,7 @@
 .method public constructor <init>()V
     .locals 2
 
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/d4;-><init>()V
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/c4;-><init>()V
 
     const-wide/16 v0, -0x1
 
@@ -35,13 +35,13 @@
 .method g3()Z
     .locals 3
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->Z:Lcom/digdroid/alman/dig/b3;
 
     const-string v1, "external_browser"
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/c3;->c(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/b3;->c(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -70,7 +70,7 @@
     return-object v0
 .end method
 
-.method j3(Lcom/digdroid/alman/dig/d4$b;)V
+.method j3(Lcom/digdroid/alman/dig/c4$b;)V
     .locals 5
 
     iget-wide v0, p0, Lcom/digdroid/alman/dig/i0;->q0:J
@@ -88,7 +88,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-interface {p1}, Lcom/digdroid/alman/dig/d4$b;->a()V
+    invoke-interface {p1}, Lcom/digdroid/alman/dig/c4$b;->a()V
 
     return-void
 
@@ -177,28 +177,28 @@
 
     move-result-object v0
 
-    new-instance v2, Lc/a/a/w/k;
+    new-instance v2, Lc/a/c/w/k;
 
     new-instance v3, Lcom/digdroid/alman/dig/i0$a;
 
-    invoke-direct {v3, p0, p1}, Lcom/digdroid/alman/dig/i0$a;-><init>(Lcom/digdroid/alman/dig/i0;Lcom/digdroid/alman/dig/d4$b;)V
+    invoke-direct {v3, p0, p1}, Lcom/digdroid/alman/dig/i0$a;-><init>(Lcom/digdroid/alman/dig/i0;Lcom/digdroid/alman/dig/c4$b;)V
 
     new-instance p1, Lcom/digdroid/alman/dig/i0$b;
 
     invoke-direct {p1, p0}, Lcom/digdroid/alman/dig/i0$b;-><init>(Lcom/digdroid/alman/dig/i0;)V
 
-    invoke-direct {v2, v0, v1, v3, p1}, Lc/a/a/w/k;-><init>(Ljava/lang/String;Lorg/json/JSONObject;Lc/a/a/p$b;Lc/a/a/p$a;)V
+    invoke-direct {v2, v0, v1, v3, p1}, Lc/a/c/w/k;-><init>(Ljava/lang/String;Lorg/json/JSONObject;Lc/a/c/p$b;Lc/a/c/p$a;)V
 
     :try_start_1
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->j0()Landroid/content/Context;
 
     move-result-object p1
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/m2;->a(Landroid/content/Context;)Lc/a/a/o;
+    invoke-static {p1}, Lcom/digdroid/alman/dig/l2;->a(Landroid/content/Context;)Lc/a/c/o;
 
     move-result-object p1
 
-    invoke-virtual {p1, v2}, Lc/a/a/o;->a(Lc/a/a/n;)Lc/a/a/n;
+    invoke-virtual {p1, v2}, Lc/a/c/o;->a(Lc/a/c/n;)Lc/a/c/n;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -209,7 +209,7 @@
 .method public t1()V
     .locals 4
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/d4;->t1()V
+    invoke-super {p0}, Lcom/digdroid/alman/dig/c4;->t1()V
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->h0()Landroid/os/Bundle;
 
@@ -272,13 +272,13 @@
     :cond_0
     iput-boolean v1, p0, Lcom/digdroid/alman/dig/i0;->r0:Z
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/h3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/g3;
 
     invoke-interface {v0, v3}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/digdroid/alman/dig/h3;->t(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/digdroid/alman/dig/g3;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 

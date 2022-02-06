@@ -52,9 +52,9 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/e2$c;->b:Lcom/digdroid/alman/dig/e2;
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/c3;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/e2;->p:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/c3;->t()Z
+    invoke-virtual {p1}, Lcom/digdroid/alman/dig/b3;->t()Z
 
     move-result p1
 

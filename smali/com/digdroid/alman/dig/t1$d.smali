@@ -73,7 +73,7 @@
 
     iget-object p2, p0, Lcom/digdroid/alman/dig/t1$d;->h:Lcom/digdroid/alman/dig/t1;
 
-    iget-object p2, p2, Lcom/digdroid/alman/dig/t1;->c:Lcom/digdroid/alman/dig/c3;
+    iget-object p2, p2, Lcom/digdroid/alman/dig/t1;->c:Lcom/digdroid/alman/dig/b3;
 
     invoke-virtual {p1}, Landroid/widget/CheckBox;->isChecked()Z
 
@@ -81,7 +81,7 @@
 
     const-string v0, "inform_image_download"
 
-    invoke-virtual {p2, v0, p1}, Lcom/digdroid/alman/dig/c3;->A(Ljava/lang/String;Z)V
+    invoke-virtual {p2, v0, p1}, Lcom/digdroid/alman/dig/b3;->A(Ljava/lang/String;Z)V
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/t1$d;->h:Lcom/digdroid/alman/dig/t1;
 

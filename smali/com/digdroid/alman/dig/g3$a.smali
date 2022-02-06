@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Lcom/digdroid/alman/dig/g3$m;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/g3;->H2(Landroid/view/MenuItem;)Z
+    value = Lcom/digdroid/alman/dig/g3;->h()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic b:Lcom/digdroid/alman/dig/g3;
+.field final synthetic a:Lcom/digdroid/alman/dig/g3;
 
 
 # direct methods
 .method constructor <init>(Lcom/digdroid/alman/dig/g3;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/g3$a;->b:Lcom/digdroid/alman/dig/g3;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/g3$a;->a:Lcom/digdroid/alman/dig/g3;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,8 +34,20 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 0
+.method public a(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/digdroid/alman/dig/g3$a;->a:Lcom/digdroid/alman/dig/g3;
+
+    iget-object v0, v0, Lcom/digdroid/alman/dig/g3;->f:Ljava/util/HashMap;
+
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/digdroid/alman/dig/g3$k;
+
+    iput-object p2, p1, Lcom/digdroid/alman/dig/g3$k;->g:Ljava/lang/String;
 
     return-void
 .end method

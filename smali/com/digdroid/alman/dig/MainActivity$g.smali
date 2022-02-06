@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/MainActivity;->d3()V
+    value = Lcom/digdroid/alman/dig/MainActivity;->b3()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -45,13 +45,13 @@
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/MainActivity$g;->a:Lcom/digdroid/alman/dig/MainActivity;
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
     const-string v1, "data_version"
 
-    const/16 v2, 0x1ce
+    const/16 v2, 0x1c8
 
-    invoke-virtual {p1, v1, v2}, Lcom/digdroid/alman/dig/c3;->E(Ljava/lang/String;I)V
+    invoke-virtual {p1, v1, v2}, Lcom/digdroid/alman/dig/b3;->E(Ljava/lang/String;I)V
 
     new-instance p1, Lcom/digdroid/alman/dig/MainActivity$l;
 

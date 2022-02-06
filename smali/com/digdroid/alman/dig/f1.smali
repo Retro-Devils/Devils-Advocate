@@ -86,13 +86,13 @@
 
     invoke-direct {p1, p2}, Lcom/digdroid/alman/dig/i;-><init>(Landroid/app/Activity;)V
 
-    invoke-virtual {p1, p3}, Lcom/digdroid/alman/dig/i;->g(Z)V
+    invoke-virtual {p1, p3}, Lcom/digdroid/alman/dig/i;->f(Z)V
 
     new-instance p2, Lcom/digdroid/alman/dig/f1$b;
 
     invoke-direct {p2, p0, p4}, Lcom/digdroid/alman/dig/f1$b;-><init>(Lcom/digdroid/alman/dig/f1;Ljava/lang/String;)V
 
-    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/i;->h(Lcom/digdroid/alman/dig/i$b;)V
+    invoke-virtual {p1, p2}, Lcom/digdroid/alman/dig/i;->g(Lcom/digdroid/alman/dig/i$b;)V
 
     invoke-virtual {p1}, Lcom/digdroid/alman/dig/i;->d()V
 
@@ -124,7 +124,7 @@
     :cond_1
     new-instance p2, Landroidx/appcompat/app/b$a;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result p5
 
@@ -144,7 +144,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f1101da
+    const p2, 0x7f1101d8
 
     new-instance p5, Lcom/digdroid/alman/dig/f1$c;
 
@@ -180,11 +180,11 @@
 
     new-instance v0, Lcom/digdroid/alman/dig/m;
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/t3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
 
-    iget v2, v1, Lcom/digdroid/alman/dig/t3;->h:I
+    iget v2, v1, Lcom/digdroid/alman/dig/s3;->h:I
 
-    iget v1, v1, Lcom/digdroid/alman/dig/t3;->i:I
+    iget v1, v1, Lcom/digdroid/alman/dig/s3;->i:I
 
     const/4 v3, 0x1
 
@@ -252,7 +252,7 @@
 
     move-result-object v1
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v2
 
@@ -515,7 +515,7 @@
 
     new-instance v10, Lcom/digdroid/alman/dig/b1;
 
-    iget-object v3, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/t3;
+    iget-object v3, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
 
     invoke-virtual {p0}, Lcom/digdroid/alman/dig/r1;->W()F
 
@@ -535,7 +535,7 @@
 
     move-object v9, p0
 
-    invoke-direct/range {v1 .. v9}, Lcom/digdroid/alman/dig/b1;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FFLjava/lang/String;[ZLcom/digdroid/alman/dig/c1$a;)V
+    invoke-direct/range {v1 .. v9}, Lcom/digdroid/alman/dig/b1;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FFLjava/lang/String;[ZLcom/digdroid/alman/dig/c1$a;)V
 
     invoke-direct {v0, v10}, Lcom/digdroid/alman/dig/d2;-><init>(Lcom/digdroid/alman/dig/h;)V
 
@@ -546,7 +546,7 @@
 
     new-instance v10, Lcom/digdroid/alman/dig/i1;
 
-    iget-object v3, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/t3;
+    iget-object v3, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
 
     invoke-virtual {p0}, Lcom/digdroid/alman/dig/r1;->x()F
 
@@ -566,7 +566,7 @@
 
     move-object v9, p0
 
-    invoke-direct/range {v1 .. v9}, Lcom/digdroid/alman/dig/i1;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FFLjava/lang/String;[ZLcom/digdroid/alman/dig/c1$a;)V
+    invoke-direct/range {v1 .. v9}, Lcom/digdroid/alman/dig/i1;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FFLjava/lang/String;[ZLcom/digdroid/alman/dig/c1$a;)V
 
     invoke-direct {v0, v10}, Lcom/digdroid/alman/dig/d2;-><init>(Lcom/digdroid/alman/dig/h;)V
 
@@ -577,7 +577,7 @@
 
     new-instance v7, Lcom/digdroid/alman/dig/g1;
 
-    iget-object v3, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/t3;
+    iget-object v3, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
 
     invoke-virtual {p0}, Lcom/digdroid/alman/dig/r1;->m3()F
 
@@ -589,7 +589,7 @@
 
     move-object v6, p0
 
-    invoke-direct/range {v1 .. v6}, Lcom/digdroid/alman/dig/g1;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FLcom/digdroid/alman/dig/g1$a;)V
+    invoke-direct/range {v1 .. v6}, Lcom/digdroid/alman/dig/g1;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FLcom/digdroid/alman/dig/g1$a;)V
 
     invoke-direct {v0, v7}, Lcom/digdroid/alman/dig/d2;-><init>(Lcom/digdroid/alman/dig/q1;)V
 
@@ -600,7 +600,7 @@
 
     new-instance v9, Lcom/digdroid/alman/dig/e1;
 
-    iget-object v3, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/t3;
+    iget-object v3, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
 
     invoke-virtual {p0}, Lcom/digdroid/alman/dig/r1;->m3()F
 
@@ -616,7 +616,7 @@
 
     move-object v8, p0
 
-    invoke-direct/range {v1 .. v8}, Lcom/digdroid/alman/dig/e1;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FLjava/lang/String;[ZLcom/digdroid/alman/dig/e1$a;)V
+    invoke-direct/range {v1 .. v8}, Lcom/digdroid/alman/dig/e1;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FLjava/lang/String;[ZLcom/digdroid/alman/dig/e1$a;)V
 
     invoke-direct {v0, v9}, Lcom/digdroid/alman/dig/d2;-><init>(Lcom/digdroid/alman/dig/q1;)V
 
@@ -627,7 +627,7 @@
 
     new-instance v9, Lcom/digdroid/alman/dig/c1;
 
-    iget-object v3, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/t3;
+    iget-object v3, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
 
     invoke-virtual {p0}, Lcom/digdroid/alman/dig/r1;->m3()F
 
@@ -643,7 +643,7 @@
 
     move-object v8, p0
 
-    invoke-direct/range {v1 .. v8}, Lcom/digdroid/alman/dig/c1;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FLjava/lang/String;[ZLcom/digdroid/alman/dig/c1$a;)V
+    invoke-direct/range {v1 .. v8}, Lcom/digdroid/alman/dig/c1;-><init>(Landroid/app/Activity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FLjava/lang/String;[ZLcom/digdroid/alman/dig/c1$a;)V
 
     invoke-direct {v0, v9}, Lcom/digdroid/alman/dig/d2;-><init>(Lcom/digdroid/alman/dig/q1;)V
 
@@ -654,7 +654,7 @@
 
     new-instance v10, Lcom/digdroid/alman/dig/a1;
 
-    iget-object v3, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/t3;
+    iget-object v3, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
 
     invoke-virtual {p0}, Lcom/digdroid/alman/dig/r1;->z()F
 
@@ -674,7 +674,7 @@
 
     move-object v9, p0
 
-    invoke-direct/range {v1 .. v9}, Lcom/digdroid/alman/dig/a1;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FFLjava/lang/String;[ZLcom/digdroid/alman/dig/c1$a;)V
+    invoke-direct/range {v1 .. v9}, Lcom/digdroid/alman/dig/a1;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FFLjava/lang/String;[ZLcom/digdroid/alman/dig/c1$a;)V
 
     invoke-direct {v0, v10}, Lcom/digdroid/alman/dig/d2;-><init>(Lcom/digdroid/alman/dig/h;)V
 
@@ -685,7 +685,7 @@
 
     new-instance v10, Lcom/digdroid/alman/dig/d1;
 
-    iget-object v3, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/t3;
+    iget-object v3, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
 
     invoke-virtual {p0}, Lcom/digdroid/alman/dig/r1;->V()F
 
@@ -705,7 +705,7 @@
 
     move-object v9, p0
 
-    invoke-direct/range {v1 .. v9}, Lcom/digdroid/alman/dig/d1;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FFLjava/lang/String;[ZLcom/digdroid/alman/dig/c1$a;)V
+    invoke-direct/range {v1 .. v9}, Lcom/digdroid/alman/dig/d1;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FFLjava/lang/String;[ZLcom/digdroid/alman/dig/c1$a;)V
 
     invoke-direct {v0, v10}, Lcom/digdroid/alman/dig/d2;-><init>(Lcom/digdroid/alman/dig/h;)V
 
@@ -716,7 +716,7 @@
 
     new-instance v10, Lcom/digdroid/alman/dig/h1;
 
-    iget-object v3, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/t3;
+    iget-object v3, p0, Lcom/digdroid/alman/dig/p1;->g0:Lcom/digdroid/alman/dig/s3;
 
     invoke-virtual {p0}, Lcom/digdroid/alman/dig/r1;->E()F
 
@@ -736,7 +736,7 @@
 
     move-object v9, p0
 
-    invoke-direct/range {v1 .. v9}, Lcom/digdroid/alman/dig/h1;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/t3;Landroid/database/Cursor;FFLjava/lang/String;[ZLcom/digdroid/alman/dig/c1$a;)V
+    invoke-direct/range {v1 .. v9}, Lcom/digdroid/alman/dig/h1;-><init>(Lcom/digdroid/alman/dig/MainActivity;Lcom/digdroid/alman/dig/s3;Landroid/database/Cursor;FFLjava/lang/String;[ZLcom/digdroid/alman/dig/c1$a;)V
 
     invoke-direct {v0, v10}, Lcom/digdroid/alman/dig/d2;-><init>(Lcom/digdroid/alman/dig/h;)V
 

@@ -27,7 +27,7 @@
     <string name="abc_shareactionprovider_share_with">分享对象</string>
     <string name="abc_shareactionprovider_share_with_application">与%s分享</string>
     <string name="abc_toolbar_collapse_description">收起</string>
-    <string name="app_name">Dig</string>
+    <string name="app_name">"Devil's Advocate"</string>
     <string name="common_google_play_services_enable_button">启用</string>
     <string name="common_google_play_services_enable_text">您必须先启用 Google Play 服务，然后才能运行%1$s。</string>
     <string name="common_google_play_services_enable_title">启用 Google Play 服务</string>

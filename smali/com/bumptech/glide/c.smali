@@ -1511,21 +1511,7 @@
     throw v0
 .end method
 
-.method public static t(Landroid/app/Activity;)Lcom/bumptech/glide/k;
-    .locals 1
-
-    invoke-static {p0}, Lcom/bumptech/glide/c;->l(Landroid/content/Context;)Lcom/bumptech/glide/o/l;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Lcom/bumptech/glide/o/l;->d(Landroid/app/Activity;)Lcom/bumptech/glide/k;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static u(Landroid/content/Context;)Lcom/bumptech/glide/k;
+.method public static t(Landroid/content/Context;)Lcom/bumptech/glide/k;
     .locals 1
 
     invoke-static {p0}, Lcom/bumptech/glide/c;->l(Landroid/content/Context;)Lcom/bumptech/glide/o/l;
@@ -1539,7 +1525,7 @@
     return-object p0
 .end method
 
-.method public static v(Landroidx/fragment/app/d;)Lcom/bumptech/glide/k;
+.method public static u(Landroidx/fragment/app/d;)Lcom/bumptech/glide/k;
     .locals 1
 
     invoke-static {p0}, Lcom/bumptech/glide/c;->l(Landroid/content/Context;)Lcom/bumptech/glide/o/l;
@@ -1734,7 +1720,7 @@
 
     check-cast v2, Lcom/bumptech/glide/k;
 
-    invoke-virtual {v2, p1}, Lcom/bumptech/glide/k;->D(Lcom/bumptech/glide/r/j/h;)Z
+    invoke-virtual {v2, p1}, Lcom/bumptech/glide/k;->C(Lcom/bumptech/glide/r/j/h;)Z
 
     move-result v2
 

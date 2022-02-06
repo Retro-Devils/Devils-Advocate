@@ -18,7 +18,7 @@
     <item android:icon="@drawable/ic_home" android:id="@id/nav_home" android:title="@string/home" />
     <item android:icon="@drawable/ic_search" android:id="@id/nav_search" android:title="@string/menu_search" />
     <item android:icon="@drawable/ic_assistant_24dp" android:id="@id/nav_digger" android:title="@string/voice_search" />
-    <item android:icon="@null" android:id="@id/nav_sort" android:title="@string/sort_by" />
+    <item android:icon="@drawable/ic_action_sort" android:id="@id/nav_sort" android:title="@string/sort_by" />
     <item android:icon="@drawable/ic_random" android:id="@id/nav_random" android:title="@string/select_random" />
     <group android:id="@id/collections_group">
         <item android:icon="@drawable/ic_system" android:id="@id/nav_systems" android:title="@string/systems" />

@@ -21,7 +21,7 @@
 
 
 # static fields
-.field static d:Z
+.field static d:Z = false
 
 .field static final e:Landroid/view/animation/Interpolator;
 

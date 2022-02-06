@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Lc/a/a/p$a;
+.implements Lc/a/c/p$a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/i0;->j3(Lcom/digdroid/alman/dig/d4$b;)V
+    value = Lcom/digdroid/alman/dig/i0;->j3(Lcom/digdroid/alman/dig/c4$b;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,7 +34,7 @@
 
 
 # virtual methods
-.method public a(Lc/a/a/u;)V
+.method public a(Lc/a/c/u;)V
     .locals 0
 
     return-void

@@ -542,7 +542,7 @@
 
     move-object/from16 v10, p10
 
-    invoke-direct/range {v0 .. v10}, Lcom/bumptech/glide/j;->y0(Ljava/lang/Object;Lcom/bumptech/glide/r/j/h;Lcom/bumptech/glide/r/e;Lcom/bumptech/glide/r/a;Lcom/bumptech/glide/r/d;Lcom/bumptech/glide/l;Lcom/bumptech/glide/g;IILjava/util/concurrent/Executor;)Lcom/bumptech/glide/r/c;
+    invoke-direct/range {v0 .. v10}, Lcom/bumptech/glide/j;->x0(Ljava/lang/Object;Lcom/bumptech/glide/r/j/h;Lcom/bumptech/glide/r/e;Lcom/bumptech/glide/r/a;Lcom/bumptech/glide/r/d;Lcom/bumptech/glide/l;Lcom/bumptech/glide/g;IILjava/util/concurrent/Executor;)Lcom/bumptech/glide/r/c;
 
     move-result-object v10
 
@@ -620,7 +620,7 @@
 
     move-object/from16 v10, p10
 
-    invoke-direct/range {v0 .. v10}, Lcom/bumptech/glide/j;->y0(Ljava/lang/Object;Lcom/bumptech/glide/r/j/h;Lcom/bumptech/glide/r/e;Lcom/bumptech/glide/r/a;Lcom/bumptech/glide/r/d;Lcom/bumptech/glide/l;Lcom/bumptech/glide/g;IILjava/util/concurrent/Executor;)Lcom/bumptech/glide/r/c;
+    invoke-direct/range {v0 .. v10}, Lcom/bumptech/glide/j;->x0(Ljava/lang/Object;Lcom/bumptech/glide/r/j/h;Lcom/bumptech/glide/r/e;Lcom/bumptech/glide/r/a;Lcom/bumptech/glide/r/d;Lcom/bumptech/glide/l;Lcom/bumptech/glide/g;IILjava/util/concurrent/Executor;)Lcom/bumptech/glide/r/c;
 
     move-result-object v15
 
@@ -646,7 +646,7 @@
 
     move-object/from16 v1, p1
 
-    invoke-direct/range {v0 .. v10}, Lcom/bumptech/glide/j;->y0(Ljava/lang/Object;Lcom/bumptech/glide/r/j/h;Lcom/bumptech/glide/r/e;Lcom/bumptech/glide/r/a;Lcom/bumptech/glide/r/d;Lcom/bumptech/glide/l;Lcom/bumptech/glide/g;IILjava/util/concurrent/Executor;)Lcom/bumptech/glide/r/c;
+    invoke-direct/range {v0 .. v10}, Lcom/bumptech/glide/j;->x0(Ljava/lang/Object;Lcom/bumptech/glide/r/j/h;Lcom/bumptech/glide/r/e;Lcom/bumptech/glide/r/a;Lcom/bumptech/glide/r/d;Lcom/bumptech/glide/l;Lcom/bumptech/glide/g;IILjava/util/concurrent/Executor;)Lcom/bumptech/glide/r/c;
 
     move-result-object v0
 
@@ -677,7 +677,7 @@
 
     move-object/from16 v10, p10
 
-    invoke-direct/range {v0 .. v10}, Lcom/bumptech/glide/j;->y0(Ljava/lang/Object;Lcom/bumptech/glide/r/j/h;Lcom/bumptech/glide/r/e;Lcom/bumptech/glide/r/a;Lcom/bumptech/glide/r/d;Lcom/bumptech/glide/l;Lcom/bumptech/glide/g;IILjava/util/concurrent/Executor;)Lcom/bumptech/glide/r/c;
+    invoke-direct/range {v0 .. v10}, Lcom/bumptech/glide/j;->x0(Ljava/lang/Object;Lcom/bumptech/glide/r/j/h;Lcom/bumptech/glide/r/e;Lcom/bumptech/glide/r/a;Lcom/bumptech/glide/r/d;Lcom/bumptech/glide/l;Lcom/bumptech/glide/g;IILjava/util/concurrent/Executor;)Lcom/bumptech/glide/r/c;
 
     move-result-object v0
 
@@ -866,7 +866,7 @@
 
     iget-object p3, p0, Lcom/bumptech/glide/j;->D:Lcom/bumptech/glide/k;
 
-    invoke-virtual {p3, p1, p2}, Lcom/bumptech/glide/k;->C(Lcom/bumptech/glide/r/j/h;Lcom/bumptech/glide/r/c;)V
+    invoke-virtual {p3, p1, p2}, Lcom/bumptech/glide/k;->B(Lcom/bumptech/glide/r/j/h;Lcom/bumptech/glide/r/c;)V
 
     return-object p1
 
@@ -915,7 +915,7 @@
     return p1
 .end method
 
-.method private x0(Ljava/lang/Object;)Lcom/bumptech/glide/j;
+.method private w0(Ljava/lang/Object;)Lcom/bumptech/glide/j;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -936,7 +936,7 @@
     return-object p0
 .end method
 
-.method private y0(Ljava/lang/Object;Lcom/bumptech/glide/r/j/h;Lcom/bumptech/glide/r/e;Lcom/bumptech/glide/r/a;Lcom/bumptech/glide/r/d;Lcom/bumptech/glide/l;Lcom/bumptech/glide/g;IILjava/util/concurrent/Executor;)Lcom/bumptech/glide/r/c;
+.method private x0(Ljava/lang/Object;Lcom/bumptech/glide/r/j/h;Lcom/bumptech/glide/r/e;Lcom/bumptech/glide/r/a;Lcom/bumptech/glide/r/d;Lcom/bumptech/glide/l;Lcom/bumptech/glide/g;IILjava/util/concurrent/Executor;)Lcom/bumptech/glide/r/c;
     .locals 17
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1297,7 +1297,7 @@
         }
     .end annotation
 
-    invoke-direct {p0, p1}, Lcom/bumptech/glide/j;->x0(Ljava/lang/Object;)Lcom/bumptech/glide/j;
+    invoke-direct {p0, p1}, Lcom/bumptech/glide/j;->w0(Ljava/lang/Object;)Lcom/bumptech/glide/j;
 
     move-result-object p1
 
@@ -1314,26 +1314,7 @@
     return-object p1
 .end method
 
-.method public s0(Landroid/net/Uri;)Lcom/bumptech/glide/j;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/net/Uri;",
-            ")",
-            "Lcom/bumptech/glide/j<",
-            "TTranscodeType;>;"
-        }
-    .end annotation
-
-    invoke-direct {p0, p1}, Lcom/bumptech/glide/j;->x0(Ljava/lang/Object;)Lcom/bumptech/glide/j;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public t0(Ljava/io/File;)Lcom/bumptech/glide/j;
+.method public s0(Ljava/io/File;)Lcom/bumptech/glide/j;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1345,14 +1326,14 @@
         }
     .end annotation
 
-    invoke-direct {p0, p1}, Lcom/bumptech/glide/j;->x0(Ljava/lang/Object;)Lcom/bumptech/glide/j;
+    invoke-direct {p0, p1}, Lcom/bumptech/glide/j;->w0(Ljava/lang/Object;)Lcom/bumptech/glide/j;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public u0(Ljava/lang/Integer;)Lcom/bumptech/glide/j;
+.method public t0(Ljava/lang/Integer;)Lcom/bumptech/glide/j;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1364,7 +1345,7 @@
         }
     .end annotation
 
-    invoke-direct {p0, p1}, Lcom/bumptech/glide/j;->x0(Ljava/lang/Object;)Lcom/bumptech/glide/j;
+    invoke-direct {p0, p1}, Lcom/bumptech/glide/j;->w0(Ljava/lang/Object;)Lcom/bumptech/glide/j;
 
     move-result-object p1
 
@@ -1385,7 +1366,7 @@
     return-object p1
 .end method
 
-.method public v0(Ljava/lang/Object;)Lcom/bumptech/glide/j;
+.method public u0(Ljava/lang/Object;)Lcom/bumptech/glide/j;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1397,14 +1378,14 @@
         }
     .end annotation
 
-    invoke-direct {p0, p1}, Lcom/bumptech/glide/j;->x0(Ljava/lang/Object;)Lcom/bumptech/glide/j;
+    invoke-direct {p0, p1}, Lcom/bumptech/glide/j;->w0(Ljava/lang/Object;)Lcom/bumptech/glide/j;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public w0(Ljava/lang/String;)Lcom/bumptech/glide/j;
+.method public v0(Ljava/lang/String;)Lcom/bumptech/glide/j;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1416,7 +1397,7 @@
         }
     .end annotation
 
-    invoke-direct {p0, p1}, Lcom/bumptech/glide/j;->x0(Ljava/lang/Object;)Lcom/bumptech/glide/j;
+    invoke-direct {p0, p1}, Lcom/bumptech/glide/j;->w0(Ljava/lang/Object;)Lcom/bumptech/glide/j;
 
     move-result-object p1
 

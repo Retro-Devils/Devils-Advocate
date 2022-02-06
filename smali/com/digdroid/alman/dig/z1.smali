@@ -14,7 +14,7 @@
 # instance fields
 .field d:Landroid/content/Context;
 
-.field e:Lcom/digdroid/alman/dig/c3;
+.field e:Lcom/digdroid/alman/dig/b3;
 
 .field f:Ljava/lang/String;
 
@@ -37,11 +37,11 @@
 
     iput-object v0, p0, Lcom/digdroid/alman/dig/z1;->d:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/digdroid/alman/dig/z1;->e:Lcom/digdroid/alman/dig/c3;
+    iput-object v0, p0, Lcom/digdroid/alman/dig/z1;->e:Lcom/digdroid/alman/dig/b3;
 
     const-string v0, "games.db"
 
@@ -147,17 +147,17 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/z1;->e:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/z1;->e:Lcom/digdroid/alman/dig/b3;
 
     const-string v3, "data_version"
 
-    invoke-virtual {v0, v3, v2}, Lcom/digdroid/alman/dig/c3;->l(Ljava/lang/String;I)I
+    invoke-virtual {v0, v3, v2}, Lcom/digdroid/alman/dig/b3;->l(Ljava/lang/String;I)I
 
     move-result v0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    const/16 v3, 0x1cf
+    const/16 v3, 0x1c9
 
     if-ge v0, v3, :cond_2
 

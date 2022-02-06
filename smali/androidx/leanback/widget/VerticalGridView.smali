@@ -37,7 +37,7 @@
 
     invoke-virtual {p0, p1, p2}, Landroidx/leanback/widget/a;->A1(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    sget-object v0, Lb/m/l;->g0:[I
+    sget-object v0, Lb/l/l;->g0:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -45,7 +45,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/leanback/widget/VerticalGridView;->setColumnWidth(Landroid/content/res/TypedArray;)V
 
-    sget p2, Lb/m/l;->i0:I
+    sget p2, Lb/l/l;->i0:I
 
     const/4 v0, 0x1
 
@@ -75,7 +75,7 @@
 .method setColumnWidth(Landroid/content/res/TypedArray;)V
     .locals 2
 
-    sget v0, Lb/m/l;->h0:I
+    sget v0, Lb/l/l;->h0:I
 
     invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->peekValue(I)Landroid/util/TypedValue;
 

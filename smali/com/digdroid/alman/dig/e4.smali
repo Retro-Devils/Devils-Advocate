@@ -1,107 +1,264 @@
 .class public Lcom/digdroid/alman/dig/e4;
-.super Lcom/digdroid/alman/dig/t0;
+.super Lcom/digdroid/alman/dig/c4;
 .source ""
+
+
+# instance fields
+.field p0:J
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/t0;-><init>()V
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/c4;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method B3(Landroid/content/Intent;)Z
-    .locals 0
+.method public H2(Landroid/view/MenuItem;)Z
+    .locals 2
 
-    const/4 p1, 0x0
+    invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
+
+    move-result v0
+
+    const v1, 0x7f09034a
+
+    if-eq v0, v1, :cond_0
+
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/c4;->H2(Landroid/view/MenuItem;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    new-instance p1, Landroid/app/AlertDialog$Builder;
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
+
+    move-result-object v0
+
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
+
+    move-result v1
+
+    invoke-direct {p1, v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
+
+    const v0, 0x7f11008b
+
+    invoke-virtual {p1, v0}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
+
+    move-result-object p1
+
+    const v0, 0x7f11005a
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object p1
+
+    const v0, 0x7f1101d8
+
+    new-instance v1, Lcom/digdroid/alman/dig/e4$a;
+
+    invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/e4$a;-><init>(Lcom/digdroid/alman/dig/e4;)V
+
+    invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/app/AlertDialog;->show()V
+
+    const/4 p1, 0x1
 
     return p1
 .end method
 
-.method D3()Landroid/database/Cursor;
-    .locals 3
+.method g3()Z
+    .locals 1
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->c0:Lcom/digdroid/alman/dig/o0;
+    const/4 v0, 0x0
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/t0;->E3()Ljava/lang/String;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/digdroid/alman/dig/t0;->s0:Lcom/digdroid/alman/dig/h0;
-
-    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/o0;->e(Ljava/lang/String;Lcom/digdroid/alman/dig/h0;)Landroid/database/Cursor;
-
-    move-result-object v0
-
-    return-object v0
+    return v0
 .end method
 
-.method public W0(Landroid/os/Bundle;)V
-    .locals 6
-
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/t0;->W0(Landroid/os/Bundle;)V
+.method h3()Ljava/lang/String;
+    .locals 5
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->h0()Landroid/os/Bundle;
 
-    move-result-object p1
+    move-result-object v0
 
-    const-string v0, "released"
+    const-string v1, "game_id"
 
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
+    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
 
     move-result-wide v0
 
-    invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
+    iput-wide v0, p0, Lcom/digdroid/alman/dig/e4;->p0:J
 
-    move-result-object p1
+    iget-object v0, p0, Lcom/digdroid/alman/dig/p1;->a0:Lcom/digdroid/alman/dig/u;
 
-    invoke-virtual {p1, v0, v1}, Ljava/util/Calendar;->setTimeInMillis(J)V
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/u;->c()Landroid/database/sqlite/SQLiteDatabase;
 
-    const/4 v0, 0x1
+    move-result-object v0
 
-    invoke-virtual {p1, v0}, Ljava/util/Calendar;->get(I)I
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    move-result v1
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p1}, Ljava/util/Calendar;->clear()V
+    const-string v2, "SELECT title,system FROM roms WHERE _id="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-wide v2, p0, Lcom/digdroid/alman/dig/e4;->p0:J
+
+    invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
 
     const/4 v2, 0x0
 
-    invoke-virtual {p1, v1, v2, v0}, Ljava/util/Calendar;->set(III)V
+    invoke-virtual {v0, v1, v2}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
 
-    iget-object v3, p0, Lcom/digdroid/alman/dig/t0;->s0:Lcom/digdroid/alman/dig/h0;
+    move-result-object v0
 
-    invoke-virtual {p1}, Ljava/util/Calendar;->getTimeInMillis()J
+    invoke-interface {v0}, Landroid/database/Cursor;->moveToFirst()Z
 
-    move-result-wide v4
+    move-result v1
 
-    iput-wide v4, v3, Lcom/digdroid/alman/dig/h0;->a:J
+    if-eqz v1, :cond_0
 
-    invoke-virtual {p1}, Ljava/util/Calendar;->clear()V
+    :try_start_0
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    add-int/2addr v1, v0
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p1, v1, v2, v0}, Ljava/util/Calendar;->set(III)V
+    const-string v2, "https://www.youtube.com/results?search_query="
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/t0;->s0:Lcom/digdroid/alman/dig/h0;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/util/Calendar;->getTimeInMillis()J
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    move-result-wide v1
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    iput-wide v1, v0, Lcom/digdroid/alman/dig/h0;->b:J
+    const/4 v3, 0x0
+
+    invoke-interface {v0, v3}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v3, " "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v3, p0, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/g3;
+
+    const/4 v4, 0x1
+
+    invoke-interface {v0, v4}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Lcom/digdroid/alman/dig/g3;->r(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "utf-8"
+
+    invoke-static {v2, v3}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    :cond_0
+    const-string v1, ""
+
+    :goto_0
+    invoke-interface {v0}, Landroid/database/Cursor;->close()V
+
+    return-object v1
+.end method
+
+.method i3(Ljava/lang/String;)V
+    .locals 0
+
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/c4;->i3(Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->c0()Landroidx/fragment/app/d;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/app/Activity;->invalidateOptionsMenu()V
 
     return-void
 .end method
 
-.method z3()Ljava/lang/String;
+.method public p2(Landroid/view/Menu;)V
+    .locals 2
+
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/p1;->p2(Landroid/view/Menu;)V
+
+    const v0, 0x7f09034a
+
+    invoke-interface {p1, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
+
+    move-result-object p1
+
+    const-string v0, "v=[-_0-9a-zA-Z]+$"
+
+    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/digdroid/alman/dig/c4;->o0:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/util/regex/Matcher;->find()Z
+
+    move-result v0
+
+    invoke-interface {p1, v0}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
+
+    return-void
+.end method
+
+.method r2()I
     .locals 1
 
-    const-string v0, "system"
+    const v0, 0x7f0d0014
 
-    return-object v0
+    return v0
 .end method

@@ -86,9 +86,9 @@
 
     iput-object v0, p0, Lcom/digdroid/alman/dig/a1$a;->v:Landroid/widget/TextView;
 
-    iget-object v1, p1, Lcom/digdroid/alman/dig/h;->c:Lcom/digdroid/alman/dig/t3;
+    iget-object v1, p1, Lcom/digdroid/alman/dig/h;->c:Lcom/digdroid/alman/dig/s3;
 
-    iget v1, v1, Lcom/digdroid/alman/dig/t3;->e:I
+    iget v1, v1, Lcom/digdroid/alman/dig/s3;->e:I
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
@@ -102,9 +102,9 @@
 
     iput-object p2, p0, Lcom/digdroid/alman/dig/a1$a;->w:Landroid/widget/TextView;
 
-    iget-object v0, p1, Lcom/digdroid/alman/dig/h;->c:Lcom/digdroid/alman/dig/t3;
+    iget-object v0, p1, Lcom/digdroid/alman/dig/h;->c:Lcom/digdroid/alman/dig/s3;
 
-    iget v0, v0, Lcom/digdroid/alman/dig/t3;->f:I
+    iget v0, v0, Lcom/digdroid/alman/dig/s3;->f:I
 
     invoke-virtual {p2, v0}, Landroid/widget/TextView;->setTextColor(I)V
 

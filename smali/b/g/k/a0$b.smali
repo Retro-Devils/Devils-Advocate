@@ -15,11 +15,11 @@
 
 
 # static fields
-.field private static b:Ljava/lang/reflect/Field;
+.field private static b:Ljava/lang/reflect/Field; = null
 
-.field private static c:Z
+.field private static c:Z = false
 
-.field private static d:Ljava/lang/reflect/Constructor;
+.field private static d:Ljava/lang/reflect/Constructor; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/reflect/Constructor<",
@@ -29,7 +29,7 @@
     .end annotation
 .end field
 
-.field private static e:Z
+.field private static e:Z = false
 
 
 # instance fields

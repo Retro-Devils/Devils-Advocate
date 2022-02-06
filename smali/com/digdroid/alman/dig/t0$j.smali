@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/d0$s;
+.implements Lcom/digdroid/alman/dig/d0$r;
 
 
 # annotations
@@ -83,7 +83,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f1101bf
+    const v7, 0x7f1101bd
 
     invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -131,7 +131,7 @@
 
     move-result-object v2
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v3
 

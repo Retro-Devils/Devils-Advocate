@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/w2$j;
+.implements Ljava/io/FileFilter;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/b0$c;->b(Ljava/lang/Void;)V
+    value = Lcom/digdroid/alman/dig/b0$c;->a(Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/digdroid/alman/dig/b0$c;
+.field final synthetic a:Ljava/util/regex/Pattern;
+
+.field final synthetic b:Lcom/digdroid/alman/dig/b0$c;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/b0$c;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/b0$c;Ljava/util/regex/Pattern;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/b0$c$a;->a:Lcom/digdroid/alman/dig/b0$c;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/b0$c$a;->b:Lcom/digdroid/alman/dig/b0$c;
+
+    iput-object p2, p0, Lcom/digdroid/alman/dig/b0$c$a;->a:Ljava/util/regex/Pattern;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,53 +38,30 @@
 
 
 # virtual methods
-.method public a(Z)V
-    .locals 2
+.method public accept(Ljava/io/File;)Z
+    .locals 1
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/b0$c$a;->a:Lcom/digdroid/alman/dig/b0$c;
+    :try_start_0
+    iget-object v0, p0, Lcom/digdroid/alman/dig/b0$c$a;->a:Ljava/util/regex/Pattern;
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/b0$c;->d:Lcom/digdroid/alman/dig/b0;
-
-    invoke-static {p1}, Lcom/digdroid/alman/dig/b0;->b(Lcom/digdroid/alman/dig/b0;)Lcom/digdroid/alman/dig/c3;
+    invoke-virtual {p1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object p1
 
-    const-string v0, "share_stats"
+    invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
-    const/4 v1, 0x1
+    move-result-object p1
 
-    invoke-virtual {p1, v0, v1}, Lcom/digdroid/alman/dig/c3;->c(Ljava/lang/String;Z)Z
+    invoke-virtual {p1}, Ljava/util/regex/Matcher;->find()Z
 
     move-result p1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    if-eqz p1, :cond_0
+    return p1
 
-    new-instance p1, Lcom/digdroid/alman/dig/b0$c$b;
+    :catch_0
+    const/4 p1, 0x0
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b0$c$a;->a:Lcom/digdroid/alman/dig/b0$c;
-
-    invoke-direct {p1, v0}, Lcom/digdroid/alman/dig/b0$c$b;-><init>(Lcom/digdroid/alman/dig/b0$c;)V
-
-    const/4 v0, 0x0
-
-    new-array v0, v0, [Ljava/lang/Void;
-
-    invoke-virtual {p1, v0}, Landroid/os/AsyncTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
-
-    goto :goto_0
-
-    :cond_0
-    iget-object p1, p0, Lcom/digdroid/alman/dig/b0$c$a;->a:Lcom/digdroid/alman/dig/b0$c;
-
-    iget-object p1, p1, Lcom/digdroid/alman/dig/b0$c;->d:Lcom/digdroid/alman/dig/b0;
-
-    iget-object p1, p1, Lcom/digdroid/alman/dig/b0;->j:Lcom/digdroid/alman/dig/b0$m;
-
-    if-eqz p1, :cond_1
-
-    invoke-interface {p1}, Lcom/digdroid/alman/dig/b0$m;->a()V
-
-    :cond_1
-    :goto_0
-    return-void
+    return p1
 .end method

@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Lcom/digdroid/alman/dig/d0$r;
+.implements Lcom/digdroid/alman/dig/d0$q;
 
 
 # annotations
@@ -53,7 +53,7 @@
 
     const/4 v3, 0x2
 
-    invoke-virtual {v0, v1, v3, v2}, Lcom/digdroid/alman/dig/d0;->r(Landroid/app/Activity;ILcom/digdroid/alman/dig/d0$s;)V
+    invoke-virtual {v0, v1, v3, v2}, Lcom/digdroid/alman/dig/d0;->r(Landroid/app/Activity;ILcom/digdroid/alman/dig/d0$r;)V
 
     return-void
 .end method

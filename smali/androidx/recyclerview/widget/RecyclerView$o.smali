@@ -732,13 +732,13 @@
 
     invoke-direct {v0}, Landroidx/recyclerview/widget/RecyclerView$o$d;-><init>()V
 
-    sget-object v1, Lb/p/c;->f:[I
+    sget-object v1, Lb/o/c;->f:[I
 
     invoke-virtual {p0, p1, v1, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object p0
 
-    sget p1, Lb/p/c;->g:I
+    sget p1, Lb/o/c;->g:I
 
     const/4 p2, 0x1
 
@@ -748,7 +748,7 @@
 
     iput p1, v0, Landroidx/recyclerview/widget/RecyclerView$o$d;->a:I
 
-    sget p1, Lb/p/c;->q:I
+    sget p1, Lb/o/c;->q:I
 
     invoke-virtual {p0, p1, p2}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -756,7 +756,7 @@
 
     iput p1, v0, Landroidx/recyclerview/widget/RecyclerView$o$d;->b:I
 
-    sget p1, Lb/p/c;->p:I
+    sget p1, Lb/o/c;->p:I
 
     const/4 p2, 0x0
 
@@ -766,7 +766,7 @@
 
     iput-boolean p1, v0, Landroidx/recyclerview/widget/RecyclerView$o$d;->c:Z
 
-    sget p1, Lb/p/c;->r:I
+    sget p1, Lb/o/c;->r:I
 
     invoke-virtual {p0, p1, p2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 

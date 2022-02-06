@@ -105,7 +105,7 @@
 
     iget-object v0, p0, Landroidx/leanback/transition/SlideKitkat$j;->c:Landroid/view/View;
 
-    sget v2, Lb/m/f;->o:I
+    sget v2, Lb/l/f;->o:I
 
     invoke-virtual {v0, v2, p1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 

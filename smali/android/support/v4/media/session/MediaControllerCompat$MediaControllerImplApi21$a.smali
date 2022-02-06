@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method public B(Landroid/support/v4/media/MediaMetadataCompat;)V
+.method public A(Landroid/support/v4/media/MediaMetadataCompat;)V
     .locals 0
 
     new-instance p1, Ljava/lang/AssertionError;
@@ -83,7 +83,7 @@
     throw p1
 .end method
 
-.method public u0(Landroid/support/v4/media/session/ParcelableVolumeInfo;)V
+.method public v0(Landroid/support/v4/media/session/ParcelableVolumeInfo;)V
     .locals 0
 
     new-instance p1, Ljava/lang/AssertionError;

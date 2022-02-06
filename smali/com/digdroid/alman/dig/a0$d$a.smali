@@ -53,7 +53,7 @@
 
     iget-object p2, p2, Lcom/digdroid/alman/dig/a0;->a:Landroid/app/Activity;
 
-    const v0, 0x7f1101c1
+    const v0, 0x7f1101bf
 
     invoke-virtual {p2, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

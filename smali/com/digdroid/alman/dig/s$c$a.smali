@@ -37,15 +37,15 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
 
-    new-instance p1, Lcom/digdroid/alman/dig/s3;
+    new-instance p1, Lcom/digdroid/alman/dig/r3;
 
     iget-object p2, p0, Lcom/digdroid/alman/dig/s$c$a;->b:Lcom/digdroid/alman/dig/s$c;
 
     iget-object p2, p2, Lcom/digdroid/alman/dig/s$c;->c:Lcom/digdroid/alman/dig/s;
 
-    iget-object p2, p2, Lcom/digdroid/alman/dig/s;->v0:Lcom/digdroid/alman/dig/s3;
+    iget-object p2, p2, Lcom/digdroid/alman/dig/s;->v0:Lcom/digdroid/alman/dig/r3;
 
-    invoke-direct {p1, p2}, Lcom/digdroid/alman/dig/s3;-><init>(Lcom/digdroid/alman/dig/s3;)V
+    invoke-direct {p1, p2}, Lcom/digdroid/alman/dig/r3;-><init>(Lcom/digdroid/alman/dig/r3;)V
 
     const-string p2, "name"
 
@@ -53,7 +53,7 @@
 
     iget-object v0, v0, Lcom/digdroid/alman/dig/s$c;->c:Lcom/digdroid/alman/dig/s;
 
-    const v1, 0x7f1101bb
+    const v1, 0x7f1101b9
 
     invoke-virtual {v0, v1}, Landroidx/fragment/app/Fragment;->D0(I)Ljava/lang/String;
 
@@ -63,7 +63,7 @@
 
     const/4 p2, 0x0
 
-    iput-object p2, p1, Lcom/digdroid/alman/dig/s3;->f:Ljava/lang/String;
+    iput-object p2, p1, Lcom/digdroid/alman/dig/r3;->f:Ljava/lang/String;
 
     const-class p2, Lcom/digdroid/alman/dig/s;
 

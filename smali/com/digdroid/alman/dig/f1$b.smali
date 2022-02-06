@@ -39,7 +39,7 @@
 
 # virtual methods
 .method public a([Ljava/lang/String;)V
-    .locals 3
+    .locals 2
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/f1$b;->b:Lcom/digdroid/alman/dig/f1;
 
@@ -82,43 +82,37 @@
 
     :catch_0
     :cond_2
-    iget-object v1, p0, Lcom/digdroid/alman/dig/f1$b;->b:Lcom/digdroid/alman/dig/f1;
+    const/4 v1, 0x0
 
-    invoke-virtual {v1}, Landroidx/fragment/app/Fragment;->j0()Landroid/content/Context;
+    aget-object p1, p1, v1
 
-    move-result-object v1
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    const/4 v2, 0x0
-
-    aget-object p1, p1, v2
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v0, "/"
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/f1$b;->a:Ljava/lang/String;
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v0, ".png"
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v1, p1, v0}, Lcom/digdroid/alman/dig/a4;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lcom/digdroid/alman/dig/z3;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object p1, p0, Lcom/digdroid/alman/dig/f1$b;->b:Lcom/digdroid/alman/dig/f1;
 

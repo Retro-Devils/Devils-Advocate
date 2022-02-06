@@ -65,13 +65,13 @@
 
     iget-object p2, p2, Lcom/digdroid/alman/dig/s$g;->b:Lcom/digdroid/alman/dig/s;
 
-    iget-object v0, p2, Lcom/digdroid/alman/dig/s;->v0:Lcom/digdroid/alman/dig/s3;
+    iget-object v0, p2, Lcom/digdroid/alman/dig/s;->v0:Lcom/digdroid/alman/dig/r3;
 
     iget-object p2, p2, Lcom/digdroid/alman/dig/s;->y0:Ljava/lang/String;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, p2, p1, v1}, Lcom/digdroid/alman/dig/s3;->E(Ljava/lang/String;Ljava/lang/String;I)I
+    invoke-virtual {v0, p2, p1, v1}, Lcom/digdroid/alman/dig/r3;->E(Ljava/lang/String;Ljava/lang/String;I)I
 
     move-result v5
 

@@ -67,7 +67,7 @@
 
     iget-object p2, p0, Lcom/digdroid/alman/dig/s$g;->b:Lcom/digdroid/alman/dig/s;
 
-    iget-object p2, p2, Lcom/digdroid/alman/dig/s;->v0:Lcom/digdroid/alman/dig/s3;
+    iget-object p2, p2, Lcom/digdroid/alman/dig/s;->v0:Lcom/digdroid/alman/dig/r3;
 
     sget-object p3, Lcom/digdroid/alman/dig/s;->o0:[Ljava/lang/String;
 
@@ -100,7 +100,7 @@
 
     iget-object p2, p0, Lcom/digdroid/alman/dig/s$g;->b:Lcom/digdroid/alman/dig/s;
 
-    iget-object p3, p2, Lcom/digdroid/alman/dig/s;->v0:Lcom/digdroid/alman/dig/s3;
+    iget-object p3, p2, Lcom/digdroid/alman/dig/s;->v0:Lcom/digdroid/alman/dig/r3;
 
     const/16 p4, 0xa
 
@@ -120,7 +120,7 @@
 
     const/4 p5, 0x0
 
-    invoke-virtual {p3, p2, p4, p5}, Lcom/digdroid/alman/dig/s3;->E(Ljava/lang/String;Ljava/lang/String;I)I
+    invoke-virtual {p3, p2, p4, p5}, Lcom/digdroid/alman/dig/r3;->E(Ljava/lang/String;Ljava/lang/String;I)I
 
     move-result v3
 
@@ -167,19 +167,19 @@
 
     move-result-object p3
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result p4
 
     invoke-direct {p2, p3, p4}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
 
-    const p3, 0x7f11010e
+    const p3, 0x7f11010c
 
     invoke-virtual {p2, p3}, Landroidx/appcompat/app/b$a;->h(I)Landroidx/appcompat/app/b$a;
 
     move-result-object p2
 
-    const p3, 0x7f11025c
+    const p3, 0x7f110258
 
     new-instance p4, Lcom/digdroid/alman/dig/s$g$c;
 
@@ -189,7 +189,7 @@
 
     move-result-object p2
 
-    const p3, 0x7f1100db
+    const p3, 0x7f1100d9
 
     new-instance p4, Lcom/digdroid/alman/dig/s$g$b;
 

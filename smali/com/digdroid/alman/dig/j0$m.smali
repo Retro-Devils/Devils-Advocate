@@ -157,11 +157,11 @@
 
     iget-object v1, p0, Lcom/digdroid/alman/dig/j0$m;->a:Lcom/digdroid/alman/dig/j0;
 
-    iget-object v2, v1, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/h3;
+    iget-object v2, v1, Lcom/digdroid/alman/dig/p1;->b0:Lcom/digdroid/alman/dig/g3;
 
     iget-object v1, v1, Lcom/digdroid/alman/dig/j0;->s0:Ljava/lang/String;
 
-    invoke-virtual {v2, v1}, Lcom/digdroid/alman/dig/h3;->l(Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-virtual {v2, v1}, Lcom/digdroid/alman/dig/g3;->k(Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v1
 

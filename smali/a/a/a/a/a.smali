@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract s0(ILandroid/os/Bundle;)V
+.method public abstract t0(ILandroid/os/Bundle;)V
 .end method

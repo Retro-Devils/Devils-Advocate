@@ -59,13 +59,13 @@
 
     iget-object v0, v0, Lcom/digdroid/alman/dig/v0$e;->c:Lcom/digdroid/alman/dig/v0;
 
-    iget-object v1, v0, Lcom/digdroid/alman/dig/v0;->f:Lcom/digdroid/alman/dig/c3;
+    iget-object v1, v0, Lcom/digdroid/alman/dig/v0;->f:Lcom/digdroid/alman/dig/b3;
 
     iget v0, v0, Lcom/digdroid/alman/dig/v0;->l:I
 
     const-string v2, "games_preview_size"
 
-    invoke-virtual {v1, v2, v0}, Lcom/digdroid/alman/dig/c3;->E(Ljava/lang/String;I)V
+    invoke-virtual {v1, v2, v0}, Lcom/digdroid/alman/dig/b3;->E(Ljava/lang/String;I)V
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/v0$e$a;->c:Lcom/digdroid/alman/dig/v0$e;
 

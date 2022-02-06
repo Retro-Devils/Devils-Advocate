@@ -1,172 +1,79 @@
 .class Lcom/digdroid/alman/dig/b0$c$b;
-.super Landroid/os/AsyncTask;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/digdroid/alman/dig/b0$c;->b(Ljava/lang/Void;)V
+    value = Lcom/digdroid/alman/dig/b0$c;->a(Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x0
-    name = "b"
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Landroid/os/AsyncTask<",
-        "Ljava/lang/Void;",
-        "Ljava/lang/Void;",
-        "Ljava/lang/Long;",
-        ">;"
-    }
+    name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Lcom/digdroid/alman/dig/b0$c;
+.field final synthetic b:[Ljava/io/File;
+
+.field final synthetic c:Ljava/lang/String;
+
+.field final synthetic d:Lcom/digdroid/alman/dig/b0$c;
 
 
 # direct methods
-.method constructor <init>(Lcom/digdroid/alman/dig/b0$c;)V
+.method constructor <init>(Lcom/digdroid/alman/dig/b0$c;[Ljava/io/File;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/digdroid/alman/dig/b0$c$b;->a:Lcom/digdroid/alman/dig/b0$c;
+    iput-object p1, p0, Lcom/digdroid/alman/dig/b0$c$b;->d:Lcom/digdroid/alman/dig/b0$c;
 
-    invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
+    iput-object p2, p0, Lcom/digdroid/alman/dig/b0$c$b;->b:[Ljava/io/File;
+
+    iput-object p3, p0, Lcom/digdroid/alman/dig/b0$c$b;->c:Ljava/lang/String;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected varargs a([Ljava/lang/Void;)Ljava/lang/Long;
-    .locals 3
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 5
 
-    iget-object p1, p0, Lcom/digdroid/alman/dig/b0$c$b;->a:Lcom/digdroid/alman/dig/b0$c;
+    iget-object p1, p0, Lcom/digdroid/alman/dig/b0$c$b;->d:Lcom/digdroid/alman/dig/b0$c;
 
-    iget-object p1, p1, Lcom/digdroid/alman/dig/b0$c;->d:Lcom/digdroid/alman/dig/b0;
+    iget-object v0, p1, Lcom/digdroid/alman/dig/b0$c;->d:Lcom/digdroid/alman/dig/b0;
 
-    invoke-static {p1}, Lcom/digdroid/alman/dig/b0;->d(Lcom/digdroid/alman/dig/b0;)Lcom/digdroid/alman/dig/u;
+    iget-object v1, p1, Lcom/digdroid/alman/dig/b0$c;->c:Lcom/digdroid/alman/dig/y3;
 
-    move-result-object p1
+    iget-object v2, p1, Lcom/digdroid/alman/dig/b0$c;->a:Landroid/database/Cursor;
 
-    invoke-virtual {p1}, Lcom/digdroid/alman/dig/u;->c()Landroid/database/sqlite/SQLiteDatabase;
+    iget-object p1, p1, Lcom/digdroid/alman/dig/b0$c;->b:Landroid/database/Cursor;
 
-    move-result-object p1
+    iget-object v3, p0, Lcom/digdroid/alman/dig/b0$c$b;->b:[Ljava/io/File;
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    array-length v4, v3
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    if-ne p2, v4, :cond_0
 
-    const-string v1, "SELECT mdbid FROM roms WHERE _id="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lcom/digdroid/alman/dig/b0$c$b;->a:Lcom/digdroid/alman/dig/b0$c;
-
-    iget-wide v1, v1, Lcom/digdroid/alman/dig/b0$c;->a:J
-
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    invoke-virtual {p1, v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
-
-    move-result-object p1
-
-    invoke-interface {p1}, Landroid/database/Cursor;->moveToFirst()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x0
-
-    invoke-interface {p1, v0}, Landroid/database/Cursor;->getLong(I)J
-
-    move-result-wide v0
+    iget-object p2, p0, Lcom/digdroid/alman/dig/b0$c$b;->c:Ljava/lang/String;
 
     goto :goto_0
 
     :cond_0
-    const-wide/16 v0, -0x1
+    aget-object p2, v3, p2
+
+    invoke-virtual {p2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p2
 
     :goto_0
-    invoke-interface {p1}, Landroid/database/Cursor;->close()V
-
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method protected b(Ljava/lang/Long;)V
-    .locals 5
-
-    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v0
-
-    const-wide/16 v2, 0x0
-
-    cmp-long v4, v0, v2
-
-    if-ltz v4, :cond_0
-
-    iget-object v0, p0, Lcom/digdroid/alman/dig/b0$c$b;->a:Lcom/digdroid/alman/dig/b0$c;
-
-    iget-object v0, v0, Lcom/digdroid/alman/dig/b0$c;->c:Landroid/app/Activity;
-
-    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v1
-
-    iget-object p1, p0, Lcom/digdroid/alman/dig/b0$c$b;->a:Lcom/digdroid/alman/dig/b0$c;
-
-    iget-wide v3, p1, Lcom/digdroid/alman/dig/b0$c;->b:J
-
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/digdroid/alman/dig/ServerService;->q(Landroid/content/Context;JJ)V
-
-    :cond_0
-    iget-object p1, p0, Lcom/digdroid/alman/dig/b0$c$b;->a:Lcom/digdroid/alman/dig/b0$c;
-
-    iget-object p1, p1, Lcom/digdroid/alman/dig/b0$c;->d:Lcom/digdroid/alman/dig/b0;
-
-    iget-object p1, p1, Lcom/digdroid/alman/dig/b0;->j:Lcom/digdroid/alman/dig/b0$m;
-
-    if-eqz p1, :cond_1
-
-    invoke-interface {p1}, Lcom/digdroid/alman/dig/b0$m;->a()V
-
-    :cond_1
-    return-void
-.end method
-
-.method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    check-cast p1, [Ljava/lang/Void;
-
-    invoke-virtual {p0, p1}, Lcom/digdroid/alman/dig/b0$c$b;->a([Ljava/lang/Void;)Ljava/lang/Long;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
-    .locals 0
-
-    check-cast p1, Ljava/lang/Long;
-
-    invoke-virtual {p0, p1}, Lcom/digdroid/alman/dig/b0$c$b;->b(Ljava/lang/Long;)V
+    invoke-virtual {v0, v1, v2, p1, p2}, Lcom/digdroid/alman/dig/b0;->t(Lcom/digdroid/alman/dig/y3;Landroid/database/Cursor;Landroid/database/Cursor;Ljava/lang/String;)V
 
     return-void
 .end method

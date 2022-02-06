@@ -15,13 +15,13 @@
 
 
 # virtual methods
-.method public abstract B(Landroid/support/v4/media/MediaMetadataCompat;)V
+.method public abstract A(Landroid/support/v4/media/MediaMetadataCompat;)V
 .end method
 
-.method public abstract N(I)V
+.method public abstract L(I)V
 .end method
 
-.method public abstract U(Z)V
+.method public abstract T(Z)V
 .end method
 
 .method public abstract d(Ljava/util/List;)V
@@ -35,29 +35,29 @@
     .end annotation
 .end method
 
+.method public abstract d0(I)V
+.end method
+
 .method public abstract e(Ljava/lang/CharSequence;)V
 .end method
 
-.method public abstract f0(I)V
+.method public abstract f0()V
 .end method
 
 .method public abstract g()V
 .end method
 
-.method public abstract h0()V
+.method public abstract h0(Landroid/support/v4/media/session/PlaybackStateCompat;)V
 .end method
 
-.method public abstract k0(Landroid/support/v4/media/session/PlaybackStateCompat;)V
+.method public abstract i0(Ljava/lang/String;Landroid/os/Bundle;)V
 .end method
 
 .method public abstract l(Landroid/os/Bundle;)V
 .end method
 
-.method public abstract l0(Ljava/lang/String;Landroid/os/Bundle;)V
-.end method
-
 .method public abstract o(Z)V
 .end method
 
-.method public abstract u0(Landroid/support/v4/media/session/ParcelableVolumeInfo;)V
+.method public abstract v0(Landroid/support/v4/media/session/ParcelableVolumeInfo;)V
 .end method

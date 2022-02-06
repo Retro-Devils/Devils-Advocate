@@ -570,7 +570,7 @@
     :goto_0
     new-instance v0, Landroidx/appcompat/app/b$a;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v1
 
@@ -582,7 +582,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f1101da
+    const v0, 0x7f1101d8
 
     const/4 v1, 0x0
 

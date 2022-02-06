@@ -85,7 +85,7 @@
 
     check-cast p2, Landroid/widget/EditText;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->b()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->b()I
 
     move-result v1
 
@@ -93,7 +93,7 @@
 
     new-instance v1, Landroidx/appcompat/app/b$a;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v2
 
@@ -103,7 +103,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f1100dd
+    const v1, 0x7f1100db
 
     invoke-virtual {p1, v1}, Landroidx/appcompat/app/b$a;->r(I)Landroidx/appcompat/app/b$a;
 
@@ -217,13 +217,13 @@
 
     iget-object v3, p0, Lcom/digdroid/alman/dig/m0;->a:Landroid/app/Activity;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v4
 
     invoke-direct {v0, v3, v4}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
 
-    const v3, 0x7f11020f
+    const v3, 0x7f11020d
 
     invoke-virtual {v0, v3}, Landroidx/appcompat/app/b$a;->r(I)Landroidx/appcompat/app/b$a;
 
@@ -352,13 +352,13 @@
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/m0;->a:Landroid/app/Activity;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v8
 
     invoke-direct {v7, v0, v8}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
 
-    const v0, 0x7f110244
+    const v0, 0x7f110240
 
     invoke-virtual {v7, v0}, Landroidx/appcompat/app/b$a;->r(I)Landroidx/appcompat/app/b$a;
 
@@ -368,7 +368,7 @@
 
     invoke-virtual {v7, v1, v4, v0}, Landroidx/appcompat/app/b$a;->k([Ljava/lang/CharSequence;[ZLandroid/content/DialogInterface$OnMultiChoiceClickListener;)Landroidx/appcompat/app/b$a;
 
-    const v8, 0x7f1101da
+    const v8, 0x7f1101d8
 
     new-instance v9, Lcom/digdroid/alman/dig/m0$c;
 
@@ -400,7 +400,7 @@
 
     move-result p1
 
-    const v0, 0x7f1101da
+    const v0, 0x7f1101d8
 
     const v1, 0x7f11005a
 
@@ -430,7 +430,7 @@
 
     iget-object v3, p0, Lcom/digdroid/alman/dig/m0;->a:Landroid/app/Activity;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v6
 
@@ -465,7 +465,7 @@
 
     iget-object v3, p0, Lcom/digdroid/alman/dig/m0;->a:Landroid/app/Activity;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v6
 
@@ -501,7 +501,7 @@
     return v5
 
     :sswitch_4
-    new-instance p1, Lcom/digdroid/alman/dig/w2;
+    new-instance p1, Lcom/digdroid/alman/dig/v2;
 
     iget-object v0, p0, Lcom/digdroid/alman/dig/m0;->a:Landroid/app/Activity;
 
@@ -511,11 +511,11 @@
 
     invoke-direct {v2, p0}, Lcom/digdroid/alman/dig/m0$h;-><init>(Lcom/digdroid/alman/dig/m0;)V
 
-    invoke-direct {p1, v0, v1, v3, v2}, Lcom/digdroid/alman/dig/w2;-><init>(Landroid/app/Activity;Landroid/database/sqlite/SQLiteDatabase;ZLcom/digdroid/alman/dig/w2$j;)V
+    invoke-direct {p1, v0, v1, v3, v2}, Lcom/digdroid/alman/dig/v2;-><init>(Landroid/app/Activity;Landroid/database/sqlite/SQLiteDatabase;ZLcom/digdroid/alman/dig/v2$j;)V
 
     iget-wide v0, p0, Lcom/digdroid/alman/dig/m0;->b:J
 
-    invoke-virtual {p1, v0, v1}, Lcom/digdroid/alman/dig/w2;->f(J)V
+    invoke-virtual {p1, v0, v1}, Lcom/digdroid/alman/dig/v2;->f(J)V
 
     return v5
 
@@ -532,7 +532,7 @@
 
     invoke-direct {v2, p0}, Lcom/digdroid/alman/dig/m0$l;-><init>(Lcom/digdroid/alman/dig/m0;)V
 
-    invoke-virtual {p1, v0, v1, v2}, Lcom/digdroid/alman/dig/d0;->r(Landroid/app/Activity;ILcom/digdroid/alman/dig/d0$s;)V
+    invoke-virtual {p1, v0, v1, v2}, Lcom/digdroid/alman/dig/d0;->r(Landroid/app/Activity;ILcom/digdroid/alman/dig/d0$r;)V
 
     return v5
 
@@ -674,7 +674,7 @@
 
     invoke-virtual {v1, p1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->b()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->b()I
 
     move-result p1
 
@@ -684,7 +684,7 @@
 
     iget-object v2, p0, Lcom/digdroid/alman/dig/m0;->a:Landroid/app/Activity;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v3
 
@@ -694,7 +694,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f1100d1
+    const v0, 0x7f1100cf
 
     invoke-virtual {p1, v0}, Landroidx/appcompat/app/b$a;->h(I)Landroidx/appcompat/app/b$a;
 
@@ -738,7 +738,7 @@
 
     invoke-direct {v2, p0}, Lcom/digdroid/alman/dig/m0$j;-><init>(Lcom/digdroid/alman/dig/m0;)V
 
-    invoke-virtual {p1, v0, v1, v2}, Lcom/digdroid/alman/dig/d0;->r(Landroid/app/Activity;ILcom/digdroid/alman/dig/d0$s;)V
+    invoke-virtual {p1, v0, v1, v2}, Lcom/digdroid/alman/dig/d0;->r(Landroid/app/Activity;ILcom/digdroid/alman/dig/d0$r;)V
 
     return v5
 
@@ -747,7 +747,7 @@
 
     iget-object v3, p0, Lcom/digdroid/alman/dig/m0;->a:Landroid/app/Activity;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v6
 
@@ -790,7 +790,7 @@
 
     invoke-direct {v2, p0}, Lcom/digdroid/alman/dig/m0$m;-><init>(Lcom/digdroid/alman/dig/m0;)V
 
-    invoke-virtual {p1, v0, v1, v2}, Lcom/digdroid/alman/dig/d0;->r(Landroid/app/Activity;ILcom/digdroid/alman/dig/d0$s;)V
+    invoke-virtual {p1, v0, v1, v2}, Lcom/digdroid/alman/dig/d0;->r(Landroid/app/Activity;ILcom/digdroid/alman/dig/d0$r;)V
 
     return v5
 
@@ -807,7 +807,7 @@
 
     invoke-direct {v2, p0}, Lcom/digdroid/alman/dig/m0$i;-><init>(Lcom/digdroid/alman/dig/m0;)V
 
-    invoke-virtual {p1, v0, v1, v2}, Lcom/digdroid/alman/dig/d0;->r(Landroid/app/Activity;ILcom/digdroid/alman/dig/d0$s;)V
+    invoke-virtual {p1, v0, v1, v2}, Lcom/digdroid/alman/dig/d0;->r(Landroid/app/Activity;ILcom/digdroid/alman/dig/d0$r;)V
 
     return v5
 
@@ -824,7 +824,7 @@
 
     invoke-direct {v2, p0}, Lcom/digdroid/alman/dig/m0$k;-><init>(Lcom/digdroid/alman/dig/m0;)V
 
-    invoke-virtual {p1, v0, v1, v2}, Lcom/digdroid/alman/dig/d0;->r(Landroid/app/Activity;ILcom/digdroid/alman/dig/d0$s;)V
+    invoke-virtual {p1, v0, v1, v2}, Lcom/digdroid/alman/dig/d0;->r(Landroid/app/Activity;ILcom/digdroid/alman/dig/d0$r;)V
 
     return v5
 

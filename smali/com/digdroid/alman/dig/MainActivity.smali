@@ -1,5 +1,5 @@
 .class public Lcom/digdroid/alman/dig/MainActivity;
-.super Lcom/digdroid/alman/dig/r3;
+.super Lcom/digdroid/alman/dig/q3;
 .source ""
 
 
@@ -27,28 +27,28 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/r3;-><init>()V
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/q3;-><init>()V
 
     return-void
 .end method
 
-.method static synthetic Z2(Lcom/digdroid/alman/dig/MainActivity;)V
+.method static synthetic X2(Lcom/digdroid/alman/dig/MainActivity;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/MainActivity;->c3()V
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/MainActivity;->a3()V
 
     return-void
 .end method
 
-.method static synthetic a3(Lcom/digdroid/alman/dig/MainActivity;)V
+.method static synthetic Y2(Lcom/digdroid/alman/dig/MainActivity;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/MainActivity;->d3()V
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/MainActivity;->b3()V
 
     return-void
 .end method
 
-.method private c3()V
+.method private a3()V
     .locals 2
 
     iget-boolean v0, p0, Lcom/digdroid/alman/dig/MainActivity;->t1:Z
@@ -66,71 +66,71 @@
 
     invoke-direct {v1, p0}, Lcom/digdroid/alman/dig/MainActivity$f;-><init>(Lcom/digdroid/alman/dig/MainActivity;)V
 
-    invoke-virtual {v0, p0, v1}, Lcom/digdroid/alman/dig/d0;->l(Landroid/app/Activity;Lcom/digdroid/alman/dig/d0$r;)V
+    invoke-virtual {v0, p0, v1}, Lcom/digdroid/alman/dig/d0;->k(Landroid/app/Activity;Lcom/digdroid/alman/dig/d0$q;)V
 
     return-void
 .end method
 
-.method private d3()V
+.method private b3()V
     .locals 5
 
     invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/digdroid/alman/dig/c3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/c3;
+    invoke-static {v0}, Lcom/digdroid/alman/dig/b3;->k(Landroid/content/Context;)Lcom/digdroid/alman/dig/b3;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+    iput-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
     const-string v1, "data_version"
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/c3;->l(Ljava/lang/String;I)I
+    invoke-virtual {v0, v1, v2}, Lcom/digdroid/alman/dig/b3;->l(Ljava/lang/String;I)I
 
     move-result v0
 
-    const/16 v3, 0x1cf
+    const/16 v3, 0x1c9
 
     const-string v4, "do_repair"
 
     if-lt v0, v3, :cond_0
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {v0, v4, v2}, Lcom/digdroid/alman/dig/c3;->c(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v4, v2}, Lcom/digdroid/alman/dig/b3;->c(Ljava/lang/String;Z)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     :cond_0
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->k1()Lcom/digdroid/alman/dig/p1;
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->i1()Lcom/digdroid/alman/dig/p1;
 
     move-result-object v0
 
     if-nez v0, :cond_1
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->q1()V
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->o1()V
 
     :cond_1
-    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {v0, v4, v2}, Lcom/digdroid/alman/dig/c3;->c(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v4, v2}, Lcom/digdroid/alman/dig/b3;->c(Ljava/lang/String;Z)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {v0, v4, v2}, Lcom/digdroid/alman/dig/c3;->B(Ljava/lang/String;Z)V
+    invoke-virtual {v0, v4, v2}, Lcom/digdroid/alman/dig/b3;->B(Ljava/lang/String;Z)V
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {v0, v1, v3}, Lcom/digdroid/alman/dig/c3;->E(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v3}, Lcom/digdroid/alman/dig/b3;->E(Ljava/lang/String;I)V
 
     new-instance v0, Lcom/digdroid/alman/dig/g;
 
@@ -191,7 +191,7 @@
     return-void
 .end method
 
-.method public L1()V
+.method public J1()V
     .locals 3
 
     new-instance v0, Lcom/digdroid/alman/dig/MainActivity$c;
@@ -209,7 +209,7 @@
     return-void
 .end method
 
-.method b3()V
+.method Z2()V
     .locals 7
 
     invoke-virtual {p0}, Landroid/app/Activity;->isFinishing()Z
@@ -225,7 +225,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->k1()Lcom/digdroid/alman/dig/p1;
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->i1()Lcom/digdroid/alman/dig/p1;
 
     move-result-object v1
 
@@ -239,7 +239,7 @@
 
     if-eqz v3, :cond_1
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->u1()V
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->s1()V
 
     move-object v1, v2
 
@@ -254,20 +254,20 @@
 
     if-eqz v1, :cond_2
 
-    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/e0;->r1(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/e0;->p1(Landroid/content/Intent;)V
 
     goto :goto_0
 
     :cond_2
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->o1()V
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->m1()V
 
     :cond_3
     :goto_0
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->v1()V
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->t1()V
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {v1}, Lcom/digdroid/alman/dig/c3;->j()Z
+    invoke-virtual {v1}, Lcom/digdroid/alman/dig/b3;->j()Z
 
     move-result v1
 
@@ -277,9 +277,9 @@
 
     if-eqz v1, :cond_4
 
-    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+    iget-object v1, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {v1, v4}, Lcom/digdroid/alman/dig/c3;->S(Z)V
+    invoke-virtual {v1, v4}, Lcom/digdroid/alman/dig/b3;->S(Z)V
 
     iput-boolean v3, p0, Lcom/digdroid/alman/dig/MainActivity;->u1:Z
 
@@ -299,13 +299,13 @@
     :cond_5
     new-instance v0, Landroidx/appcompat/app/b$a;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v1
 
     invoke-direct {v0, p0, v1}, Landroidx/appcompat/app/b$a;-><init>(Landroid/content/Context;I)V
 
-    const v1, 0x7f110296
+    const v1, 0x7f110292
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -325,7 +325,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f11014a
+    const v1, 0x7f110148
 
     new-instance v2, Lcom/digdroid/alman/dig/MainActivity$h;
 
@@ -371,7 +371,7 @@
 
     new-instance v5, Landroidx/appcompat/app/b$a;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->c()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->c()I
 
     move-result v6
 
@@ -383,12 +383,12 @@
 
     if-eqz v0, :cond_8
 
-    const v0, 0x7f11021b
+    const v0, 0x7f110219
 
     goto :goto_1
 
     :cond_8
-    const v0, 0x7f110218
+    const v0, 0x7f110216
 
     :goto_1
     invoke-virtual {v5, v0}, Landroidx/appcompat/app/b$a;->h(I)Landroidx/appcompat/app/b$a;
@@ -399,7 +399,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1101da
+    const v1, 0x7f1101d8
 
     invoke-virtual {v0, v1, v2}, Landroidx/appcompat/app/b$a;->o(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/b$a;
 
@@ -420,7 +420,7 @@
     :cond_9
     const-string v0, "check_paths"
 
-    invoke-static {p0, v0}, Lcom/digdroid/alman/dig/DatabaseService;->v(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lcom/digdroid/alman/dig/DatabaseService;->t(Landroid/content/Context;Ljava/lang/String;)V
 
     const-string v0, "com.digdroid.alman.dig.action.SYNC"
 
@@ -428,11 +428,11 @@
 
     invoke-static {p0}, Lcom/digdroid/alman/dig/ImageService;->a(Landroid/content/Context;)V
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
     const-string v1, "auto_scan"
 
-    invoke-virtual {v0, v1, v4}, Lcom/digdroid/alman/dig/c3;->c(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v1, v4}, Lcom/digdroid/alman/dig/b3;->c(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -448,9 +448,9 @@
     return-void
 
     :cond_a
-    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/c3;->u()Z
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/b3;->u()Z
 
     move-result v0
 
@@ -473,9 +473,9 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
 
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/r3;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/q3;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-static {p0}, Lcom/digdroid/alman/dig/a4;->v(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/digdroid/alman/dig/z3;->u(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -508,9 +508,9 @@
     return-void
 
     :cond_0
-    invoke-static {p0}, Lcom/digdroid/alman/dig/a4;->H(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/digdroid/alman/dig/z3;->F(Landroid/content/Context;)V
 
-    invoke-static {p0}, Lcom/digdroid/alman/dig/a4;->G(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/digdroid/alman/dig/z3;->E(Landroid/content/Context;)V
 
     :cond_1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -666,9 +666,9 @@
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/c3;->t()Z
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/b3;->t()Z
 
     move-result v0
 
@@ -719,17 +719,17 @@
     return v7
 
     :cond_1
-    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/c3;->o()Z
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/b3;->o()Z
 
     move-result v0
 
     if-nez v0, :cond_3
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {v0}, Lcom/digdroid/alman/dig/c3;->i()Z
+    invoke-virtual {v0}, Lcom/digdroid/alman/dig/b3;->i()Z
 
     move-result v0
 
@@ -759,7 +759,7 @@
 
     new-instance v9, Landroid/graphics/PorterDuffColorFilter;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->w()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->w()I
 
     move-result v10
 
@@ -780,7 +780,7 @@
 
     invoke-interface {v6, v0}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    iput-boolean v0, p0, Lcom/digdroid/alman/dig/v3;->u0:Z
+    iput-boolean v0, p0, Lcom/digdroid/alman/dig/u3;->u0:Z
 
     invoke-interface {v6}, Landroid/view/MenuItem;->getIcon()Landroid/graphics/drawable/Drawable;
 
@@ -792,7 +792,7 @@
 
     new-instance v8, Landroid/graphics/PorterDuffColorFilter;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->w()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->w()I
 
     move-result v9
 
@@ -809,9 +809,9 @@
 
     move-result-object v0
 
-    iget-object v5, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+    iget-object v5, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
-    invoke-virtual {v5}, Lcom/digdroid/alman/dig/c3;->v()Z
+    invoke-virtual {v5}, Lcom/digdroid/alman/dig/b3;->v()Z
 
     move-result v5
 
@@ -819,7 +819,7 @@
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    iput-boolean v1, p0, Lcom/digdroid/alman/dig/v3;->v0:Z
+    iput-boolean v1, p0, Lcom/digdroid/alman/dig/u3;->v0:Z
 
     goto :goto_3
 
@@ -834,11 +834,11 @@
 
     new-instance v6, Landroid/graphics/PorterDuffColorFilter;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->w()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->w()I
 
     move-result v8
 
-    iget-boolean v9, p0, Lcom/digdroid/alman/dig/v3;->w0:Z
+    iget-boolean v9, p0, Lcom/digdroid/alman/dig/u3;->w0:Z
 
     if-eqz v9, :cond_7
 
@@ -857,16 +857,16 @@
     invoke-interface {v0, v5}, Landroid/view/MenuItem;->setIcon(Landroid/graphics/drawable/Drawable;)Landroid/view/MenuItem;
 
     :cond_8
-    iget-boolean v0, p0, Lcom/digdroid/alman/dig/v3;->w0:Z
+    iget-boolean v0, p0, Lcom/digdroid/alman/dig/u3;->w0:Z
 
-    iput-boolean v0, p0, Lcom/digdroid/alman/dig/v3;->v0:Z
+    iput-boolean v0, p0, Lcom/digdroid/alman/dig/u3;->v0:Z
 
     :goto_3
     invoke-interface {p1, v4}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/r3;->B1()Z
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/q3;->z1()Z
 
     move-result v4
 
@@ -882,7 +882,7 @@
 
     new-instance v5, Landroid/graphics/PorterDuffColorFilter;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->w()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->w()I
 
     move-result v6
 
@@ -899,13 +899,13 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/r3;->D1()Z
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/q3;->B1()Z
 
     move-result v3
 
     if-eqz v3, :cond_a
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/r3;->C1()Z
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/q3;->A1()Z
 
     move-result v3
 
@@ -931,7 +931,7 @@
 
     new-instance v4, Landroid/graphics/PorterDuffColorFilter;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->w()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->w()I
 
     move-result v5
 
@@ -948,13 +948,13 @@
 
     move-result-object p1
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/r3;->D1()Z
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/q3;->B1()Z
 
     move-result v0
 
     if-eqz v0, :cond_c
 
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/r3;->C1()Z
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/q3;->A1()Z
 
     move-result v0
 
@@ -975,7 +975,7 @@
 
     new-instance v1, Landroid/graphics/PorterDuffColorFilter;
 
-    invoke-static {}, Lcom/digdroid/alman/dig/q3;->w()I
+    invoke-static {}, Lcom/digdroid/alman/dig/p3;->w()I
 
     move-result v2
 
@@ -994,7 +994,7 @@
 .method protected onDestroy()V
     .locals 1
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/r3;->onDestroy()V
+    invoke-super {p0}, Lcom/digdroid/alman/dig/q3;->onDestroy()V
 
     invoke-static {}, Lcom/digdroid/alman/dig/d0;->p()Lcom/digdroid/alman/dig/d0;
 
@@ -1023,31 +1023,31 @@
     return p1
 
     :sswitch_0
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/MainActivity;->L1()V
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/MainActivity;->J1()V
 
     return v1
 
     :sswitch_1
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/r3;->V1()V
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/q3;->T1()V
 
     invoke-virtual {p0}, Landroidx/appcompat/app/c;->invalidateOptionsMenu()V
 
     return v1
 
     :sswitch_2
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/r3;->U1()V
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/q3;->S1()V
 
     invoke-virtual {p0}, Landroidx/appcompat/app/c;->invalidateOptionsMenu()V
 
     return v1
 
     :sswitch_3
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/r3;->R1()V
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/q3;->P1()V
 
     return v1
 
     :sswitch_4
-    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->n1()V
+    invoke-virtual {p0}, Lcom/digdroid/alman/dig/e0;->l1()V
 
     return v1
 
@@ -1084,9 +1084,9 @@
 .method public onResume()V
     .locals 6
 
-    invoke-super {p0}, Lcom/digdroid/alman/dig/r3;->onResume()V
+    invoke-super {p0}, Lcom/digdroid/alman/dig/q3;->onResume()V
 
-    iget-object v0, p0, Lcom/digdroid/alman/dig/v3;->r0:Landroidx/appcompat/widget/Toolbar;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/u3;->r0:Landroidx/appcompat/widget/Toolbar;
 
     const-string v1, ""
 
@@ -1096,13 +1096,13 @@
 
     move-result-wide v0
 
-    iget-object v2, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+    iget-object v2, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
     const-string v3, "retroarch_last"
 
     const-wide/16 v4, 0x0
 
-    invoke-virtual {v2, v3, v4, v5}, Lcom/digdroid/alman/dig/c3;->n(Ljava/lang/String;J)J
+    invoke-virtual {v2, v3, v4, v5}, Lcom/digdroid/alman/dig/b3;->n(Ljava/lang/String;J)J
 
     move-result-wide v2
 
@@ -1118,20 +1118,20 @@
 
     if-lez v5, :cond_0
 
-    invoke-static {p0, v4}, Lcom/digdroid/alman/dig/a4;->F(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p0, v4}, Lcom/digdroid/alman/dig/z3;->D(Landroid/content/Context;Ljava/lang/String;)V
 
     :cond_0
-    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/c3;
+    iget-object v0, p0, Lcom/digdroid/alman/dig/t;->w:Lcom/digdroid/alman/dig/b3;
 
     const/4 v1, 0x0
 
     const-string v2, "retroarch_package_running"
 
-    invoke-virtual {v0, v2, v1}, Lcom/digdroid/alman/dig/c3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v2, v1}, Lcom/digdroid/alman/dig/b3;->q(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {p0, v4}, Lcom/digdroid/alman/dig/a4;->m(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {p0, v4}, Lcom/digdroid/alman/dig/z3;->l(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -1149,7 +1149,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f11021c
+    const v2, 0x7f11021a
 
     invoke-virtual {v1, v2}, Landroidx/appcompat/app/b$a;->h(I)Landroidx/appcompat/app/b$a;
 
@@ -1165,7 +1165,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1101da
+    const v2, 0x7f1101d8
 
     new-instance v3, Lcom/digdroid/alman/dig/MainActivity$d;
 
@@ -1184,7 +1184,7 @@
     return-void
 
     :cond_1
-    invoke-direct {p0}, Lcom/digdroid/alman/dig/MainActivity;->c3()V
+    invoke-direct {p0}, Lcom/digdroid/alman/dig/MainActivity;->a3()V
 
     return-void
 .end method
@@ -1204,7 +1204,7 @@
 
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/r3;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/digdroid/alman/dig/q3;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     return-void
 .end method
@@ -1222,7 +1222,7 @@
 
     invoke-direct {v0, p0}, Lcom/digdroid/alman/dig/MainActivity$a;-><init>(Lcom/digdroid/alman/dig/MainActivity;)V
 
-    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/s2;->Z0(Lcom/digdroid/alman/dig/s2$d;)V
+    invoke-virtual {p0, v0}, Lcom/digdroid/alman/dig/r2;->Y0(Lcom/digdroid/alman/dig/r2$c;)V
 
     return-void
 .end method
