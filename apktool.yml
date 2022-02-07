@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: Devils_Advocate_v1.39.6.1.apk
+apkFileName: Devils_Advocate_v1.39.6.2.apk
 compressionType: false
 doNotCompress:
 - resources.arsc
@@ -26,5 +26,5 @@ usesFramework:
   tag: null
 version: 2.6.0
 versionInfo:
-  versionCode: '165'
-  versionName: 1.39.6.1
+  versionCode: '266'
+  versionName: 1.39.6.2
