@@ -891,6 +891,7 @@ public class C2187b0 {
     public void mo8060v(ActivityC2888z3 z3Var, Cursor cursor, Cursor cursor2, String str) {
         boolean z;
         String str2 = str;
+        // not zips
         if (cursor.getInt(9) != 0 || !C2363g4.m10276c(str)) {
             Intent intent = new Intent();
             intent.setComponent(new ComponentName(cursor.getString(3), cursor.getString(4)));
@@ -898,9 +899,12 @@ public class C2187b0 {
             if (string.equals("j2me")) {
                 str2 = new File(str2).getParentFile().getName();
             } else if (mo8055q(cursor)) {
+                // magic dos box check
                 str2 = new File(str2).getName();
             }
+            // not scumm type
             if (!string.equals("scumm")) {
+                // uses rompath
                 if (!cursor.getString(6).equals("")) {
                     str2 = C2399i2.m10374d(z3Var, str2).mo8601g();
                     intent.putExtra(cursor.getString(6), str2);
@@ -920,6 +924,7 @@ public class C2187b0 {
                     intent.setFlags(1);
                 }
             }
+            // uses cores option
             String string4 = cursor.getString(5);
             if (!string4.equals("")) {
                 String n = mo8054n(z3Var, cursor2, cursor);
@@ -951,6 +956,7 @@ public class C2187b0 {
             mo8056r(z3Var, intent, cursor, cursor2, z);
             return;
         }
+        // unzip
         C2185a4.m9673c(this.f7863b);
         File A = C2185a4.m9663A(this.f7863b);
         if (A != null) {
