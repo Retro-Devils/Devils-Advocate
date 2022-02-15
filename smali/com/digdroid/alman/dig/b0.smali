@@ -1970,35 +1970,6 @@
 
     move-result-object v0
 
-    const-string v2, "AetherSX2"
-    
-    const/4 v1, 0x1
-    
-    invoke-interface {v7, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-    
-    move-result-object v1
-    
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-    
-    move-result v2
-    
-    if-eqz v2, :cond_g
-	
-    new-instance v2, Ljava/io/File;
-	
-    invoke-direct {v2, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-static {v2}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
-
-    # invoke-virtual {v2}, Ljava/io/File;->toUri()Ljava/lang/String; //crashes
-    move-result-object v2
-    
-    invoke-virtual {v9, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
-    
-    goto :goto_3
-    
-    :cond_g
-
     invoke-virtual {v9, v0, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     goto :goto_3
