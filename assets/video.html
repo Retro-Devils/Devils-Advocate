@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=1920">
+    <title></title>
+    <style type="text/css">
+        body {
+        overflow: hidden;
+        }
+
+        #over {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1000;
+        border: 2px solid black;
+        pointer-events: none;
+        }
+
+        iframe {
+        max-width: 100%;
+        position: absolute;
+        border: none;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        }
+
+        ul {
+        list-style-type: none;
+        float: left;
+        margin: 2px;
+        width: 100%;
+        }
+
+        ul li {
+        float: left;
+        width: 30%;
+        }
+        /* The Overlay (background) */
+
+        .overlay {
+        display: none;
+        /* Height & width depends on how you want to reveal the overlay (see JS below) */
+        height: 60%;
+        width: 35%;
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        right: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+        /* Black fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/opacity */
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in or slide down the overlay (height or width,
+        depending on reveal) */
+        }
+        /* Position the content inside the overlay */
+
+        .overlay-content {
+        position: relative;
+        width: 100%;
+        }
+
+        canvas {
+        display: block;
+        }
+    </style>
+    <script>
+    var QueryString = function() {
+        // This function is anonymous, is executed immediately and 
+        // the return value is assigned to QueryString!
+        var query_string = {};
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            // If first entry with this name
+            if (typeof query_string[pair[0]] === "undefined") {
+                query_string[pair[0]] = decodeURIComponent(pair[1]);
+                // If second entry with this name
+            } else if (typeof query_string[pair[0]] === "string") {
+                var arr = [query_string[pair[0]], decodeURIComponent(pair[1])];
+                query_string[pair[0]] = arr;
+                // If third or later entry with this name
+            } else {
+                query_string[pair[0]].push(decodeURIComponent(pair[1]));
+            }
+        }
+        return query_string;
+    }();
+    var video = document.getElementById('video');
+    var source = document.createElement('source');
+
+    source.setAttribute('src', QueryString.videoId);
+    source.setAttribute('type', 'video/mp4');
+
+    video.appendChild(source);
+    video.play();
+</script>
+<video width="320" height="240" controls>
+  Your browser does not support the video tag.
+  </video>
+</body>
+</html>
