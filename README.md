@@ -26,3 +26,11 @@ A kodi based Android Retro Frontend.
 - ALWAYS FREE.
 
 - Never on Play Store 
+
+# Credits 
+
+- Monk of The Funk --------------- Moral Support and Knowledge 
+
+- Crash Cortez ------------------- Knowledge
+
+- Dean Savy ---------------------- Time , Knowledge on Kronos
