@@ -29,8 +29,8 @@ A kodi based Android Retro Frontend.
 
 # Credits 
 
-- Monk of The Funk --------------- Moral Support and Knowledge 
+- Monk of The Funk --------------- Moral Support & Knowledge 
 
 - Crash Cortez ------------------- Knowledge
 
-- Dean Savy ---------------------- Time , Knowledge on Kronos
+- Dean Savy ---------------------- Time & Knowledge on Kronos
