@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/main_youtube_container" android:layout_width="1.0px" android:layout_height="1.0px"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <fr.bmartel.youtubetv.YoutubeTvView android:id="@id/youtube_tv_video" android:layout_width="fill_parent" android:layout_height="fill_parent" yt_showNowPlayingCard="false" />
-    <FrameLayout android:id="@id/youtube_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</FrameLayout>
