@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:id="@id/genre_name" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="@id/guideline_left" app:layout_constraintRight_toLeftOf="@id/genre_count" app:layout_constraintTop_toTopOf="parent" />
-    <TextView android:id="@id/genre_count" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintRight_toRightOf="@id/guideline_right" app:layout_constraintTop_toTopOf="parent" />
-    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_left" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.1" />
-    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_right" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.9" />
-</androidx.constraintlayout.widget.ConstraintLayout>

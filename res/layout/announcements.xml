@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.digdroid.alman.dig.MyListView android:id="@id/announcements" android:layout_width="0.0dip" android:layout_height="wrap_content" android:divider="@color/bright_blue" android:dividerHeight="1.0dip" app:layout_constraintLeft_toLeftOf="@id/left_margin" app:layout_constraintRight_toRightOf="@id/right_margin" app:layout_constraintTop_toTopOf="parent" />
-    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/left_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.05" />
-    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/right_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.95" />
-</androidx.constraintlayout.widget.ConstraintLayout>
