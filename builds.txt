@@ -1,6 +1,6 @@
-id="Test test"
-version="1.0"
-zip="https://drive.google.com/u/0/uc?id=1Uy95wgtaizkTAbg_yx3cJWfrxj54bPUk&export=download"
+id=""
+version=""
+zip=""
 
 
 name="Devils Advocate Test"
