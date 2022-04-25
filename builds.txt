@@ -1,10 +1,10 @@
 id="test"
 version="1.0"
-zip="TEST BUILD"
+zip="TEST_BUILD"
 
 name="Test build - ANDROID"
 version="1.0"
-url="https://www.dropbox.com/s/45fnpip062h7s24/TEST%20BUILD.zip?dl=1"
+url="https://www.dropbox.com/s/45fnpip062h7s24/TEST_BUILD.zip?dl=1"
 minor="http://"
 gui="url.to.guisettings"
 kodi="19"
