@@ -19,7 +19,7 @@
         <description lang="en">[COLOR orange]Devils Wizard [/COLOR]offers many maintenance features, selective add-on data saving, and automated build installs.</description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
-        <source>https://github.com/Retro-Devils/Devils-Advocate/tree/main/zips/repository.devilsrepo/</source>
+        <source>https://retro-devils.github.io/Devils-Advocate/repository.devilsrepo-1.0.zip</source>
         <news>
 2.0.7
  - Initial Commit
