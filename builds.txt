@@ -5,7 +5,7 @@ zip="https://drive.google.com/u/0/uc?id=1Uy95wgtaizkTAbg_yx3cJWfrxj54bPUk&export
 
 name="Devils Advocate Test"
 version="1.0"
-url="https://drive.google.com/file/d/1Uy95wgtaizkTAbg_yx3cJWfrxj54bPUk/view?usp=drivesdk"
+url="https://drive.google.com/u/0/uc?id=1Uy95wgtaizkTAbg_yx3cJWfrxj54bPUk&export=download"
 minor="http://"
 gui="url.to.guisettings"
 kodi="19.3"
