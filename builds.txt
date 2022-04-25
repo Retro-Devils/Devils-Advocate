@@ -5,7 +5,7 @@ zip=""
 
 name="Devils Advocate Test"
 version="1.0"
-url="https://drive.google.com/u/0/uc?id=1Uy95wgtaizkTAbg_yx3cJWfrxj54bPUk&export=download"
+url="https://www.dropbox.com/s/45fnpip062h7s24/test%20build.zip?dl=1"
 minor="http://"
 gui="url.to.guisettings"
 kodi="19.4"
