@@ -1,6 +1,5 @@
 id="test"
-
-version=""
+version="1.0"
 zip="TEST BUILD"
 
 name="Test build - ANDROID"
@@ -16,3 +15,4 @@ preview="http://"
 adult="no"
 info="http://"
 description="this is a test "
+
