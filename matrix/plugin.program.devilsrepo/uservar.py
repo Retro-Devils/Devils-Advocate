@@ -17,7 +17,7 @@ ADDONTITLE = '[COLOR orange][B]Devils Wizard[/B][/COLOR]'
 BUILDERNAME = 'Retro Devils'
 EXCLUDES = [ADDON_ID, 'repository.devilsrepo']
 # Text File with build info in it. Please read https://github.com/a4k-devilsrepoproject/plugin.program.devilsrepo/wiki/Installing-Builds
-BUILDFILE = 'http://'
+BUILDFILE = 'https://retro-devils.github.io/Devils-Advocate/builds.txt'
 # How often you would like it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK = 0
@@ -98,9 +98,9 @@ AUTOINSTALL = 'Yes'
 # Addon ID for the repository
 REPOID = 'repository.devilsrepo'
 # Url to Addons.xml file in your repo folder(this is so we can get the latest version)
-REPOADDONXML = 'https://github.com/Retro-Devils/Devils-Advocate/tree/main/matrix/zips/addons.xml'
+REPOADDONXML = 'https://retro-devils.github.io/Devils-Advocate/matrix/zips/addons.xml'
 # Url to folder zip is located in
-REPOZIPURL = 'https://github.com/Retro-Devils/Devils-Advocate/tree/main/matrix/zips/repository.devilsrepo'
+REPOZIPURL = 'https://retro-devils.github.io/Devils-Advocate/matrix/zips/repository.devilsrepo/repository.devilsrepo-1.0.0'
 #########################################################
 
 #########################################################
