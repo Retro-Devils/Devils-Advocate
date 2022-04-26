@@ -1,38 +1,17 @@
-name="APK Pure" 
-section="yes" 
-url="https://retro-devils.github.io/Devils-Advocate/apk-installer/APK-Pure.txt"
-icon="http://" fanart="http://"
+
+
+name="APK Tool M"
+section="Devils-Tools"
+url="https://archive.org/download/bad-droid/APK-Tool-M.apk"
+icon="http://"
+fanart="http://"
 adult="no"
-description="Apks from apkpure.com"
+description="A tool to modify apk files." 
 
-name="Devils-Backups" 
-section="yes" 
-url=""
-icon="http://" fanart="http://"
+name="AetherSX2 Turnip 1447"
+section="no"
+url="https://archive.org/download/bad-droid/aethersx2-turnip-1447.apk"
+icon="http://"
+fanart="http://"
 adult="no"
-description="Apks backed up by The Retro Devils"
-
-name="Devils-Cracks" 
-section="yes" 
-url="https://retro-devils.github.io/Devils-Advocate/apk-installer/Devils-Cracks.txt"
-icon="http://" fanart="http://"
-adult="no"
-description="Apks cracked by community and Devils"
-
-name="Devils-Tools" 
-section="yes" 
-url="https://retro-devils.github.io/Devils-Advocate/apk-installer/Devils-Tools.txt"
-icon="http://" fanart="http://"
-adult="no"
-description="Apks related to tools backed up by The Retro Devils"
-
-name="Modroid" 
-section="yes" 
-url="https://retro-devils.github.io/Devils-Advocate/apk-installer/Modroid.txt"
-icon="http://" fanart="http://"
-adult="no"
-description="Apks from moddroid.com "
-
-
-
-
+description="PS2 emulator." 
