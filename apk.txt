@@ -1,5 +1,5 @@
 name="AetherSX2"
-section="Devils Backups"
+section=""
 url="https://archive.org/download/bad-droid/aethersx2-turnip-1447.apk"
 icon="http://"
 fanart="http://"
