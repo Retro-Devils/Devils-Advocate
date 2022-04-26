@@ -9,13 +9,13 @@ A kodi based Android Retro Frontend.
 
 - A combination of Kodi, Advanced Emu Launcher, Internet Archive Launcher, Kodi Retro Player , a lot of sweat, tears, testing cursing and time .
 
-# what makes this different ? 
+# What makes this different ? 
 
 - We hear what you want and make changes . 
 
 - Plays movies and TV cause its Kodi based .
 
-- Downloads and plays games from Internet Archive Game Launcher 
+- Gets and plays games from Internet Archive Game Launcher 
 
 - Built in emus for most systems . don't have to use a second third etc app for most systems.
 
