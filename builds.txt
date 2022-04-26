@@ -1,6 +1,6 @@
 id="test"
 version=""
-zip="TEST_BUILD"
+zip=""
 
 name="Test build - ANDROID"
 version="1.0"
