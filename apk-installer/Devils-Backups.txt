@@ -1,0 +1,7 @@
+name="AetherSX2 Turnip 1447"
+section="Devils-Backups"
+url="https://archive.org/download/bad-droid/aethersx2-turnip-1447.apk"
+icon="http://"
+fanart="http://"
+adult="no"
+description="PS2 emulator." 
