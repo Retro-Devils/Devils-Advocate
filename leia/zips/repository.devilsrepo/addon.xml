@@ -2,14 +2,14 @@
 <addon id="repository.devils.repo" name="[COLOR orange][B]Devils Repository[/B][/COLOR]" version="1.0.0" provider-name="Retro Devils">
     <extension point="xbmc.addon.repository" name="[COLOR orange][B]Devils Repo[/B][/COLOR]">
         <dir minversion="18.0" maxversion="18.9.0">
-            <info compressed="false">https://github.com/Retro-Devils/Devils-Advocate/tree/main/leia/zips/addons.xml</info>
-            <checksum>https://github.com/Retro-Devils/Devils-Advocate/tree/main/leia/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://github.com/Retro-Devils/Devils-Advocate/tree/main/leia/zips/</datadir>
+            <info compressed="false">https://retro-devils.github.io/Devils-Advocate/leia/zips/addons.xml</info>
+            <checksum>https://retro-devils.github.io/Devils-Advocate/leia/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://retro-devils.github.io/Devils-Advocate/main/leia/zips/</datadir>
         </dir>
         <dir minversion="18.9.9">
-            <info compressed="false">https://github.com/Retro-Devils/Devils-Advocate/tree/main/matrix/zips/addons.xml</info>
-            <checksum>https://github.com/Retro-Devils/Devils-Advocate/tree/main/matrix/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://github.com/Retro-Devils/Devils-Advocate/tree/main/matrix/zips/</datadir>
+            <info compressed="false">https://retro-devils.github.io/Devils-Advocate/matrix/zips/addons.xml</info>
+            <checksum>https://retro-devils.github.io/Devils-Advocate/matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://retro-devils.github.io/Devils-Advocate//matrix/zips/</datadir>
         </dir>
     </extension>
     
@@ -22,6 +22,6 @@
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
-        <source>https://github.com/Retro-Devils/Devils-Advocate/tree/main/zips/repository.devils.repo/</source>
+        <source>https://retro-devils.github.io/Devils-Advocate/repository.devilsrepo-1.0.0.zip</source>
     </extension>
 </addon>

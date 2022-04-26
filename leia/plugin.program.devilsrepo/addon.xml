@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.YOUR NAME" name="[COLOR limegreen]YOUR NAME[/COLOR]Wizard" version="1.4.9" provider-name="YOUR NAME">
+<addon id="plugin.program.YOUR NAME" name="[COLOR orange]YOUR NAME[/COLOR]Wizard" version="1.4.9" provider-name="YOUR NAME">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.requests" />
@@ -15,11 +15,11 @@
     <extension point="xbmc.service" library="startup.py" start="startup" />
     
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR limegreen]YOUR NAME[/COLOR]Wizard</summary>
-        <description lang="en">[COLOR limegreen]YOUR NAME[/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <summary lang="en">[COLOR orange]YOUR NAME[/COLOR]Wizard</summary>
+        <description lang="en">[COLOR orange]YOUR NAME[/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
-        <source>https://example.com/zips/repository.YOUR NAME/</source>
+        <source>https://retro-devils.github.io/Devils-Advocate//</source>
         <news>
 1.4.9
  - Initial Commit
