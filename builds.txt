@@ -1,5 +1,5 @@
 id="test"
-version="1.0"
+version=""
 zip="TEST_BUILD"
 
 name="Test build - ANDROID"
