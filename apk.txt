@@ -1,7 +1,7 @@
 
 
 name="APK Tool M"
-section="Devils-Tools"
+section="no"
 url="https://archive.org/download/bad-droid/APK-Tool-M.apk"
 icon="http://"
 fanart="http://"
