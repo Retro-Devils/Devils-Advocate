@@ -16,9 +16,9 @@ adult="no"
 info="http://"
 description="this is a test"
 
-id="kronos"
+id=""
 version=""
-zip="Kronos_build" 
+zip="" 
 
 name=""
 version="1.0" url=""
