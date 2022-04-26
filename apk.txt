@@ -14,7 +14,7 @@ description="Apks cracked by The Retro Devils"
 
 name="AetherSX2"
 section="Devils Backups"
-url="url.to.apk"
+url="https://archive.org/download/bad-droid/aethersx2-turnip-1447.apk"
 icon="http://"
 fanart="http://"
 adult="no"
