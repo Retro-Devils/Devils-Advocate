@@ -14,5 +14,5 @@ fanart="http://"
 preview="http://"
 adult="no"
 info="http://"
-description="this is a test "
+description="this is a test"
 
