@@ -4,7 +4,7 @@ zip=""
 
 name="Devils Advocate-Android"
 version="1.00"
-url="https://drive.google.com/file/d/1_ISylnU8qXdxPbtpZ1QQ5DSUu3dpFWw7/view?usp=drivesdk"
+url="https://www.dropbox.com/s/knq3sotaf6u1c7o/devils%20advocate%20v1.zip?dl=1"
 minor="http://"
 gui="url.to.guisettings"
 kodi="19"
