@@ -14,7 +14,7 @@ fanart="http://"
 preview="http://"
 adult="no"
 info="http://"
-description="The Retro Devils present Devils Advocate is a build to turn Kodi into a Retro frontend."
+description="The Retro Devils present Devils Advocate a build to turn Kodi into a Retro frontend."
 
 id="rp2+"
 version="0.01"
