@@ -16,6 +16,13 @@ fanart="http://"
 adult="no"
 description="PS2 emulator." 
 
+name="Retroarch 1.9.7"
+section="no"
+url="https://bit.ly/3LjSjAf"
+icon="https://image.winudf.com/v2/image1/Y29tLnJldHJvYXJjaF9pY29uXzE2Mjc1MDMyNTVfMDk5/icon.png?w=100&fakeurl=1&type=.webp"
+fanart="http://"
+adult="no"
+description="The best around! A plethora of emus at your fingertios" 
 
 name="Sonic Dash 2"
 section="no"
