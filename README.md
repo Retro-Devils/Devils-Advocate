@@ -1,4 +1,4 @@
-# Devils-Advocate
+# Devils Advocate FE
 A kodi based Android Retro Frontend.
 
 Version 1.01 
@@ -43,11 +43,11 @@ Folders.zip
 
 https://www.dropbox.com/s/75xhlb0sx1t7x9f/Folders.zip?dl=0
 
-Devils Wizard.zip 
+Devils Wizard.zip
 
 https://www.dropbox.com/s/583m3rxfb8fvabj/devils-wizard.zip?dl=0
 
-Kodi many sources. Has to 19.3 at least , 
+Kodi can be found from many sources. Has to 19.3 at least , 
 
 2. Install Kodi. let initial setup run .
 
@@ -55,9 +55,9 @@ Kodi many sources. Has to 19.3 at least ,
 
 4. Reopen Kodi go to settings/addons/install from zip. It will ask you sure say yes and follow prompts.
 
-5. Click install from zip again then Locate devils-wizard.zip. install wait a minute. it will say installed. 
+5. Click install from zip again then Locate devils-wizard.zip. Install wait a minute, it will say installed. 
 
-6. Wait for a menu from Devils Wizard to pop up, press ok, then a second menu will pop up press build menu.
+6. Wait for a menu from Devils Wizard to pop up, Press ok, then a second menu will pop up, press build menu.
 
 7. If build menu doesn't load go to addons/all/devils wizard/build menu
 
@@ -68,6 +68,10 @@ Kodi many sources. Has to 19.3 at least ,
 10. Put your games in /storage/emulated/0/Roms/systemname/
 
 11. Scan your games and enjoy!
+
+# Updating 
+
+- To update go to Tools/Builds Menu. If listed version is higher click on it and then install .
 
 # TO DO / THE FUTURE 
 
