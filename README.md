@@ -15,6 +15,8 @@ Version 1.01
 
 - We hear what you want and make changes . 
 
+- Apk Installer 
+
 - Plays movies and TV cause its Kodi based .
 
 - Gets and plays games from Internet Archive Game Launcher 
