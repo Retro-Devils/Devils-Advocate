@@ -33,7 +33,7 @@ Version 1.01
 
 # Installation 
 
-////-------------------On Top of Kodi Instructions------------------////
+////----////-------------------On Top of Kodi Instructions------------------////----////
 
 You will need winrar (or something to unzip stuff) and a file explorer, 
 
@@ -71,7 +71,7 @@ Kodi can be found from many sources. Has to 19.3 at least ,
 
 11. Scan your games and enjoy!
 
-////--------------------Stand Alone Apk Install---------------------////
+////----////--------------------Stand Alone Apk Install---------------------////----////
 
 - COMING SOON 
 
