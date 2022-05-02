@@ -31,6 +31,43 @@ Version 1.01
 
 - Never on Play Store 
 
+# Installation 
+
+You will need winrar(or something to unzip stuff) and a file explorer, 
+
+On device you want Devils Advocate On 
+
+1. Download Folders.zip, Devils Wizard.zip, and Kodi 19.3.
+
+Folders.zip 
+
+https://www.dropbox.com/s/75xhlb0sx1t7x9f/Folders.zip?dl=0
+
+Devils Wizard.zip 
+
+https://www.dropbox.com/s/583m3rxfb8fvabj/devils-wizard.zip?dl=0
+
+Kodi many sources. Has to 19.3 at least , 
+
+2. Install Kodi. let initial setup run .
+
+3. Open file explorer find & Unzip Folders.zip to /storage/emualted/0/
+
+4. Reopen Kodi go to settings/addons/install from zip. It will ask you sure say yes and follow prompts.
+
+5. Click install from zip again then Locate devils-wizard.zip. install wait a minute. it will say installed. 
+
+6. Wait for a menu from Devils Wizard to pop up, press ok, then a second menu will pop up press build menu.
+
+7. If build menu doesn't load go to addons/all/devils wizard/build menu
+
+8. Select Devils Advocate V1.01, click install. It will ask are you sure say yes . 
+
+9. Let it download and extract new build then reboot Kodi. Might have first relaunch don't worry. Reopen it or force close before opening after build install. 
+
+10. Put your games in /storage/emulated/0/Roms/systemname/
+
+11. Scan your games and enjoy!
 
 # TO DO / THE FUTURE 
 
