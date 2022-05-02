@@ -73,19 +73,19 @@ Kodi can be found from many sources. Has to 19.3 at least ,
 
 - To update go to Tools/Builds Menu. If listed version is higher click on it and then install .
 
-# TO DO / THE FUTURE 
+# To Do / The Future
 
 - More Pre setup themes
 
 - Get install size smaller (up to community)
 
-- Add retroarch/stand alone app launching. Kodi doesn't support atm on Android 11.
+- Add retroarch/stand alone app launching. Kodi doesn't support atm on Android 11 & 12. 
 
 - More menu items setup . Hacks, IAGL, stuff like that .
 
 - Add more APKs . (Passively adding)
 
-- More builds for more devices. First Retroid Pocket 2+.
+- More builds for more devices. Planned first is Retroid Pocket 2+.
 
 - Whatever we can do that community suggests .
 
@@ -96,7 +96,19 @@ Kodi can be found from many sources. Has to 19.3 at least ,
 - More Videos .
 
 # Video Help 
-https://youtube.com/playlist?list=PLHyFqXEzwC_NqgSX5eDclx_w1IazK9mbd
+
+Addinng games 
+
+https://youtu.be/A3zbqI5_MK8
+
+Setup 
+
+https://youtu.be/Ece6YSZBK7A
+
+Showcase
+
+https://youtu.be/9ufExtloTM0
+
 
 # Credits
 
