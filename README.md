@@ -138,5 +138,5 @@ https://youtu.be/9ufExtloTM0
 
 # Changelog
 
-- See changelog.txt https://github.com/Retro-Devils/Devils-Advocate/blob/main/changelog.txt
+- See changelog.md https://github.com/Retro-Devils/Devils-Advocate/blob/main/changelog.md
 
