@@ -15,25 +15,27 @@ Version 1.01
 
 - We hear what you want and make changes . 
 
-- Apk Installer 
+- Apk Downloader/Installer built in.
 
-- Plays movies and TV cause its Kodi based .
+- Plays movies and TV because its Kodi based .
 
 - Gets and plays games from Internet Archive Game Launcher 
 
-- Built in emus for most systems . don't have to use a second third etc app for most systems.
+- Built in emus for most systems . You don't have to use a second third etc app for most systems.
 
-- Crazy customizing.  since kodi based you can change the skin then icons, backgrounds, launch commands tons of stuff. 
+- Crazy customizing.  Since kodi based you can change the skin then icons, backgrounds,xmenu layouts, colors tons of stuff. 
 
 - Made by community for community , 
 
-- ALWAYS FREE.
+- ALWAYS FREE. yeah like FREE FREE 
 
 - Never on Play Store 
 
 # Installation 
 
-You will need winrar(or something to unzip stuff) and a file explorer, 
+--------On Top of Kodi Instructions-------
+
+You will need winrar (or something to unzip stuff) and a file explorer, 
 
 On device you want Devils Advocate On 
 
@@ -69,6 +71,10 @@ Kodi can be found from many sources. Has to 19.3 at least ,
 
 11. Scan your games and enjoy!
 
+---------Stand Alone Apk Install----------
+
+- COMING SOON 
+
 # Updating 
 
 - To update go to Tools/Builds Menu. If listed version is higher click on it and then install .
@@ -95,7 +101,7 @@ Kodi can be found from many sources. Has to 19.3 at least ,
 
 - More Videos .
 
-# Video Help 
+# Video Help & Showcase
 
 Addinng games 
 
@@ -112,12 +118,23 @@ https://youtu.be/9ufExtloTM0
 
 # Credits
 
-- Monk of The Funk --------------- Moral Support & Knowledge 
+- Monk of The Funk --------------- Moral boost, Knowledge and testing 
 
 - Crash Cortez ------------------- Knowledge
 
 - Dean Savy ---------------------- Time & Knowledge on Kronos
 
+- Wintermule101 ------------------ Advanced Emu Launcher 
+
+- Heppen ------------------------- Heppens Repo & Artic Zephyr 
+
+- Zach Morris -------------------- Zach Morris Repo & IAGL
+
+- Kodi --------------------------- All the stuff they do .
+
+- Community ---------------------- Testing and support 
+
+- BigEd -------------------------- Knowledge 
 
 # Changelog
 
