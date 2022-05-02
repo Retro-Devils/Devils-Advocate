@@ -36,3 +36,10 @@ Version 1.01
 - Crash Cortez ------------------- Knowledge
 
 - Dean Savy ---------------------- Time & Knowledge on Kronos
+
+
+# Changelog
+
+- See changelog.txt
+
+https://github.com/Retro-Devils/Devils-Advocate/blob/main/changelog.txt
