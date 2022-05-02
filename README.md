@@ -29,7 +29,33 @@ Version 1.01
 
 - Never on Play Store 
 
-# Credits 
+
+# TO DO / THE FUTURE 
+
+- More Pre setup themes
+
+- Get install size smaller (up to community)
+
+- Add retroarch/stand alone app launching. Kodi doesn't support atm on Android 11.
+
+- More menu items setup . Hacks, IAGL, stuff like that .
+
+- Add more APKs . (Passively adding)
+
+- More builds for more devices. First Retroid Pocket 2+.
+
+- Whatever we can do that community suggests .
+
+- Implemnt Advanced Kodi Launcher. Similar to Advanced Emu Launcher but smoother UI.
+
+- Fork Kodi to be a standalone App. This makes it where Devils Advocate is a different app than Kodi . 
+
+- More Videos .
+
+# Video Help 
+https://youtube.com/playlist?list=PLHyFqXEzwC_NqgSX5eDclx_w1IazK9mbd
+
+# Credits
 
 - Monk of The Funk --------------- Moral Support & Knowledge 
 
@@ -40,6 +66,5 @@ Version 1.01
 
 # Changelog
 
-- See changelog.txt
+- See changelog.txt https://github.com/Retro-Devils/Devils-Advocate/blob/main/changelog.txt
 
-https://github.com/Retro-Devils/Devils-Advocate/blob/main/changelog.txt
