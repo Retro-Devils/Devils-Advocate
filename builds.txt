@@ -1,10 +1,10 @@
 id="da"
-version="1.00"
+version="1.01"
 zip=""
 
 name="Devils Advocate-Android"
-version="1.00"
-url="https://www.dropbox.com/s/knq3sotaf6u1c7o/devils%20advocate%20v1.zip?dl=1"
+version="1.01"
+url="https://www.dropbox.com/s/y849y1eyp9ktn7d/devils-advocate-v101.zip?dl=1"
 minor="http://"
 gui="url.to.guisettings"
 kodi="19"
