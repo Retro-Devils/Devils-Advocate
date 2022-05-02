@@ -1,5 +1,6 @@
 # Devils-Advocate
 A kodi based Android Retro Frontend.
+Version 1.1 
 
 # Why ? 
 
