@@ -77,11 +77,13 @@ Kodi can be found from many sources. Has to 19.3 at least ,
 
 # Updating 
 
-- To update go to Tools/Builds Menu. If listed version is higher click on it and then install .
+- On boot Decils Wizard will tell you thiers a update if thier is .
+
+- To manually check. Go to Tools/Builds Menu. If listed version is higher click on it and then install.
 
 # To Do / The Future
 
-- More Pre setup themes
+- More Pre setup themes in Kodi . 
 
 - Get install size smaller (up to community)
 
